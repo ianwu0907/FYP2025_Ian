@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """
 spreadsheetllm_runner.py
-Single-file runner: helpers + adapted SpreadsheetLLM encoder.
 Usage:
     python spreadsheetllm_runner.py /path/to/input.xlsx -o /path/to/output.json
     python spreadsheetllm_runner.py /path/to/input.csv  -o /path/to/output.json
@@ -18,7 +17,6 @@ from pathlib import Path
 import openpyxl
 from openpyxl.utils import get_column_letter, column_index_from_string
 
-# Optional: pandas for CSV->XLSX conversion
 try:
     import pandas as pd
 except Exception:
@@ -27,9 +25,6 @@ except Exception:
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("spreadsheetllm_runner")
 
-# -----------------------
-# User-provided helpers
-# -----------------------
 EMAIL_REGEX = re.compile(r"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$")
 
 def infer_cell_data_type(cell: openpyxl.cell.cell.Cell) -> str:
