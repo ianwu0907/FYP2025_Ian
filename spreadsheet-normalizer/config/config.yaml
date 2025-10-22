@@ -1,0 +1,41 @@
+# Spreadsheet Normalizer Configuration
+
+# LLM Configuration
+llm:
+  temperature: 0.1
+  max_tokens: 4000
+  timeout: 60
+
+# Encoder Configuration (SpreadsheetLLM)
+encoder:
+  anchor_neighborhood: 2  # K parameter for structural anchors
+
+# Structure Analyzer Configuration
+analyzer:
+  min_header_rows: 1
+  max_header_rows: 5
+  confidence_threshold: 0.7
+
+# Schema Estimator Configuration
+estimator:
+  standardize_names: true
+  detect_types: true
+  merge_similar_columns: true
+
+# Transformation Generator Configuration
+generator:
+  max_retries: 3
+  validate_output: true
+  preserve_data: true
+
+# Output Configuration
+output:
+  format: csv
+  encoding: utf-8
+  index: false
+
+# Logging Configuration
+logging:
+  level: INFO
+  save_intermediate: true
+  output_dir: output
