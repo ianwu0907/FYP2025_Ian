@@ -2,8 +2,7 @@
 """
 spreadsheetllm_runner.py
 Usage:
-    python spreadsheetllm_runner.py /path/to/input.xlsx -o /path/to/output.json
-    python spreadsheetllm_runner.py /path/to/input.csv  -o /path/to/output.json
+    python spreadsheetencoder_faster.py /path/to/input.xlsx -o /path/to/output.json
 """
 import os
 import json
