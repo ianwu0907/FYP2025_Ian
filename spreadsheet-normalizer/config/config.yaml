@@ -20,7 +20,10 @@ analyzer:
 estimator:
   standardize_names: true
   detect_types: true
-  merge_similar_columns: true
+  merge_similar_columns: false
+  detect_composite_columns: true
+  split_composite_columns: true
+  preserve_bilingual: true
 
 # Transformation Generator Configuration
 generator:

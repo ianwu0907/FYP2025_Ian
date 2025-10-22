@@ -207,13 +207,23 @@ Be precise and analytical. Output your analysis in valid JSON format."""
         # Convert data_rows range notation to list if needed
         if isinstance(analysis.get('data_rows'), str):
             if '-' in analysis['data_rows']:
-                start, end = map(int, analysis['data_rows'].split('-'))
-                analysis['data_rows'] = list(range(start, min(end + 1, num_rows)))
+                try:
+                    start, end = analysis['data_rows'].split('-')
+                    start = int(start.strip())
+                    end = int(end.strip())
+                    analysis['data_rows'] = list(range(start, min(end + 1, num_rows)))
+                except Exception as e:
+                    logger.warning(f"Failed to parse data_rows range: {e}")
+                    analysis['data_rows'] = list(range(1, num_rows))
+
+        # Ensure data_rows is a list
+        if not isinstance(analysis.get('data_rows'), list):
+            analysis['data_rows'] = list(range(1, num_rows))
 
         # Ensure indices are within bounds
         for field in ['header_rows', 'data_rows', 'metadata_rows', 'aggregate_rows']:
             if field in analysis and isinstance(analysis[field], list):
-                analysis[field] = [idx for idx in analysis[field] if 0 <= idx < num_rows]
+                analysis[field] = [idx for idx in analysis[field] if isinstance(idx, int) and 0 <= idx < num_rows]
 
         # Add confidence score if missing
         if 'confidence' not in analysis:

@@ -24,7 +24,7 @@ class SchemaEstimator:
         self.config = config
         self.standardize_names = config.get('standardize_names', True)
         self.detect_types = config.get('detect_types', True)
-        self.merge_similar_columns = config.get('merge_similar_columns', True)
+        self.merge_similar_columns = config.get('merge_similar_columns', False)
 
         # Initialize OpenAI client
         api_key = os.getenv('OPENAI_API_KEY')
@@ -81,27 +81,7 @@ class SchemaEstimator:
         """Get the system prompt for schema estimation."""
         return """You are an expert data engineer specializing in database schema design and data normalization.
 
-Your task is to design a clean, normalized schema for messy spreadsheet data. The goal is to transform human-oriented tables into machine-readable, analysis-ready formats following these principles:
-
-1. **Tidy Data Principles**:
-   - Each variable forms a column
-   - Each observation forms a row
-   - Each type of observational unit forms a table
-
-2. **Column Naming**:
-   - Use clear, descriptive, snake_case names
-   - Avoid special characters and spaces
-   - Be consistent across similar columns
-   - Prefer English names for standardization
-
-3. **Data Types**:
-   - Correctly identify: string, integer, float, date, boolean, categorical
-   - Consider the semantic meaning, not just the format
-
-4. **Normalization**:
-   - Flatten multi-level headers into single-level columns
-   - Separate embedded aggregates from observations
-   - Remove or relocate metadata
+Your task is to design clean, normalized schemas for messy spreadsheet data by recognizing common table structure patterns and applying appropriate transformations.
 
 Be precise, practical, and output valid JSON."""
 
@@ -111,74 +91,142 @@ Be precise, practical, and output valid JSON."""
         """Create the schema estimation prompt for the LLM."""
 
         metadata = encoded_data['metadata']
-        encoded_text = encoded_data['encoded_text'][:2000]
+        df = encoded_data['dataframe']
 
-        prompt = f"""Based on the table structure analysis, design a normalized schema.
+        # 获取样本数据
+        sample_data = df.head(5).to_string() if len(df) > 0 else "No data"
 
-                ## Current Structure:
-                - Original columns: {metadata['column_names']}
-                - Structure type: {structure_analysis.get('structure_type', 'unknown')}
-                - Header rows: {structure_analysis.get('header_rows', [])}
-                - Column groups: {structure_analysis.get('column_groups', [])}
-                
-                ## Sample Data:
-                {encoded_text}
-                
-                ## Structure Analysis:
-                {json.dumps(structure_analysis.get('recommendations', []), indent=2)}
-                
-                ## Your Task:
-                Design a normalized schema that:
-                
-                1. **Flattens multi-level headers** (if any):
-                   - Combine hierarchical headers into single descriptive column names
-                   - Example: "Type of Abuse" + "Male" → "abuse_type_male"
-                
-                2. **Standardizes column names**:
-                   - Use snake_case
-                   - Remove special characters
-                   - Use English names primarily
-                   - Be descriptive but concise
-                
-                3. **Identifies data types**:
-                   - string, integer, float, date, boolean, categorical
-                   - Consider semantic meaning
-                
-                4. **Handles duplicate information**:
-                   - If same information in multiple languages, decide which to keep
-                   - Merge redundant columns if appropriate
-                
-                5. **Plans for metadata**:
-                   - Should metadata be in separate columns or removed?
-                   - How to preserve important contextual information?
-                
-                ## Output Format:
-                Provide a JSON object with this structure:
-                {{
-                    "column_schema": [
-                        {{
-                            "original_column": "name in original table",
-                            "normalized_name": "standardized_name",
-                            "data_type": "string|integer|float|date|boolean|categorical",
-                            "description": "what this column represents",
-                            "transformation": "how to derive this from original"
-                        }}
-                    ],
-                    "normalization_plan": [
-                        "step 1: ...",
-                        "step 2: ...",
-                        "step 3: ..."
-                    ],
-                    "metadata_handling": {{
-                        "strategy": "remove|separate_columns|keep_as_is",
-                        "metadata_columns": ["list of metadata to handle"],
-                        "rationale": "why this approach"
-                    }},
-                    "expected_output_columns": ["final list of column names in normalized table"],
-                    "reasoning": "brief explanation of design decisions"
-                }}
-                
-                Output ONLY the JSON object."""
+        # 分析每一列的样本值，查找潜在的分隔符
+        column_analysis = []
+        for col in df.columns:
+            non_null_values = df[col].dropna().astype(str).head(10).tolist()
+            if non_null_values:
+                # 检测分隔符
+                delimiters_found = []
+                for delimiter in [' - ', '-', ' / ', '/', '(', ')', ':', ',', '|']:
+                    if any(delimiter in str(val) for val in non_null_values):
+                        count = sum(1 for val in non_null_values if delimiter in str(val))
+                        if count >= len(non_null_values) * 0.5:  # 至少50%的值包含这个分隔符
+                            delimiters_found.append(f"{delimiter} (in {count}/{len(non_null_values)} values)")
+
+                if delimiters_found:
+                    column_analysis.append({
+                        'column': col,
+                        'potential_delimiters': delimiters_found,
+                        'sample_values': non_null_values[:3]
+                    })
+
+        delimiter_analysis = ""
+        if column_analysis:
+            delimiter_analysis = "\n## AUTOMATIC DELIMITER DETECTION:\n"
+            delimiter_analysis += "I detected these columns may need splitting:\n\n"
+            for item in column_analysis:
+                delimiter_analysis += f"Column: {item['column']}\n"
+                delimiter_analysis += f"  Delimiters found: {item['potential_delimiters']}\n"
+                delimiter_analysis += f"  Sample values: {item['sample_values']}\n\n"
+            delimiter_analysis += "**ACTION REQUIRED**: For each column above, decide if it should be split.\n\n"
+
+        prompt = f"""Design a normalized schema for this messy spreadsheet.
+    
+    {delimiter_analysis}
+    
+    ## Current Structure:
+    - Columns: {metadata['column_names']}
+    - Structure type: {structure_analysis.get('structure_type', 'unknown')}
+    - Sample data:
+    {sample_data}
+    
+    ## CRITICAL: COMPOSITE COLUMN DETECTION
+    
+    **STEP 1: Check EVERY column for composite values**
+    
+    For EACH column, examine the sample values above and ask:
+    1. Do values contain consistent delimiters? (Look for: " - ", "-", "/", "()", ":", etc.)
+    2. Do values have a pattern like "A - B", "A/B", "A (B)"?
+    3. Does it make semantic sense to split this into multiple columns?
+    
+    **If YES to above**: This column MUST be split.
+    
+    **Example from your data**:
+    If you see values like:
+    - "Physical abuse - Male"
+    - "Financial abuse - Female"
+    - "Neglect - Male"
+    
+    This is a COMPOSITE COLUMN that MUST be split into:
+    - Part 1: "Physical abuse", "Financial abuse", "Neglect" (abuse type)
+    - Part 2: "Male", "Female", "Male" (gender)
+    
+    ## COMMON TABLE PROBLEMS & SOLUTIONS:
+    
+    ### Pattern 1: COMPOSITE COLUMNS (HIGHEST PRIORITY)
+    **Problem**: One column contains multiple pieces of information
+    **Detection**: 
+    - Values contain delimiters: " - ", "-", "/", "()", ":", ",", "|"
+    - Consistent pattern across rows
+    - Semantic meaning suggests hierarchy
+    
+    **Examples**:
+    - "Physical abuse - Male" → Type="Physical abuse", Gender="Male"  
+    - "2023-Q1" → Year="2023", Quarter="Q1"
+    
+    **Solution**: MUST create split_operations entry
+    ```
+    {{
+        "source_column": "item",
+        "split_pattern": " - ",
+        "target_columns": ["item1_type", "item2_gender", "item1_type_en", "item2_gender_en"],
+        "logic": "Split on ' - ' to separate abuse type from gender, handle bilingual"
+    }}
+    ```
+    
+    ### Pattern 2: BILINGUAL COLUMNS
+    Keep both languages. For column names, use format "Chinese/English".
+    
+    ### Pattern 3-6: [其他模式保持不变...]
+    
+    ## YOUR MANDATORY CHECKLIST:
+    
+    Before designing schema, YOU MUST:
+    1. ✓ Check column "{df.columns[5] if len(df.columns) > 5 else 'item'}" - does it contain " - " delimiter?
+    2. ✓ Check column "{df.columns[6] if len(df.columns) > 6 else 'Item'}" - does it contain " - " delimiter?
+    3. ✓ For ANY column with consistent delimiters, ADD to split_operations
+    4. ✓ Count: How many target columns will result from splits?
+    5. ✓ Verify: expected_output_columns count matches your split plan
+    
+    ## Output Format:
+    
+    {{
+        "identified_patterns": [
+            {{
+                "pattern_name": "COMPOSITE_COLUMNS",
+                "affected_columns": ["list ALL columns that need splitting"],
+                "details": "what delimiter, what pattern",
+                "solution": "how to split"
+            }}
+        ],
+        "column_schema": [...],
+        "split_operations": [
+            // YOU MUST FILL THIS if any composite columns detected
+            {{
+                "source_column": "name of column to split",
+                "split_pattern": "exact delimiter",
+                "target_columns": ["new_col1", "new_col2", "new_col3", "new_col4"],
+                "logic": "detailed split logic including bilingual handling"
+            }}
+        ],
+        "normalization_plan": [
+            "Step 1: Split composite columns",
+            "Step 2: ...",
+            "..."
+        ],
+        "expected_output_columns": ["complete", "list", "of", "final", "columns"],
+        "reasoning": "Explain your decisions, especially split decisions"
+    }}
+    
+    **CRITICAL**: If you detect composite columns but don't add split_operations, the output will be WRONG.
+    
+    Output ONLY the JSON object."""
 
         return prompt
 
@@ -229,15 +277,23 @@ Be precise, practical, and output valid JSON."""
                 if 'normalized_name' in col
             ]
 
+        if 'split_operations' not in schema:
+            schema['split_operations'] = []
+
+        if 'identified_patterns' not in schema:
+            schema['identified_patterns'] = []
+
         # Validate column names
         for col_def in schema.get('column_schema', []):
             if 'normalized_name' in col_def:
                 name = col_def['normalized_name']
-                name = re.sub(r'[^a-zA-Z0-9_]', '_', name)
-                name = re.sub(r'^[0-9]', '_', name)
-                name = re.sub(r'_+', '_', name)
-                name = name.strip('_')
-                col_def['normalized_name'] = name.lower()
+                # Keep bilingual format like "年份/Year"
+                if '/' not in name:
+                    name = re.sub(r'[^a-zA-Z0-9_/]', '_', name)
+                    name = re.sub(r'^[0-9]', '_', name)
+                    name = re.sub(r'_+', '_', name)
+                    name = name.strip('_')
+                    col_def['normalized_name'] = name.lower()
 
         return schema
 
@@ -251,11 +307,12 @@ Be precise, practical, and output valid JSON."""
         column_schema = []
         for idx, col in enumerate(original_columns):
             col_name = str(col)
-            normalized = re.sub(r'[^a-zA-Z0-9_]', '_', col_name)
+            normalized = re.sub(r'[^a-zA-Z0-9_/]', '_', col_name)
             normalized = re.sub(r'_+', '_', normalized).strip('_').lower()
 
             column_schema.append({
                 'original_column': col_name,
+                'operation': 'keep',
                 'normalized_name': normalized if normalized else f'column_{idx}',
                 'data_type': 'string',
                 'description': f'Column {idx}',
@@ -263,17 +320,14 @@ Be precise, practical, and output valid JSON."""
             })
 
         return {
+            'identified_patterns': [],
             'column_schema': column_schema,
+            'split_operations': [],
             'normalization_plan': [
                 'Keep all columns as-is',
                 'Standardize column names to snake_case',
                 'Remove special characters'
             ],
-            'metadata_handling': {
-                'strategy': 'keep_as_is',
-                'metadata_columns': [],
-                'rationale': 'Default fallback strategy'
-            },
             'expected_output_columns': [col['normalized_name'] for col in column_schema],
             'reasoning': 'Default schema due to LLM error'
         }

@@ -124,26 +124,9 @@ class TransformationGenerator:
         """Get the system prompt for code generation."""
         return """You are an expert Python programmer specializing in pandas data transformations.
 
-Your task is to write clean, efficient Python code that transforms messy spreadsheet data into normalized tables.
+Your task is to write clean, efficient Python code that transforms messy spreadsheet data into normalized tables using pattern-based approaches.
 
-**Requirements**:
-1. Use pandas DataFrame operations
-2. Handle edge cases (missing values, type conversions, etc.)
-3. Follow the specified schema exactly
-4. Preserve all data (no information loss)
-5. Write defensive code with error handling
-6. Include comments explaining key steps
-
-**Code Structure**:
-- Assume input DataFrame is called `df`
-- Output must be a DataFrame called `result_df`
-- Use standard pandas operations
-- No external libraries except pandas and numpy
-
-**Output Format**:
-- Provide ONLY executable Python code
-- No markdown, no explanations outside comments
-- The code should be ready to run with exec()"""
+Write defensive code with proper error handling. Output ONLY executable Python code."""
 
     def _create_code_generation_prompt(self,
                                        encoded_data: Dict[str, Any],
@@ -153,86 +136,194 @@ Your task is to write clean, efficient Python code that transforms messy spreads
         """Create the code generation prompt."""
 
         metadata = encoded_data['metadata']
+        df = encoded_data['dataframe']
 
-        prompt = f"""Generate Python code to transform this spreadsheet data into a normalized format.
+        sample_data = df.head(3).to_string()
 
-## Input Data Information:
-- Shape: {metadata['num_rows']} rows × {metadata['num_cols']} columns
-- Columns: {metadata['column_names']}
-- Sample values: {json.dumps(metadata.get('sample_values', {}), indent=2)[:500]}
+        prompt = f"""Generate Python transformation code based on the schema design.
 
-## Structure Analysis:
-- Structure type: {structure_analysis.get('structure_type', 'unknown')}
-- Header rows: {structure_analysis.get('header_rows', [])}
-- Data rows: {structure_analysis.get('data_rows', 'unknown')}
-- Metadata rows: {structure_analysis.get('metadata_rows', [])}
-- Aggregate rows: {structure_analysis.get('aggregate_rows', [])}
+## Current Data:
+- Shape: {df.shape}
+- Columns: {df.columns.tolist()}
+- Sample:
+{sample_data}
+
+## Identified Patterns:
+{json.dumps(schema.get('identified_patterns', []), indent=2)}
 
 ## Target Schema:
-{json.dumps(schema.get('column_schema', []), indent=2)[:1000]}
+{json.dumps(schema.get('column_schema', []), indent=2)[:1500]}
 
-## Expected Output Columns:
+## Split Operations Required:
+{json.dumps(schema.get('split_operations', []), indent=2)}
+
+## Expected Output:
 {schema.get('expected_output_columns', [])}
 
-## Normalization Plan:
-{json.dumps(schema.get('normalization_plan', []), indent=2)}
+---
 
-## Your Task:
-Write Python code that:
+## CODE PATTERN LIBRARY:
 
-1. **Filters rows appropriately**:
-   - Keep only data rows (exclude headers, metadata, aggregates)
-   - Header rows: {structure_analysis.get('header_rows', [])}
+### Pattern 1: Split Composite Column
+# Example: "Physical abuse - Male" to ["Physical abuse", "Male"]
 
-2. **Transforms columns**:
-   - Rename columns according to schema
-   - Convert data types as specified
-   - Handle missing/null values appropriately
+# Option A: Simple split
+parts = df['column_name'].str.split(' - ', expand=True)
+df['part1'] = parts[0].str.strip()
+df['part2'] = parts[1].str.strip() if parts.shape[1] > 1 else ''
 
-3. **Applies transformations**:
-   - Follow the normalization plan
-   - Flatten hierarchical structures if needed
-   - Merge or split columns as specified
+# Option B: Split with language detection
+def split_bilingual_item(text):
+    if pd.isna(text):
+        return '', '', '', ''
+    parts = str(text).split(' - ')
+    if len(parts) >= 2:
+        chinese_part = parts[0].strip()
+        english_part = parts[1].strip()
+        return chinese_part, '', english_part, ''
+    return text, '', '', ''
 
-4. **Validates output**:
-   - Ensure all expected columns are present
-   - Check for data integrity
-   - Handle edge cases
+df[['item1_cn', 'item2_cn', 'item1_en', 'item2_en']] = df['item'].apply(
+    lambda x: pd.Series(split_bilingual_item(x))
+)
+
+# Option C: Regex for complex patterns
+import re
+df['category'] = df['item'].str.extract(r'^([^-]+)', expand=False).str.strip()
+df['subcategory'] = df['item'].str.extract(r'-\s*(.+)$', expand=False).str.strip()
+
+---
+
+### Pattern 2: Handle Bilingual Content
+# Keep bilingual in one column
+df['year_bilingual'] = df['year_cn'] + '/' + df['year_en']
+
+# Or separate into two columns
+df['year_cn'] = df['year_bilingual'].str.split('/').str[0]
+df['year_en'] = df['year_bilingual'].str.split('/').str[1]
+
+# Or translate NaN/empty to bilingual
+df['status_cn'] = df['status'].map({{
+    True: 'Yes', False: 'No', None: 'N/A'
+}})
+df['status_en'] = df['status'].map({{
+    True: 'Yes', False: 'No', None: 'N/A'
+}})
+
+---
+
+### Pattern 3: Boolean to Categorical
+# Map boolean to text
+df['reported_cn'] = df['is_reported'].fillna(False).map({{
+    True: 'Reported', 
+    False: 'Not Reported',
+}})
+df['reported_en'] = df['is_reported'].fillna(False).map({{
+    True: 'Reported',
+    False: 'Not Reported',
+}})
+
+# Handle NaN/empty as special category
+df['reported_cn'] = df['reported_cn'].fillna('N/A')
+df['reported_en'] = df['reported_en'].fillna('N/A')
+
+---
+
+### Pattern 4: Column Reordering
+# Reorder to match expected schema
+expected_order = ['col1', 'col2', 'col3']
+df = df[expected_order]
+
+# Or use reindex with fill for missing
+df = df.reindex(columns=expected_order, fill_value='')
+
+---
+
+### Pattern 5: Remove Metadata Rows
+# Filter out metadata rows (identified in structure analysis)
+metadata_rows = {structure_analysis.get('metadata_rows', [])}
+if metadata_rows:
+    max_meta_row = max(metadata_rows) if metadata_rows else -1
+    df = df.iloc[max_meta_row + 1:].reset_index(drop=True)
+
+# Or remove by condition
+df = df[df['year'].notna() & (df['year'] != '')]
+
+---
+
+### Pattern 6: Type Conversion with Error Handling
+# Safe numeric conversion
+df['year'] = pd.to_numeric(df['year'], errors='coerce').fillna(0).astype(int)
+
+# Safe string conversion
+df['category'] = df['category'].astype(str).str.strip()
+
+# Date parsing
+df['date'] = pd.to_datetime(df['date'], errors='coerce')
+
+---
+
+## YOUR CODE GENERATION TASK:
+
+Based on the schema design above, write transformation code that:
+
+1. **Applies the split operations** specified in split_operations
+2. **Handles bilingual columns** appropriately  
+3. **Converts data types** as specified
+4. **Reorders columns** to match expected_output_columns
+5. **Handles edge cases** (NaN, empty strings, etc.)
 
 ## Code Template:
-```python
+
 import pandas as pd
 import numpy as np
+import re
 
 def transform(df):
-    # Step 1: Filter to data rows only
-    # TODO: Implement
+    # Make a copy
+    result = df.copy()
     
-    # Step 2: Select and rename columns
-    # TODO: Implement
+    # Step 1: Remove metadata rows
+    # YOUR CODE based on structure_analysis
     
-    # Step 3: Convert data types
-    # TODO: Implement
+    # Step 2: Apply split operations
+    # YOUR CODE based on split_operations from schema
+    # Use the patterns from Pattern Library above
     
-    # Step 4: Clean and validate
-    # TODO: Implement
+    # Step 3: Handle bilingual columns
+    # YOUR CODE
     
-    return result_df
+    # Step 4: Type conversions
+    # YOUR CODE
+    
+    # Step 5: Reorder columns to match expected output
+    expected_cols = {schema.get('expected_output_columns', [])}
+    
+    # Step 6: Validation
+    # Ensure all expected columns exist
+    for col in expected_cols:
+        if col not in result.columns:
+            result[col] = ''
+    
+    # Return only expected columns in correct order
+    result = result[expected_cols]
+    
+    return result
 
-# Execute transformation
+# Execute
 result_df = transform(df)
-```
 
-## Important Notes:
-- The input DataFrame is available as `df`
-- Your output MUST be assigned to `result_df`
-- Handle all edge cases
-- Preserve data integrity
-- Use try-except blocks for error-prone operations
+## CRITICAL REQUIREMENTS:
 
-{f'## Note: This is attempt {attempt + 1}. Previous attempts failed, please review and fix issues.' if attempt > 0 else ''}
+1. **Use try-except** for risky operations
+2. **Handle NaN/None** explicitly  
+3. **Validate intermediate steps** (check column counts, types)
+4. **Match expected_output_columns EXACTLY**
+5. **Document complex logic** with comments
 
-Output ONLY the Python code, no explanations, no markdown."""
+{f"## PREVIOUS ATTEMPT FAILED - Review and fix issues" if attempt > 0 else ""}
+
+Output ONLY executable Python code. No explanations outside comments."""
 
         return prompt
 
@@ -279,12 +370,17 @@ Output ONLY the Python code, no explanations, no markdown."""
             if not isinstance(result_df, pd.DataFrame):
                 raise ValueError(f"result_df is not a DataFrame, got {type(result_df)}")
 
+            if len(result_df) == 0:
+                raise ValueError("Transformation produced empty DataFrame")
+
             logger.info(f"Transformation successful. Output shape: {result_df.shape}")
             return result_df
 
         except Exception as e:
-            logger.error(f"Error executing transformation: {e}")
-            raise
+            error_msg = f"Error during transformation: {str(e)}"
+            logger.error(error_msg)
+            logger.error(f"Input shape: {df.shape}, columns: {df.columns.tolist()}")
+            raise Exception(error_msg)
 
     def _validate_output(self,
                          df_original: pd.DataFrame,
@@ -317,7 +413,7 @@ Output ONLY the Python code, no explanations, no markdown."""
 
             if output_rows < original_rows * 0.5:
                 warnings.append(
-                    f"Significant row reduction: {original_rows} → {output_rows}"
+                    f"Significant row reduction: {original_rows} -> {output_rows}"
                 )
 
         # Check 4: No all-null columns
