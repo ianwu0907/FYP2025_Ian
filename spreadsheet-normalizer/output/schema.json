@@ -1,0 +1,88 @@
+{
+  "identified_patterns": [
+    {
+      "pattern_name": "COMPOSITE_COLUMNS",
+      "affected_columns": [
+        "項目",
+        "Item"
+      ],
+      "details": "Both columns contain values that may represent a type and a gender, separated by ' - '.",
+      "solution": "Split on ' - ' to separate abuse type from gender, handle bilingual."
+    }
+  ],
+  "column_schema": [
+    {
+      "name": "year",
+      "type": "integer"
+    },
+    {
+      "name": "reported_to_police",
+      "type": "boolean"
+    },
+    {
+      "name": "category_chinese",
+      "type": "string"
+    },
+    {
+      "name": "category_english",
+      "type": "string"
+    },
+    {
+      "name": "item_type_chinese",
+      "type": "string"
+    },
+    {
+      "name": "item_type_english",
+      "type": "string"
+    },
+    {
+      "name": "gender_chinese",
+      "type": "string"
+    },
+    {
+      "name": "gender_english",
+      "type": "string"
+    },
+    {
+      "name": "number_of_cases",
+      "type": "integer"
+    }
+  ],
+  "split_operations": [
+    {
+      "source_column": "項目",
+      "split_pattern": " - ",
+      "target_columns": [
+        "item_type_chinese",
+        "gender_chinese"
+      ],
+      "logic": "Split on ' - ' to separate abuse type from gender in Chinese."
+    },
+    {
+      "source_column": "Item",
+      "split_pattern": " - ",
+      "target_columns": [
+        "item_type_english",
+        "gender_english"
+      ],
+      "logic": "Split on ' - ' to separate abuse type from gender in English."
+    }
+  ],
+  "normalization_plan": [
+    "Step 1: Split composite columns for '項目' and 'Item'.",
+    "Step 2: Create a new table for categories if necessary.",
+    "Step 3: Ensure all columns are in a normalized form with no repeating groups."
+  ],
+  "expected_output_columns": [
+    "year",
+    "reported_to_police",
+    "category_chinese",
+    "category_english",
+    "item_type_chinese",
+    "item_type_english",
+    "gender_chinese",
+    "gender_english",
+    "number_of_cases"
+  ],
+  "reasoning": "The columns '項目' and 'Item' contain composite values that can be split into separate components. This allows for better data normalization and querying capabilities. The bilingual nature of the data is preserved by creating separate columns for each language."
+}

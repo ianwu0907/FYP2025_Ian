@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "num_rows": 1320,
+    "num_cols": 8,
+    "column_names": [
+      "年份/Year",
+      "有否向警方舉報事件",
+      "Incident Being or Not Reported to Police",
+      "類別",
+      "Category",
+      "項目",
+      "Item",
+      "個案數字/No. of Cases"
+    ],
+    "dtypes": {
+      "年份/Year": "int64",
+      "有否向警方舉報事件": "object",
+      "Incident Being or Not Reported to Police": "object",
+      "類別": "object",
+      "Category": "object",
+      "項目": "object",
+      "Item": "object",
+      "個案數字/No. of Cases": "int64"
+    },
+    "null_counts": {
+      "年份/Year": 0,
+      "有否向警方舉報事件": 0,
+      "Incident Being or Not Reported to Police": 880,
+      "類別": 0,
+      "Category": 0,
+      "項目": 0,
+      "Item": 0,
+      "個案數字/No. of Cases": 0
+    },
+    "null_percentages": {
+      "年份/Year": 0.0,
+      "有否向警方舉報事件": 0.0,
+      "Incident Being or Not Reported to Police": 66.66666666666666,
+      "類別": 0.0,
+      "Category": 0.0,
+      "項目": 0.0,
+      "Item": 0.0,
+      "個案數字/No. of Cases": 0.0
+    },
+    "compression_ratio": 772.5409836065573,
+    "compression_stages": {
+      "original_tokens": 235625,
+      "after_anchors": 52,
+      "final_tokens": 305
+    },
+    "sample_values": {
+      "年份/Year": [
+        "2005",
+        "2005",
+        "2005"
+      ],
+      "有否向警方舉報事件": [
+        "不適用",
+        "不適用",
+        "不適用"
+      ],
+      "Incident Being or Not Reported to Police": [
+        "Yes",
+        "Yes",
+        "Yes"
+      ],
+      "類別": [
+        "虐待長者性質",
+        "虐待長者性質",
+        "虐待長者性質"
+      ],
+      "Category": [
+        "Type of Elder Abuse",
+        "Type of Elder Abuse",
+        "Type of Elder Abuse"
+      ],
+      "項目": [
+        "身體虐待",
+        " 精神虐待",
+        " 疏忽照顧"
+      ],
+      "Item": [
+        "Physical abuse",
+        "Psychological abuse ",
+        "Neglect"
+      ],
+      "個案數字/No. of Cases": [
+        "390",
+        "26",
+        "3"
+      ]
+    },
+    "potential_issues": [
+      "Multi-language column: 年份/Year",
+      "Multi-language column: 個案數字/No. of Cases"
+    ]
+  },
+  "encoded_text": "================================================================================\nSPREADSHEET ENCODING (SpreadsheetLLM)\n================================================================================\nCompression Ratio: 772.54x\n\n## STRUCTURAL ANCHORS\nKey Rows: [8, 16]\nKey Columns: ['A', 'H']\n\n## CELL VALUES\nUnique values: 2\n  '2005': A8, A16\n  '0': H8, H16\n\n## FORMAT REGIONS\nFormat groups: 1\n  Type: integer, Format: General\n    Ranges: A8, H8, A16 (+1)\n"
+}

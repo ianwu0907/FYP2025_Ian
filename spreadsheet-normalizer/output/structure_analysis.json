@@ -1,0 +1,41 @@
+{
+  "header_rows": [
+    8
+  ],
+  "data_rows": [],
+  "metadata_rows": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "aggregate_rows": [
+    16
+  ],
+  "column_groups": [
+    {
+      "parent_column": "年份/Year",
+      "child_columns": [
+        "有否向警方舉報事件",
+        "Incident Being or Not Reported to Police",
+        "類別",
+        "Category",
+        "項目",
+        "Item",
+        "個案數字/No. of Cases"
+      ]
+    }
+  ],
+  "structure_type": "multi_header",
+  "confidence": 0.85,
+  "recommendations": [
+    "Standardize column names to a single language.",
+    "Separate multi-language columns into distinct columns for clarity.",
+    "Ensure aggregate rows are clearly defined and separated from data rows."
+  ],
+  "reasoning": "The header row contains multi-language column names, indicating a multi-level structure. Data rows are identified below the header, while aggregate rows are present at the end. Metadata rows include structural information and notes about the dataset."
+}
