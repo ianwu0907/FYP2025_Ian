@@ -471,9 +471,7 @@ def convert_csv_to_xlsx(csv_path, xlsx_path):
         logger.error("CSV->XLSX conversion failed. Tried: %s", tried[:5])
         raise
 
-# -----------------------
-# CLI entry point
-# -----------------------
+
 def main():
     parser = argparse.ArgumentParser(description="SpreadsheetLLM runner (single-file)")
     parser.add_argument("input_file", help="Path to input XLSX or CSV")
