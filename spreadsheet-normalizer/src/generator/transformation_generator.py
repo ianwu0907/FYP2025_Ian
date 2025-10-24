@@ -135,195 +135,198 @@ Write defensive code with proper error handling. Output ONLY executable Python c
                                        attempt: int) -> str:
         """Create the code generation prompt."""
 
-        metadata = encoded_data['metadata']
         df = encoded_data['dataframe']
-
         sample_data = df.head(3).to_string()
 
+        # Extract information from schema
+        column_schema = schema.get('column_schema', [])
+        split_operations = schema.get('split_operations', [])
+        expected_cols = schema.get('expected_output_columns', [])
+        patterns = schema.get('identified_patterns', [])
+
+        # Get implicit aggregation information
+        implicit_agg = structure_analysis.get('implicit_aggregation', {})
+        has_implicit_agg = implicit_agg.get('has_implicit_aggregation', False)
+
+        # Build aggregation handling instructions (generic)
+        aggregation_handling = ""
+        if has_implicit_agg:
+            summary_rows = implicit_agg.get('summary_rows', [])
+            detail_rows = implicit_agg.get('detail_rows', [])
+            hierarchies = implicit_agg.get('aggregation_hierarchies', [])
+
+            aggregation_handling = f"""
+    ## CRITICAL: IMPLICIT AGGREGATION DETECTED
+    
+    Multiple granularity levels detected in the data. Some rows are aggregates (summaries) of other rows.
+    
+    Summary rows (indices): {summary_rows[:20]}... (total: {len(summary_rows)} rows)
+    Detail rows (indices): {detail_rows[:20]}... (total: {len(detail_rows)} rows)
+    
+    Hierarchies: {json.dumps(hierarchies[:2], indent=2, ensure_ascii=False)}
+    
+    **ACTION REQUIRED**: Remove ONLY the summary rows to avoid double-counting:
+    ```python
+    summary_indices = {summary_rows}
+    result = result.drop(index=summary_indices).reset_index(drop=True)
+    ```
+    
+    **IMPORTANT**: This only removes rows from one category hierarchy. Other independent categories should remain untouched.
+    """
+
+        # Analyze bilingual column patterns from schema
+        bilingual_cols_info = ""
+        bilingual_pairs = []
+        for col_def in column_schema:
+            col_name = col_def.get('name', '')
+            if '/' in col_name:  # Merged column name like "年份/Year"
+                parts = col_name.split('/')
+                if len(parts) == 2:
+                    # Check if original data has these as separate columns
+                    if parts[0] in df.columns and parts[1] in df.columns:
+                        bilingual_pairs.append({
+                            'merged_name': col_name,
+                            'col1': parts[0],
+                            'col2': parts[1]
+                        })
+
+        if bilingual_pairs:
+            bilingual_cols_info = f"""
+    ## DETECTED: Bilingual Column Pairs
+    
+    The schema suggests merged column names, but the original data has them as SEPARATE columns:
+    {json.dumps(bilingual_pairs, indent=2, ensure_ascii=False)}
+    
+    **DECISION**: You should decide whether to:
+    - Option A: Keep them separate (recommended if they contain different content)
+    - Option B: Merge them into one column with "col1/col2" format
+    
+    If keeping separate, adjust the expected_output_columns accordingly.
+    """
+
         prompt = f"""Generate Python transformation code based on the schema design.
-
-## Current Data:
-- Shape: {df.shape}
-- Columns: {df.columns.tolist()}
-- Sample:
-{sample_data}
-
-## Identified Patterns:
-{json.dumps(schema.get('identified_patterns', []), indent=2)}
-
-## Target Schema:
-{json.dumps(schema.get('column_schema', []), indent=2)[:1500]}
-
-## Split Operations Required:
-{json.dumps(schema.get('split_operations', []), indent=2)}
-
-## Expected Output:
-{schema.get('expected_output_columns', [])}
-
----
-
-## CODE PATTERN LIBRARY:
-
-### Pattern 1: Split Composite Column
-# Example: "Physical abuse - Male" to ["Physical abuse", "Male"]
-
-# Option A: Simple split
-parts = df['column_name'].str.split(' - ', expand=True)
-df['part1'] = parts[0].str.strip()
-df['part2'] = parts[1].str.strip() if parts.shape[1] > 1 else ''
-
-# Option B: Split with language detection
-def split_bilingual_item(text):
-    if pd.isna(text):
-        return '', '', '', ''
-    parts = str(text).split(' - ')
-    if len(parts) >= 2:
-        chinese_part = parts[0].strip()
-        english_part = parts[1].strip()
-        return chinese_part, '', english_part, ''
-    return text, '', '', ''
-
-df[['item1_cn', 'item2_cn', 'item1_en', 'item2_en']] = df['item'].apply(
-    lambda x: pd.Series(split_bilingual_item(x))
-)
-
-# Option C: Regex for complex patterns
-import re
-df['category'] = df['item'].str.extract(r'^([^-]+)', expand=False).str.strip()
-df['subcategory'] = df['item'].str.extract(r'-\s*(.+)$', expand=False).str.strip()
-
----
-
-### Pattern 2: Handle Bilingual Content
-# Keep bilingual in one column
-df['year_bilingual'] = df['year_cn'] + '/' + df['year_en']
-
-# Or separate into two columns
-df['year_cn'] = df['year_bilingual'].str.split('/').str[0]
-df['year_en'] = df['year_bilingual'].str.split('/').str[1]
-
-# Or translate NaN/empty to bilingual
-df['status_cn'] = df['status'].map({{
-    True: 'Yes', False: 'No', None: 'N/A'
-}})
-df['status_en'] = df['status'].map({{
-    True: 'Yes', False: 'No', None: 'N/A'
-}})
-
----
-
-### Pattern 3: Boolean to Categorical
-# Map boolean to text
-df['reported_cn'] = df['is_reported'].fillna(False).map({{
-    True: 'Reported', 
-    False: 'Not Reported',
-}})
-df['reported_en'] = df['is_reported'].fillna(False).map({{
-    True: 'Reported',
-    False: 'Not Reported',
-}})
-
-# Handle NaN/empty as special category
-df['reported_cn'] = df['reported_cn'].fillna('N/A')
-df['reported_en'] = df['reported_en'].fillna('N/A')
-
----
-
-### Pattern 4: Column Reordering
-# Reorder to match expected schema
-expected_order = ['col1', 'col2', 'col3']
-df = df[expected_order]
-
-# Or use reindex with fill for missing
-df = df.reindex(columns=expected_order, fill_value='')
-
----
-
-### Pattern 5: Remove Metadata Rows
-# Filter out metadata rows (identified in structure analysis)
-metadata_rows = {structure_analysis.get('metadata_rows', [])}
-if metadata_rows:
-    max_meta_row = max(metadata_rows) if metadata_rows else -1
-    df = df.iloc[max_meta_row + 1:].reset_index(drop=True)
-
-# Or remove by condition
-df = df[df['year'].notna() & (df['year'] != '')]
-
----
-
-### Pattern 6: Type Conversion with Error Handling
-# Safe numeric conversion
-df['year'] = pd.to_numeric(df['year'], errors='coerce').fillna(0).astype(int)
-
-# Safe string conversion
-df['category'] = df['category'].astype(str).str.strip()
-
-# Date parsing
-df['date'] = pd.to_datetime(df['date'], errors='coerce')
-
----
-
-## YOUR CODE GENERATION TASK:
-
-Based on the schema design above, write transformation code that:
-
-1. **Applies the split operations** specified in split_operations
-2. **Handles bilingual columns** appropriately  
-3. **Converts data types** as specified
-4. **Reorders columns** to match expected_output_columns
-5. **Handles edge cases** (NaN, empty strings, etc.)
-
-## Code Template:
-
-import pandas as pd
-import numpy as np
-import re
-
-def transform(df):
-    # Make a copy
-    result = df.copy()
     
-    # Step 1: Remove metadata rows
-    # YOUR CODE based on structure_analysis
+    ## Current Data:
+    - Shape: {df.shape}
+    - Columns: {df.columns.tolist()}
+    - Sample (first 3 rows):
+    {sample_data}
     
-    # Step 2: Apply split operations
-    # YOUR CODE based on split_operations from schema
-    # Use the patterns from Pattern Library above
+    {aggregation_handling}
     
-    # Step 3: Handle bilingual columns
-    # YOUR CODE
+    {bilingual_cols_info}
     
-    # Step 4: Type conversions
-    # YOUR CODE
+    ## Identified Patterns:
+    {json.dumps(patterns, indent=2, ensure_ascii=False)[:800]}
     
-    # Step 5: Reorder columns to match expected output
-    expected_cols = {schema.get('expected_output_columns', [])}
+    ## Column Schema (target structure):
+    {json.dumps(column_schema, indent=2, ensure_ascii=False)[:1500]}
     
-    # Step 6: Validation
-    # Ensure all expected columns exist
-    for col in expected_cols:
-        if col not in result.columns:
-            result[col] = ''
+    ## Split Operations (if any):
+    {json.dumps(split_operations, indent=2, ensure_ascii=False)}
     
-    # Return only expected columns in correct order
-    result = result[expected_cols]
+    ## Expected Output Columns:
+    {expected_cols}
     
-    return result
-
-# Execute
-result_df = transform(df)
-
-## CRITICAL REQUIREMENTS:
-
-1. **Use try-except** for risky operations
-2. **Handle NaN/None** explicitly  
-3. **Validate intermediate steps** (check column counts, types)
-4. **Match expected_output_columns EXACTLY**
-5. **Document complex logic** with comments
-
-{f"## PREVIOUS ATTEMPT FAILED - Review and fix issues" if attempt > 0 else ""}
-
-Output ONLY executable Python code. No explanations outside comments."""
+    ---
+    
+    ## GENERAL TRANSFORMATION PRINCIPLES:
+    
+    ### 1. Implicit Aggregation Handling
+    - If aggregation detected above, remove summary rows FIRST
+    - Use the exact indices provided
+    - Only affects specific category hierarchies, not all data
+    
+    ### 2. Bilingual Column Handling
+    - If original data has separate language columns (e.g., "类别" and "Category")
+    - And schema suggests merged names (e.g., "类别/Category")
+    - KEEP THEM SEPARATE unless there's strong reason to merge
+    - Adjust expected_output_columns to match
+    
+    ### 3. Split Operations
+    - Apply splits specified in split_operations
+    - Handle cases where split doesn't produce expected parts (use fillna or conditionals)
+    - Preserve original column naming style when creating new columns
+    
+    ### 4. Column Mapping
+    - Map original columns to target schema
+    - If schema specifies a type (e.g., integer, boolean), convert appropriately
+    - Handle NaN/null values before type conversion
+    
+    ### 5. Edge Cases
+    - Empty strings, NaN, None values
+    - Rows with missing data
+    - Unexpected split results (fewer or more parts than expected)
+    
+    ---
+    
+    ## CODE STRUCTURE TEMPLATE:
+    ```python
+    import pandas as pd
+    import numpy as np
+    
+    def transform(df):
+        result = df.copy()
+        
+        # STEP 0: Handle implicit aggregation (if detected)
+        # Use the summary_indices provided above
+        
+        # STEP 1: Remove metadata rows (if any)
+        # Check structure_analysis for metadata_rows
+        
+        # STEP 2: Apply split operations
+        # For each split in split_operations:
+        #   - Extract source_column, split_pattern, target_columns
+        #   - Apply split
+        #   - Handle missing parts
+        
+        # STEP 3: Handle bilingual columns
+        # Decide whether to keep separate or merge
+        # Based on actual data structure
+        
+        # STEP 4: Type conversions
+        # Based on column_schema types
+        
+        # STEP 5: Column selection and ordering
+        # Build final column list from expected_output_columns
+        # Adjust if keeping bilingual columns separate
+        # Ensure all columns exist (create empty if missing)
+        
+        return result
+    
+    # Execute transformation
+    result_df = transform(df)
+    ```
+    
+    ---
+    
+    ## CODE GENERATION RULES:
+    
+    1. **Be defensive**: Wrap risky operations in try-except
+    2. **Check existence**: Verify columns exist before accessing
+    3. **Handle nulls**: fillna() before operations that require non-null
+    4. **Preserve intent**: If schema says "keep bilingual separate", do so
+    5. **Complete code**: Must end with `result_df = transform(df)`
+    6. **No truncation**: Write complete, executable code
+    
+    ## CRITICAL REMINDERS:
+    
+    - **Aggregation removal**: Only remove specific summary_indices, not entire categories
+    - **Bilingual columns**: Respect the original data structure
+    - **Split operations**: Follow the split_operations specification exactly
+    - **Expected columns**: Adjust if needed based on decisions made
+    - **Error handling**: Use try-except for operations that might fail
+    
+    {(f"## PREVIOUS ATTEMPT {attempt} FAILED"
+      f"Review the errors and fix them. Common issues:"
+      f"- Incorrect column selection removing too much data"
+      f"- Creating columns that don't match expected_output_columns"
+      f"- Not handling NaN/empty values in splits") if attempt > 0 else ""}
+    
+    ---
+    
+    **Output ONLY executable Python code. No explanations outside comments.**
+    """
 
         return prompt
 
@@ -406,14 +409,15 @@ Output ONLY executable Python code. No explanations outside comments."""
         if extra_cols:
             warnings.append(f"Extra columns in output: {extra_cols}")
 
-        # Check 3: No excessive data loss
+        # Check 3: No excessive data loss (allow reduction from summary removal)
         if self.preserve_data:
             original_rows = len(df_original)
             output_rows = len(df_normalized)
 
-            if output_rows < original_rows * 0.5:
+            # Allow up to 70% reduction (for summary row removal)
+            if output_rows < original_rows * 0.3:
                 warnings.append(
-                    f"Significant row reduction: {original_rows} -> {output_rows}"
+                    f"Significant row reduction: {original_rows} -> {output_rows} (may be due to summary removal)"
                 )
 
         # Check 4: No all-null columns

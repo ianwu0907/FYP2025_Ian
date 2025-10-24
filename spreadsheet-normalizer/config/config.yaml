@@ -3,7 +3,7 @@
 # LLM Configuration
 llm:
   temperature: 0.1
-  max_tokens: 4000
+  max_tokens: 10000
   timeout: 60
 
 # Encoder Configuration (SpreadsheetLLM)
@@ -12,9 +12,11 @@ encoder:
 
 # Structure Analyzer Configuration
 analyzer:
-  min_header_rows: 1
-  max_header_rows: 5
-  confidence_threshold: 0.7
+  detect_headers: true
+  detect_aggregates: true
+  detect_implicit_aggregates: true
+  temperature: 0.1
+  max_tokens: 3000
 
 # Schema Estimator Configuration
 estimator:
