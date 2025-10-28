@@ -1,0 +1,6 @@
+*.csv
+*.xlsx
+*.json
+/output/*.py
+*.zip
+*.env
