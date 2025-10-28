@@ -1,6 +1,6 @@
 {
   "input_file": "testdata.xlsx",
-  "start_time": "2025-10-24 16:31:20",
+  "start_time": "2025-10-28 09:31:28",
   "stages": {
     "encoding": {
       "status": "success",
@@ -8,7 +8,7 @@
         1320,
         8
       ],
-      "compression_ratio": 772.5409836065573
+      "compression_ratio": 621.7018469656992
     },
     "analysis": {
       "status": "success",
@@ -17,22 +17,25 @@
     },
     "schema": {
       "status": "success",
-      "num_columns": 9
+      "num_columns": 8
     },
     "transformation": {
       "status": "success",
       "output_shape": [
         1128,
-        9
+        8
       ],
       "validation": {
         "is_valid": true,
         "errors": [],
-        "warnings": []
+        "warnings": [],
+        "original_rows": 1320,
+        "result_rows": 1128,
+        "columns_match": true
       }
     }
   },
   "output_file": "output/test_result.csv",
-  "end_time": "2025-10-24 16:31:55",
-  "elapsed_seconds": 35.31
+  "end_time": "2025-10-28 09:34:32",
+  "elapsed_seconds": 183.61
 }

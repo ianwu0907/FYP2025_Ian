@@ -1,6 +1,6 @@
 """
-Transformation Generator Module
-Generates and executes transformation code to normalize tables
+Transformation Generator Module (FINAL VERSION)
+Uses unified metadata from encoder via schema - NO redundant analysis
 """
 
 import json
@@ -9,23 +9,23 @@ from typing import Dict, List, Any, Optional
 from openai import OpenAI
 import os
 import pandas as pd
-import re
+import numpy as np
 
 logger = logging.getLogger(__name__)
 
 
 class TransformationGenerator:
     """
-    Generates executable Python code to transform tables according to schema.
-    Executes the code and validates the output.
+    Generates transformation code using metadata from encoder (via schema).
+
+    CRITICAL PRINCIPLE:
+    This module does NOT analyze the dataframe directly.
+    It uses schema['source_metadata']['columns'] as the single source of truth.
     """
 
     def __init__(self, config: Dict[str, Any]):
-        """Initialize the transformation generator with configuration."""
+        """Initialize the transformation generator."""
         self.config = config
-        self.max_retries = config.get('max_retries', 3)
-        self.validate_output = config.get('validate_output', True)
-        self.preserve_data = config.get('preserve_data', True)
 
         # Initialize OpenAI client
         api_key = os.getenv('OPENAI_API_KEY')
@@ -39,63 +39,80 @@ class TransformationGenerator:
         self.temperature = config.get('temperature', 0.1)
         self.max_tokens = config.get('max_tokens', 4000)
 
+        # Execution settings
+        self.max_retries = config.get('max_retries', 3)
+
     def generate_and_execute(self,
                              encoded_data: Dict[str, Any],
                              structure_analysis: Dict[str, Any],
                              schema: Dict[str, Any]) -> Dict[str, Any]:
-        """Generate transformation code and execute it to produce normalized table."""
+        """Generate transformation code and execute it."""
         logger.info("Generating transformation code with LLM...")
 
-        df_original = encoded_data['dataframe']
+        # VERIFY: Check that schema has source_metadata
+        if 'source_metadata' not in schema:
+            logger.warning(
+                "schema missing 'source_metadata'. "
+                "Falling back to encoded_data['metadata']"
+            )
+            schema['source_metadata'] = encoded_data.get('metadata', {})
 
+        # Generate the transformation code
+        transformation_code = self._generate_code(encoded_data, structure_analysis, schema)
+
+        logger.info("Executing transformation code...")
+
+        # Execute with retries
         for attempt in range(self.max_retries):
             try:
-                logger.info(f"Transformation attempt {attempt + 1}/{self.max_retries}")
-
-                # Generate transformation code
-                code = self._generate_code(encoded_data, structure_analysis, schema, attempt)
-
-                # Execute the code
-                normalized_df = self._execute_transformation(code, df_original)
+                result_df = self._execute_code(transformation_code, encoded_data['dataframe'])
 
                 # Validate the result
-                if self.validate_output:
-                    validation = self._validate_output(df_original, normalized_df, schema)
-                    if not validation['is_valid']:
-                        logger.warning(f"Validation failed: {validation['errors']}")
-                        if attempt < self.max_retries - 1:
-                            continue
+                validation_result = self._validate_result(result_df, schema, encoded_data)
+
+                if validation_result['is_valid']:
+                    logger.info("Transformation executed successfully")
+                    return {
+                        'normalized_df': result_df,
+                        'transformation_code': transformation_code,
+                        'validation_result': validation_result,
+                        'attempts': attempt + 1
+                    }
                 else:
-                    validation = {'is_valid': True, 'errors': [], 'warnings': []}
-
-                # Success!
-                result = {
-                    'normalized_df': normalized_df,
-                    'transformation_code': code,
-                    'execution_log': f'Successfully transformed on attempt {attempt + 1}',
-                    'validation_result': validation
-                }
-
-                logger.info("Transformation completed successfully")
-                return result
+                    logger.warning(f"Validation failed on attempt {attempt + 1}")
+                    if attempt < self.max_retries - 1:
+                        # Regenerate code with feedback
+                        transformation_code = self._regenerate_code(
+                            encoded_data, structure_analysis, schema,
+                            transformation_code, validation_result
+                        )
+                    else:
+                        logger.error("Max retries reached, returning best effort result")
+                        return {
+                            'normalized_df': result_df,
+                            'transformation_code': transformation_code,
+                            'validation_result': validation_result,
+                            'attempts': attempt + 1
+                        }
 
             except Exception as e:
-                logger.error(f"Transformation attempt {attempt + 1} failed: {e}")
-                if attempt == self.max_retries - 1:
-                    logger.error("All transformation attempts failed, using fallback")
-                    return self._fallback_transformation(df_original, schema)
-
-        return self._fallback_transformation(df_original, schema)
+                logger.error(f"Execution failed on attempt {attempt + 1}: {e}")
+                if attempt < self.max_retries - 1:
+                    transformation_code = self._regenerate_code(
+                        encoded_data, structure_analysis, schema,
+                        transformation_code, {'error': str(e)}
+                    )
+                else:
+                    raise
 
     def _generate_code(self,
                        encoded_data: Dict[str, Any],
                        structure_analysis: Dict[str, Any],
-                       schema: Dict[str, Any],
-                       attempt: int) -> str:
-        """Generate Python transformation code using LLM."""
-        prompt = self._create_code_generation_prompt(
-            encoded_data, structure_analysis, schema, attempt
-        )
+                       schema: Dict[str, Any]) -> str:
+        """Generate the transformation code using LLM."""
+
+        # Create the prompt with metadata from schema
+        prompt = self._create_generation_prompt(encoded_data, structure_analysis, schema)
 
         try:
             response = self.client.chat.completions.create(
@@ -108,12 +125,12 @@ class TransformationGenerator:
                 max_tokens=self.max_tokens
             )
 
-            code_text = response.choices[0].message.content
-            logger.debug(f"Generated code: {code_text[:500]}...")
+            code = response.choices[0].message.content
 
-            # Extract Python code from response
-            code = self._extract_code(code_text)
+            # Extract code from markdown if present
+            code = self._extract_code(code)
 
+            logger.debug(f"Generated code:\n{code}")
             return code
 
         except Exception as e:
@@ -122,345 +139,475 @@ class TransformationGenerator:
 
     def _get_system_prompt(self) -> str:
         """Get the system prompt for code generation."""
-        return """You are an expert Python programmer specializing in pandas data transformations.
+        return """You are an expert Python programmer specializing in data transformation and pandas.
 
-Your task is to write clean, efficient Python code that transforms messy spreadsheet data into normalized tables using pattern-based approaches.
+Your task is to generate clean, efficient, and robust Python code that transforms messy spreadsheet data into normalized tables.
 
-Write defensive code with proper error handling. Output ONLY executable Python code."""
+**CRITICAL RULES:**
+1. You will receive COMPLETE metadata with ALL unique values for each column
+2. For boolean/categorical conversions, use EXACT values from the metadata
+3. Handle ALL edge cases including N/A values, whitespace, case sensitivity
+4. Generate defensive code that won't crash on unexpected input
+5. Use clear variable names and add comments for complex logic
+6. The code must define a `transform(df)` function that returns the normalized DataFrame
 
-    def _create_code_generation_prompt(self,
-                                       encoded_data: Dict[str, Any],
-                                       structure_analysis: Dict[str, Any],
-                                       schema: Dict[str, Any],
-                                       attempt: int) -> str:
-        """Create the code generation prompt."""
+**EXAMPLE - CORRECT Boolean Conversion:**
+```python
+def convert_reported_to_police(value):
+    '''Convert bilingual boolean with N/A handling
+    Based on metadata unique_values: ['不適用', '有', '沒有']
+    '''
+    if pd.isna(value):
+        return None
+    value_str = str(value).strip().lower()
+    
+    # True values (from metadata)
+    if value_str in ['有', 'yes', 'y', '是']:
+        return True
+    # False values (from metadata)
+    elif value_str in ['沒有', '没有', 'no', 'n', '否']:
+        return False
+    # N/A values (from metadata)
+    elif value_str in ['不適用', '不适用', 'n/a', 'na']:
+        return None
+    else:
+        print(f"Warning: Unexpected value: {value}")
+        return None
+```
 
+**NEVER** use simple comparisons without checking metadata first.
+"""
+
+    def _create_generation_prompt(self,
+                                  encoded_data: Dict[str, Any],
+                                  structure_analysis: Dict[str, Any],
+                                  schema: Dict[str, Any]) -> str:
+        """
+        Create prompt using UNIFIED metadata from schema.
+        NO dataframe analysis here.
+        """
         df = encoded_data['dataframe']
-        sample_data = df.head(3).to_string()
+        source_metadata = schema.get('source_metadata', {})
+        columns_metadata = source_metadata.get('columns', {})
 
-        # Extract information from schema
-        column_schema = schema.get('column_schema', [])
-        split_operations = schema.get('split_operations', [])
-        expected_cols = schema.get('expected_output_columns', [])
-        patterns = schema.get('identified_patterns', [])
+        # Build type conversion guide from metadata
+        type_conversion_guide = self._build_type_conversion_guide(schema, columns_metadata)
 
-        # Get implicit aggregation information
-        implicit_agg = structure_analysis.get('implicit_aggregation', {})
-        has_implicit_agg = implicit_agg.get('has_implicit_aggregation', False)
+        prompt = f"""Generate a Python transformation function to normalize this table.
 
-        # Build aggregation handling instructions (generic)
-        aggregation_handling = ""
-        if has_implicit_agg:
-            summary_rows = implicit_agg.get('summary_rows', [])
-            detail_rows = implicit_agg.get('detail_rows', [])
-            hierarchies = implicit_agg.get('aggregation_hierarchies', [])
+## INPUT DATA SHAPE:
+- Rows: {len(df)}
+- Columns: {list(df.columns)}
 
-            aggregation_handling = f"""
-    ## CRITICAL: IMPLICIT AGGREGATION DETECTED
-    
-    Multiple granularity levels detected in the data. Some rows are aggregates (summaries) of other rows.
-    
-    Summary rows (indices): {summary_rows[:20]}... (total: {len(summary_rows)} rows)
-    Detail rows (indices): {detail_rows[:20]}... (total: {len(detail_rows)} rows)
-    
-    Hierarchies: {json.dumps(hierarchies[:2], indent=2, ensure_ascii=False)}
-    
-    **ACTION REQUIRED**: Remove ONLY the summary rows to avoid double-counting:
-    ```python
-    summary_indices = {summary_rows}
-    result = result.drop(index=summary_indices).reset_index(drop=True)
-    ```
-    
-    **IMPORTANT**: This only removes rows from one category hierarchy. Other independent categories should remain untouched.
-    """
+## IMPLICIT AGGREGATION:
+{json.dumps(structure_analysis.get('implicit_aggregation', {}), indent=2)}
 
-        # Analyze bilingual column patterns from schema
-        bilingual_cols_info = ""
-        bilingual_pairs = []
-        for col_def in column_schema:
-            col_name = col_def.get('name', '')
-            if '/' in col_name:  # Merged column name like "年份/Year"
-                parts = col_name.split('/')
-                if len(parts) == 2:
-                    # Check if original data has these as separate columns
-                    if parts[0] in df.columns and parts[1] in df.columns:
-                        bilingual_pairs.append({
-                            'merged_name': col_name,
-                            'col1': parts[0],
-                            'col2': parts[1]
-                        })
+## TRANSFORMATION SCHEMA:
+```json
+{json.dumps({
+            'column_schema': schema.get('column_schema', []),
+            'split_operations': schema.get('split_operations', []),
+            'type_conversions': schema.get('type_conversions', []),
+            'expected_output_columns': schema.get('expected_output_columns', [])
+        }, indent=2, ensure_ascii=False)}
+```
 
-        if bilingual_pairs:
-            bilingual_cols_info = f"""
-    ## DETECTED: Bilingual Column Pairs
-    
-    The schema suggests merged column names, but the original data has them as SEPARATE columns:
-    {json.dumps(bilingual_pairs, indent=2, ensure_ascii=False)}
-    
-    **DECISION**: You should decide whether to:
-    - Option A: Keep them separate (recommended if they contain different content)
-    - Option B: Merge them into one column with "col1/col2" format
-    
-    If keeping separate, adjust the expected_output_columns accordingly.
-    """
+## COMPLETE METADATA (from encoder):
+{self._build_metadata_summary(columns_metadata)}
 
-        prompt = f"""Generate Python transformation code based on the schema design.
-    
-    ## Current Data:
-    - Shape: {df.shape}
-    - Columns: {df.columns.tolist()}
-    - Sample (first 3 rows):
-    {sample_data}
-    
-    {aggregation_handling}
-    
-    {bilingual_cols_info}
-    
-    ## Identified Patterns:
-    {json.dumps(patterns, indent=2, ensure_ascii=False)[:800]}
-    
-    ## Column Schema (target structure):
-    {json.dumps(column_schema, indent=2, ensure_ascii=False)[:1500]}
-    
-    ## Split Operations (if any):
-    {json.dumps(split_operations, indent=2, ensure_ascii=False)}
-    
-    ## Expected Output Columns:
-    {expected_cols}
-    
-    ---
-    
-    ## GENERAL TRANSFORMATION PRINCIPLES:
-    
-    ### 1. Implicit Aggregation Handling
-    - If aggregation detected above, remove summary rows FIRST
-    - Use the exact indices provided
-    - Only affects specific category hierarchies, not all data
-    
-    ### 2. Bilingual Column Handling
-    - If original data has separate language columns (e.g., "类别" and "Category")
-    - And schema suggests merged names (e.g., "类别/Category")
-    - KEEP THEM SEPARATE unless there's strong reason to merge
-    - Adjust expected_output_columns to match
-    
-    ### 3. Split Operations
-    - Apply splits specified in split_operations
-    - Handle cases where split doesn't produce expected parts (use fillna or conditionals)
-    - Preserve original column naming style when creating new columns
-    
-    ### 4. Column Mapping
-    - Map original columns to target schema
-    - If schema specifies a type (e.g., integer, boolean), convert appropriately
-    - Handle NaN/null values before type conversion
-    
-    ### 5. Edge Cases
-    - Empty strings, NaN, None values
-    - Rows with missing data
-    - Unexpected split results (fewer or more parts than expected)
-    
-    ---
-    
-    ## CODE STRUCTURE TEMPLATE:
-    ```python
-    import pandas as pd
-    import numpy as np
-    
-    def transform(df):
-        result = df.copy()
-        
-        # STEP 0: Handle implicit aggregation (if detected)
-        # Use the summary_indices provided above
-        
-        # STEP 1: Remove metadata rows (if any)
-        # Check structure_analysis for metadata_rows
-        
-        # STEP 2: Apply split operations
-        # For each split in split_operations:
-        #   - Extract source_column, split_pattern, target_columns
-        #   - Apply split
-        #   - Handle missing parts
-        
-        # STEP 3: Handle bilingual columns
-        # Decide whether to keep separate or merge
-        # Based on actual data structure
-        
-        # STEP 4: Type conversions
-        # Based on column_schema types
-        
-        # STEP 5: Column selection and ordering
-        # Build final column list from expected_output_columns
-        # Adjust if keeping bilingual columns separate
-        # Ensure all columns exist (create empty if missing)
-        
-        return result
-    
-    # Execute transformation
-    result_df = transform(df)
-    ```
-    
-    ---
-    
-    ## CODE GENERATION RULES:
-    
-    1. **Be defensive**: Wrap risky operations in try-except
-    2. **Check existence**: Verify columns exist before accessing
-    3. **Handle nulls**: fillna() before operations that require non-null
-    4. **Preserve intent**: If schema says "keep bilingual separate", do so
-    5. **Complete code**: Must end with `result_df = transform(df)`
-    6. **No truncation**: Write complete, executable code
-    
-    ## CRITICAL REMINDERS:
-    
-    - **Aggregation removal**: Only remove specific summary_indices, not entire categories
-    - **Bilingual columns**: Respect the original data structure
-    - **Split operations**: Follow the split_operations specification exactly
-    - **Expected columns**: Adjust if needed based on decisions made
-    - **Error handling**: Use try-except for operations that might fail
-    
-    {(f"## PREVIOUS ATTEMPT {attempt} FAILED"
-      f"Review the errors and fix them. Common issues:"
-      f"- Incorrect column selection removing too much data"
-      f"- Creating columns that don't match expected_output_columns"
-      f"- Not handling NaN/empty values in splits") if attempt > 0 else ""}
-    
-    ---
-    
-    **Output ONLY executable Python code. No explanations outside comments.**
-    """
+## TYPE CONVERSION GUIDE (with actual values):
+{type_conversion_guide}
+
+## CODE REQUIREMENTS:
+
+1. **Function signature:**
+```python
+import pandas as pd
+import numpy as np
+
+def transform(df):
+    \"\"\"Transform messy spreadsheet to normalized table\"\"\"
+    result = df.copy()
+    # ... transformation logic ...
+    return result
+```
+
+2. **Handle implicit aggregation first:**
+```python
+# STEP 0: Remove summary rows if detected
+summary_indices = {structure_analysis.get('implicit_aggregation', {}).get('summary_rows', [])}
+if summary_indices:
+    try:
+        result = result.drop(index=summary_indices).reset_index(drop=True)
+        print(f"Removed {{len(summary_indices)}} summary rows")
+    except Exception as e:
+        print(f"Warning: Could not remove summary rows: {{e}}")
+```
+
+3. **Column splitting (based on metadata delimiters):**
+{self._generate_split_code_template(schema.get('split_operations', []), columns_metadata)}
+
+4. **Type conversions (using ACTUAL metadata values):**
+{self._generate_type_conversion_template(schema, columns_metadata)}
+
+5. **Column renaming:**
+```python
+# STEP 3: Rename columns
+rename_map = {{
+    # Build from column_schema
+}}
+result.rename(columns=rename_map, inplace=True)
+```
+
+6. **Final column selection:**
+```python
+# STEP 4: Select and order final columns
+expected_columns = {schema.get('expected_output_columns', [])}
+result = result[expected_columns]
+```
+
+## CRITICAL REQUIREMENTS:
+- Use try-except for each major transformation step
+- Print informative messages for debugging
+- Handle None/NaN appropriately
+- Reference metadata in code comments (e.g., "# Based on metadata: unique_values=['有', '沒有']")
+- Test defensive coding - don't assume data is clean
+
+Generate ONLY the Python code, no markdown formatting, no explanations.
+Start directly with import statements.
+"""
 
         return prompt
 
-    def _extract_code(self, response_text: str) -> str:
-        """Extract Python code from LLM response."""
-        response_text = response_text.strip()
+    def _build_metadata_summary(self, columns_metadata: Dict[str, Any]) -> str:
+        """Build concise metadata summary for prompt."""
+        lines = []
+        for col_name, col_meta in columns_metadata.items():
+            lines.append(f"\n{col_name}:")
+            lines.append(f"  Type: {col_meta.get('inferred_type')}")
 
-        # Remove markdown code blocks if present
-        if '```python' in response_text:
-            pattern = r'```python\s*(.*?)\s*```'
-            matches = re.findall(pattern, response_text, re.DOTALL)
-            if matches:
-                return matches[0].strip()
-        elif '```' in response_text:
-            pattern = r'```\s*(.*?)\s*```'
-            matches = re.findall(pattern, response_text, re.DOTALL)
-            if matches:
-                return matches[0].strip()
+            unique_vals = col_meta.get('unique_values', [])
+            if unique_vals and len(unique_vals) <= 20:
+                lines.append(f"  Unique values: {unique_vals}")
 
-        return response_text.strip()
+            value_counts = col_meta.get('value_counts', {})
+            if value_counts and len(value_counts) <= 10:
+                lines.append(f"  Value counts: {value_counts}")
 
-    def _execute_transformation(self, code: str, df: pd.DataFrame) -> pd.DataFrame:
+        return '\n'.join(lines)
+
+    def _build_type_conversion_guide(self,
+                                     schema: Dict[str, Any],
+                                     columns_metadata: Dict[str, Any]) -> str:
+        """Build type conversion guide from schema and metadata."""
+        lines = []
+
+        type_conversions = schema.get('type_conversions', [])
+        if not type_conversions:
+            return "No type conversions specified."
+
+        for conversion in type_conversions:
+            col_name = conversion.get('column')
+            target_type = conversion.get('target_type')
+            value_mapping = conversion.get('value_mapping', {})
+
+            lines.append(f"\n### Column: `{col_name}` → {target_type}")
+
+            # Get actual unique values from metadata
+            if col_name in columns_metadata:
+                unique_vals = columns_metadata[col_name].get('unique_values', [])
+                if unique_vals:
+                    lines.append(f"**Metadata unique values:** {unique_vals}")
+
+            # Show value mapping from schema
+            if value_mapping:
+                lines.append("**Value mapping (from schema):**")
+                for orig, mapped in value_mapping.items():
+                    lines.append(f"  `{orig}` → `{mapped}`")
+
+            # Show conversion logic
+            conversion_logic = conversion.get('conversion_logic', '')
+            if conversion_logic:
+                lines.append(f"**Logic:** {conversion_logic}")
+
+        return '\n'.join(lines)
+
+    def _generate_split_code_template(self,
+                                      split_operations: List[Dict],
+                                      columns_metadata: Dict[str, Any]) -> str:
+        """Generate code template for column splitting."""
+        if not split_operations:
+            return "# No split operations required"
+
+        lines = []
+        lines.append("# STEP 1: Split composite columns")
+        lines.append("")
+
+        for op in split_operations:
+            source = op['source_column']
+            pattern = op['split_pattern']
+            targets = op['target_columns']
+
+            # Get metadata evidence
+            evidence = ""
+            if source in columns_metadata:
+                delimiters = columns_metadata[source].get('potential_delimiters', [])
+                for delim_info in delimiters:
+                    if delim_info['delimiter'] == pattern:
+                        evidence = f"  # Metadata: {delim_info['percentage']:.0f}% frequency, {delim_info.get('num_parts', '?')} parts"
+                        break
+
+            lines.append(f"# Split {source}{evidence}")
+            lines.append(f"try:")
+            lines.append(f"    split_result = result['{source}'].str.split('{pattern}', expand=True)")
+            lines.append(f"    if split_result.shape[1] >= {len(targets)}:")
+            for idx, target in enumerate(targets):
+                lines.append(f"        result['{target}'] = split_result[{idx}]")
+            lines.append(f"        print(f'Split {source} into {len(targets)} columns')")
+            lines.append(f"    else:")
+            lines.append(f"        print(f'Warning: Split of {source} produced {{split_result.shape[1]}} columns, expected {len(targets)}')")
+            lines.append(f"except Exception as e:")
+            lines.append(f"    print(f'Error splitting {source}: {{e}}')")
+            lines.append("")
+
+        return '\n'.join(lines)
+
+    def _generate_type_conversion_template(self,
+                                           schema: Dict[str, Any],
+                                           columns_metadata: Dict[str, Any]) -> str:
+        """Generate code template for type conversions."""
+        type_conversions = schema.get('type_conversions', [])
+        if not type_conversions:
+            return "# STEP 2: No type conversions required"
+
+        lines = []
+        lines.append("# STEP 2: Type conversions")
+        lines.append("")
+        lines.append("# Define conversion helper functions")
+        lines.append("")
+
+        # Generate conversion functions
+        for conversion in type_conversions:
+            col_name = conversion.get('column')
+            target_type = conversion.get('target_type')
+            value_mapping = conversion.get('value_mapping', {})
+
+            if target_type in ['boolean', 'boolean_with_na']:
+                # Get actual unique values from metadata
+                unique_vals = []
+                if col_name in columns_metadata:
+                    unique_vals = columns_metadata[col_name].get('unique_values', [])
+
+                func_code = self._generate_boolean_converter(
+                    col_name, value_mapping, unique_vals
+                )
+                lines.append(func_code)
+                lines.append("")
+
+        lines.append("# Apply conversions")
+        for conversion in type_conversions:
+            col_name = conversion.get('column')
+            target_type = conversion.get('target_type')
+
+            if target_type in ['boolean', 'boolean_with_na']:
+                safe_name = col_name.replace(' ', '_').replace('/', '_').replace('（', '_').replace('）', '_')
+                lines.append(f"try:")
+                lines.append(f"    result['{col_name}'] = result['{col_name}'].apply(convert_{safe_name})")
+                lines.append(f"    print(f'Converted {col_name} to boolean')")
+                lines.append(f"except Exception as e:")
+                lines.append(f"    print(f'Error converting {col_name}: {{e}}')")
+
+        return '\n'.join(lines)
+
+    def _generate_boolean_converter(self,
+                                    col_name: str,
+                                    value_mapping: Dict[str, Any],
+                                    metadata_unique_vals: List[str]) -> str:
+        """Generate a boolean converter function based on metadata."""
+
+        # Create safe function name
+        safe_name = col_name.replace(' ', '_').replace('/', '_').replace('（', '_').replace('）', '_')
+
+        # Categorize values from mapping
+        true_values = []
+        false_values = []
+        na_values = []
+
+        for orig, mapped in value_mapping.items():
+            orig_lower = orig.lower().strip()
+            if mapped == True or mapped == 'True' or mapped == '1':
+                true_values.append(orig_lower)
+            elif mapped == False or mapped == 'False' or mapped == '0':
+                false_values.append(orig_lower)
+            elif mapped is None or mapped == 'None' or mapped == 'N/A':
+                na_values.append(orig_lower)
+
+        # Add common patterns not in mapping but in metadata
+        common_true = ['有', 'yes', 'y', '是', 'true', '1', 't']
+        common_false = ['沒有', '没有', 'no', 'n', '否', 'false', '0', 'f']
+        common_na = ['不適用', '不适用', 'n/a', 'na', 'not applicable', 'none', 'null']
+
+        # Expand lists with common patterns found in metadata
+        metadata_lower = [v.lower().strip() for v in metadata_unique_vals]
+        for val in common_true:
+            if val in metadata_lower and val not in true_values:
+                true_values.append(val)
+        for val in common_false:
+            if val in metadata_lower and val not in false_values:
+                false_values.append(val)
+        for val in common_na:
+            if val in metadata_lower and val not in na_values:
+                na_values.append(val)
+
+        code = f"""def convert_{safe_name}(value):
+    '''
+    Convert {col_name} to boolean
+    Based on metadata unique_values: {metadata_unique_vals}
+    Value mapping: {value_mapping}
+    '''
+    if pd.isna(value):
+        return None
+    value_str = str(value).strip().lower()
+    
+    # True values
+    if value_str in {true_values}:
+        return True
+    # False values
+    elif value_str in {false_values}:
+        return False
+    # N/A values
+    elif value_str in {na_values}:
+        return None
+    else:
+        print(f"Warning: Unexpected value in {col_name}: '{{value}}'")
+        return None"""
+
+        return code
+
+    def _extract_code(self, text: str) -> str:
+        """Extract Python code from markdown or plain text."""
+        text = text.strip()
+
+        # Remove markdown code blocks
+        if '```python' in text:
+            start = text.find('```python') + 9
+            end = text.find('```', start)
+            text = text[start:end].strip()
+        elif '```' in text:
+            start = text.find('```') + 3
+            end = text.find('```', start)
+            text = text[start:end].strip()
+
+        return text
+
+    def _execute_code(self, code: str, df: pd.DataFrame) -> pd.DataFrame:
         """Execute the transformation code safely."""
-        logger.info("Executing transformation code...")
-
-        # Prepare execution environment
+        # Create execution environment
         exec_globals = {
             'pd': pd,
-            'np': __import__('numpy'),
+            'np': np,
             'df': df.copy(),
-            'result_df': None
+            'print': print
         }
 
-        try:
-            # Execute the code
-            exec(code, exec_globals)
+        # Execute the code
+        exec(code, exec_globals)
 
-            # Get the result
-            result_df = exec_globals.get('result_df')
+        # Get the transform function
+        if 'transform' not in exec_globals:
+            raise ValueError("Generated code must define a 'transform' function")
 
-            if result_df is None:
-                raise ValueError("Transformation code did not produce 'result_df'")
+        transform_func = exec_globals['transform']
 
-            if not isinstance(result_df, pd.DataFrame):
-                raise ValueError(f"result_df is not a DataFrame, got {type(result_df)}")
+        # Execute transformation
+        result_df = transform_func(df.copy())
 
-            if len(result_df) == 0:
-                raise ValueError("Transformation produced empty DataFrame")
+        return result_df
 
-            logger.info(f"Transformation successful. Output shape: {result_df.shape}")
-            return result_df
-
-        except Exception as e:
-            error_msg = f"Error during transformation: {str(e)}"
-            logger.error(error_msg)
-            logger.error(f"Input shape: {df.shape}, columns: {df.columns.tolist()}")
-            raise Exception(error_msg)
-
-    def _validate_output(self,
-                         df_original: pd.DataFrame,
-                         df_normalized: pd.DataFrame,
-                         schema: Dict[str, Any]) -> Dict[str, Any]:
-        """Validate the transformed output."""
+    def _validate_result(self,
+                         result_df: pd.DataFrame,
+                         schema: Dict[str, Any],
+                         encoded_data: Dict[str, Any]) -> Dict[str, Any]:
+        """Validate the transformation result."""
         errors = []
         warnings = []
 
-        # Check 1: Output is not empty
-        if len(df_normalized) == 0:
-            errors.append("Output DataFrame is empty")
+        # Check if result is not empty
+        if result_df.empty:
+            errors.append("Result DataFrame is empty")
 
-        # Check 2: Has expected columns
+        # Check expected columns
         expected_cols = schema.get('expected_output_columns', [])
-        actual_cols = df_normalized.columns.tolist()
+        actual_cols = list(result_df.columns)
 
         missing_cols = set(expected_cols) - set(actual_cols)
-        if missing_cols:
-            warnings.append(f"Missing expected columns: {missing_cols}")
-
         extra_cols = set(actual_cols) - set(expected_cols)
+
+        if missing_cols:
+            errors.append(f"Missing expected columns: {missing_cols}")
+
         if extra_cols:
-            warnings.append(f"Extra columns in output: {extra_cols}")
+            warnings.append(f"Extra columns in result: {extra_cols}")
 
-        # Check 3: No excessive data loss (allow reduction from summary removal)
-        if self.preserve_data:
-            original_rows = len(df_original)
-            output_rows = len(df_normalized)
-
-            # Allow up to 70% reduction (for summary row removal)
-            if output_rows < original_rows * 0.3:
-                warnings.append(
-                    f"Significant row reduction: {original_rows} -> {output_rows} (may be due to summary removal)"
-                )
-
-        # Check 4: No all-null columns
-        null_cols = df_normalized.columns[df_normalized.isnull().all()].tolist()
-        if null_cols:
-            warnings.append(f"Columns with all null values: {null_cols}")
-
-        is_valid = len(errors) == 0
+        # Check for excessive null values
+        for col in result_df.columns:
+            null_pct = result_df[col].isnull().sum() / len(result_df) * 100
+            if null_pct > 90:
+                warnings.append(f"Column '{col}' has {null_pct:.1f}% null values")
 
         return {
-            'is_valid': is_valid,
+            'is_valid': len(errors) == 0,
             'errors': errors,
-            'warnings': warnings
+            'warnings': warnings,
+            'original_rows': len(encoded_data['dataframe']),
+            'result_rows': len(result_df),
+            'columns_match': missing_cols == set() and extra_cols == set()
         }
 
-    def _fallback_transformation(self,
-                                 df_original: pd.DataFrame,
-                                 schema: Dict[str, Any]) -> Dict[str, Any]:
-        """Fallback transformation if LLM-generated code fails."""
-        logger.warning("Using fallback transformation")
+    def _regenerate_code(self,
+                         encoded_data: Dict[str, Any],
+                         structure_analysis: Dict[str, Any],
+                         schema: Dict[str, Any],
+                         previous_code: str,
+                         feedback: Dict[str, Any]) -> str:
+        """Regenerate code with feedback from previous attempt."""
+        logger.info("Regenerating code with feedback...")
 
-        df = df_original.copy()
+        feedback_text = json.dumps(feedback, indent=2)
 
-        # Get column mapping from schema
-        column_mapping = {}
-        for col_def in schema.get('column_schema', []):
-            if 'original_column' in col_def and 'normalized_name' in col_def:
-                column_mapping[col_def['original_column']] = col_def['normalized_name']
+        prompt = f"""The previous transformation code failed. Please fix it.
 
-        # Rename columns that exist
-        existing_cols = {col: column_mapping.get(col, col) for col in df.columns if col in column_mapping}
-        df = df.rename(columns=existing_cols)
+## Previous Code:
+```python
+{previous_code}
+```
 
-        # Remove rows that are all null
-        df = df.dropna(how='all')
+## Feedback:
+{feedback_text}
 
-        return {
-            'normalized_df': df,
-            'transformation_code': '# Fallback transformation\nresult_df = df.copy()',
-            'execution_log': 'Used fallback transformation due to errors',
-            'validation_result': {
-                'is_valid': False,
-                'errors': ['Used fallback transformation'],
-                'warnings': ['Manual review recommended']
-            }
-        }
+## Schema and Metadata:
+Use the same schema and metadata as before.
+
+Generate FIXED Python code that addresses the issues.
+Output ONLY the code, no explanations.
+"""
+
+        try:
+            response = self.client.chat.completions.create(
+                model=self.model,
+                messages=[
+                    {"role": "system", "content": self._get_system_prompt()},
+                    {"role": "user", "content": prompt}
+                ],
+                temperature=self.temperature,
+                max_tokens=self.max_tokens
+            )
+
+            code = response.choices[0].message.content
+            code = self._extract_code(code)
+
+            return code
+
+        except Exception as e:
+            logger.error(f"Error regenerating code: {e}")
+            return previous_code

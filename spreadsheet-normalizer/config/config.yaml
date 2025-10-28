@@ -8,7 +8,7 @@ llm:
 
 # Encoder Configuration (SpreadsheetLLM)
 encoder:
-  anchor_neighborhood: 2  # K parameter for structural anchors
+  anchor_neighborhood: 4  # K parameter for structural anchors
 
 # Structure Analyzer Configuration
 analyzer:

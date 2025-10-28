@@ -1,6 +1,6 @@
 """
-Schema Estimator Module
-Uses LLM to propose standardized schemas for normalized tables
+Schema Estimator Module (FINAL VERSION)
+Uses complete metadata from encoder - NO redundant analysis
 """
 
 import json
@@ -15,8 +15,11 @@ logger = logging.getLogger(__name__)
 
 class SchemaEstimator:
     """
-    Estimates and proposes standardized schemas for table normalization.
-    Handles column naming, type inference, and semantic grouping.
+    Estimates schemas using COMPLETE metadata from encoder.
+
+    CRITICAL PRINCIPLE:
+    This module does NOT analyze the dataframe directly.
+    It relies entirely on encoded_data['metadata']['columns'] as the single source of truth.
     """
 
     def __init__(self, config: Dict[str, Any]):
@@ -41,10 +44,23 @@ class SchemaEstimator:
     def estimate_schema(self,
                         encoded_data: Dict[str, Any],
                         structure_analysis: Dict[str, Any]) -> Dict[str, Any]:
-        """Estimate the standardized schema for the normalized table."""
+        """
+        Estimate the standardized schema using metadata from encoder.
+
+        IMPORTANT: All data distribution info comes from encoded_data['metadata']['columns']
+        """
         logger.info("Estimating normalized schema with LLM...")
 
-        # Create schema estimation prompt
+        # VERIFY: Check if we have enhanced metadata
+        metadata = encoded_data.get('metadata', {})
+        if 'columns' not in metadata:
+            logger.error("Missing 'columns' in metadata! Encoder may not be enhanced.")
+            raise ValueError(
+                "encoded_data['metadata'] must contain 'columns' dict. "
+                "Make sure you're using the enhanced encoder."
+            )
+
+        # Create schema estimation prompt with complete metadata
         prompt = self._create_schema_prompt(encoded_data, structure_analysis)
 
         try:
@@ -83,152 +99,207 @@ class SchemaEstimator:
 
 Your task is to design clean, normalized schemas for messy spreadsheet data by recognizing common table structure patterns and applying appropriate transformations.
 
-Be precise, practical, and output valid JSON."""
+**CRITICAL RULES:**
+1. You will receive COMPLETE data distribution information including ALL unique values and frequencies
+2. For boolean/categorical columns, you MUST use the ACTUAL values from the metadata, not guess
+3. Generate transformation logic that handles ALL observed values, including edge cases like N/A
+4. The metadata provided is the ONLY source of truth - do not assume any values not shown
+5. Be precise, practical, and output valid JSON.
+"""
 
     def _create_schema_prompt(self,
                               encoded_data: Dict[str, Any],
                               structure_analysis: Dict[str, Any]) -> str:
-        """Create the schema estimation prompt for the LLM."""
-
+        """
+        Create enhanced prompt using COMPLETE metadata from encoder.
+        NO dataframe analysis here - all info from metadata.
+        """
         metadata = encoded_data['metadata']
-        df = encoded_data['dataframe']
+        columns_metadata = metadata.get('columns', {})
 
-        # 获取样本数据
-        sample_data = df.head(5).to_string() if len(df) > 0 else "No data"
+        # Build detailed column analysis from metadata
+        column_analysis_text = self._build_column_analysis_from_metadata(columns_metadata)
 
-        # 分析每一列的样本值，查找潜在的分隔符
-        column_analysis = []
-        for col in df.columns:
-            non_null_values = df[col].dropna().astype(str).head(10).tolist()
-            if non_null_values:
-                # 检测分隔符
-                delimiters_found = []
-                for delimiter in [' - ', '-', ' / ', '/', '(', ')', ':', ',', '|']:
-                    if any(delimiter in str(val) for val in non_null_values):
-                        count = sum(1 for val in non_null_values if delimiter in str(val))
-                        if count >= len(non_null_values) * 0.5:  # 至少50%的值包含这个分隔符
-                            delimiters_found.append(f"{delimiter} (in {count}/{len(non_null_values)} values)")
-
-                if delimiters_found:
-                    column_analysis.append({
-                        'column': col,
-                        'potential_delimiters': delimiters_found,
-                        'sample_values': non_null_values[:3]
-                    })
-
-        delimiter_analysis = ""
-        if column_analysis:
-            delimiter_analysis = "\n## AUTOMATIC DELIMITER DETECTION:\n"
-            delimiter_analysis += "I detected these columns may need splitting:\n\n"
-            for item in column_analysis:
-                delimiter_analysis += f"Column: {item['column']}\n"
-                delimiter_analysis += f"  Delimiters found: {item['potential_delimiters']}\n"
-                delimiter_analysis += f"  Sample values: {item['sample_values']}\n\n"
-            delimiter_analysis += "**ACTION REQUIRED**: For each column above, decide if it should be split.\n\n"
+        # Get shape info
+        num_rows = metadata.get('num_rows', 0)
+        column_names = metadata.get('column_names', [])
 
         prompt = f"""Design a normalized schema for this messy spreadsheet.
-    
-    {delimiter_analysis}
-    
-    ## Current Structure:
-    - Columns: {metadata['column_names']}
-    - Structure type: {structure_analysis.get('structure_type', 'unknown')}
-    - Sample data:
-    {sample_data}
-    
-    ## CRITICAL: COMPOSITE COLUMN DETECTION
-    
-    **STEP 1: Check EVERY column for composite values**
-    
-    For EACH column, examine the sample values above and ask:
-    1. Do values contain consistent delimiters? (Look for: " - ", "-", "/", "()", ":", etc.)
-    2. Do values have a pattern like "A - B", "A/B", "A (B)"?
-    3. Does it make semantic sense to split this into multiple columns?
-    
-    **If YES to above**: This column MUST be split.
-    
-    **Example from your data**:
-    If you see values like:
-    - "Physical abuse - Male"
-    - "Financial abuse - Female"
-    - "Neglect - Male"
-    
-    This is a COMPOSITE COLUMN that MUST be split into:
-    - Part 1: "Physical abuse", "Financial abuse", "Neglect" (abuse type)
-    - Part 2: "Male", "Female", "Male" (gender)
-    
-    ## COMMON TABLE PROBLEMS & SOLUTIONS:
-    
-    ### Pattern 1: COMPOSITE COLUMNS (HIGHEST PRIORITY)
-    **Problem**: One column contains multiple pieces of information
-    **Detection**: 
-    - Values contain delimiters: " - ", "-", "/", "()", ":", ",", "|"
-    - Consistent pattern across rows
-    - Semantic meaning suggests hierarchy
-    
-    **Examples**:
-    - "Physical abuse - Male" → Type="Physical abuse", Gender="Male"  
-    - "2023-Q1" → Year="2023", Quarter="Q1"
-    
-    **Solution**: MUST create split_operations entry
-    ```
-    {{
-        "source_column": "item",
-        "split_pattern": " - ",
-        "target_columns": ["item1_type", "item2_gender", "item1_type_en", "item2_gender_en"],
-        "logic": "Split on ' - ' to separate abuse type from gender, handle bilingual"
-    }}
-    ```
-    
-    ### Pattern 2: BILINGUAL COLUMNS
-    Keep both languages. For column names, use format "Chinese/English".
-    
-    ### Pattern 3-6: [其他模式保持不变...]
-    
-    ## YOUR MANDATORY CHECKLIST:
-    
-    Before designing schema, YOU MUST:
-    1. ✓ Check column "{df.columns[5] if len(df.columns) > 5 else 'item'}" - does it contain " - " delimiter?
-    2. ✓ Check column "{df.columns[6] if len(df.columns) > 6 else 'Item'}" - does it contain " - " delimiter?
-    3. ✓ For ANY column with consistent delimiters, ADD to split_operations
-    4. ✓ Count: How many target columns will result from splits?
-    5. ✓ Verify: expected_output_columns count matches your split plan
-    
-    ## Output Format:
-    
-    {{
-        "identified_patterns": [
-            {{
-                "pattern_name": "COMPOSITE_COLUMNS",
-                "affected_columns": ["list ALL columns that need splitting"],
-                "details": "what delimiter, what pattern",
-                "solution": "how to split"
+
+## CURRENT STRUCTURE:
+- Total rows: {num_rows}
+- Columns: {column_names}
+- Structure type: {structure_analysis.get('structure_type', 'unknown')}
+
+## COMPLETE COLUMN ANALYSIS (from encoding stage):
+{column_analysis_text}
+
+## CRITICAL INSTRUCTIONS FOR TYPE CONVERSION:
+
+### For BOOLEAN columns:
+You MUST examine the "Unique values" and "Value counts" above.
+
+**Example pattern:**
+If unique values are: ['不適用', '有', '沒有']
+With counts: {{'不適用': 440, '有': 440, '沒有': 440}}
+
+You MUST generate value_mapping like:
+```json
+{{
+  "有": true,
+  "沒有": false,
+  "不適用": null
+}}
+```
+
+**DO NOT** guess values like '是'/'否' when actual data shows '有'/'沒有'.
+
+### For CATEGORICAL columns:
+- List ALL unique values shown in metadata
+- Provide mapping if standardization is needed
+- Note frequency distribution
+
+### For COMPOSITE columns (with delimiters):
+- Check "Potential delimiters" in metadata
+- Verify split pattern with sample_split
+- Create split_operations entries
+
+## TABLE PATTERNS TO DETECT:
+
+### Pattern 1: IMPLICIT AGGREGATION
+Check structure_analysis for summary/detail rows:
+{json.dumps(structure_analysis.get('implicit_aggregation', {}), indent=2)}
+
+### Pattern 2: COMPOSITE COLUMNS  
+Check each column's "potential_delimiters" in metadata above.
+If delimiter percentage > 50%, likely needs splitting.
+
+### Pattern 3: BILINGUAL COLUMNS
+Check "has_bilingual_content" flag in metadata.
+Keep both languages where appropriate.
+
+## OUTPUT FORMAT:
+
+{{
+    "identified_patterns": [
+        {{
+            "pattern_name": "BOOLEAN_WITH_NA | COMPOSITE_COLUMNS | BILINGUAL | etc",
+            "affected_columns": ["list columns"],
+            "details": "specific characteristics from metadata",
+            "solution": "transformation approach"
+        }}
+    ],
+    "column_schema": [
+        {{
+            "original_column": "exact column name",
+            "normalized_name": "snake_case_name",
+            "data_type": "boolean_with_na | boolean | categorical | integer | numeric | string | date | identifier",
+            "unique_values": ["copy", "from", "metadata"],
+            "transformation_logic": "detailed description using ACTUAL metadata values",
+            "operation": "keep | split | merge | drop"
+        }}
+    ],
+    "split_operations": [
+        {{
+            "source_column": "column name",
+            "split_pattern": "exact delimiter from metadata",
+            "target_columns": ["new_col1", "new_col2"],
+            "logic": "detailed split logic",
+            "metadata_evidence": "cite frequency and sample_split from metadata"
+        }}
+    ],
+    "type_conversions": [
+        {{
+            "column": "exact column name",
+            "target_type": "boolean_with_na | categorical | etc",
+            "conversion_logic": "DETAILED logic using EXACT values from metadata",
+            "edge_cases": ["list edge cases from unique_values"],
+            "value_mapping": {{
+                "actual_value_1": mapped_value_1,
+                "actual_value_2": mapped_value_2
             }}
-        ],
-        "column_schema": [...],
-        "split_operations": [
-            // YOU MUST FILL THIS if any composite columns detected
-            {{
-                "source_column": "name of column to split",
-                "split_pattern": "exact delimiter",
-                "target_columns": ["new_col1", "new_col2", "new_col3", "new_col4"],
-                "logic": "detailed split logic including bilingual handling"
-            }}
-        ],
-        "normalization_plan": [
-            "Step 1: Split composite columns",
-            "Step 2: ...",
-            "..."
-        ],
-        "expected_output_columns": ["complete", "list", "of", "final", "columns"],
-        "reasoning": "Explain your decisions, especially split decisions"
-    }}
-    
-    **CRITICAL**: If you detect composite columns but don't add split_operations, the output will be WRONG.
-    
-    Output ONLY the JSON object."""
+        }}
+    ],
+    "normalization_plan": [
+        "Step 1: Remove implicit aggregation rows if detected",
+        "Step 2: Split composite columns with evidence from metadata",
+        "Step 3: Convert types using ACTUAL unique_values from metadata",
+        "..."
+    ],
+    "expected_output_columns": ["complete", "list", "of", "final", "columns"],
+    "reasoning": "Explain decisions citing specific metadata (unique_values, value_counts, delimiters)"
+}}
+
+**MANDATORY VERIFICATION:**
+✓ Have you used ACTUAL unique_values from metadata (not guessed)?
+✓ For boolean columns, does value_mapping use metadata's exact values?
+✓ For splits, did you cite the delimiter frequency from metadata?
+✓ Does your reasoning reference specific metadata fields?
+
+Output ONLY the JSON object.
+"""
 
         return prompt
+
+    def _build_column_analysis_from_metadata(self, columns_metadata: Dict[str, Any]) -> str:
+        """
+        Build column analysis text ENTIRELY from metadata.
+        NO dataframe access here.
+        """
+        lines = []
+
+        for col_name, col_meta in columns_metadata.items():
+            lines.append(f"\n### Column: `{col_name}`")
+            lines.append(f"- Data type: {col_meta.get('dtype', 'unknown')}")
+            lines.append(f"- **Inferred type: {col_meta.get('inferred_type', 'unknown')}**")
+            lines.append(f"- Unique count: {col_meta.get('unique_count', 0)}")
+            lines.append(f"- Null percentage: {col_meta.get('null_percentage', 0):.2f}%")
+
+            # Show unique values
+            unique_values = col_meta.get('unique_values', [])
+            if unique_values:
+                if col_meta.get('unique_values_truncated'):
+                    lines.append(f"- **Unique values (first 100):** {unique_values}")
+                else:
+                    lines.append(f"- **Unique values (complete):** {unique_values}")
+
+            # Show value counts
+            value_counts = col_meta.get('value_counts', {})
+            if value_counts:
+                lines.append(f"- **Value counts:**")
+                for val, count in list(value_counts.items())[:10]:
+                    lines.append(f"  - `{val}`: {count}")
+                if len(value_counts) > 10:
+                    lines.append(f"  - ... and {len(value_counts)-10} more")
+
+            # Show sample values
+            sample_values = col_meta.get('sample_values', [])
+            if sample_values:
+                lines.append(f"- Sample values: {sample_values[:5]}")
+
+            # Show potential delimiters
+            delimiters = col_meta.get('potential_delimiters', [])
+            if delimiters:
+                lines.append(f"- **Potential delimiters:**")
+                for delim_info in delimiters[:3]:
+                    lines.append(
+                        f"  - `{delim_info['delimiter']}`: "
+                        f"{delim_info['percentage']:.0f}% frequency, "
+                        f"{'consistent' if delim_info.get('is_consistent') else 'inconsistent'} splits"
+                    )
+                    if delim_info.get('sample_split'):
+                        lines.append(f"    Sample split: {delim_info['sample_split']}")
+
+            # Show bilingual flag
+            if col_meta.get('has_bilingual_content'):
+                lines.append(f"- **Contains bilingual content** (Chinese + English)")
+
+            # Show statistics for numeric columns
+            stats = col_meta.get('statistics', {})
+            if stats:
+                lines.append(f"- Statistics: min={stats.get('min')}, max={stats.get('max')}, mean={stats.get('mean'):.2f}")
+
+        return '\n'.join(lines)
 
     def _parse_llm_response(self, response_text: str) -> Dict[str, Any]:
         """Parse the LLM response and extract JSON."""
@@ -247,7 +318,6 @@ Be precise, practical, and output valid JSON."""
         except json.JSONDecodeError as e:
             logger.error(f"Failed to parse JSON: {e}")
             # Try to find JSON in the text
-            import re
             json_pattern = r'\{[^{}]*(?:\{[^{}]*\}[^{}]*)*\}'
             matches = re.findall(json_pattern, response_text, re.DOTALL)
             if matches:
@@ -263,10 +333,15 @@ Be precise, practical, and output valid JSON."""
                          schema: Dict[str, Any],
                          encoded_data: Dict[str, Any],
                          structure_analysis: Dict[str, Any]) -> Dict[str, Any]:
-        """Validate and enrich the schema result."""
+        """
+        Validate schema and add metadata reference for downstream use.
+        """
         # Ensure required fields exist
         if 'column_schema' not in schema:
             schema['column_schema'] = []
+
+        if 'type_conversions' not in schema:
+            schema['type_conversions'] = []
 
         if 'normalization_plan' not in schema:
             schema['normalization_plan'] = ['Apply default normalization']
@@ -282,6 +357,10 @@ Be precise, practical, and output valid JSON."""
 
         if 'identified_patterns' not in schema:
             schema['identified_patterns'] = []
+
+        # CRITICAL: Add reference to original metadata
+        # This ensures downstream components can access complete metadata
+        schema['source_metadata'] = encoded_data.get('metadata', {})
 
         # Validate column names
         for col_def in schema.get('column_schema', []):
@@ -301,7 +380,8 @@ Be precise, practical, and output valid JSON."""
                             encoded_data: Dict[str, Any],
                             structure_analysis: Dict[str, Any]) -> Dict[str, Any]:
         """Return a default schema if LLM fails."""
-        original_columns = encoded_data['metadata']['column_names']
+        metadata = encoded_data.get('metadata', {})
+        original_columns = metadata.get('column_names', [])
 
         # Create simple column schema
         column_schema = []
@@ -323,11 +403,13 @@ Be precise, practical, and output valid JSON."""
             'identified_patterns': [],
             'column_schema': column_schema,
             'split_operations': [],
+            'type_conversions': [],
             'normalization_plan': [
                 'Keep all columns as-is',
                 'Standardize column names to snake_case',
                 'Remove special characters'
             ],
             'expected_output_columns': [col['normalized_name'] for col in column_schema],
-            'reasoning': 'Default schema due to LLM error'
+            'reasoning': 'Default schema due to LLM error',
+            'source_metadata': metadata
         }

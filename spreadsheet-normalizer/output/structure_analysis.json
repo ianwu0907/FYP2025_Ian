@@ -18,16 +18,16 @@
   ],
   "potential_category_hierarchy": [
     {
-      "broad_category": "虐待長者性質",
-      "detailed_category": "虐待長者性質及受虐長者性別",
-      "reasoning": "The broader category describes types of elder abuse, while the detailed category includes additional dimensions such as gender."
+      "broad_category": "類別",
+      "detailed_category": "項目",
+      "reasoning": "項目 provides specific instances under the broader category of 類別."
     }
   ],
   "structure_type": "simple",
   "confidence": 0.9,
   "recommendations": [
     "Consider adding aggregate rows for better summary insights.",
-    "Review for potential additional metadata rows for clarity."
+    "Review for potential metadata rows that may provide context."
   ],
   "implicit_aggregation": {
     "has_implicit_aggregation": true,

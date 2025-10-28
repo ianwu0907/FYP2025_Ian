@@ -705,7 +705,7 @@ class SpreadsheetEncoder:
     def _extract_metadata(self, df: pd.DataFrame,
                           sheet_encoding: Dict[str, Any],
                           compression_metrics: Dict[str, Any]) -> Dict[str, Any]:
-        """Extract metadata."""
+        """Extract comprehensive metadata with complete unique values and statistics."""
         sheet_metrics = list(compression_metrics.get('sheets', {}).values())[0] if compression_metrics.get('sheets') else {}
 
         metadata = {
@@ -721,11 +721,21 @@ class SpreadsheetEncoder:
                 'after_anchors': sheet_metrics.get('after_anchor_tokens', 0),
                 'final_tokens': sheet_metrics.get('final_tokens', 0)
             },
-            'sample_values': {}
+            'sample_values': {},
+            'columns': {}  # Detailed per-column analysis
         }
 
-        # Sample values
+        # Configuration
+        max_unique_values = 100
+        sample_size = min(10000, len(df))
+        df_sample = df if len(df) <= sample_size else df.sample(sample_size)
+
+        # Analyze each column in detail
         for col in df.columns:
+            col_metadata = self._analyze_column(df[col], df_sample[col], max_unique_values)
+            metadata['columns'][col] = col_metadata
+
+            # Keep sample_values for backward compatibility
             non_null = df[col].dropna()
             if len(non_null) > 0:
                 metadata['sample_values'][col] = [str(v)[:50] for v in non_null.head(3).tolist()]
@@ -741,3 +751,212 @@ class SpreadsheetEncoder:
         metadata['potential_issues'] = issues
 
         return metadata
+
+    def _analyze_column(self, full_series: pd.Series, sample_series: pd.Series,
+                        max_unique_values: int) -> Dict[str, Any]:
+        """Analyze a single column comprehensively to collect all necessary metadata."""
+        col_metadata = {
+            'dtype': str(full_series.dtype),
+            'null_count': int(full_series.isnull().sum()),
+            'null_percentage': float(full_series.isnull().sum() / len(full_series) * 100) if len(full_series) > 0 else 0.0,
+            'unique_count': int(full_series.nunique()),
+            'unique_values': [],
+            'value_counts': {},
+            'sample_values': [],
+            'inferred_type': None,
+            'potential_delimiters': [],
+            'has_bilingual_content': False,
+            'statistics': {}
+        }
+
+        # Get unique values (limited to max_unique_values)
+        unique_vals = full_series.dropna().unique()
+        if len(unique_vals) <= max_unique_values:
+            col_metadata['unique_values'] = [str(v) for v in unique_vals]
+            col_metadata['unique_values_truncated'] = False
+
+            # Get value counts for low-cardinality columns
+            value_counts = full_series.value_counts()
+            col_metadata['value_counts'] = {
+                str(k): int(v) for k, v in value_counts.head(50).items()
+            }
+        else:
+            col_metadata['unique_values'] = [str(v) for v in unique_vals[:max_unique_values]]
+            col_metadata['unique_values_truncated'] = True
+
+        # Sample values
+        non_null_sample = sample_series.dropna().head(20)
+        col_metadata['sample_values'] = [str(v) for v in non_null_sample]
+
+        # Infer semantic type
+        col_metadata['inferred_type'] = self._infer_column_type(full_series, col_metadata)
+
+        # Detect delimiters for potential splitting
+        if col_metadata['inferred_type'] == 'string':
+            col_metadata['potential_delimiters'] = self._detect_delimiters(
+                col_metadata['sample_values']
+            )
+
+        # Check for bilingual content
+        col_metadata['has_bilingual_content'] = self._check_bilingual(
+            col_metadata['sample_values']
+        )
+
+        # Numeric statistics
+        if pd.api.types.is_numeric_dtype(full_series):
+            col_metadata['statistics'] = {
+                'min': float(full_series.min()) if not full_series.empty else None,
+                'max': float(full_series.max()) if not full_series.empty else None,
+                'mean': float(full_series.mean()) if not full_series.empty else None,
+                'median': float(full_series.median()) if not full_series.empty else None,
+                'std': float(full_series.std()) if not full_series.empty else None
+            }
+
+        return col_metadata
+
+    def _infer_column_type(self, series: pd.Series, col_metadata: Dict) -> str:
+        """Infer semantic type based on data characteristics.
+
+        Returns: boolean | boolean_with_na | categorical | integer | numeric |
+                identifier | date | year | string
+        """
+        unique_count = col_metadata['unique_count']
+        total_count = len(series)
+        unique_values = col_metadata.get('unique_values', [])
+
+        # Very low cardinality -> likely categorical or boolean
+        if unique_count <= 10:
+            unique_vals_lower = [str(v).lower().strip() for v in unique_values]
+
+            # Check for boolean patterns
+            boolean_patterns = [
+                {'yes', 'no'}, {'y', 'n'}, {'true', 'false'}, {'t', 'f'}, {'1', '0'},
+                {'是', '否'}, {'有', '沒有', '无'}, {'有', '没有'}
+            ]
+
+            # Check for N/A values
+            na_indicators = ['n/a', 'na', 'not applicable', '不適用', '不适用', 'none', 'null']
+            has_na_value = any(val in unique_vals_lower for val in na_indicators)
+
+            # Remove N/A from comparison
+            actual_vals = set(unique_vals_lower) - set(na_indicators)
+
+            # Check if matches any boolean pattern
+            for pattern in boolean_patterns:
+                if actual_vals <= pattern and len(actual_vals) >= 2:
+                    return 'boolean_with_na' if has_na_value else 'boolean'
+
+            # If only one non-NA value, might still be boolean with missing values
+            if len(actual_vals) == 1 and has_na_value:
+                single_val = list(actual_vals)[0]
+                all_boolean_vals = set()
+                for pattern in boolean_patterns:
+                    all_boolean_vals.update(pattern)
+                if single_val in all_boolean_vals:
+                    return 'boolean_with_na'
+
+            # Otherwise categorical
+            return 'categorical'
+
+        # High cardinality -> identifier
+        if unique_count / total_count > 0.95:
+            return 'identifier'
+
+        # Medium cardinality -> categorical
+        if unique_count / total_count < 0.5 and unique_count <= 50:
+            return 'categorical'
+
+        # Check pandas dtype
+        if pd.api.types.is_numeric_dtype(series):
+            if pd.api.types.is_integer_dtype(series):
+                # Could be year if values are in reasonable range
+                if not series.empty:
+                    min_val = series.min()
+                    max_val = series.max()
+                    if 1900 <= min_val <= 2100 and 1900 <= max_val <= 2100:
+                        return 'year'
+                return 'integer'
+            return 'numeric'
+
+        # Check for date patterns
+        if self._is_date_column(series):
+            return 'date'
+
+        return 'string'
+
+    def _detect_delimiters(self, sample_values: List[str]) -> List[Dict[str, Any]]:
+        """Detect potential delimiters that could be used for column splitting."""
+        if not sample_values or len(sample_values) < 3:
+            return []
+
+        delimiters_to_check = [
+            (' - ', 'space-dash-space'), ('-', 'dash'),
+            (' / ', 'space-slash-space'), ('/', 'slash'),
+            (' | ', 'space-pipe-space'), ('|', 'pipe'),
+            (':', 'colon'), (';', 'semicolon'), (',', 'comma'),
+            ('(', 'open-paren'), (')', 'close-paren')
+        ]
+
+        detected = []
+        total_values = len(sample_values)
+
+        for delimiter, name in delimiters_to_check:
+            count = sum(1 for val in sample_values if delimiter in str(val))
+            percentage = (count / total_values * 100) if total_values > 0 else 0
+
+            # Consider it a potential delimiter if it appears in at least 50% of values
+            if percentage >= 50:
+                split_counts = []
+                for val in sample_values:
+                    if delimiter in str(val):
+                        parts = str(val).split(delimiter)
+                        split_counts.append(len(parts))
+
+                # Check if split is consistent
+                is_consistent = len(set(split_counts)) == 1 if split_counts else False
+                num_parts = split_counts[0] if split_counts and is_consistent else None
+
+                detected.append({
+                    'delimiter': delimiter,
+                    'name': name,
+                    'frequency': count,
+                    'percentage': percentage,
+                    'is_consistent': is_consistent,
+                    'num_parts': num_parts,
+                    'sample_split': str(sample_values[0]).split(delimiter) if sample_values and delimiter in str(sample_values[0]) else None
+                })
+
+        # Sort by percentage descending
+        detected.sort(key=lambda x: x['percentage'], reverse=True)
+        return detected
+
+    def _check_bilingual(self, sample_values: List[str]) -> bool:
+        """Check if values contain both Chinese and English characters."""
+        if not sample_values:
+            return False
+
+        for val in sample_values[:10]:
+            val_str = str(val)
+            has_chinese = any('\u4e00' <= c <= '\u9fff' for c in val_str)
+            has_english = any(c.isalpha() and ord(c) < 128 for c in val_str)
+            if has_chinese and has_english:
+                return True
+        return False
+
+    def _is_date_column(self, series: pd.Series) -> bool:
+        """Check if column contains date values."""
+        if pd.api.types.is_datetime64_any_dtype(series):
+            return True
+
+        sample = series.dropna().head(10)
+        if len(sample) == 0:
+            return False
+
+        try:
+            parsed = pd.to_datetime(sample, errors='coerce')
+            valid_dates = parsed.notna().sum()
+            if valid_dates / len(sample) > 0.7:
+                return True
+        except:
+            pass
+        return False
