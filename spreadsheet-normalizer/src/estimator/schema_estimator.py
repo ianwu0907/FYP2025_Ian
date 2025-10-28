@@ -29,17 +29,59 @@ class SchemaEstimator:
         self.detect_types = config.get('detect_types', True)
         self.merge_similar_columns = config.get('merge_similar_columns', False)
 
-        # Initialize OpenAI client
-        api_key = os.getenv('OPENAI_API_KEY')
-        if not api_key:
-            raise ValueError("OPENAI_API_KEY environment variable not set")
+        # 🔥 支持多种 LLM 提供商
+        self.llm_provider = config.get('llm_provider', 'openai')  # 'openai', 'qwen', 'gemini', 'claude'
+        
+        if self.llm_provider == 'qwen':
+            # 使用 Qwen (通义千问)
+            api_key = os.getenv('DASHSCOPE_API_KEY')
+            if not api_key:
+                raise ValueError("DASHSCOPE_API_KEY environment variable not set")
+            
+            self.client = OpenAI(
+                api_key=api_key,
+                base_url="https://dashscope.aliyuncs.com/compatible-mode/v1"
+            )
+            self.model = config.get('model', 'qwen-max')
+            
+        elif self.llm_provider == 'gemini':
+            # 使用 Gemini (通过 API2D)
+            api_key = os.getenv('GEMINI_API_KEY')
+            if not api_key:
+                raise ValueError("GEMINI_API_KEY environment variable not set")
+            
+            self.client = OpenAI(
+                api_key=api_key,
+                base_url=os.getenv('GEMINI_BASE_URL', 'https://oa.api2d.net/v1')
+            )
+            self.model = config.get('model', 'gemini-2.0-flash-exp')
+            
+        elif self.llm_provider == 'claude':
+            # 使用 Claude (通过 API2D)
+            api_key = os.getenv('API2D_API_KEY')
+            if not api_key:
+                raise ValueError("API2D_API_KEY environment variable not set")
+            
+            self.client = OpenAI(
+                api_key=api_key,
+                base_url=os.getenv('API2D_BASE_URL', 'https://oa.api2d.net/v1')
+            )
+            self.model = config.get('model', 'claude-3-5-sonnet-20241022')
+            
+        else:
+            # 默认使用 OpenAI
+            api_key = os.getenv('OPENAI_API_KEY')
+            if not api_key:
+                raise ValueError("OPENAI_API_KEY environment variable not set")
 
-        self.client = OpenAI(api_key=api_key)
-        self.model = os.getenv('OPENAI_MODEL', 'gpt-4o-mini')
+            self.client = OpenAI(api_key=api_key)
+            self.model = config.get('model', os.getenv('OPENAI_MODEL', 'gpt-4o-mini'))
 
         # LLM settings
         self.temperature = config.get('temperature', 0.1)
         self.max_tokens = config.get('max_tokens', 4000)
+        
+        logger.info(f"Initialized SchemaEstimator with {self.llm_provider} ({self.model})")
 
     def estimate_schema(self,
                         encoded_data: Dict[str, Any],

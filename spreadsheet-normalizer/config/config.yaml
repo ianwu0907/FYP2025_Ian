@@ -2,9 +2,10 @@
 
 # LLM Configuration
 llm:
-  temperature: 0.1
-  max_tokens: 10000
-  timeout: 60
+  llm_provider: 'qwen'  # ← 改这里！
+  model: 'qwen-max'  # ← 改这里！
+  temperature: 0
+  max_tokens: 4000
 
 # Encoder Configuration (SpreadsheetLLM)
 encoder:

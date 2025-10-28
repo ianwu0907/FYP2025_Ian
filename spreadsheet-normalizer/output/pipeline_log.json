@@ -14,9 +14,12 @@
       "status": "success",
       "structure_type": "simple",
       "confidence": 0.9
+      "structure_type": "simple",
+      "confidence": 0.9
     },
     "schema": {
       "status": "success",
+      "num_columns": 8
       "num_columns": 8
     },
     "transformation": {

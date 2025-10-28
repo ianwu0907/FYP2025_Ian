@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 
 def transform(df):
-    """Transform messy spreadsheet to normalized table"""
+    """Transform messy spreadsheet data into normalized table."""
     result = df.copy()
     
     # STEP 0: Remove summary rows if detected
@@ -86,28 +86,62 @@ def transform(df):
         print(f'Converted 有否向警方舉報事件 to boolean')
     except Exception as e:
         print(f'Error converting 有否向警方舉報事件: {e}')
+    result = result.dropna(subset=[result.columns[0]]).reset_index(drop=True)
     
+    # Step 1: Keep operations - copy and rename
+    result['year'] = result['年份/Year']
+    result['category_zh'] = result['類別']
+    result['category_en'] = result['Category']
+    result['cases'] = result['個案數字/No. of Cases']
+
+    # Step 2: Split operations
+    def split_func_1(text):
+        if pd.isna(text) or text == '':
+            return pd.Series(['' for _ in range(2)])
+        text_str = str(text).strip()
+        if ' - ' in text_str:
+            parts = text_str.split(' - ', 1)
+            if len(parts) >= 2:
+                return pd.Series([p.strip() for p in parts[:2]])
+            return pd.Series([parts[0].strip(), ''])
+        return pd.Series([text_str, ''])
+    
+    result[['item_type_zh', 'item_gender_zh']] = result['項目'].apply(split_func_1)
+    
+    def split_func_2(text):
+        if pd.isna(text) or text == '':
+            return pd.Series(['' for _ in range(2)])
+        text_str = str(text).strip()
+        if ' - ' in text_str:
+            parts = text_str.split(' - ', 1)
+            if len(parts) >= 2:
+                return pd.Series([p.strip() for p in parts[:2]])
+            return pd.Series([parts[0].strip(), ''])
+        return pd.Series([text_str, ''])
+    
+    result[['item_type_en', 'item_gender_en']] = result['Item'].apply(split_func_2)
+    
+    # Step 4: Type conversions
     try:
-        result['Incident Being or Not Reported to Police'] = result['Incident Being or Not Reported to Police'].apply(convert_incident_reported)
-        print(f'Converted Incident Being or Not Reported to Police to boolean')
+        result['year'] = pd.to_numeric(result['年份/Year'], errors='coerce').fillna(0).astype(int)
+        result['reported_to_police'] = result['有否向警方舉報事件'].map({'適用': True, '不適用': False}).fillna(False)
+        result['number_of_cases'] = pd.to_numeric(result['個案數字/No. of Cases'], errors='coerce').fillna(0).astype(int)
     except Exception as e:
-        print(f'Error converting Incident Being or Not Reported to Police: {e}')
-
-    # STEP 3: Rename columns
-    rename_map = {
-        '年份/Year': 'year',
-        '有否向警方舉報事件': 'reported_to_police',
-        'Incident Being or Not Reported to Police': 'incident_reported',
-        '類別': 'category',
-        'Category': 'category_en',
-        '項目': 'item',
-        'Item': 'item_en',
-        '個案數字/No. of Cases': 'number_of_cases'
-    }
-    result.rename(columns=rename_map, inplace=True)
-
-    # STEP 4: Select and order final columns
-    expected_columns = ['year', 'reported_to_police', 'incident_reported', 'category', 'category_en', 'item', 'item_en', 'number_of_cases']
-    result = result[expected_columns]
-
+        print(f"Error during type conversions: {e}")
+    
+    # Step 5: Reorder columns to match expected output
+    expected_cols = ['year', 'reported_to_police', 'category_chinese', 'category_english', 'item_type_chinese', 'item_type_english', 'gender_chinese', 'gender_english', 'number_of_cases']
+    
+    # Step 6: Validation
+    for col in expected_cols:
+        if col not in result.columns:
+            result[col] = ''
+    
+    # Return only expected columns in correct order
+    result = result[expected_cols]
+    
     return result
+
+# Execute
+# Assuming df is already defined and contains the input data
+result_df = transform(df)
