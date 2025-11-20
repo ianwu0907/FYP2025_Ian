@@ -11,16 +11,15 @@
     {
       "parent_column": "類別",
       "child_columns": [
-        "項目",
-        "個案數字/No. of Cases"
+        "項目"
       ]
     }
   ],
   "potential_category_hierarchy": [
     {
-      "broad_category": "類別",
-      "detailed_category": "項目",
-      "reasoning": "項目 provides specific instances under the broader category of 類別."
+      "broad_category": "虐待長者性質",
+      "detailed_category": "虐待長者性質及受虐長者性別",
+      "reasoning": "The detailed category includes additional dimensions (gender) related to the broad category."
     }
   ],
   "structure_type": "simple",

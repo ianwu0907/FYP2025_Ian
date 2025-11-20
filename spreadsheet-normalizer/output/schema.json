@@ -8,8 +8,8 @@
         "項目",
         "Item"
       ],
-      "details": "有否向警方舉報事件 has three unique values indicating a boolean with NA. Incident Being or Not Reported to Police has two unique values with a significant null percentage. 項目 and Item contain composite values with potential delimiters.",
-      "solution": "Transform boolean columns using value mappings and split composite columns based on identified delimiters."
+      "details": "有否向警方舉報事件 has three unique values indicating a boolean with N/A. Incident Being or Not Reported to Police has two unique values with a significant null percentage. 項目 and Item contain composite values with potential delimiters.",
+      "solution": "Transform boolean columns using exact mappings from metadata and split composite columns based on identified delimiters."
     }
   ],
   "column_schema": [
@@ -39,7 +39,7 @@
         "2023",
         "2024"
       ],
-      "transformation_logic": "No transformation needed, keep as is.",
+      "transformation_logic": "No transformation needed, retain as is.",
       "operation": "keep"
     },
     {
@@ -62,12 +62,12 @@
         "Yes",
         "No"
       ],
-      "transformation_logic": "Map 'Yes' to true and 'No' to false.",
+      "transformation_logic": "Map 'Yes' to true and 'No' to false. Handle nulls as needed.",
       "operation": "convert"
     },
     {
       "original_column": "類別",
-      "normalized_name": "category",
+      "normalized_name": "category_zh",
       "data_type": "categorical",
       "unique_values": [
         "虐待長者性質",
@@ -75,7 +75,7 @@
         "施虐者與受虐長者關係",
         "受虐長者居住地區"
       ],
-      "transformation_logic": "No transformation needed, keep as is.",
+      "transformation_logic": "No transformation needed, retain as is.",
       "operation": "keep"
     },
     {
@@ -88,12 +88,12 @@
         "Abuser's Relationship with Elderly Person Being Abused",
         "Residential District of Elderly Person Being Abused"
       ],
-      "transformation_logic": "No transformation needed, keep as is.",
+      "transformation_logic": "No transformation needed, retain as is.",
       "operation": "keep"
     },
     {
       "original_column": "項目",
-      "normalized_name": "item",
+      "normalized_name": "item_zh",
       "data_type": "string",
       "unique_values": [
         "身體虐待",
@@ -324,7 +324,7 @@
         "257",
         "68"
       ],
-      "transformation_logic": "No transformation needed, keep as is.",
+      "transformation_logic": "No transformation needed, retain as is.",
       "operation": "keep"
     }
   ],
@@ -336,8 +336,8 @@
         "item_type",
         "gender"
       ],
-      "logic": "Split the項目 column into item_type and gender based on the delimiter ' - '.",
-      "metadata_evidence": "Delimiter ' - ' has a 60% frequency."
+      "logic": "Split the項目 column into item_type and gender based on the delimiter ' - '. This is supported by the 60% frequency of the delimiter.",
+      "metadata_evidence": "Potential delimiters show a consistent split pattern."
     },
     {
       "source_column": "Item",
@@ -346,8 +346,8 @@
         "item_type_en",
         "gender_en"
       ],
-      "logic": "Split the Item column into item_type_en and gender_en based on the delimiter ' - '.",
-      "metadata_evidence": "Delimiter ' - ' has a 60% frequency."
+      "logic": "Split the Item column into item_type_en and gender_en based on the delimiter ' - '. This is supported by the 60% frequency of the delimiter.",
+      "metadata_evidence": "Potential delimiters show a consistent split pattern."
     }
   ],
   "type_conversions": [
@@ -383,19 +383,22 @@
   "normalization_plan": [
     "Step 1: Remove implicit aggregation rows if detected.",
     "Step 2: Split composite columns with evidence from metadata.",
-    "Step 3: Convert types using ACTUAL unique_values from metadata."
+    "Step 3: Convert types using ACTUAL unique_values from metadata.",
+    "Step 4: Ensure bilingual columns are retained appropriately."
   ],
   "expected_output_columns": [
     "year",
     "reported_to_police",
     "incident_reported",
-    "category",
+    "category_zh",
     "category_en",
-    "item",
-    "item_en",
+    "item_type",
+    "gender",
+    "item_type_en",
+    "gender_en",
     "number_of_cases"
   ],
-  "reasoning": "The schema is designed to normalize the data by converting boolean columns using exact mappings from metadata, splitting composite columns based on frequent delimiters, and retaining categorical data as is. This approach ensures all unique values are preserved and accurately represented.",
+  "reasoning": "The schema design is based on the unique values and their distributions in the metadata. Boolean columns are mapped using exact values from the metadata, and composite columns are split based on frequent delimiters.",
   "source_metadata": {
     "num_rows": 1320,
     "num_cols": 8,

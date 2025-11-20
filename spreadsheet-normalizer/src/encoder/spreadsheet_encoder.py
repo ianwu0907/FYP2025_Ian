@@ -824,6 +824,16 @@ class SpreadsheetEncoder:
         total_count = len(series)
         unique_values = col_metadata.get('unique_values', [])
 
+        if pd.api.types.is_numeric_dtype(series):
+            if pd.api.types.is_integer_dtype(series):
+                # Could be year if values are in reasonable range
+                if not series.empty:
+                    min_val = series.min()
+                    max_val = series.max()
+                    if 1900 <= min_val <= 2100 and 1900 <= max_val <= 2100:
+                        return 'year'
+                return 'integer'
+            return 'numeric'
         # Very low cardinality -> likely categorical or boolean
         if unique_count <= 10:
             unique_vals_lower = [str(v).lower().strip() for v in unique_values]
@@ -858,6 +868,7 @@ class SpreadsheetEncoder:
             # Otherwise categorical
             return 'categorical'
 
+
         # High cardinality -> identifier
         if unique_count / total_count > 0.95:
             return 'identifier'
@@ -865,18 +876,6 @@ class SpreadsheetEncoder:
         # Medium cardinality -> categorical
         if unique_count / total_count < 0.5 and unique_count <= 50:
             return 'categorical'
-
-        # Check pandas dtype
-        if pd.api.types.is_numeric_dtype(series):
-            if pd.api.types.is_integer_dtype(series):
-                # Could be year if values are in reasonable range
-                if not series.empty:
-                    min_val = series.min()
-                    max_val = series.max()
-                    if 1900 <= min_val <= 2100 and 1900 <= max_val <= 2100:
-                        return 'year'
-                return 'integer'
-            return 'numeric'
 
         # Check for date patterns
         if self._is_date_column(series):

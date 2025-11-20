@@ -1,6 +1,6 @@
 {
   "input_file": "testdata.xlsx",
-  "start_time": "2025-10-28 09:31:28",
+  "start_time": "2025-11-09 16:08:31",
   "stages": {
     "encoding": {
       "status": "success",
@@ -17,13 +17,13 @@
     },
     "schema": {
       "status": "success",
-      "num_columns": 8
+      "num_columns": 10
     },
     "transformation": {
       "status": "success",
       "output_shape": [
         1128,
-        8
+        10
       ],
       "validation": {
         "is_valid": true,
@@ -36,6 +36,6 @@
     }
   },
   "output_file": "output/test_result.csv",
-  "end_time": "2025-10-28 09:34:32",
-  "elapsed_seconds": 183.61
+  "end_time": "2025-11-09 16:10:15",
+  "elapsed_seconds": 103.72
 }

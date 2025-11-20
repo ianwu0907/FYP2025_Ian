@@ -50,13 +50,13 @@ def transform(df):
         value_str = str(value).strip()
         
         # True values
-        if value_str in ['有']:
+        if value_str == '有':
             return True
         # False values
-        elif value_str in ['沒有']:
+        elif value_str == '沒有':
             return False
         # N/A values
-        elif value_str in ['不適用']:
+        elif value_str == '不適用':
             return None
         else:
             print(f"Warning: Unexpected value in 有否向警方舉報事件: '{value}'")
@@ -71,10 +71,10 @@ def transform(df):
         value_str = str(value).strip()
         
         # True values
-        if value_str in ['Yes']:
+        if value_str == 'Yes':
             return True
         # False values
-        elif value_str in ['No']:
+        elif value_str == 'No':
             return False
         else:
             print(f"Warning: Unexpected value in Incident Being or Not Reported to Police: '{value}'")
@@ -98,16 +98,14 @@ def transform(df):
         '年份/Year': 'year',
         '有否向警方舉報事件': 'reported_to_police',
         'Incident Being or Not Reported to Police': 'incident_reported',
-        '類別': 'category',
+        '類別': 'category_zh',
         'Category': 'category_en',
-        '項目': 'item',
-        'Item': 'item_en',
         '個案數字/No. of Cases': 'number_of_cases'
     }
     result.rename(columns=rename_map, inplace=True)
 
     # STEP 4: Select and order final columns
-    expected_columns = ['year', 'reported_to_police', 'incident_reported', 'category', 'category_en', 'item', 'item_en', 'number_of_cases']
+    expected_columns = ['year', 'reported_to_police', 'incident_reported', 'category_zh', 'category_en', 'item_type', 'gender', 'item_type_en', 'gender_en', 'number_of_cases']
     result = result[expected_columns]
 
     return result
