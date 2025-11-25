@@ -12,6 +12,7 @@ import tempfile
 import os
 import openpyxl
 from openpyxl.utils import get_column_letter, column_index_from_string
+from openpyxl.cell.cell import Cell
 import re
 from collections import defaultdict
 
@@ -21,12 +22,18 @@ EMAIL_REGEX = re.compile(r"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$")
 
 # ===== SpreadsheetLLM Helper Functions =====
 
-def infer_cell_data_type(cell) -> str:
+def infer_cell_data_type(cell: Cell) -> str:
+    """
+    Infers the data type of a cell based on its openpyxl data_type and value.
+    """
     if cell.value is None:
         return "empty"
+
+    # Check for email format using regex on the string value first
     if isinstance(cell.value, str) and EMAIL_REGEX.match(cell.value):
         return "email"
-    data_type = getattr(cell, "data_type", None)
+
+    data_type = cell.data_type
     if data_type == 's':
         return "text"
     elif data_type == 'n':
@@ -56,50 +63,71 @@ def infer_cell_data_type(cell) -> str:
     else:
         return "unknown"
 
-def categorize_number_format(number_format_string: str, cell) -> str:
+def categorize_number_format(number_format_string: str, cell: Cell) -> str:
+    """
+    Categorizes the number format of a cell, using the cell itself for context.
+    """
     cell_data_type = infer_cell_data_type(cell)
     if cell_data_type not in ["numeric", "datetime"]:
         return "not_applicable"
-    if number_format_string is None or str(number_format_string).lower() == "general":
+
+    if number_format_string is None or number_format_string.lower() == "general":
         if cell_data_type == "datetime":
             return "datetime_general"
         return "general"
-    if number_format_string == "@" or str(number_format_string).lower() == "text":
+
+    if number_format_string == "@" or number_format_string.lower() == "text":
         return "text_format"
-    if any(c in str(number_format_string) for c in ['$', '€', '£', '¥']):
+
+    if any(c in number_format_string for c in ['$', '€', '£', '¥']):
         return "currency"
-    if '%' in str(number_format_string):
+
+    if '%' in number_format_string:
         return "percentage"
-    nf_lower = str(number_format_string).lower()
-    if 'e+' in nf_lower or 'e-' in nf_lower:
+
+    if 'E+' in number_format_string or 'E-' in number_format_string.upper():
         return "scientific"
-    if '#' in nf_lower and '/' in nf_lower and '?' in nf_lower:
+
+    if '#' in number_format_string and '/' in number_format_string and '?' in number_format_string:
         return "fraction"
+
+    is_date_format = False
+    is_time_format = False
+    nf_lower = number_format_string.lower()
     date_keywords = ['yyyy', 'yy', 'mmmm', 'mmm', 'mm', 'dddd', 'ddd', 'dd', 'd']
+    if any(keyword in nf_lower for keyword in date_keywords):
+        is_date_format = True
+
     time_keywords = ['hh', 'h', 'ss', 's', 'am/pm', 'a/p']
-    is_date = any(k in nf_lower for k in date_keywords)
-    is_time = any(k in nf_lower for k in time_keywords)
-    if ':' in str(number_format_string):
-        tmp = str(number_format_string).replace('0','').replace('#','').replace(',','').replace('.','')
-        if ':' in tmp:
-            is_time = True
-    if is_date and is_time:
+    if any(keyword in nf_lower for keyword in time_keywords):
+        is_time_format = True
+
+    if ':' in number_format_string:
+        temp_nf = number_format_string.replace('0', '').replace('#', '').replace(',', '').replace('.', '')
+        if ':' in temp_nf:
+            is_time_format = True
+
+    if is_date_format and is_time_format:
         return "datetime_custom"
-    if is_date:
+    elif is_date_format:
         return "date_custom"
-    if is_time:
+    elif is_time_format:
         return "time_custom"
+
     if cell_data_type == "numeric":
         if number_format_string in ["0", "#,##0"]:
             return "integer"
         if number_format_string in ["0.00", "#,##0.00", "0.0", "#,##0.0"]:
             return "float"
         return "other_numeric"
+
     if cell_data_type == "datetime":
         return "other_date"
+
     return "unknown_format_category"
 
-def get_number_format_string(cell) -> str:
+def get_number_format_string(cell: Cell) -> str:
+    """Return the raw number format string for a cell."""
     try:
         nfs = cell.number_format
         if nfs is None or nfs == "":
@@ -108,13 +136,16 @@ def get_number_format_string(cell) -> str:
     except Exception:
         return "General"
 
-def detect_semantic_type(cell) -> str:
+def detect_semantic_type(cell: Cell) -> str:
+    """Infer a higher level semantic type using number format and cell value."""
     data_type = infer_cell_data_type(cell)
     if data_type == "email":
         return "email"
+
     nfs = get_number_format_string(cell)
     category = categorize_number_format(nfs, cell)
     nfs_lower = nfs.lower()
+
     if category == "percentage":
         return "percentage"
     if category == "currency":
@@ -127,12 +158,14 @@ def detect_semantic_type(cell) -> str:
         return "time"
     if category == "scientific":
         return "scientific_notation"
+
     if data_type == "numeric":
         if isinstance(cell.value, int) or category == "integer":
             return "integer"
         if isinstance(cell.value, float) or category == "float":
             return "float"
-        return "numeric"
+        return "numeric"  # Fallback
+
     return data_type
 
 def split_cell_ref(cell_ref):
@@ -181,62 +214,245 @@ def _merge_refs(refs):
                 processed.add((r, c))
     return ranges
 
-def fast_find_structural_anchors(sheet, k):
-    row_values = defaultdict(list)
-    col_values = defaultdict(list)
-    for r in range(1, min(sheet.max_row+1, 201)):
-        for c in range(1, min(sheet.max_column+1, 51)):
-            v = sheet.cell(row=r, column=c).value
-            if v is not None:
-                row_values[r].append(v)
-                col_values[c].append(v)
+def get_cell_style_key(cell: Cell):
+    """Creates a hashable key representing a cell's style for comparison."""
+    if not cell:
+        return "no_cell"
 
-    def coefficient_of_variation(values):
-        if not values or len(values) < 2:
-            return 0.0
-        try:
-            mean_val = sum(values) / len(values)
-            if mean_val == 0:
-                return 0.0
-            variance = sum((x - mean_val)**2 for x in values) / len(values)
-            std_dev = variance ** 0.5
-            return std_dev / abs(mean_val)
-        except:
-            return 0.0
+    font = cell.font
+    border = cell.border
+    fill = cell.fill
+    alignment = cell.alignment
 
-    row_cv = {}
-    for r, vals in row_values.items():
-        numeric_vals = []
-        for v in vals:
-            if isinstance(v, (int, float)):
-                numeric_vals.append(v)
-        if numeric_vals:
-            row_cv[r] = coefficient_of_variation(numeric_vals)
+    style_tuple = (
+        (font.bold, font.italic, font.underline, font.sz, str(font.color.rgb if font.color else None)),
+        (border.left.style, border.right.style, border.top.style, border.bottom.style),
+        (fill.patternType, str(fill.fgColor.rgb if fill.fgColor else None)),
+        (alignment.horizontal, alignment.vertical, alignment.wrap_text)
+    )
+    return style_tuple
 
-    col_cv = {}
-    for c, vals in col_values.items():
-        numeric_vals = []
-        for v in vals:
-            if isinstance(v, (int, float)):
-                numeric_vals.append(v)
-        if numeric_vals:
-            col_cv[c] = coefficient_of_variation(numeric_vals)
 
-    sorted_rows = sorted(row_cv.items(), key=lambda x: x[1], reverse=True)
-    sorted_cols = sorted(col_cv.items(), key=lambda x: x[1], reverse=True)
+def is_header_row(sheet, row_idx):
+    """More robust heuristics to detect header rows, as per Appendix C."""
+    num_populated = 0
+    num_bold = 0
+    num_all_caps = 0
+    num_strings = 0
+    num_centered = 0
 
-    row_anchors = [r for r, cv in sorted_rows[:k]]
-    col_anchors = [c for c, cv in sorted_cols[:k]]
+    for c in range(1, sheet.max_column + 1):
+        cell = sheet.cell(row=row_idx, column=c)
+        if cell.value is None or str(cell.value).strip() == "":
+            continue
 
-    if not row_anchors:
-        row_anchors = list(range(1, min(11, sheet.max_row+1)))
-    if not col_anchors:
-        col_anchors = list(range(1, min(11, sheet.max_column+1)))
+        num_populated += 1
+        if cell.font and cell.font.bold:
+            num_bold += 1
+        if cell.alignment and cell.alignment.horizontal == 'center':
+            num_centered += 1
 
-    return sorted(row_anchors), sorted(col_anchors)
+        if isinstance(cell.value, str):
+            num_strings += 1
+            if cell.value.isupper() and len(cell.value) > 1:
+                num_all_caps += 1
+
+    if num_populated == 0:
+        return False
+
+    if num_bold / num_populated > 0.6:
+        return True
+    if num_centered / num_populated > 0.6:
+        return True
+    if num_strings > 0 and num_all_caps / num_strings > 0.6:
+        return True
+
+    return False
+
+
+def find_boundary_candidates(sheet):
+    """
+    Identify row/column boundary candidates using enhanced heterogeneity heuristics
+    from Appendix C, including cell value, merged status, and style.
+    """
+    row_profiles = []
+    for r in range(1, sheet.max_row + 1):
+        profile = []
+        for c in range(1, sheet.max_column + 1):
+            cell = sheet.cell(row=r, column=c)
+            is_merged = any(cell.coordinate in r_ for r_ in sheet.merged_cells.ranges)
+            style_key = get_cell_style_key(cell)
+            profile.append((cell.value, is_merged, style_key))
+        row_profiles.append(profile)
+
+    col_profiles = []
+    for c in range(1, sheet.max_column + 1):
+        profile = []
+        for r in range(1, sheet.max_row + 1):
+            cell = sheet.cell(row=r, column=c)
+            is_merged = any(cell.coordinate in r_ for r_ in sheet.merged_cells.ranges)
+            style_key = get_cell_style_key(cell)
+            profile.append((cell.value, is_merged, style_key))
+        col_profiles.append(profile)
+
+    row_candidates = set()
+    for r in range(1, len(row_profiles)):
+        if row_profiles[r] != row_profiles[r - 1]:
+            row_candidates.add(r)
+            row_candidates.add(r + 1)
+
+    col_candidates = set()
+    for c in range(1, len(col_profiles)):
+        if col_profiles[c] != col_profiles[c - 1]:
+            col_candidates.add(c)
+            col_candidates.add(c + 1)
+
+    header_rows = {idx for idx in range(1, sheet.max_row + 1) if is_header_row(sheet, idx)}
+    row_candidates = {r for r in row_candidates if r not in header_rows}
+
+    candidates = []
+    if row_candidates and col_candidates:
+        rows = sorted(list(row_candidates))
+        cols = sorted(list(col_candidates))
+        for i in range(len(rows)):
+            for j in range(i + 1, len(rows)):
+                for k in range(len(cols)):
+                    for l in range(k + 1, len(cols)):
+                        candidates.append((rows[i], cols[k], rows[j], cols[l]))
+
+    candidates = filter_unreasonable_candidates(sheet, candidates)
+    candidates = filter_overlapping_candidates(sheet, candidates)
+
+    final_row_anchors = set()
+    final_col_anchors = set()
+    for r1, c1, r2, c2 in candidates:
+        final_row_anchors.add(r1)
+        final_row_anchors.add(r2)
+        final_col_anchors.add(c1)
+        final_col_anchors.add(c2)
+
+    return sorted(list(final_row_anchors)), sorted(list(final_col_anchors))
+
+
+def filter_unreasonable_candidates(sheet, candidates):
+    """Filter out candidates based on size, sparsity, and header presence."""
+    filtered = []
+    for r1, c1, r2, c2 in candidates:
+        if (r2 - r1 < 1) or (c2 - c1 < 1):
+            continue
+
+        num_cells = (r2 - r1 + 1) * (c2 - c1 + 1)
+        populated_cells = 0
+        for r in range(r1, r2 + 1):
+            for c in range(c1, c2 + 1):
+                if sheet.cell(row=r, column=c).value is not None:
+                    populated_cells += 1
+
+        if populated_cells / num_cells < 0.1:
+            continue
+
+        has_header = any(is_header_row(sheet, r) for r in range(r1, r2 + 1))
+        if not has_header:
+            continue
+
+        filtered.append((r1, c1, r2, c2))
+
+    return filtered
+
+
+def calculate_iou(box1, box2):
+    """Calculate Intersection over Union (IoU) for two bounding boxes."""
+    r1_1, c1_1, r2_1, c2_1 = box1
+    r1_2, c1_2, r2_2, c2_2 = box2
+
+    inter_r1 = max(r1_1, r1_2)
+    inter_c1 = max(c1_1, c1_2)
+    inter_r2 = min(r2_1, r2_2)
+    inter_c2 = min(c2_1, c2_2)
+
+    inter_area = max(0, inter_r2 - inter_r1 + 1) * max(0, inter_c2 - inter_c1 + 1)
+
+    area1 = (r2_1 - r1_1 + 1) * (c2_1 - c1_1 + 1)
+    area2 = (r2_2 - r1_2 + 1) * (c2_2 - c1_2 + 1)
+
+    union_area = area1 + area2 - inter_area
+
+    return inter_area / union_area if union_area > 0 else 0
+
+
+def filter_overlapping_candidates(sheet, candidates):
+    """Filter overlapping candidates using heuristics from Appendix C."""
+    if not candidates:
+        return []
+
+    scores = []
+    for r1, c1, r2, c2 in candidates:
+        score = 0
+        for r in range(r1, min(r1 + 3, r2 + 1)):
+            if is_header_row(sheet, r):
+                score += 10
+        score += (r2 - r1 + 1) * (c2 - c1 + 1)
+        scores.append(score)
+
+    indices = list(range(len(candidates)))
+    indices.sort(key=lambda i: scores[i], reverse=True)
+
+    keep = []
+    while indices:
+        current_idx = indices.pop(0)
+        keep.append(current_idx)
+
+        remaining_indices = []
+        for idx in indices:
+            iou = calculate_iou(candidates[current_idx], candidates[idx])
+            if iou < 0.5:
+                remaining_indices.append(idx)
+        indices = remaining_indices
+
+    return [candidates[i] for i in keep]
+
+
+def extract_k_neighborhood(indices, k, max_index):
+    """Expand indices with a k-neighborhood within bounds."""
+    expanded = set()
+    for idx in indices:
+        for i in range(max(1, idx - k), min(max_index + 1, idx + k + 1)):
+            expanded.add(i)
+    return sorted(expanded)
+
+
+def find_structural_anchors(sheet, k=2):
+    """Find structural anchors using boundary candidates and k-neighborhood."""
+    row_candidates, col_candidates = find_boundary_candidates(sheet)
+    row_anchors = extract_k_neighborhood(row_candidates, k, sheet.max_row)
+    col_anchors = extract_k_neighborhood(col_candidates, k, sheet.max_column)
+    return row_anchors, col_anchors
+
 
 def compress_homogeneous_regions(sheet, kept_rows, kept_cols):
-    return kept_rows, kept_cols
+    """Remove rows and columns that are homogeneous in value and format."""
+
+    def row_homogeneous(r):
+        vals = []
+        fmts = []
+        for c in kept_cols:
+            cell = sheet.cell(row=r, column=c)
+            vals.append(cell.value)
+            fmts.append(cell.number_format)
+        return len(set(vals)) <= 1 and len(set(fmts)) <= 1
+
+    def col_homogeneous(c):
+        vals = []
+        fmts = []
+        for r in kept_rows:
+            cell = sheet.cell(row=r, column=c)
+            vals.append(cell.value)
+            fmts.append(cell.number_format)
+        return len(set(vals)) <= 1 and len(set(fmts)) <= 1
+
+    filtered_rows = [r for r in kept_rows if not row_homogeneous(r)]
+    filtered_cols = [c for c in kept_cols if not col_homogeneous(c)]
+    return filtered_rows, filtered_cols
 
 def aggregate_formats(sheet, format_map):
     aggregated_formats = defaultdict(list)
@@ -418,7 +634,7 @@ def spreadsheet_llm_encode_with_helpers(excel_path, output_path=None, k=2):
         original_tokens = len(json.dumps(original_cells, ensure_ascii=False))
 
         # Find anchors
-        row_anchors, col_anchors = fast_find_structural_anchors(sheet, k)
+        row_anchors, col_anchors = find_structural_anchors(sheet, k)
         kept_rows, kept_cols = extract_cells_near_anchors(sheet, row_anchors, col_anchors, 0)
 
         if not kept_rows or not kept_cols:
