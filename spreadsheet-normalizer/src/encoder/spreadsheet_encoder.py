@@ -168,6 +168,25 @@ def detect_semantic_type(cell: Cell) -> str:
 
     return data_type
 
+
+def build_merged_lookup(sheet: openpyxl.worksheet.worksheet.Worksheet):
+    """Precompute merged cell membership for O(1) lookups."""
+    merged_lookup = {}
+
+    for m_range in sheet.merged_cells.ranges:
+        try:
+            start_val = sheet[m_range.start_cell.coordinate].value
+        except Exception:
+            start_val = None
+
+        min_col, min_row, max_col, max_row = m_range.bounds
+        for r in range(min_row, max_row + 1):
+            for c in range(min_col, max_col + 1):
+                coord = f"{get_column_letter(c)}{r}"
+                merged_lookup[coord] = (start_val, m_range)
+
+    return merged_lookup
+
 def split_cell_ref(cell_ref):
     col_str = ''.join(filter(str.isalpha, cell_ref))
     row_str = ''.join(filter(str.isdigit, cell_ref))
@@ -275,25 +294,27 @@ def find_boundary_candidates(sheet):
     Identify row/column boundary candidates using enhanced heterogeneity heuristics
     from Appendix C, including cell value, merged status, and style.
     """
-    row_profiles = []
+    merged_lookup = build_merged_lookup(sheet)
+    style_cache = {}
+    cell_cache = [[None for _ in range(sheet.max_column)] for _ in range(sheet.max_row)]
+
     for r in range(1, sheet.max_row + 1):
-        profile = []
         for c in range(1, sheet.max_column + 1):
             cell = sheet.cell(row=r, column=c)
-            is_merged = any(cell.coordinate in r_ for r_ in sheet.merged_cells.ranges)
-            style_key = get_cell_style_key(cell)
-            profile.append((cell.value, is_merged, style_key))
-        row_profiles.append(profile)
+            coord = cell.coordinate
+            is_merged = coord in merged_lookup
+            if coord not in style_cache:
+                style_cache[coord] = get_cell_style_key(cell)
+            cell_cache[r - 1][c - 1] = (cell.value, is_merged, style_cache[coord])
+
+    row_profiles = [row[:] for row in cell_cache]
 
     col_profiles = []
-    for c in range(1, sheet.max_column + 1):
-        profile = []
-        for r in range(1, sheet.max_row + 1):
-            cell = sheet.cell(row=r, column=c)
-            is_merged = any(cell.coordinate in r_ for r_ in sheet.merged_cells.ranges)
-            style_key = get_cell_style_key(cell)
-            profile.append((cell.value, is_merged, style_key))
-        col_profiles.append(profile)
+    for c in range(sheet.max_column):
+        col_profile = []
+        for r in range(sheet.max_row):
+            col_profile.append(cell_cache[r][c])
+        col_profiles.append(col_profile)
 
     row_candidates = set()
     for r in range(1, len(row_profiles)):
@@ -522,6 +543,7 @@ def aggregate_formats(sheet, format_map):
 def create_inverted_index(sheet, kept_rows, kept_cols):
     inverted_index = defaultdict(list)
     format_map = defaultdict(list)
+    merged_lookup = build_merged_lookup(sheet)
 
     for r in kept_rows:
         for c in kept_cols:
@@ -530,14 +552,8 @@ def create_inverted_index(sheet, kept_rows, kept_cols):
 
             merged_value = None
             merged_range = None
-            for m_range in sheet.merged_cells.ranges:
-                if cell.coordinate in m_range:
-                    try:
-                        merged_value = sheet[m_range.start_cell.coordinate].value
-                        merged_range = m_range
-                        break
-                    except Exception:
-                        pass
+            if cell_ref in merged_lookup:
+                merged_value, merged_range = merged_lookup[cell_ref]
 
             try:
                 if merged_value is not None:
