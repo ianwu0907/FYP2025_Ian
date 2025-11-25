@@ -763,8 +763,13 @@ class SpreadsheetEncoder:
 
     def __init__(self, config: Dict[str, Any]):
         self.config = config
-        self.k = config.get('anchor_neighborhood', 2)
-        logger.info(f"Initialized SpreadsheetEncoder with k={self.k}")
+        # Anchor neighborhood comes from the encoder section of config/config.yaml
+        # (encoder.anchor_neighborhood). Default to 2 if not provided.
+        self.k = int(config.get('anchor_neighborhood', 2) or 2)
+        logger.info(
+            "Initialized SpreadsheetEncoder with config-driven anchor_neighborhood=%s",
+            self.k,
+        )
 
     def load_file(self, file_path: str) -> pd.DataFrame:
         """Load file and convert CSV if needed."""
