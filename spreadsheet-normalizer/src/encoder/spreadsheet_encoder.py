@@ -1,10 +1,6 @@
-"""
-Spreadsheet Encoder Module - Using SpreadsheetLLM methodology
-"""
-
 import pandas as pd
 import numpy as np
-from typing import Dict, List, Any, Optional
+from typing import Dict, List, Any, Optional, Tuple
 import logging
 import json
 from pathlib import Path
@@ -408,7 +404,6 @@ def spreadsheet_llm_encode_with_helpers(excel_path, output_path=None, k=2):
         if sheet.max_row <= 1 and sheet.max_column <= 1:
             continue
 
-        # Original tokens
         original_cells = {}
         for r in range(1, sheet.max_row + 1):
             for c in range(1, sheet.max_column + 1):
@@ -417,7 +412,6 @@ def spreadsheet_llm_encode_with_helpers(excel_path, output_path=None, k=2):
                     original_cells[f"{get_column_letter(c)}{r}"] = str(v)
         original_tokens = len(json.dumps(original_cells, ensure_ascii=False))
 
-        # Find anchors
         row_anchors, col_anchors = fast_find_structural_anchors(sheet, k)
         kept_rows, kept_cols = extract_cells_near_anchors(sheet, row_anchors, col_anchors, 0)
 
@@ -427,7 +421,6 @@ def spreadsheet_llm_encode_with_helpers(excel_path, output_path=None, k=2):
 
         kept_rows, kept_cols = compress_homogeneous_regions(sheet, kept_rows, kept_cols)
 
-        # Anchor tokens
         anchor_cells = {}
         for r in kept_rows:
             for c in kept_cols:
@@ -436,23 +429,18 @@ def spreadsheet_llm_encode_with_helpers(excel_path, output_path=None, k=2):
                     anchor_cells[f"{get_column_letter(c)}{r}"] = str(v)
         anchor_tokens = len(json.dumps(anchor_cells, ensure_ascii=False))
 
-        # Inverted index
         inverted_index, format_map = create_inverted_index(sheet, kept_rows, kept_cols)
         index_tokens = len(json.dumps(inverted_index, ensure_ascii=False))
 
-        # Merge index
         merged_index = create_inverted_index_translation(inverted_index)
         merged_tokens = len(json.dumps(merged_index, ensure_ascii=False))
 
-        # Formats
         aggregated_formats = aggregate_formats(sheet, format_map)
         format_tokens = len(json.dumps(aggregated_formats, ensure_ascii=False))
 
-        # Numeric ranges
         numeric_ranges = cluster_numeric_ranges(sheet, format_map)
         numeric_tokens = len(json.dumps(numeric_ranges, ensure_ascii=False))
 
-        # Final encoding
         sheet_encoding = {
             "structural_anchors": {
                 "rows": row_anchors,
@@ -465,7 +453,6 @@ def spreadsheet_llm_encode_with_helpers(excel_path, output_path=None, k=2):
 
         final_tokens = len(json.dumps(sheet_encoding, ensure_ascii=False))
 
-        # Metrics
         compression_metrics["sheets"][sheet_name] = {
             "original_tokens": original_tokens,
             "after_anchor_tokens": anchor_tokens,
@@ -542,13 +529,24 @@ def convert_csv_to_xlsx(csv_path, xlsx_path):
 
 class SpreadsheetEncoder:
     """
-    SpreadsheetLLM-based encoder for efficient table compression.
+    SpreadsheetLLM-based encoder with bilingual column pair detection.
+    
+    Features:
+    - Efficient table compression using SpreadsheetLLM methodology
+    - Comprehensive per-column metadata analysis
+    - Automatic bilingual column pair detection
+    - Value mapping for translation pairs
     """
 
     def __init__(self, config: Dict[str, Any]):
         self.config = config
         self.k = config.get('anchor_neighborhood', 2)
-        logger.info(f"Initialized SpreadsheetEncoder with k={self.k}")
+        self.detect_bilingual_pairs = config.get('detect_bilingual_pairs', True)
+        self.bilingual_confidence_threshold = config.get('bilingual_confidence_threshold', 0.7)
+        logger.info(
+            f"Initialized SpreadsheetEncoder with k={self.k}, "
+            f"bilingual_detection={self.detect_bilingual_pairs}"
+        )
 
     def load_file(self, file_path: str) -> pd.DataFrame:
         """Load file and convert CSV if needed."""
@@ -559,7 +557,6 @@ class SpreadsheetEncoder:
 
         logger.info(f"Loading file: {file_path}")
 
-        # Handle CSV
         if file_path.suffix.lower() == '.csv':
             logger.info("Converting CSV to XLSX...")
             temp_xlsx = tempfile.NamedTemporaryFile(suffix='.xlsx', delete=False)
@@ -572,7 +569,6 @@ class SpreadsheetEncoder:
                 working_file = temp_xlsx_path
             except Exception as e:
                 logger.error(f"CSV conversion failed: {e}")
-                # Fallback
                 import chardet
                 with open(file_path, 'rb') as f:
                     result = chardet.detect(f.read(10000))
@@ -592,7 +588,6 @@ class SpreadsheetEncoder:
             working_file = str(file_path)
             self._temp_xlsx = None
 
-        # Load with pandas
         try:
             df = pd.read_excel(working_file, engine='openpyxl')
             logger.info(f"Loaded dataframe with shape {df.shape}")
@@ -603,10 +598,9 @@ class SpreadsheetEncoder:
             raise
 
     def encode(self, df: pd.DataFrame) -> Dict[str, Any]:
-        """Encode using SpreadsheetLLM methodology."""
+        """Encode using SpreadsheetLLM methodology with bilingual detection."""
         logger.info("Encoding with SpreadsheetLLM...")
 
-        # Ensure we have a file to work with
         if not hasattr(self, '_working_file') or self._working_file is None:
             temp_file = tempfile.NamedTemporaryFile(suffix='.xlsx', delete=False)
             temp_file_path = temp_file.name
@@ -615,24 +609,33 @@ class SpreadsheetEncoder:
             self._working_file = temp_file_path
             self._temp_xlsx = temp_file_path
 
-        # Run encoding
         full_encoding = spreadsheet_llm_encode_with_helpers(
             self._working_file,
             output_path=None,
             k=self.k
         )
 
-        # Extract first sheet
         sheet_name = list(full_encoding['sheets'].keys())[0] if full_encoding['sheets'] else None
         sheet_encoding = full_encoding['sheets'][sheet_name] if sheet_name else {}
 
-        # Create readable text
         encoded_text = self._create_readable_text(sheet_encoding, full_encoding['compression_metrics'])
-
-        # Extract metadata
         metadata = self._extract_metadata(df, sheet_encoding, full_encoding['compression_metrics'])
 
-        # Cleanup temp file
+        # 🔥 Detect bilingual column pairs
+        if self.detect_bilingual_pairs:
+            bilingual_pairs = self._detect_bilingual_column_pairs(df, metadata)
+            metadata['bilingual_column_pairs'] = bilingual_pairs
+            
+            if bilingual_pairs:
+                logger.info(f"✅ Detected {len(bilingual_pairs)} bilingual column pairs:")
+                for pair in bilingual_pairs:
+                    logger.info(
+                        f"  📌 {pair['chinese_column']} ↔ {pair['english_column']} "
+                        f"(confidence: {pair['confidence']:.2%})"
+                    )
+        else:
+            metadata['bilingual_column_pairs'] = []
+
         if self._temp_xlsx and Path(self._temp_xlsx).exists():
             try:
                 Path(self._temp_xlsx).unlink()
@@ -652,26 +655,235 @@ class SpreadsheetEncoder:
         logger.info(f"Encoding complete. Compression: {metadata.get('compression_ratio', 0):.2f}x")
         return result
 
+    # ===== Bilingual Detection =====
+
+    def _detect_bilingual_column_pairs(self, 
+                                       df: pd.DataFrame, 
+                                       metadata: Dict[str, Any]) -> List[Dict[str, Any]]:
+        """Detect paired Chinese-English columns."""
+        pairs = []
+        columns = df.columns.tolist()
+        columns_metadata = metadata.get('columns', {})
+        
+        mono_columns = [col for col in columns if '/' not in str(col)]
+        
+        logger.info(f"Checking {len(mono_columns)} monolingual columns for bilingual pairs...")
+        
+        for i in range(len(mono_columns)):
+            col_a = mono_columns[i]
+            start_idx = max(0, i - 3)
+            end_idx = min(len(mono_columns), i + 4)
+            
+            for j in range(start_idx, end_idx):
+                if i == j:
+                    continue
+                    
+                col_b = mono_columns[j]
+                pair_info = self._analyze_column_pair(df, col_a, col_b, columns_metadata)
+                
+                if pair_info and pair_info['confidence'] >= self.bilingual_confidence_threshold:
+                    existing = any(
+                        (p['chinese_column'] == pair_info['chinese_column'] and 
+                         p['english_column'] == pair_info['english_column'])
+                        for p in pairs
+                    )
+                    if not existing:
+                        pairs.append(pair_info)
+        
+        return pairs
+
+    def _analyze_column_pair(self,
+                            df: pd.DataFrame,
+                            col_a: str,
+                            col_b: str,
+                            columns_metadata: Dict[str, Any]) -> Optional[Dict[str, Any]]:
+        """Analyze if two columns form a bilingual pair."""
+        meta_a = columns_metadata.get(col_a, {})
+        meta_b = columns_metadata.get(col_b, {})
+        
+        lang_a = self._detect_column_language(df[col_a], meta_a)
+        lang_b = self._detect_column_language(df[col_b], meta_b)
+        
+        if not ((lang_a == 'chinese' and lang_b == 'english') or 
+                (lang_a == 'english' and lang_b == 'chinese')):
+            return None
+        
+        if lang_a == 'chinese':
+            chinese_col, english_col = col_a, col_b
+            chinese_meta, english_meta = meta_a, meta_b
+        else:
+            chinese_col, english_col = col_b, col_a
+            chinese_meta, english_meta = meta_b, meta_a
+        
+        unique_chinese = chinese_meta.get('unique_count', 0)
+        unique_english = english_meta.get('unique_count', 0)
+        
+        if unique_chinese == 0 or unique_english == 0:
+            return None
+        
+        count_ratio = min(unique_chinese, unique_english) / max(unique_chinese, unique_english)
+        if count_ratio < 0.8:
+            return None
+        
+        value_mapping, mapping_confidence = self._build_value_mapping(
+            df[chinese_col], df[english_col]
+        )
+        
+        if mapping_confidence < 0.6:
+            return None
+        
+        name_similarity = self._compute_column_name_similarity(chinese_col, english_col)
+        
+        confidence = (
+            mapping_confidence * 0.7 +
+            count_ratio * 0.2 +
+            name_similarity * 0.1
+        )
+        
+        return {
+            'chinese_column': chinese_col,
+            'english_column': english_col,
+            'confidence': confidence,
+            'value_mapping': value_mapping,
+            'unique_count_chinese': unique_chinese,
+            'unique_count_english': unique_english,
+            'mapping_confidence': mapping_confidence,
+            'name_similarity': name_similarity,
+            'example_mappings': dict(list(value_mapping.items())[:5])
+        }
+
+    def _detect_column_language(self, 
+                                series: pd.Series, 
+                                metadata: Dict[str, Any]) -> str:
+        """Detect the dominant language of a column."""
+        sample_values = metadata.get('sample_values', [])
+        
+        if not sample_values:
+            sample = series.dropna().astype(str).head(50).tolist()
+        else:
+            sample = sample_values[:50]
+        
+        if not sample:
+            return 'other'
+        
+        chinese_count = 0
+        english_count = 0
+        
+        for val in sample:
+            val_str = str(val)
+            if re.search(r'[\u4e00-\u9fff]', val_str):
+                chinese_count += 1
+            if re.search(r'\b[a-zA-Z]{2,}\b', val_str):
+                english_count += 1
+        
+        total = len(sample)
+        chinese_ratio = chinese_count / total if total > 0 else 0
+        english_ratio = english_count / total if total > 0 else 0
+        
+        if chinese_ratio > 0.6 and chinese_ratio > english_ratio * 1.5:
+            return 'chinese'
+        elif english_ratio > 0.6 and english_ratio > chinese_ratio * 1.5:
+            return 'english'
+        elif chinese_ratio > 0.3 and english_ratio > 0.3:
+            return 'mixed'
+        else:
+            return 'other'
+
+    def _build_value_mapping(self,
+                            chinese_series: pd.Series,
+                            english_series: pd.Series) -> Tuple[Dict[str, str], float]:
+        """Build Chinese→English value mapping."""
+        if len(chinese_series) != len(english_series):
+            return {}, 0.0
+        
+        pair_counts = defaultdict(lambda: defaultdict(int))
+        total_pairs = 0
+        
+        for ch_val, en_val in zip(chinese_series, english_series):
+            if pd.isna(ch_val) or pd.isna(en_val):
+                continue
+            
+            ch_str = str(ch_val).strip()
+            en_str = str(en_val).strip()
+            
+            if not ch_str or not en_str:
+                continue
+            
+            pair_counts[ch_str][en_str] += 1
+            total_pairs += 1
+        
+        if total_pairs == 0:
+            return {}, 0.0
+        
+        value_mapping = {}
+        matched_pairs = 0
+        
+        for ch_val, en_dict in pair_counts.items():
+            best_en_val, best_count = max(en_dict.items(), key=lambda x: x[1])
+            value_mapping[ch_val] = best_en_val
+            matched_pairs += best_count
+        
+        confidence = matched_pairs / total_pairs if total_pairs > 0 else 0.0
+        
+        return value_mapping, confidence
+
+    def _compute_column_name_similarity(self, name_a: str, name_b: str) -> float:
+        """Compute semantic similarity between column names."""
+        name_a_lower = str(name_a).lower()
+        name_b_lower = str(name_b).lower()
+        
+        keyword_pairs = [
+            (['年份', '年度', 'year'], ['year']),
+            (['类别', '類別', 'category', '分类', '分類'], ['category', 'type', 'class']),
+            (['项目', '項目', 'item', '事項'], ['item', 'subject']),
+            (['案件', '個案', 'case'], ['case', 'cases']),
+            (['数量', '數量', 'count', '个数'], ['count', 'number', 'quantity']),
+            (['报告', '舉報', '举报', 'report'], ['report', 'reported', 'reporting']),
+            (['警方', '警察', 'police'], ['police']),
+            (['事件', 'incident', '事故'], ['incident', 'event']),
+            (['有否', '是否', 'whether'], ['whether', 'being', 'or not']),
+            (['性别', '性別', 'gender'], ['gender', 'sex']),
+            (['年龄', '年齡', 'age'], ['age']),
+            (['地区', '地區', 'region'], ['region', 'area', 'district']),
+        ]
+        
+        for chinese_keywords, english_keywords in keyword_pairs:
+            has_chinese = any(kw in name_a_lower for kw in chinese_keywords)
+            has_english = any(kw in name_b_lower for kw in english_keywords)
+            
+            if has_chinese and has_english:
+                return 0.8
+        
+        name_a_words = re.findall(r'[a-zA-Z]+', name_a_lower)
+        name_b_words = re.findall(r'[a-zA-Z]+', name_b_lower)
+        
+        if name_a_words and name_b_words:
+            common_words = set(name_a_words) & set(name_b_words)
+            if common_words:
+                return 0.6
+        
+        return 0.0
+
+    # ===== Text and Metadata Creation =====
+
     def _create_readable_text(self, sheet_encoding: Dict[str, Any],
                               compression_metrics: Dict[str, Any]) -> str:
         """Create LLM-friendly text representation."""
         lines = []
-
         sheet_metrics = list(compression_metrics.get('sheets', {}).values())[0] if compression_metrics.get('sheets') else {}
+        
         lines.append("="*80)
         lines.append("SPREADSHEET ENCODING (SpreadsheetLLM)")
         lines.append("="*80)
         lines.append(f"Compression Ratio: {sheet_metrics.get('overall_ratio', 0):.2f}x")
         lines.append("")
 
-        # Anchors
         anchors = sheet_encoding.get('structural_anchors', {})
         lines.append("## STRUCTURAL ANCHORS")
         lines.append(f"Key Rows: {anchors.get('rows', [])}")
         lines.append(f"Key Columns: {anchors.get('columns', [])}")
         lines.append("")
 
-        # Cells
         cells = sheet_encoding.get('cells', {})
         lines.append("## CELL VALUES")
         lines.append(f"Unique values: {len(cells)}")
@@ -684,7 +896,6 @@ class SpreadsheetEncoder:
             lines.append(f"  ... and {len(cells)-20} more values")
         lines.append("")
 
-        # Formats
         formats = sheet_encoding.get('formats', {})
         lines.append("## FORMAT REGIONS")
         lines.append(f"Format groups: {len(formats)}")
@@ -705,7 +916,7 @@ class SpreadsheetEncoder:
     def _extract_metadata(self, df: pd.DataFrame,
                           sheet_encoding: Dict[str, Any],
                           compression_metrics: Dict[str, Any]) -> Dict[str, Any]:
-        """Extract comprehensive metadata with complete unique values and statistics."""
+        """Extract comprehensive metadata."""
         sheet_metrics = list(compression_metrics.get('sheets', {}).values())[0] if compression_metrics.get('sheets') else {}
 
         metadata = {
@@ -722,27 +933,23 @@ class SpreadsheetEncoder:
                 'final_tokens': sheet_metrics.get('final_tokens', 0)
             },
             'sample_values': {},
-            'columns': {}  # Detailed per-column analysis
+            'columns': {}
         }
 
-        # Configuration
         max_unique_values = 100
         sample_size = min(10000, len(df))
         df_sample = df if len(df) <= sample_size else df.sample(sample_size)
 
-        # Analyze each column in detail
         for col in df.columns:
             col_metadata = self._analyze_column(df[col], df_sample[col], max_unique_values)
             metadata['columns'][col] = col_metadata
 
-            # Keep sample_values for backward compatibility
             non_null = df[col].dropna()
             if len(non_null) > 0:
                 metadata['sample_values'][col] = [str(v)[:50] for v in non_null.head(3).tolist()]
             else:
                 metadata['sample_values'][col] = []
 
-        # Issues
         issues = []
         for col in df.columns:
             col_str = str(col)
@@ -754,7 +961,7 @@ class SpreadsheetEncoder:
 
     def _analyze_column(self, full_series: pd.Series, sample_series: pd.Series,
                         max_unique_values: int) -> Dict[str, Any]:
-        """Analyze a single column comprehensively to collect all necessary metadata."""
+        """Analyze a single column comprehensively."""
         col_metadata = {
             'dtype': str(full_series.dtype),
             'null_count': int(full_series.isnull().sum()),
@@ -769,13 +976,10 @@ class SpreadsheetEncoder:
             'statistics': {}
         }
 
-        # Get unique values (limited to max_unique_values)
         unique_vals = full_series.dropna().unique()
         if len(unique_vals) <= max_unique_values:
             col_metadata['unique_values'] = [str(v) for v in unique_vals]
             col_metadata['unique_values_truncated'] = False
-
-            # Get value counts for low-cardinality columns
             value_counts = full_series.value_counts()
             col_metadata['value_counts'] = {
                 str(k): int(v) for k, v in value_counts.head(50).items()
@@ -784,25 +988,20 @@ class SpreadsheetEncoder:
             col_metadata['unique_values'] = [str(v) for v in unique_vals[:max_unique_values]]
             col_metadata['unique_values_truncated'] = True
 
-        # Sample values
         non_null_sample = sample_series.dropna().head(20)
         col_metadata['sample_values'] = [str(v) for v in non_null_sample]
 
-        # Infer semantic type
         col_metadata['inferred_type'] = self._infer_column_type(full_series, col_metadata)
 
-        # Detect delimiters for potential splitting
         if col_metadata['inferred_type'] == 'string':
             col_metadata['potential_delimiters'] = self._detect_delimiters(
                 col_metadata['sample_values']
             )
 
-        # Check for bilingual content
         col_metadata['has_bilingual_content'] = self._check_bilingual(
             col_metadata['sample_values']
         )
 
-        # Numeric statistics
         if pd.api.types.is_numeric_dtype(full_series):
             col_metadata['statistics'] = {
                 'min': float(full_series.min()) if not full_series.empty else None,
@@ -815,38 +1014,27 @@ class SpreadsheetEncoder:
         return col_metadata
 
     def _infer_column_type(self, series: pd.Series, col_metadata: Dict) -> str:
-        """Infer semantic type based on data characteristics.
-
-        Returns: boolean | boolean_with_na | categorical | integer | numeric |
-                identifier | date | year | string
-        """
+        """Infer semantic type."""
         unique_count = col_metadata['unique_count']
         total_count = len(series)
         unique_values = col_metadata.get('unique_values', [])
 
-        # Very low cardinality -> likely categorical or boolean
         if unique_count <= 10:
             unique_vals_lower = [str(v).lower().strip() for v in unique_values]
 
-            # Check for boolean patterns
             boolean_patterns = [
                 {'yes', 'no'}, {'y', 'n'}, {'true', 'false'}, {'t', 'f'}, {'1', '0'},
                 {'是', '否'}, {'有', '沒有', '无'}, {'有', '没有'}
             ]
 
-            # Check for N/A values
             na_indicators = ['n/a', 'na', 'not applicable', '不適用', '不适用', 'none', 'null']
             has_na_value = any(val in unique_vals_lower for val in na_indicators)
-
-            # Remove N/A from comparison
             actual_vals = set(unique_vals_lower) - set(na_indicators)
 
-            # Check if matches any boolean pattern
             for pattern in boolean_patterns:
                 if actual_vals <= pattern and len(actual_vals) >= 2:
                     return 'boolean_with_na' if has_na_value else 'boolean'
 
-            # If only one non-NA value, might still be boolean with missing values
             if len(actual_vals) == 1 and has_na_value:
                 single_val = list(actual_vals)[0]
                 all_boolean_vals = set()
@@ -855,21 +1043,16 @@ class SpreadsheetEncoder:
                 if single_val in all_boolean_vals:
                     return 'boolean_with_na'
 
-            # Otherwise categorical
             return 'categorical'
 
-        # High cardinality -> identifier
         if unique_count / total_count > 0.95:
             return 'identifier'
 
-        # Medium cardinality -> categorical
         if unique_count / total_count < 0.5 and unique_count <= 50:
             return 'categorical'
 
-        # Check pandas dtype
         if pd.api.types.is_numeric_dtype(series):
             if pd.api.types.is_integer_dtype(series):
-                # Could be year if values are in reasonable range
                 if not series.empty:
                     min_val = series.min()
                     max_val = series.max()
@@ -878,14 +1061,13 @@ class SpreadsheetEncoder:
                 return 'integer'
             return 'numeric'
 
-        # Check for date patterns
         if self._is_date_column(series):
             return 'date'
 
         return 'string'
 
     def _detect_delimiters(self, sample_values: List[str]) -> List[Dict[str, Any]]:
-        """Detect potential delimiters that could be used for column splitting."""
+        """Detect potential delimiters."""
         if not sample_values or len(sample_values) < 3:
             return []
 
@@ -904,7 +1086,6 @@ class SpreadsheetEncoder:
             count = sum(1 for val in sample_values if delimiter in str(val))
             percentage = (count / total_values * 100) if total_values > 0 else 0
 
-            # Consider it a potential delimiter if it appears in at least 50% of values
             if percentage >= 50:
                 split_counts = []
                 for val in sample_values:
@@ -912,7 +1093,6 @@ class SpreadsheetEncoder:
                         parts = str(val).split(delimiter)
                         split_counts.append(len(parts))
 
-                # Check if split is consistent
                 is_consistent = len(set(split_counts)) == 1 if split_counts else False
                 num_parts = split_counts[0] if split_counts and is_consistent else None
 
@@ -926,12 +1106,11 @@ class SpreadsheetEncoder:
                     'sample_split': str(sample_values[0]).split(delimiter) if sample_values and delimiter in str(sample_values[0]) else None
                 })
 
-        # Sort by percentage descending
         detected.sort(key=lambda x: x['percentage'], reverse=True)
         return detected
 
     def _check_bilingual(self, sample_values: List[str]) -> bool:
-        """Check if values contain both Chinese and English characters."""
+        """Check if values contain both Chinese and English."""
         if not sample_values:
             return False
 

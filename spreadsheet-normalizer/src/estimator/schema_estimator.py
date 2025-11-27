@@ -1,6 +1,6 @@
 """
-Schema Estimator Module (FINAL VERSION)
-Uses complete metadata from encoder - NO redundant analysis
+Schema Estimator Module - Hybrid Approach (BEST PRACTICE)
+Combines visual table context with precise metadata for optimal schema analysis
 """
 
 import json
@@ -15,11 +15,10 @@ logger = logging.getLogger(__name__)
 
 class SchemaEstimator:
     """
-    Estimates schemas using COMPLETE metadata from encoder.
-
-    CRITICAL PRINCIPLE:
-    This module does NOT analyze the dataframe directly.
-    It relies entirely on encoded_data['metadata']['columns'] as the single source of truth.
+    Hybrid schema estimator:
+    - Uses table samples for VISUAL understanding and pattern recognition
+    - Uses metadata for PRECISE values, statistics, and edge cases
+    - Balances intuition with accuracy
     """
 
     def __init__(self, config: Dict[str, Any]):
@@ -30,10 +29,9 @@ class SchemaEstimator:
         self.merge_similar_columns = config.get('merge_similar_columns', False)
 
         # 🔥 支持多种 LLM 提供商
-        self.llm_provider = config.get('llm_provider', 'openai')  # 'openai', 'qwen', 'gemini', 'claude'
+        self.llm_provider = config.get('llm_provider', 'openai')
         
         if self.llm_provider == 'qwen':
-            # 使用 Qwen (通义千问)
             api_key = os.getenv('DASHSCOPE_API_KEY')
             if not api_key:
                 raise ValueError("DASHSCOPE_API_KEY environment variable not set")
@@ -45,7 +43,6 @@ class SchemaEstimator:
             self.model = config.get('model', 'qwen-max')
             
         elif self.llm_provider == 'gemini':
-            # 使用 Gemini (通过 API2D)
             api_key = os.getenv('GEMINI_API_KEY')
             if not api_key:
                 raise ValueError("GEMINI_API_KEY environment variable not set")
@@ -57,7 +54,6 @@ class SchemaEstimator:
             self.model = config.get('model', 'gemini-2.0-flash-exp')
             
         elif self.llm_provider == 'claude':
-            # 使用 Claude (通过 API2D)
             api_key = os.getenv('API2D_API_KEY')
             if not api_key:
                 raise ValueError("API2D_API_KEY environment variable not set")
@@ -68,8 +64,18 @@ class SchemaEstimator:
             )
             self.model = config.get('model', 'claude-3-5-sonnet-20241022')
             
+        elif self.llm_provider == 'deepseek':
+            api_key = os.getenv('DEEPSEEK_API_KEY')
+            if not api_key:
+                raise ValueError("DEEPSEEK_API_KEY environment variable not set")
+            
+            self.client = OpenAI(
+                api_key=api_key,
+                base_url=os.getenv('DEEPSEEK_BASE_URL', 'https://api.deepseek.com/v1')
+            )
+            self.model = config.get('model', 'deepseek-chat')
+            
         else:
-            # 默认使用 OpenAI
             api_key = os.getenv('OPENAI_API_KEY')
             if not api_key:
                 raise ValueError("OPENAI_API_KEY environment variable not set")
@@ -81,29 +87,24 @@ class SchemaEstimator:
         self.temperature = config.get('temperature', 0.1)
         self.max_tokens = config.get('max_tokens', 4000)
         
-        logger.info(f"Initialized SchemaEstimator with {self.llm_provider} ({self.model})")
+        logger.info(f"Initialized SchemaEstimator (Hybrid) with {self.llm_provider} ({self.model})")
 
     def estimate_schema(self,
                         encoded_data: Dict[str, Any],
                         structure_analysis: Dict[str, Any]) -> Dict[str, Any]:
-        """
-        Estimate the standardized schema using metadata from encoder.
+        """Estimate schema using hybrid approach: visual + metadata."""
+        logger.info("Estimating normalized schema with HYBRID approach...")
 
-        IMPORTANT: All data distribution info comes from encoded_data['metadata']['columns']
-        """
-        logger.info("Estimating normalized schema with LLM...")
-
-        # VERIFY: Check if we have enhanced metadata
+        # Verify we have both dataframe and metadata
+        if 'dataframe' not in encoded_data:
+            raise ValueError("encoded_data must contain 'dataframe'")
+        
         metadata = encoded_data.get('metadata', {})
         if 'columns' not in metadata:
-            logger.error("Missing 'columns' in metadata! Encoder may not be enhanced.")
-            raise ValueError(
-                "encoded_data['metadata'] must contain 'columns' dict. "
-                "Make sure you're using the enhanced encoder."
-            )
+            logger.warning("Missing 'columns' in metadata. Will use basic metadata only.")
 
-        # Create schema estimation prompt with complete metadata
-        prompt = self._create_schema_prompt(encoded_data, structure_analysis)
+        # Create hybrid prompt
+        prompt = self._create_hybrid_prompt(encoded_data, structure_analysis)
 
         try:
             # Call LLM
@@ -132,215 +133,372 @@ class SchemaEstimator:
 
         except Exception as e:
             logger.error(f"Error in schema estimation: {e}")
-            # Return default schema if LLM fails
             return self._get_default_schema(encoded_data, structure_analysis)
 
     def _get_system_prompt(self) -> str:
-        """Get the system prompt for schema estimation."""
-        return """You are an expert data engineer specializing in database schema design and data normalization.
+        """Get the system prompt for hybrid schema estimation."""
+        return """You are an expert data engineer specializing in database schema design and normalization.
 
-Your task is to design clean, normalized schemas for messy spreadsheet data by recognizing common table structure patterns and applying appropriate transformations.
+Your approach:
+1. Look at the TABLE STRUCTURE to understand patterns, relationships, and hierarchies
+2. Use METADATA for precise values, frequencies, and edge cases
+3. Design practical, normalized schemas that balance clarity and completeness
 
-**CRITICAL RULES:**
-1. You will receive COMPLETE data distribution information including ALL unique values and frequencies
-2. For boolean/categorical columns, you MUST use the ACTUAL values from the metadata, not guess
-3. Generate transformation logic that handles ALL observed values, including edge cases like N/A
-4. The metadata provided is the ONLY source of truth - do not assume any values not shown
-5. Be precise, practical, and output valid JSON.
-"""
+Be observant, precise, and practical. Output valid JSON only."""
 
-    def _create_schema_prompt(self,
+    def _create_hybrid_prompt(self,
                               encoded_data: Dict[str, Any],
                               structure_analysis: Dict[str, Any]) -> str:
         """
-        Create enhanced prompt using COMPLETE metadata from encoder.
-        NO dataframe analysis here - all info from metadata.
+        Create hybrid prompt combining visual table context with precise metadata.
+        
+        STRATEGY:
+        1. Show actual table data (first 30 rows) for pattern recognition
+        2. Provide detailed metadata for precision and edge cases
+        3. Highlight structural issues from analysis
+        4. Give clear, step-by-step instructions
         """
         metadata = encoded_data['metadata']
+        df = encoded_data['dataframe']
+        
+        # === PART 1: VISUAL CONTEXT (Pattern Recognition) ===
+        sample_rows = min(30, len(df))
+        sample_data = df.head(sample_rows).to_string(max_colwidth=50, max_rows=sample_rows)
+        
+        # Also show last few rows to catch aggregates
+        if len(df) > sample_rows:
+            last_rows = df.tail(5).to_string(max_colwidth=50, max_rows=5)
+        else:
+            last_rows = ""
+        
+        # === PART 2: METADATA (Precision) ===
         columns_metadata = metadata.get('columns', {})
+        if columns_metadata:
+            metadata_section = self._build_focused_metadata(columns_metadata, df)
+        else:
+            # Fallback: build basic metadata from dataframe
+            metadata_section = self._build_basic_metadata_from_df(df)
+        
+        # === PART 3: STRUCTURAL INSIGHTS ===
+        structure_insights = self._summarize_structure_analysis(structure_analysis)
+        
+        # === PART 4: IMPLICIT AGGREGATION DETECTION ===
+        implicit_agg_info = self._format_implicit_aggregation(structure_analysis)
+        
+        # === BUILD THE PROMPT ===
+        prompt = f"""Design a normalized schema for this messy spreadsheet table.
 
-        # Build detailed column analysis from metadata
-        column_analysis_text = self._build_column_analysis_from_metadata(columns_metadata)
+═══════════════════════════════════════════════════════════════
+PART 1: TABLE STRUCTURE (What You See)
+═══════════════════════════════════════════════════════════════
 
-        # Get shape info
-        num_rows = metadata.get('num_rows', 0)
-        column_names = metadata.get('column_names', [])
-
-        prompt = f"""Design a normalized schema for this messy spreadsheet.
-
-## CURRENT STRUCTURE:
-- Total rows: {num_rows}
-- Columns: {column_names}
-- Structure type: {structure_analysis.get('structure_type', 'unknown')}
-
-## COMPLETE COLUMN ANALYSIS (from encoding stage):
-{column_analysis_text}
-
-## CRITICAL INSTRUCTIONS FOR TYPE CONVERSION:
-
-### For BOOLEAN columns:
-You MUST examine the "Unique values" and "Value counts" above.
-
-**Example pattern:**
-If unique values are: ['不適用', '有', '沒有']
-With counts: {{'不適用': 440, '有': 440, '沒有': 440}}
-
-You MUST generate value_mapping like:
-```json
-{{
-  "有": true,
-  "沒有": false,
-  "不適用": null
-}}
+## First {sample_rows} Rows:
+```
+{sample_data}
 ```
 
-**DO NOT** guess values like '是'/'否' when actual data shows '有'/'沒有'.
+{f'''
+## Last 5 Rows:
+```
+{last_rows}
+```
+''' if last_rows else ''}
 
-### For CATEGORICAL columns:
-- List ALL unique values shown in metadata
-- Provide mapping if standardization is needed
-- Note frequency distribution
+**Quick Facts:**
+- Total rows: {len(df)}
+- Total columns: {len(df.columns)}
+- Column names: {metadata.get('column_names', df.columns.tolist())}
 
-### For COMPOSITE columns (with delimiters):
-- Check "Potential delimiters" in metadata
-- Verify split pattern with sample_split
-- Create split_operations entries
+═══════════════════════════════════════════════════════════════
+PART 2: STRUCTURAL ANALYSIS
+═══════════════════════════════════════════════════════════════
 
-## TABLE PATTERNS TO DETECT:
+{structure_insights}
 
-### Pattern 1: IMPLICIT AGGREGATION
-Check structure_analysis for summary/detail rows:
-{json.dumps(structure_analysis.get('implicit_aggregation', {}), indent=2)}
+{implicit_agg_info}
 
-### Pattern 2: COMPOSITE COLUMNS  
-Check each column's "potential_delimiters" in metadata above.
-If delimiter percentage > 50%, likely needs splitting.
+═══════════════════════════════════════════════════════════════
+PART 3: DETAILED COLUMN METADATA (For Precision)
+═══════════════════════════════════════════════════════════════
 
-### Pattern 3: BILINGUAL COLUMNS
-Check "has_bilingual_content" flag in metadata.
-Keep both languages where appropriate.
+{metadata_section}
 
-## OUTPUT FORMAT:
+═══════════════════════════════════════════════════════════════
+YOUR TASK: DESIGN A NORMALIZED SCHEMA
+═══════════════════════════════════════════════════════════════
+
+## Step 1: Pattern Recognition (Use the table view)
+Look at the actual data and identify:
+- **Composite columns**: Do any columns contain delimiters like " - ", "/"?
+  Example: "Physical Abuse - Male" → should split into type + gender
+  
+- **Implicit hierarchies**: Are there parent-child relationships in values?
+  Example: "身體虐待" (parent) vs "身體虐待 - 男性" (child with extra dimension)
+  
+- **Bilingual columns**: Are there separate columns for Chinese and English?
+  Keep them separate if they exist.
+  
+- **Aggregate rows**: Are there "Total", "小計", "合計" rows mixed in data?
+
+## Step 2: Type Inference (Use the metadata)
+For each column, determine the best target type:
+- **boolean**: True/False only (e.g., "Yes"/"No")
+- **boolean_with_na**: Three states including N/A or "不適用"
+- **categorical**: Fixed set of categories
+- **integer**: Whole numbers (counts, IDs)
+- **numeric**: Decimal numbers
+- **date**: Date or timestamp
+- **string**: Free text
+- **identifier**: Unique keys or codes
+
+**CRITICAL for boolean/categorical**: Use the EXACT unique values from metadata!
+Don't guess "是/否" when data actually shows "有/沒有/不適用".
+
+## Step 3: Design Transformations
+For each column, decide:
+- **keep**: Use as-is (maybe rename)
+- **split**: Separate composite values
+- **merge**: Combine related columns
+- **drop**: Remove if redundant or metadata
+- **convert**: Change data type with mapping
+
+═══════════════════════════════════════════════════════════════
+OUTPUT FORMAT (JSON only)
+═══════════════════════════════════════════════════════════════
 
 {{
     "identified_patterns": [
         {{
-            "pattern_name": "BOOLEAN_WITH_NA | COMPOSITE_COLUMNS | BILINGUAL | etc",
-            "affected_columns": ["list columns"],
-            "details": "specific characteristics from metadata",
-            "solution": "transformation approach"
+            "pattern_type": "composite_column | implicit_aggregation | bilingual | mixed_types | etc",
+            "affected_columns": ["column1", "column2"],
+            "description": "What you observed in the table",
+            "evidence": "Reference to specific rows/values in the sample",
+            "solution": "How you'll handle it"
         }}
     ],
+    
     "column_schema": [
         {{
-            "original_column": "exact column name",
-            "normalized_name": "snake_case_name",
-            "data_type": "boolean_with_na | boolean | categorical | integer | numeric | string | date | identifier",
-            "unique_values": ["copy", "from", "metadata"],
-            "transformation_logic": "detailed description using ACTUAL metadata values",
-            "operation": "keep | split | merge | drop"
+            "original_column": "exact column name from input",
+            "normalized_name": "clean_snake_case_name",
+            "data_type": "boolean | boolean_with_na | categorical | integer | numeric | date | string | identifier",
+            "operation": "keep | split | merge | drop | convert",
+            "description": "Brief description",
+            "reasoning": "Why this transformation"
         }}
     ],
+    
     "split_operations": [
         {{
-            "source_column": "column name",
-            "split_pattern": "exact delimiter from metadata",
+            "source_column": "exact column name",
+            "split_pattern": "exact delimiter (e.g., ' - ', '/', etc)",
             "target_columns": ["new_col1", "new_col2"],
-            "logic": "detailed split logic",
-            "metadata_evidence": "cite frequency and sample_split from metadata"
+            "logic": "How to split (e.g., 'split on delimiter, take first/second part')",
+            "evidence": "Cite metadata: 'Delimiter appears in X% of values'"
         }}
     ],
+    
     "type_conversions": [
         {{
-            "column": "exact column name",
+            "column": "column name",
+            "source_type": "current pandas dtype",
             "target_type": "boolean_with_na | categorical | etc",
-            "conversion_logic": "DETAILED logic using EXACT values from metadata",
-            "edge_cases": ["list edge cases from unique_values"],
             "value_mapping": {{
-                "actual_value_1": mapped_value_1,
-                "actual_value_2": mapped_value_2
-            }}
+                "actual_value_from_metadata_1": mapped_value_1,
+                "actual_value_from_metadata_2": mapped_value_2
+            }},
+            "handle_nulls": "strategy for null/NA values",
+            "edge_cases": ["list any special cases from metadata"]
         }}
     ],
+    
+    "aggregation_handling": {{
+        "has_implicit_aggregation": true/false,
+        "strategy": "split_tables | filter_aggregates | none",
+        "affected_rows": "row indices or description",
+        "reasoning": "Why this approach"
+    }},
+    
     "normalization_plan": [
-        "Step 1: Remove implicit aggregation rows if detected",
-        "Step 2: Split composite columns with evidence from metadata",
-        "Step 3: Convert types using ACTUAL unique_values from metadata",
-        "..."
+        "Step 1: Remove/flag aggregate rows if detected",
+        "Step 2: Split composite columns based on evidence",
+        "Step 3: Convert types using exact value mappings",
+        "Step 4: Rename columns to snake_case",
+        "Step 5: Validate output schema"
     ],
-    "expected_output_columns": ["complete", "list", "of", "final", "columns"],
-    "reasoning": "Explain decisions citing specific metadata (unique_values, value_counts, delimiters)"
+    
+    "expected_output_columns": ["complete", "list", "of", "final", "column", "names"],
+    
+    "reasoning": "Overall explanation of your design decisions, referencing both the table structure you saw and the metadata precision"
 }}
 
-**MANDATORY VERIFICATION:**
-✓ Have you used ACTUAL unique_values from metadata (not guessed)?
-✓ For boolean columns, does value_mapping use metadata's exact values?
-✓ For splits, did you cite the delimiter frequency from metadata?
-✓ Does your reasoning reference specific metadata fields?
+═══════════════════════════════════════════════════════════════
+QUALITY CHECKLIST
+═══════════════════════════════════════════════════════════════
 
-Output ONLY the JSON object.
+Before outputting, verify:
+✓ Did you look at the actual table rows to understand patterns?
+✓ Did you use EXACT unique values from metadata (not guessed)?
+✓ For splits, did you cite the delimiter frequency from metadata?
+✓ For type conversions, did you create value_mapping using actual values?
+✓ Did you address implicit aggregation if detected?
+✓ Is your output column count correct? (original ± splits ± drops)
+
+Output ONLY the JSON object, no additional commentary.
 """
 
         return prompt
 
-    def _build_column_analysis_from_metadata(self, columns_metadata: Dict[str, Any]) -> str:
+    def _build_focused_metadata(self, columns_metadata: Dict[str, Any], df) -> str:
         """
-        Build column analysis text ENTIRELY from metadata.
-        NO dataframe access here.
+        Build focused metadata view emphasizing actionable information.
+        Less verbose than full metadata dump.
         """
         lines = []
-
+        
         for col_name, col_meta in columns_metadata.items():
-            lines.append(f"\n### Column: `{col_name}`")
-            lines.append(f"- Data type: {col_meta.get('dtype', 'unknown')}")
-            lines.append(f"- **Inferred type: {col_meta.get('inferred_type', 'unknown')}**")
-            lines.append(f"- Unique count: {col_meta.get('unique_count', 0)}")
-            lines.append(f"- Null percentage: {col_meta.get('null_percentage', 0):.2f}%")
-
-            # Show unique values
+            lines.append(f"\n### `{col_name}`")
+            
+            # Core info
+            inferred_type = col_meta.get('inferred_type', 'unknown')
+            unique_count = col_meta.get('unique_count', 0)
+            null_pct = col_meta.get('null_percentage', 0)
+            
+            lines.append(f"- **Inferred type**: {inferred_type}")
+            lines.append(f"- **Cardinality**: {unique_count} unique values ({null_pct:.1f}% null)")
+            
+            # Unique values (most important for type conversion)
             unique_values = col_meta.get('unique_values', [])
             if unique_values:
-                if col_meta.get('unique_values_truncated'):
-                    lines.append(f"- **Unique values (first 100):** {unique_values}")
+                if len(unique_values) <= 10:
+                    lines.append(f"- **All unique values**: {unique_values}")
                 else:
-                    lines.append(f"- **Unique values (complete):** {unique_values}")
-
-            # Show value counts
+                    lines.append(f"- **Top unique values**: {unique_values[:10]}")
+                    lines.append(f"  (showing 10 of {len(unique_values)})")
+            
+            # Value frequency (for categorical/boolean)
             value_counts = col_meta.get('value_counts', {})
-            if value_counts:
-                lines.append(f"- **Value counts:**")
+            if value_counts and len(value_counts) <= 20:
+                lines.append(f"- **Value distribution**:")
                 for val, count in list(value_counts.items())[:10]:
-                    lines.append(f"  - `{val}`: {count}")
+                    pct = (count / len(df)) * 100
+                    lines.append(f"  - `{val}`: {count} ({pct:.1f}%)")
                 if len(value_counts) > 10:
                     lines.append(f"  - ... and {len(value_counts)-10} more")
-
-            # Show sample values
-            sample_values = col_meta.get('sample_values', [])
-            if sample_values:
-                lines.append(f"- Sample values: {sample_values[:5]}")
-
-            # Show potential delimiters
+            
+            # Delimiters (critical for splitting)
             delimiters = col_meta.get('potential_delimiters', [])
             if delimiters:
-                lines.append(f"- **Potential delimiters:**")
+                lines.append(f"- **🔥 Potential delimiters detected:**")
                 for delim_info in delimiters[:3]:
-                    lines.append(
-                        f"  - `{delim_info['delimiter']}`: "
-                        f"{delim_info['percentage']:.0f}% frequency, "
-                        f"{'consistent' if delim_info.get('is_consistent') else 'inconsistent'} splits"
-                    )
+                    delim = delim_info['delimiter']
+                    pct = delim_info['percentage']
+                    consistent = delim_info.get('is_consistent', False)
+                    lines.append(f"  - `{repr(delim)}`: appears in {pct:.0f}% of values")
+                    if consistent:
+                        lines.append(f"    ✓ Split pattern is consistent")
                     if delim_info.get('sample_split'):
-                        lines.append(f"    Sample split: {delim_info['sample_split']}")
-
-            # Show bilingual flag
+                        lines.append(f"    Example: {delim_info['sample_split']}")
+            
+            # Bilingual flag
             if col_meta.get('has_bilingual_content'):
-                lines.append(f"- **Contains bilingual content** (Chinese + English)")
-
-            # Show statistics for numeric columns
+                lines.append(f"- **🌐 Contains bilingual content** (mixed scripts)")
+            
+            # Statistics for numeric
             stats = col_meta.get('statistics', {})
-            if stats:
-                lines.append(f"- Statistics: min={stats.get('min')}, max={stats.get('max')}, mean={stats.get('mean'):.2f}")
+            if stats and inferred_type in ['integer', 'numeric']:
+                lines.append(
+                    f"- **Range**: {stats.get('min')} to {stats.get('max')} "
+                    f"(mean: {stats.get('mean', 0):.2f})"
+                )
+        
+        return '\n'.join(lines)
 
+    def _build_basic_metadata_from_df(self, df) -> str:
+        """Fallback: Build basic metadata directly from dataframe if no enhanced metadata."""
+        lines = ["\n⚠️  Using basic metadata (enhanced metadata not available)\n"]
+        
+        for col in df.columns:
+            lines.append(f"\n### `{col}`")
+            lines.append(f"- Type: {df[col].dtype}")
+            lines.append(f"- Unique: {df[col].nunique()}")
+            lines.append(f"- Nulls: {df[col].isnull().sum()} ({df[col].isnull().mean()*100:.1f}%)")
+            
+            # Show unique values if few
+            unique_vals = df[col].dropna().unique()
+            if len(unique_vals) <= 10:
+                lines.append(f"- Unique values: {list(unique_vals)}")
+            else:
+                lines.append(f"- Sample values: {list(unique_vals[:5])}")
+        
+        return '\n'.join(lines)
+
+    def _summarize_structure_analysis(self, structure_analysis: Dict[str, Any]) -> str:
+        """Summarize key findings from structure analysis."""
+        lines = []
+        
+        structure_type = structure_analysis.get('structure_type', 'unknown')
+        lines.append(f"**Structure Type**: {structure_type}")
+        
+        header_rows = structure_analysis.get('header_rows', [])
+        if header_rows:
+            lines.append(f"**Header Rows**: {header_rows}")
+        
+        data_rows = structure_analysis.get('data_rows', [])
+        if isinstance(data_rows, list) and data_rows:
+            if len(data_rows) > 10:
+                lines.append(f"**Data Rows**: {len(data_rows)} rows (indices {min(data_rows)}-{max(data_rows)})")
+            else:
+                lines.append(f"**Data Rows**: {data_rows}")
+        elif isinstance(data_rows, str):
+            lines.append(f"**Data Rows**: {data_rows}")
+        
+        metadata_rows = structure_analysis.get('metadata_rows', [])
+        if metadata_rows:
+            lines.append(f"**Metadata Rows**: {metadata_rows} (titles, notes, etc.)")
+        
+        aggregate_rows = structure_analysis.get('aggregate_rows', [])
+        if aggregate_rows:
+            lines.append(f"**⚠️  Explicit Aggregate Rows**: {aggregate_rows} (totals, subtotals)")
+        
+        return '\n'.join(lines)
+
+    def _format_implicit_aggregation(self, structure_analysis: Dict[str, Any]) -> str:
+        """Format implicit aggregation information if detected."""
+        implicit_agg = structure_analysis.get('implicit_aggregation', {})
+        
+        if not implicit_agg.get('has_implicit_aggregation'):
+            return ""
+        
+        lines = ["\n🔥 **IMPLICIT AGGREGATION DETECTED** 🔥\n"]
+        lines.append("This table mixes summary rows and detail rows!\n")
+        
+        hierarchies = implicit_agg.get('aggregation_hierarchies', [])
+        if hierarchies:
+            lines.append("**Detected Hierarchies:**")
+            for h in hierarchies:
+                summary_cat = h.get('summary_category', '')
+                detail_cat = h.get('detail_category', '')
+                extra_dim = h.get('additional_dimension', '')
+                lines.append(f"- `{summary_cat}` (summary)")
+                lines.append(f"  └→ `{detail_cat}` (adds dimension: {extra_dim})")
+        
+        summary_rows = implicit_agg.get('summary_rows', [])
+        detail_rows = implicit_agg.get('detail_rows', [])
+        
+        if summary_rows:
+            lines.append(f"\n**Summary rows**: {len(summary_rows)} rows")
+            lines.append(f"  Indices: {summary_rows[:10]}{'...' if len(summary_rows) > 10 else ''}")
+        
+        if detail_rows:
+            lines.append(f"**Detail rows**: {len(detail_rows)} rows")
+            lines.append(f"  Indices: {detail_rows[:10]}{'...' if len(detail_rows) > 10 else ''}")
+        
+        lines.append("\n**⚠️  You MUST address this in your normalization plan:**")
+        lines.append("  Option 1: Split into separate tables (summary table + detail table)")
+        lines.append("  Option 2: Add a 'level' column and filter out summary rows")
+        lines.append("  Option 3: Keep only detail rows if they're complete")
+        
         return '\n'.join(lines)
 
     def _parse_llm_response(self, response_text: str) -> Dict[str, Any]:
@@ -375,36 +533,39 @@ Output ONLY the JSON object.
                          schema: Dict[str, Any],
                          encoded_data: Dict[str, Any],
                          structure_analysis: Dict[str, Any]) -> Dict[str, Any]:
-        """
-        Validate schema and add metadata reference for downstream use.
-        """
-        # Ensure required fields exist
-        if 'column_schema' not in schema:
-            schema['column_schema'] = []
-
-        if 'type_conversions' not in schema:
-            schema['type_conversions'] = []
-
-        if 'normalization_plan' not in schema:
-            schema['normalization_plan'] = ['Apply default normalization']
-
-        if 'expected_output_columns' not in schema:
-            schema['expected_output_columns'] = [
-                col['normalized_name'] for col in schema.get('column_schema', [])
-                if 'normalized_name' in col
-            ]
-
-        if 'split_operations' not in schema:
-            schema['split_operations'] = []
-
-        if 'identified_patterns' not in schema:
-            schema['identified_patterns'] = []
-
-        # CRITICAL: Add reference to original metadata
-        # This ensures downstream components can access complete metadata
-        schema['source_metadata'] = encoded_data.get('metadata', {})
-
-        # Validate column names
+        """Validate and enrich the schema result."""
+        
+        # Ensure all required fields exist
+        required_fields = {
+            'identified_patterns': [],
+            'column_schema': [],
+            'split_operations': [],
+            'type_conversions': [],
+            'aggregation_handling': {},
+            'normalization_plan': ['Apply default normalization'],
+            'expected_output_columns': [],
+            'reasoning': ''
+        }
+        
+        for field, default in required_fields.items():
+            if field not in schema:
+                schema[field] = default
+        
+        # Build expected output columns if missing
+        if not schema['expected_output_columns']:
+            output_cols = []
+            for col_def in schema.get('column_schema', []):
+                if col_def.get('operation') != 'drop':
+                    if 'normalized_name' in col_def:
+                        output_cols.append(col_def['normalized_name'])
+            
+            # Add split columns
+            for split_op in schema.get('split_operations', []):
+                output_cols.extend(split_op.get('target_columns', []))
+            
+            schema['expected_output_columns'] = output_cols
+        
+        # Validate column names (snake_case)
         for col_def in schema.get('column_schema', []):
             if 'normalized_name' in col_def:
                 name = col_def['normalized_name']
@@ -415,7 +576,10 @@ Output ONLY the JSON object.
                     name = re.sub(r'_+', '_', name)
                     name = name.strip('_')
                     col_def['normalized_name'] = name.lower()
-
+        
+        # Add reference to source metadata
+        schema['source_metadata'] = encoded_data.get('metadata', {})
+        
         return schema
 
     def _get_default_schema(self,
@@ -423,7 +587,12 @@ Output ONLY the JSON object.
                             structure_analysis: Dict[str, Any]) -> Dict[str, Any]:
         """Return a default schema if LLM fails."""
         metadata = encoded_data.get('metadata', {})
-        original_columns = metadata.get('column_names', [])
+        df = encoded_data.get('dataframe')
+        
+        if df is not None:
+            original_columns = df.columns.tolist()
+        else:
+            original_columns = metadata.get('column_names', [])
 
         # Create simple column schema
         column_schema = []
@@ -438,7 +607,7 @@ Output ONLY the JSON object.
                 'normalized_name': normalized if normalized else f'column_{idx}',
                 'data_type': 'string',
                 'description': f'Column {idx}',
-                'transformation': 'direct_copy'
+                'reasoning': 'Default: keep as-is'
             })
 
         return {
@@ -446,12 +615,13 @@ Output ONLY the JSON object.
             'column_schema': column_schema,
             'split_operations': [],
             'type_conversions': [],
+            'aggregation_handling': {'has_implicit_aggregation': False, 'strategy': 'none'},
             'normalization_plan': [
                 'Keep all columns as-is',
                 'Standardize column names to snake_case',
                 'Remove special characters'
             ],
             'expected_output_columns': [col['normalized_name'] for col in column_schema],
-            'reasoning': 'Default schema due to LLM error',
+            'reasoning': 'Default schema due to LLM error - manual review recommended',
             'source_metadata': metadata
         }

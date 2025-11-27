@@ -14,33 +14,74 @@ def transform(df):
         except Exception as e:
             print(f"Warning: Could not remove summary rows: {e}")
     
-    # No split operations required
+    # STEP 1: Split composite columns
+    # Split 項目  # Metadata: 60% frequency, 2 parts
+    try:
+        split_result = result['項目'].str.split(' - ', expand=True)
+        if split_result.shape[1] >= 2:
+            result['item_type_zh'] = split_result[0]
+            result['item_dimension_zh'] = split_result[1]
+            print(f'Split 項目 into 2 columns')
+        else:
+            print(f'Warning: Split of 項目 produced {split_result.shape[1]} columns, expected 2')
+    except Exception as e:
+        print(f'Error splitting 項目: {e}')
     
-    # No type conversions required
+    # Split Item  # Metadata: 60% frequency, 2 parts
+    try:
+        split_result = result['Item'].str.split(' - ', expand=True)
+        if split_result.shape[1] >= 2:
+            result['item_type_en'] = split_result[0]
+            result['item_dimension_en'] = split_result[1]
+            print(f'Split Item into 2 columns')
+        else:
+            print(f'Warning: Split of Item produced {split_result.shape[1]} columns, expected 2')
+    except Exception as e:
+        print(f'Error splitting Item: {e}')
+    
+    # STEP 2: Type conversions
+    def convert_有否向警方舉報事件(value):
+        '''
+        Convert 有否向警方舉報事件 to boolean
+        Based on metadata unique_values: ['不適用', '有', '沒有']
+        Value mapping: {'不適用': None, '有': True, '沒有': False}
+        '''
+        if pd.isna(value):
+            return None
+        value_str = str(value).strip().lower()
+        
+        # True values
+        if value_str in ['有']:
+            return True
+        # False values
+        elif value_str in ['沒有']:
+            return False
+        # N/A values
+        elif value_str in ['不適用']:
+            return None
+        else:
+            print(f"Warning: Unexpected value in 有否向警方舉報事件: '{value}'")
+            return None
+    
+    # Apply conversions
+    try:
+        result['有否向警方舉報事件'] = result['有否向警方舉報事件'].apply(convert_有否向警方舉報事件)
+        print(f'Converted 有否向警方舉報事件 to boolean')
+    except Exception as e:
+        print(f'Error converting 有否向警方舉報事件: {e}')
     
     # STEP 3: Rename columns
     rename_map = {
-        '年份/Year': '/year',
-        '有否向警方舉報事件': 'column_1',
-        'Incident Being or Not Reported to Police': 'incident_being_or_not_reported_to_police',
-        '類別': 'column_3',
-        'Category': 'category',
-        '項目': 'column_5',
-        'Item': 'item',
-        '個案數字/No. of Cases': '/no_of_cases'
+        '年份/Year': 'year',
+        '有否向警方舉報事件': 'incident_reported_to_police',
+        '類別': 'category_zh',
+        'Category': 'category_en',
+        '個案數字/No. of Cases': 'number_of_cases'
     }
-    try:
-        result.rename(columns=rename_map, inplace=True)
-        print("Columns renamed successfully")
-    except Exception as e:
-        print(f"Warning: Could not rename columns: {e}")
+    result.rename(columns=rename_map, inplace=True)
     
     # STEP 4: Select and order final columns
-    expected_columns = ['/year', 'column_1', 'incident_being_or_not_reported_to_police', 'column_3', 'category', 'column_5', 'item', '/no_of_cases']
-    try:
-        result = result[expected_columns]
-        print("Final columns selected and ordered successfully")
-    except Exception as e:
-        print(f"Warning: Could not select and order final columns: {e}")
+    expected_columns = ['year', 'incident_reported_to_police', 'category_zh', 'category_en', 'item_type_zh', 'item_dimension_zh', 'item_type_en', 'item_dimension_en', 'number_of_cases']
+    result = result[expected_columns]
     
     return result
