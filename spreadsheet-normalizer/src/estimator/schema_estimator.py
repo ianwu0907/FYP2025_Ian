@@ -173,98 +173,55 @@ Be observant, precise, and practical. Output valid JSON only."""
         
         # === PART 2: METADATA (Precision) ===
         columns_metadata = metadata.get('columns', {})
-        if columns_metadata:
-            metadata_section = self._build_focused_metadata(columns_metadata, df)
-        else:
-            # Fallback: build basic metadata from dataframe
-            metadata_section = self._build_basic_metadata_from_df(df)
-        
-        # === PART 3: STRUCTURAL INSIGHTS ===
-        structure_insights = self._summarize_structure_analysis(structure_analysis)
-        
-        # === PART 4: IMPLICIT AGGREGATION DETECTION ===
-        implicit_agg_info = self._format_implicit_aggregation(structure_analysis)
-        
-        # === BUILD THE PROMPT ===
-        prompt = f"""Design a normalized schema for this messy spreadsheet table.
 
-═══════════════════════════════════════════════════════════════
-PART 1: TABLE STRUCTURE (What You See)
-═══════════════════════════════════════════════════════════════
+        # Build detailed column analysis from metadata
+        column_analysis_text = self._build_column_analysis_from_metadata(columns_metadata)
 
-## First {sample_rows} Rows:
-```
-{sample_data}
-```
+        # Get shape info
+        num_rows = metadata.get('num_rows', 0)
+        column_names = metadata.get('column_names', [])
 
-{f'''
-## Last 5 Rows:
-```
-{last_rows}
-```
-''' if last_rows else ''}
+        prompt = f"""Design a normalized schema for this messy spreadsheet.
 
-**Quick Facts:**
-- Total rows: {len(df)}
-- Total columns: {len(df.columns)}
-- Column names: {metadata.get('column_names', df.columns.tolist())}
+## CURRENT STRUCTURE:
+- Total rows: {num_rows}
+- Columns: {column_names}
+- Structure type: {structure_analysis.get('structure_type', 'unknown')}
 
-═══════════════════════════════════════════════════════════════
-PART 2: STRUCTURAL ANALYSIS
-═══════════════════════════════════════════════════════════════
+## COMPLETE COLUMN ANALYSIS (from encoding stage):
+{column_analysis_text}
 
-{structure_insights}
+## CRITICAL INSTRUCTIONS FOR TYPE CONVERSION:
 
-{implicit_agg_info}
+### For BOOLEAN columns:
+You MUST examine the "Unique values" and "Value counts" above.
+**DO NOT** guess values
 
-═══════════════════════════════════════════════════════════════
-PART 3: DETAILED COLUMN METADATA (For Precision)
-═══════════════════════════════════════════════════════════════
+### For CATEGORICAL columns:
+- List ALL unique values shown in metadata
+- Provide mapping if standardization is needed
+- Note frequency distribution
 
-{metadata_section}
+### For COMPOSITE columns (with delimiters):
+- Check "Potential delimiters" in metadata
+- Verify split pattern with sample_split
+- Create split_operations entries
 
-═══════════════════════════════════════════════════════════════
-YOUR TASK: DESIGN A NORMALIZED SCHEMA
-═══════════════════════════════════════════════════════════════
+## TABLE PATTERNS TO DETECT:
 
-## Step 1: Pattern Recognition (Use the table view)
-Look at the actual data and identify:
-- **Composite columns**: Do any columns contain delimiters like " - ", "/"?
-  Example: "Physical Abuse - Male" → should split into type + gender
-  
-- **Implicit hierarchies**: Are there parent-child relationships in values?
-  Example: "身體虐待" (parent) vs "身體虐待 - 男性" (child with extra dimension)
-  
-- **Bilingual columns**: Are there separate columns for Chinese and English?
-  Keep them separate if they exist.
-  
-- **Aggregate rows**: Are there "Total", "小計", "合計" rows mixed in data?
+### Pattern 1: IMPLICIT AGGREGATION
+Check structure_analysis for summary/detail rows:
+{json.dumps(structure_analysis.get('implicit_aggregation', {}), indent=2)}
 
-## Step 2: Type Inference (Use the metadata)
-For each column, determine the best target type:
-- **boolean**: True/False only (e.g., "Yes"/"No")
-- **boolean_with_na**: Three states including N/A or "不適用"
-- **categorical**: Fixed set of categories
-- **integer**: Whole numbers (counts, IDs)
-- **numeric**: Decimal numbers
-- **date**: Date or timestamp
-- **string**: Free text
-- **identifier**: Unique keys or codes
+### Pattern 2: COMPOSITE COLUMNS  
+Check each column's "potential_delimiters" in metadata above.
+If delimiter percentage > 50%, likely needs splitting.
 
-**CRITICAL for boolean/categorical**: Use the EXACT unique values from metadata!
-Don't guess "是/否" when data actually shows "有/沒有/不適用".
+### Pattern 3: BILINGUAL COLUMNS
+Check "has_bilingual_content" flag in metadata.
+Keep both languages where appropriate.
 
-## Step 3: Design Transformations
-For each column, decide:
-- **keep**: Use as-is (maybe rename)
-- **split**: Separate composite values
-- **merge**: Combine related columns
-- **drop**: Remove if redundant or metadata
-- **convert**: Change data type with mapping
-
-═══════════════════════════════════════════════════════════════
-OUTPUT FORMAT (JSON only)
-═══════════════════════════════════════════════════════════════
+## OUTPUT FORMAT:
 
 {{
     "identified_patterns": [

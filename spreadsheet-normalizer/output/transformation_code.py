@@ -13,94 +13,67 @@ def transform(df):
             print(f"Removed {len(summary_indices)} summary rows")
         except Exception as e:
             print(f"Warning: Could not remove summary rows: {e}")
-    
-    # STEP 1: Split composite columns
-    # Split 項目  # Metadata: 60% frequency, 2 parts
-    try:
-        split_result = result['項目'].str.split(' - ', expand=True)
-        if split_result.shape[1] >= 2:
-            result['item_type_zh'] = split_result[0]
-            result['item_dimension_zh'] = split_result[1]
-            print(f'Split 項目 into 2 columns')
-        else:
-            print(f'Warning: Split of 項目 produced {split_result.shape[1]} columns, expected 2')
-    except Exception as e:
-        print(f'Error splitting 項目: {e}')
-    
-    # Split Item  # Metadata: 60% frequency, 2 parts
-    try:
-        split_result = result['Item'].str.split(' - ', expand=True)
-        if split_result.shape[1] >= 2:
-            result['item_type_en'] = split_result[0]
-            result['item_dimension_en'] = split_result[1]
-            print(f'Split Item into 2 columns')
-        else:
-            print(f'Warning: Split of Item produced {split_result.shape[1]} columns, expected 2')
-    except Exception as e:
-        print(f'Error splitting Item: {e}')
-    
-    # STEP 2: Type conversions
-    def convert_有否向警方舉報事件(value):
-        '''
-        Convert 有否向警方舉報事件 to boolean
-        Based on metadata unique_values: ['不適用', '有', '沒有']
-        Value mapping: {'不適用': None, '有': True, '沒有': False}
-        '''
-        if pd.isna(value):
-            return None
-        value_str = str(value).strip().lower()
-        
-        # True values
-        if value_str == '有':
-            return True
-        # False values
-        elif value_str == '沒有':
-            return False
-        # N/A values
-        elif value_str == '不適用':
-            return None
-        else:
-            print(f"Warning: Unexpected value in 有否向警方舉報事件: '{value}'")
-            return None
 
-    def convert_incident_reported(value):
-        '''Convert Incident Being or Not Reported to Police to boolean
-        Based on metadata unique_values: ['Yes', 'No']
-        '''
-        if pd.isna(value):
-            return None
-        value_str = str(value).strip()
-        
-        # True values
-        if value_str == 'Yes':
-            return True
-        # False values
-        elif value_str == 'No':
-            return False
-        else:
-            print(f"Warning: Unexpected value in Incident Being or Not Reported to Police: '{value}'")
-            return None
-
-    # Apply conversions
-    try:
-        result['有否向警方舉報事件'] = result['有否向警方舉報事件'].apply(convert_有否向警方舉報事件)
-        print(f'Converted 有否向警方舉報事件 to boolean')
-    except Exception as e:
-        print(f'Error converting 有否向警方舉報事件: {e}')
-    
-    # STEP 3: Rename columns
+    # STEP 1: Rename columns
     rename_map = {
         '年份/Year': 'year',
         '有否向警方舉報事件': 'reported_to_police',
         'Incident Being or Not Reported to Police': 'incident_reported',
         '類別': 'category_zh',
         'Category': 'category_en',
+        '項目': 'item_zh',
+        'Item': 'item_en',
         '個案數字/No. of Cases': 'number_of_cases'
     }
     result.rename(columns=rename_map, inplace=True)
-    
-    # STEP 4: Select and order final columns
-    expected_columns = ['year', 'reported_to_police', 'incident_reported', 'category_zh', 'category_en', 'item_type', 'gender', 'item_type_en', 'gender_en', 'number_of_cases']
+
+    # STEP 2: Normalize 'year' column
+    try:
+        result['year'] = pd.to_numeric(result['year'], errors='coerce')
+    except Exception as e:
+        print(f"Warning: Could not convert 'year' to numeric: {e}")
+
+    # STEP 3: Normalize 'reported_to_police' column
+    try:
+        result['reported_to_police'] = result['reported_to_police'].replace({
+            '有': True,
+            '沒有': False,
+            '不適用': np.nan
+        }).astype('boolean')
+    except Exception as e:
+        print(f"Warning: Could not normalize 'reported_to_police': {e}")
+
+    # STEP 4: Normalize 'incident_reported' column
+    try:
+        result['incident_reported'] = result['incident_reported'].replace({
+            'Yes': True,
+            'No': False
+        }).astype('boolean')
+    except Exception as e:
+        print(f"Warning: Could not normalize 'incident_reported': {e}")
+
+    # STEP 5: Normalize categorical columns
+    try:
+        result['category_zh'] = result['category_zh'].astype('category')
+        result['category_en'] = result['category_en'].astype('category')
+    except Exception as e:
+        print(f"Warning: Could not normalize categorical columns: {e}")
+
+    # STEP 6: Normalize 'item_zh' and 'item_en' columns
+    try:
+        result['item_zh'] = result['item_zh'].astype(str).str.strip()
+        result['item_en'] = result['item_en'].astype(str).str.strip()
+    except Exception as e:
+        print(f"Warning: Could not normalize 'item_zh' or 'item_en': {e}")
+
+    # STEP 7: Normalize 'number_of_cases' column
+    try:
+        result['number_of_cases'] = pd.to_numeric(result['number_of_cases'], errors='coerce')
+    except Exception as e:
+        print(f"Warning: Could not convert 'number_of_cases' to numeric: {e}")
+
+    # STEP 8: Select and order final columns
+    expected_columns = ['year', 'reported_to_police', 'incident_reported', 'category_zh', 'category_en', 'item_zh', 'item_en', 'number_of_cases']
     result = result[expected_columns]
     
     return result

@@ -180,45 +180,29 @@ class TransformationGenerator:
             raise
 
     def _get_system_prompt(self) -> str:
-        """Get the system prompt for code generation."""
         return """You are an expert Python programmer specializing in data transformation and pandas.
-
-Your task is to generate clean, efficient, and robust Python code that transforms messy spreadsheet data into normalized tables.
-
-**CRITICAL RULES:**
-1. You will receive COMPLETE metadata with ALL unique values for each column
-2. For boolean/categorical conversions, use EXACT values from the metadata
-3. Handle ALL edge cases including N/A values, whitespace, case sensitivity
-4. Generate defensive code that won't crash on unexpected input
-5. Use clear variable names and add comments for complex logic
-6. The code must define a `transform(df)` function that returns the normalized DataFrame
-
-**EXAMPLE - CORRECT Boolean Conversion:**
-```python
-def convert_reported_to_police(value):
-    '''Convert bilingual boolean with N/A handling
-    Based on metadata unique_values: ['不適用', '有', '沒有']
-    '''
-    if pd.isna(value):
-        return None
-    value_str = str(value).strip().lower()
     
-    # True values (from metadata)
-    if value_str in ['有', 'yes', 'y', '是']:
-        return True
-    # False values (from metadata)
-    elif value_str in ['沒有', '没有', 'no', 'n', '否']:
-        return False
-    # N/A values (from metadata)
-    elif value_str in ['不適用', '不适用', 'n/a', 'na']:
-        return None
-    else:
-        print(f"Warning: Unexpected value: {value}")
-        return None
-```
+    Your task is to generate clean, efficient, and robust Python code that transforms messy spreadsheet data into normalized tables.
+    
+    CRITICAL RULES:
+    1) Column metadata is provided, but unique values MAY be truncated/sample/top-k for large columns.
+       - NEVER assume the unique_values list is complete.
+       - Treat them as examples and write defensive conversion code.
+    2) Always handle N/A / NaN / empty strings / whitespace / case variants.
+    3) Do not hard-crash on unexpected input. Prefer returning None and emitting warnings via comments.
+    4) The code must define a `transform(df)` function that returns the normalized DataFrame.
+    5) Use only pandas/numpy/standard library. No network or file I/O.
+    
+    RECOMMENDED PRACTICES:
+    - For boolean/categorical conversion: implement robust mapping:
+      - normalize string: strip, lower, remove full-width spaces, unify punctuation
+      - match by exact known examples AND fallback keywords/regex
+      - unknown -> None
+    - Keep original raw columns if needed for audit (optional).
+    
+    Output ONLY valid Python code.
+    """
 
-**NEVER** use simple comparisons without checking metadata first.
-"""
 
     def _create_generation_prompt(self,
                                   encoded_data: Dict[str, Any],

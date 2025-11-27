@@ -1,129 +1,87 @@
-import pandas as pd
-import numpy as np
-from typing import Dict, List, Any, Optional, Tuple
-import logging
+"""
+Spreadsheet Encoder Module - SpreadsheetLLM-style encoding utilities.
+
+This module implements a lightweight version of SpreadsheetLLM-like compression:
+- Finds "structural anchors" (important rows/columns).
+- Keeps a neighborhood around anchors.
+- Builds an inverted index (value -> cell ranges) and format regions.
+- Optionally detects multiple sub-tables separated by blank rows/cols.
+
+Designed to work with openpyxl for fidelity (merged cells, number formats).
+"""
+
+from __future__ import annotations
+
 import json
-from pathlib import Path
-import tempfile
+import logging
 import os
-import openpyxl
-from openpyxl.utils import get_column_letter, column_index_from_string
-from openpyxl.cell.cell import Cell
 import re
+import tempfile
 from collections import defaultdict
+from dataclasses import dataclass
+from pathlib import Path
+from typing import Any, Dict, Iterable, List, Optional, Sequence, Tuple
+
+import numpy as np
+import openpyxl
+import pandas as pd
+from openpyxl.utils import column_index_from_string, get_column_letter
 
 logger = logging.getLogger(__name__)
 
 EMAIL_REGEX = re.compile(r"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$")
 
-# ===== SpreadsheetLLM Helper Functions =====
 
-def infer_cell_data_type(cell: Cell) -> str:
+# ==============================================================================
+# SpreadsheetLLM Helper Functions
+# ==============================================================================
+
+def infer_cell_data_type(cell) -> str:
     """
-    Infers the data type of a cell based on its openpyxl data_type and value.
+    Infer a fine-grained cell type using openpyxl cell metadata + value.
+    Returns: empty | email | text | numeric | boolean | datetime | error | formula* | unknown
     """
     if cell.value is None:
         return "empty"
 
-    # Check for email format using regex on the string value first
     if isinstance(cell.value, str) and EMAIL_REGEX.match(cell.value):
         return "email"
 
-    data_type = cell.data_type
-    if data_type == 's':
+    data_type = getattr(cell, "data_type", None)
+
+    if data_type == "s":
         return "text"
-    elif data_type == 'n':
+    if data_type == "n":
         return "numeric"
-    elif data_type == 'b':
+    if data_type == "b":
         return "boolean"
-    elif data_type == 'd':
+    if data_type == "d":
         return "datetime"
-    elif data_type == 'e':
+    if data_type == "e":
         return "error"
-    elif data_type == 'f':
+
+    # Formula handling (depends on whether workbook is loaded with data_only)
+    if data_type == "f":
+        # If loaded with data_only=True, this branch typically won't happen.
+        # If data_only=False, value is a formula string; keep it as text-ish.
         if cell.value is not None:
             if isinstance(cell.value, str):
                 return "text"
-            elif isinstance(cell.value, (int, float)):
+            if isinstance(cell.value, (int, float)):
                 return "numeric"
-            elif isinstance(cell.value, bool):
+            if isinstance(cell.value, bool):
                 return "boolean"
-            else:
-                return "formula_cached_value"
+            return "formula_cached_value"
         return "formula"
-    elif data_type == 'g':
-        if cell.value is not None:
-            return "text"
-        else:
-            return "empty"
-    else:
-        return "unknown"
 
-def categorize_number_format(number_format_string: str, cell: Cell) -> str:
-    """
-    Categorizes the number format of a cell, using the cell itself for context.
-    """
-    cell_data_type = infer_cell_data_type(cell)
-    if cell_data_type not in ["numeric", "datetime"]:
-        return "not_applicable"
+    # "g" is used for rich text in some cases
+    if data_type == "g":
+        return "text" if cell.value is not None else "empty"
 
-    if number_format_string is None or number_format_string.lower() == "general":
-        if cell_data_type == "datetime":
-            return "datetime_general"
-        return "general"
+    return "unknown"
 
-    if number_format_string == "@" or number_format_string.lower() == "text":
-        return "text_format"
 
-    if any(c in number_format_string for c in ['$', '€', '£', '¥']):
-        return "currency"
-
-    if '%' in number_format_string:
-        return "percentage"
-
-    if 'E+' in number_format_string or 'E-' in number_format_string.upper():
-        return "scientific"
-
-    if '#' in number_format_string and '/' in number_format_string and '?' in number_format_string:
-        return "fraction"
-
-    is_date_format = False
-    is_time_format = False
-    nf_lower = number_format_string.lower()
-    date_keywords = ['yyyy', 'yy', 'mmmm', 'mmm', 'mm', 'dddd', 'ddd', 'dd', 'd']
-    if any(keyword in nf_lower for keyword in date_keywords):
-        is_date_format = True
-
-    time_keywords = ['hh', 'h', 'ss', 's', 'am/pm', 'a/p']
-    if any(keyword in nf_lower for keyword in time_keywords):
-        is_time_format = True
-
-    if ':' in number_format_string:
-        temp_nf = number_format_string.replace('0', '').replace('#', '').replace(',', '').replace('.', '')
-        if ':' in temp_nf:
-            is_time_format = True
-
-    if is_date_format and is_time_format:
-        return "datetime_custom"
-    elif is_date_format:
-        return "date_custom"
-    elif is_time_format:
-        return "time_custom"
-
-    if cell_data_type == "numeric":
-        if number_format_string in ["0", "#,##0"]:
-            return "integer"
-        if number_format_string in ["0.00", "#,##0.00", "0.0", "#,##0.0"]:
-            return "float"
-        return "other_numeric"
-
-    if cell_data_type == "datetime":
-        return "other_date"
-
-    return "unknown_format_category"
-
-def get_number_format_string(cell: Cell) -> str:
-    """Return the raw number format string for a cell."""
+def get_number_format_string(cell) -> str:
     try:
         nfs = cell.number_format
         if nfs is None or nfs == "":
@@ -132,8 +90,71 @@ def get_number_format_string(cell: Cell) -> str:
     except Exception:
         return "General"
 
-def detect_semantic_type(cell: Cell) -> str:
-    """Infer a higher level semantic type using number format and cell value."""
+
+def categorize_number_format(number_format_string: str, cell) -> str:
+    """
+    Categorize Excel number format string into semantic buckets.
+    Only relevant if inferred type is numeric/datetime.
+    """
+    cell_data_type = infer_cell_data_type(cell)
+    if cell_data_type not in {"numeric", "datetime"}:
+        return "not_applicable"
+
+    if number_format_string is None or str(number_format_string).lower() == "general":
+        return "datetime_general" if cell_data_type == "datetime" else "general"
+
+    if number_format_string == "@" or str(number_format_string).lower() == "text":
+        return "text_format"
+
+    if any(c in str(number_format_string) for c in ["$", "€", "£", "¥"]):
+        return "currency"
+
+    if "%" in str(number_format_string):
+        return "percentage"
+
+    nf_lower = str(number_format_string).lower()
+    if "e+" in nf_lower or "e-" in nf_lower:
+        return "scientific"
+
+    if "#" in nf_lower and "/" in nf_lower and "?" in nf_lower:
+        return "fraction"
+
+    date_keywords = ["yyyy", "yy", "mmmm", "mmm", "mm", "dddd", "ddd", "dd", "d"]
+    time_keywords = ["hh", "h", "ss", "s", "am/pm", "a/p"]
+
+    is_date = any(k in nf_lower for k in date_keywords)
+    is_time = any(k in nf_lower for k in time_keywords)
+
+    # ':' is often time, but can also appear in custom formats.
+    if ":" in str(number_format_string):
+        tmp = str(number_format_string).replace("0", "").replace("#", "").replace(",", "").replace(".", "")
+        if ":" in tmp:
+            is_time = True
+
+    if is_date and is_time:
+        return "datetime_custom"
+    if is_date:
+        return "date_custom"
+    if is_time:
+        return "time_custom"
+
+    if cell_data_type == "numeric":
+        if number_format_string in {"0", "#,##0"}:
+            return "integer"
+        if number_format_string in {"0.00", "#,##0.00", "0.0", "#,##0.0"}:
+            return "float"
+        return "other_numeric"
+
+    if cell_data_type == "datetime":
+        return "other_date"
+
+    return "unknown_format_category"
+
+
+def detect_semantic_type(cell) -> str:
+    """
+    Detect semantic type combining inferred cell data type and format patterns.
+    """
     data_type = infer_cell_data_type(cell)
     if data_type == "email":
         return "email"
@@ -146,7 +167,8 @@ def detect_semantic_type(cell: Cell) -> str:
         return "percentage"
     if category == "currency":
         return "currency"
-    if category in ["date_custom", "datetime_custom", "datetime_general", "other_date"]:
+    if category in {"date_custom", "datetime_custom", "datetime_general", "other_date"}:
+        # special-case year-only formats
         if ("yyyy" in nfs_lower or "yy" in nfs_lower) and not any(x in nfs_lower for x in ["m", "d"]):
             return "year"
         return "date"
@@ -160,52 +182,53 @@ def detect_semantic_type(cell: Cell) -> str:
             return "integer"
         if isinstance(cell.value, float) or category == "float":
             return "float"
-        return "numeric"  # Fallback
+        return "numeric"
 
     return data_type
 
 
-def build_merged_lookup(sheet: openpyxl.worksheet.worksheet.Worksheet):
-    """Precompute merged cell membership for O(1) lookups."""
-    merged_lookup = {}
-
-    for m_range in sheet.merged_cells.ranges:
-        try:
-            start_val = sheet[m_range.start_cell.coordinate].value
-        except Exception:
-            start_val = None
-
-        min_col, min_row, max_col, max_row = m_range.bounds
-        for r in range(min_row, max_row + 1):
-            for c in range(min_col, max_col + 1):
-                coord = f"{get_column_letter(c)}{r}"
-                merged_lookup[coord] = (start_val, m_range)
-
-    return merged_lookup
-
-def split_cell_ref(cell_ref):
-    col_str = ''.join(filter(str.isalpha, cell_ref))
-    row_str = ''.join(filter(str.isdigit, cell_ref))
+def split_cell_ref(cell_ref: str) -> Tuple[str, int]:
+    col_str = "".join(filter(str.isalpha, cell_ref))
+    row_str = "".join(filter(str.isdigit, cell_ref))
     return col_str, int(row_str)
 
-def _merge_refs(refs):
-    coords = []
-    for ref in sorted(set(refs)):
+
+def _merge_refs(refs: Sequence[str]) -> List[str]:
+    """
+    Merge a list of single-cell refs (e.g., A1, B1, A2) into a list of
+    compact refs/ranges (e.g., A1:C1, A2, ...).
+
+    Note: If a ref already contains ":", it is treated as a pre-merged range.
+    """
+    result: List[str] = []
+    singles: List[str] = []
+    for ref in refs:
+        if ":" in str(ref):
+            result.append(str(ref))
+        else:
+            singles.append(str(ref))
+
+    coords: List[Tuple[int, int]] = []
+    for ref in sorted(set(singles)):
         try:
             col_letter, row = split_cell_ref(ref)
             col = column_index_from_string(col_letter)
             coords.append((row, col))
         except Exception:
             continue
+
     cell_set = set(coords)
     processed = set()
-    ranges = []
+    ranges: List[str] = []
+
     for row, col in sorted(coords):
         if (row, col) in processed:
             continue
+
         width = 1
         while (row, col + width) in cell_set and (row, col + width) not in processed:
             width += 1
+
         height = 1
         expanding = True
         while expanding:
@@ -216,266 +239,360 @@ def _merge_refs(refs):
                     break
             if expanding:
                 height += 1
+
         end_col = col + width - 1
         end_row = row + height - 1
         start_ref = f"{get_column_letter(col)}{row}"
         end_ref = f"{get_column_letter(end_col)}{end_row}"
+
         if width == 1 and height == 1:
             ranges.append(start_ref)
         else:
             ranges.append(f"{start_ref}:{end_ref}")
+
         for r in range(row, row + height):
             for c in range(col, col + width):
                 processed.add((r, c))
-    return ranges
 
-def get_cell_style_key(cell: Cell):
-    """Creates a hashable key representing a cell's style for comparison."""
-    if not cell:
-        return "no_cell"
-
-    font = cell.font
-    border = cell.border
-    fill = cell.fill
-    alignment = cell.alignment
-
-    style_tuple = (
-        (font.bold, font.italic, font.underline, font.sz, str(font.color.rgb if font.color else None)),
-        (border.left.style, border.right.style, border.top.style, border.bottom.style),
-        (fill.patternType, str(fill.fgColor.rgb if fill.fgColor else None)),
-        (alignment.horizontal, alignment.vertical, alignment.wrap_text)
-    )
-    return style_tuple
+    return result + ranges
 
 
-def is_header_row(sheet, row_idx):
-    """More robust heuristics to detect header rows, as per Appendix C."""
-    num_populated = 0
-    num_bold = 0
-    num_all_caps = 0
-    num_strings = 0
-    num_centered = 0
+@dataclass(frozen=True)
+class SheetRegion:
+    min_row: int
+    max_row: int
+    min_col: int
+    max_col: int
 
-    for c in range(1, sheet.max_column + 1):
-        cell = sheet.cell(row=row_idx, column=c)
-        if cell.value is None or str(cell.value).strip() == "":
-            continue
+    def area(self) -> int:
+        return max(0, self.max_row - self.min_row + 1) * max(0, self.max_col - self.min_col + 1)
 
-        num_populated += 1
-        if cell.font and cell.font.bold:
-            num_bold += 1
-        if cell.alignment and cell.alignment.horizontal == 'center':
-            num_centered += 1
-
-        if isinstance(cell.value, str):
-            num_strings += 1
-            if cell.value.isupper() and len(cell.value) > 1:
-                num_all_caps += 1
-
-    if num_populated == 0:
-        return False
-
-    if num_bold / num_populated > 0.6:
-        return True
-    if num_centered / num_populated > 0.6:
-        return True
-    if num_strings > 0 and num_all_caps / num_strings > 0.6:
-        return True
-
-    return False
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "min_row": self.min_row,
+            "max_row": self.max_row,
+            "min_col": self.min_col,
+            "max_col": self.max_col,
+        }
 
 
-def find_boundary_candidates(sheet):
+def _iter_values_only(sheet, region: SheetRegion) -> Iterable[Tuple[int, int, Any]]:
+    # values_only=True is much faster for scanning; merged cells will appear only at top-left.
+    for r_idx, row in enumerate(
+            sheet.iter_rows(
+                min_row=region.min_row,
+                max_row=region.max_row,
+                min_col=region.min_col,
+                max_col=region.max_col,
+                values_only=True,
+            ),
+            start=region.min_row,
+    ):
+        for c_offset, v in enumerate(row, start=region.min_col):
+            yield r_idx, c_offset, v
+
+
+def detect_table_regions(
+        sheet,
+        *,
+        full_region: Optional[SheetRegion] = None,
+        min_nonempty_cells: int = 8,
+) -> List[SheetRegion]:
     """
-    Identify row/column boundary candidates using enhanced heterogeneity heuristics
-    from Appendix C, including cell value, merged status, and style.
+    Detect sub-table blocks separated by fully-empty rows and/or columns.
+    Works best for spreadsheets with blank lines between tables.
     """
-    merged_lookup = build_merged_lookup(sheet)
-    style_cache = {}
-    cell_cache = [[None for _ in range(sheet.max_column)] for _ in range(sheet.max_row)]
+    region = full_region or SheetRegion(1, sheet.max_row or 1, 1, sheet.max_column or 1)
 
-    for r in range(1, sheet.max_row + 1):
-        for c in range(1, sheet.max_column + 1):
-            cell = sheet.cell(row=r, column=c)
-            coord = cell.coordinate
-            is_merged = coord in merged_lookup
-            if coord not in style_cache:
-                style_cache[coord] = get_cell_style_key(cell)
-            cell_cache[r - 1][c - 1] = (cell.value, is_merged, style_cache[coord])
+    # Row/col non-empty flags
+    row_has = defaultdict(int)
+    col_has = defaultdict(int)
 
-    row_profiles = [row[:] for row in cell_cache]
-
-    col_profiles = []
-    for c in range(sheet.max_column):
-        col_profile = []
-        for r in range(sheet.max_row):
-            col_profile.append(cell_cache[r][c])
-        col_profiles.append(col_profile)
-
-    row_candidates = set()
-    for r in range(1, len(row_profiles)):
-        if row_profiles[r] != row_profiles[r - 1]:
-            row_candidates.add(r)
-            row_candidates.add(r + 1)
-
-    col_candidates = set()
-    for c in range(1, len(col_profiles)):
-        if col_profiles[c] != col_profiles[c - 1]:
-            col_candidates.add(c)
-            col_candidates.add(c + 1)
-
-    header_rows = {idx for idx in range(1, sheet.max_row + 1) if is_header_row(sheet, idx)}
-    row_candidates = {r for r in row_candidates if r not in header_rows}
-
-    candidates = []
-    if row_candidates and col_candidates:
-        rows = sorted(list(row_candidates))
-        cols = sorted(list(col_candidates))
-        for i in range(len(rows)):
-            for j in range(i + 1, len(rows)):
-                for k in range(len(cols)):
-                    for l in range(k + 1, len(cols)):
-                        candidates.append((rows[i], cols[k], rows[j], cols[l]))
-
-    candidates = filter_unreasonable_candidates(sheet, candidates)
-    candidates = filter_overlapping_candidates(sheet, candidates)
-
-    final_row_anchors = set()
-    final_col_anchors = set()
-    for r1, c1, r2, c2 in candidates:
-        final_row_anchors.add(r1)
-        final_row_anchors.add(r2)
-        final_col_anchors.add(c1)
-        final_col_anchors.add(c2)
-
-    return sorted(list(final_row_anchors)), sorted(list(final_col_anchors))
-
-
-def filter_unreasonable_candidates(sheet, candidates):
-    """Filter out candidates based on size, sparsity, and header presence."""
-    filtered = []
-    for r1, c1, r2, c2 in candidates:
-        if (r2 - r1 < 1) or (c2 - c1 < 1):
+    for r, c, v in _iter_values_only(sheet, region):
+        if v is None or (isinstance(v, str) and v.strip() == ""):
             continue
+        row_has[r] += 1
+        col_has[c] += 1
 
-        num_cells = (r2 - r1 + 1) * (c2 - c1 + 1)
-        populated_cells = 0
-        for r in range(r1, r2 + 1):
-            for c in range(c1, c2 + 1):
-                if sheet.cell(row=r, column=c).value is not None:
-                    populated_cells += 1
+    nonempty_rows = sorted(row_has.keys())
+    nonempty_cols = sorted(col_has.keys())
 
-        if populated_cells / num_cells < 0.1:
-            continue
-
-        has_header = any(is_header_row(sheet, r) for r in range(r1, r2 + 1))
-        if not has_header:
-            continue
-
-        filtered.append((r1, c1, r2, c2))
-
-    return filtered
-
-
-def calculate_iou(box1, box2):
-    """Calculate Intersection over Union (IoU) for two bounding boxes."""
-    r1_1, c1_1, r2_1, c2_1 = box1
-    r1_2, c1_2, r2_2, c2_2 = box2
-
-    inter_r1 = max(r1_1, r1_2)
-    inter_c1 = max(c1_1, c1_2)
-    inter_r2 = min(r2_1, r2_2)
-    inter_c2 = min(c2_1, c2_2)
-
-    inter_area = max(0, inter_r2 - inter_r1 + 1) * max(0, inter_c2 - inter_c1 + 1)
-
-    area1 = (r2_1 - r1_1 + 1) * (c2_1 - c1_1 + 1)
-    area2 = (r2_2 - r1_2 + 1) * (c2_2 - c1_2 + 1)
-
-    union_area = area1 + area2 - inter_area
-
-    return inter_area / union_area if union_area > 0 else 0
-
-
-def filter_overlapping_candidates(sheet, candidates):
-    """Filter overlapping candidates using heuristics from Appendix C."""
-    if not candidates:
+    if not nonempty_rows or not nonempty_cols:
         return []
 
-    scores = []
-    for r1, c1, r2, c2 in candidates:
-        score = 0
-        for r in range(r1, min(r1 + 3, r2 + 1)):
-            if is_header_row(sheet, r):
-                score += 10
-        score += (r2 - r1 + 1) * (c2 - c1 + 1)
-        scores.append(score)
+    # Find contiguous row segments separated by entirely-empty rows
+    row_segments: List[Tuple[int, int]] = []
+    start = prev = nonempty_rows[0]
+    for r in nonempty_rows[1:]:
+        if r == prev + 1:
+            prev = r
+            continue
+        row_segments.append((start, prev))
+        start = prev = r
+    row_segments.append((start, prev))
 
-    indices = list(range(len(candidates)))
-    indices.sort(key=lambda i: scores[i], reverse=True)
+    # Find contiguous col segments
+    col_segments: List[Tuple[int, int]] = []
+    start = prev = nonempty_cols[0]
+    for c in nonempty_cols[1:]:
+        if c == prev + 1:
+            prev = c
+            continue
+        col_segments.append((start, prev))
+        start = prev = c
+    col_segments.append((start, prev))
 
-    keep = []
-    while indices:
-        current_idx = indices.pop(0)
-        keep.append(current_idx)
+    regions: List[SheetRegion] = []
+    # Cross product: row segment x col segment -> candidate block
+    for (r0, r1) in row_segments:
+        for (c0, c1) in col_segments:
+            cand = SheetRegion(r0, r1, c0, c1)
+            # Count nonempty in candidate quickly (could still be large; but segments are already bounded)
+            nonempty = 0
+            for _, _, v in _iter_values_only(sheet, cand):
+                if v is None or (isinstance(v, str) and v.strip() == ""):
+                    continue
+                nonempty += 1
+                if nonempty >= min_nonempty_cells:
+                    break
+            if nonempty >= min_nonempty_cells:
+                regions.append(cand)
 
-        remaining_indices = []
-        for idx in indices:
-            iou = calculate_iou(candidates[current_idx], candidates[idx])
-            if iou < 0.5:
-                remaining_indices.append(idx)
-        indices = remaining_indices
+    # If we detected nothing meaningful, fall back to full bounding box of data
+    if not regions:
+        regions.append(SheetRegion(min(nonempty_rows), max(nonempty_rows), min(nonempty_cols), max(nonempty_cols)))
 
-    return [candidates[i] for i in keep]
-
-
-def extract_k_neighborhood(indices, k, max_index):
-    """Expand indices with a k-neighborhood within bounds."""
-    expanded = set()
-    for idx in indices:
-        for i in range(max(1, idx - k), min(max_index + 1, idx + k + 1)):
-            expanded.add(i)
-    return sorted(expanded)
-
-
-def find_structural_anchors(sheet, k=2):
-    """Find structural anchors using boundary candidates and k-neighborhood."""
-    row_candidates, col_candidates = find_boundary_candidates(sheet)
-    row_anchors = extract_k_neighborhood(row_candidates, k, sheet.max_row)
-    col_anchors = extract_k_neighborhood(col_candidates, k, sheet.max_column)
-    return row_anchors, col_anchors
+    # Sort: biggest first
+    regions.sort(key=lambda r: (r.area(), r.min_row, r.min_col), reverse=True)
+    return regions
 
 
-def compress_homogeneous_regions(sheet, kept_rows, kept_cols):
-    """Remove rows and columns that are homogeneous in value and format."""
+def fast_find_structural_anchors(sheet, k: int, *, region: Optional[SheetRegion] = None) -> Tuple[List[int], List[int]]:
+    """
+    Pick k row anchors and k col anchors based on coefficient of variation of numeric values.
+    Falls back to first 10 rows/cols if no numeric variation found.
+    """
+    reg = region or SheetRegion(1, sheet.max_row or 1, 1, sheet.max_column or 1)
+    row_values: Dict[int, List[float]] = defaultdict(list)
+    col_values: Dict[int, List[float]] = defaultdict(list)
 
-    def row_homogeneous(r):
-        vals = []
-        fmts = []
+    # cap scanning window for speed
+    max_r = min(reg.max_row, reg.min_row + 200 - 1)
+    max_c = min(reg.max_col, reg.min_col + 50 - 1)
+
+    for r in range(reg.min_row, max_r + 1):
+        for c in range(reg.min_col, max_c + 1):
+            v = sheet.cell(row=r, column=c).value
+            if isinstance(v, (int, float)):
+                row_values[r].append(float(v))
+                col_values[c].append(float(v))
+
+    def coefficient_of_variation(values: List[float]) -> float:
+        if not values or len(values) < 2:
+            return 0.0
+        mean_val = float(np.mean(values))
+        if mean_val == 0:
+            return 0.0
+        std_val = float(np.std(values))
+        return std_val / abs(mean_val)
+
+    row_cv = {r: coefficient_of_variation(vals) for r, vals in row_values.items() if vals}
+    col_cv = {c: coefficient_of_variation(vals) for c, vals in col_values.items() if vals}
+
+    sorted_rows = sorted(row_cv.items(), key=lambda x: x[1], reverse=True)
+    sorted_cols = sorted(col_cv.items(), key=lambda x: x[1], reverse=True)
+
+    row_anchors = [r for r, _ in sorted_rows[:k]]
+    col_anchors = [c for c, _ in sorted_cols[:k]]
+
+    if not row_anchors:
+        row_anchors = list(range(reg.min_row, min(reg.min_row + 10, reg.max_row + 1)))
+    if not col_anchors:
+        col_anchors = list(range(reg.min_col, min(reg.min_col + 10, reg.max_col + 1)))
+
+    row_anchors = [r for r in row_anchors if reg.min_row <= r <= reg.max_row]
+    col_anchors = [c for c in col_anchors if reg.min_col <= c <= reg.max_col]
+
+    return sorted(set(row_anchors)), sorted(set(col_anchors))
+
+
+def extract_cells_near_anchors(sheet, row_anchors: List[int], col_anchors: List[int], k: int, *, region: Optional[SheetRegion] = None) -> Tuple[List[int], List[int]]:
+    """
+    Keep k-neighborhood rows/cols around each anchor within region bounds.
+    """
+    reg = region or SheetRegion(1, sheet.max_row or 1, 1, sheet.max_column or 1)
+
+    rows_to_keep = set()
+    cols_to_keep = set()
+
+    for r in row_anchors:
+        for rr in range(max(reg.min_row, r - k), min(reg.max_row, r + k) + 1):
+            rows_to_keep.add(rr)
+
+    for c in col_anchors:
+        for cc in range(max(reg.min_col, c - k), min(reg.max_col, c + k) + 1):
+            cols_to_keep.add(cc)
+
+    return sorted(rows_to_keep), sorted(cols_to_keep)
+
+
+def compress_homogeneous_regions(sheet, kept_rows: List[int], kept_cols: List[int], *, region: Optional[SheetRegion] = None) -> Tuple[List[int], List[int]]:
+    """
+    Optional hook: remove rows/cols that are entirely empty within the kept grid.
+    Keeps at least one row/col.
+    """
+    reg = region or SheetRegion(1, sheet.max_row or 1, 1, sheet.max_column or 1)
+    if not kept_rows or not kept_cols:
+        return kept_rows, kept_cols
+
+    def row_nonempty(r: int) -> bool:
+        for c in kept_cols:
+            if not (reg.min_col <= c <= reg.max_col):
+                continue
+            v = sheet.cell(row=r, column=c).value
+            if v is None:
+                continue
+            if isinstance(v, str) and v.strip() == "":
+                continue
+            return True
+        return False
+
+    def col_nonempty(c: int) -> bool:
+        for r in kept_rows:
+            if not (reg.min_row <= r <= reg.max_row):
+                continue
+            v = sheet.cell(row=r, column=c).value
+            if v is None:
+                continue
+            if isinstance(v, str) and v.strip() == "":
+                continue
+            return True
+        return False
+
+    kept_rows2 = [r for r in kept_rows if row_nonempty(r)]
+    kept_cols2 = [c for c in kept_cols if col_nonempty(c)]
+
+    if not kept_rows2:
+        kept_rows2 = kept_rows[:1]
+    if not kept_cols2:
+        kept_cols2 = kept_cols[:1]
+
+    return kept_rows2, kept_cols2
+
+
+def _merged_start_cells(sheet) -> Dict[str, str]:
+    """
+    Build a mapping: start_cell.coordinate -> range string (e.g., "A1:C3")
+    """
+    start_map: Dict[str, str] = {}
+    try:
+        for m_range in sheet.merged_cells.ranges:
+            start_map[m_range.start_cell.coordinate] = str(m_range)
+    except Exception:
+        pass
+    return start_map
+
+
+def _stringify_cell_value(v: Any, *, max_len: int = 200) -> str:
+    if v is None:
+        return ""
+    try:
+        s = str(v)
+    except Exception:
+        s = "ERROR_VALUE"
+    if len(s) > max_len:
+        s = s[:max_len] + "…"
+    return s
+
+
+def create_inverted_index(
+        sheet,
+        kept_rows: List[int],
+        kept_cols: List[int],
+        *,
+        max_value_len: int = 200,
+) -> Tuple[Dict[str, List[str]], Dict[str, List[str]]]:
+    """
+    Create:
+      - inverted_index: value(string) -> [cell_ref or range_ref]
+      - format_map: format_key(json) -> [cell_ref]  (merged ranges are represented by their start cell)
+    """
+    inverted_index: Dict[str, List[str]] = defaultdict(list)
+    format_map: Dict[str, List[str]] = defaultdict(list)
+
+    merged_start_map = _merged_start_cells(sheet)
+
+    for r in kept_rows:
         for c in kept_cols:
             cell = sheet.cell(row=r, column=c)
-            vals.append(cell.value)
-            fmts.append(cell.number_format)
-        return len(set(vals)) <= 1 and len(set(fmts)) <= 1
+            cell_ref = f"{get_column_letter(c)}{r}"
 
-    def col_homogeneous(c):
-        vals = []
-        fmts = []
-        for r in kept_rows:
-            cell = sheet.cell(row=r, column=c)
-            vals.append(cell.value)
-            fmts.append(cell.number_format)
-        return len(set(vals)) <= 1 and len(set(fmts)) <= 1
+            # Handle merged cells efficiently: record the merged range only once at start cell.
+            merged_range_str = merged_start_map.get(cell.coordinate)
 
-    filtered_rows = [r for r in kept_rows if not row_homogeneous(r)]
-    filtered_cols = [c for c in kept_cols if not col_homogeneous(c)]
-    return filtered_rows, filtered_cols
+            # Value index
+            try:
+                if merged_range_str is not None:
+                    # Only store at the merge start cell; other cells in the merge are typically empty.
+                    v = cell.value
+                    if v is not None and not (isinstance(v, str) and v.strip() == ""):
+                        v_str = _stringify_cell_value(v, max_len=max_value_len)
+                        inverted_index[v_str].append(merged_range_str)
+                else:
+                    v = cell.value
+                    if v is not None and not (isinstance(v, str) and v.strip() == ""):
+                        v_str = _stringify_cell_value(v, max_len=max_value_len)
+                        inverted_index[v_str].append(cell_ref)
+            except Exception:
+                inverted_index["ERROR_VALUE"].append(cell_ref)
 
-def aggregate_formats(sheet, format_map):
-    aggregated_formats = defaultdict(list)
+            # Format map (use start cell style for merged ranges)
+            try:
+                format_info: Dict[str, Any] = {}
+                format_info["font"] = {"bold": getattr(cell.font, "bold", None)}
+                alignment = getattr(cell, "alignment", None)
+                format_info["alignment"] = {"horizontal": getattr(alignment, "horizontal", None)}
+
+                original_number_format = get_number_format_string(cell)
+                inferred_type = infer_cell_data_type(cell)
+                category = categorize_number_format(original_number_format, cell)
+
+                format_info["original_number_format"] = original_number_format
+                format_info["inferred_data_type"] = inferred_type
+                format_info["number_format_category"] = category
+                format_info["merged"] = merged_range_str is not None
+                if merged_range_str is not None:
+                    format_info["merged_range"] = merged_range_str
+
+                format_key = json.dumps(format_info, sort_keys=True)
+                format_map[format_key].append(cell_ref)
+            except Exception:
+                pass
+
+    return dict(inverted_index), dict(format_map)
+
+
+def create_inverted_index_translation(inverted_index: Dict[str, List[str]]) -> Dict[str, List[str]]:
+    """
+    Merge single-cell refs into ranges; keep pre-merged ranges intact.
+    """
+    merged_index: Dict[str, List[str]] = {}
+    for value, refs in inverted_index.items():
+        if value is None or str(value).strip() == "":
+            continue
+        merged_index[str(value)] = _merge_refs(refs)
+    return merged_index
+
+
+def aggregate_formats(sheet, format_map: Dict[str, List[str]]) -> Dict[str, List[str]]:
+    """
+    Aggregate formats by re-keying them into semantic-type + number-format,
+    then merging refs into rectangle ranges.
+    """
+    aggregated_formats: Dict[str, List[str]] = defaultdict(list)
     processed_cells = set()
 
-    type_nfs_map = defaultdict(list)
+    type_nfs_map: Dict[str, List[str]] = defaultdict(list)
     for _, cells in format_map.items():
         for cell_ref in cells:
             try:
@@ -488,6 +605,7 @@ def aggregate_formats(sheet, format_map):
             type_nfs_map[key].append(cell_ref)
 
     for key, cells in type_nfs_map.items():
+        # Use same rectangle-growing heuristic from earlier version (bounded).
         cells_set = set(cells)
         for start_cell in cells:
             if start_cell in processed_cells:
@@ -536,176 +654,169 @@ def aggregate_formats(sheet, format_map):
 
     return dict(aggregated_formats)
 
-def create_inverted_index(sheet, kept_rows, kept_cols):
-    inverted_index = defaultdict(list)
-    format_map = defaultdict(list)
-    merged_lookup = build_merged_lookup(sheet)
 
-    for r in kept_rows:
-        for c in kept_cols:
-            cell = sheet.cell(row=r, column=c)
-            cell_ref = f"{get_column_letter(c)}{r}"
-
-            merged_value = None
-            merged_range = None
-            if cell_ref in merged_lookup:
-                merged_value, merged_range = merged_lookup[cell_ref]
-
-            try:
-                if merged_value is not None:
-                    cell_value = str(merged_value) if merged_value is not None else ""
-                    inverted_index[cell_value].append(cell_ref)
-                elif cell.value is not None:
-                    if isinstance(cell.value, (int, float)):
-                        cell_value = f"{cell.value}"
-                    else:
-                        cell_value = str(cell.value)
-                    inverted_index[cell_value].append(cell_ref)
-            except Exception:
-                inverted_index["ERROR_VALUE"].append(cell_ref)
-
-            try:
-                format_info = {}
-                format_info["font"] = {"bold": getattr(cell.font, 'bold', None)}
-                alignment = getattr(cell, 'alignment', None)
-                format_info["alignment"] = {"horizontal": getattr(alignment, 'horizontal', None)}
-                original_number_format = get_number_format_string(cell)
-                inferred_type = infer_cell_data_type(cell)
-                category = categorize_number_format(original_number_format, cell)
-                format_info["original_number_format"] = original_number_format
-                format_info["inferred_data_type"] = inferred_type
-                format_info["number_format_category"] = category
-
-                if merged_range is not None:
-                    format_info["merged"] = True
-                    format_info["merged_range"] = str(merged_range)
-                else:
-                    format_info["merged"] = False
-
-                format_key = json.dumps(format_info, sort_keys=True)
-                format_map[format_key].append(cell_ref)
-            except Exception:
-                pass
-
-    return dict(inverted_index), dict(format_map)
-
-def create_inverted_index_translation(inverted_index):
-    merged_index = {}
-    for value, refs in inverted_index.items():
-        if value is None or str(value).strip() == "":
-            continue
-        merged_index[value] = _merge_refs(refs)
-    return merged_index
-
-def extract_cells_near_anchors(sheet, row_anchors, col_anchors, k):
-    rows_to_keep = set()
-    cols_to_keep = set()
-    for r in row_anchors:
-        for i in range(max(1, r - k), min(sheet.max_row + 1, r + k + 1)):
-            rows_to_keep.add(i)
-    for c in col_anchors:
-        for i in range(max(1, c - k), min(sheet.max_column + 1, c + k + 1)):
-            cols_to_keep.add(i)
-    return sorted(list(rows_to_keep)), sorted(list(cols_to_keep))
-
-def cluster_numeric_ranges(sheet, format_map):
-    numeric_map = {fmt: cells for fmt, cells in format_map.items()
-                   if json.loads(fmt).get("inferred_data_type") == "numeric"}
+def cluster_numeric_ranges(sheet, format_map: Dict[str, List[str]]) -> Dict[str, List[str]]:
+    """
+    Find numeric regions by grouping cells with numeric inferred type and similar number format.
+    """
+    numeric_map = {fmt: cells for fmt, cells in format_map.items() if json.loads(fmt).get("inferred_data_type") == "numeric"}
 
     if not numeric_map:
+        # fallback: scan the sheet for numeric and build pseudo format keys
         for r in range(1, sheet.max_row + 1):
             for c in range(1, sheet.max_column + 1):
                 cell = sheet.cell(row=r, column=c)
                 if infer_cell_data_type(cell) == "numeric":
-                    fmt_key = json.dumps({
-                        "type": detect_semantic_type(cell),
-                        "nfs": get_number_format_string(cell)
-                    }, sort_keys=True)
+                    fmt_key = json.dumps({"type": detect_semantic_type(cell), "nfs": get_number_format_string(cell)}, sort_keys=True)
                     numeric_map.setdefault(fmt_key, []).append(f"{get_column_letter(c)}{r}")
 
     return aggregate_formats(sheet, numeric_map)
 
-def spreadsheet_llm_encode_with_helpers(excel_path, output_path=None, k=2):
-    wb = openpyxl.load_workbook(excel_path, data_only=False)
-    sheets_encoding = {}
-    compression_metrics = {"sheets": {}}
+
+def spreadsheet_llm_encode_with_helpers(
+        excel_path: str,
+        output_path: Optional[str] = None,
+        k: int = 2,
+        *,
+        data_only: bool = True,
+        detect_subtables: bool = True,
+        max_value_len: int = 200,
+        min_nonempty_cells_for_region: int = 8,
+) -> Dict[str, Any]:
+    """
+    Encode an Excel file into a compact JSON-friendly structure.
+    """
+    wb = openpyxl.load_workbook(excel_path, data_only=data_only)
+
+    sheets_encoding: Dict[str, Any] = {}
+    compression_metrics: Dict[str, Any] = {"sheets": {}}
     overall_orig = overall_anchor = overall_index = overall_format = overall_final = 0
 
     for sheet_name in wb.sheetnames:
         sheet = wb[sheet_name]
-        if sheet.max_row <= 1 and sheet.max_column <= 1:
+        if (sheet.max_row or 0) <= 1 and (sheet.max_column or 0) <= 1:
             continue
 
+        full_region = SheetRegion(1, sheet.max_row or 1, 1, sheet.max_column or 1)
+
+        # Detect regions (subtables) if enabled
+        regions: List[SheetRegion]
+        if detect_subtables:
+            regions = detect_table_regions(sheet, full_region=full_region, min_nonempty_cells=min_nonempty_cells_for_region)
+        else:
+            regions = [full_region]
+
+        # Encode each region; pick a primary region (largest) for backward compat keys.
+        region_encodings: List[Dict[str, Any]] = []
+
+        # Compute original tokens on full sheet (for comparable metrics)
         original_cells = {}
-        for r in range(1, sheet.max_row + 1):
-            for c in range(1, sheet.max_column + 1):
-                v = sheet.cell(row=r, column=c).value
-                if v is not None:
-                    original_cells[f"{get_column_letter(c)}{r}"] = str(v)
+        for r, c, v in _iter_values_only(sheet, full_region):
+            if v is None:
+                continue
+            s = _stringify_cell_value(v, max_len=max_value_len)
+            if s.strip() == "":
+                continue
+            original_cells[f"{get_column_letter(c)}{r}"] = s
         original_tokens = len(json.dumps(original_cells, ensure_ascii=False))
 
-        # Find anchors
-        row_anchors, col_anchors = find_structural_anchors(sheet, k)
-        kept_rows, kept_cols = extract_cells_near_anchors(sheet, row_anchors, col_anchors, 0)
+        for reg_idx, reg in enumerate(regions):
+            # Find anchors inside region
+            row_anchors, col_anchors = fast_find_structural_anchors(sheet, k, region=reg)
 
-        if not kept_rows or not kept_cols:
-            kept_rows = list(range(1, min(21, sheet.max_row+1)))
-            kept_cols = list(range(1, min(21, sheet.max_column+1)))
+            # Keep neighborhood around anchors (BUGFIX: use k, not 0)
+            kept_rows, kept_cols = extract_cells_near_anchors(sheet, row_anchors, col_anchors, k, region=reg)
 
-        kept_rows, kept_cols = compress_homogeneous_regions(sheet, kept_rows, kept_cols)
+            if not kept_rows or not kept_cols:
+                kept_rows = list(range(reg.min_row, min(reg.min_row + 20, reg.max_row + 1)))
+                kept_cols = list(range(reg.min_col, min(reg.min_col + 20, reg.max_col + 1)))
 
-        anchor_cells = {}
-        for r in kept_rows:
-            for c in kept_cols:
-                v = sheet.cell(row=r, column=c).value
-                if v is not None:
-                    anchor_cells[f"{get_column_letter(c)}{r}"] = str(v)
-        anchor_tokens = len(json.dumps(anchor_cells, ensure_ascii=False))
+            kept_rows, kept_cols = compress_homogeneous_regions(sheet, kept_rows, kept_cols, region=reg)
 
-        inverted_index, format_map = create_inverted_index(sheet, kept_rows, kept_cols)
-        index_tokens = len(json.dumps(inverted_index, ensure_ascii=False))
+            # Anchor tokens (only kept grid)
+            anchor_cells = {}
+            for r in kept_rows:
+                for c in kept_cols:
+                    v = sheet.cell(row=r, column=c).value
+                    if v is None:
+                        continue
+                    s = _stringify_cell_value(v, max_len=max_value_len)
+                    if s.strip() == "":
+                        continue
+                    anchor_cells[f"{get_column_letter(c)}{r}"] = s
+            anchor_tokens = len(json.dumps(anchor_cells, ensure_ascii=False))
 
-        merged_index = create_inverted_index_translation(inverted_index)
-        merged_tokens = len(json.dumps(merged_index, ensure_ascii=False))
+            # Inverted index + formats
+            inverted_index, format_map = create_inverted_index(sheet, kept_rows, kept_cols, max_value_len=max_value_len)
+            index_tokens = len(json.dumps(inverted_index, ensure_ascii=False))
 
-        aggregated_formats = aggregate_formats(sheet, format_map)
-        format_tokens = len(json.dumps(aggregated_formats, ensure_ascii=False))
+            merged_index = create_inverted_index_translation(inverted_index)
+            merged_tokens = len(json.dumps(merged_index, ensure_ascii=False))
 
-        numeric_ranges = cluster_numeric_ranges(sheet, format_map)
-        numeric_tokens = len(json.dumps(numeric_ranges, ensure_ascii=False))
+            aggregated_formats = aggregate_formats(sheet, format_map)
+            format_tokens = len(json.dumps(aggregated_formats, ensure_ascii=False))
 
-        sheet_encoding = {
-            "structural_anchors": {
-                "rows": row_anchors,
-                "columns": [get_column_letter(c) for c in col_anchors]
-            },
-            "cells": merged_index,
-            "formats": aggregated_formats,
-            "numeric_ranges": numeric_ranges
+            numeric_ranges = cluster_numeric_ranges(sheet, format_map)
+            numeric_tokens = len(json.dumps(numeric_ranges, ensure_ascii=False))
+
+            # Final encoding
+            sheet_encoding = {
+                "region": reg.to_dict(),
+                "structural_anchors": {
+                    "rows": row_anchors,
+                    "columns": [get_column_letter(c) for c in col_anchors],
+                },
+                "cells": merged_index,
+                "formats": aggregated_formats,
+                "numeric_ranges": numeric_ranges,
+            }
+            final_tokens = len(json.dumps(sheet_encoding, ensure_ascii=False))
+
+            region_encodings.append(
+                {
+                    "region_index": reg_idx,
+                    "encoding": sheet_encoding,
+                    "metrics": {
+                        "original_tokens": original_tokens,
+                        "after_anchor_tokens": anchor_tokens,
+                        "after_inverted_index_tokens": index_tokens,
+                        "after_merged_index_tokens": merged_tokens,
+                        "after_format_tokens": format_tokens,
+                        "numeric_tokens": numeric_tokens,
+                        "final_tokens": final_tokens,
+                        "anchor_ratio": (original_tokens / anchor_tokens) if anchor_tokens else 0,
+                        "index_ratio": (original_tokens / index_tokens) if index_tokens else 0,
+                        "format_ratio": (original_tokens / format_tokens) if format_tokens else 0,
+                        "overall_ratio": (original_tokens / final_tokens) if final_tokens else 0,
+                    },
+                }
+            )
+
+        # Choose primary region encoding (largest region; already sorted)
+        primary = region_encodings[0]["encoding"] if region_encodings else {}
+        primary_metrics = region_encodings[0]["metrics"] if region_encodings else {
+            "original_tokens": original_tokens,
+            "final_tokens": 0,
+            "overall_ratio": 0,
         }
 
-        final_tokens = len(json.dumps(sheet_encoding, ensure_ascii=False))
+        # Store sheet encoding: keep legacy keys at top-level for compatibility,
+        # plus include all region encodings.
+        sheets_encoding[sheet_name] = {
+            **primary,  # structural_anchors, cells, formats, numeric_ranges, region
+            "regions": [r["encoding"] for r in region_encodings],
+        }
 
         compression_metrics["sheets"][sheet_name] = {
-            "original_tokens": original_tokens,
-            "after_anchor_tokens": anchor_tokens,
-            "after_inverted_index_tokens": index_tokens,
-            "after_merged_index_tokens": merged_tokens,
-            "after_format_tokens": format_tokens,
-            "numeric_tokens": numeric_tokens,
-            "final_tokens": final_tokens,
-            "anchor_ratio": (original_tokens / anchor_tokens) if anchor_tokens else 0,
-            "index_ratio": (original_tokens / index_tokens) if index_tokens else 0,
-            "format_ratio": (original_tokens / format_tokens) if format_tokens else 0,
-            "overall_ratio": (original_tokens / final_tokens) if final_tokens else 0
+            **primary_metrics,
+            "num_regions": len(region_encodings),
         }
 
-        sheets_encoding[sheet_name] = sheet_encoding
         overall_orig += original_tokens
-        overall_anchor += anchor_tokens
-        overall_index += index_tokens
-        overall_format += format_tokens
-        overall_final += final_tokens
+        overall_anchor += int(primary_metrics.get("after_anchor_tokens", 0) or 0)
+        overall_index += int(primary_metrics.get("after_inverted_index_tokens", 0) or 0)
+        overall_format += int(primary_metrics.get("after_format_tokens", 0) or 0)
+        overall_final += int(primary_metrics.get("final_tokens", 0) or 0)
 
     compression_metrics["overall"] = {
         "original_tokens": overall_orig,
@@ -713,654 +824,448 @@ def spreadsheet_llm_encode_with_helpers(excel_path, output_path=None, k=2):
         "after_inverted_index_tokens": overall_index,
         "after_format_tokens": overall_format,
         "final_tokens": overall_final,
-        "overall_ratio": (overall_orig / overall_final) if overall_final else 0
+        "overall_ratio": (overall_orig / overall_final) if overall_final else 0,
     }
 
     full_encoding = {
         "file_name": os.path.basename(excel_path),
         "sheets": sheets_encoding,
-        "compression_metrics": compression_metrics
+        "compression_metrics": compression_metrics,
     }
 
     if output_path:
         with open(output_path, "w", encoding="utf-8") as f:
             json.dump(full_encoding, f, ensure_ascii=False, indent=2)
-        logger.info(f"Saved encoding to {output_path}")
+        logger.info("Saved encoding to %s", output_path)
 
     return full_encoding
 
-def convert_csv_to_xlsx(csv_path, xlsx_path):
-    try:
-        import pandas as pd
-    except:
-        raise RuntimeError("pandas required")
 
-    tried = []
-    for enc in ['utf-16', 'utf-8', 'latin1']:
-        for sep in ['\t', ',', ';', '|']:
+# ==============================================================================
+# Utilities: CSV -> XLSX conversion
+# ==============================================================================
+
+def convert_csv_to_xlsx(csv_path: str, xlsx_path: str) -> bool:
+    """
+    Best-effort CSV reader: tries multiple encodings and separators.
+    """
+    tried: List[Tuple[str, str, str]] = []
+
+    for enc in ["utf-16", "utf-8", "latin1"]:
+        for sep in ["\t", ",", ";", "|"]:
             try:
                 df = pd.read_csv(csv_path, encoding=enc, sep=sep)
                 if df.shape[1] > 1:
-                    df.to_excel(xlsx_path, index=False, engine='openpyxl')
-                    logger.info(f"Converted CSV -> XLSX (encoding={enc} sep={sep})")
+                    df.to_excel(xlsx_path, index=False, engine="openpyxl")
+                    logger.info("Converted CSV -> XLSX (encoding=%s sep=%s)", enc, sep)
                     return True
             except Exception as e:
                 tried.append((enc, sep, str(e)))
                 continue
 
-    try:
-        df = pd.read_csv(csv_path, encoding='utf-8', sep=None, engine='python')
-        df.to_excel(xlsx_path, index=False, engine='openpyxl')
-        logger.info("Converted CSV -> XLSX using python engine")
-        return True
-    except Exception as e:
-        logger.error("CSV->XLSX conversion failed")
-        raise
+    # Let pandas try to infer separator
+    df = pd.read_csv(csv_path, encoding="utf-8", sep=None, engine="python")
+    df.to_excel(xlsx_path, index=False, engine="openpyxl")
+    logger.info("Converted CSV -> XLSX using python engine")
+    return True
 
 
-# ===== Main SpreadsheetEncoder Class =====
+# ==============================================================================
+# Main SpreadsheetEncoder Class
+# ==============================================================================
 
 class SpreadsheetEncoder:
     """
-    SpreadsheetLLM-based encoder with bilingual column pair detection.
-    
-    Features:
-    - Efficient table compression using SpreadsheetLLM methodology
-    - Comprehensive per-column metadata analysis
-    - Automatic bilingual column pair detection
-    - Value mapping for translation pairs
+    SpreadsheetLLM-style encoder that returns:
+      - encoded_text: a readable summary for the LLM prompt
+      - metadata: dataframe stats + inferred column types
+      - spreadsheet_llm_encoding: the raw encoding dict for the primary sheet/region
     """
 
     def __init__(self, config: Dict[str, Any]):
         self.config = config
-        # Anchor neighborhood comes from the encoder section of config/config.yaml
-        # (encoder.anchor_neighborhood). Default to 2 if not provided.
-        self.k = int(config.get('anchor_neighborhood', 2) or 2)
+        self.k = int(config.get("anchor_neighborhood", 2))
+        self.detect_subtables = bool(config.get("detect_subtables", True))
+        self.data_only = bool(config.get("data_only", True))
+        self.max_value_len = int(config.get("max_value_len", 200))
+        self.min_nonempty_cells_for_region = int(config.get("min_nonempty_cells_for_region", 8))
+        self._working_file: Optional[str] = None
+        self._temp_xlsx: Optional[str] = None
+
         logger.info(
-            "Initialized SpreadsheetEncoder with config-driven anchor_neighborhood=%s",
+            "Initialized SpreadsheetEncoder k=%s detect_subtables=%s data_only=%s",
             self.k,
+            self.detect_subtables,
+            self.data_only,
         )
 
     def load_file(self, file_path: str) -> pd.DataFrame:
-        """Load file and convert CSV if needed."""
-        file_path = Path(file_path)
+        """
+        Load file and convert CSV if needed. Returns a pandas DataFrame.
+        Note: For multi-sheet Excel, pandas reads the first sheet by default.
+        """
+        file_path_p = Path(file_path)
+        if not file_path_p.exists():
+            raise FileNotFoundError(f"File not found: {file_path_p}")
 
-        if not file_path.exists():
-            raise FileNotFoundError(f"File not found: {file_path}")
+        logger.info("Loading file: %s", file_path_p)
 
-        logger.info(f"Loading file: {file_path}")
-
-        if file_path.suffix.lower() == '.csv':
+        if file_path_p.suffix.lower() == ".csv":
             logger.info("Converting CSV to XLSX...")
-            temp_xlsx = tempfile.NamedTemporaryFile(suffix='.xlsx', delete=False)
+            temp_xlsx = tempfile.NamedTemporaryFile(suffix=".xlsx", delete=False)
             temp_xlsx_path = temp_xlsx.name
             temp_xlsx.close()
 
-            try:
-                convert_csv_to_xlsx(str(file_path), temp_xlsx_path)
-                self._temp_xlsx = temp_xlsx_path
-                working_file = temp_xlsx_path
-            except Exception as e:
-                logger.error(f"CSV conversion failed: {e}")
-                import chardet
-                with open(file_path, 'rb') as f:
-                    result = chardet.detect(f.read(10000))
-                    encoding = result['encoding']
-                for sep in [',', '\t', ';', '|']:
-                    try:
-                        df = pd.read_csv(file_path, encoding=encoding, sep=sep)
-                        if len(df.columns) > 1:
-                            self._working_file = None
-                            return df
-                    except:
-                        continue
-                df = pd.read_csv(file_path, encoding=encoding)
-                self._working_file = None
-                return df
+            convert_csv_to_xlsx(str(file_path_p), temp_xlsx_path)
+            self._temp_xlsx = temp_xlsx_path
+            working_file = temp_xlsx_path
         else:
-            working_file = str(file_path)
+            working_file = str(file_path_p)
             self._temp_xlsx = None
 
-        try:
-            df = pd.read_excel(working_file, engine='openpyxl')
-            logger.info(f"Loaded dataframe with shape {df.shape}")
-            self._working_file = working_file
-            return df
-        except Exception as e:
-            logger.error(f"Error loading file: {e}")
-            raise
+        # Load with pandas for dataframe-oriented metadata
+        df = pd.read_excel(working_file, engine="openpyxl")
+        logger.info("Loaded dataframe with shape %s", df.shape)
+
+        self._working_file = working_file
+        return df
 
     def encode(self, df: pd.DataFrame) -> Dict[str, Any]:
-        """Encode using SpreadsheetLLM methodology with bilingual detection."""
+        """
+        Encode using SpreadsheetLLM methodology.
+        If no _working_file is present (df provided directly), writes it to a temp xlsx first.
+        """
         logger.info("Encoding with SpreadsheetLLM...")
 
-        if not hasattr(self, '_working_file') or self._working_file is None:
-            temp_file = tempfile.NamedTemporaryFile(suffix='.xlsx', delete=False)
+        if not self._working_file:
+            temp_file = tempfile.NamedTemporaryFile(suffix=".xlsx", delete=False)
             temp_file_path = temp_file.name
             temp_file.close()
-            df.to_excel(temp_file_path, index=False, engine='openpyxl')
+            df.to_excel(temp_file_path, index=False, engine="openpyxl")
             self._working_file = temp_file_path
             self._temp_xlsx = temp_file_path
 
         full_encoding = spreadsheet_llm_encode_with_helpers(
             self._working_file,
             output_path=None,
-            k=self.k
+            k=self.k,
+            data_only=self.data_only,
+            detect_subtables=self.detect_subtables,
+            max_value_len=self.max_value_len,
+            min_nonempty_cells_for_region=self.min_nonempty_cells_for_region,
         )
 
-        sheet_name = list(full_encoding['sheets'].keys())[0] if full_encoding['sheets'] else None
-        sheet_encoding = full_encoding['sheets'][sheet_name] if sheet_name else {}
+# Extract the first sheet encoding (primary region)
+        sheet_name = list(full_encoding["sheets"].keys())[0] if full_encoding["sheets"] else None
+        sheet_encoding = full_encoding["sheets"].get(sheet_name, {}) if sheet_name else {}
 
-        encoded_text = self._create_readable_text(sheet_encoding, full_encoding['compression_metrics'])
-        metadata = self._extract_metadata(df, sheet_encoding, full_encoding['compression_metrics'])
+        encoded_text = self._create_readable_text(sheet_encoding, full_encoding["compression_metrics"])
+        metadata = self._extract_metadata(df, sheet_encoding, full_encoding["compression_metrics"])
 
-        # 🔥 Detect bilingual column pairs
-        if self.detect_bilingual_pairs:
-            bilingual_pairs = self._detect_bilingual_column_pairs(df, metadata)
-            metadata['bilingual_column_pairs'] = bilingual_pairs
-            
-            if bilingual_pairs:
-                logger.info(f"✅ Detected {len(bilingual_pairs)} bilingual column pairs:")
-                for pair in bilingual_pairs:
-                    logger.info(
-                        f"  📌 {pair['chinese_column']} ↔ {pair['english_column']} "
-                        f"(confidence: {pair['confidence']:.2%})"
-                    )
-        else:
-            metadata['bilingual_column_pairs'] = []
-
+        # Cleanup temp file if we created it
         if self._temp_xlsx and Path(self._temp_xlsx).exists():
             try:
                 Path(self._temp_xlsx).unlink()
-            except:
+            except Exception:
                 pass
 
         result = {
-            'encoded_text': encoded_text,
-            'metadata': metadata,
-            'original_shape': df.shape,
-            'preview_shape': df.shape,
-            'dataframe': df,
-            'spreadsheet_llm_encoding': sheet_encoding,
-            'compression_metrics': full_encoding['compression_metrics']
+            "encoded_text": encoded_text,
+            "metadata": metadata,
+            "original_shape": df.shape,
+            "preview_shape": df.shape,
+            "dataframe": df,
+            "spreadsheet_llm_encoding": sheet_encoding,
+            "compression_metrics": full_encoding["compression_metrics"],
         }
 
-        logger.info(f"Encoding complete. Compression: {metadata.get('compression_ratio', 0):.2f}x")
+        logger.info("Encoding complete. Compression: %.2fx", metadata.get("compression_ratio", 0))
         return result
 
-    # ===== Bilingual Detection =====
-
-    def _detect_bilingual_column_pairs(self, 
-                                       df: pd.DataFrame, 
-                                       metadata: Dict[str, Any]) -> List[Dict[str, Any]]:
-        """Detect paired Chinese-English columns."""
-        pairs = []
-        columns = df.columns.tolist()
-        columns_metadata = metadata.get('columns', {})
-        
-        mono_columns = [col for col in columns if '/' not in str(col)]
-        
-        logger.info(f"Checking {len(mono_columns)} monolingual columns for bilingual pairs...")
-        
-        for i in range(len(mono_columns)):
-            col_a = mono_columns[i]
-            start_idx = max(0, i - 3)
-            end_idx = min(len(mono_columns), i + 4)
-            
-            for j in range(start_idx, end_idx):
-                if i == j:
-                    continue
-                    
-                col_b = mono_columns[j]
-                pair_info = self._analyze_column_pair(df, col_a, col_b, columns_metadata)
-                
-                if pair_info and pair_info['confidence'] >= self.bilingual_confidence_threshold:
-                    existing = any(
-                        (p['chinese_column'] == pair_info['chinese_column'] and 
-                         p['english_column'] == pair_info['english_column'])
-                        for p in pairs
-                    )
-                    if not existing:
-                        pairs.append(pair_info)
-        
-        return pairs
-
-    def _analyze_column_pair(self,
-                            df: pd.DataFrame,
-                            col_a: str,
-                            col_b: str,
-                            columns_metadata: Dict[str, Any]) -> Optional[Dict[str, Any]]:
-        """Analyze if two columns form a bilingual pair."""
-        meta_a = columns_metadata.get(col_a, {})
-        meta_b = columns_metadata.get(col_b, {})
-        
-        lang_a = self._detect_column_language(df[col_a], meta_a)
-        lang_b = self._detect_column_language(df[col_b], meta_b)
-        
-        if not ((lang_a == 'chinese' and lang_b == 'english') or 
-                (lang_a == 'english' and lang_b == 'chinese')):
-            return None
-        
-        if lang_a == 'chinese':
-            chinese_col, english_col = col_a, col_b
-            chinese_meta, english_meta = meta_a, meta_b
-        else:
-            chinese_col, english_col = col_b, col_a
-            chinese_meta, english_meta = meta_b, meta_a
-        
-        unique_chinese = chinese_meta.get('unique_count', 0)
-        unique_english = english_meta.get('unique_count', 0)
-        
-        if unique_chinese == 0 or unique_english == 0:
-            return None
-        
-        count_ratio = min(unique_chinese, unique_english) / max(unique_chinese, unique_english)
-        if count_ratio < 0.8:
-            return None
-        
-        value_mapping, mapping_confidence = self._build_value_mapping(
-            df[chinese_col], df[english_col]
+    def _create_readable_text(self, sheet_encoding: Dict[str, Any], compression_metrics: Dict[str, Any]) -> str:
+        """
+        Create an LLM-friendly text representation (summary).
+        """
+        lines: List[str] = []
+        sheet_metrics = (
+            list(compression_metrics.get("sheets", {}).values())[0]
+            if compression_metrics.get("sheets")
+            else {}
         )
-        
-        if mapping_confidence < 0.6:
-            return None
-        
-        name_similarity = self._compute_column_name_similarity(chinese_col, english_col)
-        
-        confidence = (
-            mapping_confidence * 0.7 +
-            count_ratio * 0.2 +
-            name_similarity * 0.1
-        )
-        
-        return {
-            'chinese_column': chinese_col,
-            'english_column': english_col,
-            'confidence': confidence,
-            'value_mapping': value_mapping,
-            'unique_count_chinese': unique_chinese,
-            'unique_count_english': unique_english,
-            'mapping_confidence': mapping_confidence,
-            'name_similarity': name_similarity,
-            'example_mappings': dict(list(value_mapping.items())[:5])
-        }
 
-    def _detect_column_language(self, 
-                                series: pd.Series, 
-                                metadata: Dict[str, Any]) -> str:
-        """Detect the dominant language of a column."""
-        sample_values = metadata.get('sample_values', [])
-        
-        if not sample_values:
-            sample = series.dropna().astype(str).head(50).tolist()
-        else:
-            sample = sample_values[:50]
-        
-        if not sample:
-            return 'other'
-        
-        chinese_count = 0
-        english_count = 0
-        
-        for val in sample:
-            val_str = str(val)
-            if re.search(r'[\u4e00-\u9fff]', val_str):
-                chinese_count += 1
-            if re.search(r'\b[a-zA-Z]{2,}\b', val_str):
-                english_count += 1
-        
-        total = len(sample)
-        chinese_ratio = chinese_count / total if total > 0 else 0
-        english_ratio = english_count / total if total > 0 else 0
-        
-        if chinese_ratio > 0.6 and chinese_ratio > english_ratio * 1.5:
-            return 'chinese'
-        elif english_ratio > 0.6 and english_ratio > chinese_ratio * 1.5:
-            return 'english'
-        elif chinese_ratio > 0.3 and english_ratio > 0.3:
-            return 'mixed'
-        else:
-            return 'other'
-
-    def _build_value_mapping(self,
-                            chinese_series: pd.Series,
-                            english_series: pd.Series) -> Tuple[Dict[str, str], float]:
-        """Build Chinese→English value mapping."""
-        if len(chinese_series) != len(english_series):
-            return {}, 0.0
-        
-        pair_counts = defaultdict(lambda: defaultdict(int))
-        total_pairs = 0
-        
-        for ch_val, en_val in zip(chinese_series, english_series):
-            if pd.isna(ch_val) or pd.isna(en_val):
-                continue
-            
-            ch_str = str(ch_val).strip()
-            en_str = str(en_val).strip()
-            
-            if not ch_str or not en_str:
-                continue
-            
-            pair_counts[ch_str][en_str] += 1
-            total_pairs += 1
-        
-        if total_pairs == 0:
-            return {}, 0.0
-        
-        value_mapping = {}
-        matched_pairs = 0
-        
-        for ch_val, en_dict in pair_counts.items():
-            best_en_val, best_count = max(en_dict.items(), key=lambda x: x[1])
-            value_mapping[ch_val] = best_en_val
-            matched_pairs += best_count
-        
-        confidence = matched_pairs / total_pairs if total_pairs > 0 else 0.0
-        
-        return value_mapping, confidence
-
-    def _compute_column_name_similarity(self, name_a: str, name_b: str) -> float:
-        """Compute semantic similarity between column names."""
-        name_a_lower = str(name_a).lower()
-        name_b_lower = str(name_b).lower()
-        
-        keyword_pairs = [
-            (['年份', '年度', 'year'], ['year']),
-            (['类别', '類別', 'category', '分类', '分類'], ['category', 'type', 'class']),
-            (['项目', '項目', 'item', '事項'], ['item', 'subject']),
-            (['案件', '個案', 'case'], ['case', 'cases']),
-            (['数量', '數量', 'count', '个数'], ['count', 'number', 'quantity']),
-            (['报告', '舉報', '举报', 'report'], ['report', 'reported', 'reporting']),
-            (['警方', '警察', 'police'], ['police']),
-            (['事件', 'incident', '事故'], ['incident', 'event']),
-            (['有否', '是否', 'whether'], ['whether', 'being', 'or not']),
-            (['性别', '性別', 'gender'], ['gender', 'sex']),
-            (['年龄', '年齡', 'age'], ['age']),
-            (['地区', '地區', 'region'], ['region', 'area', 'district']),
-        ]
-        
-        for chinese_keywords, english_keywords in keyword_pairs:
-            has_chinese = any(kw in name_a_lower for kw in chinese_keywords)
-            has_english = any(kw in name_b_lower for kw in english_keywords)
-            
-            if has_chinese and has_english:
-                return 0.8
-        
-        name_a_words = re.findall(r'[a-zA-Z]+', name_a_lower)
-        name_b_words = re.findall(r'[a-zA-Z]+', name_b_lower)
-        
-        if name_a_words and name_b_words:
-            common_words = set(name_a_words) & set(name_b_words)
-            if common_words:
-                return 0.6
-        
-        return 0.0
-
-    # ===== Text and Metadata Creation =====
-
-    def _create_readable_text(self, sheet_encoding: Dict[str, Any],
-                              compression_metrics: Dict[str, Any]) -> str:
-        """Create LLM-friendly text representation."""
-        lines = []
-        sheet_metrics = list(compression_metrics.get('sheets', {}).values())[0] if compression_metrics.get('sheets') else {}
-        
-        lines.append("="*80)
+        lines.append("=" * 80)
         lines.append("SPREADSHEET ENCODING (SpreadsheetLLM)")
-        lines.append("="*80)
+        lines.append("=" * 80)
         lines.append(f"Compression Ratio: {sheet_metrics.get('overall_ratio', 0):.2f}x")
         lines.append("")
 
-        anchors = sheet_encoding.get('structural_anchors', {})
+        # Region info
+        if "region" in sheet_encoding:
+            reg = sheet_encoding["region"]
+            lines.append("## REGION")
+            lines.append(f"Bounds: rows {reg.get('min_row')}..{reg.get('max_row')}, cols {reg.get('min_col')}..{reg.get('max_col')}")
+            lines.append("")
+
+        # Anchors
+        anchors = sheet_encoding.get("structural_anchors", {})
         lines.append("## STRUCTURAL ANCHORS")
         lines.append(f"Key Rows: {anchors.get('rows', [])}")
         lines.append(f"Key Columns: {anchors.get('columns', [])}")
         lines.append("")
 
-        cells = sheet_encoding.get('cells', {})
+        # Cells
+        cells = sheet_encoding.get("cells", {})
         lines.append("## CELL VALUES")
         lines.append(f"Unique values: {len(cells)}")
-        for idx, (value, ranges) in enumerate(list(cells.items())[:20]):
-            ranges_str = ', '.join(ranges[:5])
+        for value, ranges in list(cells.items())[:20]:
+            ranges_str = ", ".join(ranges[:5])
             if len(ranges) > 5:
-                ranges_str += f" (+{len(ranges)-5} more)"
-            lines.append(f"  '{value}': {ranges_str}")
+                ranges_str += f" (+{len(ranges) - 5} more)"
+            v_show = value if len(str(value)) <= 80 else (str(value)[:80] + "…")
+            lines.append(f"  '{v_show}': {ranges_str}")
         if len(cells) > 20:
-            lines.append(f"  ... and {len(cells)-20} more values")
+            lines.append(f"  ... and {len(cells) - 20} more values")
         lines.append("")
 
-        formats = sheet_encoding.get('formats', {})
+        # Formats
+        formats = sheet_encoding.get("formats", {})
         lines.append("## FORMAT REGIONS")
         lines.append(f"Format groups: {len(formats)}")
         for fmt_key, ranges in list(formats.items())[:10]:
             try:
                 fmt = json.loads(fmt_key)
-                ranges_str = ', '.join(ranges[:3])
+                ranges_str = ", ".join(ranges[:3])
                 if len(ranges) > 3:
-                    ranges_str += f" (+{len(ranges)-3})"
+                    ranges_str += f" (+{len(ranges) - 3})"
                 lines.append(f"  Type: {fmt.get('type')}, Format: {fmt.get('nfs')}")
                 lines.append(f"    Ranges: {ranges_str}")
-            except:
-                pass
+            except Exception:
+                continue
         lines.append("")
-
         return "\n".join(lines)
 
-    def _extract_metadata(self, df: pd.DataFrame,
-                          sheet_encoding: Dict[str, Any],
-                          compression_metrics: Dict[str, Any]) -> Dict[str, Any]:
-        """Extract comprehensive metadata."""
-        sheet_metrics = list(compression_metrics.get('sheets', {}).values())[0] if compression_metrics.get('sheets') else {}
+    def _extract_metadata(self, df: pd.DataFrame, sheet_encoding: Dict[str, Any], compression_metrics: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        Extract comprehensive metadata with unique values and statistics.
+        """
+        sheet_metrics = (
+            list(compression_metrics.get("sheets", {}).values())[0]
+            if compression_metrics.get("sheets")
+            else {}
+        )
 
-        metadata = {
-            'num_rows': len(df),
-            'num_cols': len(df.columns),
-            'column_names': df.columns.tolist(),
-            'dtypes': {col: str(dtype) for col, dtype in df.dtypes.items()},
-            'null_counts': df.isnull().sum().to_dict(),
-            'null_percentages': (df.isnull().sum() / len(df) * 100).to_dict(),
-            'compression_ratio': sheet_metrics.get('overall_ratio', 0),
-            'compression_stages': {
-                'original_tokens': sheet_metrics.get('original_tokens', 0),
-                'after_anchors': sheet_metrics.get('after_anchor_tokens', 0),
-                'final_tokens': sheet_metrics.get('final_tokens', 0)
+        metadata: Dict[str, Any] = {
+            "num_rows": len(df),
+            "num_cols": len(df.columns),
+            "column_names": df.columns.tolist(),
+            "dtypes": {col: str(dtype) for col, dtype in df.dtypes.items()},
+            "null_counts": df.isnull().sum().to_dict(),
+            "null_percentages": (df.isnull().sum() / len(df) * 100).to_dict() if len(df) else {},
+            "compression_ratio": sheet_metrics.get("overall_ratio", 0),
+            "compression_stages": {
+                "original_tokens": sheet_metrics.get("original_tokens", 0),
+                "after_anchors": sheet_metrics.get("after_anchor_tokens", 0),
+                "final_tokens": sheet_metrics.get("final_tokens", 0),
             },
-            'sample_values': {},
-            'columns': {}
+            "sample_values": {},
+            "columns": {},
         }
 
-        max_unique_values = 100
-        sample_size = min(10000, len(df))
-        df_sample = df if len(df) <= sample_size else df.sample(sample_size)
+        max_unique_values = int(self.config.get("max_unique_values", 100))
+        sample_size = min(int(self.config.get("metadata_sample_size", 10000)), len(df))
+        df_sample = df if len(df) <= sample_size else df.sample(sample_size, random_state=0)
 
         for col in df.columns:
             col_metadata = self._analyze_column(df[col], df_sample[col], max_unique_values)
-            metadata['columns'][col] = col_metadata
+            metadata["columns"][col] = col_metadata
 
             non_null = df[col].dropna()
-            if len(non_null) > 0:
-                metadata['sample_values'][col] = [str(v)[:50] for v in non_null.head(3).tolist()]
-            else:
-                metadata['sample_values'][col] = []
+            metadata["sample_values"][col] = [str(v)[:50] for v in non_null.head(3).tolist()] if len(non_null) else []
 
-        issues = []
+        issues: List[str] = []
         for col in df.columns:
             col_str = str(col)
-            if any('\u4e00' <= c <= '\u9fff' for c in col_str) and any(c.isalpha() and ord(c) < 128 for c in col_str):
+            has_cn = any("\u4e00" <= c <= "\u9fff" for c in col_str)
+            has_en = any(c.isalpha() and ord(c) < 128 for c in col_str)
+            if has_cn and has_en:
                 issues.append(f"Multi-language column: {col}")
-        metadata['potential_issues'] = issues
+        metadata["potential_issues"] = issues
 
         return metadata
 
-    def _analyze_column(self, full_series: pd.Series, sample_series: pd.Series,
-                        max_unique_values: int) -> Dict[str, Any]:
-        """Analyze a single column comprehensively."""
-        col_metadata = {
-            'dtype': str(full_series.dtype),
-            'null_count': int(full_series.isnull().sum()),
-            'null_percentage': float(full_series.isnull().sum() / len(full_series) * 100) if len(full_series) > 0 else 0.0,
-            'unique_count': int(full_series.nunique()),
-            'unique_values': [],
-            'value_counts': {},
-            'sample_values': [],
-            'inferred_type': None,
-            'potential_delimiters': [],
-            'has_bilingual_content': False,
-            'statistics': {}
+    def _analyze_column(self, full_series: pd.Series, sample_series: pd.Series, max_unique_values: int) -> Dict[str, Any]:
+        """
+        Analyze a single column for:
+          - dtype/nulls/unique
+          - inferred semantic type
+          - potential split delimiters for strings
+          - bilingual content
+          - numeric stats
+        """
+        col_metadata: Dict[str, Any] = {
+            "dtype": str(full_series.dtype),
+            "null_count": int(full_series.isnull().sum()),
+            "null_percentage": float(full_series.isnull().sum() / len(full_series) * 100) if len(full_series) > 0 else 0.0,
+            "unique_count": int(full_series.nunique(dropna=True)),
+            "unique_values": [],
+            "unique_values_truncated": False,
+            "value_counts": {},
+            "sample_values": [],
+            "inferred_type": None,
+            "potential_delimiters": [],
+            "has_bilingual_content": False,
+            "statistics": {},
         }
 
         unique_vals = full_series.dropna().unique()
         if len(unique_vals) <= max_unique_values:
-            col_metadata['unique_values'] = [str(v) for v in unique_vals]
-            col_metadata['unique_values_truncated'] = False
-            value_counts = full_series.value_counts()
-            col_metadata['value_counts'] = {
-                str(k): int(v) for k, v in value_counts.head(50).items()
-            }
+            col_metadata["unique_values"] = [str(v) for v in unique_vals]
+            col_metadata["unique_values_truncated"] = False
+            vc = full_series.value_counts(dropna=True)
+            col_metadata["value_counts"] = {str(k): int(v) for k, v in vc.head(50).items()}
         else:
-            col_metadata['unique_values'] = [str(v) for v in unique_vals[:max_unique_values]]
-            col_metadata['unique_values_truncated'] = True
+            col_metadata["unique_values"] = [str(v) for v in unique_vals[:max_unique_values]]
+            col_metadata["unique_values_truncated"] = True
 
         non_null_sample = sample_series.dropna().head(20)
-        col_metadata['sample_values'] = [str(v) for v in non_null_sample]
+        col_metadata["sample_values"] = [str(v) for v in non_null_sample]
 
-        col_metadata['inferred_type'] = self._infer_column_type(full_series, col_metadata)
+        col_metadata["inferred_type"] = self._infer_column_type(full_series, col_metadata)
 
-        if col_metadata['inferred_type'] == 'string':
-            col_metadata['potential_delimiters'] = self._detect_delimiters(
-                col_metadata['sample_values']
-            )
+        if col_metadata["inferred_type"] == "string":
+            col_metadata["potential_delimiters"] = self._detect_delimiters(col_metadata["sample_values"])
 
-        col_metadata['has_bilingual_content'] = self._check_bilingual(
-            col_metadata['sample_values']
-        )
+        col_metadata["has_bilingual_content"] = self._check_bilingual(col_metadata["sample_values"])
 
         if pd.api.types.is_numeric_dtype(full_series):
-            col_metadata['statistics'] = {
-                'min': float(full_series.min()) if not full_series.empty else None,
-                'max': float(full_series.max()) if not full_series.empty else None,
-                'mean': float(full_series.mean()) if not full_series.empty else None,
-                'median': float(full_series.median()) if not full_series.empty else None,
-                'std': float(full_series.std()) if not full_series.empty else None
-            }
+            s = full_series.dropna()
+            if len(s):
+                col_metadata["statistics"] = {
+                    "min": float(s.min()),
+                    "max": float(s.max()),
+                    "mean": float(s.mean()),
+                    "median": float(s.median()),
+                    "std": float(s.std(ddof=0)) if len(s) > 1 else 0.0,
+                }
 
         return col_metadata
 
-    def _infer_column_type(self, series: pd.Series, col_metadata: Dict) -> str:
-        """Infer semantic type."""
-        unique_count = col_metadata['unique_count']
-        total_count = len(series)
-        unique_values = col_metadata.get('unique_values', [])
+    def _infer_column_type(self, series: pd.Series, col_metadata: Dict[str, Any]) -> str:
+        """
+        Infer semantic type based on data characteristics.
+
+        Returns:
+          boolean | boolean_with_na | categorical | integer | numeric |
+          identifier | date | year | string
+        """
+        unique_count = int(col_metadata.get("unique_count", 0))
+        total_count = int(len(series)) if len(series) else 0
+        unique_values = col_metadata.get("unique_values", [])
 
         if pd.api.types.is_numeric_dtype(series):
             if pd.api.types.is_integer_dtype(series):
-                # Could be year if values are in reasonable range
-                if not series.empty:
-                    min_val = series.min()
-                    max_val = series.max()
+                s = series.dropna()
+                if len(s):
+                    min_val, max_val = int(s.min()), int(s.max())
                     if 1900 <= min_val <= 2100 and 1900 <= max_val <= 2100:
-                        return 'year'
-                return 'integer'
-            return 'numeric'
-        # Very low cardinality -> likely categorical or boolean
+                        return "year"
+                return "integer"
+            return "numeric"
+
         if unique_count <= 10:
             unique_vals_lower = [str(v).lower().strip() for v in unique_values]
-
             boolean_patterns = [
-                {'yes', 'no'}, {'y', 'n'}, {'true', 'false'}, {'t', 'f'}, {'1', '0'},
-                {'是', '否'}, {'有', '沒有', '无'}, {'有', '没有'}
+                {"yes", "no"},
+                {"y", "n"},
+                {"true", "false"},
+                {"t", "f"},
+                {"1", "0"},
+                {"是", "否"},
+                {"有", "沒有", "无"},
+                {"有", "没有"},
             ]
-
-            na_indicators = ['n/a', 'na', 'not applicable', '不適用', '不适用', 'none', 'null']
-            has_na_value = any(val in unique_vals_lower for val in na_indicators)
+            na_indicators = {"n/a", "na", "not applicable", "不適用", "不适用", "none", "null", ""}
+            has_na_value = any(val in na_indicators for val in unique_vals_lower)
             actual_vals = set(unique_vals_lower) - set(na_indicators)
 
             for pattern in boolean_patterns:
                 if actual_vals <= pattern and len(actual_vals) >= 2:
-                    return 'boolean_with_na' if has_na_value else 'boolean'
+                    return "boolean_with_na" if has_na_value else "boolean"
 
             if len(actual_vals) == 1 and has_na_value:
                 single_val = list(actual_vals)[0]
-                all_boolean_vals = set()
-                for pattern in boolean_patterns:
-                    all_boolean_vals.update(pattern)
+                all_boolean_vals = set().union(*boolean_patterns)
                 if single_val in all_boolean_vals:
-                    return 'boolean_with_na'
+                    return "boolean_with_na"
 
-            return 'categorical'
+            return "categorical"
 
+        if total_count and unique_count / total_count > 0.95:
+            return "identifier"
 
-        # High cardinality -> identifier
-        if unique_count / total_count > 0.95:
-            return 'identifier'
+        if total_count and unique_count / total_count < 0.5 and unique_count <= 50:
+            return "categorical"
 
-        if unique_count / total_count < 0.5 and unique_count <= 50:
-            return 'categorical'
-
-        # Check for date patterns
         if self._is_date_column(series):
-            return 'date'
+            return "date"
 
-        return 'string'
+        return "string"
 
     def _detect_delimiters(self, sample_values: List[str]) -> List[Dict[str, Any]]:
-        """Detect potential delimiters."""
         if not sample_values or len(sample_values) < 3:
             return []
 
         delimiters_to_check = [
-            (' - ', 'space-dash-space'), ('-', 'dash'),
-            (' / ', 'space-slash-space'), ('/', 'slash'),
-            (' | ', 'space-pipe-space'), ('|', 'pipe'),
-            (':', 'colon'), (';', 'semicolon'), (',', 'comma'),
-            ('(', 'open-paren'), (')', 'close-paren')
+            (" - ", "space-dash-space"),
+            ("-", "dash"),
+            (" / ", "space-slash-space"),
+            ("/", "slash"),
+            (" | ", "space-pipe-space"),
+            ("|", "pipe"),
+            (":", "colon"),
+            (";", "semicolon"),
+            (",", "comma"),
+            ("(", "open-paren"),
+            (")", "close-paren"),
         ]
 
-        detected = []
+        detected: List[Dict[str, Any]] = []
         total_values = len(sample_values)
 
         for delimiter, name in delimiters_to_check:
             count = sum(1 for val in sample_values if delimiter in str(val))
-            percentage = (count / total_values * 100) if total_values > 0 else 0
-
+            percentage = (count / total_values * 100) if total_values else 0.0
             if percentage >= 50:
-                split_counts = []
-                for val in sample_values:
-                    if delimiter in str(val):
-                        parts = str(val).split(delimiter)
-                        split_counts.append(len(parts))
-
+                split_counts = [len(str(val).split(delimiter)) for val in sample_values if delimiter in str(val)]
                 is_consistent = len(set(split_counts)) == 1 if split_counts else False
                 num_parts = split_counts[0] if split_counts and is_consistent else None
+                detected.append(
+                    {
+                        "delimiter": delimiter,
+                        "name": name,
+                        "frequency": count,
+                        "percentage": percentage,
+                        "is_consistent": is_consistent,
+                        "num_parts": num_parts,
+                        "sample_split": str(sample_values[0]).split(delimiter) if delimiter in str(sample_values[0]) else None,
+                    }
+                )
 
-                detected.append({
-                    'delimiter': delimiter,
-                    'name': name,
-                    'frequency': count,
-                    'percentage': percentage,
-                    'is_consistent': is_consistent,
-                    'num_parts': num_parts,
-                    'sample_split': str(sample_values[0]).split(delimiter) if sample_values and delimiter in str(sample_values[0]) else None
-                })
-
-        detected.sort(key=lambda x: x['percentage'], reverse=True)
+        detected.sort(key=lambda x: x["percentage"], reverse=True)
         return detected
 
     def _check_bilingual(self, sample_values: List[str]) -> bool:
-        """Check if values contain both Chinese and English."""
         if not sample_values:
             return False
-
         for val in sample_values[:10]:
-            val_str = str(val)
-            has_chinese = any('\u4e00' <= c <= '\u9fff' for c in val_str)
-            has_english = any(c.isalpha() and ord(c) < 128 for c in val_str)
+            s = str(val)
+            has_chinese = any("\u4e00" <= c <= "\u9fff" for c in s)
+            has_english = any(c.isalpha() and ord(c) < 128 for c in s)
             if has_chinese and has_english:
                 return True
         return False
 
     def _is_date_column(self, series: pd.Series) -> bool:
-        """Check if column contains date values."""
         if pd.api.types.is_datetime64_any_dtype(series):
             return True
 
@@ -1369,10 +1274,8 @@ class SpreadsheetEncoder:
             return False
 
         try:
-            parsed = pd.to_datetime(sample, errors='coerce')
-            valid_dates = parsed.notna().sum()
-            if valid_dates / len(sample) > 0.7:
-                return True
-        except:
-            pass
-        return False
+            parsed = pd.to_datetime(sample, errors="coerce")
+            valid_dates = int(parsed.notna().sum())
+            return (valid_dates / len(sample)) > 0.7
+        except Exception:
+            return False
