@@ -4,3 +4,4 @@
 /output/*.py
 *.zip
 *.env
+*.yaml
