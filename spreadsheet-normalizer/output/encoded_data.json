@@ -42,11 +42,11 @@
       "Item": 0.0,
       "個案數字/No. of Cases": 0.0
     },
-    "compression_ratio": 621.7018469656992,
+    "compression_ratio": 213.23529411764707,
     "compression_stages": {
       "original_tokens": 235625,
-      "after_anchors": 106,
-      "final_tokens": 379
+      "after_anchors": 845,
+      "final_tokens": 1105
     },
     "sample_values": {
       "年份/Year": [
@@ -118,6 +118,7 @@
           "2023",
           "2024"
         ],
+        "unique_values_truncated": false,
         "value_counts": {
           "2024": 110,
           "2023": 110,
@@ -162,7 +163,7 @@
           "2005",
           "2005"
         ],
-        "inferred_type": "categorical",
+        "inferred_type": "year",
         "potential_delimiters": [],
         "has_bilingual_content": false,
         "statistics": {
@@ -170,9 +171,8 @@
           "max": 2024.0,
           "mean": 2015.8333333333333,
           "median": 2016.5,
-          "std": 6.06905756206722
-        },
-        "unique_values_truncated": false
+          "std": 6.066758241067073
+        }
       },
       "有否向警方舉報事件": {
         "dtype": "object",
@@ -184,6 +184,7 @@
           "有",
           "沒有"
         ],
+        "unique_values_truncated": false,
         "value_counts": {
           "不適用": 880,
           "有": 220,
@@ -214,8 +215,7 @@
         "inferred_type": "boolean_with_na",
         "potential_delimiters": [],
         "has_bilingual_content": false,
-        "statistics": {},
-        "unique_values_truncated": false
+        "statistics": {}
       },
       "Incident Being or Not Reported to Police": {
         "dtype": "object",
@@ -226,6 +226,7 @@
           "Yes",
           "No"
         ],
+        "unique_values_truncated": false,
         "value_counts": {
           "Yes": 220,
           "No": 220
@@ -255,8 +256,7 @@
         "inferred_type": "boolean",
         "potential_delimiters": [],
         "has_bilingual_content": false,
-        "statistics": {},
-        "unique_values_truncated": false
+        "statistics": {}
       },
       "類別": {
         "dtype": "object",
@@ -269,6 +269,7 @@
           "施虐者與受虐長者關係",
           "受虐長者居住地區"
         ],
+        "unique_values_truncated": false,
         "value_counts": {
           "受虐長者居住地區": 456,
           "虐待長者性質及受虐長者性別": 384,
@@ -300,8 +301,7 @@
         "inferred_type": "categorical",
         "potential_delimiters": [],
         "has_bilingual_content": false,
-        "statistics": {},
-        "unique_values_truncated": false
+        "statistics": {}
       },
       "Category": {
         "dtype": "object",
@@ -314,6 +314,7 @@
           "Abuser's Relationship with Elderly Person Being Abused",
           "Residential District of Elderly Person Being Abused"
         ],
+        "unique_values_truncated": false,
         "value_counts": {
           "Residential District of Elderly Person Being Abused": 456,
           "Type of Elder Abuse and Sex of Elderly Person Being Abused": 384,
@@ -345,8 +346,7 @@
         "inferred_type": "categorical",
         "potential_delimiters": [],
         "has_bilingual_content": false,
-        "statistics": {},
-        "unique_values_truncated": false
+        "statistics": {}
       },
       "項目": {
         "dtype": "object",
@@ -409,6 +409,7 @@
           " 屯門區",
           " 不知道"
         ],
+        "unique_values_truncated": false,
         "value_counts": {
           " 其他": 48,
           "身體虐待": 24,
@@ -505,8 +506,7 @@
           }
         ],
         "has_bilingual_content": false,
-        "statistics": {},
-        "unique_values_truncated": false
+        "statistics": {}
       },
       "Item": {
         "dtype": "object",
@@ -571,6 +571,7 @@
           " Unknown",
           "Psychological Abuse "
         ],
+        "unique_values_truncated": false,
         "value_counts": {
           "Physical abuse": 24,
           " Yau Tsim Mong": 24,
@@ -667,8 +668,7 @@
           }
         ],
         "has_bilingual_content": false,
-        "statistics": {},
-        "unique_values_truncated": false
+        "statistics": {}
       },
       "個案數字/No. of Cases": {
         "dtype": "int64",
@@ -777,6 +777,7 @@
           "257",
           "68"
         ],
+        "unique_values_truncated": true,
         "value_counts": {},
         "sample_values": [
           "390",
@@ -808,9 +809,8 @@
           "max": 484.0,
           "mean": 29.13939393939394,
           "median": 11.0,
-          "std": 58.71258653539609
-        },
-        "unique_values_truncated": true
+          "std": 58.690342705639466
+        }
       }
     },
     "potential_issues": [
@@ -818,5 +818,5 @@
       "Multi-language column: 個案數字/No. of Cases"
     ]
   },
-  "encoded_text": "================================================================================\nSPREADSHEET ENCODING (SpreadsheetLLM)\n================================================================================\nCompression Ratio: 621.70x\n\n## STRUCTURAL ANCHORS\nKey Rows: [8, 16, 22, 23]\nKey Columns: ['A', 'H']\n\n## CELL VALUES\nUnique values: 2\n  '2005': A8, A16, A22:A23\n  '0': H8, H16, H22:H23\n\n## FORMAT REGIONS\nFormat groups: 1\n  Type: integer, Format: General\n    Ranges: A8, H8, A16 (+3)\n"
+  "encoded_text": "================================================================================\nSPREADSHEET ENCODING (SpreadsheetLLM)\n================================================================================\nCompression Ratio: 213.24x\n\n## REGION\nBounds: rows 1..1321, cols 1..8\n\n## STRUCTURAL ANCHORS\nKey Rows: [8, 16]\nKey Columns: ['A', 'H']\n\n## CELL VALUES\nUnique values: 28\n  '2005': A6:A10, A14:A18\n  '不適用': B6:B10, B14:B18\n  ' 遺棄長者': F6\n  'Abandonment': G6\n  '1': H6:H7, H14:H15\n  ' 性侵犯': F7\n  'Sexual abuse': G7\n  ' 其他': F8\n  'Others': G8\n  '0': H8, H16\n  ' 多種虐待': F9\n  'Multiple abuse': G9\n  '20': H9\n  '身體虐待 - 男性': F10\n  'Physical abuse - Male': G10\n  '200': H10\n  ' 遺棄長者 - 男性': F14\n  'Abandonment - Male': G14\n  ' 性侵犯 - 男性': F15\n  'Sexual abuse - Male': G15\n  ... and 8 more values\n\n## FORMAT REGIONS\nFormat groups: 2\n  Type: integer, Format: General\n    Ranges: A6:A10, H6:H10, A14:A18 (+1)\n  Type: text, Format: General\n    Ranges: B6:B10, F6:G10, B14:B18 (+1)\n"
 }

@@ -1,22 +1,24 @@
 {
   "identified_patterns": [
     {
-      "pattern_name": "BOOLEAN_WITH_NA | COMPOSITE_COLUMNS",
+      "pattern_name": "BOOLEAN_WITH_NA | COMPOSITE_COLUMNS | BILINGUAL",
       "affected_columns": [
         "有否向警方舉報事件",
         "Incident Being or Not Reported to Police",
+        "類別",
+        "Category",
         "項目",
         "Item"
       ],
-      "details": "有否向警方舉報事件 has three unique values indicating a boolean with N/A. Incident Being or Not Reported to Police has two unique values with a significant null percentage. 項目 and Item contain composite values with potential delimiters.",
-      "solution": "Transform boolean columns using exact mappings from metadata and split composite columns based on identified delimiters."
+      "details": "Boolean columns have specific values, composite columns have potential delimiters.",
+      "solution": "Transform boolean columns using exact values from metadata and split composite columns based on identified delimiters."
     }
   ],
   "column_schema": [
     {
       "original_column": "年份/Year",
       "normalized_name": "year",
-      "data_type": "categorical",
+      "data_type": "integer",
       "unique_values": [
         "2005",
         "2006",
@@ -39,7 +41,7 @@
         "2023",
         "2024"
       ],
-      "transformation_logic": "No transformation needed, retain as is.",
+      "transformation_logic": "Keep as is since it is already in integer format.",
       "operation": "keep"
     },
     {
@@ -51,8 +53,8 @@
         "有",
         "沒有"
       ],
-      "transformation_logic": "Map '有' to true, '沒有' to false, and '不適用' to null.",
-      "operation": "convert"
+      "transformation_logic": "Map '有' to true, '沒有' to false, and '不適用' to NA.",
+      "operation": "keep"
     },
     {
       "original_column": "Incident Being or Not Reported to Police",
@@ -62,8 +64,8 @@
         "Yes",
         "No"
       ],
-      "transformation_logic": "Map 'Yes' to true and 'No' to false. Handle nulls as needed.",
-      "operation": "convert"
+      "transformation_logic": "Map 'Yes' to true and 'No' to false.",
+      "operation": "keep"
     },
     {
       "original_column": "類別",
@@ -75,7 +77,7 @@
         "施虐者與受虐長者關係",
         "受虐長者居住地區"
       ],
-      "transformation_logic": "No transformation needed, retain as is.",
+      "transformation_logic": "Keep as is since it is categorical.",
       "operation": "keep"
     },
     {
@@ -88,7 +90,7 @@
         "Abuser's Relationship with Elderly Person Being Abused",
         "Residential District of Elderly Person Being Abused"
       ],
-      "transformation_logic": "No transformation needed, retain as is.",
+      "transformation_logic": "Keep as is since it is categorical.",
       "operation": "keep"
     },
     {
@@ -151,8 +153,8 @@
         "屯門區",
         "不知道"
       ],
-      "transformation_logic": "Split based on identified delimiters.",
-      "operation": "split"
+      "transformation_logic": "Keep as is since it is a string.",
+      "operation": "keep"
     },
     {
       "original_column": "Item",
@@ -215,8 +217,8 @@
         "Tuen Mun",
         "Unknown"
       ],
-      "transformation_logic": "Split based on identified delimiters.",
-      "operation": "split"
+      "transformation_logic": "Keep as is since it is a string.",
+      "operation": "keep"
     },
     {
       "original_column": "個案數字/No. of Cases",
@@ -324,67 +326,16 @@
         "257",
         "68"
       ],
-      "transformation_logic": "No transformation needed, retain as is.",
+      "transformation_logic": "Keep as is since it is already in integer format.",
       "operation": "keep"
     }
   ],
-  "split_operations": [
-    {
-      "source_column": "項目",
-      "split_pattern": " - ",
-      "target_columns": [
-        "item_type",
-        "gender"
-      ],
-      "logic": "Split the項目 column into item_type and gender based on the delimiter ' - '. This is supported by the 60% frequency of the delimiter.",
-      "metadata_evidence": "Potential delimiters show a consistent split pattern."
-    },
-    {
-      "source_column": "Item",
-      "split_pattern": " - ",
-      "target_columns": [
-        "item_type_en",
-        "gender_en"
-      ],
-      "logic": "Split the Item column into item_type_en and gender_en based on the delimiter ' - '. This is supported by the 60% frequency of the delimiter.",
-      "metadata_evidence": "Potential delimiters show a consistent split pattern."
-    }
-  ],
-  "type_conversions": [
-    {
-      "column": "有否向警方舉報事件",
-      "target_type": "boolean_with_na",
-      "conversion_logic": "Map '有' to true, '沒有' to false, and '不適用' to null.",
-      "edge_cases": [
-        "不適用",
-        "有",
-        "沒有"
-      ],
-      "value_mapping": {
-        "有": true,
-        "沒有": false,
-        "不適用": null
-      }
-    },
-    {
-      "column": "Incident Being or Not Reported to Police",
-      "target_type": "boolean",
-      "conversion_logic": "Map 'Yes' to true and 'No' to false.",
-      "edge_cases": [
-        "Yes",
-        "No"
-      ],
-      "value_mapping": {
-        "Yes": true,
-        "No": false
-      }
-    }
-  ],
+  "split_operations": [],
+  "type_conversions": [],
   "normalization_plan": [
     "Step 1: Remove implicit aggregation rows if detected.",
     "Step 2: Split composite columns with evidence from metadata.",
-    "Step 3: Convert types using ACTUAL unique_values from metadata.",
-    "Step 4: Ensure bilingual columns are retained appropriately."
+    "Step 3: Convert types using ACTUAL unique_values from metadata."
   ],
   "expected_output_columns": [
     "year",
@@ -392,13 +343,11 @@
     "incident_reported",
     "category_zh",
     "category_en",
-    "item_type",
-    "gender",
-    "item_type_en",
-    "gender_en",
+    "item_zh",
+    "item_en",
     "number_of_cases"
   ],
-  "reasoning": "The schema design is based on the unique values and their distributions in the metadata. Boolean columns are mapped using exact values from the metadata, and composite columns are split based on frequent delimiters.",
+  "reasoning": "The schema was designed based on the unique values and their distributions provided in the metadata. Boolean columns were mapped using exact values from the metadata, and categorical columns were retained as they are. The normalization plan includes steps to handle implicit aggregation and composite columns if necessary.",
   "source_metadata": {
     "num_rows": 1320,
     "num_cols": 8,
@@ -442,11 +391,11 @@
       "Item": 0.0,
       "個案數字/No. of Cases": 0.0
     },
-    "compression_ratio": 621.7018469656992,
+    "compression_ratio": 213.23529411764707,
     "compression_stages": {
       "original_tokens": 235625,
-      "after_anchors": 106,
-      "final_tokens": 379
+      "after_anchors": 845,
+      "final_tokens": 1105
     },
     "sample_values": {
       "年份/Year": [
@@ -518,6 +467,7 @@
           "2023",
           "2024"
         ],
+        "unique_values_truncated": false,
         "value_counts": {
           "2024": 110,
           "2023": 110,
@@ -562,7 +512,7 @@
           "2005",
           "2005"
         ],
-        "inferred_type": "categorical",
+        "inferred_type": "year",
         "potential_delimiters": [],
         "has_bilingual_content": false,
         "statistics": {
@@ -570,9 +520,8 @@
           "max": 2024.0,
           "mean": 2015.8333333333333,
           "median": 2016.5,
-          "std": 6.06905756206722
-        },
-        "unique_values_truncated": false
+          "std": 6.066758241067073
+        }
       },
       "有否向警方舉報事件": {
         "dtype": "object",
@@ -584,6 +533,7 @@
           "有",
           "沒有"
         ],
+        "unique_values_truncated": false,
         "value_counts": {
           "不適用": 880,
           "有": 220,
@@ -614,8 +564,7 @@
         "inferred_type": "boolean_with_na",
         "potential_delimiters": [],
         "has_bilingual_content": false,
-        "statistics": {},
-        "unique_values_truncated": false
+        "statistics": {}
       },
       "Incident Being or Not Reported to Police": {
         "dtype": "object",
@@ -626,6 +575,7 @@
           "Yes",
           "No"
         ],
+        "unique_values_truncated": false,
         "value_counts": {
           "Yes": 220,
           "No": 220
@@ -655,8 +605,7 @@
         "inferred_type": "boolean",
         "potential_delimiters": [],
         "has_bilingual_content": false,
-        "statistics": {},
-        "unique_values_truncated": false
+        "statistics": {}
       },
       "類別": {
         "dtype": "object",
@@ -669,6 +618,7 @@
           "施虐者與受虐長者關係",
           "受虐長者居住地區"
         ],
+        "unique_values_truncated": false,
         "value_counts": {
           "受虐長者居住地區": 456,
           "虐待長者性質及受虐長者性別": 384,
@@ -700,8 +650,7 @@
         "inferred_type": "categorical",
         "potential_delimiters": [],
         "has_bilingual_content": false,
-        "statistics": {},
-        "unique_values_truncated": false
+        "statistics": {}
       },
       "Category": {
         "dtype": "object",
@@ -714,6 +663,7 @@
           "Abuser's Relationship with Elderly Person Being Abused",
           "Residential District of Elderly Person Being Abused"
         ],
+        "unique_values_truncated": false,
         "value_counts": {
           "Residential District of Elderly Person Being Abused": 456,
           "Type of Elder Abuse and Sex of Elderly Person Being Abused": 384,
@@ -745,8 +695,7 @@
         "inferred_type": "categorical",
         "potential_delimiters": [],
         "has_bilingual_content": false,
-        "statistics": {},
-        "unique_values_truncated": false
+        "statistics": {}
       },
       "項目": {
         "dtype": "object",
@@ -809,6 +758,7 @@
           " 屯門區",
           " 不知道"
         ],
+        "unique_values_truncated": false,
         "value_counts": {
           " 其他": 48,
           "身體虐待": 24,
@@ -905,8 +855,7 @@
           }
         ],
         "has_bilingual_content": false,
-        "statistics": {},
-        "unique_values_truncated": false
+        "statistics": {}
       },
       "Item": {
         "dtype": "object",
@@ -971,6 +920,7 @@
           " Unknown",
           "Psychological Abuse "
         ],
+        "unique_values_truncated": false,
         "value_counts": {
           "Physical abuse": 24,
           " Yau Tsim Mong": 24,
@@ -1067,8 +1017,7 @@
           }
         ],
         "has_bilingual_content": false,
-        "statistics": {},
-        "unique_values_truncated": false
+        "statistics": {}
       },
       "個案數字/No. of Cases": {
         "dtype": "int64",
@@ -1177,6 +1126,7 @@
           "257",
           "68"
         ],
+        "unique_values_truncated": true,
         "value_counts": {},
         "sample_values": [
           "390",
@@ -1208,9 +1158,8 @@
           "max": 484.0,
           "mean": 29.13939393939394,
           "median": 11.0,
-          "std": 58.71258653539609
-        },
-        "unique_values_truncated": true
+          "std": 58.690342705639466
+        }
       }
     },
     "potential_issues": [

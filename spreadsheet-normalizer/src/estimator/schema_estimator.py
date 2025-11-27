@@ -138,21 +138,7 @@ Your task is to design clean, normalized schemas for messy spreadsheet data by r
 
 ### For BOOLEAN columns:
 You MUST examine the "Unique values" and "Value counts" above.
-
-**Example pattern:**
-If unique values are: ['不適用', '有', '沒有']
-With counts: {{'不適用': 440, '有': 440, '沒有': 440}}
-
-You MUST generate value_mapping like:
-```json
-{{
-  "有": true,
-  "沒有": false,
-  "不適用": null
-}}
-```
-
-**DO NOT** guess values like '是'/'否' when actual data shows '有'/'沒有'.
+**DO NOT** guess values
 
 ### For CATEGORICAL columns:
 - List ALL unique values shown in metadata

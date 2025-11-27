@@ -11,7 +11,14 @@
     {
       "parent_column": "類別",
       "child_columns": [
-        "項目"
+        "項目",
+        "個案數字/No. of Cases"
+      ]
+    },
+    {
+      "parent_column": "Incident Being or Not Reported to Police",
+      "child_columns": [
+        "有否向警方舉報事件"
       ]
     }
   ],
@@ -22,11 +29,11 @@
       "reasoning": "The detailed category includes additional dimensions (gender) related to the broad category."
     }
   ],
-  "structure_type": "simple",
+  "structure_type": "multi_header",
   "confidence": 0.9,
   "recommendations": [
     "Consider adding aggregate rows for better summary insights.",
-    "Review for potential metadata rows that may provide context."
+    "Review metadata for potential inclusion if applicable."
   ],
   "implicit_aggregation": {
     "has_implicit_aggregation": true,
