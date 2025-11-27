@@ -51,18 +51,36 @@ def transform(df):
         value_str = str(value).strip().lower()
         
         # True values
-        if value_str in ['有']:
+        if value_str == '有':
             return True
         # False values
-        elif value_str in ['沒有']:
+        elif value_str == '沒有':
             return False
         # N/A values
-        elif value_str in ['不適用']:
+        elif value_str == '不適用':
             return None
         else:
             print(f"Warning: Unexpected value in 有否向警方舉報事件: '{value}'")
             return None
-    
+
+    def convert_incident_reported(value):
+        '''Convert Incident Being or Not Reported to Police to boolean
+        Based on metadata unique_values: ['Yes', 'No']
+        '''
+        if pd.isna(value):
+            return None
+        value_str = str(value).strip()
+        
+        # True values
+        if value_str == 'Yes':
+            return True
+        # False values
+        elif value_str == 'No':
+            return False
+        else:
+            print(f"Warning: Unexpected value in Incident Being or Not Reported to Police: '{value}'")
+            return None
+
     # Apply conversions
     try:
         result['有否向警方舉報事件'] = result['有否向警方舉報事件'].apply(convert_有否向警方舉報事件)
@@ -73,7 +91,8 @@ def transform(df):
     # STEP 3: Rename columns
     rename_map = {
         '年份/Year': 'year',
-        '有否向警方舉報事件': 'incident_reported_to_police',
+        '有否向警方舉報事件': 'reported_to_police',
+        'Incident Being or Not Reported to Police': 'incident_reported',
         '類別': 'category_zh',
         'Category': 'category_en',
         '個案數字/No. of Cases': 'number_of_cases'
@@ -81,7 +100,7 @@ def transform(df):
     result.rename(columns=rename_map, inplace=True)
     
     # STEP 4: Select and order final columns
-    expected_columns = ['year', 'incident_reported_to_police', 'category_zh', 'category_en', 'item_type_zh', 'item_dimension_zh', 'item_type_en', 'item_dimension_en', 'number_of_cases']
+    expected_columns = ['year', 'reported_to_police', 'incident_reported', 'category_zh', 'category_en', 'item_type', 'gender', 'item_type_en', 'gender_en', 'number_of_cases']
     result = result[expected_columns]
     
     return result
