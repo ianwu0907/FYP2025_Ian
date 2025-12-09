@@ -145,6 +145,65 @@ Your approach:
 3. Design practical, normalized schemas that balance clarity and completeness
 
 Be observant, precise, and practical. Output valid JSON only."""
+    def _build_column_analysis_from_metadata(self, columns_metadata: Dict[str, Any]) -> str:
+        """
+        Build column analysis text ENTIRELY from metadata.
+        NO dataframe access here.
+        """
+        lines = []
+
+        for col_name, col_meta in columns_metadata.items():
+            lines.append(f"\n### Column: `{col_name}`")
+            lines.append(f"- Data type: {col_meta.get('dtype', 'unknown')}")
+            lines.append(f"- **Inferred type: {col_meta.get('inferred_type', 'unknown')}**")
+            lines.append(f"- Unique count: {col_meta.get('unique_count', 0)}")
+            lines.append(f"- Null percentage: {col_meta.get('null_percentage', 0):.2f}%")
+
+            # Show unique values
+            unique_values = col_meta.get('unique_values', [])
+            if unique_values:
+                if col_meta.get('unique_values_truncated'):
+                    lines.append(f"- **Unique values (first 100):** {unique_values}")
+                else:
+                    lines.append(f"- **Unique values (complete):** {unique_values}")
+
+            # Show value counts
+            value_counts = col_meta.get('value_counts', {})
+            if value_counts:
+                lines.append(f"- **Value counts:**")
+                for val, count in list(value_counts.items())[:10]:
+                    lines.append(f"  - `{val}`: {count}")
+                if len(value_counts) > 10:
+                    lines.append(f"  - ... and {len(value_counts)-10} more")
+
+            # Show sample values
+            sample_values = col_meta.get('sample_values', [])
+            if sample_values:
+                lines.append(f"- Sample values: {sample_values[:5]}")
+
+            # Show potential delimiters
+            delimiters = col_meta.get('potential_delimiters', [])
+            if delimiters:
+                lines.append(f"- **Potential delimiters:**")
+                for delim_info in delimiters[:3]:
+                    lines.append(
+                        f"  - `{delim_info['delimiter']}`: "
+                        f"{delim_info['percentage']:.0f}% frequency, "
+                        f"{'consistent' if delim_info.get('is_consistent') else 'inconsistent'} splits"
+                    )
+                    if delim_info.get('sample_split'):
+                        lines.append(f"    Sample split: {delim_info['sample_split']}")
+
+            # Show bilingual flag
+            if col_meta.get('has_bilingual_content'):
+                lines.append(f"- **Contains bilingual content** (Chinese + English)")
+
+            # Show statistics for numeric columns
+            stats = col_meta.get('statistics', {})
+            if stats:
+                lines.append(f"- Statistics: min={stats.get('min')}, max={stats.get('max')}, mean={stats.get('mean'):.2f}")
+
+        return '\n'.join(lines)
 
     def _create_hybrid_prompt(self,
                               encoded_data: Dict[str, Any],

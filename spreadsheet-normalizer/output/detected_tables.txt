@@ -1,0 +1,7 @@
+DataFrame shape: (1320, 8)
+Detected 1 table(s):
+
+Table_1:
+  Position: rows [0:1319], cols [0:7]
+  Shape: 1320 x 8
+  Confidence: 91.67%

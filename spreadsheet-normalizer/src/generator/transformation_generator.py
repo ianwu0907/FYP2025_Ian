@@ -527,7 +527,29 @@ Start directly with import statements.
         return text
 
     def _execute_code(self, code: str, df: pd.DataFrame) -> pd.DataFrame:
-        """Execute the transformation code safely."""
+        """Execute the transformation code safely with duplicate column handling."""
+        
+        def fix_duplicate_columns(dataframe, stage_name=""):
+            """Fix duplicate column names by adding numeric suffixes."""
+            if dataframe.columns.duplicated().any():
+                duplicates = dataframe.columns[dataframe.columns.duplicated()].unique().tolist()
+                logger.warning(f"[{stage_name}] Found duplicate column names: {duplicates}")
+                
+                # Create unique column names with numeric suffixes
+                cols = pd.Series(dataframe.columns)
+                for dup in cols[cols.duplicated()].unique():
+                    dup_indices = cols[cols == dup].index
+                    for i, idx in enumerate(dup_indices[1:], start=1):
+                        cols[idx] = f"{dup}_{i}"
+                
+                dataframe.columns = cols.tolist()
+                logger.info(f"[{stage_name}] Fixed columns to: {dataframe.columns.tolist()}")
+            
+            return dataframe
+        
+        # Fix duplicate columns in input DataFrame BEFORE any operations
+        df = fix_duplicate_columns(df, "Input")
+        
         # Create execution environment
         exec_globals = {
             'pd': pd,
@@ -547,9 +569,11 @@ Start directly with import statements.
 
         # Execute transformation
         result_df = transform_func(df.copy())
+        
+        # Fix duplicate columns in output DataFrame
+        result_df = fix_duplicate_columns(result_df, "Output")
 
         return result_df
-
     def _validate_result(self,
                          result_df: pd.DataFrame,
                          schema: Dict[str, Any],
