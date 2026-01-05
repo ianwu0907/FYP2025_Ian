@@ -14,11 +14,18 @@ encoder:
 
 # Structure Analyzer Configuration
 analyzer:
+  # 现有配置
   detect_headers: true
   detect_aggregates: true
   detect_implicit_aggregates: true
-  temperature: 0.1
-  max_tokens: 3000
+  
+  # 🔥 颜色检测配置（专门为你的格式优化）
+  use_color_detection: true
+  color_threshold: 0.1      # 10% 即可（你的数据通常每行只有 1 个高亮单元格）
+  min_colored_cells: 1      # 至少 1 个单元格
+  
+  llm_provider: "gemini"
+  model: "gemini-2.0-flash-exp"
 
 # Schema Estimator Configuration
 estimator:

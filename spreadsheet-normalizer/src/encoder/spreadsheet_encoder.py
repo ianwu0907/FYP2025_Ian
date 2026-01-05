@@ -367,14 +367,7 @@ def detect_table_regions(
         full_region: Optional[SheetRegion] = None,
         min_nonempty_cells: int = 8,
 ) -> List[SheetRegion]:
-    """
-    增强版子表检测，支持两种策略:
-    
-    Strategy 1: 基于表格标题的检测（优先）
-    Strategy 2: 基于空白行的检测（后备）
-    
-    这个版本能够检测紧密排列的子表！
-    """
+
     # region = full_region or SheetRegion(1, sheet.max_row or 1, 1, sheet.max_column or 1)
     # logger.info(f"🔧 FORCED: Using full region as single table: rows {region.min_row}-{region.max_row}")
     # return [region]
@@ -867,64 +860,58 @@ def spreadsheet_llm_encode_with_helpers(
             # Keep neighborhood around anchors (BUGFIX: use k, not 0)
             kept_rows, kept_cols = extract_cells_near_anchors(sheet, row_anchors, col_anchors, k, region=reg)
             if FORMAT_EXTRACTION_AVAILABLE:
-                try:
-                    from format_extractor import extract_complete_format_info
-                    
-                    logger.debug("扫描有颜色格式的单元格...")
-                    colored_rows = set()
-                    colored_cols = set()
-                    
-                    for row in range(reg.min_row, reg.max_row + 1):
-                        for col in range(reg.min_col, reg.max_col + 1):
-                            cell = sheet.cell(row, col)
-                            
-                            # 跳过空单元格
-                            if cell.value is None:
-                                continue
-                            
-                            # 检查是否有填充颜色
-                            if cell.fill and cell.fill.fgColor:
-                                fg = cell.fill.fgColor
-                                
-                                # 检查是否是非默认颜色
-                                has_color = False
-                                
-                                # 检查主题颜色（排除黑白）
-                                if fg.type == 'theme' and fg.theme not in (None, 0, 1):
-                                    has_color = True
-                                
-                                # 检查 RGB 颜色（排除黑白）
-                                elif fg.type == 'rgb' and fg.rgb:
-                                    rgb = fg.rgb
-                                    if len(rgb) == 8:
-                                        rgb = rgb[2:]  # 去掉 alpha
-                                    if rgb not in ('000000', 'FFFFFF'):
-                                        has_color = True
-                                
-                                # 如果有颜色，记录这个单元格
-                                if has_color:
-                                    colored_rows.add(row)
-                                    colored_cols.add(col)
-                    
-                    # 添加到 kept_rows 和 kept_cols
-                    for row in colored_rows:
-                        if row not in kept_rows:
-                            kept_rows.append(row)
-                    
-                    for col in colored_cols:
-                        if col not in kept_cols:
-                            kept_cols.append(col)
-                    
-                    # 重新排序
-                    kept_rows.sort()
-                    kept_cols.sort()
-                    
-                    if colored_rows or colored_cols:
-                        logger.info(f"添加了 {len(colored_rows)} 个有颜色的行，{len(colored_cols)} 个有颜色的列")
-                        logger.debug(f"有颜色的行: {sorted(colored_rows)[:10]}")
+                colored_rows = set()
+                colored_cols = set()
                 
-                except Exception as e:
-                    logger.warning(f"扫描颜色单元格失败: {e}")
+                for row in range(reg.min_row, reg.max_row + 1):
+                    for col in range(reg.min_col, reg.max_col + 1):
+                        cell = sheet.cell(row, col)
+                        
+                        # 跳过空单元格
+                        if cell.value is None:
+                            continue
+                        
+                        # 检查是否有填充颜色
+                        if cell.fill and cell.fill.fgColor:
+                            fg = cell.fill.fgColor
+                            
+                            # 检查是否是非默认颜色
+                            has_color = False
+                            
+                            # 检查主题颜色（排除黑白）
+                            if fg.type == 'theme' and fg.theme not in (None, 0, 1):
+                                has_color = True
+                            
+                            # 检查 RGB 颜色（排除黑白）
+                            elif fg.type == 'rgb' and fg.rgb:
+                                rgb = fg.rgb
+                                if len(rgb) == 8:
+                                    rgb = rgb[2:]  # 去掉 alpha
+                                if rgb not in ('000000', 'FFFFFF'):
+                                    has_color = True
+                            
+                            # 如果有颜色，记录这个单元格
+                            if has_color:
+                                colored_rows.add(row)
+                                colored_cols.add(col)
+                
+                # 添加到 kept_rows 和 kept_cols
+                for row in colored_rows:
+                    if row not in kept_rows:
+                        kept_rows.append(row)
+                
+                for col in colored_cols:
+                    if col not in kept_cols:
+                        kept_cols.append(col)
+                
+                # 重新排序
+                kept_rows.sort()
+                kept_cols.sort()
+                
+                if colored_rows or colored_cols:
+                    logger.info(f"添加了 {len(colored_rows)} 个有颜色的行，{len(colored_cols)} 个有颜色的列")
+                    logger.debug(f"有颜色的行: {sorted(colored_rows)[:10]}")
+            
             if not kept_rows or not kept_cols:
                 kept_rows = list(range(reg.min_row, min(reg.min_row + 20, reg.max_row + 1)))
                 kept_cols = list(range(reg.min_col, min(reg.min_col + 20, reg.max_col + 1)))
@@ -1263,7 +1250,7 @@ class SpreadsheetEncoder:
             "dataframe": df,
             "spreadsheet_llm_encoding": primary_encoding,
             "compression_metrics": full_encoding.get("compression_metrics", {}),
-            
+            "formats": primary_encoding.get("formats", {}),
             # # ===== 新增字段 =====
             # "all_sheets": all_sheets_encodings,  # 所有sheets的编码！
             # "num_sheets": len(all_sheets_encodings),
@@ -1561,6 +1548,8 @@ class SpreadsheetEncoder:
         return False
 
     def _is_date_column(self, series: pd.Series) -> bool:
+        """检测列是否为日期列 - 改进版"""
+        
         if pd.api.types.is_datetime64_any_dtype(series):
             return True
 
@@ -1568,8 +1557,25 @@ class SpreadsheetEncoder:
         if len(sample) == 0:
             return False
 
+        common_formats = [
+            '%Y-%m-%d', '%Y/%m/%d', '%d-%m-%Y', '%d/%m/%Y',
+            '%m-%d-%Y', '%m/%d/%Y', '%Y%m%d', '%d.%m.%Y',
+            '%Y-%m-%d %H:%M:%S', '%d/%m/%Y %H:%M:%S', '%Y年%m月%d日'
+        ]
+        
+        for fmt in common_formats:
+            try:
+                parsed = pd.to_datetime(sample, format=fmt, errors='coerce')
+                valid_dates = int(parsed.notna().sum())
+                if (valid_dates / len(sample)) > 0.7:
+                    return True
+            except (ValueError, TypeError):
+                continue
         try:
-            parsed = pd.to_datetime(sample, errors="coerce")
+            import warnings
+            with warnings.catch_warnings():
+                warnings.filterwarnings('ignore', category=UserWarning)
+                parsed = pd.to_datetime(sample, errors='coerce')
             valid_dates = int(parsed.notna().sum())
             return (valid_dates / len(sample)) > 0.7
         except Exception:

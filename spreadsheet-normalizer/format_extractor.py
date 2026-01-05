@@ -368,12 +368,7 @@ def create_semantic_signature(format_info: Dict[str, Any]) -> str:
         has_all_borders = False
     
     # Heuristic rules for common patterns
-    if is_bold and has_fill and has_bottom_border:
-        return "header"
-    
-    if is_bold and has_top_border and not has_fill:
-        return "total_row"
-    
+
     if has_fill and not is_bold:
         return "highlight"
     

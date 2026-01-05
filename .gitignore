@@ -6,3 +6,4 @@
 *.env
 *.yaml
 /output
+CLAUDE.md

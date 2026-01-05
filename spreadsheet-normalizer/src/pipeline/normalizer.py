@@ -637,7 +637,7 @@ class TableNormalizer:
         logger.info(f"Detection method: {split_tables[0].get('detection_method', 'unknown')}")
         
         all_results = []
-        
+        all_encoded_data = []
         for table_info in split_tables:
             table_id = table_info['table_id']
             table_name = table_info['table_name']
@@ -668,7 +668,12 @@ class TableNormalizer:
                 table_encoded['table_id'] = table_id
                 table_encoded['table_name'] = table_name
                 table_encoded['source'] = table_info.get('source')
-                
+                encoded_for_summary = {
+                        k: v for k, v in table_encoded.items() if k != 'dataframe'
+                    }
+                if 'encoded_text' in encoded_for_summary and len(encoded_for_summary['encoded_text']) > 500:
+                    encoded_for_summary['encoded_text'] = encoded_for_summary['encoded_text'][:500] + '...'
+                all_encoded_data.append(encoded_for_summary)
                 # Run the pipeline for this table
                 structure_analysis = self._run_analysis(table_encoded)
                 schema = self._run_schema_estimation(table_encoded, structure_analysis)
@@ -697,7 +702,14 @@ class TableNormalizer:
                         transformation['transformation_code'],
                         is_text=True
                     )
+                encoded_data_to_save = {
+                    k: v for k, v in table_encoded.items() if k != 'dataframe'
+                }
+                if 'encoded_text' in encoded_data_to_save and len(encoded_data_to_save['encoded_text']) > 1000:
+                    encoded_data_to_save['encoded_text'] = encoded_data_to_save['encoded_text'][:1000] + '...'
                 
+                self._save_intermediate(f'{table_name}_encoded_data.json', encoded_data_to_save)
+                logger.info(f"Saved encoded data for {table_name}")
                 logger.info(f"{table_name} processed successfully")
                 
                 # Clean up the temp file for this table
@@ -750,7 +762,16 @@ class TableNormalizer:
                     for r in all_results
                 ]
             }
-            self._save_intermediate('tables_summary.json', summary)
+            if self.save_intermediate:
+                self._save_intermediate(output_path.name, summary)
+                if all_encoded_data:
+                    combined = {
+                        'num_tables': len(all_encoded_data),
+                        'detection_method': split_tables[0].get('detection_method', 'unknown'),
+                        'tables': all_encoded_data
+                    }
+                    self._save_intermediate('all_tables_encoded_data.json', combined)
+                    logger.info(f"Saved combined encoded data for {len(all_encoded_data)} tables")
         
         # Update pipeline log
         elapsed_time = time.time() - start_time

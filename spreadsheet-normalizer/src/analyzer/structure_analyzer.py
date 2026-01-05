@@ -5,12 +5,12 @@ Analyzes table structure to identify headers, data rows, metadata, and aggregati
 
 import json
 import logging
-from typing import Dict, List, Any, Optional
+from typing import Dict, List, Any, Optional, Tuple
 from openai import OpenAI
 import os
 import pandas as pd
 import re
-
+import numpy as np
 logger = logging.getLogger(__name__)
 
 
@@ -31,7 +31,13 @@ class StructureAnalyzer:
         self.detect_headers = config.get('detect_headers', True)
         self.detect_aggregates = config.get('detect_aggregates', True)
         self.detect_implicit_aggregates = config.get('detect_implicit_aggregates', True)
+        self.use_color_detection = config.get('use_color_detection', True)
+        self.color_threshold = config.get('color_threshold', 0.1)  # 降低阈值
+        self.min_colored_cells = config.get('min_colored_cells', 1)  # 至少 1 个
 
+        logger.info(
+            f"Color detection: {'enabled' if self.use_color_detection else 'disabled'}"
+        )
         # 🔥 支持多种 LLM 提供商
         self.llm_provider = config.get('llm_provider', 'openai')  # 'openai', 'qwen', 'gemini', 'claude'
         
@@ -88,21 +94,82 @@ class StructureAnalyzer:
         logger.info(f"Initialized StructureAnalyzer with {self.llm_provider} ({self.model})")
 
     def analyze(self, encoded_data: Dict[str, Any]) -> Dict[str, Any]:
-        """Analyze the structure of the encoded spreadsheet."""
-        logger.info("Analyzing table structure with LLM...")
-
-        df = encoded_data['dataframe']
-
-        # Step 1: LLM-based structure analysis
-        llm_analysis = self._analyze_with_llm(encoded_data)
-
-        # Step 2: Detect implicit aggregation (numerical verification)
-        if self.detect_implicit_aggregates:
-            implicit_agg = self._detect_implicit_aggregation(df, llm_analysis)
-            llm_analysis['implicit_aggregation'] = implicit_agg
-
-        logger.info("Structure analysis complete")
-        return llm_analysis
+            """分析表格结构 - 包含颜色检测"""
+            logger.info("Analyzing table structure with LLM...")
+            
+            df = encoded_data['dataframe']
+            
+            # 🔥 颜色检测
+            color_based_aggregation = []
+            highlighted_rows = []
+            color_info = {}
+            
+            if self.use_color_detection:
+                try:
+                    logger.info("Starting color-based detection...")
+                    
+                    # 提取颜色信息
+                    color_info = self._extract_color_info(encoded_data)
+                    
+                    if color_info:
+                        # 检测高亮行
+                        highlighted_rows = self._detect_highlighted_rows(df, color_info)
+                        
+                        # 基于颜色检测聚合行
+                        if highlighted_rows:
+                            color_based_aggregation = self._detect_aggregation_by_color(
+                                df, highlighted_rows
+                            )
+                            logger.info(
+                                f"Color detection found {len(color_based_aggregation)} "
+                                f"potential aggregation rows"
+                            )
+                    else:
+                        logger.info("No color highlighting found in data")
+                        
+                except Exception as e:
+                    logger.warning(f"Color detection failed: {e}")
+                    import traceback
+                    logger.debug(traceback.format_exc())
+            
+            # Step 1: LLM 分析
+            llm_analysis = self._analyze_with_llm(encoded_data)
+            
+            # Step 2: 合并颜色检测的结果
+            if color_based_aggregation:
+                # 将颜色检测到的聚合行添加到 LLM 结果中
+                existing_agg = set(llm_analysis.get('aggregate_rows', []))
+                combined_agg = list(existing_agg | set(color_based_aggregation))
+                llm_analysis['aggregate_rows'] = sorted(combined_agg)
+                
+                logger.info(
+                    f"Combined aggregation rows: {len(existing_agg)} (LLM) + "
+                    f"{len(color_based_aggregation)} (color) = {len(combined_agg)} (total)"
+                )
+                
+                # 添加颜色分析信息到结果
+                llm_analysis['color_analysis'] = {
+                    'enabled': True,
+                    'highlighted_rows': highlighted_rows,
+                    'color_detected_aggregation': color_based_aggregation,
+                    'total_highlighted': len(highlighted_rows),
+                    'total_aggregation': len(color_based_aggregation)
+                }
+            else:
+                llm_analysis['color_analysis'] = {
+                    'enabled': self.use_color_detection,
+                    'highlighted_rows': [],
+                    'color_detected_aggregation': [],
+                    'message': 'No color-based aggregation detected'
+                }
+            
+            # Step 3: 隐式聚合检测
+            if self.detect_implicit_aggregates:
+                implicit_agg = self._detect_implicit_aggregation(df, llm_analysis)
+                llm_analysis['implicit_aggregation'] = implicit_agg
+            
+            logger.info("Structure analysis complete")
+            return llm_analysis
 
     def _analyze_with_llm(self, encoded_data: Dict[str, Any]) -> Dict[str, Any]:
         """Use LLM to analyze table structure."""
@@ -373,7 +440,6 @@ Be precise and analytical. Output valid JSON only."""
 
 5. **Detect Implicit Aggregation**: 
    - Are there category fields with different levels of detail?
-   - Example: "Type of Abuse" (broad) vs "Type of Abuse and Gender" (detailed)
    - If one category name contains another, it might indicate hierarchy
    - NOTE: You'll analyze semantically; numerical verification will be done separately
 
@@ -505,3 +571,343 @@ Output ONLY the JSON object."""
             'confidence': 0.3,
             'recommendations': ['Default analysis used due to LLM error']
         }
+    
+    def _excel_to_index(self, cell_ref: str) -> Optional[Tuple[int, int]]:
+        """将 Excel 坐标转换为 (row, col) 索引"""
+        match = re.match(r'([A-Z]+)(\d+)', cell_ref.upper())
+        if not match:
+            return None
+        
+        col_letters, row_num = match.groups()
+        
+        col = 0
+        for char in col_letters:
+            col = col * 26 + (ord(char) - ord('A') + 1)
+        col -= 1
+        
+        row = int(row_num) - 1
+        return (row, col)
+
+    def _parse_cell_range(self, range_ref: str) -> List[Tuple[int, int]]:
+        """解析单元格范围"""
+        if ':' not in range_ref:
+            cell = self._excel_to_index(range_ref)
+            return [cell] if cell else []
+        
+        start_ref, end_ref = range_ref.split(':')
+        start = self._excel_to_index(start_ref)
+        end = self._excel_to_index(end_ref)
+        
+        if not start or not end:
+            return []
+        
+        start_row, start_col = start
+        end_row, end_col = end
+        
+        cells = []
+        for row in range(start_row, end_row + 1):
+            for col in range(start_col, end_col + 1):
+                cells.append((row, col))
+        
+        return cells
+    
+    def _extract_color_info(self, encoded_data: Dict[str, Any]) -> Dict[int, Dict[str, Any]]:
+        """从 encoded_data 中提取颜色信息"""
+        color_map = {}
+        
+        # 获取格式信息
+        formats = encoded_data.get('formats', {})
+        df = encoded_data['dataframe']
+        
+        # 🔥 详细调试
+        logger.info(f"=== Color Detection Debug ===")
+        logger.info(f"Encoded data keys: {list(encoded_data.keys())}")
+        logger.info(f"Formats field exists: {'formats' in encoded_data}")
+        logger.info(f"Formats type: {type(formats)}")
+        logger.info(f"Formats count: {len(formats) if formats else 0}")
+        
+        if not formats:
+            logger.info("⚠️ No format information available - formats field is empty or missing")
+            return color_map
+        
+        logger.info(f"✅ Processing {len(formats)} format groups")
+        
+        # 显示前 2 个格式样例
+        for i, (key, value) in enumerate(list(formats.items())[:2]):
+            logger.info(f"Sample format {i+1}:")
+            logger.info(f"  Key (first 200 chars): {key[:200]}")
+            logger.info(f"  Cells: {value}")
+        
+        # 统计每行的高亮单元格
+        row_highlight_count = {}
+        row_format_info = {}
+        
+        highlight_count = 0  # 统计找到多少个 highlight 格式
+        
+        # 遍历每个格式组
+        for format_json_str, cell_list in formats.items():
+            try:
+                # 解析格式 JSON 字符串
+                format_info = json.loads(format_json_str)
+                
+                # 检查 _semantic 字段
+                semantic = format_info.get('_semantic', 'plain')
+                
+                if semantic == 'highlight':
+                    highlight_count += 1
+                    logger.info(f"✅ Found highlight format #{highlight_count}: cells={cell_list}")
+                    
+                    # 获取颜色信息
+                    fill = format_info.get('fill', {})
+                    fg_color = fill.get('fg_color', 'none')
+                    pattern_type = fill.get('pattern_type', 'none')
+                    
+                    font = format_info.get('font', {})
+                    font_color = font.get('color', 'none')
+                    bold = font.get('bold', False)
+                    
+                    # 🔥 添加详细调试
+                    logger.info(f"  Processing {len(cell_list)} cell references...")
+                    
+                    # 遍历使用这种格式的单元格
+                    for cell_ref in cell_list:
+                        # 解析单元格范围
+                        cells = self._parse_cell_range(cell_ref)
+                        
+                        # 🔥 添加这个日志
+                        logger.info(f"  Cell ref '{cell_ref}' → {len(cells)} cells: {cells}")
+                        
+                        # 记录每个单元格
+                        for row, col in cells:
+                            # 🔥 添加这个日志
+                            logger.debug(f"    Recording cell: row={row}, col={col}")
+                            
+                            if row not in row_highlight_count:
+                                row_highlight_count[row] = 0
+                                row_format_info[row] = {
+                                    'colors': set(),
+                                    'font_colors': set(),
+                                    'bold': False
+                                }
+                            
+                            row_highlight_count[row] += 1
+                            row_format_info[row]['colors'].add(fg_color)
+                            row_format_info[row]['font_colors'].add(font_color)
+                            if bold:
+                                row_format_info[row]['bold'] = True
+                    
+                    # 🔥 添加这个日志，显示当前的 row_highlight_count
+                    logger.info(f"  Current row_highlight_count: {dict(row_highlight_count)}")
+                else:
+                    logger.debug(f"Skipping format with _semantic='{semantic}'")
+            
+            except json.JSONDecodeError as e:
+                logger.warning(f"Failed to parse format JSON: {e}")
+                continue
+            except Exception as e:
+                logger.warning(f"Error processing format group: {e}")
+                import traceback
+                logger.debug(traceback.format_exc())
+                continue
+        
+        # 🔥 添加这个日志
+        logger.info(f"Total row_highlight_count entries: {len(row_highlight_count)}")
+        logger.info(f"row_highlight_count content: {dict(row_highlight_count)}")
+        
+        # 构建最终的 color_map
+        total_cols = len(df.columns)
+        
+        for row_idx, count in row_highlight_count.items():
+            # 🔥 添加这个日志
+            logger.info(f"Checking row {row_idx}: count={count}, min_required={self.min_colored_cells}")
+            
+            if count >= self.min_colored_cells:
+                format_details = row_format_info[row_idx]
+                
+                color_map[row_idx] = {
+                    'has_background_color': True,
+                    'colored_cells': count,
+                    'total_cells': total_cols,
+                    'color_ratio': count / total_cols,
+                    'colors': list(format_details['colors']),
+                    'font_colors': list(format_details['font_colors']),
+                    'bold': format_details['bold']
+                }
+                
+                logger.info(
+                    f"✅ Added row {row_idx} to color_map: {count}/{total_cols} cells highlighted"
+                )
+            else:
+                logger.info(f"❌ Skipped row {row_idx}: count ({count}) < min_required ({self.min_colored_cells})")
+        
+        logger.info(f"Total highlight formats found: {highlight_count}")
+        logger.info(f"Found {len(color_map)} rows with color highlighting")
+        logger.info(f"=== End Color Detection Debug ===")
+        
+        return color_map
+    
+    def _detect_highlighted_rows(self, 
+                            df: pd.DataFrame,
+                            color_info: Dict[int, Dict[str, Any]]) -> List[int]:
+        """
+        检测被高亮的行
+
+        Args:
+            df: DataFrame
+            color_info: 颜色信息字典
+            
+        Returns:
+            高亮行的索引列表
+        """
+        highlighted_rows = []
+
+        for row_idx, info in color_info.items():
+            # 🔥 检查颜色比例是否超过阈值
+            if info['color_ratio'] >= self.color_threshold:
+                highlighted_rows.append(row_idx)
+                logger.debug(
+                    f"Row {row_idx} is highlighted: "
+                    f"{info['colored_cells']}/{info['total_cells']} cells "
+                    f"({info['color_ratio']:.1%}), colors: {info['colors']}"
+                )
+
+        logger.info(f"Detected {len(highlighted_rows)} highlighted rows")
+        return highlighted_rows
+    
+    def _detect_aggregation_by_color(self,
+                                     df: pd.DataFrame,
+                                     highlighted_rows: List[int]) -> List[int]:
+        """
+        通过颜色 + 数值特征检测聚合行
+        
+        检测策略：
+        1. 高亮行 + 包含总计关键词 → 聚合行
+        2. 高亮行 + 数值明显大于其他行 → 聚合行
+        3. 高亮行 + 在表格底部 → 聚合行
+        4. 高亮行 + 在表格顶部且有数值 → 聚合行
+        """
+        aggregation_rows = []
+        
+        # 获取所有数值列
+        numeric_cols = df.select_dtypes(include=[np.number]).columns
+        
+        logger.debug(
+            f"Checking {len(highlighted_rows)} highlighted rows for aggregation patterns"
+        )
+        
+        for row_idx in highlighted_rows:
+            is_aggregation = False
+            reasons = []
+            
+            try:
+                row = df.iloc[row_idx]
+                
+                # 检查 1: 是否包含总计关键词
+                row_text = ' '.join([str(v) for v in row.values if pd.notna(v)])
+                row_text_lower = row_text.lower()
+                
+                aggregation_keywords = [
+                    'total', 'sum', 'subtotal', 'grand total', 'average', 'avg',
+                    '总计', '小计', '合计', '總計', '汇总', '彙總', '总和',
+                    '平均', '均值', 'suma', 'promedio'
+                ]
+                
+                for keyword in aggregation_keywords:
+                    if keyword in row_text_lower:
+                        is_aggregation = True
+                        reasons.append(f"contains keyword '{keyword}'")
+                        break
+                
+                    # 检查 2: 数值是否明显较大
+                # ============================================
+                # 检查 2: 局部数值比较（🔥 改进）
+                # ============================================
+                if not is_aggregation and len(numeric_cols) > 0:
+                    try:
+                        row_sum = pd.to_numeric(row[numeric_cols], errors='coerce').sum()
+                        
+                        # 🔥 关键改进：只比较相邻的 N 行
+                        window_size = 5  # 前后各5行
+                        start_idx = max(0, row_idx - window_size)
+                        end_idx = min(len(df), row_idx + window_size + 1)
+                        
+                        # 获取相邻行（排除当前行）
+                        neighbor_indices = [i for i in range(start_idx, end_idx) if i != row_idx]
+                        neighbor_rows = df.iloc[neighbor_indices]
+                        
+                        if len(neighbor_rows) > 0:
+                            neighbor_sums = neighbor_rows[numeric_cols].apply(
+                                lambda x: pd.to_numeric(x, errors='coerce')
+                            ).sum(axis=1)
+                            
+                            avg_neighbor_sum = neighbor_sums.mean()
+                            max_neighbor_sum = neighbor_sums.max()
+                            
+                            # 🔥 两个条件之一满足即可：
+                            # 条件 A: 比相邻平均大很多（2倍）
+                            # 条件 B: 比相邻最大值大（聚合了多行）
+                            if pd.notna(row_sum) and pd.notna(avg_neighbor_sum):
+                                if row_sum > avg_neighbor_sum * 1.5:
+                                    is_aggregation = True
+                                    reasons.append(
+                                        f"local sum ({row_sum:.2f}) >> "
+                                        f"neighbor avg ({avg_neighbor_sum:.2f})"
+                                    )
+                                elif pd.notna(max_neighbor_sum) and row_sum > max_neighbor_sum * 1.3:
+                                    is_aggregation = True
+                                    reasons.append(
+                                        f"sum ({row_sum:.2f}) > "
+                                        f"max neighbor ({max_neighbor_sum:.2f})"
+                                    )
+                    
+                    except Exception as e:
+                        logger.debug(f"Error in numerical check for row {row_idx}: {e}")
+
+                if not is_aggregation:
+                    # 聚合行通常在分类列为空或特殊值
+                    # 例如：类别列是空的，只有数值列有值
+                    non_numeric_cols = [col for col in df.columns if col not in numeric_cols]
+                    
+                    if len(non_numeric_cols) > 0:
+                        # 统计非数值列的空值比例
+                        null_ratio = row[non_numeric_cols].isna().sum() / len(non_numeric_cols)
+                        
+                        # 如果非数值列大部分是空的，但数值列有值
+                        if null_ratio > 0.5:  # 50% 以上的非数值列为空
+                            if len(numeric_cols) > 0:
+                                numeric_values = row[numeric_cols].notna().sum()
+                                if numeric_values >= len(numeric_cols) * 0.3:  # 30% 数值列有值
+                                    is_aggregation = True
+                                    reasons.append(
+                                        f"empty pattern: {null_ratio:.1%} non-numeric cols empty, "
+                                        f"but has numeric values"
+                                    )
+                
+                # 检查 3: 是否在表格底部（最后 10%）
+                if not is_aggregation:
+                    if row_idx >= len(df) * 0.9:
+                        is_aggregation = True
+                        reasons.append("near table bottom")
+                
+                # 检查 4: 是否在表格顶部（前 5 行）且包含数值
+                if not is_aggregation and row_idx < 5:
+                    if len(numeric_cols) > 0:
+                        non_null_count = row[numeric_cols].notna().sum()
+                        if non_null_count >= len(numeric_cols) * 0.5:
+                            is_aggregation = True
+                            reasons.append("near table top with numeric values")
+                
+                if is_aggregation:
+                    aggregation_rows.append(row_idx)
+                    logger.info(
+                        f"Row {row_idx} identified as aggregation: {', '.join(reasons)}"
+                    )
+            
+            except Exception as e:
+                logger.warning(f"Error analyzing row {row_idx}: {e}")
+        
+        logger.info(
+            f"Identified {len(aggregation_rows)} aggregation rows based on "
+            f"color + patterns"
+        )
+        return aggregation_rows

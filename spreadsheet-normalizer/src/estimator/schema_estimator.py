@@ -518,32 +518,31 @@ Output ONLY the JSON object, no additional commentary.
         return '\n'.join(lines)
 
     def _parse_llm_response(self, response_text: str) -> Dict[str, Any]:
-        """Parse the LLM response and extract JSON."""
+        """改进版 - 带容错"""
+        
         response_text = response_text.strip()
-
-        # Remove markdown code blocks if present
+        
+        # 移除 Markdown
         if response_text.startswith('```'):
             lines = response_text.split('\n')
-            response_text = '\n'.join(lines[1:-1]) if len(lines) > 2 else response_text
+            response_text = '\n'.join(lines[1:-1])
             if response_text.startswith('json'):
                 response_text = response_text[4:].strip()
-
+        
+        # 尝试解析
         try:
-            result = json.loads(response_text)
-            return result
-        except json.JSONDecodeError as e:
-            logger.error(f"Failed to parse JSON: {e}")
-            # Try to find JSON in the text
-            json_pattern = r'\{[^{}]*(?:\{[^{}]*\}[^{}]*)*\}'
-            matches = re.findall(json_pattern, response_text, re.DOTALL)
-            if matches:
-                matches.sort(key=len, reverse=True)
-                for match in matches:
-                    try:
-                        return json.loads(match)
-                    except:
-                        continue
-            raise ValueError("Could not extract valid JSON from LLM response")
+            return json.loads(response_text)
+        except json.JSONDecodeError:
+            # 清理常见问题
+            import re
+            cleaned = re.sub(r'//.*$', '', response_text, flags=re.MULTILINE)
+            cleaned = re.sub(r',(\s*[}\]])', r'\1', cleaned)
+            
+            try:
+                return json.loads(cleaned)
+            except:
+                logger.error(f"JSON parse failed: {response_text[:200]}")
+                return {"columns": [], "reasoning": "Parse failed"}
 
     def _validate_schema(self,
                          schema: Dict[str, Any],
