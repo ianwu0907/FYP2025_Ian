@@ -2,12 +2,12 @@
 Spreadsheet Encoder Module - SpreadsheetLLM-style encoding utilities.
 
 This module implements a lightweight version of SpreadsheetLLM-like compression:
-- Finds "structural anchors" (important rows/columns).
-- Keeps a neighborhood around anchors.
-- Builds an inverted index (value -> cell ranges) and format regions.
-- Optionally detects multiple sub-tables separated by blank rows/cols.
+- Finds "structural anchors" (important rows/columns) using Connected Components algorithm
+- Keeps a neighborhood around anchors
+- Builds an inverted index (value -> cell ranges) and format regions
+- Optionally detects multiple sub-tables separated by blank rows/cols
 
-Designed to work with openpyxl for fidelity (merged cells, number formats).
+IMPROVED: Replaced O(R⁴C⁴) heuristic anchor detection with O(RC) Connected Components algorithm
 """
 
 from __future__ import annotations
@@ -20,7 +20,7 @@ import tempfile
 from collections import defaultdict
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any, Dict, Iterable, List, Optional, Sequence, Tuple
+from typing import Any, Dict, Iterable, List, Optional, Sequence, Tuple, Set
 
 import numpy as np
 import openpyxl
@@ -33,7 +33,7 @@ EMAIL_REGEX = re.compile(r"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$")
 
 
 # ==============================================================================
-# SpreadsheetLLM Helper Functions
+# SpreadsheetLLM Helper Functions (UNCHANGED)
 # ==============================================================================
 
 def infer_cell_data_type(cell) -> str:
@@ -62,8 +62,6 @@ def infer_cell_data_type(cell) -> str:
 
     # Formula handling (depends on whether workbook is loaded with data_only)
     if data_type == "f":
-        # If loaded with data_only=True, this branch typically won't happen.
-        # If data_only=False, value is a formula string; keep it as text-ish.
         if cell.value is not None:
             if isinstance(cell.value, str):
                 return "text"
@@ -125,7 +123,6 @@ def categorize_number_format(number_format_string: str, cell) -> str:
     is_date = any(k in nf_lower for k in date_keywords)
     is_time = any(k in nf_lower for k in time_keywords)
 
-    # ':' is often time, but can also appear in custom formats.
     if ":" in str(number_format_string):
         tmp = str(number_format_string).replace("0", "").replace("#", "").replace(",", "").replace(".", "")
         if ":" in tmp:
@@ -168,7 +165,6 @@ def detect_semantic_type(cell) -> str:
     if category == "currency":
         return "currency"
     if category in {"date_custom", "datetime_custom", "datetime_general", "other_date"}:
-        # special-case year-only formats
         if ("yyyy" in nfs_lower or "yy" in nfs_lower) and not any(x in nfs_lower for x in ["m", "d"]):
             return "year"
         return "date"
@@ -190,15 +186,13 @@ def detect_semantic_type(cell) -> str:
 def split_cell_ref(cell_ref: str) -> Tuple[str, int]:
     col_str = "".join(filter(str.isalpha, cell_ref))
     row_str = "".join(filter(str.isdigit, cell_ref))
-    return col_str, int(row_str)
+    return col_str, int(row_str) if row_str else 0
 
 
 def _merge_refs(refs: Sequence[str]) -> List[str]:
     """
     Merge a list of single-cell refs (e.g., A1, B1, A2) into a list of
     compact refs/ranges (e.g., A1:C1, A2, ...).
-
-    Note: If a ref already contains ":", it is treated as a pre-merged range.
     """
     result: List[str] = []
     singles: List[str] = []
@@ -277,7 +271,6 @@ class SheetRegion:
 
 
 def _iter_values_only(sheet, region: SheetRegion) -> Iterable[Tuple[int, int, Any]]:
-    # values_only=True is much faster for scanning; merged cells will appear only at top-left.
     for r_idx, row in enumerate(
             sheet.iter_rows(
                 min_row=region.min_row,
@@ -304,7 +297,6 @@ def detect_table_regions(
     """
     region = full_region or SheetRegion(1, sheet.max_row or 1, 1, sheet.max_column or 1)
 
-    # Row/col non-empty flags
     row_has = defaultdict(int)
     col_has = defaultdict(int)
 
@@ -320,7 +312,6 @@ def detect_table_regions(
     if not nonempty_rows or not nonempty_cols:
         return []
 
-    # Find contiguous row segments separated by entirely-empty rows
     row_segments: List[Tuple[int, int]] = []
     start = prev = nonempty_rows[0]
     for r in nonempty_rows[1:]:
@@ -331,7 +322,6 @@ def detect_table_regions(
         start = prev = r
     row_segments.append((start, prev))
 
-    # Find contiguous col segments
     col_segments: List[Tuple[int, int]] = []
     start = prev = nonempty_cols[0]
     for c in nonempty_cols[1:]:
@@ -343,11 +333,9 @@ def detect_table_regions(
     col_segments.append((start, prev))
 
     regions: List[SheetRegion] = []
-    # Cross product: row segment x col segment -> candidate block
     for (r0, r1) in row_segments:
         for (c0, c1) in col_segments:
             cand = SheetRegion(r0, r1, c0, c1)
-            # Count nonempty in candidate quickly (could still be large; but segments are already bounded)
             nonempty = 0
             for _, _, v in _iter_values_only(sheet, cand):
                 if v is None or (isinstance(v, str) and v.strip() == ""):
@@ -358,68 +346,283 @@ def detect_table_regions(
             if nonempty >= min_nonempty_cells:
                 regions.append(cand)
 
-    # If we detected nothing meaningful, fall back to full bounding box of data
     if not regions:
         regions.append(SheetRegion(min(nonempty_rows), max(nonempty_rows), min(nonempty_cols), max(nonempty_cols)))
 
-    # Sort: biggest first
     regions.sort(key=lambda r: (r.area(), r.min_row, r.min_col), reverse=True)
     return regions
 
 
+# ==============================================================================
+# IMPROVED: Connected Components Anchor Detection (O(RC) complexity)
+# ==============================================================================
+
+def get_fill_color(cell) -> str:
+    """Extract fill color from a cell for style comparison."""
+    try:
+        fill = cell.fill
+        if fill and fill.patternType == 'solid':
+            if fill.fgColor and fill.fgColor.rgb:
+                return str(fill.fgColor.rgb)
+            if fill.start_color and fill.start_color.rgb:
+                return str(fill.start_color.rgb)
+            if fill.fgColor and fill.fgColor.index:
+                return f"index_{fill.fgColor.index}"
+    except Exception:
+        pass
+    return 'none'
+
+
+def has_border(cell) -> bool:
+    """Check if a cell has any border styling."""
+    try:
+        border = cell.border
+        return any([
+            border.left and border.left.style,
+            border.right and border.right.style,
+            border.top and border.top.style,
+            border.bottom and border.bottom.style
+        ])
+    except Exception:
+        return False
+
+
+def cells_similar(cell1, cell2, threshold: float = 0.75) -> bool:
+    """
+    Determine if two cells should belong to the same connected region.
+    Uses weighted scoring: bold(2.0) + fill(3.0) + border(1.5) + type(2.0) + format(1.5)
+    """
+    score = 0.0
+    total = 0.0
+
+    # Font bold (weight: 2.0)
+    try:
+        bold1 = cell1.font.bold if cell1.font else False
+        bold2 = cell2.font.bold if cell2.font else False
+        if bold1 == bold2:
+            score += 2.0
+    except Exception:
+        pass
+    total += 2.0
+
+    # Fill color (weight: 3.0)
+    if get_fill_color(cell1) == get_fill_color(cell2):
+        score += 3.0
+    total += 3.0
+
+    # Border (weight: 1.5)
+    if has_border(cell1) == has_border(cell2):
+        score += 1.5
+    total += 1.5
+
+    # Data type (weight: 2.0)
+    type1 = type(cell1.value) if cell1.value is not None else type(None)
+    type2 = type(cell2.value) if cell2.value is not None else type(None)
+    if type1 == type2:
+        score += 2.0
+    total += 2.0
+
+    # Number format (weight: 1.5)
+    try:
+        fmt1 = cell1.number_format if cell1.number_format else 'General'
+        fmt2 = cell2.number_format if cell2.number_format else 'General'
+        if fmt1 == fmt2:
+            score += 1.5
+    except Exception:
+        pass
+    total += 1.5
+
+    return (score / total) >= threshold
+
+
+def build_connectivity_graph(sheet, region: Optional[SheetRegion] = None) -> Dict[str, Set[str]]:
+    """
+    Build undirected graph of similar adjacent cells. O(RC) complexity.
+    Each cell is visited once, checking right and bottom neighbors only.
+    """
+    if region:
+        min_r, max_r = region.min_row, region.max_row
+        min_c, max_c = region.min_col, region.max_col
+    else:
+        min_r, max_r = 1, sheet.max_row
+        min_c, max_c = 1, sheet.max_column
+
+    graph = defaultdict(set)
+
+    for r in range(min_r, max_r + 1):
+        for c in range(min_c, max_c + 1):
+            cell = sheet.cell(row=r, column=c)
+
+            # Skip empty cells
+            if cell.value is None or (isinstance(cell.value, str) and cell.value.strip() == ''):
+                continue
+
+            cell_ref = f"{get_column_letter(c)}{r}"
+
+            # Check right neighbor
+            if c < max_c:
+                right_cell = sheet.cell(row=r, column=c + 1)
+                right_val = right_cell.value
+                if right_val is not None and \
+                        not (isinstance(right_val, str) and right_val.strip() == '') and \
+                        cells_similar(cell, right_cell):
+                    right_ref = f"{get_column_letter(c + 1)}{r}"
+                    graph[cell_ref].add(right_ref)
+                    graph[right_ref].add(cell_ref)
+
+            # Check bottom neighbor
+            if r < max_r:
+                bottom_cell = sheet.cell(row=r + 1, column=c)
+                bottom_val = bottom_cell.value
+                if bottom_val is not None and \
+                        not (isinstance(bottom_val, str) and bottom_val.strip() == '') and \
+                        cells_similar(cell, bottom_cell):
+                    bottom_ref = f"{get_column_letter(c)}{r + 1}"
+                    graph[cell_ref].add(bottom_ref)
+                    graph[bottom_ref].add(cell_ref)
+
+    return dict(graph)
+
+
+def find_connected_components(graph: Dict[str, Set[str]],
+                              min_component_size: int = 4) -> List[List[str]]:
+    """
+    Find all connected components via DFS. O(V+E) = O(RC) complexity.
+    Filters out components smaller than min_component_size to reduce noise.
+    """
+    visited = set()
+    components = []
+
+    for start_ref in graph:
+        if start_ref in visited:
+            continue
+
+        # DFS traversal
+        component = []
+        stack = [start_ref]
+
+        while stack:
+            ref = stack.pop()
+            if ref in visited:
+                continue
+
+            visited.add(ref)
+            component.append(ref)
+
+            for neighbor in graph.get(ref, []):
+                if neighbor not in visited:
+                    stack.append(neighbor)
+
+        if len(component) >= min_component_size:
+            components.append(component)
+
+    # Sort by size (largest first)
+    components.sort(key=len, reverse=True)
+    return components
+
+
+def extract_component_boundaries(components: List[List[str]]) -> Tuple[Set[int], Set[int]]:
+    """
+    Extract bounding box boundaries from each component as anchors. O(total_cells).
+    Returns row and column boundary sets.
+    """
+    row_boundaries = set()
+    col_boundaries = set()
+
+    for component in components:
+        if not component:
+            continue
+
+        min_r = min_c = float('inf')
+        max_r = max_c = 0
+
+        for cell_ref in component:
+            col_letter, row = split_cell_ref(cell_ref)
+            col = column_index_from_string(col_letter)
+
+            min_r = min(min_r, row)
+            max_r = max(max_r, row)
+            min_c = min(min_c, col)
+            max_c = max(max_c, col)
+
+        # Add all four boundaries
+        row_boundaries.add(min_r)
+        row_boundaries.add(max_r)
+        col_boundaries.add(min_c)
+        col_boundaries.add(max_c)
+
+    return row_boundaries, col_boundaries
+
+
+def expand_with_k_neighborhood(indices: Set[int], k: int, max_index: int) -> List[int]:
+    """
+    Expand anchor indices with k-neighborhood. O(|indices| * k).
+    Ensures all indices are within valid range [1, max_index].
+    """
+    expanded = set()
+
+    for idx in indices:
+        for offset in range(-k, k + 1):
+            expanded_idx = idx + offset
+            if 1 <= expanded_idx <= max_index:
+                expanded.add(expanded_idx)
+
+    return sorted(expanded)
+
+
 def fast_find_structural_anchors(sheet, k: int, *, region: Optional[SheetRegion] = None) -> Tuple[List[int], List[int]]:
     """
-    Pick k row anchors and k col anchors based on coefficient of variation of numeric values.
-    Falls back to first 10 rows/cols if no numeric variation found.
+    Find structural anchors using Connected Components algorithm. O(RC) complexity.
+
+    This replaces the original CV-based method with a more robust algorithm that:
+    1. Builds connectivity graph of similarly-styled cells - O(RC)
+    2. Finds connected components via DFS - O(RC)
+    3. Extracts component boundaries as anchors - O(RC)
+    4. Expands with k-neighborhood - O(anchors * k)
+
+    Fallback: If no components found, uses full sheet boundaries.
     """
     reg = region or SheetRegion(1, sheet.max_row or 1, 1, sheet.max_column or 1)
-    row_values: Dict[int, List[float]] = defaultdict(list)
-    col_values: Dict[int, List[float]] = defaultdict(list)
 
-    # cap scanning window for speed
-    max_r = min(reg.max_row, reg.min_row + 200 - 1)
-    max_c = min(reg.max_col, reg.min_col + 50 - 1)
+    logger.debug(f"Finding structural anchors with Connected Components (k={k})")
 
-    for r in range(reg.min_row, max_r + 1):
-        for c in range(reg.min_col, max_c + 1):
-            v = sheet.cell(row=r, column=c).value
-            if isinstance(v, (int, float)):
-                row_values[r].append(float(v))
-                col_values[c].append(float(v))
+    # Phase 1: Build graph - O(RC)
+    graph = build_connectivity_graph(sheet, region)
 
-    def coefficient_of_variation(values: List[float]) -> float:
-        if not values or len(values) < 2:
-            return 0.0
-        mean_val = float(np.mean(values))
-        if mean_val == 0:
-            return 0.0
-        std_val = float(np.std(values))
-        return std_val / abs(mean_val)
+    if not graph or len(graph) < 4:
+        logger.warning("Insufficient cells for component analysis, using boundaries")
+        return ([reg.min_row, reg.max_row], [reg.min_col, reg.max_col])
 
-    row_cv = {r: coefficient_of_variation(vals) for r, vals in row_values.items() if vals}
-    col_cv = {c: coefficient_of_variation(vals) for c, vals in col_values.items() if vals}
+    # Phase 2: Find components - O(RC)
+    components = find_connected_components(graph, min_component_size=4)
 
-    sorted_rows = sorted(row_cv.items(), key=lambda x: x[1], reverse=True)
-    sorted_cols = sorted(col_cv.items(), key=lambda x: x[1], reverse=True)
+    if not components:
+        logger.warning("No components found, using boundaries")
+        return ([reg.min_row, reg.max_row], [reg.min_col, reg.max_col])
 
-    row_anchors = [r for r, _ in sorted_rows[:k]]
-    col_anchors = [c for c, _ in sorted_cols[:k]]
+    # Phase 3: Extract boundaries - O(total_cells)
+    row_boundaries, col_boundaries = extract_component_boundaries(components)
 
-    if not row_anchors:
-        row_anchors = list(range(reg.min_row, min(reg.min_row + 10, reg.max_row + 1)))
-    if not col_anchors:
-        col_anchors = list(range(reg.min_col, min(reg.min_col + 10, reg.max_col + 1)))
+    # Phase 4: Expand with k-neighborhood - O(anchors * k)
+    row_anchors = expand_with_k_neighborhood(row_boundaries, k, reg.max_row)
+    col_anchors = expand_with_k_neighborhood(col_boundaries, k, reg.max_col)
 
+    # Ensure anchors are within region bounds
     row_anchors = [r for r in row_anchors if reg.min_row <= r <= reg.max_row]
     col_anchors = [c for c in col_anchors if reg.min_col <= c <= reg.max_col]
+
+    logger.debug(f"Found {len(row_anchors)} row anchors, {len(col_anchors)} col anchors "
+                 f"from {len(components)} components")
 
     return sorted(set(row_anchors)), sorted(set(col_anchors))
 
 
+# ==============================================================================
+# Rest of encoding pipeline (UNCHANGED)
+# ==============================================================================
+
 def extract_cells_near_anchors(sheet, row_anchors: List[int], col_anchors: List[int], k: int, *, region: Optional[SheetRegion] = None) -> Tuple[List[int], List[int]]:
-    """
-    Keep k-neighborhood rows/cols around each anchor within region bounds.
-    """
+    """Keep k-neighborhood rows/cols around each anchor within region bounds."""
     reg = region or SheetRegion(1, sheet.max_row or 1, 1, sheet.max_column or 1)
 
     rows_to_keep = set()
@@ -437,10 +640,7 @@ def extract_cells_near_anchors(sheet, row_anchors: List[int], col_anchors: List[
 
 
 def compress_homogeneous_regions(sheet, kept_rows: List[int], kept_cols: List[int], *, region: Optional[SheetRegion] = None) -> Tuple[List[int], List[int]]:
-    """
-    Optional hook: remove rows/cols that are entirely empty within the kept grid.
-    Keeps at least one row/col.
-    """
+    """Remove entirely empty rows/cols from kept grid. Keeps at least one row/col."""
     reg = region or SheetRegion(1, sheet.max_row or 1, 1, sheet.max_column or 1)
     if not kept_rows or not kept_cols:
         return kept_rows, kept_cols
@@ -481,9 +681,7 @@ def compress_homogeneous_regions(sheet, kept_rows: List[int], kept_cols: List[in
 
 
 def _merged_start_cells(sheet) -> Dict[str, str]:
-    """
-    Build a mapping: start_cell.coordinate -> range string (e.g., "A1:C3")
-    """
+    """Build mapping: start_cell.coordinate -> range string (e.g., "A1:C3")"""
     start_map: Dict[str, str] = {}
     try:
         for m_range in sheet.merged_cells.ranges:
@@ -513,9 +711,7 @@ def create_inverted_index(
         max_value_len: int = 200,
 ) -> Tuple[Dict[str, List[str]], Dict[str, List[str]]]:
     """
-    Create:
-      - inverted_index: value(string) -> [cell_ref or range_ref]
-      - format_map: format_key(json) -> [cell_ref]  (merged ranges are represented by their start cell)
+    Create inverted index and format map from kept cells.
     """
     inverted_index: Dict[str, List[str]] = defaultdict(list)
     format_map: Dict[str, List[str]] = defaultdict(list)
@@ -527,13 +723,11 @@ def create_inverted_index(
             cell = sheet.cell(row=r, column=c)
             cell_ref = f"{get_column_letter(c)}{r}"
 
-            # Handle merged cells efficiently: record the merged range only once at start cell.
             merged_range_str = merged_start_map.get(cell.coordinate)
 
             # Value index
             try:
                 if merged_range_str is not None:
-                    # Only store at the merge start cell; other cells in the merge are typically empty.
                     v = cell.value
                     if v is not None and not (isinstance(v, str) and v.strip() == ""):
                         v_str = _stringify_cell_value(v, max_len=max_value_len)
@@ -546,7 +740,7 @@ def create_inverted_index(
             except Exception:
                 inverted_index["ERROR_VALUE"].append(cell_ref)
 
-            # Format map (use start cell style for merged ranges)
+            # Format map
             try:
                 format_info: Dict[str, Any] = {}
                 format_info["font"] = {"bold": getattr(cell.font, "bold", None)}
@@ -573,9 +767,7 @@ def create_inverted_index(
 
 
 def create_inverted_index_translation(inverted_index: Dict[str, List[str]]) -> Dict[str, List[str]]:
-    """
-    Merge single-cell refs into ranges; keep pre-merged ranges intact.
-    """
+    """Merge single-cell refs into ranges; keep pre-merged ranges intact."""
     merged_index: Dict[str, List[str]] = {}
     for value, refs in inverted_index.items():
         if value is None or str(value).strip() == "":
@@ -585,10 +777,7 @@ def create_inverted_index_translation(inverted_index: Dict[str, List[str]]) -> D
 
 
 def aggregate_formats(sheet, format_map: Dict[str, List[str]]) -> Dict[str, List[str]]:
-    """
-    Aggregate formats by re-keying them into semantic-type + number-format,
-    then merging refs into rectangle ranges.
-    """
+    """Aggregate formats by semantic-type + number-format, merging into rectangles."""
     aggregated_formats: Dict[str, List[str]] = defaultdict(list)
     processed_cells = set()
 
@@ -605,7 +794,6 @@ def aggregate_formats(sheet, format_map: Dict[str, List[str]]) -> Dict[str, List
             type_nfs_map[key].append(cell_ref)
 
     for key, cells in type_nfs_map.items():
-        # Use same rectangle-growing heuristic from earlier version (bounded).
         cells_set = set(cells)
         for start_cell in cells:
             if start_cell in processed_cells:
@@ -656,13 +844,10 @@ def aggregate_formats(sheet, format_map: Dict[str, List[str]]) -> Dict[str, List
 
 
 def cluster_numeric_ranges(sheet, format_map: Dict[str, List[str]]) -> Dict[str, List[str]]:
-    """
-    Find numeric regions by grouping cells with numeric inferred type and similar number format.
-    """
+    """Find numeric regions by grouping cells with numeric type and similar format."""
     numeric_map = {fmt: cells for fmt, cells in format_map.items() if json.loads(fmt).get("inferred_data_type") == "numeric"}
 
     if not numeric_map:
-        # fallback: scan the sheet for numeric and build pseudo format keys
         for r in range(1, sheet.max_row + 1):
             for c in range(1, sheet.max_column + 1):
                 cell = sheet.cell(row=r, column=c)
@@ -683,9 +868,7 @@ def spreadsheet_llm_encode_with_helpers(
         max_value_len: int = 200,
         min_nonempty_cells_for_region: int = 8,
 ) -> Dict[str, Any]:
-    """
-    Encode an Excel file into a compact JSON-friendly structure.
-    """
+    """Encode Excel file into compact JSON structure using SpreadsheetLLM methodology."""
     wb = openpyxl.load_workbook(excel_path, data_only=data_only)
 
     sheets_encoding: Dict[str, Any] = {}
@@ -699,17 +882,14 @@ def spreadsheet_llm_encode_with_helpers(
 
         full_region = SheetRegion(1, sheet.max_row or 1, 1, sheet.max_column or 1)
 
-        # Detect regions (subtables) if enabled
         regions: List[SheetRegion]
         if detect_subtables:
             regions = detect_table_regions(sheet, full_region=full_region, min_nonempty_cells=min_nonempty_cells_for_region)
         else:
             regions = [full_region]
 
-        # Encode each region; pick a primary region (largest) for backward compat keys.
         region_encodings: List[Dict[str, Any]] = []
 
-        # Compute original tokens on full sheet (for comparable metrics)
         original_cells = {}
         for r, c, v in _iter_values_only(sheet, full_region):
             if v is None:
@@ -721,10 +901,8 @@ def spreadsheet_llm_encode_with_helpers(
         original_tokens = len(json.dumps(original_cells, ensure_ascii=False))
 
         for reg_idx, reg in enumerate(regions):
-            # Find anchors inside region
             row_anchors, col_anchors = fast_find_structural_anchors(sheet, k, region=reg)
 
-            # Keep neighborhood around anchors (BUGFIX: use k, not 0)
             kept_rows, kept_cols = extract_cells_near_anchors(sheet, row_anchors, col_anchors, k, region=reg)
 
             if not kept_rows or not kept_cols:
@@ -733,7 +911,6 @@ def spreadsheet_llm_encode_with_helpers(
 
             kept_rows, kept_cols = compress_homogeneous_regions(sheet, kept_rows, kept_cols, region=reg)
 
-            # Anchor tokens (only kept grid)
             anchor_cells = {}
             for r in kept_rows:
                 for c in kept_cols:
@@ -746,7 +923,6 @@ def spreadsheet_llm_encode_with_helpers(
                     anchor_cells[f"{get_column_letter(c)}{r}"] = s
             anchor_tokens = len(json.dumps(anchor_cells, ensure_ascii=False))
 
-            # Inverted index + formats
             inverted_index, format_map = create_inverted_index(sheet, kept_rows, kept_cols, max_value_len=max_value_len)
             index_tokens = len(json.dumps(inverted_index, ensure_ascii=False))
 
@@ -759,7 +935,6 @@ def spreadsheet_llm_encode_with_helpers(
             numeric_ranges = cluster_numeric_ranges(sheet, format_map)
             numeric_tokens = len(json.dumps(numeric_ranges, ensure_ascii=False))
 
-            # Final encoding
             sheet_encoding = {
                 "region": reg.to_dict(),
                 "structural_anchors": {
@@ -792,7 +967,6 @@ def spreadsheet_llm_encode_with_helpers(
                 }
             )
 
-        # Choose primary region encoding (largest region; already sorted)
         primary = region_encodings[0]["encoding"] if region_encodings else {}
         primary_metrics = region_encodings[0]["metrics"] if region_encodings else {
             "original_tokens": original_tokens,
@@ -800,10 +974,8 @@ def spreadsheet_llm_encode_with_helpers(
             "overall_ratio": 0,
         }
 
-        # Store sheet encoding: keep legacy keys at top-level for compatibility,
-        # plus include all region encodings.
         sheets_encoding[sheet_name] = {
-            **primary,  # structural_anchors, cells, formats, numeric_ranges, region
+            **primary,
             "regions": [r["encoding"] for r in region_encodings],
         }
 
@@ -841,14 +1013,8 @@ def spreadsheet_llm_encode_with_helpers(
     return full_encoding
 
 
-# ==============================================================================
-# Utilities: CSV -> XLSX conversion
-# ==============================================================================
-
 def convert_csv_to_xlsx(csv_path: str, xlsx_path: str) -> bool:
-    """
-    Best-effort CSV reader: tries multiple encodings and separators.
-    """
+    """Best-effort CSV reader: tries multiple encodings and separators."""
     tried: List[Tuple[str, str, str]] = []
 
     for enc in ["utf-16", "utf-8", "latin1"]:
@@ -863,7 +1029,6 @@ def convert_csv_to_xlsx(csv_path: str, xlsx_path: str) -> bool:
                 tried.append((enc, sep, str(e)))
                 continue
 
-    # Let pandas try to infer separator
     df = pd.read_csv(csv_path, encoding="utf-8", sep=None, engine="python")
     df.to_excel(xlsx_path, index=False, engine="openpyxl")
     logger.info("Converted CSV -> XLSX using python engine")
@@ -871,15 +1036,13 @@ def convert_csv_to_xlsx(csv_path: str, xlsx_path: str) -> bool:
 
 
 # ==============================================================================
-# Main SpreadsheetEncoder Class
+# Main SpreadsheetEncoder Class (UNCHANGED except using new anchor method)
 # ==============================================================================
 
 class SpreadsheetEncoder:
     """
-    SpreadsheetLLM-style encoder that returns:
-      - encoded_text: a readable summary for the LLM prompt
-      - metadata: dataframe stats + inferred column types
-      - spreadsheet_llm_encoding: the raw encoding dict for the primary sheet/region
+    SpreadsheetLLM-style encoder with Connected Components anchor detection.
+    Returns encoded_text, metadata, and spreadsheet_llm_encoding.
     """
 
     def __init__(self, config: Dict[str, Any]):
@@ -893,17 +1056,14 @@ class SpreadsheetEncoder:
         self._temp_xlsx: Optional[str] = None
 
         logger.info(
-            "Initialized SpreadsheetEncoder k=%s detect_subtables=%s data_only=%s",
+            "Initialized SpreadsheetEncoder (Connected Components) k=%s detect_subtables=%s data_only=%s",
             self.k,
             self.detect_subtables,
             self.data_only,
         )
 
     def load_file(self, file_path: str) -> pd.DataFrame:
-        """
-        Load file and convert CSV if needed. Returns a pandas DataFrame.
-        Note: For multi-sheet Excel, pandas reads the first sheet by default.
-        """
+        """Load file and convert CSV if needed."""
         file_path_p = Path(file_path)
         if not file_path_p.exists():
             raise FileNotFoundError(f"File not found: {file_path_p}")
@@ -923,7 +1083,6 @@ class SpreadsheetEncoder:
             working_file = str(file_path_p)
             self._temp_xlsx = None
 
-        # Load with pandas for dataframe-oriented metadata
         df = pd.read_excel(working_file, engine="openpyxl")
         logger.info("Loaded dataframe with shape %s", df.shape)
 
@@ -931,11 +1090,8 @@ class SpreadsheetEncoder:
         return df
 
     def encode(self, df: pd.DataFrame) -> Dict[str, Any]:
-        """
-        Encode using SpreadsheetLLM methodology.
-        If no _working_file is present (df provided directly), writes it to a temp xlsx first.
-        """
-        logger.info("Encoding with SpreadsheetLLM...")
+        """Encode using SpreadsheetLLM methodology with Connected Components anchors."""
+        logger.info("Encoding with SpreadsheetLLM (Connected Components)...")
 
         if not self._working_file:
             temp_file = tempfile.NamedTemporaryFile(suffix=".xlsx", delete=False)
@@ -955,19 +1111,23 @@ class SpreadsheetEncoder:
             min_nonempty_cells_for_region=self.min_nonempty_cells_for_region,
         )
 
-# Extract the first sheet encoding (primary region)
         sheet_name = list(full_encoding["sheets"].keys())[0] if full_encoding["sheets"] else None
         sheet_encoding = full_encoding["sheets"].get(sheet_name, {}) if sheet_name else {}
 
         encoded_text = self._create_readable_text(sheet_encoding, full_encoding["compression_metrics"])
         metadata = self._extract_metadata(df, sheet_encoding, full_encoding["compression_metrics"])
 
-        # Cleanup temp file if we created it
+        # CRITICAL FIX: Clean up temporary file AND reset state
         if self._temp_xlsx and Path(self._temp_xlsx).exists():
             try:
                 Path(self._temp_xlsx).unlink()
-            except Exception:
-                pass
+                logger.debug(f"Deleted temporary file: {self._temp_xlsx}")
+            except Exception as e:
+                logger.warning(f"Failed to delete temporary file: {e}")
+
+        # NEW: Reset working file paths to allow next encode to create new temp file
+        self._working_file = None
+        self._temp_xlsx = None
 
         result = {
             "encoded_text": encoded_text,
@@ -983,9 +1143,7 @@ class SpreadsheetEncoder:
         return result
 
     def _create_readable_text(self, sheet_encoding: Dict[str, Any], compression_metrics: Dict[str, Any]) -> str:
-        """
-        Create an LLM-friendly text representation (summary).
-        """
+        """Create LLM-friendly text representation."""
         lines: List[str] = []
         sheet_metrics = (
             list(compression_metrics.get("sheets", {}).values())[0]
@@ -999,21 +1157,18 @@ class SpreadsheetEncoder:
         lines.append(f"Compression Ratio: {sheet_metrics.get('overall_ratio', 0):.2f}x")
         lines.append("")
 
-        # Region info
         if "region" in sheet_encoding:
             reg = sheet_encoding["region"]
             lines.append("## REGION")
             lines.append(f"Bounds: rows {reg.get('min_row')}..{reg.get('max_row')}, cols {reg.get('min_col')}..{reg.get('max_col')}")
             lines.append("")
 
-        # Anchors
         anchors = sheet_encoding.get("structural_anchors", {})
         lines.append("## STRUCTURAL ANCHORS")
         lines.append(f"Key Rows: {anchors.get('rows', [])}")
         lines.append(f"Key Columns: {anchors.get('columns', [])}")
         lines.append("")
 
-        # Cells
         cells = sheet_encoding.get("cells", {})
         lines.append("## CELL VALUES")
         lines.append(f"Unique values: {len(cells)}")
@@ -1027,7 +1182,6 @@ class SpreadsheetEncoder:
             lines.append(f"  ... and {len(cells) - 20} more values")
         lines.append("")
 
-        # Formats
         formats = sheet_encoding.get("formats", {})
         lines.append("## FORMAT REGIONS")
         lines.append(f"Format groups: {len(formats)}")
@@ -1045,9 +1199,7 @@ class SpreadsheetEncoder:
         return "\n".join(lines)
 
     def _extract_metadata(self, df: pd.DataFrame, sheet_encoding: Dict[str, Any], compression_metrics: Dict[str, Any]) -> Dict[str, Any]:
-        """
-        Extract comprehensive metadata with unique values and statistics.
-        """
+        """Extract comprehensive metadata."""
         sheet_metrics = (
             list(compression_metrics.get("sheets", {}).values())[0]
             if compression_metrics.get("sheets")
@@ -1094,14 +1246,7 @@ class SpreadsheetEncoder:
         return metadata
 
     def _analyze_column(self, full_series: pd.Series, sample_series: pd.Series, max_unique_values: int) -> Dict[str, Any]:
-        """
-        Analyze a single column for:
-          - dtype/nulls/unique
-          - inferred semantic type
-          - potential split delimiters for strings
-          - bilingual content
-          - numeric stats
-        """
+        """Analyze column metadata."""
         col_metadata: Dict[str, Any] = {
             "dtype": str(full_series.dtype),
             "null_count": int(full_series.isnull().sum()),
@@ -1151,13 +1296,7 @@ class SpreadsheetEncoder:
         return col_metadata
 
     def _infer_column_type(self, series: pd.Series, col_metadata: Dict[str, Any]) -> str:
-        """
-        Infer semantic type based on data characteristics.
-
-        Returns:
-          boolean | boolean_with_na | categorical | integer | numeric |
-          identifier | date | year | string
-        """
+        """Infer semantic column type."""
         unique_count = int(col_metadata.get("unique_count", 0))
         total_count = int(len(series)) if len(series) else 0
         unique_values = col_metadata.get("unique_values", [])

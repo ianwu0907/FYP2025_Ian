@@ -47,6 +47,10 @@ class SchemaEstimator:
         """
         Estimate the standardized schema using metadata from encoder.
 
+        Special handling for wide format tables:
+        - If wide_format_detection.is_wide_format == True
+        - Generate unpivot/melt strategy instead of normal schema
+
         IMPORTANT: All data distribution info comes from encoded_data['metadata']['columns']
         """
         logger.info("Estimating normalized schema with LLM...")
@@ -60,6 +64,28 @@ class SchemaEstimator:
                 "Make sure you're using the enhanced encoder."
             )
 
+        # Check if this is a wide format table
+        wide_format_info = structure_analysis.get('wide_format_detection', {})
+        is_wide_format = wide_format_info.get('is_wide_format', False)
+
+        if is_wide_format:
+            logger.info("  ✓ Detected wide format - generating unpivot schema...")
+            schema_result = self._estimate_schema_for_wide_format(
+                encoded_data, structure_analysis, wide_format_info
+            )
+        else:
+            logger.info("  → Standard long format - generating normal schema...")
+            schema_result = self._estimate_schema_normal(encoded_data, structure_analysis)
+
+        logger.info("Schema estimation complete")
+        return schema_result
+
+    def _estimate_schema_normal(self,
+                                encoded_data: Dict[str, Any],
+                                structure_analysis: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        Normal schema estimation for long format tables (original logic).
+        """
         # Create schema estimation prompt with complete metadata
         prompt = self._create_schema_prompt(encoded_data, structure_analysis)
 
@@ -85,13 +111,82 @@ class SchemaEstimator:
             # Validate the schema
             schema_result = self._validate_schema(schema_result, encoded_data, structure_analysis)
 
-            logger.info("Schema estimation complete")
             return schema_result
 
         except Exception as e:
             logger.error(f"Error in schema estimation: {e}")
             # Return default schema if LLM fails
             return self._get_default_schema(encoded_data, structure_analysis)
+
+    def _estimate_schema_for_wide_format(self,
+                                         encoded_data: Dict[str, Any],
+                                         structure_analysis: Dict[str, Any],
+                                         wide_format_info: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        Generate unpivot schema for wide format tables.
+
+        Returns a deterministic schema without LLM call.
+        """
+        logger.info("  → Generating template-based schema for wide format table...")
+
+        years = wide_format_info.get('years_detected', [])
+        year_row_index = wide_format_info.get('year_row_index', 0)
+        data_start_row = wide_format_info.get('data_start_row', 0)
+
+        schema = {
+            'transformation_type': 'wide_to_long',
+            'wide_format_info': wide_format_info,
+            'identified_patterns': [
+                {
+                    'pattern_name': 'WIDE_FORMAT_YEARBOOK',
+                    'affected_columns': [f'Year columns: {years}'],
+                    'details': f'Years in row {year_row_index}, data starts at row {data_start_row}',
+                    'solution': 'Unpivot year columns into long format with bilingual row handling'
+                }
+            ],
+            'column_schema': [
+                {
+                    'output_column': 'Year',
+                    'data_type': 'integer',
+                    'operation': 'create_from_unpivot'
+                },
+                {
+                    'output_column': 'Ethnicity_CN',
+                    'data_type': 'string',
+                    'operation': 'extract_from_bilingual'
+                },
+                {
+                    'output_column': 'Ethnicity_EN',
+                    'data_type': 'string',
+                    'operation': 'extract_from_bilingual'
+                },
+                {
+                    'output_column': 'Number',
+                    'data_type': 'numeric',
+                    'operation': 'unpivot_value'
+                },
+                {
+                    'output_column': 'Percentage',
+                    'data_type': 'numeric',
+                    'operation': 'unpivot_value'
+                }
+            ],
+            'split_operations': [],
+            'type_conversions': [],
+            'normalization_plan': [
+                'Step 1: Extract data region (skip header rows)',
+                'Step 2: Identify ID columns (ethnicity names, categories)',
+                'Step 3: Unpivot year columns into long format',
+                'Step 4: Split year-metric pairs into separate columns (Year, Number, Percentage)',
+                'Step 5: Clean and standardize column names'
+            ],
+            'expected_output_columns': ['Year', 'Ethnicity_CN', 'Ethnicity_EN', 'Number', 'Percentage'],
+            'reasoning': f'Wide format table detected with {len(years)} years. Using template-based unpivot.',
+            'source_metadata': encoded_data.get('metadata', {})
+        }
+
+        return schema
+
 
     def _get_system_prompt(self) -> str:
         """Get the system prompt for schema estimation."""
@@ -124,6 +219,17 @@ Your task is to design clean, normalized schemas for messy spreadsheet data by r
         num_rows = metadata.get('num_rows', 0)
         column_names = metadata.get('column_names', [])
 
+        # --- FIX START: 安全提取 implicit aggregation 信息 ---
+        implicit_agg_info = structure_analysis.get('implicit_aggregation', {})
+        hierarchies = implicit_agg_info.get('aggregation_hierarchies', [])
+
+        # 安全获取 detail_category，如果列表为空则返回默认提示
+        if hierarchies and len(hierarchies) > 0:
+            detail_cat_example = hierarchies[0].get('detail_category', 'category_column')
+        else:
+            detail_cat_example = "category_column"
+        # --- FIX END ---
+
         prompt = f"""Design a normalized schema for this messy spreadsheet.
 
 ## CURRENT STRUCTURE:
@@ -152,9 +258,33 @@ You MUST examine the "Unique values" and "Value counts" above.
 
 ## TABLE PATTERNS TO DETECT:
 
-### Pattern 1: IMPLICIT AGGREGATION
-Check structure_analysis for summary/detail rows:
-{json.dumps(structure_analysis.get('implicit_aggregation', {}), indent=2)}
+### Pattern 1: IMPLICIT AGGREGATION ⚠️ CRITICAL - REQUIRES ACTION
+{json.dumps(implicit_agg_info, indent=2, ensure_ascii=False)}
+
+**MANDATORY ACTION if has_implicit_aggregation == true:**
+
+For EACH hierarchy in aggregation_hierarchies:
+1. **IDENTIFY the column** that contains values matching the detail_category pattern
+   - Look for columns where unique_values include the detail_category string
+   - In this data: the column containing "{detail_cat_example}"
+   
+2. **CREATE split_operation** for that column:
+   ```
+   {{
+     "source_column": "the_column_name",
+     "split_pattern": " - ",  // or "及" based on the pattern
+     "target_columns": ["base_category", "additional_dimension_name"],
+     "logic": "Split removes aggregation hierarchy by separating base category from breakdown dimension",
+     "metadata_evidence": "detail_category contains summary_category + additional dimension"
+   }}
+   ```
+
+3. **EXPECTED RESULT**: After split, you will have:
+   - One column with base category values (e.g., "身體虐待", "精神虐待")  
+   - One column with the additional dimension (e.g., "男性", "女性")
+   - Summary rows removed by transformation generator
+
+**THIS IS MANDATORY - You MUST generate split_operations when implicit_aggregation is detected!**
 
 ### Pattern 2: COMPOSITE COLUMNS  
 Check each column's "potential_delimiters" in metadata above.

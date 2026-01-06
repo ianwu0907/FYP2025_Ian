@@ -50,10 +50,16 @@ class StructureAnalyzer:
 
         df = encoded_data['dataframe']
 
-        # Step 1: LLM-based structure analysis
+        # Step 1: Detect wide format tables (years in columns)
+        wide_format_info = self._detect_wide_format(df)
+
+        # Step 2: LLM-based structure analysis
         llm_analysis = self._analyze_with_llm(encoded_data)
 
-        # Step 2: Detect implicit aggregation (numerical verification)
+        # Step 3: Merge wide format detection results
+        llm_analysis['wide_format_detection'] = wide_format_info
+
+        # Step 4: Detect implicit aggregation (numerical verification)
         if self.detect_implicit_aggregates:
             implicit_agg = self._detect_implicit_aggregation(df, llm_analysis)
             llm_analysis['implicit_aggregation'] = implicit_agg
@@ -93,6 +99,94 @@ class StructureAnalyzer:
             logger.error(f"Error in LLM analysis: {e}")
             # Return default analysis if LLM fails
             return self._get_default_analysis(encoded_data)
+
+    def _detect_wide_format(self, df: pd.DataFrame) -> Dict[str, Any]:
+        """
+        Detect wide format tables where time dimension (years) are in columns.
+
+        This is common in statistical yearbooks where:
+        - Years are arranged horizontally (e.g., 2011, 2016, 2021)
+        - Each year has multiple sub-columns (e.g., Number, Percentage)
+        - Need to be unpivoted into long format
+
+        Returns:
+            Dict containing:
+            - is_wide_format: bool
+            - years_detected: List[int] (if wide format)
+            - year_row_index: int (row where years appear)
+            - data_start_row: int (where actual data begins)
+            - value_columns_per_year: int (e.g., 2 for Number + Percentage)
+        """
+        logger.info("Detecting wide format tables...")
+
+        result = {
+            'is_wide_format': False,
+            'years_detected': [],
+            'year_row_index': None,
+            'data_start_row': None,
+            'value_columns_per_year': None,
+            'year_column_mapping': {}
+        }
+
+        # Check first 10 rows for year patterns
+        for i in range(min(10, len(df))):
+            row_values = df.iloc[i].astype(str).tolist()
+
+            # Look for 4-digit years (e.g., 2011, 2016, 2021)
+            years_found = []
+            year_positions = []
+
+            for j, val in enumerate(row_values):
+                # Match 4-digit year pattern
+                year_match = re.match(r'^(\d{4})$', str(val).strip())
+                if year_match:
+                    year = int(year_match.group(1))
+                    # Reasonable year range: 1900-2100
+                    if 1900 <= year <= 2100:
+                        years_found.append(year)
+                        year_positions.append(j)
+
+            # If we found at least 2 years, likely a wide format
+            if len(years_found) >= 2:
+                logger.info(f"  Found {len(years_found)} years in row {i}: {years_found}")
+
+                result['is_wide_format'] = True
+                result['years_detected'] = sorted(years_found)
+                result['year_row_index'] = i
+
+                # Estimate columns per year
+                if len(year_positions) >= 2:
+                    # Calculate spacing between consecutive years
+                    spacings = [year_positions[k+1] - year_positions[k]
+                                for k in range(len(year_positions)-1)]
+                    if spacings:
+                        # Most common spacing = columns per year
+                        result['value_columns_per_year'] = max(set(spacings), key=spacings.count)
+                        logger.info(f"  Estimated {result['value_columns_per_year']} columns per year")
+
+                # Build year-to-column mapping
+                for year, col_idx in zip(years_found, year_positions):
+                    result['year_column_mapping'][year] = col_idx
+
+                # Estimate data start row (usually a few rows after year row)
+                # Look for first row with mostly non-null values
+                for start_idx in range(i+1, min(i+6, len(df))):
+                    row = df.iloc[start_idx]
+                    non_null_count = row.notna().sum()
+                    if non_null_count >= len(df.columns) * 0.3:  # At least 30% filled
+                        result['data_start_row'] = start_idx
+                        logger.info(f"  Estimated data starts at row {start_idx}")
+                        break
+
+                # Found wide format, no need to check more rows
+                break
+
+        if result['is_wide_format']:
+            logger.info(f"✓ Detected wide format table with years: {result['years_detected']}")
+        else:
+            logger.info("  No wide format pattern detected (long format table)")
+
+        return result
 
     def _detect_implicit_aggregation(self,
                                      df: pd.DataFrame,

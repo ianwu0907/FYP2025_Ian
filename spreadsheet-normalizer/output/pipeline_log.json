@@ -1,41 +1,43 @@
 {
-  "input_file": "testdata.xlsx",
-  "start_time": "2025-11-27 02:10:59",
+  "input_file": "long3.xlsx",
+  "start_time": "2026-01-06 00:32:18",
   "stages": {
     "encoding": {
       "status": "success",
       "shape": [
-        1320,
-        8
+        49,
+        16
       ],
-      "compression_ratio": 213.23529411764707
+      "compression_ratio": 0.8559763724808895
     },
     "analysis": {
       "status": "success",
-      "structure_type": "multi_header",
-      "confidence": 0.9
+      "structure_type": "cross_tab",
+      "confidence": 0.85
     },
     "schema": {
       "status": "success",
-      "num_columns": 8
+      "num_columns": 7
     },
     "transformation": {
       "status": "success",
       "output_shape": [
-        1128,
-        8
+        0,
+        7
       ],
       "validation": {
-        "is_valid": true,
-        "errors": [],
+        "is_valid": false,
+        "errors": [
+          "Result DataFrame is empty"
+        ],
         "warnings": [],
-        "original_rows": 1320,
-        "result_rows": 1128,
+        "original_rows": 49,
+        "result_rows": 0,
         "columns_match": true
       }
     }
   },
-  "output_file": "output/test_result.csv",
-  "end_time": "2025-11-27 02:12:14",
-  "elapsed_seconds": 75.81
+  "output_file": "results/long3_re.csv",
+  "end_time": "2026-01-06 00:33:46",
+  "elapsed_seconds": 88.4
 }

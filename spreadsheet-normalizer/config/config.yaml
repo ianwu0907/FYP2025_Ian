@@ -33,6 +33,12 @@ generator:
   validate_output: true
   preserve_data: true
 
+## Multi-Table Configuration
+#sheet_detector:
+#  temperature: 0.1
+#  max_tokens: 4000          # Increased for more context
+#  max_sample_rows: 20       # Increased from 10 to capture more title information
+
 # Output Configuration
 output:
   format: csv

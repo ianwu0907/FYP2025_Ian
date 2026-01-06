@@ -109,8 +109,32 @@ class TransformationGenerator:
                        encoded_data: Dict[str, Any],
                        structure_analysis: Dict[str, Any],
                        schema: Dict[str, Any]) -> str:
-        """Generate the transformation code using LLM."""
+        """
+        Generate the transformation code using LLM or templates.
 
+        For wide format tables (transformation_type='wide_to_long'):
+        - Use deterministic code template
+        - No LLM call needed (structure is predictable)
+
+        For normal long format tables:
+        - Use LLM to generate custom transformation code
+        """
+        transformation_type = schema.get('transformation_type', 'normal')
+
+        if transformation_type == 'wide_to_long':
+            logger.info("  Using template-based code generation for wide-to-long conversion...")
+            code = self._generate_wide_to_long_code(encoded_data, structure_analysis, schema)
+            logger.debug(f"Generated code:\n{code}")
+            return code
+        else:
+            logger.info("  Using LLM-based code generation for normal transformation...")
+            return self._generate_code_with_llm(encoded_data, structure_analysis, schema)
+
+    def _generate_code_with_llm(self,
+                                encoded_data: Dict[str, Any],
+                                structure_analysis: Dict[str, Any],
+                                schema: Dict[str, Any]) -> str:
+        """Generate transformation code using LLM (original logic)."""
         # Create the prompt with metadata from schema
         prompt = self._create_generation_prompt(encoded_data, structure_analysis, schema)
 
@@ -136,6 +160,135 @@ class TransformationGenerator:
         except Exception as e:
             logger.error(f"Error generating code: {e}")
             raise
+
+    def _generate_wide_to_long_code(self,
+                                    encoded_data: Dict[str, Any],
+                                    structure_analysis: Dict[str, Any],
+                                    schema: Dict[str, Any]) -> str:
+        """
+        Generate deterministic code template for wide-to-long conversion.
+
+        This handles common statistical yearbook format:
+        - Years in columns (e.g., 2011, 2016, 2021)
+        - Each year has sub-columns (e.g., Number, Percentage)
+        - Bilingual rows (Chinese + English)
+        - Need to unpivot to long format
+
+        Returns:
+            Executable Python code as string
+        """
+        wide_info = schema.get('wide_format_info', {})
+        years = wide_info.get('years_detected', [])
+        data_start_row = wide_info.get('data_start_row', 6)
+        year_row_index = wide_info.get('year_row_index', 3)
+
+        logger.info(f"  Generating unpivot code for {len(years)} years starting at row {data_start_row}")
+
+        # Build the transformation code template
+        code = f'''
+import pandas as pd
+import numpy as np
+
+def transform(df):
+    """
+    Transform wide format table to long format.
+    
+    Wide format: Years in columns (2011, 2016, 2021)
+    Long format: One row per year per category
+    """
+    print(f"Input shape: {{df.shape}}")
+    
+    # Step 1: Extract data region (skip header rows)
+    data_start_row = {data_start_row}
+    df_data = df.iloc[data_start_row:].copy()
+    df_data = df_data.reset_index(drop=True)
+    print(f"Data region shape: {{df_data.shape}}")
+    
+    # Step 2: Build year-column mapping
+    # Years detected: {years}
+    year_row_idx = {year_row_index}
+    year_row = df.iloc[year_row_idx]
+    
+    # Find year columns
+    year_columns = {{}}
+    for idx, val in enumerate(year_row):
+        try:
+            val_str = str(val).strip()
+            if val_str.isdigit() and len(val_str) == 4:
+                year = int(val_str)
+                if {min(years)} <= year <= {max(years)}:
+                    year_columns[year] = idx
+        except:
+            pass
+    
+    print(f"Year columns detected: {{year_columns}}")
+    
+    # Step 3: Extract data for each year
+    data_rows = []
+    current_ethnicity_cn = None
+    
+    for row_idx in range(len(df_data)):
+        row = df_data.iloc[row_idx]
+        
+        # Check if first column has ethnicity name
+        ethnicity_value = row.iloc[0]
+        
+        if pd.notna(ethnicity_value) and str(ethnicity_value).strip():
+            ethnicity_str = str(ethnicity_value).strip()
+            
+            # Detect if Chinese or English
+            has_chinese = any('\\u4e00' <= c <= '\\u9fff' for c in ethnicity_str)
+            
+            if has_chinese:
+                # Chinese row - extract data for all years
+                current_ethnicity_cn = ethnicity_str
+                
+                for year, col_idx in sorted(year_columns.items()):
+                    # Extract Number and Percentage (usually in next 2 columns)
+                    try:
+                        number_val = row.iloc[col_idx] if col_idx < len(row) else None
+                        pct_val = row.iloc[col_idx + 1] if col_idx + 1 < len(row) else None
+                        
+                        data_rows.append({{
+                            'Year': year,
+                            'Ethnicity_CN': current_ethnicity_cn,
+                            'Ethnicity_EN': None,  # Will be filled by next row
+                            'Number': number_val,
+                            'Percentage': pct_val
+                        }})
+                    except Exception as e:
+                        print(f"Warning: Failed to extract data for year {{year}}: {{e}}")
+            else:
+                # English row - update previous records
+                if data_rows:
+                    # Update last N records (where N = number of years)
+                    num_years = len(year_columns)
+                    for i in range(1, min(num_years + 1, len(data_rows) + 1)):
+                        if data_rows[-i]['Ethnicity_EN'] is None:
+                            data_rows[-i]['Ethnicity_EN'] = ethnicity_str
+    
+    # Step 4: Create long format DataFrame
+    df_long = pd.DataFrame(data_rows)
+    
+    # Step 5: Clean and convert data types
+    if len(df_long) > 0:
+        df_long['Year'] = pd.to_numeric(df_long['Year'], errors='coerce').astype('Int64')
+        df_long['Number'] = pd.to_numeric(df_long['Number'], errors='coerce')
+        df_long['Percentage'] = pd.to_numeric(df_long['Percentage'], errors='coerce')
+        
+        # Remove rows with all NaN in Number and Percentage
+        df_long = df_long.dropna(subset=['Number', 'Percentage'], how='all')
+        
+        # Reorder columns
+        df_long = df_long[['Year', 'Ethnicity_CN', 'Ethnicity_EN', 'Number', 'Percentage']]
+    
+    print(f"Output shape: {{df_long.shape}}")
+    print(f"Years in output: {{sorted(df_long['Year'].unique()) if len(df_long) > 0 else []}}")
+    
+    return df_long
+'''
+
+        return code.strip()
 
     def _get_system_prompt(self) -> str:
         return """You are an expert Python programmer specializing in data transformation and pandas.
