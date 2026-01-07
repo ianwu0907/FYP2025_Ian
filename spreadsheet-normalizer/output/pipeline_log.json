@@ -1,38 +1,40 @@
 {
-  "input_file": "long1.xlsx",
-  "start_time": "2026-01-07 03:09:13",
+  "input_file": "testdata.xlsx",
+  "start_time": "2026-01-07 23:11:58",
   "stages": {
     "encoding": {
       "status": "success",
       "shape": [
-        56,
-        10
+        1320,
+        8
       ],
-      "compression_ratio": 1.1378044711378044
+      "compression_ratio": 149.22419252691577
     },
     "structure_analysis": {
       "status": "success",
       "has_bilingual": true,
-      "has_section_markers": false,
-      "has_implicit_aggregation": false,
+      "has_section_markers": true,
+      "has_implicit_aggregation": true,
       "transformation_complexity": "medium"
     },
     "schema_estimation": {
       "status": "success",
-      "observation_unit": "Each row represents the statistics for one ethnic minority group in one census year, including both the Chinese and English names along with its count and percentage.",
-      "num_target_columns": 7,
-      "expected_rows": 147
+      "observation_unit": "Each row represents the count of elder abuse cases for a specific combination of year, report status, abuse category (with bilingual labels), and abuse type (with bilingual labels) at the most granular (detail) level.",
+      "num_target_columns": 8,
+      "expected_rows": 384
     },
     "transformation": {
       "status": "success",
       "output_shape": [
-        75,
-        7
+        1128,
+        8
       ],
       "validation": {
         "is_valid": true,
         "errors": [],
-        "warnings": [],
+        "warnings": [
+          "Row count higher than expected: 1128 vs expected 384"
+        ],
         "checks_performed": [
           {
             "check": "not_empty",
@@ -46,49 +48,51 @@
           },
           {
             "check": "row_count",
-            "passed": true,
-            "actual": 75,
-            "expected": 147
+            "passed": false,
+            "actual": 1128,
+            "expected": 384
           },
           {
             "check": "semantic_sample",
-            "description": "Spot-check for an ethnic group in the 2011 census",
+            "description": "Row representing a detailed breakdown for 2005 Physical abuse",
             "expected": {
-              "observation_id": "1",
-              "table_title": "表3.1",
-              "ethnicity_cn": "亞洲人（非華人）",
-              "ethnicity_en": "Asian (other than Chinese)",
-              "year": 2011,
-              "count": 365611,
-              "percentage": 81.0
+              "year": 2005,
+              "police_report_status_cn": "不適用",
+              "police_report_status_en": "Not Applicable",
+              "abuse_category_cn": "虐待長者性質",
+              "abuse_category_en": "Type of Elder Abuse",
+              "abuse_type_cn": "身體虐待",
+              "abuse_type_en": "Physical abuse",
+              "count": 390
             },
             "passed": true,
             "actual": {
-              "observation_id": "1",
-              "table_title": "表3.1",
-              "ethnicity_cn": "亞洲人（非華人）",
-              "ethnicity_en": "Asian (other than Chinese)",
-              "year": 2011,
-              "count": 365611,
-              "percentage": 81.0
+              "year": 2005,
+              "police_report_status_cn": "不適用",
+              "police_report_status_en": "Not Applicable",
+              "abuse_category_cn": "虐待長者性質",
+              "abuse_category_en": "Type of Elder Abuse",
+              "abuse_type_cn": "身體虐待",
+              "abuse_type_en": "Physical abuse",
+              "count": 390
             },
             "error": null
           }
         ],
         "actual_shape": [
-          75,
-          7
+          1128,
+          8
         ],
         "expected_shape": [
-          147,
-          7
+          384,
+          8
         ]
       },
-      "attempts": 1
+      "attempts": 3
     }
   },
-  "output_file": "output/normalized.csv",
-  "end_time": "2026-01-07 03:11:03",
-  "elapsed_seconds": 110.43,
+  "output_file": "output/test_result.csv",
+  "end_time": "2026-01-07 23:14:46",
+  "elapsed_seconds": 167.74,
   "status": "success"
 }

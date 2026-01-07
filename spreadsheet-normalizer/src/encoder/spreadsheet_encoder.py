@@ -21,6 +21,7 @@ from collections import defaultdict
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Optional, Sequence, Tuple, Set
+from itertools import islice  # ✅ FIX #2: Import islice
 
 import numpy as np
 import openpyxl
@@ -890,6 +891,7 @@ def spreadsheet_llm_encode_with_helpers(
 
         region_encodings: List[Dict[str, Any]] = []
 
+        # ✅ FIX #3: Calculate original_tokens once, outside region loop
         original_cells = {}
         for r, c, v in _iter_values_only(sheet, full_region):
             if v is None:
@@ -952,7 +954,7 @@ def spreadsheet_llm_encode_with_helpers(
                     "region_index": reg_idx,
                     "encoding": sheet_encoding,
                     "metrics": {
-                        "original_tokens": original_tokens,
+                        "original_tokens": original_tokens,  # ✅ Use pre-calculated value
                         "after_anchor_tokens": anchor_tokens,
                         "after_inverted_index_tokens": index_tokens,
                         "after_merged_index_tokens": merged_tokens,
@@ -1036,7 +1038,7 @@ def convert_csv_to_xlsx(csv_path: str, xlsx_path: str) -> bool:
 
 
 # ==============================================================================
-# Main SpreadsheetEncoder Class (UNCHANGED except using new anchor method)
+# Main SpreadsheetEncoder Class
 # ==============================================================================
 
 class SpreadsheetEncoder:
@@ -1093,54 +1095,58 @@ class SpreadsheetEncoder:
         """Encode using SpreadsheetLLM methodology with Connected Components anchors."""
         logger.info("Encoding with SpreadsheetLLM (Connected Components)...")
 
-        if not self._working_file:
-            temp_file = tempfile.NamedTemporaryFile(suffix=".xlsx", delete=False)
-            temp_file_path = temp_file.name
-            temp_file.close()
-            df.to_excel(temp_file_path, index=False, engine="openpyxl")
-            self._working_file = temp_file_path
-            self._temp_xlsx = temp_file_path
+        try:
+            # Create temporary file if needed
+            if not self._working_file:
+                temp_file = tempfile.NamedTemporaryFile(suffix=".xlsx", delete=False)
+                temp_file_path = temp_file.name
+                temp_file.close()
+                df.to_excel(temp_file_path, index=False, engine="openpyxl")
+                self._working_file = temp_file_path
+                self._temp_xlsx = temp_file_path
 
-        full_encoding = spreadsheet_llm_encode_with_helpers(
-            self._working_file,
-            output_path=None,
-            k=self.k,
-            data_only=self.data_only,
-            detect_subtables=self.detect_subtables,
-            max_value_len=self.max_value_len,
-            min_nonempty_cells_for_region=self.min_nonempty_cells_for_region,
-        )
+            # Perform encoding
+            full_encoding = spreadsheet_llm_encode_with_helpers(
+                self._working_file,
+                output_path=None,
+                k=self.k,
+                data_only=self.data_only,
+                detect_subtables=self.detect_subtables,
+                max_value_len=self.max_value_len,
+                min_nonempty_cells_for_region=self.min_nonempty_cells_for_region,
+            )
 
-        sheet_name = list(full_encoding["sheets"].keys())[0] if full_encoding["sheets"] else None
-        sheet_encoding = full_encoding["sheets"].get(sheet_name, {}) if sheet_name else {}
+            sheet_name = list(full_encoding["sheets"].keys())[0] if full_encoding["sheets"] else None
+            sheet_encoding = full_encoding["sheets"].get(sheet_name, {}) if sheet_name else {}
 
-        encoded_text = self._create_readable_text(sheet_encoding, full_encoding["compression_metrics"])
-        metadata = self._extract_metadata(df, sheet_encoding, full_encoding["compression_metrics"])
+            encoded_text = self._create_readable_text(sheet_encoding, full_encoding["compression_metrics"])
+            metadata = self._extract_metadata(df, sheet_encoding, full_encoding["compression_metrics"])
 
-        # CRITICAL FIX: Clean up temporary file AND reset state
-        if self._temp_xlsx and Path(self._temp_xlsx).exists():
-            try:
-                Path(self._temp_xlsx).unlink()
-                logger.debug(f"Deleted temporary file: {self._temp_xlsx}")
-            except Exception as e:
-                logger.warning(f"Failed to delete temporary file: {e}")
+            result = {
+                "encoded_text": encoded_text,
+                "metadata": metadata,
+                "original_shape": df.shape,
+                "preview_shape": df.shape,
+                "dataframe": df,
+                "spreadsheet_llm_encoding": sheet_encoding,
+                "compression_metrics": full_encoding["compression_metrics"],
+            }
 
-        # NEW: Reset working file paths to allow next encode to create new temp file
-        self._working_file = None
-        self._temp_xlsx = None
+            logger.info("Encoding complete. Compression: %.2fx", metadata.get("compression_ratio", 0))
+            return result
 
-        result = {
-            "encoded_text": encoded_text,
-            "metadata": metadata,
-            "original_shape": df.shape,
-            "preview_shape": df.shape,
-            "dataframe": df,
-            "spreadsheet_llm_encoding": sheet_encoding,
-            "compression_metrics": full_encoding["compression_metrics"],
-        }
+        finally:
+            # ✅ FIX #1: Always cleanup temporary file, even if exception occurs
+            if self._temp_xlsx and Path(self._temp_xlsx).exists():
+                try:
+                    Path(self._temp_xlsx).unlink()
+                    logger.debug(f"Deleted temporary file: {self._temp_xlsx}")
+                except Exception as e:
+                    logger.warning(f"Failed to delete temporary file: {e}")
 
-        logger.info("Encoding complete. Compression: %.2fx", metadata.get("compression_ratio", 0))
-        return result
+            # Reset state for next encode call
+            self._working_file = None
+            self._temp_xlsx = None
 
     def _create_readable_text(self, sheet_encoding: Dict[str, Any], compression_metrics: Dict[str, Any]) -> str:
         """Create LLM-friendly text representation."""
@@ -1172,7 +1178,9 @@ class SpreadsheetEncoder:
         cells = sheet_encoding.get("cells", {})
         lines.append("## CELL VALUES")
         lines.append(f"Unique values: {len(cells)}")
-        for value, ranges in list(cells.items())[:20]:
+
+        # ✅ FIX #2: Use islice instead of creating full list
+        for value, ranges in islice(cells.items(), 20):
             ranges_str = ", ".join(ranges[:5])
             if len(ranges) > 5:
                 ranges_str += f" (+{len(ranges) - 5} more)"
@@ -1185,7 +1193,9 @@ class SpreadsheetEncoder:
         formats = sheet_encoding.get("formats", {})
         lines.append("## FORMAT REGIONS")
         lines.append(f"Format groups: {len(formats)}")
-        for fmt_key, ranges in list(formats.items())[:10]:
+
+        # ✅ FIX #2: Use islice for formats too
+        for fmt_key, ranges in islice(formats.items(), 10):
             try:
                 fmt = json.loads(fmt_key)
                 ranges_str = ", ".join(ranges[:3])
