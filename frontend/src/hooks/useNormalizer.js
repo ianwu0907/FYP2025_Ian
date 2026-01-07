@@ -1,0 +1,189 @@
+/**
+ * useNormalizer Hook
+ * 管理整个标准化流程的状态和逻辑
+ */
+
+import { useState, useCallback, useEffect, useRef } from 'react';
+import { api } from '../services/api';
+
+export const useNormalizer = () => {
+  const [sessionId, setSessionId] = useState(null);
+  const [taskId, setTaskId] = useState(null);
+  const [status, setStatus] = useState('idle'); // idle, uploading, uploaded, processing, completed, error
+  const [progress, setProgress] = useState(0);
+  const [logs, setLogs] = useState([]);
+  const [result, setResult] = useState(null);
+  const [error, setError] = useState(null);
+  const [uploadedFileInfo, setUploadedFileInfo] = useState(null);
+
+  const pollingIntervalRef = useRef(null);
+  const pollingErrorCountRef = useRef(0); // 跟踪连续轮询错误次数
+
+  /**
+   * 上传文件
+   */
+  const uploadFile = useCallback(async (file) => {
+    try {
+      setStatus('uploading');
+      setError(null);
+      setLogs((prev) => [...prev, `开始上传文件: ${file.name}`]);
+
+      const response = await api.uploadFile(file);
+
+      setSessionId(response.session_id);
+      setUploadedFileInfo(response);
+      setStatus('uploaded');
+      setLogs((prev) => [...prev, `文件上传成功！Session ID: ${response.session_id}`]);
+      setLogs((prev) => [...prev, `文件预览: ${response.preview.shape[0]} 行 × ${response.preview.shape[1]} 列`]);
+
+      return response;
+    } catch (err) {
+      console.error('Upload error:', err);
+      setStatus('error');
+      setError(err.response?.data?.detail || err.message || '上传失败');
+      setLogs((prev) => [...prev, `❌ 上传失败: ${err.response?.data?.detail || err.message}`]);
+      throw err;
+    }
+  }, []);
+
+  /**
+   * 开始标准化
+   */
+  const startNormalization = useCallback(async (configOverrides = {}) => {
+    try {
+      setStatus('processing');
+      setProgress(0);
+      setError(null);
+      setLogs((prev) => [...prev, '开始标准化处理...']);
+
+      const response = await api.startNormalization(sessionId, configOverrides);
+      setTaskId(response.task_id);
+      setLogs((prev) => [...prev, `任务已创建: ${response.task_id}`]);
+
+      // 开始轮询任务状态
+      startPolling(response.task_id);
+
+      return response;
+    } catch (err) {
+      console.error('Start normalization error:', err);
+      setStatus('error');
+      setError(err.response?.data?.detail || err.message || '启动失败');
+      setLogs((prev) => [...prev, `❌ 启动失败: ${err.response?.data?.detail || err.message}`]);
+      throw err;
+    }
+  }, [sessionId]);
+
+  /**
+   * 开始轮询任务状态
+   */
+  const startPolling = useCallback((taskId) => {
+    // 清除之前的轮询
+    if (pollingIntervalRef.current) {
+      clearInterval(pollingIntervalRef.current);
+    }
+
+    // 重置错误计数
+    pollingErrorCountRef.current = 0;
+
+    // 每 2 秒查询一次状态
+    pollingIntervalRef.current = setInterval(async () => {
+      try {
+        const statusResponse = await api.getTaskStatus(taskId);
+
+        // 成功获取状态，重置错误计数
+        pollingErrorCountRef.current = 0;
+
+        setProgress(statusResponse.progress);
+        if (statusResponse.current_stage) {
+          setLogs((prev) => [...prev, `[${statusResponse.current_stage}] 进度: ${statusResponse.progress}%`]);
+        }
+
+        if (statusResponse.status === 'completed') {
+          clearInterval(pollingIntervalRef.current);
+          setStatus('completed');
+          setResult(statusResponse.result);
+          setProgress(100);
+
+          // 调试：打印结果数据
+          console.log('🔍 Normalization completed. Result:', statusResponse.result);
+          console.log('🔍 Has normalized_preview?', !!statusResponse.result?.normalized_preview);
+
+          setLogs((prev) => [
+            ...prev,
+            `✅ 标准化完成！用时: ${statusResponse.elapsed_seconds?.toFixed(2)}秒`,
+          ]);
+        } else if (statusResponse.status === 'failed') {
+          clearInterval(pollingIntervalRef.current);
+          setStatus('error');
+          setError(statusResponse.error || '处理失败');
+          setLogs((prev) => [...prev, `❌ 处理失败: ${statusResponse.error}`]);
+        }
+      } catch (err) {
+        console.error('Polling error:', err);
+
+        // 增加错误计数
+        pollingErrorCountRef.current += 1;
+
+        // 如果连续失败5次，停止轮询并报错
+        if (pollingErrorCountRef.current >= 5) {
+          clearInterval(pollingIntervalRef.current);
+          setStatus('error');
+
+          const errorMsg = err.response?.status === 404
+            ? '任务不存在（可能后端已重启）'
+            : `连接失败: ${err.message}`;
+
+          setError(errorMsg);
+          setLogs((prev) => [...prev, `❌ 轮询失败（已重试5次）: ${errorMsg}`]);
+        }
+      }
+    }, 2000);
+  }, []);
+
+  /**
+   * 重置状态
+   */
+  const reset = useCallback(() => {
+    if (pollingIntervalRef.current) {
+      clearInterval(pollingIntervalRef.current);
+    }
+    setSessionId(null);
+    setTaskId(null);
+    setStatus('idle');
+    setProgress(0);
+    setLogs([]);
+    setResult(null);
+    setError(null);
+    setUploadedFileInfo(null);
+  }, []);
+
+  /**
+   * 清理轮询
+   */
+  useEffect(() => {
+    return () => {
+      if (pollingIntervalRef.current) {
+        clearInterval(pollingIntervalRef.current);
+      }
+    };
+  }, []);
+
+  return {
+    // 状态
+    sessionId,
+    taskId,
+    status,
+    progress,
+    logs,
+    result,
+    error,
+    uploadedFileInfo,
+
+    // 方法
+    uploadFile,
+    startNormalization,
+    reset,
+  };
+};
+
+export default useNormalizer;

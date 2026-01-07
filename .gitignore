@@ -7,3 +7,4 @@
 *.yaml
 /output
 CLAUDE.md
+/*.md

@@ -1,0 +1,7 @@
+DataFrame shape: (1128, 10)
+Detected 1 table(s):
+
+Table_1:
+  Position: rows [0:1127], cols [0:9]
+  Shape: 1128 x 10
+  Confidence: 80.14%

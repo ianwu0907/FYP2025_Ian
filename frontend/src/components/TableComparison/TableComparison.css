@@ -1,0 +1,43 @@
+/**
+ * 表格对比组件样式
+ */
+
+.table-comparison {
+  width: 100%;
+}
+
+.table-wrapper {
+  overflow: hidden;
+}
+
+/* 表格头部样式 */
+.table-wrapper .ant-table-thead > tr > th {
+  background: #fafafa;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* 表格单元格样式 */
+.table-wrapper .ant-table-tbody > tr > td {
+  padding: 8px;
+  font-size: 13px;
+}
+
+/* 表格行悬停效果 */
+.table-wrapper .ant-table-tbody > tr:hover > td {
+  background: #e6f7ff;
+}
+
+/* 分页器样式 */
+.table-wrapper .ant-pagination {
+  margin: 16px;
+  text-align: center;
+}
+
+/* 响应式设计 */
+@media (max-width: 1200px) {
+  .table-comparison .ant-col-12 {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+}
