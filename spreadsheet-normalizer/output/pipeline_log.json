@@ -1,43 +1,94 @@
 {
-  "input_file": "long3.xlsx",
-  "start_time": "2026-01-06 00:32:18",
+  "input_file": "long1.xlsx",
+  "start_time": "2026-01-07 03:09:13",
   "stages": {
     "encoding": {
       "status": "success",
       "shape": [
-        49,
-        16
+        56,
+        10
       ],
-      "compression_ratio": 0.8559763724808895
+      "compression_ratio": 1.1378044711378044
     },
-    "analysis": {
+    "structure_analysis": {
       "status": "success",
-      "structure_type": "cross_tab",
-      "confidence": 0.85
+      "has_bilingual": true,
+      "has_section_markers": false,
+      "has_implicit_aggregation": false,
+      "transformation_complexity": "medium"
     },
-    "schema": {
+    "schema_estimation": {
       "status": "success",
-      "num_columns": 7
+      "observation_unit": "Each row represents the statistics for one ethnic minority group in one census year, including both the Chinese and English names along with its count and percentage.",
+      "num_target_columns": 7,
+      "expected_rows": 147
     },
     "transformation": {
       "status": "success",
       "output_shape": [
-        0,
+        75,
         7
       ],
       "validation": {
-        "is_valid": false,
-        "errors": [
-          "Result DataFrame is empty"
-        ],
+        "is_valid": true,
+        "errors": [],
         "warnings": [],
-        "original_rows": 49,
-        "result_rows": 0,
-        "columns_match": true
-      }
+        "checks_performed": [
+          {
+            "check": "not_empty",
+            "passed": true
+          },
+          {
+            "check": "columns_match",
+            "passed": true,
+            "missing": [],
+            "extra": []
+          },
+          {
+            "check": "row_count",
+            "passed": true,
+            "actual": 75,
+            "expected": 147
+          },
+          {
+            "check": "semantic_sample",
+            "description": "Spot-check for an ethnic group in the 2011 census",
+            "expected": {
+              "observation_id": "1",
+              "table_title": "表3.1",
+              "ethnicity_cn": "亞洲人（非華人）",
+              "ethnicity_en": "Asian (other than Chinese)",
+              "year": 2011,
+              "count": 365611,
+              "percentage": 81.0
+            },
+            "passed": true,
+            "actual": {
+              "observation_id": "1",
+              "table_title": "表3.1",
+              "ethnicity_cn": "亞洲人（非華人）",
+              "ethnicity_en": "Asian (other than Chinese)",
+              "year": 2011,
+              "count": 365611,
+              "percentage": 81.0
+            },
+            "error": null
+          }
+        ],
+        "actual_shape": [
+          75,
+          7
+        ],
+        "expected_shape": [
+          147,
+          7
+        ]
+      },
+      "attempts": 1
     }
   },
-  "output_file": "results/long3_re.csv",
-  "end_time": "2026-01-06 00:33:46",
-  "elapsed_seconds": 88.4
+  "output_file": "output/normalized.csv",
+  "end_time": "2026-01-07 03:11:03",
+  "elapsed_seconds": 110.43,
+  "status": "success"
 }

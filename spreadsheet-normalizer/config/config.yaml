@@ -1,43 +1,40 @@
-# Spreadsheet Normalizer Configuration
+# Spreadsheet Normalizer Configuration (Enhanced)
+# Using LLM semantic reasoning for generalized normalization
 
 # LLM Configuration
 llm:
   temperature: 0.1
-  max_tokens: 10000
-  timeout: 60
+  max_completion_tokens: 6000
+  timeout: 120
 
 # Encoder Configuration (SpreadsheetLLM)
 encoder:
   anchor_neighborhood: 2  # K parameter for structural anchors
+  detect_subtables: true
+  data_only: true
+  max_value_len: 200
 
-# Structure Analyzer Configuration
+# Structure Analyzer Configuration (Enhanced)
 analyzer:
-  detect_headers: true
-  detect_aggregates: true
+  # Preserved: implicit aggregation detection
   detect_implicit_aggregates: true
+  # LLM settings for semantic analysis
   temperature: 0.1
-  max_tokens: 3000
+  max_completion_tokens: 4000
 
-# Schema Estimator Configuration
+# Schema Estimator Configuration (Enhanced)
 estimator:
-  standardize_names: true
-  detect_types: true
-  merge_similar_columns: false
-  detect_composite_columns: true
-  split_composite_columns: true
-  preserve_bilingual: true
+  # Now uses free-form LLM reasoning based on tidy data principles
+  # No hardcoded templates - LLM derives schema semantically
+  temperature: 0.1
+  max_completion_tokens: 4000
 
-# Transformation Generator Configuration
+# Transformation Generator Configuration (Enhanced)
 generator:
+  # Two-stage approach: Strategy → Code
   max_retries: 3
-  validate_output: true
-  preserve_data: true
-
-## Multi-Table Configuration
-#sheet_detector:
-#  temperature: 0.1
-#  max_tokens: 4000          # Increased for more context
-#  max_sample_rows: 20       # Increased from 10 to capture more title information
+  temperature: 0.1
+  max_completion_tokens: 6000
 
 # Output Configuration
 output:
