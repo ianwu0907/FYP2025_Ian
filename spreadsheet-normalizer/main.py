@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 """
-Spreadsheet Normalizer - Main Entry Point
+Spreadsheet Normalizer - Main Entry Point (Enhanced)
+
+Uses LLM semantic reasoning for generalized table normalization.
+Transforms messy spreadsheets into tidy format based on tidy data principles.
 """
 
 import argparse
@@ -27,6 +30,7 @@ def setup_logging(verbose: bool = False):
     # Reduce noise from libraries
     logging.getLogger('openai').setLevel(logging.WARNING)
     logging.getLogger('urllib3').setLevel(logging.WARNING)
+    logging.getLogger('httpx').setLevel(logging.WARNING)
 
 
 def load_config(config_path: str) -> dict:
@@ -110,13 +114,19 @@ def display_multi_table_summary(result: Dict[str, Any], logger):
 def main():
     """Main entry point."""
     parser = argparse.ArgumentParser(
-        description='Spreadsheet Normalizer - Automated table schema optimization',
+        description='Spreadsheet Normalizer - LLM-based table schema standardization',
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
   python main.py --input data.xlsx --output clean_data.csv
-  python main.py --input messy_table.csv --output normalized.csv --verbose
-  python main.py --input multi_table.xlsx --verbose  # Auto-detects multiple tables
+  python main.py --input messy_table.xlsx --output normalized.csv --verbose
+  
+Features:
+  - Semantic structure analysis (not pattern matching)
+  - Tidy data principles-based schema derivation
+  - Two-stage transformation (Strategy → Code)
+  - Automatic validation with semantic sampling
+  - Preserved: Implicit aggregation detection
         """
     )
 
@@ -159,15 +169,16 @@ Examples:
             logger.error(f"Input file not found: {args.input}")
             sys.exit(1)
 
-        if input_file.suffix not in ['.csv', '.xlsx']:
+        if input_file.suffix.lower() not in ['.csv', '.xlsx']:
             logger.error(f"Unsupported file format: {input_file.suffix}")
             logger.error("Supported formats: .csv, .xlsx")
             sys.exit(1)
 
         # Initialize pipeline
-        logger.info("\n" + "="*80)
-        logger.info("SPREADSHEET NORMALIZER PIPELINE")
-        logger.info("="*80)
+        logger.info("\n" + "=" * 80)
+        logger.info("SPREADSHEET NORMALIZER (Enhanced)")
+        logger.info("Using LLM Semantic Reasoning for Generalized Normalization")
+        logger.info("=" * 80)
         logger.info(f"Input file: {args.input}")
         logger.info(f"Output file: {args.output or 'output/normalized_output.csv'}")
         
@@ -180,6 +191,7 @@ Examples:
             logger.info(f"Table splitting: DISABLED")
         
         logger.info("="*80 + "\n")
+        logger.info("=" * 80 + "\n")
 
         normalizer = TableNormalizer(config)
 
@@ -189,35 +201,20 @@ Examples:
             output_file=args.output
         )
 
-        # Display summary based on result type
-        if 'all_tables' in result:
-            # Multi-table result
-            display_multi_table_summary(result, logger)
-        else:
-            # Single table result
-            display_single_table_summary(result, logger)
-
-        # Success message
-        logger.info("✓ Normalization completed successfully!")
+        # Final status
+        logger.info("\n✓ Normalization completed successfully!")
         logger.info(f"✓ Results saved to: {result['output_path']}")
 
         if config.get('logging', {}).get('save_intermediate', True):
             output_dir = Path(config.get('logging', {}).get('output_dir', 'output'))
             logger.info(f"✓ Intermediate results saved to: {output_dir}")
 
-        # Additional info for multi-table results
-        if 'all_tables' in result:
-            processing_mode = result['pipeline_log'].get('processing_mode', 'separate')
-            if processing_mode == 'separate':
-                logger.info("\n" + "="*80)
-                logger.info("OUTPUT FILES")
-                logger.info("="*80)
-                for table in result['all_tables']:
-                    if 'normalized_df' in table:
-                        table_file = output_dir / f"{table['table_name']}_normalized.csv"
-                        logger.info(f"  • {table['table_name']}: {table_file}")
-                logger.info(f"  • Summary: {output_dir}/tables_summary.json")
-                logger.info("="*80 + "\n")
+        # Print validation warnings if any
+        validation = result['intermediate_results']['transformation']['validation_result']
+        if validation.get('warnings'):
+            logger.warning("\nWarnings:")
+            for warning in validation['warnings']:
+                logger.warning(f"  - {warning}")
 
     except KeyboardInterrupt:
         logger.info("\n\nProcess interrupted by user")
