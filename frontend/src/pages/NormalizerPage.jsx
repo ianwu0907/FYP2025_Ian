@@ -5,12 +5,13 @@
 
 import React, { useState } from 'react';
 import { Layout, Row, Col, Card, Button, message, Descriptions, Tag, Spin, Divider } from 'antd';
-import { RocketOutlined, ReloadOutlined, CheckCircleOutlined, DownloadOutlined } from '@ant-design/icons';
+import { RocketOutlined, ReloadOutlined, CheckCircleOutlined, DownloadOutlined, TranslationOutlined } from '@ant-design/icons';
 import FileUpload from '../components/FileUpload/FileUpload';
 import ProgressDisplay from '../components/ProgressDisplay/ProgressDisplay';
 import TableComparison from '../components/TableComparison/TableComparison';
 import { useNormalizer } from '../hooks/useNormalizer';
 import { api } from '../services/api';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const { Header, Content } = Layout;
 
@@ -29,34 +30,35 @@ const NormalizerPage = () => {
     reset,
   } = useNormalizer();
 
+  const { t, toggleLanguage, currentLanguage } = useLanguage();
   const [configOverrides, setConfigOverrides] = useState({});
 
   const handleFileUpload = async (file) => {
     try {
       await uploadFile(file);
-      message.success(`文件 ${file.name} 上传成功！`);
+      message.success(`${file.name} ${t.upload.uploadSuccess}`);
     } catch (err) {
-      message.error(`上传失败: ${err.message}`);
+      message.error(`${t.upload.uploadFailed}: ${err.message}`);
     }
   };
 
   const handleStartNormalization = async () => {
     try {
       await startNormalization(configOverrides);
-      message.success('标准化处理已开始！');
+      message.success(t.normalization.startSuccess);
     } catch (err) {
-      message.error(`启动失败: ${err.message}`);
+      message.error(`${t.normalization.startFailed}: ${err.message}`);
     }
   };
 
   const handleReset = () => {
     reset();
-    message.info('已重置，可以上传新文件');
+    message.info(t.message.resetSuccess);
   };
 
   const handleDownload = async () => {
     try {
-      message.loading({ content: '正在准备下载...', key: 'download' });
+      message.loading({ content: t.result.downloading, key: 'download' });
 
       // 调用 API 下载文件
       const blob = await api.downloadResult(taskId);
@@ -78,27 +80,27 @@ const NormalizerPage = () => {
       document.body.removeChild(link);
       window.URL.revokeObjectURL(url);
 
-      message.success({ content: '下载成功！', key: 'download' });
+      message.success({ content: t.result.downloadSuccess, key: 'download' });
     } catch (err) {
       console.error('Download error:', err);
-      message.error({ content: `下载失败: ${err.message}`, key: 'download' });
+      message.error({ content: `${t.result.downloadFailed}: ${err.message}`, key: 'download' });
     }
   };
 
   const getStatusTag = () => {
     switch (status) {
       case 'uploading':
-        return <Tag color="blue">正在上传...</Tag>;
+        return <Tag color="blue">{t.status.uploading}</Tag>;
       case 'uploaded':
-        return <Tag color="green">上传完成</Tag>;
+        return <Tag color="green">{t.status.uploaded}</Tag>;
       case 'processing':
-        return <Tag color="orange">处理中...</Tag>;
+        return <Tag color="orange">{t.status.processing}</Tag>;
       case 'completed':
-        return <Tag color="success">处理完成</Tag>;
+        return <Tag color="success">{t.status.completed}</Tag>;
       case 'error':
-        return <Tag color="error">错误</Tag>;
+        return <Tag color="error">{t.status.error}</Tag>;
       default:
-        return <Tag>等待上传</Tag>;
+        return <Tag>{t.status.idle}</Tag>;
     }
   };
 
@@ -114,13 +116,22 @@ const NormalizerPage = () => {
       >
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           <h1 style={{ margin: 0, fontSize: 24 }}>
-            📊 Spreadsheet Normalizer
+            {t.header.title}
           </h1>
-          {status !== 'idle' && (
-            <Button icon={<ReloadOutlined />} onClick={handleReset}>
-              重新开始
+          <div style={{ display: 'flex', gap: '10px' }}>
+            <Button
+              icon={<TranslationOutlined />}
+              onClick={toggleLanguage}
+              title={currentLanguage === 'zh' ? 'Switch to English' : '切换到中文'}
+            >
+              {currentLanguage === 'zh' ? 'EN' : '中文'}
             </Button>
-          )}
+            {status !== 'idle' && (
+              <Button icon={<ReloadOutlined />} onClick={handleReset}>
+                {t.header.restart}
+              </Button>
+            )}
+          </div>
         </div>
       </Header>
 
@@ -129,7 +140,7 @@ const NormalizerPage = () => {
           {/* 步骤 1: 文件上传 */}
           <Col span={24}>
             <Card
-              title={<span style={{ fontSize: 18 }}>步骤 1: 上传文件</span>}
+              title={<span style={{ fontSize: 18 }}>{t.steps.step1}</span>}
               extra={getStatusTag()}
             >
               <FileUpload
@@ -140,20 +151,20 @@ const NormalizerPage = () => {
 
               {uploadedFileInfo && (
                 <div style={{ marginTop: 20 }}>
-                  <Descriptions title="文件信息" bordered size="small" column={2}>
-                    <Descriptions.Item label="文件名">
+                  <Descriptions title={t.upload.fileInfo} bordered size="small" column={2}>
+                    <Descriptions.Item label={t.upload.filename}>
                       {uploadedFileInfo.filename}
                     </Descriptions.Item>
-                    <Descriptions.Item label="文件类型">
+                    <Descriptions.Item label={t.upload.fileType}>
                       {uploadedFileInfo.file_type.toUpperCase()}
                     </Descriptions.Item>
-                    <Descriptions.Item label="文件大小">
+                    <Descriptions.Item label={t.upload.fileSize}>
                       {(uploadedFileInfo.file_size / 1024).toFixed(2)} KB
                     </Descriptions.Item>
-                    <Descriptions.Item label="数据维度">
-                      {uploadedFileInfo.preview.shape[0]} 行 × {uploadedFileInfo.preview.shape[1]} 列
+                    <Descriptions.Item label={t.upload.dimensions}>
+                      {uploadedFileInfo.preview.shape[0]} {t.upload.rows} × {uploadedFileInfo.preview.shape[1]} {t.upload.columns}
                     </Descriptions.Item>
-                    <Descriptions.Item label="Session ID" span={2}>
+                    <Descriptions.Item label={t.upload.sessionId} span={2}>
                       <code>{sessionId}</code>
                     </Descriptions.Item>
                   </Descriptions>
@@ -165,7 +176,7 @@ const NormalizerPage = () => {
           {/* 步骤 2: 开始处理 */}
           {status === 'uploaded' && (
             <Col span={24}>
-              <Card title={<span style={{ fontSize: 18 }}>步骤 2: 开始标准化</span>}>
+              <Card title={<span style={{ fontSize: 18 }}>{t.steps.step2}</span>}>
                 <Button
                   type="primary"
                   size="large"
@@ -173,7 +184,7 @@ const NormalizerPage = () => {
                   onClick={handleStartNormalization}
                   style={{ width: '100%', height: 50, fontSize: 16 }}
                 >
-                  开始标准化处理
+                  {t.normalization.start}
                 </Button>
               </Card>
             </Col>
@@ -183,7 +194,7 @@ const NormalizerPage = () => {
           {(status === 'processing' || status === 'completed') && (
             <Col span={24}>
               <Card
-                title={<span style={{ fontSize: 18 }}>步骤 3: 处理进度</span>}
+                title={<span style={{ fontSize: 18 }}>{t.steps.step3}</span>}
                 extra={status === 'completed' && <CheckCircleOutlined style={{ color: '#52c41a', fontSize: 24 }} />}
               >
                 <ProgressDisplay progress={progress} logs={logs} status={status} />
@@ -194,19 +205,19 @@ const NormalizerPage = () => {
           {/* 步骤 4: 处理结果 */}
           {status === 'completed' && result && (
             <Col span={24}>
-              <Card title={<span style={{ fontSize: 18 }}>步骤 4: 处理结果</span>}>
+              <Card title={<span style={{ fontSize: 18 }}>{t.steps.step4}</span>}>
                 <Descriptions bordered column={2}>
-                  <Descriptions.Item label="输出路径" span={2}>
+                  <Descriptions.Item label={t.result.outputPath} span={2}>
                     <code>{result.output_path}</code>
                   </Descriptions.Item>
-                  <Descriptions.Item label="表格数量">
+                  <Descriptions.Item label={t.result.tableCount}>
                     {result.num_tables}
                   </Descriptions.Item>
-                  <Descriptions.Item label="检测方法">
+                  <Descriptions.Item label={t.result.detectionMethod}>
                     {result.detection_method}
                   </Descriptions.Item>
-                  <Descriptions.Item label="处理时间" span={2}>
-                    {result.elapsed_seconds?.toFixed(2)} 秒
+                  <Descriptions.Item label={t.result.processingTime} span={2}>
+                    {result.elapsed_seconds?.toFixed(2)} {t.result.seconds}
                   </Descriptions.Item>
                 </Descriptions>
 
@@ -217,13 +228,13 @@ const NormalizerPage = () => {
                     icon={<DownloadOutlined />}
                     onClick={handleDownload}
                   >
-                    下载标准化结果
+                    {t.result.downloadResult}
                   </Button>
                 </div>
 
                 {/* 表格对比视图 */}
                 {(() => {
-                  // 调试日志
+                  // 调试日志 (Debug logs)
                   console.log('🔍 Rendering comparison check:');
                   console.log('  - result:', result);
                   console.log('  - result.normalized_preview:', result?.normalized_preview);
@@ -233,7 +244,7 @@ const NormalizerPage = () => {
                   return result?.normalized_preview && uploadedFileInfo?.preview ? (
                     <>
                       <Divider orientation="left" style={{ fontSize: 16, fontWeight: 'bold' }}>
-                        表格对比
+                        {t.result.tableComparison}
                       </Divider>
                       <TableComparison
                         originalData={uploadedFileInfo.preview}
@@ -243,11 +254,11 @@ const NormalizerPage = () => {
                   ) : (
                     <div style={{ marginTop: 20, padding: 20, background: '#fff3cd', border: '1px solid #ffc107', borderRadius: 4 }}>
                       <p style={{ margin: 0, color: '#856404' }}>
-                        ⚠️ 调试信息：无法显示对比视图
+                        ⚠️ {currentLanguage === 'zh' ? '调试信息：' : 'Debug Info: '}{t.result.comparisonWarning}
                         <br />
-                        - normalized_preview 存在: {result?.normalized_preview ? '✅' : '❌'}
+                        - {t.result.normalizedPreviewExists}: {result?.normalized_preview ? '✅' : '❌'}
                         <br />
-                        - uploadedFileInfo.preview 存在: {uploadedFileInfo?.preview ? '✅' : '❌'}
+                        - {t.result.originalPreviewExists}: {uploadedFileInfo?.preview ? '✅' : '❌'}
                       </p>
                     </div>
                   );
@@ -259,11 +270,11 @@ const NormalizerPage = () => {
           {/* 错误显示 */}
           {status === 'error' && error && (
             <Col span={24}>
-              <Card title="错误信息" style={{ borderColor: '#ff4d4f' }}>
+              <Card title={t.error.title} style={{ borderColor: '#ff4d4f' }}>
                 <p style={{ color: '#ff4d4f', fontSize: 16 }}>
                   {error}
                 </p>
-                <Button onClick={handleReset}>重新尝试</Button>
+                <Button onClick={handleReset}>{t.error.retry}</Button>
               </Card>
             </Col>
           )}

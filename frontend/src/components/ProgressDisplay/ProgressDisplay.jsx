@@ -5,8 +5,10 @@
 
 import React from 'react';
 import { Progress, Card, List } from 'antd';
+import { useLanguage } from '../../contexts/LanguageContext';
 
 const ProgressDisplay = ({ progress, logs, status }) => {
+  const { t } = useLanguage();
   const getProgressStatus = () => {
     if (status === 'error') return 'exception';
     if (status === 'completed') return 'success';
@@ -25,7 +27,7 @@ const ProgressDisplay = ({ progress, logs, status }) => {
       />
 
       <Card
-        title="处理日志"
+        title={t.progress.processingLogs}
         size="small"
         style={{
           marginTop: 16,

@@ -6,9 +6,13 @@
 import React from 'react';
 import { Row, Col, Card, Table, Alert } from 'antd';
 import { SwapOutlined } from '@ant-design/icons';
+import { useLanguage } from '../../contexts/LanguageContext';
 import './TableComparison.css';
 
 const TableComparison = ({ originalData, normalizedData }) => {
+  const { t } = useLanguage();
+  const [pageSize, setPageSize] = React.useState(10);
+
   // 将 preview 数据转换为 Ant Design Table 需要的格式
   const convertToTableData = (previewData) => {
     if (!previewData || !previewData.data || previewData.data.length === 0) {
@@ -29,7 +33,7 @@ const TableComparison = ({ originalData, normalizedData }) => {
         }
         // 处理数字
         if (typeof text === 'number') {
-          return text.toFixed(2);
+          return text;
         }
         return String(text);
       },
@@ -50,8 +54,14 @@ const TableComparison = ({ originalData, normalizedData }) => {
   return (
     <div className="table-comparison">
       <Alert
-        message="表格对比"
-        description={`原始表格: ${originalData?.shape?.[0] || 0} 行 × ${originalData?.shape?.[1] || 0} 列 | 标准化后: ${normalizedData?.shape?.[0] || 0} 行 × ${normalizedData?.shape?.[1] || 0} 列`}
+        message={t.tableComparison.title}
+        description={
+          t.tableComparison.dimensions
+            .replace('{originalRows}', originalData?.shape?.[0] || 0)
+            .replace('{originalCols}', originalData?.shape?.[1] || 0)
+            .replace('{normalizedRows}', normalizedData?.shape?.[0] || 0)
+            .replace('{normalizedCols}', normalizedData?.shape?.[1] || 0)
+        }
         type="info"
         showIcon
         icon={<SwapOutlined />}
@@ -62,7 +72,7 @@ const TableComparison = ({ originalData, normalizedData }) => {
         {/* 原始表格 */}
         <Col span={12}>
           <Card
-            title="原始表格"
+            title={t.tableComparison.original}
             bordered={false}
             headStyle={{ background: '#fafafa', fontWeight: 'bold' }}
             bodyStyle={{ padding: 0 }}
@@ -72,9 +82,15 @@ const TableComparison = ({ originalData, normalizedData }) => {
                 columns={originalTable.columns}
                 dataSource={originalTable.dataSource}
                 pagination={{
-                  pageSize: 10,
+                  pageSize: pageSize,
                   showSizeChanger: true,
-                  showTotal: (total) => `共 ${total} 行`,
+                  pageSizeOptions: ['10', '20', '50', '100'],
+                  showTotal: (total) => t.tableComparison.totalRows.replace('{count}', total),
+                  onChange: (page, newPageSize) => {
+                    if (newPageSize !== pageSize) {
+                      setPageSize(newPageSize);
+                    }
+                  },
                 }}
                 scroll={{ x: 'max-content', y: 400 }}
                 size="small"
@@ -87,7 +103,7 @@ const TableComparison = ({ originalData, normalizedData }) => {
         {/* 标准化后的表格 */}
         <Col span={12}>
           <Card
-            title="标准化后的表格"
+            title={t.tableComparison.normalized}
             bordered={false}
             headStyle={{ background: '#f6ffed', fontWeight: 'bold' }}
             bodyStyle={{ padding: 0 }}
@@ -98,9 +114,15 @@ const TableComparison = ({ originalData, normalizedData }) => {
                   columns={normalizedTable.columns}
                   dataSource={normalizedTable.dataSource}
                   pagination={{
-                    pageSize: 10,
+                    pageSize: pageSize,
                     showSizeChanger: true,
-                    showTotal: (total) => `共 ${total} 行`,
+                    pageSizeOptions: ['10', '20', '50', '100'],
+                    showTotal: (total) => t.tableComparison.totalRows.replace('{count}', total),
+                    onChange: (page, newPageSize) => {
+                      if (newPageSize !== pageSize) {
+                        setPageSize(newPageSize);
+                      }
+                    },
                   }}
                   scroll={{ x: 'max-content', y: 400 }}
                   size="small"
@@ -108,7 +130,7 @@ const TableComparison = ({ originalData, normalizedData }) => {
                 />
               ) : (
                 <div style={{ padding: 20, textAlign: 'center' }}>
-                  <Alert message="处理完成后将显示标准化结果" type="warning" />
+                  <Alert message={t.tableComparison.waitingForResult} type="warning" />
                 </div>
               )}
             </div>

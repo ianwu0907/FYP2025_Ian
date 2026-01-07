@@ -4,12 +4,14 @@
  */
 
 import React from 'react';
-import { Upload } from 'antd';
+import { Upload, message } from 'antd';
 import { InboxOutlined } from '@ant-design/icons';
+import { useLanguage } from '../../contexts/LanguageContext';
 
 const { Dragger } = Upload;
 
 const FileUpload = ({ onUpload, disabled, loading }) => {
+  const { t, currentLanguage } = useLanguage();
   const props = {
     name: 'file',
     multiple: false,
@@ -21,14 +23,20 @@ const FileUpload = ({ onUpload, disabled, loading }) => {
                           file.name.endsWith('.csv');
 
       if (!isValidType) {
-        console.error('只支持 .xlsx, .xls 和 .csv 文件！');
+        const errorMsg = currentLanguage === 'zh'
+          ? '只支持 .xlsx, .xls 和 .csv 文件！'
+          : 'Only .xlsx, .xls and .csv files are supported!';
+        message.error(errorMsg);
         return false;
       }
 
       // 验证文件大小 (100MB)
       const isValidSize = file.size / 1024 / 1024 < 100;
       if (!isValidSize) {
-        console.error('文件大小不能超过 100MB！');
+        const errorMsg = currentLanguage === 'zh'
+          ? '文件大小不能超过 100MB！'
+          : 'File size cannot exceed 100MB!';
+        message.error(errorMsg);
         return false;
       }
 
@@ -47,9 +55,9 @@ const FileUpload = ({ onUpload, disabled, loading }) => {
       <p className="ant-upload-drag-icon">
         <InboxOutlined style={{ fontSize: 48, color: '#1890ff' }} />
       </p>
-      <p className="ant-upload-text">点击或拖拽文件到此区域上传</p>
+      <p className="ant-upload-text">{t.upload.dragText}</p>
       <p className="ant-upload-hint">
-        支持 Excel (.xlsx, .xls) 和 CSV (.csv) 文件，最大 100MB
+        {t.upload.hint}
       </p>
     </Dragger>
   );

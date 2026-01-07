@@ -26,22 +26,22 @@ export const useNormalizer = () => {
     try {
       setStatus('uploading');
       setError(null);
-      setLogs((prev) => [...prev, `开始上传文件: ${file.name}`]);
+      setLogs((prev) => [...prev, `Starting file upload: ${file.name}`]);
 
       const response = await api.uploadFile(file);
 
       setSessionId(response.session_id);
       setUploadedFileInfo(response);
       setStatus('uploaded');
-      setLogs((prev) => [...prev, `文件上传成功！Session ID: ${response.session_id}`]);
-      setLogs((prev) => [...prev, `文件预览: ${response.preview.shape[0]} 行 × ${response.preview.shape[1]} 列`]);
+      setLogs((prev) => [...prev, `File uploaded successfully! Session ID: ${response.session_id}`]);
+      setLogs((prev) => [...prev, `File preview: ${response.preview.shape[0]} rows × ${response.preview.shape[1]} columns`]);
 
       return response;
     } catch (err) {
       console.error('Upload error:', err);
       setStatus('error');
-      setError(err.response?.data?.detail || err.message || '上传失败');
-      setLogs((prev) => [...prev, `❌ 上传失败: ${err.response?.data?.detail || err.message}`]);
+      setError(err.response?.data?.detail || err.message || 'Upload failed');
+      setLogs((prev) => [...prev, `❌ Upload failed: ${err.response?.data?.detail || err.message}`]);
       throw err;
     }
   }, []);
@@ -54,11 +54,11 @@ export const useNormalizer = () => {
       setStatus('processing');
       setProgress(0);
       setError(null);
-      setLogs((prev) => [...prev, '开始标准化处理...']);
+      setLogs((prev) => [...prev, 'Starting normalization...']);
 
       const response = await api.startNormalization(sessionId, configOverrides);
       setTaskId(response.task_id);
-      setLogs((prev) => [...prev, `任务已创建: ${response.task_id}`]);
+      setLogs((prev) => [...prev, `Task created: ${response.task_id}`]);
 
       // 开始轮询任务状态
       startPolling(response.task_id);
@@ -67,8 +67,8 @@ export const useNormalizer = () => {
     } catch (err) {
       console.error('Start normalization error:', err);
       setStatus('error');
-      setError(err.response?.data?.detail || err.message || '启动失败');
-      setLogs((prev) => [...prev, `❌ 启动失败: ${err.response?.data?.detail || err.message}`]);
+      setError(err.response?.data?.detail || err.message || 'Failed to start');
+      setLogs((prev) => [...prev, `❌ Failed to start: ${err.response?.data?.detail || err.message}`]);
       throw err;
     }
   }, [sessionId]);
@@ -95,7 +95,7 @@ export const useNormalizer = () => {
 
         setProgress(statusResponse.progress);
         if (statusResponse.current_stage) {
-          setLogs((prev) => [...prev, `[${statusResponse.current_stage}] 进度: ${statusResponse.progress}%`]);
+          setLogs((prev) => [...prev, `[${statusResponse.current_stage}] Progress: ${statusResponse.progress}%`]);
         }
 
         if (statusResponse.status === 'completed') {
@@ -110,13 +110,13 @@ export const useNormalizer = () => {
 
           setLogs((prev) => [
             ...prev,
-            `✅ 标准化完成！用时: ${statusResponse.elapsed_seconds?.toFixed(2)}秒`,
+            `✅ Normalization completed! Time elapsed: ${statusResponse.elapsed_seconds?.toFixed(2)}s`,
           ]);
         } else if (statusResponse.status === 'failed') {
           clearInterval(pollingIntervalRef.current);
           setStatus('error');
-          setError(statusResponse.error || '处理失败');
-          setLogs((prev) => [...prev, `❌ 处理失败: ${statusResponse.error}`]);
+          setError(statusResponse.error || 'Processing failed');
+          setLogs((prev) => [...prev, `❌ Processing failed: ${statusResponse.error}`]);
         }
       } catch (err) {
         console.error('Polling error:', err);
@@ -130,11 +130,11 @@ export const useNormalizer = () => {
           setStatus('error');
 
           const errorMsg = err.response?.status === 404
-            ? '任务不存在（可能后端已重启）'
-            : `连接失败: ${err.message}`;
+            ? 'Task not found (backend may have restarted)'
+            : `Connection failed: ${err.message}`;
 
           setError(errorMsg);
-          setLogs((prev) => [...prev, `❌ 轮询失败（已重试5次）: ${errorMsg}`]);
+          setLogs((prev) => [...prev, `❌ Polling failed (retried 5 times): ${errorMsg}`]);
         }
       }
     }, 2000);
