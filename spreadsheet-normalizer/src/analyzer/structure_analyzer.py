@@ -59,24 +59,19 @@ class StructureAnalyzer:
 
         df = encoded_data['dataframe']
 
-        # Step 1: LLM-based semantic structure analysis
+        # LLM-based semantic structure analysis
+        # LLM now handles ALL pattern detection including implicit aggregation
         llm_analysis = self._analyze_structure_with_llm(encoded_data)
 
-        # Step 2: Detect implicit aggregation (preserved original feature)
-        # This is a valuable deterministic check that complements LLM analysis
-        if self.detect_implicit_aggregates:
-            implicit_agg = self._detect_implicit_aggregation(df, llm_analysis)
-            llm_analysis['implicit_aggregation'] = implicit_agg
-
-            # If implicit aggregation detected, add to special patterns
-            if implicit_agg.get('has_implicit_aggregation'):
-                if 'special_patterns' not in llm_analysis:
-                    llm_analysis['special_patterns'] = []
-                llm_analysis['special_patterns'].append({
-                    'pattern_type': 'implicit_aggregation',
-                    'description': f"Detected {len(implicit_agg.get('aggregation_hierarchies', []))} aggregation hierarchies where summary rows coexist with detail rows",
-                    'hierarchies': implicit_agg.get('aggregation_hierarchies', [])
-                })
+        # Log implicit aggregation detection results from LLM
+        implicit_agg = llm_analysis.get('implicit_aggregation', {})
+        if implicit_agg.get('has_implicit_aggregation'):
+            logger.info(f"LLM detected implicit aggregation:")
+            logger.info(f"  Category column: {implicit_agg.get('detection_details', {}).get('category_column')}")
+            logger.info(f"  Additional dimension: {implicit_agg.get('detection_details', {}).get('additional_dimension')}")
+            logger.info(f"  Delimiter: {implicit_agg.get('detection_details', {}).get('delimiter')}")
+        else:
+            logger.info("No implicit aggregation detected by LLM")
 
         logger.info("Structure analysis complete")
         return llm_analysis
@@ -135,6 +130,22 @@ Most spreadsheets are NOT tidy. Your job is to understand their structure so the
 7. Section markers (e.g., year appearing once to mark a group of rows)
 8. Implicit aggregation (totals mixed with breakdowns)
 
+## IMPLICIT AGGREGATION - CRITICAL PATTERN
+Implicit aggregation occurs when SUMMARY rows coexist with DETAIL rows in the same table.
+Example: A category column might have values like:
+  - "Physical abuse" (summary - total count)
+  - "Physical abuse - Male" (detail - breakdown by gender)
+  - "Physical abuse - Female" (detail - breakdown by gender)
+
+The detail rows contain an ADDITIONAL DIMENSION (e.g., gender) that is encoded within the value itself,
+often using a delimiter like " - " or "/".
+
+When you detect this pattern:
+1. Identify which column contains the category values
+2. Identify which values are summaries vs details
+3. Identify what additional dimension exists in detail rows
+4. Provide sample data from detail rows so downstream can understand the pattern
+
 Be thorough and precise. Output valid JSON only."""
 
     def _create_structure_analysis_prompt(self, encoded_data: Dict[str, Any]) -> str:
@@ -190,8 +201,17 @@ Analyze this spreadsheet and identify:
    - Which columns contain values that should be unpivoted?
    - Are column headers actually data values (e.g., years, age groups)?
 
-6. **Special Patterns**:
-   - Any implicit aggregation (totals coexisting with breakdowns)?
+6. **Implicit Aggregation Detection** (CRITICAL):
+   - Are there rows representing TOTALS/SUMMARIES alongside DETAIL breakdowns?
+   - Look for category values where one is a substring of another (e.g., "Type A" vs "Type A - Male")
+   - If detected:
+     a. Which column contains these category values?
+     b. Which values are summaries (shorter) vs details (longer, contain extra info)?
+     c. What additional dimension is encoded in the detail values?
+     d. What delimiter separates the parts (e.g., " - ", "/", ":")?
+     e. Provide 3-5 sample values from DETAIL rows
+
+7. **Other Special Patterns**:
    - Any merged cells or spanning headers?
    - Any other structural quirks?
 
@@ -267,6 +287,30 @@ Analyze this spreadsheet and identify:
     ]
   }},
   
+  "implicit_aggregation": {{
+    "has_implicit_aggregation": false,
+    "detection_details": {{
+      "category_column": "Name or index of column containing category values",
+      "summary_values": ["List of category values that might appear to be summaries - but verify if they are truly aggregation rows or just a different category"],
+      "detail_values": ["List of category values that contain additional dimensions (have delimiters)"],
+      "additional_dimension": "What extra dimension is encoded in detail values (e.g., 'gender', 'age_group')",
+      "delimiter": "The delimiter used to separate parts (e.g., ' - ', '/')",
+      "reasoning": "Explain how you identified this pattern and whether the 'summary' values are true aggregations (Total, Sum) or just different categories"
+    }},
+    "sample_detail_rows": [
+      {{
+        "row_index": 10,
+        "category_value": "Physical abuse - Male",
+        "all_columns": {{"col_name": "value", "another_col": "value"}}
+      }}
+    ],
+    "transformation_guidance": {{
+      "rows_to_exclude": "CRITICAL: Specify 'None' if all rows are valid observations. Only specify rows to exclude if there are TRUE aggregation rows like 'Total', 'Sum', '合計'. Do NOT exclude rows just because they lack a delimiter - those may be different categories, not aggregations.",
+      "column_to_split": "Which column contains combined values to split",
+      "expected_new_columns": ["Suggested names for columns after splitting"]
+    }}
+  }},
+  
   "special_patterns": [
     {{
       "pattern_type": "name_of_pattern",
@@ -333,109 +377,6 @@ Output ONLY the JSON object, no other text."""
 
         return "\n".join(lines)
 
-    def _detect_implicit_aggregation(self,
-                                     df: pd.DataFrame,
-                                     llm_analysis: Dict[str, Any]) -> Dict[str, Any]:
-        """
-        Detect implicit aggregation by checking category hierarchy and numerical verification.
-
-        PRESERVED ORIGINAL FEATURE: This deterministic check complements LLM analysis.
-        """
-        logger.info("Detecting implicit aggregation patterns...")
-
-        result = {
-            'has_implicit_aggregation': False,
-            'aggregation_hierarchies': [],
-            'summary_rows': [],
-            'detail_rows': []
-        }
-
-        if len(df) < 2:
-            return result
-
-        # Try to identify category column
-        category_col = None
-        for col in df.columns:
-            col_str = str(col).lower()
-            if any(keyword in col_str for keyword in ['category', '類別', 'type', '項目']):
-                category_col = col
-                break
-
-        # Also check from LLM analysis
-        if not category_col and 'column_patterns' in llm_analysis:
-            id_cols = llm_analysis.get('column_patterns', {}).get('id_columns', [])
-            for id_col in id_cols:
-                if 'category' in str(id_col.get('name', '')).lower():
-                    col_idx = id_col.get('col_index')
-                    if col_idx is not None and col_idx < len(df.columns):
-                        category_col = df.columns[col_idx]
-                        break
-
-        if not category_col:
-            logger.debug("No category column found for implicit aggregation detection")
-            return result
-
-        # Get unique categories
-        categories = df[category_col].dropna().astype(str).unique()
-        logger.debug(f"Found {len(categories)} unique categories in column '{category_col}'")
-
-        if len(categories) < 2:
-            return result
-
-        # Find category pairs where one contains the other
-        hierarchies = []
-
-        for i, cat1 in enumerate(categories):
-            for j, cat2 in enumerate(categories):
-                if i >= j:
-                    continue
-
-                cat1_str = str(cat1).strip()
-                cat2_str = str(cat2).strip()
-
-                # Check if one is substring of other (hierarchical relationship)
-                if cat1_str in cat2_str and len(cat2_str) > len(cat1_str):
-                    summary_cat = cat1_str
-                    detail_cat = cat2_str
-                elif cat2_str in cat1_str and len(cat1_str) > len(cat2_str):
-                    summary_cat = cat2_str
-                    detail_cat = cat1_str
-                else:
-                    continue
-
-                # Get row indices for each category
-                summary_indices = df[df[category_col].astype(str) == summary_cat].index.tolist()
-                detail_indices = df[df[category_col].astype(str) == detail_cat].index.tolist()
-
-                if len(summary_indices) > 0 and len(detail_indices) > 0:
-                    if len(detail_indices) > len(summary_indices):
-                        extra_dimension = detail_cat.replace(summary_cat, '').strip().lstrip('及').strip()
-
-                        hierarchies.append({
-                            'summary_category': summary_cat,
-                            'detail_category': detail_cat,
-                            'additional_dimension': extra_dimension,
-                            'summary_row_count': len(summary_indices),
-                            'detail_row_count': len(detail_indices)
-                        })
-
-                        result['summary_rows'].extend(summary_indices)
-                        result['detail_rows'].extend(detail_indices)
-
-                        logger.info(f"Found hierarchy: '{summary_cat}' → '{detail_cat}'")
-
-        if hierarchies:
-            result['summary_rows'] = sorted(list(set(result['summary_rows'])))
-            result['detail_rows'] = sorted(list(set(result['detail_rows'])))
-            result['has_implicit_aggregation'] = True
-            result['aggregation_hierarchies'] = hierarchies
-
-            logger.info(f"DETECTED: {len(hierarchies)} implicit aggregation hierarchies")
-        else:
-            logger.info("No implicit aggregation detected")
-
-        return result
-
     def _parse_llm_response(self, response_text: str) -> Dict[str, Any]:
         """Parse the LLM response and extract JSON."""
         response_text = response_text.strip()
@@ -497,7 +438,13 @@ Output ONLY the JSON object, no other text."""
             },
             'special_patterns': [],
             'transformation_complexity': 'medium',
-            'transformation_notes': ''
+            'transformation_notes': '',
+            'implicit_aggregation': {
+                'has_implicit_aggregation': False,
+                'detection_details': {},
+                'sample_detail_rows': [],
+                'transformation_guidance': {}
+            }
         }
 
         for key, default_value in defaults.items():
@@ -554,8 +501,8 @@ Output ONLY the JSON object, no other text."""
             'transformation_notes': 'LLM analysis failed, using minimal defaults',
             'implicit_aggregation': {
                 'has_implicit_aggregation': False,
-                'aggregation_hierarchies': [],
-                'summary_rows': [],
-                'detail_rows': []
+                'detection_details': {},
+                'sample_detail_rows': [],
+                'transformation_guidance': {}
             }
         }

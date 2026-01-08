@@ -1,6 +1,6 @@
 {
   "input_file": "testdata.xlsx",
-  "start_time": "2026-01-07 23:11:58",
+  "start_time": "2026-01-08 17:58:50",
   "stages": {
     "encoding": {
       "status": "success",
@@ -19,21 +19,24 @@
     },
     "schema_estimation": {
       "status": "success",
-      "observation_unit": "Each row represents the count of elder abuse cases for a specific combination of year, report status, abuse category (with bilingual labels), and abuse type (with bilingual labels) at the most granular (detail) level.",
-      "num_target_columns": 8,
-      "expected_rows": 384
+      "observation_unit": "Each row represents the count of reported elder abuse cases in 2005 for a distinct combination of dimensions – the police report indicator, the abuse category group, the detailed abuse type (with its Chinese and English labels), and, when provided, the associated gender.",
+      "num_target_columns": 9,
+      "expected_rows": 1320
     },
     "transformation": {
       "status": "success",
       "output_shape": [
-        1128,
-        8
+        1320,
+        9
       ],
       "validation": {
-        "is_valid": true,
-        "errors": [],
+        "is_valid": false,
+        "errors": [
+          "Sample validation failed: Row detailing physical abuse for elderly males from a gender-disaggregated section."
+        ],
         "warnings": [
-          "Row count higher than expected: 1128 vs expected 384"
+          "Column 'gender_cn' has 70.9% null values",
+          "Column 'gender_en' has 67.3% null values"
         ],
         "checks_performed": [
           {
@@ -48,51 +51,43 @@
           },
           {
             "check": "row_count",
-            "passed": false,
-            "actual": 1128,
-            "expected": 384
+            "passed": true,
+            "actual": 1320,
+            "expected": 1320
           },
           {
             "check": "semantic_sample",
-            "description": "Row representing a detailed breakdown for 2005 Physical abuse",
+            "description": "Row detailing physical abuse for elderly males from a gender-disaggregated section.",
             "expected": {
               "year": 2005,
-              "police_report_status_cn": "不適用",
-              "police_report_status_en": "Not Applicable",
-              "abuse_category_cn": "虐待長者性質",
-              "abuse_category_en": "Type of Elder Abuse",
+              "police_report_indicator": "不適用",
+              "category_group_cn": "虐待長者性質及受虐長者性別",
+              "category_group_en": "Type of Elder Abuse and Sex of",
               "abuse_type_cn": "身體虐待",
               "abuse_type_en": "Physical abuse",
-              "count": 390
+              "gender_cn": "男性",
+              "gender_en": "Male",
+              "case_count": 200
             },
-            "passed": true,
-            "actual": {
-              "year": 2005,
-              "police_report_status_cn": "不適用",
-              "police_report_status_en": "Not Applicable",
-              "abuse_category_cn": "虐待長者性質",
-              "abuse_category_en": "Type of Elder Abuse",
-              "abuse_type_cn": "身體虐待",
-              "abuse_type_en": "Physical abuse",
-              "count": 390
-            },
-            "error": null
+            "passed": false,
+            "actual": null,
+            "error": "No matching row found; Column 'category_group_en'=Type of Elder Abuse and Sex of not found"
           }
         ],
         "actual_shape": [
-          1128,
-          8
+          1320,
+          9
         ],
         "expected_shape": [
-          384,
-          8
+          1320,
+          9
         ]
       },
       "attempts": 3
     }
   },
   "output_file": "output/test_result.csv",
-  "end_time": "2026-01-07 23:14:46",
-  "elapsed_seconds": 167.74,
+  "end_time": "2026-01-08 18:01:01",
+  "elapsed_seconds": 131.46,
   "status": "success"
 }

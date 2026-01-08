@@ -12,6 +12,7 @@ from typing import Dict, List, Any, Optional
 from openai import OpenAI
 import os
 import re
+import pandas as pd
 
 logger = logging.getLogger(__name__)
 
@@ -347,14 +348,36 @@ Think carefully about the tidy data principles and output only the JSON."""
             for pattern in special:
                 lines.append(f"  - {pattern.get('pattern_type', 'unknown')}: {pattern.get('description', '')}")
 
-        # Implicit aggregation
+        # Implicit aggregation - use LLM's semantic analysis results
         implicit_agg = structure_analysis.get('implicit_aggregation', {})
         if implicit_agg.get('has_implicit_aggregation'):
-            lines.append(f"\nIMPLICIT AGGREGATION DETECTED:")
-            lines.append(f"  Summary rows: {len(implicit_agg.get('summary_rows', []))} rows")
-            lines.append(f"  Detail rows: {len(implicit_agg.get('detail_rows', []))} rows")
-            for hier in implicit_agg.get('aggregation_hierarchies', [])[:3]:
-                lines.append(f"  - '{hier.get('summary_category')}' aggregates '{hier.get('detail_category')}'")
+            lines.append(f"\n{'='*60}")
+            lines.append(f"IMPLICIT AGGREGATION DETECTED (by LLM semantic analysis)")
+            lines.append(f"{'='*60}")
+
+            details = implicit_agg.get('detection_details', {})
+            lines.append(f"\nDETECTION DETAILS:")
+            lines.append(f"  Category column: {details.get('category_column', 'unknown')}")
+            lines.append(f"  Summary values: {details.get('summary_values', [])[:3]}")
+            lines.append(f"  Detail values: {details.get('detail_values', [])[:3]}")
+            lines.append(f"  Additional dimension: {details.get('additional_dimension', 'unknown')}")
+            lines.append(f"  Delimiter: '{details.get('delimiter', 'unknown')}'")
+            lines.append(f"  LLM reasoning: {details.get('reasoning', '')[:200]}")
+
+            # Sample data from detail rows
+            samples = implicit_agg.get('sample_detail_rows', [])
+            if samples:
+                lines.append(f"\nSAMPLE DETAIL ROWS:")
+                for sample in samples[:3]:
+                    lines.append(f"  Row {sample.get('row_index', '?')}: {sample.get('all_columns', {})}")
+
+            # Transformation guidance from LLM
+            guidance = implicit_agg.get('transformation_guidance', {})
+            if guidance:
+                lines.append(f"\nTRANSFORMATION GUIDANCE (from LLM):")
+                lines.append(f"  Rows to exclude: {guidance.get('rows_to_exclude', 'N/A')}")
+                lines.append(f"  Column to split: {guidance.get('column_to_split', 'N/A')}")
+                lines.append(f"  Expected new columns: {guidance.get('expected_new_columns', [])}")
 
         return "\n".join(lines)
 
@@ -464,7 +487,3 @@ Think carefully about the tidy data principles and output only the JSON."""
             'source_metadata': encoded_data.get('metadata', {}),
             'structure_analysis': structure_analysis
         }
-
-
-# Import pandas for type checking in _get_sample_data
-import pandas as pd

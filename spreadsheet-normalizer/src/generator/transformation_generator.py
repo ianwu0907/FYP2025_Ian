@@ -322,9 +322,72 @@ Be thorough and specific. Output only the JSON."""
                 lines.append(f"  Row {i}: {', '.join(row_vals)}")
 
         return "\n".join(lines)
+    def _check_if_filtering_needed(self,rows_to_exclude: str, details: dict) -> bool:
+        """
+        Determine if row filtering is actually needed.
 
-    def _summarize_structure(self, structure_analysis: Dict[str, Any]) -> str:
-        """Summarize structure analysis for prompt."""
+        Returns True only if there are actual aggregation rows (Total, Sum, etc.)
+        that need to be excluded.
+
+        Returns False if:
+        - rows_to_exclude is empty, None, or indicates "none"
+        - The "summary values" are actually just different category types (not aggregations)
+        """
+        if not rows_to_exclude:
+            return False
+
+        # Normalize the guidance text
+        rows_to_exclude_lower = rows_to_exclude.lower().strip()
+
+        # Phrases that indicate NO filtering is needed
+        no_filter_phrases = [
+            'none',
+            'none specifically',
+            'no rows',
+            'keep all',
+            'preserve all',
+            'no filtering',
+            'not applicable',
+            'n/a',
+            'all rows are valid',
+            'no exclusion'
+        ]
+
+        for phrase in no_filter_phrases:
+            if phrase in rows_to_exclude_lower:
+                return False
+
+        # Check if summary_values contain actual aggregation keywords
+        aggregation_keywords = [
+            'total', 'sum', 'subtotal', 'aggregate', 'all',
+            '合計', '小計', '總計', '总计', '小计', '合计'
+        ]
+
+        summary_values = details.get('summary_values', [])
+        has_real_aggregation = False
+
+        for value in summary_values:
+            value_lower = str(value).lower()
+            for keyword in aggregation_keywords:
+                if keyword in value_lower:
+                    has_real_aggregation = True
+                    break
+            if has_real_aggregation:
+                break
+
+        # Only filter if we found actual aggregation keywords
+        # If guidance says to exclude but no aggregation keywords found,
+        # be conservative and preserve all data
+        return has_real_aggregation
+    def _summarize_structure(self, structure_analysis: dict) -> str:
+        """
+        Summarize structure analysis for prompt.
+
+        FIXED: Now properly handles implicit aggregation by:
+        1. Checking if rows_to_exclude actually requires filtering
+        2. Using conditional split logic instead of mandatory filtering
+        3. Preserving all valid observation rows
+        """
         lines = []
 
         # Semantic understanding
@@ -353,15 +416,79 @@ Be thorough and specific. Output only the JSON."""
             markers = row_patterns.get('section_marker_details', {})
             lines.append(f"Section markers: {markers.get('marker_values', [])} at column {markers.get('marker_column')}")
 
-        # Implicit aggregation
+        # =========================================================================
+        # FIXED: Improved implicit aggregation handling
+        # =========================================================================
         implicit_agg = structure_analysis.get('implicit_aggregation', {})
         if implicit_agg.get('has_implicit_aggregation'):
-            lines.append(f"Implicit aggregation: {len(implicit_agg.get('summary_rows', []))} summary rows to exclude")
+            lines.append(f"\n{'='*60}")
+            lines.append(f"IMPLICIT AGGREGATION DETECTED")
+            lines.append(f"{'='*60}")
+
+            details = implicit_agg.get('detection_details', {})
+            guidance = implicit_agg.get('transformation_guidance', {})
+
+            # Get the rows_to_exclude guidance from structure analysis
+            rows_to_exclude = guidance.get('rows_to_exclude', '')
+
+            # Determine if actual row filtering is needed
+            needs_row_filtering = self._check_if_filtering_needed(rows_to_exclude, details)
+
+            # Document the category column and detected patterns
+            lines.append(f"\nCategory column: '{details.get('category_column', 'unknown')}'")
+            lines.append(f"Delimiter detected: '{details.get('delimiter', 'N/A')}'")
+            lines.append(f"Additional dimension: '{details.get('additional_dimension', 'N/A')}'")
+
+            # CRITICAL: Conditional row filtering based on actual guidance
+            if needs_row_filtering:
+                # Only add filtering instructions if truly needed
+                lines.append(f"\n--- ROW FILTERING REQUIRED ---")
+                lines.append(f"Rows to exclude: {rows_to_exclude}")
+                lines.append(f"Values to REMOVE (true aggregation rows): {details.get('summary_values', [])}")
+                lines.append(f"Values to KEEP: {details.get('detail_values', [])}")
+            else:
+                # No filtering needed - all rows are valid observations
+                lines.append(f"\n--- NO ROW FILTERING NEEDED ---")
+                lines.append(f"IMPORTANT: ALL rows are valid observation records - DO NOT filter any rows!")
+                lines.append(f"")
+                lines.append(f"The data contains multiple category types:")
+                lines.append(f"  - Some rows have values WITH delimiter (contain additional dimension like gender)")
+                lines.append(f"  - Some rows have values WITHOUT delimiter (different category, no sub-dimension)")
+                lines.append(f"  - BOTH types are valid observations and MUST be preserved in the output")
+                lines.append(f"")
+                lines.append(f"DO NOT confuse 'no delimiter' with 'aggregation row'!")
+                lines.append(f"Rows without delimiter are simply a DIFFERENT CATEGORY, not summaries/totals.")
+
+            # FIXED: Conditional split operation - apply to ALL rows
+            if details.get('delimiter'):
+                lines.append(f"\n--- CONDITIONAL COLUMN SPLIT (apply to ALL rows) ---")
+                lines.append(f"Column to process: '{guidance.get('column_to_split', 'identified by LLM')}'")
+                lines.append(f"Delimiter: '{details.get('delimiter')}'")
+                lines.append(f"Additional dimension to extract: '{details.get('additional_dimension')}'")
+                lines.append(f"Expected new columns: {guidance.get('expected_new_columns', [])}")
+                lines.append(f"")
+                lines.append(f"SPLIT LOGIC (must handle BOTH cases):")
+                lines.append(f"  CASE 1 - Row contains delimiter '{details.get('delimiter')}':")
+                lines.append(f"    - Split the value into [base_type, additional_dimension]")
+                lines.append(f"    - Example: 'Physical abuse - Male' -> base='Physical abuse', gender='Male'")
+                lines.append(f"  CASE 2 - Row does NOT contain delimiter:")
+                lines.append(f"    - Keep original value as base_type (do not modify)")
+                lines.append(f"    - Set additional_dimension to None/NULL")
+                lines.append(f"    - Example: 'Physical abuse' -> base='Physical abuse', gender=None")
+                lines.append(f"")
+                lines.append(f"CRITICAL: The split logic must work for ALL rows, not just filtered rows!")
+
+            # Sample data for reference
+            samples = implicit_agg.get('sample_detail_rows', [])
+            if samples:
+                lines.append(f"\nSAMPLE DATA (rows WITH delimiter, for verification):")
+                for sample in samples[:2]:
+                    lines.append(f"  {sample.get('all_columns', sample)}")
 
         # Column patterns
         col_patterns = structure_analysis.get('column_patterns', {})
         if col_patterns.get('value_columns'):
-            lines.append(f"Value columns to unpivot: {col_patterns.get('value_columns')}")
+            lines.append(f"\nValue columns to unpivot: {col_patterns.get('value_columns')}")
         if col_patterns.get('aggregate_columns'):
             lines.append(f"Aggregate columns to exclude: {col_patterns.get('aggregate_columns')}")
 
