@@ -21,8 +21,12 @@ const ProgressDisplay = ({ progress, logs, status }) => {
         percent={progress}
         status={getProgressStatus()}
         strokeColor={{
-          '0%': '#108ee9',
-          '100%': '#87d068',
+          '0%': '#667eea',
+          '100%': '#764ba2',
+        }}
+        strokeWidth={12}
+        style={{
+          fontSize: 16,
         }}
       />
 
@@ -33,6 +37,13 @@ const ProgressDisplay = ({ progress, logs, status }) => {
           marginTop: 16,
           maxHeight: 300,
           overflow: 'auto',
+          borderRadius: '8px',
+          boxShadow: '0 2px 10px rgba(102, 126, 234, 0.1)',
+        }}
+        headStyle={{
+          background: 'linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)',
+          fontWeight: 'bold',
+          color: '#667eea',
         }}
       >
         <List

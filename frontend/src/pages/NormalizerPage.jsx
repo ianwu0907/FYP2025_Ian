@@ -88,34 +88,41 @@ const NormalizerPage = () => {
   };
 
   const getStatusTag = () => {
+    const tagStyle = {
+      fontSize: '14px',
+      fontWeight: 'bold',
+      padding: '4px 12px',
+      borderRadius: '6px',
+    };
+
     switch (status) {
       case 'uploading':
-        return <Tag color="blue">{t.status.uploading}</Tag>;
+        return <Tag color="blue" style={tagStyle}>{t.status.uploading}</Tag>;
       case 'uploaded':
-        return <Tag color="green">{t.status.uploaded}</Tag>;
+        return <Tag color="success" style={tagStyle}>{t.status.uploaded}</Tag>;
       case 'processing':
-        return <Tag color="orange">{t.status.processing}</Tag>;
+        return <Tag color="processing" style={tagStyle}>{t.status.processing}</Tag>;
       case 'completed':
-        return <Tag color="success">{t.status.completed}</Tag>;
+        return <Tag color="success" style={tagStyle}>{t.status.completed}</Tag>;
       case 'error':
-        return <Tag color="error">{t.status.error}</Tag>;
+        return <Tag color="error" style={tagStyle}>{t.status.error}</Tag>;
       default:
-        return <Tag>{t.status.idle}</Tag>;
+        return <Tag color="default" style={tagStyle}>{t.status.idle}</Tag>;
     }
   };
 
   return (
-    <Layout style={{ minHeight: '100vh', background: '#f0f2f5' }}>
+    <Layout style={{ minHeight: '100vh', background: '#9e9cf1ff' }}>
       <Header
         style={{
-          background: '#fff',
+          background: 'linear-gradient(90deg, #96aaebff 0%, #9eabebff 100%)',
           padding: '0 50px',
-          borderBottom: '1px solid #e8e8e8',
-          boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
+          borderBottom: 'none',
+          boxShadow: '0 4px 12px rgba(102, 126, 234, 0.3)',
         }}
       >
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-          <h1 style={{ margin: 0, fontSize: 24 }}>
+          <h1 style={{ margin: 0, fontSize: 24, color: '#fff', fontWeight: 'bold' }}>
             {t.header.title}
           </h1>
           <div style={{ display: 'flex', gap: '10px' }}>
@@ -123,11 +130,26 @@ const NormalizerPage = () => {
               icon={<TranslationOutlined />}
               onClick={toggleLanguage}
               title={currentLanguage === 'zh' ? 'Switch to English' : '切换到中文'}
+              style={{
+                background: 'rgba(255, 255, 255, 0.2)',
+                border: '1px solid rgba(255, 255, 255, 0.3)',
+                color: '#fff',
+                fontWeight: 'bold',
+              }}
             >
               {currentLanguage === 'zh' ? 'EN' : '中文'}
             </Button>
             {status !== 'idle' && (
-              <Button icon={<ReloadOutlined />} onClick={handleReset}>
+              <Button
+                icon={<ReloadOutlined />}
+                onClick={handleReset}
+                style={{
+                  background: 'rgba(255, 255, 255, 0.2)',
+                  border: '1px solid rgba(255, 255, 255, 0.3)',
+                  color: '#fff',
+                  fontWeight: 'bold',
+                }}
+              >
                 {t.header.restart}
               </Button>
             )}
@@ -140,8 +162,17 @@ const NormalizerPage = () => {
           {/* 步骤 1: 文件上传 */}
           <Col span={24}>
             <Card
-              title={<span style={{ fontSize: 18 }}>{t.steps.step1}</span>}
+              title={<span style={{ fontSize: 18, fontWeight: 'bold', color: '#667eea' }}>{t.steps.step1}</span>}
               extra={getStatusTag()}
+              style={{
+                borderRadius: '12px',
+                boxShadow: '0 4px 20px rgba(102, 126, 234, 0.15)',
+                border: 'none',
+              }}
+              headStyle={{
+                background: 'linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)',
+                borderRadius: '12px 12px 0 0',
+              }}
             >
               <FileUpload
                 onUpload={handleFileUpload}
@@ -176,13 +207,33 @@ const NormalizerPage = () => {
           {/* 步骤 2: 开始处理 */}
           {status === 'uploaded' && (
             <Col span={24}>
-              <Card title={<span style={{ fontSize: 18 }}>{t.steps.step2}</span>}>
+              <Card
+                title={<span style={{ fontSize: 18, fontWeight: 'bold', color: '#667eea' }}>{t.steps.step2}</span>}
+                style={{
+                  borderRadius: '12px',
+                  boxShadow: '0 4px 20px rgba(102, 126, 234, 0.15)',
+                  border: 'none',
+                }}
+                headStyle={{
+                  background: 'linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)',
+                  borderRadius: '12px 12px 0 0',
+                }}
+              >
                 <Button
                   type="primary"
                   size="large"
                   icon={<RocketOutlined />}
                   onClick={handleStartNormalization}
-                  style={{ width: '100%', height: 50, fontSize: 16 }}
+                  style={{
+                    width: '100%',
+                    height: 60,
+                    fontSize: 18,
+                    fontWeight: 'bold',
+                    background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                    border: 'none',
+                    borderRadius: '8px',
+                    boxShadow: '0 4px 15px rgba(102, 126, 234, 0.4)',
+                  }}
                 >
                   {t.normalization.start}
                 </Button>
@@ -194,8 +245,17 @@ const NormalizerPage = () => {
           {(status === 'processing' || status === 'completed') && (
             <Col span={24}>
               <Card
-                title={<span style={{ fontSize: 18 }}>{t.steps.step3}</span>}
+                title={<span style={{ fontSize: 18, fontWeight: 'bold', color: '#667eea' }}>{t.steps.step3}</span>}
                 extra={status === 'completed' && <CheckCircleOutlined style={{ color: '#52c41a', fontSize: 24 }} />}
+                style={{
+                  borderRadius: '12px',
+                  boxShadow: '0 4px 20px rgba(102, 126, 234, 0.15)',
+                  border: 'none',
+                }}
+                headStyle={{
+                  background: 'linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)',
+                  borderRadius: '12px 12px 0 0',
+                }}
               >
                 <ProgressDisplay progress={progress} logs={logs} status={status} />
               </Card>
@@ -205,7 +265,18 @@ const NormalizerPage = () => {
           {/* 步骤 4: 处理结果 */}
           {status === 'completed' && result && (
             <Col span={24}>
-              <Card title={<span style={{ fontSize: 18 }}>{t.steps.step4}</span>}>
+              <Card
+                title={<span style={{ fontSize: 18, fontWeight: 'bold', color: '#667eea' }}>{t.steps.step4}</span>}
+                style={{
+                  borderRadius: '12px',
+                  boxShadow: '0 4px 20px rgba(102, 126, 234, 0.15)',
+                  border: 'none',
+                }}
+                headStyle={{
+                  background: 'linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)',
+                  borderRadius: '12px 12px 0 0',
+                }}
+              >
                 <Descriptions bordered column={2}>
                   <Descriptions.Item label={t.result.outputPath} span={2}>
                     <code>{result.output_path}</code>
@@ -227,6 +298,17 @@ const NormalizerPage = () => {
                     size="large"
                     icon={<DownloadOutlined />}
                     onClick={handleDownload}
+                    style={{
+                      height: 50,
+                      fontSize: 16,
+                      fontWeight: 'bold',
+                      paddingLeft: 40,
+                      paddingRight: 40,
+                      background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                      border: 'none',
+                      borderRadius: '8px',
+                      boxShadow: '0 4px 15px rgba(102, 126, 234, 0.4)',
+                    }}
                   >
                     {t.result.downloadResult}
                   </Button>
@@ -270,11 +352,34 @@ const NormalizerPage = () => {
           {/* 错误显示 */}
           {status === 'error' && error && (
             <Col span={24}>
-              <Card title={t.error.title} style={{ borderColor: '#ff4d4f' }}>
-                <p style={{ color: '#ff4d4f', fontSize: 16 }}>
+              <Card
+                title={<span style={{ fontSize: 18, fontWeight: 'bold', color: '#ff4d4f' }}>{t.error.title}</span>}
+                style={{
+                  borderRadius: '12px',
+                  boxShadow: '0 4px 20px rgba(255, 77, 79, 0.15)',
+                  border: '2px solid #ff4d4f',
+                }}
+                headStyle={{
+                  background: 'linear-gradient(135deg, #fff5f5 0%, #ffe0e0 100%)',
+                  borderRadius: '12px 12px 0 0',
+                }}
+              >
+                <p style={{ color: '#ff4d4f', fontSize: 16, fontWeight: '500' }}>
                   {error}
                 </p>
-                <Button onClick={handleReset}>{t.error.retry}</Button>
+                <Button
+                  onClick={handleReset}
+                  style={{
+                    background: 'linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%)',
+                    border: 'none',
+                    color: '#fff',
+                    fontWeight: 'bold',
+                    borderRadius: '6px',
+                    boxShadow: '0 2px 10px rgba(255, 77, 79, 0.3)',
+                  }}
+                >
+                  {t.error.retry}
+                </Button>
               </Card>
             </Col>
           )}

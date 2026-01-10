@@ -74,8 +74,17 @@ const TableComparison = ({ originalData, normalizedData }) => {
           <Card
             title={t.tableComparison.original}
             bordered={false}
-            headStyle={{ background: '#fafafa', fontWeight: 'bold' }}
+            headStyle={{
+              background: 'linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)',
+              fontWeight: 'bold',
+              color: '#667eea',
+            }}
             bodyStyle={{ padding: 0 }}
+            style={{
+              borderRadius: '12px',
+              boxShadow: '0 4px 20px rgba(102, 126, 234, 0.15)',
+              border: 'none',
+            }}
           >
             <div className="table-wrapper">
               <Table
@@ -105,8 +114,17 @@ const TableComparison = ({ originalData, normalizedData }) => {
           <Card
             title={t.tableComparison.normalized}
             bordered={false}
-            headStyle={{ background: '#f6ffed', fontWeight: 'bold' }}
+            headStyle={{
+              background: 'linear-gradient(135deg, #d4fc79 0%, #96e6a1 100%)',
+              fontWeight: 'bold',
+              color: '#237804',
+            }}
             bodyStyle={{ padding: 0 }}
+            style={{
+              borderRadius: '12px',
+              boxShadow: '0 4px 20px rgba(82, 196, 26, 0.15)',
+              border: 'none',
+            }}
           >
             <div className="table-wrapper">
               {normalizedData ? (
