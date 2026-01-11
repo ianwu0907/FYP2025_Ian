@@ -1,47 +1,46 @@
 {
-  "input_file": "testdata.xlsx",
-  "start_time": "2026-01-08 17:58:50",
+  "input_file": "long2.xlsx",
+  "start_time": "2026-01-11 19:27:12",
   "stages": {
     "encoding": {
       "status": "success",
       "shape": [
-        1320,
-        8
+        49,
+        13
       ],
-      "compression_ratio": 149.22419252691577
+      "compression_ratio": 1.9179377669310556
     },
     "structure_analysis": {
       "status": "success",
       "has_bilingual": true,
       "has_section_markers": true,
-      "has_implicit_aggregation": true,
+      "has_implicit_aggregation": false,
       "transformation_complexity": "medium"
     },
     "schema_estimation": {
       "status": "success",
-      "observation_unit": "Each row represents the count of reported elder abuse cases in 2005 for a distinct combination of dimensions – the police report indicator, the abuse category group, the detailed abuse type (with its Chinese and English labels), and, when provided, the associated gender.",
-      "num_target_columns": 9,
-      "expected_rows": 1320
+      "observation_unit": "One row represents the measurement for a single ethnicity’s data for one specific age group in a given reporting year. This row contains both the absolute count and the corresponding percentage (derived from the bilingual paired rows) as well as the overall median age for that ethnicity in that year.",
+      "num_target_columns": 7,
+      "expected_rows": 147
     },
     "transformation": {
       "status": "success",
       "output_shape": [
-        1320,
-        9
+        0,
+        7
       ],
       "validation": {
         "is_valid": false,
         "errors": [
-          "Sample validation failed: Row detailing physical abuse for elderly males from a gender-disaggregated section."
+          "Result DataFrame is empty",
+          "Row count too low: 0 vs expected 147",
+          "Sample validation failed: Spot check for the first ethnicity and first age group"
         ],
-        "warnings": [
-          "Column 'gender_cn' has 70.9% null values",
-          "Column 'gender_en' has 67.3% null values"
-        ],
+        "warnings": [],
         "checks_performed": [
           {
             "check": "not_empty",
-            "passed": true
+            "passed": false
           },
           {
             "check": "columns_match",
@@ -51,43 +50,41 @@
           },
           {
             "check": "row_count",
-            "passed": true,
-            "actual": 1320,
-            "expected": 1320
+            "passed": false,
+            "actual": 0,
+            "expected": 147
           },
           {
             "check": "semantic_sample",
-            "description": "Row detailing physical abuse for elderly males from a gender-disaggregated section.",
+            "description": "Spot check for the first ethnicity and first age group",
             "expected": {
-              "year": 2005,
-              "police_report_indicator": "不適用",
-              "category_group_cn": "虐待長者性質及受虐長者性別",
-              "category_group_en": "Type of Elder Abuse and Sex of",
-              "abuse_type_cn": "身體虐待",
-              "abuse_type_en": "Physical abuse",
-              "gender_cn": "男性",
-              "gender_en": "Male",
-              "case_count": 200
+              "year": 2011,
+              "ethnicity_cn": "亞洲人（非華人）",
+              "ethnicity_en": "Asian (other than Chinese)",
+              "age_group": "<15",
+              "count": 23984,
+              "percentage": 6.6,
+              "median_age": 33.6
             },
             "passed": false,
             "actual": null,
-            "error": "No matching row found; Column 'category_group_en'=Type of Elder Abuse and Sex of not found"
+            "error": "No matching row found; Column 'year'=2011 not found"
           }
         ],
         "actual_shape": [
-          1320,
-          9
+          0,
+          7
         ],
         "expected_shape": [
-          1320,
-          9
+          147,
+          7
         ]
       },
       "attempts": 3
     }
   },
-  "output_file": "output/test_result.csv",
-  "end_time": "2026-01-08 18:01:01",
-  "elapsed_seconds": 131.46,
+  "output_file": "output/normalized_long2.csv",
+  "end_time": "2026-01-11 19:29:15",
+  "elapsed_seconds": 122.35,
   "status": "success"
 }

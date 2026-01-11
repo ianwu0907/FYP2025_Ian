@@ -151,7 +151,7 @@ Be thorough and precise. Output valid JSON only."""
     def _create_structure_analysis_prompt(self, encoded_data: Dict[str, Any]) -> str:
         """Create prompt for structure analysis."""
         df = encoded_data['dataframe']
-        encoded_text = encoded_data.get('encoded_text', '')[:3000]
+        encoded_text = encoded_data.get('encoded_text', '')
 
         # Create detailed view of first 30 rows
         rows_preview = self._create_rows_preview(df, max_rows=30)
