@@ -1,14 +1,14 @@
 {
-  "input_file": "long2.xlsx",
-  "start_time": "2026-01-11 19:27:12",
+  "input_file": "long3.xlsx",
+  "start_time": "2026-01-11 21:09:40",
   "stages": {
     "encoding": {
       "status": "success",
       "shape": [
         49,
-        13
+        16
       ],
-      "compression_ratio": 1.9179377669310556
+      "compression_ratio": 0.8559763724808895
     },
     "structure_analysis": {
       "status": "success",
@@ -19,28 +19,26 @@
     },
     "schema_estimation": {
       "status": "success",
-      "observation_unit": "One row represents the measurement for a single ethnicity’s data for one specific age group in a given reporting year. This row contains both the absolute count and the corresponding percentage (derived from the bilingual paired rows) as well as the overall median age for that ethnicity in that year.",
-      "num_target_columns": 7,
-      "expected_rows": 147
+      "observation_unit": "Each row represents the percentage value for a specific ethnic group (with bilingual names) in a given year, broken down by a single marital status category (excluding overall totals) and by gender.",
+      "num_target_columns": 6,
+      "expected_rows": 189
     },
     "transformation": {
       "status": "success",
       "output_shape": [
-        0,
-        7
+        120,
+        6
       ],
       "validation": {
         "is_valid": false,
         "errors": [
-          "Result DataFrame is empty",
-          "Row count too low: 0 vs expected 147",
-          "Sample validation failed: Spot check for the first ethnicity and first age group"
+          "Sample validation failed: Spot check for first ethnic group in 2011"
         ],
         "warnings": [],
         "checks_performed": [
           {
             "check": "not_empty",
-            "passed": false
+            "passed": true
           },
           {
             "check": "columns_match",
@@ -50,41 +48,40 @@
           },
           {
             "check": "row_count",
-            "passed": false,
-            "actual": 0,
-            "expected": 147
+            "passed": true,
+            "actual": 120,
+            "expected": 189
           },
           {
             "check": "semantic_sample",
-            "description": "Spot check for the first ethnicity and first age group",
+            "description": "Spot check for first ethnic group in 2011",
             "expected": {
               "year": 2011,
               "ethnicity_cn": "亞洲人（非華人）",
               "ethnicity_en": "Asian (other than Chinese)",
-              "age_group": "<15",
-              "count": 23984,
-              "percentage": 6.6,
-              "median_age": 33.6
+              "marital_status": "Never married",
+              "gender": "Male",
+              "percentage": 23.0
             },
             "passed": false,
             "actual": null,
-            "error": "No matching row found; Column 'year'=2011 not found"
+            "error": "Unalignable boolean Series provided as indexer (index of the boolean Series and of the indexed object do not match)."
           }
         ],
         "actual_shape": [
-          0,
-          7
+          120,
+          6
         ],
         "expected_shape": [
-          147,
-          7
+          189,
+          6
         ]
       },
       "attempts": 3
     }
   },
-  "output_file": "output/normalized_long2.csv",
-  "end_time": "2026-01-11 19:29:15",
-  "elapsed_seconds": 122.35,
+  "output_file": "output/normalized_long3.csv",
+  "end_time": "2026-01-11 21:11:36",
+  "elapsed_seconds": 115.09,
   "status": "success"
 }

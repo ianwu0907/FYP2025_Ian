@@ -295,7 +295,7 @@ Be thorough and specific. Output only the JSON."""
         return prompt
 
     def _create_sample_data_view(self, df: pd.DataFrame, structure_analysis: Dict[str, Any]) -> str:
-        """Create sample data view for strategy prompt."""
+        """Create complete data view for strategy prompt - no truncation."""
         lines = []
 
         # Show all header rows
@@ -303,20 +303,20 @@ Be thorough and specific. Output only the JSON."""
         lines.append("HEADER ROWS:")
         for row_idx in header_rows:
             if row_idx < len(df):
-                row_vals = [f"[{j}]={repr(str(df.iloc[row_idx, j])[:30])}"
+                row_vals = [f"[{j}]={repr(str(df.iloc[row_idx, j]))}"
                             for j in range(len(df.columns))
                             if pd.notna(df.iloc[row_idx, j]) and str(df.iloc[row_idx, j]).strip()]
                 lines.append(f"  Row {row_idx}: {', '.join(row_vals)}")
 
-        # Show data region sample
+        # Show ALL data rows in the data region - no limit
         data_region = structure_analysis.get('data_region', {})
         start_row = data_region.get('start_row', 1)
-        end_row = min(data_region.get('end_row', len(df)-1), start_row + 15)
+        end_row = data_region.get('end_row', len(df) - 1)
 
         lines.append(f"\nDATA ROWS ({start_row} to {end_row}):")
         for i in range(start_row, end_row + 1):
             if i < len(df):
-                row_vals = [f"[{j}]={repr(str(df.iloc[i, j])[:25])}"
+                row_vals = [f"[{j}]={repr(str(df.iloc[i, j]))}"
                             for j in range(len(df.columns))
                             if pd.notna(df.iloc[i, j]) and str(df.iloc[i, j]).strip()]
                 lines.append(f"  Row {i}: {', '.join(row_vals)}")
@@ -495,7 +495,7 @@ Be thorough and specific. Output only the JSON."""
         return "\n".join(lines)
 
     def _summarize_schema(self, schema: Dict[str, Any]) -> str:
-        """Summarize target schema for prompt."""
+        """Summarize target schema for prompt - no truncation."""
         lines = []
 
         obs = schema.get('observation_unit', {})
@@ -513,7 +513,7 @@ Be thorough and specific. Output only the JSON."""
         samples = schema.get('validation_samples', [])
         if samples:
             lines.append("\nValidation samples:")
-            for sample in samples[:2]:
+            for sample in samples:
                 lines.append(f"  {sample.get('description', '')}: {sample.get('expected_row', {})}")
 
         return "\n".join(lines)
@@ -681,20 +681,22 @@ Generate the Python code now. Output ONLY code, no explanations or markdown."""
         return "\n".join(lines)
 
     def _get_sample_for_code_gen(self, df: pd.DataFrame, structure_analysis: Dict[str, Any]) -> str:
-        """Get sample data for code generation."""
-        lines = ["SAMPLE DATA:"]
+        """Get complete data for code generation - no truncation."""
+        lines = ["COMPLETE DATA:"]
 
         data_region = structure_analysis.get('data_region', {})
         start_row = data_region.get('start_row', 0)
+        end_row = data_region.get('end_row', len(df) - 1)
 
-        # Show a few data rows
-        for i in range(start_row, min(start_row + 6, len(df))):
-            row_vals = []
-            for j in range(min(12, len(df.columns))):
-                val = df.iloc[i, j]
-                if pd.notna(val):
-                    row_vals.append(f"[{j}]={repr(val)[:20]}")
-            lines.append(f"Row {i}: {', '.join(row_vals)}")
+        # Show ALL data rows - no limit on rows or columns
+        for i in range(start_row, end_row + 1):
+            if i < len(df):
+                row_vals = []
+                for j in range(len(df.columns)):
+                    val = df.iloc[i, j]
+                    if pd.notna(val):
+                        row_vals.append(f"[{j}]={repr(val)}")
+                lines.append(f"Row {i}: {', '.join(row_vals)}")
 
         return "\n".join(lines)
 
