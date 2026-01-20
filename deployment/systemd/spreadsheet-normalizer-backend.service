@@ -1,0 +1,107 @@
+# Systemd 服务配置文件 - Spreadsheet Normalizer Backend
+#
+# 使用说明:
+# 1. 复制此文件到 /etc/systemd/system/spreadsheet-normalizer-backend.service
+# 2. 根据实际部署路径修改 WorkingDirectory 和 ExecStart 路径
+# 3. 修改 User 和 Group（如果不是 ubuntu）
+# 4. 重新加载 systemd: sudo systemctl daemon-reload
+# 5. 启动服务: sudo systemctl start spreadsheet-normalizer-backend
+# 6. 设置开机自启: sudo systemctl enable spreadsheet-normalizer-backend
+# 7. 查看状态: sudo systemctl status spreadsheet-normalizer-backend
+
+[Unit]
+Description=Spreadsheet Normalizer Backend (FastAPI)
+Documentation=https://github.com/ianwu0907/FYP2025_Ian
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+Group=ubuntu
+
+# 工作目录（根据实际部署路径修改）
+WorkingDirectory=/opt/spreadsheet-normalizer/backend
+
+# 环境变量
+Environment="PATH=/opt/spreadsheet-normalizer/backend/venv/bin"
+Environment="PYTHONPATH=/opt/spreadsheet-normalizer/spreadsheet-normalizer"
+
+# 从 .env 文件加载环境变量（可选）
+# EnvironmentFile=/opt/spreadsheet-normalizer/backend/.env
+
+# 启动命令
+ExecStart=/opt/spreadsheet-normalizer/backend/venv/bin/uvicorn app.main:app \
+    --host 127.0.0.1 \
+    --port 8000 \
+    --workers 2 \
+    --log-level info
+
+# 自动重启策略
+Restart=always
+RestartSec=10
+StartLimitInterval=600
+StartLimitBurst=5
+
+# 资源限制
+# 内存限制（2GB）
+MemoryLimit=2G
+# CPU 配额（200% = 2 个核心）
+CPUQuota=200%
+
+# 日志配置
+StandardOutput=append:/var/log/spreadsheet-normalizer/backend.log
+StandardError=append:/var/log/spreadsheet-normalizer/backend.error.log
+SyslogIdentifier=spreadsheet-normalizer-backend
+
+# 安全配置（可选，增强安全性）
+# NoNewPrivileges=true
+# PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
+
+# ==================== 配置说明 ====================
+#
+# Workers 数量:
+# - 建议设置为 CPU 核心数的 2 倍（例如 2 核心 = 4 workers）
+# - 如果内存有限，可以减少 workers
+# - 单个 worker 大约占用 300-500MB 内存
+#
+# Host 设置:
+# - 使用 127.0.0.1 只允许本地访问（推荐，通过 Nginx 反向代理）
+# - 使用 0.0.0.0 允许外部直接访问（不推荐，存在安全风险）
+#
+# 端口设置:
+# - 默认 8000，可根据需要修改
+# - 确保与 Nginx 配置中的 upstream 端口一致
+#
+# 日志级别:
+# - debug: 详细调试信息（开发环境）
+# - info: 一般信息（推荐生产环境）
+# - warning: 警告信息
+# - error: 错误信息
+# - critical: 严重错误
+#
+# ==================== 常用命令 ====================
+#
+# 启动服务:
+#   sudo systemctl start spreadsheet-normalizer-backend
+#
+# 停止服务:
+#   sudo systemctl stop spreadsheet-normalizer-backend
+#
+# 重启服务:
+#   sudo systemctl restart spreadsheet-normalizer-backend
+#
+# 查看状态:
+#   sudo systemctl status spreadsheet-normalizer-backend
+#
+# 查看日志:
+#   sudo journalctl -u spreadsheet-normalizer-backend -f
+#   tail -f /var/log/spreadsheet-normalizer/backend.log
+#
+# 设置开机自启:
+#   sudo systemctl enable spreadsheet-normalizer-backend
+#
+# 禁用开机自启:
+#   sudo systemctl disable spreadsheet-normalizer-backend

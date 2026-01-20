@@ -3,53 +3,24 @@
 
 # LLM Configuration
 llm:
-  llm_provider: 'gemini'  # ← 改这里！
-  model: 'gemini-2.0-flash'  # ← 改这里！
-  temperature: 0
-  max_tokens: 4000
+  temperature: 0.1
+  max_completion_tokens: 6000
+  timeout: 120
 
 # Encoder Configuration (SpreadsheetLLM)
 encoder:
-  anchor_neighborhood: 4
+  anchor_neighborhood: 2  # K parameter for structural anchors
   detect_subtables: true
   data_only: true
   max_value_len: 200
-  min_nonempty_cells_for_region: 8
-  
-  # 🔥 子表格检测（新功能）
-  detect_color_subtables: true   # 启用颜色检测
-  subtable_min_gap: 2            # 子表格最小间隔
-
-# ===== 表格分割配置 =====
-table_splitting:
-  enabled: true
-  processing_mode: "separate"  # "separate" 或 "combined"
-  
-logging:
-  level: "INFO"
-  save_intermediate: true
-  output_dir: "output"
-  save_encoded: true
-  save_strategy: true
-  save_code: true
-  save_validation: true
-
-
 
 # Structure Analyzer Configuration (Enhanced)
 analyzer:
-  # 现有配置
-  detect_headers: true
-  detect_aggregates: true
+  # Preserved: implicit aggregation detection
   detect_implicit_aggregates: true
-  
-  # 🔥 颜色检测配置（专门为你的格式优化）
-  use_color_detection: true
-  color_threshold: 0.1      # 10% 即可（你的数据通常每行只有 1 个高亮单元格）
-  min_colored_cells: 1      # 至少 1 个单元格
-  
-  llm_provider: "gemini"
-  model: "gemini-2.0-flash-exp"
+  # LLM settings for semantic analysis
+  temperature: 0.1
+  max_completion_tokens: 4000
 
 # Schema Estimator Configuration (Enhanced)
 estimator:

@@ -3,7 +3,7 @@
 处理表格标准化任务
 """
 
-from fastapi import APIRouter, HTTPException, BackgroundTasks
+from fastapi import APIRouter, HTTPException, BackgroundTasks, Request
 from fastapi.responses import FileResponse
 import uuid
 import yaml
@@ -54,13 +54,18 @@ def load_task_state(task_id: str) -> dict:
 
 
 @router.post("", response_model=TaskResponse)
-async def start_normalization(request: NormalizeRequest, background_tasks: BackgroundTasks):
+async def start_normalization(
+    normalize_request: NormalizeRequest,
+    background_tasks: BackgroundTasks,
+    request: Request
+):
     """
     开始标准化处理
 
     Args:
-        request: 标准化请求（包含 session_id 和配置覆盖）
+        normalize_request: 标准化请求（包含 session_id 和配置覆盖）
         background_tasks: FastAPI 后台任务
+        request: FastAPI Request 对象（用于获取主机信息）
 
     Returns:
         TaskResponse: 包含 task_id 和 WebSocket URL
@@ -70,14 +75,14 @@ async def start_normalization(request: NormalizeRequest, background_tasks: Backg
     """
     try:
         # 验证会话
-        session = session_manager.get_session(request.session_id)
+        session = session_manager.get_session(normalize_request.session_id)
         if not session or not session.uploaded_file:
             raise HTTPException(
                 status_code=404,
                 detail="Session not found or no file uploaded"
             )
 
-        logger.info(f"Starting normalization for session {request.session_id}")
+        logger.info(f"Starting normalization for session {normalize_request.session_id}")
 
         # 加载配置
         config_path = Path(__file__).parent.parent.parent.parent.parent / "spreadsheet-normalizer" / "config" / "config.yaml"
@@ -92,22 +97,22 @@ async def start_normalization(request: NormalizeRequest, background_tasks: Backg
             config = yaml.safe_load(f)
 
         # 应用配置覆盖
-        if request.config_overrides:
+        if normalize_request.config_overrides:
             # 深度合并配置
-            for key, value in request.config_overrides.items():
+            for key, value in normalize_request.config_overrides.items():
                 if isinstance(value, dict) and key in config:
                     config[key].update(value)
                 else:
                     config[key] = value
 
-        logger.info(f"Loaded config with overrides: {list(request.config_overrides.keys())}")
+        logger.info(f"Loaded config with overrides: {list(normalize_request.config_overrides.keys())}")
 
         # 创建任务
         task_id = str(uuid.uuid4())
         task_data = {
             "status": "processing",
             "progress": 0,
-            "session_id": request.session_id,
+            "session_id": normalize_request.session_id,
             "start_time": time.time()
         }
         tasks[task_id] = task_data
@@ -121,11 +126,18 @@ async def start_normalization(request: NormalizeRequest, background_tasks: Backg
             config
         )
 
+        # 动态生成 WebSocket URL
+        # 根据请求协议（HTTP/HTTPS）选择 ws/wss
+        ws_scheme = "wss" if request.url.scheme == "https" else "ws"
+        # 获取主机地址（包括端口）
+        host = request.headers.get("host", "localhost:8000")
+        websocket_url = f"{ws_scheme}://{host}/ws/progress/{task_id}"
+
         return TaskResponse(
             task_id=task_id,
             status="processing",
             message="Normalization started",
-            websocket_url=f"ws://localhost:8000/ws/progress/{task_id}"
+            websocket_url=websocket_url
         )
 
     except HTTPException:

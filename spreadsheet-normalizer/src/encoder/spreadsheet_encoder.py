@@ -21,20 +21,8 @@ from collections import defaultdict
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Optional, Sequence, Tuple, Set
-try:
-    from format_extractor import (
-        extract_complete_format_info,
-        create_format_signature,
-        create_semantic_signature
-    )
-    FORMAT_EXTRACTION_AVAILABLE = True
-except ImportError:
-    FORMAT_EXTRACTION_AVAILABLE = False
-    import warnings
-    warnings.warn(
-        "format_extractor.py not found. Format extraction will be limited.",
-        ImportWarning
-    )
+from itertools import islice  # ✅ FIX #2: Import islice
+
 import numpy as np
 import openpyxl
 import pandas as pd
@@ -298,123 +286,18 @@ def _iter_values_only(sheet, region: SheetRegion) -> Iterable[Tuple[int, int, An
             yield r_idx, c_offset, v
 
 
-def detect_table_by_title_rows(sheet, region) -> List[Tuple[int, int]]:
-    """
-    通过查找表格标题来检测子表边界
-    
-    识别模式:
-    - "表1", "表 1", "表3.1", "Table 3.1"
-    - "KeyStat_1", "KeyStat_2"
-    - "統計表 1", "统计表1"
-    """
-    title_pattern = re.compile(
-        r'(表|Table|统计表|統計表|KeyStat|Sheet|工作表|Worksheet)\s*[\d\.]+',
-        re.IGNORECASE
-    )
-    
-    title_rows = []
-    
-    # 扫描前几列查找标题
-    scan_cols = min(3, region.max_col - region.min_col + 1)
-    
-    for row in range(region.min_row, region.max_row + 1):
-        for col_offset in range(scan_cols):
-            col = region.min_col + col_offset
-            try:
-                cell = sheet.cell(row=row, column=col)
-                value = cell.value
-                
-                if value and isinstance(value, str):
-                    if title_pattern.search(value):
-                        title_rows.append(row)
-                        logger.debug(f"Found table title at row {row}: '{value[:50]}'")
-                        break
-            except:
-                continue
-    
-    if not title_rows:
-        logger.debug("No table titles found")
-        return [(region.min_row, region.max_row)]
-    
-    logger.info(f"Found {len(title_rows)} table title rows: {title_rows}")
-    
-    # 将标题行转换为表格段
-    segments = []
-    for i, start_row in enumerate(title_rows):
-        if i < len(title_rows) - 1:
-            end_row = title_rows[i + 1] - 1
-        else:
-            end_row = region.max_row
-        
-        # 过滤太小的段
-        if end_row - start_row >= 2:
-            segments.append((start_row, end_row))
-            logger.debug(f"Table segment: rows {start_row}-{end_row}")
-    
-    return segments if segments else [(region.min_row, region.max_row)]
-
-
 def detect_table_regions(
         sheet,
         *,
         full_region: Optional[SheetRegion] = None,
         min_nonempty_cells: int = 8,
 ) -> List[SheetRegion]:
-
-    # region = full_region or SheetRegion(1, sheet.max_row or 1, 1, sheet.max_column or 1)
-    # logger.info(f"🔧 FORCED: Using full region as single table: rows {region.min_row}-{region.max_row}")
-    # return [region]
+    """
+    Detect sub-table blocks separated by fully-empty rows and/or columns.
+    Works best for spreadsheets with blank lines between tables.
+    """
     region = full_region or SheetRegion(1, sheet.max_row or 1, 1, sheet.max_column or 1)
-    
-    # ========== STRATEGY 1: 标题检测 ==========
-    try:
-        title_segments = detect_table_by_title_rows(sheet, region)
-        
-        if len(title_segments) > 1:
-            # 检测到多个表格标题
-            logger.info(f"✓ Detected {len(title_segments)} tables by title patterns")
-            
-            regions = []
-            for start_row, end_row in title_segments:
-                # 为每个段找列边界
-                col_has = defaultdict(int)
-                
-                for r in range(start_row, end_row + 1):
-                    for c in range(region.min_col, region.max_col + 1):
-                        try:
-                            v = sheet.cell(row=r, column=c).value
-                            if v is not None and not (isinstance(v, str) and v.strip() == ""):
-                                col_has[c] += 1
-                        except:
-                            continue
-                
-                if col_has:
-                    min_col = min(col_has.keys())
-                    max_col = max(col_has.keys())
-                    nonempty = sum(col_has.values())
-                    
-                    if nonempty >= min_nonempty_cells:
-                        regions.append(SheetRegion(start_row, end_row, min_col, max_col))
-                        logger.debug(
-                            f"  Region: rows {start_row}-{end_row}, "
-                            f"cols {min_col}-{max_col}, "
-                            f"{nonempty} non-empty cells"
-                        )
-            
-            if regions:
-                # 按面积排序
-                regions.sort(key=lambda r: (r.area(), r.min_row, r.min_col), reverse=True)
-                logger.info(f"Returning {len(regions)} regions from title detection")
-                return regions
-        
-        logger.info("Title detection found ≤1 table, trying blank-separation...")
-    
-    except Exception as e:
-        logger.warning(f"Title detection failed: {e}, falling back to blank-separation")
-    
-    # ========== STRATEGY 2: 空白行检测（原逻辑）==========
-    logger.info("Using blank-separation detection...")
-    
+
     row_has = defaultdict(int)
     col_has = defaultdict(int)
 
@@ -430,7 +313,6 @@ def detect_table_regions(
     if not nonempty_rows or not nonempty_cols:
         return []
 
-    # Find contiguous row segments
     row_segments: List[Tuple[int, int]] = []
     start = prev = nonempty_rows[0]
     for r in nonempty_rows[1:]:
@@ -469,8 +351,6 @@ def detect_table_regions(
         regions.append(SheetRegion(min(nonempty_rows), max(nonempty_rows), min(nonempty_cols), max(nonempty_cols)))
 
     regions.sort(key=lambda r: (r.area(), r.min_row, r.min_col), reverse=True)
-    logger.info(f"✓ Detected {len(regions)} region(s) by blank-separation")
-    
     return regions
 
 
@@ -863,18 +743,11 @@ def create_inverted_index(
 
             # Format map
             try:
-                # 使用增强的格式提取
-                if FORMAT_EXTRACTION_AVAILABLE:
-                    # 提取完整格式信息（包括颜色和边框）
-                    format_info = extract_complete_format_info(cell)
-                else:
-                    # Fallback: 只提取基础信息
-                    format_info: Dict[str, Any] = {}
-                    format_info["font"] = {"bold": getattr(cell.font, "bold", None)}
-                    alignment = getattr(cell, "alignment", None)
-                    format_info["alignment"] = {"horizontal": getattr(alignment, "horizontal", None)}
-                
-                # 添加数字格式信息（保持原有逻辑）
+                format_info: Dict[str, Any] = {}
+                format_info["font"] = {"bold": getattr(cell.font, "bold", None)}
+                alignment = getattr(cell, "alignment", None)
+                format_info["alignment"] = {"horizontal": getattr(alignment, "horizontal", None)}
+
                 original_number_format = get_number_format_string(cell)
                 inferred_type = infer_cell_data_type(cell)
                 category = categorize_number_format(original_number_format, cell)
@@ -882,27 +755,13 @@ def create_inverted_index(
                 format_info["original_number_format"] = original_number_format
                 format_info["inferred_data_type"] = inferred_type
                 format_info["number_format_category"] = category
-                
-                # 添加合并单元格信息（保持原有逻辑）
                 format_info["merged"] = merged_range_str is not None
                 if merged_range_str is not None:
                     format_info["merged_range"] = merged_range_str
-                
-                # 创建格式签名用于聚合
-                if FORMAT_EXTRACTION_AVAILABLE:
-                    try:
-                        format_info["_signature"] = create_format_signature(format_info)
-                        format_info["_semantic"] = create_semantic_signature(format_info)
-                    except Exception as e:
-                        # Fallback if signature generation fails
-                        format_info["_signature"] = "plain"
-                        format_info["_semantic"] = "plain"
-                        logger.debug(f"Failed to create format signature for {cell_ref}: {e}")
 
                 format_key = json.dumps(format_info, sort_keys=True)
                 format_map[format_key].append(cell_ref)
-            except Exception as e:
-                logger.warning(f"Failed to extract format for {cell_ref}: {e}")
+            except Exception:
                 pass
 
     return dict(inverted_index), dict(format_map)
@@ -924,10 +783,16 @@ def aggregate_formats(sheet, format_map: Dict[str, List[str]]) -> Dict[str, List
     processed_cells = set()
 
     type_nfs_map: Dict[str, List[str]] = defaultdict(list)
-    for format_key, cells in format_map.items():
-        # format_key 已经包含了完整的格式信息（font, fill, border, _signature 等）
-        # 不需要重新提取，直接使用
-        type_nfs_map[format_key].extend(cells)
+    for _, cells in format_map.items():
+        for cell_ref in cells:
+            try:
+                cell = sheet[cell_ref]
+            except Exception:
+                continue
+            nfs = get_number_format_string(cell)
+            sem_type = detect_semantic_type(cell)
+            key = json.dumps({"type": sem_type, "nfs": nfs}, sort_keys=True)
+            type_nfs_map[key].append(cell_ref)
 
     for key, cells in type_nfs_map.items():
         cells_set = set(cells)
@@ -999,7 +864,7 @@ def spreadsheet_llm_encode_with_helpers(
         output_path: Optional[str] = None,
         k: int = 2,
         *,
-        data_only: bool = False,
+        data_only: bool = True,
         detect_subtables: bool = True,
         max_value_len: int = 200,
         min_nonempty_cells_for_region: int = 8,
@@ -1026,6 +891,7 @@ def spreadsheet_llm_encode_with_helpers(
 
         region_encodings: List[Dict[str, Any]] = []
 
+        # ✅ FIX #3: Calculate original_tokens once, outside region loop
         original_cells = {}
         for r, c, v in _iter_values_only(sheet, full_region):
             if v is None:
@@ -1040,59 +906,7 @@ def spreadsheet_llm_encode_with_helpers(
             row_anchors, col_anchors = fast_find_structural_anchors(sheet, k, region=reg)
 
             kept_rows, kept_cols = extract_cells_near_anchors(sheet, row_anchors, col_anchors, k, region=reg)
-            if FORMAT_EXTRACTION_AVAILABLE:
-                colored_rows = set()
-                colored_cols = set()
-                
-                for row in range(reg.min_row, reg.max_row + 1):
-                    for col in range(reg.min_col, reg.max_col + 1):
-                        cell = sheet.cell(row, col)
-                        
-                        # 跳过空单元格
-                        if cell.value is None:
-                            continue
-                        
-                        # 检查是否有填充颜色
-                        if cell.fill and cell.fill.fgColor:
-                            fg = cell.fill.fgColor
-                            
-                            # 检查是否是非默认颜色
-                            has_color = False
-                            
-                            # 检查主题颜色（排除黑白）
-                            if fg.type == 'theme' and fg.theme not in (None, 0, 1):
-                                has_color = True
-                            
-                            # 检查 RGB 颜色（排除黑白）
-                            elif fg.type == 'rgb' and fg.rgb:
-                                rgb = fg.rgb
-                                if len(rgb) == 8:
-                                    rgb = rgb[2:]  # 去掉 alpha
-                                if rgb not in ('000000', 'FFFFFF'):
-                                    has_color = True
-                            
-                            # 如果有颜色，记录这个单元格
-                            if has_color:
-                                colored_rows.add(row)
-                                colored_cols.add(col)
-                
-                # 添加到 kept_rows 和 kept_cols
-                for row in colored_rows:
-                    if row not in kept_rows:
-                        kept_rows.append(row)
-                
-                for col in colored_cols:
-                    if col not in kept_cols:
-                        kept_cols.append(col)
-                
-                # 重新排序
-                kept_rows.sort()
-                kept_cols.sort()
-                
-                if colored_rows or colored_cols:
-                    logger.info(f"添加了 {len(colored_rows)} 个有颜色的行，{len(colored_cols)} 个有颜色的列")
-                    logger.debug(f"有颜色的行: {sorted(colored_rows)[:10]}")
-            
+
             if not kept_rows or not kept_cols:
                 kept_rows = list(range(reg.min_row, min(reg.min_row + 20, reg.max_row + 1)))
                 kept_cols = list(range(reg.min_col, min(reg.min_col + 20, reg.max_col + 1)))
@@ -1140,7 +954,7 @@ def spreadsheet_llm_encode_with_helpers(
                     "region_index": reg_idx,
                     "encoding": sheet_encoding,
                     "metrics": {
-                        "original_tokens": original_tokens,
+                        "original_tokens": original_tokens,  # ✅ Use pre-calculated value
                         "after_anchor_tokens": anchor_tokens,
                         "after_inverted_index_tokens": index_tokens,
                         "after_merged_index_tokens": merged_tokens,
@@ -1222,221 +1036,9 @@ def convert_csv_to_xlsx(csv_path: str, xlsx_path: str) -> bool:
     logger.info("Converted CSV -> XLSX using python engine")
     return True
 
-# ==============================================================================
-# Sub-table Detection Helper Functions (NEW)
-# ==============================================================================
-
-from dataclasses import dataclass
-
-@dataclass
-class SubTableRegion:
-    """表示一个子表格的区域"""
-    id: int
-    min_row: int
-    max_row: int
-    min_col: int
-    max_col: int
-    component_cells: List[str]
-    header_colors: Set[str]
-    cell_count: int
-    
-    def to_dict(self):
-        return {
-            'id': self.id,
-            'min_row': self.min_row,
-            'max_row': self.max_row,
-            'min_col': self.min_col,
-            'max_col': self.max_col,
-            'cell_count': self.cell_count,
-            'header_colors': list(self.header_colors)
-        }
-    
-    def __repr__(self):
-        return (f"SubTable(id={self.id}, "
-                f"rows={self.min_row}-{self.max_row}, "
-                f"cols={self.min_col}-{self.max_col}, "
-                f"colors={self.header_colors})")
-
-
-def split_cell_ref_subtable(cell_ref: str) -> Tuple[str, int]:
-    """分离cell reference为列字母和行号"""
-    import re
-    match = re.match(r'([A-Z]+)(\d+)', cell_ref)
-    if match:
-        return match.group(1), int(match.group(2))
-    raise ValueError(f"Invalid cell reference: {cell_ref}")
-
-
-def extract_sub_tables_from_components(
-    components: List[List[str]], 
-    sheet,
-    min_gap: int = 2,
-    min_size: int = 4
-) -> List[SubTableRegion]:
-    """从Connected Components中提取独立的子表格"""
-    if not components:
-        return []
-    
-    component_info = []
-    
-    for idx, component in enumerate(components):
-        if len(component) < min_size:
-            continue
-        
-        min_r = min_c = float('inf')
-        max_r = max_c = 0
-        
-        for cell_ref in component:
-            col_letter, row = split_cell_ref_subtable(cell_ref)
-            col = column_index_from_string(col_letter)
-            
-            min_r = min(min_r, row)
-            max_r = max(max_r, row)
-            min_c = min(min_c, col)
-            max_c = max(max_c, col)
-        
-        header_colors = set()
-        for col in range(min_c, min(max_c + 1, min_c + 10)):
-            for row in range(min_r, min(max_r + 1, min_r + 3)):
-                cell = sheet.cell(row=row, column=col)
-                color = get_fill_color(cell)
-                if color and color != 'FFFFFF':
-                    header_colors.add(color)
-        
-        component_info.append({
-            'id': idx,
-            'min_row': int(min_r),
-            'max_row': int(max_r),
-            'min_col': int(min_c),
-            'max_col': int(max_c),
-            'component': component,
-            'header_colors': header_colors,
-            'size': len(component)
-        })
-    
-    component_info.sort(key=lambda x: (x['min_col'], x['min_row']))
-    
-    sub_tables = []
-    
-    for info in component_info:
-        merged = False
-        
-        for st in sub_tables:
-            col_overlap = not (info['max_col'] < st.min_col - min_gap or 
-                              info['min_col'] > st.max_col + min_gap)
-            
-            row_overlap = not (info['max_row'] < st.min_row - min_gap or 
-                              info['min_row'] > st.max_row + min_gap)
-            
-            if col_overlap and row_overlap:
-                st.min_row = min(st.min_row, info['min_row'])
-                st.max_row = max(st.max_row, info['max_row'])
-                st.min_col = min(st.min_col, info['min_col'])
-                st.max_col = max(st.max_col, info['max_col'])
-                st.component_cells.extend(info['component'])
-                st.header_colors.update(info['header_colors'])
-                st.cell_count += info['size']
-                merged = True
-                break
-        
-        if not merged:
-            sub_tables.append(SubTableRegion(
-                id=len(sub_tables),
-                min_row=info['min_row'],
-                max_row=info['max_row'],
-                min_col=info['min_col'],
-                max_col=info['max_col'],
-                component_cells=info['component'],
-                header_colors=info['header_colors'],
-                cell_count=info['size']
-            ))
-    
-    return sub_tables
-
-
-def detect_color_based_sub_tables(sheet, header_row: int = 1, min_gap: int = 1) -> List[Dict]:
-    """基于表头颜色变化检测子表格"""
-    color_groups = []
-    current_group = None
-    empty_count = 0
-    
-    for col in range(1, sheet.max_column + 1):
-        cell = sheet.cell(row=header_row, column=col)
-        value = cell.value
-        color = get_fill_color(cell)
-        
-        is_empty_cell = (value is None or (isinstance(value, str) and value.strip() == ''))
-        has_no_meaningful_color = (color is None or color == 'FFFFFF' or color == '000000')
-        
-        column_is_empty = all(
-            sheet.cell(row=r, column=col).value is None or
-            (isinstance(sheet.cell(row=r, column=col).value, str) and 
-             sheet.cell(row=r, column=col).value.strip() == '')
-            for r in range(1, min(sheet.max_row + 1, 20))
-        )
-        
-        if column_is_empty or (is_empty_cell and has_no_meaningful_color):
-            empty_count += 1
-            if current_group and empty_count >= min_gap:
-                color_groups.append(current_group)
-                current_group = None
-                empty_count = 0
-        else:
-            empty_count = 0
-            
-            if current_group is None:
-                current_group = {
-                    'start_col': col,
-                    'end_col': col,
-                    'colors': {color} if color and color != 'FFFFFF' and color != '000000' else set(),
-                    'header_row': header_row
-                }
-            else:
-                if color and color not in current_group['colors'] and len(current_group['colors']) > 0:
-                    if current_group['end_col'] - current_group['start_col'] >= 2:
-                        color_groups.append(current_group)
-                        current_group = {
-                            'start_col': col,
-                            'end_col': col,
-                            'colors': {color} if color and color != 'FFFFFF' and color != '000000' else set(),
-                            'header_row': header_row
-                        }
-                    else:
-                        current_group['end_col'] = col
-                        if color and color != 'FFFFFF' and color != '000000':
-                            current_group['colors'].add(color)
-                else:
-                    current_group['end_col'] = col
-                    if color and color != 'FFFFFF' and color != '000000':
-                        current_group['colors'].add(color)
-    
-    if current_group and current_group['colors']:
-        color_groups.append(current_group)
-    
-    return color_groups
-
-
-def scan_data_range_subtable(sheet, start_col: int, end_col: int) -> Tuple[int, int]:
-    """扫描列范围，找到数据的起始和结束行"""
-    min_row = float('inf')
-    max_row = 0
-    
-    for col in range(start_col, end_col + 1):
-        for row in range(1, sheet.max_row + 1):
-            cell = sheet.cell(row=row, column=col)
-            if cell.value is not None and not (isinstance(cell.value, str) and cell.value.strip() == ''):
-                min_row = min(min_row, row)
-                max_row = max(max_row, row)
-    
-    if min_row == float('inf'):
-        min_row = 1
-    if max_row == 0:
-        max_row = sheet.max_row
-    
-    return min_row, max_row
 
 # ==============================================================================
-# Main SpreadsheetEncoder Class (UNCHANGED except using new anchor method)
+# Main SpreadsheetEncoder Class
 # ==============================================================================
 
 class SpreadsheetEncoder:
@@ -1454,14 +1056,12 @@ class SpreadsheetEncoder:
         self.min_nonempty_cells_for_region = int(config.get("min_nonempty_cells_for_region", 8))
         self._working_file: Optional[str] = None
         self._temp_xlsx: Optional[str] = None
-        self.detect_color_subtables = bool(config.get("detect_color_subtables", False))
-        self.subtable_min_gap = int(config.get("subtable_min_gap", 2))
+
         logger.info(
-            "Initialized SpreadsheetEncoder k=%s detect_subtables=%s data_only=%s color_subtables=%s",
+            "Initialized SpreadsheetEncoder (Connected Components) k=%s detect_subtables=%s data_only=%s",
             self.k,
             self.detect_subtables,
             self.data_only,
-            self.detect_color_subtables,  
         )
 
     def load_file(self, file_path: str) -> pd.DataFrame:
@@ -1495,189 +1095,60 @@ class SpreadsheetEncoder:
         """Encode using SpreadsheetLLM methodology with Connected Components anchors."""
         logger.info("Encoding with SpreadsheetLLM (Connected Components)...")
 
-        if not self._working_file:
-            temp_file = tempfile.NamedTemporaryFile(suffix=".xlsx", delete=False)
-            temp_file_path = temp_file.name
-            temp_file.close()
-            df.to_excel(temp_file_path, index=False, engine="openpyxl")
-            self._working_file = temp_file_path
-            self._temp_xlsx = temp_file_path
-
-        full_encoding = spreadsheet_llm_encode_with_helpers(
-            self._working_file,
-            output_path=None,
-            k=self.k,
-            data_only=self.data_only,
-            detect_subtables=False,
-            max_value_len=self.max_value_len,
-            min_nonempty_cells_for_region=self.min_nonempty_cells_for_region,
-        )
-
-        # ========== 新增：处理所有sheets ==========
-        all_sheets_data = full_encoding.get("sheets", {})
-        num_sheets = len(all_sheets_data)
-        
-        logger.info(f"📊 Found {num_sheets} sheet(s) in workbook")
-        
-        # 为每个sheet创建编码
-        all_sheets_encodings = []
-        
-        for sheet_idx, (sheet_name, sheet_data) in enumerate(all_sheets_data.items()):
-            try:
-                # 处理regions
-                all_regions = sheet_data.get("regions", [])
+        try:
+            # Create temporary file if needed
+            if not self._working_file:
                 
-                all_encodings = []
-                if all_regions and isinstance(all_regions, list):
-                    for idx, region_item in enumerate(all_regions):
-                        if isinstance(region_item, dict):
-                            if "encoding" in region_item:
-                                region_encoding = region_item["encoding"]
-                                region_metrics = region_item.get("metrics", {})
-                            else:
-                                region_encoding = region_item
-                                region_metrics = {}
-                            
-                            region_bounds = region_encoding.get("region", {}) if isinstance(region_encoding, dict) else {}
-                            
-                            try:
-                                region_text = self._create_readable_text(
-                                    region_encoding, 
-                                    full_encoding.get("compression_metrics", {})
-                                )
-                            except Exception as e:
-                                logger.error(f"Failed to create text for sheet '{sheet_name}' region {idx}: {e}")
-                                region_text = f"[Error encoding region {idx}]"
-                            
-                            all_encodings.append({
-                                "region_index": idx,
-                                "region_bounds": region_bounds,
-                                "encoded_text": region_text,
-                                "metrics": region_metrics,
-                                "encoding": region_encoding
-                            })
-                
-                # Primary encoding for this sheet
-                if all_encodings:
-                    primary_encoding = all_encodings[0]["encoding"]
-                    primary_text = all_encodings[0]["encoded_text"]
-                    primary_metrics = all_encodings[0]["metrics"]
-                else:
-                    primary_encoding = sheet_data
-                    primary_text = self._create_readable_text(sheet_data, full_encoding.get("compression_metrics", {}))
-                    primary_metrics = {}
-                
-                # 存储这个sheet的信息
-                all_sheets_encodings.append({
-                    "sheet_index": sheet_idx,
-                    "sheet_name": sheet_name,
-                    "encoded_text": primary_text,
-                    "all_regions": all_encodings,
-                    "num_regions": len(all_encodings),
-                    "encoding": primary_encoding,
-                    "metrics": primary_metrics
-                })
-                
-                logger.info(
-                    f"  Sheet {sheet_idx}: '{sheet_name}', "
-                    f"{len(all_encodings)} region(s), "
-                    f"compression {primary_metrics.get('overall_ratio', 0):.2f}x"
-                )
-            
-            except Exception as e:
-                logger.error(f"Error processing sheet '{sheet_name}': {e}", exc_info=True)
-                continue
-        
-        # ============================================
+                temp_file = tempfile.NamedTemporaryFile(suffix=".xlsx", delete=False)
+                temp_file_path = temp_file.name
+                temp_file.close()
+                df.to_excel(temp_file_path, index=False, engine="openpyxl")
+                self._working_file = temp_file_path
+                self._temp_xlsx = temp_file_path
 
-        # Primary sheet (first sheet, for backward compatibility)
-        if all_sheets_encodings:
-            primary_sheet = all_sheets_encodings[0]
-            encoded_text = primary_sheet["encoded_text"]
-            primary_encoding = primary_sheet["encoding"]
-            primary_metrics = primary_sheet["metrics"]
-        else:
-            # Fallback
-            sheet_name = list(all_sheets_data.keys())[0] if all_sheets_data else None
-            sheet_data = all_sheets_data.get(sheet_name, {}) if sheet_name else {}
-            encoded_text = self._create_readable_text(sheet_data, full_encoding.get("compression_metrics", {}))
-            primary_encoding = sheet_data
-            primary_metrics = {}
-        
-        metadata = self._extract_metadata(df, primary_encoding, full_encoding.get("compression_metrics", {}))
-        # FIXED: Removed duplicate code that was overwriting previous values
-        # (Previously lines 1394-1398 duplicated the sheet_name/encoded_text/metadata assignments)
+            # Perform encoding
+            full_encoding = spreadsheet_llm_encode_with_helpers(
+                self._working_file,
+                output_path=None,
+                k=self.k,
+                data_only=self.data_only,
+                detect_subtables=self.detect_subtables,
+                max_value_len=self.max_value_len,
+                min_nonempty_cells_for_region=self.min_nonempty_cells_for_region,
+            )
 
+            sheet_name = list(full_encoding["sheets"].keys())[0] if full_encoding["sheets"] else None
+            sheet_encoding = full_encoding["sheets"].get(sheet_name, {}) if sheet_name else {}
 
-        # CRITICAL FIX: Clean up temporary file AND reset state
-        if self._temp_xlsx and Path(self._temp_xlsx).exists():
-            try:
-                Path(self._temp_xlsx).unlink()
-                logger.debug(f"Deleted temporary file: {self._temp_xlsx}")
-            except Exception as e:
-                logger.warning(f"Failed to delete temporary file: {e}")
+            encoded_text = self._create_readable_text(sheet_encoding, full_encoding["compression_metrics"])
+            metadata = self._extract_metadata(df, sheet_encoding, full_encoding["compression_metrics"])
 
-        # NEW: Reset working file paths to allow next encode to create new temp file
-        sub_tables_info = []
-        num_sub_tables = 0
-        has_multiple_tables = False
-        
-        if self.detect_color_subtables and self._working_file:
-            try:
-                import openpyxl
-                wb = openpyxl.load_workbook(self._working_file, data_only=self.data_only)
-                sheet = wb.active
-                
-                sub_tables = self._detect_sub_tables(sheet)
-                
-                if sub_tables:
-                    sub_tables_info = [st.to_dict() for st in sub_tables]
-                    num_sub_tables = len(sub_tables)
-                    has_multiple_tables = len(sub_tables) > 1
-                    logger.info(f"✓ Detected {num_sub_tables} sub-tables")
-                
-                wb.close()
-            except Exception as e:
-                logger.warning(f"Sub-table detection failed: {e}")
-        
-        # CRITICAL FIX: Clean up temporary file AND reset state
-        if self._temp_xlsx and Path(self._temp_xlsx).exists():
-            try:
-                Path(self._temp_xlsx).unlink()
-                logger.debug(f"Deleted temporary file: {self._temp_xlsx}")
-            except Exception as e:
-                logger.warning(f"Failed to delete temporary file: {e}")
+            result = {
+                "encoded_text": encoded_text,
+                "metadata": metadata,
+                "original_shape": df.shape,
+                "preview_shape": df.shape,
+                "dataframe": df,
+                "spreadsheet_llm_encoding": sheet_encoding,
+                "compression_metrics": full_encoding["compression_metrics"],
+            }
 
-        # NEW: Reset working file paths to allow next encode to create new temp file
-        self._working_file = None
-        self._temp_xlsx = None
-        result = {
-            # ===== 原有字段（向后兼容）=====
-            "encoded_text": encoded_text,  # 第一个sheet的编码
-            "metadata": metadata,
-            "original_shape": df.shape,
-            "preview_shape": df.shape,
-            "dataframe": df,
-            "spreadsheet_llm_encoding": primary_encoding,
-            "compression_metrics": full_encoding.get("compression_metrics", {}),
-            "formats": primary_encoding.get("formats", {}),
-            # ===== 新增字段 =====
-            "all_sheets": all_sheets_encodings,  # 所有sheets的编码！
-            "num_sheets": len(all_sheets_encodings),
-            "primary_sheet_index": 0,
-            "sub_tables": sub_tables_info,
-            "num_sub_tables": num_sub_tables,
-            "has_multiple_tables": has_multiple_tables,
-        }
+            logger.info("Encoding complete. Compression: %.2fx", metadata.get("compression_ratio", 0))
+            return result
 
-        compression_ratio = metadata.get("compression_ratio", 0) if isinstance(metadata, dict) else 0
-        logger.info(
-            f"✓ Encoding complete. Primary compression: {compression_ratio:.2f}x, "
-            f"Total sheets: {len(all_sheets_encodings)}"
-        )
-        
-        return result
-    
+        finally:
+            # ✅ FIX #1: Always cleanup temporary file, even if exception occurs
+            if self._temp_xlsx and Path(self._temp_xlsx).exists():
+                try:
+                    Path(self._temp_xlsx).unlink()
+                    logger.debug(f"Deleted temporary file: {self._temp_xlsx}")
+                except Exception as e:
+                    logger.warning(f"Failed to delete temporary file: {e}")
+
+            # Reset state for next encode call
+            self._working_file = None
+            self._temp_xlsx = None
+
     def _create_readable_text(self, sheet_encoding: Dict[str, Any], compression_metrics: Dict[str, Any]) -> str:
         """Create LLM-friendly text representation."""
         lines: List[str] = []
@@ -1708,7 +1179,9 @@ class SpreadsheetEncoder:
         cells = sheet_encoding.get("cells", {})
         lines.append("## CELL VALUES")
         lines.append(f"Unique values: {len(cells)}")
-        for value, ranges in list(cells.items())[:20]:
+
+        # ✅ FIX #2: Use islice instead of creating full list
+        for value, ranges in islice(cells.items(), 20):
             ranges_str = ", ".join(ranges[:5])
             if len(ranges) > 5:
                 ranges_str += f" (+{len(ranges) - 5} more)"
@@ -1721,7 +1194,9 @@ class SpreadsheetEncoder:
         formats = sheet_encoding.get("formats", {})
         lines.append("## FORMAT REGIONS")
         lines.append(f"Format groups: {len(formats)}")
-        for fmt_key, ranges in list(formats.items())[:10]:
+
+        # ✅ FIX #2: Use islice for formats too
+        for fmt_key, ranges in islice(formats.items(), 10):
             try:
                 fmt = json.loads(fmt_key)
                 ranges_str = ", ".join(ranges[:3])
@@ -1941,8 +1416,6 @@ class SpreadsheetEncoder:
         return False
 
     def _is_date_column(self, series: pd.Series) -> bool:
-        """检测列是否为日期列 - 改进版"""
-        
         if pd.api.types.is_datetime64_any_dtype(series):
             return True
 
@@ -1950,145 +1423,9 @@ class SpreadsheetEncoder:
         if len(sample) == 0:
             return False
 
-        common_formats = [
-            '%Y-%m-%d', '%Y/%m/%d', '%d-%m-%Y', '%d/%m/%Y',
-            '%m-%d-%Y', '%m/%d/%Y', '%Y%m%d', '%d.%m.%Y',
-            '%Y-%m-%d %H:%M:%S', '%d/%m/%Y %H:%M:%S', '%Y年%m月%d日'
-        ]
-        
-        for fmt in common_formats:
-            try:
-                parsed = pd.to_datetime(sample, format=fmt, errors='coerce')
-                valid_dates = int(parsed.notna().sum())
-                if (valid_dates / len(sample)) > 0.7:
-                    return True
-            except (ValueError, TypeError):
-                continue
         try:
-            import warnings
-            with warnings.catch_warnings():
-                warnings.filterwarnings('ignore', category=UserWarning)
-                parsed = pd.to_datetime(sample, errors='coerce')
+            parsed = pd.to_datetime(sample, errors="coerce")
             valid_dates = int(parsed.notna().sum())
             return (valid_dates / len(sample)) > 0.7
         except Exception:
             return False
-    
-    def _detect_sub_tables(self, sheet) -> List[SubTableRegion]:
-        """检测子表格 - 核心方法"""
-        logger.info("🔍 Detecting sub-tables...")
-        
-        sub_tables = []
-        
-        if self.detect_color_subtables:
-            all_color_groups = []
-            
-            for header_row in range(1, min(6, sheet.max_row + 1)):
-                groups = detect_color_based_sub_tables(sheet, header_row, self.subtable_min_gap)
-                
-                if groups:
-                    all_color_groups.extend(groups)
-            
-            if all_color_groups:
-                unique_groups = {}
-                for group in all_color_groups:
-                    key = (group['start_col'], group['end_col'])
-                    
-                    if key not in unique_groups:
-                        unique_groups[key] = group
-                    else:
-                        unique_groups[key]['colors'].update(group['colors'])
-                
-                color_groups = sorted(unique_groups.values(), key=lambda g: g['start_col'])
-                
-                for group in color_groups:
-                    start_col = group['start_col']
-                    end_col = group['end_col']
-                    colors = group['colors']
-                    
-                    min_row, max_row = scan_data_range_subtable(sheet, start_col, end_col)
-                    
-                    sub_tables.append(SubTableRegion(
-                        id=len(sub_tables),
-                        min_row=min_row,
-                        max_row=max_row,
-                        min_col=start_col,
-                        max_col=end_col,
-                        component_cells=[],
-                        header_colors=colors,
-                        cell_count=(max_row - min_row + 1) * (end_col - start_col + 1)
-                    ))
-                
-                sub_tables = self._remove_contained_tables(sub_tables)
-        
-        if not sub_tables:
-            graph = build_connectivity_graph(sheet, None)
-            
-            if graph and len(graph) >= 4:
-                components = find_connected_components(graph, min_component_size=4)
-                
-                if len(components) > 1:
-                    sub_tables = extract_sub_tables_from_components(
-                        components, sheet, self.subtable_min_gap
-                    )
-        
-        return sub_tables
-    
-    def _remove_contained_tables(self, sub_tables: List[SubTableRegion]) -> List[SubTableRegion]:
-        """移除重复和错误的表格"""
-        if len(sub_tables) <= 1:
-            return sub_tables
-        
-        sorted_by_col = sorted(sub_tables, key=lambda st: (st.min_col, st.max_col))
-        filtered = []
-        
-        for i, table_a in enumerate(sorted_by_col):
-            should_keep = True
-            
-            for j, table_b in enumerate(sorted_by_col):
-                if i == j:
-                    continue
-                
-                col_contained = (table_a.min_col >= table_b.min_col and 
-                               table_a.max_col <= table_b.max_col and
-                               table_a.cell_count < table_b.cell_count)
-                
-                if col_contained:
-                    should_keep = False
-                    break
-            
-            if not should_keep:
-                continue
-            
-            overlaps = []
-            for j, table_b in enumerate(sorted_by_col):
-                if i == j:
-                    continue
-                
-                col_overlap = not (table_a.max_col < table_b.min_col or 
-                                 table_a.min_col > table_b.max_col)
-                
-                if col_overlap:
-                    overlaps.append(j)
-            
-            if len(overlaps) >= 2:
-                distinct_overlaps = 0
-                for k in range(len(overlaps)):
-                    for m in range(k + 1, len(overlaps)):
-                        table_k = sorted_by_col[overlaps[k]]
-                        table_m = sorted_by_col[overlaps[m]]
-                        
-                        if table_k.max_col < table_m.min_col or table_k.min_col > table_m.max_col:
-                            distinct_overlaps += 1
-                
-                if distinct_overlaps > 0:
-                    should_keep = False
-            
-            if should_keep:
-                filtered.append(table_a)
-        
-        filtered.sort(key=lambda st: st.min_col)
-        for i, st in enumerate(filtered):
-            st.id = i
-        
-        return filtered

@@ -52,7 +52,7 @@ const ProgressDisplay = ({ progress, logs, status }) => {
           renderItem={(log, index) => (
             <List.Item key={index}>
               <span style={{ fontFamily: 'monospace', fontSize: 12 }}>
-                [{new Date().toLocaleTimeString()}] {log}
+                {log}
               </span>
             </List.Item>
           )}

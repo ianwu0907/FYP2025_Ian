@@ -22,26 +22,35 @@ export const useNormalizer = () => {
   /**
    * 上传文件
    */
+  // 格式化时间戳
+  const formatTimestamp = () => {
+    const now = new Date();
+    const hours = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    const seconds = String(now.getSeconds()).padStart(2, '0');
+    return `${hours}:${minutes}:${seconds}`;
+  };
+
   const uploadFile = useCallback(async (file) => {
     try {
       setStatus('uploading');
       setError(null);
-      setLogs((prev) => [...prev, `Starting file upload: ${file.name}`]);
+      setLogs((prev) => [...prev, `[${formatTimestamp()}] Starting file upload: ${file.name}`]);
 
       const response = await api.uploadFile(file);
 
       setSessionId(response.session_id);
       setUploadedFileInfo(response);
       setStatus('uploaded');
-      setLogs((prev) => [...prev, `File uploaded successfully! Session ID: ${response.session_id}`]);
-      setLogs((prev) => [...prev, `File preview: ${response.preview.shape[0]} rows × ${response.preview.shape[1]} columns`]);
+      setLogs((prev) => [...prev, `[${formatTimestamp()}] File uploaded successfully! Session ID: ${response.session_id}`]);
+      setLogs((prev) => [...prev, `[${formatTimestamp()}] File preview: ${response.preview.shape[0]} rows × ${response.preview.shape[1]} columns`]);
 
       return response;
     } catch (err) {
       console.error('Upload error:', err);
       setStatus('error');
       setError(err.response?.data?.detail || err.message || 'Upload failed');
-      setLogs((prev) => [...prev, `❌ Upload failed: ${err.response?.data?.detail || err.message}`]);
+      setLogs((prev) => [...prev, `[${formatTimestamp()}] ❌ Upload failed: ${err.response?.data?.detail || err.message}`]);
       throw err;
     }
   }, []);
@@ -54,11 +63,11 @@ export const useNormalizer = () => {
       setStatus('processing');
       setProgress(0);
       setError(null);
-      setLogs((prev) => [...prev, 'Starting normalization...']);
+      setLogs((prev) => [...prev, `[${formatTimestamp()}] Starting normalization...`]);
 
       const response = await api.startNormalization(sessionId, configOverrides);
       setTaskId(response.task_id);
-      setLogs((prev) => [...prev, `Task created: ${response.task_id}`]);
+      setLogs((prev) => [...prev, `[${formatTimestamp()}] Task created: ${response.task_id}`]);
 
       // 开始轮询任务状态
       startPolling(response.task_id);
@@ -68,7 +77,7 @@ export const useNormalizer = () => {
       console.error('Start normalization error:', err);
       setStatus('error');
       setError(err.response?.data?.detail || err.message || 'Failed to start');
-      setLogs((prev) => [...prev, `❌ Failed to start: ${err.response?.data?.detail || err.message}`]);
+      setLogs((prev) => [...prev, `[${formatTimestamp()}] ❌ Failed to start: ${err.response?.data?.detail || err.message}`]);
       throw err;
     }
   }, [sessionId]);
@@ -95,7 +104,7 @@ export const useNormalizer = () => {
 
         setProgress(statusResponse.progress);
         if (statusResponse.current_stage) {
-          setLogs((prev) => [...prev, `[${statusResponse.current_stage}] Progress: ${statusResponse.progress}%`]);
+          setLogs((prev) => [...prev, `[${formatTimestamp()}] [${statusResponse.current_stage}] Progress: ${statusResponse.progress}%`]);
         }
 
         if (statusResponse.status === 'completed') {
@@ -110,13 +119,13 @@ export const useNormalizer = () => {
 
           setLogs((prev) => [
             ...prev,
-            `✅ Normalization completed! Time elapsed: ${statusResponse.elapsed_seconds?.toFixed(2)}s`,
+            `[${formatTimestamp()}] ✅ Normalization completed! Time elapsed: ${statusResponse.elapsed_seconds?.toFixed(2)}s`,
           ]);
         } else if (statusResponse.status === 'failed') {
           clearInterval(pollingIntervalRef.current);
           setStatus('error');
           setError(statusResponse.error || 'Processing failed');
-          setLogs((prev) => [...prev, `❌ Processing failed: ${statusResponse.error}`]);
+          setLogs((prev) => [...prev, `[${formatTimestamp()}] ❌ Processing failed: ${statusResponse.error}`]);
         }
       } catch (err) {
         console.error('Polling error:', err);
@@ -134,7 +143,7 @@ export const useNormalizer = () => {
             : `Connection failed: ${err.message}`;
 
           setError(errorMsg);
-          setLogs((prev) => [...prev, `❌ Polling failed (retried 5 times): ${errorMsg}`]);
+          setLogs((prev) => [...prev, `[${formatTimestamp()}] ❌ Polling failed (retried 5 times): ${errorMsg}`]);
         }
       }
     }, 2000);

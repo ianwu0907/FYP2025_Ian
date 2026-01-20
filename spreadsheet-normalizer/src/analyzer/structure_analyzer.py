@@ -1,13 +1,11 @@
 """
-Structure Analyzer Module (Enhanced with Structural Anchor Detection)
+Structure Analyzer Module (Enhanced)
 Analyzes table structure using LLM semantic reasoning to identify:
 - Header structure (single/multi-level)
 - Data regions
 - Row patterns (bilingual, grouped by year, etc.)
 - Column patterns (dimensions vs values)
 - Implicit aggregation hierarchies
-
-Now includes: Structural anchor detection for large spreadsheet compression
 """
 
 import json
@@ -20,117 +18,34 @@ import re
 
 logger = logging.getLogger(__name__)
 
-# Import structural anchor detector (optional)
-try:
-    from structural_anchor_detector import StructuralAnchorDetector
-    ANCHOR_DETECTION_AVAILABLE = True
-except ImportError:
-    ANCHOR_DETECTION_AVAILABLE = False
-    logger.debug("StructuralAnchorDetector not available - compression disabled")
-
 
 class StructureAnalyzer:
     """
     Analyzes spreadsheet structure using LLM semantic reasoning.
 
     Key principle: Let LLM understand the SEMANTIC structure, not pattern match.
-    
-    Enhanced with: Structural anchor detection for efficient large spreadsheet processing.
     """
 
     def __init__(self, config: Dict[str, Any]):
         """Initialize the structure analyzer with configuration."""
         self.config = config
         self.detect_implicit_aggregates = config.get('detect_implicit_aggregates', True)
-        
-        # 🔥 NEW: Structural anchor detection configuration
-        self.use_anchor_detection = config.get('use_anchor_detection', False)
-        self.anchor_threshold_rows = config.get('anchor_threshold_rows', 30)
-        
-        if self.use_anchor_detection and ANCHOR_DETECTION_AVAILABLE:
-            self.anchor_detector = StructuralAnchorDetector(
-                config=config.get('anchor_detection', {
-                    'k_neighborhood': 4,
-                    'min_table_rows': 2,
-                    'min_table_cols': 2,
-                    'heterogeneity_threshold': 0.3
-                })
-            )
-            logger.info("Structural anchor detection: enabled")
-        else:
-            self.anchor_detector = None
-            if self.use_anchor_detection and not ANCHOR_DETECTION_AVAILABLE:
-                logger.warning("Structural anchor detection requested but not available")
 
         # Initialize OpenAI client
-        self.llm_provider = config.get('llm_provider', 'openai')
-        
-        if self.llm_provider == 'qwen':
-            api_key = os.getenv('DASHSCOPE_API_KEY')
-            if not api_key:
-                raise ValueError("DASHSCOPE_API_KEY environment variable not set")
-            
-            self.client = OpenAI(
-                api_key=api_key,
-                base_url="https://dashscope.aliyuncs.com/compatible-mode/v1"
-            )
-            self.model = config.get('model', 'qwen-max')
-            
-        elif self.llm_provider == 'gemini':
-            api_key = os.getenv('API2D_API_KEY')
-            if not api_key:
-                raise ValueError("API2D_API_KEY environment variable not set")
-            
-            self.client = OpenAI(
-                api_key=api_key,
-                base_url=os.getenv('API2D_BASE_URL', 'https://oa.api2d.net/v1')
-            )
-            self.model = config.get('model', 'gemini-2.0-flash-exp')
-            
-        elif self.llm_provider == 'claude':
-            api_key = os.getenv('API2D_API_KEY')
-            if not api_key:
-                raise ValueError("API2D_API_KEY environment variable not set")
-            
-            self.client = OpenAI(
-                api_key=api_key,
-                base_url=os.getenv('API2D_BASE_URL', 'https://oa.api2d.net/v1')
-            )
-            self.model = config.get('model', 'claude-3-5-sonnet-20241022')
-            
-        elif self.llm_provider == 'deepseek':
-            api_key = os.getenv('DEEPSEEK_API_KEY')
-            if not api_key:
-                raise ValueError("DEEPSEEK_API_KEY environment variable not set")
-            
-            self.client = OpenAI(
-                api_key=api_key,
-                base_url=os.getenv('DEEPSEEK_BASE_URL', 'https://api.deepseek.com/v1')
-            )
-            self.model = config.get('model', 'deepseek-chat')
-            
-        else:
-            api_key = os.getenv('OPENAI_API_KEY')
-            if not api_key:
-                raise ValueError("OPENAI_API_KEY environment variable not set")
+        api_key = os.getenv('OPENAI_API_KEY')
+        if not api_key:
+            raise ValueError("OPENAI_API_KEY environment variable not set")
 
-            self.client = OpenAI(api_key=api_key)
-            self.model = config.get('model', os.getenv('OPENAI_MODEL', 'gpt-4o-mini'))
+        self.client = OpenAI(api_key=api_key)
+        self.model = os.getenv('OPENAI_MODEL', 'gpt-4o-mini')
 
         # LLM settings
         # self.temperature = config.get('temperature', 0.1)
         self.max_completion_tokens = config.get('max_completion_tokens', 4000)
-        
-        logger.info(f"Initialized StructureAnalyzer with model {self.model}")
 
     def analyze(self, encoded_data: Dict[str, Any]) -> Dict[str, Any]:
         """
         Analyze the structure of the encoded spreadsheet using LLM semantic reasoning.
-
-        Enhanced pipeline:
-        1. [Optional] Structural anchor detection (compress large spreadsheets)
-        2. LLM-based semantic structure analysis (uses compressed data if available)
-        3. Implicit aggregation detection
 
         Returns comprehensive structure analysis including:
         - semantic_understanding: What the data represents
@@ -138,91 +53,25 @@ class StructureAnalyzer:
         - data_region: Where data starts/ends
         - row_patterns: Patterns in row organization
         - column_patterns: Patterns in column organization
-        - implicit_aggregation: Detected aggregation hierarchies
-        - structural_compression: [NEW] Compression info if applied
+        - implicit_aggregation: Detected aggregation hierarchies (preserved feature)
         """
         logger.info("Analyzing table structure with LLM semantic reasoning...")
 
         df = encoded_data['dataframe']
-        original_shape = df.shape
-        
-        # 🔥 NEW: Step 0 - Structural anchor detection (optional)
-        anchor_result = None
-        compressed_df = df
-        is_compressed = False
-        
-        if self.anchor_detector and df.shape[0] > self.anchor_threshold_rows:
-            logger.info(f"Table has {df.shape[0]} rows - applying structural anchor detection...")
-            try:
-                anchor_result = self.anchor_detector.detect_anchors(
-                    df,
-                    encoded_data.get('format_info')
-                )
-                
-                # Only apply compression if it saves significant space
-                if anchor_result['statistics']['compression_ratio'] > 10:
-                    compressed_df = self.anchor_detector.extract_compressed_sheet(
-                        df,
-                        anchor_result['extraction_mask']
-                    )
-                    is_compressed = True
-                    logger.info(
-                        f"Compressed {original_shape} → {compressed_df.shape} "
-                        f"({anchor_result['statistics']['compression_ratio']:.1f}% reduction)"
-                    )
-                else:
-                    logger.info("Compression ratio too low - using original table")
-                    anchor_result = None
-                    
-            except Exception as e:
-                logger.warning(f"Structural anchor detection failed: {e}")
-                anchor_result = None
-        
-        # Prepare working data (compressed or original)
-        working_data = {
-            **encoded_data,
-            'dataframe': compressed_df,
-            'original_dataframe': df,
-            'original_shape': original_shape,
-            'is_compressed': is_compressed
-        }
 
-        # Step 1: LLM-based semantic structure analysis
-        llm_analysis = self._analyze_structure_with_llm(working_data)
+        # LLM-based semantic structure analysis
+        # LLM now handles ALL pattern detection including implicit aggregation
+        llm_analysis = self._analyze_structure_with_llm(encoded_data)
 
-        # Step 2: Detect implicit aggregation (preserved original feature)
-        if self.detect_implicit_aggregates:
-            implicit_agg = self._detect_implicit_aggregation(compressed_df, llm_analysis)
-            llm_analysis['implicit_aggregation'] = implicit_agg
-
-            # If implicit aggregation detected, add to special patterns
-            if implicit_agg.get('has_implicit_aggregation'):
-                if 'special_patterns' not in llm_analysis:
-                    llm_analysis['special_patterns'] = []
-                llm_analysis['special_patterns'].append({
-                    'pattern_type': 'implicit_aggregation',
-                    'description': f"Detected {len(implicit_agg.get('aggregation_hierarchies', []))} aggregation hierarchies where summary rows coexist with detail rows",
-                    'hierarchies': implicit_agg.get('aggregation_hierarchies', [])
-                })
-        
-        # 🔥 NEW: Add structural compression info to results
-        if anchor_result:
-            llm_analysis['structural_compression'] = {
-                'enabled': True,
-                'original_shape': list(original_shape),
-                'compressed_shape': list(compressed_df.shape),
-                'compression_ratio': anchor_result['statistics']['compression_ratio'],
-                'detected_boundaries': anchor_result['boundary_candidates'],
-                'row_anchors': anchor_result['row_anchors'],
-                'column_anchors': anchor_result['column_anchors'],
-                'kept_rows': anchor_result['statistics']['kept_rows'],
-                'kept_cols': anchor_result['statistics']['kept_cols']
-            }
+        # Log implicit aggregation detection results from LLM
+        implicit_agg = llm_analysis.get('implicit_aggregation', {})
+        if implicit_agg.get('has_implicit_aggregation'):
+            logger.info(f"LLM detected implicit aggregation:")
+            logger.info(f"  Category column: {implicit_agg.get('detection_details', {}).get('category_column')}")
+            logger.info(f"  Additional dimension: {implicit_agg.get('detection_details', {}).get('additional_dimension')}")
+            logger.info(f"  Delimiter: {implicit_agg.get('detection_details', {}).get('delimiter')}")
         else:
-            llm_analysis['structural_compression'] = {
-                'enabled': False,
-                'reason': 'Table too small or compression disabled'
-            }
+            logger.info("No implicit aggregation detected by LLM")
 
         logger.info("Structure analysis complete")
         return llm_analysis
@@ -258,7 +107,7 @@ class StructureAnalyzer:
             return self._get_default_analysis(encoded_data)
 
     def _get_system_prompt(self) -> str:
-        """System prompt for structure analysis - UNCHANGED FROM ORIGINAL."""
+        """System prompt for structure analysis."""
         return """You are an expert data analyst specializing in understanding spreadsheet structures.
 
 Your task is to perform SEMANTIC analysis of spreadsheets - understanding what the data represents and how it's organized, not just mechanical pattern matching.
@@ -281,26 +130,28 @@ Most spreadsheets are NOT tidy. Your job is to understand their structure so the
 7. Section markers (e.g., year appearing once to mark a group of rows)
 8. Implicit aggregation (totals mixed with breakdowns)
 
+## IMPLICIT AGGREGATION - CRITICAL PATTERN
+Implicit aggregation occurs when SUMMARY rows coexist with DETAIL rows in the same table.
+Example: A category column might have values like:
+  - "Physical abuse" (summary - total count)
+  - "Physical abuse - Male" (detail - breakdown by gender)
+  - "Physical abuse - Female" (detail - breakdown by gender)
+
+The detail rows contain an ADDITIONAL DIMENSION (e.g., gender) that is encoded within the value itself,
+often using a delimiter like " - " or "/".
+
+When you detect this pattern:
+1. Identify which column contains the category values
+2. Identify which values are summaries vs details
+3. Identify what additional dimension exists in detail rows
+4. Provide sample data from detail rows so downstream can understand the pattern
+
 Be thorough and precise. Output valid JSON only."""
 
     def _create_structure_analysis_prompt(self, encoded_data: Dict[str, Any]) -> str:
-        """Create prompt for structure analysis - MOSTLY UNCHANGED, ONLY ADDED COMPRESSION NOTE."""
+        """Create prompt for structure analysis."""
         df = encoded_data['dataframe']
-        encoded_text = encoded_data.get('encoded_text', '')[:3000]
-        
-        # 🔥 NEW: Add note if table was compressed
-        is_compressed = encoded_data.get('is_compressed', False)
-        compression_note = ""
-        if is_compressed:
-            original_shape = encoded_data.get('original_shape', df.shape)
-            compression_note = f"""
-**IMPORTANT NOTE**: This spreadsheet has been compressed using structural anchor detection.
-- Original size: {original_shape[0]} rows × {original_shape[1]} columns
-- Compressed size: {df.shape[0]} rows × {df.shape[1]} columns
-- The compression preserves table boundaries and key structural anchors while removing large homogeneous regions.
-- Your analysis should be based on this compressed view, which contains all important structural information.
-
-"""
+        encoded_text = encoded_data.get('encoded_text', '')
 
         # Create detailed view of first 30 rows
         rows_preview = self._create_rows_preview(df, max_rows=30)
@@ -309,7 +160,7 @@ Be thorough and precise. Output valid JSON only."""
         col_stats = self._get_column_statistics(df)
 
         prompt = f"""Analyze the semantic structure of this spreadsheet.
-{compression_note}
+
 ## SPREADSHEET OVERVIEW
 - Shape: {df.shape[0]} rows × {df.shape[1]} columns
 - Column names from pandas: {df.columns.tolist()}
@@ -350,8 +201,17 @@ Analyze this spreadsheet and identify:
    - Which columns contain values that should be unpivoted?
    - Are column headers actually data values (e.g., years, age groups)?
 
-6. **Special Patterns**:
-   - Any implicit aggregation (totals coexisting with breakdowns)?
+6. **Implicit Aggregation Detection** (CRITICAL):
+   - Are there rows representing TOTALS/SUMMARIES alongside DETAIL breakdowns?
+   - Look for category values where one is a substring of another (e.g., "Type A" vs "Type A - Male")
+   - If detected:
+     a. Which column contains these category values?
+     b. Which values are summaries (shorter) vs details (longer, contain extra info)?
+     c. What additional dimension is encoded in the detail values?
+     d. What delimiter separates the parts (e.g., " - ", "/", ":")?
+     e. Provide 3-5 sample values from DETAIL rows
+
+7. **Other Special Patterns**:
    - Any merged cells or spanning headers?
    - Any other structural quirks?
 
@@ -377,8 +237,8 @@ Analyze this spreadsheet and identify:
     ],
     "column_header_mapping": {{
       "description": "How column positions map to header values",
-      "id_columns": [{{"col_index": 0, "semantic": "year"}}],
-      "value_columns": [{{"col_indices": [3,4,5], "header_values": ["<15", "15-24", "25-34"], "semantic": "age_group"}}]
+      "id_columns": [{{\"col_index\": 0, \"semantic\": \"year\"}}],
+      "value_columns": [{{\"col_indices\": [3,4,5], \"header_values\": [\"<15\", \"15-24\", \"25-34\"], \"semantic\": \"age_group\"}}]
     }}
   }},
   
@@ -427,6 +287,30 @@ Analyze this spreadsheet and identify:
     ]
   }},
   
+  "implicit_aggregation": {{
+    "has_implicit_aggregation": false,
+    "detection_details": {{
+      "category_column": "Name or index of column containing category values",
+      "summary_values": ["List of category values that might appear to be summaries - but verify if they are truly aggregation rows or just a different category"],
+      "detail_values": ["List of category values that contain additional dimensions (have delimiters)"],
+      "additional_dimension": "What extra dimension is encoded in detail values (e.g., 'gender', 'age_group')",
+      "delimiter": "The delimiter used to separate parts (e.g., ' - ', '/')",
+      "reasoning": "Explain how you identified this pattern and whether the 'summary' values are true aggregations (Total, Sum) or just different categories"
+    }},
+    "sample_detail_rows": [
+      {{
+        "row_index": 10,
+        "category_value": "Physical abuse - Male",
+        "all_columns": {{"col_name": "value", "another_col": "value"}}
+      }}
+    ],
+    "transformation_guidance": {{
+      "rows_to_exclude": "CRITICAL: Specify 'None' if all rows are valid observations. Only specify rows to exclude if there are TRUE aggregation rows like 'Total', 'Sum', '合計'. Do NOT exclude rows just because they lack a delimiter - those may be different categories, not aggregations.",
+      "column_to_split": "Which column contains combined values to split",
+      "expected_new_columns": ["Suggested names for columns after splitting"]
+    }}
+  }},
+  
   "special_patterns": [
     {{
       "pattern_type": "name_of_pattern",
@@ -444,7 +328,7 @@ Output ONLY the JSON object, no other text."""
         return prompt
 
     def _create_rows_preview(self, df: pd.DataFrame, max_rows: int = 30) -> str:
-        """Create detailed preview of rows for LLM analysis - UNCHANGED."""
+        """Create detailed preview of rows for LLM analysis."""
         lines = []
         for i in range(min(max_rows, len(df))):
             row_content = []
@@ -465,7 +349,7 @@ Output ONLY the JSON object, no other text."""
         return "\n".join(lines)
 
     def _get_column_statistics(self, df: pd.DataFrame) -> str:
-        """Get statistics for each column - UNCHANGED."""
+        """Get statistics for each column."""
         lines = []
         for j, col in enumerate(df.columns):
             non_null = df.iloc[:, j].dropna()
@@ -493,110 +377,8 @@ Output ONLY the JSON object, no other text."""
 
         return "\n".join(lines)
 
-    def _detect_implicit_aggregation(self,
-                                     df: pd.DataFrame,
-                                     llm_analysis: Dict[str, Any]) -> Dict[str, Any]:
-        """
-        Detect implicit aggregation - UNCHANGED FROM ORIGINAL.
-        PRESERVED ORIGINAL FEATURE: This deterministic check complements LLM analysis.
-        """
-        logger.info("Detecting implicit aggregation patterns...")
-
-        result = {
-            'has_implicit_aggregation': False,
-            'aggregation_hierarchies': [],
-            'summary_rows': [],
-            'detail_rows': []
-        }
-
-        if len(df) < 2:
-            return result
-
-        # Try to identify category column
-        category_col = None
-        for col in df.columns:
-            col_str = str(col).lower()
-            if any(keyword in col_str for keyword in ['category', '類別', 'type', '項目']):
-                category_col = col
-                break
-
-        # Also check from LLM analysis
-        if not category_col and 'column_patterns' in llm_analysis:
-            id_cols = llm_analysis.get('column_patterns', {}).get('id_columns', [])
-            for id_col in id_cols:
-                if 'category' in str(id_col.get('name', '')).lower():
-                    col_idx = id_col.get('col_index')
-                    if col_idx is not None and col_idx < len(df.columns):
-                        category_col = df.columns[col_idx]
-                        break
-
-        if not category_col:
-            logger.debug("No category column found for implicit aggregation detection")
-            return result
-
-        # Get unique categories
-        categories = df[category_col].dropna().astype(str).unique()
-        logger.debug(f"Found {len(categories)} unique categories in column '{category_col}'")
-
-        if len(categories) < 2:
-            return result
-
-        # Find category pairs where one contains the other
-        hierarchies = []
-
-        for i, cat1 in enumerate(categories):
-            for j, cat2 in enumerate(categories):
-                if i >= j:
-                    continue
-
-                cat1_str = str(cat1).strip()
-                cat2_str = str(cat2).strip()
-
-                # Check if one is substring of other (hierarchical relationship)
-                if cat1_str in cat2_str and len(cat2_str) > len(cat1_str):
-                    summary_cat = cat1_str
-                    detail_cat = cat2_str
-                elif cat2_str in cat1_str and len(cat1_str) > len(cat2_str):
-                    summary_cat = cat2_str
-                    detail_cat = cat1_str
-                else:
-                    continue
-
-                # Get row indices for each category
-                summary_indices = df[df[category_col].astype(str) == summary_cat].index.tolist()
-                detail_indices = df[df[category_col].astype(str) == detail_cat].index.tolist()
-
-                if len(summary_indices) > 0 and len(detail_indices) > 0:
-                    if len(detail_indices) > len(summary_indices):
-                        extra_dimension = detail_cat.replace(summary_cat, '').strip().lstrip('及').strip()
-
-                        hierarchies.append({
-                            'summary_category': summary_cat,
-                            'detail_category': detail_cat,
-                            'additional_dimension': extra_dimension,
-                            'summary_row_count': len(summary_indices),
-                            'detail_row_count': len(detail_indices)
-                        })
-
-                        result['summary_rows'].extend(summary_indices)
-                        result['detail_rows'].extend(detail_indices)
-
-                        logger.info(f"Found hierarchy: '{summary_cat}' → '{detail_cat}'")
-
-        if hierarchies:
-            result['summary_rows'] = sorted(list(set(result['summary_rows'])))
-            result['detail_rows'] = sorted(list(set(result['detail_rows'])))
-            result['has_implicit_aggregation'] = True
-            result['aggregation_hierarchies'] = hierarchies
-
-            logger.info(f"DETECTED: {len(hierarchies)} implicit aggregation hierarchies")
-        else:
-            logger.info("No implicit aggregation detected")
-
-        return result
-
     def _parse_llm_response(self, response_text: str) -> Dict[str, Any]:
-        """Parse the LLM response and extract JSON - UNCHANGED."""
+        """Parse the LLM response and extract JSON."""
         response_text = response_text.strip()
 
         # Remove markdown code blocks if present
@@ -622,7 +404,7 @@ Output ONLY the JSON object, no other text."""
     def _validate_analysis(self,
                            analysis: Dict[str, Any],
                            encoded_data: Dict[str, Any]) -> Dict[str, Any]:
-        """Validate and set defaults for analysis result - UNCHANGED."""
+        """Validate and set defaults for analysis result."""
         df = encoded_data['dataframe']
 
         # Ensure required fields exist with defaults
@@ -656,7 +438,13 @@ Output ONLY the JSON object, no other text."""
             },
             'special_patterns': [],
             'transformation_complexity': 'medium',
-            'transformation_notes': ''
+            'transformation_notes': '',
+            'implicit_aggregation': {
+                'has_implicit_aggregation': False,
+                'detection_details': {},
+                'sample_detail_rows': [],
+                'transformation_guidance': {}
+            }
         }
 
         for key, default_value in defaults.items():
@@ -669,15 +457,28 @@ Output ONLY the JSON object, no other text."""
 
         # Validate row indices are within bounds
         data_region = analysis.get('data_region', {})
-        if data_region.get('start_row', 0) < 0:
-            data_region['start_row'] = 0
-        if data_region.get('end_row', 0) >= len(df):
-            data_region['end_row'] = len(df) - 1
+        # Ensure row indices are integers (LLM might return strings)
+        try:
+            start_row = int(data_region.get('start_row', 0))
+        except (ValueError, TypeError):
+            start_row = 0
+        try:
+            end_row = int(data_region.get('end_row', 0))
+        except (ValueError, TypeError):
+            end_row = 0
+
+        if start_row < 0:
+            start_row = 0
+        if end_row >= len(df):
+            end_row = len(df) - 1
+
+        data_region['start_row'] = start_row
+        data_region['end_row'] = end_row
 
         return analysis
 
     def _get_default_analysis(self, encoded_data: Dict[str, Any]) -> Dict[str, Any]:
-        """Return default analysis if LLM fails - UNCHANGED."""
+        """Return default analysis if LLM fails."""
         df = encoded_data['dataframe']
 
         return {
@@ -713,8 +514,8 @@ Output ONLY the JSON object, no other text."""
             'transformation_notes': 'LLM analysis failed, using minimal defaults',
             'implicit_aggregation': {
                 'has_implicit_aggregation': False,
-                'aggregation_hierarchies': [],
-                'summary_rows': [],
-                'detail_rows': []
+                'detection_details': {},
+                'sample_detail_rows': [],
+                'transformation_guidance': {}
             }
         }

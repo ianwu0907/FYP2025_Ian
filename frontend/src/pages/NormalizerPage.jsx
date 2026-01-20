@@ -195,9 +195,9 @@ const NormalizerPage = () => {
                     <Descriptions.Item label={t.upload.dimensions}>
                       {uploadedFileInfo.preview.shape[0]} {t.upload.rows} × {uploadedFileInfo.preview.shape[1]} {t.upload.columns}
                     </Descriptions.Item>
-                    <Descriptions.Item label={t.upload.sessionId} span={2}>
+                    {/* <Descriptions.Item label={t.upload.sessionId} span={2}>
                       <code>{sessionId}</code>
-                    </Descriptions.Item>
+                    </Descriptions.Item> */}
                   </Descriptions>
                 </div>
               )}
@@ -277,7 +277,7 @@ const NormalizerPage = () => {
                   borderRadius: '12px 12px 0 0',
                 }}
               >
-                <Descriptions bordered column={2}>
+                {/* <Descriptions bordered column={2}>
                   <Descriptions.Item label={t.result.outputPath} span={2}>
                     <code>{result.output_path}</code>
                   </Descriptions.Item>
@@ -290,29 +290,9 @@ const NormalizerPage = () => {
                   <Descriptions.Item label={t.result.processingTime} span={2}>
                     {result.elapsed_seconds?.toFixed(2)} {t.result.seconds}
                   </Descriptions.Item>
-                </Descriptions>
+                </Descriptions> */}
 
-                <div style={{ marginTop: 20, textAlign: 'center' }}>
-                  <Button
-                    type="primary"
-                    size="large"
-                    icon={<DownloadOutlined />}
-                    onClick={handleDownload}
-                    style={{
-                      height: 50,
-                      fontSize: 16,
-                      fontWeight: 'bold',
-                      paddingLeft: 40,
-                      paddingRight: 40,
-                      background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-                      border: 'none',
-                      borderRadius: '8px',
-                      boxShadow: '0 4px 15px rgba(102, 126, 234, 0.4)',
-                    }}
-                  >
-                    {t.result.downloadResult}
-                  </Button>
-                </div>
+
 
                 {/* 表格对比视图 */}
                 {(() => {
@@ -345,6 +325,27 @@ const NormalizerPage = () => {
                     </div>
                   );
                 })()}
+                <div style={{ marginTop: 20, textAlign: 'center' }}>
+                  <Button
+                    type="primary"
+                    size="large"
+                    icon={<DownloadOutlined />}
+                    onClick={handleDownload}
+                    style={{
+                      height: 50,
+                      fontSize: 16,
+                      fontWeight: 'bold',
+                      paddingLeft: 40,
+                      paddingRight: 40,
+                      background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                      border: 'none',
+                      borderRadius: '8px',
+                      boxShadow: '0 4px 15px rgba(102, 126, 234, 0.4)',
+                    }}
+                  >
+                    {t.result.downloadResult}
+                  </Button>
+                </div>
               </Card>
             </Col>
           )}

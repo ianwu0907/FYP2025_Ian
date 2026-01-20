@@ -64,21 +64,16 @@ class NormalizerWrapper:
             标准化结果字典
         """
         try:
-            # 调用进度回调
+            # Stage 0: Initializing (0-10%)
             if self.progress_callback:
-                self.progress_callback("initializing", 0, "Initializing normalizer pipeline")
+                self.progress_callback("initializing", 5, "Initializing normalizer pipeline...")
 
-            # 初始化 TableNormalizer
-            self.normalizer = TableNormalizer(self.config)
+            # 初始化 TableNormalizer，传递进度回调
+            # TableNormalizer 会在每个真实阶段完成时调用这个回调
+            self.normalizer = TableNormalizer(self.config, progress_callback=self.progress_callback)
 
-            if self.progress_callback:
-                self.progress_callback("processing", 10, "Starting normalization")
-
-            # 执行标准化
+            # 执行标准化（TableNormalizer 内部会报告 10-100% 的进度）
             result = self.normalizer.normalize(input_file, output_file)
-
-            if self.progress_callback:
-                self.progress_callback("completed", 100, "Normalization completed successfully")
 
             return result
 

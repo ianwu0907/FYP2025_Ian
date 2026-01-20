@@ -2,12 +2,12 @@ import json
 import sys
 from pathlib import Path
 from typing import Dict, List
+from datetime import datetime
 import re
 from difflib import SequenceMatcher
-from datetime import datetime
 
 # ============================================
-# 评估器
+# 评估器类
 # ============================================
 
 class SpreadsheetEvaluator:
@@ -104,6 +104,7 @@ class SpreadsheetEvaluator:
             return {
                 'qa_id': qa_id,
                 'category': qa_item['category'],
+                'difficulty': qa_item.get('difficulty', 'medium'),
                 'score': 0.0,
                 'error': True,
                 'expected': qa_item['answer'],
@@ -136,8 +137,8 @@ class SpreadsheetEvaluator:
             'category': qa_item['category'],
             'difficulty': qa_item.get('difficulty', 'medium'),
             'score': score,
-            'expected': qa_item['answer'],
-            'predicted': vlm_answer[:100]  # 截断显示
+            'expected': str(qa_item['answer'])[:100],
+            'predicted': vlm_answer[:100]
         }
     
     def evaluate_all(self, responses: Dict[str, str]) -> Dict:
@@ -202,15 +203,19 @@ class SpreadsheetEvaluator:
 # 主评估函数
 # ============================================
 
-def evaluate_model(model_name: str, evaluator: SpreadsheetEvaluator, save_report: bool = True):
-    """评估指定模型的结果"""
+def evaluate_model_version(model_name: str, version: str, evaluator: SpreadsheetEvaluator, save_report: bool = True):
+    """评估指定模型的特定版本"""
     
-    model_dir = Path("outputs") / model_name
+    model_dir = Path("outputs") / model_name / version
+    
+    if not model_dir.exists():
+        print(f"❌ Directory not found: {model_dir}")
+        return None
     
     # 查找最新的响应文件
     response_files = list(model_dir.glob("responses_*.json"))
     if not response_files:
-        print(f"❌ No response files found for {model_name}")
+        print(f"❌ No response files found in {model_dir}")
         return None
     
     latest_response = max(response_files, key=lambda p: p.stat().st_mtime)
@@ -219,9 +224,8 @@ def evaluate_model(model_name: str, evaluator: SpreadsheetEvaluator, save_report
     with open(latest_response, 'r', encoding='utf-8') as f:
         responses = json.load(f)
     
-    # 评估
     print(f"\n{'='*70}")
-    print(f"📊 Evaluating: {model_name}")
+    print(f"📊 Evaluating: {model_name} - {version}")
     print(f"{'='*70}")
     print(f"📂 File: {latest_response.name}")
     
@@ -250,6 +254,9 @@ def evaluate_model(model_name: str, evaluator: SpreadsheetEvaluator, save_report
         print(f"\n⚠️  Low Scores (<50%, {len(summary['low_scores'])}):")
         for low in summary['low_scores'][:5]:
             print(f"   - {low['qa_id']}: {low['score']:.2f}")
+            if len(low['predicted']) > 0:
+                print(f"     Expected: {low['expected'][:60]}...")
+                print(f"     Got: {low['predicted'][:60]}...")
     
     # 保存详细报告
     if save_report:
@@ -261,71 +268,183 @@ def evaluate_model(model_name: str, evaluator: SpreadsheetEvaluator, save_report
     
     return summary
 
-# ============================================
-# 对比多个模型
-# ============================================
 
-def compare_models(model_names: List[str], evaluator: SpreadsheetEvaluator):
-    """对比多个模型的性能"""
+def compare_versions(model_name: str, evaluator: SpreadsheetEvaluator):
+    """对比同一模型的vanilla和formatted版本"""
     
-    results = {}
-    for model_name in model_names:
-        summary = evaluate_model(model_name, evaluator, save_report=False)
-        if summary:
-            results[model_name] = summary
+    print(f"\n{'='*70}")
+    print(f"📊 Comparing Versions: {model_name}")
+    print(f"{'='*70}")
     
-    if not results:
-        print("❌ No results to compare")
+    vanilla_summary = evaluate_model_version(model_name, 'vanilla', evaluator, save_report=False)
+    formatted_summary = evaluate_model_version(model_name, 'formatted', evaluator, save_report=False)
+    
+    if not vanilla_summary or not formatted_summary:
+        print("\n❌ Cannot compare - missing data")
         return
     
     # 生成对比表
     print(f"\n{'='*70}")
-    print(f"📊 Model Comparison")
+    print(f"📈 Version Comparison - {model_name}")
     print(f"{'='*70}")
     
-    print(f"\n{'Model':<30s} {'Overall':>10s} {'Easy':>8s} {'Medium':>8s} {'Hard':>8s}")
+    print(f"\n{'Metric':<30s} {'Vanilla':>12s} {'Formatted':>12s} {'Diff':>12s}")
     print("-" * 70)
     
-    for model_name, summary in results.items():
-        overall = summary['overall']['percentage']
-        by_diff = summary['by_difficulty']
-        easy = by_diff.get('easy', 0) * 100
-        medium = by_diff.get('medium', 0) * 100
-        hard = by_diff.get('hard', 0) * 100
-        
-        print(f"{model_name:<30s} {overall:>9.1f}% {easy:>7.1f}% {medium:>7.1f}% {hard:>7.1f}%")
+    v_overall = vanilla_summary['overall']['percentage']
+    f_overall = formatted_summary['overall']['percentage']
+    improvement = f_overall - v_overall
+    
+    print(f"{'Overall':<30s} {v_overall:>11.1f}% {f_overall:>11.1f}% {improvement:>+11.1f}%")
+    
+    # 按类别对比
+    print(f"\nBy Category:")
+    all_categories = set(vanilla_summary['by_category'].keys()) | set(formatted_summary['by_category'].keys())
+    for cat in sorted(all_categories):
+        v_score = vanilla_summary['by_category'].get(cat, 0) * 100
+        f_score = formatted_summary['by_category'].get(cat, 0) * 100
+        diff = f_score - v_score
+        print(f"  {cat:<28s} {v_score:>9.1f}% {f_score:>9.1f}% {diff:>+9.1f}%")
+    
+    # 按难度对比
+    print(f"\nBy Difficulty:")
+    all_difficulties = set(vanilla_summary['by_difficulty'].keys()) | set(formatted_summary['by_difficulty'].keys())
+    for diff_level in sorted(all_difficulties):
+        v_score = vanilla_summary['by_difficulty'].get(diff_level, 0) * 100
+        f_score = formatted_summary['by_difficulty'].get(diff_level, 0) * 100
+        diff = f_score - v_score
+        print(f"  {diff_level:<28s} {v_score:>9.1f}% {f_score:>9.1f}% {diff:>+9.1f}%")
     
     # 保存对比报告
-    timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-    comparison_file = Path("outputs") / f"comparison_{timestamp}.json"
-    with open(comparison_file, 'w', encoding='utf-8') as f:
-        json.dump(results, f, indent=2, ensure_ascii=False)
+    comparison = {
+        'model': model_name,
+        'vanilla': vanilla_summary,
+        'formatted': formatted_summary,
+        'improvement': {
+            'overall': improvement,
+            'by_category': {
+                cat: (formatted_summary['by_category'].get(cat, 0) - vanilla_summary['by_category'].get(cat, 0)) * 100
+                for cat in all_categories
+            },
+            'by_difficulty': {
+                diff: (formatted_summary['by_difficulty'].get(diff, 0) - vanilla_summary['by_difficulty'].get(diff, 0)) * 100
+                for diff in all_difficulties
+            }
+        }
+    }
     
-    print(f"\n💾 Comparison saved: {comparison_file}")
+    output_dir = Path("outputs") / model_name
+    output_file = output_dir / f"comparison_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+    with open(output_file, 'w', encoding='utf-8') as f:
+        json.dump(comparison, f, indent=2, ensure_ascii=False)
+    
+    print(f"\n💾 Comparison saved: {output_file}")
+
+
+def list_available_results():
+    """列出所有可用的测试结果"""
+    outputs_dir = Path("outputs")
+    
+    if not outputs_dir.exists():
+        print("❌ No outputs directory found")
+        return
+    
+    print(f"\n{'='*70}")
+    print(f"📁 Available Test Results")
+    print(f"{'='*70}\n")
+    
+    for model_dir in sorted(outputs_dir.iterdir()):
+        if not model_dir.is_dir():
+            continue
+        
+        print(f"📦 {model_dir.name}:")
+        
+        for version_dir in sorted(model_dir.iterdir()):
+            if not version_dir.is_dir():
+                continue
+            
+            response_files = list(version_dir.glob("responses_*.json"))
+            if response_files:
+                latest = max(response_files, key=lambda p: p.stat().st_mtime)
+                timestamp = datetime.fromtimestamp(latest.stat().st_mtime)
+                print(f"   └─ {version_dir.name:12s} ({len(response_files)} files, latest: {timestamp.strftime('%Y-%m-%d %H:%M')})")
+        
+        print()
+
+
+def show_help():
+    """显示帮助信息"""
+    help_text = """
+Usage:
+    python evaluate_results.py [options] <model_name> [version]
+    python evaluate_results.py compare <model_name>
+    python evaluate_results.py list
+
+Options:
+    <model_name>    Model name (e.g., gemini-3-pro-preview)
+    [version]       Version name (vanilla or formatted), default: vanilla
+    compare         Compare vanilla vs formatted versions
+    list            List all available results
+
+Examples:
+    # Evaluate vanilla version
+    python evaluate_results.py gemini-3-pro-preview vanilla
+    
+    # Evaluate formatted version
+    python evaluate_results.py gemini-3-pro-preview formatted
+    
+    # Compare versions
+    python evaluate_results.py compare gemini-3-pro-preview
+    
+    # List all results
+    python evaluate_results.py list
+
+Output:
+    - Console: Summary statistics
+    - File: Detailed JSON report in outputs/<model>/<version>/
+    """
+    print(help_text)
+
 
 # ============================================
 # 主程序
 # ============================================
 
 if __name__ == "__main__":
+    # 检查qa.json
+    if not Path("qa.json").exists():
+        print("❌ Error: qa.json not found")
+        print("   Please ensure qa.json is in the current directory")
+        sys.exit(1)
+    
     evaluator = SpreadsheetEvaluator("qa.json")
     
-    if len(sys.argv) > 1:
-        if sys.argv[1] == "compare":
-            # 对比所有模型
-            outputs_dir = Path("outputs")
-            model_names = [d.name for d in outputs_dir.iterdir() if d.is_dir()]
-            compare_models(model_names, evaluator)
-        else:
-            # 评估单个模型
-            evaluate_model(sys.argv[1], evaluator)
-    else:
-        # 评估所有模型
-        outputs_dir = Path("outputs")
-        if not outputs_dir.exists():
-            print("❌ No outputs directory found")
+    if len(sys.argv) == 1:
+        show_help()
+        sys.exit(0)
+    
+    command = sys.argv[1]
+    
+    if command == "list":
+        list_available_results()
+    
+    elif command == "compare":
+        if len(sys.argv) < 3:
+            print("❌ Error: Model name required")
+            print("Usage: python evaluate_results.py compare <model_name>")
             sys.exit(1)
         
-        for model_dir in outputs_dir.iterdir():
-            if model_dir.is_dir():
-                evaluate_model(model_dir.name, evaluator)
+        model_name = sys.argv[2]
+        compare_versions(model_name, evaluator)
+    
+    elif command == "help" or command == "-h" or command == "--help":
+        show_help()
+    
+    else:
+        # 评估单个版本
+        model_name = sys.argv[1]
+        version = sys.argv[2] if len(sys.argv) > 2 else "vanilla"
+        
+        evaluate_model_version(model_name, version, evaluator)
+    
+    print()
