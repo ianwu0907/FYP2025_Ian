@@ -1098,7 +1098,6 @@ class SpreadsheetEncoder:
         try:
             # Create temporary file if needed
             if not self._working_file:
-                
                 temp_file = tempfile.NamedTemporaryFile(suffix=".xlsx", delete=False)
                 temp_file_path = temp_file.name
                 temp_file.close()
