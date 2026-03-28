@@ -1,0 +1,2831 @@
+{
+  "metadata": {
+    "name": "Hong Kong Ethnic Minorities QA Dataset",
+    "description": "QA pairs for evaluating spreadsheet normalization pipeline on Hong Kong Census data",
+    "version": "1.0",
+    "created": "2026-01-21",
+    "source_folder": "Census Data - Hong Kong Ethnic Minorities",
+    "tables_count": 38,
+    "total_qa_pairs": 282
+  },
+  "qa_pairs": [
+    {
+      "id": "qa-001",
+      "table_file": "long1.xlsx",
+      "question": "What was the number of Filipinos in 2021?",
+      "answers": [
+        "201291"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-002",
+      "table_file": "long1.xlsx",
+      "question": "What was the percentage of Indonesian population in 2016?",
+      "answers": [
+        "26.2"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-003",
+      "table_file": "long1.xlsx",
+      "question": "What was the total number of all ethnic minorities in 2011?",
+      "answers": [
+        "451183"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-004",
+      "table_file": "long1.xlsx",
+      "question": "Which ethnic group had the largest population in 2021?",
+      "answers": [
+        "Filipino",
+        "菲律宾人"
+      ],
+      "answer_type": "text"
+    },
+    {
+      "id": "qa-005",
+      "table_file": "long1.xlsx",
+      "question": "How much did the Indian population increase from 2011 to 2021?",
+      "answers": [
+        "13953"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-006",
+      "table_file": "long1.xlsx",
+      "question": "What was the total Hong Kong population in 2021?",
+      "answers": [
+        "7413070"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-007",
+      "table_file": "long1.xlsx",
+      "question": "In 2021, what percentage of ethnic minorities were Asian (other than Chinese)?",
+      "answers": [
+        "78.7"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-008",
+      "table_file": "long1.xlsx",
+      "question": "Comparing 2016 and 2021, which ethnic group had the fastest population growth?",
+      "answers": [
+        "Filipino",
+        "菲律宾人"
+      ],
+      "answer_type": "text"
+    },
+    {
+      "id": "qa-009",
+      "table_file": "long1.xlsx",
+      "question": "What was the number of all ethnic minorities excluding foreign domestic helpers in 2021?",
+      "answers": [
+        "301344"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-010",
+      "table_file": "long1.xlsx",
+      "question": "What was the total increase in ethnic minority population from 2011 to 2021?",
+      "answers": [
+        "168385"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-011",
+      "table_file": "long2.xlsx",
+      "question": "What was the median age of Asians (other than Chinese) in 2011?",
+      "answers": [
+        "33.6"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-012",
+      "table_file": "long2.xlsx",
+      "question": "Which ethnic group had the highest median age in 2011?",
+      "answers": [
+        "Thai",
+        "泰国人"
+      ],
+      "answer_type": "text"
+    },
+    {
+      "id": "qa-013",
+      "table_file": "long2.xlsx",
+      "question": "How many Filipinos were in the 35-44 age group in 2011?",
+      "answers": [
+        "48555"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-014",
+      "table_file": "long2.xlsx",
+      "question": "In 2011, what percentage of Indonesians were in the 25-34 age group?",
+      "answers": [
+        "64.3"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-015",
+      "table_file": "long2.xlsx",
+      "question": "How many Indian children under 15 years old were there in 2011?",
+      "answers": [
+        "5767"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-016",
+      "table_file": "long2.xlsx",
+      "question": "Which ethnic group had the youngest median age in 2011?",
+      "answers": [
+        "Other mixed",
+        "其他混血儿"
+      ],
+      "answer_type": "text"
+    },
+    {
+      "id": "qa-017",
+      "table_file": "long2.xlsx",
+      "question": "What percentage of Pakistanis were children under 15 years old in 2011?",
+      "answers": [
+        "39.6"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-018",
+      "table_file": "long2.xlsx",
+      "question": "In 2011, how many Japanese people were in the 35-44 age group?",
+      "answers": [
+        "3893"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-019",
+      "table_file": "long2.xlsx",
+      "question": "How many White people aged 65 and above were there in 2011?",
+      "answers": [
+        "3197"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-020",
+      "table_file": "long2.xlsx",
+      "question": "What was the total number of ethnic minorities under 15 years old in 2011?",
+      "answers": [
+        "44320"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-021",
+      "table_file": "long2.xlsx",
+      "question": "What was the median age of the whole Hong Kong population in 2011?",
+      "answers": [
+        "41.7"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-022",
+      "table_file": "long2.xlsx",
+      "question": "What was the total number of mixed people with Chinese parent in 2011?",
+      "answers": [
+        "24649"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-023",
+      "table_file": "long2.xlsx",
+      "question": "Which age group had the largest population among all ethnic minorities in 2011?",
+      "answers": [
+        "25-34",
+        "25 - 34"
+      ],
+      "answer_type": "text"
+    },
+    {
+      "id": "qa-024",
+      "table_file": "long2.xlsx",
+      "question": "What was the total number of Koreans in 2011?",
+      "answers": [
+        "5209"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-025",
+      "table_file": "long3.xlsx",
+      "question": "What percentage of Asian (other than Chinese) males were never married in 2011?",
+      "answers": [
+        "23"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-026",
+      "table_file": "long3.xlsx",
+      "question": "In 2011, what percentage of Filipino females were married?",
+      "answers": [
+        "54"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-027",
+      "table_file": "long3.xlsx",
+      "question": "What percentage of Indonesian females were married in 2011?",
+      "answers": [
+        "52.6"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-028",
+      "table_file": "long3.xlsx",
+      "question": "Which ethnic group had the highest percentage of never-married overall population in 2011?",
+      "answers": [
+        "Other mixed",
+        "其他混血儿"
+      ],
+      "answer_type": "text"
+    },
+    {
+      "id": "qa-029",
+      "table_file": "long3.xlsx",
+      "question": "What percentage of South Asian males were married in 2011?",
+      "answers": [
+        "73.6"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-030",
+      "table_file": "long3.xlsx",
+      "question": "In 2011, what was the percentage of widowed/divorced/separated Indian females?",
+      "answers": [
+        "5.7"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-031",
+      "table_file": "long3.xlsx",
+      "question": "What percentage of Japanese males were married in 2011?",
+      "answers": [
+        "81.4"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-032",
+      "table_file": "long3.xlsx",
+      "question": "Which gender had a higher percentage of married population among Pakistanis in 2011?",
+      "answers": [
+        "Female",
+        "女性"
+      ],
+      "answer_type": "text"
+    },
+    {
+      "id": "qa-033",
+      "table_file": "long3.xlsx",
+      "question": "What was the overall percentage of never-married White people in 2011?",
+      "answers": [
+        "28.3"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-034",
+      "table_file": "long3.xlsx",
+      "question": "In 2011, what percentage of mixed (with Chinese parent) males were never married?",
+      "answers": [
+        "52"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-035",
+      "table_file": "long3.xlsx",
+      "question": "What percentage of females in the whole Hong Kong population were widowed/divorced/separated in 2011?",
+      "answers": [
+        "15.3"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-036",
+      "table_file": "long1.xlsx",
+      "question": "What was the percentage growth of the Filipino population from 2011 to 2021?",
+      "answers": [
+        "51.3",
+        "51.32"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-037",
+      "table_file": "long1.xlsx",
+      "question": "What was the total number of South Asian people (all sub-groups combined) in 2021?",
+      "answers": [
+        "101969"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-038",
+      "table_file": "long2.xlsx",
+      "question": "What percentage of Filipinos were in the working age population (25-54 years) in 2011?",
+      "answers": [
+        "90"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-039",
+      "table_file": "long3.xlsx",
+      "question": "Among all ethnic groups in 2011, which had the highest percentage of married females?",
+      "answers": [
+        "Pakistani",
+        "巴基斯坦人"
+      ],
+      "answer_type": "text"
+    },
+    {
+      "id": "qa-040",
+      "table_file": "long1.xlsx",
+      "question": "How many foreign domestic helpers (FDH) were estimated to be in Hong Kong in 2016?",
+      "answers": [
+        "320790"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-041",
+      "table_file": "double_counting_1.xlsx",
+      "question": "In 2021, how many domestic households had all members being ethnic minorities?",
+      "answers": [
+        "87837"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-042",
+      "table_file": "double_counting_1.xlsx",
+      "question": "In 2021, how many domestic households had both Chinese members and ethnic minorities (other than live-in FDH)?",
+      "answers": [
+        "53675"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-043",
+      "table_file": "double_counting_1.xlsx",
+      "question": "What was the total number of domestic households (ethnic minorities) in 2021?",
+      "answers": [
+        "141512"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-044",
+      "table_file": "double_counting_1.xlsx",
+      "question": "What was the total number of domestic households in the whole Hong Kong population in 2021?",
+      "answers": [
+        "2674161"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-045",
+      "table_file": "double_counting_1.xlsx",
+      "question": "What was the average household size for ethnic minority households where all members were ethnic minorities in 2021?",
+      "answers": [
+        "2.7"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-046",
+      "table_file": "double_counting_1.xlsx",
+      "question": "What was the average household size for households with both Chinese members and ethnic minorities (other than live-in FDH) in 2021?",
+      "answers": [
+        "3.5"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-047",
+      "table_file": "double_counting_1.xlsx",
+      "question": "What was the overall average household size for ethnic minority households in 2021?",
+      "answers": [
+        "3"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-048",
+      "table_file": "double_counting_1.xlsx",
+      "question": "What was the median floor area (in square metres) of ethnic minority households where all members were ethnic minorities in 2021?",
+      "answers": [
+        "42"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-049",
+      "table_file": "double_counting_1.xlsx",
+      "question": "What was the median monthly household income (HK$) for households with all members being ethnic minorities in 2021?",
+      "answers": [
+        "37850"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-050",
+      "table_file": "double_counting_1.xlsx",
+      "question": "What was the median monthly household income (HK$) for the whole Hong Kong population in 2021?",
+      "answers": [
+        "27650"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-051",
+      "table_file": "double_counting_1.xlsx",
+      "question": "In 2021, what was the median monthly household income (HK$) for households with both Chinese members and ethnic minorities (other than live-in FDH)?",
+      "answers": [
+        "41320"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-052",
+      "table_file": "double_counting_1.xlsx",
+      "question": "How much higher was the overall median monthly household income of ethnic minority households compared to the whole Hong Kong population in 2021?",
+      "answers": [
+        "11450"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-053",
+      "table_file": "double_counting_1.xlsx",
+      "question": "In 2021, what was the difference in median floor area between ethnic minority households with both Chinese and ethnic minority members and those with all members being ethnic minorities?",
+      "answers": [
+        "4"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-054",
+      "table_file": "double_counting_1.xlsx",
+      "question": "In 2021, what proportion (as a percentage) of all ethnic minority domestic households had all members being ethnic minorities?",
+      "answers": [
+        "62.1",
+        "62.07"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-055",
+      "table_file": "double_counting_1.xlsx",
+      "question": "By how much (HK$) did the overall median monthly household income of ethnic minority households exceed that of the whole Hong Kong population in 2021?",
+      "answers": [
+        "11450"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-056",
+      "table_file": "structural_1.xlsx",
+      "question": "In 2021, what was the proportion (%) of ethnic minority males aged 85+ (including FDH) with long-term care needs?",
+      "answers": [
+        "64.6"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-057",
+      "table_file": "structural_1.xlsx",
+      "question": "In 2021, what was the overall proportion (%) of ethnic minority females (including FDH) aged 60 and over with long-term care needs?",
+      "answers": [
+        "16"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-058",
+      "table_file": "structural_1.xlsx",
+      "question": "In 2021, what was the proportion (%) of the whole Hong Kong population aged 75-79 overall with long-term care needs?",
+      "answers": [
+        "23.4"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-059",
+      "table_file": "structural_1.xlsx",
+      "question": "In 2021, what was the overall proportion (%) of ethnic minority males (excluding FDH) aged 60 and over with long-term care needs?",
+      "answers": [
+        "13.6"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-060",
+      "table_file": "structural_1.xlsx",
+      "question": "In 2021, what was the proportion (%) of whole Hong Kong population females aged 80-84 with long-term care needs?",
+      "answers": [
+        "43.9"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-061",
+      "table_file": "structural_1.xlsx",
+      "question": "In 2021, how many percentage points higher was the long-term care needs proportion for ethnic minority females aged 85+ compared to ethnic minority males aged 85+ (including FDH)?",
+      "answers": [
+        "8.6"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-062",
+      "table_file": "structural_1.xlsx",
+      "question": "In 2021 (including FDH), what was the difference in the overall long-term care needs proportion (%) between the whole Hong Kong population and ethnic minorities overall?",
+      "answers": [
+        "1.5"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-063",
+      "table_file": "structural_1.xlsx",
+      "question": "For ethnic minority females aged 65-69, how many percentage points higher is the long-term care needs proportion when excluding FDH compared to including FDH?",
+      "answers": [
+        "1.8"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-064",
+      "table_file": "structural_1.xlsx",
+      "question": "In 2021 (excluding FDH), what was the difference in overall long-term care needs proportion (%) between ethnic minority females and ethnic minority males aged 60 and over?",
+      "answers": [
+        "6.1"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-065",
+      "table_file": "structural_1.xlsx",
+      "question": "In 2021 (including FDH), for the age group 60-64, how many percentage points higher was the long-term care needs proportion for the whole Hong Kong population females compared to ethnic minority females?",
+      "answers": [
+        "1"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-066",
+      "table_file": "structural_1.xlsx",
+      "question": "In 2021, for ethnic minority males aged 70-74, is the long-term care needs proportion the same whether FDH are included or excluded? What is the value?",
+      "answers": [
+        "13.3"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-067",
+      "table_file": "structural_1.xlsx",
+      "question": "In 2021, what is the difference in overall long-term care needs proportion (%) for ethnic minorities overall between the 'excluding FDH' and 'including FDH' sections?",
+      "answers": [
+        "1.9"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-068",
+      "table_file": "structural_1.xlsx",
+      "question": "In 2021 (including FDH), what is the largest gap in percentage points between ethnic minority female and ethnic minority male long-term care needs proportion across all age groups?",
+      "answers": [
+        "11.8"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-069",
+      "table_file": "structural_1.xlsx",
+      "question": "In 2021 (including FDH), what is the difference in overall long-term care needs proportion (%) between the whole Hong Kong population females and ethnic minority females aged 60 and over?",
+      "answers": [
+        "3.8"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-070",
+      "table_file": "structural_1.xlsx",
+      "question": "In 2021 (excluding FDH), for ethnic minority females aged 60-64, how many percentage points higher is their long-term care needs proportion compared to the 'including FDH' figure?",
+      "answers": [
+        "2.1"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-071",
+      "table_file": "double_counting_2.xlsx",
+      "question": "In 2021, how many male single parents were born in Hong Kong?",
+      "answers": [
+        "10584"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-072",
+      "table_file": "double_counting_2.xlsx",
+      "question": "In 2016, what was the total number of female single parents?",
+      "answers": [
+        "56545"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-073",
+      "table_file": "double_counting_2.xlsx",
+      "question": "In 2011, what percentage of female single parents were born in the mainland of China / Macao / Taiwan?",
+      "answers": [
+        "49.7"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-074",
+      "table_file": "double_counting_2.xlsx",
+      "question": "In 2021, what was the total number of single parents (both sexes)?",
+      "answers": [
+        "72279"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-075",
+      "table_file": "double_counting_2.xlsx",
+      "question": "In 2021, what percentage of all single parents (both sexes) were born elsewhere (outside HK and Mainland/Macao/Taiwan)?",
+      "answers": [
+        "4.7"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-076",
+      "table_file": "double_counting_2.xlsx",
+      "question": "How many fewer single parents were there in 2021 compared to 2011?",
+      "answers": [
+        "9426"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-077",
+      "table_file": "double_counting_2.xlsx",
+      "question": "In 2021, how many more female single parents were there than male single parents?",
+      "answers": [
+        "40219"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-078",
+      "table_file": "double_counting_2.xlsx",
+      "question": "In 2021, how many single parents (both sexes) were born in the mainland of China / Macao / Taiwan?",
+      "answers": [
+        "36638"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-079",
+      "table_file": "double_counting_2.xlsx",
+      "question": "Between 2016 and 2021, by how many did the number of female single parents born in Hong Kong decrease?",
+      "answers": [
+        "1940"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-080",
+      "table_file": "double_counting_2.xlsx",
+      "question": "In 2021, what percentage of male single parents were born in Hong Kong?",
+      "answers": [
+        "66"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-081",
+      "table_file": "double_counting_2.xlsx",
+      "question": "A student estimates that 50.1% + 66.2% = 116.3% of single parents in 2011 were born in Hong Kong by adding the 'Both sexes' HK% and the 'Male' HK%. What is the correct percentage of all single parents born in Hong Kong in 2011?",
+      "answers": [
+        "50.1"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-082",
+      "table_file": "double_counting_2.xlsx",
+      "question": "In 2011, a researcher calculates the overall % of single parents born in HK as (66.2% + 45.6%) / 2 = 55.9%. What does the table actually state as the both-sexes HK-born percentage in 2011?",
+      "answers": [
+        "50.1"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-083",
+      "table_file": "double_counting_3.xlsx",
+      "question": "In 2021, how many male single parents had been residing in Hong Kong for 15 or more years?",
+      "answers": [
+        "14687"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-084",
+      "table_file": "double_counting_3.xlsx",
+      "question": "In 2016, what percentage of female single parents had resided in Hong Kong for less than 7 years?",
+      "answers": [
+        "13.2"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-085",
+      "table_file": "double_counting_3.xlsx",
+      "question": "In 2021, what percentage of all single parents (both sexes) had resided in Hong Kong for 15 or more years?",
+      "answers": [
+        "74.6"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-086",
+      "table_file": "double_counting_3.xlsx",
+      "question": "Between 2016 and 2021, by how many did the number of both-sexes single parents residing in Hong Kong for less than 7 years decrease?",
+      "answers": [
+        "2303"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-087",
+      "table_file": "double_counting_3.xlsx",
+      "question": "In 2021, how many more female single parents than male single parents had resided in Hong Kong for 7–14 years?",
+      "answers": [
+        "10628"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-088",
+      "table_file": "double_counting_4.xlsx",
+      "question": "In 2021, how many female single parents had post-secondary education?",
+      "answers": [
+        "14838"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-089",
+      "table_file": "double_counting_4.xlsx",
+      "question": "In 2011, what percentage of male single parents had primary education or below?",
+      "answers": [
+        "18.6"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-090",
+      "table_file": "double_counting_4.xlsx",
+      "question": "In 2021, how many both-sexes single parents had upper secondary education?",
+      "answers": [
+        "26826"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-091",
+      "table_file": "double_counting_4.xlsx",
+      "question": "In 2016, what was the secondary education sub-total count for female single parents?",
+      "answers": [
+        "37578"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-092",
+      "table_file": "double_counting_4.xlsx",
+      "question": "In 2021, what percentage of both-sexes single parents had secondary education?",
+      "answers": [
+        "65.5"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-093",
+      "table_file": "double_counting_4.xlsx",
+      "question": "Between 2011 and 2021, by how many did the number of both-sexes single parents with post-secondary education increase?",
+      "answers": [
+        "6919"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-094",
+      "table_file": "double_counting_4.xlsx",
+      "question": "In 2021, how many more female single parents had upper secondary education compared to male single parents with upper secondary education?",
+      "answers": [
+        "13838"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-095",
+      "table_file": "double_counting_4.xlsx",
+      "question": "In 2021,  What is the male secondary education sub-total count?",
+      "answers": [
+        "10911"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-096",
+      "table_file": "double_counting_4.xlsx",
+      "question": "In 2021, what is the correct total number of male single parents calculated by summing primary & below, secondary, and post-secondary?",
+      "answers": [
+        "16030"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-097",
+      "table_file": "double_counting_4.xlsx",
+      "question": "A student calculates the total number of male single parents in 2021 by summing all rows: primary (1,146) + lower secondary (4,417) + upper secondary (6,494) + secondary sub-total (10,911) + post-secondary (3,973). What is the correct male total, and by how much does the student's sum overcount?",
+      "answers": [
+        "10911"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-098",
+      "table_file": "double_counting_4.xlsx",
+      "question": "In 2021, a researcher sums the both-sexes percentages: primary (8.5%) + lower secondary (28.4%) + upper secondary (37.1%) + secondary sub-total (65.5%) + post-secondary (26.0%) = 165.5%. What should the percentages correctly sum to?",
+      "answers": [
+        "100"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-099",
+      "table_file": "double_counting_4.xlsx",
+      "question": "In 2021, what is the correct total number of both-sexes single parents if you sum primary & below, lower secondary, upper secondary, and post-secondary?",
+      "answers": [
+        "72279"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-100",
+      "table_file": "double_counting_4.xlsx",
+      "question": "From 2011 to 2021, by how many did the number of both-sexes single parents with primary education or below decrease?",
+      "answers": [
+        "8120"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-101",
+      "table_file": "double_counting_4.xlsx",
+      "question": "In 2021, what is the both-sexes post-secondary total in the table?",
+      "answers": [
+        "18811"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-102",
+      "table_file": "structural_2.xlsx",
+      "question": "In 2021, how many non-working single parents (both sexes) were home-makers?",
+      "answers": [
+        "8619"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-103",
+      "table_file": "structural_2.xlsx",
+      "question": "In 2021, how many non-working persons living with child(ren) aged under 18 (both sexes) were home-makers?",
+      "answers": [
+        "142129"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-104",
+      "table_file": "structural_2.xlsx",
+      "question": "In 2021, what was the total number of non-working single parents (both sexes)?",
+      "answers": [
+        "27344"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-105",
+      "table_file": "structural_2.xlsx",
+      "question": "In 2016, how many non-working single parents (both sexes) were retired persons?",
+      "answers": [
+        "1351"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-106",
+      "table_file": "structural_2.xlsx",
+      "question": "In 2021, what percentage of both-sexes non-working single parents were unpaid carers?",
+      "answers": [
+        "37.2"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-107",
+      "table_file": "structural_2.xlsx",
+      "question": "In 2021, how many more non-working persons living with children under 18 (both sexes) were home-makers compared to non-working single parents who were home-makers?",
+      "answers": [
+        "133510"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-108",
+      "table_file": "structural_2.xlsx",
+      "question": "In 2021, what is the difference in the number of non-working persons living with children under 18 (both sexes) between 2016 and 2021?",
+      "answers": [
+        "2258"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-109",
+      "table_file": "double_counting_5.xlsx",
+      "question": "In 2021, how many non-working single parents (both sexes) had a monthly household income of HK$10,000–14,999?",
+      "answers": [
+        "9744"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-110",
+      "table_file": "double_counting_5.xlsx",
+      "question": "In 2016, what was the median monthly household income (HK$) for female non-working single parents?",
+      "answers": [
+        "11250"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-111",
+      "table_file": "double_counting_5.xlsx",
+      "question": "In 2021, what percentage of male non-working single parents had a monthly household income of HK$20,000 or above?",
+      "answers": [
+        "23.2"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-112",
+      "table_file": "double_counting_5.xlsx",
+      "question": "In 2011, what was the total number of non-working single parents (both sexes)?",
+      "answers": [
+        "33964"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-113",
+      "table_file": "double_counting_5.xlsx",
+      "question": "Between 2011 and 2016, by how many did the total number of non-working single parents (both sexes) decrease?",
+      "answers": [
+        "10191"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-114",
+      "table_file": "double_counting_5.xlsx",
+      "question": "In 2021, what was the difference in median monthly household income (HK$) between male and female non-working single parents?",
+      "answers": [
+        "90"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-115",
+      "table_file": "double_counting_5.xlsx",
+      "question": "In 2021, how many female non-working single parents had a monthly household income below HK$6,000 (i.e. in the <2,000 and 2,000–3,999 and 4,000–5,999 bands combined)?",
+      "answers": [
+        "3403"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-116",
+      "table_file": "double_counting_5.xlsx",
+      "question": "What is the correct total number of non-working single parents in 2021?",
+      "answers": [
+        "27314"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-117",
+      "table_file": "double_counting_5.xlsx",
+      "question": "What does the table actually state as the both-sexes percentage for this band?",
+      "answers": [
+        "35.7"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-118",
+      "table_file": "structural_3.xlsx",
+      "question": "In 2011 (including FDH), what was the school attendance rate (%) for ethnic minority females aged 18–24?",
+      "answers": [
+        "11.7"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-119",
+      "table_file": "structural_3.xlsx",
+      "question": "In 2011 (excluding FDH), what was the school attendance rate (%) for ethnic minority females aged 18–24?",
+      "answers": [
+        "38.0"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-120",
+      "table_file": "structural_3.xlsx",
+      "question": "In 2016 (including FDH), what was the overall school attendance rate (%) for ethnic minority males aged 3 and over?",
+      "answers": [
+        "6.3"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-121",
+      "table_file": "structural_3.xlsx",
+      "question": "In 2016 (excluding FDH), what was the overall school attendance rate (%) for the whole Hong Kong population aged 3 and over?",
+      "answers": [
+        "18.5"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-122",
+      "table_file": "structural_3.xlsx",
+      "question": "In 2011 (including FDH), what was the school attendance rate (%) for the whole Hong Kong population females aged 12–17?",
+      "answers": [
+        "97.7"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-123",
+      "table_file": "structural_3.xlsx",
+      "question": "In 2016, by how many percentage points did the school attendance rate for ethnic minority females aged 18–24 increase when foreign domestic helpers are excluded compared to when they are included?",
+      "answers": [
+        "22.4"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-124",
+      "table_file": "structural_3.xlsx",
+      "question": "In 2011 (excluding FDH), what was the difference in school attendance rate (percentage points) between ethnic minority females aged 3 and over and the whole Hong Kong population females aged 3 and over?",
+      "answers": [
+        "6.7"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-125",
+      "table_file": "structural_3.xlsx",
+      "question": "In 2016 (including FDH), what was the difference in school attendance rate (percentage points) between ethnic minority males aged 18–24 and the whole Hong Kong population males aged 18–24?",
+      "answers": [
+        "9.5"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-126",
+      "table_file": "structural_3.xlsx",
+      "question": "In 2016 (excluding FDH), what was the gap in the aged-3-and-over overall school attendance rate between ethnic minorities and the whole Hong Kong population?",
+      "answers": [
+        "5.5"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-127",
+      "table_file": "structural_4.xlsx",
+      "question": "In 2021, what was the median age of single fathers in Wan Chai?",
+      "answers": [
+        "52.6"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-128",
+      "table_file": "structural_4.xlsx",
+      "question": "In 2021, what was the average number of dependent children for single mothers in Tsuen Wan?",
+      "answers": [
+        "1.5"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-129",
+      "table_file": "structural_4.xlsx",
+      "question": "In 2021, what was the median age of dependent children for single mothers in Yau Tsim Mong?",
+      "answers": [
+        "8.6"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-130",
+      "table_file": "structural_4.xlsx",
+      "question": "In 2021, what was the overall (both single fathers and mothers combined) median age in Tai Po?",
+      "answers": [
+        "42.0"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-131",
+      "table_file": "structural_4.xlsx",
+      "question": "In 2021, what was the average number of dependent children for single fathers in North district?",
+      "answers": [
+        "1.1"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-132",
+      "table_file": "structural_4.xlsx",
+      "question": "In 2021, what was the median age of dependent children for single fathers in Tai Po?",
+      "answers": [
+        "14.1"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-133",
+      "table_file": "structural_4.xlsx",
+      "question": "In 2021, what was the land overall median age for single mothers?",
+      "answers": [
+        "42.9"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-134",
+      "table_file": "structural_4.xlsx",
+      "question": "In 2021, what was the difference in median age between single fathers and single mothers in Wan Chai?",
+      "answers": [
+        "9.2"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-135",
+      "table_file": "structural_4.xlsx",
+      "question": "In 2021, what was the difference in median age between single fathers and single mothers in the overall land figure?",
+      "answers": [
+        "3.3"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-136",
+      "table_file": "structural_4.xlsx",
+      "question": "In 2021, what was the difference in the median age of dependent children for single fathers between Tai Po (the highest) and Sai Kung (the lowest among all districts)?",
+      "answers": [
+        "3.4"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-137",
+      "table_file": "structural_4.xlsx",
+      "question": "In 2021, which region had the lowest overall median age among the three regions (Hong Kong Island, Kowloon, New Territories)? What was that value?",
+      "answers": [
+        "42.7"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-138",
+      "table_file": "structural_4.xlsx",
+      "question": "In 2021, what was the difference in average number of dependent children between single mothers in Tsuen Wan (highest in NT) and single mothers in Sai Kung (lowest in NT)?",
+      "answers": [
+        "0.3"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-139",
+      "table_file": "structural_5.xlsx",
+      "question": "In 2021, how many dependent children of single parents were there in Sham Shui Po?",
+      "answers": [
+        "8059"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-140",
+      "table_file": "structural_5.xlsx",
+      "question": "In 2016, what percentage of dependent children of single parents were in the New Territories?",
+      "answers": [
+        "52.6"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-141",
+      "table_file": "structural_5.xlsx",
+      "question": "In 2021, what was the land total number of dependent children of single parents?",
+      "answers": [
+        "94508"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-142",
+      "table_file": "structural_5.xlsx",
+      "question": "In 2011, how many dependent children of single parents were in Yuen Long?",
+      "answers": [
+        "12639"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-143",
+      "table_file": "structural_5.xlsx",
+      "question": "In 2021, what percentage of the land total did Kwun Tong account for?",
+      "answers": [
+        "10.7"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-144",
+      "table_file": "structural_5.xlsx",
+      "question": "By how many did the land total number of dependent children of single parents decrease from 2011 to 2016?",
+      "answers": [
+        "9986"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-145",
+      "table_file": "structural_5.xlsx",
+      "question": "Between 2011 and 2021, by how many did the number of dependent children of single parents increase in Sham Shui Po?",
+      "answers": [
+        "1276"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-146",
+      "table_file": "structural_5.xlsx",
+      "question": "In 2021, what percentage of the land total did Kwun Tong account for?",
+      "answers": [
+        "10.7"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-147",
+      "table_file": "double_counting_6.xlsx",
+      "question": "In 2021, what was the median monthly domestic household income (HK$) for male single parents?",
+      "answers": [
+        "23400"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-148",
+      "table_file": "double_counting_6.xlsx",
+      "question": "In 2016, what was the total number of female single parents living in domestic households?",
+      "answers": [
+        "56515"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-149",
+      "table_file": "double_counting_6.xlsx",
+      "question": "In 2016, what percentage of female single parents had a monthly household income of HK$10,000–14,999?",
+      "answers": [
+        "35.8"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-150",
+      "table_file": "double_counting_6.xlsx",
+      "question": "In 2021, what was the median monthly domestic household income (HK$) for all single parents (both sexes)?",
+      "answers": [
+        "18260"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-151",
+      "table_file": "double_counting_6.xlsx",
+      "question": "In 2021, how many male single parents had a monthly household income of HK$40,000–59,999?",
+      "answers": [
+        "1888"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-152",
+      "table_file": "double_counting_6.xlsx",
+      "question": "In 2021, how much higher was the median monthly household income of male single parents compared to female single parents?",
+      "answers": [
+        "6490"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-153",
+      "table_file": "double_counting_6.xlsx",
+      "question": "In 2021, what percentage of male single parents had a monthly household income of HK$20,000 or above?",
+      "answers": [
+        "60.6"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-154",
+      "table_file": "double_counting_6.xlsx",
+      "question": "In 2021, what percentage of male single parents had a monthly income below HK$8,000 ?",
+      "answers": [
+        "6.4"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-155",
+      "table_file": "double_counting_6.xlsx",
+      "question": "In 2021, what percentage of female single parents had a monthly household income above HK$30,000 ?",
+      "answers": [
+        "24.3"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-156",
+      "table_file": "structural_6.xlsx",
+      "question": "How many games did the manager record at SV Sandhausen in total?",
+      "answers": [
+        "108"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-157",
+      "table_file": "structural_6.xlsx",
+      "question": "What was the win percentage at Karlsruher SC?",
+      "answers": [
+        "50.00"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-158",
+      "table_file": "structural_6.xlsx",
+      "question": "How many losses did the manager record across all clubs in total?",
+      "answers": [
+        "141"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-159",
+      "table_file": "structural_6.xlsx",
+      "question": "How many draws did the manager record at 1. FC Kaiserslautern II?",
+      "answers": [
+        "48"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-160",
+      "table_file": "structural_6.xlsx",
+      "question": "Across the manager's two separate spells at Rot-Weiß Erfurt, what was the combined total number of games managed?",
+      "answers": [
+        "40"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-161",
+      "table_file": "structural_6.xlsx",
+      "question": "Combining both spells at Rot-Weiß Erfurt, how many total wins did the manager record there?",
+      "answers": [
+        "11"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-162",
+      "table_file": "structural_6.xlsx",
+      "question": "For 1. FC Kaiserslautern (the main team, not the reserve team), what was the win percentage?",
+      "answers": [
+        "25.00"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-163",
+      "table_file": "structural_7.xlsx",
+      "question": "How many receptions did the player record in the 2015 season?",
+      "answers": [
+        "51"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-164",
+      "table_file": "structural_7.xlsx",
+      "question": "What was the player's career total rushing yards?",
+      "answers": [
+        "958"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-165",
+      "table_file": "structural_7.xlsx",
+      "question": "How many fumbles did the player lose across their entire career?",
+      "answers": [
+        "5"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-166",
+      "table_file": "structural_7.xlsx",
+      "question": "What was the player's career total rushing touchdowns plus receiving touchdowns combined?",
+      "answers": [
+        "8"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-167",
+      "table_file": "structural_7.xlsx",
+      "question": "In 2015, what were the player's total scrimmage yards (rushing yards plus receiving yards combined)?",
+      "answers": [
+        "1090"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-168",
+      "table_file": "structural_7.xlsx",
+      "question": "In 2014 and 2016, the player recorded the same number of receiving yards (190) in both seasons. In which season did the player have more receptions, and how many more?",
+      "answers": [
+        "5"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-169",
+      "table_file": "structural_7.xlsx",
+      "question": "A researcher calculates the career rushing average by averaging the four season averages: (2.8 + 4.9 + 2.9 + 4.5) ÷ 4 = 3.775 yards per carry. What does the table actually state as the career rushing average?",
+      "answers": [
+        "3.9"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-170",
+      "table_file": "structural_7.xlsx",
+      "question": "A researcher calculates the career receiving average by summing the four season averages: (10.0 + 11.0 + 7.9 + 7.1) ÷ 4 = 9.0 yards per reception. What does the table state as the career receiving average?",
+      "answers": [
+        "9.2"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-171",
+      "table_file": "structural_7.xlsx",
+      "question": "A researcher calculates the career longest rush by adding the four season longest runs: 20 + 59 + 23 + 21 = 123 yards. What does the table actually state as the career longest rush?",
+      "answers": [
+        "59"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-172",
+      "table_file": "double_counting_7.xlsx",
+      "question": "What was the Department of Defense's proposed 2019 R&D budget (in millions of dollars)?",
+      "answers": [
+        "57156"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-173",
+      "table_file": "double_counting_7.xlsx",
+      "question": "What was the 2017 actual R&D spending for the National Science Foundation (in millions of dollars)?",
+      "answers": [
+        "5938"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-174",
+      "table_file": "double_counting_7.xlsx",
+      "question": "What was the percent change in R&D spending for the Environmental Protection Agency from 2018 to 2019?",
+      "answers": [
+        "-46"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-175",
+      "table_file": "double_counting_7.xlsx",
+      "question": "What was the dollar change in Department of Defense R&D spending from 2018 annualized CR to 2019 proposed?",
+      "answers": [
+        "13540"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-176",
+      "table_file": "double_counting_7.xlsx",
+      "question": "What was the 2018 annualized CR for the Department of Health and Human Services (in millions of dollars)?",
+      "answers": [
+        "33772"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-177",
+      "table_file": "double_counting_7.xlsx",
+      "question": "What was the dollar change in the overall total R&D budget from 2018 annualized CR to 2019 proposed?",
+      "answers": [
+        "2845"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-178",
+      "table_file": "double_counting_7.xlsx",
+      "question": "By how much did the Department of Defense's R&D budget change from 2017 actual to 2019 proposed?",
+      "answers": [
+        "7959"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-179",
+      "table_file": "double_counting_7.xlsx",
+      "question": "In the 2019 proposed budget, what was the combined R&D spending of the Department of Defense and the Department of Health and Human Services?",
+      "answers": [
+        "81898"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-180",
+      "table_file": "double_counting_7.xlsx",
+      "question": "What is the total for the 2017 actual R&D spending in listed agency rows?",
+      "answers": [
+        "125289"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-181",
+      "table_file": "double_counting_7.xlsx",
+      "question": "What is the correct 2018 CR total for listed agency rows?",
+      "answers": [
+        "119001"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-182",
+      "table_file": "double_counting_7.xlsx",
+      "question": "Which agency had the largest absolute dollar decrease in R&D spending from 2018 annualized CR to 2019 proposed?",
+      "answers": [
+        "9030"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-183",
+      "table_file": "double_counting_7.xlsx",
+      "question": "In 2019, what is the total proposed R&D spending for listed agency rows?",
+      "answers": [
+        "118056"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-184",
+      "table_file": "structural_8.xlsx",
+      "question": "What is the coefficient on the granular shock in specification 2?",
+      "answers": [
+        "0.768"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-185",
+      "table_file": "structural_8.xlsx",
+      "question": "What is the standard error of the constant in specification 1?",
+      "answers": [
+        "0.014"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-186",
+      "table_file": "structural_8.xlsx",
+      "question": "What is the R-squared for specification 2?",
+      "answers": [
+        "0.37"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-187",
+      "table_file": "structural_8.xlsx",
+      "question": "What is the standard error of the granular shock coefficient in specification 1?",
+      "answers": [
+        "0.216"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-188",
+      "table_file": "structural_8.xlsx",
+      "question": "What is the t-statistic for the granular shock coefficient in specification 1? (t = coefficient / standard error)",
+      "answers": [
+        "2.64"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-189",
+      "table_file": "structural_8.xlsx",
+      "question": "What is the difference in R-squared between specification 2 and specification 1?",
+      "answers": [
+        "0.24"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-190",
+      "table_file": "structural_8.xlsx",
+      "question": "Across all three specifications, what is the difference between the largest and smallest granular shock coefficients?",
+      "answers": [
+        "0.198"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-191",
+      "table_file": "structural_8.xlsx",
+      "question": "Specifications 2 and 3 have nearly identical granular shock coefficients (0.768 and 0.764) and identical standard errors (0.149). What is the difference in their R-squared values?",
+      "answers": [
+        "0.01"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-192",
+      "table_file": "structural_9.xlsx",
+      "question": "What percentage of economic class immigrants had Toronto as their initial destination?",
+      "answers": [
+        "34.0"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-193",
+      "table_file": "structural_9.xlsx",
+      "question": "What percentage of government-assisted refugees had less than high school education at landing?",
+      "answers": [
+        "72.9"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-194",
+      "table_file": "structural_9.xlsx",
+      "question": "What percentage of privately sponsored refugees knew neither English nor French at landing?",
+      "answers": [
+        "53.2"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-195",
+      "table_file": "structural_9.xlsx",
+      "question": "What percentage of privately sponsored refugees came from West Asia?",
+      "answers": [
+        "47.5"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-196",
+      "table_file": "structural_9.xlsx",
+      "question": "For government-assisted refugees, what percentage were destined for either medium-sized or small census metropolitan areas combined?",
+      "answers": [
+        "57.6"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-197",
+      "table_file": "structural_9.xlsx",
+      "question": "For privately sponsored refugees, what was the combined percentage from Africa and West Asia as source regions?",
+      "answers": [
+        "92.3"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-198",
+      "table_file": "structural_9.xlsx",
+      "question": "What is the difference in the percentage with a bachelor's degree or higher between economic class immigrants and government-assisted refugees?",
+      "answers": [
+        "54.1"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-199",
+      "table_file": "structural_10.xlsx",
+      "question": "In the second year after immigration, what percentage of government-assisted refugees were not in the labour force in the previous year?",
+      "answers": [
+        "56.9"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-200",
+      "table_file": "structural_10.xlsx",
+      "question": "In the fifth year after immigration, what percentage of family class immigrants were unemployed in the previous year?",
+      "answers": [
+        "28.8"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-201",
+      "table_file": "structural_10.xlsx",
+      "question": "For government-assisted refugees, by how many percentage points did the 'not in the labour force' rate change from the second year to the fifth year after immigration?",
+      "answers": [
+        "20.3"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-202",
+      "table_file": "structural_10.xlsx",
+      "question": "In the second year after immigration, what was the combined percentage of privately sponsored refugees who were either not in the labour force or unemployed in the previous year?",
+      "answers": [
+        "35.6"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-203",
+      "table_file": "structural_11.xlsx",
+      "question": "In 2018, what was the victimization rate (%) for unwanted sexual touching among female victims of the Canadian Armed Forces?",
+      "answers": [
+        "5.8"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-204",
+      "table_file": "structural_11.xlsx",
+      "question": "In 2016, what was the total number of sexual assault victims across all genders?",
+      "answers": [
+        "680"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-205",
+      "table_file": "structural_11.xlsx",
+      "question": "Between 2016 and 2018, did the total number of sexual assault victims increase or decrease, and by how many?",
+      "answers": [
+        "80"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-206",
+      "table_file": "structural_12.xlsx",
+      "question": "In 2018, what was the total sexual assault victimization rate (%) for non-indigenous persons?",
+      "answers": [
+        "2.0"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-207",
+      "table_file": "structural_12.xlsx",
+      "question": "In 2018, among junior non-commissioned members, what was the female victimization rate (%) for total sexual assault?",
+      "answers": [
+        "8.2"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-208",
+      "table_file": "structural_12.xlsx",
+      "question": "In 2016, what is total sexual assault victimization rate (%) for female victims below 40 years old?",
+      "answers": [
+        "37"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-209",
+      "table_file": "structural_12.xlsx",
+      "question": "In 2018, what was the total number of sexual assault victims aged 24 years and younger?",
+      "answers": [
+        "260"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-210",
+      "table_file": "structural_13.xlsx",
+      "question": "What percentage of total victims reported that the perpetrator was a lone individual?",
+      "answers": [
+        "83"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-211",
+      "table_file": "structural_14.xlsx",
+      "question": "For female victims, what percentage reported they 'always' had negative emotional impacts?",
+      "answers": [
+        "32"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-212",
+      "table_file": "structural_14.xlsx",
+      "question": "For male victims, what is the percentage reported they 'never' avoided optional work-related social functions?",
+      "answers": [
+        "71"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-213",
+      "table_file": "structural_14.xlsx",
+      "question": "For the 'overall impact' section, what percentage of total victims stated 'always' for at least one of the listed impacts?",
+      "answers": [
+        "37"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-214",
+      "table_file": "structural_14.xlsx",
+      "question": "for male victims, what is the percentage who reported 'never' for avoided or wanted to avoid specific people at work?",
+      "answers": [
+        "53"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-215",
+      "table_file": "structural_14.xlsx",
+      "question": "For female victims, what percentage reported they 'always' avoided or wanted to avoid specific people at work?",
+      "answers": [
+        "45"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-216",
+      "table_file": "structural_15.xlsx",
+      "question": "What was the total number of CAF members who experienced sexualized or discriminatory behaviours?",
+      "answers": [
+        "19570"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-217",
+      "table_file": "structural_15.xlsx",
+      "question": "For women in the CAF, what percentage experienced total sexualized behaviours?",
+      "answers": [
+        "76"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-218",
+      "table_file": "structural_15.xlsx",
+      "question": "For women in CAF, what is the percentage experiencing 'inappropriate verbal or non-verbal communication'?",
+      "answers": [
+        "75"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-219",
+      "table_file": "structural_15.xlsx",
+      "question": "Among CAF members aged 30–34, what percentage experienced total discriminatory behaviours?",
+      "answers": [
+        "33"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-220",
+      "table_file": "structural_15.xlsx",
+      "question": "For the Royal Canadian Navy, what percentage of members experienced total sexualized or discriminatory behaviours?",
+      "answers": [
+        "75"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-221",
+      "table_file": "structural_16.xlsx",
+      "question": "What was the total number of CAF members who were targeted by sexualized or discriminatory behaviours?",
+      "answers": [
+        "4560"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-222",
+      "table_file": "structural_16.xlsx",
+      "question": "What percentage of women in the CAF were targeted by total sexualized or discriminatory behaviours?",
+      "answers": [
+        "34"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-223",
+      "table_file": "structural_16.xlsx",
+      "question": "what percentage of men in the CAF were targeted by discrimination on the basis of sexual orientation or gender identity ?",
+      "answers": [
+        "0.7"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-224",
+      "table_file": "structural_16.xlsx",
+      "question": "For junior non-commissioned members, what was the rate (%) of being targeted by physical contact or suggested sexual relations?",
+      "answers": [
+        "7.2"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-225",
+      "table_file": "structural_16.xlsx",
+      "question": "For CAF members aged 25–29, what was the rate (%) of being targeted by total sexualized behaviours?",
+      "answers": [
+        "20"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-226",
+      "table_file": "structural_17.xlsx",
+      "question": "For the behaviour 'repeated pressure from the same person for dates or sexual relations', what percentage of incidents involved a lone person responsible?",
+      "answers": [
+        "67"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-227",
+      "table_file": "structural_17.xlsx",
+      "question": "For the behavior 'sexual jokes', what is the percentage of incidents are always men ?",
+      "answers": [
+        "42"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-228",
+      "table_file": "structural_17.xlsx",
+      "question": "For 'unwanted sexual attention', what percentage of incidents involved a Canadian Armed Forces member as the person responsible?",
+      "answers": [
+        "95"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-229",
+      "table_file": "structural_17.xlsx",
+      "question": "For the behaviour 'unwelcome physical contact or getting too close', what percentage involved always women as the person responsible?",
+      "answers": [
+        "13"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-230",
+      "table_file": "structural_17.xlsx",
+      "question": "For 'sexual jokes', what percentage of incidents involved a junior non-commissioned member as person responsible?",
+      "answers": [
+        "84"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-231",
+      "table_file": "structural_18.xlsx",
+      "question": "What was the total number of female victims of police-reported violence aged 24 and younger?",
+      "answers": [
+        "70058"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-232",
+      "table_file": "structural_18.xlsx",
+      "question": "What was the victimization rate for female victims aged 15?",
+      "answers": [
+        "2684"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-233",
+      "table_file": "structural_19.xlsx",
+      "question": "What was the total number of all U.S. SEH doctorate holders?",
+      "answers": [
+        "805500"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-234",
+      "table_file": "structural_19.xlsx",
+      "question": "What percentage of Asian SEH doctorate holders were working full time?",
+      "answers": [
+        "86.4"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-235",
+      "table_file": "structural_19.xlsx",
+      "question": "What percentage of temporary visa holders were in the labor force?",
+      "answers": [
+        "98.3"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-236",
+      "table_file": "structural_19.xlsx",
+      "question": "What percentage of female SEH doctorate holders were working part time?",
+      "answers": [
+        "14.4"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-237",
+      "table_file": "structural_19.xlsx",
+      "question": "What percentage of White SEH doctorate holders were retired (not in labor force)?",
+      "answers": [
+        "11.8"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-238",
+      "table_file": "structural_20.xlsx",
+      "question": "What was Hector Cotto's result in the quarterfinal of the 110 m hurdles?",
+      "answers": [
+        "13.73"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-239",
+      "table_file": "structural_20.xlsx",
+      "question": "What rank did Javier Culson finish in the semifinal of the 400 m hurdles?",
+      "answers": [
+        "8"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-240",
+      "table_file": "structural_20.xlsx",
+      "question": "What was David Freeman's heat result in the 1500 m?",
+      "answers": [
+        "3:39.70"
+      ],
+      "answer_type": "text"
+    },
+    {
+      "id": "qa-241",
+      "table_file": "structural_20.xlsx",
+      "question": "What was Felix Martinez's result in the heat of the 400 m?",
+      "answers": [
+        "46.46"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-242",
+      "table_file": "structural_20.xlsx",
+      "question": "What rank did Hector Cotto finish in the heat of the 110 m hurdles?",
+      "answers": [
+        "6"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-243",
+      "table_file": "structural_21.xlsx",
+      "question": "How many total league goals did the player score across their entire career?",
+      "answers": [
+        "55"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-244",
+      "table_file": "structural_21.xlsx",
+      "question": "How many total appearances (all competitions) did the player make for Leicester City?",
+      "answers": [
+        "100"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-245",
+      "table_file": "structural_21.xlsx",
+      "question": "How many league goals did the player score for Rangers across all seasons?",
+      "answers": [
+        "10"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-246",
+      "table_file": "structural_21.xlsx",
+      "question": "How many total appearances did the player make for Chesterfield in 1981-82 third division?",
+      "answers": [
+        "44"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-247",
+      "table_file": "structural_21.xlsx",
+      "question": "How many career total goals did the player score for philadelphia fury in 1978",
+      "answers": [
+        "3"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-248",
+      "table_file": "structural_22.xlsx",
+      "question": "How many total appearances did the player make for Port Vale across all seasons?",
+      "answers": [
+        "29"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-249",
+      "table_file": "structural_22.xlsx",
+      "question": "How many league goals did the player score for Port Vale in 1981-82?",
+      "answers": [
+        "1"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-250",
+      "table_file": "structural_22.xlsx",
+      "question": "How many League Cup appearances did the player make across all Port Vale seasons combined?",
+      "answers": [
+        "3"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-251",
+      "table_file": "structural_22.xlsx",
+      "question": "How many total goals did the player score for Port Vale across all competitions?",
+      "answers": [
+        "2"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-252",
+      "table_file": "structural_22.xlsx",
+      "question": "In which season did the player make 0 total appearances for Port Vale?",
+      "answers": [
+        "1984-85"
+      ],
+      "answer_type": "text"
+    },
+    {
+      "id": "qa-253",
+      "table_file": "structural_23.xlsx",
+      "question": "How many career sacks did the player record?",
+      "answers": [
+        "89.5"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-254",
+      "table_file": "structural_23.xlsx",
+      "question": "How many combined tackles (comb) did the player record in 2011?",
+      "answers": [
+        "66"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-255",
+      "table_file": "structural_23.xlsx",
+      "question": "How many forced fumbles (ff) did the player record in 2006?",
+      "answers": [
+        "5"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-256",
+      "table_file": "structural_23.xlsx",
+      "question": "In which year did the player record 14.5 sacks?",
+      "answers": [
+        "2010"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-257",
+      "table_file": "structural_23.xlsx",
+      "question": "How many career games did the player start (GS)?",
+      "answers": [
+        "158"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-258",
+      "table_file": "structural_24.xlsx",
+      "question": "What percentage of French-language workers in Agricultural Region 1 were female?",
+      "answers": [
+        "35.3"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-259",
+      "table_file": "structural_24.xlsx",
+      "question": "What percentage of English-language workers in Agricultural Region 3 were married?",
+      "answers": [
+        "56.7"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-260",
+      "table_file": "structural_24.xlsx",
+      "question": "What percentage of French-language workers in Agricultural Region 4 were in a common-law relationship?",
+      "answers": [
+        "11.8"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-261",
+      "table_file": "structural_24.xlsx",
+      "question": "What percentage of English-language workers in Agricultural Region 1 were male?",
+      "answers": [
+        "72.0"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-262",
+      "table_file": "structural_24.xlsx",
+      "question": "What percentage of French-language workers in Agricultural Region 3 were separated, divorced, or widowed?",
+      "answers": [
+        "0.0"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-263",
+      "table_file": "structural_25.xlsx",
+      "question": "How many employed SEH doctorate holders worked in engineering?",
+      "answers": [
+        "125500"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-264",
+      "table_file": "structural_25.xlsx",
+      "question": "How many psychology doctorate holders worked in private for-profit organizations?",
+      "answers": [
+        "20700"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-265",
+      "table_file": "structural_25.xlsx",
+      "question": "How many SEH doctorate holders across all fields worked in the federal government?",
+      "answers": [
+        "48700"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-266",
+      "table_file": "structural_25.xlsx",
+      "question": "How many mathematics and statistics doctorate holders worked at 4-year educational institutions?",
+      "answers": [
+        "18100"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-267",
+      "table_file": "structural_25.xlsx",
+      "question": "How many health doctorate holders were self-employed?",
+      "answers": [
+        "1100"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-268",
+      "table_file": "structural_26.xlsx",
+      "question": "What was Janet Achola's heat result in the 1500 m?",
+      "answers": [
+        "4:11.64"
+      ],
+      "answer_type": "text"
+    },
+    {
+      "id": "qa-269",
+      "table_file": "structural_26.xlsx",
+      "question": "What rank did Dorcus Inzikuru finish in the heat of the 3000 m steeplechase?",
+      "answers": [
+        "7"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-270",
+      "table_file": "structural_26.xlsx",
+      "question": "What was Jane Suuto's final result in the marathon?",
+      "answers": [
+        "2:44:46"
+      ],
+      "answer_type": "text"
+    },
+    {
+      "id": "qa-271",
+      "table_file": "structural_26.xlsx",
+      "question": "What rank did Janet Achola finish in the heat of the 1500 m?",
+      "answers": [
+        "11"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-272",
+      "table_file": "structural_26.xlsx",
+      "question": "What rank did Jane Suuto finish in the final of the marathon?",
+      "answers": [
+        "93"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-273",
+      "table_file": "structural_27.xlsx",
+      "question": "How many career total appearances did the player make across all clubs?",
+      "answers": [
+        "119"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-274",
+      "table_file": "structural_27.xlsx",
+      "question": "How many league goals did the player score for Partizan across all seasons?",
+      "answers": [
+        "8"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-275",
+      "table_file": "structural_27.xlsx",
+      "question": "How many total appearances did the player make for Rad?",
+      "answers": [
+        "58"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-276",
+      "table_file": "structural_27.xlsx",
+      "question": "How many league apps did the player make for Heerenveen in 2017-18?",
+      "answers": [
+        "9"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-277",
+      "table_file": "structural_27.xlsx",
+      "question": "How many cup goals did the player score for Partizan across all seasons?",
+      "answers": [
+        "2"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-278",
+      "table_file": "structural_28.xlsx",
+      "question": "How many career total appearances did the player make across all clubs?",
+      "answers": [
+        "301"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-279",
+      "table_file": "structural_28.xlsx",
+      "question": "How many FA Cup appearances did the player make for Southampton across all seasons?",
+      "answers": [
+        "42"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-280",
+      "table_file": "structural_28.xlsx",
+      "question": "How many total goals did the player score for Stoke?",
+      "answers": [
+        "4"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-281",
+      "table_file": "structural_28.xlsx",
+      "question": "How many league appearances did the player make for Southampton in 1899-1900?",
+      "answers": [
+        "27"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-282",
+      "table_file": "structural_28.xlsx",
+      "question": "How many FA Cup goals did the player score across their entire career?",
+      "answers": [
+        "4"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-283",
+      "table_file": "structural_29.xlsx",
+      "question": "What percentage of French-language workers in Agricultural Region 1 had no certificate, diploma, or degree?",
+      "answers": [
+        "43.3"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-284",
+      "table_file": "structural_29.xlsx",
+      "question": "What percentage of English-language workers in Agricultural Region 3 had a secondary school diploma?",
+      "answers": [
+        "47.1"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-285",
+      "table_file": "structural_29.xlsx",
+      "question": "What percentage of French-language workers in Agricultural Region 4 had a bachelor's degree?",
+      "answers": [
+        "5.6"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-286",
+      "table_file": "structural_29.xlsx",
+      "question": "What percentage of English-language workers in Agricultural Region 1 held a certificate or college diploma?",
+      "answers": [
+        "14.8"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-287",
+      "table_file": "structural_29.xlsx",
+      "question": "What percentage of French-language workers in Agricultural Region 3 held a certificate or diploma above bachelor level?",
+      "answers": [
+        "0.0"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-288",
+      "table_file": "structural_30.xlsx",
+      "question": "What was the non-ARRA total federal obligation for academic science and engineering in 2011 (current $millions)?",
+      "answers": [
+        "31427"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-289",
+      "table_file": "structural_30.xlsx",
+      "question": "What was the ARRA obligation for research and development in 2009 (current $millions)?",
+      "answers": [
+        "5201"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-290",
+      "table_file": "structural_30.xlsx",
+      "question": "What was the non-ARRA obligation for fellowships, traineeships, and training grants in 2010 (current $millions)?",
+      "answers": [
+        "1103"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-291",
+      "table_file": "structural_30.xlsx",
+      "question": "What was the non-ARRA total federal obligation in 2008 in constant FY 2005 $millions?",
+      "answers": [
+        "26062"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-292",
+      "table_file": "structural_30.xlsx",
+      "question": "What was the ARRA obligation for R&D plant in 2010 (current $millions)?",
+      "answers": [
+        "1194"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-293",
+      "table_file": "structural_31.xlsx",
+      "question": "How many rushing yards (yds) did the player gain in the 2006 postseason?",
+      "answers": [
+        "123"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-294",
+      "table_file": "structural_31.xlsx",
+      "question": "How many postseason games (g) did the player play for the New York Jets (nyj) in 2010?",
+      "answers": [
+        "3"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-295",
+      "table_file": "structural_31.xlsx",
+      "question": "What was the player's career postseason rushing average yards per carry?",
+      "answers": [
+        "3.6"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-296",
+      "table_file": "structural_31.xlsx",
+      "question": "How many receiving touchdowns (td) did the player score in the 2010 postseason?",
+      "answers": [
+        "1"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-297",
+      "table_file": "structural_31.xlsx",
+      "question": "How many rushing touchdowns (td) did the player score in the 2004 postseason?",
+      "answers": [
+        "0"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-298",
+      "table_file": "structural_32.xlsx",
+      "question": "How many career total appearances did the player make across all clubs?",
+      "answers": [
+        "696"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-299",
+      "table_file": "structural_32.xlsx",
+      "question": "How many total appearances did the player make for West Ham United?",
+      "answers": [
+        "213"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-300",
+      "table_file": "structural_32.xlsx",
+      "question": "How many league goals did the player score for Crystal Palace in 1999-2000?",
+      "answers": [
+        "10"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-301",
+      "table_file": "structural_32.xlsx",
+      "question": "How many total appearances did the player make for Portsmouth?",
+      "answers": [
+        "129"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-302",
+      "table_file": "structural_32.xlsx",
+      "question": "How many League Cup goals did the player score across their entire career?",
+      "answers": [
+        "2"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-303",
+      "table_file": "structural_33.xlsx",
+      "question": "How many total aircraft movements were recorded in 2016-2017?",
+      "answers": [
+        "55030"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-304",
+      "table_file": "structural_33.xlsx",
+      "question": "What was the percentage change in international aircraft movements in 2016-2017?",
+      "answers": [
+        "30.4%"
+      ],
+      "answer_type": "text"
+    },
+    {
+      "id": "qa-305",
+      "table_file": "structural_33.xlsx",
+      "question": "How many domestic aircraft movements were recorded in 2012-2013?",
+      "answers": [
+        "43875"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-306",
+      "table_file": "structural_33.xlsx",
+      "question": "How many unscheduled aircraft movements were recorded in 2010-2011?",
+      "answers": [
+        "3635"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-307",
+      "table_file": "structural_33.xlsx",
+      "question": "What was the percentage change in total aircraft movements in 2011-2012?",
+      "answers": [
+        "0.9%"
+      ],
+      "answer_type": "text"
+    },
+    {
+      "id": "qa-308",
+      "table_file": "structural_34.xlsx",
+      "question": "How many career total appearances did the player make across all clubs?",
+      "answers": [
+        "552"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-309",
+      "table_file": "structural_34.xlsx",
+      "question": "How many total appearances did the player make for Ross County across all seasons?",
+      "answers": [
+        "117"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-310",
+      "table_file": "structural_34.xlsx",
+      "question": "How many league goals did the player score for Queen of the South across all seasons?",
+      "answers": [
+        "4"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-311",
+      "table_file": "structural_34.xlsx",
+      "question": "How many total appearances did the player make for Dunfermline Athletic?",
+      "answers": [
+        "134"
+      ],
+      "answer_type": "number"
+    },
+    {
+      "id": "qa-312",
+      "table_file": "structural_34.xlsx",
+      "question": "How many League Cup appearances did the player make for Queen of the South across all seasons?",
+      "answers": [
+        "13"
+      ],
+      "answer_type": "number"
+    }
+  ]
+}
