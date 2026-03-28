@@ -1,117 +1,57 @@
 {
-  "input_file": "long1.xlsx",
-  "start_time": "2026-03-28 13:28:03",
+  "input_file": "long3.xlsx",
+  "start_time": "2026-03-28 20:52:08",
   "stages": {
     "encoding": {
       "status": "success",
       "shape": [
-        56,
-        10
+        49,
+        16
       ],
-      "compression_ratio": 1.1378044711378044
+      "compression_ratio": 0.8559763724808895
     },
-    "structure_analysis": {
+    "detection": {
       "status": "success",
-      "has_bilingual": true,
-      "has_section_markers": false,
-      "has_implicit_aggregation": true,
-      "transformation_complexity": "high"
+      "irregularities": [
+        "METADATA_ROWS",
+        "MULTI_LEVEL_HEADER",
+        "INLINE_BILINGUAL",
+        "BILINGUAL_ALTERNATING_ROWS",
+        "IMPLICIT_AGGREGATION_ROWS",
+        "SPARSE_ROW_FILL"
+      ],
+      "num_irregularities": 6
     },
     "schema_estimation": {
       "status": "success",
-      "observation_unit": "One row represents one ethnicity category for one year, with both the numeric count and percentage recorded for that ethnicity in that year. Because the source is bilingual, the tidy schema preserves the Chinese and English ethnicity labels in separate columns when available.",
-      "num_target_columns": 5,
-      "expected_rows": 132
+      "observation_unit": "One ethnic group's percentage distribution of marital status for one sex category in one year",
+      "num_target_columns": 6,
+      "expected_rows": 168
     },
     "transformation": {
       "status": "success",
       "output_shape": [
         54,
-        5
+        6
       ],
       "validation": {
-        "is_valid": false,
-        "errors": [
-          "Row count too low: 54 vs expected 132",
-          "Sample validation failed: Spot check for the first listed ethnicity in 2011",
-          "Sample validation failed: Spot check for Filipino in 2016",
-          "Sample validation failed: Spot check for Indian in 2021"
-        ],
+        "is_valid": true,
+        "errors": [],
         "warnings": [],
-        "checks_performed": [
-          {
-            "check": "not_empty",
-            "passed": true
-          },
-          {
-            "check": "columns_match",
-            "passed": true,
-            "missing": [],
-            "extra": []
-          },
-          {
-            "check": "row_count",
-            "passed": false,
-            "actual": 54,
-            "expected": 132
-          },
-          {
-            "check": "semantic_sample",
-            "description": "Spot check for the first listed ethnicity in 2011",
-            "expected": {
-              "year": 2011,
-              "ethnicity_cn": "亞洲人（非華人）",
-              "ethnicity_en": "Asian (other than Chinese)",
-              "count": 365611,
-              "percentage": 81.0
-            },
-            "passed": false,
-            "actual": null,
-            "error": "Unalignable boolean Series provided as indexer (index of the boolean Series and of the indexed object do not match)."
-          },
-          {
-            "check": "semantic_sample",
-            "description": "Spot check for Filipino in 2016",
-            "expected": {
-              "year": 2016,
-              "ethnicity_cn": "菲律賓人",
-              "ethnicity_en": "Filipino",
-              "count": 184081,
-              "percentage": 31.5
-            },
-            "passed": false,
-            "actual": null,
-            "error": "Unalignable boolean Series provided as indexer (index of the boolean Series and of the indexed object do not match)."
-          },
-          {
-            "check": "semantic_sample",
-            "description": "Spot check for Indian in 2021",
-            "expected": {
-              "year": 2021,
-              "ethnicity_cn": "印度人",
-              "ethnicity_en": "Indian",
-              "count": 42569,
-              "percentage": 6.9
-            },
-            "passed": false,
-            "actual": null,
-            "error": "Unalignable boolean Series provided as indexer (index of the boolean Series and of the indexed object do not match)."
-          }
-        ],
         "actual_shape": [
           54,
-          5
+          6
         ],
         "expected_shape": [
-          132,
-          5
+          168,
+          6
         ]
       },
-      "attempts": 3
+      "attempts": 1
     }
   },
-  "output_file": "output/normalized_long1.csv",
-  "end_time": "2026-03-28 13:29:17",
-  "elapsed_seconds": 74.31,
+  "output_file": "output/normalized_long3.csv",
+  "end_time": "2026-03-28 20:52:52",
+  "elapsed_seconds": 43.49,
   "status": "success"
 }

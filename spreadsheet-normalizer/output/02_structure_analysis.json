@@ -1,0 +1,208 @@
+{
+  "semantic_understanding": {
+    "data_description": "Percentage distribution of ethnic minorities by marital status, sex, and year, with bilingual Chinese-English labels",
+    "key_variables": [
+      "year",
+      "ethnicity",
+      "marital_status",
+      "sex",
+      "percentage"
+    ]
+  },
+  "header_structure": {
+    "header_rows": [
+      0,
+      2,
+      3,
+      4,
+      6
+    ],
+    "num_levels": 5
+  },
+  "data_region": {
+    "start_row": 7,
+    "end_row": 47
+  },
+  "row_patterns": {
+    "has_bilingual_rows": true,
+    "bilingual_details": {
+      "pattern": "alternating_cn_en",
+      "data_relationship": "alternating Chinese-English row pairs are used for labels; Chinese rows provide the primary data label and the following English rows repeat the same category in English",
+      "pairs": [
+        [
+          7,
+          8
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          13,
+          14
+        ],
+        [
+          15,
+          16
+        ]
+      ]
+    },
+    "has_section_markers": false
+  },
+  "column_patterns": {
+    "id_columns": [
+      1
+    ],
+    "value_columns": [
+      3,
+      4,
+      6,
+      7,
+      9,
+      10,
+      13
+    ],
+    "aggregate_columns": [
+      5,
+      8,
+      11,
+      12,
+      14
+    ]
+  },
+  "implicit_aggregation": {
+    "has_implicit_aggregation": true,
+    "detection_details": {
+      "category_column": "column_1",
+      "summary_values": [
+        "All ethnic minorities",
+        "All ethnic minorities, excluding foreign domestic helpers"
+      ],
+      "detail_values": [],
+      "additional_dimension": "",
+      "delimiter": "",
+      "reasoning": "column group 12-14 is Total/Overall; rows with ethnicity like \"全港人口\"/all population are benchmark totals, not subtotals of the ethnic-group rows"
+    },
+    "summary_rows": [
+      42,
+      45
+    ],
+    "transformation_guidance": {
+      "rows_to_exclude": "All ethnic minorities, All ethnic minorities, excluding foreign domestic helpers",
+      "column_to_split": "",
+      "expected_new_columns": []
+    },
+    "sample_detail_rows": []
+  },
+  "special_patterns": [],
+  "transformation_complexity": "complex",
+  "_pre_analysis": {
+    "header_info": {
+      "header_rows": [
+        0,
+        2,
+        3,
+        4,
+        6
+      ],
+      "num_levels": 5,
+      "data_start_row": 7
+    },
+    "data_region": {
+      "start_row": 7,
+      "end_row": 47,
+      "start_col": 1,
+      "end_col": 15,
+      "num_data_rows": 41
+    },
+    "column_types": {
+      "0": "empty",
+      "1": "label",
+      "2": "empty",
+      "3": "numeric",
+      "4": "numeric",
+      "5": "numeric",
+      "6": "numeric",
+      "7": "numeric",
+      "8": "numeric",
+      "9": "numeric",
+      "10": "numeric",
+      "11": "numeric",
+      "12": "numeric",
+      "13": "numeric",
+      "14": "numeric",
+      "15": "empty"
+    },
+    "aggregation_rows": [
+      {
+        "row_index": 42,
+        "column_index": 1,
+        "value": "All ethnic minorities",
+        "keyword_matched": "all"
+      },
+      {
+        "row_index": 45,
+        "column_index": 1,
+        "value": "All ethnic minorities, excluding foreign domestic helpers",
+        "keyword_matched": "all"
+      }
+    ],
+    "bilingual": {
+      "has_bilingual": true,
+      "pairs": [
+        [
+          7,
+          8
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          13,
+          14
+        ],
+        [
+          15,
+          16
+        ]
+      ],
+      "pattern": "alternating_cn_en",
+      "total_pairs": 19
+    },
+    "section_markers": {
+      "has_section_markers": false,
+      "markers": [],
+      "marker_values": []
+    },
+    "layout_type": "wide",
+    "repeated_header_groups": [],
+    "delimiter_info": {}
+  },
+  "_semantic": {
+    "data_description": "Percentage distribution of ethnic minorities by marital status, sex, and year, with bilingual Chinese-English labels",
+    "key_variables": "year, ethnicity, marital_status, sex, percentage",
+    "layout_confirmed": "wide",
+    "column_roles": "0=dimension(year), 1=dimension(ethnicity), 3-5=values(marital_status=never_married), 6-8=values(marital_status=married), 9-11=values(marital_status=widowed_divorced_separated), 12-14=values(marital_status=total)",
+    "value_types": "percentage(numeric,proportion)",
+    "bilingual_interpretation": "alternating Chinese-English row pairs are used for labels; Chinese rows provide the primary data label and the following English rows repeat the same category in English",
+    "section_interpretation": "row 2 is the super-header for marital status groups; row 3 defines the marital-status column groups; row 4 defines sex subcolumns within each group",
+    "aggregation_interpretation": "column group 12-14 is Total/Overall; rows with ethnicity like \"全港人口\"/all population are benchmark totals, not subtotals of the ethnic-group rows",
+    "delimiter_interpretation": "none",
+    "key_variables_list": [
+      "year",
+      "ethnicity",
+      "marital_status",
+      "sex",
+      "percentage"
+    ]
+  }
+}
