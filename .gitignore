@@ -1,5 +1,9 @@
 *.csv
+!wtq_evaluation/tables_normalized/*.csv
+!wtq_evaluation/tables_original/**/*.csv
 *.xlsx
+!wtq_evaluation/tables_original/double_couting/*.xlsx
+!wtq_evaluation/tables_original/structutral/*.xlsx
 *.json
 !wtq_evaluation/custom_qa_dataset_updated.json
 /output/*.py

@@ -1,0 +1,253 @@
+year,ethnicity_cn,ethnicity_en,marital_status,gender,value_type,percentage
+2011,亞洲人（非華人）,Asian (other than Chinese),never married,male,percentage,23.0
+2011,亞洲人（非華人）,Asian (other than Chinese),never married,female,percentage,35.6
+2011,亞洲人（非華人）,Asian (other than Chinese),never married,overall,percentage,34.1
+2011,亞洲人（非華人）,Asian (other than Chinese),married,male,percentage,73.9
+2011,亞洲人（非華人）,Asian (other than Chinese),married,female,percentage,56.3
+2011,亞洲人（非華人）,Asian (other than Chinese),married,overall,percentage,58.4
+2011,亞洲人（非華人）,Asian (other than Chinese),widowed/divorced,male,percentage,3.1
+2011,亞洲人（非華人）,Asian (other than Chinese),widowed/divorced,female,percentage,8.1
+2011,亞洲人（非華人）,Asian (other than Chinese),widowed/divorced,overall,percentage,7.5
+2011,亞洲人（非華人）,Asian (other than Chinese),total,male,percentage,100.0
+2011,亞洲人（非華人）,Asian (other than Chinese),total,female,percentage,100.0
+2011,亞洲人（非華人）,Asian (other than Chinese),total,overall,percentage,100.0
+2011,菲律賓人,Filipino,never married,male,percentage,26.1
+2011,菲律賓人,Filipino,never married,female,percentage,36.4
+2011,菲律賓人,Filipino,never married,overall,percentage,35.9
+2011,菲律賓人,Filipino,married,male,percentage,68.8
+2011,菲律賓人,Filipino,married,female,percentage,54.0
+2011,菲律賓人,Filipino,married,overall,percentage,54.7
+2011,菲律賓人,Filipino,widowed/divorced,male,percentage,5.1
+2011,菲律賓人,Filipino,widowed/divorced,female,percentage,9.6
+2011,菲律賓人,Filipino,widowed/divorced,overall,percentage,9.4
+2011,菲律賓人,Filipino,total,male,percentage,100.0
+2011,菲律賓人,Filipino,total,female,percentage,100.0
+2011,菲律賓人,Filipino,total,overall,percentage,100.0
+2011,印尼人,Indonesian,never married,male,percentage,29.2
+2011,印尼人,Indonesian,never married,female,percentage,40.4
+2011,印尼人,Indonesian,never married,overall,percentage,40.4
+2011,印尼人,Indonesian,married,male,percentage,68.2
+2011,印尼人,Indonesian,married,female,percentage,52.6
+2011,印尼人,Indonesian,married,overall,percentage,52.7
+2011,印尼人,Indonesian,widowed/divorced,male,percentage,2.6
+2011,印尼人,Indonesian,widowed/divorced,female,percentage,7.0
+2011,印尼人,Indonesian,widowed/divorced,overall,percentage,6.9
+2011,印尼人,Indonesian,total,male,percentage,100.0
+2011,印尼人,Indonesian,total,female,percentage,100.0
+2011,印尼人,Indonesian,total,overall,percentage,100.0
+2011,南亞裔人士,South Asian,never married,male,percentage,23.7
+2011,南亞裔人士,South Asian,never married,female,percentage,20.2
+2011,南亞裔人士,South Asian,never married,overall,percentage,22.0
+2011,南亞裔人士,South Asian,married,male,percentage,73.6
+2011,南亞裔人士,South Asian,married,female,percentage,74.6
+2011,南亞裔人士,South Asian,married,overall,percentage,74.1
+2011,南亞裔人士,South Asian,widowed/divorced,male,percentage,2.7
+2011,南亞裔人士,South Asian,widowed/divorced,female,percentage,5.2
+2011,南亞裔人士,South Asian,widowed/divorced,overall,percentage,3.9
+2011,南亞裔人士,South Asian,total,male,percentage,100.0
+2011,南亞裔人士,South Asian,total,female,percentage,100.0
+2011,南亞裔人士,South Asian,total,overall,percentage,100.0
+2011,印度人,Indian,never married,male,percentage,22.9
+2011,印度人,Indian,never married,female,percentage,20.9
+2011,印度人,Indian,never married,overall,percentage,21.9
+2011,印度人,Indian,married,male,percentage,74.4
+2011,印度人,Indian,married,female,percentage,73.4
+2011,印度人,Indian,married,overall,percentage,73.9
+2011,印度人,Indian,widowed/divorced,male,percentage,2.7
+2011,印度人,Indian,widowed/divorced,female,percentage,5.7
+2011,印度人,Indian,widowed/divorced,overall,percentage,4.2
+2011,印度人,Indian,total,male,percentage,100.0
+2011,印度人,Indian,total,female,percentage,100.0
+2011,印度人,Indian,total,overall,percentage,100.0
+2011,尼泊爾人,Nepalese,never married,male,percentage,20.3
+2011,尼泊爾人,Nepalese,never married,female,percentage,22.0
+2011,尼泊爾人,Nepalese,never married,overall,percentage,21.1
+2011,尼泊爾人,Nepalese,married,male,percentage,75.3
+2011,尼泊爾人,Nepalese,married,female,percentage,73.1
+2011,尼泊爾人,Nepalese,married,overall,percentage,74.3
+2011,尼泊爾人,Nepalese,widowed/divorced,male,percentage,4.3
+2011,尼泊爾人,Nepalese,widowed/divorced,female,percentage,4.8
+2011,尼泊爾人,Nepalese,widowed/divorced,overall,percentage,4.6
+2011,尼泊爾人,Nepalese,total,male,percentage,100.0
+2011,尼泊爾人,Nepalese,total,female,percentage,100.0
+2011,尼泊爾人,Nepalese,total,overall,percentage,100.0
+2011,巴基斯坦人,Pakistani,never married,male,percentage,26.5
+2011,巴基斯坦人,Pakistani,never married,female,percentage,15.8
+2011,巴基斯坦人,Pakistani,never married,overall,percentage,22.1
+2011,巴基斯坦人,Pakistani,married,male,percentage,72.1
+2011,巴基斯坦人,Pakistani,married,female,percentage,81.0
+2011,巴基斯坦人,Pakistani,married,overall,percentage,75.7
+2011,巴基斯坦人,Pakistani,widowed/divorced,male,percentage,1.4
+2011,巴基斯坦人,Pakistani,widowed/divorced,female,percentage,3.2
+2011,巴基斯坦人,Pakistani,widowed/divorced,overall,percentage,2.1
+2011,巴基斯坦人,Pakistani,total,male,percentage,100.0
+2011,巴基斯坦人,Pakistani,total,female,percentage,100.0
+2011,巴基斯坦人,Pakistani,total,overall,percentage,100.0
+2011,其他南亞裔人士[1],Other South Asian[1],never married,male,percentage,39.9
+2011,其他南亞裔人士[1],Other South Asian[1],never married,female,percentage,20.0
+2011,其他南亞裔人士[1],Other South Asian[1],never married,overall,percentage,28.3
+2011,其他南亞裔人士[1],Other South Asian[1],married,male,percentage,59.7
+2011,其他南亞裔人士[1],Other South Asian[1],married,female,percentage,71.0
+2011,其他南亞裔人士[1],Other South Asian[1],married,overall,percentage,66.3
+2011,其他南亞裔人士[1],Other South Asian[1],widowed/divorced,male,percentage,0.4
+2011,其他南亞裔人士[1],Other South Asian[1],widowed/divorced,female,percentage,9.0
+2011,其他南亞裔人士[1],Other South Asian[1],widowed/divorced,overall,percentage,5.4
+2011,其他南亞裔人士[1],Other South Asian[1],total,male,percentage,100.0
+2011,其他南亞裔人士[1],Other South Asian[1],total,female,percentage,100.0
+2011,其他南亞裔人士[1],Other South Asian[1],total,overall,percentage,100.0
+2011,泰國人,Thai,never married,male,percentage,25.2
+2011,泰國人,Thai,never married,female,percentage,13.3
+2011,泰國人,Thai,never married,overall,percentage,14.4
+2011,泰國人,Thai,married,male,percentage,73.4
+2011,泰國人,Thai,married,female,percentage,71.6
+2011,泰國人,Thai,married,overall,percentage,71.7
+2011,泰國人,Thai,widowed/divorced,male,percentage,1.4
+2011,泰國人,Thai,widowed/divorced,female,percentage,15.1
+2011,泰國人,Thai,widowed/divorced,overall,percentage,13.9
+2011,泰國人,Thai,total,male,percentage,100.0
+2011,泰國人,Thai,total,female,percentage,100.0
+2011,泰國人,Thai,total,overall,percentage,100.0
+2011,日本人,Japanese,never married,male,percentage,15.6
+2011,日本人,Japanese,never married,female,percentage,20.1
+2011,日本人,Japanese,never married,overall,percentage,17.7
+2011,日本人,Japanese,married,male,percentage,81.4
+2011,日本人,Japanese,married,female,percentage,77.1
+2011,日本人,Japanese,married,overall,percentage,79.4
+2011,日本人,Japanese,widowed/divorced,male,percentage,3.0
+2011,日本人,Japanese,widowed/divorced,female,percentage,2.8
+2011,日本人,Japanese,widowed/divorced,overall,percentage,2.9
+2011,日本人,Japanese,total,male,percentage,100.0
+2011,日本人,Japanese,total,female,percentage,100.0
+2011,日本人,Japanese,total,overall,percentage,100.0
+2011,韓國人,Korean,never married,male,percentage,17.5
+2011,韓國人,Korean,never married,female,percentage,20.5
+2011,韓國人,Korean,never married,overall,percentage,19.2
+2011,韓國人,Korean,married,male,percentage,81.7
+2011,韓國人,Korean,married,female,percentage,71.4
+2011,韓國人,Korean,married,overall,percentage,75.8
+2011,韓國人,Korean,widowed/divorced,male,percentage,0.8
+2011,韓國人,Korean,widowed/divorced,female,percentage,8.1
+2011,韓國人,Korean,widowed/divorced,overall,percentage,5.0
+2011,韓國人,Korean,total,male,percentage,100.0
+2011,韓國人,Korean,total,female,percentage,100.0
+2011,韓國人,Korean,total,overall,percentage,100.0
+2011,其他亞洲人,Other Asian,never married,male,percentage,29.5
+2011,其他亞洲人,Other Asian,never married,female,percentage,21.1
+2011,其他亞洲人,Other Asian,never married,overall,percentage,23.9
+2011,其他亞洲人,Other Asian,married,male,percentage,64.2
+2011,其他亞洲人,Other Asian,married,female,percentage,70.4
+2011,其他亞洲人,Other Asian,married,overall,percentage,68.4
+2011,其他亞洲人,Other Asian,widowed/divorced,male,percentage,6.3
+2011,其他亞洲人,Other Asian,widowed/divorced,female,percentage,8.5
+2011,其他亞洲人,Other Asian,widowed/divorced,overall,percentage,7.7
+2011,其他亞洲人,Other Asian,total,male,percentage,100.0
+2011,其他亞洲人,Other Asian,total,female,percentage,100.0
+2011,其他亞洲人,Other Asian,total,overall,percentage,100.0
+2011,白人,White,never married,male,percentage,29.1
+2011,白人,White,never married,female,percentage,27.0
+2011,白人,White,never married,overall,percentage,28.3
+2011,白人,White,married,male,percentage,64.8
+2011,白人,White,married,female,percentage,63.8
+2011,白人,White,married,overall,percentage,64.5
+2011,白人,White,widowed/divorced,male,percentage,6.1
+2011,白人,White,widowed/divorced,female,percentage,9.2
+2011,白人,White,widowed/divorced,overall,percentage,7.2
+2011,白人,White,total,male,percentage,100.0
+2011,白人,White,total,female,percentage,100.0
+2011,白人,White,total,overall,percentage,100.0
+2011,混血兒,Mixed,never married,male,percentage,53.0
+2011,混血兒,Mixed,never married,female,percentage,48.6
+2011,混血兒,Mixed,never married,overall,percentage,50.7
+2011,混血兒,Mixed,married,male,percentage,42.3
+2011,混血兒,Mixed,married,female,percentage,38.6
+2011,混血兒,Mixed,married,overall,percentage,40.3
+2011,混血兒,Mixed,widowed/divorced,male,percentage,4.7
+2011,混血兒,Mixed,widowed/divorced,female,percentage,12.8
+2011,混血兒,Mixed,widowed/divorced,overall,percentage,9.1
+2011,混血兒,Mixed,total,male,percentage,100.0
+2011,混血兒,Mixed,total,female,percentage,100.0
+2011,混血兒,Mixed,total,overall,percentage,100.0
+2011,華人父或母,With Chinese parent,never married,male,percentage,52.0
+2011,華人父或母,With Chinese parent,never married,female,percentage,48.6
+2011,華人父或母,With Chinese parent,never married,overall,percentage,50.3
+2011,華人父或母,With Chinese parent,married,male,percentage,43.1
+2011,華人父或母,With Chinese parent,married,female,percentage,38.1
+2011,華人父或母,With Chinese parent,married,overall,percentage,40.5
+2011,華人父或母,With Chinese parent,widowed/divorced,male,percentage,4.9
+2011,華人父或母,With Chinese parent,widowed/divorced,female,percentage,13.2
+2011,華人父或母,With Chinese parent,widowed/divorced,overall,percentage,9.2
+2011,華人父或母,With Chinese parent,total,male,percentage,100.0
+2011,華人父或母,With Chinese parent,total,female,percentage,100.0
+2011,華人父或母,With Chinese parent,total,overall,percentage,100.0
+2011,其他混血兒,Other Mixed,never married,male,percentage,65.1
+2011,其他混血兒,Other Mixed,never married,female,percentage,48.3
+2011,其他混血兒,Other Mixed,never married,overall,percentage,54.0
+2011,其他混血兒,Other Mixed,married,male,percentage,32.2
+2011,其他混血兒,Other Mixed,married,female,percentage,41.4
+2011,其他混血兒,Other Mixed,married,overall,percentage,38.3
+2011,其他混血兒,Other Mixed,widowed/divorced,male,percentage,2.7
+2011,其他混血兒,Other Mixed,widowed/divorced,female,percentage,10.3
+2011,其他混血兒,Other Mixed,widowed/divorced,overall,percentage,7.8
+2011,其他混血兒,Other Mixed,total,male,percentage,100.0
+2011,其他混血兒,Other Mixed,total,female,percentage,100.0
+2011,其他混血兒,Other Mixed,total,overall,percentage,100.0
+2011,其他[2],Others[2],never married,male,percentage,31.4
+2011,其他[2],Others[2],never married,female,percentage,30.4
+2011,其他[2],Others[2],never married,overall,percentage,31.2
+2011,其他[2],Others[2],married,male,percentage,64.0
+2011,其他[2],Others[2],married,female,percentage,69.6
+2011,其他[2],Others[2],married,overall,percentage,65.4
+2011,其他[2],Others[2],widowed/divorced,male,percentage,4.6
+2011,其他[2],Others[2],widowed/divorced,female,percentage,
+2011,其他[2],Others[2],widowed/divorced,overall,percentage,3.4
+2011,其他[2],Others[2],total,male,percentage,100.0
+2011,其他[2],Others[2],total,female,percentage,100.0
+2011,其他[2],Others[2],total,overall,percentage,100.0
+2011,所有少數族裔人士,All ethnic minorities,never married,male,percentage,28.4
+2011,所有少數族裔人士,All ethnic minorities,never married,female,percentage,35.5
+2011,所有少數族裔人士,All ethnic minorities,never married,overall,percentage,34.1
+2011,所有少數族裔人士,All ethnic minorities,married,male,percentage,67.2
+2011,所有少數族裔人士,All ethnic minorities,married,female,percentage,56.1
+2011,所有少數族裔人士,All ethnic minorities,married,overall,percentage,58.3
+2011,所有少數族裔人士,All ethnic minorities,widowed/divorced,male,percentage,4.4
+2011,所有少數族裔人士,All ethnic minorities,widowed/divorced,female,percentage,8.3
+2011,所有少數族裔人士,All ethnic minorities,widowed/divorced,overall,percentage,7.5
+2011,所有少數族裔人士,All ethnic minorities,total,male,percentage,100.0
+2011,所有少數族裔人士,All ethnic minorities,total,female,percentage,100.0
+2011,所有少數族裔人士,All ethnic minorities,total,overall,percentage,100.0
+2011,,撇除外籍家庭傭工後的所有少數族裔人士,never married,male,percentage,
+2011,,撇除外籍家庭傭工後的所有少數族裔人士,never married,female,percentage,
+2011,,撇除外籍家庭傭工後的所有少數族裔人士,never married,overall,percentage,
+2011,,撇除外籍家庭傭工後的所有少數族裔人士,married,male,percentage,
+2011,,撇除外籍家庭傭工後的所有少數族裔人士,married,female,percentage,
+2011,,撇除外籍家庭傭工後的所有少數族裔人士,married,overall,percentage,
+2011,,撇除外籍家庭傭工後的所有少數族裔人士,widowed/divorced,male,percentage,
+2011,,撇除外籍家庭傭工後的所有少數族裔人士,widowed/divorced,female,percentage,
+2011,,撇除外籍家庭傭工後的所有少數族裔人士,widowed/divorced,overall,percentage,
+2011,,撇除外籍家庭傭工後的所有少數族裔人士,total,male,percentage,
+2011,,撇除外籍家庭傭工後的所有少數族裔人士,total,female,percentage,
+2011,,撇除外籍家庭傭工後的所有少數族裔人士,total,overall,percentage,
+2011,"All ethnic minorities, excluding foreign domestic helpers","All ethnic minorities, excluding foreign domestic helpers",never married,male,percentage,
+2011,"All ethnic minorities, excluding foreign domestic helpers","All ethnic minorities, excluding foreign domestic helpers",never married,female,percentage,
+2011,"All ethnic minorities, excluding foreign domestic helpers","All ethnic minorities, excluding foreign domestic helpers",never married,overall,percentage,
+2011,"All ethnic minorities, excluding foreign domestic helpers","All ethnic minorities, excluding foreign domestic helpers",married,male,percentage,
+2011,"All ethnic minorities, excluding foreign domestic helpers","All ethnic minorities, excluding foreign domestic helpers",married,female,percentage,
+2011,"All ethnic minorities, excluding foreign domestic helpers","All ethnic minorities, excluding foreign domestic helpers",married,overall,percentage,
+2011,"All ethnic minorities, excluding foreign domestic helpers","All ethnic minorities, excluding foreign domestic helpers",widowed/divorced,male,percentage,
+2011,"All ethnic minorities, excluding foreign domestic helpers","All ethnic minorities, excluding foreign domestic helpers",widowed/divorced,female,percentage,
+2011,"All ethnic minorities, excluding foreign domestic helpers","All ethnic minorities, excluding foreign domestic helpers",widowed/divorced,overall,percentage,
+2011,"All ethnic minorities, excluding foreign domestic helpers","All ethnic minorities, excluding foreign domestic helpers",total,male,percentage,
+2011,"All ethnic minorities, excluding foreign domestic helpers","All ethnic minorities, excluding foreign domestic helpers",total,female,percentage,
+2011,"All ethnic minorities, excluding foreign domestic helpers","All ethnic minorities, excluding foreign domestic helpers",total,overall,percentage,
+2011,全港人口,Whole population,never married,male,percentage,33.5
+2011,全港人口,Whole population,never married,female,percentage,29.9
+2011,全港人口,Whole population,never married,overall,percentage,31.6
+2011,全港人口,Whole population,married,male,percentage,61.2
+2011,全港人口,Whole population,married,female,percentage,54.8
+2011,全港人口,Whole population,married,overall,percentage,57.7
+2011,全港人口,Whole population,widowed/divorced,male,percentage,5.3
+2011,全港人口,Whole population,widowed/divorced,female,percentage,15.3
+2011,全港人口,Whole population,widowed/divorced,overall,percentage,10.7
+2011,全港人口,Whole population,total,male,percentage,100.0
+2011,全港人口,Whole population,total,female,percentage,100.0
+2011,全港人口,Whole population,total,overall,percentage,100.0

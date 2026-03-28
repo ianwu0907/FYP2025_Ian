@@ -1,0 +1,82 @@
+year,sex_cn,sex_en,educational_attainment_cn,educational_attainment_en,count,percentage
+2011,男,Male,小學及以下,Primary and below,3290,18.6
+2016,男,Male,小學及以下,Primary and below,2581,15.3
+2021,男,Male,小學及以下,Primary and below,1146,7.1
+2011,男,Male,中學,,,
+2016,男,Male,中學,,,
+2021,男,Male,中學,,,
+2011,男,Male,Secondary,,,
+2016,男,Male,Secondary,,,
+2021,男,Male,Secondary,,,
+2011,男,Male,,初中,5891,33.3
+2016,男,Male,,初中,5189,30.7
+2021,男,Male,,初中,4417,27.6
+2011,男,Male,,Lower secondary,,
+2016,男,Male,,Lower secondary,,
+2021,男,Male,,Lower secondary,,
+2011,男,Male,,高中,5782,32.7
+2016,男,Male,,高中,5934,35.1
+2021,男,Male,,高中,6494,40.5
+2011,男,Male,,Upper secondary,,
+2016,男,Male,,Upper secondary,,
+2021,男,Male,,Upper secondary,,
+2011,男,Male,專上教育,,2702,15.3
+2016,男,Male,專上教育,,3179,18.8
+2021,男,Male,專上教育,,3973,24.8
+2011,男,Male,Post-secondary,,,
+2016,男,Male,Post-secondary,,,
+2021,男,Male,Post-secondary,,,
+2011,Female,女,Primary and below,中學,,
+2016,Female,女,Primary and below,中學,,
+2021,Female,女,Primary and below,中學,,
+2011,Female,女,Secondary,,,
+2016,Female,女,Secondary,,,
+2021,Female,女,Secondary,,,
+2011,Female,女,,初中,19707,30.8
+2016,Female,女,,初中,16723,29.6
+2021,Female,女,,初中,16080,28.6
+2011,Female,女,,Lower secondary,,
+2016,Female,女,,Lower secondary,,
+2021,Female,女,,Lower secondary,,
+2011,Female,女,,高中,24168,37.7
+2016,Female,女,,高中,20855,36.9
+2021,Female,女,,高中,20332,36.1
+2011,Female,女,,Upper secondary,,
+2016,Female,女,,Upper secondary,,
+2021,Female,女,,Upper secondary,,
+2011,Female,女,專上教育,,9190,14.4
+2016,Female,女,專上教育,,12144,21.5
+2021,Female,女,專上教育,,14838,26.4
+2011,Female,女,Post-secondary,,,
+2016,Female,女,Post-secondary,,,
+2021,Female,女,Post-secondary,,,
+2011,Both sexes,合計,Primary and below,中學,,
+2016,Both sexes,合計,Primary and below,中學,,
+2021,Both sexes,合計,Primary and below,中學,,
+2011,Both sexes,合計,Secondary,,,
+2016,Both sexes,合計,Secondary,,,
+2021,Both sexes,合計,Secondary,,,
+2011,Both sexes,合計,,初中,25598,31.3
+2016,Both sexes,合計,,初中,21912,29.8
+2021,Both sexes,合計,,初中,20497,28.4
+2011,Both sexes,合計,,Lower secondary,,
+2016,Both sexes,合計,,Lower secondary,,
+2021,Both sexes,合計,,Lower secondary,,
+2011,Both sexes,合計,,高中,29950,36.7
+2016,Both sexes,合計,,高中,26789,36.5
+2021,Both sexes,合計,,高中,26826,37.1
+2011,Both sexes,合計,,Upper secondary,,
+2016,Both sexes,合計,,Upper secondary,,
+2021,Both sexes,合計,,Upper secondary,,
+2011,Both sexes,合計,專上教育,,11892,14.6
+2016,Both sexes,合計,專上教育,,15323,20.9
+2021,Both sexes,合計,專上教育,,18811,26.0
+2011,Both sexes,合計,Post-secondary,,,
+2016,Both sexes,合計,Post-secondary,,,
+2021,Both sexes,合計,Post-secondary,,,
+2011,Both sexes,合計,總計,,81705,100.0
+2016,Both sexes,合計,總計,,73428,100.0
+2021,Both sexes,合計,總計,,72279,100.0
+2011,Both sexes,合計,Total,,,
+2016,Both sexes,合計,Total,,,
+2021,Both sexes,合計,Total,,,

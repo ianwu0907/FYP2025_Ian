@@ -1,0 +1,22 @@
+year,gender_cn,gender_en,place_of_birth_cn,place_of_birth_en,count,percentage,aggregation_level
+2011,男,Male,香港,Hong Kong,11695,66.2,detail
+2016,男,Male,香港,Hong Kong,11036,65.4,detail
+2021,男,Male,香港,Hong Kong,10584,66.0,detail
+2011,,,中國內地／澳門／台灣,The mainland of China /,5532,31.3,detail
+2016,,,中國內地／澳門／台灣,The mainland of China /,5268,31.2,detail
+2021,,,中國內地／澳門／台灣,The mainland of China /,4969,31.0,detail
+2011,,,其他地方,Elsewhere,438,2.5,detail
+2016,,,其他地方,Elsewhere,579,3.4,detail
+2021,,,其他地方,Elsewhere,477,3.0,detail
+2011,,,小計,Sub-total,17665,100.0,summary
+2016,,,小計,Sub-total,16883,100.0,summary
+2021,,,小計,Sub-total,16030,100.0,summary
+2011,女,Female,香港,Hong Kong,29207,45.6,detail
+2016,女,Female,香港,Hong Kong,23569,41.7,detail
+2021,女,Female,香港,Hong Kong,21629,38.5,detail
+2011,,,中國內地／澳門／台灣,The mainland of China /,31822,49.7,detail
+2016,,,中國內地／澳門／台灣,The mainland of China /,30359,53.7,detail
+2021,,,中國內地／澳門／台灣,The mainland of China /,31669,56.3,detail
+2011,,,其他地方,,3011,4.7,detail
+2016,,,其他地方,,2617,4.6,detail
+2021,,,其他地方,,2951,5.2,detail
