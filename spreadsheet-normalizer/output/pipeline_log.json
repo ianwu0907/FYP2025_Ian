@@ -1,38 +1,41 @@
 {
-  "input_file": "long3.xlsx",
-  "start_time": "2026-01-11 21:09:40",
+  "input_file": "long1.xlsx",
+  "start_time": "2026-03-28 13:28:03",
   "stages": {
     "encoding": {
       "status": "success",
       "shape": [
-        49,
-        16
+        56,
+        10
       ],
-      "compression_ratio": 0.8559763724808895
+      "compression_ratio": 1.1378044711378044
     },
     "structure_analysis": {
       "status": "success",
       "has_bilingual": true,
-      "has_section_markers": true,
-      "has_implicit_aggregation": false,
-      "transformation_complexity": "medium"
+      "has_section_markers": false,
+      "has_implicit_aggregation": true,
+      "transformation_complexity": "high"
     },
     "schema_estimation": {
       "status": "success",
-      "observation_unit": "Each row represents the percentage value for a specific ethnic group (with bilingual names) in a given year, broken down by a single marital status category (excluding overall totals) and by gender.",
-      "num_target_columns": 6,
-      "expected_rows": 189
+      "observation_unit": "One row represents one ethnicity category for one year, with both the numeric count and percentage recorded for that ethnicity in that year. Because the source is bilingual, the tidy schema preserves the Chinese and English ethnicity labels in separate columns when available.",
+      "num_target_columns": 5,
+      "expected_rows": 132
     },
     "transformation": {
       "status": "success",
       "output_shape": [
-        120,
-        6
+        54,
+        5
       ],
       "validation": {
         "is_valid": false,
         "errors": [
-          "Sample validation failed: Spot check for first ethnic group in 2011"
+          "Row count too low: 54 vs expected 132",
+          "Sample validation failed: Spot check for the first listed ethnicity in 2011",
+          "Sample validation failed: Spot check for Filipino in 2016",
+          "Sample validation failed: Spot check for Indian in 2021"
         ],
         "warnings": [],
         "checks_performed": [
@@ -48,20 +51,47 @@
           },
           {
             "check": "row_count",
-            "passed": true,
-            "actual": 120,
-            "expected": 189
+            "passed": false,
+            "actual": 54,
+            "expected": 132
           },
           {
             "check": "semantic_sample",
-            "description": "Spot check for first ethnic group in 2011",
+            "description": "Spot check for the first listed ethnicity in 2011",
             "expected": {
               "year": 2011,
               "ethnicity_cn": "亞洲人（非華人）",
               "ethnicity_en": "Asian (other than Chinese)",
-              "marital_status": "Never married",
-              "gender": "Male",
-              "percentage": 23.0
+              "count": 365611,
+              "percentage": 81.0
+            },
+            "passed": false,
+            "actual": null,
+            "error": "Unalignable boolean Series provided as indexer (index of the boolean Series and of the indexed object do not match)."
+          },
+          {
+            "check": "semantic_sample",
+            "description": "Spot check for Filipino in 2016",
+            "expected": {
+              "year": 2016,
+              "ethnicity_cn": "菲律賓人",
+              "ethnicity_en": "Filipino",
+              "count": 184081,
+              "percentage": 31.5
+            },
+            "passed": false,
+            "actual": null,
+            "error": "Unalignable boolean Series provided as indexer (index of the boolean Series and of the indexed object do not match)."
+          },
+          {
+            "check": "semantic_sample",
+            "description": "Spot check for Indian in 2021",
+            "expected": {
+              "year": 2021,
+              "ethnicity_cn": "印度人",
+              "ethnicity_en": "Indian",
+              "count": 42569,
+              "percentage": 6.9
             },
             "passed": false,
             "actual": null,
@@ -69,19 +99,19 @@
           }
         ],
         "actual_shape": [
-          120,
-          6
+          54,
+          5
         ],
         "expected_shape": [
-          189,
-          6
+          132,
+          5
         ]
       },
       "attempts": 3
     }
   },
-  "output_file": "output/normalized_long3.csv",
-  "end_time": "2026-01-11 21:11:36",
-  "elapsed_seconds": 115.09,
+  "output_file": "output/normalized_long1.csv",
+  "end_time": "2026-03-28 13:29:17",
+  "elapsed_seconds": 74.31,
   "status": "success"
 }
