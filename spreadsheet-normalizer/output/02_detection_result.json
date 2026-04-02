@@ -34,39 +34,45 @@
   "irregularities": [
     {
       "label": "METADATA_ROWS",
-      "evidence": "Rows 0-1 contain table title and description, not data",
-      "details": "Title and description in Chinese (row 0) and English (row 1)"
+      "evidence": "Rows 0-1 contain table title and number, not data",
+      "details": "Title in Chinese (row 0) and English (row 1)"
     },
     {
       "label": "MULTI_LEVEL_HEADER",
-      "evidence": "Row 3 has marital status categories, Row 4 has year and ethnicity labels forming a multi-level header.",
-      "details": "Level 1 = marital status categories, Level 2 = years and ethnicities"
+      "evidence": "Rows 2-4 have a multi-level header with categories in row 2 and sub-labels in rows 3-4. Row 4 contains merged headers across multiple columns.",
+      "details": "Level 1 = marital status categories, Level 2 = year and gender statistics."
     },
     {
       "label": "INLINE_BILINGUAL",
-      "evidence": "Header cells [3]=\"婚姻狀況\\nMarital status\", [4]=\"年份  \\nYear\", [5]=\"種族  \\nEthnicity\" contain Chinese and English separated by newline",
-      "details": "Pattern appears in multiple header cells"
+      "evidence": "Header cells, such as [2]=\"婚姻狀況\\nMarital status\", contain both Chinese and English separated by a newline.",
+      "details": "This pattern appears in several header cells."
+    },
+    {
+      "label": "WIDE_FORMAT",
+      "evidence": "Columns 4, 6, 8, 10, 12, 14 have pairs for genders and totals, which are structured across years.",
+      "details": "Data structure includes multiple years as columns with dimensions that need to be reshaped."
     },
     {
       "label": "BILINGUAL_ALTERNATING_ROWS",
-      "evidence": "Row 7 \"亞洲人（非華人）\" has data, Row 8 \"Asian (other than Chinese)\" has no numeric values. Pattern repeats for all ethnicities.",
-      "details": "Chinese rows contain numeric data, English rows are label-only."
+      "evidence": "Rows 7 and 8 alternate between Chinese \"亞洲人（非華人）\" with numeric data and English \"Asian (other than Chinese)\" with no numeric values.",
+      "details": "Pattern repeats for all ethnicities, where every Chinese row has numeric data and the subsequent English row does not."
     },
     {
       "label": "IMPLICIT_AGGREGATION_ROWS",
-      "evidence": "Row 41 \"所有少數族裔人士\" contains totals for all ethnic minorities (28.4, 100) and serves as an aggregate of the detailed ethnic entries above.",
-      "details": "Summary of all ethnic groups above."
+      "evidence": "Row 41 \"所有少數族裔人士\" represents a total of the ethnicities above.",
+      "details": "This row summarizes the data from rows above into a coarser aggregation."
     },
     {
       "label": "SPARSE_ROW_FILL",
-      "evidence": "Values in the year column (Row 6=\"2011\") appear once and are not repeated for subsequent rows.",
-      "details": "The year is written only at the start of a block and blank in subsequent rows."
+      "evidence": "The year in column 0 is written only on certain rows (every set of entries) while other rows remain blank, indicating a need to forward-fill.",
+      "details": "Years only appear at the start of blocks of data; blank cells require filling for continuity."
     }
   ],
   "labels": [
     "METADATA_ROWS",
     "MULTI_LEVEL_HEADER",
     "INLINE_BILINGUAL",
+    "WIDE_FORMAT",
     "BILINGUAL_ALTERNATING_ROWS",
     "IMPLICIT_AGGREGATION_ROWS",
     "SPARSE_ROW_FILL"

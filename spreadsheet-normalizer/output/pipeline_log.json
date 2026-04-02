@@ -1,6 +1,6 @@
 {
   "input_file": "long3.xlsx",
-  "start_time": "2026-03-28 20:52:08",
+  "start_time": "2026-04-02 17:46:24",
   "stages": {
     "encoding": {
       "status": "success",
@@ -16,42 +16,36 @@
         "METADATA_ROWS",
         "MULTI_LEVEL_HEADER",
         "INLINE_BILINGUAL",
+        "WIDE_FORMAT",
         "BILINGUAL_ALTERNATING_ROWS",
         "IMPLICIT_AGGREGATION_ROWS",
         "SPARSE_ROW_FILL"
       ],
-      "num_irregularities": 6
+      "num_irregularities": 7
     },
     "schema_estimation": {
       "status": "success",
-      "observation_unit": "One ethnic group's percentage distribution of marital status for one sex category in one year",
+      "observation_unit": "One ethnicity's marital-status percentage for one sex in a given year",
       "num_target_columns": 6,
-      "expected_rows": 168
-    },
-    "transformation": {
-      "status": "success",
-      "output_shape": [
-        54,
-        6
-      ],
-      "validation": {
-        "is_valid": true,
-        "errors": [],
-        "warnings": [],
-        "actual_shape": [
-          54,
-          6
-        ],
-        "expected_shape": [
-          168,
-          6
-        ]
-      },
-      "attempts": 1
+      "expected_rows": 272
     }
   },
-  "output_file": "output/normalized_long3.csv",
-  "end_time": "2026-03-28 20:52:52",
-  "elapsed_seconds": 43.49,
-  "status": "success"
+  "metrics_before": {
+    "shape": {
+      "rows": 49,
+      "cols": 16
+    },
+    "cell_coverage": 0.3852,
+    "row_completeness_uniformity": 0.6219,
+    "column_type_homogeneity": 0.5857,
+    "data_row_ratio": 0.4286,
+    "column_completeness_min": 0.0,
+    "header_uniqueness": 1.0,
+    "type_consistency": 0.8647,
+    "substring_containment": 0.0012,
+    "inter_column_nmi": 0.2718
+  },
+  "status": "failed",
+  "error": "'ethnicity_cn'",
+  "elapsed_seconds": 55.96
 }

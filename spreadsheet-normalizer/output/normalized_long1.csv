@@ -1,55 +1,274 @@
-ethnicity_cn,ethnicity_en,year,number,percentage
-亞洲人（非華人）,Asian (other than Chinese),2011,365611,81.0
-亞洲人（非華人）,Asian (other than Chinese),2016,457188,78.2
-亞洲人（非華人）,Asian (other than Chinese),2021,487862,78.7
-菲律賓人,Filipino,2011,133018,29.5
-菲律賓人,Filipino,2016,184081,31.5
-菲律賓人,Filipino,2021,201291,32.5
-印尼人,Indonesian,2011,133377,29.6
-印尼人,Indonesian,2016,153299,26.2
-印尼人,Indonesian,2021,142065,22.9
-南亞裔人士,South Asian,2011,65521,14.5
-南亞裔人士,South Asian,2016,84875,14.5
-南亞裔人士,South Asian,2021,101969,16.5
-印度人,Indian,2011,28616,6.3
-印度人,Indian,2016,36462,6.2
-印度人,Indian,2021,42569,6.9
-尼泊爾人,Nepalese,2011,16518,3.7
-尼泊爾人,Nepalese,2016,25472,4.4
-尼泊爾人,Nepalese,2021,29701,4.8
-巴基斯坦人,Pakistani,2011,18042,4.0
-巴基斯坦人,Pakistani,2016,18094,3.1
-巴基斯坦人,Pakistani,2021,24385,3.9
-其他南亞裔人士[1],Other South Asian[1],2011,2345,0.5
-其他南亞裔人士[1],Other South Asian[1],2016,4847,0.8
-其他南亞裔人士[1],Other South Asian[1],2021,5314,0.9
-泰國人,Thai,2011,11213,2.5
-泰國人,Thai,2016,10215,1.7
-泰國人,Thai,2021,12972,2.1
-日本人,Japanese,2011,12580,2.8
-日本人,Japanese,2016,9976,1.7
-日本人,Japanese,2021,10291,1.7
-韓國人,Korean,2011,5209,1.2
-韓國人,Korean,2016,6309,1.1
-韓國人,Korean,2021,8700,1.4
-其他亞洲人,Other Asian,2011,4693,1.0
-其他亞洲人,Other Asian,2016,8433,1.4
-其他亞洲人,Other Asian,2021,10574,1.7
-白人,White,2011,55236,12.2
-白人,White,2016,58209,10.0
-白人,White,2021,61582,9.9
-混血兒,Mixed,2011,29001,6.4
-混血兒,Mixed,2016,65255,11.2
-混血兒,Mixed,2021,66732,10.8
-華人父或母,With Chinese parent,2011,24649,5.5
-華人父或母,With Chinese parent,2016,53581,9.2
-華人父或母,With Chinese parent,2021,54541,8.8
-其他混血兒,Other mixed,2011,4352,1.0
-其他混血兒,Other mixed,2016,11674,2.0
-其他混血兒,Other mixed,2021,12191,2.0
-其他[2],Others[2],2011,1335,0.3
-其他[2],Others[2],2016,3731,0.6
-其他[2],Others[2],2021,3392,0.5
-全港人口,Whole population,2011,7071576,
-全港人口,Whole population,2016,7336585,
-全港人口,Whole population,2021,7413070,
+year,ethnicity_cn,ethnicity_en,age_group,number
+2011,nan,亞洲人（非華人）,< 15,
+2011,nan,亞洲人（非華人）,15 - 24,
+2011,nan,亞洲人（非華人）,25 - 34,
+2011,nan,亞洲人（非華人）,35 - 44,
+2011,nan,亞洲人（非華人）,45 - 54,
+2011,nan,亞洲人（非華人）,55 - 64,
+2011,nan,亞洲人（非華人）,65+,
+2011,nan,亞洲人（非華人）,"總計
+Total",
+2011,nan,亞洲人（非華人）,"年齡
+中位數
+Median 
+age",
+2011,Asian (other than Chinese),菲律賓人,< 15,6.6
+2011,Asian (other than Chinese),菲律賓人,15 - 24,7.0
+2011,Asian (other than Chinese),菲律賓人,25 - 34,41.6
+2011,Asian (other than Chinese),菲律賓人,35 - 44,28.4
+2011,Asian (other than Chinese),菲律賓人,45 - 54,11.3
+2011,Asian (other than Chinese),菲律賓人,55 - 64,3.6
+2011,Asian (other than Chinese),菲律賓人,65+,1.5
+2011,Asian (other than Chinese),菲律賓人,"總計
+Total",100.0
+2011,Asian (other than Chinese),菲律賓人,"年齡
+中位數
+Median 
+age",
+2011,Filipino,印尼人,< 15,2.2
+2011,Filipino,印尼人,15 - 24,3.0
+2011,Filipino,印尼人,25 - 34,34.5
+2011,Filipino,印尼人,35 - 44,36.5
+2011,Filipino,印尼人,45 - 54,19.0
+2011,Filipino,印尼人,55 - 64,4.3
+2011,Filipino,印尼人,65+,0.5
+2011,Filipino,印尼人,"總計
+Total",100.0
+2011,Filipino,印尼人,"年齡
+中位數
+Median 
+age",
+2011,Indonesian,南亞裔人士,< 15,0.2
+2011,Indonesian,南亞裔人士,15 - 24,9.3
+2011,Indonesian,南亞裔人士,25 - 34,64.3
+2011,Indonesian,南亞裔人士,35 - 44,23.9
+2011,Indonesian,南亞裔人士,45 - 54,1.7
+2011,Indonesian,南亞裔人士,55 - 64,0.4
+2011,Indonesian,南亞裔人士,65+,0.2
+2011,Indonesian,南亞裔人士,"總計
+Total",100.0
+2011,Indonesian,南亞裔人士,"年齡
+中位數
+Median 
+age",
+2011,South Asian,印度人,< 15,25.7
+2011,South Asian,印度人,15 - 24,11.9
+2011,South Asian,印度人,25 - 34,23.3
+2011,South Asian,印度人,35 - 44,20.4
+2011,South Asian,印度人,45 - 54,9.3
+2011,South Asian,印度人,55 - 64,4.9
+2011,South Asian,印度人,65+,4.4
+2011,South Asian,印度人,"總計
+Total",100.0
+2011,South Asian,印度人,"年齡
+中位數
+Median 
+age",
+2011,Indian,尼泊爾人,< 15,20.2
+2011,Indian,尼泊爾人,15 - 24,10.4
+2011,Indian,尼泊爾人,25 - 34,25.1
+2011,Indian,尼泊爾人,35 - 44,20.5
+2011,Indian,尼泊爾人,45 - 54,10.9
+2011,Indian,尼泊爾人,55 - 64,6.1
+2011,Indian,尼泊爾人,65+,6.8
+2011,Indian,尼泊爾人,"總計
+Total",100.0
+2011,Indian,尼泊爾人,"年齡
+中位數
+Median 
+age",
+2011,Nepalese,巴基斯坦人,< 15,21.6
+2011,Nepalese,巴基斯坦人,15 - 24,15.3
+2011,Nepalese,巴基斯坦人,25 - 34,23.7
+2011,Nepalese,巴基斯坦人,35 - 44,23.3
+2011,Nepalese,巴基斯坦人,45 - 54,11.1
+2011,Nepalese,巴基斯坦人,55 - 64,2.9
+2011,Nepalese,巴基斯坦人,65+,2.1
+2011,Nepalese,巴基斯坦人,"總計
+Total",100.0
+2011,Nepalese,巴基斯坦人,"年齡
+中位數
+Median 
+age",
+2011,Pakistani,其他南亞裔人士[2],< 15,39.6
+2011,Pakistani,其他南亞裔人士[2],15 - 24,11.8
+2011,Pakistani,其他南亞裔人士[2],25 - 34,20.4
+2011,Pakistani,其他南亞裔人士[2],35 - 44,17.0
+2011,Pakistani,其他南亞裔人士[2],45 - 54,4.5
+2011,Pakistani,其他南亞裔人士[2],55 - 64,3.5
+2011,Pakistani,其他南亞裔人士[2],65+,3.2
+2011,Pakistani,其他南亞裔人士[2],"總計
+Total",100.0
+2011,Pakistani,其他南亞裔人士[2],"年齡
+中位數
+Median 
+age",
+2011,Other South Asian[2],泰國人,< 15,14.8
+2011,Other South Asian[2],泰國人,15 - 24,8.4
+2011,Other South Asian[2],泰國人,25 - 34,21.1
+2011,Other South Asian[2],泰國人,35 - 44,25.2
+2011,Other South Asian[2],泰國人,45 - 54,14.7
+2011,Other South Asian[2],泰國人,55 - 64,14.8
+2011,Other South Asian[2],泰國人,65+,1.1
+2011,Other South Asian[2],泰國人,"總計
+Total",100.0
+2011,Other South Asian[2],泰國人,"年齡
+中位數
+Median 
+age",
+2011,Thai,日本人,< 15,3.5
+2011,Thai,日本人,15 - 24,2.4
+2011,Thai,日本人,25 - 34,13.7
+2011,Thai,日本人,35 - 44,31.8
+2011,Thai,日本人,45 - 54,30.4
+2011,Thai,日本人,55 - 64,14.8
+2011,Thai,日本人,65+,3.4
+2011,Thai,日本人,"總計
+Total",100.0
+2011,Thai,日本人,"年齡
+中位數
+Median 
+age",
+2011,Japanese,韓國人,< 15,17.1
+2011,Japanese,韓國人,15 - 24,3.0
+2011,Japanese,韓國人,25 - 34,13.7
+2011,Japanese,韓國人,35 - 44,30.9
+2011,Japanese,韓國人,45 - 54,21.4
+2011,Japanese,韓國人,55 - 64,9.9
+2011,Japanese,韓國人,65+,3.9
+2011,Japanese,韓國人,"總計
+Total",100.0
+2011,Japanese,韓國人,"年齡
+中位數
+Median 
+age",
+2011,Korean,其他亞洲人,< 15,17.2
+2011,Korean,其他亞洲人,15 - 24,5.6
+2011,Korean,其他亞洲人,25 - 34,18.4
+2011,Korean,其他亞洲人,35 - 44,29.8
+2011,Korean,其他亞洲人,45 - 54,16.4
+2011,Korean,其他亞洲人,55 - 64,8.9
+2011,Korean,其他亞洲人,65+,3.7
+2011,Korean,其他亞洲人,"總計
+Total",100.0
+2011,Korean,其他亞洲人,"年齡
+中位數
+Median 
+age",
+2011,Other Asian,白人,< 15,10.5
+2011,Other Asian,白人,15 - 24,10.3
+2011,Other Asian,白人,25 - 34,24.1
+2011,Other Asian,白人,35 - 44,22.2
+2011,Other Asian,白人,45 - 54,17.8
+2011,Other Asian,白人,55 - 64,8.1
+2011,Other Asian,白人,65+,7.0
+2011,Other Asian,白人,"總計
+Total",100.0
+2011,Other Asian,白人,"年齡
+中位數
+Median 
+age",
+2011,White,混血兒,< 15,16.8
+2011,White,混血兒,15 - 24,7.3
+2011,White,混血兒,25 - 34,17.2
+2011,White,混血兒,35 - 44,23.9
+2011,White,混血兒,45 - 54,18.4
+2011,White,混血兒,55 - 64,10.6
+2011,White,混血兒,65+,5.8
+2011,White,混血兒,"總計
+Total",100.0
+2011,White,混血兒,"年齡
+中位數
+Median 
+age",
+2011,Mixed,華人父或母,< 15,37.3
+2011,Mixed,華人父或母,15 - 24,17.3
+2011,Mixed,華人父或母,25 - 34,14.4
+2011,Mixed,華人父或母,35 - 44,11.5
+2011,Mixed,華人父或母,45 - 54,10.0
+2011,Mixed,華人父或母,55 - 64,4.8
+2011,Mixed,華人父或母,65+,4.8
+2011,Mixed,華人父或母,"總計
+Total",100.0
+2011,Mixed,華人父或母,"年齡
+中位數
+Median 
+age",
+2011,With Chinese parent,其他混血兒,< 15,34.2
+2011,With Chinese parent,其他混血兒,15 - 24,18.0
+2011,With Chinese parent,其他混血兒,25 - 34,14.4
+2011,With Chinese parent,其他混血兒,35 - 44,11.8
+2011,With Chinese parent,其他混血兒,45 - 54,10.9
+2011,With Chinese parent,其他混血兒,55 - 64,5.4
+2011,With Chinese parent,其他混血兒,65+,5.4
+2011,With Chinese parent,其他混血兒,"總計
+Total",100.0
+2011,With Chinese parent,其他混血兒,"年齡
+中位數
+Median 
+age",
+2011,Other mixed,其他[3],< 15,55.1
+2011,Other mixed,其他[3],15 - 24,12.8
+2011,Other mixed,其他[3],25 - 34,14.2
+2011,Other mixed,其他[3],35 - 44,9.9
+2011,Other mixed,其他[3],45 - 54,4.8
+2011,Other mixed,其他[3],55 - 64,1.4
+2011,Other mixed,其他[3],65+,1.8
+2011,Other mixed,其他[3],"總計
+Total",100.0
+2011,Other mixed,其他[3],"年齡
+中位數
+Median 
+age",
+2011,Others[3],All ethnic minorities,< 15,16.1
+2011,Others[3],All ethnic minorities,15 - 24,6.0
+2011,Others[3],All ethnic minorities,25 - 34,28.5
+2011,Others[3],All ethnic minorities,35 - 44,33.9
+2011,Others[3],All ethnic minorities,45 - 54,11.8
+2011,Others[3],All ethnic minorities,55 - 64,3.7
+2011,Others[3],All ethnic minorities,65+,
+2011,Others[3],All ethnic minorities,"總計
+Total",100.0
+2011,Others[3],All ethnic minorities,"年齡
+中位數
+Median 
+age",
+2011,nan,"All ethnic minorities, excluding foreign domestic helpers",< 15,
+2011,nan,"All ethnic minorities, excluding foreign domestic helpers",15 - 24,
+2011,nan,"All ethnic minorities, excluding foreign domestic helpers",25 - 34,
+2011,nan,"All ethnic minorities, excluding foreign domestic helpers",35 - 44,
+2011,nan,"All ethnic minorities, excluding foreign domestic helpers",45 - 54,
+2011,nan,"All ethnic minorities, excluding foreign domestic helpers",55 - 64,
+2011,nan,"All ethnic minorities, excluding foreign domestic helpers",65+,
+2011,nan,"All ethnic minorities, excluding foreign domestic helpers","總計
+Total",
+2011,nan,"All ethnic minorities, excluding foreign domestic helpers","年齡
+中位數
+Median 
+age",
+2011,nan,全港人口,< 15,
+2011,nan,全港人口,15 - 24,
+2011,nan,全港人口,25 - 34,
+2011,nan,全港人口,35 - 44,
+2011,nan,全港人口,45 - 54,
+2011,nan,全港人口,55 - 64,
+2011,nan,全港人口,65+,
+2011,nan,全港人口,"總計
+Total",
+2011,nan,全港人口,"年齡
+中位數
+Median 
+age",
+2011,Whole population,,< 15,11.6
+2011,Whole population,,15 - 24,12.4
+2011,Whole population,,25 - 34,15.3
+2011,Whole population,,35 - 44,16.1
+2011,Whole population,,45 - 54,18.2
+2011,Whole population,,55 - 64,13.0
+2011,Whole population,,65+,13.3
+2011,Whole population,,"總計
+Total",100.0
+2011,Whole population,,"年齡
+中位數
+Median 
+age",

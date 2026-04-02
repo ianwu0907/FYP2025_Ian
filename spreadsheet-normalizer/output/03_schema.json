@@ -1,28 +1,36 @@
 {
   "observation_unit": {
-    "description": "One ethnic group's percentage distribution of marital status for one sex category in one year",
+    "description": "One ethnicity's marital-status percentage for one sex in a given year",
     "dimensions": [
-      "ethnic_group_cn",
-      "ethnic_group_en",
-      "marital_status",
       "year",
+      "ethnicity_cn",
+      "ethnicity_en",
+      "marital_status",
       "sex"
     ],
-    "example": "One ethnic group's percentage distribution of marital status for one sex category in one year"
+    "example": "One ethnicity's marital-status percentage for one sex in a given year"
   },
   "target_columns": [
     {
-      "name": "ethnic_group_cn",
+      "name": "year",
+      "data_type": "integer",
+      "description": "Reporting year",
+      "is_dimension": true,
+      "nullable": false,
+      "source": "column 0 (forward-filled)"
+    },
+    {
+      "name": "ethnicity_cn",
       "data_type": "string",
-      "description": "Ethnic group name in Chinese",
+      "description": "Ethnicity name in Chinese",
       "is_dimension": true,
       "nullable": false,
       "source": "column 1 (Chinese rows)"
     },
     {
-      "name": "ethnic_group_en",
+      "name": "ethnicity_en",
       "data_type": "string",
-      "description": "Ethnic group name in English",
+      "description": "Ethnicity name in English",
       "is_dimension": true,
       "nullable": false,
       "source": "column 1 (English rows)"
@@ -33,15 +41,7 @@
       "description": "Marital status category",
       "is_dimension": true,
       "nullable": false,
-      "source": "column headers (從未結婚, 已婚, 喪偶／離婚／分居)"
-    },
-    {
-      "name": "year",
-      "data_type": "integer",
-      "description": "Year of data",
-      "is_dimension": true,
-      "nullable": false,
-      "source": "column headers (年份)"
+      "source": "column group headers (Never married, Married, Widowed/divorced, Total)"
     },
     {
       "name": "sex",
@@ -49,7 +49,7 @@
       "description": "Sex category",
       "is_dimension": true,
       "nullable": false,
-      "source": "sub-column headers (男, 女)"
+      "source": "sub-column headers (Male, Female)"
     },
     {
       "name": "percentage",
@@ -57,36 +57,36 @@
       "description": "Percentage distribution",
       "is_dimension": false,
       "nullable": true,
-      "source": "value cells under each marital status × sex combination"
+      "source": "value cells under each group×sex combination"
     }
   ],
   "expected_output": {
-    "row_count_formula": "28 ethnic groups × 3 marital statuses × 2 sexes = 168",
-    "row_count_estimate": 168,
+    "row_count_formula": "34 ethnicities × 4 marital statuses × 2 sexes = 272",
+    "row_count_estimate": 272,
     "column_count": 6
   },
   "exclusions": {
     "exclude_rows": {
-      "description": "Row 41 \"所有少數族裔人士\" (aggregation row), all English-only rows which lack numeric values.",
+      "description": "Row 41 \"所有少數族裔人士\" and Row 42 \"All ethnic minorities\" (aggregation rows), and all corresponding higher-level categories; they summarize data from detailed ethnicities.",
       "criteria": [
-        "Row 41 \"所有少數族裔人士\" (aggregation row), all English-only rows which lack numeric values."
+        "Row 41 \"所有少數族裔人士\" and Row 42 \"All ethnic minorities\" (aggregation rows), and all corresponding higher-level categories; they summarize data from detailed ethnicities."
       ]
     },
     "exclude_columns": {
-      "description": "No columns to exclude as all are necessary for the tidy format.",
+      "description": "Columns with totals or overall values under marital status headers (e.g., every \"合計\\nOverall\" column, Total column) as these are aggregate values.",
       "criteria": [
-        "No columns to exclude as all are necessary for the tidy format."
+        "Columns with totals or overall values under marital status headers (e.g., every \"合計\\nOverall\" column, Total column) as these are aggregate values."
       ]
     }
   },
   "handling_special_cases": {},
   "validation_samples": [],
-  "schema_reasoning": "One ethnic group's percentage distribution of marital status for one sex category in one year",
+  "schema_reasoning": "One ethnicity's marital-status percentage for one sex in a given year",
   "expected_output_columns": [
-    "ethnic_group_cn",
-    "ethnic_group_en",
-    "marital_status",
     "year",
+    "ethnicity_cn",
+    "ethnicity_en",
+    "marital_status",
     "sex",
     "percentage"
   ],
