@@ -34,7 +34,7 @@ generator:
   # Two-stage approach: Strategy → Code
   max_retries: 3
   temperature: 0.1
-  max_completion_tokens: 6000
+  max_completion_tokens: 128000
 
 # Output Configuration
 output:

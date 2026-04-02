@@ -1,23 +1,23 @@
 """
-Table Normalizer Pipeline (Enhanced)
-Orchestrates the complete normalization process using semantic reasoning.
+Table Normalizer Pipeline (Redesigned)
+Orchestrates the complete normalization process.
 
 Pipeline stages:
-1. Encoding: Compress spreadsheet to LLM-friendly representation
-2. Structure Analysis: Semantic understanding of table structure
-3. Schema Estimation: Derive ideal tidy schema
-4. Transformation: Two-stage (Strategy → Code) generation and execution
+1. Encoding:                Compress spreadsheet to LLM-friendly representation
+2. Irregularity Detection:  Detect structural irregularities (physical + LLM)
+3. Schema Estimation:       Design target tidy schema (LLM + guidance)
+4. Transformation:          Generate code, execute, validate, retry
 """
 
 import logging
 import pandas as pd
-from typing import Dict, Any, Optional, Callable
+from typing import Dict, Any, Optional
 from pathlib import Path
 import json
 import time
 
 from ..encoder import SpreadsheetEncoder
-from ..analyzer import StructureAnalyzer
+from ..detector import IrregularityDetector
 from ..estimator import SchemaEstimator
 from ..generator import TransformationGenerator
 
@@ -28,29 +28,18 @@ class TableNormalizer:
     """
     Main pipeline that orchestrates the complete table normalization process.
 
-    Uses LLM semantic reasoning throughout:
-    - Structure analysis identifies patterns through understanding, not matching
-    - Schema estimation derives ideal tidy format based on tidy data principles
-    - Transformation uses free-form strategy generation
+    Flow:
+      Encoder → IrregularityDetector → SchemaEstimator → TransformationGenerator
     """
 
-    def __init__(self, config: Dict[str, Any], progress_callback: Optional[Callable] = None):
-        """
-        Initialize the normalizer pipeline.
-
-        Args:
-            config: Pipeline configuration dictionary
-            progress_callback: Optional callback function (stage: str, progress: int, message: str) -> None
-        """
+    def __init__(self, config: Dict[str, Any]):
+        """Initialize the normalizer pipeline."""
         self.config = config
-        self.progress_callback = progress_callback
 
-        # Initialize all components
-        logger.info("Initializing Table Normalizer Pipeline (Enhanced)...")
-        logger.info("  Using LLM semantic reasoning for generalized normalization")
+        logger.info("Initializing Table Normalizer Pipeline...")
 
         self.encoder = SpreadsheetEncoder(config.get('encoder', {}))
-        self.analyzer = StructureAnalyzer(config.get('analyzer', {}) | config.get('llm', {}))
+        self.detector = IrregularityDetector(config.get('detector', {}) | config.get('llm', {}))
         self.estimator = SchemaEstimator(config.get('estimator', {}) | config.get('llm', {}))
         self.generator = TransformationGenerator(config.get('generator', {}) | config.get('llm', {}))
 
@@ -62,28 +51,9 @@ class TableNormalizer:
 
         logger.info("Pipeline initialized successfully")
 
-    def _report_progress(self, stage: str, progress: int, message: str):
-        """Report progress if callback is set."""
-        if self.progress_callback:
-            try:
-                self.progress_callback(stage, progress, message)
-            except Exception as e:
-                logger.warning(f"Progress callback failed: {e}")
-
     def normalize(self, input_file: str, output_file: Optional[str] = None) -> Dict[str, Any]:
         """
         Execute the complete normalization pipeline.
-
-        Args:
-            input_file: Path to input spreadsheet (.xlsx or .csv)
-            output_file: Path to output file (default: output/normalized_output.csv)
-
-        Returns:
-            Dict containing:
-            - normalized_df: The transformed DataFrame
-            - output_path: Path to saved output
-            - pipeline_log: Execution log
-            - intermediate_results: All intermediate outputs
         """
         start_time = time.time()
         logger.info(f"Starting normalization pipeline for: {input_file}")
@@ -96,12 +66,11 @@ class TableNormalizer:
 
         try:
             # ================================================================
-            # Stage 1: ENCODING (10-25%)
+            # Stage 1: ENCODING
             # ================================================================
             logger.info("\n" + "=" * 80)
             logger.info("STAGE 1: SPREADSHEET ENCODING")
             logger.info("=" * 80)
-            self._report_progress("encoding", 10, "Loading and encoding spreadsheet structure...")
 
             encoded_data = self._run_encoding(input_file)
             pipeline_log['stages']['encoding'] = {
@@ -116,39 +85,35 @@ class TableNormalizer:
                     'encoded_text_preview': encoded_data['encoded_text'][:2000]
                 })
 
-            self._report_progress("encoding", 25, "Spreadsheet encoding completed")
-
             # ================================================================
-            # Stage 2: STRUCTURE ANALYSIS (25-45%) (LLM Semantic Reasoning)
+            # Stage 2: IRREGULARITY DETECTION
             # ================================================================
             logger.info("\n" + "=" * 80)
-            logger.info("STAGE 2: STRUCTURE ANALYSIS (Semantic Reasoning)")
+            logger.info("STAGE 2: IRREGULARITY DETECTION")
             logger.info("=" * 80)
-            self._report_progress("analyzing", 30, "Analyzing table structure with LLM...")
 
-            structure_analysis = self._run_structure_analysis(encoded_data)
-            pipeline_log['stages']['structure_analysis'] = {
+            detection_result = self._run_detection(encoded_data)
+            pipeline_log['stages']['detection'] = {
                 'status': 'success',
-                'has_bilingual': structure_analysis.get('row_patterns', {}).get('has_bilingual_rows', False),
-                'has_section_markers': structure_analysis.get('row_patterns', {}).get('has_section_markers', False),
-                'has_implicit_aggregation': structure_analysis.get('implicit_aggregation', {}).get('has_implicit_aggregation', False),
-                'transformation_complexity': structure_analysis.get('transformation_complexity', 'unknown')
+                'irregularities': detection_result['labels'],
+                'num_irregularities': len(detection_result['labels']),
             }
 
             if self.save_intermediate:
-                self._save_intermediate('02_structure_analysis.json', structure_analysis)
-
-            self._report_progress("analyzing", 45, "Structure analysis completed")
+                self._save_intermediate('02_detection_result.json', {
+                    'physical': detection_result['physical'],
+                    'irregularities': detection_result['irregularities'],
+                    'labels': detection_result['labels'],
+                })
 
             # ================================================================
-            # Stage 3: SCHEMA ESTIMATION (45-65%) (Tidy Data Principles)
+            # Stage 3: SCHEMA ESTIMATION
             # ================================================================
             logger.info("\n" + "=" * 80)
-            logger.info("STAGE 3: SCHEMA ESTIMATION (Tidy Data Principles)")
+            logger.info("STAGE 3: SCHEMA ESTIMATION")
             logger.info("=" * 80)
-            self._report_progress("estimating", 50, "Estimating normalized schema with LLM...")
 
-            schema = self._run_schema_estimation(encoded_data, structure_analysis)
+            schema = self._run_schema_estimation(encoded_data, detection_result)
             pipeline_log['stages']['schema_estimation'] = {
                 'status': 'success',
                 'observation_unit': schema.get('observation_unit', {}).get('description', 'unknown'),
@@ -157,20 +122,20 @@ class TableNormalizer:
             }
 
             if self.save_intermediate:
-                self._save_intermediate('03_schema.json', schema)
-
-            self._report_progress("estimating", 65, "Schema estimation completed")
+                # Remove non-serializable fields before saving
+                schema_to_save = {k: v for k, v in schema.items()
+                                  if k not in ('detection_result',)}
+                self._save_intermediate('03_schema.json', schema_to_save)
 
             # ================================================================
-            # Stage 4: TRANSFORMATION (65-90%) (Strategy → Code → Execute → Validate)
+            # Stage 4: TRANSFORMATION
             # ================================================================
             logger.info("\n" + "=" * 80)
-            logger.info("STAGE 4: TRANSFORMATION (Two-Stage Generation)")
+            logger.info("STAGE 4: TRANSFORMATION")
             logger.info("=" * 80)
-            self._report_progress("transforming", 70, "Generating transformation strategy...")
 
             transformation_result = self._run_transformation(
-                encoded_data, structure_analysis, schema
+                encoded_data, detection_result, schema
             )
             pipeline_log['stages']['transformation'] = {
                 'status': 'success',
@@ -180,35 +145,21 @@ class TableNormalizer:
             }
 
             if self.save_intermediate:
-                self._save_intermediate('04_transformation_strategy.json',
-                                        transformation_result.get('transformation_strategy', {}))
-                self._save_intermediate('05_transformation_code.py',
+                self._save_intermediate('04_transformation_code.py',
                                         transformation_result['transformation_code'],
                                         is_text=True)
 
-            self._report_progress("transforming", 90, "Transformation completed")
-
             # ================================================================
-            # Stage 5: SAVE OUTPUT (90-100%)
+            # Stage 5: SAVE OUTPUT
             # ================================================================
             logger.info("\n" + "=" * 80)
             logger.info("STAGE 5: SAVING OUTPUT")
             logger.info("=" * 80)
-            self._report_progress("saving", 95, "Saving normalized output...")
 
             if output_file is None:
                 output_file = self.output_dir / 'normalized_output.csv'
 
-            # Check if normalized_df is empty
-            df_to_save = transformation_result['normalized_df']
-            if df_to_save.empty:
-                logger.warning("⚠️ Normalized DataFrame is empty! Falling back to original DataFrame.")
-                logger.warning("This usually indicates that the transformation code filtered out all data.")
-                logger.warning("Please review the intermediate files to debug the transformation logic.")
-                df_to_save = encoded_data['dataframe']
-                pipeline_log['fallback_to_original'] = True
-
-            output_path = self._save_output(df_to_save, output_file)
+            output_path = self._save_output(transformation_result['normalized_df'], output_file)
             pipeline_log['output_file'] = str(output_path)
 
             # Calculate execution time
@@ -218,14 +169,12 @@ class TableNormalizer:
             pipeline_log['status'] = 'success'
 
             # Print summary
-            self._print_summary(pipeline_log, transformation_result, encoded_data)
+            self._print_summary(pipeline_log, transformation_result, encoded_data,
+                                detection_result)
 
             # Save pipeline log
             if self.save_intermediate:
                 self._save_intermediate('pipeline_log.json', pipeline_log)
-
-            # Final progress report
-            self._report_progress("completed", 100, "Normalization completed successfully!")
 
             return {
                 'normalized_df': transformation_result['normalized_df'],
@@ -233,7 +182,7 @@ class TableNormalizer:
                 'pipeline_log': pipeline_log,
                 'intermediate_results': {
                     'encoded_data': encoded_data,
-                    'structure_analysis': structure_analysis,
+                    'detection_result': detection_result,
                     'schema': schema,
                     'transformation': transformation_result
                 }
@@ -253,47 +202,38 @@ class TableNormalizer:
 
             raise
 
+    # ==================================================================
+    # Stage runners
+    # ==================================================================
+
     def _run_encoding(self, input_file: str) -> Dict[str, Any]:
         """Run the encoding stage."""
         df = self.encoder.load_file(input_file)
         logger.info(f"Loaded data with shape: {df.shape}")
 
         encoded_data = self.encoder.encode(df)
-        logger.info(f"Encoding complete. Compression: {encoded_data['metadata'].get('compression_ratio', 0):.2f}x")
+        logger.info(f"Encoding complete. Compression: "
+                    f"{encoded_data['metadata'].get('compression_ratio', 0):.2f}x")
 
         return encoded_data
 
-    def _run_structure_analysis(self, encoded_data: Dict[str, Any]) -> Dict[str, Any]:
-        """Run the structure analysis stage with LLM semantic reasoning."""
-        analysis = self.analyzer.analyze(encoded_data)
+    def _run_detection(self, encoded_data: Dict[str, Any]) -> Dict[str, Any]:
+        """Run irregularity detection."""
+        detection_result = self.detector.detect(encoded_data)
 
-        # Log key findings
-        sem = analysis.get('semantic_understanding', {})
-        logger.info(f"Data description: {sem.get('data_description', 'Unknown')[:100]}")
+        labels = detection_result['labels']
+        logger.info(f"Detected {len(labels)} irregularities: {labels}")
 
-        row_patterns = analysis.get('row_patterns', {})
-        if row_patterns.get('has_bilingual_rows'):
-            bilingual = row_patterns.get('bilingual_details', {})
-            logger.info(f"Bilingual pattern: {bilingual.get('data_relationship', 'unknown')}")
+        for ir in detection_result['irregularities']:
+            logger.info(f"  {ir['label']}: {ir.get('evidence', '')[:80]}")
 
-        if row_patterns.get('has_section_markers'):
-            markers = row_patterns.get('section_marker_details', {})
-            logger.info(f"Section markers: {markers.get('marker_values', [])}")
-
-        implicit_agg = analysis.get('implicit_aggregation', {})
-        if implicit_agg.get('has_implicit_aggregation'):
-            logger.info(f"Implicit aggregation detected: {len(implicit_agg.get('aggregation_hierarchies', []))} hierarchies")
-            logger.info(f"  Summary rows to exclude: {len(implicit_agg.get('summary_rows', []))}")
-
-        logger.info(f"Transformation complexity: {analysis.get('transformation_complexity', 'unknown')}")
-
-        return analysis
+        return detection_result
 
     def _run_schema_estimation(self,
                                encoded_data: Dict[str, Any],
-                               structure_analysis: Dict[str, Any]) -> Dict[str, Any]:
-        """Run the schema estimation stage based on tidy data principles."""
-        schema = self.estimator.estimate_schema(encoded_data, structure_analysis)
+                               detection_result: Dict[str, Any]) -> Dict[str, Any]:
+        """Run schema estimation."""
+        schema = self.estimator.estimate_schema(encoded_data, detection_result)
 
         # Log target schema
         obs_unit = schema.get('observation_unit', {})
@@ -312,11 +252,11 @@ class TableNormalizer:
 
     def _run_transformation(self,
                             encoded_data: Dict[str, Any],
-                            structure_analysis: Dict[str, Any],
+                            detection_result: Dict[str, Any],
                             schema: Dict[str, Any]) -> Dict[str, Any]:
-        """Run the two-stage transformation generation and execution."""
+        """Run transformation generation and execution."""
         result = self.generator.generate_and_execute(
-            encoded_data, structure_analysis, schema
+            encoded_data, detection_result, schema
         )
 
         # Log results
@@ -334,6 +274,10 @@ class TableNormalizer:
                 logger.warning(f"  Warning: {warning}")
 
         return result
+
+    # ==================================================================
+    # Output
+    # ==================================================================
 
     def _save_output(self, df: pd.DataFrame, output_file: str) -> Path:
         """Save the normalized DataFrame to file."""
@@ -373,7 +317,8 @@ class TableNormalizer:
     def _print_summary(self,
                        pipeline_log: Dict[str, Any],
                        transformation_result: Dict[str, Any],
-                       encoded_data: Dict[str, Any]):
+                       encoded_data: Dict[str, Any],
+                       detection_result: Dict[str, Any]):
         """Print final pipeline summary."""
         logger.info("\n" + "=" * 80)
         logger.info("NORMALIZATION SUMMARY")
@@ -383,6 +328,7 @@ class TableNormalizer:
         logger.info(f"Input shape: {encoded_data['original_shape']}")
         logger.info(f"Output shape: {transformation_result['normalized_df'].shape}")
         logger.info(f"Compression: {encoded_data['metadata'].get('compression_ratio', 0):.2f}x")
+        logger.info(f"Irregularities: {detection_result['labels']}")
         logger.info(f"Output file: {pipeline_log.get('output_file', 'N/A')}")
         logger.info(f"Execution time: {pipeline_log.get('elapsed_seconds', 0)} seconds")
         logger.info(f"Transformation attempts: {transformation_result.get('attempts', 1)}")

@@ -1,6 +1,6 @@
 {
   "input_file": "long3.xlsx",
-  "start_time": "2026-01-11 21:09:40",
+  "start_time": "2026-03-28 20:52:08",
   "stages": {
     "encoding": {
       "status": "success",
@@ -10,78 +10,48 @@
       ],
       "compression_ratio": 0.8559763724808895
     },
-    "structure_analysis": {
+    "detection": {
       "status": "success",
-      "has_bilingual": true,
-      "has_section_markers": true,
-      "has_implicit_aggregation": false,
-      "transformation_complexity": "medium"
+      "irregularities": [
+        "METADATA_ROWS",
+        "MULTI_LEVEL_HEADER",
+        "INLINE_BILINGUAL",
+        "BILINGUAL_ALTERNATING_ROWS",
+        "IMPLICIT_AGGREGATION_ROWS",
+        "SPARSE_ROW_FILL"
+      ],
+      "num_irregularities": 6
     },
     "schema_estimation": {
       "status": "success",
-      "observation_unit": "Each row represents the percentage value for a specific ethnic group (with bilingual names) in a given year, broken down by a single marital status category (excluding overall totals) and by gender.",
+      "observation_unit": "One ethnic group's percentage distribution of marital status for one sex category in one year",
       "num_target_columns": 6,
-      "expected_rows": 189
+      "expected_rows": 168
     },
     "transformation": {
       "status": "success",
       "output_shape": [
-        120,
+        54,
         6
       ],
       "validation": {
-        "is_valid": false,
-        "errors": [
-          "Sample validation failed: Spot check for first ethnic group in 2011"
-        ],
+        "is_valid": true,
+        "errors": [],
         "warnings": [],
-        "checks_performed": [
-          {
-            "check": "not_empty",
-            "passed": true
-          },
-          {
-            "check": "columns_match",
-            "passed": true,
-            "missing": [],
-            "extra": []
-          },
-          {
-            "check": "row_count",
-            "passed": true,
-            "actual": 120,
-            "expected": 189
-          },
-          {
-            "check": "semantic_sample",
-            "description": "Spot check for first ethnic group in 2011",
-            "expected": {
-              "year": 2011,
-              "ethnicity_cn": "亞洲人（非華人）",
-              "ethnicity_en": "Asian (other than Chinese)",
-              "marital_status": "Never married",
-              "gender": "Male",
-              "percentage": 23.0
-            },
-            "passed": false,
-            "actual": null,
-            "error": "Unalignable boolean Series provided as indexer (index of the boolean Series and of the indexed object do not match)."
-          }
-        ],
         "actual_shape": [
-          120,
+          54,
           6
         ],
         "expected_shape": [
-          189,
+          168,
           6
         ]
       },
-      "attempts": 3
+      "attempts": 1
     }
   },
   "output_file": "output/normalized_long3.csv",
-  "end_time": "2026-01-11 21:11:36",
-  "elapsed_seconds": 115.09,
+  "end_time": "2026-03-28 20:52:52",
+  "elapsed_seconds": 43.49,
   "status": "success"
 }

@@ -1,508 +1,663 @@
 """
-Schema Estimator Module (Enhanced)
-Uses LLM semantic reasoning to derive the ideal tidy schema.
+Schema Estimator Module (Redesigned)
 
-Key principle: Let LLM reason freely about what the tidy representation should be,
-based on tidy data principles and semantic understanding of the data.
+Consumes:
+  - encoded_data  (DataFrame + metadata from SpreadsheetEncoder)
+  - detection_result  (from IrregularityDetector: physical features,
+    irregularity labels with evidence)
+
+Produces:
+  - A target tidy schema dict compatible with TransformationGenerator
+
+Architecture:
+  1.  Assemble context: full data + irregularity labels + per-label
+      schema guidance from the taxonomy.
+  2.  Single focused LLM call with few-shot examples.
+      Output format is simple structured text (NOT JSON) to ensure
+      stability on weak/open-source models.
+  3.  Deterministic parsing + assembly into the schema dict.
+
+Design principles:
+  - ONE LLM call, ONE concern: "design the tidy schema".
+  - Schema guidance for each irregularity is injected automatically
+    from the taxonomy — the LLM does not need to figure out how to
+    handle each irregularity from scratch.
+  - Output format is line-based text with fixed prefixes. Even if
+    the model deviates slightly, the parser can recover.
+  - Full data is passed — no truncation.
 """
 
 import json
 import logging
-from typing import Dict, List, Any, Optional
-from openai import OpenAI
 import os
 import re
+from typing import Dict, List, Any, Optional
+
 import pandas as pd
+import numpy as np
+from openai import OpenAI
+
+from ..detector.irregularity_detector import get_schema_guidance_for
 
 logger = logging.getLogger(__name__)
 
 
 class SchemaEstimator:
     """
-    Estimates the target tidy schema using LLM semantic reasoning.
-
-    NO hardcoded templates - LLM derives schema based on:
-    1. Structure analysis results
-    2. Tidy data principles
-    3. Semantic understanding of what the data represents
+    Estimates the ideal tidy schema using one focused LLM call
+    informed by detected irregularities and their handling guidance.
     """
 
     def __init__(self, config: Dict[str, Any]):
-        """Initialize the schema estimator."""
         self.config = config
 
-        # Initialize OpenAI client
-        api_key = os.getenv('OPENAI_API_KEY')
+        api_key = os.getenv("OPENAI_API_KEY")
         if not api_key:
-            raise ValueError("OPENAI_API_KEY environment variable not set")
+            raise ValueError("OPENAI_API_KEY not set")
 
-        self.client = OpenAI(api_key=api_key)
-        self.model = os.getenv('OPENAI_MODEL', 'gpt-4o-mini')
+        base_url = os.getenv("OPENAI_BASE_URL")
+        kw = {"api_key": api_key}
+        if base_url:
+            kw["base_url"] = base_url
+        self.client = OpenAI(**kw)
+        self.model = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
+        self.max_tokens = config.get("max_completion_tokens", 2500)
 
-        # LLM settings
-        # self.temperature = config.get('temperature', 0.1)
-        self.max_completion_tokens = config.get('max_completion_tokens', 4000)
+    # ==================================================================
+    # Public API
+    # ==================================================================
 
     def estimate_schema(self,
                         encoded_data: Dict[str, Any],
-                        structure_analysis: Dict[str, Any]) -> Dict[str, Any]:
+                        detection_result: Dict[str, Any]) -> Dict[str, Any]:
         """
-        Estimate the ideal tidy schema using LLM reasoning.
+        Estimate the target tidy schema.
+
+        Args:
+            encoded_data:     From SpreadsheetEncoder (has 'dataframe', 'metadata')
+            detection_result: From IrregularityDetector (has 'physical',
+                              'irregularities', 'labels')
 
         Returns:
-            Schema specification including:
-            - target_columns: List of column definitions
-            - observation_unit: What each row represents
-            - expected_row_count: Formula and estimate
-            - data_relationships: How source maps to target
+            Schema dict compatible with TransformationGenerator.
         """
-        logger.info("Estimating tidy schema with LLM semantic reasoning...")
+        df = encoded_data["dataframe"]
+        physical = detection_result["physical"]
+        irregularities = detection_result["irregularities"]
+        labels = detection_result["labels"]
 
-        prompt = self._create_schema_prompt(encoded_data, structure_analysis)
+        logger.info("Estimating tidy schema (single focused LLM call)...")
+        logger.info(f"  Irregularities to handle: {labels}")
 
+        # Build prompt with guidance and full data
+        prompt = self._build_prompt(df, physical, irregularities, labels)
+        system = self._system_prompt()
+
+        # LLM call
         try:
-            response = self.client.chat.completions.create(
+            resp = self.client.chat.completions.create(
                 model=self.model,
                 messages=[
-                    {"role": "system", "content": self._get_system_prompt()},
-                    {"role": "user", "content": prompt}
+                    {"role": "system", "content": system},
+                    {"role": "user", "content": prompt},
                 ],
-                # temperature=self.temperature,
-                max_completion_tokens=self.max_completion_tokens
+                max_completion_tokens=self.max_tokens,
             )
+            text = resp.choices[0].message.content.strip()
+            logger.debug(f"Schema LLM response:\n{text}")
 
-            result_text = response.choices[0].message.content
-            logger.debug(f"LLM Response: {result_text[:500]}...")
-
-            schema_result = self._parse_llm_response(result_text)
-            schema_result = self._validate_schema(schema_result, encoded_data, structure_analysis)
-
-            # Store source metadata for transformation stage
-            schema_result['source_metadata'] = encoded_data.get('metadata', {})
-            schema_result['structure_analysis'] = structure_analysis
-
-            logger.info(f"Schema estimation complete. Target columns: {[c['name'] for c in schema_result.get('target_columns', [])]}")
-            return schema_result
+            schema = self._parse_and_assemble(text, df, physical,
+                                              detection_result)
 
         except Exception as e:
-            logger.error(f"Error in schema estimation: {e}")
-            return self._get_default_schema(encoded_data, structure_analysis)
+            logger.error(f"Schema estimation LLM call failed: {e}")
+            schema = self._fallback_schema(df, physical, detection_result)
 
-    def _get_system_prompt(self) -> str:
-        """System prompt for schema estimation."""
-        return """You are an expert data architect specializing in data normalization and tidy data principles.
+        # Attach pass-through metadata for downstream
+        schema["source_metadata"] = encoded_data.get("metadata", {})
+        schema["detection_result"] = detection_result
 
-## TIDY DATA PRINCIPLES (Hadley Wickham)
-1. Each variable forms a column
-2. Each observation forms a row
-3. Each type of observational unit forms a table
-
-## YOUR EXPERTISE
-You excel at looking at messy spreadsheet structures and determining:
-- What the IDEAL tidy representation should be
-- What columns the tidy table should have
-- What each row should represent (the observation unit)
-- How to handle special cases (bilingual data, aggregates, multi-level headers)
-
-## KEY INSIGHT
-"Tidy datasets are all alike, but every messy dataset is messy in its own way."
-Your job is to find the tidy structure hidden within the messy spreadsheet.
-
-## GUIDELINES
-1. Column headers that are VALUES should become a single VARIABLE column
-   - Years (2011, 2016, 2021) → year column
-   - Age groups (<15, 15-24, ...) → age_group column
-   
-2. If data has MULTIPLE value types (counts AND percentages), decide:
-   - Should they be separate columns (count, percentage)?
-   - Or separate rows with a value_type column?
-   - Usually separate columns is cleaner if they describe the same observation
-
-3. For bilingual data:
-   - Keep both languages as separate columns (name_cn, name_en)
-   - Don't lose information
-
-4. For implicit aggregation:
-   - Totals should typically be EXCLUDED (they can be recomputed)
-   - Keep only the most granular detail rows
-
-5. Name columns clearly using snake_case
-
-Output valid JSON only."""
-
-    def _create_schema_prompt(self,
-                              encoded_data: Dict[str, Any],
-                              structure_analysis: Dict[str, Any]) -> str:
-        """Create prompt for schema estimation."""
-        df = encoded_data['dataframe']
-        metadata = encoded_data.get('metadata', {})
-
-        # Get sample data
-        sample_data = self._get_sample_data(df, structure_analysis)
-
-        # Format structure analysis for prompt
-        structure_summary = self._summarize_structure_analysis(structure_analysis)
-
-        prompt = f"""Based on the structure analysis, design the ideal tidy schema for this spreadsheet.
-
-## STRUCTURE ANALYSIS SUMMARY
-{structure_summary}
-
-## SAMPLE DATA FROM SPREADSHEET
-{sample_data}
-
-## ORIGINAL COLUMN NAMES
-{df.columns.tolist()}
-
-## METADATA
-- Total rows: {len(df)}
-- Total columns: {len(df.columns)}
-
-## YOUR TASK
-
-Design the TARGET tidy schema. Think through:
-
-1. **What is the observation unit?** 
-   - What does ONE ROW in the tidy output represent?
-   - e.g., "One ethnicity's population count for one age group in one year"
-
-2. **What columns should the tidy table have?**
-   - ID/dimension columns (categorical)
-   - Value columns (numeric measurements)
-   - Consider: Do you need separate columns for count vs percentage? Or a value_type column?
-
-3. **How should bilingual content be handled?**
-   - Separate columns for each language?
-   - Which columns have bilingual data?
-
-4. **What should be EXCLUDED?**
-   - Total/aggregate rows?
-   - Total/aggregate columns?
-   - Metadata columns that don't fit the observation unit?
-
-5. **Row count estimation**
-   - How many rows should the tidy output have?
-   - Formula: num_X × num_Y × num_Z = total
-
-## OUTPUT FORMAT (JSON)
-
-{{
-  "observation_unit": {{
-    "description": "What one row represents in plain language",
-    "dimensions": ["list of dimensions that identify one observation"],
-    "example": "One Filipino person's age group distribution in 2011"
-  }},
-  
-  "target_columns": [
-    {{
-      "name": "column_name_snake_case",
-      "data_type": "string | integer | float",
-      "description": "What this column represents",
-      "source": "Where this data comes from in the original spreadsheet",
-      "is_dimension": true,
-      "nullable": false
-    }},
-    {{
-      "name": "another_column",
-      "data_type": "float",
-      "description": "Description",
-      "source": "Source description",
-      "is_dimension": false,
-      "nullable": true
-    }}
-  ],
-  
-  "expected_output": {{
-    "row_count_formula": "num_ethnicities × num_age_groups × num_years",
-    "row_count_estimate": 147,
-    "column_count": 7
-  }},
-  
-  "exclusions": {{
-    "exclude_rows": {{
-      "description": "What rows to exclude",
-      "criteria": ["total rows", "aggregate rows"],
-      "row_indices_if_known": []
-    }},
-    "exclude_columns": {{
-      "description": "What columns to exclude",
-      "criteria": ["Total column", "Index column"],
-      "col_indices_if_known": [10, 12]
-    }}
-  }},
-  
-  "handling_special_cases": {{
-    "bilingual_handling": {{
-      "strategy": "separate_columns | single_column | primary_only",
-      "details": "How bilingual content will be handled"
-    }},
-    "multi_value_handling": {{
-      "has_multiple_value_types": true,
-      "value_types": ["count", "percentage"],
-      "strategy": "separate_columns | separate_rows",
-      "details": "How different value types (counts vs percentages) will be handled"
-    }},
-    "implicit_aggregation_handling": {{
-      "has_aggregation": false,
-      "strategy": "exclude_summary_rows | keep_all",
-      "details": "How implicit aggregation will be handled"
-    }}
-  }},
-  
-  "validation_samples": [
-    {{
-      "description": "Spot check for first ethnicity, first age group",
-      "expected_row": {{
-        "year": 2011,
-        "ethnicity_cn": "亞洲人（非華人）",
-        "age_group": "<15",
-        "count": 23984,
-        "percentage": 6.6
-      }},
-      "source_location": "CN row 8 col 3 for count, EN row 9 col 3 for percentage"
-    }}
-  ],
-  
-  "schema_reasoning": "Explain your reasoning for this schema design"
-}}
-
-Think carefully about the tidy data principles and output only the JSON."""
-
-        return prompt
-
-    def _get_sample_data(self, df, structure_analysis: Dict[str, Any]) -> str:
-        """Get relevant sample data for schema estimation."""
-        lines = []
-
-        # Get data region from structure analysis
-        data_region = structure_analysis.get('data_region', {})
-        start_row_raw = data_region.get('start_row', 0)
-        # Convert to int, handle string values from LLM
-        try:
-            start_row = int(start_row_raw) if start_row_raw is not None else 0
-        except (ValueError, TypeError):
-            start_row = 0
-
-        # Show header rows
-        header_rows_raw = structure_analysis.get('header_structure', {}).get('header_rows', [0])
-        lines.append("HEADER ROWS:")
-        for row_idx_raw in header_rows_raw:
-            # Convert to int
-            try:
-                row_idx = int(row_idx_raw) if row_idx_raw is not None else 0
-            except (ValueError, TypeError):
-                continue  # Skip invalid indices
-
-            if row_idx < len(df):
-                row_vals = []
-                for j in range(len(df.columns)):
-                    val = df.iloc[row_idx, j]
-                    if pd.notna(val) and str(val).strip():
-                        row_vals.append(f"[{j}]={str(val)[:30]}")
-                lines.append(f"  Row {row_idx}: {', '.join(row_vals)}")
-
-        # Show sample data rows
-        lines.append("\nDATA ROWS (first 10):")
-        for i in range(start_row, min(start_row + 10, len(df))):
-            row_vals = []
-            for j in range(len(df.columns)):
-                val = df.iloc[i, j]
-                if pd.notna(val) and str(val).strip():
-                    row_vals.append(f"[{j}]={str(val)[:30]}")
-            lines.append(f"  Row {i}: {', '.join(row_vals)}")
-
-        return "\n".join(lines)
-
-    def _summarize_structure_analysis(self, structure_analysis: Dict[str, Any]) -> str:
-        """Summarize structure analysis for the prompt."""
-        lines = []
-
-        # Semantic understanding
-        sem = structure_analysis.get('semantic_understanding', {})
-        lines.append(f"DATA DESCRIPTION: {sem.get('data_description', 'Unknown')}")
-        lines.append(f"KEY VARIABLES: {sem.get('key_variables', [])}")
-
-        # Header structure
-        header = structure_analysis.get('header_structure', {})
-        lines.append(f"\nHEADER ROWS: {header.get('header_rows', [])}")
-        lines.append(f"HEADER LEVELS: {header.get('num_levels', 1)}")
-
-        # Data region
-        data_region = structure_analysis.get('data_region', {})
-        lines.append(f"\nDATA REGION: rows {data_region.get('start_row')} to {data_region.get('end_row')}")
-
-        # Row patterns
-        row_patterns = structure_analysis.get('row_patterns', {})
-        if row_patterns.get('has_bilingual_rows'):
-            bilingual = row_patterns.get('bilingual_details', {})
-            lines.append(f"\nBILINGUAL ROWS: {bilingual.get('pattern', 'unknown')}")
-            lines.append(f"  Data relationship: {bilingual.get('data_relationship', 'unknown')}")
-            if bilingual.get('data_relationship') == 'DIFFERENT_DATA_TYPES':
-                diff = bilingual.get('if_different_types', {})
-                lines.append(f"  CN rows contain: {diff.get('cn_row_contains', 'unknown')}")
-                lines.append(f"  EN rows contain: {diff.get('en_row_contains', 'unknown')}")
-
-        if row_patterns.get('has_section_markers'):
-            markers = row_patterns.get('section_marker_details', {})
-            lines.append(f"\nSECTION MARKERS: {markers.get('marker_values', [])} (semantic: {markers.get('semantic', 'unknown')})")
-
-        # Column patterns
-        col_patterns = structure_analysis.get('column_patterns', {})
-        lines.append(f"\nID COLUMNS: {col_patterns.get('id_columns', [])}")
-        lines.append(f"VALUE COLUMNS: {col_patterns.get('value_columns', [])}")
-        lines.append(f"AGGREGATE COLUMNS (to exclude): {col_patterns.get('aggregate_columns', [])}")
-
-        # Special patterns
-        special = structure_analysis.get('special_patterns', [])
-        if special:
-            lines.append("\nSPECIAL PATTERNS:")
-            for pattern in special:
-                lines.append(f"  - {pattern.get('pattern_type', 'unknown')}: {pattern.get('description', '')}")
-
-        # Implicit aggregation - use LLM's semantic analysis results
-        implicit_agg = structure_analysis.get('implicit_aggregation', {})
-        if implicit_agg.get('has_implicit_aggregation'):
-            lines.append(f"\n{'='*60}")
-            lines.append(f"IMPLICIT AGGREGATION DETECTED (by LLM semantic analysis)")
-            lines.append(f"{'='*60}")
-
-            details = implicit_agg.get('detection_details', {})
-            lines.append(f"\nDETECTION DETAILS:")
-            lines.append(f"  Category column: {details.get('category_column', 'unknown')}")
-            lines.append(f"  Summary values: {details.get('summary_values', [])[:3]}")
-            lines.append(f"  Detail values: {details.get('detail_values', [])[:3]}")
-            lines.append(f"  Additional dimension: {details.get('additional_dimension', 'unknown')}")
-            lines.append(f"  Delimiter: '{details.get('delimiter', 'unknown')}'")
-            lines.append(f"  LLM reasoning: {details.get('reasoning', '')[:200]}")
-
-            # Sample data from detail rows
-            samples = implicit_agg.get('sample_detail_rows', [])
-            if samples:
-                lines.append(f"\nSAMPLE DETAIL ROWS:")
-                for sample in samples[:3]:
-                    lines.append(f"  Row {sample.get('row_index', '?')}: {sample.get('all_columns', {})}")
-
-            # Transformation guidance from LLM
-            guidance = implicit_agg.get('transformation_guidance', {})
-            if guidance:
-                lines.append(f"\nTRANSFORMATION GUIDANCE (from LLM):")
-                lines.append(f"  Rows to exclude: {guidance.get('rows_to_exclude', 'N/A')}")
-                lines.append(f"  Column to split: {guidance.get('column_to_split', 'N/A')}")
-                lines.append(f"  Expected new columns: {guidance.get('expected_new_columns', [])}")
-
-        return "\n".join(lines)
-
-    def _parse_llm_response(self, response_text: str) -> Dict[str, Any]:
-        """Parse the LLM response and extract JSON."""
-        response_text = response_text.strip()
-
-        # Remove markdown code blocks if present
-        if response_text.startswith('```'):
-            lines = response_text.split('\n')
-            response_text = '\n'.join(lines[1:-1]) if len(lines) > 2 else response_text
-            if response_text.startswith('json'):
-                response_text = response_text[4:].strip()
-
-        try:
-            return json.loads(response_text)
-        except json.JSONDecodeError as e:
-            logger.error(f"Failed to parse JSON: {e}")
-            # Try to find JSON object in text
-            match = re.search(r'\{[\s\S]*\}', response_text)
-            if match:
-                try:
-                    return json.loads(match.group())
-                except:
-                    pass
-            raise ValueError("Could not extract valid JSON from LLM response")
-
-    def _validate_schema(self,
-                         schema: Dict[str, Any],
-                         encoded_data: Dict[str, Any],
-                         structure_analysis: Dict[str, Any]) -> Dict[str, Any]:
-        """Validate schema and ensure all required fields exist."""
-
-        # Ensure required fields
-        if 'observation_unit' not in schema:
-            schema['observation_unit'] = {
-                'description': 'Unknown',
-                'dimensions': [],
-                'example': ''
-            }
-
-        if 'target_columns' not in schema:
-            schema['target_columns'] = []
-
-        if 'expected_output' not in schema:
-            schema['expected_output'] = {
-                'row_count_formula': 'unknown',
-                'row_count_estimate': 0,
-                'column_count': len(schema.get('target_columns', []))
-            }
-        else:
-            # Ensure row_count_estimate is an integer (LLM might return string)
-            expected_output = schema['expected_output']
-            if 'row_count_estimate' in expected_output:
-                try:
-                    expected_output['row_count_estimate'] = int(expected_output['row_count_estimate'])
-                except (ValueError, TypeError):
-                    expected_output['row_count_estimate'] = 0
-
-        if 'exclusions' not in schema:
-            schema['exclusions'] = {
-                'exclude_rows': {'description': '', 'criteria': []},
-                'exclude_columns': {'description': '', 'criteria': []}
-            }
-
-        if 'handling_special_cases' not in schema:
-            schema['handling_special_cases'] = {}
-
-        if 'validation_samples' not in schema:
-            schema['validation_samples'] = []
-
-        # Generate expected_output_columns list for backward compatibility
-        schema['expected_output_columns'] = [col['name'] for col in schema.get('target_columns', [])]
+        # Log summary
+        col_names = [c["name"] for c in schema.get("target_columns", [])]
+        est = schema.get("expected_output", {}).get("row_count_estimate", "?")
+        logger.info(f"  Target columns: {col_names}")
+        logger.info(f"  Expected rows:  {est}")
 
         return schema
 
-    def _get_default_schema(self,
-                            encoded_data: Dict[str, Any],
-                            structure_analysis: Dict[str, Any]) -> Dict[str, Any]:
-        """Return default schema if LLM fails."""
-        df = encoded_data['dataframe']
+    # ==================================================================
+    # Prompt construction
+    # ==================================================================
 
-        # Create basic column schema from dataframe
+    def _system_prompt(self) -> str:
+        return (
+            "You are a data architect. Your goal is to transform messy "
+            "spreadsheets into TIDY DATA format.\n\n"
+
+            "TIDY DATA PRINCIPLES (Hadley Wickham):\n"
+            "1. Each VARIABLE forms a column.\n"
+            "2. Each OBSERVATION forms a row.\n"
+            "3. Each type of OBSERVATIONAL UNIT forms a table.\n\n"
+
+            "This means:\n"
+            "- If column headers contain VALUES (years, categories, age "
+            "groups), those must become a new variable column, and the "
+            "table must be reshaped from wide to long.\n"
+            "- If a single row mixes multiple observations (e.g., male "
+            "and female counts side by side), they must be split into "
+            "separate rows.\n"
+            "- Aggregated/total rows and columns should be excluded "
+            "because they violate the principle that each row is one "
+            "atomic observation.\n\n"
+
+            "Given a messy spreadsheet, its detected structural "
+            "irregularities, and handling guidance for each irregularity, "
+            "design the ideal tidy output schema. Answer in the EXACT "
+            "text format shown in the examples. Be precise about column "
+            "names and row estimates."
+        )
+
+    def _build_prompt(self, df: pd.DataFrame,
+                      physical: Dict[str, Any],
+                      irregularities: List[Dict],
+                      labels: List[str]) -> str:
+
+        guidance_text = get_schema_guidance_for(labels)
+        irregularity_text = self._format_irregularities(irregularities)
+        headers_text = self._format_headers(df, physical)
+        data_text = self._format_data(df, physical)
+
+        return f"""Design the tidy output schema for this spreadsheet.
+
+=== OUTPUT FORMAT (follow exactly) ===
+
+OBSERVATION: <what one row in the tidy output represents>
+
+TARGET_COLUMNS:
+- <name> (<type>, <role>): <description> | source: <where this comes from>
+
+ROW_ESTIMATE: <formula> = <number>
+
+EXCLUDE_ROWS: <which rows to remove and why>
+EXCLUDE_COLUMNS: <which columns to remove and why>
+
+SAMPLE_ROW: <col1>=<val1>, <col2>=<val2>, ...
+
+Rules for TARGET_COLUMNS:
+  - <type> is one of: string, integer, float
+  - <role> is one of: dimension, value
+  - One column per line, each starting with "- "
+  - Use snake_case for all column names
+  - Dimensions go first, then values
+
+=== FEW-SHOT EXAMPLES ===
+
+--- Example 1 ---
+IRREGULARITIES:
+  METADATA_ROWS: Rows 0-1 contain titles
+  MULTI_LEVEL_HEADER: Row 3 has years (2019, 2020), Row 4 has Number/%
+  NESTED_COLUMN_GROUPS: 2019→[col3,col4], 2020→[col5,col6], each with Number/%
+  WIDE_FORMAT: Year × value-type encoded as columns
+  IMPLICIT_AGGREGATION_ROWS: Row 20 "Total" sums all regions
+  AGGREGATE_COLUMNS: Col 7 "Total" sums across years
+GUIDANCE:
+  [MULTI_LEVEL_HEADER] Read all header rows together to understand full column meaning.
+  [NESTED_COLUMN_GROUPS] Each nesting level becomes a dimension. Identify what each level represents.
+  [WIDE_FORMAT] Values in column headers become a new dimension column.
+  [IMPLICIT_AGGREGATION_ROWS] Exclude aggregation rows.
+  [AGGREGATE_COLUMNS] Exclude aggregate columns.
+HEADERS:
+  Row 0: [0]="Sales Report 2019-2020"
+  Row 3: [3]="2019", [5]="2020"
+  Row 4: [0]="Region", [1]="Product", [3]="Revenue", [4]="Units", [5]="Revenue", [6]="Units", [7]="Total Rev"
+DATA:
+  Row 5: [0]="North", [1]="Widget A", [3]="15000", [4]="120", [5]="18000", [6]="140", [7]="33000"
+  Row 6: [0]="North", [1]="Widget B", [3]="8000", [4]="65", [5]="9500", [6]="80", [7]="17500"
+  Row 20: [0]="Total", [3]="50000", [4]="400", [5]="60000", [6]="500", [7]="110000"
+SCHEMA:
+OBSERVATION: One product's sales metric in one region for one year
+
+TARGET_COLUMNS:
+- region (string, dimension): Geographic region | source: column 0
+- product (string, dimension): Product name | source: column 1
+- year (string, dimension): Year of sales | source: column headers (2019, 2020)
+- revenue (float, value): Sales revenue | source: columns 3,5 (under each year)
+- units (integer, value): Units sold | source: columns 4,6 (under each year)
+
+ROW_ESTIMATE: 14 detail rows × 2 years = 28
+
+EXCLUDE_ROWS: Row 20 "Total" (aggregation row)
+EXCLUDE_COLUMNS: Column 7 "Total Rev" (aggregate column, sums across years)
+
+SAMPLE_ROW: region=North, product=Widget A, year=2019, revenue=15000, units=120
+
+--- Example 2 ---
+IRREGULARITIES:
+  METADATA_ROWS: Rows 0-1 contain table title in Chinese and English
+  MULTI_LEVEL_HEADER: Row 3 has marital status groups, Row 4 has Male/Female/Overall
+  NESTED_COLUMN_GROUPS: 3 marital-status groups × 3 sex sub-columns each
+  WIDE_FORMAT: Marital status × sex encoded as column headers
+  BILINGUAL_ALTERNATING_ROWS: Chinese rows have data, English rows are label-only
+  IMPLICIT_AGGREGATION_ROWS: Rows with "All ethnic minorities" are totals
+  AGGREGATE_COLUMNS: "Overall" sub-columns and "Total" group are aggregates
+GUIDANCE:
+  [NESTED_COLUMN_GROUPS] Each nesting level becomes a separate dimension.
+  [WIDE_FORMAT] Values in column headers become a new dimension column.
+  [BILINGUAL_ALTERNATING_ROWS] Pairs represent a SINGLE observation. One row per pair, with separate language columns.
+  [AGGREGATE_COLUMNS] Exclude aggregate columns.
+HEADERS:
+  Row 3: [3]="Never married", [6]="Married", [9]="Widowed/divorced", [12]="Total"
+  Row 4: [0]="Ethnicity", [3]="Male", [4]="Female", [5]="Overall", [6]="Male", [7]="Female", [8]="Overall", [9]="Male", [10]="Female", [11]="Overall", [12]="Male", [13]="Female", [14]="Overall"
+DATA:
+  Row 7: [1]="亞洲人（非華人）", [3]="23", [4]="35.6", [5]="34.1", [6]="73.9", ...
+  Row 8: [1]="Asian (other than Chinese)", (no numeric data)
+  Row 9: [1]="菲律賓人", [3]="26.1", [4]="36.4", ...
+  Row 10: [1]="Filipino", (no numeric data)
+SCHEMA:
+OBSERVATION: One ethnicity's marital-status percentage for one sex
+
+TARGET_COLUMNS:
+- ethnicity_cn (string, dimension): Ethnicity name in Chinese | source: column 1 (Chinese rows)
+- ethnicity_en (string, dimension): Ethnicity name in English | source: column 1 (English rows)
+- marital_status (string, dimension): Marital status category | source: column group headers (Never married, Married, Widowed/divorced)
+- sex (string, dimension): Sex category | source: sub-column headers (Male, Female)
+- percentage (float, value): Percentage distribution | source: value cells under each group×sex combination
+
+ROW_ESTIMATE: 17 ethnicities × 3 marital statuses × 2 sexes = 102
+
+EXCLUDE_ROWS: "All ethnic minorities" rows (aggregation), English-only rows (merged into Chinese rows as ethnicity_en)
+EXCLUDE_COLUMNS: "Overall" sub-columns within each group (col 5,8,11), entire "Total" group (col 12,13,14) — all are aggregates
+
+SAMPLE_ROW: ethnicity_cn=亞洲人（非華人）, ethnicity_en=Asian (other than Chinese), marital_status=Never married, sex=Male, percentage=23
+
+--- Example 3 ---
+IRREGULARITIES:
+  INLINE_BILINGUAL: Chinese and English labels in adjacent columns (col 3/4, col 5/6)
+  EMBEDDED_DIMENSION_IN_COLUMN: Column 5/6 values like "Physical abuse - Male" encode abuse type + sex with " - "
+  IMPLICIT_AGGREGATION_ROWS: Category "Type of Abuse" is a coarser aggregation of "Type of Abuse and Sex" — the former has "Physical abuse = 390" while the latter has "Physical abuse - Male = 200" + "Physical abuse - Female = 190"
+  SPARSE_ROW_FILL: Year in column 0 written once per block, forward-fill needed
+GUIDANCE:
+  [EMBEDDED_DIMENSION_IN_COLUMN] Split compound labels into separate dimension columns. Rows without delimiter get NULL for secondary dimension.
+  [IMPLICIT_AGGREGATION_ROWS] Exclude the coarser category group entirely. Keep only the most granular observations.
+  [INLINE_BILINGUAL] Decide which language to keep, or split into two columns.
+  [SPARSE_ROW_FILL] Forward-fill before any other processing.
+HEADERS:
+  Row 0: [0]="Year", [1]="Report Status CN", [2]="Report Status EN", [3]="Category CN", [4]="Category EN", [5]="Item CN", [6]="Item EN", [7]="Count"
+DATA:
+  Row 1: [0]="2005", [1]="不適用", [3]="虐待長者性質", [4]="Type of Abuse", [5]="身體虐待", [6]="Physical abuse", [7]="390"
+  Row 2: [0]="2005", [3]="虐待長者性質", [5]="精神虐待", [6]="Psychological abuse", [7]="26"
+  Row 9: [0]="2005", [3]="虐待長者性質及受虐長者性別", [4]="Type of Abuse and Sex", [5]="身體虐待 - 男性", [6]="Physical abuse - Male", [7]="200"
+  Row 10: [0]="2005", [5]="精神虐待 - 男性", [6]="Psychological abuse - Male", [7]="15"
+  Row 17: [0]="2005", [5]="身體虐待 - 女性", [6]="Physical abuse - Female", [7]="190"
+  Row 25: [0]="2005", [3]="施虐者與受虐長者關係", [4]="Abuser Relationship", [5]="子", [6]="Son", [7]="57"
+  Row 37: [0]="2005", [3]="受虐長者居住地區", [4]="Residential District", [5]="中西區", [6]="Central and Western", [7]="19"
+SCHEMA:
+OBSERVATION: One case count for a specific year, report status, indicator group, item category, and optional sex breakdown
+
+TARGET_COLUMNS:
+- year (integer, dimension): Reporting year | source: column 0 (forward-filled)
+- report_status_cn (string, dimension): Report status in Chinese | source: column 1 (forward-filled)
+- report_status_en (string, dimension): Report status in English | source: column 2 (forward-filled)
+- indicator_group_cn (string, dimension): Indicator group in Chinese | source: column 3 (forward-filled)
+- indicator_group_en (string, dimension): Indicator group in English | source: column 4 (forward-filled)
+- item_cn (string, dimension): Item category in Chinese | source: column 5, primary part before " - " if delimiter present
+- item_en (string, dimension): Item category in English | source: column 6, primary part before " - " if delimiter present
+- sex (string, dimension): Sex extracted from embedded delimiter | source: columns 5/6, secondary part after " - "; NULL for rows without delimiter
+- count (integer, value): Number of cases | source: column 7
+
+ROW_ESTIMATE: 17 years × 3 non-redundant indicator groups × ~13 items average = 663
+
+EXCLUDE_ROWS: All rows where indicator_group is the coarser "虐待長者性質"/"Type of Abuse" — these are aggregates of the finer "虐待長者性質及受虐長者性別"/"Type of Abuse and Sex" group which fully decomposes the same items by sex
+EXCLUDE_COLUM
+
+=== YOUR TASK ===
+
+IRREGULARITIES:
+{irregularity_text}
+
+GUIDANCE:
+{guidance_text}
+
+PHYSICAL FEATURES:
+  Data region: rows {physical['data_start_row']} to {physical['data_end_row']} ({physical['data_rows']} rows)
+  Column types: {physical['column_dtype_profile']}
+
+HEADERS:
+{headers_text}
+
+DATA (full data region):
+{data_text}
+
+Now design the tidy schema following the EXACT format above."""
+
+    # ==================================================================
+    # Formatters
+    # ==================================================================
+
+    def _format_irregularities(self, irregularities: List[Dict]) -> str:
+        lines = []
+        for ir in irregularities:
+            lines.append(f"  {ir['label']}: {ir.get('evidence', '')}")
+            if ir.get("details"):
+                lines.append(f"    Details: {ir['details']}")
+        return "\n".join(lines) if lines else "  (none detected)"
+
+    def _format_headers(self, df: pd.DataFrame,
+                        physical: Dict[str, Any]) -> str:
+        start = physical["data_start_row"]
+        lines = []
+        for i in range(start):
+            parts = []
+            for j in range(len(df.columns)):
+                val = df.iloc[i, j]
+                if pd.notna(val) and str(val).strip():
+                    s = str(val).strip().replace("\n", "\\n")
+                    if len(s) > 60:
+                        s = s[:60] + "..."
+                    parts.append(f'[{j}]="{s}"')
+            if parts:
+                lines.append(f"  Row {i}: {', '.join(parts)}")
+            else:
+                lines.append(f"  Row {i}: (blank)")
+        return "\n".join(lines) if lines else "  (no header rows)"
+
+    def _format_data(self, df: pd.DataFrame,
+                     physical: Dict[str, Any]) -> str:
+        """Full data region — no truncation."""
+        sr = physical["data_start_row"]
+        er = physical["data_end_row"]
+        lines = []
+        for i in range(sr, er + 1):
+            parts = []
+            for j in range(len(df.columns)):
+                val = df.iloc[i, j]
+                if pd.notna(val) and str(val).strip():
+                    s = str(val).strip().replace("\n", "\\n")
+                    if len(s) > 50:
+                        s = s[:50] + "..."
+                    parts.append(f'[{j}]="{s}"')
+            if parts:
+                lines.append(f"  Row {i}: {', '.join(parts)}")
+            else:
+                lines.append(f"  Row {i}: (blank)")
+        lines.append(f"  (Total: {er - sr + 1} rows)")
+        return "\n".join(lines)
+
+    # ==================================================================
+    # Response parsing + schema assembly
+    # ==================================================================
+
+    def _parse_and_assemble(self, text: str,
+                            df: pd.DataFrame,
+                            physical: Dict[str, Any],
+                            detection_result: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        Parse the structured-text LLM response and assemble into
+        the schema dict expected by TransformationGenerator.
+        """
+        observation = ""
         target_columns = []
-        for i, col in enumerate(df.columns):
+        row_formula = ""
+        row_estimate = 0
+        exclude_rows = ""
+        exclude_cols = ""
+        sample_row = {}
+
+        # State machine for multi-line TARGET_COLUMNS section
+        in_columns_section = False
+
+        for line in text.split("\n"):
+            raw = line.strip()
+            if not raw:
+                continue
+            upper = raw.upper()
+
+            # --- OBSERVATION ---
+            if upper.startswith("OBSERVATION:"):
+                observation = raw.split(":", 1)[1].strip()
+                in_columns_section = False
+
+            # --- TARGET_COLUMNS section start ---
+            elif upper.startswith("TARGET_COLUMNS"):
+                in_columns_section = True
+
+            # --- Column definition line ---
+            elif in_columns_section and raw.startswith("- "):
+                col = self._parse_column_line(raw)
+                if col:
+                    target_columns.append(col)
+
+            # --- ROW_ESTIMATE ---
+            elif upper.startswith("ROW_ESTIMATE:"):
+                in_columns_section = False
+                val = raw.split(":", 1)[1].strip()
+                row_formula = val
+                # Try to extract the number after "="
+                eq_match = re.search(r"=\s*(\d+)", val)
+                if eq_match:
+                    row_estimate = int(eq_match.group(1))
+                else:
+                    # Try to find any number
+                    nums = re.findall(r"\d+", val)
+                    if nums:
+                        row_estimate = int(nums[-1])
+
+            # --- EXCLUDE_ROWS ---
+            elif upper.startswith("EXCLUDE_ROW"):
+                in_columns_section = False
+                exclude_rows = raw.split(":", 1)[1].strip()
+
+            # --- EXCLUDE_COLUMNS ---
+            elif upper.startswith("EXCLUDE_COL"):
+                in_columns_section = False
+                exclude_cols = raw.split(":", 1)[1].strip()
+
+            # --- SAMPLE_ROW ---
+            elif upper.startswith("SAMPLE_ROW:"):
+                in_columns_section = False
+                sample_str = raw.split(":", 1)[1].strip()
+                sample_row = self._parse_sample_row(sample_str)
+
+            # --- Unrecognized line inside columns section ---
+            elif in_columns_section:
+                # Stop columns section if this looks like a new section
+                if re.match(r"^[A-Z_]+:", raw):
+                    in_columns_section = False
+
+        # Build schema dict
+        schema = {
+            "observation_unit": {
+                "description": observation,
+                "dimensions": [c["name"] for c in target_columns
+                               if c.get("is_dimension")],
+                "example": observation,
+            },
+            "target_columns": target_columns,
+            "expected_output": {
+                "row_count_formula": row_formula,
+                "row_count_estimate": row_estimate,
+                "column_count": len(target_columns),
+            },
+            "exclusions": {
+                "exclude_rows": {
+                    "description": exclude_rows,
+                    "criteria": [exclude_rows] if exclude_rows else [],
+                },
+                "exclude_columns": {
+                    "description": exclude_cols,
+                    "criteria": [exclude_cols] if exclude_cols else [],
+                },
+            },
+            "handling_special_cases": {},
+            "validation_samples": [],
+            "schema_reasoning": observation,
+            "expected_output_columns": [c["name"] for c in target_columns],
+        }
+
+        # Build validation sample if parsed
+        if sample_row:
+            schema["validation_samples"].append({
+                "description": "LLM-provided sample row",
+                "expected_row": sample_row,
+            })
+
+        return schema
+
+    def _parse_column_line(self, line: str) -> Optional[Dict[str, Any]]:
+        """
+        Parse a column definition line like:
+          - year (string, dimension): Year of sales | source: column headers
+
+        Handles multiple levels of format degradation:
+          Level 1: full format with type, role, description, source
+          Level 2: name (type, role) only
+          Level 3: name (role) only
+          Level 4: just a name
+        """
+        line = line.lstrip("- ").strip()
+
+        # Level 1: full format
+        #   name (type, role): description | source: ...
+        m = re.match(
+            r"(\w+)\s*"                   # column name
+            r"\(([^,)]+),?\s*([^)]*)\)"   # (type, role)
+            r"\s*:?\s*(.*)",              # : description ...
+            line
+        )
+        if m:
+            name = m.group(1).strip()
+            dtype = m.group(2).strip().lower()
+            role = m.group(3).strip().lower()
+            rest = m.group(4).strip()
+
+            is_dim = "dim" in role
+            description = rest.split("|")[0].strip() if "|" in rest else rest
+            source = ""
+            if "|" in rest:
+                source_part = rest.split("|")[1].strip()
+                # Remove "source:" prefix if present
+                source = re.sub(r"^source:\s*", "", source_part, flags=re.I)
+
+            # Normalize data type
+            if dtype in ("str", "string", "text"):
+                dtype = "string"
+            elif dtype in ("int", "integer"):
+                dtype = "integer"
+            elif dtype in ("float", "number", "numeric", "decimal", "double"):
+                dtype = "float"
+
+            return {
+                "name": name,
+                "data_type": dtype,
+                "description": description,
+                "is_dimension": is_dim,
+                "nullable": not is_dim,
+                "source": source,
+            }
+
+        # Level 2: name (type, role) — no description
+        m2 = re.match(r"(\w+)\s*\(([^)]+)\)", line)
+        if m2:
+            name = m2.group(1).strip()
+            inner = m2.group(2).strip().lower()
+            is_dim = "dim" in inner
+            dtype = "string" if is_dim else "float"
+            return {
+                "name": name,
+                "data_type": dtype,
+                "description": "",
+                "is_dimension": is_dim,
+                "nullable": not is_dim,
+                "source": "",
+            }
+
+        # Level 3: just a word (name)
+        m3 = re.match(r"(\w+)", line)
+        if m3:
+            return {
+                "name": m3.group(1).strip(),
+                "data_type": "string",
+                "description": "",
+                "is_dimension": False,
+                "nullable": True,
+                "source": "",
+            }
+
+        return None
+
+    def _parse_sample_row(self, s: str) -> Dict[str, Any]:
+        """
+        Parse: col1=val1, col2=val2, ...
+        Handles commas inside values by splitting on ", key=" pattern.
+        """
+        result = {}
+        for part in re.split(r",\s*(?=\w+=)", s):
+            part = part.strip()
+            if "=" in part:
+                key, val = part.split("=", 1)
+                key = key.strip()
+                val = val.strip()
+
+                if val.upper() in ("NULL", "NONE", "NAN", "N/A"):
+                    result[key] = None  # ← 加这个
+                continue
+                # Try numeric conversion
+                try:
+                    val = int(val)
+                except ValueError:
+                    try:
+                        val = float(val)
+                    except ValueError:
+                        pass  # keep as string
+                result[key] = val
+        return result
+
+    # ==================================================================
+    # Fallback schema
+    # ==================================================================
+
+    def _fallback_schema(self, df: pd.DataFrame,
+                         physical: Dict[str, Any],
+                         detection_result: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        Minimal pass-through schema when LLM call fails entirely.
+        """
+        sr = physical["data_start_row"]
+        er = physical["data_end_row"]
+        col_types = physical["column_dtype_profile"]
+
+        target_columns = []
+        for j in range(len(df.columns)):
+            ct = col_types.get(j, "empty")
+            if ct == "empty":
+                continue
             target_columns.append({
-                'name': f'column_{i}',
-                'data_type': 'string',
-                'description': f'Column {i}: {str(col)[:50]}',
-                'source': f'Column {i}',
-                'is_dimension': i == 0,
-                'nullable': True
+                "name": f"column_{j}",
+                "data_type": "float" if ct == "numeric" else "string",
+                "description": f"Column {j}",
+                "is_dimension": ct == "text",
+                "nullable": True,
+                "source": f"Column {j}",
             })
 
         return {
-            'observation_unit': {
-                'description': 'One row from source',
-                'dimensions': [],
-                'example': ''
+            "observation_unit": {
+                "description": "One data row from source",
+                "dimensions": [],
+                "example": "",
             },
-            'target_columns': target_columns,
-            'expected_output': {
-                'row_count_formula': 'same as source',
-                'row_count_estimate': len(df),
-                'column_count': len(df.columns)
+            "target_columns": target_columns,
+            "expected_output": {
+                "row_count_formula": "same as source data rows",
+                "row_count_estimate": er - sr + 1,
+                "column_count": len(target_columns),
             },
-            'exclusions': {
-                'exclude_rows': {'description': 'None', 'criteria': []},
-                'exclude_columns': {'description': 'None', 'criteria': []}
+            "exclusions": {
+                "exclude_rows": {"description": "None", "criteria": []},
+                "exclude_columns": {"description": "None", "criteria": []},
             },
-            'handling_special_cases': {},
-            'validation_samples': [],
-            'schema_reasoning': 'Default schema due to LLM error - pass through',
-            'expected_output_columns': [f'column_{i}' for i in range(len(df.columns))],
-            'source_metadata': encoded_data.get('metadata', {}),
-            'structure_analysis': structure_analysis
+            "handling_special_cases": {},
+            "validation_samples": [],
+            "schema_reasoning": "Fallback: LLM call failed",
+            "expected_output_columns": [c["name"] for c in target_columns],
         }

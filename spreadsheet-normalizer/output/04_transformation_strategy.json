@@ -1,0 +1,183 @@
+{
+  "strategy_summary": "Extract the table body from rows 7 to 47, use the Chinese label rows as the primary observations and ignore the alternating English label-only rows, remove the two aggregate ethnic-minority totals, then keep only the specified numeric columns and convert them into a tidy numeric output with one row per ethnic minority group. Preserve the original bilingual context only as metadata in the transformation logic; the final table should be a clean, row-based dataset with standardized labels and validated numeric percentages.",
+  "transformation_steps": [
+    {
+      "step_number": 1,
+      "goal": "Identify and isolate the usable data region",
+      "description": "Use rows 7 through 47 as the candidate data region. Exclude all header rows at indices 0, 2, 3, 4, and 6 because they contain title, multi-level headings, and the year label rather than observations. Also exclude blank separator rows 43 and 46. Keep the body rows where column 1 contains an ethnicity label, but note that the data is presented in Chinese-English alternating pairs: the Chinese row contains the numeric values, and the immediately following English row repeats the same category name without new values. The working extraction should therefore start from row 7 and end at row 47, then retain only rows that carry values in the numeric cells.",
+      "input_state": "Spreadsheet with multi-row headers and mixed observation/separator rows.",
+      "output_state": "Candidate table body containing only observation rows and separators removed from consideration.",
+      "key_logic": "Separate the actual data body from titles, multi-level headers, and blank separator rows before any reshaping or cleaning.",
+      "pandas_hints": "Filter by row index range first, then drop rows where the category column and all numeric columns are empty."
+    },
+    {
+      "step_number": 2,
+      "goal": "Resolve the bilingual row pattern and keep only primary observation rows",
+      "description": "Recognize that rows alternate between Chinese labels and English labels. The Chinese rows are the primary records because they contain numeric values in columns 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, and 14. The following English rows such as row 8, 10, 12, etc. are label-only repeats and should not become separate records. Use the presence of numeric values in the value columns to distinguish the primary row from the translation row. Keep rows 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39, 41, 44, and 47 as the main observations, then remove rows 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 45 because they are translation-only duplicates or aggregate labels without values. Rows 43 and 46 are blank separators and must also be discarded.",
+      "input_state": "Candidate body including both Chinese numeric rows and English duplicate label rows.",
+      "output_state": "One row per actual ethnicity observation, using the Chinese label row as the record source.",
+      "key_logic": "Use numeric presence to identify primary observation rows; ignore the English translation rows that do not introduce new measurements.",
+      "pandas_hints": "A row-level test for any non-missing numeric value across the measurement columns can be used to keep only primary rows."
+    },
+    {
+      "step_number": 3,
+      "goal": "Remove implicit aggregate rows",
+      "description": "Exclude rows that represent totals rather than ethnic group observations. Specifically remove row 41 ('所有少數族裔人士' / 'All ethnic minorities') and row 44 ('撇除外籍家庭傭工後的所有少數族裔人士' / 'All ethnic minorities, excluding foreign domestic helpers'). These are summary categories and should not be treated as ethnic groups. After removing these rows, the remaining observation rows should correspond to the 18 expected ethnic-minority groups. Keep row 47 ('全港人口' / 'Whole population') only if the analysis is intended to include the comparison population; otherwise treat it as an out-of-scope reference row and exclude it from the ethnic-minority-only output.",
+      "input_state": "Primary observation rows with some total/summary rows still included.",
+      "output_state": "Observation set limited to true ethnic group categories.",
+      "key_logic": "Filter out rows whose category labels match summary totals, even if they have valid numeric values.",
+      "pandas_hints": "Match the category text in column 1 against the provided removal list, then drop those rows explicitly."
+    },
+    {
+      "step_number": 4,
+      "goal": "Standardize the ethnicity label field",
+      "description": "Use column 1 as the ethnicity label source. Keep the original Chinese label from the primary row because it is the label directly tied to the numeric values in this source. Optionally retain the English translation from the following row as a reference-only check, but do not use it as a separate ethnicity value. Clean the label text by removing line breaks and footnote markers such as '[1]' and '[2]' from names like '其他南亞裔人士[1]' and '其他[2]'. For rows with a corresponding English translation row, verify that the English text matches the Chinese category to ensure correct pairing, but do not duplicate the record.",
+      "input_state": "Filtered primary rows with bilingual labels still in their raw form.",
+      "output_state": "Normalized ethnicity labels suitable for final output.",
+      "key_logic": "Preserve the observation label from the data-bearing row, while stripping footnotes and line-break artifacts.",
+      "pandas_hints": "Apply text cleanup to column 1 and optionally store the English translation from the next row in a temporary validation column."
+    },
+    {
+      "step_number": 5,
+      "goal": "Select the value columns to retain and discard the aggregate columns",
+      "description": "Keep the data-bearing percentage columns identified by the source: columns 3, 4, 6, 7, 9, 10, and 13. Exclude columns 5, 8, 11, 12, and 14 because they are aggregate or repeated total columns according to the source mapping. Do not use column 0, column 2, or the header rows for final values. The retained columns should be renamed later into tidy, meaningful fields based on the marital-status and sex hierarchy. If the intended tidy model is one row per ethnicity only, then these retained numeric columns can be preserved as separate measure columns. If a fully normalized long format is desired, they should instead be reshaped into marital status and sex dimensions; however, based on the provided target schema, keep them as direct value columns after cleaning.",
+      "input_state": "Validated ethnicity rows with raw numeric columns available.",
+      "output_state": "A compact dataset containing ethnicity plus the selected numeric percentage columns only.",
+      "key_logic": "Retain only the requested measurement columns and drop repeated totals that do not add analytical value.",
+      "pandas_hints": "Subset the frame to the exact column positions [1, 3, 4, 6, 7, 9, 10, 13] after row filtering."
+    },
+    {
+      "step_number": 6,
+      "goal": "Convert numeric text to proper numbers and normalize missing values",
+      "description": "Convert the retained numeric fields from text to numeric values. Values like '23', '35.6', and '100' should become numbers. Treat '-' as missing rather than zero, because it indicates absent data for that cell. Preserve decimal precision. Ensure all numeric columns are parsed consistently across the final retained rows. If any value fails numeric conversion unexpectedly, flag it for review before finalizing.",
+      "input_state": "Filtered rows with measurement columns still stored as strings and possible dash placeholders.",
+      "output_state": "Same rows with clean numeric types and missing values represented consistently.",
+      "key_logic": "Turn percentage text into numeric values while preserving missingness indicated by dashes.",
+      "pandas_hints": "Replace '-' with null first, then convert selected columns to numeric types."
+    },
+    {
+      "step_number": 7,
+      "goal": "Assemble the final tidy output structure",
+      "description": "Create the final table with one row per retained ethnic group, using the cleaned ethnicity label from column 1 and the selected numeric value columns. Rename the retained columns into the target field names. If the target is a compact one-row-per-ethnicity table, the final columns should be ethnicity plus the chosen measure fields. If there is a need to preserve hierarchy metadata, add derived fields for year and source language, using the row-6 year label as the source year context (2011) even though it is not repeated on each data row. Because the source table spans a single year, assign year = 2011 to all output rows if year is required downstream.",
+      "input_state": "Cleaned, numeric, ethnicity-only rows with selected source columns.",
+      "output_state": "Final dataset ready for analysis with standardized columns and no headers or footers.",
+      "key_logic": "Produce a single clean observation table and attach the implied year context if needed.",
+      "pandas_hints": "After filtering and renaming, reset the index and, if needed, add a constant year column from the table header context."
+    },
+    {
+      "step_number": 8,
+      "goal": "Validate completeness and correctness against expected structure",
+      "description": "Check that the final row count equals the expected 18 ethnic-minority rows after excluding the two aggregation rows and all bilingual duplicates. Confirm that the first retained record corresponds to row 7 ('亞洲人（非華人）') and that its numeric values begin with 23 and 35.6 in the first two retained measurement columns. Confirm that all retained rows have non-empty ethnicity labels and that the numeric columns contain numbers or nulls only where dashes were present in the source. Also verify that total-style rows such as 'All ethnic minorities' are absent from the output.",
+      "input_state": "Final cleaned dataset.",
+      "output_state": "Validated final dataset with known-good sample checks passed or flagged.",
+      "key_logic": "Use row count, sample value checks, and exclusion checks to ensure the transformation was applied correctly.",
+      "pandas_hints": "Compare row count to 18, inspect the first record, and assert that excluded labels are not present."
+    }
+  ],
+  "column_creation_details": [
+    {
+      "target_column": "ethnicity",
+      "source": "Column 1 from the primary Chinese observation rows (e.g., row 7, 9, 11, ...)",
+      "transformation": "Take the label from the data-bearing Chinese row, remove line breaks and footnote markers like [1] and [2], and keep the cleaned Chinese ethnicity name."
+    },
+    {
+      "target_column": "val_3",
+      "source": "Column 3 from the primary Chinese observation rows",
+      "transformation": "Convert the text percentage value to a numeric field; preserve decimal values and keep the number as-is."
+    },
+    {
+      "target_column": "val_4",
+      "source": "Column 4 from the primary Chinese observation rows",
+      "transformation": "Convert the text percentage value to numeric."
+    },
+    {
+      "target_column": "val_6",
+      "source": "Column 6 from the primary Chinese observation rows",
+      "transformation": "Convert the text percentage value to numeric."
+    },
+    {
+      "target_column": "val_7",
+      "source": "Column 7 from the primary Chinese observation rows",
+      "transformation": "Convert the text percentage value to numeric."
+    },
+    {
+      "target_column": "val_9",
+      "source": "Column 9 from the primary Chinese observation rows",
+      "transformation": "Convert the text percentage value to numeric."
+    },
+    {
+      "target_column": "val_10",
+      "source": "Column 10 from the primary Chinese observation rows",
+      "transformation": "Convert the text percentage value to numeric."
+    },
+    {
+      "target_column": "val_13",
+      "source": "Column 13 from the primary Chinese observation rows",
+      "transformation": "Convert the text percentage value to numeric."
+    }
+  ],
+  "validation_checkpoints": [
+    {
+      "after_step": 1,
+      "check_type": "row_count",
+      "description": "Confirm that the candidate data region includes rows 7 through 47 and excludes header rows 0, 2, 3, 4, and 6.",
+      "expected_value": "Data region spans 41 source rows before later filtering."
+    },
+    {
+      "after_step": 2,
+      "check_type": "row_count",
+      "description": "Confirm that only the Chinese primary rows remain and English translation-only rows are removed.",
+      "expected_value": "Primary observation rows remain; translation duplicates are gone."
+    },
+    {
+      "after_step": 3,
+      "check_type": "value_spot_check",
+      "description": "Verify that the total rows are excluded.",
+      "expected_value": "No row with ethnicity equal to 'All ethnic minorities' or 'All ethnic minorities, excluding foreign domestic helpers' remains."
+    },
+    {
+      "after_step": 6,
+      "check_type": "value_spot_check",
+      "description": "Check that a dash placeholder becomes missing rather than zero.",
+      "expected_value": "Row 39, column 10 should be null after conversion."
+    },
+    {
+      "after_step": 7,
+      "check_type": "value_spot_check",
+      "description": "Check the first retained data row against the sample provided in the source description.",
+      "expected_value": "First row ethnicity = '亞洲人（非華人）' and the first two numeric values are 23 and 35.6."
+    },
+    {
+      "after_step": 8,
+      "check_type": "row_count",
+      "description": "Confirm final output row count after filtering aggregation rows and bilingual duplicates.",
+      "expected_value": "18 rows"
+    }
+  ],
+  "edge_cases": [
+    {
+      "case": "Bilingual row pairs with the English line containing no numeric data",
+      "handling": "Use only the numeric-bearing Chinese row as the observation record and discard the following English duplicate row."
+    },
+    {
+      "case": "Footnote markers in ethnicity labels such as [1] and [2]",
+      "handling": "Remove bracketed footnote markers from the label text before final output."
+    },
+    {
+      "case": "Dash placeholder in a numeric cell",
+      "handling": "Convert '-' to missing/null rather than zero so the absence of data is preserved correctly."
+    },
+    {
+      "case": "Implicit aggregate categories included among otherwise valid rows",
+      "handling": "Explicitly remove the known totals rows even if they contain complete numeric values."
+    },
+    {
+      "case": "Blank separator rows 43 and 46",
+      "handling": "Ignore rows where the ethnicity column and all retained measurement columns are empty."
+    },
+    {
+      "case": "Single-year table with year only in the header",
+      "handling": "If a year field is needed downstream, assign 2011 to all output rows using the header context from row 6."
+    }
+  ]
+}

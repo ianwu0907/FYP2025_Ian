@@ -1,0 +1,74 @@
+{
+  "physical": {
+    "shape": {
+      "rows": 49,
+      "cols": 16
+    },
+    "header_depth": 7,
+    "data_start_row": 7,
+    "data_end_row": 47,
+    "data_rows": 41,
+    "column_dtype_profile": {
+      "0": "empty",
+      "1": "text",
+      "2": "empty",
+      "3": "numeric",
+      "4": "numeric",
+      "5": "numeric",
+      "6": "numeric",
+      "7": "numeric",
+      "8": "numeric",
+      "9": "numeric",
+      "10": "numeric",
+      "11": "numeric",
+      "12": "numeric",
+      "13": "numeric",
+      "14": "numeric",
+      "15": "empty"
+    },
+    "blank_rows_in_data": [
+      43,
+      46
+    ]
+  },
+  "irregularities": [
+    {
+      "label": "METADATA_ROWS",
+      "evidence": "Rows 0-1 contain table title and description, not data",
+      "details": "Title and description in Chinese (row 0) and English (row 1)"
+    },
+    {
+      "label": "MULTI_LEVEL_HEADER",
+      "evidence": "Row 3 has marital status categories, Row 4 has year and ethnicity labels forming a multi-level header.",
+      "details": "Level 1 = marital status categories, Level 2 = years and ethnicities"
+    },
+    {
+      "label": "INLINE_BILINGUAL",
+      "evidence": "Header cells [3]=\"婚姻狀況\\nMarital status\", [4]=\"年份  \\nYear\", [5]=\"種族  \\nEthnicity\" contain Chinese and English separated by newline",
+      "details": "Pattern appears in multiple header cells"
+    },
+    {
+      "label": "BILINGUAL_ALTERNATING_ROWS",
+      "evidence": "Row 7 \"亞洲人（非華人）\" has data, Row 8 \"Asian (other than Chinese)\" has no numeric values. Pattern repeats for all ethnicities.",
+      "details": "Chinese rows contain numeric data, English rows are label-only."
+    },
+    {
+      "label": "IMPLICIT_AGGREGATION_ROWS",
+      "evidence": "Row 41 \"所有少數族裔人士\" contains totals for all ethnic minorities (28.4, 100) and serves as an aggregate of the detailed ethnic entries above.",
+      "details": "Summary of all ethnic groups above."
+    },
+    {
+      "label": "SPARSE_ROW_FILL",
+      "evidence": "Values in the year column (Row 6=\"2011\") appear once and are not repeated for subsequent rows.",
+      "details": "The year is written only at the start of a block and blank in subsequent rows."
+    }
+  ],
+  "labels": [
+    "METADATA_ROWS",
+    "MULTI_LEVEL_HEADER",
+    "INLINE_BILINGUAL",
+    "BILINGUAL_ALTERNATING_ROWS",
+    "IMPLICIT_AGGREGATION_ROWS",
+    "SPARSE_ROW_FILL"
+  ]
+}
