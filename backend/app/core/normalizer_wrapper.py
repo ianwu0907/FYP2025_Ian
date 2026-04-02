@@ -68,12 +68,17 @@ class NormalizerWrapper:
             if self.progress_callback:
                 self.progress_callback("initializing", 5, "Initializing normalizer pipeline...")
 
-            # 初始化 TableNormalizer，传递进度回调
-            # TableNormalizer 会在每个真实阶段完成时调用这个回调
-            self.normalizer = TableNormalizer(self.config, progress_callback=self.progress_callback)
+            # 新架构的 TableNormalizer 只接受 config，不接受 progress_callback
+            self.normalizer = TableNormalizer(self.config)
 
-            # 执行标准化（TableNormalizer 内部会报告 10-100% 的进度）
+            if self.progress_callback:
+                self.progress_callback("encoding", 20, "Encoding spreadsheet...")
+
+            # Stage 1-4 在 normalize() 内部依次执行，完成后报告 100%
             result = self.normalizer.normalize(input_file, output_file)
+
+            if self.progress_callback:
+                self.progress_callback("completed", 100, "Normalization completed successfully.")
 
             return result
 

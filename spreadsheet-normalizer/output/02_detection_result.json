@@ -1,15 +1,15 @@
 {
   "physical": {
     "shape": {
-      "rows": 49,
-      "cols": 16
+      "rows": 56,
+      "cols": 10
     },
-    "header_depth": 7,
-    "data_start_row": 7,
-    "data_end_row": 47,
-    "data_rows": 41,
+    "header_depth": 5,
+    "data_start_row": 5,
+    "data_end_row": 55,
+    "data_rows": 51,
     "column_dtype_profile": {
-      "0": "empty",
+      "0": "text",
       "1": "text",
       "2": "empty",
       "3": "numeric",
@@ -18,55 +18,62 @@
       "6": "numeric",
       "7": "numeric",
       "8": "numeric",
-      "9": "numeric",
-      "10": "numeric",
-      "11": "numeric",
-      "12": "numeric",
-      "13": "numeric",
-      "14": "numeric",
-      "15": "empty"
+      "9": "empty"
     },
     "blank_rows_in_data": [
-      43,
-      46
+      41,
+      44,
+      47
     ]
   },
   "irregularities": [
     {
       "label": "METADATA_ROWS",
-      "evidence": "Rows 0-1 contain table title and description, not data",
-      "details": "Title and description in Chinese (row 0) and English (row 1)"
+      "evidence": "Rows 0, 1, 48 to 55 contain non-data information such as table title, notes, and footnotes.",
+      "details": "These rows do not follow the data structure and are used for additional information."
     },
     {
       "label": "MULTI_LEVEL_HEADER",
-      "evidence": "Row 3 has marital status categories, Row 4 has year and ethnicity labels forming a multi-level header.",
-      "details": "Level 1 = marital status categories, Level 2 = years and ethnicities"
+      "evidence": "Row 2 has year labels (2011, 2016, 2021), Row 3 has sub-labels (Number, %). Together they form a 2-level header.",
+      "details": "Level 1 = year (2011, 2016, 2021), Level 2 = value type (Number, %)."
     },
     {
       "label": "INLINE_BILINGUAL",
-      "evidence": "Header cells [3]=\"婚姻狀況\\nMarital status\", [4]=\"年份  \\nYear\", [5]=\"種族  \\nEthnicity\" contain Chinese and English separated by newline",
-      "details": "Pattern appears in multiple header cells"
+      "evidence": "Header cell [0]=\"種族\\nEthnicity\" contains Chinese and English separated by newline.",
+      "details": "Pattern appears in multiple header cells."
+    },
+    {
+      "label": "WIDE_FORMAT",
+      "evidence": "Columns 3-8 encode year (2011, 2016, 2021) × value type (Number, %) as column headers.",
+      "details": "3 year groups × 2 value types = 6 value columns that should be unpivoted."
+    },
+    {
+      "label": "NESTED_COLUMN_GROUPS",
+      "evidence": "Each year (2011, 2016, 2021) has two sub-columns (Number, %). Columns: 2011→[3,4], 2016→[5,6], 2021→[7,8].",
+      "details": "2 nesting levels: year × value_type."
     },
     {
       "label": "BILINGUAL_ALTERNATING_ROWS",
-      "evidence": "Row 7 \"亞洲人（非華人）\" has data, Row 8 \"Asian (other than Chinese)\" has no numeric values. Pattern repeats for all ethnicities.",
+      "evidence": "Row 5 \"亞洲人（非華人）\" has data, Row 6 \"Asian (other than Chinese)\" has no numeric values. Pattern repeats for all ethnicities.",
       "details": "Chinese rows contain numeric data, English rows are label-only."
     },
     {
       "label": "IMPLICIT_AGGREGATION_ROWS",
-      "evidence": "Row 41 \"所有少數族裔人士\" contains totals for all ethnic minorities (28.4, 100) and serves as an aggregate of the detailed ethnic entries above.",
-      "details": "Summary of all ethnic groups above."
+      "evidence": "Row 39 \"所有少數族裔人士[3]\" and Row 42 \"撇除外籍家庭傭工後的所有少數族裔人士[3]\" contain totals.",
+      "details": "Summary of all ethnicity detail rows above."
     },
     {
       "label": "SPARSE_ROW_FILL",
-      "evidence": "Values in the year column (Row 6=\"2011\") appear once and are not repeated for subsequent rows.",
-      "details": "The year is written only at the start of a block and blank in subsequent rows."
+      "evidence": "Column 0 (Year) is only filled at block starts (Row 5, 42, 45).",
+      "details": "Year values need to be forward-filled for the following rows."
     }
   ],
   "labels": [
     "METADATA_ROWS",
     "MULTI_LEVEL_HEADER",
     "INLINE_BILINGUAL",
+    "WIDE_FORMAT",
+    "NESTED_COLUMN_GROUPS",
     "BILINGUAL_ALTERNATING_ROWS",
     "IMPLICIT_AGGREGATION_ROWS",
     "SPARSE_ROW_FILL"

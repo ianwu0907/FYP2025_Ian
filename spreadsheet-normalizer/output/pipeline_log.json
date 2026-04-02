@@ -1,14 +1,14 @@
 {
-  "input_file": "long3.xlsx",
-  "start_time": "2026-03-28 20:52:08",
+  "input_file": "long1.xlsx",
+  "start_time": "2026-04-02 14:03:20",
   "stages": {
     "encoding": {
       "status": "success",
       "shape": [
-        49,
-        16
+        56,
+        10
       ],
-      "compression_ratio": 0.8559763724808895
+      "compression_ratio": 1.1378044711378044
     },
     "detection": {
       "status": "success",
@@ -16,42 +16,44 @@
         "METADATA_ROWS",
         "MULTI_LEVEL_HEADER",
         "INLINE_BILINGUAL",
+        "WIDE_FORMAT",
+        "NESTED_COLUMN_GROUPS",
         "BILINGUAL_ALTERNATING_ROWS",
         "IMPLICIT_AGGREGATION_ROWS",
         "SPARSE_ROW_FILL"
       ],
-      "num_irregularities": 6
+      "num_irregularities": 8
     },
     "schema_estimation": {
       "status": "success",
-      "observation_unit": "One ethnic group's percentage distribution of marital status for one sex category in one year",
-      "num_target_columns": 6,
-      "expected_rows": 168
+      "observation_unit": "One ethnicity's demographic count or percentage for one year and value type",
+      "num_target_columns": 5,
+      "expected_rows": 144
     },
     "transformation": {
       "status": "success",
       "output_shape": [
-        54,
-        6
+        114,
+        5
       ],
       "validation": {
         "is_valid": true,
         "errors": [],
         "warnings": [],
         "actual_shape": [
-          54,
-          6
+          114,
+          5
         ],
         "expected_shape": [
-          168,
-          6
+          144,
+          5
         ]
       },
-      "attempts": 1
+      "attempts": 3
     }
   },
-  "output_file": "output/normalized_long3.csv",
-  "end_time": "2026-03-28 20:52:52",
-  "elapsed_seconds": 43.49,
+  "output_file": "output\\test_qwen.csv",
+  "end_time": "2026-04-02 14:04:16",
+  "elapsed_seconds": 56.04,
   "status": "success"
 }
