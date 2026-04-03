@@ -25,6 +25,7 @@ Design principles:
   - Few-shot: a complete working transform function is shown.
   - Full data is passed — no truncation.
   - Feedback loop provides the actual error/output for targeted fixes.
+  - wide-format strategy (melt vs loop) is decided in Python, not by LLM.
 """
 
 import json
@@ -55,42 +56,54 @@ logger = logging.getLogger(__name__)
 # ============================================================================
 
 CODE_RECIPES = {
-
-    "METADATA_ROWS": '''
-# RECIPE: METADATA_ROWS — Slice to data region only
-data_start_row = {data_start_row}  # from physical features
-data_end_row = {data_end_row}
-result = df.iloc[data_start_row:data_end_row + 1].copy()
-result = result.reset_index(drop=True)
-''',
+    "METADATA_ROWS": "# Skip metadata rows in your loop using `if i < {data_start_row}: continue`",
 
     "MULTI_LEVEL_HEADER": '''
-# RECIPE: MULTI_LEVEL_HEADER — Read header rows to build column semantics
-# Do NOT rely on df.columns — read raw cell values from header rows
-header_row_indices = {header_row_indices}  # e.g., [3, 4, 5]
-# Build a mapping: column_index -> semantic meaning
-col_semantics = {{}}
-for j in range(len(df.columns)):
-    parts = []
-    for hr in header_row_indices:
-        val = df.iloc[hr, j]
-        if pd.notna(val) and str(val).strip():
-            parts.append(str(val).strip())
-    col_semantics[j] = " | ".join(parts) if parts else f"col_{{j}}"
-# Now col_semantics[3] might be "2011 | Number", col_semantics[4] might be "2011 | %"
-''',
+# RECIPE: MULTI_LEVEL_HEADER (WIDE TABLE)
+# 1. Forward-fill the header rows horizontally:
+# headers = df.iloc[{header_row_indices}].ffill(axis=1)
+# 2. In your nested `for j` loop, use the BOTTOM-most row of `headers` for the specific category.
+#    DO NOT try to extract row-level dimensions (like Year in column 0) from the `headers` DataFrame.
+#    Row dimensions should always be extracted from `df.iloc[i, ...]`.
+'''.strip(),
+
+    # WIDE_FORMAT is handled dynamically by _get_relevant_recipes()
+    # based on the _is_simple_wide() check — do not add a static recipe here.
+    "WIDE_FORMAT": None,
+
+    "BILINGUAL_ALTERNATING_ROWS": '''
+# RECIPE: BILINGUAL_ALTERNATING_ROWS
+# Detect the primary-language row by checking which row of each pair has
+# numeric values in the value columns — do NOT rely on row-index parity alone,
+# as the primary language may be at an even or odd index depending on the table.
+#
+# Recommended pattern:
+#   rows_to_keep = []
+#   for i in range(data_start_row, data_end_row + 1):
+#       has_data = any(
+#           pd.notna(df.iloc[i, j]) and str(df.iloc[i, j]).strip()
+#           for j in value_col_indices   # derive from headers, not hardcoded
+#       )
+#       if has_data:
+#           rows_to_keep.append(i)
+#
+# If the primary row contains Count data and the secondary row contains
+# Percentage data, extract BOTH metrics simultaneously:
+#    count_val = df.iloc[i, j]
+#    pct_val   = df.iloc[i+1, j] if i+1 < len(df) else None
+'''.strip(),
 
     "NESTED_COLUMN_GROUPS": '''
 # RECIPE: NESTED_COLUMN_GROUPS — Build a column mapping with group structure
 # After reading multi-level headers, create a structured mapping:
-# column_map = {{col_index: (group_value, sub_value)}}
+# column_map = {col_index: (group_value, sub_value)}
 # Example for year x value_type:
-#   {{3: ("2011", "Number"), 4: ("2011", "%"), 5: ("2016", "Number"), ...}}
+#   {3: ("2011", "Number"), 4: ("2011", "%"), 5: ("2016", "Number"), ...}
 # Example for marital_status x sex:
-#   {{3: ("Never married", "Male"), 4: ("Never married", "Female"), ...}}
+#   {3: ("Never married", "Male"), 4: ("Never married", "Female"), ...}
 #
 # Forward-fill group labels across columns (groups span multiple cols):
-group_labels = {{}}
+group_labels = {}
 current_group = None
 for j in range(len(df.columns)):
     val = df.iloc[group_header_row, j]
@@ -98,69 +111,39 @@ for j in range(len(df.columns)):
         current_group = str(val).strip()
     if current_group:
         group_labels[j] = current_group
- 
+
 # Then unpivot using the mapping:
 records = []
 for _, row in result.iterrows():
-    base = {{dim_col: row[dim_col_idx] for dim_col, dim_col_idx in id_columns}}
+    base = {dim_col: row[dim_col_idx] for dim_col, dim_col_idx in id_columns}
     for col_idx, (group_val, sub_val) in column_map.items():
-        record = {{**base, group_dim_name: group_val, sub_dim_name: sub_val}}
+        record = {**base, group_dim_name: group_val, sub_dim_name: sub_val}
         record[value_col_name] = row.iloc[col_idx]
         records.append(record)
 result = pd.DataFrame(records)
 ''',
 
-    "WIDE_FORMAT": '''
-# RECIPE: WIDE_FORMAT — Unpivot value columns into rows
-# Option A: Simple melt (when columns are a single dimension)
-id_cols = [col_indices_to_keep]  # columns that stay as-is
-value_cols = [col_indices_to_unpivot]  # columns that become rows
-result = pd.melt(result, id_vars=id_cols, value_vars=value_cols,
-                 var_name="new_dimension_name", value_name="value_column_name")
- 
-# Option B: Manual iteration (when columns encode multiple dimensions)
-# See NESTED_COLUMN_GROUPS recipe above
-''',
-
-    "BILINGUAL_ALTERNATING_ROWS": '''
-# RECIPE: BILINGUAL_ALTERNATING_ROWS — Merge row pairs
-# Chinese rows (even indices in data region) have numeric data
-# English rows (odd indices) have English labels only
-merged_rows = []
-data_rows = result.values.tolist()
-i = 0
-while i < len(data_rows) - 1:
-    cn_row = data_rows[i]      # Chinese label + numeric data
-    en_row = data_rows[i + 1]  # English label, no numeric data
-    # Check if en_row is indeed a label-only row (all numeric cols empty)
-    en_has_data = any(pd.notna(en_row[j]) and str(en_row[j]).strip()
-                      for j in numeric_col_indices)
-    if not en_has_data:
-        # Merge: take label from both, data from Chinese row
-        merged = {{"label_cn": cn_row[label_col], "label_en": en_row[label_col]}}
-        for j in numeric_col_indices:
-            merged[col_name_for(j)] = cn_row[j]
-        merged_rows.append(merged)
-        i += 2
-    else:
-        # Not a bilingual pair — treat as regular row
-        merged_rows.append(build_row(cn_row))
-        i += 1
-result = pd.DataFrame(merged_rows)
-''',
-
     "INLINE_BILINGUAL": '''
-# RECIPE: INLINE_BILINGUAL — Split cell content by newline
-# Cells like "種族\\nEthnicity" → split into Chinese and English parts
-def split_bilingual(val):
-    """Split a bilingual cell value into (chinese, english) parts."""
+# RECIPE: INLINE_BILINGUAL — Split cell content by detected separator
+# CRITICAL: Do NOT assume "\\n" is the separator.
+# First inspect the actual bilingual cells from the EVIDENCE to find the
+# real separator. Common separators: "\\n", "/", "(", or a space between
+# CJK and Latin characters.
+#
+# sep = "<separator found in the EVIDENCE for this spreadsheet>"
+#
+def split_bilingual(val, sep):
+    """Split a bilingual cell value into (primary_lang, secondary_lang) parts."""
     if pd.isna(val):
         return val, val
     s = str(val)
-    if "\\n" in s:
-        parts = s.split("\\n", 1)
+    if sep in s:
+        parts = s.split(sep, 1)
         return parts[0].strip(), parts[1].strip()
     return s.strip(), s.strip()
+
+# Apply to header cells and data cells as needed.
+# Pass the detected separator: split_bilingual(cell_value, sep)
 ''',
 
     "SECTION_HEADER_ROWS": '''
@@ -183,46 +166,55 @@ result = result.dropna(subset=[result.columns[j] for j in numeric_col_indices], 
 
     "IMPLICIT_AGGREGATION_ROWS": '''
 # RECIPE: IMPLICIT_AGGREGATION_ROWS — Remove redundant aggregation rows
-# Apply ALL relevant forms:
- 
-# Form 1: Keyword-based total/subtotal rows
-agg_keywords = ["total", "subtotal", "overall", "all ", "sum",
-                 "合計", "總計", "小計", "总计", "合计"]
-def is_keyword_agg(val):
-    if pd.isna(val):
-        return False
-    return any(kw in str(val).strip().lower() for kw in agg_keywords)
-result = result[~result[label_col].apply(is_keyword_agg)]
- 
-# Form 2: Semantic hierarchy aggregation
-# Some rows are parent-level aggregates of child rows, identifiable
-# only by domain meaning (no keyword or delimiter signal).
-# Example: "Asian (other than Chinese)" sums Filipino + Indonesian + ...
-# Use the specific labels identified in the detection EVIDENCE:
-#   semantic_agg_labels = ["label_1", "label_2", ...]
-#   result = result[~result[label_col].isin(semantic_agg_labels)]
-# *** Build this list from the detection EVIDENCE ***
- 
-# Note: Cross-group aggregation (where an entire category group is a
-# coarser version of another) should be handled by removing the coarser
-# category values. Use the EXCLUDE_ROWS from the schema to identify
-# which category values to drop.
+#
+# *** DO NOT hardcode a keyword list. ***
+# The schema's EXCLUDE_ROWS field and the detection EVIDENCE already identify
+# which specific labels and category values must be removed. Use those directly.
+#
+# How to build the exclusion logic for each form:
+#
+# Form 1 — Keyword-based totals:
+#   Read the EXCLUDE_ROWS description in the schema. It will name specific label
+#   values (e.g. "Total", "Grand total"). Build your exclusion from those
+#   exact strings, not from a generic keyword list.
+#   agg_labels = ["<label A from EXCLUDE_ROWS>", "<label B>", ...]
+#   result = result[~result.iloc[:, label_col_idx].isin(agg_labels)]
+#
+# Form 2 — Semantic hierarchy aggregation (parent rows with no keyword signal):
+#   Read the detection EVIDENCE. It will name the specific parent-level labels.
+#   semantic_agg_labels = ["<parent label from EVIDENCE>", ...]
+#   result = result[~result.iloc[:, label_col_idx].isin(semantic_agg_labels)]
+#
+# Form 3 — Cross-group aggregation (entire coarser category group):
+#   Read the EXCLUDE_ROWS description. It will name the coarser category value(s).
+#   coarser_categories = ["<coarser category value from EXCLUDE_ROWS>"]
+#   result = result[~result.iloc[:, category_col_idx].isin(coarser_categories)]
+#
+#   CRITICAL: Use .isin() for exact match, NEVER str.contains().
+#   str.contains("虐待長者性質") will also match "虐待長者性質及受虐長者性別"
+#   because the former is a substring of the latter, silently deleting valid rows.
+#   Always filter by exact category value equality.
 ''',
 
     "AGGREGATE_COLUMNS": '''
 # RECIPE: AGGREGATE_COLUMNS — Drop aggregate columns before reshaping
-# Identify columns whose headers contain Total/Overall/合計/Median
-# These are typically the last column in each repeating group
-# or standalone summary columns
-agg_col_indices = [indices_of_aggregate_columns]  # from schema exclusions
+# Read the schema EXCLUDE_COLUMNS field to find which column indices to drop.
+# These are typically the last column in each repeating group or standalone
+# summary columns. Use the indices from the schema, not a keyword scan.
+agg_col_indices = [indices_of_aggregate_columns]  # from schema EXCLUDE_COLUMNS
 result = result.drop(columns=[result.columns[i] for i in agg_col_indices
                                if i < len(result.columns)], errors="ignore")
 ''',
 
     "EMBEDDED_DIMENSION_IN_COLUMN": '''
 # RECIPE: EMBEDDED_DIMENSION_IN_COLUMN — Conditional split
-delimiter = " - "  # detected delimiter
-def split_embedded(val):
+# CRITICAL: Do NOT hardcode a delimiter. Read the EVIDENCE field from the
+# detected irregularity to find the exact delimiter for THIS spreadsheet.
+# Common examples: " - ", " – ", " / ", ":", "_" — always verify from the data.
+#
+# delimiter = "<the delimiter identified in the EVIDENCE>"  ← set from actual data
+#
+def split_embedded(val, delimiter):
     if pd.isna(val):
         return val, None
     s = str(val).strip()
@@ -230,20 +222,63 @@ def split_embedded(val):
         parts = s.split(delimiter, 1)
         return parts[0].strip(), parts[1].strip()
     return s, None
- 
-result[["primary_dim", "secondary_dim"]] = result["compound_col"].apply(
-    lambda x: pd.Series(split_embedded(x))
+
+# Apply to the compound column (replace compound_col_idx with the actual index):
+result[["primary_dim", "secondary_dim"]] = result.iloc[:, compound_col_idx].apply(
+    lambda x: pd.Series(split_embedded(x, delimiter))
 )
 ''',
 
     "SPARSE_ROW_FILL": '''
-# RECIPE: SPARSE_ROW_FILL — Forward-fill sparse dimension column
-# A dimension column (e.g., Year) has values only in the first row
-# of each group; blanks below carry forward the same value.
-# Apply EARLY, before any row filtering or reshaping.
-result[sparse_col_name] = result[sparse_col_name].fillna(method="ffill")
-''',
+# RECIPE: SPARSE_ROW_FILL
+# For columns where a value like 'Year' is written once and implies the same for rows below:
+# CRITICAL: Replace empty strings with NaN before forward-filling!
+# df.iloc[:, col_idx] = df.iloc[:, col_idx].replace(r'^\\s*$', np.nan, regex=True).ffill()
+'''.strip(),
 }
+
+
+# ============================================================================
+# Wide-format recipes — selected at runtime by _get_relevant_recipes()
+# based on _is_simple_wide(). Never shown together; LLM always receives
+# exactly one path with no conditional branching to evaluate.
+# ============================================================================
+
+_WIDE_FORMAT_MELT_RECIPE = '''
+# RECIPE: WIDE_FORMAT (simple) — use pd.melt()
+# Applicable because WIDE_FORMAT is the only structural irregularity.
+#
+# Step 1: Slice to data region and ensure string column names for melt
+result = df.iloc[{data_start_row}:{data_end_row} + 1].copy()
+result.columns = [str(c) for c in result.columns]
+result = result.dropna(how="all")
+#
+# Step 2: Identify id_vars and value_vars from the HEADERS shown above
+#   id_col_indices    = [...]   # columns that stay as dimensions
+#   value_col_indices = [...]   # columns to unpivot
+#   dim_col_name      = "..."   # name for the new dimension column (from schema)
+#   value_col_name    = "..."   # name for the value column (from schema)
+#
+id_vars    = [result.columns[i] for i in id_col_indices]
+value_vars = [result.columns[i] for i in value_col_indices]
+result = pd.melt(result,
+                 id_vars=id_vars,
+                 value_vars=value_vars,
+                 var_name=dim_col_name,
+                 value_name=value_col_name)
+# Step 3: Rename columns to exactly match the target schema
+result = result.rename(columns={{...}})
+# Step 4: Drop rows where the value column is null (unpivoted empty cells)
+result = result.dropna(subset=[value_col_name])
+'''.strip()
+
+_WIDE_FORMAT_LOOP_RECIPE = '''
+# RECIPE: WIDE_FORMAT (complex) — use record-collection loop
+# pd.melt() is NOT suitable here because co-occurring irregularities
+# (MULTI_LEVEL_HEADER, NESTED_COLUMN_GROUPS, or BILINGUAL_ALTERNATING_ROWS)
+# require irregular row handling that melt cannot perform.
+# See MULTI_LEVEL_HEADER / NESTED_COLUMN_GROUPS recipes for the loop pattern.
+'''.strip()
 
 
 # ============================================================================
@@ -257,6 +292,10 @@ class TransformationGenerator:
     1. Build prompt with code recipes for detected irregularities
     2. Single LLM call generates a `def transform(df)` function
     3. Execute → Validate → Feedback loop
+
+    Wide-format strategy (melt vs loop) is decided deterministically in
+    Python via _is_simple_wide() before any LLM call is made. The LLM
+    always receives a single, unambiguous instruction — never a branch.
     """
 
     def __init__(self, config: Dict[str, Any]):
@@ -275,6 +314,7 @@ class TransformationGenerator:
         self.max_completion_tokens = config.get("max_completion_tokens", 6000)
         self.max_retries = config.get("max_retries", 5)
         self._last_execution_log = []  # captured print output from last execution
+        self._simple_wide = False      # set during _generate_code; reused in _regenerate_code
 
     # ==================================================================
     # Public API
@@ -359,17 +399,49 @@ class TransformationGenerator:
                 if attempt < self.max_retries - 1:
                     feedback = {
                         "error_type": "EXECUTION_ERROR",
-                        "error_message": str(e),
+                        "error_message": f"{type(e).__name__}: {str(e)}",
                         "error_trace": traceback.format_exc(),
+                        "execution_log": self._last_execution_log,
                     }
                     code = self._regenerate_code(
                         df, physical, detection_result, schema,
                         labels, code, feedback
                     )
                 else:
-                    raise
+                    logger.error(f"Max retries reached with execution error. Falling back to raw data.")
+                    return {
+                        "normalized_df": df.copy(),
+                        "transformation_code": code,
+                        "transformation_strategy": {"approach": "failed_execution"},
+                        "validation_result": {
+                            "is_valid": False,
+                            "errors": [f"Final execution attempt crashed: {type(e).__name__} - {str(e)}"],
+                            "warnings": []
+                        },
+                        "attempts": attempt + 1,
+                    }
 
         raise RuntimeError("Transformation failed after all retries")
+
+    # ==================================================================
+    # Wide-format complexity check (deterministic — no LLM judgment)
+    # ==================================================================
+
+    @staticmethod
+    def _is_simple_wide(labels: List[str]) -> bool:
+        """
+        Returns True when the table is wide-format but has no co-occurring
+        structural irregularities that prevent pd.melt() from being used.
+
+        This check is a pure set operation on detected labels.
+        It is intentionally performed in Python before any LLM call so
+        that the LLM always receives a single unambiguous instruction
+        rather than a conditional branch to evaluate itself.
+        """
+        if "WIDE_FORMAT" not in labels:
+            return False
+        blocking = {"MULTI_LEVEL_HEADER", "NESTED_COLUMN_GROUPS", "BILINGUAL_ALTERNATING_ROWS"}
+        return blocking.isdisjoint(labels)
 
     # ==================================================================
     # Code Generation
@@ -382,15 +454,25 @@ class TransformationGenerator:
                        labels: List[str]) -> str:
         """Generate transformation code with code recipes as guidance."""
 
+        # Decide wide-format strategy in Python — store for reuse in regeneration
+        self._simple_wide = self._is_simple_wide(labels)
+        if self._simple_wide:
+            logger.info("  Wide-format strategy: pd.melt() "
+                        "(WIDE_FORMAT only, no blocking irregularities)")
+        elif "WIDE_FORMAT" in labels:
+            logger.info("  Wide-format strategy: record-collection loop "
+                        "(blocking irregularities present: "
+                        f"{[l for l in labels if l in ('MULTI_LEVEL_HEADER','NESTED_COLUMN_GROUPS','BILINGUAL_ALTERNATING_ROWS')]})")
+
         prompt = self._build_code_prompt(
-            df, physical, detection_result, schema, labels
+            df, physical, detection_result, schema, labels, self._simple_wide
         )
 
         try:
             resp = self.client.chat.completions.create(
                 model=self.model,
                 messages=[
-                    {"role": "system", "content": self._system_prompt()},
+                    {"role": "system", "content": self._system_prompt(self._simple_wide)},
                     {"role": "user", "content": prompt},
                 ],
                 max_completion_tokens=self.max_completion_tokens,
@@ -404,34 +486,89 @@ class TransformationGenerator:
             logger.error(f"Code generation failed: {e}")
             raise
 
-    def _system_prompt(self) -> str:
-        return (
+    def _system_prompt(self, simple_wide: bool = False) -> str:
+        common_header = (
             "You are an expert Python/pandas programmer. You write a "
             "`def transform(df)` function that transforms a messy "
-            "spreadsheet DataFrame into tidy format.\n\n"
+            "spreadsheet DataFrame into STRICT TIDY DATA format.\n\n"
+
+            "*** TARGET PARADIGM: TIDY DATA ***\n"
+            "1. Each variable forms a column.\n"
+            "2. Each observation forms a row.\n"
+            "3. Each type of observational unit forms a table "
+            "(drop Total/Average/Summary rows).\n\n"
 
             "RULES:\n"
-            "1. Function signature: `def transform(df):` taking and "
-            "returning a DataFrame.\n"
-            "2. Use only pandas, numpy, and standard library.\n"
-            "3. Use .iloc for positional access (column INDICES, not names). "
-            "The input df has auto-generated column names that are unreliable.\n"
-            "4. Add print() statements after each major step showing "
-            "the shape and a sample.\n"
-            "5. Handle edge cases: missing values, type conversion.\n"
-            "6. Return the final DataFrame with EXACT column names "
-            "matching the target schema.\n\n"
-
-            "Output ONLY the Python code. No markdown. No explanation."
+            "1. Use only pandas, numpy, and standard library.\n"
+            "2. Use .iloc for positional access (column INDICES, not names). "
+            "The input df has numeric column names (0, 1, 2...).\n"
+            "3. NEVER use `raise`, `assert`, or explicit row count checks "
+            "(e.g., `if len(records) < expected`).\n"
+            "4. Output ONLY the Python code. No markdown. No explanation.\n\n"
         )
+
+        if simple_wide:
+            mandatory = (
+                "*** MANDATORY PATTERN: pd.melt() ***\n"
+                "This table has WIDE_FORMAT with no blocking irregularities. "
+                "Use pd.melt() to unpivot — do NOT use a manual record loop.\n"
+                "```python\n"
+                "import pandas as pd\n"
+                "import numpy as np\n\n"
+                "def transform(df):\n"
+                "    print(f\"Input shape: {df.shape}\")\n\n"
+                "    result = df.iloc[data_start_row:data_end_row + 1].copy()\n"
+                "    result.columns = [str(c) for c in result.columns]\n"
+                "    result = result.dropna(how='all')\n\n"
+                "    result = pd.melt(result,\n"
+                "                     id_vars=[...],       # dimension columns to keep\n"
+                "                     value_vars=[...],    # wide columns to unpivot\n"
+                "                     var_name='...',      # new dimension column name\n"
+                "                     value_name='...')    # value column name\n"
+                "    result = result.rename(columns={...}) # rename to exact schema names\n"
+                "    result = result.dropna(subset=['...']) # drop rows with no value\n"
+                "    print(f\"Final output: {result.shape}\")\n"
+                "    return result\n"
+                "```\n"
+            )
+        else:
+            mandatory = (
+                "*** MANDATORY PATTERN: record-collection loop ***\n"
+                "This table has co-occurring structural irregularities. "
+                "Use a record-collection loop — do NOT use pd.melt().\n"
+                "```python\n"
+                "import pandas as pd\n"
+                "import numpy as np\n\n"
+                "def transform(df):\n"
+                "    print(f\"Input shape: {df.shape}\")\n\n"
+                "    # 1. Clean and forward-fill sparse dimension columns on the raw df BEFORE the loop if needed.\n"
+                "    # 2. Isolate multi-level headers and forward-fill horizontally if needed.\n\n"
+                "    records = []\n"
+                "    for i in range(len(df)):\n"
+                "        # Skip unwanted rows (metadata, aggregates, alternate language rows)\n"
+                "        \n"
+                "        # Extract row-level dimensions\n"
+                "        \n"
+                "        # Extract values (use nested `for j in range(...)` for wide columns)\n"
+                "        # CRITICAL: dict keys MUST EXACTLY MATCH the target schema column names!\n"
+                "        # records.append({\"schema_col_1\": val1, \"schema_col_2\": val2})\n\n"
+                "    target_cols = ['schema_col_1', 'schema_col_2']  # REPLACE with exact schema columns\n"
+                "    result = pd.DataFrame(records, columns=target_cols)\n"
+                "    print(f\"Final output: {result.shape}\")\n"
+                "    return result\n"
+                "```\n"
+            )
+
+        return common_header + mandatory
 
     def _build_code_prompt(self, df: pd.DataFrame,
                            physical: Dict[str, Any],
                            detection_result: Dict[str, Any],
                            schema: Dict[str, Any],
-                           labels: List[str]) -> str:
+                           labels: List[str],
+                           simple_wide: bool = False) -> str:
 
-        recipes_text = self._get_relevant_recipes(labels, physical)
+        recipes_text = self._get_relevant_recipes(labels, physical, simple_wide)
         schema_text = self._format_schema(schema)
         headers_text = self._format_headers(df, physical)
         data_text = self._format_data(df, physical)
@@ -443,6 +580,9 @@ class TransformationGenerator:
         est_rows = schema.get("expected_output", {}).get(
             "row_count_estimate", "unknown"
         )
+
+        # Choose few-shot example to match the selected strategy
+        few_shot = self._few_shot_melt() if simple_wide else self._few_shot_loop()
 
         return f"""Write a `def transform(df):` function to convert this spreadsheet to tidy format.
 
@@ -473,108 +613,204 @@ DATA (full data region):
 5. Add print() after each step
 6. Adapt the code recipes above to THIS specific data
 
+{few_shot}
+
+Now write the transform function for THIS spreadsheet. Output ONLY code."""
+
+    # ==================================================================
+    # Few-shot examples (one per strategy)
+    # ==================================================================
+
+    @staticmethod
+    def _few_shot_melt() -> str:
+        return """\
 === FEW-SHOT EXAMPLE ===
-Here is a COMPLETE transform function for a different spreadsheet that had
-WIDE_FORMAT + BILINGUAL_ALTERNATING_ROWS + IMPLICIT_AGGREGATION_ROWS:
+⚠️  WARNING: The values below (row indices, column indices, column names)
+are SPECIFIC TO THIS EXAMPLE spreadsheet. For YOUR spreadsheet, derive
+all such values from the HEADERS, PHYSICAL FEATURES, and SOURCE DATA above.
+Do NOT copy any number or string literal from this example into your code.
+
+This example had: WIDE_FORMAT only (no blocking irregularities).
+Example physical features: data_start_row=1, data_end_row=10,
+id columns at indices 0-1, value columns at indices 2-4 (years 2019/2020/2021).
 
 ```python
 import pandas as pd
 import numpy as np
 
 def transform(df):
-    print(f"Input shape: {{df.shape}}")
+    print(f"Input shape: {df.shape}")
 
     # Step 1: Slice to data region
+    # 1 = data_start_row, 11 = data_end_row+1 — READ FROM PHYSICAL FEATURES FOR YOUR DATA
+    result = df.iloc[1:11].copy()
+    result.columns = [str(c) for c in result.columns]
+    result = result.dropna(how="all")
+    print(f"After slicing to data region: {result.shape}")
+
+    # Step 2: Melt wide → long
+    # id_vars / value_vars derived from HEADERS above — EXAMPLE-SPECIFIC indices
+    id_vars    = [result.columns[0], result.columns[1]]   # cols 0,1 = dimensions
+    value_vars = [result.columns[2], result.columns[3], result.columns[4]]  # cols 2-4 = years
+    result = pd.melt(result,
+                     id_vars=id_vars,
+                     value_vars=value_vars,
+                     var_name="year",       # EXAMPLE-SPECIFIC: use YOUR schema dim name
+                     value_name="revenue")  # EXAMPLE-SPECIFIC: use YOUR schema value name
+    result = result.dropna(subset=["revenue"])
+
+    # Step 4: Rename to exact schema column names — EXAMPLE-SPECIFIC names below
+    result = result.rename(columns={result.columns[0]: "region",
+                                    result.columns[1]: "product"})
+    result["year"] = result["year"].astype(str)
+    result["revenue"] = pd.to_numeric(result["revenue"], errors="coerce")
+
+    # Final column order must match schema exactly — EXAMPLE-SPECIFIC
+    result = result[["region", "product", "year", "revenue"]]
+    print(f"Final output: {result.shape}")
+    return result
+```"""
+
+    @staticmethod
+    def _few_shot_loop() -> str:
+        return """\
+=== FEW-SHOT EXAMPLE ===
+⚠️  WARNING: The values below (row indices, column indices, year strings, column names)
+are SPECIFIC TO THIS EXAMPLE spreadsheet. For YOUR spreadsheet, derive
+all such values from the HEADERS, PHYSICAL FEATURES, and SOURCE DATA above.
+Do NOT copy any number or string literal from this example into your code.
+
+This example had: WIDE_FORMAT + BILINGUAL_ALTERNATING_ROWS + IMPLICIT_AGGREGATION_ROWS
+Example physical features: data_start_row=6, data_end_row=56,
+value columns at indices 3-8 (3 year groups × 2 value types), label at col 0.
+
+```python
+import pandas as pd
+import numpy as np
+
+def transform(df):
+    print(f"Input shape: {df.shape}")
+
+    # Step 1: Slice to data region
+    # 6 = data_start_row, 57 = data_end_row+1 — READ FROM PHYSICAL FEATURES FOR YOUR DATA
     result = df.iloc[6:57].copy()
     result = result.reset_index(drop=True)
-    print(f"After slicing to data region: {{result.shape}}")
+    print(f"After slicing to data region: {result.shape}")
 
     # Step 2: Remove blank rows
     result = result.dropna(how="all")
-    print(f"After removing blank rows: {{result.shape}}")
+    print(f"After removing blank rows: {result.shape}")
 
-    # Step 3: Identify bilingual row pairs — keep only Chinese rows (have data)
+    # Step 3: Identify bilingual row pairs — keep only rows with numeric data
+    # Detection: check which rows have values in the value columns.
+    # [3, 4, 5, 6, 7, 8] are the value column indices FOR THIS EXAMPLE — derive yours from headers.
     rows_to_keep = []
     for i in range(len(result)):
-        # Check if this row has numeric data in value columns
-        has_data = False
-        for j in [3, 4, 5, 6, 7, 8]:
-            val = result.iloc[i, j]
-            if pd.notna(val) and str(val).strip():
-                has_data = True
-                break
+        has_data = any(
+            pd.notna(result.iloc[i, j]) and str(result.iloc[i, j]).strip()
+            for j in [3, 4, 5, 6, 7, 8]   # EXAMPLE-SPECIFIC: replace with actual value col indices
+        )
         if has_data:
             rows_to_keep.append(i)
     result_cn = result.iloc[rows_to_keep].copy().reset_index(drop=True)
 
-    # Get English labels from the row after each Chinese row
+    # Get secondary-language labels from the row immediately after each primary row
+    # col 0 = label column FOR THIS EXAMPLE — replace with the actual label column index
     en_labels = []
     for i in rows_to_keep:
         if i + 1 < len(result):
-            en_labels.append(str(result.iloc[i + 1, 0]).strip())
+            en_labels.append(str(result.iloc[i + 1, 0]).strip())  # 0 = label col, EXAMPLE-SPECIFIC
         else:
             en_labels.append("")
     result_cn["label_en"] = en_labels
-    print(f"After bilingual merge: {{result_cn.shape}}")
+    print(f"After bilingual merge: {result_cn.shape}")
 
-    # Step 4: Remove aggregation rows
-    agg_kw = ["total", "all ", "overall", "合計", "總計"]
-    mask = result_cn.iloc[:, 0].apply(
-        lambda x: not any(k in str(x).lower() for k in agg_kw) if pd.notna(x) else True
-    )
-    result_cn = result_cn[mask].reset_index(drop=True)
-    print(f"After removing aggregation rows: {{result_cn.shape}}")
-
-    # Step 5: Unpivot year groups
-    # Column mapping: {{3: ("2011", "count"), 4: ("2011", "pct"),
-    #                  5: ("2016", "count"), 6: ("2016", "pct"),
-    #                  7: ("2021", "count"), 8: ("2021", "pct")}}
+    # Step 4: Unpivot wide columns into long format using record loop
+    # Column mapping below is EXAMPLE-SPECIFIC (years 2011/2016/2021, col indices 3-8).
+    # For your data: read the header rows to build the equivalent mapping.
     records = []
     for i in range(len(result_cn)):
         row = result_cn.iloc[i]
-        base = {{"ethnicity_cn": str(row.iloc[0]).strip(),
-                "ethnicity_en": row["label_en"]}}
+        # "ethnicity_cn"/"ethnicity_en" are EXAMPLE schema columns — use YOUR schema column names
+        base = {"ethnicity_cn": str(row.iloc[0]).strip(),   # col 0 = label, EXAMPLE-SPECIFIC
+                "ethnicity_en": row["label_en"]}
+        # ("2011", 3, 4) means: year value, count col index, pct col index — EXAMPLE-SPECIFIC
         for year, count_col, pct_col in [("2011", 3, 4), ("2016", 5, 6), ("2021", 7, 8)]:
-            record = {{**base, "year": year}}
+            record = {**base, "year": year}
             record["count"] = pd.to_numeric(row.iloc[count_col], errors="coerce")
             record["percentage"] = pd.to_numeric(row.iloc[pct_col], errors="coerce")
             records.append(record)
 
+    # Column list below is EXAMPLE-SPECIFIC — replace with YOUR exact schema column names
     output = pd.DataFrame(records)
     output = output[["ethnicity_cn", "ethnicity_en", "year", "count", "percentage"]]
-    print(f"Final output: {{output.shape}}")
+    print(f"Final output: {output.shape}")
     return output
-```
-
-Now write the transform function for THIS spreadsheet. Output ONLY code."""
+```"""
 
     # ==================================================================
     # Recipe assembly
     # ==================================================================
 
     def _get_relevant_recipes(self, labels: List[str],
-                              physical: Dict[str, Any]) -> str:
+                              physical: Dict[str, Any],
+                              simple_wide: bool = False) -> str:
         """Assemble code recipes for detected irregularity labels."""
         lines = []
+        start_r = physical.get("data_start_row", 0)
+        end_r = physical.get("data_end_row", "len(df)-1")
+
         for label in labels:
-            if label in CODE_RECIPES:
-                recipe = CODE_RECIPES[label]
-                # Substitute known physical values
-                recipe = recipe.replace(
-                    "{data_start_row}",
-                    str(physical.get("data_start_row", 0))
-                )
-                recipe = recipe.replace(
-                    "{data_end_row}",
-                    str(physical.get("data_end_row", "len(df)-1"))
-                )
-                recipe = recipe.replace(
-                    "{header_row_indices}",
-                    str(list(range(physical.get("data_start_row", 0))))
-                )
-                lines.append(f"--- {label} ---")
-                lines.append(recipe.strip())
+            # WIDE_FORMAT is handled separately based on simple_wide flag
+            if label == "WIDE_FORMAT":
+                lines.append("--- WIDE_FORMAT ---")
+                if simple_wide:
+                    recipe = _WIDE_FORMAT_MELT_RECIPE.replace(
+                        "{data_start_row}", str(start_r)
+                    ).replace(
+                        "{data_end_row}", str(end_r)
+                    )
+                    lines.append(recipe)
+                else:
+                    lines.append(_WIDE_FORMAT_LOOP_RECIPE)
                 lines.append("")
+                continue
+
+            recipe = CODE_RECIPES.get(label)
+            if recipe is None:
+                continue
+
+            # Substitute known physical values
+            recipe = recipe.replace("{data_start_row}", str(start_r))
+            recipe = recipe.replace("{data_end_row}", str(end_r))
+            recipe = recipe.replace(
+                "{header_row_indices}",
+                str(list(range(start_r)))
+            )
+            lines.append(f"--- {label} ---")
+            lines.append(recipe.strip())
+            lines.append("")
+
+        # Universal best practice — wording adapts to chosen strategy
+        lines.append("--- UNIVERSAL BEST PRACTICE (Apply to all tables) ---")
+        if simple_wide:
+            lines.append(
+                "# SAFE TYPE HANDLING\n"
+                "# After pd.melt(), convert the value column with "
+                "pd.to_numeric(..., errors='coerce').\n"
+                "# ALWAYS check pd.notna(x) before .strip() or .split()."
+            )
+        else:
+            lines.append(
+                f"# THE GOLDEN EXTRACTION LOOP\n"
+                f"# Loop from {start_r} to {end_r}.\n"
+                f"# Extract valid observations into `records.append({{...}})`.\n"
+                f"# Ensure the dictionary keys exactly match the final schema columns.\n"
+                f"\n"
+                f"# SAFE STRING & TYPE HANDLING\n"
+                f"# ALWAYS check pd.notna(x) before .strip() or .split()."
+            )
+        lines.append("")
 
         return "\n".join(lines) if lines else "(no specific recipes)"
 
@@ -589,16 +825,14 @@ Now write the transform function for THIS spreadsheet. Output ONLY code."""
                          labels: List[str],
                          previous_code: str,
                          feedback: Dict[str, Any]) -> str:
-        """Regenerate code using detailed error feedback."""
+        """Regenerate code using detailed error feedback, data snapshots, and CoT."""
         logger.info("Regenerating code with feedback...")
 
         target_cols = [c["name"] for c in schema.get("target_columns", [])]
-        est_rows = schema.get("expected_output", {}).get(
-            "row_count_estimate", "?"
-        )
+        est_rows = schema.get("expected_output", {}).get("row_count_estimate", "?")
 
         prompt = f"""The previous transformation code failed. Fix it based on the feedback below.
-
+    
 ## PREVIOUS CODE
 ```python
 {previous_code}
@@ -607,31 +841,34 @@ Now write the transform function for THIS spreadsheet. Output ONLY code."""
 ## ERROR FEEDBACK
 """
         if feedback.get("error_type") == "EXECUTION_ERROR":
+            null_counts = df.isna().sum().to_dict()
+            dtypes = df.dtypes.astype(str).to_dict()
+
             prompt += f"""Type: EXECUTION ERROR
 Message: {feedback['error_message']}
 Traceback:
 {feedback.get('error_trace', '')}
 
+### DATA SNAPSHOT AT INPUT
+To help you debug, here is the state of the initial DataFrame:
+Null counts per column: {null_counts}
+Data types: {dtypes}
+
 Fix the Python error so the code runs without crashing.
 """
         else:
-            # Validation failure — include rich diagnostics
-            prompt += f"Type: VALIDATION FAILURE\n\n"
-
+            prompt += "Type: VALIDATION FAILURE\n\n"
             for issue in feedback.get("issues", []):
                 prompt += f"Issue: {issue['description']}\n"
                 if issue.get("fix_hint"):
                     prompt += f"Diagnosis:\n{issue['fix_hint']}\n"
                 prompt += "\n"
 
-            # Include execution log so LLM can see step-by-step
             exec_log = feedback.get("execution_log", [])
             if exec_log:
                 prompt += "## EXECUTION LOG (print output from previous run)\n"
-                # Show last 30 lines to stay within token budget
                 log_lines = exec_log[-30:]
                 for line in log_lines:
-                    # Truncate very long lines
                     if len(line) > 200:
                         line = line[:200] + "..."
                     prompt += f"  {line}\n"
@@ -642,24 +879,25 @@ Shape: {feedback.get('result_shape')}
 Columns: {feedback.get('result_columns')}
 Sample (first 5 rows):
 {feedback.get('result_sample', 'N/A')}
-
 """
 
         prompt += f"""## REQUIREMENTS
-1. Fix ALL issues described above
-2. Output columns MUST be exactly: {target_cols}
-3. Expected approximately {est_rows} rows
-4. def transform(df): → returns DataFrame
-5. Do NOT drop rows unless they are TRUE aggregation/total rows or metadata
-6. Values like '不適用', 'N/A', 'not applicable' are legitimate dimension values — do NOT treat them as missing
+1. Analyze the failure and write a brief ## DIAGNOSIS.
+2. Write a ## STEP-BY-STEP PLAN on how you will fix the code.
+3. Output the corrected Python code inside a single ```python block.
+4. Output columns MUST be exactly: {target_cols}
+5. Expected approximately {est_rows} rows.
+6. def transform(df): → returns DataFrame
+7. Use pd.to_numeric(..., errors='coerce') for safe type conversions to avoid NaN integer errors.
 
-Output ONLY the corrected Python code."""
+Output the diagnosis, plan, and the Python code block."""
 
         try:
             resp = self.client.chat.completions.create(
                 model=self.model,
                 messages=[
-                    {"role": "system", "content": self._system_prompt()},
+                    # Reuse the same strategy decision from _generate_code
+                    {"role": "system", "content": self._system_prompt(self._simple_wide)},
                     {"role": "user", "content": prompt},
                 ],
                 max_completion_tokens=self.max_completion_tokens,
@@ -713,6 +951,8 @@ Output ONLY the corrected Python code."""
     def _validate_result(self, result_df: pd.DataFrame,
                          schema: Dict[str, Any]) -> Dict[str, Any]:
         """Validate the transformation output against schema expectations."""
+        expected_count = schema.get("expected_output", {}).get("row_count_estimate", 0)
+
         errors = []
         warnings = []
 
@@ -731,31 +971,23 @@ Output ONLY the corrected Python code."""
             warnings.append(f"Extra columns: {extra}")
 
         # Check 3: Row count
-        expected_count = schema.get("expected_output", {}).get(
-            "row_count_estimate", 0
-        )
         actual_count = len(result_df)
-        if expected_count > 0:
-            ratio = actual_count / expected_count
-            if ratio < 0.3:
-                errors.append(
-                    f"Row count too low: {actual_count} vs expected "
-                    f"~{expected_count}"
-                )
-            elif ratio > 3.0:
-                warnings.append(
-                    f"Row count much higher than expected: {actual_count} "
-                    f"vs ~{expected_count}"
-                )
+        if actual_count == 0:
+            errors.append("Row count is 0 (Result DataFrame is empty). Your extraction loop failed to capture any data.")
+        elif actual_count > 50000:
+            warnings.append(f"Row count is extremely high ({actual_count} rows). Verify your nested loops.")
 
-        # Check 4: Null check
+        # Check 4: Null check (Enhanced)
         if not result_df.empty:
             for col in result_df.columns:
                 null_pct = result_df[col].isnull().mean() * 100
-                if null_pct > 50:
-                    warnings.append(
-                        f"Column '{col}' is {null_pct:.0f}% null"
-                    )
+
+                if null_pct == 100:
+                    errors.append(f"Column '{col}' is 100% null. Check your column renaming, unpivot/melt, or merge logic. Do NOT use `raise ValueError` to handle this, fix the dataframe manipulation.")
+                elif null_pct > 80:
+                    errors.append(f"Column '{col}' is {null_pct:.0f}% null. The extraction logic is likely misaligned.")
+                elif null_pct > 50:
+                    warnings.append(f"Column '{col}' is {null_pct:.0f}% null")
 
         # Check 5: Semantic sample validation
         sample_checks = self._validate_samples(result_df, schema)
@@ -775,7 +1007,7 @@ Output ONLY the corrected Python code."""
 
     def _validate_samples(self, result_df: pd.DataFrame,
                           schema: Dict[str, Any]) -> List[Dict]:
-        """Validate against schema-provided sample rows."""
+        """Validate against schema-provided sample rows and provide closest match on failure."""
         checks = []
         for sample in schema.get("validation_samples", []):
             expected = sample.get("expected_row", {})
@@ -806,6 +1038,16 @@ Output ONLY the corrected Python code."""
 
                 if conditions.any():
                     check["passed"] = True
+                else:
+                    dim_cols = [k for k, v in expected.items() if isinstance(v, str) and k in result_df.columns]
+                    if dim_cols:
+                        query_parts = [f"`{k}` == '{expected[k]}'" for k in dim_cols]
+                        if query_parts:
+                            closest_match = result_df.query(" and ".join(query_parts))
+                            if not closest_match.empty:
+                                check["error"] = f"Row not found. Closest match produced:\n{closest_match.head(1).to_dict('records')}"
+                            else:
+                                check["error"] = f"Row completely missing. Could not find dimensions: {expected}"
             except Exception as e:
                 check["error"] = str(e)
 
@@ -841,7 +1083,6 @@ Output ONLY the corrected Python code."""
                     f"{expected_cols}. Check column renaming at the end."
                 )
             elif "Row count" in err:
-                # Analyze the execution log to find where rows were lost
                 step_analysis = self._analyze_row_loss(
                     source_df, result_df, expected_count
                 )
@@ -853,7 +1094,6 @@ Output ONLY the corrected Python code."""
                 )
             issues.append(issue)
 
-        # Result sample for debugging
         sample_str = ""
         if not result_df.empty:
             sample_str = result_df.head(5).to_string()
@@ -876,15 +1116,12 @@ Output ONLY the corrected Python code."""
         """
         lines = []
 
-        # Parse shape changes from execution log
         shape_history = []
         import re as _re
         for log_line in self._last_execution_log:
-            # Look for patterns like "After ...: (1128, 8)" or shape: (1128, 8)
             m = _re.search(r"(\((\d+),\s*\d+\))", log_line)
             if m:
                 rows = int(m.group(2))
-                # Extract the step description
                 desc = log_line[:log_line.find(m.group(1))].strip()
                 desc = desc.rstrip(":").strip()
                 shape_history.append((desc, rows))
@@ -1025,16 +1262,15 @@ Output ONLY the corrected Python code."""
     # ==================================================================
 
     def _extract_code(self, text: str) -> str:
-        """Extract Python code from LLM response."""
+        """Extract Python code from LLM response safely, ignoring CoT text."""
         text = text.strip()
-        if "```python" in text:
-            start = text.find("```python") + 9
-            end = text.find("```", start)
-            if end > start:
-                text = text[start:end].strip()
-        elif "```" in text:
-            start = text.find("```") + 3
-            end = text.find("```", start)
-            if end > start:
-                text = text[start:end].strip()
+
+        matches = re.findall(r"```python\n(.*?)\n```", text, re.DOTALL)
+        if matches:
+            return matches[-1].strip()
+
+        matches_generic = re.findall(r"```\n(.*?)\n```", text, re.DOTALL)
+        if matches_generic:
+            return matches_generic[-1].strip()
+
         return text

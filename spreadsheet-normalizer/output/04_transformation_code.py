@@ -4,57 +4,49 @@ import numpy as np
 def transform(df):
     print(f"Input shape: {df.shape}")
 
-    # Step 1: Slice to data region
-    result = df.iloc[6:55].copy()  # Adjust slicing to include more rows
-    result = result.reset_index(drop=True)
-    print(f"After slicing to data region: {result.shape}")
-
-    # Step 2: Remove only true aggregation rows or metadata
-    result = result[~result.iloc[:, 1].str.contains('總計|合計|所有少數族裔人士', na=False)]
-    print(f"After removing aggregation rows: {result.shape}")
-
-    # Step 3: Forward fill the Year column
-    result.iloc[:, 0] = result.iloc[:, 0].ffill()
-    print(f"After forward filling the Year column: {result.shape}")
-
-    # Step 4: Build multi-level header semantics
-    col_semantics = {}
-    header_row_indices = [2, 3, 4] 
-    for j in range(result.shape[1]):
-        parts = []
-        for hr in header_row_indices:
-            val = df.iloc[hr, j]
-            if pd.notna(val) and str(val).strip():
-                parts.append(str(val).strip())
-        col_semantics[j] = " | ".join(parts) if parts else f"col_{j}"
-
-    # Step 5: Create a new DataFrame with only relevant columns
-    numeric_cols = [3, 4, 5, 6, 7, 8, 9, 10, 11]
-    ethnicities = []
-    data_rows = result.values.tolist()
+    # Step 1: Forward fill the year column to handle sparse rows
+    df.iloc[:, 0] = df.iloc[:, 0].replace(r'^\s*$', np.nan, regex=True).ffill()
     
-    for i in range(len(data_rows)):
-        if i % 2 == 0:  # Consider Chinese rows (even indices)
-            cn_row = data_rows[i]
-            ethnicity_cn = str(cn_row[1]).strip()
-            year = str(cn_row[0]).strip()
-            for age_group_idx, numeric_col in enumerate(numeric_cols):
-                if numeric_col < len(cn_row):  # Ensure the index is within bounds
-                    number = pd.to_numeric(cn_row[numeric_col], errors='coerce')
-                    age_group = str(df.iloc[3, numeric_col]).strip()
-                    ethnicities.append({
-                        'year': int(year),
-                        'ethnicity_cn': ethnicity_cn,
-                        'ethnicity_en': str(data_rows[i + 1][1]).strip() if i + 1 < len(data_rows) else '',
-                        'age_group': age_group,
-                        'number': number
-                    })
+    # Step 2: Remove aggregate rows that contain specific keywords
+    exclude_labels = ["Total", "Sum", "Average", "身體虐待", "精神虐待", "疏忽照顧", "侵吞財產", "遺棄長者", "性侵犯", "其他"]
+    df = df[~df.iloc[:, 5].isin(exclude_labels)]
+    print(f"After removing aggregate rows: {df.shape}")
     
-    final_df = pd.DataFrame(ethnicities)
-    print(f"After merging bilingual rows and formatting: {final_df.shape}")
+    # Step 3: Identify and process the rows based on reporting status
+    records = []
+    for i in range(len(df)):
+        year = df.iloc[i, 0]
+        reporting_status = df.iloc[i, 1] if pd.notna(df.iloc[i, 1]) else df.iloc[i, 2]
+        abuse_type = df.iloc[i, 5]
+        count = df.iloc[i, 7]
+        
+        # Check if there are valid counts and relevant abuse types
+        if pd.notna(reporting_status) and pd.notna(abuse_type) and pd.notna(count):
+            # Process gender from abuse_type column
+            if "男性" in abuse_type:
+                gender = "Male"
+            elif "女性" in abuse_type:
+                gender = "Female"
+            else:
+                gender = None
+            
+            # Split the abuse_type to get main type and gender if applicable
+            if '-' in abuse_type:
+                main_abuse_type, gender = abuse_type.split(' - ')
+                main_abuse_type = main_abuse_type.strip()
+            else:
+                main_abuse_type = abuse_type
+            
+            # Append the record if all conditions satisfied
+            records.append({
+                "year": int(year),
+                "reporting_status": reporting_status.strip(),
+                "abuse_type": main_abuse_type.strip(),
+                "gender": gender,
+                "count": int(count)
+            })
 
-    # Step 6: Select final columns
-    final_df = final_df[['year', 'ethnicity_cn', 'ethnicity_en', 'age_group', 'number']]
-    print(f"Final output shape: {final_df.shape}")
-
-    return final_df.reset_index(drop=True)
+    # Create DataFrame from collected records
+    output = pd.DataFrame(records, columns=['year', 'reporting_status', 'abuse_type', 'gender', 'count'])
+    print(f"Final output: {output.shape}")
+    return output

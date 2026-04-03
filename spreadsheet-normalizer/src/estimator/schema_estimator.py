@@ -134,7 +134,7 @@ class SchemaEstimator:
             "You are a data architect. Your goal is to transform messy "
             "spreadsheets into TIDY DATA format.\n\n"
 
-            "TIDY DATA PRINCIPLES (Hadley Wickham):\n"
+            "*** TIDY DATA PRINCIPLES (Hadley Wickham) YOU MUST ENFORCE ***:\n"
             "1. Each VARIABLE forms a column.\n"
             "2. Each OBSERVATION forms a row.\n"
             "3. Each type of OBSERVATIONAL UNIT forms a table.\n\n"
@@ -432,12 +432,12 @@ Now design the tidy schema following the EXACT format above."""
                 in_columns_section = False
                 val = raw.split(":", 1)[1].strip()
                 row_formula = val
-                # Try to extract the number after "="
-                eq_match = re.search(r"=\s*(\d+)", val)
-                if eq_match:
-                    row_estimate = int(eq_match.group(1))
+                # Take the last "= <pure integer>" match, skipping "= 20 years" style
+                eq_matches = re.findall(r"=\s*(\d+)(?!\s*[a-zA-Z\u4e00-\u9fff])", val)
+                if eq_matches:
+                    row_estimate = int(eq_matches[-1])
                 else:
-                    # Try to find any number
+                    # Fallback: last number in the string
                     nums = re.findall(r"\d+", val)
                     if nums:
                         row_estimate = int(nums[-1])

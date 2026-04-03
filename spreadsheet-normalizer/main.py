@@ -118,7 +118,13 @@ Features:
         )
 
         # Final status
-        logger.info("\n✓ Normalization completed successfully!")
+        # 假设你的返回值赋予了 result 变量
+        validation_passed = result.get('pipeline_log', {}).get('stages', {}).get('transformation', {}).get('validation', {}).get('is_valid', False)
+
+        if validation_passed:
+            logger.info("✓ Normalization completed successfully and passed validation!")
+        else:
+            logger.error("⚠ Normalization finished, but VALIDATION FAILED. Output is likely raw or invalid data.")
         logger.info(f"✓ Results saved to: {result['output_path']}")
 
         if config.get('logging', {}).get('save_intermediate', True):

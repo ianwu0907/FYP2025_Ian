@@ -1,145 +1,305 @@
-year,ethnicity_cn,ethnicity_en,age_group,count,percentage
-2011,nan,亞洲人（非華人）,6.6,,
-2011,nan,亞洲人（非華人）,7,,
-2011,nan,亞洲人（非華人）,41.6,,
-2011,nan,亞洲人（非華人）,28.4,,
-2011,nan,亞洲人（非華人）,11.3,,
-2011,nan,亞洲人（非華人）,3.6,,
-2011,nan,亞洲人（非華人）,1.5,,
-2011,nan,亞洲人（非華人）,100,,
-2011,Asian (other than Chinese),菲律賓人,6.6,6.6,
-2011,Asian (other than Chinese),菲律賓人,7,7.0,
-2011,Asian (other than Chinese),菲律賓人,41.6,41.6,
-2011,Asian (other than Chinese),菲律賓人,28.4,28.4,
-2011,Asian (other than Chinese),菲律賓人,11.3,11.3,
-2011,Asian (other than Chinese),菲律賓人,3.6,3.6,
-2011,Asian (other than Chinese),菲律賓人,1.5,1.5,
-2011,Asian (other than Chinese),菲律賓人,100,100.0,
-2011,Filipino,印尼人,6.6,2.2,
-2011,Filipino,印尼人,7,3.0,
-2011,Filipino,印尼人,41.6,34.5,
-2011,Filipino,印尼人,28.4,36.5,
-2011,Filipino,印尼人,11.3,19.0,
-2011,Filipino,印尼人,3.6,4.3,
-2011,Filipino,印尼人,1.5,0.5,
-2011,Filipino,印尼人,100,100.0,
-2011,Indonesian,南亞裔人士,6.6,0.2,
-2011,Indonesian,南亞裔人士,7,9.3,
-2011,Indonesian,南亞裔人士,41.6,64.3,
-2011,Indonesian,南亞裔人士,28.4,23.9,
-2011,Indonesian,南亞裔人士,11.3,1.7,
-2011,Indonesian,南亞裔人士,3.6,0.4,
-2011,Indonesian,南亞裔人士,1.5,0.2,
-2011,Indonesian,南亞裔人士,100,100.0,
-2011,South Asian,印度人,6.6,25.7,
-2011,South Asian,印度人,7,11.9,
-2011,South Asian,印度人,41.6,23.3,
-2011,South Asian,印度人,28.4,20.4,
-2011,South Asian,印度人,11.3,9.3,
-2011,South Asian,印度人,3.6,4.9,
-2011,South Asian,印度人,1.5,4.4,
-2011,South Asian,印度人,100,100.0,
-2011,Indian,尼泊爾人,6.6,20.2,
-2011,Indian,尼泊爾人,7,10.4,
-2011,Indian,尼泊爾人,41.6,25.1,
-2011,Indian,尼泊爾人,28.4,20.5,
-2011,Indian,尼泊爾人,11.3,10.9,
-2011,Indian,尼泊爾人,3.6,6.1,
-2011,Indian,尼泊爾人,1.5,6.8,
-2011,Indian,尼泊爾人,100,100.0,
-2011,Nepalese,巴基斯坦人,6.6,21.6,
-2011,Nepalese,巴基斯坦人,7,15.3,
-2011,Nepalese,巴基斯坦人,41.6,23.7,
-2011,Nepalese,巴基斯坦人,28.4,23.3,
-2011,Nepalese,巴基斯坦人,11.3,11.1,
-2011,Nepalese,巴基斯坦人,3.6,2.9,
-2011,Nepalese,巴基斯坦人,1.5,2.1,
-2011,Nepalese,巴基斯坦人,100,100.0,
-2011,Pakistani,其他南亞裔人士[2],6.6,39.6,
-2011,Pakistani,其他南亞裔人士[2],7,11.8,
-2011,Pakistani,其他南亞裔人士[2],41.6,20.4,
-2011,Pakistani,其他南亞裔人士[2],28.4,17.0,
-2011,Pakistani,其他南亞裔人士[2],11.3,4.5,
-2011,Pakistani,其他南亞裔人士[2],3.6,3.5,
-2011,Pakistani,其他南亞裔人士[2],1.5,3.2,
-2011,Pakistani,其他南亞裔人士[2],100,100.0,
-2011,Other South Asian[2],泰國人,6.6,14.8,
-2011,Other South Asian[2],泰國人,7,8.4,
-2011,Other South Asian[2],泰國人,41.6,21.1,
-2011,Other South Asian[2],泰國人,28.4,25.2,
-2011,Other South Asian[2],泰國人,11.3,14.7,
-2011,Other South Asian[2],泰國人,3.6,14.8,
-2011,Other South Asian[2],泰國人,1.5,1.1,
-2011,Other South Asian[2],泰國人,100,100.0,
-2011,Thai,日本人,6.6,3.5,
-2011,Thai,日本人,7,2.4,
-2011,Thai,日本人,41.6,13.7,
-2011,Thai,日本人,28.4,31.8,
-2011,Thai,日本人,11.3,30.4,
-2011,Thai,日本人,3.6,14.8,
-2011,Thai,日本人,1.5,3.4,
-2011,Thai,日本人,100,100.0,
-2011,Japanese,韓國人,6.6,17.1,
-2011,Japanese,韓國人,7,3.0,
-2011,Japanese,韓國人,41.6,13.7,
-2011,Japanese,韓國人,28.4,30.9,
-2011,Japanese,韓國人,11.3,21.4,
-2011,Japanese,韓國人,3.6,9.9,
-2011,Japanese,韓國人,1.5,3.9,
-2011,Japanese,韓國人,100,100.0,
-2011,Korean,其他亞洲人,6.6,17.2,
-2011,Korean,其他亞洲人,7,5.6,
-2011,Korean,其他亞洲人,41.6,18.4,
-2011,Korean,其他亞洲人,28.4,29.8,
-2011,Korean,其他亞洲人,11.3,16.4,
-2011,Korean,其他亞洲人,3.6,8.9,
-2011,Korean,其他亞洲人,1.5,3.7,
-2011,Korean,其他亞洲人,100,100.0,
-2011,Other Asian,白人,6.6,10.5,
-2011,Other Asian,白人,7,10.3,
-2011,Other Asian,白人,41.6,24.1,
-2011,Other Asian,白人,28.4,22.2,
-2011,Other Asian,白人,11.3,17.8,
-2011,Other Asian,白人,3.6,8.1,
-2011,Other Asian,白人,1.5,7.0,
-2011,Other Asian,白人,100,100.0,
-2011,White,混血兒,6.6,16.8,
-2011,White,混血兒,7,7.3,
-2011,White,混血兒,41.6,17.2,
-2011,White,混血兒,28.4,23.9,
-2011,White,混血兒,11.3,18.4,
-2011,White,混血兒,3.6,10.6,
-2011,White,混血兒,1.5,5.8,
-2011,White,混血兒,100,100.0,
-2011,Mixed,華人父或母,6.6,37.3,
-2011,Mixed,華人父或母,7,17.3,
-2011,Mixed,華人父或母,41.6,14.4,
-2011,Mixed,華人父或母,28.4,11.5,
-2011,Mixed,華人父或母,11.3,10.0,
-2011,Mixed,華人父或母,3.6,4.8,
-2011,Mixed,華人父或母,1.5,4.8,
-2011,Mixed,華人父或母,100,100.0,
-2011,With Chinese parent,其他混血兒,6.6,34.2,
-2011,With Chinese parent,其他混血兒,7,18.0,
-2011,With Chinese parent,其他混血兒,41.6,14.4,
-2011,With Chinese parent,其他混血兒,28.4,11.8,
-2011,With Chinese parent,其他混血兒,11.3,10.9,
-2011,With Chinese parent,其他混血兒,3.6,5.4,
-2011,With Chinese parent,其他混血兒,1.5,5.4,
-2011,With Chinese parent,其他混血兒,100,100.0,
-2011,Other mixed,其他[3],6.6,55.1,
-2011,Other mixed,其他[3],7,12.8,
-2011,Other mixed,其他[3],41.6,14.2,
-2011,Other mixed,其他[3],28.4,9.9,
-2011,Other mixed,其他[3],11.3,4.8,
-2011,Other mixed,其他[3],3.6,1.4,
-2011,Other mixed,其他[3],1.5,1.8,
-2011,Other mixed,其他[3],100,100.0,
-2011,Others[3],所有少數族裔人士,6.6,16.1,
-2011,Others[3],所有少數族裔人士,7,6.0,
-2011,Others[3],所有少數族裔人士,41.6,28.5,
-2011,Others[3],所有少數族裔人士,28.4,33.9,
-2011,Others[3],所有少數族裔人士,11.3,11.8,
-2011,Others[3],所有少數族裔人士,3.6,3.7,
-2011,Others[3],所有少數族裔人士,1.5,,
-2011,Others[3],所有少數族裔人士,100,100.0,
+year,ethnicity_cn,ethnicity_en,age_group,count
+2011,亞洲人（非華人）,Asian (other than Chinese),2918,23984.0
+2011,亞洲人（非華人）,Asian (other than Chinese),4016,25650.0
+2011,亞洲人（非華人）,Asian (other than Chinese),45840,152228.0
+2011,亞洲人（非華人）,Asian (other than Chinese),48555,103841.0
+2011,亞洲人（非華人）,Asian (other than Chinese),25243,41396.0
+2011,亞洲人（非華人）,Asian (other than Chinese),5768,13196.0
+2011,亞洲人（非華人）,Asian (other than Chinese),678,5316.0
+2011,亞洲人（非華人）,Asian (other than Chinese),133018,365611.0
+2011,Asian (other than Chinese),菲律賓人,2918,6.6
+2011,Asian (other than Chinese),菲律賓人,4016,7.0
+2011,Asian (other than Chinese),菲律賓人,45840,41.6
+2011,Asian (other than Chinese),菲律賓人,48555,28.4
+2011,Asian (other than Chinese),菲律賓人,25243,11.3
+2011,Asian (other than Chinese),菲律賓人,5768,3.6
+2011,Asian (other than Chinese),菲律賓人,678,1.5
+2011,Asian (other than Chinese),菲律賓人,133018,100.0
+2011,菲律賓人,Filipino,2918,2918.0
+2011,菲律賓人,Filipino,4016,4016.0
+2011,菲律賓人,Filipino,45840,45840.0
+2011,菲律賓人,Filipino,48555,48555.0
+2011,菲律賓人,Filipino,25243,25243.0
+2011,菲律賓人,Filipino,5768,5768.0
+2011,菲律賓人,Filipino,678,678.0
+2011,菲律賓人,Filipino,133018,133018.0
+2011,Filipino,印尼人,2918,2.2
+2011,Filipino,印尼人,4016,3.0
+2011,Filipino,印尼人,45840,34.5
+2011,Filipino,印尼人,48555,36.5
+2011,Filipino,印尼人,25243,19.0
+2011,Filipino,印尼人,5768,4.3
+2011,Filipino,印尼人,678,0.5
+2011,Filipino,印尼人,133018,100.0
+2011,印尼人,Indonesian,2918,302.0
+2011,印尼人,Indonesian,4016,12405.0
+2011,印尼人,Indonesian,45840,85764.0
+2011,印尼人,Indonesian,48555,31846.0
+2011,印尼人,Indonesian,25243,2255.0
+2011,印尼人,Indonesian,5768,483.0
+2011,印尼人,Indonesian,678,322.0
+2011,印尼人,Indonesian,133018,133377.0
+2011,Indonesian,南亞裔人士,2918,0.2
+2011,Indonesian,南亞裔人士,4016,9.3
+2011,Indonesian,南亞裔人士,45840,64.3
+2011,Indonesian,南亞裔人士,48555,23.9
+2011,Indonesian,南亞裔人士,25243,1.7
+2011,Indonesian,南亞裔人士,5768,0.4
+2011,Indonesian,南亞裔人士,678,0.2
+2011,Indonesian,南亞裔人士,133018,100.0
+2011,南亞裔人士,South Asian,2918,16824.0
+2011,南亞裔人士,South Asian,4016,7812.0
+2011,南亞裔人士,South Asian,45840,15271.0
+2011,南亞裔人士,South Asian,48555,13388.0
+2011,南亞裔人士,South Asian,25243,6110.0
+2011,南亞裔人士,South Asian,5768,3204.0
+2011,南亞裔人士,South Asian,678,2912.0
+2011,南亞裔人士,South Asian,133018,65521.0
+2011,South Asian,印度人,2918,25.7
+2011,South Asian,印度人,4016,11.9
+2011,South Asian,印度人,45840,23.3
+2011,South Asian,印度人,48555,20.4
+2011,South Asian,印度人,25243,9.3
+2011,South Asian,印度人,5768,4.9
+2011,South Asian,印度人,678,4.4
+2011,South Asian,印度人,133018,100.0
+2011,印度人,Indian,2918,5767.0
+2011,印度人,Indian,4016,2965.0
+2011,印度人,Indian,45840,7175.0
+2011,印度人,Indian,48555,5880.0
+2011,印度人,Indian,25243,3113.0
+2011,印度人,Indian,5768,1756.0
+2011,印度人,Indian,678,1960.0
+2011,印度人,Indian,133018,28616.0
+2011,Indian,尼泊爾人,2918,20.2
+2011,Indian,尼泊爾人,4016,10.4
+2011,Indian,尼泊爾人,45840,25.1
+2011,Indian,尼泊爾人,48555,20.5
+2011,Indian,尼泊爾人,25243,10.9
+2011,Indian,尼泊爾人,5768,6.1
+2011,Indian,尼泊爾人,678,6.8
+2011,Indian,尼泊爾人,133018,100.0
+2011,尼泊爾人,Nepalese,2918,3562.0
+2011,尼泊爾人,Nepalese,4016,2521.0
+2011,尼泊爾人,Nepalese,45840,3923.0
+2011,尼泊爾人,Nepalese,48555,3850.0
+2011,尼泊爾人,Nepalese,25243,1836.0
+2011,尼泊爾人,Nepalese,5768,474.0
+2011,尼泊爾人,Nepalese,678,352.0
+2011,尼泊爾人,Nepalese,133018,16518.0
+2011,Nepalese,巴基斯坦人,2918,21.6
+2011,Nepalese,巴基斯坦人,4016,15.3
+2011,Nepalese,巴基斯坦人,45840,23.7
+2011,Nepalese,巴基斯坦人,48555,23.3
+2011,Nepalese,巴基斯坦人,25243,11.1
+2011,Nepalese,巴基斯坦人,5768,2.9
+2011,Nepalese,巴基斯坦人,678,2.1
+2011,Nepalese,巴基斯坦人,133018,100.0
+2011,巴基斯坦人,Pakistani,2918,7148.0
+2011,巴基斯坦人,Pakistani,4016,2130.0
+2011,巴基斯坦人,Pakistani,45840,3678.0
+2011,巴基斯坦人,Pakistani,48555,3068.0
+2011,巴基斯坦人,Pakistani,25243,816.0
+2011,巴基斯坦人,Pakistani,5768,627.0
+2011,巴基斯坦人,Pakistani,678,575.0
+2011,巴基斯坦人,Pakistani,133018,18042.0
+2011,Pakistani,其他南亞裔人士[2],2918,39.6
+2011,Pakistani,其他南亞裔人士[2],4016,11.8
+2011,Pakistani,其他南亞裔人士[2],45840,20.4
+2011,Pakistani,其他南亞裔人士[2],48555,17.0
+2011,Pakistani,其他南亞裔人士[2],25243,4.5
+2011,Pakistani,其他南亞裔人士[2],5768,3.5
+2011,Pakistani,其他南亞裔人士[2],678,3.2
+2011,Pakistani,其他南亞裔人士[2],133018,100.0
+2011,其他南亞裔人士[2],Other South Asian[2],2918,347.0
+2011,其他南亞裔人士[2],Other South Asian[2],4016,196.0
+2011,其他南亞裔人士[2],Other South Asian[2],45840,495.0
+2011,其他南亞裔人士[2],Other South Asian[2],48555,590.0
+2011,其他南亞裔人士[2],Other South Asian[2],25243,345.0
+2011,其他南亞裔人士[2],Other South Asian[2],5768,347.0
+2011,其他南亞裔人士[2],Other South Asian[2],678,25.0
+2011,其他南亞裔人士[2],Other South Asian[2],133018,2345.0
+2011,Other South Asian[2],泰國人,2918,14.8
+2011,Other South Asian[2],泰國人,4016,8.4
+2011,Other South Asian[2],泰國人,45840,21.1
+2011,Other South Asian[2],泰國人,48555,25.2
+2011,Other South Asian[2],泰國人,25243,14.7
+2011,Other South Asian[2],泰國人,5768,14.8
+2011,Other South Asian[2],泰國人,678,1.1
+2011,Other South Asian[2],泰國人,133018,100.0
+2011,泰國人,Thai,2918,398.0
+2011,泰國人,Thai,4016,266.0
+2011,泰國人,Thai,45840,1540.0
+2011,泰國人,Thai,48555,3563.0
+2011,泰國人,Thai,25243,3405.0
+2011,泰國人,Thai,5768,1656.0
+2011,泰國人,Thai,678,385.0
+2011,泰國人,Thai,133018,11213.0
+2011,Thai,日本人,2918,3.5
+2011,Thai,日本人,4016,2.4
+2011,Thai,日本人,45840,13.7
+2011,Thai,日本人,48555,31.8
+2011,Thai,日本人,25243,30.4
+2011,Thai,日本人,5768,14.8
+2011,Thai,日本人,678,3.4
+2011,Thai,日本人,133018,100.0
+2011,日本人,Japanese,2918,2152.0
+2011,日本人,Japanese,4016,377.0
+2011,日本人,Japanese,45840,1724.0
+2011,日本人,Japanese,48555,3893.0
+2011,日本人,Japanese,25243,2694.0
+2011,日本人,Japanese,5768,1244.0
+2011,日本人,Japanese,678,496.0
+2011,日本人,Japanese,133018,12580.0
+2011,Japanese,韓國人,2918,17.1
+2011,Japanese,韓國人,4016,3.0
+2011,Japanese,韓國人,45840,13.7
+2011,Japanese,韓國人,48555,30.9
+2011,Japanese,韓國人,25243,21.4
+2011,Japanese,韓國人,5768,9.9
+2011,Japanese,韓國人,678,3.9
+2011,Japanese,韓國人,133018,100.0
+2011,韓國人,Korean,2918,897.0
+2011,韓國人,Korean,4016,290.0
+2011,韓國人,Korean,45840,958.0
+2011,韓國人,Korean,48555,1552.0
+2011,韓國人,Korean,25243,854.0
+2011,韓國人,Korean,5768,463.0
+2011,韓國人,Korean,678,195.0
+2011,韓國人,Korean,133018,5209.0
+2011,Korean,其他亞洲人,2918,17.2
+2011,Korean,其他亞洲人,4016,5.6
+2011,Korean,其他亞洲人,45840,18.4
+2011,Korean,其他亞洲人,48555,29.8
+2011,Korean,其他亞洲人,25243,16.4
+2011,Korean,其他亞洲人,5768,8.9
+2011,Korean,其他亞洲人,678,3.7
+2011,Korean,其他亞洲人,133018,100.0
+2011,其他亞洲人,Other Asian,2918,493.0
+2011,其他亞洲人,Other Asian,4016,484.0
+2011,其他亞洲人,Other Asian,45840,1131.0
+2011,其他亞洲人,Other Asian,48555,1044.0
+2011,其他亞洲人,Other Asian,25243,835.0
+2011,其他亞洲人,Other Asian,5768,378.0
+2011,其他亞洲人,Other Asian,678,328.0
+2011,其他亞洲人,Other Asian,133018,4693.0
+2011,Other Asian,白人,2918,10.5
+2011,Other Asian,白人,4016,10.3
+2011,Other Asian,白人,45840,24.1
+2011,Other Asian,白人,48555,22.2
+2011,Other Asian,白人,25243,17.8
+2011,Other Asian,白人,5768,8.1
+2011,Other Asian,白人,678,7.0
+2011,Other Asian,白人,133018,100.0
+2011,白人,White,2918,9295.0
+2011,白人,White,4016,4031.0
+2011,白人,White,45840,9512.0
+2011,白人,White,48555,13197.0
+2011,白人,White,25243,10149.0
+2011,白人,White,5768,5855.0
+2011,白人,White,678,3197.0
+2011,白人,White,133018,55236.0
+2011,White,混血兒,2918,16.8
+2011,White,混血兒,4016,7.3
+2011,White,混血兒,45840,17.2
+2011,White,混血兒,48555,23.9
+2011,White,混血兒,25243,18.4
+2011,White,混血兒,5768,10.6
+2011,White,混血兒,678,5.8
+2011,White,混血兒,133018,100.0
+2011,混血兒,Mixed,2918,10826.0
+2011,混血兒,Mixed,4016,5007.0
+2011,混血兒,Mixed,45840,4163.0
+2011,混血兒,Mixed,48555,3330.0
+2011,混血兒,Mixed,25243,2898.0
+2011,混血兒,Mixed,5768,1380.0
+2011,混血兒,Mixed,678,1397.0
+2011,混血兒,Mixed,133018,29001.0
+2011,Mixed,華人父或母,2918,37.3
+2011,Mixed,華人父或母,4016,17.3
+2011,Mixed,華人父或母,45840,14.4
+2011,Mixed,華人父或母,48555,11.5
+2011,Mixed,華人父或母,25243,10.0
+2011,Mixed,華人父或母,5768,4.8
+2011,Mixed,華人父或母,678,4.8
+2011,Mixed,華人父或母,133018,100.0
+2011,華人父或母,With Chinese parent,2918,8429.0
+2011,華人父或母,With Chinese parent,4016,4449.0
+2011,華人父或母,With Chinese parent,45840,3544.0
+2011,華人父或母,With Chinese parent,48555,2899.0
+2011,華人父或母,With Chinese parent,25243,2688.0
+2011,華人父或母,With Chinese parent,5768,1321.0
+2011,華人父或母,With Chinese parent,678,1319.0
+2011,華人父或母,With Chinese parent,133018,24649.0
+2011,With Chinese parent,其他混血兒,2918,34.2
+2011,With Chinese parent,其他混血兒,4016,18.0
+2011,With Chinese parent,其他混血兒,45840,14.4
+2011,With Chinese parent,其他混血兒,48555,11.8
+2011,With Chinese parent,其他混血兒,25243,10.9
+2011,With Chinese parent,其他混血兒,5768,5.4
+2011,With Chinese parent,其他混血兒,678,5.4
+2011,With Chinese parent,其他混血兒,133018,100.0
+2011,其他混血兒,Other mixed,2918,2397.0
+2011,其他混血兒,Other mixed,4016,558.0
+2011,其他混血兒,Other mixed,45840,619.0
+2011,其他混血兒,Other mixed,48555,431.0
+2011,其他混血兒,Other mixed,25243,210.0
+2011,其他混血兒,Other mixed,5768,59.0
+2011,其他混血兒,Other mixed,678,78.0
+2011,其他混血兒,Other mixed,133018,4352.0
+2011,Other mixed,其他[3],2918,55.1
+2011,Other mixed,其他[3],4016,12.8
+2011,Other mixed,其他[3],45840,14.2
+2011,Other mixed,其他[3],48555,9.9
+2011,Other mixed,其他[3],25243,4.8
+2011,Other mixed,其他[3],5768,1.4
+2011,Other mixed,其他[3],678,1.8
+2011,Other mixed,其他[3],133018,100.0
+2011,其他[3],Others[3],2918,215.0
+2011,其他[3],Others[3],4016,80.0
+2011,其他[3],Others[3],45840,380.0
+2011,其他[3],Others[3],48555,453.0
+2011,其他[3],Others[3],25243,158.0
+2011,其他[3],Others[3],5768,49.0
+2011,其他[3],Others[3],678,
+2011,其他[3],Others[3],133018,1335.0
+2011,Others[3],所有少數族裔人士,2918,16.1
+2011,Others[3],所有少數族裔人士,4016,6.0
+2011,Others[3],所有少數族裔人士,45840,28.5
+2011,Others[3],所有少數族裔人士,48555,33.9
+2011,Others[3],所有少數族裔人士,25243,11.8
+2011,Others[3],所有少數族裔人士,5768,3.7
+2011,Others[3],所有少數族裔人士,678,
+2011,Others[3],所有少數族裔人士,133018,100.0
+2011,撇除外籍家庭傭工後的所有少數族裔人士,"All ethnic minorities, excluding foreign domestic helpers",2918,44320.0
+2011,撇除外籍家庭傭工後的所有少數族裔人士,"All ethnic minorities, excluding foreign domestic helpers",4016,19536.0
+2011,撇除外籍家庭傭工後的所有少數族裔人士,"All ethnic minorities, excluding foreign domestic helpers",45840,35835.0
+2011,撇除外籍家庭傭工後的所有少數族裔人士,"All ethnic minorities, excluding foreign domestic helpers",48555,43393.0
+2011,撇除外籍家庭傭工後的所有少數族裔人士,"All ethnic minorities, excluding foreign domestic helpers",25243,28907.0
+2011,撇除外籍家庭傭工後的所有少數族裔人士,"All ethnic minorities, excluding foreign domestic helpers",5768,15333.0
+2011,撇除外籍家庭傭工後的所有少數族裔人士,"All ethnic minorities, excluding foreign domestic helpers",678,9698.0
+2011,撇除外籍家庭傭工後的所有少數族裔人士,"All ethnic minorities, excluding foreign domestic helpers",133018,197022.0
+2011,"All ethnic minorities, excluding foreign domestic helpers",全港人口,2918,22.5
+2011,"All ethnic minorities, excluding foreign domestic helpers",全港人口,4016,9.9
+2011,"All ethnic minorities, excluding foreign domestic helpers",全港人口,45840,18.2
+2011,"All ethnic minorities, excluding foreign domestic helpers",全港人口,48555,22.0
+2011,"All ethnic minorities, excluding foreign domestic helpers",全港人口,25243,14.7
+2011,"All ethnic minorities, excluding foreign domestic helpers",全港人口,5768,7.8
+2011,"All ethnic minorities, excluding foreign domestic helpers",全港人口,678,4.9
+2011,"All ethnic minorities, excluding foreign domestic helpers",全港人口,133018,100.0
+2011,全港人口,Whole population,2918,823560.0
+2011,全港人口,Whole population,4016,875234.0
+2011,全港人口,Whole population,45840,1084120.0
+2011,全港人口,Whole population,48555,1135285.0
+2011,全港人口,Whole population,25243,1289430.0
+2011,全港人口,Whole population,5768,922635.0
+2011,全港人口,Whole population,678,941312.0
+2011,全港人口,Whole population,133018,7071576.0
+2011,Whole population,,2918,11.6
+2011,Whole population,,4016,12.4
+2011,Whole population,,45840,15.3
+2011,Whole population,,48555,16.1
+2011,Whole population,,25243,18.2
+2011,Whole population,,5768,13.0
+2011,Whole population,,678,13.3
+2011,Whole population,,133018,100.0
