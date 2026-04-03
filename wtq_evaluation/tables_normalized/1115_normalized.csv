@@ -1,0 +1,40 @@
+region,cohort_type,count_total,count_surgical
+canada,linked cctlp tumour cohort,3235.0,2710.0
+canada,linked cctlp tumour cohort,18750.0,16305.0
+canada,linked cctlp tumour cohort,21270.0,17415.0
+newfoundland and labrador,linked cctlp tumour cohort,110.0,100.0
+newfoundland and labrador,linked cctlp tumour cohort,675.0,625.0
+newfoundland and labrador,linked cctlp tumour cohort,685.0,565.0
+prince edward island,linked cctlp tumour cohort,15.0,10.0
+prince edward island,linked cctlp tumour cohort,110.0,100.0
+prince edward island,linked cctlp tumour cohort,160.0,130.0
+nova scotia,linked cctlp tumour cohort,120.0,100.0
+nova scotia,linked cctlp tumour cohort,990.0,875.0
+nova scotia,linked cctlp tumour cohort,1110.0,905.0
+new brunswick,linked cctlp tumour cohort,10.0,90.0
+new brunswick,linked cctlp tumour cohort,670.0,575.0
+new brunswick,linked cctlp tumour cohort,720.0,590.0
+ontario,linked cctlp tumour cohort,1630.0,1320.0
+ontario,linked cctlp tumour cohort,8900.0,7470.0
+ontario,linked cctlp tumour cohort,10240.0,8250.0
+manitoba,linked cctlp tumour cohort,165.0,135.0
+manitoba,linked cctlp tumour cohort,960.0,840.0
+manitoba,linked cctlp tumour cohort,1140.0,910.0
+saskatchewan,linked cctlp tumour cohort,130.0,110.0
+saskatchewan,linked cctlp tumour cohort,860.0,770.0
+saskatchewan,linked cctlp tumour cohort,970.0,815.0
+alberta,linked cctlp tumour cohort,430.0,370.0
+alberta,linked cctlp tumour cohort,2285.0,2040.0
+alberta,linked cctlp tumour cohort,2275.0,1835.0
+british columbia,linked cctlp tumour cohort,520.0,460.0
+british columbia,linked cctlp tumour cohort,3210.0,2935.0
+british columbia,linked cctlp tumour cohort,3940.0,3385.0
+yukon,linked cctlp tumour cohort,,
+yukon,linked cctlp tumour cohort,30.0,25.0
+yukon,linked cctlp tumour cohort,,
+northwest territories,linked cctlp tumour cohort,10.0,10.0
+northwest territories,linked cctlp tumour cohort,50.0,40.0
+northwest territories,linked cctlp tumour cohort,20.0,15.0
+nunavut,linked cctlp tumour cohort,,
+nunavut,linked cctlp tumour cohort,15.0,15.0
+nunavut,linked cctlp tumour cohort,,

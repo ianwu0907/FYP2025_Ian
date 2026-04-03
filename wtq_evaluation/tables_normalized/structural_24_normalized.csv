@@ -1,0 +1,37 @@
+context_id,language,dimension_type,dimension_value,percentage
+1,french-language workers,sex,female,35.3
+1,english-language workers,sex,female,28.0
+2,french-language workers,sex,female,41.8
+2,english-language workers,sex,female,30.6
+3,french-language workers,sex,female,35.9
+3,english-language workers,sex,female,26.6
+1,french-language workers,sex,male,64.7
+1,english-language workers,sex,male,72.0
+2,french-language workers,sex,male,58.2
+2,english-language workers,sex,male,69.4
+3,french-language workers,sex,male,64.1
+3,english-language workers,sex,male,73.4
+1,french-language workers,marital status,single,18.7
+1,english-language workers,marital status,single,24.8
+2,french-language workers,marital status,single,26.9
+2,english-language workers,marital status,single,26.1
+3,french-language workers,marital status,single,25.6
+3,english-language workers,marital status,single,32.8
+1,french-language workers,marital status,married,51.3
+1,english-language workers,marital status,married,53.9
+2,french-language workers,marital status,married,47.8
+2,english-language workers,marital status,married,56.7
+3,french-language workers,marital status,married,54.4
+3,english-language workers,marital status,married,57.8
+1,french-language workers,marital status,common-law,17.1
+1,english-language workers,marital status,common-law,10.9
+2,french-language workers,marital status,common-law,22.4
+2,english-language workers,marital status,common-law,6.4
+3,french-language workers,marital status,common-law,11.8
+3,english-language workers,marital status,common-law,7.8
+1,french-language workers,marital status,"separated, divorced, or widowed",12.8
+1,english-language workers,marital status,"separated, divorced, or widowed",10.6
+2,french-language workers,marital status,"separated, divorced, or widowed",0.0
+2,english-language workers,marital status,"separated, divorced, or widowed",10.8
+3,french-language workers,marital status,"separated, divorced, or widowed",7.7
+3,english-language workers,marital status,"separated, divorced, or widowed",0.0

@@ -6,7 +6,7 @@
     "created": "2026-01-21",
     "source_folder": "Census Data - Hong Kong Ethnic Minorities",
     "tables_count": 38,
-    "total_qa_pairs": 491
+    "total_qa_pairs": 488
   },
   "qa_pairs": [
     {
@@ -2504,20 +2504,6 @@
     },
     {
       "id": "qa-193",
-      "table_file": "140_totto16914-1.xlsx",
-      "question": "what was the largest increases in percentage terms occurred in ontario?",
-      "answers": [
-        "149.7"
-      ],
-      "answer_type": "number",
-      "source": "hitab",
-      "hitab_id": "90b59c4ea9a94f61a198d63b424b7248",
-      "aggregation": [
-        "none"
-      ]
-    },
-    {
-      "id": "qa-194",
       "table_file": "1401.xlsx",
       "question": "what was the percent of students who were sexually assaulted in the previous 12 months said they knew where to get help at school if a friend was harassed or sexually assaulted?",
       "answers": [
@@ -2531,7 +2517,7 @@
       ]
     },
     {
-      "id": "qa-195",
+      "id": "qa-194",
       "table_file": "13_totto1596-4.xlsx",
       "question": "in total, what was the proportion of bachelor graduates from 2010 who obtained an additional short-duration credential between 2013 and 2015 and who worked in low value-added service industries fell two years before obtaining the short-duration credential?",
       "answers": [
@@ -2545,7 +2531,7 @@
       ]
     },
     {
-      "id": "qa-196",
+      "id": "qa-195",
       "table_file": "46_162_tab2.xlsx",
       "question": "what was the percentage of increase in the earnings dispersion of the estimated coefficient suggests that an increase of 1% in the dispersion of lp?",
       "answers": [
@@ -2559,7 +2545,7 @@
       ]
     },
     {
-      "id": "qa-197",
+      "id": "qa-196",
       "table_file": "14_totto1890-4.xlsx",
       "question": "how many percentages of the total female population in winnipeg was aboriginal?",
       "answers": [
@@ -2573,7 +2559,7 @@
       ]
     },
     {
-      "id": "qa-198",
+      "id": "qa-197",
       "table_file": "19.xlsx",
       "question": "for female-oprated farms, what percentage of farm operators' total farm land is borrowed?",
       "answers": [
@@ -2587,7 +2573,7 @@
       ]
     },
     {
-      "id": "qa-199",
+      "id": "qa-198",
       "table_file": "15_totto1909-1.xlsx",
       "question": "how many percent of households indicated that they felt unsafe from crime walking alone after dark in their neighbourhood?",
       "answers": [
@@ -2601,7 +2587,7 @@
       ]
     },
     {
-      "id": "qa-200",
+      "id": "qa-199",
       "table_file": "15_totto1996-4.xlsx",
       "question": "the police-reported crime rate was up 3% from the previous year, resulting in what rate of incidents per 100,000 population?",
       "answers": [
@@ -2615,7 +2601,7 @@
       ]
     },
     {
-      "id": "qa-201",
+      "id": "qa-200",
       "table_file": "16_totto2010-1.xlsx",
       "question": "looking at canada's census metropolitan areas (cma), what is the percentage of carbon monoxide detectors were found most frequently among individuals living in oshawa in 2014?",
       "answers": [
@@ -2629,7 +2615,7 @@
       ]
     },
     {
-      "id": "qa-202",
+      "id": "qa-201",
       "table_file": "17_totto2114-2.xlsx",
       "question": "what is the number of an overall crime rate police serving majority indigenous populations reported in 2018?",
       "answers": [
@@ -2643,7 +2629,7 @@
       ]
     },
     {
-      "id": "qa-203",
+      "id": "qa-202",
       "table_file": "1_totto216-3.xlsx",
       "question": "how many percentage points are immigrant-owned wholesalers less likely on average to import compared with canadian-owned wholesalers?",
       "answers": [
@@ -2657,7 +2643,7 @@
       ]
     },
     {
-      "id": "qa-204",
+      "id": "qa-203",
       "table_file": "18_totto2233-1.xlsx",
       "question": "how many percent of indigenous people aged 20 to 24 living off reserve had a high school diploma?",
       "answers": [
@@ -2671,7 +2657,7 @@
       ]
     },
     {
-      "id": "qa-205",
+      "id": "qa-204",
       "table_file": "18_totto2342-4.xlsx",
       "question": "what was the percentage of working women in the top 1% who obtained a bachelor's degree or higher in 2015.",
       "answers": [
@@ -2685,7 +2671,7 @@
       ]
     },
     {
-      "id": "qa-206",
+      "id": "qa-205",
       "table_file": "26.xlsx",
       "question": "list sources of the difference that have lower estimated energy intake in 2015 than in 2004, regardless of the category of reporters.",
       "answers": [
@@ -2700,7 +2686,7 @@
       ]
     },
     {
-      "id": "qa-207",
+      "id": "qa-206",
       "table_file": "23_totto2679-2.xlsx",
       "question": "among 10- to 19-year-olds, which group had the highest overall hospitalization rate (including births)?",
       "answers": [
@@ -2714,7 +2700,7 @@
       ]
     },
     {
-      "id": "qa-208",
+      "id": "qa-207",
       "table_file": "25_totto2799-2.xlsx",
       "question": "what percentage of victims reported that they always wanted to avoid specific people at work as a result of being sexually assaulted?",
       "answers": [
@@ -2728,7 +2714,7 @@
       ]
     },
     {
-      "id": "qa-209",
+      "id": "qa-208",
       "table_file": "28.xlsx",
       "question": "how many times does kale crop area increase from 2011 to 2016?",
       "answers": [
@@ -2742,7 +2728,7 @@
       ]
     },
     {
-      "id": "qa-210",
+      "id": "qa-209",
       "table_file": "32.xlsx",
       "question": "how many times did export totals for sweet potatoes increase from 2011 to 2016?",
       "answers": [
@@ -2756,7 +2742,7 @@
       ]
     },
     {
-      "id": "qa-211",
+      "id": "qa-210",
       "table_file": "35.xlsx",
       "question": "which group of people is more likely to report cosuming fruit and vegetables 5 or more times a day, male for female?",
       "answers": [
@@ -2770,7 +2756,7 @@
       ]
     },
     {
-      "id": "qa-212",
+      "id": "qa-211",
       "table_file": "36.xlsx",
       "question": "for dairy goat farms with 1000 or more, which sector has more total area reported? area owned or area rented?",
       "answers": [
@@ -2784,7 +2770,7 @@
       ]
     },
     {
-      "id": "qa-213",
+      "id": "qa-212",
       "table_file": "37.xlsx",
       "question": "what is the ratio for agricultural operations in ontario as a whole in 2016?",
       "answers": [
@@ -2798,7 +2784,7 @@
       ]
     },
     {
-      "id": "qa-214",
+      "id": "qa-213",
       "table_file": "3_totto383-1.xlsx",
       "question": "how many canadians report a disability?",
       "answers": [
@@ -2812,7 +2798,7 @@
       ]
     },
     {
-      "id": "qa-215",
+      "id": "qa-214",
       "table_file": "3_totto391-2.xlsx",
       "question": "how many liquor stores are in canada?",
       "answers": [
@@ -2826,7 +2812,7 @@
       ]
     },
     {
-      "id": "qa-216",
+      "id": "qa-215",
       "table_file": "49.xlsx",
       "question": "how many workers aged 15 and over were in the atlantic canadian agricultural sector?",
       "answers": [
@@ -2840,7 +2826,7 @@
       ]
     },
     {
-      "id": "qa-217",
+      "id": "qa-216",
       "table_file": "5.xlsx",
       "question": "what is the fifth most commonly consumed beverages among teenagers aged 14 to 18 in 2015?",
       "answers": [
@@ -2854,7 +2840,7 @@
       ]
     },
     {
-      "id": "qa-218",
+      "id": "qa-217",
       "table_file": "50.xlsx",
       "question": "how many workers aged 15 and over were in the atlantic canadian agri-food sector?",
       "answers": [
@@ -2868,7 +2854,7 @@
       ]
     },
     {
-      "id": "qa-219",
+      "id": "qa-218",
       "table_file": "51.xlsx",
       "question": "which group of people has more workers in the agricultural secotr in 2011, regardless of the region or language? male or female?",
       "answers": [
@@ -2882,7 +2868,7 @@
       ]
     },
     {
-      "id": "qa-220",
+      "id": "qa-219",
       "table_file": "52.xlsx",
       "question": "in 2011, which sector of workers were more likely to have no certificate, diploma or degree?",
       "answers": [
@@ -2898,7 +2884,7 @@
       ]
     },
     {
-      "id": "qa-221",
+      "id": "qa-220",
       "table_file": "53.xlsx",
       "question": "what is the religion that is much more common among french-language workers than english-language workers?",
       "answers": [
@@ -2912,7 +2898,7 @@
       ]
     },
     {
-      "id": "qa-222",
+      "id": "qa-221",
       "table_file": "54.xlsx",
       "question": "what class of worker is the majority of french-language agricultural workers in 2011, with proportions ranging from 73.1% (new brunswick agricultural region 3) to 86.1% (agricultural region 1)?",
       "answers": [
@@ -2926,7 +2912,7 @@
       ]
     },
     {
-      "id": "qa-223",
+      "id": "qa-222",
       "table_file": "55.xlsx",
       "question": "what kind of operating arrangement is the majority of farms in new brunswick's three agricultural regions?",
       "answers": [
@@ -2940,7 +2926,7 @@
       ]
     },
     {
-      "id": "qa-224",
+      "id": "qa-223",
       "table_file": "56.xlsx",
       "question": "what kind of land tenure has the proportion of operators declared that of land tenure to all decalred land tenure ranging from 89.6% in agricultural region 4 to 97.0% in agricultural region 3?",
       "answers": [
@@ -2954,7 +2940,7 @@
       ]
     },
     {
-      "id": "qa-225",
+      "id": "qa-224",
       "table_file": "6_totto667-0.xlsx",
       "question": "what is the initial earnings gap of ce immigrants in 1991 cohort when the sociodemographic control variables are added for model 2?",
       "answers": [
@@ -2968,7 +2954,7 @@
       ]
     },
     {
-      "id": "qa-226",
+      "id": "qa-225",
       "table_file": "8_totto949-2.xlsx",
       "question": "what is the percentage of share of immigrant employment in the sample?",
       "answers": [
@@ -2982,7 +2968,7 @@
       ]
     },
     {
-      "id": "qa-227",
+      "id": "qa-226",
       "table_file": "fetaqa_10006.xlsx",
       "question": "What roles has Anna Goryachova sang in Tchaikovsky operas?",
       "answers": [
@@ -2995,7 +2981,7 @@
       "table_section_title": "Repertoire (partial)"
     },
     {
-      "id": "qa-228",
+      "id": "qa-227",
       "table_file": "fetaqa_13752.xlsx",
       "question": "What were Cortez Kennedy's tackle, sack, and interception statistics with Seattle, and how many games did it take to achieve them?",
       "answers": [
@@ -3008,7 +2994,7 @@
       "table_section_title": "Statistics"
     },
     {
-      "id": "qa-229",
+      "id": "qa-228",
       "table_file": "fetaqa_19105.xlsx",
       "question": "Who were the first two coaches for the Houston Texans, and what years did Gary Kubiak coach the team?",
       "answers": [
@@ -3021,7 +3007,7 @@
       "table_section_title": "Coaches"
     },
     {
-      "id": "qa-230",
+      "id": "qa-229",
       "table_file": "fetaqa_10240.xlsx",
       "question": "What Wielferich primes are below 1000000?",
       "answers": [
@@ -3034,7 +3020,7 @@
       "table_section_title": "Near-Wieferich primes"
     },
     {
-      "id": "qa-231",
+      "id": "qa-230",
       "table_file": "fetaqa_17348.xlsx",
       "question": "What was Chirine Njeim's time in alpine skiing at the 2010 Winter Olympics and what place did she end up in?",
       "answers": [
@@ -3047,7 +3033,7 @@
       "table_section_title": "Alpine skiing"
     },
     {
-      "id": "qa-232",
+      "id": "qa-231",
       "table_file": "fetaqa_18253.xlsx",
       "question": "How many appearances did Harry Oscroft make before being traded to Port Vale, and what year did he go to Port Vale?",
       "answers": [
@@ -3060,7 +3046,7 @@
       "table_section_title": "Statistics"
     },
     {
-      "id": "qa-233",
+      "id": "qa-232",
       "table_file": "fetaqa_16511.xlsx",
       "question": "What place did Margaret Wambui finish in the 2016 Olympics, and what was her time?",
       "answers": [
@@ -3073,7 +3059,7 @@
       "table_section_title": "Competition record"
     },
     {
-      "id": "qa-234",
+      "id": "qa-233",
       "table_file": "fetaqa_16320.xlsx",
       "question": "What medals did Jo Pavey win in the year 2012,2006 and 2014 at the Commonwealth Games, in what events did he win them?",
       "answers": [
@@ -3086,7 +3072,7 @@
       "table_section_title": "Achievements"
     },
     {
-      "id": "qa-235",
+      "id": "qa-234",
       "table_file": "fetaqa_15238.xlsx",
       "question": "What roles did Jessica Phillips star in from 2015-2017?",
       "answers": [
@@ -3099,7 +3085,7 @@
       "table_section_title": "Theatre credits"
     },
     {
-      "id": "qa-236",
+      "id": "qa-235",
       "table_file": "fetaqa_1320.xlsx",
       "question": "What are quirky subjects governed by the QSH?",
       "answers": [
@@ -3112,7 +3098,7 @@
       "table_section_title": "Quirky Subject Hierarchy"
     },
     {
-      "id": "qa-237",
+      "id": "qa-236",
       "table_file": "fetaqa_16763.xlsx",
       "question": "Who did Tim Chaisson fiilm Broken Hearted Beat\" with in 2010 ?",
       "answers": [
@@ -3125,7 +3111,7 @@
       "table_section_title": "Music videos"
     },
     {
-      "id": "qa-238",
+      "id": "qa-237",
       "table_file": "fetaqa_17523.xlsx",
       "question": "Is James Francis Mason a Liberal?",
       "answers": [
@@ -3138,7 +3124,7 @@
       "table_section_title": "Result"
     },
     {
-      "id": "qa-239",
+      "id": "qa-238",
       "table_file": "fetaqa_11551.xlsx",
       "question": "Which episodes did Gennifer Hutchison write in the season?",
       "answers": [
@@ -3151,7 +3137,7 @@
       "table_section_title": "Season 1 (2015)"
     },
     {
-      "id": "qa-240",
+      "id": "qa-239",
       "table_file": "fetaqa_9224.xlsx",
       "question": "On what did Mike Shipley work with Def Leppard?",
       "answers": [
@@ -3164,7 +3150,7 @@
       "table_section_title": "1980s"
     },
     {
-      "id": "qa-241",
+      "id": "qa-240",
       "table_file": "fetaqa_17219.xlsx",
       "question": "How did Reggie Wayne's yard improve in 2002?",
       "answers": [
@@ -3177,7 +3163,7 @@
       "table_section_title": "NFL career statistics"
     },
     {
-      "id": "qa-242",
+      "id": "qa-241",
       "table_file": "fetaqa_14162.xlsx",
       "question": "How many total parlimentary seats were appointed?",
       "answers": [
@@ -3190,7 +3176,7 @@
       "table_section_title": "Parliament"
     },
     {
-      "id": "qa-243",
+      "id": "qa-242",
       "table_file": "fetaqa_91.xlsx",
       "question": "What is the result of the Assembly election in 2017?",
       "answers": [
@@ -3203,7 +3189,7 @@
       "table_section_title": "Member of Legislative Assembly"
     },
     {
-      "id": "qa-244",
+      "id": "qa-243",
       "table_file": "fetaqa_14951.xlsx",
       "question": "What was the literacy rate in Jamira according to the 2011 census? ",
       "answers": [
@@ -3216,7 +3202,7 @@
       "table_section_title": "Demography"
     },
     {
-      "id": "qa-245",
+      "id": "qa-244",
       "table_file": "fetaqa_9919.xlsx",
       "question": "What Boeing planes are in the Cruzeiro fleet?",
       "answers": [
@@ -3229,7 +3215,7 @@
       "table_section_title": "Fleet"
     },
     {
-      "id": "qa-246",
+      "id": "qa-245",
       "table_file": "fetaqa_17896.xlsx",
       "question": "What are the power and torque ratings for the LD8 Nothstars?",
       "answers": [
@@ -3242,7 +3228,7 @@
       "table_section_title": "LD8"
     },
     {
-      "id": "qa-247",
+      "id": "qa-246",
       "table_file": "fetaqa_16988.xlsx",
       "question": "What perish is the Susendal Church a part of? ",
       "answers": [
@@ -3255,7 +3241,7 @@
       "table_section_title": "Indre Helgeland prosti"
     },
     {
-      "id": "qa-248",
+      "id": "qa-247",
       "table_file": "fetaqa_16683.xlsx",
       "question": "What shows did Charlene Gonzales host in 1997-1998 and 1998-2001on ABC and ABS?",
       "answers": [
@@ -3268,7 +3254,7 @@
       "table_section_title": "Television"
     },
     {
-      "id": "qa-249",
+      "id": "qa-248",
       "table_file": "fetaqa_14045.xlsx",
       "question": "Which Pixie Lott album in which year encompasses the single \"Broken Arrow\"?",
       "answers": [
@@ -3281,7 +3267,7 @@
       "table_section_title": "As lead artist"
     },
     {
-      "id": "qa-250",
+      "id": "qa-249",
       "table_file": "fetaqa_8378.xlsx",
       "question": "What is the average rainfall and average number of sunny days in Hocking Hills?",
       "answers": [
@@ -3294,7 +3280,7 @@
       "table_section_title": "Climate"
     },
     {
-      "id": "qa-251",
+      "id": "qa-250",
       "table_file": "fetaqa_17588.xlsx",
       "question": "Which Grammy Award did Clarkson win in 2013 for the album Stronger?",
       "answers": [
@@ -3307,7 +3293,7 @@
       "table_section_title": "Grammy Awards"
     },
     {
-      "id": "qa-252",
+      "id": "qa-251",
       "table_file": "fetaqa_17028.xlsx",
       "question": "When was The Apollonia released? ",
       "answers": [
@@ -3320,7 +3306,7 @@
       "table_section_title": "Singles"
     },
     {
-      "id": "qa-253",
+      "id": "qa-252",
       "table_file": "fetaqa_21687.xlsx",
       "question": "What was the final percentage of \"For\" votes and percentage turnout for the 1970 Senegalese prime ministerial referendum?",
       "answers": [
@@ -3333,7 +3319,7 @@
       "table_section_title": "Results"
     },
     {
-      "id": "qa-254",
+      "id": "qa-253",
       "table_file": "fetaqa_11217.xlsx",
       "question": "What two places does the Maharashtra Sampark Kranti Express run through?",
       "answers": [
@@ -3346,7 +3332,7 @@
       "table_section_title": "Schedule"
     },
     {
-      "id": "qa-255",
+      "id": "qa-254",
       "table_file": "fetaqa_712.xlsx",
       "question": "What is the Dizengoff Street bus bombing?",
       "answers": [
@@ -3359,7 +3345,7 @@
       "table_section_title": "1994 (5 bombings)"
     },
     {
-      "id": "qa-256",
+      "id": "qa-255",
       "table_file": "fetaqa_21320.xlsx",
       "question": "How did the US perform against England in the 1950 World Cup and in which stage did the two team's play?",
       "answers": [
@@ -3372,7 +3358,7 @@
       "table_section_title": "By Match"
     },
     {
-      "id": "qa-257",
+      "id": "qa-256",
       "table_file": "fetaqa_15955.xlsx",
       "question": "What is Shvedova quarterfinals record?",
       "answers": [
@@ -3385,7 +3371,7 @@
       "table_section_title": "Singles"
     },
     {
-      "id": "qa-258",
+      "id": "qa-257",
       "table_file": "fetaqa_13999.xlsx",
       "question": "What kind of certification did it receive?",
       "answers": [
@@ -3398,7 +3384,7 @@
       "table_section_title": "Discography"
     },
     {
-      "id": "qa-259",
+      "id": "qa-258",
       "table_file": "fetaqa_18029.xlsx",
       "question": "Where and when did the When The Lights Go Out (EP) by Island release?",
       "answers": [
@@ -3411,7 +3397,7 @@
       "table_section_title": "Release history"
     },
     {
-      "id": "qa-260",
+      "id": "qa-259",
       "table_file": "fetaqa_11987.xlsx",
       "question": "Which singles did Kathleen Edwards release in 2005 and which album were they on?",
       "answers": [
@@ -3424,7 +3410,7 @@
       "table_section_title": "Singles"
     },
     {
-      "id": "qa-261",
+      "id": "qa-260",
       "table_file": "fetaqa_13471.xlsx",
       "question": "How does the Green Party of England and Wales 2009 election results compare to their 2004 results?",
       "answers": [
@@ -3437,7 +3423,7 @@
       "table_section_title": "Summary performance"
     },
     {
-      "id": "qa-262",
+      "id": "qa-261",
       "table_file": "fetaqa_16549.xlsx",
       "question": "What was the outcome of the 1881 German federal election for the Centre Party and National Liberal Party?",
       "answers": [
@@ -3450,7 +3436,7 @@
       "table_section_title": "Results"
     },
     {
-      "id": "qa-263",
+      "id": "qa-262",
       "table_file": "fetaqa_1476.xlsx",
       "question": "Who won the 1970 VFL Grand Final?",
       "answers": [
@@ -3463,7 +3449,7 @@
       "table_section_title": "1970"
     },
     {
-      "id": "qa-264",
+      "id": "qa-263",
       "table_file": "fetaqa_1480.xlsx",
       "question": "What was JPEG Part 5 and when was it released?",
       "answers": [
@@ -3476,7 +3462,7 @@
       "table_section_title": "JPEG standard"
     },
     {
-      "id": "qa-265",
+      "id": "qa-264",
       "table_file": "fetaqa_18503.xlsx",
       "question": "How well did bonne do at the 2009 Central American and Caribbean Championships and what was the location ?",
       "answers": [
@@ -3489,7 +3475,7 @@
       "table_section_title": "Achievements"
     },
     {
-      "id": "qa-266",
+      "id": "qa-265",
       "table_file": "fetaqa_15794.xlsx",
       "question": "What Kathleen Edwards album contained the singles \"Six O'Clock News\" and \"Hockey Skates\" and what year was it released?",
       "answers": [
@@ -3502,7 +3488,7 @@
       "table_section_title": "Singles"
     },
     {
-      "id": "qa-267",
+      "id": "qa-266",
       "table_file": "fetaqa_15160.xlsx",
       "question": "What proportion of registered voters voted in favor of the 1920 Danish constitutional referendum?",
       "answers": [
@@ -3515,7 +3501,7 @@
       "table_section_title": "Results"
     },
     {
-      "id": "qa-268",
+      "id": "qa-267",
       "table_file": "fetaqa_17011.xlsx",
       "question": "What were the final ranked men's teams?",
       "answers": [
@@ -3528,7 +3514,7 @@
       "table_section_title": "Men"
     },
     {
-      "id": "qa-269",
+      "id": "qa-268",
       "table_file": "fetaqa_16902.xlsx",
       "question": "A Hundred Year Legacy won which award at the 2013 MBC Drama Awards?",
       "answers": [
@@ -3541,7 +3527,7 @@
       "table_section_title": "Awards and nominations"
     },
     {
-      "id": "qa-270",
+      "id": "qa-269",
       "table_file": "fetaqa_15468.xlsx",
       "question": "Which Tippeligaen division club did Dane Richards appear for in 2014?",
       "answers": [
@@ -3554,7 +3540,7 @@
       "table_section_title": "Career statistics"
     },
     {
-      "id": "qa-271",
+      "id": "qa-270",
       "table_file": "fetaqa_13599.xlsx",
       "question": "What British Soap Awards did Lauren McQueen's movie win in 2018?",
       "answers": [
@@ -3567,7 +3553,7 @@
       "table_section_title": "Awards"
     },
     {
-      "id": "qa-272",
+      "id": "qa-271",
       "table_file": "fetaqa_12694.xlsx",
       "question": "What series did Brooks create? ",
       "answers": [
@@ -3580,7 +3566,7 @@
       "table_section_title": "Television"
     },
     {
-      "id": "qa-273",
+      "id": "qa-272",
       "table_file": "fetaqa_17166.xlsx",
       "question": "What are the two vessels of Fire-class? ",
       "answers": [
@@ -3593,7 +3579,7 @@
       "table_section_title": "Ships in class"
     },
     {
-      "id": "qa-274",
+      "id": "qa-273",
       "table_file": "fetaqa_13849.xlsx",
       "question": "Which 2014 Kannada and Vikraman Tamil films did Subiksha appear in?",
       "answers": [
@@ -3606,7 +3592,7 @@
       "table_section_title": "Filmography"
     },
     {
-      "id": "qa-275",
+      "id": "qa-274",
       "table_file": "fetaqa_14666.xlsx",
       "question": "Which cyclones were the most intense tropical cyclones in the South Pacific Ocean?",
       "answers": [
@@ -3619,7 +3605,7 @@
       "table_section_title": "South Pacific Ocean"
     },
     {
-      "id": "qa-276",
+      "id": "qa-275",
       "table_file": "fetaqa_16618.xlsx",
       "question": "In what years did Mäxmüd Khan rule the Khanate of Kazan?",
       "answers": [
@@ -3632,7 +3618,7 @@
       "table_section_title": "First List"
     },
     {
-      "id": "qa-277",
+      "id": "qa-276",
       "table_file": "fetaqa_16208.xlsx",
       "question": "At the 2018 NCAA Division I Championships, what time did Michael Norman achieve in the 400m event?",
       "answers": [
@@ -3645,7 +3631,7 @@
       "table_section_title": "National Competition Record"
     },
     {
-      "id": "qa-278",
+      "id": "qa-277",
       "table_file": "fetaqa_10787.xlsx",
       "question": "Where were the 2011-12 Maltese Premier League stadiums?",
       "answers": [
@@ -3658,7 +3644,7 @@
       "table_section_title": "Stadia and training grounds"
     },
     {
-      "id": "qa-279",
+      "id": "qa-278",
       "table_file": "fetaqa_46.xlsx",
       "question": "Which player costs the most in the 2000-01 Luton Town F.C. season?",
       "answers": [
@@ -3671,7 +3657,7 @@
       "table_section_title": "In"
     },
     {
-      "id": "qa-280",
+      "id": "qa-279",
       "table_file": "fetaqa_13706.xlsx",
       "question": "What role did Pugh play in Outlaw king in 2018?",
       "answers": [
@@ -3684,7 +3670,7 @@
       "table_section_title": "Film"
     },
     {
-      "id": "qa-281",
+      "id": "qa-280",
       "table_file": "fetaqa_1529.xlsx",
       "question": "Who was the eleventh Governor of Mizoram and when did they serve?",
       "answers": [
@@ -3697,7 +3683,7 @@
       "table_section_title": "Governors of Mizoram"
     },
     {
-      "id": "qa-282",
+      "id": "qa-281",
       "table_file": "fetaqa_13350.xlsx",
       "question": "What club and league did Atsushi Nagai join in 1995?",
       "answers": [
@@ -3710,7 +3696,7 @@
       "table_section_title": "Club statistics"
     },
     {
-      "id": "qa-283",
+      "id": "qa-282",
       "table_file": "fetaqa_17933.xlsx",
       "question": "What was the percent Swing won by Campbell and what was the vote majority amount?",
       "answers": [
@@ -3723,7 +3709,7 @@
       "table_section_title": "Results"
     },
     {
-      "id": "qa-284",
+      "id": "qa-283",
       "table_file": "fetaqa_18862.xlsx",
       "question": "What episode of The Tomorrow People did Connie Booth play a role in, and what year did it come out?",
       "answers": [
@@ -3736,7 +3722,7 @@
       "table_section_title": "Series 2"
     },
     {
-      "id": "qa-285",
+      "id": "qa-284",
       "table_file": "fetaqa_7748.xlsx",
       "question": "What did Jiro Ishii do between 2008 and 2009?",
       "answers": [
@@ -3749,7 +3735,7 @@
       "table_section_title": "Video games"
     },
     {
-      "id": "qa-286",
+      "id": "qa-285",
       "table_file": "fetaqa_10651.xlsx",
       "question": "In what projects did Ripley appear in 2000?",
       "answers": [
@@ -3762,7 +3748,7 @@
       "table_section_title": "Filmography"
     },
     {
-      "id": "qa-287",
+      "id": "qa-286",
       "table_file": "fetaqa_16935.xlsx",
       "question": "Where did Australia and South Africa host the 2014 Rugby Championships?",
       "answers": [
@@ -3775,7 +3761,7 @@
       "table_section_title": "Summary"
     },
     {
-      "id": "qa-288",
+      "id": "qa-287",
       "table_file": "fetaqa_17063.xlsx",
       "question": "How did Mangala Kisan do in the 2014 election compared to Gregory Minz?",
       "answers": [
@@ -3788,7 +3774,7 @@
       "table_section_title": "2014 Election Result"
     },
     {
-      "id": "qa-289",
+      "id": "qa-288",
       "table_file": "fetaqa_15332.xlsx",
       "question": "Go Ito appeared in the J3 League in 2017 in what club?",
       "answers": [
@@ -3801,7 +3787,7 @@
       "table_section_title": "Club statistics"
     },
     {
-      "id": "qa-290",
+      "id": "qa-289",
       "table_file": "fetaqa_10773.xlsx",
       "question": "Who won the 1921 Isle of Man TT Senior race and by how much compared to the second and third place?",
       "answers": [
@@ -3814,7 +3800,7 @@
       "table_section_title": "Senior 500 cc Race"
     },
     {
-      "id": "qa-291",
+      "id": "qa-290",
       "table_file": "fetaqa_16573.xlsx",
       "question": "How did Lyle smith do as a coach at Boise junior college from 1947-1967?",
       "answers": [
@@ -3827,7 +3813,7 @@
       "table_section_title": "Football"
     },
     {
-      "id": "qa-292",
+      "id": "qa-291",
       "table_file": "fetaqa_17884.xlsx",
       "question": "What shows did Louise delos Reyes star in as Yvonne Calata and PO3 Katrina Velasco, and what network were the shows on?",
       "answers": [
@@ -3840,7 +3826,7 @@
       "table_section_title": "Television"
     },
     {
-      "id": "qa-293",
+      "id": "qa-292",
       "table_file": "fetaqa_10684.xlsx",
       "question": "What trains have operational and mainline certified status?",
       "answers": [
@@ -3853,7 +3839,7 @@
       "table_section_title": "Preservation"
     },
     {
-      "id": "qa-294",
+      "id": "qa-293",
       "table_file": "fetaqa_1375.xlsx",
       "question": "What happened on On 17 May 2018?",
       "answers": [
@@ -3866,7 +3852,7 @@
       "table_section_title": "In"
     },
     {
-      "id": "qa-295",
+      "id": "qa-294",
       "table_file": "fetaqa_17703.xlsx",
       "question": "How did the show The Doris Day progress?",
       "answers": [
@@ -3879,7 +3865,7 @@
       "table_section_title": "Home media"
     },
     {
-      "id": "qa-296",
+      "id": "qa-295",
       "table_file": "fetaqa_17442.xlsx",
       "question": "How does PCI Express 3.0 line code different from the 2.0 version? ",
       "answers": [
@@ -3892,7 +3878,7 @@
       "table_section_title": "History and revisions"
     },
     {
-      "id": "qa-297",
+      "id": "qa-296",
       "table_file": "fetaqa_13418.xlsx",
       "question": "What was the Republican strategy to securing the win? ",
       "answers": [
@@ -3905,7 +3891,7 @@
       "table_section_title": "Results"
     },
     {
-      "id": "qa-298",
+      "id": "qa-297",
       "table_file": "fetaqa_12269.xlsx",
       "question": "In 2014, who defeated Indian National Congress candidate Mrutyunjay Jena and by a margin of how many votes?",
       "answers": [
@@ -3918,7 +3904,7 @@
       "table_section_title": "2014 Election Result"
     },
     {
-      "id": "qa-299",
+      "id": "qa-298",
       "table_file": "fetaqa_12625.xlsx",
       "question": "What films did Robert Benton contribute to in the years 1967, 1977 and 1994? ",
       "answers": [
@@ -3931,7 +3917,7 @@
       "table_section_title": "Writing"
     },
     {
-      "id": "qa-300",
+      "id": "qa-299",
       "table_file": "fetaqa_19060.xlsx",
       "question": "What three shows did Marisol Ribeiro appear in during 2001 and 2002, and what role did she play in the most recent show?",
       "answers": [
@@ -3944,7 +3930,7 @@
       "table_section_title": "Television"
     },
     {
-      "id": "qa-301",
+      "id": "qa-300",
       "table_file": "fetaqa_13826.xlsx",
       "question": "Which BATC or Joseph Jefferson awards did Christopher Jackson win or was nominated for?",
       "answers": [
@@ -3957,7 +3943,7 @@
       "table_section_title": "Awards and nominations"
     },
     {
-      "id": "qa-302",
+      "id": "qa-301",
       "table_file": "fetaqa_14859.xlsx",
       "question": "What role did Neil Perez play in the 2015 movie Princess in the Palace? ",
       "answers": [
@@ -3970,7 +3956,7 @@
       "table_section_title": "Filmography"
     },
     {
-      "id": "qa-303",
+      "id": "qa-302",
       "table_file": "fetaqa_18318.xlsx",
       "question": "Which time was set by Darren Clark in the 4x400 to hold the record in 1984 and at which competition did he achieve it?",
       "answers": [
@@ -3983,7 +3969,7 @@
       "table_section_title": "International competitions"
     },
     {
-      "id": "qa-304",
+      "id": "qa-303",
       "table_file": "fetaqa_14940.xlsx",
       "question": "When did William & Mary Tribe compete in two NCAA championships, and what were the results?",
       "answers": [
@@ -3996,7 +3982,7 @@
       "table_section_title": "Team"
     },
     {
-      "id": "qa-305",
+      "id": "qa-304",
       "table_file": "fetaqa_18036.xlsx",
       "question": "What singles did Oriakhi release in 2017 and what album were they from?",
       "answers": [
@@ -4009,7 +3995,7 @@
       "table_section_title": "Discography"
     },
     {
-      "id": "qa-306",
+      "id": "qa-305",
       "table_file": "fetaqa_13617.xlsx",
       "question": "How many appearances did Lee Williamson make for Mansfield Town?",
       "answers": [
@@ -4022,7 +4008,7 @@
       "table_section_title": "Career statistics"
     },
     {
-      "id": "qa-307",
+      "id": "qa-306",
       "table_file": "fetaqa_13640.xlsx",
       "question": "How did the musical gypsy do at the 2015 London revival in terms of awards and nominations?",
       "answers": [
@@ -4035,7 +4021,7 @@
       "table_section_title": "2015 London revival"
     },
     {
-      "id": "qa-308",
+      "id": "qa-307",
       "table_file": "fetaqa_17693.xlsx",
       "question": "Where did Roman Fosti finish in his World Championships and Olympics races from 2015-17, and where were those three races held?",
       "answers": [
@@ -4048,7 +4034,7 @@
       "table_section_title": "Major competition record"
     },
     {
-      "id": "qa-309",
+      "id": "qa-308",
       "table_file": "fetaqa_17946.xlsx",
       "question": "After previously appearing in Remember the Titans, what role did Burgess Jenkins play in The Reaping and what year did that film come out?",
       "answers": [
@@ -4061,7 +4047,7 @@
       "table_section_title": "Film"
     },
     {
-      "id": "qa-310",
+      "id": "qa-309",
       "table_file": "fetaqa_15326.xlsx",
       "question": "How did Krabbe perform in the 100m and 200 m events?",
       "answers": [
@@ -4074,7 +4060,7 @@
       "table_section_title": "Achievements"
     },
     {
-      "id": "qa-311",
+      "id": "qa-310",
       "table_file": "fetaqa_17158.xlsx",
       "question": "How many goals did Tony Richards score and in how many league games with Walsall?",
       "answers": [
@@ -4087,7 +4073,7 @@
       "table_section_title": "Statistics"
     },
     {
-      "id": "qa-312",
+      "id": "qa-311",
       "table_file": "fetaqa_10007.xlsx",
       "question": "What named planets has Fumiaki Uto discovered?",
       "answers": [
@@ -4100,7 +4086,7 @@
       "table_section_title": "List of discovered minor planets"
     },
     {
-      "id": "qa-313",
+      "id": "qa-312",
       "table_file": "fetaqa_13745.xlsx",
       "question": "How many units did Entre a Mi Mundo sell in Mexico and the United States?",
       "answers": [
@@ -4113,7 +4099,7 @@
       "table_section_title": "Certifications and sales"
     },
     {
-      "id": "qa-314",
+      "id": "qa-313",
       "table_file": "fetaqa_16377.xlsx",
       "question": "What was the outcome of the Hawaii Constitutional Amendment vote?",
       "answers": [
@@ -4126,7 +4112,7 @@
       "table_section_title": "Results of vote"
     },
     {
-      "id": "qa-315",
+      "id": "qa-314",
       "table_file": "fetaqa_953.xlsx",
       "question": "What was the new 100 m record as of 1988?",
       "answers": [
@@ -4139,7 +4125,7 @@
       "table_section_title": "Records from 1975"
     },
     {
-      "id": "qa-316",
+      "id": "qa-315",
       "table_file": "fetaqa_16921.xlsx",
       "question": "Who was named in the 2013–14 League One team? ",
       "answers": [
@@ -4152,7 +4138,7 @@
       "table_section_title": "Career statistics"
     },
     {
-      "id": "qa-317",
+      "id": "qa-316",
       "table_file": "fetaqa_7967.xlsx",
       "question": "Did the Bulls and the University of Tampa compete in different conferences?",
       "answers": [
@@ -4165,7 +4151,7 @@
       "table_section_title": "College sports"
     },
     {
-      "id": "qa-318",
+      "id": "qa-317",
       "table_file": "fetaqa_12962.xlsx",
       "question": "Which team did Miloš Zličić play for, during the 2016-17 SuperLiga season?",
       "answers": [
@@ -4178,7 +4164,7 @@
       "table_section_title": "Club"
     },
     {
-      "id": "qa-319",
+      "id": "qa-318",
       "table_file": "fetaqa_18965.xlsx",
       "question": "Which skaters set the free dance combined total record for France and how many points did they score?",
       "answers": [
@@ -4191,7 +4177,7 @@
       "table_section_title": "Records"
     },
     {
-      "id": "qa-320",
+      "id": "qa-319",
       "table_file": "fetaqa_16406.xlsx",
       "question": "What was the result of the face off between the BJD and INC in the  2009 election?",
       "answers": [
@@ -4204,7 +4190,7 @@
       "table_section_title": "Summary of results of the 2009 Election"
     },
     {
-      "id": "qa-321",
+      "id": "qa-320",
       "table_file": "fetaqa_7902.xlsx",
       "question": "What frequencies does Love FM have in Fukuoka, Nishi and Kitakyushu, Yamaguchi?",
       "answers": [
@@ -4217,7 +4203,7 @@
       "table_section_title": ""
     },
     {
-      "id": "qa-322",
+      "id": "qa-321",
       "table_file": "fetaqa_145.xlsx",
       "question": "When were the M36B1 tanks produced?",
       "answers": [
@@ -4230,7 +4216,7 @@
       "table_section_title": "Production"
     },
     {
-      "id": "qa-323",
+      "id": "qa-322",
       "table_file": "fetaqa_18446.xlsx",
       "question": "In which parish and prosti would you find the Logtun Church? ",
       "answers": [
@@ -4243,7 +4229,7 @@
       "table_section_title": "Sør-Innherad prosti"
     },
     {
-      "id": "qa-324",
+      "id": "qa-323",
       "table_file": "fetaqa_16078.xlsx",
       "question": "Gianmarco Tamberi finished what place at this competition in 2015, held in this venue with a clearance of how many meters?",
       "answers": [
@@ -4256,7 +4242,7 @@
       "table_section_title": "Achievements"
     },
     {
-      "id": "qa-325",
+      "id": "qa-324",
       "table_file": "fetaqa_13127.xlsx",
       "question": "how well did \"Fix of Love\" so in Australia in 1990?",
       "answers": [
@@ -4269,7 +4255,7 @@
       "table_section_title": "Singles"
     },
     {
-      "id": "qa-326",
+      "id": "qa-325",
       "table_file": "fetaqa_17108.xlsx",
       "question": "Who was elected as the speaker for 1995-1996? ",
       "answers": [
@@ -4282,7 +4268,7 @@
       "table_section_title": "Officers"
     },
     {
-      "id": "qa-327",
+      "id": "qa-326",
       "table_file": "csv_204-csv_762.xlsx",
       "question": "did the hydro power increase or decrease from 2010 to 2012?",
       "answers": [
@@ -4294,7 +4280,7 @@
       "wide_format_reason": "year-like columns: ['2000', '2001', '2002', '2003', '2004']"
     },
     {
-      "id": "qa-328",
+      "id": "qa-327",
       "table_file": "csv_201-csv_49.xlsx",
       "question": "during what month are the highest temperature records at bari karol wojtyla airport?",
       "answers": [
@@ -4306,7 +4292,7 @@
       "wide_format_reason": "wide shape: 8 rows × 14 cols"
     },
     {
-      "id": "qa-329",
+      "id": "qa-328",
       "table_file": "csv_202-csv_99.xlsx",
       "question": "how many months saw record lows below freezing?",
       "answers": [
@@ -4318,7 +4304,7 @@
       "wide_format_reason": "wide shape: 5 rows × 14 cols"
     },
     {
-      "id": "qa-330",
+      "id": "qa-329",
       "table_file": "csv_204-csv_781.xlsx",
       "question": "what was the name of the ship that was built after the jule in this yard?",
       "answers": [
@@ -4330,7 +4316,7 @@
       "wide_format_reason": "wide shape: 7 rows × 10 cols"
     },
     {
-      "id": "qa-331",
+      "id": "qa-330",
       "table_file": "csv_203-csv_654.xlsx",
       "question": "which brazilian team took the top spot in the 1926 brazilian football cup?",
       "answers": [
@@ -4342,7 +4328,7 @@
       "wide_format_reason": "wide shape: 10 rows × 10 cols"
     },
     {
-      "id": "qa-332",
+      "id": "qa-331",
       "table_file": "csv_203-csv_282.xlsx",
       "question": "what was the largest prize awarded to soviet song in 2004?",
       "answers": [
@@ -4354,7 +4340,7 @@
       "wide_format_reason": "wide shape: 8 rows × 12 cols"
     },
     {
-      "id": "qa-333",
+      "id": "qa-332",
       "table_file": "csv_203-csv_59.xlsx",
       "question": "according to usgs estimates of mine production, what was the total estimated mine production of niobium minerals from the nation of brazil in 2006?",
       "answers": [
@@ -4366,7 +4352,7 @@
       "wide_format_reason": "year-like columns: ['2000', '2001', '2002', '2003', '2004']"
     },
     {
-      "id": "qa-334",
+      "id": "qa-333",
       "table_file": "csv_203-csv_827.xlsx",
       "question": "did he win more at the australian open or indian wells?",
       "answers": [
@@ -4378,7 +4364,7 @@
       "wide_format_reason": "year-like columns: ['1989', '1990', '1991', '1992', '1993']"
     },
     {
-      "id": "qa-335",
+      "id": "qa-334",
       "table_file": "csv_201-csv_45.xlsx",
       "question": "which month had the most snowfall?",
       "answers": [
@@ -4390,7 +4376,7 @@
       "wide_format_reason": "wide shape: 6 rows × 14 cols"
     },
     {
-      "id": "qa-336",
+      "id": "qa-335",
       "table_file": "csv_204-csv_907.xlsx",
       "question": "name all the lifts that are longer than 5,000 ft.",
       "answers": [
@@ -4405,7 +4391,7 @@
       "wide_format_reason": "wide shape: 7 rows × 11 cols"
     },
     {
-      "id": "qa-337",
+      "id": "qa-336",
       "table_file": "csv_204-csv_916.xlsx",
       "question": "what is the total number of fdrcs that the ppopp has been a part of?",
       "answers": [
@@ -4417,7 +4403,7 @@
       "wide_format_reason": "year-like columns: ['1993', '1996', '1999', '2007', '2011']"
     },
     {
-      "id": "qa-338",
+      "id": "qa-337",
       "table_file": "csv_204-csv_940.xlsx",
       "question": "which one is the least with scoring average",
       "answers": [
@@ -4429,7 +4415,7 @@
       "wide_format_reason": "wide shape: 8 rows × 13 cols"
     },
     {
-      "id": "qa-339",
+      "id": "qa-338",
       "table_file": "csv_202-csv_196.xlsx",
       "question": "how many russian-lipovan's were there in 1966?",
       "answers": [
@@ -4441,7 +4427,7 @@
       "wide_format_reason": "year-like columns: ['1880', '1899', '1913', '1956', '1966']"
     },
     {
-      "id": "qa-340",
+      "id": "qa-339",
       "table_file": "csv_203-csv_638.xlsx",
       "question": "what is the difference between 2008 and 2009 score?",
       "answers": [
@@ -4453,7 +4439,7 @@
       "wide_format_reason": "year-like columns: ['2007', '2008', '2009', '2010', '2011']"
     },
     {
-      "id": "qa-341",
+      "id": "qa-340",
       "table_file": "csv_203-csv_871.xlsx",
       "question": "how many people that are not diego dominguez have scored at least 24 points in a match for italy?",
       "answers": [
@@ -4465,7 +4451,7 @@
       "wide_format_reason": "wide shape: 10 rows × 11 cols"
     },
     {
-      "id": "qa-342",
+      "id": "qa-341",
       "table_file": "csv_204-csv_386.xlsx",
       "question": "how long was gina carano active in the sport?",
       "answers": [
@@ -4477,7 +4463,7 @@
       "wide_format_reason": "wide shape: 8 rows × 10 cols"
     },
     {
-      "id": "qa-343",
+      "id": "qa-342",
       "table_file": "csv_203-csv_516.xlsx",
       "question": "in 2010 he had at least how many punt returns?",
       "answers": [
@@ -4489,7 +4475,7 @@
       "wide_format_reason": "wide shape: 7 rows × 13 cols"
     },
     {
-      "id": "qa-344",
+      "id": "qa-343",
       "table_file": "csv_202-csv_294.xlsx",
       "question": "when was the benetton b198 chassis used?",
       "answers": [
@@ -4501,7 +4487,7 @@
       "wide_format_reason": "wide shape: 9 rows × 25 cols"
     },
     {
-      "id": "qa-345",
+      "id": "qa-344",
       "table_file": "csv_203-csv_857.xlsx",
       "question": "how many denominations never dropped below 20%?",
       "answers": [
@@ -4513,7 +4499,7 @@
       "wide_format_reason": "year-like columns: ['1870', '1880', '1890', '1900', '1910']"
     },
     {
-      "id": "qa-346",
+      "id": "qa-345",
       "table_file": "csv_204-csv_314.xlsx",
       "question": "what is the most wins?",
       "answers": [
@@ -4525,7 +4511,7 @@
       "wide_format_reason": "wide shape: 10 rows × 11 cols"
     },
     {
-      "id": "qa-347",
+      "id": "qa-346",
       "table_file": "csv_203-csv_834.xlsx",
       "question": "how many cities (census subdivisions) had at least half a million people in 1996?",
       "answers": [
@@ -4537,7 +4523,7 @@
       "wide_format_reason": "repeated prefix 'Population': ['Population 2011', 'Population 2006', 'Population 2001', 'Population 1996']"
     },
     {
-      "id": "qa-348",
+      "id": "qa-347",
       "table_file": "csv_204-csv_581.xlsx",
       "question": "in which years did at least 60% of black voters vote democrat between 148 and 1964?",
       "answers": [
@@ -4552,7 +4538,7 @@
       "wide_format_reason": "year-like columns: ['1948', '1952', '1956', '1960', '1964']"
     },
     {
-      "id": "qa-349",
+      "id": "qa-348",
       "table_file": "csv_201-csv_22.xlsx",
       "question": "how many months had a record high of 111 degrees?",
       "answers": [
@@ -4564,7 +4550,7 @@
       "wide_format_reason": "wide shape: 6 rows × 14 cols"
     },
     {
-      "id": "qa-350",
+      "id": "qa-349",
       "table_file": "csv_203-csv_597.xlsx",
       "question": "is the number of games he played in 2002 more or less than the amount he played in 2008?",
       "answers": [
@@ -4576,7 +4562,7 @@
       "wide_format_reason": "wide shape: 9 rows × 11 cols"
     },
     {
-      "id": "qa-351",
+      "id": "qa-350",
       "table_file": "csv_203-csv_392.xlsx",
       "question": "what belt would a practitioner receive next after completing the 10th kyu?",
       "answers": [
@@ -4588,7 +4574,7 @@
       "wide_format_reason": "repeated prefix 'Belt Alternate': ['Belt Alternate 1', 'Belt Alternate 2', 'Belt Alternate 3', 'Belt Alternate 4']"
     },
     {
-      "id": "qa-352",
+      "id": "qa-351",
       "table_file": "csv_204-csv_18.xlsx",
       "question": "what is the earliest year that a film was released?",
       "answers": [
@@ -4600,7 +4586,7 @@
       "wide_format_reason": "year-like columns: ['2010', '2011', '2012', '2013', '2014']"
     },
     {
-      "id": "qa-353",
+      "id": "qa-352",
       "table_file": "csv_204-csv_666.xlsx",
       "question": "which year had the largest agricultural volume?",
       "answers": [
@@ -4612,7 +4598,7 @@
       "wide_format_reason": "year-like columns: ['2007/08', '2008/09', '2009/10', '2010/11', '2011/12']"
     },
     {
-      "id": "qa-354",
+      "id": "qa-353",
       "table_file": "csv_200-csv_42.xlsx",
       "question": "what is the month with the lowest average low in haifa?",
       "answers": [
@@ -4624,7 +4610,7 @@
       "wide_format_reason": "wide shape: 4 rows × 14 cols"
     },
     {
-      "id": "qa-355",
+      "id": "qa-354",
       "table_file": "csv_204-csv_439.xlsx",
       "question": "who finished before canada in the first run?",
       "answers": [
@@ -4636,7 +4622,7 @@
       "wide_format_reason": "repeated prefix 'Run': ['Run 1', 'Run 2', 'Run 3', 'Run 4']"
     },
     {
-      "id": "qa-356",
+      "id": "qa-355",
       "table_file": "csv_203-csv_464.xlsx",
       "question": "what is the total number of wins?",
       "answers": [
@@ -4648,7 +4634,7 @@
       "wide_format_reason": "year-like columns: ['2000', '2001', '2002', '2003', '2004']"
     },
     {
-      "id": "qa-357",
+      "id": "qa-356",
       "table_file": "csv_201-csv_3.xlsx",
       "question": "does december or january have more snow days?",
       "answers": [
@@ -4660,7 +4646,7 @@
       "wide_format_reason": "wide shape: 10 rows × 14 cols"
     },
     {
-      "id": "qa-358",
+      "id": "qa-357",
       "table_file": "csv_202-csv_57.xlsx",
       "question": "which month is the most humid?",
       "answers": [
@@ -4672,7 +4658,7 @@
       "wide_format_reason": "wide shape: 9 rows × 14 cols"
     },
     {
-      "id": "qa-359",
+      "id": "qa-358",
       "table_file": "csv_202-csv_166.xlsx",
       "question": "compare religious affiliation in 2001 to 2011. percentage wise, by how much did \"no religion\" increase from 2001 to 2011",
       "answers": [
@@ -4684,7 +4670,7 @@
       "wide_format_reason": "year-like columns: ['2001', '2006', '2011']"
     },
     {
-      "id": "qa-360",
+      "id": "qa-359",
       "table_file": "csv_203-csv_471.xlsx",
       "question": "who scored the least points in the june 25 game?",
       "answers": [
@@ -4696,7 +4682,7 @@
       "wide_format_reason": "wide shape: 7 rows × 11 cols"
     },
     {
-      "id": "qa-361",
+      "id": "qa-360",
       "table_file": "csv_204-csv_957.xlsx",
       "question": "what is the total number of passes this player has defended?",
       "answers": [
@@ -4708,7 +4694,7 @@
       "wide_format_reason": "wide shape: 10 rows × 16 cols"
     },
     {
-      "id": "qa-362",
+      "id": "qa-361",
       "table_file": "csv_204-csv_938.xlsx",
       "question": "what is the difference between the edmonton hundred and the elthorne hundred in 1801?",
       "answers": [
@@ -4720,7 +4706,7 @@
       "wide_format_reason": "wide shape: 9 rows × 15 cols"
     },
     {
-      "id": "qa-363",
+      "id": "qa-362",
       "table_file": "csv_200-csv_48.xlsx",
       "question": "what is the average high temperature for fayetteville, arkansas in june?",
       "answers": [
@@ -4732,7 +4718,7 @@
       "wide_format_reason": "wide shape: 8 rows × 14 cols"
     },
     {
-      "id": "qa-364",
+      "id": "qa-363",
       "table_file": "csv_202-csv_167.xlsx",
       "question": "what is the difference between the highest average high temperature and the lowest average low temperature in burbank, california?",
       "answers": [
@@ -4744,7 +4730,7 @@
       "wide_format_reason": "wide shape: 5 rows × 14 cols"
     },
     {
-      "id": "qa-365",
+      "id": "qa-364",
       "table_file": "csv_203-csv_865.xlsx",
       "question": "which athlete had the best mark before renate culmberger?",
       "answers": [
@@ -4756,7 +4742,7 @@
       "wide_format_reason": "repeated prefix 'Throw': ['Throw 1', 'Throw 2', 'Throw 3', 'Throw 4', 'Throw 5']"
     },
     {
-      "id": "qa-366",
+      "id": "qa-365",
       "table_file": "csv_203-csv_854.xlsx",
       "question": "who was the first place driver?",
       "answers": [
@@ -4768,7 +4754,7 @@
       "wide_format_reason": "repeated prefix 'Rd': ['Rd 1', 'Rd 2', 'Rd 3', 'Rd 4', 'Rd 5']"
     },
     {
-      "id": "qa-367",
+      "id": "qa-366",
       "table_file": "csv_201-csv_48.xlsx",
       "question": "how many times did the single \"butterfly\" rank as 1 in the chart?",
       "answers": [
@@ -4780,7 +4766,7 @@
       "wide_format_reason": "wide shape: 6 rows × 13 cols"
     },
     {
-      "id": "qa-368",
+      "id": "qa-367",
       "table_file": "csv_202-csv_278.xlsx",
       "question": "how many years after \"i can't get no... edelweiss\" did the single \"bring me edelweiss\" (remix) appear?",
       "answers": [
@@ -4792,7 +4778,7 @@
       "wide_format_reason": "wide shape: 8 rows × 11 cols"
     },
     {
-      "id": "qa-369",
+      "id": "qa-368",
       "table_file": "csv_203-csv_818.xlsx",
       "question": "what is the number of awards that arisan won in 2004?",
       "answers": [
@@ -4804,7 +4790,7 @@
       "wide_format_reason": "year-like columns: ['1995', '2004', '2005', '2006', '2007']"
     },
     {
-      "id": "qa-370",
+      "id": "qa-369",
       "table_file": "csv_201-csv_33.xlsx",
       "question": "which month averages the least precipitation in kindersley?",
       "answers": [
@@ -4816,7 +4802,7 @@
       "wide_format_reason": "wide shape: 8 rows × 14 cols"
     },
     {
-      "id": "qa-371",
+      "id": "qa-370",
       "table_file": "csv_204-csv_363.xlsx",
       "question": "who has the most and best score?",
       "answers": [
@@ -4828,7 +4814,7 @@
       "wide_format_reason": "wide shape: 8 rows × 10 cols"
     },
     {
-      "id": "qa-372",
+      "id": "qa-371",
       "table_file": "csv_204-csv_568.xlsx",
       "question": "amazon is at the top of the chart, but what is the name below it?",
       "answers": [
@@ -4840,7 +4826,7 @@
       "wide_format_reason": "wide shape: 8 rows × 10 cols"
     },
     {
-      "id": "qa-373",
+      "id": "qa-372",
       "table_file": "csv_203-csv_171.xlsx",
       "question": "how many games has chorrillo f.c. won?",
       "answers": [
@@ -4852,7 +4838,7 @@
       "wide_format_reason": "wide shape: 10 rows × 10 cols"
     },
     {
-      "id": "qa-374",
+      "id": "qa-373",
       "table_file": "csv_204-csv_39.xlsx",
       "question": "what is the number of symbol zn?",
       "answers": [
@@ -4864,7 +4850,7 @@
       "wide_format_reason": "year-like columns: ['21st', '22nd', '23rd', '24th', '25th']"
     },
     {
-      "id": "qa-375",
+      "id": "qa-374",
       "table_file": "csv_202-csv_44.xlsx",
       "question": "what was the world's most populous continent in 1965?",
       "answers": [
@@ -4876,7 +4862,7 @@
       "wide_format_reason": "year-like columns: ['1965', '1960', '1970']"
     },
     {
-      "id": "qa-376",
+      "id": "qa-375",
       "table_file": "csv_203-csv_110.xlsx",
       "question": "how many performance indicators are there for standard 3 for grades 3-5?",
       "answers": [
@@ -4888,7 +4874,7 @@
       "wide_format_reason": "repeated prefix 'Standard': ['Standard 1', 'Standard 2', 'Standard 3', 'Standard 4', 'Standard 5']"
     },
     {
-      "id": "qa-377",
+      "id": "qa-376",
       "table_file": "csv_201-csv_6.xlsx",
       "question": "how many months had the same amount of average rainy days?",
       "answers": [
@@ -4900,7 +4886,7 @@
       "wide_format_reason": "wide shape: 4 rows × 14 cols"
     },
     {
-      "id": "qa-378",
+      "id": "qa-377",
       "table_file": "csv_203-csv_623.xlsx",
       "question": "in what year did vinnie dombroski win his outstanding rock/pop vocalist award?",
       "answers": [
@@ -4912,7 +4898,7 @@
       "wide_format_reason": "year-like columns: ['2004', '2005', '2006', '2009', '2010']"
     },
     {
-      "id": "qa-379",
+      "id": "qa-378",
       "table_file": "csv_203-csv_728.xlsx",
       "question": "in masters 1000 tournament did the table show more losses than wins?",
       "answers": [
@@ -4924,7 +4910,7 @@
       "wide_format_reason": "year-like columns: ['1992', '1993', '1994', '1995', '1996']"
     },
     {
-      "id": "qa-380",
+      "id": "qa-379",
       "table_file": "csv_204-csv_408.xlsx",
       "question": "what are the combined number of years argentina and brazil placed in that top 4 or above?",
       "answers": [
@@ -4936,7 +4922,7 @@
       "wide_format_reason": "year-like columns: ['1986', '1989', '1991', '1997', '1999']"
     },
     {
-      "id": "qa-381",
+      "id": "qa-380",
       "table_file": "csv_203-csv_254.xlsx",
       "question": "what is the total number of teams that played 1919 brazilian football?",
       "answers": [
@@ -4948,7 +4934,7 @@
       "wide_format_reason": "wide shape: 10 rows × 10 cols"
     },
     {
-      "id": "qa-382",
+      "id": "qa-381",
       "table_file": "csv_204-csv_397.xlsx",
       "question": "which team won the most runs?",
       "answers": [
@@ -4960,7 +4946,7 @@
       "wide_format_reason": "repeated prefix 'Run': ['Run 1', 'Run 2', 'Run 3', 'Run 4']"
     },
     {
-      "id": "qa-383",
+      "id": "qa-382",
       "table_file": "csv_204-csv_437.xlsx",
       "question": "what is the first year the scores are recorded?",
       "answers": [
@@ -4972,7 +4958,7 @@
       "wide_format_reason": "year-like columns: ['2014', '2013', '2012', '2010', '2009']"
     },
     {
-      "id": "qa-384",
+      "id": "qa-383",
       "table_file": "csv_204-csv_32.xlsx",
       "question": "the team's record in 2011 was the same was it's record in what year",
       "answers": [
@@ -4984,7 +4970,7 @@
       "wide_format_reason": "wide shape: 10 rows × 11 cols"
     },
     {
-      "id": "qa-385",
+      "id": "qa-384",
       "table_file": "csv_204-csv_153.xlsx",
       "question": "which tournament has the largest total win record?",
       "answers": [
@@ -4996,7 +4982,7 @@
       "wide_format_reason": "year-like columns: ['2001', '2002', '2003', '2004', '2005']"
     },
     {
-      "id": "qa-386",
+      "id": "qa-385",
       "table_file": "Demographic_Statistics_2.xls",
       "question": "How many males aged 16 have divorced?",
       "answers": [
@@ -5011,7 +4997,7 @@
       "if_complex_table_header": 1
     },
     {
-      "id": "qa-387",
+      "id": "qa-386",
       "table_file": "Household_Size_Statistics.xls",
       "question": "How many three-person households are there in Heilongjiang",
       "answers": [
@@ -5026,7 +5012,7 @@
       "if_complex_table_header": 1
     },
     {
-      "id": "qa-388",
+      "id": "qa-387",
       "table_file": "Steel_Material_Capacity_Table.xlsx",
       "question": "What are the unit weight values for the equal angle steels with specifications ∠200×24 and ∠160×10?",
       "answers": [
@@ -5041,7 +5027,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-389",
+      "id": "qa-388",
       "table_file": "Manufacturing_KPI_Performance_Evaluation_Indicators.xlsx",
       "question": "Which indicator has the highest weight in the production department's performance evaluation criteria, and what is its specific definition?",
       "answers": [
@@ -5056,7 +5042,7 @@
       "if_complex_table_header": "1"
     },
     {
-      "id": "qa-390",
+      "id": "qa-389",
       "table_file": "Stock_Trading_Notebook_-_Transaction_Log_-_Daily_Statistics.xlsx",
       "question": "Which of the two stocks, 'Rihai Communications' and 'MonteFali', has a higher profit or loss amount across all worksheets?",
       "answers": [
@@ -5071,7 +5057,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-391",
+      "id": "qa-390",
       "table_file": "Housing_Condition_Statistics_Table_1.xls",
       "question": "Did the average housing area per household in Xiangtan City between 2000 and 2005 increase or decrease compared to Hengyang City?",
       "answers": [
@@ -5086,7 +5072,7 @@
       "if_complex_table_header": 1
     },
     {
-      "id": "qa-392",
+      "id": "qa-391",
       "table_file": "2231.xlsx",
       "question": "What is the difference between the average planned number of students to be enrolled in medical education programs hosted by Zhejiang University School of Medicine and its affiliated hospitals, and the average of programs not hosted by the Zhejiang University system in Zhejiang Province in 2006?",
       "answers": [
@@ -5101,7 +5087,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-393",
+      "id": "qa-392",
       "table_file": "Shandong_GDP_Index_Table.xlsx",
       "question": "In 2019 to 2021, which year had the fastest growth in the industrial output index of Shandong Province's secondary industry?",
       "answers": [
@@ -5116,7 +5102,7 @@
       "if_complex_table_header": 1
     },
     {
-      "id": "qa-394",
+      "id": "qa-393",
       "table_file": "Hunan_Only_Child_Data_1.xls",
       "question": "First, identify the regions where the population aged 0-30 exceeds 20,000, then calculate the average of the differences between the number of male and female only children in these regions aged 0-30.",
       "answers": [
@@ -5131,7 +5117,7 @@
       "if_complex_table_header": 1
     },
     {
-      "id": "qa-395",
+      "id": "qa-394",
       "table_file": "Enterprise_Salary_Grade_Structure_Table_(201004).xls",
       "question": "Based on the table data, calculate the average salary of positions in each job level, and identify the job levels with the highest and lowest average salaries. Please list the names of these two job levels along with their average salaries, and calculate the difference between them.",
       "answers": [
@@ -5146,7 +5132,7 @@
       "if_complex_table_header": "1"
     },
     {
-      "id": "qa-396",
+      "id": "qa-395",
       "table_file": "It_can_be_used_55.xlsx",
       "question": "What are the three subjects with the greatest fluctuation when the standard deviations of the scores for each subject are sorted from smallest to largest?",
       "answers": [
@@ -5161,7 +5147,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-397",
+      "id": "qa-396",
       "table_file": "E-commerce_Product_Inventory_Detail_Analysis_Table_1.xlsx",
       "question": "In the sales performance table, identify the product(s) with the maximum absolute difference in sales between Monday and Sunday, along with the specific difference.",
       "answers": [
@@ -5176,7 +5162,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-398",
+      "id": "qa-397",
       "table_file": "General_Workplace_(19).xlsx",
       "question": "Calculate the total expenditure amount by quarter, compute the quarter-over-quarter growth rate of expenditures for each quarter (next quarter / previous quarter - 1), and identify the quarter with the fastest growth and its growth rate.",
       "answers": [
@@ -5191,7 +5177,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-399",
+      "id": "qa-398",
       "table_file": "Double_Twelve_Taobao_Selected_Blockbusters.xlsx",
       "question": "Among all categories, which categories do the top 3 products with the largest price differences between Double 12 price and market price belong to? Please calculate their differences and sort them.",
       "answers": [
@@ -5206,7 +5192,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-400",
+      "id": "qa-399",
       "table_file": "Merchandise_Purchase_Statistics_Table.xlsx",
       "question": "Compare the procurement data of \"Product 2\" and \"Product 5.\" Which product had a higher total procurement amount in December 2019? By what percentage was it higher?",
       "answers": [
@@ -5221,7 +5207,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-401",
+      "id": "qa-400",
       "table_file": "Shandong_Budget_Expenditure_Table.xls",
       "question": "What is the average annual growth amount in ten thousand yuan of housing security expenditure in Shandong Province from 2020 to 2023?",
       "answers": [
@@ -5236,7 +5222,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-402",
+      "id": "qa-401",
       "table_file": "Inventory_Report_for_Products.xlsx",
       "question": "Sort by \"Inventory Value for 360 Days or More\" in descending order, list the generic names, specifications, and manufacturers of the top 5 Chinese herbal medicines, and calculate their average inventory quantity.",
       "answers": [
@@ -5251,7 +5237,7 @@
       "if_complex_table_header": 1
     },
     {
-      "id": "qa-403",
+      "id": "qa-402",
       "table_file": "It_can_be_used_20_times.xlsx",
       "question": "Calculate the difference between the math scores and Chinese scores for all students, and identify the student's name with the largest difference along with the specific difference.",
       "answers": [
@@ -5266,7 +5252,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-404",
+      "id": "qa-403",
       "table_file": "Anhui_Consumption_Growth_Data.xlsx",
       "question": "Calculate the value of residents' income (non-material consumption + material consumption + residents' savings) for each year, then filter out the years where residents' income exceeds 100 billion yuan and the ratio of non-material consumption is below 23%. What is the average residents' consumption ratio for these years?",
       "answers": [
@@ -5281,7 +5267,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-405",
+      "id": "qa-404",
       "table_file": "Shandong_Legal_Entity_Unit_Statistics_1.xlsx",
       "question": "What is the number of legal entity units of private non-enterprise organizations in 2020?",
       "answers": [
@@ -5296,7 +5282,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-406",
+      "id": "qa-405",
       "table_file": "Garbage_Station_Renovation_Details.xls",
       "question": "How many doors of customized track sliding door style are there at the placement point?",
       "answers": [
@@ -5311,7 +5297,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-407",
+      "id": "qa-406",
       "table_file": "Housing_Source_Statistics.xls",
       "question": "How many household families in Inner Mongolia have self-built housing?",
       "answers": [
@@ -5326,7 +5312,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-408",
+      "id": "qa-407",
       "table_file": "Shandong_Foreign_Trade_Data_2023.xls",
       "question": "What is the total value (in ten thousand US dollars) of Shandong Province's exports to Japan in 2023?",
       "answers": [
@@ -5341,7 +5327,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-409",
+      "id": "qa-408",
       "table_file": "Household_Population_Statistics_Table.xls",
       "question": "Count the number of age groups where the number of males is greater than the number of females among the population whose household registration is outside the province.",
       "answers": [
@@ -5356,7 +5342,7 @@
       "if_complex_table_header": 1
     },
     {
-      "id": "qa-410",
+      "id": "qa-409",
       "table_file": "Monthly_Procurement_Fund_Budget_Table_1.xlsx",
       "question": "What is the total monthly planned fund amount for XX Limited Liability Company?",
       "answers": [
@@ -5371,7 +5357,7 @@
       "if_complex_table_header": 1
     },
     {
-      "id": "qa-411",
+      "id": "qa-410",
       "table_file": "Annual_Salesperson_Performance_Calculation_Table_1.xlsx",
       "question": "What is the percentage of the total sales amount of the top five salespersons, ranked from highest to lowest by total sales amount for the entire year of 2020, relative to the total sales amount of all salespersons?",
       "answers": [
@@ -5386,7 +5372,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-412",
+      "id": "qa-411",
       "table_file": "1237 (2).xlsx",
       "question": "What is the average of the budget subtotal for the Comprehensive Management Department across the three companies?",
       "answers": [
@@ -5401,7 +5387,7 @@
       "if_complex_table_header": 1
     },
     {
-      "id": "qa-413",
+      "id": "qa-412",
       "table_file": "Hunan_Only-Child_Data.xls",
       "question": "What is the average sex ratio for each age group from 0 to 9 years old?",
       "answers": [
@@ -5416,7 +5402,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-414",
+      "id": "qa-413",
       "table_file": "Material_Cost.xlsx",
       "question": "Based on the \"Subtotal\" column in the material process cost calculation table, sort the total costs of all processes in descending order, and list the names of the top three processes along with their corresponding amounts.",
       "answers": [
@@ -5431,7 +5417,7 @@
       "if_complex_table_header": 1
     },
     {
-      "id": "qa-415",
+      "id": "qa-414",
       "table_file": "Sheet57.xlsx",
       "question": "Calculate the sum of student \"Rice Hull 9's\" scores from Unit 1 to Unit 6, and find the difference between this sum and the final exam score?",
       "answers": [
@@ -5446,7 +5432,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-416",
+      "id": "qa-415",
       "table_file": "Housing_Cost_Distribution_Table.xls",
       "question": "How many regions have more than 3,000 households with housing purchase or construction costs between 50,000 and 100,000 yuan?",
       "answers": [
@@ -5461,7 +5447,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-417",
+      "id": "qa-416",
       "table_file": "Common_Formulas_and_Data_for_Saturated_Water_and_Steam.xls",
       "question": "What is the recommended overall heat transfer coefficient K value in W/(m²℃) for ammonia as the medium in the data of air condenser K values?",
       "answers": [
@@ -5476,7 +5462,7 @@
       "if_complex_table_header": "1"
     },
     {
-      "id": "qa-418",
+      "id": "qa-417",
       "table_file": "Same_Condition_Temperature_Table.xls",
       "question": "What is the earliest recorded date in the file \"Same Condition Temperature Table_Renhe Foundation to Ground Beam.csv\"?",
       "answers": [
@@ -5491,7 +5477,7 @@
       "if_complex_table_header": "1"
     },
     {
-      "id": "qa-419",
+      "id": "qa-418",
       "table_file": "Project_Statistics_Table_1.xlsx",
       "question": "What is the contract number for the project named \"Transport Robot\"?",
       "answers": [
@@ -5506,7 +5492,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-420",
+      "id": "qa-419",
       "table_file": "Performance_baseline_data.xlsx",
       "question": "What is the total amount subscribed for normal sales in the weekly meeting worksheet?",
       "answers": [
@@ -5521,7 +5507,7 @@
       "if_complex_table_header": 1
     },
     {
-      "id": "qa-421",
+      "id": "qa-420",
       "table_file": "Computerized_Accounting.xls.xlsx",
       "question": "Calculate the difference between the current period's debit occurrence and the beginning debit balance of the \"Bank Deposit\" account, and find its ratio to the credit occurrence, with the result rounded to two decimal places.",
       "answers": [
@@ -5536,7 +5522,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-422",
+      "id": "qa-421",
       "table_file": "Fueling_Data_Record.xlsx",
       "question": "In the \"加油数据记录_枪15的加油数据.csv\" file, for each column, calculate the standard deviation of the numeric columns (i.e., excluding non-numeric categories such as '气液比'), and identify the column with the largest standard deviation. Then, for that column, calculate the sum of the absolute differences between each value and the column's mean, compare it with the total sum of the column's values, and determine the ratio of the sum of the absolute differences to the total sum of the values.",
       "answers": [
@@ -5551,7 +5537,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-423",
+      "id": "qa-422",
       "table_file": "Image_to_Text_-_20240205221356_60.xlsx",
       "question": "Sort by \"amount\" from highest to lowest, and find the \"order number\" of the top 3 orders and the time difference (in days) between the corresponding \"shipping date\" and \"order date\".",
       "answers": [
@@ -5566,7 +5552,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-424",
+      "id": "qa-423",
       "table_file": "Production_and_Manufacturing_Table_(521).xlsx",
       "question": "What is the standard deviation of the ratio of amount to quantity (unit price) in the purchase records where the material name is \"Material 2\"?",
       "answers": [
@@ -5581,7 +5567,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-425",
+      "id": "qa-424",
       "table_file": "Land_Expropriation_Area_by_Province_(Square_Kilometers).xls.xlsx",
       "question": "What is the annual compound growth rate of the expropriated land area in Shanxi from 2009 to 2013?",
       "answers": [
@@ -5596,7 +5582,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-426",
+      "id": "qa-425",
       "table_file": "1706959094525.xlsx",
       "question": "Calculate the average building height of all buildings in Beijing (excluding missing values), and identify the name of the building with the largest difference from this average value along with its specific difference.",
       "answers": [
@@ -5611,7 +5597,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-427",
+      "id": "qa-426",
       "table_file": "Building_Capacity.xlsx",
       "question": "List the top three models with the highest values in the pure copper plates along with their corresponding values, sorted from highest to lowest value.",
       "answers": [
@@ -5626,7 +5612,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-428",
+      "id": "qa-427",
       "table_file": "Weekly_Report_on_Apparel_Retail.xlsx",
       "question": "What is the average cumulative business amount for product categories with a discount rate below 0.7 in Sheet1?",
       "answers": [
@@ -5641,7 +5627,7 @@
       "if_complex_table_header": 1
     },
     {
-      "id": "qa-429",
+      "id": "qa-428",
       "table_file": "Urban_Employment_Wage_Data.xls",
       "question": "Taking into account the differences in employment numbers across industries, calculate the ratio of the average salary to the number of employees at year-end for each industry in 2016, and identify the three industries with the highest ratios. Please provide the names of these three industries, their average salaries, the number of employees at year-end, and the calculated ratios of average salary to the number of employees at year-end.",
       "answers": [
@@ -5656,7 +5642,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-430",
+      "id": "qa-429",
       "table_file": "Rural_Employed_Personnel_Statistics.xlsx",
       "question": "Is the average number of actual rural employees in Zhangjiagang City in 1965 and 1975 higher or lower than the average for all years?",
       "answers": [
@@ -5671,7 +5657,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-431",
+      "id": "qa-430",
       "table_file": "Employment_Population_Statistics_Table_1.xls",
       "question": "Based on the data in the employment population statistics table, calculate the proportion of employed population who have never attended school in each region, and identify the region with the highest proportion.",
       "answers": [
@@ -5686,7 +5672,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-432",
+      "id": "qa-431",
       "table_file": "Sheet59.xlsx",
       "question": "What is the average English score of the top 5 students ranked by total score? What is the difference compared to the average English score of the bottom 5 students ranked by total score?",
       "answers": [
@@ -5701,7 +5687,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-433",
+      "id": "qa-432",
       "table_file": "Rural_Housing_Statistics.xls",
       "question": "Considering the impact of housing area and the number of rooms on living comfort, calculate the housing comfort index for rural households in cities across Hunan Province. This index is the product of the per capita floor area of housing and the per capita number of rooms. Please rank the cities under Hunan Province based on this index, and identify the city with the highest housing comfort index.",
       "answers": [
@@ -5716,7 +5702,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-434",
+      "id": "qa-433",
       "table_file": "Sheet1(4).xlsx",
       "question": "Sort the \"Distance from mid-span (mm), positive in the direction of large mileage\" column in ascending order, and calculate the average of the first 5 positions of the difference between \"Bracket Elastic Deformation + Allowance\" and \"Actual Girder Bottom Elevation (m)\".",
       "answers": [
@@ -5731,7 +5717,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-435",
+      "id": "qa-434",
       "table_file": "Stock_Situation_9.xlsx",
       "question": "How many more shares are in the account after the second transaction compared to the first? Please deduce and calculate based on the transaction direction and share changes.",
       "answers": [
@@ -5746,7 +5732,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-436",
+      "id": "qa-435",
       "table_file": "Supermarket_Joint_Venture_Commission_Rate_and_Gross_Margin.xlsx",
       "question": "Calculate the ratio of gross profit to minimum annual sales in ten thousand for each product category, which category has the highest ratio?",
       "answers": [
@@ -5761,22 +5747,7 @@
       "if_complex_table_header": 1
     },
     {
-      "id": "qa-437",
-      "table_file": "Bok1.xlsx",
-      "question": "Count the number of projects for each project category (such as \"Heat Exchanger Fabrication\", \"Flare Fabrication\"), and list the top three categories in descending order of quantity.",
-      "answers": [
-        "Overall Equipment Installation: 448, Low-pressure Piping: 405, Low-pressure Fittings: 405"
-      ],
-      "answer_type": "text",
-      "source": "reasontabqa",
-      "reasontabqa_id": "334",
-      "table_difficulty": "easy",
-      "question_difficulty": "hard",
-      "question_type": "objective",
-      "if_complex_table_header": 0
-    },
-    {
-      "id": "qa-438",
+      "id": "qa-436",
       "table_file": "Summary_of_Steel_Structure_Building_Capacity.xlsx",
       "question": "In cold-formed unequal angle steel sections, when the thickness increases from 2.0 to 3.0 (e.g., from ∠25×15×2.0 to ∠25×15×3.0), what is the average growth rate of unit weight in percentage?",
       "answers": [
@@ -5791,7 +5762,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-439",
+      "id": "qa-437",
       "table_file": "Medical_Sales_Data.xlsx",
       "question": "What is the product name in the order with the customer name \"Linyi Huijie Trading Co., Ltd.\"?",
       "answers": [
@@ -5806,7 +5777,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-440",
+      "id": "qa-438",
       "table_file": "List_of_3_Items.xlsx",
       "question": "What is the name of the item with the largest quantity of work in No. (III)?",
       "answers": [
@@ -5821,7 +5792,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-441",
+      "id": "qa-439",
       "table_file": "Statistics_on_the_Number_of_Children_Educated_by_Women.xls",
       "question": "How many women who have never attended school and have 0 live births are there?",
       "answers": [
@@ -5836,7 +5807,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-442",
+      "id": "qa-440",
       "table_file": "Employment_Population_Statistics_Table_2.xls",
       "question": "What is the number of employed males aged 30-34 who have never attended school?",
       "answers": [
@@ -5851,22 +5822,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-443",
-      "table_file": "International_Logistics_Detail_Table.xlsx",
-      "question": "What is the recipient's postal code for the fourth row of data?",
-      "answers": [
-        "2745.0"
-      ],
-      "answer_type": "number",
-      "source": "reasontabqa",
-      "reasontabqa_id": "344",
-      "table_difficulty": "easy",
-      "question_difficulty": "easy",
-      "question_type": "objective",
-      "if_complex_table_header": 0
-    },
-    {
-      "id": "qa-444",
+      "id": "qa-441",
       "table_file": "Maternal_Fertility_Data_Table_1.xls",
       "question": "How many women with live birth of 1 child are there among professional and technical personnel?",
       "answers": [
@@ -5881,7 +5837,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-445",
+      "id": "qa-442",
       "table_file": "Natural_Gas_Balance_Data.xls",
       "question": "What was the production volume in 2017?",
       "answers": [
@@ -5896,7 +5852,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-446",
+      "id": "qa-443",
       "table_file": "Industrial_Economic_Indicators_2021_2.xls",
       "question": "What was the total assets in ten thousand yuan of enterprises controlled by foreign investors and Hong Kong, Macao, and Taiwan merchants in 2021?",
       "answers": [
@@ -5911,7 +5867,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-447",
+      "id": "qa-444",
       "table_file": "Table_of_Population_Education_Distribution.xls",
       "question": "What is the total number of female population whose household registration is located in other towns and streets and who have never attended school or preschool education?",
       "answers": [
@@ -5926,7 +5882,7 @@
       "if_complex_table_header": 1
     },
     {
-      "id": "qa-448",
+      "id": "qa-445",
       "table_file": "Total_Investment_in_Shandong.xlsx",
       "question": "In which year was the highest investment in rural fixed assets in the individual economy?",
       "answers": [
@@ -5941,7 +5897,7 @@
       "if_complex_table_header": 1
     },
     {
-      "id": "qa-449",
+      "id": "qa-446",
       "table_file": "Demographic_Statistics_1.xls",
       "question": "What is the number of unmarried women in the occupational category of \"personnel in social production services and living services\"?",
       "answers": [
@@ -5956,7 +5912,7 @@
       "if_complex_table_header": 1
     },
     {
-      "id": "qa-450",
+      "id": "qa-447",
       "table_file": "Population_Education_Statistics_Table.xls",
       "question": "In this population education statistics table, which region has the largest number of people with a master's degree?",
       "answers": [
@@ -5971,7 +5927,7 @@
       "if_complex_table_header": 1
     },
     {
-      "id": "qa-451",
+      "id": "qa-448",
       "table_file": "9-Snack_Shop_Monthly_Core_Data_Processing.xlsx",
       "question": "What is the total payment amount for all source details under paid traffic?",
       "answers": [
@@ -5986,7 +5942,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-452",
+      "id": "qa-449",
       "table_file": "Cash_Journal_-_Income_and_Expenditure_Table_3.xlsx",
       "question": "What is the total amount of expenses using a bank card as the payment method in the 12-day records?",
       "answers": [
@@ -6001,7 +5957,7 @@
       "if_complex_table_header": 1
     },
     {
-      "id": "qa-453",
+      "id": "qa-450",
       "table_file": "Home_Renovation_Budget_Table_Template.xls",
       "question": "Based on the table data, what is the decoration material with the highest unit price, and what is its specific unit price in yuan?",
       "answers": [
@@ -6016,7 +5972,7 @@
       "if_complex_table_header": "1"
     },
     {
-      "id": "qa-454",
+      "id": "qa-451",
       "table_file": "Childbearing_Table_of_Women_of_Childbearing_Age_in_Hunan.xls",
       "question": "In the fertility table of women of childbearing age in Hunan Province, which age group has the highest fertility rate for the first child?",
       "answers": [
@@ -6031,7 +5987,7 @@
       "if_complex_table_header": 1
     },
     {
-      "id": "qa-455",
+      "id": "qa-452",
       "table_file": "Order_Production_Scheduling_Registration_Form.xlsx",
       "question": "Which orders have a production date later than their order due date?",
       "answers": [
@@ -6046,7 +6002,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-456",
+      "id": "qa-453",
       "table_file": "Shandong_Population_Census_Data.xlsx",
       "question": "What is the difference in the number of males and females in 2000?",
       "answers": [
@@ -6061,7 +6017,7 @@
       "if_complex_table_header": 1
     },
     {
-      "id": "qa-457",
+      "id": "qa-454",
       "table_file": "Fresh_Single_Item_Control_Table.xlsx",
       "question": "What is the total acceptance volume of all products at Times City?",
       "answers": [
@@ -6076,7 +6032,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-458",
+      "id": "qa-455",
       "table_file": "Shandong_Investment_Growth_Rate_Table.xlsx",
       "question": "Which industry had the highest number of new projects started in 2023 in Shandong Province's investment growth rate table?",
       "answers": [
@@ -6091,7 +6047,7 @@
       "if_complex_table_header": 1
     },
     {
-      "id": "qa-459",
+      "id": "qa-456",
       "table_file": "Statistical_Data_on_the_Source_of_Livelihood_for_the_Population.xls",
       "question": "What is the difference in the number of males and females aged 45 - 49 whose main source of living is the minimum living allowance?",
       "answers": [
@@ -6106,7 +6062,7 @@
       "if_complex_table_header": 1
     },
     {
-      "id": "qa-460",
+      "id": "qa-457",
       "table_file": "Image_to_Text_-_20240205221356_73.xlsx",
       "question": "What is the total amount in yuan for purchasing jacket products during Double Eleven?",
       "answers": [
@@ -6121,7 +6077,7 @@
       "if_complex_table_header": 1
     },
     {
-      "id": "qa-461",
+      "id": "qa-458",
       "table_file": "2010_Land_Dev_Project_Detail.xls",
       "question": "How many projects in the second batch of land development and consolidation projects of the autonomous region in 2010 were undertaken by the Land Development and Consolidation Construction Administration Bureau of the autonomous region?",
       "answers": [
@@ -6136,7 +6092,7 @@
       "if_complex_table_header": "1"
     },
     {
-      "id": "qa-462",
+      "id": "qa-459",
       "table_file": "Shandong_population_structure_data.xlsx",
       "question": "Find the year with the highest old-age dependency ratio",
       "answers": [
@@ -6151,7 +6107,7 @@
       "if_complex_table_header": 1
     },
     {
-      "id": "qa-463",
+      "id": "qa-460",
       "table_file": "Lubrication_Table.xls",
       "question": "In the lubrication_table_Sheet1.csv, calculate the number of equipment corresponding to each lubricant grade, and sort them in descending order based on the number of equipment. Please list the top 3 lubricant grades and their corresponding number of equipment after sorting.",
       "answers": [
@@ -6166,7 +6122,7 @@
       "if_complex_table_header": "1"
     },
     {
-      "id": "qa-464",
+      "id": "qa-461",
       "table_file": "Admission_Status_of_Peking_University_by_Province_and_Major.xlsx",
       "question": "Which province had the highest average score for economics majors in the 2008 Peking University (main campus) liberal arts admission data from various provinces?",
       "answers": [
@@ -6181,7 +6137,7 @@
       "if_complex_table_header": 1
     },
     {
-      "id": "qa-465",
+      "id": "qa-462",
       "table_file": "3333 (77).xlsx",
       "question": "In the \"Sales and Discounts\" table, calculate the actual sales growth rate for Guangzhou Zone 1 and Guangzhou Zone 2 for the first week of May (i.e., (May actual sales - April actual sales) / April actual sales), and compare which zone has a higher growth rate.",
       "answers": [
@@ -6196,7 +6152,7 @@
       "if_complex_table_header": 1
     },
     {
-      "id": "qa-466",
+      "id": "qa-463",
       "table_file": "Altay.xlsx",
       "question": "Identify the quarters in 2013 where the total labor demand increased by more than 20% compared to the same period in 2012, and calculate the specific growth rate.",
       "answers": [
@@ -6211,7 +6167,7 @@
       "if_complex_table_header": 1
     },
     {
-      "id": "qa-467",
+      "id": "qa-464",
       "table_file": "Project_Detail_Statistics_Table_1.xlsx",
       "question": "Which salesperson is responsible for the most projects where the project amount exceeds 200,000 and the personnel verification status is \"Verified\"?",
       "answers": [
@@ -6226,7 +6182,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-468",
+      "id": "qa-465",
       "table_file": "Project_Income_and_Expenditure_Management_Table_1.xlsx",
       "question": "Calculate the ratio of total income to total expenditure for the \"Huilongyuan\" project in all records, and retain two decimal places.",
       "answers": [
@@ -6241,7 +6197,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-469",
+      "id": "qa-466",
       "table_file": "Production_Master_Plan.xlsx",
       "question": "Which specification has a total product quantity exceeding 10,000 pcs in the production master plan table of Microvast Power Systems (Huzhou) Co., Ltd.? What is the specific product name corresponding to this specification?",
       "answers": [
@@ -6256,7 +6212,7 @@
       "if_complex_table_header": 1
     },
     {
-      "id": "qa-470",
+      "id": "qa-467",
       "table_file": "Yuanjiang_Water_Conservancy_Cost_Estimation_Table.xlsx",
       "question": "What was the average annual increase in millions of yuan in the net value of fixed assets for water supply in county-owned water conservancy projects by Yuanjiang County Water Conservancy Irrigation District Administration from 2017 to 2019?",
       "answers": [
@@ -6271,7 +6227,7 @@
       "if_complex_table_header": 1
     },
     {
-      "id": "qa-471",
+      "id": "qa-468",
       "table_file": "State-owned_Holding_Industrial_Indicators.xls",
       "question": "Screen out industries where the total current assets are greater than 10 billion yuan and the original price of fixed assets is greater than 200 billion yuan, and calculate the total sum of the total profits of these industries in billion yuan?",
       "answers": [
@@ -6286,7 +6242,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-472",
+      "id": "qa-469",
       "table_file": "Athletics_Meet_Points_Table_1.xlsx",
       "question": "How many students have exactly the same rank in the final exam and in the average score in the student academic performance table?",
       "answers": [
@@ -6301,7 +6257,7 @@
       "if_complex_table_header": 1
     },
     {
-      "id": "qa-473",
+      "id": "qa-470",
       "table_file": "Shandong_Investment_Growth_Data.xlsx",
       "question": "Which city had the lowest growth rate of private fixed-asset investment in 2022?",
       "answers": [
@@ -6316,7 +6272,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-474",
+      "id": "qa-471",
       "table_file": "Branch_Efficiency_Data.xlsx",
       "question": "What is the name of the branch with the largest influence radius in this branch efficiency data, and what is its efficiency value?",
       "answers": [
@@ -6331,7 +6287,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-475",
+      "id": "qa-472",
       "table_file": "Production_and_Manufacturing_Table_(155).xlsx",
       "question": "Which product's total remaining inventory value equals the current inventory quantity multiplied by the unit price? Please verify and list the product names.",
       "answers": [
@@ -6346,7 +6302,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-476",
+      "id": "qa-473",
       "table_file": "Shandong_Development_Indicators_Data.xlsx",
       "question": "What was the proportion of the primary industry in Shandong Province's regional gross product in 2015?",
       "answers": [
@@ -6361,7 +6317,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-477",
+      "id": "qa-474",
       "table_file": "Protein_Expression_Data.xlsx",
       "question": "Which column has the highest average of non-NaN values?",
       "answers": [
@@ -6376,7 +6332,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-478",
+      "id": "qa-475",
       "table_file": "Hunan_Employment_Population_Statistics_1.xls",
       "question": "In the employment population statistics of Hunan, which age group has the largest number of \"commercial and service industry personnel\"?",
       "answers": [
@@ -6391,7 +6347,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-479",
+      "id": "qa-476",
       "table_file": "It_can_be_used_43.xlsx",
       "question": "How many schools have a first-tier admission rate (ratio) exceeding 80% and an undergraduate admission rate (ratio.1) exceeding 95%?",
       "answers": [
@@ -6406,7 +6362,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-480",
+      "id": "qa-477",
       "table_file": "Drug_Inventory_Inbound_Detail_Table.xlsx",
       "question": "What was the drug with the highest procurement quantity in July 2022?",
       "answers": [
@@ -6421,7 +6377,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-481",
+      "id": "qa-478",
       "table_file": "Global_Per_Capita_GNI_Data.xls",
       "question": "How many columns have an average greater than 1000 in the numeric columns?",
       "answers": [
@@ -6436,7 +6392,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-482",
+      "id": "qa-479",
       "table_file": "Beijing_-_Land_Transfer_Details.xlsx",
       "question": "How many plots have a total starting bid exceeding 2 billion yuan?",
       "answers": [
@@ -6451,7 +6407,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-483",
+      "id": "qa-480",
       "table_file": "Student_Score_Table_3.xlsx",
       "question": "How many students in this student score sheet have a score of 0 in the multiple-choice score section of Part 5?",
       "answers": [
@@ -6466,7 +6422,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-484",
+      "id": "qa-481",
       "table_file": "Electric_Power_Technology_Statistics_Table.xlsx",
       "question": "What is the average value of G08 (Signaling Devices) among various technical effects when the value of H04 (Electrical Communication Technology) is greater than 10,000?",
       "answers": [
@@ -6481,7 +6437,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-485",
+      "id": "qa-482",
       "table_file": "Survival_Statistics_of_Women's_Children.xls",
       "question": "In this table of surviving children statistics for women, which region has the highest number of women aged 15-64 with 0 surviving children?",
       "answers": [
@@ -6496,7 +6452,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-486",
+      "id": "qa-483",
       "table_file": "List_of_Materials_at_Charging_Station.xlsx",
       "question": "What items in the charging station material list have a unit price of 3,200 yuan?",
       "answers": [
@@ -6511,7 +6467,7 @@
       "if_complex_table_header": 1
     },
     {
-      "id": "qa-487",
+      "id": "qa-484",
       "table_file": "Project_Revenue_Summary_Analysis_Table_1.xlsx",
       "question": "How many times is the total revenue of Project E in the fourth quarter (October-December) compared to the first quarter (January-March)? Please divide the fourth quarter total by the first quarter total.",
       "answers": [
@@ -6526,7 +6482,7 @@
       "if_complex_table_header": 0
     },
     {
-      "id": "qa-488",
+      "id": "qa-485",
       "table_file": "Home_Renovation_Owner's_Self_Budget_Table.xls",
       "question": "What is the name of the project with the highest unit price in the Home Renovation Owner Self-budget Table _ Budget.csv?",
       "answers": [
@@ -6541,7 +6497,7 @@
       "if_complex_table_header": "1"
     },
     {
-      "id": "qa-489",
+      "id": "qa-486",
       "table_file": "Chain_Supermarket_Product_Category_Detail_Table.xlsx",
       "question": "What is the unit of the product with code 10005?",
       "answers": [
@@ -6556,7 +6512,7 @@
       "if_complex_table_header": 1
     },
     {
-      "id": "qa-490",
+      "id": "qa-487",
       "table_file": "2017_College_Entrance_Examination_Admission_Score_Line.xlsx",
       "question": "What were the planned numbers for Peking University in the first batch of undergraduate admissions for liberal arts and science in the first round of the 2017 Guangdong Province early admission?",
       "answers": [
@@ -6571,7 +6527,7 @@
       "if_complex_table_header": 1
     },
     {
-      "id": "qa-491",
+      "id": "qa-488",
       "table_file": "Deflection_Value_Record_Table.xls",
       "question": "Which deflection value is greater, the one at position K0+850 on the left side of the Minzhu Road project or the one at position K0+900?",
       "answers": [

@@ -1,0 +1,97 @@
+serial_number,code,merchandise_name,unit,metric_type,metric_value
+1,10001,Golden Dragon Edible Oil,Bottle,Last Month's Inventory,50
+2,10002,Master Kong Instant Noodles,Box,Last Month's Inventory,51
+3,10003,Gold Classic Pure Milk,Box,Last Month's Inventory,52
+4,10004,TereNiu Pure Milk,Carton Carton,Last Month's Inventory,53
+5,10005,Shuhua Pure Milk,Box,Last Month's Inventory,54
+6,10006,Kiwi fruit,KG,Last Month's Inventory,55
+7,10007,Luochuan Apple,KG,Last Month's Inventory,56
+8,10008,Strawberry,KG,Last Month's Inventory,57
+9,10009,Pineapple,KG,Last Month's Inventory,58
+10,10010,Papaya,KG,Last Month's Inventory,59
+11,10011,Walnut,KG,Last Month's Inventory,60
+12,10012,Red dates,KG,Last Month's Inventory,61
+13,10013,Purple Sweet Potato,KG,Last Month's Inventory,62
+14,10014,Navel Orange,KG,Last Month's Inventory,63
+15,10015,Mandarin orange,KG,Last Month's Inventory,64
+16,10016,Mango,KG,Last Month's Inventory,65
+1,10001,Golden Dragon Edible Oil,Bottle,shelf counter stock balance,15
+2,10002,Master Kong Instant Noodles,Box,shelf counter stock balance,16
+3,10003,Gold Classic Pure Milk,Box,shelf counter stock balance,17
+4,10004,TereNiu Pure Milk,Carton Carton,shelf counter stock balance,18
+5,10005,Shuhua Pure Milk,Box,shelf counter stock balance,19
+6,10006,Kiwi fruit,KG,shelf counter stock balance,20
+7,10007,Luochuan Apple,KG,shelf counter stock balance,21
+8,10008,Strawberry,KG,shelf counter stock balance,22
+9,10009,Pineapple,KG,shelf counter stock balance,23
+10,10010,Papaya,KG,shelf counter stock balance,24
+11,10011,Walnut,KG,shelf counter stock balance,25
+12,10012,Red dates,KG,shelf counter stock balance,26
+13,10013,Purple Sweet Potato,KG,shelf counter stock balance,27
+14,10014,Navel Orange,KG,shelf counter stock balance,28
+15,10015,Mandarin orange,KG,shelf counter stock balance,29
+16,10016,Mango,KG,shelf counter stock balance,30
+1,10001,Golden Dragon Edible Oil,Bottle,Gift inventory,17
+2,10002,Master Kong Instant Noodles,Box,Gift inventory,18
+3,10003,Gold Classic Pure Milk,Box,Gift inventory,19
+4,10004,TereNiu Pure Milk,Carton Carton,Gift inventory,20
+5,10005,Shuhua Pure Milk,Box,Gift inventory,21
+6,10006,Kiwi fruit,KG,Gift inventory,22
+7,10007,Luochuan Apple,KG,Gift inventory,23
+8,10008,Strawberry,KG,Gift inventory,24
+9,10009,Pineapple,KG,Gift inventory,25
+10,10010,Papaya,KG,Gift inventory,26
+11,10011,Walnut,KG,Gift inventory,27
+12,10012,Red dates,KG,Gift inventory,28
+13,10013,Purple Sweet Potato,KG,Gift inventory,29
+14,10014,Navel Orange,KG,Gift inventory,30
+15,10015,Mandarin orange,KG,Gift inventory,31
+16,10016,Mango,KG,Gift inventory,32
+1,10001,Golden Dragon Edible Oil,Bottle,Order Quantity,100
+2,10002,Master Kong Instant Noodles,Box,Order Quantity,101
+3,10003,Gold Classic Pure Milk,Box,Order Quantity,102
+4,10004,TereNiu Pure Milk,Carton Carton,Order Quantity,103
+5,10005,Shuhua Pure Milk,Box,Order Quantity,104
+6,10006,Kiwi fruit,KG,Order Quantity,105
+7,10007,Luochuan Apple,KG,Order Quantity,106
+8,10008,Strawberry,KG,Order Quantity,107
+9,10009,Pineapple,KG,Order Quantity,108
+10,10010,Papaya,KG,Order Quantity,109
+11,10011,Walnut,KG,Order Quantity,110
+12,10012,Red dates,KG,Order Quantity,111
+13,10013,Purple Sweet Potato,KG,Order Quantity,112
+14,10014,Navel Orange,KG,Order Quantity,113
+15,10015,Mandarin orange,KG,Order Quantity,114
+16,10016,Mango,KG,Order Quantity,115
+1,10001,Golden Dragon Edible Oil,Bottle,Transfer Quantity,10
+2,10002,Master Kong Instant Noodles,Box,Transfer Quantity,11
+3,10003,Gold Classic Pure Milk,Box,Transfer Quantity,12
+4,10004,TereNiu Pure Milk,Carton Carton,Transfer Quantity,13
+5,10005,Shuhua Pure Milk,Box,Transfer Quantity,14
+6,10006,Kiwi fruit,KG,Transfer Quantity,15
+7,10007,Luochuan Apple,KG,Transfer Quantity,16
+8,10008,Strawberry,KG,Transfer Quantity,17
+9,10009,Pineapple,KG,Transfer Quantity,18
+10,10010,Papaya,KG,Transfer Quantity,19
+11,10011,Walnut,KG,Transfer Quantity,20
+12,10012,Red dates,KG,Transfer Quantity,21
+13,10013,Purple Sweet Potato,KG,Transfer Quantity,22
+14,10014,Navel Orange,KG,Transfer Quantity,23
+15,10015,Mandarin orange,KG,Transfer Quantity,24
+16,10016,Mango,KG,Transfer Quantity,25
+1,10001,Golden Dragon Edible Oil,Bottle,Return Quantity,0
+2,10002,Master Kong Instant Noodles,Box,Return Quantity,0
+3,10003,Gold Classic Pure Milk,Box,Return Quantity,0
+4,10004,TereNiu Pure Milk,Carton Carton,Return Quantity,0
+5,10005,Shuhua Pure Milk,Box,Return Quantity,0
+6,10006,Kiwi fruit,KG,Return Quantity,0
+7,10007,Luochuan Apple,KG,Return Quantity,0
+8,10008,Strawberry,KG,Return Quantity,0
+9,10009,Pineapple,KG,Return Quantity,0
+10,10010,Papaya,KG,Return Quantity,0
+11,10011,Walnut,KG,Return Quantity,0
+12,10012,Red dates,KG,Return Quantity,0
+13,10013,Purple Sweet Potato,KG,Return Quantity,0
+14,10014,Navel Orange,KG,Return Quantity,0
+15,10015,Mandarin orange,KG,Return Quantity,0
+16,10016,Mango,KG,Return Quantity,0

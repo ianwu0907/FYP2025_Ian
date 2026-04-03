@@ -1,0 +1,17 @@
+transition_type,sector,number
+no transition,all_sectors,488326
+no transition,service,375276
+no transition,manufacturing,24217
+no transition,other_sector,88833
+increase,all_sectors,84347
+increase,service,63271
+increase,manufacturing,5589
+increase,other_sector,15487
+decrease,all_sectors,72556
+decrease,service,52756
+decrease,manufacturing,6042
+decrease,other_sector,13758
+attrition,all_sectors,383168
+attrition,service,297741
+attrition,manufacturing,15390
+attrition,other_sector,70037

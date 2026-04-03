@@ -1,0 +1,97 @@
+parent_type,eligibility_category,period,percentage
+mothers,"with pre-birth-year, birth-year, or post-birth-year roe; and received ei in the birth year",period_1,33.3
+mothers,"with pre-birth-year, birth-year, or post-birth-year roe; and received ei in the birth year",period_2,34.4
+mothers,"with pre-birth-year, birth-year, or post-birth-year roe; and received ei in the birth year",period_3,38.9
+mothers,"with pre-birth-year, birth-year, or post-birth-year roe; and received ei in the birth year",period_4,38.7
+mothers,"with pre-birth-year, birth-year, or post-birth-year roe; and received ei in the birth year",period_5,40.4
+mothers,"with pre-birth-year, birth-year, or post-birth-year roe; and received ei in the birth year",period_6,39.8
+mothers,"with pre-birth-year, birth-year, or post-birth-year roe; and received ei in the birth year",period_7,39.8
+mothers,"with pre-birth-year, birth-year, or post-birth-year roe; and received ei in the birth year",period_8,40.6
+mothers,"with pre-birth-year, birth-year, or post-birth-year roe; and received ei after the child's birth year",period_1,2.1
+mothers,"with pre-birth-year, birth-year, or post-birth-year roe; and received ei after the child's birth year",period_2,2.3
+mothers,"with pre-birth-year, birth-year, or post-birth-year roe; and received ei after the child's birth year",period_3,2.6
+mothers,"with pre-birth-year, birth-year, or post-birth-year roe; and received ei after the child's birth year",period_4,2.8
+mothers,"with pre-birth-year, birth-year, or post-birth-year roe; and received ei after the child's birth year",period_5,2.9
+mothers,"with pre-birth-year, birth-year, or post-birth-year roe; and received ei after the child's birth year",period_6,3.0
+mothers,"with pre-birth-year, birth-year, or post-birth-year roe; and received ei after the child's birth year",period_7,2.8
+mothers,"with pre-birth-year, birth-year, or post-birth-year roe; and received ei after the child's birth year",period_8,2.8
+mothers,"no roe for parental leave, received ei, temporary leave",period_1,5.1
+mothers,"no roe for parental leave, received ei, temporary leave",period_2,5.6
+mothers,"no roe for parental leave, received ei, temporary leave",period_3,4.3
+mothers,"no roe for parental leave, received ei, temporary leave",period_4,5.3
+mothers,"no roe for parental leave, received ei, temporary leave",period_5,5.6
+mothers,"no roe for parental leave, received ei, temporary leave",period_6,6.6
+mothers,"no roe for parental leave, received ei, temporary leave",period_7,6.4
+mothers,"no roe for parental leave, received ei, temporary leave",period_8,6.5
+mothers,"no roe for parental leave, received ei, permanently quit",period_1,1.1
+mothers,"no roe for parental leave, received ei, permanently quit",period_2,1.3
+mothers,"no roe for parental leave, received ei, permanently quit",period_3,1.0
+mothers,"no roe for parental leave, received ei, permanently quit",period_4,1.0
+mothers,"no roe for parental leave, received ei, permanently quit",period_5,1.0
+mothers,"no roe for parental leave, received ei, permanently quit",period_6,1.2
+mothers,"no roe for parental leave, received ei, permanently quit",period_7,0.9
+mothers,"no roe for parental leave, received ei, permanently quit",period_8,0.9
+mothers,"no roe for parental leave, received ei, other permanent leave",period_1,2.3
+mothers,"no roe for parental leave, received ei, other permanent leave",period_2,2.4
+mothers,"no roe for parental leave, received ei, other permanent leave",period_3,2.3
+mothers,"no roe for parental leave, received ei, other permanent leave",period_4,2.4
+mothers,"no roe for parental leave, received ei, other permanent leave",period_5,2.4
+mothers,"no roe for parental leave, received ei, other permanent leave",period_6,2.5
+mothers,"no roe for parental leave, received ei, other permanent leave",period_7,2.4
+mothers,"no roe for parental leave, received ei, other permanent leave",period_8,2.4
+mothers,"no roe at all, received ei",period_1,8.4
+mothers,"no roe at all, received ei",period_2,7.9
+mothers,"no roe at all, received ei",period_3,10.1
+mothers,"no roe at all, received ei",period_4,9.9
+mothers,"no roe at all, received ei",period_5,11.1
+mothers,"no roe at all, received ei",period_6,11.1
+mothers,"no roe at all, received ei",period_7,11.4
+mothers,"no roe at all, received ei",period_8,10.5
+fathers,"with pre-birth-year, birth-year, or post-birth-year roe; and received ei in the birth year",period_1,0.9
+fathers,"with pre-birth-year, birth-year, or post-birth-year roe; and received ei in the birth year",period_2,1.4
+fathers,"with pre-birth-year, birth-year, or post-birth-year roe; and received ei in the birth year",period_3,4.7
+fathers,"with pre-birth-year, birth-year, or post-birth-year roe; and received ei in the birth year",period_4,5.3
+fathers,"with pre-birth-year, birth-year, or post-birth-year roe; and received ei in the birth year",period_5,5.1
+fathers,"with pre-birth-year, birth-year, or post-birth-year roe; and received ei in the birth year",period_6,4.1
+fathers,"with pre-birth-year, birth-year, or post-birth-year roe; and received ei in the birth year",period_7,3.0
+fathers,"with pre-birth-year, birth-year, or post-birth-year roe; and received ei in the birth year",period_8,2.6
+fathers,"with pre-birth-year, birth-year, or post-birth-year roe; and received ei after the child's birth year",period_1,0.4
+fathers,"with pre-birth-year, birth-year, or post-birth-year roe; and received ei after the child's birth year",period_2,0.8
+fathers,"with pre-birth-year, birth-year, or post-birth-year roe; and received ei after the child's birth year",period_3,2.2
+fathers,"with pre-birth-year, birth-year, or post-birth-year roe; and received ei after the child's birth year",period_4,2.7
+fathers,"with pre-birth-year, birth-year, or post-birth-year roe; and received ei after the child's birth year",period_5,2.0
+fathers,"with pre-birth-year, birth-year, or post-birth-year roe; and received ei after the child's birth year",period_6,1.3
+fathers,"with pre-birth-year, birth-year, or post-birth-year roe; and received ei after the child's birth year",period_7,0.9
+fathers,"with pre-birth-year, birth-year, or post-birth-year roe; and received ei after the child's birth year",period_8,0.8
+fathers,"no roe for parental leave, received ei, temporary leave",period_1,9.1
+fathers,"no roe for parental leave, received ei, temporary leave",period_2,7.9
+fathers,"no roe for parental leave, received ei, temporary leave",period_3,7.7
+fathers,"no roe for parental leave, received ei, temporary leave",period_4,7.6
+fathers,"no roe for parental leave, received ei, temporary leave",period_5,13.1
+fathers,"no roe for parental leave, received ei, temporary leave",period_6,16.1
+fathers,"no roe for parental leave, received ei, temporary leave",period_7,18.2
+fathers,"no roe for parental leave, received ei, temporary leave",period_8,18.4
+fathers,"no roe for parental leave, received ei, permanently quit",period_1,1.1
+fathers,"no roe for parental leave, received ei, permanently quit",period_2,1.1
+fathers,"no roe for parental leave, received ei, permanently quit",period_3,1.1
+fathers,"no roe for parental leave, received ei, permanently quit",period_4,1.1
+fathers,"no roe for parental leave, received ei, permanently quit",period_5,1.0
+fathers,"no roe for parental leave, received ei, permanently quit",period_6,1.1
+fathers,"no roe for parental leave, received ei, permanently quit",period_7,1.1
+fathers,"no roe for parental leave, received ei, permanently quit",period_8,0.9
+fathers,"no roe for parental leave, received ei, other permanent leave",period_1,2.9
+fathers,"no roe for parental leave, received ei, other permanent leave",period_2,2.6
+fathers,"no roe for parental leave, received ei, other permanent leave",period_3,2.9
+fathers,"no roe for parental leave, received ei, other permanent leave",period_4,2.4
+fathers,"no roe for parental leave, received ei, other permanent leave",period_5,2.1
+fathers,"no roe for parental leave, received ei, other permanent leave",period_6,2.3
+fathers,"no roe for parental leave, received ei, other permanent leave",period_7,2.6
+fathers,"no roe for parental leave, received ei, other permanent leave",period_8,2.3
+fathers,"no roe at all, received ei",period_1,3.6
+fathers,"no roe at all, received ei",period_2,2.8
+fathers,"no roe at all, received ei",period_3,3.4
+fathers,"no roe at all, received ei",period_4,2.9
+fathers,"no roe at all, received ei",period_5,3.3
+fathers,"no roe at all, received ei",period_6,3.0
+fathers,"no roe at all, received ei",period_7,4.5
+fathers,"no roe at all, received ei",period_8,3.1

@@ -1,0 +1,27 @@
+region,population_type,count,percentage
+canada,total_population,50740,88.2538431217974
+newfoundland and labrador,total_population,1055,91.4691943127962
+prince edward island,total_population,330,92.42424242424242
+nova scotia,total_population,2090,89.71291866028707
+new brunswick,total_population,1555,90.67524115755627
+ontario,total_population,26095,86.47250431117072
+manitoba,total_population,2390,85.35564853556485
+saskatchewan,total_population,1940,89.69072164948454
+alberta,total_population,6185,90.13742926434924
+british columbia,total_population,8970,91.36008918617614
+yukon,total_population,60,83.33333333333334
+northwest territories,total_population,60,83.33333333333334
+nunavut,total_population,15,100.0
+canada,population_with_characteristic,44780,88.2538431217974
+newfoundland and labrador,population_with_characteristic,965,91.4691943127962
+prince edward island,population_with_characteristic,305,92.42424242424242
+nova scotia,population_with_characteristic,1875,89.71291866028707
+new brunswick,population_with_characteristic,1410,90.67524115755627
+ontario,population_with_characteristic,22565,86.47250431117072
+manitoba,population_with_characteristic,2040,85.35564853556485
+saskatchewan,population_with_characteristic,1740,89.69072164948454
+alberta,population_with_characteristic,5575,90.13742926434924
+british columbia,population_with_characteristic,8195,91.36008918617614
+yukon,population_with_characteristic,50,83.33333333333334
+northwest territories,population_with_characteristic,50,83.33333333333334
+nunavut,population_with_characteristic,15,100.0

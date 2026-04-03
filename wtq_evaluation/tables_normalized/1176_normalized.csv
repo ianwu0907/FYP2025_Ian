@@ -1,0 +1,113 @@
+jurisdiction,metric_type,unit,value
+,operating_expenditure,thousands of dollars,thousands of dollars
+newfoundland and labrador,operating_expenditure,thousands of dollars,161.0
+prince edward island,operating_expenditure,thousands of dollars,510.0
+nova scotia,operating_expenditure,thousands of dollars,4895.0
+new brunswick,operating_expenditure,thousands of dollars,791.0
+quebec,operating_expenditure,thousands of dollars,11291.0
+ontario,operating_expenditure,thousands of dollars,49195.0
+manitoba,operating_expenditure,thousands of dollars,3716.0
+saskatchewan,operating_expenditure,thousands of dollars,6712.0
+alberta,operating_expenditure,thousands of dollars,8987.0
+british columbia,operating_expenditure,thousands of dollars,15545.0
+yukon,operating_expenditure,thousands of dollars,608.0
+northwest territories,operating_expenditure,thousands of dollars,1465.0
+federal,operating_expenditure,thousands of dollars,
+,capital_transfer,thousands of dollars,
+newfoundland and labrador,capital_transfer,thousands of dollars,33374.0
+prince edward island,capital_transfer,thousands of dollars,8778.0
+nova scotia,capital_transfer,thousands of dollars,46428.0
+new brunswick,capital_transfer,thousands of dollars,34310.0
+quebec,capital_transfer,thousands of dollars,443273.0
+ontario,capital_transfer,thousands of dollars,721269.0
+manitoba,capital_transfer,thousands of dollars,187954.0
+saskatchewan,capital_transfer,thousands of dollars,119437.0
+alberta,capital_transfer,thousands of dollars,203196.0
+british columbia,capital_transfer,thousands of dollars,243914.0
+yukon,capital_transfer,thousands of dollars,10964.0
+northwest territories,capital_transfer,thousands of dollars,28018.0
+federal,capital_transfer,thousands of dollars,1532527.0
+,debt_servicing,thousands of dollars,
+newfoundland and labrador,debt_servicing,thousands of dollars,4185.0
+prince edward island,debt_servicing,thousands of dollars,1436.0
+nova scotia,debt_servicing,thousands of dollars,8200.0
+new brunswick,debt_servicing,thousands of dollars,3979.0
+quebec,debt_servicing,thousands of dollars,81476.0
+ontario,debt_servicing,thousands of dollars,117330.0
+manitoba,debt_servicing,thousands of dollars,24439.0
+saskatchewan,debt_servicing,thousands of dollars,21761.0
+alberta,debt_servicing,thousands of dollars,41208.0
+british columbia,debt_servicing,thousands of dollars,56341.0
+yukon,debt_servicing,thousands of dollars,1917.0
+northwest territories,debt_servicing,thousands of dollars,4644.0
+federal,debt_servicing,thousands of dollars,152653.0
+,federal_other_funding,thousands of dollars,
+newfoundland and labrador,federal_other_funding,thousands of dollars,
+prince edward island,federal_other_funding,thousands of dollars,
+nova scotia,federal_other_funding,thousands of dollars,
+new brunswick,federal_other_funding,thousands of dollars,
+quebec,federal_other_funding,thousands of dollars,5056.0
+ontario,federal_other_funding,thousands of dollars,2819.0
+manitoba,federal_other_funding,thousands of dollars,
+saskatchewan,federal_other_funding,thousands of dollars,
+alberta,federal_other_funding,thousands of dollars,
+british columbia,federal_other_funding,thousands of dollars,
+yukon,federal_other_funding,thousands of dollars,
+northwest territories,federal_other_funding,thousands of dollars,
+federal,federal_other_funding,thousands of dollars,47700.0
+,provincial_other_funding,thousands of dollars,
+newfoundland and labrador,provincial_other_funding,thousands of dollars,
+prince edward island,provincial_other_funding,thousands of dollars,
+nova scotia,provincial_other_funding,thousands of dollars,
+new brunswick,provincial_other_funding,thousands of dollars,
+quebec,provincial_other_funding,thousands of dollars,
+ontario,provincial_other_funding,thousands of dollars,
+manitoba,provincial_other_funding,thousands of dollars,
+saskatchewan,provincial_other_funding,thousands of dollars,
+alberta,provincial_other_funding,thousands of dollars,
+british columbia,provincial_other_funding,thousands of dollars,
+yukon,provincial_other_funding,thousands of dollars,
+northwest territories,provincial_other_funding,thousands of dollars,
+federal,provincial_other_funding,thousands of dollars,757307.0
+,percentage_of_gdp,percent,percent
+newfoundland and labrador,percentage_of_gdp,percent,1.0
+prince edward island,percentage_of_gdp,percent,1.0
+nova scotia,percentage_of_gdp,percent,3.0
+new brunswick,percentage_of_gdp,percent,-1.0
+quebec,percentage_of_gdp,percent,7.0
+ontario,percentage_of_gdp,percent,6.0
+manitoba,percentage_of_gdp,percent,2.0
+saskatchewan,percentage_of_gdp,percent,2.0
+alberta,percentage_of_gdp,percent,-1.0
+british columbia,percentage_of_gdp,percent,5.0
+yukon,percentage_of_gdp,percent,-5.0
+northwest territories,percentage_of_gdp,percent,9.0
+federal,percentage_of_gdp,percent,9.0
+,per_capita_dollars,dollars,dollars
+newfoundland and labrador,per_capita_dollars,dollars,267.0
+prince edward island,per_capita_dollars,dollars,273.0
+nova scotia,per_capita_dollars,dollars,271.0
+new brunswick,per_capita_dollars,dollars,199.0
+quebec,per_capita_dollars,dollars,251.0
+ontario,per_capita_dollars,dollars,264.0
+manitoba,per_capita_dollars,dollars,215.0
+saskatchewan,per_capita_dollars,dollars,176.0
+alberta,per_capita_dollars,dollars,150.0
+british columbia,per_capita_dollars,dollars,255.0
+yukon,per_capita_dollars,dollars,507.0
+northwest territories,per_capita_dollars,dollars,435.0
+federal,per_capita_dollars,dollars,330.0
+,growth_rate_percent,percent,
+newfoundland and labrador,growth_rate_percent,percent,71.0
+prince edward island,growth_rate_percent,percent,71.0
+nova scotia,growth_rate_percent,percent,62.0
+new brunswick,growth_rate_percent,percent,51.0
+quebec,growth_rate_percent,percent,64.0
+ontario,growth_rate_percent,percent,63.0
+manitoba,growth_rate_percent,percent,162.0
+saskatchewan,growth_rate_percent,percent,127.0
+alberta,growth_rate_percent,percent,59.0
+british columbia,growth_rate_percent,percent,66.0
+yukon,growth_rate_percent,percent,351.0
+northwest territories,growth_rate_percent,percent,767.0
+federal,growth_rate_percent,percent,68.0

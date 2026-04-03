@@ -1,0 +1,151 @@
+song_title,collaborator,year,country,chart_position,certifications,album
+"""Mama Do (Uh Oh, Uh Oh)""",,2009,UK,1,BPI: Silver,Turn It Up
+"""Boys and Girls""",,2009,UK,1,BPI: Silver,Turn It Up
+"""Cry Me Out""",,2009,UK,12,BPI: Silver,Turn It Up
+"""Gravity""",,2010,UK,20,-,Turn It Up
+"""Turn It Up""",,2010,UK,11,-,Turn It Up
+"""Broken Arrow""",,2010,UK,12,-,Turn It Up
+"""All About Tonight""",,2011,UK,1,BPI: Gold,Young Foolish Happy
+"""What Do You Take Me For?""",Pusha T,2011,UK,10,-,Young Foolish Happy
+"""Kiss the Stars""",,2012,UK,8,-,Young Foolish Happy
+"""Nasty""",,2014,UK,9,-,Pixie Lott
+"""Lay Me Down""",,2014,UK,114,-,Pixie Lott
+"""Caravan of Love""",,2014,UK,129,-,Platinum Pixie: Hits
+"""Baby""",Anton Powers,2017,UK,97,-,TBA
+"""Won't Forget You""",Stylo G,2017,UK,,-,TBA
+"""Sunflower""",,2019,UK,,-,TBA
+"""Mama Do (Uh Oh, Uh Oh)""",,2009,AUT,32,BPI: Silver,Turn It Up
+"""Boys and Girls""",,2009,AUT,,BPI: Silver,Turn It Up
+"""Cry Me Out""",,2009,AUT,,BPI: Silver,Turn It Up
+"""Gravity""",,2010,AUT,,-,Turn It Up
+"""Turn It Up""",,2010,AUT,,-,Turn It Up
+"""Broken Arrow""",,2010,AUT,,-,Turn It Up
+"""All About Tonight""",,2011,AUT,,BPI: Gold,Young Foolish Happy
+"""What Do You Take Me For?""",Pusha T,2011,AUT,,-,Young Foolish Happy
+"""Kiss the Stars""",,2012,AUT,,-,Young Foolish Happy
+"""Nasty""",,2014,AUT,,-,Pixie Lott
+"""Lay Me Down""",,2014,AUT,,-,Pixie Lott
+"""Caravan of Love""",,2014,AUT,,-,Platinum Pixie: Hits
+"""Baby""",Anton Powers,2017,AUT,,-,TBA
+"""Won't Forget You""",Stylo G,2017,AUT,,-,TBA
+"""Sunflower""",,2019,AUT,,-,TBA
+"""Mama Do (Uh Oh, Uh Oh)""",,2009,BEL (FL),22,BPI: Silver,Turn It Up
+"""Boys and Girls""",,2009,BEL (FL),,BPI: Silver,Turn It Up
+"""Cry Me Out""",,2009,BEL (FL),,BPI: Silver,Turn It Up
+"""Gravity""",,2010,BEL (FL),,-,Turn It Up
+"""Turn It Up""",,2010,BEL (FL),,-,Turn It Up
+"""Broken Arrow""",,2010,BEL (FL),,-,Turn It Up
+"""All About Tonight""",,2011,BEL (FL),,BPI: Gold,Young Foolish Happy
+"""What Do You Take Me For?""",Pusha T,2011,BEL (FL),,-,Young Foolish Happy
+"""Kiss the Stars""",,2012,BEL (FL),,-,Young Foolish Happy
+"""Nasty""",,2014,BEL (FL),,-,Pixie Lott
+"""Lay Me Down""",,2014,BEL (FL),,-,Pixie Lott
+"""Caravan of Love""",,2014,BEL (FL),,-,Platinum Pixie: Hits
+"""Baby""",Anton Powers,2017,BEL (FL),,-,TBA
+"""Won't Forget You""",Stylo G,2017,BEL (FL),,-,TBA
+"""Sunflower""",,2019,BEL (FL),,-,TBA
+"""Mama Do (Uh Oh, Uh Oh)""",,2009,DEN,8,BPI: Silver,Turn It Up
+"""Boys and Girls""",,2009,DEN,39,BPI: Silver,Turn It Up
+"""Cry Me Out""",,2009,DEN,4,BPI: Silver,Turn It Up
+"""Gravity""",,2010,DEN,,-,Turn It Up
+"""Turn It Up""",,2010,DEN,,-,Turn It Up
+"""Broken Arrow""",,2010,DEN,,-,Turn It Up
+"""All About Tonight""",,2011,DEN,,BPI: Gold,Young Foolish Happy
+"""What Do You Take Me For?""",Pusha T,2011,DEN,,-,Young Foolish Happy
+"""Kiss the Stars""",,2012,DEN,,-,Young Foolish Happy
+"""Nasty""",,2014,DEN,,-,Pixie Lott
+"""Lay Me Down""",,2014,DEN,,-,Pixie Lott
+"""Caravan of Love""",,2014,DEN,,-,Platinum Pixie: Hits
+"""Baby""",Anton Powers,2017,DEN,,-,TBA
+"""Won't Forget You""",Stylo G,2017,DEN,,-,TBA
+"""Sunflower""",,2019,DEN,,-,TBA
+"""Mama Do (Uh Oh, Uh Oh)""",,2009,FRA,10,BPI: Silver,Turn It Up
+"""Boys and Girls""",,2009,FRA,,BPI: Silver,Turn It Up
+"""Cry Me Out""",,2009,FRA,,BPI: Silver,Turn It Up
+"""Gravity""",,2010,FRA,,-,Turn It Up
+"""Turn It Up""",,2010,FRA,,-,Turn It Up
+"""Broken Arrow""",,2010,FRA,,-,Turn It Up
+"""All About Tonight""",,2011,FRA,,BPI: Gold,Young Foolish Happy
+"""What Do You Take Me For?""",Pusha T,2011,FRA,,-,Young Foolish Happy
+"""Kiss the Stars""",,2012,FRA,,-,Young Foolish Happy
+"""Nasty""",,2014,FRA,,-,Pixie Lott
+"""Lay Me Down""",,2014,FRA,,-,Pixie Lott
+"""Caravan of Love""",,2014,FRA,,-,Platinum Pixie: Hits
+"""Baby""",Anton Powers,2017,FRA,,-,TBA
+"""Won't Forget You""",Stylo G,2017,FRA,,-,TBA
+"""Sunflower""",,2019,FRA,,-,TBA
+"""Mama Do (Uh Oh, Uh Oh)""",,2009,GER,30,BPI: Silver,Turn It Up
+"""Boys and Girls""",,2009,GER,,BPI: Silver,Turn It Up
+"""Cry Me Out""",,2009,GER,,BPI: Silver,Turn It Up
+"""Gravity""",,2010,GER,,-,Turn It Up
+"""Turn It Up""",,2010,GER,,-,Turn It Up
+"""Broken Arrow""",,2010,GER,,-,Turn It Up
+"""All About Tonight""",,2011,GER,,BPI: Gold,Young Foolish Happy
+"""What Do You Take Me For?""",Pusha T,2011,GER,,-,Young Foolish Happy
+"""Kiss the Stars""",,2012,GER,,-,Young Foolish Happy
+"""Nasty""",,2014,GER,,-,Pixie Lott
+"""Lay Me Down""",,2014,GER,,-,Pixie Lott
+"""Caravan of Love""",,2014,GER,,-,Platinum Pixie: Hits
+"""Baby""",Anton Powers,2017,GER,,-,TBA
+"""Won't Forget You""",Stylo G,2017,GER,,-,TBA
+"""Sunflower""",,2019,GER,,-,TBA
+"""Mama Do (Uh Oh, Uh Oh)""",,2009,IRE,13,BPI: Silver,Turn It Up
+"""Boys and Girls""",,2009,IRE,4,BPI: Silver,Turn It Up
+"""Cry Me Out""",,2009,IRE,31,BPI: Silver,Turn It Up
+"""Gravity""",,2010,IRE,42,-,Turn It Up
+"""Turn It Up""",,2010,IRE,20,-,Turn It Up
+"""Broken Arrow""",,2010,IRE,30,-,Turn It Up
+"""All About Tonight""",,2011,IRE,9,BPI: Gold,Young Foolish Happy
+"""What Do You Take Me For?""",Pusha T,2011,IRE,30,-,Young Foolish Happy
+"""Kiss the Stars""",,2012,IRE,33,-,Young Foolish Happy
+"""Nasty""",,2014,IRE,43,-,Pixie Lott
+"""Lay Me Down""",,2014,IRE,,-,Pixie Lott
+"""Caravan of Love""",,2014,IRE,,-,Platinum Pixie: Hits
+"""Baby""",Anton Powers,2017,IRE,,-,TBA
+"""Won't Forget You""",Stylo G,2017,IRE,,-,TBA
+"""Sunflower""",,2019,IRE,,-,TBA
+"""Mama Do (Uh Oh, Uh Oh)""",,2009,NL,15,BPI: Silver,Turn It Up
+"""Boys and Girls""",,2009,NL,,BPI: Silver,Turn It Up
+"""Cry Me Out""",,2009,NL,,BPI: Silver,Turn It Up
+"""Gravity""",,2010,NL,,-,Turn It Up
+"""Turn It Up""",,2010,NL,,-,Turn It Up
+"""Broken Arrow""",,2010,NL,,-,Turn It Up
+"""All About Tonight""",,2011,NL,,BPI: Gold,Young Foolish Happy
+"""What Do You Take Me For?""",Pusha T,2011,NL,,-,Young Foolish Happy
+"""Kiss the Stars""",,2012,NL,,-,Young Foolish Happy
+"""Nasty""",,2014,NL,,-,Pixie Lott
+"""Lay Me Down""",,2014,NL,,-,Pixie Lott
+"""Caravan of Love""",,2014,NL,,-,Platinum Pixie: Hits
+"""Baby""",Anton Powers,2017,NL,,-,TBA
+"""Won't Forget You""",Stylo G,2017,NL,,-,TBA
+"""Sunflower""",,2019,NL,,-,TBA
+"""Mama Do (Uh Oh, Uh Oh)""",,2009,NZ,19,BPI: Silver,Turn It Up
+"""Boys and Girls""",,2009,NZ,,BPI: Silver,Turn It Up
+"""Cry Me Out""",,2009,NZ,,BPI: Silver,Turn It Up
+"""Gravity""",,2010,NZ,,-,Turn It Up
+"""Turn It Up""",,2010,NZ,,-,Turn It Up
+"""Broken Arrow""",,2010,NZ,,-,Turn It Up
+"""All About Tonight""",,2011,NZ,,BPI: Gold,Young Foolish Happy
+"""What Do You Take Me For?""",Pusha T,2011,NZ,,-,Young Foolish Happy
+"""Kiss the Stars""",,2012,NZ,,-,Young Foolish Happy
+"""Nasty""",,2014,NZ,,-,Pixie Lott
+"""Lay Me Down""",,2014,NZ,,-,Pixie Lott
+"""Caravan of Love""",,2014,NZ,,-,Platinum Pixie: Hits
+"""Baby""",Anton Powers,2017,NZ,,-,TBA
+"""Won't Forget You""",Stylo G,2017,NZ,,-,TBA
+"""Sunflower""",,2019,NZ,,-,TBA
+"""Mama Do (Uh Oh, Uh Oh)""",,2009,SWI,34,BPI: Silver,Turn It Up
+"""Boys and Girls""",,2009,SWI,,BPI: Silver,Turn It Up
+"""Cry Me Out""",,2009,SWI,66,BPI: Silver,Turn It Up
+"""Gravity""",,2010,SWI,,-,Turn It Up
+"""Turn It Up""",,2010,SWI,,-,Turn It Up
+"""Broken Arrow""",,2010,SWI,,-,Turn It Up
+"""All About Tonight""",,2011,SWI,,BPI: Gold,Young Foolish Happy
+"""What Do You Take Me For?""",Pusha T,2011,SWI,,-,Young Foolish Happy
+"""Kiss the Stars""",,2012,SWI,,-,Young Foolish Happy
+"""Nasty""",,2014,SWI,,-,Pixie Lott
+"""Lay Me Down""",,2014,SWI,,-,Pixie Lott
+"""Caravan of Love""",,2014,SWI,,-,Platinum Pixie: Hits
+"""Baby""",Anton Powers,2017,SWI,,-,TBA
+"""Won't Forget You""",Stylo G,2017,SWI,,-,TBA
+"""Sunflower""",,2019,SWI,,-,TBA

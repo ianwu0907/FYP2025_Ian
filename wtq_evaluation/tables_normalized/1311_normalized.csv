@@ -1,0 +1,22 @@
+offence_category,cohort,percent
+violent offences,cohort_1,17.0
+property offences,cohort_1,31.0
+other criminal code offences,cohort_1,17.0
+administration of justice offences,cohort_1,19.0
+drug offences,cohort_1,11.0
+criminal code traffic violations,cohort_1,4.0
+other federal statute violations,cohort_1,1.0
+violent offences,cohort_2,17.0
+property offences,cohort_2,35.0
+other criminal code offences,cohort_2,15.0
+administration of justice offences,cohort_2,17.0
+drug offences,cohort_2,11.0
+criminal code traffic violations,cohort_2,5.0
+other federal statute violations,cohort_2,1.0
+violent offences,cohort_3,15.0
+property offences,cohort_3,54.0
+other criminal code offences,cohort_3,14.0
+administration of justice offences,cohort_3,4.0
+drug offences,cohort_3,6.0
+criminal code traffic violations,cohort_3,4.0
+other federal statute violations,cohort_3,2.0

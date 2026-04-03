@@ -1,0 +1,474 @@
+style,series,version,metric,value
+Underwear,Spring and Summer Home,v1,Order SKU,7.0
+Underwear,Spring and Summer Home,v1,Order Quantity,542.0
+Underwear,Spring and Summer Home,v1,Picked SKU,7.0
+Underwear,Spring and Summer Home,v1,Picked-up Quantity,324.0
+Underwear,Spring and Summer Home,v1,Unclaimed Quantity,218.0
+Underwear,Spring and Summer Home,v1,Warehouse Quantity,167.0
+Underwear,Spring and Summer Home,v1,Store Quantity,352.0
+Underwear,Spring and Summer Home,v1,Shipping Quantity,432.0
+Underwear,Spring and Summer Home,v1,Sales Quantity,72.0
+Underwear,Spring and Summer Home,v2,Order SKU,2.0
+Underwear,Spring and Summer Home,v2,Order Quantity,52.0
+Underwear,Spring and Summer Home,v2,Picked SKU,2.0
+Underwear,Spring and Summer Home,v2,Picked-up Quantity,52.0
+Underwear,Spring and Summer Home,v2,Warehouse Quantity,9.0
+Underwear,Spring and Summer Home,v2,Store Quantity,36.0
+Underwear,Spring and Summer Home,v2,Shipping Quantity,51.0
+Underwear,Spring and Summer Home,v2,Sales Quantity,7.0
+Underwear,Combed Cotton Lycra,v1,Order SKU,4.0
+Underwear,Combed Cotton Lycra,v1,Order Quantity,192.0
+Underwear,Combed Cotton Lycra,v1,Picked SKU,2.0
+Underwear,Combed Cotton Lycra,v1,Picked-up Quantity,96.0
+Underwear,Combed Cotton Lycra,v1,Unpicked SKU,2.0
+Underwear,Combed Cotton Lycra,v1,Unclaimed Quantity,96.0
+Underwear,Combed Cotton Lycra,v1,Warehouse Quantity,48.0
+Underwear,Combed Cotton Lycra,v1,Store Quantity,46.0
+Underwear,Combed Cotton Lycra,v1,Shipping Quantity,47.0
+Underwear,Combed Cotton Lycra,v1,Sales Quantity,1.0
+Underwear,Combed Cotton Lycra,v2,Order SKU,4.0
+Underwear,Combed Cotton Lycra,v2,Order Quantity,192.0
+Underwear,Combed Cotton Lycra,v2,Picked SKU,2.0
+Underwear,Combed Cotton Lycra,v2,Picked-up Quantity,96.0
+Underwear,Combed Cotton Lycra,v2,Unpicked SKU,2.0
+Underwear,Combed Cotton Lycra,v2,Unclaimed Quantity,96.0
+Underwear,Combed Cotton Lycra,v2,Warehouse Quantity,48.0
+Underwear,Combed Cotton Lycra,v2,Store Quantity,46.0
+Underwear,Combed Cotton Lycra,v2,Shipping Quantity,47.0
+Underwear,Combed Cotton Lycra,v2,Sales Quantity,1.0
+Underwear,High-count mercerized cotton brocade,v1,Order SKU,6.0
+Underwear,High-count mercerized cotton brocade,v1,Order Quantity,163.0
+Underwear,High-count mercerized cotton brocade,v1,Picked SKU,6.0
+Underwear,High-count mercerized cotton brocade,v1,Picked-up Quantity,74.0
+Underwear,High-count mercerized cotton brocade,v1,Unclaimed Quantity,89.0
+Underwear,High-count mercerized cotton brocade,v1,Warehouse Quantity,173.0
+Underwear,High-count mercerized cotton brocade,v1,Store Quantity,129.0
+Underwear,High-count mercerized cotton brocade,v1,Shipping Quantity,137.0
+Underwear,High-count mercerized cotton brocade,v1,Sales Quantity,8.0
+Underwear,Cotton Modal,v1,Order SKU,6.0
+Underwear,Cotton Modal,v1,Order Quantity,2230.0
+Underwear,Cotton Modal,v1,Picked SKU,6.0
+Underwear,Cotton Modal,v1,Picked-up Quantity,2122.0
+Underwear,Cotton Modal,v1,Unclaimed Quantity,108.0
+Underwear,Cotton Modal,v1,Warehouse Quantity,242.0
+Underwear,Cotton Modal,v1,Store Quantity,1595.0
+Underwear,Cotton Modal,v1,Shipping Quantity,1884.0
+Underwear,Cotton Modal,v1,Sales Quantity,264.0
+Underwear,Cotton Modal,v2,Order SKU,6.0
+Underwear,Cotton Modal,v2,Order Quantity,2230.0
+Underwear,Cotton Modal,v2,Picked SKU,6.0
+Underwear,Cotton Modal,v2,Picked-up Quantity,2122.0
+Underwear,Cotton Modal,v2,Unclaimed Quantity,108.0
+Underwear,Cotton Modal,v2,Warehouse Quantity,242.0
+Underwear,Cotton Modal,v2,Store Quantity,1595.0
+Underwear,Cotton Modal,v2,Shipping Quantity,1884.0
+Underwear,Cotton Modal,v2,Sales Quantity,264.0
+Underwear,Special Offer Items,v1,Order SKU,4.0
+Underwear,Special Offer Items,v1,Order Quantity,5300.0
+Underwear,Special Offer Items,v1,Picked SKU,4.0
+Underwear,Special Offer Items,v1,Picked-up Quantity,4462.0
+Underwear,Special Offer Items,v1,Unclaimed Quantity,838.0
+Underwear,Special Offer Items,v1,Warehouse Quantity,1087.0
+Underwear,Special Offer Items,v1,Store Quantity,2391.0
+Underwear,Special Offer Items,v1,Shipping Quantity,3525.0
+Underwear,Special Offer Items,v1,Sales Quantity,954.0
+Underwear,Special Offer Items,v2,Order SKU,4.0
+Underwear,Special Offer Items,v2,Order Quantity,5300.0
+Underwear,Special Offer Items,v2,Picked SKU,4.0
+Underwear,Special Offer Items,v2,Picked-up Quantity,4462.0
+Underwear,Special Offer Items,v2,Unclaimed Quantity,838.0
+Underwear,Special Offer Items,v2,Warehouse Quantity,1087.0
+Underwear,Special Offer Items,v2,Store Quantity,2391.0
+Underwear,Special Offer Items,v2,Shipping Quantity,3525.0
+Underwear,Special Offer Items,v2,Sales Quantity,954.0
+Underwear,Underwear,v1,Order SKU,14.0
+Underwear,Underwear,v1,Order Quantity,2488.0
+Underwear,Underwear,v1,Picked SKU,9.0
+Underwear,Underwear,v1,Picked-up Quantity,1298.0
+Underwear,Underwear,v1,Unpicked SKU,5.0
+Underwear,Underwear,v1,Unclaimed Quantity,1190.0
+Underwear,Underwear,v1,Warehouse Quantity,819.0
+Underwear,Underwear,v1,Store Quantity,1540.0
+Underwear,Underwear,v1,Shipping Quantity,920.0
+Underwear,Underwear,v1,Sales Quantity,104.0
+Underwear,Underwear,v2,Order SKU,6.0
+Underwear,Underwear,v2,Order Quantity,1770.0
+Underwear,Underwear,v2,Picked SKU,3.0
+Underwear,Underwear,v2,Picked-up Quantity,810.0
+Underwear,Underwear,v2,Unpicked SKU,3.0
+Underwear,Underwear,v2,Unclaimed Quantity,960.0
+Underwear,Underwear,v2,Warehouse Quantity,33.0
+Underwear,Underwear,v2,Store Quantity,727.0
+Underwear,Underwear,v2,Shipping Quantity,777.0
+Underwear,Underwear,v2,Sales Quantity,50.0
+Underwear,Underwear Accessories,v1,Order SKU,7.0
+Underwear,Underwear Accessories,v1,Order Quantity,390.0
+Underwear,Underwear Accessories,v1,Picked SKU,7.0
+Underwear,Underwear Accessories,v1,Picked-up Quantity,168.0
+Underwear,Underwear Accessories,v1,Unclaimed Quantity,222.0
+Underwear,Underwear Accessories,v1,Warehouse Quantity,232.0
+Underwear,Underwear Accessories,v1,Store Quantity,63.0
+Underwear,Underwear Accessories,v1,Shipping Quantity,2.0
+Underwear,Underwear Accessories,v1,Sales Quantity,4.0
+Indoor Sports,Sports Bra,v1,Order SKU,6.0
+Indoor Sports,Sports Bra,v1,Order Quantity,600.0
+Indoor Sports,Sports Bra,v1,Picked SKU,3.0
+Indoor Sports,Sports Bra,v1,Picked-up Quantity,196.0
+Indoor Sports,Sports Bra,v1,Unpicked SKU,3.0
+Indoor Sports,Sports Bra,v1,Unclaimed Quantity,404.0
+Indoor Sports,Sports Bra,v1,Warehouse Quantity,94.0
+Indoor Sports,Sports Bra,v1,Store Quantity,160.0
+Indoor Sports,Sports Bra,v1,Shipping Quantity,185.0
+Indoor Sports,Sports Bra,v1,Sales Quantity,107.0
+Indoor Sports,Running,v1,Order SKU,14.0
+Indoor Sports,Running,v1,Order Quantity,390.0
+Indoor Sports,Running,v1,Picked SKU,6.0
+Indoor Sports,Running,v1,Picked-up Quantity,164.0
+Indoor Sports,Running,v1,Unpicked SKU,8.0
+Indoor Sports,Running,v1,Unclaimed Quantity,226.0
+Indoor Sports,Running,v1,Warehouse Quantity,18.0
+Indoor Sports,Running,v1,Store Quantity,113.0
+Indoor Sports,Running,v1,Shipping Quantity,137.0
+Indoor Sports,Running,v1,Sales Quantity,34.0
+Indoor Sports,Running,v2,Order SKU,14.0
+Indoor Sports,Running,v2,Order Quantity,390.0
+Indoor Sports,Running,v2,Picked SKU,6.0
+Indoor Sports,Running,v2,Picked-up Quantity,164.0
+Indoor Sports,Running,v2,Unpicked SKU,8.0
+Indoor Sports,Running,v2,Unclaimed Quantity,226.0
+Indoor Sports,Running,v2,Warehouse Quantity,18.0
+Indoor Sports,Running,v2,Store Quantity,113.0
+Indoor Sports,Running,v2,Shipping Quantity,137.0
+Indoor Sports,Running,v2,Sales Quantity,34.0
+Indoor Sports,Comfortable,v1,Order SKU,15.0
+Indoor Sports,Comfortable,v1,Order Quantity,470.0
+Indoor Sports,Comfortable,v1,Picked SKU,14.0
+Indoor Sports,Comfortable,v1,Picked-up Quantity,439.0
+Indoor Sports,Comfortable,v1,Unpicked SKU,1.0
+Indoor Sports,Comfortable,v1,Unclaimed Quantity,31.0
+Indoor Sports,Comfortable,v1,Warehouse Quantity,130.0
+Indoor Sports,Comfortable,v1,Store Quantity,263.0
+Indoor Sports,Comfortable,v1,Shipping Quantity,348.0
+Indoor Sports,Comfortable,v1,Sales Quantity,75.0
+Indoor Sports,Comfortable,v2,Order SKU,15.0
+Indoor Sports,Comfortable,v2,Order Quantity,470.0
+Indoor Sports,Comfortable,v2,Picked SKU,14.0
+Indoor Sports,Comfortable,v2,Picked-up Quantity,439.0
+Indoor Sports,Comfortable,v2,Unpicked SKU,1.0
+Indoor Sports,Comfortable,v2,Unclaimed Quantity,31.0
+Indoor Sports,Comfortable,v2,Warehouse Quantity,130.0
+Indoor Sports,Comfortable,v2,Store Quantity,263.0
+Indoor Sports,Comfortable,v2,Shipping Quantity,348.0
+Indoor Sports,Comfortable,v2,Sales Quantity,75.0
+Indoor Sports,Bra,v1,Order SKU,3.0
+Indoor Sports,Bra,v1,Order Quantity,360.0
+Indoor Sports,Bra,v1,Unpicked SKU,3.0
+Indoor Sports,Bra,v1,Unclaimed Quantity,360.0
+Indoor Sports,Bra,v1,Warehouse Quantity,10.0
+Indoor Sports,Bra,v1,Store Quantity,110.0
+Indoor Sports,Bra,v1,Shipping Quantity,13.0
+Indoor Sports,Bra,v1,Sales Quantity,44.0
+Indoor Sports,Casual,v1,Order SKU,26.0
+Indoor Sports,Casual,v1,Order Quantity,808.0
+Indoor Sports,Casual,v1,Picked SKU,21.0
+Indoor Sports,Casual,v1,Picked-up Quantity,616.0
+Indoor Sports,Casual,v1,Unpicked SKU,5.0
+Indoor Sports,Casual,v1,Unclaimed Quantity,192.0
+Indoor Sports,Casual,v1,Warehouse Quantity,222.0
+Indoor Sports,Casual,v1,Store Quantity,380.0
+Indoor Sports,Casual,v1,Shipping Quantity,456.0
+Indoor Sports,Casual,v1,Sales Quantity,36.0
+Indoor Sports,Casual,v2,Order SKU,26.0
+Indoor Sports,Casual,v2,Order Quantity,808.0
+Indoor Sports,Casual,v2,Picked SKU,21.0
+Indoor Sports,Casual,v2,Picked-up Quantity,616.0
+Indoor Sports,Casual,v2,Unpicked SKU,5.0
+Indoor Sports,Casual,v2,Unclaimed Quantity,192.0
+Indoor Sports,Casual,v2,Warehouse Quantity,222.0
+Indoor Sports,Casual,v2,Store Quantity,380.0
+Indoor Sports,Casual,v2,Shipping Quantity,456.0
+Indoor Sports,Casual,v2,Sales Quantity,36.0
+Indoor Sports,Slim-fit,v1,Order SKU,14.0
+Indoor Sports,Slim-fit,v1,Order Quantity,755.0
+Indoor Sports,Slim-fit,v1,Picked SKU,14.0
+Indoor Sports,Slim-fit,v1,Picked-up Quantity,739.0
+Indoor Sports,Slim-fit,v1,Unclaimed Quantity,16.0
+Indoor Sports,Slim-fit,v1,Warehouse Quantity,250.0
+Indoor Sports,Slim-fit,v1,Store Quantity,457.0
+Indoor Sports,Slim-fit,v1,Shipping Quantity,544.0
+Indoor Sports,Slim-fit,v1,Sales Quantity,96.0
+Indoor Sports,Slim-fit,v2,Order SKU,14.0
+Indoor Sports,Slim-fit,v2,Order Quantity,755.0
+Indoor Sports,Slim-fit,v2,Picked SKU,14.0
+Indoor Sports,Slim-fit,v2,Picked-up Quantity,739.0
+Indoor Sports,Slim-fit,v2,Unclaimed Quantity,16.0
+Indoor Sports,Slim-fit,v2,Warehouse Quantity,250.0
+Indoor Sports,Slim-fit,v2,Store Quantity,457.0
+Indoor Sports,Slim-fit,v2,Shipping Quantity,544.0
+Indoor Sports,Slim-fit,v2,Sales Quantity,96.0
+Indoor Sports,Professional,v1,Order SKU,16.0
+Indoor Sports,Professional,v1,Order Quantity,2425.0
+Indoor Sports,Professional,v1,Picked SKU,7.0
+Indoor Sports,Professional,v1,Picked-up Quantity,1584.0
+Indoor Sports,Professional,v1,Unpicked SKU,9.0
+Indoor Sports,Professional,v1,Unclaimed Quantity,841.0
+Indoor Sports,Professional,v1,Warehouse Quantity,431.0
+Indoor Sports,Professional,v1,Store Quantity,983.0
+Indoor Sports,Professional,v1,Shipping Quantity,1216.0
+Indoor Sports,Professional,v1,Sales Quantity,182.0
+Indoor Sports,Professional,v2,Order SKU,16.0
+Indoor Sports,Professional,v2,Order Quantity,2425.0
+Indoor Sports,Professional,v2,Picked SKU,7.0
+Indoor Sports,Professional,v2,Picked-up Quantity,1584.0
+Indoor Sports,Professional,v2,Unpicked SKU,9.0
+Indoor Sports,Professional,v2,Unclaimed Quantity,841.0
+Indoor Sports,Professional,v2,Warehouse Quantity,431.0
+Indoor Sports,Professional,v2,Store Quantity,983.0
+Indoor Sports,Professional,v2,Shipping Quantity,1216.0
+Indoor Sports,Professional,v2,Sales Quantity,182.0
+Indoor Sports,Fitness Yoga,v1,Order SKU,40.0
+Indoor Sports,Fitness Yoga,v1,Order Quantity,3123.0
+Indoor Sports,Fitness Yoga,v1,Picked SKU,35.0
+Indoor Sports,Fitness Yoga,v1,Picked-up Quantity,1569.0
+Indoor Sports,Fitness Yoga,v1,Unpicked SKU,5.0
+Indoor Sports,Fitness Yoga,v1,Unclaimed Quantity,1554.0
+Indoor Sports,Fitness Yoga,v1,Warehouse Quantity,986.0
+Indoor Sports,Fitness Yoga,v1,Store Quantity,1750.0
+Indoor Sports,Fitness Yoga,v1,Shipping Quantity,1388.0
+Indoor Sports,Fitness Yoga,v1,Sales Quantity,579.0
+Indoor Sports,Fitness Yoga,v2,Order SKU,7.0
+Indoor Sports,Fitness Yoga,v2,Order Quantity,120.0
+Indoor Sports,Fitness Yoga,v2,Picked SKU,3.0
+Indoor Sports,Fitness Yoga,v2,Picked-up Quantity,36.0
+Indoor Sports,Fitness Yoga,v2,Unpicked SKU,4.0
+Indoor Sports,Fitness Yoga,v2,Unclaimed Quantity,84.0
+Indoor Sports,Fitness Yoga,v2,Warehouse Quantity,36.0
+Indoor Sports,Fitness Accessories,v1,Order SKU,42.0
+Indoor Sports,Fitness Accessories,v1,Order Quantity,905.0
+Indoor Sports,Fitness Accessories,v1,Picked SKU,36.0
+Indoor Sports,Fitness Accessories,v1,Picked-up Quantity,688.0
+Indoor Sports,Fitness Accessories,v1,Unpicked SKU,6.0
+Indoor Sports,Fitness Accessories,v1,Unclaimed Quantity,217.0
+Indoor Sports,Fitness Accessories,v1,Warehouse Quantity,965.0
+Indoor Sports,Fitness Accessories,v1,Store Quantity,674.0
+Indoor Sports,Fitness Accessories,v1,Shipping Quantity,493.0
+Indoor Sports,Fitness Accessories,v1,Sales Quantity,239.0
+Water Sports,Free Flower Language,v1,Order SKU,3.0
+Water Sports,Free Flower Language,v1,Order Quantity,600.0
+Water Sports,Free Flower Language,v1,Picked SKU,2.0
+Water Sports,Free Flower Language,v1,Picked-up Quantity,258.0
+Water Sports,Free Flower Language,v1,Unpicked SKU,1.0
+Water Sports,Free Flower Language,v1,Unclaimed Quantity,342.0
+Water Sports,Free Flower Language,v1,Warehouse Quantity,174.0
+Water Sports,Free Flower Language,v2,Order SKU,3.0
+Water Sports,Free Flower Language,v2,Order Quantity,600.0
+Water Sports,Free Flower Language,v2,Picked SKU,2.0
+Water Sports,Free Flower Language,v2,Picked-up Quantity,258.0
+Water Sports,Free Flower Language,v2,Unpicked SKU,1.0
+Water Sports,Free Flower Language,v2,Unclaimed Quantity,342.0
+Water Sports,Free Flower Language,v2,Warehouse Quantity,174.0
+Water Sports,Blue Sea Holiday,v1,Order SKU,3.0
+Water Sports,Blue Sea Holiday,v1,Order Quantity,800.0
+Water Sports,Blue Sea Holiday,v1,Picked SKU,3.0
+Water Sports,Blue Sea Holiday,v1,Picked-up Quantity,750.0
+Water Sports,Blue Sea Holiday,v1,Unclaimed Quantity,50.0
+Water Sports,Blue Sea Holiday,v1,Warehouse Quantity,83.0
+Water Sports,Blue Sea Holiday,v1,Store Quantity,592.0
+Water Sports,Blue Sea Holiday,v1,Shipping Quantity,663.0
+Water Sports,Blue Sea Holiday,v1,Sales Quantity,30.0
+Water Sports,Blue Sea Holiday,v2,Order SKU,3.0
+Water Sports,Blue Sea Holiday,v2,Order Quantity,800.0
+Water Sports,Blue Sea Holiday,v2,Picked SKU,3.0
+Water Sports,Blue Sea Holiday,v2,Picked-up Quantity,750.0
+Water Sports,Blue Sea Holiday,v2,Unclaimed Quantity,50.0
+Water Sports,Blue Sea Holiday,v2,Warehouse Quantity,83.0
+Water Sports,Blue Sea Holiday,v2,Store Quantity,592.0
+Water Sports,Blue Sea Holiday,v2,Shipping Quantity,663.0
+Water Sports,Blue Sea Holiday,v2,Sales Quantity,30.0
+Water Sports,Fruit Color Youth,v1,Order SKU,4.0
+Water Sports,Fruit Color Youth,v1,Order Quantity,1260.0
+Water Sports,Fruit Color Youth,v1,Picked SKU,2.0
+Water Sports,Fruit Color Youth,v1,Picked-up Quantity,429.0
+Water Sports,Fruit Color Youth,v1,Unpicked SKU,2.0
+Water Sports,Fruit Color Youth,v1,Unclaimed Quantity,831.0
+Water Sports,Fruit Color Youth,v1,Warehouse Quantity,308.0
+Water Sports,Fruit Color Youth,v1,Shipping Quantity,3.0
+Water Sports,Fruit Color Youth,v2,Order SKU,4.0
+Water Sports,Fruit Color Youth,v2,Order Quantity,1260.0
+Water Sports,Fruit Color Youth,v2,Picked SKU,2.0
+Water Sports,Fruit Color Youth,v2,Picked-up Quantity,429.0
+Water Sports,Fruit Color Youth,v2,Unpicked SKU,2.0
+Water Sports,Fruit Color Youth,v2,Unclaimed Quantity,831.0
+Water Sports,Fruit Color Youth,v2,Warehouse Quantity,308.0
+Water Sports,Fruit Color Youth,v2,Shipping Quantity,3.0
+Water Sports,Euro-continental Style Series,v1,Order SKU,4.0
+Water Sports,Euro-continental Style Series,v1,Order Quantity,920.0
+Water Sports,Euro-continental Style Series,v1,Unpicked SKU,4.0
+Water Sports,Euro-continental Style Series,v1,Unclaimed Quantity,920.0
+Water Sports,Euro-continental Style Series,v2,Order SKU,4.0
+Water Sports,Euro-continental Style Series,v2,Order Quantity,920.0
+Water Sports,Euro-continental Style Series,v2,Unpicked SKU,4.0
+Water Sports,Euro-continental Style Series,v2,Unclaimed Quantity,920.0
+Water Sports,Countryside Style Series,v1,Order SKU,4.0
+Water Sports,Countryside Style Series,v1,Order Quantity,1450.0
+Water Sports,Countryside Style Series,v1,Picked SKU,4.0
+Water Sports,Countryside Style Series,v1,Picked-up Quantity,1092.0
+Water Sports,Countryside Style Series,v1,Unclaimed Quantity,358.0
+Water Sports,Countryside Style Series,v1,Warehouse Quantity,226.0
+Water Sports,Countryside Style Series,v1,Store Quantity,837.0
+Water Sports,Countryside Style Series,v1,Shipping Quantity,870.0
+Water Sports,Countryside Style Series,v1,Sales Quantity,16.0
+Water Sports,Countryside Style Series,v2,Order SKU,4.0
+Water Sports,Countryside Style Series,v2,Order Quantity,1450.0
+Water Sports,Countryside Style Series,v2,Picked SKU,4.0
+Water Sports,Countryside Style Series,v2,Picked-up Quantity,1092.0
+Water Sports,Countryside Style Series,v2,Unclaimed Quantity,358.0
+Water Sports,Countryside Style Series,v2,Warehouse Quantity,226.0
+Water Sports,Countryside Style Series,v2,Store Quantity,837.0
+Water Sports,Countryside Style Series,v2,Shipping Quantity,870.0
+Water Sports,Countryside Style Series,v2,Sales Quantity,16.0
+Water Sports,Separate Briefs,v1,Order SKU,2.0
+Water Sports,Separate Briefs,v1,Order Quantity,560.0
+Water Sports,Separate Briefs,v1,Picked SKU,2.0
+Water Sports,Separate Briefs,v1,Picked-up Quantity,511.0
+Water Sports,Separate Briefs,v1,Unclaimed Quantity,49.0
+Water Sports,Separate Briefs,v1,Warehouse Quantity,16.0
+Water Sports,Separate Briefs,v1,Store Quantity,449.0
+Water Sports,Separate Briefs,v1,Shipping Quantity,499.0
+Water Sports,Separate Briefs,v1,Sales Quantity,27.0
+Water Sports,Separate Briefs,v2,Order SKU,2.0
+Water Sports,Separate Briefs,v2,Order Quantity,560.0
+Water Sports,Separate Briefs,v2,Picked SKU,2.0
+Water Sports,Separate Briefs,v2,Picked-up Quantity,511.0
+Water Sports,Separate Briefs,v2,Unclaimed Quantity,49.0
+Water Sports,Separate Briefs,v2,Warehouse Quantity,16.0
+Water Sports,Separate Briefs,v2,Store Quantity,449.0
+Water Sports,Separate Briefs,v2,Shipping Quantity,499.0
+Water Sports,Separate Briefs,v2,Sales Quantity,27.0
+Water Sports,Mature Series,v1,Order SKU,2.0
+Water Sports,Mature Series,v1,Order Quantity,440.0
+Water Sports,Mature Series,v1,Picked SKU,2.0
+Water Sports,Mature Series,v1,Picked-up Quantity,382.0
+Water Sports,Mature Series,v1,Unclaimed Quantity,58.0
+Water Sports,Mature Series,v1,Warehouse Quantity,180.0
+Water Sports,Mature Series,v1,Store Quantity,131.0
+Water Sports,Mature Series,v1,Shipping Quantity,156.0
+Water Sports,Mature Series,v1,Sales Quantity,11.0
+Water Sports,Mature Series,v2,Order SKU,2.0
+Water Sports,Mature Series,v2,Order Quantity,440.0
+Water Sports,Mature Series,v2,Picked SKU,2.0
+Water Sports,Mature Series,v2,Picked-up Quantity,382.0
+Water Sports,Mature Series,v2,Unclaimed Quantity,58.0
+Water Sports,Mature Series,v2,Warehouse Quantity,180.0
+Water Sports,Mature Series,v2,Store Quantity,131.0
+Water Sports,Mature Series,v2,Shipping Quantity,156.0
+Water Sports,Mature Series,v2,Sales Quantity,11.0
+Water Sports,Fashion Sports,v1,Order SKU,6.0
+Water Sports,Fashion Sports,v1,Order Quantity,605.0
+Water Sports,Fashion Sports,v1,Picked SKU,3.0
+Water Sports,Fashion Sports,v1,Picked-up Quantity,274.0
+Water Sports,Fashion Sports,v1,Unpicked SKU,3.0
+Water Sports,Fashion Sports,v1,Unclaimed Quantity,331.0
+Water Sports,Fashion Sports,v1,Warehouse Quantity,166.0
+Water Sports,Fashion Sports,v2,Order SKU,6.0
+Water Sports,Fashion Sports,v2,Order Quantity,605.0
+Water Sports,Fashion Sports,v2,Picked SKU,3.0
+Water Sports,Fashion Sports,v2,Picked-up Quantity,274.0
+Water Sports,Fashion Sports,v2,Unpicked SKU,3.0
+Water Sports,Fashion Sports,v2,Unclaimed Quantity,331.0
+Water Sports,Fashion Sports,v2,Warehouse Quantity,166.0
+Water Sports,Children's swim trunks,v1,Order SKU,5.0
+Water Sports,Children's swim trunks,v1,Order Quantity,1640.0
+Water Sports,Children's swim trunks,v1,Picked SKU,2.0
+Water Sports,Children's swim trunks,v1,Picked-up Quantity,481.0
+Water Sports,Children's swim trunks,v1,Unpicked SKU,3.0
+Water Sports,Children's swim trunks,v1,Unclaimed Quantity,1159.0
+Water Sports,Children's swim trunks,v1,Warehouse Quantity,229.0
+Water Sports,Children's swim trunks,v1,Store Quantity,973.0
+Water Sports,Children's swim trunks,v1,Shipping Quantity,787.0
+Water Sports,Children's swim trunks,v1,Sales Quantity,75.0
+Water Sports,Children's swim trunks,v2,Order SKU,3.0
+Water Sports,Children's swim trunks,v2,Order Quantity,940.0
+Water Sports,Children's swim trunks,v2,Unpicked SKU,3.0
+Water Sports,Children's swim trunks,v2,Unclaimed Quantity,940.0
+Water Sports,Children's swim trunks,v2,Warehouse Quantity,-16.0
+Water Sports,Children's swim trunks,v2,Store Quantity,16.0
+Water Sports,Children's swim trunks,v2,Shipping Quantity,16.0
+Water Sports,Children's swimsuit,v1,Order SKU,5.0
+Water Sports,Children's swimsuit,v1,Order Quantity,1365.0
+Water Sports,Children's swimsuit,v1,Picked SKU,5.0
+Water Sports,Children's swimsuit,v1,Picked-up Quantity,850.0
+Water Sports,Children's swimsuit,v1,Unclaimed Quantity,515.0
+Water Sports,Children's swimsuit,v1,Warehouse Quantity,236.0
+Water Sports,Children's swimsuit,v1,Store Quantity,842.0
+Water Sports,Children's swimsuit,v1,Shipping Quantity,882.0
+Water Sports,Children's swimsuit,v1,Sales Quantity,88.0
+Water Sports,Children's swimsuit,v2,Order SKU,3.0
+Water Sports,Children's swimsuit,v2,Order Quantity,685.0
+Water Sports,Children's swimsuit,v2,Picked SKU,3.0
+Water Sports,Children's swimsuit,v2,Picked-up Quantity,565.0
+Water Sports,Children's swimsuit,v2,Unclaimed Quantity,120.0
+Water Sports,Children's swimsuit,v2,Warehouse Quantity,68.0
+Water Sports,Children's swimsuit,v2,Store Quantity,430.0
+Water Sports,Children's swimsuit,v2,Shipping Quantity,498.0
+Water Sports,Children's swimsuit,v2,Sales Quantity,28.0
+Water Sports,Swim Trunks,v1,Order SKU,12.0
+Water Sports,Swim Trunks,v1,Order Quantity,7750.0
+Water Sports,Swim Trunks,v1,Picked SKU,12.0
+Water Sports,Swim Trunks,v1,Picked-up Quantity,4734.0
+Water Sports,Swim Trunks,v1,Unclaimed Quantity,3016.0
+Water Sports,Swim Trunks,v1,Warehouse Quantity,1118.0
+Water Sports,Swim Trunks,v1,Store Quantity,4752.0
+Water Sports,Swim Trunks,v1,Shipping Quantity,4850.0
+Water Sports,Swim Trunks,v1,Sales Quantity,796.0
+Water Sports,Swim Trunks,v2,Order SKU,6.0
+Water Sports,Swim Trunks,v2,Order Quantity,3650.0
+Water Sports,Swim Trunks,v2,Picked SKU,6.0
+Water Sports,Swim Trunks,v2,Picked-up Quantity,2000.0
+Water Sports,Swim Trunks,v2,Unclaimed Quantity,1650.0
+Water Sports,Swim Trunks,v2,Warehouse Quantity,388.0
+Water Sports,Swim Trunks,v2,Store Quantity,1484.0
+Water Sports,Swim Trunks,v2,Shipping Quantity,1659.0
+Water Sports,Swim Trunks,v2,Sales Quantity,68.0
+Water Sports,Swim Accessories,v1,Order SKU,93.0
+Water Sports,Swim Accessories,v1,Order Quantity,24650.0
+Water Sports,Swim Accessories,v1,Picked SKU,60.0
+Water Sports,Swim Accessories,v1,Picked-up Quantity,7523.0
+Water Sports,Swim Accessories,v1,Unpicked SKU,33.0
+Water Sports,Swim Accessories,v1,Unclaimed Quantity,17127.0
+Water Sports,Swim Accessories,v1,Warehouse Quantity,3844.0
+Water Sports,Swim Accessories,v1,Store Quantity,7690.0
+Water Sports,Swim Accessories,v1,Shipping Quantity,6616.0
+Water Sports,Swim Accessories,v1,Sales Quantity,1445.0
+Water Sports,Swim Accessories,v2,Order SKU,18.0
+Water Sports,Swim Accessories,v2,Order Quantity,3940.0
+Water Sports,Swim Accessories,v2,Unpicked SKU,18.0
+Water Sports,Swim Accessories,v2,Unclaimed Quantity,3940.0
+Water Sports,Beach,v1,Order SKU,4.0
+Water Sports,Beach,v1,Order Quantity,600.0
+Water Sports,Beach,v1,Picked SKU,2.0
+Water Sports,Beach,v1,Picked-up Quantity,158.0
+Water Sports,Beach,v1,Unpicked SKU,2.0
+Water Sports,Beach,v1,Unclaimed Quantity,442.0
+Water Sports,Beach,v1,Warehouse Quantity,92.0
+Water Sports,Beach,v2,Order SKU,4.0
+Water Sports,Beach,v2,Order Quantity,600.0
+Water Sports,Beach,v2,Picked SKU,2.0
+Water Sports,Beach,v2,Picked-up Quantity,158.0
+Water Sports,Beach,v2,Unpicked SKU,2.0
+Water Sports,Beach,v2,Unclaimed Quantity,442.0
+Water Sports,Beach,v2,Warehouse Quantity,92.0
+Water Sports,Beach Accessories,v1,Order SKU,8.0
+Water Sports,Beach Accessories,v1,Order Quantity,720.0
+Water Sports,Beach Accessories,v1,Picked SKU,2.0
+Water Sports,Beach Accessories,v1,Picked-up Quantity,60.0
+Water Sports,Beach Accessories,v1,Unpicked SKU,6.0
+Water Sports,Beach Accessories,v1,Unclaimed Quantity,660.0
+Water Sports,Beach Accessories,v1,Warehouse Quantity,48.0
+Water Sports,Beach Accessories,v2,Order SKU,6.0
+Water Sports,Beach Accessories,v2,Order Quantity,620.0
+Water Sports,Beach Accessories,v2,Picked SKU,2.0
+Water Sports,Beach Accessories,v2,Picked-up Quantity,60.0
+Water Sports,Beach Accessories,v2,Unpicked SKU,4.0
+Water Sports,Beach Accessories,v2,Unclaimed Quantity,560.0
+Water Sports,Beach Accessories,v2,Warehouse Quantity,48.0

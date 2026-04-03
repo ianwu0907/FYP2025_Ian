@@ -1,0 +1,243 @@
+field,footnote,year,count
+science,,4004,347268
+agricultural sciences,,4004,13197
+biological sciences,,4004,64701
+computer sciences,,4004,53696
+"earth, atmospheric, and ocean sciences",,4004,14620
+mathematical sciences,,4004,19465
+physical sciences,,4004,34298
+psychology,b,4004,52162
+other sciences,"a, c",4004,
+aerospace engineering,,4004,4048
+architecture,a,4004,
+biomedical engineering,,4004,5301
+chemical engineering,,4004,7516
+civil engineering,a,4004,18890
+electrical engineering,,4004,41763
+industrial engineering,,4004,14313
+mechanical engineering,,4004,18393
+metallurgical or materials engineering,,4004,5131
+other engineering,,4004,12022
+health,"b, c",4004,92476
+clinical medicine,"a, d",4004,20574
+other health,,4004,71902
+science,,4005,352307
+agricultural sciences,,4005,13445
+biological sciences,,4005,66565
+computer sciences,,4005,50016
+"earth, atmospheric, and ocean sciences",,4005,15131
+mathematical sciences,,4005,19931
+physical sciences,,4005,35761
+psychology,b,4005,54126
+other sciences,"a, c",4005,
+aerospace engineering,,4005,4089
+architecture,a,4005,
+biomedical engineering,,4005,5807
+chemical engineering,,4005,7452
+civil engineering,a,4005,18561
+electrical engineering,,4005,38995
+industrial engineering,,4005,13852
+mechanical engineering,,4005,17852
+metallurgical or materials engineering,,4005,5059
+other engineering,,4005,11899
+health,"b, c",4005,98590
+clinical medicine,"a, d",4005,20866
+other health,,4005,77724
+science,,4006,357710
+agricultural sciences,,4006,13123
+biological sciences,,4006,68479
+computer sciences,,4006,47978
+"earth, atmospheric, and ocean sciences",,4006,14836
+mathematical sciences,,4006,20210
+physical sciences,,4006,36375
+psychology,b,4006,57282
+other sciences,"a, c",4006,
+aerospace engineering,,4006,4170
+architecture,a,4006,
+biomedical engineering,,4006,6067
+chemical engineering,,4006,7173
+civil engineering,a,4006,18114
+electrical engineering,,4006,37450
+industrial engineering,,4006,13650
+mechanical engineering,,4006,17373
+metallurgical or materials engineering,,4006,5160
+other engineering,,4006,11408
+health,"b, c",4006,103951
+clinical medicine,"a, d",4006,21414
+other health,,4006,82537
+science,,4007,363246
+agricultural sciences,,4007,13016
+biological sciences,,4007,69941
+computer sciences,,4007,47653
+"earth, atmospheric, and ocean sciences",,4007,14920
+mathematical sciences,,4007,20815
+physical sciences,,4007,36901
+psychology,b,4007,57653
+other sciences,"a, c",4007,
+aerospace engineering,,4007,4482
+architecture,a,4007,
+biomedical engineering,,4007,6482
+chemical engineering,,4007,7261
+civil engineering,a,4007,17802
+electrical engineering,,4007,38265
+industrial engineering,,4007,13829
+mechanical engineering,,4007,17919
+metallurgical or materials engineering,,4007,5268
+other engineering,,4007,11733
+health,"b, c",4007,111356
+clinical medicine,"a, d",4007,23441
+other health,,4007,87915
+science,,2007,372120
+agricultural sciences,,2007,13222
+biological sciences,,2007,71663
+computer sciences,,2007,48959
+"earth, atmospheric, and ocean sciences",,2007,14675
+mathematical sciences,,2007,21335
+physical sciences,,2007,37111
+psychology,b,2007,60284
+other sciences,"a, c",2007,
+aerospace engineering,,2007,4616
+architecture,a,2007,
+biomedical engineering,,2007,6881
+chemical engineering,,2007,7383
+civil engineering,a,2007,19867
+electrical engineering,,2007,40207
+industrial engineering,,2007,14290
+mechanical engineering,,2007,18366
+metallurgical or materials engineering,,2007,5365
+other engineering,,2007,13280
+health,"b, c",2007,105448
+clinical medicine,"a, d",2007,24616
+other health,,2007,80832
+science,,2007,384523.0
+agricultural sciences,,2007,13528.0
+biological sciences,,2007,71932.0
+computer sciences,,2007,48246.0
+"earth, atmospheric, and ocean sciences",,2007,14100.0
+mathematical sciences,,2007,20975.0
+physical sciences,,2007,36824.0
+psychology,b,2007,59617.0
+other sciences,"a, c",2007,16151.0
+aerospace engineering,,2007,4616.0
+architecture,a,2007,4601.0
+biomedical engineering,,2007,6904.0
+chemical engineering,,2007,7584.0
+civil engineering,a,2007,16071.0
+electrical engineering,,2007,40588.0
+industrial engineering,,2007,14474.0
+mechanical engineering,,2007,18347.0
+metallurgical or materials engineering,,2007,5314.0
+other engineering,,2007,13177.0
+health,"b, c",2007,103300.0
+clinical medicine,"a, d",2007,22751.0
+other health,,2007,80549.0
+science,,4009,391419.0
+agricultural sciences,,4009,14153.0
+biological sciences,,4009,72666.0
+computer sciences,,4009,49553.0
+"earth, atmospheric, and ocean sciences",,4009,14389.0
+mathematical sciences,,4009,21400.0
+physical sciences,,4009,37319.0
+psychology,b,4009,58991.0
+other sciences,"a, c",4009,19564.0
+aerospace engineering,,4009,4902.0
+architecture,a,4009,5905.0
+biomedical engineering,,4009,7339.0
+chemical engineering,,4009,7892.0
+civil engineering,a,4009,16931.0
+electrical engineering,,4009,41164.0
+industrial engineering,,4009,15692.0
+mechanical engineering,,4009,19585.0
+metallurgical or materials engineering,,4009,5539.0
+other engineering,,4009,12907.0
+health,"b, c",4009,102214.0
+clinical medicine,"a, d",4009,23939.0
+other health,,4009,78275.0
+science,,4010,401008.0
+agricultural sciences,,4010,15200.0
+biological sciences,,4010,73304.0
+computer sciences,,4010,51161.0
+"earth, atmospheric, and ocean sciences",,4010,14839.0
+mathematical sciences,,4010,22226.0
+physical sciences,,4010,38149.0
+psychology,b,4010,56184.0
+other sciences,"a, c",4010,22125.0
+aerospace engineering,,4010,5266.0
+architecture,a,4010,6804.0
+biomedical engineering,,4010,7904.0
+chemical engineering,,4010,8188.0
+civil engineering,a,4010,18638.0
+electrical engineering,,4010,41218.0
+industrial engineering,,4010,15825.0
+mechanical engineering,,4010,21243.0
+metallurgical or materials engineering,,4010,5863.0
+other engineering,,4010,13728.0
+health,"b, c",4010,85960.0
+clinical medicine,"a, d",4010,24125.0
+other health,,4010,61835.0
+science,,4011,407291.0
+agricultural sciences,,4011,15656.0
+biological sciences,,4011,74928.0
+computer sciences,,4011,51546.0
+"earth, atmospheric, and ocean sciences",,4011,15655.0
+mathematical sciences,,4011,23136.0
+physical sciences,,4011,38973.0
+psychology,b,4011,53419.0
+other sciences,"a, c",4011,24758.0
+aerospace engineering,,4011,5540.0
+architecture,a,4011,6795.0
+biomedical engineering,,4011,8497.0
+chemical engineering,,4011,8668.0
+civil engineering,a,4011,19559.0
+electrical engineering,,4011,41336.0
+industrial engineering,,4011,15205.0
+mechanical engineering,,4011,22509.0
+metallurgical or materials engineering,,4011,6274.0
+other engineering,,4011,14858.0
+health,"b, c",4011,76120.0
+clinical medicine,"a, d",4011,25699.0
+other health,,4011,50421.0
+science,,4012,414440.0
+agricultural sciences,,4012,16129.0
+biological sciences,,4012,75423.0
+computer sciences,,4012,51234.0
+"earth, atmospheric, and ocean sciences",,4012,15820.0
+mathematical sciences,,4012,23801.0
+physical sciences,,4012,39694.0
+psychology,b,4012,54486.0
+other sciences,"a, c",4012,26192.0
+aerospace engineering,,4012,5691.0
+architecture,a,4012,3111.0
+biomedical engineering,,4012,9175.0
+chemical engineering,,4012,8828.0
+civil engineering,a,4012,19596.0
+electrical engineering,,4012,41580.0
+industrial engineering,,4012,14494.0
+mechanical engineering,,4012,21883.0
+metallurgical or materials engineering,,4012,6649.0
+other engineering,,4012,15494.0
+health,"b, c",4012,65879.0
+clinical medicine,"a, d",4012,26634.0
+other health,,4012,39245.0
+science,,4013,413033.0
+agricultural sciences,,4013,16234.0
+biological sciences,,4013,76447.0
+computer sciences,,4013,51789.0
+"earth, atmospheric, and ocean sciences",,4013,16069.0
+mathematical sciences,,4013,24575.0
+physical sciences,,4013,39928.0
+psychology,b,4013,54117.0
+other sciences,"a, c",4013,25705.0
+aerospace engineering,,4013,5069.0
+architecture,a,4013,2363.0
+biomedical engineering,,4013,9157.0
+chemical engineering,,4013,9222.0
+civil engineering,a,4013,19922.0
+electrical engineering,,4013,42347.0
+industrial engineering,,4013,14469.0
+mechanical engineering,,4013,23088.0
+metallurgical or materials engineering,,4013,6985.0
+other engineering,,4013,15763.0
+health,"b, c",4013,65825.0
+clinical medicine,"a, d",4013,26798.0
+other health,,4013,39027.0

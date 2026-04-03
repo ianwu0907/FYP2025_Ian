@@ -1,0 +1,25 @@
+time_period,measure_id,value
+1982 to 1989,measure_1,7.8
+1990 to 1999,measure_1,4.16
+2000 to 2009,measure_1,4.62
+2010 to 2014,measure_1,4.72
+1982 to 1989,measure_2,7.79
+1990 to 1999,measure_2,4.16
+2000 to 2009,measure_2,4.63
+2010 to 2014,measure_2,4.74
+1982 to 1989,measure_3,0.13
+1990 to 1999,measure_3,0.08
+2000 to 2009,measure_3,0.14
+2010 to 2014,measure_3,0.2
+1982 to 1989,measure_4,2.88
+1990 to 1999,measure_4,2.37
+2000 to 2009,measure_4,2.08
+2010 to 2014,measure_4,2.53
+1982 to 1989,measure_5,2.9
+1990 to 1999,measure_5,2.38
+2000 to 2009,measure_5,2.09
+2010 to 2014,measure_5,2.54
+1982 to 1989,measure_6,0.14
+1990 to 1999,measure_6,0.08
+2000 to 2009,measure_6,0.1
+2010 to 2014,measure_6,0.18

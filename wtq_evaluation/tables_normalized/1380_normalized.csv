@@ -1,0 +1,97 @@
+dimension_type,dimension_value,group_id,statistic_type,statistic_value
+sex,male,1,mean,5.3
+sex,male,1,se,0.22
+sex,male,2,mean,5.1
+sex,male,2,se,0.17
+sex,male,3,mean,4.8
+sex,male,3,se,0.26
+sex,female,1,mean,7.1
+sex,female,1,se,0.22
+sex,female,2,mean,6.7
+sex,female,2,se,0.2
+sex,female,3,mean,6.1
+sex,female,3,se,0.34
+age group,15 to 17,1,mean,6.6
+age group,15 to 17,1,se,0.37
+age group,15 to 17,2,mean,6.3
+age group,15 to 17,2,se,0.43
+age group,15 to 17,3,mean,6.2
+age group,15 to 17,3,se,0.44
+age group,18 to 24,1,mean,7.1
+age group,18 to 24,1,se,0.34
+age group,18 to 24,2,mean,6.5
+age group,18 to 24,2,se,0.27
+age group,18 to 24,3,mean,7.2
+age group,18 to 24,3,se,0.67
+age group,25 to 34,1,mean,6.7
+age group,25 to 34,1,se,0.35
+age group,25 to 34,2,mean,6.5
+age group,25 to 34,2,se,0.27
+age group,25 to 34,3,mean,5.2
+age group,25 to 34,3,se,0.3
+age group,35 to 44,1,mean,6.3
+age group,35 to 44,1,se,0.26
+age group,35 to 44,2,mean,6.4
+age group,35 to 44,2,se,0.32
+age group,35 to 44,3,mean,5.6
+age group,35 to 44,3,se,0.47
+age group,45 to 54,1,mean,6.8
+age group,45 to 54,1,se,0.59
+age group,45 to 54,2,mean,6.0
+age group,45 to 54,2,se,0.36
+age group,45 to 54,3,mean,5.0
+age group,45 to 54,3,se,0.46
+age group,55 or older,1,mean,5.0
+age group,55 or older,1,se,0.35
+age group,55 or older,2,mean,4.9
+age group,55 or older,2,se,0.26
+age group,55 or older,3,mean,3.8
+age group,55 or older,3,se,0.53
+education,less than secondary graduation,1,mean,7.7
+education,less than secondary graduation,1,se,0.41
+education,less than secondary graduation,2,mean,7.0
+education,less than secondary graduation,2,se,0.36
+education,less than secondary graduation,3,mean,5.8
+education,less than secondary graduation,3,se,0.3
+education,secondary graduation,1,mean,5.9
+education,secondary graduation,1,se,0.44
+education,secondary graduation,2,mean,5.6
+education,secondary graduation,2,se,0.31
+education,secondary graduation,3,mean,5.7
+education,secondary graduation,3,se,1.21
+education,at least some postsecondary,1,mean,5.9
+education,at least some postsecondary,1,se,0.24
+education,at least some postsecondary,2,mean,5.7
+education,at least some postsecondary,2,se,0.17
+education,at least some postsecondary,3,mean,5.0
+education,at least some postsecondary,3,se,0.3
+household income quintile,1,1,mean,8.3
+household income quintile,1,1,se,0.39
+household income quintile,1,2,mean,8.3
+household income quintile,1,2,se,0.34
+household income quintile,1,3,mean,7.2
+household income quintile,1,3,se,0.63
+household income quintile,2,1,mean,6.9
+household income quintile,2,1,se,0.39
+household income quintile,2,2,mean,6.2
+household income quintile,2,2,se,0.29
+household income quintile,2,3,mean,5.1
+household income quintile,2,3,se,0.34
+household income quintile,3,1,mean,5.7
+household income quintile,3,1,se,0.31
+household income quintile,3,2,mean,5.4
+household income quintile,3,2,se,0.26
+household income quintile,3,3,mean,5.3
+household income quintile,3,3,se,0.39
+household income quintile,4,1,mean,5.4
+household income quintile,4,1,se,0.32
+household income quintile,4,2,mean,4.9
+household income quintile,4,2,se,0.25
+household income quintile,4,3,mean,5.2
+household income quintile,4,3,se,0.46
+household income quintile,5,1,mean,4.6
+household income quintile,5,1,se,0.23
+household income quintile,5,2,mean,4.4
+household income quintile,5,2,se,0.2
+household income quintile,5,3,mean,4.3
+household income quintile,5,3,se,0.3

@@ -1,0 +1,57 @@
+field_of_study,institution_type,graduate_count
+"biological, agricultural, and environmental life sciences",4-year educational institution,83500
+computer and information sciences,4-year educational institution,7400
+mathematics and statistics,4-year educational institution,18100
+physical sciences,4-year educational institution,42500
+psychology,4-year educational institution,34100
+social sciences,4-year educational institution,54000
+engineering,4-year educational institution,33000
+health,4-year educational institution,16800
+"biological, agricultural, and environmental life sciences",private for-profit,46400
+computer and information sciences,private for-profit,9400
+mathematics and statistics,private for-profit,9000
+physical sciences,private for-profit,49800
+psychology,private for-profit,20700
+social sciences,private for-profit,10900
+engineering,private for-profit,71400
+health,private for-profit,6200
+"biological, agricultural, and environmental life sciences",private non-profit,14200
+computer and information sciences,private non-profit,700
+mathematics and statistics,private non-profit,1300
+physical sciences,private non-profit,6300
+psychology,private non-profit,9800
+social sciences,private non-profit,5400
+engineering,private non-profit,4400
+health,private non-profit,3000
+"biological, agricultural, and environmental life sciences",federal government,15600
+computer and information sciences,federal government,600
+mathematics and statistics,federal government,1300
+physical sciences,federal government,9700
+psychology,federal government,6000
+social sciences,federal government,5100
+engineering,federal government,8200
+health,federal government,2300
+"biological, agricultural, and environmental life sciences",state or local government,4100
+computer and information sciences,state or local government,100
+mathematics and statistics,state or local government,300
+physical sciences,state or local government,2300
+psychology,state or local government,5200
+social sciences,state or local government,2400
+engineering,state or local government,2300
+health,state or local government,700
+"biological, agricultural, and environmental life sciences",self-employed,5700
+computer and information sciences,self-employed,500
+mathematics and statistics,self-employed,700
+physical sciences,self-employed,4500
+psychology,self-employed,20200
+social sciences,self-employed,4300
+engineering,self-employed,4500
+health,self-employed,1100
+"biological, agricultural, and environmental life sciences",other,6200
+computer and information sciences,other,300
+mathematics and statistics,other,1300
+physical sciences,other,5000
+psychology,other,6400
+social sciences,other,4900
+engineering,other,1600
+health,other,1100

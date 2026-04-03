@@ -1,0 +1,19 @@
+domain,feeding_category,population_group,predicted_probability
+,only breastfed,off-reserve first nations,0.09
+,only breastfed,metis,0.08
+,only breastfed,inuit,0.06
+,both breastfed and bottle-fed,off-reserve first nations,0.11
+,both breastfed and bottle-fed,metis,0.12
+,both breastfed and bottle-fed,inuit,0.09
+,only bottle-fed,off-reserve first nations,0.14
+,only bottle-fed,metis,0.12
+,only bottle-fed,inuit,0.08
+breastfeeding duration,never breastfed,off-reserve first nations,0.14
+breastfeeding duration,never breastfed,metis,0.12
+breastfeeding duration,never breastfed,inuit,0.09
+breastfeeding duration,breastfed 0 to 6 months,off-reserve first nations,0.11
+breastfeeding duration,breastfed 0 to 6 months,metis,0.12
+breastfeeding duration,breastfed 0 to 6 months,inuit,0.09
+breastfeeding duration,breastfed more than 6 months,off-reserve first nations,0.1
+breastfeeding duration,breastfed more than 6 months,metis,0.1
+breastfeeding duration,breastfed more than 6 months,inuit,0.09

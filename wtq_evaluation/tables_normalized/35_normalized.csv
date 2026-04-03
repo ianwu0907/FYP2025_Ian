@@ -1,0 +1,27 @@
+variable,level,model,aor,ci_lower,ci_upper
+sex,male,model_1,1.0,,
+sex,male,model_2,1.0,,
+sex,female,model_1,1.7,1.6,1.8
+sex,female,model_2,1.8,1.7,1.9
+age group,12 to 18,model_1,1.0,,
+age group,12 to 18,model_2,1.0,,
+age group,19 to 50,model_1,0.5,0.5,0.6
+age group,19 to 50,model_2,0.4,0.4,0.5
+age group,51 or older,model_1,0.5,0.5,0.6
+age group,51 or older,model_2,0.4,0.4,0.5
+household income quintile,lowest,model_1,1.0,,
+household income quintile,lowest,model_2,1.0,,
+household income quintile,low-middle,model_1,0.9,0.8,1.0
+household income quintile,low-middle,model_2,0.7,0.6,0.8
+household income quintile,middle,model_1,1.0,0.9,1.1
+household income quintile,middle,model_2,0.8,0.7,0.9
+household income quintile,high-middle,model_1,1.0,1.0,1.2
+household income quintile,high-middle,model_2,0.8,0.8,0.9
+household income quintile,highest,model_1,1.2,1.1,1.4
+household income quintile,highest,model_2,1.0,1.0,1.1
+bmi,neither overweight nor obese,model_1,1.0,,
+bmi,neither overweight nor obese,model_2,1.0,,
+bmi,overweight,model_1,0.9,0.8,1.0
+bmi,overweight,model_2,0.9,0.8,0.9
+bmi,obese,model_1,0.7,0.6,0.8
+bmi,obese,model_2,0.7,0.6,0.8

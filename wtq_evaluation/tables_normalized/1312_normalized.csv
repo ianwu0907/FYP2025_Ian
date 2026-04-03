@@ -1,0 +1,109 @@
+section,category,metric_id,number,percentage_distribution
+type of birth,surviving to age 1,all_births,679431,98.8
+type of birth,surviving to age 1,live_births,134002,98.9
+type of birth,surviving to age 1,births_with_outcome,679399,98.8
+type of birth,stillbirth,all_births,4240,0.6
+type of birth,stillbirth,live_births,808,0.6
+type of birth,stillbirth,births_with_outcome,4242,0.6
+type of birth,infant death,all_births,2984,0.4
+type of birth,infant death,live_births,616,0.5
+type of birth,infant death,births_with_outcome,3699,0.5
+type of birth,infant death,all_births,685,0.1
+type of birth,infant death,live_births,0,0.0
+type of birth,infant death,births_with_outcome,0,0.0
+province/territory of birth,newfoundland and labrador,all_births,9111,1.3
+province/territory of birth,newfoundland and labrador,live_births,1794,1.3
+province/territory of birth,newfoundland and labrador,births_with_outcome,9111,1.3
+province/territory of birth,prince edward island,all_births,2664,0.4
+province/territory of birth,prince edward island,live_births,457,0.3
+province/territory of birth,prince edward island,births_with_outcome,2664,0.4
+province/territory of birth,nova scotia,all_births,17345,2.5
+province/territory of birth,nova scotia,live_births,3307,2.4
+province/territory of birth,nova scotia,births_with_outcome,17345,2.5
+province/territory of birth,new brunswick,all_births,13966,2.0
+province/territory of birth,new brunswick,live_births,2777,2.1
+province/territory of birth,new brunswick,births_with_outcome,13966,2.0
+province/territory of birth,quebec,all_births,151307,22.0
+province/territory of birth,quebec,live_births,29250,21.6
+province/territory of birth,quebec,births_with_outcome,151307,22.0
+province/territory of birth,ontario,all_births,270086,39.3
+province/territory of birth,ontario,live_births,48638,35.9
+province/territory of birth,ontario,births_with_outcome,270086,39.3
+province/territory of birth,manitoba,all_births,29247,4.3
+province/territory of birth,manitoba,live_births,8584,6.3
+province/territory of birth,manitoba,births_with_outcome,29247,4.3
+province/territory of birth,saskatchewan,all_births,24367,3.5
+province/territory of birth,saskatchewan,live_births,6458,4.8
+province/territory of birth,saskatchewan,births_with_outcome,24367,3.5
+province/territory of birth,alberta,all_births,84367,12.3
+province/territory of birth,alberta,live_births,17424,12.9
+province/territory of birth,alberta,births_with_outcome,84367,12.3
+province/territory of birth,british columbia,all_births,81970,11.9
+province/territory of birth,british columbia,live_births,15026,11.1
+province/territory of birth,british columbia,births_with_outcome,81970,11.9
+province/territory of birth,yukon,all_births,685,0.1
+province/territory of birth,yukon,live_births,266,0.2
+province/territory of birth,yukon,births_with_outcome,685,0.1
+province/territory of birth,northwest territories,all_births,1452,0.2
+province/territory of birth,northwest territories,live_births,825,0.6
+province/territory of birth,northwest territories,births_with_outcome,1452,0.2
+province/territory of birth,nunavut,all_births,773,0.1
+province/territory of birth,nunavut,live_births,620,0.5
+province/territory of birth,nunavut,births_with_outcome,773,0.1
+postal code at birth,urban,all_births,563406,82.0
+postal code at birth,urban,live_births,101496,74.9
+postal code at birth,urban,births_with_outcome,562915,81.9
+postal code at birth,rural,all_births,120245,17.5
+postal code at birth,rural,live_births,32970,24.3
+postal code at birth,rural,births_with_outcome,121907,17.7
+sex of child,male,all_births,352849,51.3
+sex of child,male,live_births,69325,51.2
+sex of child,male,births_with_outcome,352779,51.3
+sex of child,female,all_births,334432,48.7
+sex of child,female,live_births,66089,48.8
+sex of child,female,births_with_outcome,334501,48.7
+year of birth,2004,all_births,214647,31.2
+year of birth,2004,live_births,42222,31.2
+year of birth,2004,births_with_outcome,214647,31.2
+year of birth,2005,all_births,344654,50.1
+year of birth,2005,live_births,67670,50.0
+year of birth,2005,births_with_outcome,344654,50.1
+year of birth,2006,all_births,128039,18.6
+year of birth,2006,live_births,25534,18.9
+year of birth,2006,births_with_outcome,128039,18.6
+maternal age group,younger than 20,all_births,28203,4.1
+maternal age group,younger than 20,live_births,6736,5.0
+maternal age group,younger than 20,births_with_outcome,28218,4.1
+maternal age group,20 to 24,all_births,110969,16.1
+maternal age group,20 to 24,live_births,22460,16.6
+maternal age group,20 to 24,births_with_outcome,111082,16.2
+maternal age group,25 to 29,all_births,211655,30.8
+maternal age group,25 to 29,live_births,41381,30.6
+maternal age group,25 to 29,births_with_outcome,211889,30.8
+maternal age group,30 to 34,all_births,215677,31.4
+maternal age group,30 to 34,live_births,41603,30.7
+maternal age group,30 to 34,births_with_outcome,215913,31.4
+maternal age group,35 to 39,all_births,99497,14.5
+maternal age group,35 to 39,live_births,19346,14.3
+maternal age group,35 to 39,births_with_outcome,99633,14.5
+maternal age group,40 to 44,all_births,19446,2.8
+maternal age group,40 to 44,live_births,3691,2.7
+maternal age group,40 to 44,births_with_outcome,19443,2.8
+maternal age group,45 or older,all_births,859,0.1
+maternal age group,45 or older,live_births,165,0.1
+maternal age group,45 or older,births_with_outcome,870,0.1
+maternal place of birth,in canada,all_births,502649,73.1
+maternal place of birth,in canada,live_births,104535,77.2
+maternal place of birth,in canada,births_with_outcome,514031,74.8
+maternal place of birth,outside canada,all_births,172551,25.1
+maternal place of birth,outside canada,live_births,29048,21.4
+maternal place of birth,outside canada,births_with_outcome,163489,23.8
+single or multiple birth,single,all_births,665362,96.8
+single or multiple birth,single,live_births,131285,96.9
+single or multiple birth,single,births_with_outcome,666026,96.9
+single or multiple birth,twin,all_births,20452,3.0
+single or multiple birth,twin,live_births,4007,3.0
+single or multiple birth,twin,births_with_outcome,20472,3.0
+single or multiple birth,triplet or more,all_births,841,0.1
+single or multiple birth,triplet or more,live_births,134,0.1
+single or multiple birth,triplet or more,births_with_outcome,842,0.1

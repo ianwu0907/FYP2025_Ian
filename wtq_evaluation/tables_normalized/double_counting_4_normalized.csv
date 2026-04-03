@@ -1,0 +1,25 @@
+sex_cn,sex_en,education_level_cn,education_level_en,education_sublevel_cn,education_sublevel_en,year,number
+男,Male,小學及以下,Primary and below,,,2011,3290
+男,Male,小學及以下,Primary and below,,,2016,2581
+男,Male,小學及以下,Primary and below,,,2021,1146
+Male,Male,Secondary,Secondary,初中,Lower secondary,2011,5891
+Male,Male,Secondary,Secondary,初中,Lower secondary,2016,5189
+Male,Male,Secondary,Secondary,初中,Lower secondary,2021,4417
+Male,Male,Secondary,Secondary,高中,Upper secondary,2011,5782
+Male,Male,Secondary,Secondary,高中,Upper secondary,2016,5934
+Male,Male,Secondary,Secondary,高中,Upper secondary,2021,6494
+Male,Male,專上教育,Post-secondary,,,2011,2702
+Male,Male,專上教育,Post-secondary,,,2016,3179
+Male,Male,專上教育,Post-secondary,,,2021,3973
+女,Female,小學及以下,Primary and below,,,2011,10975
+女,Female,小學及以下,Primary and below,,,2016,6823
+女,Female,小學及以下,Primary and below,,,2021,4999
+Female,Female,Secondary,Secondary,初中,Lower secondary,2011,19707
+Female,Female,Secondary,Secondary,初中,Lower secondary,2016,16723
+Female,Female,Secondary,Secondary,初中,Lower secondary,2021,16080
+Female,Female,Secondary,Secondary,高中,Upper secondary,2011,24168
+Female,Female,Secondary,Secondary,高中,Upper secondary,2016,20855
+Female,Female,Secondary,Secondary,高中,Upper secondary,2021,20332
+Female,Female,專上教育,Post-secondary,,,2011,9190
+Female,Female,專上教育,Post-secondary,,,2016,12144
+Female,Female,專上教育,Post-secondary,,,2021,14838

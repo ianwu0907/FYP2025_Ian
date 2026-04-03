@@ -1,0 +1,53 @@
+region,index_version,time_period,index_value,change_value
+newfoundland and labrador,1,2015 to 2016,69.3,6
+newfoundland and labrador,1,2006 to 2016,69.3,-5
+newfoundland and labrador,2,2015 to 2016,72.6,8
+newfoundland and labrador,3,2015 to 2016,68.0,4
+prince edward island,1,2015 to 2016,48.5,-3
+prince edward island,1,2006 to 2016,48.5,-32
+prince edward island,2,2015 to 2016,35.1,-16
+prince edward island,3,2015 to 2016,53.3,1
+nova scotia,1,2015 to 2016,61.2,-3
+nova scotia,1,2006 to 2016,61.2,-39
+nova scotia,2,2015 to 2016,68.3,-3
+nova scotia,3,2015 to 2016,58.5,-2
+new brunswick,1,2015 to 2016,61.7,-2
+new brunswick,1,2006 to 2016,61.7,-17
+new brunswick,2,2015 to 2016,63.2,5
+new brunswick,3,2015 to 2016,61.0,-4
+quebec,1,2015 to 2016,54.7,-3
+quebec,1,2006 to 2016,54.7,-40
+quebec,2,2015 to 2016,64.7,-2
+quebec,3,2015 to 2016,51.0,-3
+ontario,1,2015 to 2016,52.7,4
+ontario,1,2006 to 2016,52.7,-33
+ontario,2,2015 to 2016,63.6,7
+ontario,3,2015 to 2016,48.6,3
+manitoba,1,2015 to 2016,114.4,8
+manitoba,1,2006 to 2016,114.4,-27
+manitoba,2,2015 to 2016,152.7,10
+manitoba,3,2015 to 2016,100.3,7
+saskatchewan,1,2015 to 2016,148.8,9
+saskatchewan,1,2006 to 2016,148.8,-13
+saskatchewan,2,2015 to 2016,146.1,7
+saskatchewan,3,2015 to 2016,149.5,9
+alberta,1,2015 to 2016,102.5,-1
+alberta,1,2006 to 2016,102.5,-11
+alberta,2,2015 to 2016,89.9,-8
+alberta,3,2015 to 2016,106.9,1
+british columbia,1,2015 to 2016,93.6,-1
+british columbia,1,2006 to 2016,93.6,-33
+british columbia,2,2015 to 2016,74.9,-10
+british columbia,3,2015 to 2016,100.3,2
+yukon,1,2015 to 2016,183.9,0
+yukon,1,2006 to 2016,183.9,2
+yukon,2,2015 to 2016,229.1,9
+yukon,3,2015 to 2016,167.0,-4
+northwest territories,1,2015 to 2016,291.7,-9
+northwest territories,1,2006 to 2016,291.7,-8
+northwest territories,2,2015 to 2016,332.1,-9
+northwest territories,3,2015 to 2016,276.4,-9
+nunavut,1,2015 to 2016,286.4,4
+nunavut,1,2006 to 2016,286.4,2
+nunavut,2,2015 to 2016,407.7,5
+nunavut,3,2015 to 2016,241.6,4

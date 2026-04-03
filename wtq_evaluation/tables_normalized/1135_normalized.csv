@@ -1,0 +1,55 @@
+group_type,group_name,wave,percentage
+religion,none,1,25.7
+religion,catholic,1,18.2
+religion,protestant,1,11.9
+religion,orthodox,1,8.1
+religion,muslim,1,18.3
+religion,eastern religion,1,16.9
+religion,other,1,1.0
+visible_minority,designated visible minority group,1,
+designated visible minority group,not in a visible minority group,1,20.1
+designated visible minority group,filipino,1,7.5
+designated visible minority group,latin american,1,2.6
+designated visible minority group,chinese,1,24.9
+designated visible minority group,black,1,4.5
+designated visible minority group,south and southeast asian,1,25.5
+designated visible minority group,arab,1,5.9
+designated visible minority group,west asian,1,3.4
+designated visible minority group,korean and japanese,1,4.6
+designated visible minority group,multiple or not stated,1,1.0
+religion,none,2,25.4
+religion,catholic,2,17.4
+religion,protestant,2,11.4
+religion,orthodox,2,7.6
+religion,muslim,2,20.4
+religion,eastern religion,2,16.6
+religion,other,2,1.2
+visible_minority,designated visible minority group,2,
+designated visible minority group,not in a visible minority group,2,20.2
+designated visible minority group,filipino,2,7.4
+designated visible minority group,latin american,2,2.2
+designated visible minority group,chinese,2,23.4
+designated visible minority group,black,2,4.7
+designated visible minority group,south and southeast asian,2,26.0
+designated visible minority group,arab,2,7.0
+designated visible minority group,west asian,2,3.5
+designated visible minority group,korean and japanese,2,4.5
+designated visible minority group,multiple or not stated,2,1.1
+religion,none,3,26.0
+religion,catholic,3,19.0
+religion,protestant,3,12.4
+religion,orthodox,3,8.7
+religion,muslim,3,15.9
+religion,eastern religion,3,17.3
+religion,other,3,0.8
+visible_minority,designated visible minority group,3,
+designated visible minority group,not in a visible minority group,3,20.0
+designated visible minority group,filipino,3,7.7
+designated visible minority group,latin american,3,3.0
+designated visible minority group,chinese,3,26.5
+designated visible minority group,black,3,4.4
+designated visible minority group,south and southeast asian,3,24.8
+designated visible minority group,arab,3,4.7
+designated visible minority group,west asian,3,3.3
+designated visible minority group,korean and japanese,3,4.7
+designated visible minority group,multiple or not stated,3,0.9

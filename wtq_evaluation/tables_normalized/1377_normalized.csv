@@ -1,0 +1,5 @@
+dimension_group,dimension_value,variable_1,variable_2,variable_3
+sex,male,3.0,3.0,1.0
+sex,female,4.0,3.0,1.0
+age,mean,35.6,37.0,33.6
+age,range,15.0,15.0,15.0

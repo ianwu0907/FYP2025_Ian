@@ -1,0 +1,49 @@
+metric_type,unit,time_period,value
+Average high °C (°F),°C,Jan,17.3
+Average high °C (°F),°C,Feb,19.5
+Average high °C (°F),°C,Mar,22.6
+Average high °C (°F),°C,Apr,25.9
+Average high °C (°F),°C,May,27.2
+Average high °C (°F),°C,Jun,29.3
+Average high °C (°F),°C,Jul,31.8
+Average high °C (°F),°C,Aug,31.4
+Average high °C (°F),°C,Sep,28.9
+Average high °C (°F),°C,Oct,25.5
+Average high °C (°F),°C,Nov,21.7
+Average high °C (°F),°C,Dec,19.2
+Average low °C (°F),°C,Jan,7.9
+Average low °C (°F),°C,Feb,9.4
+Average low °C (°F),°C,Mar,12.5
+Average low °C (°F),°C,Apr,17.6
+Average low °C (°F),°C,May,19.2
+Average low °C (°F),°C,Jun,21.6
+Average low °C (°F),°C,Jul,23.8
+Average low °C (°F),°C,Aug,22.5
+Average low °C (°F),°C,Sep,20.7
+Average low °C (°F),°C,Oct,16.5
+Average low °C (°F),°C,Nov,14.1
+Average low °C (°F),°C,Dec,8.5
+Precipitation mm (inches),mm,Jan,235.9
+Precipitation mm (inches),mm,Feb,129.2
+Precipitation mm (inches),mm,Mar,82.8
+Precipitation mm (inches),mm,Apr,33.6
+Precipitation mm (inches),mm,May,4.7
+Precipitation mm (inches),mm,Jun,0.2
+Precipitation mm (inches),mm,Jul,0.0
+Precipitation mm (inches),mm,Aug,0.2
+Precipitation mm (inches),mm,Sep,3.2
+Precipitation mm (inches),mm,Oct,58.0
+Precipitation mm (inches),mm,Nov,107.4
+Precipitation mm (inches),mm,Dec,214.5
+Avg. precipitation days,days,Jan,13.9
+Avg. precipitation days,days,Feb,11.4
+Avg. precipitation days,days,Mar,8.6
+Avg. precipitation days,days,Apr,3.6
+Avg. precipitation days,days,May,2.4
+Avg. precipitation days,days,Jun,0.1
+Avg. precipitation days,days,Jul,0.0
+Avg. precipitation days,days,Aug,0.1
+Avg. precipitation days,days,Sep,1.8
+Avg. precipitation days,days,Oct,4.9
+Avg. precipitation days,days,Nov,8.0
+Avg. precipitation days,days,Dec,11.8

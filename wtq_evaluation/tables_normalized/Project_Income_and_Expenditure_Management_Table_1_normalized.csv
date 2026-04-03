@@ -1,0 +1,18 @@
+date,voucher_number,business_summary,category,subject_name,project_or_department,beginning_balance,income_amount,amount_spent,ending_balance,person_in_charge
+nan,Date,Voucher Number,Business Summary,Category,Subject Name,,,,,Ending Balance
+nan,2022-04-07 00:00:00,,Beginning Balance,Beginning Balance,,0.0,50000.0,0.0,0.0,
+nan,2022-04-07 00:00:00,,Beginning Balance,Beginning Balance,,0.0,3000.0,0.0,0.0,
+nan,2022-04-09 00:00:00,,Worker's Salary,Expenditure,Personnel Salary,,0.0,0.0,400.0,
+nan,2022-04-10 00:00:00,,Receive project payment from Mr. Wang,Income,Project Payment,,0.0,1200.0,0.0,
+nan,2022-04-11 00:00:00,,Payment for Construction Costs,Expenditure,Construction Cost,,0.0,0.0,345.0,
+nan,2022-05-12 00:00:00,,Pay water and electricity bills,Other,Other,,0.0,0.0,245.0,
+nan,2022-05-13 00:00:00,,Rental Income from Forklift,Income,Project Payment,,0.0,4500.0,0.0,
+nan,2022-05-14 00:00:00,,Payment for Construction Costs,Expenditure,Construction Cost,,0.0,0.0,300.0,
+nan,2022-05-15 00:00:00,,Sell remaining materials,Other,Other,,0.0,5490.0,0.0,
+nan,2022-05-16 00:00:00,,Employee Meal Expenses,Expenditure,Construction Cost,,0.0,0.0,240.0,
+nan,2022-05-17 00:00:00,,Purchase of fruits,Expenditure,Employee Benefits,,0.0,0.0,560.0,
+nan,2022-05-18 00:00:00,,Other Income,Income,Other Income,,0.0,500.0,0.0,
+nan,2022-05-19 00:00:00,,Pay for car rental fees,Expenditure,Car rental expenses,,0.0,0.0,680.0,
+nan,2022-05-20 00:00:00,,Other Income,Income,Other Income,,0.0,6000.0,0.0,
+nan,2022-05-21 00:00:00,,Receive project payment,Income,Project Payment,,0.0,6000.0,0.0,
+nan,2022-05-22 00:00:00,,Receive project payment,Income,Project Payment,,0.0,6001.0,0.0,

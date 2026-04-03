@@ -1,0 +1,100 @@
+jurisdiction,cohort,metric_type,value,percent_change_from_2013_2014
+newfoundland and labrador,2017/2018,number,11.0,-29.0
+newfoundland and labrador,2017/2018,rate,3.0,-29.0
+newfoundland and labrador,2017/2018,percent change in rate from 2016/2017,12.0,-29.0
+newfoundland and labrador,2018/2019,number,176.0,-29.0
+newfoundland and labrador,2018/2019,rate,56.0,-29.0
+newfoundland and labrador,2018/2019,percent change in rate from 2016/2017,-8.0,-29.0
+newfoundland and labrador,2019/2020,number,187.0,-29.0
+newfoundland and labrador,2019/2020,rate,59.0,-29.0
+newfoundland and labrador,2019/2020,percent change in rate from 2016/2017,-7.0,-29.0
+prince edward island,2017/2018,number,4.0,-54.0
+prince edward island,2017/2018,rate,4.0,-54.0
+prince edward island,2017/2018,percent change in rate from 2016/2017,2.0,-54.0
+prince edward island,2018/2019,number,52.0,-54.0
+prince edward island,2018/2019,rate,53.0,-54.0
+prince edward island,2018/2019,percent change in rate from 2016/2017,-21.0,-54.0
+prince edward island,2019/2020,number,56.0,-54.0
+prince edward island,2019/2020,rate,57.0,-54.0
+prince edward island,2019/2020,percent change in rate from 2016/2017,-20.0,-54.0
+nova scotia,2017/2018,number,22.0,
+nova scotia,2017/2018,rate,4.0,
+nova scotia,2017/2018,percent change in rate from 2016/2017,-3.0,
+nova scotia,2018/2019,number,,
+nova scotia,2018/2019,rate,,
+nova scotia,2018/2019,percent change in rate from 2016/2017,,
+nova scotia,2019/2020,number,,
+nova scotia,2019/2020,rate,,
+nova scotia,2019/2020,percent change in rate from 2016/2017,,
+new brunswick,2017/2018,number,15.0,
+new brunswick,2017/2018,rate,3.0,
+new brunswick,2017/2018,percent change in rate from 2016/2017,-11.0,
+new brunswick,2018/2019,number,,
+new brunswick,2018/2019,rate,,
+new brunswick,2018/2019,percent change in rate from 2016/2017,,
+new brunswick,2019/2020,number,,
+new brunswick,2019/2020,rate,,
+new brunswick,2019/2020,percent change in rate from 2016/2017,,
+ontario,2017/2018,number,275.0,-42.0
+ontario,2017/2018,rate,3.0,-42.0
+ontario,2017/2018,percent change in rate from 2016/2017,-6.0,-42.0
+ontario,2018/2019,number,2478.0,-42.0
+ontario,2018/2019,rate,27.0,-42.0
+ontario,2018/2019,percent change in rate from 2016/2017,-6.0,-42.0
+ontario,2019/2020,number,2753.0,-42.0
+ontario,2019/2020,rate,30.0,-42.0
+ontario,2019/2020,percent change in rate from 2016/2017,-6.0,-42.0
+manitoba,2017/2018,number,185.0,-28.0
+manitoba,2017/2018,rate,19.0,-28.0
+manitoba,2017/2018,percent change in rate from 2016/2017,-14.0,-28.0
+manitoba,2018/2019,number,1204.0,-28.0
+manitoba,2018/2019,rate,123.0,-28.0
+manitoba,2018/2019,percent change in rate from 2016/2017,-6.0,-28.0
+manitoba,2019/2020,number,1389.0,-28.0
+manitoba,2019/2020,rate,141.0,-28.0
+manitoba,2019/2020,percent change in rate from 2016/2017,-7.0,-28.0
+saskatchewan,2017/2018,number,133.0,-10.0
+saskatchewan,2017/2018,rate,16.0,-10.0
+saskatchewan,2017/2018,percent change in rate from 2016/2017,-15.0,-10.0
+saskatchewan,2018/2019,number,1007.0,-10.0
+saskatchewan,2018/2019,rate,121.0,-10.0
+saskatchewan,2018/2019,percent change in rate from 2016/2017,2.0,-10.0
+saskatchewan,2019/2020,number,1140.0,-10.0
+saskatchewan,2019/2020,rate,137.0,-10.0
+saskatchewan,2019/2020,percent change in rate from 2016/2017,0.0,-10.0
+alberta,2017/2018,number,91.0,
+alberta,2017/2018,rate,3.0,
+alberta,2017/2018,percent change in rate from 2016/2017,-21.0,
+alberta,2018/2019,number,914.0,
+alberta,2018/2019,rate,32.0,
+alberta,2018/2019,percent change in rate from 2016/2017,-10.0,
+alberta,2019/2020,number,1005.0,
+alberta,2019/2020,rate,35.0,
+alberta,2019/2020,percent change in rate from 2016/2017,-11.0,
+british columbia,2017/2018,number,49.0,-41.0
+british columbia,2017/2018,rate,2.0,-41.0
+british columbia,2017/2018,percent change in rate from 2016/2017,-6.0,-41.0
+british columbia,2018/2019,number,417.0,-41.0
+british columbia,2018/2019,rate,14.0,-41.0
+british columbia,2018/2019,percent change in rate from 2016/2017,-15.0,-41.0
+british columbia,2019/2020,number,467.0,-41.0
+british columbia,2019/2020,rate,16.0,-41.0
+british columbia,2019/2020,percent change in rate from 2016/2017,-14.0,-41.0
+northwest territories,2017/2018,number,4.0,-46.0
+northwest territories,2017/2018,rate,14.0,-46.0
+northwest territories,2017/2018,percent change in rate from 2016/2017,-13.0,-46.0
+northwest territories,2018/2019,number,17.0,-46.0
+northwest territories,2018/2019,rate,55.0,-46.0
+northwest territories,2018/2019,percent change in rate from 2016/2017,-9.0,-46.0
+northwest territories,2019/2020,number,21.0,-46.0
+northwest territories,2019/2020,rate,69.0,-46.0
+northwest territories,2019/2020,percent change in rate from 2016/2017,-10.0,-46.0
+nunavut,2017/2018,number,4.0,-38.0
+nunavut,2017/2018,rate,9.0,-38.0
+nunavut,2017/2018,percent change in rate from 2016/2017,-48.0,-38.0
+nunavut,2018/2019,number,30.0,-38.0
+nunavut,2018/2019,rate,78.0,-38.0
+nunavut,2018/2019,percent change in rate from 2016/2017,-16.0,-38.0
+nunavut,2019/2020,number,34.0,-38.0
+nunavut,2019/2020,rate,87.0,-38.0
+nunavut,2019/2020,percent change in rate from 2016/2017,-21.0,-38.0

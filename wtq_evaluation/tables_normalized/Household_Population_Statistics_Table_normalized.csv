@@ -1,0 +1,969 @@
+age,household_registration_location,sex,count
+0-4 years old,Total,Male,11605841
+0-4 years old,Total,Female,10397704
+0-4 years old,Province,Male,9580952
+0-4 years old,Province,Female,8605973
+0-4 years old,"Among them, the separation of household registration and residence within the district",Male,3165350
+0-4 years old,"Among them, the separation of household registration and residence within the district",Female,2870351
+0-4 years old,Out-of-province,Male,2024889
+0-4 years old,Out-of-province,Female,1791731
+0,Total,Male,1295623
+0,Total,Female,1162105
+0,Province,Male,1103497
+0,Province,Female,991171
+0,"Among them, the separation of household registration and residence within the district",Male,377687
+0,"Among them, the separation of household registration and residence within the district",Female,343075
+0,Out-of-province,Male,192126
+0,Out-of-province,Female,170934
+1,Total,Male,2220009
+1,Total,Female,1994909
+1,Province,Male,1833710
+1,Province,Female,1652679
+1,"Among them, the separation of household registration and residence within the district",Male,610271
+1,"Among them, the separation of household registration and residence within the district",Female,553400
+1,Out-of-province,Male,386299
+1,Out-of-province,Female,342230
+2,Total,Male,2379885
+2,Total,Female,2137466
+2,Province,Male,1954048
+2,Province,Female,1758293
+2,"Among them, the separation of household registration and residence within the district",Male,644164
+2,"Among them, the separation of household registration and residence within the district",Female,586372
+2,Out-of-province,Male,425837
+2,Out-of-province,Female,379173
+3,Total,Male,2870418
+3,Total,Female,2584025
+3,Province,Male,2368227
+3,Province,Female,2137316
+3,"Among them, the separation of household registration and residence within the district",Male,777964
+3,"Among them, the separation of household registration and residence within the district",Female,706457
+3,Out-of-province,Male,502191
+3,Out-of-province,Female,446709
+4,Total,Male,2839906
+4,Total,Female,2519199
+4,Province,Male,2321470
+4,Province,Female,2066514
+4,"Among them, the separation of household registration and residence within the district",Male,755264
+4,"Among them, the separation of household registration and residence within the district",Female,681047
+4,Out-of-province,Male,518436
+4,Out-of-province,Female,452685
+5-9 years old,Total,Male,13737473
+5-9 years old,Total,Female,11853721
+5-9 years old,Province,Male,11216658
+5-9 years old,Province,Female,9742723
+5-9 years old,"Among them, the separation of household registration and residence within the district",Male,3295867
+5-9 years old,"Among them, the separation of household registration and residence within the district",Female,2905731
+5-9 years old,Out-of-province,Male,2520815
+5-9 years old,Out-of-province,Female,2110998
+5,Total,Male,2555263
+5,Total,Female,2239651
+5,Province,Male,2074229
+5,Province,Female,1827401
+5,"Among them, the separation of household registration and residence within the district",Male,643195
+5,"Among them, the separation of household registration and residence within the district",Female,573427
+5,Out-of-province,Male,481034
+5,Out-of-province,Female,412250
+6,Total,Male,2833443
+6,Total,Female,2454049
+6,Province,Male,2324826
+6,Province,Female,2026449
+6,"Among them, the separation of household registration and residence within the district",Male,702823
+6,"Among them, the separation of household registration and residence within the district",Female,619641
+6,Out-of-province,Male,508617
+6,Out-of-province,Female,427600
+7,Total,Male,2722567
+7,Total,Female,2348971
+7,Province,Male,2225706
+7,Province,Female,1932448
+7,"Among them, the separation of household registration and residence within the district",Male,642726
+7,"Among them, the separation of household registration and residence within the district",Female,566167
+7,Out-of-province,Male,496861
+7,Out-of-province,Female,416523
+8,Total,Male,2951709
+8,Total,Female,2529957
+8,Province,Male,2409285
+8,Province,Female,2080731
+8,"Among them, the separation of household registration and residence within the district",Male,695360
+8,"Among them, the separation of household registration and residence within the district",Female,609536
+8,Out-of-province,Male,542424
+8,Out-of-province,Female,449226
+9,Total,Male,2674491
+9,Total,Female,2281093
+9,Province,Male,2182612
+9,Province,Female,1875694
+9,"Among them, the separation of household registration and residence within the district",Male,611763
+9,"Among them, the separation of household registration and residence within the district",Female,536960
+9,Out-of-province,Male,491879
+9,Out-of-province,Female,405399
+10-14 years old,Total,Male,12589332
+10-14 years old,Total,Female,10777637
+10-14 years old,Province,Male,10488621
+10-14 years old,Province,Female,9086026
+10-14 years old,"Among them, the separation of household registration and residence within the district",Male,2942098
+10-14 years old,"Among them, the separation of household registration and residence within the district",Female,2595237
+10-14 years old,Out-of-province,Male,2100711
+10-14 years old,Out-of-province,Female,1691611
+10,Total,Male,2598722
+10,Total,Female,2204330
+10,Province,Male,2126302
+10,Province,Female,1820617
+10,"Among them, the separation of household registration and residence within the district",Male,593561
+10,"Among them, the separation of household registration and residence within the district",Female,518478
+10,Out-of-province,Male,472420
+10,Out-of-province,Female,383713
+11,Total,Male,2608102
+11,Total,Female,2214820
+11,Province,Male,2140339
+11,Province,Female,1835375
+11,"Among them, the separation of household registration and residence within the district",Male,592457
+11,"Among them, the separation of household registration and residence within the district",Female,518692
+11,Out-of-province,Male,467763
+11,Out-of-province,Female,379445
+12,Total,Male,2513765
+12,Total,Female,2148912
+12,Province,Male,2096603
+12,Province,Female,1810416
+12,"Among them, the separation of household registration and residence within the district",Male,591429
+12,"Among them, the separation of household registration and residence within the district",Female,519342
+12,Out-of-province,Male,417162
+12,Out-of-province,Female,338496
+13,Total,Male,2426094
+13,Total,Female,2081841
+13,Province,Male,2046229
+13,Province,Female,1775832
+13,"Among them, the separation of household registration and residence within the district",Male,596390
+13,"Among them, the separation of household registration and residence within the district",Female,526745
+13,Out-of-province,Male,379865
+13,Out-of-province,Female,306009
+14,Total,Male,2442649
+14,Total,Female,2127734
+14,Province,Male,2079148
+14,Province,Female,1843786
+14,"Among them, the separation of household registration and residence within the district",Male,568261
+14,"Among them, the separation of household registration and residence within the district",Female,511980
+14,Out-of-province,Male,363501
+14,Out-of-province,Female,283948
+15-19 years old,Total,Male,21139311
+15-19 years old,Total,Female,19143245
+15-19 years old,Province,Male,17541034
+15-19 years old,Province,Female,16509999
+15-19 years old,"Among them, the separation of household registration and residence within the district",Male,4091078
+15-19 years old,"Among them, the separation of household registration and residence within the district",Female,3756761
+15-19 years old,Out-of-province,Male,3598277
+15-19 years old,Out-of-province,Female,2633246
+15,Total,Male,3500174
+15,Total,Female,3123781
+15,Province,Male,3148120
+15,Province,Female,2865681
+15,"Among them, the separation of household registration and residence within the district",Male,858554
+15,"Among them, the separation of household registration and residence within the district",Female,796805
+15,Out-of-province,Male,352054
+15,Out-of-province,Female,258100
+16,Total,Male,4622877
+16,Total,Female,4102520
+16,Province,Male,4148888
+16,Province,Female,3784780
+16,"Among them, the separation of household registration and residence within the district",Male,1103331
+16,"Among them, the separation of household registration and residence within the district",Female,1023015
+16,Out-of-province,Male,473989
+16,Out-of-province,Female,317740
+17,Total,Male,4312561
+17,Total,Female,3819186
+17,Province,Male,3719923
+17,Province,Female,3431962
+17,"Among them, the separation of household registration and residence within the district",Male,935097
+17,"Among them, the separation of household registration and residence within the district",Female,858578
+17,Out-of-province,Male,592638
+17,Out-of-province,Female,387224
+18,Total,Male,4163936
+18,Total,Female,3766672
+18,Province,Male,3275472
+18,Province,Female,3111865
+18,"Among them, the separation of household registration and residence within the district",Male,658027
+18,"Among them, the separation of household registration and residence within the district",Female,578082
+18,Out-of-province,Male,888464
+18,Out-of-province,Female,654807
+19,Total,Male,4539763
+19,Total,Female,4331086
+19,Province,Male,3248631
+19,Province,Female,3315711
+19,"Among them, the separation of household registration and residence within the district",Male,536069
+19,"Among them, the separation of household registration and residence within the district",Female,500281
+19,Out-of-province,Male,1291132
+19,Out-of-province,Female,1015375
+20-24 years old,Total,Male,20888040
+20-24 years old,Total,Female,19669123
+20-24 years old,Province,Male,13313386
+20-24 years old,Province,Female,14008634
+20-24 years old,"Among them, the separation of household registration and residence within the district",Male,2718102
+20-24 years old,"Among them, the separation of household registration and residence within the district",Female,2838243
+20-24 years old,Out-of-province,Male,7574654
+20-24 years old,Out-of-province,Female,5660489
+20,Total,Male,4611660
+20,Total,Female,4434614
+20,Province,Male,3125753
+20,Province,Female,3264662
+20,"Among them, the separation of household registration and residence within the district",Male,522551
+20,"Among them, the separation of household registration and residence within the district",Female,509221
+20,Out-of-province,Male,1485907
+20,Out-of-province,Female,1169952
+21,Total,Male,4128218
+21,Total,Female,3927347
+21,Province,Male,2662427
+21,Province,Female,2809110
+21,"Among them, the separation of household registration and residence within the district",Male,480887
+21,"Among them, the separation of household registration and residence within the district",Female,486947
+21,Out-of-province,Male,1465791
+21,Out-of-province,Female,1118237
+22,Total,Male,4108599
+22,Total,Female,3806899
+22,Province,Male,2570283
+22,Province,Female,2690681
+22,"Among them, the separation of household registration and residence within the district",Male,529634
+22,"Among them, the separation of household registration and residence within the district",Female,553939
+22,Out-of-province,Male,1538316
+22,Out-of-province,Female,1116218
+23,Total,Male,3962240
+23,Total,Female,3669906
+23,Province,Male,2444232
+23,Province,Female,2567173
+23,"Among them, the separation of household registration and residence within the district",Male,567219
+23,"Among them, the separation of household registration and residence within the district",Female,606825
+23,Out-of-province,Male,1518008
+23,Out-of-province,Female,1102733
+24,Total,Male,4077323
+24,Total,Female,3830357
+24,Province,Male,2510691
+24,Province,Female,2677008
+24,"Among them, the separation of household registration and residence within the district",Male,617811
+24,"Among them, the separation of household registration and residence within the district",Female,681311
+24,Out-of-province,Male,1566632
+24,Out-of-province,Female,1153349
+25-29 years old,Total,Male,23392144
+25-29 years old,Total,Female,22009758
+25-29 years old,Province,Male,14768695
+25-29 years old,Province,Female,15727384
+25-29 years old,"Among them, the separation of household registration and residence within the district",Male,3952935
+25-29 years old,"Among them, the separation of household registration and residence within the district",Female,4516115
+25-29 years old,Out-of-province,Male,8623449
+25-29 years old,Out-of-province,Female,6282374
+25,Total,Male,4419371
+25,Total,Female,4149292
+25,Province,Male,2742165
+25,Province,Female,2921489
+25,"Among them, the separation of household registration and residence within the district",Male,697875
+25,"Among them, the separation of household registration and residence within the district",Female,778846
+25,Out-of-province,Male,1677206
+25,Out-of-province,Female,1227803
+26,Total,Male,4305471
+26,Total,Female,4077857
+26,Province,Male,2713913
+26,Province,Female,2903922
+26,"Among them, the separation of household registration and residence within the district",Male,726874
+26,"Among them, the separation of household registration and residence within the district",Female,822674
+26,Out-of-province,Male,1591558
+26,Out-of-province,Female,1173935
+27,Total,Male,4668788
+27,Total,Female,4418488
+27,Province,Male,2947862
+27,Province,Female,3161017
+27,"Among them, the separation of household registration and residence within the district",Male,793580
+27,"Among them, the separation of household registration and residence within the district",Female,914458
+27,Out-of-province,Male,1720926
+27,Out-of-province,Female,1257471
+28,Total,Male,4838615
+28,Total,Female,4543384
+28,Province,Male,3069963
+28,Province,Female,3262562
+28,"Among them, the separation of household registration and residence within the district",Male,838428
+28,"Among them, the separation of household registration and residence within the district",Female,964905
+28,Out-of-province,Male,1768652
+28,Out-of-province,Female,1280822
+29,Total,Male,5159899
+29,Total,Female,4820737
+29,Province,Male,3294792
+29,Province,Female,3478394
+29,"Among them, the separation of household registration and residence within the district",Male,896178
+29,"Among them, the separation of household registration and residence within the district",Female,1035232
+29,Out-of-province,Male,1865107
+29,Out-of-province,Female,1342343
+30-34 years old,Total,Male,30056879
+30-34 years old,Total,Female,28147367
+30-34 years old,Province,Male,19360232
+30-34 years old,Province,Female,20438338
+30-34 years old,"Among them, the separation of household registration and residence within the district",Male,5643832
+30-34 years old,"Among them, the separation of household registration and residence within the district",Female,6548421
+30-34 years old,Out-of-province,Male,10696647
+30-34 years old,Out-of-province,Female,7709029
+30,Total,Male,6462238
+30,Total,Female,6046323
+30,Province,Male,4109699
+30,Province,Female,4360275
+30,"Among them, the separation of household registration and residence within the district",Male,1121806
+30,"Among them, the separation of household registration and residence within the district",Female,1306929
+30,Out-of-province,Male,2352539
+30,Out-of-province,Female,1686048
+31,Total,Male,6222404
+31,Total,Female,5866883
+31,Province,Male,3995643
+31,Province,Female,4253372
+31,"Among them, the separation of household registration and residence within the district",Male,1138680
+31,"Among them, the separation of household registration and residence within the district",Female,1332796
+31,Out-of-province,Male,2226761
+31,Out-of-province,Female,1613511
+32,Total,Male,5796097
+32,Total,Female,5455425
+32,Province,Male,3744297
+32,Province,Female,3966944
+32,"Among them, the separation of household registration and residence within the district",Male,1099154
+32,"Among them, the separation of household registration and residence within the district",Female,1280986
+32,Out-of-province,Male,2051800
+32,Out-of-province,Female,1488481
+33,Total,Male,6207394
+33,Total,Female,5797312
+33,Province,Male,4019645
+33,Province,Female,4223598
+33,"Among them, the separation of household registration and residence within the district",Male,1208235
+33,"Among them, the separation of household registration and residence within the district",Female,1397407
+33,Out-of-province,Male,2187749
+33,Out-of-province,Female,1573714
+34,Total,Male,5368746
+34,Total,Female,4981424
+34,Province,Male,3490948
+34,Province,Female,3634149
+34,"Among them, the separation of household registration and residence within the district",Male,1075957
+34,"Among them, the separation of household registration and residence within the district",Female,1230303
+34,Out-of-province,Male,1877798
+34,Out-of-province,Female,1347275
+35-39 years old,Total,Male,22484747
+35-39 years old,Total,Female,20370207
+35-39 years old,Province,Male,14833280
+35-39 years old,Province,Female,15050235
+35-39 years old,"Among them, the separation of household registration and residence within the district",Male,4709815
+35-39 years old,"Among them, the separation of household registration and residence within the district",Female,5265881
+35-39 years old,Out-of-province,Male,7651467
+35-39 years old,Out-of-province,Female,5319972
+35,Total,Male,4586884
+35,Total,Female,4177776
+35,Province,Male,2980162
+35,Province,Female,3040648
+35,"Among them, the separation of household registration and residence within the district",Male,907813
+35,"Among them, the separation of household registration and residence within the district",Female,1022639
+35,Out-of-province,Male,1606722
+35,Out-of-province,Female,1137128
+36,Total,Male,4506947
+36,Total,Female,4074540
+36,Province,Male,2951309
+36,Province,Female,2984695
+36,"Among them, the separation of household registration and residence within the district",Male,904045
+36,"Among them, the separation of household registration and residence within the district",Female,1013364
+36,Out-of-province,Male,1555638
+36,Out-of-province,Female,1089845
+37,Total,Male,4328955
+37,Total,Female,3906871
+37,Province,Male,2865007
+37,Province,Female,2891963
+37,"Among them, the separation of household registration and residence within the district",Male,922775
+37,"Among them, the separation of household registration and residence within the district",Female,1027638
+37,Out-of-province,Male,1463948
+37,Out-of-province,Female,1014908
+38,Total,Male,4870092
+38,Total,Female,4411088
+38,Province,Male,3247402
+38,Province,Female,3295909
+38,"Among them, the separation of household registration and residence within the district",Male,1075616
+38,"Among them, the separation of household registration and residence within the district",Female,1198033
+38,Out-of-province,Male,1622690
+38,Out-of-province,Female,1115179
+39,Total,Male,4191869
+39,Total,Female,3799932
+39,Province,Male,2789400
+39,Province,Female,2837020
+39,"Among them, the separation of household registration and residence within the district",Male,899566
+39,"Among them, the separation of household registration and residence within the district",Female,1004207
+39,Out-of-province,Male,1402469
+39,Out-of-province,Female,962912
+40-44 years old,Total,Male,19504443
+40-44 years old,Total,Female,17567040
+40-44 years old,Province,Male,13114899
+40-44 years old,Province,Female,13097712
+40-44 years old,"Among them, the separation of household registration and residence within the district",Male,4252377
+40-44 years old,"Among them, the separation of household registration and residence within the district",Female,4645528
+40-44 years old,Out-of-province,Male,6389544
+40-44 years old,Out-of-province,Female,4469328
+40,Total,Male,3808785
+40,Total,Female,3443569
+40,Province,Male,2539996
+40,Province,Female,2567056
+40,"Among them, the separation of household registration and residence within the district",Male,809232
+40,"Among them, the separation of household registration and residence within the district",Female,894740
+40,Out-of-province,Male,1268789
+40,Out-of-province,Female,876513
+41,Total,Male,4136798
+41,Total,Female,3724160
+41,Province,Male,2791890
+41,Province,Female,2801084
+41,"Among them, the separation of household registration and residence within the district",Male,902584
+41,"Among them, the separation of household registration and residence within the district",Female,992245
+41,Out-of-province,Male,1344908
+41,Out-of-province,Female,923076
+42,Total,Male,3880040
+42,Total,Female,3515150
+42,Province,Male,2621545
+42,Province,Female,2629810
+42,"Among them, the separation of household registration and residence within the district",Male,855182
+42,"Among them, the separation of household registration and residence within the district",Female,938861
+42,Out-of-province,Male,1258495
+42,Out-of-province,Female,885340
+43,Total,Male,3658704
+43,Total,Female,3292319
+43,Province,Male,2466354
+43,Province,Female,2451126
+43,"Among them, the separation of household registration and residence within the district",Male,809240
+43,"Among them, the separation of household registration and residence within the district",Female,880444
+43,Out-of-province,Male,1192350
+43,Out-of-province,Female,841193
+44,Total,Male,4020116
+44,Total,Female,3591842
+44,Province,Male,2695114
+44,Province,Female,2648636
+44,"Among them, the separation of household registration and residence within the district",Male,876139
+44,"Among them, the separation of household registration and residence within the district",Female,939238
+44,Out-of-province,Male,1325002
+44,Out-of-province,Female,943206
+45-49 years old,Total,Male,21596600
+45-49 years old,Total,Female,19211494
+45-49 years old,Province,Male,14440993
+45-49 years old,Province,Female,14100755
+45-49 years old,"Among them, the separation of household registration and residence within the district",Male,4873219
+45-49 years old,"Among them, the separation of household registration and residence within the district",Female,5098239
+45-49 years old,Out-of-province,Male,7155607
+45-49 years old,Out-of-province,Female,5110739
+45,Total,Male,4043778
+45,Total,Female,3623847
+45,Province,Male,2693171
+45,Province,Female,2652358
+45,"Among them, the separation of household registration and residence within the district",Male,892567
+45,"Among them, the separation of household registration and residence within the district",Female,952912
+45,Out-of-province,Male,1350607
+45,Out-of-province,Female,971489
+46,Total,Male,4341932
+46,Total,Female,3878599
+46,Province,Male,2876207
+46,Province,Female,2821300
+46,"Among them, the separation of household registration and residence within the district",Male,945851
+46,"Among them, the separation of household registration and residence within the district",Female,999938
+46,Out-of-province,Male,1465725
+46,Out-of-province,Female,1057299
+47,Total,Male,4413182
+47,Total,Female,3917101
+47,Province,Male,2950121
+47,Province,Female,2873639
+47,"Among them, the separation of household registration and residence within the district",Male,1000993
+47,"Among them, the separation of household registration and residence within the district",Female,1045076
+47,Out-of-province,Male,1463061
+47,Out-of-province,Female,1043462
+48,Total,Male,4399111
+48,Total,Female,3904936
+48,Province,Male,2946502
+48,Province,Female,2864680
+48,"Among them, the separation of household registration and residence within the district",Male,1003525
+48,"Among them, the separation of household registration and residence within the district",Female,1036632
+48,Out-of-province,Male,1452609
+48,Out-of-province,Female,1040256
+49,Total,Male,4398597
+49,Total,Female,3887011
+49,Province,Male,2974992
+49,Province,Female,2888778
+49,"Among them, the separation of household registration and residence within the district",Male,1030283
+49,"Among them, the separation of household registration and residence within the district",Female,1063681
+49,Out-of-province,Male,1423605
+49,Out-of-province,Female,998233
+50-54 years old,Total,Male,19502000
+50-54 years old,Total,Female,17632115
+50-54 years old,Province,Male,13366685
+50-54 years old,Province,Female,13337318
+50-54 years old,"Among them, the separation of household registration and residence within the district",Male,4601677
+50-54 years old,"Among them, the separation of household registration and residence within the district",Female,4785435
+50-54 years old,Out-of-province,Male,6135315
+50-54 years old,Out-of-province,Female,4294797
+50,Total,Male,4466628
+50,Total,Female,4014468
+50,Province,Male,3031868
+50,Province,Female,2993178
+50,"Among them, the separation of household registration and residence within the district",Male,1051842
+50,"Among them, the separation of household registration and residence within the district",Female,1092865
+50,Out-of-province,Male,1434760
+50,Out-of-province,Female,1021290
+51,Total,Male,4058053
+51,Total,Female,3645570
+51,Province,Male,2775187
+51,Province,Female,2746944
+51,"Among them, the separation of household registration and residence within the district",Male,969224
+51,"Among them, the separation of household registration and residence within the district",Female,1010056
+51,Out-of-province,Male,1282866
+51,Out-of-province,Female,898626
+52,Total,Male,4210854
+52,Total,Female,3811592
+52,Province,Male,2879425
+52,Province,Female,2879790
+52,"Among them, the separation of household registration and residence within the district",Male,996786
+52,"Among them, the separation of household registration and residence within the district",Female,1037346
+52,Out-of-province,Male,1331429
+52,Out-of-province,Female,931802
+53,Total,Male,3229444
+53,Total,Female,2947108
+53,Province,Male,2216347
+53,Province,Female,2237241
+53,"Among them, the separation of household registration and residence within the district",Male,739773
+53,"Among them, the separation of household registration and residence within the district",Female,772444
+53,Out-of-province,Male,1013097
+53,Out-of-province,Female,709867
+54,Total,Male,3537021
+54,Total,Female,3213377
+54,Province,Male,2463858
+54,Province,Female,2480165
+54,"Among them, the separation of household registration and residence within the district",Male,844052
+54,"Among them, the separation of household registration and residence within the district",Female,872724
+54,Out-of-province,Male,1073163
+54,Out-of-province,Female,733212
+55-59 years old,Total,Male,14105422
+55-59 years old,Total,Female,13459535
+55-59 years old,Province,Male,10538706
+55-59 years old,Province,Female,10834869
+55-59 years old,"Among them, the separation of household registration and residence within the district",Male,4063085
+55-59 years old,"Among them, the separation of household registration and residence within the district",Female,4161577
+55-59 years old,Out-of-province,Male,3566716
+55-59 years old,Out-of-province,Female,2624666
+55,Total,Male,3363722
+55,Total,Female,3113913
+55,Province,Male,2422481
+55,Province,Female,2452848
+55,"Among them, the separation of household registration and residence within the district",Male,872508
+55,"Among them, the separation of household registration and residence within the district",Female,891633
+55,Out-of-province,Male,941241
+55,Out-of-province,Female,661065
+56,Total,Male,3219204
+56,Total,Female,3052043
+56,Province,Male,2380513
+56,Province,Female,2440388
+56,"Among them, the separation of household registration and residence within the district",Male,913857
+56,"Among them, the separation of household registration and residence within the district",Female,933712
+56,Out-of-province,Male,838691
+56,Out-of-province,Female,611655
+57,Total,Male,3625320
+57,Total,Female,3440167
+57,Province,Male,2736929
+57,Province,Female,2796439
+57,"Among them, the separation of household registration and residence within the district",Male,1099412
+57,"Among them, the separation of household registration and residence within the district",Female,1122705
+57,Out-of-province,Male,888391
+57,Out-of-province,Female,643728
+58,Total,Male,2537778
+58,Total,Female,2465207
+58,Province,Male,1926217
+58,Province,Female,2000462
+58,"Among them, the separation of household registration and residence within the district",Male,734995
+58,"Among them, the separation of household registration and residence within the district",Female,752258
+58,Out-of-province,Male,611561
+58,Out-of-province,Female,464745
+59,Total,Male,1359398
+59,Total,Female,1388205
+59,Province,Male,1072566
+59,Province,Female,1144732
+59,"Among them, the separation of household registration and residence within the district",Male,442313
+59,"Among them, the separation of household registration and residence within the district",Female,461269
+59,Out-of-province,Male,286832
+59,Out-of-province,Female,243473
+60-64 years old,Total,Male,8669401
+60-64 years old,Total,Female,8645733
+60-64 years old,Province,Male,7082783
+60-64 years old,Province,Female,7273603
+60-64 years old,"Among them, the separation of household registration and residence within the district",Male,2957746
+60-64 years old,"Among them, the separation of household registration and residence within the district",Female,3029267
+60-64 years old,Out-of-province,Male,1586618
+60-64 years old,Out-of-province,Female,1372130
+60,Total,Male,1625124
+60,Total,Female,1625104
+60,Province,Male,1317753
+60,Province,Female,1361236
+60,"Among them, the separation of household registration and residence within the district",Male,563899
+60,"Among them, the separation of household registration and residence within the district",Female,574839
+60,Out-of-province,Male,307371
+60,Out-of-province,Female,263868
+61,Total,Male,1500356
+61,Total,Female,1461003
+61,Province,Male,1223754
+61,Province,Female,1229198
+61,"Among them, the separation of household registration and residence within the district",Male,513093
+61,"Among them, the separation of household registration and residence within the district",Female,515679
+61,Out-of-province,Male,276602
+61,Out-of-province,Female,231805
+62,Total,Male,1859877
+62,Total,Female,1814090
+62,Province,Male,1513912
+62,Province,Female,1525402
+62,"Among them, the separation of household registration and residence within the district",Male,630697
+62,"Among them, the separation of household registration and residence within the district",Female,636221
+62,Out-of-province,Male,345965
+62,Out-of-province,Female,288688
+63,Total,Male,1968074
+63,Total,Female,1977199
+63,Province,Male,1610509
+63,Province,Female,1664305
+63,"Among them, the separation of household registration and residence within the district",Male,664303
+63,"Among them, the separation of household registration and residence within the district",Female,687325
+63,Out-of-province,Male,357565
+63,Out-of-province,Female,312894
+64,Total,Male,1715970
+64,Total,Female,1768337
+64,Province,Male,1416855
+64,Province,Female,1493462
+64,"Among them, the separation of household registration and residence within the district",Male,585754
+64,"Among them, the separation of household registration and residence within the district",Female,615203
+64,Out-of-province,Male,299115
+64,Out-of-province,Female,274875
+65-69 years old,Total,Male,7237816
+65-69 years old,Total,Female,7583984
+65-69 years old,Province,Male,6122950
+65-69 years old,Province,Female,6514613
+65-69 years old,"Among them, the separation of household registration and residence within the district",Male,2515303
+65-69 years old,"Among them, the separation of household registration and residence within the district",Female,2712616
+65-69 years old,Out-of-province,Male,1114866
+65-69 years old,Out-of-province,Female,1069371
+65,Total,Male,1719187
+65,Total,Female,1771850
+65,Province,Male,1431798
+65,Province,Female,1505450
+65,"Among them, the separation of household registration and residence within the district",Male,589763
+65,"Among them, the separation of household registration and residence within the district",Female,623764
+65,Out-of-province,Male,287389
+65,Out-of-province,Female,266400
+66,Total,Male,1651807
+66,Total,Female,1729939
+66,Province,Male,1387240
+66,Province,Female,1478654
+66,"Among them, the separation of household registration and residence within the district",Male,577771
+66,"Among them, the separation of household registration and residence within the district",Female,619052
+66,Out-of-province,Male,264567
+66,Out-of-province,Female,251285
+67,Total,Male,1407689
+67,Total,Female,1493668
+67,Province,Male,1191921
+67,Province,Female,1283592
+67,"Among them, the separation of household registration and residence within the district",Male,486406
+67,"Among them, the separation of household registration and residence within the district",Female,531609
+67,Out-of-province,Male,215768
+67,Out-of-province,Female,210076
+68,Total,Male,1347237
+68,Total,Female,1418167
+68,Province,Male,1150950
+68,Province,Female,1226820
+68,"Among them, the separation of household registration and residence within the district",Male,466682
+68,"Among them, the separation of household registration and residence within the district",Female,508851
+68,Out-of-province,Male,196287
+68,Out-of-province,Female,191347
+69,Total,Male,1111896
+69,Total,Female,1170360
+69,Province,Male,961041
+69,Province,Female,1020097
+69,"Among them, the separation of household registration and residence within the district",Male,394681
+69,"Among them, the separation of household registration and residence within the district",Female,429340
+69,Out-of-province,Male,150855
+69,Out-of-province,Female,150263
+70-74 years old,Total,Male,4249151
+70-74 years old,Total,Female,4347442
+70-74 years old,Province,Male,3756984
+70-74 years old,Province,Female,3863870
+70-74 years old,"Among them, the separation of household registration and residence within the district",Male,1514231
+70-74 years old,"Among them, the separation of household registration and residence within the district",Female,1626004
+70-74 years old,Out-of-province,Male,492167
+70-74 years old,Out-of-province,Female,483572
+70,Total,Male,1046890
+70,Total,Female,1073767
+70,Province,Male,914335
+70,Province,Female,944113
+70,"Among them, the separation of household registration and residence within the district",Male,373243
+70,"Among them, the separation of household registration and residence within the district",Female,397770
+70,Out-of-province,Male,132555
+70,Out-of-province,Female,129654
+71,Total,Male,981130
+71,Total,Female,991552
+71,Province,Male,863928
+71,Province,Female,878361
+71,"Among them, the separation of household registration and residence within the district",Male,345684
+71,"Among them, the separation of household registration and residence within the district",Female,367186
+71,Out-of-province,Male,117202
+71,Out-of-province,Female,113191
+72,Total,Male,797823
+72,Total,Female,824872
+72,Province,Male,707310
+72,Province,Female,735372
+72,"Among them, the separation of household registration and residence within the district",Male,283368
+72,"Among them, the separation of household registration and residence within the district",Female,308132
+72,Out-of-province,Male,90513
+72,Out-of-province,Female,89500
+73,Total,Male,755005
+73,Total,Female,768457
+73,Province,Male,673403
+73,Province,Female,687660
+73,"Among them, the separation of household registration and residence within the district",Male,271242
+73,"Among them, the separation of household registration and residence within the district",Female,290951
+73,Out-of-province,Male,81602
+73,Out-of-province,Female,80797
+74,Total,Male,668303
+74,Total,Female,688794
+74,Province,Male,598008
+74,Province,Female,618364
+74,"Among them, the separation of household registration and residence within the district",Male,240694
+74,"Among them, the separation of household registration and residence within the district",Female,261965
+74,Out-of-province,Male,70295
+74,Out-of-province,Female,70430
+75-79 years old,Total,Male,2446691
+75-79 years old,Total,Female,2660888
+75-79 years old,Province,Male,2211501
+75-79 years old,Province,Female,2402918
+75-79 years old,"Among them, the separation of household registration and residence within the district",Male,884585
+75-79 years old,"Among them, the separation of household registration and residence within the district",Female,1017664
+75-79 years old,Out-of-province,Male,235190
+75-79 years old,Out-of-province,Female,257970
+75,Total,Male,568186
+75,Total,Female,602922
+75,Province,Male,510356
+75,Province,Female,542486
+75,"Among them, the separation of household registration and residence within the district",Male,202431
+75,"Among them, the separation of household registration and residence within the district",Female,227776
+75,Out-of-province,Male,57830
+75,Out-of-province,Female,60436
+76,Total,Male,538766
+76,Total,Female,569691
+76,Province,Male,486216
+76,Province,Female,513890
+76,"Among them, the separation of household registration and residence within the district",Male,192852
+76,"Among them, the separation of household registration and residence within the district",Female,216663
+76,Out-of-province,Male,52550
+76,Out-of-province,Female,55801
+77,Total,Male,468427
+77,Total,Female,514095
+77,Province,Male,423874
+77,Province,Female,464026
+77,"Among them, the separation of household registration and residence within the district",Male,169540
+77,"Among them, the separation of household registration and residence within the district",Female,195671
+77,Out-of-province,Male,44553
+77,Out-of-province,Female,50069
+78,Total,Male,445104
+78,Total,Female,493666
+78,Province,Male,403833
+78,Province,Female,446710
+78,"Among them, the separation of household registration and residence within the district",Male,163158
+78,"Among them, the separation of household registration and residence within the district",Female,191231
+78,Out-of-province,Male,41271
+78,Out-of-province,Female,46956
+79,Total,Male,426208
+79,Total,Female,480514
+79,Province,Male,387222
+79,Province,Female,435806
+79,"Among them, the separation of household registration and residence within the district",Male,156604
+79,"Among them, the separation of household registration and residence within the district",Female,186323
+79,Out-of-province,Male,38986
+79,Out-of-province,Female,44708
+80-84 years old,Total,Male,1547258
+80-84 years old,Total,Female,1832836
+80-84 years old,Province,Male,1411128
+80-84 years old,Province,Female,1675266
+80-84 years old,"Among them, the separation of household registration and residence within the district",Male,583118
+80-84 years old,"Among them, the separation of household registration and residence within the district",Female,736922
+80-84 years old,Out-of-province,Male,136130
+80-84 years old,Out-of-province,Female,157570
+80,Total,Male,387979
+80,Total,Female,435050
+80,Province,Male,352771
+80,Province,Female,395069
+80,"Among them, the separation of household registration and residence within the district",Male,142057
+80,"Among them, the separation of household registration and residence within the district",Female,170707
+80,Out-of-province,Male,35208
+80,Out-of-province,Female,39981
+81,Total,Male,314989
+81,Total,Female,375932
+81,Province,Male,287196
+81,Province,Female,342602
+81,"Among them, the separation of household registration and residence within the district",Male,118793
+81,"Among them, the separation of household registration and residence within the district",Female,151988
+81,Out-of-province,Male,27793
+81,Out-of-province,Female,33330
+82,Total,Male,319959
+82,Total,Female,377498
+82,Province,Male,292026
+82,Province,Female,345243
+82,"Among them, the separation of household registration and residence within the district",Male,120367
+82,"Among them, the separation of household registration and residence within the district",Female,151644
+82,Out-of-province,Male,27933
+82,Out-of-province,Female,32255
+83,Total,Male,277262
+83,Total,Female,333409
+83,Province,Male,253067
+83,Province,Female,306171
+83,"Among them, the separation of household registration and residence within the district",Male,105552
+83,"Among them, the separation of household registration and residence within the district",Female,135052
+83,Out-of-province,Male,24195
+83,Out-of-province,Female,27238
+84,Total,Male,247069
+84,Total,Female,310947
+84,Province,Male,226068
+84,Province,Female,286181
+84,"Among them, the separation of household registration and residence within the district",Male,96349
+84,"Among them, the separation of household registration and residence within the district",Female,127531
+84,Out-of-province,Male,21001
+84,Out-of-province,Female,24766
+85-89 years old,Total,Male,783505
+85-89 years old,Total,Female,1038470
+85-89 years old,Province,Male,722206
+85-89 years old,Province,Female,963094
+85-89 years old,"Among them, the separation of household registration and residence within the district",Male,308133
+85-89 years old,"Among them, the separation of household registration and residence within the district",Female,432488
+85-89 years old,Out-of-province,Male,61299
+85-89 years old,Out-of-province,Female,75376
+85,Total,Male,206263
+85,Total,Female,273892
+85,Province,Male,189257
+85,Province,Female,252968
+85,"Among them, the separation of household registration and residence within the district",Male,81745
+85,"Among them, the separation of household registration and residence within the district",Female,114400
+85,Out-of-province,Male,17006
+85,Out-of-province,Female,20924
+86,Total,Male,179539
+86,Total,Female,240954
+86,Province,Male,164975
+86,Province,Female,222904
+86,"Among them, the separation of household registration and residence within the district",Male,70956
+86,"Among them, the separation of household registration and residence within the district",Female,100326
+86,Out-of-province,Male,14564
+86,Out-of-province,Female,18050
+87,Total,Male,166734
+87,Total,Female,219240
+87,Province,Male,153919
+87,Province,Female,203655
+87,"Among them, the separation of household registration and residence within the district",Male,64993
+87,"Among them, the separation of household registration and residence within the district",Female,91389
+87,Out-of-province,Male,12815
+87,Out-of-province,Female,15585
+88,Total,Male,125545
+88,Total,Female,168317
+88,Province,Male,116243
+88,Province,Female,156632
+88,"Among them, the separation of household registration and residence within the district",Male,49942
+88,"Among them, the separation of household registration and residence within the district",Female,70454
+88,Out-of-province,Male,9302
+88,Out-of-province,Female,11685
+89,Total,Male,105424
+89,Total,Female,136067
+89,Province,Male,97812
+89,Province,Female,126935
+89,"Among them, the separation of household registration and residence within the district",Male,40497
+89,"Among them, the separation of household registration and residence within the district",Female,55919
+89,Out-of-province,Male,7612
+89,Out-of-province,Female,9132
+90-94 years old,Total,Male,277078
+90-94 years old,Total,Female,388232
+90-94 years old,Province,Male,257996
+90-94 years old,Province,Female,363521
+90-94 years old,"Among them, the separation of household registration and residence within the district",Male,104043
+90-94 years old,"Among them, the separation of household registration and residence within the district",Female,157845
+90-94 years old,Out-of-province,Male,19082
+90-94 years old,Out-of-province,Female,24711
+90,Total,Male,93201
+90,Total,Female,122489
+90,Province,Male,86466
+90,Province,Female,114440
+90,"Among them, the separation of household registration and residence within the district",Male,35903
+90,"Among them, the separation of household registration and residence within the district",Female,49975
+90,Out-of-province,Male,6735
+90,Out-of-province,Female,8049
+91,Total,Male,62619
+91,Total,Female,88765
+91,Province,Male,58303
+91,Province,Female,83142
+91,"Among them, the separation of household registration and residence within the district",Male,24212
+91,"Among them, the separation of household registration and residence within the district",Female,36948
+91,Out-of-province,Male,4316
+91,Out-of-province,Female,5623
+92,Total,Male,53185
+92,Total,Female,76665
+92,Province,Male,49656
+92,Province,Female,71900
+92,"Among them, the separation of household registration and residence within the district",Male,19789
+92,"Among them, the separation of household registration and residence within the district",Female,31293
+92,Out-of-province,Male,3529
+92,Out-of-province,Female,4765
+93,Total,Male,39055
+93,Total,Female,57220
+93,Province,Male,36443
+93,Province,Female,53595
+93,"Among them, the separation of household registration and residence within the district",Male,13995
+93,"Among them, the separation of household registration and residence within the district",Female,22689
+93,Out-of-province,Male,2612
+93,Out-of-province,Female,3625
+94,Total,Male,29018
+94,Total,Female,43093
+94,Province,Male,27128
+94,Province,Female,40444
+94,"Among them, the separation of household registration and residence within the district",Male,10144
+94,"Among them, the separation of household registration and residence within the district",Female,16940
+94,Out-of-province,Male,1890
+94,Out-of-province,Female,2649
+95-99 years old,Total,Male,69249
+95-99 years old,Total,Female,107411
+95-99 years old,Province,Male,64640
+95-99 years old,Province,Female,100751
+95-99 years old,"Among them, the separation of household registration and residence within the district",Male,21225
+95-99 years old,"Among them, the separation of household registration and residence within the district",Female,38136
+95-99 years old,Out-of-province,Male,4609
+95-99 years old,Out-of-province,Female,6660
+95,Total,Male,23197
+95,Total,Female,34936
+95,Province,Male,21707
+95,Province,Female,32792
+95,"Among them, the separation of household registration and residence within the district",Male,7664
+95,"Among them, the separation of household registration and residence within the district",Female,13229
+95,Out-of-province,Male,1490
+95,Out-of-province,Female,2144
+96,Total,Male,16778
+96,Total,Female,26383
+96,Province,Male,15669
+96,Province,Female,24766
+96,"Among them, the separation of household registration and residence within the district",Male,5331
+96,"Among them, the separation of household registration and residence within the district",Female,9668
+96,Out-of-province,Male,1109
+96,Out-of-province,Female,1617
+97,Total,Male,12074
+97,Total,Female,19464
+97,Province,Male,11282
+97,Province,Female,18308
+97,"Among them, the separation of household registration and residence within the district",Male,3655
+97,"Among them, the separation of household registration and residence within the district",Female,6796
+97,Out-of-province,Male,792
+97,Out-of-province,Female,1156
+98,Total,Male,9271
+98,Total,Female,14470
+98,Province,Male,8667
+98,Province,Female,13548
+98,"Among them, the separation of household registration and residence within the district",Male,2604
+98,"Among them, the separation of household registration and residence within the district",Female,4785
+98,Out-of-province,Male,604
+98,Out-of-province,Female,922
+99,Total,Male,7929
+99,Total,Female,12158
+99,Province,Male,7315
+99,Province,Female,11337
+99,"Among them, the separation of household registration and residence within the district",Male,1971
+99,"Among them, the separation of household registration and residence within the district",Female,3658
+99,Out-of-province,Male,614
+99,Out-of-province,Female,821
+100 years old and above,Total,Male,13887
+100 years old and above,Total,Female,22296
+100 years old and above,Province,Male,12817
+100 years old and above,Province,Female,20605
+100 years old and above,"Among them, the separation of household registration and residence within the district",Male,3114
+100 years old and above,"Among them, the separation of household registration and residence within the district",Female,6353
+100 years old and above,Out-of-province,Male,1070
+100 years old and above,Out-of-province,Female,1691

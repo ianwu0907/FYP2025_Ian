@@ -1,0 +1,121 @@
+category_group,category_value,cohort,percent
+,montreal,cohort_1,17.8
+,toronto,cohort_1,34.0
+,vancouver,cohort_1,14.6
+,medium-sized census metropolitan areas,cohort_1,18.8
+,small census metropolitan areas,cohort_1,8.2
+,small urban areas,cohort_1,4.0
+,rural areas,cohort_1,2.7
+source region,western developed countries,cohort_1,7.9
+source region,caribbean and central america,cohort_1,3.2
+source region,south america,cohort_1,3.7
+source region,southern europe,cohort_1,0.9
+source region,eastern europe,cohort_1,8.4
+source region,africa,cohort_1,11.5
+source region,southern asia,cohort_1,18.7
+source region,southeast asia,cohort_1,15.4
+source region,east asia,cohort_1,21.7
+source region,west asia,cohort_1,8.6
+source region,others,cohort_1,0.1
+highest level of education at landing,less than high school,cohort_1,11.3
+highest level of education at landing,high school graduation,cohort_1,11.5
+highest level of education at landing,some postsecondary education,cohort_1,12.6
+highest level of education at landing,bachelor's degree or higher,cohort_1,64.6
+knowledge of official languages,neither english nor french,cohort_1,17.8
+knowledge of official languages,english and/or french,cohort_1,82.2
+,montreal,cohort_2,13.1
+,toronto,cohort_2,39.0
+,vancouver,cohort_2,14.0
+,medium-sized census metropolitan areas,cohort_2,16.7
+,small census metropolitan areas,cohort_2,9.6
+,small urban areas,cohort_2,4.1
+,rural areas,cohort_2,3.5
+source region,western developed countries,cohort_2,11.8
+source region,caribbean and central america,cohort_2,9.3
+source region,south america,cohort_2,4.7
+source region,southern europe,cohort_2,1.9
+source region,eastern europe,cohort_2,5.4
+source region,africa,cohort_2,9.8
+source region,southern asia,cohort_2,25.5
+source region,southeast asia,cohort_2,10.2
+source region,east asia,cohort_2,14.2
+source region,west asia,cohort_2,6.8
+source region,others,cohort_2,0.4
+highest level of education at landing,less than high school,cohort_2,34.8
+highest level of education at landing,high school graduation,cohort_2,19.2
+highest level of education at landing,some postsecondary education,cohort_2,12.0
+highest level of education at landing,bachelor's degree or higher,cohort_2,34.0
+knowledge of official languages,neither english nor french,cohort_2,29.0
+knowledge of official languages,english and/or french,cohort_2,71.0
+,montreal,cohort_3,5.6
+,toronto,cohort_3,15.9
+,vancouver,cohort_3,11.1
+,medium-sized census metropolitan areas,cohort_3,34.0
+,small census metropolitan areas,cohort_3,23.6
+,small urban areas,cohort_3,9.6
+,rural areas,cohort_3,0.4
+source region,western developed countries,cohort_3,0.1
+source region,caribbean and central america,cohort_3,0.5
+source region,south america,cohort_3,12.8
+source region,southern europe,cohort_3,1.6
+source region,eastern europe,cohort_3,7.0
+source region,africa,cohort_3,30.5
+source region,southern asia,cohort_3,6.7
+source region,southeast asia,cohort_3,5.6
+source region,east asia,cohort_3,0.2
+source region,west asia,cohort_3,35.3
+source region,others,cohort_3,0.0
+highest level of education at landing,less than high school,cohort_3,72.9
+highest level of education at landing,high school graduation,cohort_3,11.3
+highest level of education at landing,some postsecondary education,cohort_3,5.3
+highest level of education at landing,bachelor's degree or higher,cohort_3,10.5
+knowledge of official languages,neither english nor french,cohort_3,67.7
+knowledge of official languages,english and/or french,cohort_3,32.3
+,montreal,cohort_4,5.0
+,toronto,cohort_4,28.9
+,vancouver,cohort_4,6.7
+,medium-sized census metropolitan areas,cohort_4,37.5
+,small census metropolitan areas,cohort_4,15.1
+,small urban areas,cohort_4,6.0
+,rural areas,cohort_4,0.9
+source region,western developed countries,cohort_4,0.0
+source region,caribbean and central america,cohort_4,0.2
+source region,south america,cohort_4,2.1
+source region,southern europe,cohort_4,0.5
+source region,eastern europe,cohort_4,0.9
+source region,africa,cohort_4,44.8
+source region,southern asia,cohort_4,2.6
+source region,southeast asia,cohort_4,1.4
+source region,east asia,cohort_4,0.1
+source region,west asia,cohort_4,47.5
+source region,others,cohort_4,0.0
+highest level of education at landing,less than high school,cohort_4,69.7
+highest level of education at landing,high school graduation,cohort_4,13.0
+highest level of education at landing,some postsecondary education,cohort_4,7.9
+highest level of education at landing,bachelor's degree or higher,cohort_4,9.4
+knowledge of official languages,neither english nor french,cohort_4,53.2
+knowledge of official languages,english and/or french,cohort_4,46.8
+,montreal,cohort_5,20.4
+,toronto,cohort_5,52.3
+,vancouver,cohort_5,4.8
+,medium-sized census metropolitan areas,cohort_5,13.0
+,small census metropolitan areas,cohort_5,7.8
+,small urban areas,cohort_5,1.4
+,rural areas,cohort_5,0.3
+source region,western developed countries,cohort_5,0.3
+source region,caribbean and central america,cohort_5,12.9
+source region,south america,cohort_5,11.8
+source region,southern europe,cohort_5,1.6
+source region,eastern europe,cohort_5,5.8
+source region,africa,cohort_5,22.0
+source region,southern asia,cohort_5,23.1
+source region,southeast asia,cohort_5,1.0
+source region,east asia,cohort_5,9.8
+source region,west asia,cohort_5,11.6
+source region,others,cohort_5,0.3
+highest level of education at landing,less than high school,cohort_5,48.0
+highest level of education at landing,high school graduation,cohort_5,19.6
+highest level of education at landing,some postsecondary education,cohort_5,14.3
+highest level of education at landing,bachelor's degree or higher,cohort_5,18.1
+knowledge of official languages,neither english nor french,cohort_5,14.7
+knowledge of official languages,english and/or french,cohort_5,85.4

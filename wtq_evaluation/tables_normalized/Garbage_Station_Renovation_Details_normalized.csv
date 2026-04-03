@@ -1,0 +1,65 @@
+serial_number,location_function,activity_type,specifications,description,unit,quantity,unit_price
+1,Transfer Station,Demolition,"Length/Width/Height
+2300cm*130cm*280cm",Removal of existing structural body and equipment,Set,1,2000
+2,Transfer Station,Ground and Wall Leveling and Cleaning,Various,"Removal of attached contaminants, hydrochloric acid cleaning and disinfection",item,1,1200
+3,Transfer Station,Finished Product Both Sides Waste Disposal Box Room 1 (excluding door),"Length/Width/Height
+520cm*130cm*460cm","Materials: Galvanized steel, metal paint.  
+Process: Galvanized steel structural upright bones, sealed with 0.7mm thick galvanized iron sheet, surface sprayed with automotive paint.  
+Installation method: Pre-reserved legs on finished product, on-site hoisting, cement pouring and fixing embedded legs.",Set,2,39760
+4,Transfer Station,Finished Product Two-Sided Waste Disposal Box Room 2 (Excluding Door),"Length/Width/Height
+445cm*130cm*360cm","Materials: Galvanized steel, metal paint.  
+Process: Galvanized steel structural upright bones, sealed with 0.7mm thick galvanized iron sheet, surface sprayed with automotive paint.  
+Installation method: Pre-reserved legs on finished product, on-site hoisting, cement pouring and fixing embedded legs.",Set,2,26800
+5,Transfer Station,Finished Water Bar Service Box Room (Excluding Doors and Windows),"Length/Width/Height
+305cm*130cm*360cm","Materials: Galvanized steel, metal paint.  
+Process: Galvanized steel structural upright bones, sealed with 0.7mm thick galvanized iron sheet, surface sprayed with automotive paint.  
+Installation method: Pre-reserved legs on finished product, on-site hoisting, cement pouring and fixing embedded legs.",Set,1,32750
+6,Transfer Station,Custom-made Imported Acrylic Track Sliding Door Style 1,"Length/Height
+104cm*220cm","Materials: Galvanized steel, metal paint, imported colored acrylic flower windows, sliding tracks.  
+Process: Galvanized steel structure upright bones, sealed with 0.7mm thick galvanized iron sheet, surface sprayed with automotive paint, color imported acrylic attached to the exterior of the door.  
+Installation method: Install tracks on site, adjust sliding track sliding regulations.",Fan,10,3185
+7,Transfer Station,Custom-made Imported Acrylic Track Sliding Door Style 2,"Length/Height
+110cm*220cm","Materials: Galvanized steel, metal paint, imported colored acrylic flower windows, sliding tracks.  
+Process: Galvanized steel structure upright bones, sealed with 0.7mm thick galvanized iron sheet, surface sprayed with automotive paint, color imported acrylic attached to the exterior of the door.  
+Installation method: Install tracks on site, adjust sliding track sliding regulations.",Fan,8,3285
+8,Transfer Station,Custom Made Imported Acrylic Door,"Length/Height
+80cm*220cm","Materials: Galvanized steel, metal paint, imported colored acrylic flower windows, sliding tracks.  
+Process: Galvanized steel structure upright bones, sealed with 0.7mm thick galvanized iron sheet, surface sprayed with automotive paint, color imported acrylic attached to the exterior of the door.  
+Installation method: Install tracks on site, adjust sliding track sliding regulations.",Fan,1,2255
+9,Transfer Station,Custom-made Imported Acrylic Window,"Length/Height
+130cm*70cm","Materials: Galvanized steel, metal paint, imported colored acrylic flower windows, sliding tracks.  
+Process: Galvanized steel structure upright bones, sealed with 0.7mm thick galvanized iron sheet, surface sprayed with automotive paint, color imported acrylic attached to the exterior surface.  
+Installation method: Install tracks on site, adjust sliding track sliding regulations.",Fan,3,2580
+10,Transfer Station,Water Feature Circulation System,Various,"Materials: PVC pipe, circulating water pump.  
+Process: Connecting pipes to create a water circulation system, directional flowing water feature.",item,1,6248
+11,Transfer Station,304 Stainless Steel Water Feature Water Tank,"Length/Width/Height
+160cm*130cm*180cm","Materials: PVC pipes, 304 stainless steel.",item,1,8225
+12,Transfer Station,Roof Greenery,"Length/Width/Height
+2240cm*50cm",Material: Climbing plants,item,1,7500
+13,Garbage Disposal Point,Bookcase-style Finished Disposal Box Room (excluding door),"Length/Width/Height
+620cm*130cm*220cm","Materials: Galvanized steel, champagne gold metal paint, surface screen printing text.  
+Process: Galvanized steel structure upright bones, sealed with 0.7mm thick galvanized iron sheet, surface sprayed with automotive paint.  
+Installation method: Pre-reserved legs on finished product, on-site hoisting, cement pouring and fixing embedded legs.",Set,3,86850
+14,Disposal Point,Custom Track Sliding Door Style,"Length/Height
+104cm*220cm","Materials: Galvanized steel, metal paint, foot-operated waste disposal hatch, sliding track.  
+Process: Galvanized steel structure frame, sealed with 0.7mm thick galvanized iron sheet, surface sprayed with automotive paint.  
+Installation method: Install tracks on site, adjust the sliding track movement specifications.",Fan,15,4185
+15,Waste Disposal Point,Basin,"Diameter  
+60cm",Materials: Arrow brand wash basin (to be confirmed),item,3,1885
+16,Disposal Point,Water Supply and Drainage,Various,"Connecting the basin's water supply and drainage, PVC pipe",item,3,1500
+17,Underbridge Station,Steel Structure Frame,"Length/Width
+3600cm*850cm","Materials: Galvanized steel, metal paint,  
+Main frame beam 100*100*2.0mm  
+Roof frame 40*40*1.5mm  
+Galvanized square steel column 100*100*2.0mm  
+Process: Galvanized steel structure upright bones, surface spray with car paint.  
+Installation method: On-site chemical screw installation, installation height 5 meters from the ground.",㎡,306,80
+18,Underbridge Station,Barbed Wire,"Length/Height
+25cm*30cm","Materials: Wire mesh, surface covered with insulating plastic.  
+Process: Spot welding flat layout  
+Installation method: On-site chemical screw installation, installation height 5 meters from the ground",㎡,287,55
+19,Underbridge Station,Stainless Steel Flower Bed,"Length/Height
+25cm*30cm",Material: 304 stainless steel,m,108,110
+20,Installation Shifts,,Medium and small-sized crane,,item,4,3800
+21,Transportation,,,,item,2,5500
+22,On-site installation,,,,Work,55,380

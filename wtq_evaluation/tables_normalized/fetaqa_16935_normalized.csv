@@ -1,0 +1,13 @@
+nation,name,city,capacity,head_coach,captain
+Argentina,Estadio Ciudad de La Plata,La Plata,53000,Daniel Hourcade,Agustín Creevy
+Argentina,Estadio Malvinas Argentinas,Mendoza,40268,Daniel Hourcade,Agustín Creevy
+Argentina,Estadio Padre Ernesto Martearena,Salta,20408,Daniel Hourcade,Agustín Creevy
+Australia,ANZ Stadium,Sydney,84000,Ewen McKenzie,Michael Hooper
+Australia,Patersons Stadium,Perth,43500,Ewen McKenzie,Michael Hooper
+Australia,Cbus Super Stadium,Gold Coast,27400,Ewen McKenzie,Michael Hooper
+New Zealand,Eden Park,Auckland,50000,Steve Hansen,Richie McCaw
+New Zealand,Westpac Stadium,Wellington,34500,Steve Hansen,Richie McCaw
+New Zealand,McLean Park,Napier,22000,Steve Hansen,Richie McCaw
+South Africa,Ellis Park Stadium,Johannesburg,62567,Heyneke Meyer,Jean de Villiers
+South Africa,DHL Newlands,Cape Town,51900,Heyneke Meyer,Jean de Villiers
+South Africa,Loftus Versfeld Stadium,Pretoria,51762,Heyneke Meyer,Jean de Villiers

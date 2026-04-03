@@ -1,0 +1,21 @@
+region,metric_type,count,percentage
+newfoundland and labrador,total,1245,15.7
+newfoundland and labrador,affected,195,15.7
+prince edward island,total,360,13.9
+prince edward island,affected,50,13.9
+nova scotia,total,2680,20.0
+nova scotia,affected,535,20.0
+new brunswick,total,1950,25.1
+new brunswick,affected,490,25.1
+ontario,total,24205,19.7
+ontario,affected,4765,19.7
+manitoba,total,2460,22.8
+manitoba,affected,560,22.8
+saskatchewan,total,2200,17.5
+saskatchewan,affected,385,17.5
+alberta,total,5425,17.6
+alberta,affected,955,17.6
+british columbia,total,8475,16.8
+british columbia,affected,1420,16.8
+yukon,total,50,20.0
+yukon,affected,10,20.0

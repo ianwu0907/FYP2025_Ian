@@ -1,0 +1,46 @@
+mental_health_rating,condition_label,response,subgroup_id,metric_type,value
+poor/fair/good,diagnosed mood disorder,no,overall,mean,4.7
+poor/fair/good,diagnosed mood disorder,no,overall,se,0.12
+poor/fair/good,diagnosed mood disorder,no,overall,f,3162.7
+poor/fair/good,diagnosed mood disorder,no,male,mean,4.7
+poor/fair/good,diagnosed mood disorder,no,male,se,0.12
+poor/fair/good,diagnosed mood disorder,no,male,f,2697.3
+poor/fair/good,diagnosed mood disorder,no,female,mean,4.7
+poor/fair/good,diagnosed mood disorder,no,female,se,0.21
+poor/fair/good,diagnosed mood disorder,no,female,f,697.2
+poor/fair/good,diagnosed mood disorder,yes,overall,mean,15.4
+poor/fair/good,diagnosed mood disorder,yes,overall,se,0.49
+poor/fair/good,diagnosed mood disorder,yes,male,mean,15.2
+poor/fair/good,diagnosed mood disorder,yes,male,se,0.44
+poor/fair/good,diagnosed mood disorder,yes,female,mean,15.1
+poor/fair/good,diagnosed mood disorder,yes,female,se,0.82
+poor/fair/good,diagnosed anxiety disorder,no,overall,mean,5.0
+poor/fair/good,diagnosed anxiety disorder,no,overall,se,0.14
+poor/fair/good,diagnosed anxiety disorder,no,overall,f,2141.5
+poor/fair/good,diagnosed anxiety disorder,no,male,mean,4.8
+poor/fair/good,diagnosed anxiety disorder,no,male,se,0.12
+poor/fair/good,diagnosed anxiety disorder,no,male,f,1940.5
+poor/fair/good,diagnosed anxiety disorder,no,female,mean,5.1
+poor/fair/good,diagnosed anxiety disorder,no,female,se,0.23
+poor/fair/good,diagnosed anxiety disorder,no,female,f,192.2
+poor/fair/good,diagnosed anxiety disorder,yes,overall,mean,14.4
+poor/fair/good,diagnosed anxiety disorder,yes,overall,se,0.47
+poor/fair/good,diagnosed anxiety disorder,yes,male,mean,13.8
+poor/fair/good,diagnosed anxiety disorder,yes,male,se,0.45
+poor/fair/good,diagnosed anxiety disorder,yes,female,mean,11.6
+poor/fair/good,diagnosed anxiety disorder,yes,female,se,1.13
+poor/fair/good,considered suicide in past 12 months,no,overall,mean,5.6
+poor/fair/good,considered suicide in past 12 months,no,overall,se,0.13
+poor/fair/good,considered suicide in past 12 months,no,overall,f,1771.2
+poor/fair/good,considered suicide in past 12 months,no,male,mean,5.5
+poor/fair/good,considered suicide in past 12 months,no,male,se,0.14
+poor/fair/good,considered suicide in past 12 months,no,male,f,973.4
+poor/fair/good,considered suicide in past 12 months,no,female,mean,5.0
+poor/fair/good,considered suicide in past 12 months,no,female,se,0.23
+poor/fair/good,considered suicide in past 12 months,no,female,f,293.0
+poor/fair/good,considered suicide in past 12 months,yes,overall,mean,19.0
+poor/fair/good,considered suicide in past 12 months,yes,overall,se,0.68
+poor/fair/good,considered suicide in past 12 months,yes,male,mean,17.2
+poor/fair/good,considered suicide in past 12 months,yes,male,se,0.8
+poor/fair/good,considered suicide in past 12 months,yes,female,mean,13.2
+poor/fair/good,considered suicide in past 12 months,yes,female,se,0.94

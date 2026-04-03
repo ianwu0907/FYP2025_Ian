@@ -1,0 +1,31 @@
+education_level,wave_id,language,percent
+"no certificate, diploma, or degree",wave_1,french-language workers,43.3
+"no certificate, diploma, or degree",wave_1,english-language workers,32.2
+"no certificate, diploma, or degree",wave_2,french-language workers,35.8
+"no certificate, diploma, or degree",wave_2,english-language workers,24.8
+"no certificate, diploma, or degree",wave_3,french-language workers,41.0
+"no certificate, diploma, or degree",wave_3,english-language workers,18.8
+secondary school diploma,wave_1,french-language workers,39.0
+secondary school diploma,wave_1,english-language workers,45.0
+secondary school diploma,wave_2,french-language workers,43.3
+secondary school diploma,wave_2,english-language workers,47.1
+secondary school diploma,wave_3,french-language workers,39.0
+secondary school diploma,wave_3,english-language workers,60.9
+certificate or college diploma,wave_1,french-language workers,7.5
+certificate or college diploma,wave_1,english-language workers,14.8
+certificate or college diploma,wave_2,french-language workers,0.0
+certificate or college diploma,wave_2,english-language workers,15.9
+certificate or college diploma,wave_3,french-language workers,13.8
+certificate or college diploma,wave_3,english-language workers,12.5
+bachelor's degree,wave_1,french-language workers,5.3
+bachelor's degree,wave_1,english-language workers,6.3
+bachelor's degree,wave_2,french-language workers,16.4
+bachelor's degree,wave_2,english-language workers,10.2
+bachelor's degree,wave_3,french-language workers,5.6
+bachelor's degree,wave_3,english-language workers,9.4
+certificate or diploma above bachelor level,wave_1,french-language workers,5.9
+certificate or diploma above bachelor level,wave_1,english-language workers,1.7
+certificate or diploma above bachelor level,wave_2,french-language workers,0.0
+certificate or diploma above bachelor level,wave_2,english-language workers,0.0
+certificate or diploma above bachelor level,wave_3,french-language workers,0.0
+certificate or diploma above bachelor level,wave_3,english-language workers,0.0

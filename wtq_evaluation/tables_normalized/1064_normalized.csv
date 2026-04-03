@@ -1,0 +1,131 @@
+region,admission_type_id,value_type,value
+newfoundland and labrador,1,number,544.0
+newfoundland and labrador,1,percent_of_admissions,68.0
+newfoundland and labrador,2,number,31.0
+newfoundland and labrador,2,percent_of_admissions,4.0
+newfoundland and labrador,3,number,119.0
+newfoundland and labrador,3,percent_of_admissions,15.0
+newfoundland and labrador,4,number,57.0
+newfoundland and labrador,4,percent_of_admissions,7.0
+newfoundland and labrador,5,number,44.0
+newfoundland and labrador,5,percent_of_admissions,6.0
+prince edward island,1,number,0.0
+prince edward island,1,percent_of_admissions,
+prince edward island,2,number,21.0
+prince edward island,2,percent_of_admissions,24.0
+prince edward island,3,number,66.0
+prince edward island,3,percent_of_admissions,76.0
+prince edward island,4,number,0.0
+prince edward island,4,percent_of_admissions,
+prince edward island,5,number,0.0
+prince edward island,5,percent_of_admissions,
+nova scotia,1,number,641.0
+nova scotia,1,percent_of_admissions,57.0
+nova scotia,2,number,30.0
+nova scotia,2,percent_of_admissions,3.0
+nova scotia,3,number,389.0
+nova scotia,3,percent_of_admissions,34.0
+nova scotia,4,number,0.0
+nova scotia,4,percent_of_admissions,
+nova scotia,5,number,72.0
+nova scotia,5,percent_of_admissions,6.0
+new brunswick,1,number,722.0
+new brunswick,1,percent_of_admissions,61.0
+new brunswick,2,number,43.0
+new brunswick,2,percent_of_admissions,4.0
+new brunswick,3,number,285.0
+new brunswick,3,percent_of_admissions,24.0
+new brunswick,4,number,96.0
+new brunswick,4,percent_of_admissions,8.0
+new brunswick,5,number,29.0
+new brunswick,5,percent_of_admissions,2.0
+quebec,1,number,13110.0
+quebec,1,percent_of_admissions,85.0
+quebec,2,number,180.0
+quebec,2,percent_of_admissions,1.0
+quebec,3,number,126.0
+quebec,3,percent_of_admissions,1.0
+quebec,4,number,528.0
+quebec,4,percent_of_admissions,3.0
+quebec,5,number,1467.0
+quebec,5,percent_of_admissions,10.0
+ontario,1,number,3770.0
+ontario,1,percent_of_admissions,24.0
+ontario,2,number,703.0
+ontario,2,percent_of_admissions,4.0
+ontario,3,number,6405.0
+ontario,3,percent_of_admissions,41.0
+ontario,4,number,3927.0
+ontario,4,percent_of_admissions,25.0
+ontario,5,number,852.0
+ontario,5,percent_of_admissions,5.0
+manitoba,1,number,119.0
+manitoba,1,percent_of_admissions,4.0
+manitoba,2,number,88.0
+manitoba,2,percent_of_admissions,3.0
+manitoba,3,number,1498.0
+manitoba,3,percent_of_admissions,53.0
+manitoba,4,number,1032.0
+manitoba,4,percent_of_admissions,36.0
+manitoba,5,number,104.0
+manitoba,5,percent_of_admissions,4.0
+saskatchewan,1,number,688.0
+saskatchewan,1,percent_of_admissions,21.0
+saskatchewan,2,number,138.0
+saskatchewan,2,percent_of_admissions,4.0
+saskatchewan,3,number,1516.0
+saskatchewan,3,percent_of_admissions,47.0
+saskatchewan,4,number,306.0
+saskatchewan,4,percent_of_admissions,10.0
+saskatchewan,5,number,563.0
+saskatchewan,5,percent_of_admissions,18.0
+alberta,1,number,771.0
+alberta,1,percent_of_admissions,12.0
+alberta,2,number,295.0
+alberta,2,percent_of_admissions,5.0
+alberta,3,number,2520.0
+alberta,3,percent_of_admissions,39.0
+alberta,4,number,2828.0
+alberta,4,percent_of_admissions,43.0
+alberta,5,number,100.0
+alberta,5,percent_of_admissions,2.0
+british columbia,1,number,8910.0
+british columbia,1,percent_of_admissions,74.0
+british columbia,2,number,191.0
+british columbia,2,percent_of_admissions,2.0
+british columbia,3,number,2112.0
+british columbia,3,percent_of_admissions,18.0
+british columbia,4,number,451.0
+british columbia,4,percent_of_admissions,4.0
+british columbia,5,number,332.0
+british columbia,5,percent_of_admissions,3.0
+yukon,1,number,365.0
+yukon,1,percent_of_admissions,95.0
+yukon,2,number,19.0
+yukon,2,percent_of_admissions,5.0
+yukon,3,number,0.0
+yukon,3,percent_of_admissions,
+yukon,4,number,0.0
+yukon,4,percent_of_admissions,
+yukon,5,number,0.0
+yukon,5,percent_of_admissions,
+northwest territories,1,number,233.0
+northwest territories,1,percent_of_admissions,27.0
+northwest territories,2,number,0.0
+northwest territories,2,percent_of_admissions,
+northwest territories,3,number,0.0
+northwest territories,3,percent_of_admissions,
+northwest territories,4,number,588.0
+northwest territories,4,percent_of_admissions,68.0
+northwest territories,5,number,42.0
+northwest territories,5,percent_of_admissions,5.0
+nunavut,1,number,157.0
+nunavut,1,percent_of_admissions,57.0
+nunavut,2,number,0.0
+nunavut,2,percent_of_admissions,
+nunavut,3,number,84.0
+nunavut,3,percent_of_admissions,31.0
+nunavut,4,number,34.0
+nunavut,4,percent_of_admissions,12.0
+nunavut,5,number,0.0
+nunavut,5,percent_of_admissions,

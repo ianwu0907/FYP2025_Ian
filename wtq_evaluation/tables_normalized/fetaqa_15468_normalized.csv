@@ -1,0 +1,66 @@
+club,season,division,competition_context,apps,goals
+New York Red Bulls,2007,Major League Soccer,context_1,28.0,2.0
+New York Red Bulls,2007,Major League Soccer,context_2,,
+New York Red Bulls,2007,Major League Soccer,context_3,3.0,0.0
+New York Red Bulls,2007,Major League Soccer,context_4,31.0,2.0
+New York Red Bulls,2007,Major League Soccer,context_5,,
+New York Red Bulls,2008,Major League Soccer,context_1,23.0,3.0
+New York Red Bulls,2008,Major League Soccer,context_2,,
+New York Red Bulls,2008,Major League Soccer,context_3,4.0,1.0
+New York Red Bulls,2008,Major League Soccer,context_4,27.0,4.0
+New York Red Bulls,2008,Major League Soccer,context_5,,
+New York Red Bulls,2009,Major League Soccer,context_1,27.0,3.0
+New York Red Bulls,2009,Major League Soccer,context_2,,
+New York Red Bulls,2009,Major League Soccer,context_3,3.0,1.0
+New York Red Bulls,2009,Major League Soccer,context_4,30.0,4.0
+New York Red Bulls,2009,Major League Soccer,context_5,,
+New York Red Bulls,2010,Major League Soccer,context_1,25.0,5.0
+New York Red Bulls,2010,Major League Soccer,context_2,,
+New York Red Bulls,2010,Major League Soccer,context_3,3.0,0.0
+New York Red Bulls,2010,Major League Soccer,context_4,28.0,5.0
+New York Red Bulls,2010,Major League Soccer,context_5,,
+New York Red Bulls,2011,Major League Soccer,context_1,27.0,7.0
+New York Red Bulls,2011,Major League Soccer,context_2,,
+New York Red Bulls,2011,Major League Soccer,context_3,3.0,0.0
+New York Red Bulls,2011,Major League Soccer,context_4,30.0,7.0
+New York Red Bulls,2011,Major League Soccer,context_5,,
+New York Red Bulls,2012,Major League Soccer,context_1,17.0,1.0
+New York Red Bulls,2012,Major League Soccer,context_2,,
+New York Red Bulls,2012,Major League Soccer,context_3,0.0,0.0
+New York Red Bulls,2012,Major League Soccer,context_4,17.0,1.0
+New York Red Bulls,2012,Major League Soccer,context_5,,
+Vancouver Whitecaps,2012,Major League Soccer,context_1,12.0,3.0
+Vancouver Whitecaps,2012,Major League Soccer,context_2,,
+Vancouver Whitecaps,2012,Major League Soccer,context_3,1.0,0.0
+Vancouver Whitecaps,2012,Major League Soccer,context_4,13.0,3.0
+Vancouver Whitecaps,2012,Major League Soccer,context_5,,
+Burnley,2012–13,Championship,context_1,1.0,0.0
+Burnley,2012–13,Championship,context_2,1.0,0.0
+Burnley,2012–13,Championship,context_3,0.0,0.0
+Burnley,2012–13,Championship,context_4,,
+Burnley,2012–13,Championship,context_5,2.0,0.0
+Bodø/Glimt (loan),2013,Adeccoligaen,context_1,14.0,2.0
+Bodø/Glimt (loan),2013,Adeccoligaen,context_2,4.0,1.0
+Bodø/Glimt (loan),2013,Adeccoligaen,context_3,,
+Bodø/Glimt (loan),2013,Adeccoligaen,context_4,18.0,3.0
+Bodø/Glimt (loan),2013,Adeccoligaen,context_5,,
+Bodø/Glimt,2013,Adeccoligaen,context_1,14.0,4.0
+Bodø/Glimt,2013,Adeccoligaen,context_2,0.0,0.0
+Bodø/Glimt,2013,Adeccoligaen,context_3,,
+Bodø/Glimt,2013,Adeccoligaen,context_4,14.0,4.0
+Bodø/Glimt,2013,Adeccoligaen,context_5,,
+Bodø/Glimt,2014,Tippeligaen,context_1,22.0,3.0
+Bodø/Glimt,2014,Tippeligaen,context_2,1.0,0.0
+Bodø/Glimt,2014,Tippeligaen,context_3,,
+Bodø/Glimt,2014,Tippeligaen,context_4,23.0,3.0
+Bodø/Glimt,2014,Tippeligaen,context_5,,
+New York Red Bulls,2015,Major League Soccer,context_1,12.0,0.0
+New York Red Bulls,2015,Major League Soccer,context_2,,
+New York Red Bulls,2015,Major League Soccer,context_3,1.0,0.0
+New York Red Bulls,2015,Major League Soccer,context_4,13.0,0.0
+New York Red Bulls,2015,Major League Soccer,context_5,,
+Indy Eleven,2015,North American Soccer League,context_1,15.0,3.0
+Indy Eleven,2015,North American Soccer League,context_2,,
+Indy Eleven,2015,North American Soccer League,context_3,0.0,0.0
+Indy Eleven,2015,North American Soccer League,context_4,15.0,3.0
+Indy Eleven,2015,North American Soccer League,context_5,,

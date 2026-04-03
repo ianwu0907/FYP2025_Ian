@@ -1,0 +1,209 @@
+beverage,metric_type,year,value
+water,percentage of population consuming the day before,2004,73.1
+water,percentage of population consuming the day before,2015,88.1
+water,percentage of population consuming the day before,2004,75.5
+water,percentage of population consuming the day before,2015,90.5
+water,percentage of population consuming the day before,2004,76.8
+water,percentage of population consuming the day before,2015,88.8
+water,percentage of population consuming the day before,2004,73.7
+water,percentage of population consuming the day before,2015,86.5
+"skim, 1% or 2% milk",percentage of population consuming the day before,2004,60.8
+"skim, 1% or 2% milk",percentage of population consuming the day before,2015,52.9
+"skim, 1% or 2% milk",percentage of population consuming the day before,2004,65.9
+"skim, 1% or 2% milk",percentage of population consuming the day before,2015,59.5
+"skim, 1% or 2% milk",percentage of population consuming the day before,2004,60.3
+"skim, 1% or 2% milk",percentage of population consuming the day before,2015,58.2
+"skim, 1% or 2% milk",percentage of population consuming the day before,2004,51.9
+"skim, 1% or 2% milk",percentage of population consuming the day before,2015,44.1
+whole milk and flavoured milk,percentage of population consuming the day before,2004,37.4
+whole milk and flavoured milk,percentage of population consuming the day before,2015,35.9
+whole milk and flavoured milk,percentage of population consuming the day before,2004,23.7
+whole milk and flavoured milk,percentage of population consuming the day before,2015,22.4
+whole milk and flavoured milk,percentage of population consuming the day before,2004,19.2
+whole milk and flavoured milk,percentage of population consuming the day before,2015,16.7
+whole milk and flavoured milk,percentage of population consuming the day before,2004,19.5
+whole milk and flavoured milk,percentage of population consuming the day before,2015,17.8
+fruit juice,percentage of population consuming the day before,2004,54.0
+fruit juice,percentage of population consuming the day before,2015,46.1
+fruit juice,percentage of population consuming the day before,2004,42.8
+fruit juice,percentage of population consuming the day before,2015,38.7
+fruit juice,percentage of population consuming the day before,2004,38.1
+fruit juice,percentage of population consuming the day before,2015,37.7
+fruit juice,percentage of population consuming the day before,2004,38.6
+fruit juice,percentage of population consuming the day before,2015,24.8
+regular soft drinks,percentage of population consuming the day before,2004,14.1
+regular soft drinks,percentage of population consuming the day before,2015,6.3
+regular soft drinks,percentage of population consuming the day before,2004,31.0
+regular soft drinks,percentage of population consuming the day before,2015,17.7
+regular soft drinks,percentage of population consuming the day before,2004,52.3
+regular soft drinks,percentage of population consuming the day before,2015,29.8
+regular soft drinks,percentage of population consuming the day before,2004,34.6
+regular soft drinks,percentage of population consuming the day before,2015,20.8
+fruit drinks,percentage of population consuming the day before,2004,36.8
+fruit drinks,percentage of population consuming the day before,2015,14.4
+fruit drinks,percentage of population consuming the day before,2004,43.8
+fruit drinks,percentage of population consuming the day before,2015,19.9
+fruit drinks,percentage of population consuming the day before,2004,32.1
+fruit drinks,percentage of population consuming the day before,2015,14.1
+fruit drinks,percentage of population consuming the day before,2004,32.9
+fruit drinks,percentage of population consuming the day before,2015,12.9
+sports drinks,percentage of population consuming the day before,2004,0.9
+sports drinks,percentage of population consuming the day before,2015,
+sports drinks,percentage of population consuming the day before,2004,2.6
+sports drinks,percentage of population consuming the day before,2015,1.7
+sports drinks,percentage of population consuming the day before,2004,2.8
+sports drinks,percentage of population consuming the day before,2015,6.0
+sports drinks,percentage of population consuming the day before,2004,2.1
+sports drinks,percentage of population consuming the day before,2015,
+diet soft drinks,percentage of population consuming the day before,2004,1.6
+diet soft drinks,percentage of population consuming the day before,2015,
+diet soft drinks,percentage of population consuming the day before,2004,5.1
+diet soft drinks,percentage of population consuming the day before,2015,2.5
+diet soft drinks,percentage of population consuming the day before,2004,3.1
+diet soft drinks,percentage of population consuming the day before,2015,2.3
+diet soft drinks,percentage of population consuming the day before,2004,7.8
+diet soft drinks,percentage of population consuming the day before,2015,2.5
+tea,percentage of population consuming the day before,2004,5.9
+tea,percentage of population consuming the day before,2015,5.4
+tea,percentage of population consuming the day before,2004,10.7
+tea,percentage of population consuming the day before,2015,13.8
+tea,percentage of population consuming the day before,2004,13.9
+tea,percentage of population consuming the day before,2015,16.7
+tea,percentage of population consuming the day before,2004,17.1
+tea,percentage of population consuming the day before,2015,23.5
+coffee,percentage of population consuming the day before,2004,
+coffee,percentage of population consuming the day before,2015,
+coffee,percentage of population consuming the day before,2004,1.7
+coffee,percentage of population consuming the day before,2015,2.6
+coffee,percentage of population consuming the day before,2004,9.0
+coffee,percentage of population consuming the day before,2015,14.4
+coffee,percentage of population consuming the day before,2004,13.0
+coffee,percentage of population consuming the day before,2015,17.4
+plant-based beverages,percentage of population consuming the day before,2004,2.1
+plant-based beverages,percentage of population consuming the day before,2015,4.0
+plant-based beverages,percentage of population consuming the day before,2004,1.5
+plant-based beverages,percentage of population consuming the day before,2015,1.8
+plant-based beverages,percentage of population consuming the day before,2004,
+plant-based beverages,percentage of population consuming the day before,2015,
+plant-based beverages,percentage of population consuming the day before,2004,1.1
+plant-based beverages,percentage of population consuming the day before,2015,3.4
+vegetable juice,percentage of population consuming the day before,2004,1.8
+vegetable juice,percentage of population consuming the day before,2015,1.2
+vegetable juice,percentage of population consuming the day before,2004,1.9
+vegetable juice,percentage of population consuming the day before,2015,1.4
+vegetable juice,percentage of population consuming the day before,2004,
+vegetable juice,percentage of population consuming the day before,2015,
+vegetable juice,percentage of population consuming the day before,2004,1.9
+vegetable juice,percentage of population consuming the day before,2015,
+beer and coolers,percentage of population consuming the day before,2004,
+beer and coolers,percentage of population consuming the day before,2015,
+beer and coolers,percentage of population consuming the day before,2004,
+beer and coolers,percentage of population consuming the day before,2015,0.0
+beer and coolers,percentage of population consuming the day before,2004,4.9
+beer and coolers,percentage of population consuming the day before,2015,2.2
+beer and coolers,percentage of population consuming the day before,2004,2.4
+beer and coolers,percentage of population consuming the day before,2015,
+water,quantity consumed in grams by consumers,2004,411.0
+water,quantity consumed in grams by consumers,2015,508.0
+water,quantity consumed in grams by consumers,2004,657.0
+water,quantity consumed in grams by consumers,2015,735.0
+water,quantity consumed in grams by consumers,2004,1016.0
+water,quantity consumed in grams by consumers,2015,1131.0
+water,quantity consumed in grams by consumers,2004,939.0
+water,quantity consumed in grams by consumers,2015,1043.0
+"skim, 1% or 2% milk",quantity consumed in grams by consumers,2004,399.0
+"skim, 1% or 2% milk",quantity consumed in grams by consumers,2015,360.0
+"skim, 1% or 2% milk",quantity consumed in grams by consumers,2004,438.0
+"skim, 1% or 2% milk",quantity consumed in grams by consumers,2015,364.0
+"skim, 1% or 2% milk",quantity consumed in grams by consumers,2004,519.0
+"skim, 1% or 2% milk",quantity consumed in grams by consumers,2015,411.0
+"skim, 1% or 2% milk",quantity consumed in grams by consumers,2004,387.0
+"skim, 1% or 2% milk",quantity consumed in grams by consumers,2015,336.0
+whole milk and flavoured milk,quantity consumed in grams by consumers,2004,446.0
+whole milk and flavoured milk,quantity consumed in grams by consumers,2015,366.0
+whole milk and flavoured milk,quantity consumed in grams by consumers,2004,393.0
+whole milk and flavoured milk,quantity consumed in grams by consumers,2015,288.0
+whole milk and flavoured milk,quantity consumed in grams by consumers,2004,550.0
+whole milk and flavoured milk,quantity consumed in grams by consumers,2015,368.0
+whole milk and flavoured milk,quantity consumed in grams by consumers,2004,400.0
+whole milk and flavoured milk,quantity consumed in grams by consumers,2015,363.0
+fruit juice,quantity consumed in grams by consumers,2004,327.0
+fruit juice,quantity consumed in grams by consumers,2015,266.0
+fruit juice,quantity consumed in grams by consumers,2004,373.0
+fruit juice,quantity consumed in grams by consumers,2015,313.0
+fruit juice,quantity consumed in grams by consumers,2004,501.0
+fruit juice,quantity consumed in grams by consumers,2015,429.0
+fruit juice,quantity consumed in grams by consumers,2004,425.0
+fruit juice,quantity consumed in grams by consumers,2015,314.0
+regular soft drinks,quantity consumed in grams by consumers,2004,302.0
+regular soft drinks,quantity consumed in grams by consumers,2015,229.0
+regular soft drinks,quantity consumed in grams by consumers,2004,422.0
+regular soft drinks,quantity consumed in grams by consumers,2015,376.0
+regular soft drinks,quantity consumed in grams by consumers,2004,718.0
+regular soft drinks,quantity consumed in grams by consumers,2015,543.0
+regular soft drinks,quantity consumed in grams by consumers,2004,515.0
+regular soft drinks,quantity consumed in grams by consumers,2015,384.0
+fruit drinks,quantity consumed in grams by consumers,2004,332.0
+fruit drinks,quantity consumed in grams by consumers,2015,277.0
+fruit drinks,quantity consumed in grams by consumers,2004,425.0
+fruit drinks,quantity consumed in grams by consumers,2015,340.0
+fruit drinks,quantity consumed in grams by consumers,2004,556.0
+fruit drinks,quantity consumed in grams by consumers,2015,432.0
+fruit drinks,quantity consumed in grams by consumers,2004,508.0
+fruit drinks,quantity consumed in grams by consumers,2015,404.0
+sports drinks,quantity consumed in grams by consumers,2004,374.0
+sports drinks,quantity consumed in grams by consumers,2015,283.0
+sports drinks,quantity consumed in grams by consumers,2004,614.0
+sports drinks,quantity consumed in grams by consumers,2015,521.0
+sports drinks,quantity consumed in grams by consumers,2004,701.0
+sports drinks,quantity consumed in grams by consumers,2015,664.0
+sports drinks,quantity consumed in grams by consumers,2004,387.0
+sports drinks,quantity consumed in grams by consumers,2015,607.0
+diet soft drinks,quantity consumed in grams by consumers,2004,224.0
+diet soft drinks,quantity consumed in grams by consumers,2015,95.0
+diet soft drinks,quantity consumed in grams by consumers,2004,409.0
+diet soft drinks,quantity consumed in grams by consumers,2015,278.0
+diet soft drinks,quantity consumed in grams by consumers,2004,508.0
+diet soft drinks,quantity consumed in grams by consumers,2015,418.0
+diet soft drinks,quantity consumed in grams by consumers,2004,470.0
+diet soft drinks,quantity consumed in grams by consumers,2015,379.0
+tea,quantity consumed in grams by consumers,2004,313.0
+tea,quantity consumed in grams by consumers,2015,249.0
+tea,quantity consumed in grams by consumers,2004,390.0
+tea,quantity consumed in grams by consumers,2015,316.0
+tea,quantity consumed in grams by consumers,2004,579.0
+tea,quantity consumed in grams by consumers,2015,374.0
+tea,quantity consumed in grams by consumers,2004,471.0
+tea,quantity consumed in grams by consumers,2015,306.0
+coffee,quantity consumed in grams by consumers,2004,194.0
+coffee,quantity consumed in grams by consumers,2015,
+coffee,quantity consumed in grams by consumers,2004,244.0
+coffee,quantity consumed in grams by consumers,2015,244.0
+coffee,quantity consumed in grams by consumers,2004,429.0
+coffee,quantity consumed in grams by consumers,2015,371.0
+coffee,quantity consumed in grams by consumers,2004,403.0
+coffee,quantity consumed in grams by consumers,2015,304.0
+plant-based beverages,quantity consumed in grams by consumers,2004,421.0
+plant-based beverages,quantity consumed in grams by consumers,2015,212.0
+plant-based beverages,quantity consumed in grams by consumers,2004,379.0
+plant-based beverages,quantity consumed in grams by consumers,2015,258.0
+plant-based beverages,quantity consumed in grams by consumers,2004,500.0
+plant-based beverages,quantity consumed in grams by consumers,2015,437.0
+plant-based beverages,quantity consumed in grams by consumers,2004,292.0
+plant-based beverages,quantity consumed in grams by consumers,2015,215.0
+vegetable juice,quantity consumed in grams by consumers,2004,255.0
+vegetable juice,quantity consumed in grams by consumers,2015,233.0
+vegetable juice,quantity consumed in grams by consumers,2004,276.0
+vegetable juice,quantity consumed in grams by consumers,2015,264.0
+vegetable juice,quantity consumed in grams by consumers,2004,
+vegetable juice,quantity consumed in grams by consumers,2015,346.0
+vegetable juice,quantity consumed in grams by consumers,2004,394.0
+vegetable juice,quantity consumed in grams by consumers,2015,530.0
+beer and coolers,quantity consumed in grams by consumers,2004,
+beer and coolers,quantity consumed in grams by consumers,2015,
+beer and coolers,quantity consumed in grams by consumers,2004,358.0
+beer and coolers,quantity consumed in grams by consumers,2015,0.0
+beer and coolers,quantity consumed in grams by consumers,2004,1201.0
+beer and coolers,quantity consumed in grams by consumers,2015,709.0
+beer and coolers,quantity consumed in grams by consumers,2004,602.0
+beer and coolers,quantity consumed in grams by consumers,2015,328.0

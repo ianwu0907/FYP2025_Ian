@@ -1,0 +1,307 @@
+crime_category,crime_qualifier,period,measure_type,value
+total criminal code (excluding traffic),"""crime rate""",period_1,number,80692.0
+total criminal code (excluding traffic),"""crime rate""",period_1,rate,3392.0
+total criminal code (excluding traffic),"""crime rate""",period_2,number,77230.0
+total criminal code (excluding traffic),"""crime rate""",period_2,rate,3210.0
+total criminal code (excluding traffic),"""crime rate""",period_1,percent,-5.0
+total criminal code (excluding traffic),"""crime rate""",period_1,delta_percent,-51.0
+total violent crime,,period_1,number,31609.0
+total violent crime,,period_1,rate,1329.0
+total violent crime,,period_2,number,32434.0
+total violent crime,,period_2,rate,1348.0
+total violent crime,,period_1,percent,1.0
+total violent crime,,period_1,delta_percent,-28.0
+homicide,,period_1,number,38.0
+homicide,,period_1,rate,2.0
+homicide,,period_2,number,25.0
+homicide,,period_2,rate,1.0
+homicide,,period_1,percent,-35.0
+homicide,,period_1,delta_percent,-67.0
+other violations causing death,,period_1,number,10.0
+other violations causing death,,period_1,rate,0.0
+other violations causing death,,period_2,number,3.0
+other violations causing death,,period_2,rate,0.0
+other violations causing death,,period_1,percent,
+other violations causing death,,period_1,delta_percent,
+attempted murder,,period_1,number,42.0
+attempted murder,,period_1,rate,2.0
+attempted murder,,period_2,number,55.0
+attempted murder,,period_2,rate,2.0
+attempted murder,,period_1,percent,29.0
+attempted murder,,period_1,delta_percent,-19.0
+sexual assault,level 3 - aggravated,period_1,number,4.0
+sexual assault,level 3 - aggravated,period_1,rate,0.0
+sexual assault,level 3 - aggravated,period_2,number,5.0
+sexual assault,level 3 - aggravated,period_2,rate,0.0
+sexual assault,level 3 - aggravated,period_1,percent,
+sexual assault,level 3 - aggravated,period_1,delta_percent,7.0
+sexual assault,level 2 - weapon or bodily harm,period_1,number,53.0
+sexual assault,level 2 - weapon or bodily harm,period_1,rate,2.0
+sexual assault,level 2 - weapon or bodily harm,period_2,number,49.0
+sexual assault,level 2 - weapon or bodily harm,period_2,rate,2.0
+sexual assault,level 2 - weapon or bodily harm,period_1,percent,-9.0
+sexual assault,level 2 - weapon or bodily harm,period_1,delta_percent,45.0
+sexual assault,level 1,period_1,number,2306.0
+sexual assault,level 1,period_1,rate,97.0
+sexual assault,level 1,period_2,number,2259.0
+sexual assault,level 1,period_2,rate,94.0
+sexual assault,level 1,period_1,percent,-3.0
+sexual assault,level 1,period_1,delta_percent,11.0
+"sexual offence occurring prior to january 4, 1983",,period_1,number,52.0
+"sexual offence occurring prior to january 4, 1983",,period_1,rate,2.0
+"sexual offence occurring prior to january 4, 1983",,period_2,number,48.0
+"sexual offence occurring prior to january 4, 1983",,period_2,rate,2.0
+"sexual offence occurring prior to january 4, 1983",,period_1,percent,-9.0
+"sexual offence occurring prior to january 4, 1983",,period_1,delta_percent,
+sexual violations against children,,period_1,number,1165.0
+sexual violations against children,,period_1,rate,49.0
+sexual violations against children,,period_2,number,1260.0
+sexual violations against children,,period_2,rate,52.0
+sexual violations against children,,period_1,percent,7.0
+sexual violations against children,,period_1,delta_percent,
+assault,level 3 - aggravated,period_1,number,282.0
+assault,level 3 - aggravated,period_1,rate,12.0
+assault,level 3 - aggravated,period_2,number,320.0
+assault,level 3 - aggravated,period_2,rate,13.0
+assault,level 3 - aggravated,period_1,percent,12.0
+assault,level 3 - aggravated,period_1,delta_percent,-24.0
+assault,level 2 - weapon or bodily harm,period_1,number,4049.0
+assault,level 2 - weapon or bodily harm,period_1,rate,170.0
+assault,level 2 - weapon or bodily harm,period_2,number,4349.0
+assault,level 2 - weapon or bodily harm,period_2,rate,181.0
+assault,level 2 - weapon or bodily harm,period_1,percent,6.0
+assault,level 2 - weapon or bodily harm,period_1,delta_percent,-30.0
+assault,level 1,period_1,number,12355.0
+assault,level 1,period_1,rate,519.0
+assault,level 1,period_2,number,12374.0
+assault,level 1,period_2,rate,514.0
+assault,level 1,period_1,percent,-1.0
+assault,level 1,period_1,delta_percent,-37.0
+assault against a peace officer,,period_1,number,694.0
+assault against a peace officer,,period_1,rate,29.0
+assault against a peace officer,,period_2,number,764.0
+assault against a peace officer,,period_2,rate,32.0
+assault against a peace officer,,period_1,percent,9.0
+assault against a peace officer,,period_1,delta_percent,-39.0
+other assaults,,period_1,number,113.0
+other assaults,,period_1,rate,5.0
+other assaults,,period_2,number,100.0
+other assaults,,period_2,rate,4.0
+other assaults,,period_1,percent,-12.0
+other assaults,,period_1,delta_percent,-66.0
+firearms,"use of, discharge, pointing",period_1,number,219.0
+firearms,"use of, discharge, pointing",period_1,rate,9.0
+firearms,"use of, discharge, pointing",period_2,number,227.0
+firearms,"use of, discharge, pointing",period_2,rate,9.0
+firearms,"use of, discharge, pointing",period_1,percent,2.0
+firearms,"use of, discharge, pointing",period_1,delta_percent,0.0
+robbery,,period_1,number,2849.0
+robbery,,period_1,rate,120.0
+robbery,,period_2,number,3009.0
+robbery,,period_2,rate,125.0
+robbery,,period_1,percent,4.0
+robbery,,period_1,delta_percent,-23.0
+forcible confinement or kidnapping,,period_1,number,123.0
+forcible confinement or kidnapping,,period_1,rate,5.0
+forcible confinement or kidnapping,,period_2,number,145.0
+forcible confinement or kidnapping,,period_2,rate,6.0
+forcible confinement or kidnapping,,period_1,percent,17.0
+forcible confinement or kidnapping,,period_1,delta_percent,-51.0
+trafficking in persons,,period_1,number,8.0
+trafficking in persons,,period_1,rate,0.0
+trafficking in persons,,period_2,number,8.0
+trafficking in persons,,period_2,rate,0.0
+trafficking in persons,,period_1,percent,-1.0
+trafficking in persons,,period_1,delta_percent,
+extortion,,period_1,number,164.0
+extortion,,period_1,rate,7.0
+extortion,,period_2,number,189.0
+extortion,,period_2,rate,8.0
+extortion,,period_1,percent,14.0
+extortion,,period_1,delta_percent,13.0
+criminal harassment,,period_1,number,912.0
+criminal harassment,,period_1,rate,38.0
+criminal harassment,,period_2,number,922.0
+criminal harassment,,period_2,rate,38.0
+criminal harassment,,period_1,percent,0.0
+criminal harassment,,period_1,delta_percent,-26.0
+uttering threats,,period_1,number,5044.0
+uttering threats,,period_1,rate,212.0
+uttering threats,,period_2,number,5026.0
+uttering threats,,period_2,rate,209.0
+uttering threats,,period_1,percent,-1.0
+uttering threats,,period_1,delta_percent,-33.0
+indecent and harassing phone calls,,period_1,number,436.0
+indecent and harassing phone calls,,period_1,rate,18.0
+indecent and harassing phone calls,,period_2,number,471.0
+indecent and harassing phone calls,,period_2,rate,20.0
+indecent and harassing phone calls,,period_1,percent,7.0
+indecent and harassing phone calls,,period_1,delta_percent,-54.0
+non-consensual distribution of intimate images,,period_1,number,338.0
+non-consensual distribution of intimate images,,period_1,rate,14.0
+non-consensual distribution of intimate images,,period_2,number,385.0
+non-consensual distribution of intimate images,,period_2,rate,16.0
+non-consensual distribution of intimate images,,period_1,percent,13.0
+non-consensual distribution of intimate images,,period_1,delta_percent,
+offences in relation to sexual services,,period_1,number,20.0
+offences in relation to sexual services,,period_1,rate,1.0
+offences in relation to sexual services,,period_2,number,16.0
+offences in relation to sexual services,,period_2,rate,1.0
+offences in relation to sexual services,,period_1,percent,-21.0
+offences in relation to sexual services,,period_1,delta_percent,
+total property crime,,period_1,number,32917.0
+total property crime,,period_1,rate,1384.0
+total property crime,,period_2,number,30051.0
+total property crime,,period_2,rate,1249.0
+total property crime,,period_1,percent,-10.0
+total property crime,,period_1,delta_percent,-64.0
+breaking and entering,,period_1,number,3865.0
+breaking and entering,,period_1,rate,162.0
+breaking and entering,,period_2,number,3206.0
+breaking and entering,,period_2,rate,133.0
+breaking and entering,,period_1,percent,-18.0
+breaking and entering,,period_1,delta_percent,-69.0
+possess stolen property,,period_1,number,1575.0
+possess stolen property,,period_1,rate,66.0
+possess stolen property,,period_2,number,1268.0
+possess stolen property,,period_2,rate,53.0
+possess stolen property,,period_1,percent,-20.0
+possess stolen property,,period_1,delta_percent,
+theft of motor vehicle,,period_1,number,1666.0
+theft of motor vehicle,,period_1,rate,70.0
+theft of motor vehicle,,period_2,number,1374.0
+theft of motor vehicle,,period_2,rate,57.0
+theft of motor vehicle,,period_1,percent,-18.0
+theft of motor vehicle,,period_1,delta_percent,-62.0
+"theft over $5,000",,period_1,number,150.0
+"theft over $5,000",,period_1,rate,6.0
+"theft over $5,000",,period_2,number,118.0
+"theft over $5,000",,period_2,rate,5.0
+"theft over $5,000",,period_1,percent,-22.0
+"theft over $5,000",,period_1,delta_percent,-57.0
+"shoplifting under $5,000",,period_1,number,10611.0
+"shoplifting under $5,000",,period_1,rate,446.0
+"shoplifting under $5,000",,period_2,number,10183.0
+"shoplifting under $5,000",,period_2,rate,423.0
+"shoplifting under $5,000",,period_1,percent,-5.0
+"shoplifting under $5,000",,period_1,delta_percent,-55.0
+"theft of $5,000 or under",,period_1,number,4578.0
+"theft of $5,000 or under",,period_1,rate,192.0
+"theft of $5,000 or under",,period_2,number,3899.0
+"theft of $5,000 or under",,period_2,rate,162.0
+"theft of $5,000 or under",,period_1,percent,-16.0
+"theft of $5,000 or under",,period_1,delta_percent,-69.0
+fraud,,period_1,number,1099.0
+fraud,,period_1,rate,46.0
+fraud,,period_2,number,1113.0
+fraud,,period_2,rate,46.0
+fraud,,period_1,percent,0.0
+fraud,,period_1,delta_percent,-41.0
+identity theft,,period_1,number,15.0
+identity theft,,period_1,rate,1.0
+identity theft,,period_2,number,20.0
+identity theft,,period_2,rate,1.0
+identity theft,,period_1,percent,32.0
+identity theft,,period_1,delta_percent,
+identity fraud,,period_1,number,91.0
+identity fraud,,period_1,rate,4.0
+identity fraud,,period_2,number,112.0
+identity fraud,,period_2,rate,5.0
+identity fraud,,period_1,percent,22.0
+identity fraud,,period_1,delta_percent,
+mischief,,period_1,number,8868.0
+mischief,,period_1,rate,373.0
+mischief,,period_2,number,8332.0
+mischief,,period_2,rate,346.0
+mischief,,period_1,percent,-7.0
+mischief,,period_1,delta_percent,-63.0
+total other criminal code offences,,period_1,number,16166.0
+total other criminal code offences,,period_1,rate,680.0
+total other criminal code offences,,period_2,number,14745.0
+total other criminal code offences,,period_2,rate,613.0
+total other criminal code offences,,period_1,percent,-10.0
+total other criminal code offences,,period_1,delta_percent,-49.0
+weapons violations,,period_1,number,1739.0
+weapons violations,,period_1,rate,73.0
+weapons violations,,period_2,number,1741.0
+weapons violations,,period_2,rate,72.0
+weapons violations,,period_1,percent,-1.0
+weapons violations,,period_1,delta_percent,-34.0
+child pornography,,period_1,number,636.0
+child pornography,,period_1,rate,27.0
+child pornography,,period_2,number,745.0
+child pornography,,period_2,rate,31.0
+child pornography,,period_1,percent,16.0
+child pornography,,period_1,delta_percent,773.0
+prostitution,,period_1,number,0.0
+prostitution,,period_1,rate,0.0
+prostitution,,period_2,number,2.0
+prostitution,,period_2,rate,0.0
+prostitution,,period_1,percent,
+prostitution,,period_1,delta_percent,
+terrorism,,period_1,number,1.0
+terrorism,,period_1,rate,0.0
+terrorism,,period_2,number,2.0
+terrorism,,period_2,rate,0.0
+terrorism,,period_1,percent,
+terrorism,,period_1,delta_percent,
+disturb the peace,,period_1,number,2601.0
+disturb the peace,,period_1,rate,109.0
+disturb the peace,,period_2,number,2249.0
+disturb the peace,,period_2,rate,93.0
+disturb the peace,,period_1,percent,-15.0
+disturb the peace,,period_1,delta_percent,-70.0
+administration of justice violations,,period_1,number,9955.0
+administration of justice violations,,period_1,rate,418.0
+administration of justice violations,,period_2,number,8910.0
+administration of justice violations,,period_2,rate,370.0
+administration of justice violations,,period_1,percent,-11.0
+administration of justice violations,,period_1,delta_percent,-44.0
+total criminal code traffic violations,,period_1,number,1032.0
+total criminal code traffic violations,,period_1,rate,43.0
+total criminal code traffic violations,,period_2,number,985.0
+total criminal code traffic violations,,period_2,rate,41.0
+total criminal code traffic violations,,period_1,percent,-6.0
+total criminal code traffic violations,,period_1,delta_percent,-53.0
+alcohol-impaired driving,,period_1,number,300.0
+alcohol-impaired driving,,period_1,rate,13.0
+alcohol-impaired driving,,period_2,number,302.0
+alcohol-impaired driving,,period_2,rate,13.0
+alcohol-impaired driving,,period_1,percent,0.0
+alcohol-impaired driving,,period_1,delta_percent,-71.0
+drug-impaired driving,,period_1,number,81.0
+drug-impaired driving,,period_1,rate,3.0
+drug-impaired driving,,period_2,number,67.0
+drug-impaired driving,,period_2,rate,3.0
+drug-impaired driving,,period_1,percent,-18.0
+drug-impaired driving,,period_1,delta_percent,93.0
+alcohol- and drug-impaired driving,,period_1,number,2.0
+alcohol- and drug-impaired driving,,period_1,rate,0.0
+alcohol- and drug-impaired driving,,period_2,number,12.0
+alcohol- and drug-impaired driving,,period_2,rate,0.0
+alcohol- and drug-impaired driving,,period_1,percent,
+alcohol- and drug-impaired driving,,period_1,delta_percent,
+impaired driving,,period_1,number,5.0
+impaired driving,,period_1,rate,0.0
+impaired driving,,period_2,number,7.0
+impaired driving,,period_2,rate,0.0
+impaired driving,,period_1,percent,
+impaired driving,,period_1,delta_percent,
+total other federal statute violations,,period_1,number,4478.0
+total other federal statute violations,,period_1,rate,188.0
+total other federal statute violations,,period_2,number,3481.0
+total other federal statute violations,,period_2,rate,145.0
+total other federal statute violations,,period_1,percent,-23.0
+total other federal statute violations,,period_1,delta_percent,-59.0
+youth criminal justice act,,period_1,number,2544.0
+youth criminal justice act,,period_1,rate,107.0
+youth criminal justice act,,period_2,number,1989.0
+youth criminal justice act,,period_2,rate,83.0
+youth criminal justice act,,period_1,percent,-23.0
+youth criminal justice act,,period_1,delta_percent,-71.0
+total,all violations,period_1,number,93611.0
+total,all violations,period_1,rate,3935.0
+total,all violations,period_2,number,83868.0
+total,all violations,period_2,rate,3486.0
+total,all violations,period_1,percent,-11.0
+total,all violations,period_1,delta_percent,-54.0

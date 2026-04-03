@@ -1,0 +1,35 @@
+origin_type,granularity,origin_name,percentage
+birth,country,jamaica,25.1
+birth,country,haiti,17.5
+birth,country,trinidad and tobago,24.5
+birth,country,guyana,25.0
+birth,country,barbados,27.7
+birth,country,saint vincent and the grenadines,48.6
+birth,country,grenada,33.7
+birth,country,saint lucia,41.4
+birth,country,united kingdom,14.8
+birth,country,united states,22.4
+birth,country,ethiopia,35.5
+birth,country,somalia,47.5
+birth,country,eritrea,34.1
+birth,country,sudan,53.1
+birth,country,south sudan,46.1
+birth,country,burundi,25.3
+birth,country,kenya,22.6
+birth,country,zimbabwe,18.7
+birth,country,rwanda,17.5
+birth,country,democratic republic of the congo,27.4
+birth,country,cameroon,13.3
+birth,country,nigeria,22.3
+ancestry,country,jamaica,28.6
+ancestry,country,haiti,15.2
+ancestry,country,trinidad and tobago,21.6
+ancestry,country,barbados,18.3
+ancestry,country,guyana,28.2
+ancestry,country,saint vincent and the grenadines,22.2
+ancestry,country,grenada,24.0
+ancestry,country,ghana,33.1
+ancestry,country,nigeria,18.9
+ancestry,country,united states,35.2
+ancestry,country,united kingdom,32.1
+ancestry,country,canada,26.7

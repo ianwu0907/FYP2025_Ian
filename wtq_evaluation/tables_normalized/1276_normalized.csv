@@ -1,0 +1,49 @@
+variable,statistic_type,model_id,firm_size,estimate
+"extramural r&d dummy, using asm data",coefficient,model_1,small firms,-0.045
+"extramural r&d dummy, using asm data",coefficient,model_1,large firms,-0.337
+"extramural r&d dummy, using asm data",coefficient,model_2,small firms,-0.009
+"extramural r&d dummy, using asm data",coefficient,model_2,large firms,0.018
+"extramural r&d dummy, using asm data",standard_error,model_1,small firms,0.014
+"extramural r&d dummy, using asm data",standard_error,model_1,large firms,0.191
+"extramural r&d dummy, using asm data",standard_error,model_2,small firms,0.022
+"extramural r&d dummy, using asm data",standard_error,model_2,large firms,0.086
+"relative extramural r&d intensity, using asm data",coefficient,model_1,small firms,-0.041
+"relative extramural r&d intensity, using asm data",coefficient,model_1,large firms,0.004
+"relative extramural r&d intensity, using asm data",coefficient,model_2,small firms,-0.017
+"relative extramural r&d intensity, using asm data",coefficient,model_2,large firms,-0.043
+"relative extramural r&d intensity, using asm data",standard_error,model_1,small firms,0.005
+"relative extramural r&d intensity, using asm data",standard_error,model_1,large firms,0.01
+"relative extramural r&d intensity, using asm data",standard_error,model_2,small firms,0.013
+"relative extramural r&d intensity, using asm data",standard_error,model_2,large firms,0.018
+foreign-owned,coefficient,model_1,small firms,0.026
+foreign-owned,coefficient,model_1,large firms,-0.071
+foreign-owned,coefficient,model_2,small firms,0.015
+foreign-owned,coefficient,model_2,large firms,-0.217
+foreign-owned,standard_error,model_1,small firms,0.046
+foreign-owned,standard_error,model_1,large firms,0.173
+foreign-owned,standard_error,model_2,small firms,0.077
+foreign-owned,standard_error,model_2,large firms,0.154
+age,coefficient,model_1,small firms,0.001
+age,coefficient,model_1,large firms,-0.005
+age,coefficient,model_2,small firms,-0.002
+age,coefficient,model_2,large firms,0.003
+age,standard_error,model_1,small firms,0.001
+age,standard_error,model_1,large firms,0.01
+age,standard_error,model_2,small firms,0.002
+age,standard_error,model_2,large firms,0.007
+relative labour productivity,coefficient,model_1,small firms,0.005
+relative labour productivity,coefficient,model_1,large firms,0.03
+relative labour productivity,coefficient,model_2,small firms,0.009
+relative labour productivity,coefficient,model_2,large firms,0.009
+relative labour productivity,standard_error,model_1,small firms,0.009
+relative labour productivity,standard_error,model_1,large firms,0.041
+relative labour productivity,standard_error,model_2,small firms,0.015
+relative labour productivity,standard_error,model_2,large firms,0.024
+relative employment,coefficient,model_1,small firms,0.007
+relative employment,coefficient,model_1,large firms,-0.004
+relative employment,coefficient,model_2,small firms,-0.003
+relative employment,coefficient,model_2,large firms,0.003
+relative employment,standard_error,model_1,small firms,0.006
+relative employment,standard_error,model_1,large firms,0.005
+relative employment,standard_error,model_2,small firms,0.009
+relative employment,standard_error,model_2,large firms,0.006

@@ -1,0 +1,9 @@
+coach_name,years_coached,first_year,last_year,context,games_coached,wins,losses,ties,win_percentage,championship_count,championship_years,playoff_berths_count,playoff_berths_years
+Dom Capers,4,2002,2005,Regular Season,64,18,46,0,0.281,,,,
+Gary Kubiak,8,2006,2013,Regular Season,125,61,64,0,0.488,2,"2011,2012",2,
+Wade Phillips,1,2013,2013,Regular Season,3,0,3,0,0.0,,,,
+Bill O'Brien*,5,2014,present,Regular Season,80,42,38,0,0.525,3,"2015,2016,2018",3,
+Dom Capers,4,2002,2005,Playoffs,,,,,,,,,
+Gary Kubiak,8,2006,2013,Playoffs,4,2,2,,,2,"2011,2012",2,
+Wade Phillips,1,2013,2013,Playoffs,,,,,,,,,
+Bill O'Brien*,5,2014,present,Playoffs,4,1,3,,,3,"2015,2016,2018",3,

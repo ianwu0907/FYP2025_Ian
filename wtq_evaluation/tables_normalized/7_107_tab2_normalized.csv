@@ -1,0 +1,31 @@
+state,industry,measure_type,value
+california,semiconductor and other electronic components,count,76851
+michigan,"automobiles, bodies, trailers, and parts",count,14409
+massachusetts,pharmaceuticals and medicines,count,14000
+washington,software publishers,count,13996
+texas,"mining, extraction, and support activities",count,13406
+illinois,pharmaceuticals and medicines,count,11961
+new jersey,pharmaceuticals and medicines,count,11955
+pennsylvania,pharmaceuticals and medicines,count,10001
+new york,software publishers,count,9456
+minnesota,medical equipment and supplies,count,6057
+california,semiconductor and other electronic components,pct_us,20
+michigan,"automobiles, bodies, trailers, and parts",pct_us,74
+massachusetts,pharmaceuticals and medicines,pct_us,38
+washington,software publishers,pct_us,62
+texas,"mining, extraction, and support activities",pct_us,20
+illinois,pharmaceuticals and medicines,pct_us,34
+new jersey,pharmaceuticals and medicines,pct_us,53
+pennsylvania,pharmaceuticals and medicines,pct_us,48
+new york,software publishers,pct_us,23
+minnesota,medical equipment and supplies,pct_us,39
+california,semiconductor and other electronic components,pct_industry,67
+michigan,"automobiles, bodies, trailers, and parts",pct_industry,4
+massachusetts,pharmaceuticals and medicines,pct_industry,43
+washington,software publishers,pct_industry,75
+texas,"mining, extraction, and support activities",pct_industry,53
+illinois,pharmaceuticals and medicines,pct_industry,18
+new jersey,pharmaceuticals and medicines,pct_industry,18
+pennsylvania,pharmaceuticals and medicines,pct_industry,23
+new york,software publishers,pct_industry,48
+minnesota,medical equipment and supplies,pct_industry,27

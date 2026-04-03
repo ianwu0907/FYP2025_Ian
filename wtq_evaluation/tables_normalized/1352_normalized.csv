@@ -1,0 +1,82 @@
+year,cohort,geographic_unit,rate
+2009,cohort_1,north,3998.0
+2009,cohort_1,south,1514.0
+2009,cohort_1,gap in rate,2.6
+2009,cohort_2,north,2465.0
+2009,cohort_2,south,915.0
+2009,cohort_2,gap in rate,2.7
+2009,cohort_3,north,2620.0
+2009,cohort_3,south,1099.0
+2009,cohort_3,gap in rate,2.4
+2010,cohort_1,north,4170.0
+2010,cohort_1,south,1515.0
+2010,cohort_1,gap in rate,2.8
+2010,cohort_2,north,2564.0
+2010,cohort_2,south,910.0
+2010,cohort_2,gap in rate,2.8
+2010,cohort_3,north,2680.0
+2010,cohort_3,south,1077.0
+2010,cohort_3,gap in rate,2.5
+2011,cohort_1,north,3957.0
+2011,cohort_1,south,1415.0
+2011,cohort_1,gap in rate,2.8
+2011,cohort_2,north,2357.0
+2011,cohort_2,south,846.0
+2011,cohort_2,gap in rate,2.8
+2011,cohort_3,north,2528.0
+2011,cohort_3,south,1003.0
+2011,cohort_3,gap in rate,2.5
+2012,cohort_1,north,3797.0
+2012,cohort_1,south,1346.0
+2012,cohort_1,gap in rate,2.8
+2012,cohort_2,north,2348.0
+2012,cohort_2,south,815.0
+2012,cohort_2,gap in rate,2.9
+2012,cohort_3,north,2521.0
+2012,cohort_3,south,959.0
+2012,cohort_3,gap in rate,2.6
+2013,cohort_1,north,3520.0
+2013,cohort_1,south,1224.0
+2013,cohort_1,gap in rate,2.9
+2013,cohort_2,north,2250.0
+2013,cohort_2,south,767.0
+2013,cohort_2,gap in rate,2.9
+2013,cohort_3,north,2328.0
+2013,cohort_3,south,879.0
+2013,cohort_3,gap in rate,2.6
+2014,cohort_1,north,3380.0
+2014,cohort_1,south,1131.0
+2014,cohort_1,gap in rate,3.0
+2014,cohort_2,north,2230.0
+2014,cohort_2,south,736.0
+2014,cohort_2,gap in rate,3.0
+2014,cohort_3,north,2260.0
+2014,cohort_3,south,832.0
+2014,cohort_3,gap in rate,2.7
+2015,cohort_1,north,3377.0
+2015,cohort_1,south,1147.0
+2015,cohort_1,gap in rate,2.9
+2015,cohort_2,north,2280.0
+2015,cohort_2,south,755.0
+2015,cohort_2,gap in rate,3.0
+2015,cohort_3,north,2304.0
+2015,cohort_3,south,847.0
+2015,cohort_3,gap in rate,2.7
+2016,cohort_1,north,3458.0
+2016,cohort_1,south,1167.0
+2016,cohort_1,gap in rate,3.0
+2016,cohort_2,north,2388.0
+2016,cohort_2,south,754.0
+2016,cohort_2,gap in rate,3.2
+2016,cohort_3,north,2351.0
+2016,cohort_3,south,847.0
+2016,cohort_3,gap in rate,2.8
+2017,cohort_1,north,3561.0
+2017,cohort_1,south,1232.0
+2017,cohort_1,gap in rate,2.9
+2017,cohort_2,north,2462.0
+2017,cohort_2,south,777.0
+2017,cohort_2,gap in rate,3.2
+2017,cohort_3,north,2404.0
+2017,cohort_3,south,870.0
+2017,cohort_3,gap in rate,2.8

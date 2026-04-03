@@ -1,0 +1,37 @@
+population_dimension,category,group_id,language,percent
+sex,female,1,French,35.3
+sex,female,1,English,28.0
+sex,female,2,French,41.8
+sex,female,2,English,30.6
+sex,female,3,French,35.9
+sex,female,3,English,26.6
+sex,male,1,French,64.7
+sex,male,1,English,72.0
+sex,male,2,French,58.2
+sex,male,2,English,69.4
+sex,male,3,French,64.1
+sex,male,3,English,73.4
+marital status,single,1,French,18.7
+marital status,single,1,English,24.8
+marital status,single,2,French,26.9
+marital status,single,2,English,26.1
+marital status,single,3,French,25.6
+marital status,single,3,English,32.8
+marital status,married,1,French,51.3
+marital status,married,1,English,53.9
+marital status,married,2,French,47.8
+marital status,married,2,English,56.7
+marital status,married,3,French,54.4
+marital status,married,3,English,57.8
+marital status,common-law,1,French,17.1
+marital status,common-law,1,English,10.9
+marital status,common-law,2,French,22.4
+marital status,common-law,2,English,6.4
+marital status,common-law,3,French,11.8
+marital status,common-law,3,English,7.8
+marital status,"separated, divorced, or widowed",1,French,12.8
+marital status,"separated, divorced, or widowed",1,English,10.6
+marital status,"separated, divorced, or widowed",2,French,0.0
+marital status,"separated, divorced, or widowed",2,English,10.8
+marital status,"separated, divorced, or widowed",3,French,7.7
+marital status,"separated, divorced, or widowed",3,English,0.0

@@ -1,0 +1,109 @@
+gender,country,applicant_role,percent_applicant_role,subcategory_id,percent_subcategory
+nan,jamaica,principal applicants,31.2,1,55.9
+nan,haiti,principal applicants,26.3,1,35.8
+nan,trinidad and tobago,principal applicants,32.9,1,50.7
+nan,guyana,principal applicants,23.0,1,57.7
+nan,barbados,principal applicants,38.1,1,47.6
+nan,saint vincent and the grenadines,principal applicants,15.4,1,38.7
+nan,grenada,principal applicants,27.9,1,44.3
+nan,saint lucia,principal applicants,16.9,1,37.0
+nan,other countries,principal applicants,33.3,1,45.3
+nan,jamaica,principal applicants,17.1,1,72.8
+nan,haiti,principal applicants,29.7,1,39.1
+nan,trinidad and tobago,principal applicants,19.0,1,71.8
+nan,guyana,principal applicants,16.8,1,70.8
+nan,barbados,principal applicants,18.1,1,77.4
+nan,saint vincent and the grenadines,principal applicants,8.4,1,68.9
+nan,grenada,principal applicants,13.9,1,69.9
+nan,saint lucia,principal applicants,9.4,1,67.6
+nan,other countries,principal applicants,22.4,1,61.4
+nan,jamaica,secondary applicants,9.0,2,2.0
+nan,haiti,secondary applicants,12.5,2,18.6
+nan,trinidad and tobago,secondary applicants,10.0,2,2.8
+nan,guyana,secondary applicants,11.4,2,3.8
+nan,barbados,secondary applicants,6.1,2,2.7
+nan,saint vincent and the grenadines,secondary applicants,1.0,2,26.2
+nan,grenada,secondary applicants,2.8,2,7.8
+nan,saint lucia,secondary applicants,3.8,2,25.6
+nan,other countries,secondary applicants,11.0,2,6.7
+nan,jamaica,secondary applicants,6.5,2,1.9
+nan,haiti,secondary applicants,8.9,2,16.1
+nan,trinidad and tobago,secondary applicants,4.3,2,1.9
+nan,guyana,secondary applicants,7.8,2,1.2
+nan,barbados,secondary applicants,1.9,2,1.9
+nan,saint vincent and the grenadines,secondary applicants,1.7,2,11.9
+nan,grenada,secondary applicants,3.9,2,4.6
+nan,saint lucia,secondary applicants,2.6,2,14.7
+nan,other countries,secondary applicants,4.9,2,9.6
+nan,jamaica,principal applicants,31.2,3,2.0
+nan,haiti,principal applicants,26.3,3,6.8
+nan,trinidad and tobago,principal applicants,32.9,3,3.5
+nan,guyana,principal applicants,23.0,3,4.2
+nan,barbados,principal applicants,38.1,3,5.6
+nan,saint vincent and the grenadines,principal applicants,15.4,3,18.7
+nan,grenada,principal applicants,27.9,3,17.2
+nan,saint lucia,principal applicants,16.9,3,16.7
+nan,other countries,principal applicants,33.3,3,3.8
+nan,jamaica,principal applicants,17.1,3,1.6
+nan,haiti,principal applicants,29.7,3,6.3
+nan,trinidad and tobago,principal applicants,19.0,3,2.9
+nan,guyana,principal applicants,16.8,3,3.3
+nan,barbados,principal applicants,18.1,3,0.6
+nan,saint vincent and the grenadines,principal applicants,8.4,3,8.9
+nan,grenada,principal applicants,13.9,3,7.6
+nan,saint lucia,principal applicants,9.4,3,5.7
+nan,other countries,principal applicants,22.4,3,1.7
+nan,jamaica,secondary applicants,9.0,1,55.9
+nan,haiti,secondary applicants,12.5,1,35.8
+nan,trinidad and tobago,secondary applicants,10.0,1,50.7
+nan,guyana,secondary applicants,11.4,1,57.7
+nan,barbados,secondary applicants,6.1,1,47.6
+nan,saint vincent and the grenadines,secondary applicants,1.0,1,38.7
+nan,grenada,secondary applicants,2.8,1,44.3
+nan,saint lucia,secondary applicants,3.8,1,37.0
+nan,other countries,secondary applicants,11.0,1,45.3
+nan,jamaica,secondary applicants,6.5,1,72.8
+nan,haiti,secondary applicants,8.9,1,39.1
+nan,trinidad and tobago,secondary applicants,4.3,1,71.8
+nan,guyana,secondary applicants,7.8,1,70.8
+nan,barbados,secondary applicants,1.9,1,77.4
+nan,saint vincent and the grenadines,secondary applicants,1.7,1,68.9
+nan,grenada,secondary applicants,3.9,1,69.9
+nan,saint lucia,secondary applicants,2.6,1,67.6
+nan,other countries,secondary applicants,4.9,1,61.4
+nan,jamaica,principal applicants,31.2,2,2.0
+nan,haiti,principal applicants,26.3,2,18.6
+nan,trinidad and tobago,principal applicants,32.9,2,2.8
+nan,guyana,principal applicants,23.0,2,3.8
+nan,barbados,principal applicants,38.1,2,2.7
+nan,saint vincent and the grenadines,principal applicants,15.4,2,26.2
+nan,grenada,principal applicants,27.9,2,7.8
+nan,saint lucia,principal applicants,16.9,2,25.6
+nan,other countries,principal applicants,33.3,2,6.7
+nan,jamaica,principal applicants,17.1,2,1.9
+nan,haiti,principal applicants,29.7,2,16.1
+nan,trinidad and tobago,principal applicants,19.0,2,1.9
+nan,guyana,principal applicants,16.8,2,1.2
+nan,barbados,principal applicants,18.1,2,1.9
+nan,saint vincent and the grenadines,principal applicants,8.4,2,11.9
+nan,grenada,principal applicants,13.9,2,4.6
+nan,saint lucia,principal applicants,9.4,2,14.7
+nan,other countries,principal applicants,22.4,2,9.6
+nan,jamaica,secondary applicants,9.0,3,2.0
+nan,haiti,secondary applicants,12.5,3,6.8
+nan,trinidad and tobago,secondary applicants,10.0,3,3.5
+nan,guyana,secondary applicants,11.4,3,4.2
+nan,barbados,secondary applicants,6.1,3,5.6
+nan,saint vincent and the grenadines,secondary applicants,1.0,3,18.7
+nan,grenada,secondary applicants,2.8,3,17.2
+nan,saint lucia,secondary applicants,3.8,3,16.7
+nan,other countries,secondary applicants,11.0,3,3.8
+nan,jamaica,secondary applicants,6.5,3,1.6
+nan,haiti,secondary applicants,8.9,3,6.3
+nan,trinidad and tobago,secondary applicants,4.3,3,2.9
+nan,guyana,secondary applicants,7.8,3,3.3
+nan,barbados,secondary applicants,1.9,3,0.6
+nan,saint vincent and the grenadines,secondary applicants,1.7,3,8.9
+nan,grenada,secondary applicants,3.9,3,7.6
+nan,saint lucia,secondary applicants,2.6,3,5.7
+nan,other countries,secondary applicants,4.9,3,1.7

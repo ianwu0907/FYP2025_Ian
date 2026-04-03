@@ -1,0 +1,112 @@
+region_cn,region_en,district_cn,district_en,year,number,percentage
+,Hong Kong Island,中西區,Central and Western,2011,2160.0,2.1
+,Hong Kong Island,中西區,Central and Western,2016,1643.0,1.7
+,Hong Kong Island,中西區,Central and Western,2021,1845.0,2.0
+,Hong Kong Island,Central and Western,,2011,,
+,Hong Kong Island,Central and Western,,2016,,
+,Hong Kong Island,Central and Western,,2021,,
+,Hong Kong Island,灣仔[1],Wan Chai[1],2011,1023.0,1.0
+,Hong Kong Island,灣仔[1],Wan Chai[1],2016,1287.0,1.4
+,Hong Kong Island,灣仔[1],Wan Chai[1],2021,1678.0,1.8
+,Hong Kong Island,Wan Chai[1],,2011,,
+,Hong Kong Island,Wan Chai[1],,2016,,
+,Hong Kong Island,Wan Chai[1],,2021,,
+,Hong Kong Island,東區[1],Eastern[1],2011,5294.0,5.1
+,Hong Kong Island,東區[1],Eastern[1],2016,5210.0,5.5
+,Hong Kong Island,東區[1],Eastern[1],2021,5017.0,5.3
+,Hong Kong Island,Eastern[1],,2011,,
+,Hong Kong Island,Eastern[1],,2016,,
+,Hong Kong Island,Eastern[1],,2021,,
+,Hong Kong Island,南區,Southern,2011,3802.0,3.7
+,Hong Kong Island,南區,Southern,2016,2975.0,3.2
+,Hong Kong Island,南區,Southern,2021,2426.0,2.6
+,Hong Kong Island,Southern,,2011,,
+,Hong Kong Island,Southern,,2016,,
+,Hong Kong Island,Southern,,2021,,
+Kowloon,Hong Kong Island,油尖旺,Yau Tsim Mong,2011,3863.0,3.7
+Kowloon,Hong Kong Island,油尖旺,Yau Tsim Mong,2016,4551.0,4.8
+Kowloon,Hong Kong Island,油尖旺,Yau Tsim Mong,2021,3875.0,4.1
+Kowloon,Hong Kong Island,Yau Tsim Mong,,2011,,
+Kowloon,Hong Kong Island,Yau Tsim Mong,,2016,,
+Kowloon,Hong Kong Island,Yau Tsim Mong,,2021,,
+Kowloon,Kowloon,深水,Sham Shui Po,2011,6783.0,6.5
+Kowloon,Kowloon,深水,Sham Shui Po,2016,7182.0,7.6
+Kowloon,Kowloon,深水,Sham Shui Po,2021,8059.0,8.5
+Kowloon,Kowloon,Sham Shui Po,,2011,,
+Kowloon,Kowloon,Sham Shui Po,,2016,,
+Kowloon,Kowloon,Sham Shui Po,,2021,,
+Kowloon,Kowloon,九龍城,Kowloon City,2011,4953.0,4.8
+Kowloon,Kowloon,九龍城,Kowloon City,2016,4857.0,5.2
+Kowloon,Kowloon,九龍城,Kowloon City,2021,6101.0,6.5
+Kowloon,Kowloon,Kowloon City,,2011,,
+Kowloon,Kowloon,Kowloon City,,2016,,
+Kowloon,Kowloon,Kowloon City,,2021,,
+Kowloon,Kowloon,黃大仙,Wong Tai Sin,2011,6498.0,6.3
+Kowloon,Kowloon,黃大仙,Wong Tai Sin,2016,6472.0,6.9
+Kowloon,Kowloon,黃大仙,Wong Tai Sin,2021,4837.0,5.1
+Kowloon,Kowloon,Wong Tai Sin,,2011,,
+Kowloon,Kowloon,Wong Tai Sin,,2016,,
+Kowloon,Kowloon,Wong Tai Sin,,2021,,
+Kowloon,Kowloon,觀塘,Kwun Tong,2011,11303.0,10.9
+Kowloon,Kowloon,觀塘,Kwun Tong,2016,10375.0,11.0
+Kowloon,Kowloon,觀塘,Kwun Tong,2021,10099.0,10.7
+Kowloon,Kowloon,Kwun Tong,,2011,,
+Kowloon,Kowloon,Kwun Tong,,2016,,
+Kowloon,Kowloon,Kwun Tong,,2021,,
+New Territories,Kowloon,葵青,Kwai Tsing,2011,8948.0,8.6
+New Territories,Kowloon,葵青,Kwai Tsing,2016,7654.0,8.1
+New Territories,Kowloon,葵青,Kwai Tsing,2021,6508.0,6.9
+New Territories,Kowloon,Kwai Tsing,,2011,,
+New Territories,Kowloon,Kwai Tsing,,2016,,
+New Territories,Kowloon,Kwai Tsing,,2021,,
+New Territories,Kowloon,荃灣,Tsuen Wan,2011,4012.0,3.9
+New Territories,Kowloon,荃灣,Tsuen Wan,2016,3805.0,4.1
+New Territories,Kowloon,荃灣,Tsuen Wan,2021,3795.0,4.0
+New Territories,Kowloon,Tsuen Wan,,2011,,
+New Territories,Kowloon,Tsuen Wan,,2016,,
+New Territories,Kowloon,Tsuen Wan,,2021,,
+New Territories,New Territories,屯門,Tuen Mun,2011,8116.0,7.8
+New Territories,New Territories,屯門,Tuen Mun,2016,7815.0,8.3
+New Territories,New Territories,屯門,Tuen Mun,2021,6716.0,7.1
+New Territories,New Territories,Tuen Mun,,2011,,
+New Territories,New Territories,Tuen Mun,,2016,,
+New Territories,New Territories,Tuen Mun,,2021,,
+New Territories,New Territories,元朗,Yuen Long,2011,12639.0,12.2
+New Territories,New Territories,元朗,Yuen Long,2016,8706.0,9.3
+New Territories,New Territories,元朗,Yuen Long,2021,8690.0,9.2
+New Territories,New Territories,Yuen Long,,2011,,
+New Territories,New Territories,Yuen Long,,2016,,
+New Territories,New Territories,Yuen Long,,2021,,
+New Territories,New Territories,北區,North,2011,5016.0,4.8
+New Territories,New Territories,北區,North,2016,4828.0,5.1
+New Territories,New Territories,北區,North,2021,5282.0,5.6
+New Territories,New Territories,North,,2011,,
+New Territories,New Territories,North,,2016,,
+New Territories,New Territories,North,,2021,,
+New Territories,New Territories,大埔,Tai Po,2011,3748.0,3.6
+New Territories,New Territories,大埔,Tai Po,2016,3327.0,3.5
+New Territories,New Territories,大埔,Tai Po,2021,3473.0,3.7
+New Territories,New Territories,Tai Po,,2011,,
+New Territories,New Territories,Tai Po,,2016,,
+New Territories,New Territories,Tai Po,,2021,,
+New Territories,New Territories,沙田,Sha Tin,2011,7537.0,7.3
+New Territories,New Territories,沙田,Sha Tin,2016,7475.0,8.0
+New Territories,New Territories,沙田,Sha Tin,2021,8671.0,9.2
+New Territories,New Territories,Sha Tin,,2011,,
+New Territories,New Territories,Sha Tin,,2016,,
+New Territories,New Territories,Sha Tin,,2021,,
+New Territories,New Territories,西貢,Sai Kung,2011,5345.0,5.1
+New Territories,New Territories,西貢,Sai Kung,2016,3927.0,4.2
+New Territories,New Territories,西貢,Sai Kung,2021,4273.0,4.5
+New Territories,New Territories,Sai Kung,,2011,,
+New Territories,New Territories,Sai Kung,,2016,,
+New Territories,New Territories,Sai Kung,,2021,,
+New Territories,New Territories,離島,Islands,2011,2889.0,2.8
+New Territories,New Territories,離島,Islands,2016,1854.0,2.0
+New Territories,New Territories,離島,Islands,2021,3163.0,3.3
+New Territories,New Territories,Islands,,2011,,
+New Territories,New Territories,Islands,,2016,,
+New Territories,New Territories,Islands,,2021,,
+陸上總計,New Territories,nan,,2011,103929.0,100.0
+陸上總計,New Territories,nan,,2016,93943.0,100.0
+陸上總計,New Territories,nan,,2021,94508.0,100.0

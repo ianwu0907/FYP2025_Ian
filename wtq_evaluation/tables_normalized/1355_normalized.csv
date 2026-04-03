@@ -1,0 +1,131 @@
+jurisdiction,region,category_group,rate
+newfoundland and labrador,north,1,6153.0
+newfoundland and labrador,south,1,1351.0
+newfoundland and labrador,north,2,4148.0
+newfoundland and labrador,south,2,761.0
+newfoundland and labrador,north,3,2602.0
+newfoundland and labrador,south,3,1059.0
+newfoundland and labrador,north,4,3331.0
+newfoundland and labrador,south,4,783.0
+newfoundland and labrador,north,5,3936.0
+newfoundland and labrador,south,5,878.0
+prince edward island,north,1,
+prince edward island,south,1,1155.0
+prince edward island,north,2,
+prince edward island,south,2,710.0
+prince edward island,north,3,
+prince edward island,south,3,993.0
+prince edward island,north,4,
+prince edward island,south,4,675.0
+prince edward island,north,5,
+prince edward island,south,5,801.0
+nova scotia,north,1,
+nova scotia,south,1,1776.0
+nova scotia,north,2,
+nova scotia,south,2,852.0
+nova scotia,north,3,
+nova scotia,south,3,1178.0
+nova scotia,north,4,
+nova scotia,south,4,830.0
+nova scotia,north,5,
+nova scotia,south,5,1005.0
+new brunswick,north,1,
+new brunswick,south,1,1730.0
+new brunswick,north,2,
+new brunswick,south,2,958.0
+new brunswick,north,3,
+new brunswick,south,3,1224.0
+new brunswick,north,4,
+new brunswick,south,4,951.0
+new brunswick,north,5,
+new brunswick,south,5,1088.0
+quebec,north,1,2279.0
+quebec,south,1,1399.0
+quebec,north,2,1106.0
+quebec,south,2,811.0
+quebec,north,3,1606.0
+quebec,south,3,1032.0
+quebec,north,4,1140.0
+quebec,south,4,812.0
+quebec,north,5,1328.0
+quebec,south,5,919.0
+ontario,north,1,2734.0
+ontario,south,1,1000.0
+ontario,north,2,1431.0
+ontario,south,2,627.0
+ontario,north,3,1573.0
+ontario,south,3,843.0
+ontario,north,4,1257.0
+ontario,south,4,629.0
+ontario,north,5,1563.0
+ontario,south,5,713.0
+manitoba,north,1,9025.0
+manitoba,south,1,1827.0
+manitoba,north,2,10723.0
+manitoba,south,2,1191.0
+manitoba,north,3,5222.0
+manitoba,south,3,1221.0
+manitoba,north,4,7934.0
+manitoba,south,4,1178.0
+manitoba,north,5,8307.0
+manitoba,south,5,1289.0
+saskatchewan,north,1,13886.0
+saskatchewan,south,1,2158.0
+saskatchewan,north,2,17829.0
+saskatchewan,south,2,1311.0
+saskatchewan,north,3,7951.0
+saskatchewan,south,3,1393.0
+saskatchewan,north,4,12518.0
+saskatchewan,south,4,1195.0
+saskatchewan,north,5,13071.0
+saskatchewan,south,5,1414.0
+alberta,north,1,2460.0
+alberta,south,1,1272.0
+alberta,north,2,2493.0
+alberta,south,2,980.0
+alberta,north,3,1535.0
+alberta,south,3,997.0
+alberta,north,4,1975.0
+alberta,south,4,946.0
+alberta,north,5,2135.0
+alberta,south,5,1014.0
+british columbia,north,1,2316.0
+british columbia,south,1,1014.0
+british columbia,north,2,1803.0
+british columbia,south,2,739.0
+british columbia,north,3,1343.0
+british columbia,south,3,823.0
+british columbia,north,4,1611.0
+british columbia,south,4,861.0
+british columbia,north,5,1738.0
+british columbia,south,5,830.0
+yukon,north,1,4356.0
+yukon,south,1,
+yukon,north,2,3493.0
+yukon,south,2,
+yukon,north,3,1884.0
+yukon,south,3,
+yukon,north,4,2945.0
+yukon,south,4,
+yukon,north,5,3172.0
+yukon,south,5,
+northwest territories,north,1,8909.0
+northwest territories,south,1,
+northwest territories,north,2,9398.0
+northwest territories,south,2,
+northwest territories,north,3,4077.0
+northwest territories,south,3,
+northwest territories,north,4,6672.0
+northwest territories,south,4,
+northwest territories,north,5,7448.0
+northwest territories,south,5,
+nunavut,north,1,7491.0
+nunavut,south,1,
+nunavut,north,2,10942.0
+nunavut,south,2,
+nunavut,north,3,3438.0
+nunavut,south,3,
+nunavut,north,4,6777.0
+nunavut,south,4,
+nunavut,north,5,7170.0
+nunavut,south,5,

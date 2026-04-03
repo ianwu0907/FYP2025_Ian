@@ -1,0 +1,64 @@
+conference_acronym,conference_name,year,held
+ISCA,ACM/IEEE International Symposium on Computer Architecture,,1993
+LCTES,"ACM SIGPLAN/SIGBED Conference on Languages, Compilers, and Tools for Embedded Systems",,-
+METRICS,ACM SIGMETRICS International Conference on Measurement and Modeling of Computer Systems,,-
+PLDI,ACM SIGPLAN Conference on Programming Language Design and Implementation,,-
+PODC,ACM Symposium on Principles of Distributed Computing,,-
+PPoPP,ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming,,1993
+SPAA,ACM Symposium on Parallelism in Algorithms and Architectures,,-
+SoCG,ACM Symposium on Computational Geometry,,1993
+STOC,ACM Symposium on Theory of Computing,,1993
+ISCA,ACM/IEEE International Symposium on Computer Architecture,,1996
+LCTES,"ACM SIGPLAN/SIGBED Conference on Languages, Compilers, and Tools for Embedded Systems",,-
+METRICS,ACM SIGMETRICS International Conference on Measurement and Modeling of Computer Systems,,1996
+PLDI,ACM SIGPLAN Conference on Programming Language Design and Implementation,,1996
+PODC,ACM Symposium on Principles of Distributed Computing,,1996
+PPoPP,ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming,,-
+SPAA,ACM Symposium on Parallelism in Algorithms and Architectures,,-
+SoCG,ACM Symposium on Computational Geometry,,1996
+STOC,ACM Symposium on Theory of Computing,,1996
+ISCA,ACM/IEEE International Symposium on Computer Architecture,,1999
+LCTES,"ACM SIGPLAN/SIGBED Conference on Languages, Compilers, and Tools for Embedded Systems",,1999
+METRICS,ACM SIGMETRICS International Conference on Measurement and Modeling of Computer Systems,,1999
+PLDI,ACM SIGPLAN Conference on Programming Language Design and Implementation,,1999
+PODC,ACM Symposium on Principles of Distributed Computing,,1999
+PPoPP,ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming,,1999
+SPAA,ACM Symposium on Parallelism in Algorithms and Architectures,,-
+SoCG,ACM Symposium on Computational Geometry,,-
+STOC,ACM Symposium on Theory of Computing,,1999
+ISCA,ACM/IEEE International Symposium on Computer Architecture,2003,2003
+LCTES,"ACM SIGPLAN/SIGBED Conference on Languages, Compilers, and Tools for Embedded Systems",2003,2003
+METRICS,ACM SIGMETRICS International Conference on Measurement and Modeling of Computer Systems,2003,2003
+PLDI,ACM SIGPLAN Conference on Programming Language Design and Implementation,2003,2003
+PODC,ACM Symposium on Principles of Distributed Computing,2003,-
+PPoPP,ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming,2003,2003
+SPAA,ACM Symposium on Parallelism in Algorithms and Architectures,2003,2003
+SoCG,ACM Symposium on Computational Geometry,2003,2003
+STOC,ACM Symposium on Theory of Computing,2003,2003
+ISCA,ACM/IEEE International Symposium on Computer Architecture,2007,2007
+LCTES,"ACM SIGPLAN/SIGBED Conference on Languages, Compilers, and Tools for Embedded Systems",2007,2007
+METRICS,ACM SIGMETRICS International Conference on Measurement and Modeling of Computer Systems,2007,2007
+PLDI,ACM SIGPLAN Conference on Programming Language Design and Implementation,2007,2007
+PODC,ACM Symposium on Principles of Distributed Computing,2007,-
+PPoPP,ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming,2007,-
+SPAA,ACM Symposium on Parallelism in Algorithms and Architectures,2007,2007
+SoCG,ACM Symposium on Computational Geometry,2007,-
+STOC,ACM Symposium on Theory of Computing,2007,2007
+ISCA,ACM/IEEE International Symposium on Computer Architecture,2011,2011
+LCTES,"ACM SIGPLAN/SIGBED Conference on Languages, Compilers, and Tools for Embedded Systems",2011,-
+METRICS,ACM SIGMETRICS International Conference on Measurement and Modeling of Computer Systems,2011,-
+PLDI,ACM SIGPLAN Conference on Programming Language Design and Implementation,2011,2011
+PODC,ACM Symposium on Principles of Distributed Computing,2011,2011
+PPoPP,ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming,2011,-
+SPAA,ACM Symposium on Parallelism in Algorithms and Architectures,2011,2011
+SoCG,ACM Symposium on Computational Geometry,2011,-
+STOC,ACM Symposium on Theory of Computing,2011,2011
+ISCA,ACM/IEEE International Symposium on Computer Architecture,2015,2015
+LCTES,"ACM SIGPLAN/SIGBED Conference on Languages, Compilers, and Tools for Embedded Systems",2015,-
+METRICS,ACM SIGMETRICS International Conference on Measurement and Modeling of Computer Systems,2015,2015
+PLDI,ACM SIGPLAN Conference on Programming Language Design and Implementation,2015,2015
+PODC,ACM Symposium on Principles of Distributed Computing,2015,-
+PPoPP,ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming,2015,-
+SPAA,ACM Symposium on Parallelism in Algorithms and Architectures,2015,2015
+SoCG,ACM Symposium on Computational Geometry,2015,-
+STOC,ACM Symposium on Theory of Computing,2015,2015

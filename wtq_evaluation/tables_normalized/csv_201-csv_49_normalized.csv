@@ -1,0 +1,97 @@
+metric,unit_system,month,value_celsius_or_mm_or_count_or_percent,value_fahrenheit_or_inches
+Record high °C (°F),celsius_fahrenheit,Jan,24.0,75.2
+Record high °C (°F),celsius_fahrenheit,Feb,24.0,75.2
+Record high °C (°F),celsius_fahrenheit,Mar,27.2,81.0
+Record high °C (°F),celsius_fahrenheit,Apr,32.6,90.7
+Record high °C (°F),celsius_fahrenheit,May,39.1,102.4
+Record high °C (°F),celsius_fahrenheit,Jun,41.4,106.5
+Record high °C (°F),celsius_fahrenheit,Jul,43.3,109.9
+Record high °C (°F),celsius_fahrenheit,Aug,44.8,112.6
+Record high °C (°F),celsius_fahrenheit,Sep,39.0,102.2
+Record high °C (°F),celsius_fahrenheit,Oct,35.2,95.4
+Record high °C (°F),celsius_fahrenheit,Nov,26.8,80.2
+Record high °C (°F),celsius_fahrenheit,Dec,23.0,73.4
+Average high °C (°F),celsius_fahrenheit,Jan,12.6,54.7
+Average high °C (°F),celsius_fahrenheit,Feb,12.9,55.2
+Average high °C (°F),celsius_fahrenheit,Mar,15.0,59.0
+Average high °C (°F),celsius_fahrenheit,Apr,18.0,64.4
+Average high °C (°F),celsius_fahrenheit,May,22.8,73.0
+Average high °C (°F),celsius_fahrenheit,Jun,26.8,80.2
+Average high °C (°F),celsius_fahrenheit,Jul,29.2,84.6
+Average high °C (°F),celsius_fahrenheit,Aug,29.2,84.6
+Average high °C (°F),celsius_fahrenheit,Sep,25.9,78.6
+Average high °C (°F),celsius_fahrenheit,Oct,21.5,70.7
+Average high °C (°F),celsius_fahrenheit,Nov,16.8,62.2
+Average high °C (°F),celsius_fahrenheit,Dec,13.9,57.0
+Daily mean °C (°F),celsius_fahrenheit,Jan,8.8,47.8
+Daily mean °C (°F),celsius_fahrenheit,Feb,8.9,48.0
+Daily mean °C (°F),celsius_fahrenheit,Mar,10.7,51.3
+Daily mean °C (°F),celsius_fahrenheit,Apr,13.3,55.9
+Daily mean °C (°F),celsius_fahrenheit,May,17.8,64.0
+Daily mean °C (°F),celsius_fahrenheit,Jun,21.8,71.2
+Daily mean °C (°F),celsius_fahrenheit,Jul,24.3,75.7
+Daily mean °C (°F),celsius_fahrenheit,Aug,24.3,75.7
+Daily mean °C (°F),celsius_fahrenheit,Sep,21.1,70.0
+Daily mean °C (°F),celsius_fahrenheit,Oct,17.1,62.8
+Daily mean °C (°F),celsius_fahrenheit,Nov,12.7,54.9
+Daily mean °C (°F),celsius_fahrenheit,Dec,10.1,50.2
+Average low °C (°F),celsius_fahrenheit,Jan,4.9,40.8
+Average low °C (°F),celsius_fahrenheit,Feb,4.8,40.6
+Average low °C (°F),celsius_fahrenheit,Mar,6.3,43.3
+Average low °C (°F),celsius_fahrenheit,Apr,8.6,47.5
+Average low °C (°F),celsius_fahrenheit,May,12.9,55.2
+Average low °C (°F),celsius_fahrenheit,Jun,16.7,62.1
+Average low °C (°F),celsius_fahrenheit,Jul,19.3,66.7
+Average low °C (°F),celsius_fahrenheit,Aug,19.4,66.9
+Average low °C (°F),celsius_fahrenheit,Sep,16.3,61.3
+Average low °C (°F),celsius_fahrenheit,Oct,12.6,54.7
+Average low °C (°F),celsius_fahrenheit,Nov,8.6,47.5
+Average low °C (°F),celsius_fahrenheit,Dec,6.2,43.2
+Record low °C (°F),celsius_fahrenheit,Jan,5.9,21.4
+Record low °C (°F),celsius_fahrenheit,Feb,3.0,27.0
+Record low °C (°F),celsius_fahrenheit,Mar,2.4,27.7
+Record low °C (°F),celsius_fahrenheit,Apr,1.1,34.0
+Record low °C (°F),celsius_fahrenheit,May,5.3,41.5
+Record low °C (°F),celsius_fahrenheit,Jun,7.8,46.0
+Record low °C (°F),celsius_fahrenheit,Jul,12.8,55.0
+Record low °C (°F),celsius_fahrenheit,Aug,12.8,55.0
+Record low °C (°F),celsius_fahrenheit,Sep,8.4,47.1
+Record low °C (°F),celsius_fahrenheit,Oct,1.0,33.8
+Record low °C (°F),celsius_fahrenheit,Nov,0.0,32.0
+Record low °C (°F),celsius_fahrenheit,Dec,1.6,29.1
+Precipitation mm (inches),millimeters_inches,Jan,53.7,2.114
+Precipitation mm (inches),millimeters_inches,Feb,64.2,2.528
+Precipitation mm (inches),millimeters_inches,Mar,42.0,1.654
+Precipitation mm (inches),millimeters_inches,Apr,40.5,1.594
+Precipitation mm (inches),millimeters_inches,May,34.9,1.374
+Precipitation mm (inches),millimeters_inches,Jun,23.3,0.917
+Precipitation mm (inches),millimeters_inches,Jul,25.4,1.0
+Precipitation mm (inches),millimeters_inches,Aug,30.4,1.197
+Precipitation mm (inches),millimeters_inches,Sep,59.7,2.35
+Precipitation mm (inches),millimeters_inches,Oct,61.5,2.421
+Precipitation mm (inches),millimeters_inches,Nov,72.7,2.862
+Precipitation mm (inches),millimeters_inches,Dec,54.3,2.138
+Avg. precipitation days (≥ 1 mm),count,Jan,6.7,
+Avg. precipitation days (≥ 1 mm),count,Feb,7.7,
+Avg. precipitation days (≥ 1 mm),count,Mar,6.8,
+Avg. precipitation days (≥ 1 mm),count,Apr,6.2,
+Avg. precipitation days (≥ 1 mm),count,May,5.2,
+Avg. precipitation days (≥ 1 mm),count,Jun,3.7,
+Avg. precipitation days (≥ 1 mm),count,Jul,2.6,
+Avg. precipitation days (≥ 1 mm),count,Aug,3.5,
+Avg. precipitation days (≥ 1 mm),count,Sep,5.0,
+Avg. precipitation days (≥ 1 mm),count,Oct,6.3,
+Avg. precipitation days (≥ 1 mm),count,Nov,7.7,
+Avg. precipitation days (≥ 1 mm),count,Dec,7.1,
+% humidity,percentage,Jan,77.0,
+% humidity,percentage,Feb,74.0,
+% humidity,percentage,Mar,72.0,
+% humidity,percentage,Apr,68.0,
+% humidity,percentage,May,68.0,
+% humidity,percentage,Jun,65.0,
+% humidity,percentage,Jul,64.0,
+% humidity,percentage,Aug,65.0,
+% humidity,percentage,Sep,68.0,
+% humidity,percentage,Oct,72.0,
+% humidity,percentage,Nov,76.0,
+% humidity,percentage,Dec,78.0,

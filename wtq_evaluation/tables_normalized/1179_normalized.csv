@@ -1,0 +1,28 @@
+jurisdiction,period_id,number,percent_change
+newfoundland and labrador,1,65,-20.0
+newfoundland and labrador,2,192,22.0
+newfoundland and labrador,3,257,8.0
+prince edward island,1,24,-35.0
+prince edward island,2,110,-22.0
+prince edward island,3,134,-25.0
+new brunswick,1,212,8.0
+new brunswick,2,261,-8.0
+new brunswick,3,473,-2.0
+ontario,1,2741,-17.0
+ontario,2,2797,-11.0
+ontario,3,5538,-14.0
+manitoba,1,2058,-19.0
+manitoba,2,1542,-14.0
+manitoba,3,3600,-17.0
+saskatchewan,1,1413,-18.0
+saskatchewan,2,2136,-11.0
+saskatchewan,3,3549,-14.0
+british columbia,1,778,-11.0
+british columbia,2,2192,1.0
+british columbia,3,2970,-3.0
+northwest territories,1,57,50.0
+northwest territories,2,47,15.0
+northwest territories,3,104,32.0
+nunavut,1,13,-67.0
+nunavut,2,26,-35.0
+nunavut,3,39,-51.0

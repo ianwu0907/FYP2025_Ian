@@ -1,0 +1,76 @@
+section,subsection,item_label,item_enumeration,item_category,year,value
+(1) Total Personnel Expenses,None,1. Salary,1,personnel,2017,1189.3
+(1) Total Personnel Expenses,None,2. Professional Annuity and Trade Union Funds,2,personnel,2017,77.77
+(1) Total Personnel Expenses,None,"3. Social insurance fees (pension, medical, unemployment, etc.)",3,personnel,2017,277.3
+(1) Total Personnel Expenses,None,4. Housing Provident Fund,4,personnel,2017,149.36
+(1) Total Personnel Expenses,None,5. Salaries of canal contracting personnel,5,personnel,2017,96.5
+(II) Daily Public Expenses,None,1. Office expenses,1,other,2017,6.1
+(II) Daily Public Expenses,None,2. Routine Repair Expenses,2,repair,2017,5.38
+(II) Daily Public Expenses,None,3. Business Reception Expenses,3,other,2017,0.61
+(II) Daily Public Expenses,None,4. Electricity and water fees,4,other,2017,4.81
+(II) Daily Public Expenses,None,5. Vehicle Usage Fee,5,other,2017,8.45
+(II) Daily Public Expenses,None,6. Travel expenses,6,other,2017,3.02
+(II) Daily Public Expenses,None,7. Office Equipment Purchase Expenses and Litigation Fees,7,other,2017,3.97
+(II) Daily Public Expenses,None,8. Handling Fee,8,other,2017,3.57
+(II) Daily Public Expenses,None,9. Labor Fees,9,other,2017,0
+(II) Daily Public Expenses,None,10. Other Expenses,10,other,2017,18.81
+(II) Daily Public Expenses,None,(3) Maintenance Cost,(3),repair,2017,194.61
+II. Major Repair Expenses for Fixed Assets,None,1. Major repair expenses of fixed assets on the books,1,repair,2017,196.76
+II. Major Repair Expenses for Fixed Assets,None,2. Major repair expenses for fixed assets that have been used but not yet transferred,2,repair,2017,262.68
+II. Major Repair Expenses for Fixed Assets,None,"Three, Annual Depreciation of Fixed Assets",None,depreciation,2017,1010.5
+"Five, cost and expenses to be deducted from non-public welfare production and operation links",None,1. Expenses for personnel involved in external engineering support projects,1,personnel,2017,241
+"Five, cost and expenses to be deducted from non-public welfare production and operation links",None,2. Asset Rental Expenses,2,other,2017,53.78
+Agricultural Water Supply Cost Allocation Ratio,None,"Seven, the actual water supply volume of the reservoir in the current year (original water volume, 10,000 m³)",None,other,2017,7994.02
+Agricultural Water Supply Cost Allocation Ratio,None,"Xilahe Reservoir and other non-power generation water supply volumes (10,000 m³)",Xil,power_generation_water,2017,1303.49
+"Non-power generation original water supply volume (industrial, domestic, and agricultural original water supply volume, 10,000 m³)",None,"Among them (1) industrial water supply volume (10,000 m³)",Among them,industrial_water,2017,37
+"Non-power generation original water supply volume (industrial, domestic, and agricultural original water supply volume, 10,000 m³)",None,"(2) Domestic water supply (10,000 m³)",(2),domestic_water,2017,547.7
+(1) Total Personnel Expenses,None,1. Salary,1,personnel,2018,1320.66
+(1) Total Personnel Expenses,None,2. Professional Annuity and Trade Union Funds,2,personnel,2018,83.62
+(1) Total Personnel Expenses,None,"3. Social insurance fees (pension, medical, unemployment, etc.)",3,personnel,2018,297.19
+(1) Total Personnel Expenses,None,4. Housing Provident Fund,4,personnel,2018,155.45
+(1) Total Personnel Expenses,None,5. Salaries of canal contracting personnel,5,personnel,2018,100.87
+(II) Daily Public Expenses,None,1. Office expenses,1,other,2018,9.24
+(II) Daily Public Expenses,None,2. Routine Repair Expenses,2,repair,2018,6.76
+(II) Daily Public Expenses,None,3. Business Reception Expenses,3,other,2018,0.16
+(II) Daily Public Expenses,None,4. Electricity and water fees,4,other,2018,4.96
+(II) Daily Public Expenses,None,5. Vehicle Usage Fee,5,other,2018,8.12
+(II) Daily Public Expenses,None,6. Travel expenses,6,other,2018,3.66
+(II) Daily Public Expenses,None,7. Office Equipment Purchase Expenses and Litigation Fees,7,other,2018,7.47
+(II) Daily Public Expenses,None,8. Handling Fee,8,other,2018,7.48
+(II) Daily Public Expenses,None,9. Labor Fees,9,other,2018,28.02
+(II) Daily Public Expenses,None,10. Other Expenses,10,other,2018,33.68
+(II) Daily Public Expenses,None,(3) Maintenance Cost,(3),repair,2018,200.19
+II. Major Repair Expenses for Fixed Assets,None,1. Major repair expenses of fixed assets on the books,1,repair,2018,196.76
+II. Major Repair Expenses for Fixed Assets,None,2. Major repair expenses for fixed assets that have been used but not yet transferred,2,repair,2018,262.68
+II. Major Repair Expenses for Fixed Assets,None,"Three, Annual Depreciation of Fixed Assets",None,depreciation,2018,990.41
+"Five, cost and expenses to be deducted from non-public welfare production and operation links",None,1. Expenses for personnel involved in external engineering support projects,1,personnel,2018,191.47
+"Five, cost and expenses to be deducted from non-public welfare production and operation links",None,2. Asset Rental Expenses,2,other,2018,50.8
+Agricultural Water Supply Cost Allocation Ratio,None,"Seven, the actual water supply volume of the reservoir in the current year (original water volume, 10,000 m³)",None,other,2018,7774.41
+Agricultural Water Supply Cost Allocation Ratio,None,"Xilahe Reservoir and other non-power generation water supply volumes (10,000 m³)",Xil,power_generation_water,2018,1635.14
+"Non-power generation original water supply volume (industrial, domestic, and agricultural original water supply volume, 10,000 m³)",None,"Among them (1) industrial water supply volume (10,000 m³)",Among them,industrial_water,2018,21.5
+"Non-power generation original water supply volume (industrial, domestic, and agricultural original water supply volume, 10,000 m³)",None,"(2) Domestic water supply (10,000 m³)",(2),domestic_water,2018,599.71
+(1) Total Personnel Expenses,None,1. Salary,1,personnel,2019,1186.22
+(1) Total Personnel Expenses,None,2. Professional Annuity and Trade Union Funds,2,personnel,2019,81.32
+(1) Total Personnel Expenses,None,"3. Social insurance fees (pension, medical, unemployment, etc.)",3,personnel,2019,268.19
+(1) Total Personnel Expenses,None,4. Housing Provident Fund,4,personnel,2019,154.81
+(1) Total Personnel Expenses,None,5. Salaries of canal contracting personnel,5,personnel,2019,98.53
+(II) Daily Public Expenses,None,1. Office expenses,1,other,2019,10.63
+(II) Daily Public Expenses,None,2. Routine Repair Expenses,2,repair,2019,4.25
+(II) Daily Public Expenses,None,3. Business Reception Expenses,3,other,2019,0.26
+(II) Daily Public Expenses,None,4. Electricity and water fees,4,other,2019,6.0
+(II) Daily Public Expenses,None,5. Vehicle Usage Fee,5,other,2019,7.19
+(II) Daily Public Expenses,None,6. Travel expenses,6,other,2019,2.41
+(II) Daily Public Expenses,None,7. Office Equipment Purchase Expenses and Litigation Fees,7,other,2019,0.0
+(II) Daily Public Expenses,None,8. Handling Fee,8,other,2019,3.88
+(II) Daily Public Expenses,None,9. Labor Fees,9,other,2019,0.0
+(II) Daily Public Expenses,None,10. Other Expenses,10,other,2019,0.15
+(II) Daily Public Expenses,None,(3) Maintenance Cost,(3),repair,2019,68.97
+II. Major Repair Expenses for Fixed Assets,None,1. Major repair expenses of fixed assets on the books,1,repair,2019,206.76
+II. Major Repair Expenses for Fixed Assets,None,2. Major repair expenses for fixed assets that have been used but not yet transferred,2,repair,2019,252.6
+II. Major Repair Expenses for Fixed Assets,None,"Three, Annual Depreciation of Fixed Assets",None,depreciation,2019,971.58
+"Five, cost and expenses to be deducted from non-public welfare production and operation links",None,1. Expenses for personnel involved in external engineering support projects,1,personnel,2019,151.32
+"Five, cost and expenses to be deducted from non-public welfare production and operation links",None,2. Asset Rental Expenses,2,other,2019,56.16
+Agricultural Water Supply Cost Allocation Ratio,None,"Seven, the actual water supply volume of the reservoir in the current year (original water volume, 10,000 m³)",None,other,2019,8195.16
+Agricultural Water Supply Cost Allocation Ratio,None,"Xilahe Reservoir and other non-power generation water supply volumes (10,000 m³)",Xil,power_generation_water,2019,1539.65
+"Non-power generation original water supply volume (industrial, domestic, and agricultural original water supply volume, 10,000 m³)",None,"Among them (1) industrial water supply volume (10,000 m³)",Among them,industrial_water,2019,15.4
+"Non-power generation original water supply volume (industrial, domestic, and agricultural original water supply volume, 10,000 m³)",None,"(2) Domestic water supply (10,000 m³)",(2),domestic_water,2019,667.1

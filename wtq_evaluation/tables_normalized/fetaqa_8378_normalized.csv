@@ -1,0 +1,19 @@
+metric,location,value
+Rainfall (in.),A,40.3
+Snowfall (in.),A,18.2
+Precipitation days,A,110.0
+Sunny days,A,175.0
+Avg. July high,A,84.8
+Avg. Jan. low,A,19.3
+Comfort index (higher=better),A,46.0
+UV index,A,5.2
+Elevation (ft.),A,776.0
+Rainfall (in.),B,36.5
+Snowfall (in.),B,25.0
+Precipitation days,B,100.0
+Sunny days,B,2-5
+Avg. July high,B,86.5
+Avg. Jan. low,B,20.5
+Comfort index (higher=better),B,44.0
+UV index,B,4.3
+Elevation (ft.),B,1060.0

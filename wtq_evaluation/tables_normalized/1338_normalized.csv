@@ -1,0 +1,460 @@
+offense_category,offense_modifier,period,metric_type,value_type,value
+total violent crime,,2019,reported,number,461899.0
+total violent crime,,2019,unfounded,number,55273.0
+total violent crime,,2019,unfounded,percent,12.0
+total violent crime,,2020,reported,number,478598.0
+total violent crime,,2020,unfounded,number,51759.0
+total violent crime,,2020,unfounded,percent,11.0
+total violent crime,,2021,reported,number,532973.0
+total violent crime,,2021,unfounded,number,52969.0
+total violent crime,,2021,unfounded,percent,10.0
+homicide,,2019,reported,number,666.0
+homicide,,2019,unfounded,number,0.0
+homicide,,2019,unfounded,percent,0.0
+homicide,,2020,reported,number,658.0
+homicide,,2020,unfounded,number,0.0
+homicide,,2020,unfounded,percent,0.0
+homicide,,2021,reported,number,678.0
+homicide,,2021,unfounded,number,0.0
+homicide,,2021,unfounded,percent,0.0
+other violations causing death,,2019,reported,number,121.0
+other violations causing death,,2019,unfounded,number,21.0
+other violations causing death,,2019,unfounded,percent,17.0
+other violations causing death,,2020,reported,number,150.0
+other violations causing death,,2020,unfounded,number,17.0
+other violations causing death,,2020,unfounded,percent,11.0
+other violations causing death,,2021,reported,number,118.0
+other violations causing death,,2021,unfounded,number,10.0
+other violations causing death,,2021,unfounded,percent,8.0
+attempted murder,,2019,reported,number,830.0
+attempted murder,,2019,unfounded,number,9.0
+attempted murder,,2019,unfounded,percent,1.0
+attempted murder,,2020,reported,number,827.0
+attempted murder,,2020,unfounded,number,6.0
+attempted murder,,2020,unfounded,percent,1.0
+attempted murder,,2021,reported,number,870.0
+attempted murder,,2021,unfounded,number,5.0
+attempted murder,,2021,unfounded,percent,1.0
+sexual assault,level 3 - aggravated,2019,reported,number,175.0
+sexual assault,level 3 - aggravated,2019,unfounded,number,15.0
+sexual assault,level 3 - aggravated,2019,unfounded,percent,9.0
+sexual assault,level 3 - aggravated,2020,reported,number,172.0
+sexual assault,level 3 - aggravated,2020,unfounded,number,14.0
+sexual assault,level 3 - aggravated,2020,unfounded,percent,8.0
+sexual assault,level 3 - aggravated,2021,reported,number,134.0
+sexual assault,level 3 - aggravated,2021,unfounded,number,9.0
+sexual assault,level 3 - aggravated,2021,unfounded,percent,7.0
+sexual assault,level 2 - weapon or bodily harm,2019,reported,number,453.0
+sexual assault,level 2 - weapon or bodily harm,2019,unfounded,number,30.0
+sexual assault,level 2 - weapon or bodily harm,2019,unfounded,percent,7.0
+sexual assault,level 2 - weapon or bodily harm,2020,reported,number,513.0
+sexual assault,level 2 - weapon or bodily harm,2020,unfounded,number,23.0
+sexual assault,level 2 - weapon or bodily harm,2020,unfounded,percent,4.0
+sexual assault,level 2 - weapon or bodily harm,2021,reported,number,551.0
+sexual assault,level 2 - weapon or bodily harm,2021,unfounded,number,26.0
+sexual assault,level 2 - weapon or bodily harm,2021,unfounded,percent,5.0
+sexual assault,level 1,2019,reported,number,28196.0
+sexual assault,level 1,2019,unfounded,number,4039.0
+sexual assault,level 1,2019,unfounded,percent,14.0
+sexual assault,level 1,2020,reported,number,31633.0
+sexual assault,level 1,2020,unfounded,number,3724.0
+sexual assault,level 1,2020,unfounded,percent,12.0
+sexual assault,level 1,2021,reported,number,33705.0
+sexual assault,level 1,2021,unfounded,number,3420.0
+sexual assault,level 1,2021,unfounded,percent,10.0
+"sexual offence occurring prior to january 4, 1983",,2019,reported,number,
+"sexual offence occurring prior to january 4, 1983",,2019,unfounded,number,
+"sexual offence occurring prior to january 4, 1983",,2019,unfounded,percent,
+"sexual offence occurring prior to january 4, 1983",,2020,reported,number,593.0
+"sexual offence occurring prior to january 4, 1983",,2020,unfounded,number,19.0
+"sexual offence occurring prior to january 4, 1983",,2020,unfounded,percent,3.0
+"sexual offence occurring prior to january 4, 1983",,2021,reported,number,552.0
+"sexual offence occurring prior to january 4, 1983",,2021,unfounded,number,18.0
+"sexual offence occurring prior to january 4, 1983",,2021,unfounded,percent,3.0
+sexual violations against children,,2019,reported,number,9604.0
+sexual violations against children,,2019,unfounded,number,1328.0
+sexual violations against children,,2019,unfounded,percent,14.0
+sexual violations against children,,2020,reported,number,10301.0
+sexual violations against children,,2020,unfounded,number,1226.0
+sexual violations against children,,2020,unfounded,percent,12.0
+sexual violations against children,,2021,reported,number,11359.0
+sexual violations against children,,2021,unfounded,number,1321.0
+sexual violations against children,,2021,unfounded,percent,12.0
+assault,level 3 - aggravated,2019,reported,number,3630.0
+assault,level 3 - aggravated,2019,unfounded,number,46.0
+assault,level 3 - aggravated,2019,unfounded,percent,1.0
+assault,level 3 - aggravated,2020,reported,number,3633.0
+assault,level 3 - aggravated,2020,unfounded,number,49.0
+assault,level 3 - aggravated,2020,unfounded,percent,1.0
+assault,level 3 - aggravated,2021,reported,number,3984.0
+assault,level 3 - aggravated,2021,unfounded,number,60.0
+assault,level 3 - aggravated,2021,unfounded,percent,2.0
+assault,level 2 - weapon or bodily harm,2019,reported,number,53816.0
+assault,level 2 - weapon or bodily harm,2019,unfounded,number,1676.0
+assault,level 2 - weapon or bodily harm,2019,unfounded,percent,3.0
+assault,level 2 - weapon or bodily harm,2020,reported,number,55791.0
+assault,level 2 - weapon or bodily harm,2020,unfounded,number,1573.0
+assault,level 2 - weapon or bodily harm,2020,unfounded,percent,3.0
+assault,level 2 - weapon or bodily harm,2021,reported,number,61138.0
+assault,level 2 - weapon or bodily harm,2021,unfounded,number,1722.0
+assault,level 2 - weapon or bodily harm,2021,unfounded,percent,3.0
+assault,level 1,2019,reported,number,184253.0
+assault,level 1,2019,unfounded,number,20974.0
+assault,level 1,2019,unfounded,percent,11.0
+assault,level 1,2020,reported,number,190124.0
+assault,level 1,2020,unfounded,number,19986.0
+assault,level 1,2020,unfounded,percent,11.0
+assault,level 1,2021,reported,number,209074.0
+assault,level 1,2021,unfounded,number,21248.0
+assault,level 1,2021,unfounded,percent,10.0
+assault against a peace officer,,2019,reported,number,11024.0
+assault against a peace officer,,2019,unfounded,number,59.0
+assault against a peace officer,,2019,unfounded,percent,1.0
+assault against a peace officer,,2020,reported,number,11796.0
+assault against a peace officer,,2020,unfounded,number,45.0
+assault against a peace officer,,2020,unfounded,percent,0.0
+assault against a peace officer,,2021,reported,number,12173.0
+assault against a peace officer,,2021,unfounded,number,41.0
+assault against a peace officer,,2021,unfounded,percent,0.0
+other assaults,,2019,reported,number,2198.0
+other assaults,,2019,unfounded,number,225.0
+other assaults,,2019,unfounded,percent,10.0
+other assaults,,2020,reported,number,2358.0
+other assaults,,2020,unfounded,number,234.0
+other assaults,,2020,unfounded,percent,10.0
+other assaults,,2021,reported,number,2520.0
+other assaults,,2021,unfounded,number,294.0
+other assaults,,2021,unfounded,percent,12.0
+firearms,"use of, discharge, pointing",2019,reported,number,3047.0
+firearms,"use of, discharge, pointing",2019,unfounded,number,281.0
+firearms,"use of, discharge, pointing",2019,unfounded,percent,9.0
+firearms,"use of, discharge, pointing",2020,reported,number,3121.0
+firearms,"use of, discharge, pointing",2020,unfounded,number,260.0
+firearms,"use of, discharge, pointing",2020,unfounded,percent,8.0
+firearms,"use of, discharge, pointing",2021,reported,number,3772.0
+firearms,"use of, discharge, pointing",2021,unfounded,number,269.0
+firearms,"use of, discharge, pointing",2021,unfounded,percent,7.0
+robbery,,2019,reported,number,24027.0
+robbery,,2019,unfounded,number,1196.0
+robbery,,2019,unfounded,percent,5.0
+robbery,,2020,reported,number,23781.0
+robbery,,2020,unfounded,number,1231.0
+robbery,,2020,unfounded,percent,5.0
+robbery,,2021,reported,number,24614.0
+robbery,,2021,unfounded,number,1318.0
+robbery,,2021,unfounded,percent,5.0
+forcible confinement or kidnapping,,2019,reported,number,4288.0
+forcible confinement or kidnapping,,2019,unfounded,number,509.0
+forcible confinement or kidnapping,,2019,unfounded,percent,12.0
+forcible confinement or kidnapping,,2020,reported,number,3987.0
+forcible confinement or kidnapping,,2020,unfounded,number,497.0
+forcible confinement or kidnapping,,2020,unfounded,percent,12.0
+forcible confinement or kidnapping,,2021,reported,number,4210.0
+forcible confinement or kidnapping,,2021,unfounded,number,515.0
+forcible confinement or kidnapping,,2021,unfounded,percent,12.0
+trafficking in persons,,2019,reported,number,314.0
+trafficking in persons,,2019,unfounded,number,46.0
+trafficking in persons,,2019,unfounded,percent,15.0
+trafficking in persons,,2020,reported,number,288.0
+trafficking in persons,,2020,unfounded,number,50.0
+trafficking in persons,,2020,unfounded,percent,17.0
+trafficking in persons,,2021,reported,number,405.0
+trafficking in persons,,2021,unfounded,number,64.0
+trafficking in persons,,2021,unfounded,percent,16.0
+extortion,,2019,reported,number,3350.0
+extortion,,2019,unfounded,number,164.0
+extortion,,2019,unfounded,percent,5.0
+extortion,,2020,reported,number,4890.0
+extortion,,2020,unfounded,number,166.0
+extortion,,2020,unfounded,percent,3.0
+extortion,,2021,reported,number,4330.0
+extortion,,2021,unfounded,number,156.0
+extortion,,2021,unfounded,percent,4.0
+criminal harassment,,2019,reported,number,25123.0
+criminal harassment,,2019,unfounded,number,5241.0
+criminal harassment,,2019,unfounded,percent,21.0
+criminal harassment,,2020,reported,number,24769.0
+criminal harassment,,2020,unfounded,number,5078.0
+criminal harassment,,2020,unfounded,percent,21.0
+criminal harassment,,2021,reported,number,28431.0
+criminal harassment,,2021,unfounded,number,5106.0
+criminal harassment,,2021,unfounded,percent,18.0
+uttering threats,,2019,reported,number,76376.0
+uttering threats,,2019,unfounded,number,13085.0
+uttering threats,,2019,unfounded,percent,17.0
+uttering threats,,2020,reported,number,78767.0
+uttering threats,,2020,unfounded,number,11961.0
+uttering threats,,2020,unfounded,percent,15.0
+uttering threats,,2021,reported,number,93136.0
+uttering threats,,2021,unfounded,number,11775.0
+uttering threats,,2021,unfounded,percent,13.0
+indecent and harassing communications,,2019,reported,number,21827.0
+indecent and harassing communications,,2019,unfounded,number,5246.0
+indecent and harassing communications,,2019,unfounded,percent,24.0
+indecent and harassing communications,,2020,reported,number,22420.0
+indecent and harassing communications,,2020,unfounded,number,4648.0
+indecent and harassing communications,,2020,unfounded,percent,21.0
+indecent and harassing communications,,2021,reported,number,27878.0
+indecent and harassing communications,,2021,unfounded,number,4589.0
+indecent and harassing communications,,2021,unfounded,percent,16.0
+non-consensual distribution of intimate images,,2019,reported,number,1709.0
+non-consensual distribution of intimate images,,2019,unfounded,number,197.0
+non-consensual distribution of intimate images,,2019,unfounded,percent,12.0
+non-consensual distribution of intimate images,,2020,reported,number,1665.0
+non-consensual distribution of intimate images,,2020,unfounded,number,182.0
+non-consensual distribution of intimate images,,2020,unfounded,percent,11.0
+non-consensual distribution of intimate images,,2021,reported,number,2185.0
+non-consensual distribution of intimate images,,2021,unfounded,number,213.0
+non-consensual distribution of intimate images,,2021,unfounded,percent,10.0
+offences in relation to sexual services,,2019,reported,number,1185.0
+offences in relation to sexual services,,2019,unfounded,number,67.0
+offences in relation to sexual services,,2019,unfounded,percent,6.0
+offences in relation to sexual services,,2020,reported,number,1082.0
+offences in relation to sexual services,,2020,unfounded,number,38.0
+offences in relation to sexual services,,2020,unfounded,percent,4.0
+offences in relation to sexual services,,2021,reported,number,1230.0
+offences in relation to sexual services,,2021,unfounded,number,67.0
+offences in relation to sexual services,,2021,unfounded,percent,5.0
+other violent criminal code violations,,2019,reported,number,5687.0
+other violent criminal code violations,,2019,unfounded,number,819.0
+other violent criminal code violations,,2019,unfounded,percent,14.0
+other violent criminal code violations,,2020,reported,number,5279.0
+other violent criminal code violations,,2020,unfounded,number,732.0
+other violent criminal code violations,,2020,unfounded,percent,14.0
+other violent criminal code violations,,2021,reported,number,5926.0
+other violent criminal code violations,,2021,unfounded,number,723.0
+other violent criminal code violations,,2021,unfounded,percent,12.0
+breaking and entering,,2019,reported,number,171107.0
+breaking and entering,,2019,unfounded,number,11481.0
+breaking and entering,,2019,unfounded,percent,7.0
+breaking and entering,,2020,reported,number,171488.0
+breaking and entering,,2020,unfounded,number,11159.0
+breaking and entering,,2020,unfounded,percent,7.0
+breaking and entering,,2021,reported,number,172553.0
+breaking and entering,,2021,unfounded,number,11262.0
+breaking and entering,,2021,unfounded,percent,7.0
+possess stolen property,,2019,reported,number,25664.0
+possess stolen property,,2019,unfounded,number,1465.0
+possess stolen property,,2019,unfounded,percent,6.0
+possess stolen property,,2020,reported,number,25794.0
+possess stolen property,,2020,unfounded,number,1436.0
+possess stolen property,,2020,unfounded,percent,6.0
+possess stolen property,,2021,reported,number,27135.0
+possess stolen property,,2021,unfounded,number,1383.0
+possess stolen property,,2021,unfounded,percent,5.0
+theft of motor vehicle,,2019,reported,number,94515.0
+theft of motor vehicle,,2019,unfounded,number,9400.0
+theft of motor vehicle,,2019,unfounded,percent,10.0
+theft of motor vehicle,,2020,reported,number,95445.0
+theft of motor vehicle,,2020,unfounded,number,9253.0
+theft of motor vehicle,,2020,unfounded,percent,10.0
+theft of motor vehicle,,2021,reported,number,95660.0
+theft of motor vehicle,,2021,unfounded,number,8594.0
+theft of motor vehicle,,2021,unfounded,percent,9.0
+"theft over $5,000",,2019,reported,number,18731.0
+"theft over $5,000",,2019,unfounded,number,1466.0
+"theft over $5,000",,2019,unfounded,percent,8.0
+"theft over $5,000",,2020,reported,number,21456.0
+"theft over $5,000",,2020,unfounded,number,1352.0
+"theft over $5,000",,2020,unfounded,percent,6.0
+"theft over $5,000",,2021,reported,number,22647.0
+"theft over $5,000",,2021,unfounded,number,1290.0
+"theft over $5,000",,2021,unfounded,percent,6.0
+"shoplifting under $5,000",,2019,reported,number,109475.0
+"shoplifting under $5,000",,2019,unfounded,number,1162.0
+"shoplifting under $5,000",,2019,unfounded,percent,1.0
+"shoplifting under $5,000",,2020,reported,number,126002.0
+"shoplifting under $5,000",,2020,unfounded,number,1106.0
+"shoplifting under $5,000",,2020,unfounded,percent,1.0
+"shoplifting under $5,000",,2021,reported,number,142230.0
+"shoplifting under $5,000",,2021,unfounded,number,1944.0
+"shoplifting under $5,000",,2021,unfounded,percent,1.0
+"theft of $5,000 or under",,2019,reported,number,419235.0
+"theft of $5,000 or under",,2019,unfounded,number,22363.0
+"theft of $5,000 or under",,2019,unfounded,percent,5.0
+"theft of $5,000 or under",,2020,reported,number,428338.0
+"theft of $5,000 or under",,2020,unfounded,number,20771.0
+"theft of $5,000 or under",,2020,unfounded,percent,5.0
+"theft of $5,000 or under",,2021,reported,number,444058.0
+"theft of $5,000 or under",,2021,unfounded,number,19619.0
+"theft of $5,000 or under",,2021,unfounded,percent,4.0
+fraud,,2019,reported,number,120349.0
+fraud,,2019,unfounded,number,7183.0
+fraud,,2019,unfounded,percent,6.0
+fraud,,2020,reported,number,136416.0
+fraud,,2020,unfounded,number,6408.0
+fraud,,2020,unfounded,percent,5.0
+fraud,,2021,reported,number,148362.0
+fraud,,2021,unfounded,number,6222.0
+fraud,,2021,unfounded,percent,4.0
+identity theft,,2019,reported,number,3455.0
+identity theft,,2019,unfounded,number,160.0
+identity theft,,2019,unfounded,percent,5.0
+identity theft,,2020,reported,number,3960.0
+identity theft,,2020,unfounded,number,145.0
+identity theft,,2020,unfounded,percent,4.0
+identity theft,,2021,reported,number,4852.0
+identity theft,,2021,unfounded,number,169.0
+identity theft,,2021,unfounded,percent,3.0
+identity fraud,,2019,reported,number,14822.0
+identity fraud,,2019,unfounded,number,478.0
+identity fraud,,2019,unfounded,percent,3.0
+identity fraud,,2020,reported,number,16261.0
+identity fraud,,2020,unfounded,number,413.0
+identity fraud,,2020,unfounded,percent,3.0
+identity fraud,,2021,reported,number,20084.0
+identity fraud,,2021,unfounded,number,420.0
+identity fraud,,2021,unfounded,percent,2.0
+mischief,,2019,reported,number,277492.0
+mischief,,2019,unfounded,number,14917.0
+mischief,,2019,unfounded,percent,5.0
+mischief,,2020,reported,number,273597.0
+mischief,,2020,unfounded,number,13680.0
+mischief,,2020,unfounded,percent,5.0
+mischief,,2021,reported,number,298079.0
+mischief,,2021,unfounded,number,13385.0
+mischief,,2021,unfounded,percent,4.0
+arson,,2019,reported,number,9923.0
+arson,,2019,unfounded,number,1374.0
+arson,,2019,unfounded,percent,14.0
+arson,,2020,reported,number,9305.0
+arson,,2020,unfounded,number,1256.0
+arson,,2020,unfounded,percent,13.0
+arson,,2021,reported,number,9504.0
+arson,,2021,unfounded,number,1314.0
+arson,,2021,unfounded,percent,14.0
+weapons violations,,2019,reported,number,18265.0
+weapons violations,,2019,unfounded,number,2395.0
+weapons violations,,2019,unfounded,percent,13.0
+weapons violations,,2020,reported,number,19067.0
+weapons violations,,2020,unfounded,number,2478.0
+weapons violations,,2020,unfounded,percent,13.0
+weapons violations,,2021,reported,number,21223.0
+weapons violations,,2021,unfounded,number,2601.0
+weapons violations,,2021,unfounded,percent,12.0
+child pornography,,2019,reported,number,7581.0
+child pornography,,2019,unfounded,number,1161.0
+child pornography,,2019,unfounded,percent,15.0
+child pornography,,2020,reported,number,6733.0
+child pornography,,2020,unfounded,number,799.0
+child pornography,,2020,unfounded,percent,12.0
+child pornography,,2021,reported,number,9678.0
+child pornography,,2021,unfounded,number,863.0
+child pornography,,2021,unfounded,percent,9.0
+prostitution,,2019,reported,number,139.0
+prostitution,,2019,unfounded,number,17.0
+prostitution,,2019,unfounded,percent,12.0
+prostitution,,2020,reported,number,121.0
+prostitution,,2020,unfounded,number,6.0
+prostitution,,2020,unfounded,percent,5.0
+prostitution,,2021,reported,number,142.0
+prostitution,,2021,unfounded,number,7.0
+prostitution,,2021,unfounded,percent,5.0
+terrorism,,2019,reported,number,199.0
+terrorism,,2019,unfounded,number,109.0
+terrorism,,2019,unfounded,percent,55.0
+terrorism,,2020,reported,number,185.0
+terrorism,,2020,unfounded,number,77.0
+terrorism,,2020,unfounded,percent,42.0
+terrorism,,2021,reported,number,150.0
+terrorism,,2021,unfounded,number,65.0
+terrorism,,2021,unfounded,percent,43.0
+disturb the peace,,2019,reported,number,103214.0
+disturb the peace,,2019,unfounded,number,6663.0
+disturb the peace,,2019,unfounded,percent,6.0
+disturb the peace,,2020,reported,number,100385.0
+disturb the peace,,2020,unfounded,number,6006.0
+disturb the peace,,2020,unfounded,percent,6.0
+disturb the peace,,2021,reported,number,116131.0
+disturb the peace,,2021,unfounded,number,5687.0
+disturb the peace,,2021,unfounded,percent,5.0
+administration of justice violations,,2019,reported,number,229343.0
+administration of justice violations,,2019,unfounded,number,12081.0
+administration of justice violations,,2019,unfounded,percent,5.0
+administration of justice violations,,2020,reported,number,240720.0
+administration of justice violations,,2020,unfounded,number,11470.0
+administration of justice violations,,2020,unfounded,percent,5.0
+administration of justice violations,,2021,reported,number,248584.0
+administration of justice violations,,2021,unfounded,number,11238.0
+administration of justice violations,,2021,unfounded,percent,5.0
+other violations,,2019,reported,number,31945.0
+other violations,,2019,unfounded,number,4076.0
+other violations,,2019,unfounded,percent,13.0
+other violations,,2020,reported,number,32757.0
+other violations,,2020,unfounded,number,3726.0
+other violations,,2020,unfounded,percent,11.0
+other violations,,2021,reported,number,36586.0
+other violations,,2021,unfounded,number,3523.0
+other violations,,2021,unfounded,percent,10.0
+alcohol-impaired driving,,2019,reported,number,69008.0
+alcohol-impaired driving,,2019,unfounded,number,3394.0
+alcohol-impaired driving,,2019,unfounded,percent,5.0
+alcohol-impaired driving,,2020,reported,number,69261.0
+alcohol-impaired driving,,2020,unfounded,number,3253.0
+alcohol-impaired driving,,2020,unfounded,percent,5.0
+alcohol-impaired driving,,2021,reported,number,75329.0
+alcohol-impaired driving,,2021,unfounded,number,2511.0
+alcohol-impaired driving,,2021,unfounded,percent,3.0
+drug-impaired driving,,2019,reported,number,3836.0
+drug-impaired driving,,2019,unfounded,number,342.0
+drug-impaired driving,,2019,unfounded,percent,9.0
+drug-impaired driving,,2020,reported,number,4824.0
+drug-impaired driving,,2020,unfounded,number,380.0
+drug-impaired driving,,2020,unfounded,percent,8.0
+drug-impaired driving,,2021,reported,number,6811.0
+drug-impaired driving,,2021,unfounded,number,358.0
+drug-impaired driving,,2021,unfounded,percent,5.0
+alcohol- and drug-impaired driving,,2019,reported,number,
+alcohol- and drug-impaired driving,,2019,unfounded,number,
+alcohol- and drug-impaired driving,,2019,unfounded,percent,
+alcohol- and drug-impaired driving,,2020,reported,number,330.0
+alcohol- and drug-impaired driving,,2020,unfounded,number,63.0
+alcohol- and drug-impaired driving,,2020,unfounded,percent,19.0
+alcohol- and drug-impaired driving,,2021,reported,number,5065.0
+alcohol- and drug-impaired driving,,2021,unfounded,number,447.0
+alcohol- and drug-impaired driving,,2021,unfounded,percent,9.0
+impaired driving,,2019,reported,number,
+impaired driving,,2019,unfounded,number,
+impaired driving,,2019,unfounded,percent,
+impaired driving,,2020,reported,number,125.0
+impaired driving,,2020,unfounded,number,12.0
+impaired driving,,2020,unfounded,percent,10.0
+impaired driving,,2021,reported,number,1977.0
+impaired driving,,2021,unfounded,number,193.0
+impaired driving,,2021,unfounded,percent,10.0
+other criminal code traffic violations,,2019,reported,number,56530.0
+other criminal code traffic violations,,2019,unfounded,number,222.0
+other criminal code traffic violations,,2019,unfounded,percent,0.0
+other criminal code traffic violations,,2020,reported,number,55203.0
+other criminal code traffic violations,,2020,unfounded,number,145.0
+other criminal code traffic violations,,2020,unfounded,percent,0.0
+other criminal code traffic violations,,2021,reported,number,51211.0
+other criminal code traffic violations,,2021,unfounded,number,178.0
+other criminal code traffic violations,,2021,unfounded,percent,0.0
+human trafficking under the immigration and refugee protection act,,2019,reported,number,124.0
+human trafficking under the immigration and refugee protection act,,2019,unfounded,number,21.0
+human trafficking under the immigration and refugee protection act,,2019,unfounded,percent,17.0
+human trafficking under the immigration and refugee protection act,,2020,reported,number,133.0
+human trafficking under the immigration and refugee protection act,,2020,unfounded,number,16.0
+human trafficking under the immigration and refugee protection act,,2020,unfounded,percent,12.0
+human trafficking under the immigration and refugee protection act,,2021,reported,number,186.0
+human trafficking under the immigration and refugee protection act,,2021,unfounded,number,16.0
+human trafficking under the immigration and refugee protection act,,2021,unfounded,percent,9.0
+youth criminal justice act,,2019,reported,number,5571.0
+youth criminal justice act,,2019,unfounded,number,74.0
+youth criminal justice act,,2019,unfounded,percent,1.0
+youth criminal justice act,,2020,reported,number,4843.0
+youth criminal justice act,,2020,unfounded,number,78.0
+youth criminal justice act,,2020,unfounded,percent,2.0
+youth criminal justice act,,2021,reported,number,3871.0
+youth criminal justice act,,2021,unfounded,number,56.0
+youth criminal justice act,,2021,unfounded,percent,1.0
+other federal statutes,,2019,reported,number,26622.0
+other federal statutes,,2019,unfounded,number,1460.0
+other federal statutes,,2019,unfounded,percent,5.0
+other federal statutes,,2020,reported,number,22506.0
+other federal statutes,,2020,unfounded,number,1205.0
+other federal statutes,,2020,unfounded,percent,5.0
+other federal statutes,,2021,reported,number,21367.0
+other federal statutes,,2021,unfounded,number,1756.0
+other federal statutes,,2021,unfounded,percent,8.0

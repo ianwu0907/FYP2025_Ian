@@ -1,0 +1,51 @@
+geographic_unit,province,population,officer_count,officer_rate_2016,officer_rate_change,new_officers,officer_count_change,officer_count_change_percent
+toronto,ont,2826498,5366,190.0,-1.9,70,-81.0,6.5
+montreal,que,1999795,4583,229.0,-1.9,234,-15.0,16.3
+peel region (mississauga/brampton),ont,1373033,1967,143.0,-0.7,90,19.0,4.1
+calgary,alta,1293023,2172,168.0,-1.1,90,40.0,0.0
+york region (markham/vaughan),ont,1139738,1598,140.0,2.6,48,17.0,3.9
+ottawa,ont,956710,1239,130.0,-3.6,46,19.0,4.2
+edmonton,alta,950421,1739,183.0,2.2,115,38.0,7.5
+winnipeg,man,718357,1416,197.0,-1.7,2,-46.0,25.4
+durham region (oshawa/whitby/ajax),ont,661190,861,130.0,-1.8,13,-14.0,8.4
+vancouver,b.c,658198,1292,196.0,-0.2,54,-9.0,7.9
+quebec,que,578749,771,133.0,7.5,68,55.0,1.4
+halton region (oakville/burlington),ont,559213,690,123.0,0.9,30,14.0,2.6
+hamilton,ont,556359,840,151.0,-0.1,37,-1.0,19.0
+waterloo region (kitchener),ont,542511,767,141.0,-0.7,23,-2.0,0.9
+surrey,b.c,505359,730,144.0,12.6,119,110.0,6.0
+niagara region (st. catharines),ont,449098,706,157.0,-0.8,20,-7.0,6.9
+laval,que,425225,600,141.0,5.0,0,-15.0,10.8
+longueuil,que,421342,565,134.0,-1.0,9,-6.0,2.8
+london,ont,391925,582,148.0,-2.5,9,-9.0,4.1
+gatineau,que,278780,395,142.0,-1.0,8,-2.0,3.8
+saskatoon,sask,258068,453,176.0,-0.9,18,7.0,10.2
+burnaby,b.c,242412,281,116.0,-1.2,26,21.0,7.8
+halifax,n.s,233874,512,219.0,0.3,28,11.0,6.3
+windsor,ont,219335,429,196.0,-1.8,10,-7.0,0.0
+regina,sask,219279,393,179.0,-0.1,14,4.0,2.5
+richmond,b.c,205983,200,97.0,0.3,14,10.0,7.5
+st. john's,n.l,205776,342,166.0,4.6,32,18.0,28.4
+richelieu saint-laurent,que,202732,212,105.0,0.1,0,-6.0,0.0
+sherbrooke,que,164666,203,123.0,-1.1,2,-2.0,2.0
+greater sudbury,ont,164266,264,161.0,3.4,18,1.0,3.8
+barrie,ont,148134,237,160.0,-1.6,8,7.0,1.3
+saguenay,que,147976,178,120.0,0.2,0,-2.0,2.2
+abbotsford,b.c,144949,212,146.0,-2.1,5,-7.0,1.9
+levis,que,144040,153,106.0,2.0,7,3.0,13.1
+terrebonne,que,138422,166,120.0,9.2,3,0.0,1.2
+coquitlam,b.c,136717,167,122.0,14.8,23,16.0,10.2
+trois-rivieres,que,135374,157,116.0,-2.3,8,1.0,1.9
+kingston,ont,130490,201,154.0,4.0,9,2.0,2.5
+guelph,ont,130440,193,148.0,0.2,5,0.0,10.9
+kelowna,b.c,128924,178,138.0,2.1,8,7.0,12.4
+codiac region (moncton),n.b,117287,147,125.0,-2.3,1,-8.0,21.8
+thunder bay,ont,116311,232,199.0,4.4,9,3.0,5.2
+saanich,b.c,115609,158,137.0,0.3,10,2.0,3.2
+langley township,b.c,112909,139,123.0,6.5,10,7.0,7.9
+delta,b.c,108754,155,143.0,-12.5,8,3.0,0.0
+chatham-kent,ont,105322,159,151.0,-1.1,0,-5.0,8.2
+roussillon region,que,105168,115,109.0,0.9,3,-5.0,7.0
+red deer,alta,103232,164,159.0,8.3,25,18.0,7.3
+victoria,b.c,102973,243,236.0,-1.0,11,-2.0,21.4
+lethbridge region,alta,100995,161,159.0,-5.9,1,-3.0,10.6

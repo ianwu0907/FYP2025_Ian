@@ -1,0 +1,256 @@
+temperature,property_name,unit,value
+0,Absolute pressure,kPa,0.61
+5,Absolute pressure,kPa,0.87
+10,Absolute pressure,kPa,1.23
+15,Absolute pressure,kPa,1.71
+20,Absolute pressure,kPa,2.33
+25,Absolute pressure,kPa,3.17
+30,Absolute pressure,kPa,4.25
+35,Absolute pressure,kPa,5.62
+40,Absolute pressure,kPa,7.37
+45,Absolute pressure,kPa,9.58
+50,Absolute pressure,kPa,14.98
+55,Absolute pressure,kPa,15.74
+60,Absolute pressure,kPa,19.92
+65,Absolute pressure,kPa,25.01
+70,Absolute pressure,kPa,31.16
+75,Absolute pressure,kPa,38.5
+80,Absolute pressure,kPa,47.4
+85,Absolute pressure,kPa,57.9
+90,Absolute pressure,kPa,70.1
+95,Absolute pressure,kPa,84.5
+100,Absolute pressure,kPa,101.3
+105,Absolute pressure,kPa,120.8
+110,Absolute pressure,kPa,143.3
+115,Absolute pressure,kPa,170.0
+120,Absolute pressure,kPa,198.6
+125,Absolute pressure,kPa,232.1
+130,Absolute pressure,kPa,270.2
+135,Absolute pressure,kPa,313.0
+140,Absolute pressure,kPa,361.4
+145,Absolute pressure,kPa,415.6
+150,Absolute pressure,kPa,476.1
+160,Absolute pressure,kPa,618.1
+170,Absolute pressure,kPa,792.4
+180,Absolute pressure,kPa,1003.0
+190,Absolute pressure,kPa,1255.0
+200,Absolute pressure,kPa,1554.0
+210,Absolute pressure,kPa,1917.0
+220,Absolute pressure,kPa,2320.0
+230,Absolute pressure,kPa,2797.0
+240,Absolute pressure,kPa,3347.0
+250,Absolute pressure,kPa,3976.0
+260,Absolute pressure,kPa,4693.0
+270,Absolute pressure,kPa,5503.0
+280,Absolute pressure,kPa,6220.0
+290,Absolute pressure,kPa,7442.0
+300,Absolute pressure,kPa,8591.0
+310,Absolute pressure,kPa,9876.0
+320,Absolute pressure,kPa,11300.0
+330,Absolute pressure,kPa,12880.0
+340,Absolute pressure,kPa,14510.0
+350,Absolute pressure,kPa,16530.0
+0,Specific volume of vapor,m3/kg,206.5
+5,Specific volume of vapor,m3/kg,147.1
+10,Specific volume of vapor,m3/kg,106.4
+15,Specific volume of vapor,m3/kg,77.9
+20,Specific volume of vapor,m3/kg,57.8
+25,Specific volume of vapor,m3/kg,43.4
+30,Specific volume of vapor,m3/kg,32.93
+35,Specific volume of vapor,m3/kg,25.25
+40,Specific volume of vapor,m3/kg,19.55
+45,Specific volume of vapor,m3/kg,15.28
+50,Specific volume of vapor,m3/kg,12.054
+55,Specific volume of vapor,m3/kg,9.589
+60,Specific volume of vapor,m3/kg,7.687
+65,Specific volume of vapor,m3/kg,6.209
+70,Specific volume of vapor,m3/kg,5.052
+75,Specific volume of vapor,m3/kg,4.139
+80,Specific volume of vapor,m3/kg,3.414
+85,Specific volume of vapor,m3/kg,2.832
+90,Specific volume of vapor,m3/kg,2.365
+95,Specific volume of vapor,m3/kg,1.985
+100,Specific volume of vapor,m3/kg,1.675
+105,Specific volume of vapor,m3/kg,1.421
+110,Specific volume of vapor,m3/kg,1.212
+115,Specific volume of vapor,m3/kg,1.038
+120,Specific volume of vapor,m3/kg,0.893
+125,Specific volume of vapor,m3/kg,0.7715
+130,Specific volume of vapor,m3/kg,0.6693
+135,Specific volume of vapor,m3/kg,0.5831
+140,Specific volume of vapor,m3/kg,0.5096
+145,Specific volume of vapor,m3/kg,0.4469
+150,Specific volume of vapor,m3/kg,0.3933
+160,Specific volume of vapor,m3/kg,0.3075
+170,Specific volume of vapor,m3/kg,0.2431
+180,Specific volume of vapor,m3/kg,0.1944
+190,Specific volume of vapor,m3/kg,0.1568
+200,Specific volume of vapor,m3/kg,0.1276
+210,Specific volume of vapor,m3/kg,0.1045
+220,Specific volume of vapor,m3/kg,0.0862
+230,Specific volume of vapor,m3/kg,0.07155
+240,Specific volume of vapor,m3/kg,0.05967
+250,Specific volume of vapor,m3/kg,0.04998
+260,Specific volume of vapor,m3/kg,0.04199
+270,Specific volume of vapor,m3/kg,0.03538
+280,Specific volume of vapor,m3/kg,0.02988
+290,Specific volume of vapor,m3/kg,0.02525
+300,Specific volume of vapor,m3/kg,0.02131
+310,Specific volume of vapor,m3/kg,0.01799
+320,Specific volume of vapor,m3/kg,0.01516
+330,Specific volume of vapor,m3/kg,0.01273
+340,Specific volume of vapor,m3/kg,0.01064
+350,Specific volume of vapor,m3/kg,0.00884
+0,Steam Density,kg/m3,0.00484
+5,Steam Density,kg/m3,0.0068
+10,Steam Density,kg/m3,0.0094
+15,Steam Density,kg/m3,0.01283
+20,Steam Density,kg/m3,0.01719
+25,Steam Density,kg/m3,0.02304
+30,Steam Density,kg/m3,0.03036
+35,Steam Density,kg/m3,0.0396
+40,Steam Density,kg/m3,0.05114
+45,Steam Density,kg/m3,0.06543
+50,Steam Density,kg/m3,0.083
+55,Steam Density,kg/m3,0.1043
+60,Steam Density,kg/m3,0.1301
+65,Steam Density,kg/m3,0.1611
+70,Steam Density,kg/m3,0.1979
+75,Steam Density,kg/m3,0.2416
+80,Steam Density,kg/m3,0.2929
+85,Steam Density,kg/m3,0.3531
+90,Steam Density,kg/m3,0.4229
+95,Steam Density,kg/m3,0.5039
+100,Steam Density,kg/m3,0.597
+105,Steam Density,kg/m3,0.7036
+110,Steam Density,kg/m3,0.8254
+115,Steam Density,kg/m3,0.9635
+120,Steam Density,kg/m3,1.1199
+125,Steam Density,kg/m3,1.296
+130,Steam Density,kg/m3,1.494
+135,Steam Density,kg/m3,1.715
+140,Steam Density,kg/m3,1.962
+145,Steam Density,kg/m3,2.238
+150,Steam Density,kg/m3,2.543
+160,Steam Density,kg/m3,3.252
+170,Steam Density,kg/m3,4.113
+180,Steam Density,kg/m3,5.145
+190,Steam Density,kg/m3,6.378
+200,Steam Density,kg/m3,7.84
+210,Steam Density,kg/m3,9.569
+220,Steam Density,kg/m3,11.6
+230,Steam Density,kg/m3,13.98
+240,Steam Density,kg/m3,16.76
+250,Steam Density,kg/m3,20.01
+260,Steam Density,kg/m3,23.82
+270,Steam Density,kg/m3,28.27
+280,Steam Density,kg/m3,33.47
+290,Steam Density,kg/m3,39.6
+300,Steam Density,kg/m3,46.93
+310,Steam Density,kg/m3,55.59
+320,Steam Density,kg/m3,65.95
+330,Steam Density,kg/m3,78.53
+340,Steam Density,kg/m3,93.98
+350,Steam Density,kg/m3,113.2
+0,Liquid Enthalpy,kJ/kg,0.0
+5,Liquid Enthalpy,kJ/kg,20.94
+10,Liquid Enthalpy,kJ/kg,41.87
+15,Liquid Enthalpy,kJ/kg,62.81
+20,Liquid Enthalpy,kJ/kg,83.74
+25,Liquid Enthalpy,kJ/kg,104.68
+30,Liquid Enthalpy,kJ/kg,125.6
+35,Liquid Enthalpy,kJ/kg,146.55
+40,Liquid Enthalpy,kJ/kg,167.47
+45,Liquid Enthalpy,kJ/kg,188.42
+50,Liquid Enthalpy,kJ/kg,209.34
+55,Liquid Enthalpy,kJ/kg,230.29
+60,Liquid Enthalpy,kJ/kg,251.21
+65,Liquid Enthalpy,kJ/kg,272.16
+70,Liquid Enthalpy,kJ/kg,293.08
+75,Liquid Enthalpy,kJ/kg,314.03
+80,Liquid Enthalpy,kJ/kg,334.94
+85,Liquid Enthalpy,kJ/kg,355.9
+90,Liquid Enthalpy,kJ/kg,376.81
+95,Liquid Enthalpy,kJ/kg,397.77
+100,Liquid Enthalpy,kJ/kg,418.68
+105,Liquid Enthalpy,kJ/kg,439.64
+110,Liquid Enthalpy,kJ/kg,460.97
+115,Liquid Enthalpy,kJ/kg,481.51
+120,Liquid Enthalpy,kJ/kg,503.67
+125,Liquid Enthalpy,kJ/kg,523.38
+130,Liquid Enthalpy,kJ/kg,546.38
+135,Liquid Enthalpy,kJ/kg,565.25
+140,Liquid Enthalpy,kJ/kg,589.08
+145,Liquid Enthalpy,kJ/kg,607.12
+150,Liquid Enthalpy,kJ/kg,632.21
+160,Liquid Enthalpy,kJ/kg,675.75
+170,Liquid Enthalpy,kJ/kg,719.29
+180,Liquid Enthalpy,kJ/kg,763.25
+190,Liquid Enthalpy,kJ/kg,807.63
+200,Liquid Enthalpy,kJ/kg,852.01
+210,Liquid Enthalpy,kJ/kg,897.23
+220,Liquid Enthalpy,kJ/kg,942.45
+230,Liquid Enthalpy,kJ/kg,988.5
+240,Liquid Enthalpy,kJ/kg,1034.56
+250,Liquid Enthalpy,kJ/kg,1081.45
+260,Liquid Enthalpy,kJ/kg,1128.76
+270,Liquid Enthalpy,kJ/kg,1176.91
+280,Liquid Enthalpy,kJ/kg,1225.48
+290,Liquid Enthalpy,kJ/kg,1274.46
+300,Liquid Enthalpy,kJ/kg,1325.54
+310,Liquid Enthalpy,kJ/kg,1378.71
+320,Liquid Enthalpy,kJ/kg,1436.07
+330,Liquid Enthalpy,kJ/kg,1446.78
+340,Liquid Enthalpy,kJ/kg,1562.93
+350,Liquid Enthalpy,kJ/kg,1632.2
+0,Steam Enthalpy,kJ/kg,2491.3
+5,Steam Enthalpy,kJ/kg,2500.9
+10,Steam Enthalpy,kJ/kg,2510.5
+15,Steam Enthalpy,kJ/kg,2520.6
+20,Steam Enthalpy,kJ/kg,2530.1
+25,Steam Enthalpy,kJ/kg,2538.6
+30,Steam Enthalpy,kJ/kg,2549.5
+35,Steam Enthalpy,kJ/kg,2559.1
+40,Steam Enthalpy,kJ/kg,2568.7
+45,Steam Enthalpy,kJ/kg,2577.9
+50,Steam Enthalpy,kJ/kg,2587.6
+55,Steam Enthalpy,kJ/kg,2596.8
+60,Steam Enthalpy,kJ/kg,2606.3
+65,Steam Enthalpy,kJ/kg,2615.6
+70,Steam Enthalpy,kJ/kg,2624.4
+75,Steam Enthalpy,kJ/kg,2629.7
+80,Steam Enthalpy,kJ/kg,2642.4
+85,Steam Enthalpy,kJ/kg,2651.2
+90,Steam Enthalpy,kJ/kg,2660.0
+95,Steam Enthalpy,kJ/kg,2668.8
+100,Steam Enthalpy,kJ/kg,2677.2
+105,Steam Enthalpy,kJ/kg,2685.1
+110,Steam Enthalpy,kJ/kg,2693.5
+115,Steam Enthalpy,kJ/kg,2702.5
+120,Steam Enthalpy,kJ/kg,2708.9
+125,Steam Enthalpy,kJ/kg,2716.5
+130,Steam Enthalpy,kJ/kg,2723.9
+135,Steam Enthalpy,kJ/kg,2731.2
+140,Steam Enthalpy,kJ/kg,2737.8
+145,Steam Enthalpy,kJ/kg,2744.6
+150,Steam Enthalpy,kJ/kg,2750.7
+160,Steam Enthalpy,kJ/kg,2762.9
+170,Steam Enthalpy,kJ/kg,2773.3
+180,Steam Enthalpy,kJ/kg,2782.6
+190,Steam Enthalpy,kJ/kg,2790.1
+200,Steam Enthalpy,kJ/kg,2795.5
+210,Steam Enthalpy,kJ/kg,2799.3
+220,Steam Enthalpy,kJ/kg,2801.0
+230,Steam Enthalpy,kJ/kg,2800.1
+240,Steam Enthalpy,kJ/kg,2796.8
+250,Steam Enthalpy,kJ/kg,2790.1
+260,Steam Enthalpy,kJ/kg,2780.9
+270,Steam Enthalpy,kJ/kg,2760.3
+280,Steam Enthalpy,kJ/kg,2752.0
+290,Steam Enthalpy,kJ/kg,2732.3
+300,Steam Enthalpy,kJ/kg,2708.0
+310,Steam Enthalpy,kJ/kg,2680.0
+320,Steam Enthalpy,kJ/kg,2648.2
+330,Steam Enthalpy,kJ/kg,2610.5
+340,Steam Enthalpy,kJ/kg,2568.6
+350,Steam Enthalpy,kJ/kg,2516.7

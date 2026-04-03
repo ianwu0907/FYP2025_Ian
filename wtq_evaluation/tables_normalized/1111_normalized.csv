@@ -1,0 +1,19 @@
+cancer_site,period,count,percentage
+female breast,period_1,52235,97.1
+colon and rectum,period_1,47555,97.1
+prostate,period_1,53425,97.1
+urinary bladder,period_1,15280,94.6
+thyroid,period_1,12750,94.6
+lung and bronchus,period_1,50110,94.6
+female breast,period_2,51775,99.0
+colon and rectum,period_2,45990,99.0
+prostate,period_2,53395,99.0
+urinary bladder,period_2,15250,98.1
+thyroid,period_2,12750,98.1
+lung and bronchus,period_2,49830,98.1
+female breast,period_3,50740,98.7
+colon and rectum,period_3,44970,98.7
+prostate,period_3,52905,98.7
+urinary bladder,period_3,14990,98.1
+thyroid,period_3,12585,98.1
+lung and bronchus,period_3,49135,98.1

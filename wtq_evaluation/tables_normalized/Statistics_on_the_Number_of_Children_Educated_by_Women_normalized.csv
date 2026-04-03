@@ -1,0 +1,55 @@
+education_level,num_children,count
+Never attended school,0,66314
+Preschool education,0,4815
+Elementary school,0,320703
+Junior high school,0,2115516
+High School,0,3222596
+College (junior college),0,2235795
+Bachelor's degree,0,2437239
+Master's Degree,0,279122
+Doctorate degree holders,0,26057
+Never attended school,1,150353
+Preschool education,1,6702
+Elementary school,1,1967682
+Junior high school,1,6378590
+High School,1,3406608
+College (junior college),1,2143293
+Bachelor's degree,1,1705066
+Master's Degree,1,172021
+Doctorate degree holders,1,20478
+Never attended school,2,398060
+Preschool education,2,13261
+Elementary school,2,3936117
+Junior high school,2,7780706
+High School,2,2023766
+College (junior college),2,914452
+Bachelor's degree,2,598898
+Master's Degree,2,55148
+Doctorate degree holders,2,6012
+Never attended school,3,201365
+Preschool education,3,4898
+Elementary school,3,1264379
+Junior high school,3,1578630
+High School,3,260433
+College (junior college),3,59631
+Bachelor's degree,3,22087
+Master's Degree,3,1363
+Doctorate degree holders,3,159
+Never attended school,4,72709
+Preschool education,4,1507
+Elementary school,4,340679
+Junior high school,4,290707
+High School,4,40171
+College (junior college),4,7797
+Bachelor's degree,4,3221
+Master's Degree,4,248
+Doctorate degree holders,4,29
+Never attended school,5+,37851
+Preschool education,5+,641
+Elementary school,5+,129304
+Junior high school,5+,75669
+High School,5+,8739
+College (junior college),5+,1259
+Bachelor's degree,5+,451
+Master's Degree,5+,34
+Doctorate degree holders,5+,6

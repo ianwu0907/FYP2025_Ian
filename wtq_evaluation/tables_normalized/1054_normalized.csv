@@ -1,0 +1,37 @@
+sexual_orientation,gender,metric_type,confidence_interval_component,value
+heterosexual,male gender,number,midpoint,1788.0
+heterosexual,male gender,percent,from,11.7
+heterosexual,male gender,percent,to,13.3
+heterosexual,male gender,number,midpoint,1688.0
+heterosexual,male gender,percent,from,12.1
+heterosexual,male gender,percent,to,13.8
+heterosexual,female gender,number,midpoint,4465.0
+heterosexual,female gender,percent,from,29.5
+heterosexual,female gender,percent,to,31.6
+heterosexual,female gender,number,midpoint,2291.0
+heterosexual,female gender,percent,from,16.6
+heterosexual,female gender,percent,to,18.5
+gay or lesbian,male gender,number,midpoint,117.0
+gay or lesbian,male gender,percent,from,31.1
+gay or lesbian,male gender,percent,to,45.8
+gay or lesbian,male gender,number,midpoint,82.0
+gay or lesbian,male gender,percent,from,20.9
+gay or lesbian,male gender,percent,to,35.3
+gay or lesbian,female gender,number,midpoint,87.0
+gay or lesbian,female gender,percent,from,41.7
+gay or lesbian,female gender,percent,to,59.8
+gay or lesbian,female gender,number,midpoint,35.0
+gay or lesbian,female gender,percent,from,13.9
+gay or lesbian,female gender,percent,to,30.3
+bisexual,male gender,number,midpoint,71.0
+bisexual,male gender,percent,from,30.3
+bisexual,male gender,percent,to,53.5
+bisexual,male gender,number,midpoint,66.0
+bisexual,male gender,percent,from,29.5
+bisexual,male gender,percent,to,52.2
+bisexual,female gender,number,midpoint,280.0
+bisexual,female gender,percent,from,69.6
+bisexual,female gender,percent,to,82.1
+bisexual,female gender,number,midpoint,179.0
+bisexual,female gender,percent,from,41.9
+bisexual,female gender,percent,to,57.6

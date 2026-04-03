@@ -1,0 +1,128 @@
+section,category,force_category,n,percentage
+age at release,29 & under,Regular Force,1180.0,7.5
+age at release,29 & under,Reserve Force,10395.0,38.7
+age at release,29 & under,Total,11575.0,27.1
+age at release,30 to 34,Regular Force,1120.0,7.1
+age at release,30 to 34,Reserve Force,2595.0,9.7
+age at release,30 to 34,Total,3710.0,8.7
+age at release,35 to 39,Regular Force,2285.0,14.5
+age at release,35 to 39,Reserve Force,2570.0,9.6
+age at release,35 to 39,Total,4855.0,11.4
+age at release,40 to 44,Regular Force,4460.0,28.2
+age at release,40 to 44,Reserve Force,4330.0,16.1
+age at release,40 to 44,Total,8790.0,20.6
+age at release,45 to 49,Regular Force,3190.0,20.2
+age at release,45 to 49,Reserve Force,2980.0,11.1
+age at release,45 to 49,Total,6165.0,14.5
+age at release,50 to 54,Regular Force,2120.0,13.4
+age at release,50 to 54,Reserve Force,2220.0,8.3
+age at release,50 to 54,Total,4340.0,10.2
+age at release,55 plus,Regular Force,1440.0,9.1
+age at release,55 plus,Reserve Force,1765.0,6.6
+age at release,55 plus,Total,3200.0,7.5
+sex,male,Regular Force,13825.0,87.6
+sex,male,Reserve Force,23050.0,85.8
+sex,male,Total,36875.0,86.5
+sex,female,Regular Force,1960.0,12.4
+sex,female,Reserve Force,3805.0,14.2
+sex,female,Total,5770.0,13.5
+years of service,less than 2,Regular Force,220.0,1.4
+years of service,less than 2,Reserve Force,7770.0,28.9
+years of service,less than 2,Total,7985.0,18.7
+years of service,2 to 9,Regular Force,1755.0,11.1
+years of service,2 to 9,Reserve Force,5235.0,19.5
+years of service,2 to 9,Total,6990.0,16.4
+years of service,10 to 19,Regular Force,2595.0,16.4
+years of service,10 to 19,Reserve Force,2195.0,8.2
+years of service,10 to 19,Total,4785.0,11.2
+years of service,20 plus,Regular Force,11225.0,71.1
+years of service,20 plus,Reserve Force,11660.0,43.4
+years of service,20 plus,Total,22880.0,53.7
+release type,involuntary,Regular Force,315.0,2.0
+release type,involuntary,Reserve Force,2100.0,7.8
+release type,involuntary,Total,2415.0,5.7
+release type,medical,Regular Force,7325.0,46.4
+release type,medical,Reserve Force,1820.0,6.8
+release type,medical,Total,9145.0,21.4
+release type,voluntary,Regular Force,4870.0,30.8
+release type,voluntary,Reserve Force,16200.0,60.3
+release type,voluntary,Total,21070.0,49.4
+release type,retirement age,Regular Force,970.0,6.1
+release type,retirement age,Reserve Force,1440.0,5.4
+release type,retirement age,Total,2405.0,5.6
+release type,service complete,Regular Force,2255.0,14.3
+release type,service complete,Reserve Force,5210.0,19.4
+release type,service complete,Total,7460.0,17.5
+release type,unknown,Regular Force,55.0,0.3
+release type,unknown,Reserve Force,90.0,0.3
+release type,unknown,Total,140.0,0.3
+rank at release,senior officer,Regular Force,1310.0,8.3
+rank at release,senior officer,Reserve Force,2445.0,9.1
+rank at release,senior officer,Total,3755.0,8.8
+rank at release,junior officer,Regular Force,970.0,6.1
+rank at release,junior officer,Reserve Force,2520.0,9.4
+rank at release,junior officer,Total,3490.0,8.2
+rank at release,subordinate officer,Regular Force,85.0,0.5
+rank at release,subordinate officer,Reserve Force,1530.0,5.7
+rank at release,subordinate officer,Total,1615.0,3.8
+rank at release,senior ncm,Regular Force,6200.0,39.3
+rank at release,senior ncm,Reserve Force,5840.0,21.7
+rank at release,senior ncm,Total,12040.0,28.2
+rank at release,junior ncm,Regular Force,6440.0,40.8
+rank at release,junior ncm,Reserve Force,5935.0,22.1
+rank at release,junior ncm,Total,12375.0,29.0
+rank at release,private,Regular Force,625.0,4.0
+rank at release,private,Reserve Force,3845.0,14.3
+rank at release,private,Total,4470.0,10.5
+rank at release,recruit,Regular Force,155.0,1.0
+rank at release,recruit,Reserve Force,4745.0,17.7
+rank at release,recruit,Total,4900.0,11.5
+environment at release,army,Regular Force,8410.0,53.3
+environment at release,army,Reserve Force,13285.0,49.5
+environment at release,army,Total,21695.0,50.9
+environment at release,navy,Regular Force,2195.0,13.9
+environment at release,navy,Reserve Force,4980.0,18.5
+environment at release,navy,Total,7175.0,16.8
+environment at release,air force,Regular Force,5185.0,32.8
+environment at release,air force,Reserve Force,8590.0,32.0
+environment at release,air force,Total,13775.0,32.3
+province in 2014,newfoundland and labrador,Regular Force,450.0,2.8
+province in 2014,newfoundland and labrador,Reserve Force,655.0,2.4
+province in 2014,newfoundland and labrador,Total,1105.0,2.6
+province in 2014,prince edward island,Regular Force,145.0,0.9
+province in 2014,prince edward island,Reserve Force,170.0,0.6
+province in 2014,prince edward island,Total,315.0,0.7
+province in 2014,nova scotia,Regular Force,1885.0,11.9
+province in 2014,nova scotia,Reserve Force,2430.0,9.0
+province in 2014,nova scotia,Total,4315.0,10.1
+province in 2014,new brunswick,Regular Force,965.0,6.1
+province in 2014,new brunswick,Reserve Force,1150.0,4.3
+province in 2014,new brunswick,Total,2115.0,5.0
+province in 2014,quebec,Regular Force,3255.0,20.6
+province in 2014,quebec,Reserve Force,5965.0,22.2
+province in 2014,quebec,Total,9220.0,21.6
+province in 2014,ontario,Regular Force,4345.0,27.5
+province in 2014,ontario,Reserve Force,7770.0,28.9
+province in 2014,ontario,Total,12115.0,28.4
+province in 2014,manitoba,Regular Force,475.0,3.0
+province in 2014,manitoba,Reserve Force,730.0,2.7
+province in 2014,manitoba,Total,1205.0,2.8
+province in 2014,saskatchewan,Regular Force,220.0,1.4
+province in 2014,saskatchewan,Reserve Force,520.0,1.9
+province in 2014,saskatchewan,Total,740.0,1.7
+province in 2014,alberta,Regular Force,2020.0,12.8
+province in 2014,alberta,Reserve Force,3155.0,11.7
+province in 2014,alberta,Total,5175.0,12.1
+province in 2014,british columbia,Regular Force,1465.0,9.3
+province in 2014,british columbia,Reserve Force,2495.0,9.3
+province in 2014,british columbia,Total,3955.0,9.3
+province in 2014,yukon,Regular Force,10.0,0.1
+province in 2014,yukon,Reserve Force,30.0,0.1
+province in 2014,yukon,Total,40.0,0.1
+province in 2014,northwest territories,Regular Force,20.0,0.1
+province in 2014,northwest territories,Reserve Force,45.0,0.2
+province in 2014,northwest territories,Total,65.0,0.2
+province in 2014,nunavut,Total,20.0,0.0
+province in 2014,other,Regular Force,530.0,3.4
+province in 2014,other,Reserve Force,1730.0,6.4
+province in 2014,other,Total,2260.0,5.3

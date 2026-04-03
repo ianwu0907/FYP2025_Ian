@@ -1,0 +1,20 @@
+grouping_dimension_cn,grouping_dimension_en,category_cn,category_en,number_of_enterprises,annual_average_employees,total_assets,total_working_capitals,accounts_receivable,total_liabilities,total_profits_and_taxes
+By Enterprise Scale,Grouped by Size of Enterprises,Large-sized,Large-sized,121,349006,107550103.3,42996364.6,9714166.9,56014304.1,14214934.7
+By Enterprise Scale,Grouped by Size of Enterprises,Medium-sized,Medium-sized,460,238893,51454323.3,27812872.2,7352905.6,27279030.8,3434950.1
+By Enterprise Scale,Grouped by Size of Enterprises,Small,Small-sized,4213,363643,70805197.9,45076455.7,13722099.0,41436421.0,4127613.7
+By Enterprise Scale,Grouped by Size of Enterprises,Micro,Mini-sized,868,16754,5163695.8,3169999.6,1096137.0,3566246.7,171655.5
+By Registration and Registration Type,Grouped by Status of Registration,Domestic enterprises,Domestic-funded Enterprises,4529,624929,151423564.2,75882531.7,18485296.8,86576819.9,7486959.3
+By Registration and Registration Type,Grouped by Status of Registration,# State-owned,State-owned Enterprises,36,8744,3720497.0,2295277.7,290356.9,3535061.0,601145.1
+By Registration and Registration Type,Grouped by Status of Registration,Collective,Collective-owned Enterprises,12,1045,57879.2,48072.7,8161.4,28207.4,3360.9
+By Registration and Registration Type,Grouped by Status of Registration,Shareholding Cooperation,Cooperative Enterprises,19,2142,225698.8,150153.5,46035.8,117542.3,6992.9
+By Registration and Registration Type,Grouped by Status of Registration,Private enterprises,Private Enterprises,3285,281794,45064786.1,28617968.9,8204079.1,27521306.6,2069983.9
+By Registration and Registration Type,Grouped by Status of Registration,Joint-stock Limited Company,Share-holding Corporations Ltd.,195,84295,30215247.9,12270913.4,2683757.2,11833377.3,3128018.2
+By Registration and Registration Type,Grouped by Status of Registration,Limited Liability Company,Limited Liability Corporations,982,246909,72139455.2,32500145.5,7252906.4,43541325.3,1677458.3
+By Registration and Registration Type,Grouped by Status of Registration,State-owned Sole Proprietorship Company,Sole State-funded Corporations,90,63477,26816016.6,10317453.2,1520076.8,14234256.0,205964.0
+"Hong Kong, Macao and Taiwan Merchant Investment Enterprises","Enterprises with Investment from Hong Kong,",,Macao and Taiwan,224,77197,28389195.9,9243665.6,3302404.7,16855200.2,7417474.7
+"Hong Kong, Macao and Taiwan Merchant Investment Enterprises","Enterprises with Investment from Hong Kong,",Foreign-invested enterprises,Foreign Funded Enterprises,909,266170,55160560.2,33929494.8,10097607.0,24863982.5,7044720.0
+By Subordinate Relationship,Grouped by Administrative Relationship,Central,Central Industry,81,86537,33121231.0,10509714.2,2327595.7,16291721.3,2399591.9
+By Subordinate Relationship,Grouped by Administrative Relationship,Local,Local Industry,5581,881759,201852089.3,108545977.9,29557712.8,112004281.3,19549562.1
+By Enterprise Control Status,Grouped by Company Holding Type,State-owned and State-controlled Enterprises,State-owned and State-holding Enterprises,490,203484,88282145.9,34787720.9,6258170.2,48548978.0,5073608.5
+By Enterprise Control Status,Grouped by Company Holding Type,Private and Private-Controlled Enterprises,Private and Private Holding Enterprises,4171,465826,78937612.6,47906544.2,13307600.4,44982366.7,4195476.5
+"Foreign-invested and Hong Kong, Macao and Taiwan-invested enterprises controlled by their investors","Hong Kong, Macao,Taiwan and Foreign",,Funded Holding Enterprises,1001,298986,67753561.8,36361427.0,12319537.9,34764657.9,12680069.0

@@ -1,0 +1,21 @@
+year,team,stat_category,gp,gs,rec,yds,lng,td,att,fum,lost
+,,receiving,,,,,lng,,,,
+,,rushing,,,,,lng,,,,
+2009,pittsburgh steelers,receiving,16,4,39,756,60t,6,,1,1
+2009,pittsburgh steelers,rushing,,,,48,21,0,5,1,1
+2010,pittsburgh steelers,receiving,16,16,60,1257,56t,10,,1,0
+2010,pittsburgh steelers,rushing,,,,39,19,0,5,1,0
+2011,pittsburgh steelers,receiving,16,14,72,1193,95t,8,,1,1
+2011,pittsburgh steelers,rushing,,,,57,21,0,5,1,1
+2012,pittsburgh steelers,receiving,15,14,64,836,82t,8,,2,1
+2012,pittsburgh steelers,rushing,,,,7,13,0,5,2,1
+2013,miami dolphins,receiving,16,16,73,930,57,5,,0,0
+2013,miami dolphins,rushing,,,,33,13,0,3,0,0
+2014,miami dolphins,receiving,16,16,67,862,50,10,,2,1
+2014,miami dolphins,rushing,,,,16,12,0,4,2,1
+2015,minnesota vikings,receiving,16,15,39,473,34,2,,0,0
+2015,minnesota vikings,rushing,,,,6,6,0,1,0,0
+2016,baltimore ravens,receiving,16,16,72,1017,95t,4,,1,0
+2016,baltimore ravens,rushing,,,,31,13,0,5,1,0
+2017,baltimore ravens,receiving,15,15,52,748,66,4,,0,0
+2017,baltimore ravens,rushing,,,,4,4,0,1,0,0

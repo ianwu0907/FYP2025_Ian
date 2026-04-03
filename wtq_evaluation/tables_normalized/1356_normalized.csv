@@ -1,0 +1,81 @@
+geography,period_id,measure_type,value
+newfoundland and labrador,1,number,58
+newfoundland and labrador,1,rate,1322
+newfoundland and labrador,2,number,189
+newfoundland and labrador,2,rate,4307
+newfoundland and labrador,3,number,19
+newfoundland and labrador,3,rate,433
+newfoundland and labrador,4,number,270
+newfoundland and labrador,4,rate,6153
+quebec,1,number,356
+quebec,1,rate,760
+quebec,2,number,454
+quebec,2,rate,969
+quebec,3,number,197
+quebec,3,rate,420
+quebec,4,number,1068
+quebec,4,rate,2279
+ontario,1,number,910
+ontario,1,rate,862
+ontario,2,number,1542
+ontario,2,rate,1460
+ontario,3,number,303
+ontario,3,rate,287
+ontario,4,number,2888
+ontario,4,rate,2734
+manitoba,1,number,327
+manitoba,1,rate,1410
+manitoba,2,number,1572
+manitoba,2,rate,6778
+manitoba,3,number,130
+manitoba,3,rate,561
+manitoba,4,number,2093
+manitoba,4,rate,9025
+saskatchewan,1,number,159
+saskatchewan,1,rate,1718
+saskatchewan,2,number,1007
+saskatchewan,2,rate,10882
+saskatchewan,3,number,85
+saskatchewan,3,rate,919
+saskatchewan,4,number,1285
+saskatchewan,4,rate,13886
+alberta,1,number,383
+alberta,1,rate,548
+alberta,2,number,1082
+alberta,2,rate,1548
+alberta,3,number,200
+alberta,3,rate,286
+alberta,4,number,1719
+alberta,4,rate,2460
+british columbia,1,number,340
+british columbia,1,rate,686
+british columbia,2,number,632
+british columbia,2,rate,1276
+british columbia,3,number,119
+british columbia,3,rate,240
+british columbia,4,number,1147
+british columbia,4,rate,2316
+yukon,1,number,52
+yukon,1,rate,994
+yukon,2,number,148
+yukon,2,rate,2828
+yukon,3,number,23
+yukon,3,rate,439
+yukon,4,number,228
+yukon,4,rate,4356
+northwest territories,1,number,139
+northwest territories,1,rate,1827
+northwest territories,2,number,467
+northwest territories,2,rate,6137
+northwest territories,3,number,60
+northwest territories,3,rate,788
+northwest territories,4,number,678
+northwest territories,4,rate,8909
+nunavut,1,number,144
+nunavut,1,rate,1634
+nunavut,2,number,451
+nunavut,2,rate,5119
+nunavut,3,number,52
+nunavut,3,rate,590
+nunavut,4,number,660
+nunavut,4,rate,7491

@@ -1,0 +1,1073 @@
+age_label,age_group,age_single_year,income_benefit_type,sex,count
+nan,Total,,Unit: Person,Male,
+nan,Under 45 years old,,Unit: Person,Male,
+45,Under 45 years old,45.0,Unit: Person,Male,1029558
+46,Under 45 years old,46.0,Unit: Person,Male,1123949
+47,Under 45 years old,47.0,Unit: Person,Male,1176498
+48,Under 45 years old,48.0,Unit: Person,Male,1202544
+49,Under 45 years old,49.0,Unit: Person,Male,1241906
+nan,Under 45 years old,,Unit: Person,Male,
+50,Under 45 years old,50.0,Unit: Person,Male,1298030
+51,Under 45 years old,51.0,Unit: Person,Male,1216599
+52,Under 45 years old,52.0,Unit: Person,Male,1298846
+53,Under 45 years old,53.0,Unit: Person,Male,1034436
+54,Under 45 years old,54.0,Unit: Person,Male,1171891
+nan,Under 45 years old,,Unit: Person,Male,
+55,Under 45 years old,55.0,Unit: Person,Male,1144496
+56,Under 45 years old,56.0,Unit: Person,Male,1111081
+57,Under 45 years old,57.0,Unit: Person,Male,1290317
+58,Under 45 years old,58.0,Unit: Person,Male,935259
+59,Under 45 years old,59.0,Unit: Person,Male,504877
+nan,Under 45 years old,,Unit: Person,Male,
+60,Under 45 years old,60.0,Unit: Person,Male,630443
+61,Under 45 years old,61.0,Unit: Person,Male,601597
+62,Under 45 years old,62.0,Unit: Person,Male,765643
+63,Under 45 years old,63.0,Unit: Person,Male,853241
+64,Under 45 years old,64.0,Unit: Person,Male,760610
+nan,Under 45 years old,,Unit: Person,Male,
+65,Under 45 years old,65.0,Unit: Person,Male,794038
+66,Under 45 years old,66.0,Unit: Person,Male,784337
+67,Under 45 years old,67.0,Unit: Person,Male,701663
+68,Under 45 years old,68.0,Unit: Person,Male,695588
+69,Under 45 years old,69.0,Unit: Person,Male,581445
+70,Under 45 years old,70.0,Unit: Person,Male,552550
+71,Under 45 years old,71.0,Unit: Person,Male,537267
+72,Under 45 years old,72.0,Unit: Person,Male,450625
+73,Under 45 years old,73.0,Unit: Person,Male,425034
+74,Under 45 years old,74.0,Unit: Person,Male,376416
+nan,Under 45 years old,,Unit: Person,Male,
+75,Under 45 years old,75.0,Unit: Person,Male,328485
+76,Under 45 years old,76.0,Unit: Person,Male,312625
+77,Under 45 years old,77.0,Unit: Person,Male,271017
+78,Under 45 years old,78.0,Unit: Person,Male,252314
+79,Under 45 years old,79.0,Unit: Person,Male,244753
+nan,Under 45 years old,,Unit: Person,Male,
+80,Under 45 years old,80.0,Unit: Person,Male,214196
+81,Under 45 years old,81.0,Unit: Person,Male,175529
+82,Under 45 years old,82.0,Unit: Person,Male,179490
+83,Under 45 years old,83.0,Unit: Person,Male,153187
+84,Under 45 years old,84.0,Unit: Person,Male,134217
+nan,Under 45 years old,,Unit: Person,Male,
+85,Under 45 years old,85.0,Unit: Person,Male,111113
+86,Under 45 years old,86.0,Unit: Person,Male,93574
+87,Under 45 years old,87.0,Unit: Person,Male,84218
+88,Under 45 years old,88.0,Unit: Person,Male,61448
+89,Under 45 years old,89.0,Unit: Person,Male,48554
+nan,Under 45 years old,,Unit: Person,Male,
+90,Under 45 years old,90.0,Unit: Person,Male,41051
+91,Under 45 years old,91.0,Unit: Person,Male,27037
+92,Under 45 years old,92.0,Unit: Person,Male,21980
+93,Under 45 years old,93.0,Unit: Person,Male,15095
+94,Under 45 years old,94.0,Unit: Person,Male,10274
+nan,Under 45 years old,,Unit: Person,Male,
+95,Under 45 years old,95.0,Unit: Person,Male,7523
+96,Under 45 years old,96.0,Unit: Person,Male,5063
+97,Under 45 years old,97.0,Unit: Person,Male,3306
+98,Under 45 years old,98.0,Unit: Person,Male,2148
+99,Under 45 years old,99.0,Unit: Person,Male,1536
+nan,Under 45 years old,,Unit: Person,Male,
+nan,Total,,Unit: Person,Female,
+nan,Under 45 years old,,Unit: Person,Female,
+45,Under 45 years old,45.0,Unit: Person,Female,977154
+46,Under 45 years old,46.0,Unit: Person,Female,1073545
+47,Under 45 years old,47.0,Unit: Person,Female,1121552
+48,Under 45 years old,48.0,Unit: Person,Female,1152292
+49,Under 45 years old,49.0,Unit: Person,Female,1187281
+nan,Under 45 years old,,Unit: Person,Female,
+50,Under 45 years old,50.0,Unit: Person,Female,1266799
+51,Under 45 years old,51.0,Unit: Person,Female,1188360
+52,Under 45 years old,52.0,Unit: Person,Female,1276675
+53,Under 45 years old,53.0,Unit: Person,Female,1025010
+54,Under 45 years old,54.0,Unit: Person,Female,1149534
+nan,Under 45 years old,,Unit: Person,Female,
+55,Under 45 years old,55.0,Unit: Person,Female,1131681
+56,Under 45 years old,56.0,Unit: Person,Female,1112306
+57,Under 45 years old,57.0,Unit: Person,Female,1277233
+58,Under 45 years old,58.0,Unit: Person,Female,943836
+59,Under 45 years old,59.0,Unit: Person,Female,529076
+nan,Under 45 years old,,Unit: Person,Female,
+60,Under 45 years old,60.0,Unit: Person,Female,635292
+61,Under 45 years old,61.0,Unit: Person,Female,589893
+62,Under 45 years old,62.0,Unit: Person,Female,753465
+63,Under 45 years old,63.0,Unit: Person,Female,843128
+64,Under 45 years old,64.0,Unit: Person,Female,779019
+nan,Under 45 years old,,Unit: Person,Female,
+65,Under 45 years old,65.0,Unit: Person,Female,807569
+66,Under 45 years old,66.0,Unit: Person,Female,812955
+67,Under 45 years old,67.0,Unit: Person,Female,734940
+68,Under 45 years old,68.0,Unit: Person,Female,729689
+69,Under 45 years old,69.0,Unit: Person,Female,618789
+70,Under 45 years old,70.0,Unit: Person,Female,580091
+71,Under 45 years old,71.0,Unit: Person,Female,554238
+72,Under 45 years old,72.0,Unit: Person,Female,476409
+73,Under 45 years old,73.0,Unit: Person,Female,449783
+74,Under 45 years old,74.0,Unit: Person,Female,411234
+nan,Under 45 years old,,Unit: Person,Female,
+75,Under 45 years old,75.0,Unit: Person,Female,362263
+76,Under 45 years old,76.0,Unit: Person,Female,339876
+77,Under 45 years old,77.0,Unit: Person,Female,303470
+78,Under 45 years old,78.0,Unit: Person,Female,285377
+79,Under 45 years old,79.0,Unit: Person,Female,280328
+nan,Under 45 years old,,Unit: Person,Female,
+80,Under 45 years old,80.0,Unit: Person,Female,248148
+81,Under 45 years old,81.0,Unit: Person,Female,211898
+82,Under 45 years old,82.0,Unit: Person,Female,215605
+83,Under 45 years old,83.0,Unit: Person,Female,190288
+84,Under 45 years old,84.0,Unit: Person,Female,175192
+nan,Under 45 years old,,Unit: Person,Female,
+85,Under 45 years old,85.0,Unit: Person,Female,153627
+86,Under 45 years old,86.0,Unit: Person,Female,133745
+87,Under 45 years old,87.0,Unit: Person,Female,120714
+88,Under 45 years old,88.0,Unit: Person,Female,92834
+89,Under 45 years old,89.0,Unit: Person,Female,73991
+nan,Under 45 years old,,Unit: Person,Female,
+90,Under 45 years old,90.0,Unit: Person,Female,65023
+91,Under 45 years old,91.0,Unit: Person,Female,45849
+92,Under 45 years old,92.0,Unit: Person,Female,38954
+93,Under 45 years old,93.0,Unit: Person,Female,27641
+94,Under 45 years old,94.0,Unit: Person,Female,19942
+nan,Under 45 years old,,Unit: Person,Female,
+95,Under 45 years old,95.0,Unit: Person,Female,15926
+96,Under 45 years old,96.0,Unit: Person,Female,11426
+97,Under 45 years old,97.0,Unit: Person,Female,7661
+98,Under 45 years old,98.0,Unit: Person,Female,5145
+99,Under 45 years old,99.0,Unit: Person,Female,3892
+nan,Under 45 years old,,Unit: Person,Female,
+nan,Total,,Category_4,Male,
+nan,Under 45 years old,,Category_4,Male,
+45,Under 45 years old,45.0,Category_4,Male,935842
+46,Under 45 years old,46.0,Category_4,Male,1017936
+47,Under 45 years old,47.0,Category_4,Male,1060223
+48,Under 45 years old,48.0,Category_4,Male,1078545
+49,Under 45 years old,49.0,Category_4,Male,1106873
+nan,Under 45 years old,,Category_4,Male,
+50,Under 45 years old,50.0,Category_4,Male,1142744
+51,Under 45 years old,51.0,Category_4,Male,1052369
+52,Under 45 years old,52.0,Category_4,Male,1108834
+53,Under 45 years old,53.0,Category_4,Male,869962
+54,Under 45 years old,54.0,Category_4,Male,965995
+nan,Under 45 years old,,Category_4,Male,
+55,Under 45 years old,55.0,Category_4,Male,906162
+56,Under 45 years old,56.0,Category_4,Male,849069
+57,Under 45 years old,57.0,Category_4,Male,954315
+58,Under 45 years old,58.0,Category_4,Male,672021
+59,Under 45 years old,59.0,Category_4,Male,333180
+nan,Under 45 years old,,Category_4,Male,
+60,Under 45 years old,60.0,Category_4,Male,307806
+61,Under 45 years old,61.0,Category_4,Male,271939
+62,Under 45 years old,62.0,Category_4,Male,331517
+63,Under 45 years old,63.0,Category_4,Male,362706
+64,Under 45 years old,64.0,Category_4,Male,305467
+nan,Under 45 years old,,Category_4,Male,
+65,Under 45 years old,65.0,Category_4,Male,302943
+66,Under 45 years old,66.0,Category_4,Male,281151
+67,Under 45 years old,67.0,Category_4,Male,239456
+68,Under 45 years old,68.0,Category_4,Male,223966
+69,Under 45 years old,69.0,Category_4,Male,170334
+70,Under 45 years old,70.0,Category_4,Male,142394
+71,Under 45 years old,71.0,Category_4,Male,124934
+72,Under 45 years old,72.0,Category_4,Male,95970
+73,Under 45 years old,73.0,Category_4,Male,82127
+74,Under 45 years old,74.0,Category_4,Male,65706
+nan,Under 45 years old,,Category_4,Male,
+75,Under 45 years old,75.0,Category_4,Male,52193
+76,Under 45 years old,76.0,Category_4,Male,43762
+77,Under 45 years old,77.0,Category_4,Male,33086
+78,Under 45 years old,78.0,Category_4,Male,26562
+79,Under 45 years old,79.0,Category_4,Male,21694
+nan,Under 45 years old,,Category_4,Male,
+80,Under 45 years old,80.0,Category_4,Male,15190
+81,Under 45 years old,81.0,Category_4,Male,9742
+82,Under 45 years old,82.0,Category_4,Male,8741
+83,Under 45 years old,83.0,Category_4,Male,6411
+84,Under 45 years old,84.0,Category_4,Male,4987
+nan,Under 45 years old,,Category_4,Male,
+85,Under 45 years old,85.0,Category_4,Male,3828
+86,Under 45 years old,86.0,Category_4,Male,2794
+87,Under 45 years old,87.0,Category_4,Male,2175
+88,Under 45 years old,88.0,Category_4,Male,1404
+89,Under 45 years old,89.0,Category_4,Male,1001
+nan,Under 45 years old,,Category_4,Male,
+90,Under 45 years old,90.0,Category_4,Male,707
+91,Under 45 years old,91.0,Category_4,Male,390
+92,Under 45 years old,92.0,Category_4,Male,289
+93,Under 45 years old,93.0,Category_4,Male,202
+94,Under 45 years old,94.0,Category_4,Male,149
+nan,Under 45 years old,,Category_4,Male,
+95,Under 45 years old,95.0,Category_4,Male,95
+96,Under 45 years old,96.0,Category_4,Male,72
+97,Under 45 years old,97.0,Category_4,Male,33
+98,Under 45 years old,98.0,Category_4,Male,37
+99,Under 45 years old,99.0,Category_4,Male,26
+nan,Under 45 years old,,Category_4,Male,
+nan,Total,,Category_4,Female,
+nan,Under 45 years old,,Category_4,Female,
+45,Under 45 years old,45.0,Category_4,Female,711338
+46,Under 45 years old,46.0,Category_4,Female,772867
+47,Under 45 years old,47.0,Category_4,Female,793837
+48,Under 45 years old,48.0,Category_4,Female,796269
+49,Under 45 years old,49.0,Category_4,Female,790971
+nan,Under 45 years old,,Category_4,Female,
+50,Under 45 years old,50.0,Category_4,Female,745227
+51,Under 45 years old,51.0,Category_4,Female,649263
+52,Under 45 years old,52.0,Category_4,Female,667753
+53,Under 45 years old,53.0,Category_4,Female,513175
+54,Under 45 years old,54.0,Category_4,Female,541490
+nan,Under 45 years old,,Category_4,Female,
+55,Under 45 years old,55.0,Category_4,Female,473459
+56,Under 45 years old,56.0,Category_4,Female,427996
+57,Under 45 years old,57.0,Category_4,Female,456521
+58,Under 45 years old,58.0,Category_4,Female,327716
+59,Under 45 years old,59.0,Category_4,Female,168058
+nan,Under 45 years old,,Category_4,Female,
+60,Under 45 years old,60.0,Category_4,Female,176826
+61,Under 45 years old,61.0,Category_4,Female,151226
+62,Under 45 years old,62.0,Category_4,Female,187550
+63,Under 45 years old,63.0,Category_4,Female,204307
+64,Under 45 years old,64.0,Category_4,Female,182320
+nan,Under 45 years old,,Category_4,Female,
+65,Under 45 years old,65.0,Category_4,Female,179688
+66,Under 45 years old,66.0,Category_4,Female,168320
+67,Under 45 years old,67.0,Category_4,Female,145235
+68,Under 45 years old,68.0,Category_4,Female,134791
+69,Under 45 years old,69.0,Category_4,Female,103241
+70,Under 45 years old,70.0,Category_4,Female,84801
+71,Under 45 years old,71.0,Category_4,Female,70323
+72,Under 45 years old,72.0,Category_4,Female,54762
+73,Under 45 years old,73.0,Category_4,Female,45536
+74,Under 45 years old,74.0,Category_4,Female,37236
+nan,Under 45 years old,,Category_4,Female,
+75,Under 45 years old,75.0,Category_4,Female,28919
+76,Under 45 years old,76.0,Category_4,Female,23652
+77,Under 45 years old,77.0,Category_4,Female,18359
+78,Under 45 years old,78.0,Category_4,Female,14756
+79,Under 45 years old,79.0,Category_4,Female,12377
+nan,Under 45 years old,,Category_4,Female,
+80,Under 45 years old,80.0,Category_4,Female,8935
+81,Under 45 years old,81.0,Category_4,Female,5802
+82,Under 45 years old,82.0,Category_4,Female,5202
+83,Under 45 years old,83.0,Category_4,Female,4161
+84,Under 45 years old,84.0,Category_4,Female,3434
+nan,Under 45 years old,,Category_4,Female,
+85,Under 45 years old,85.0,Category_4,Female,2772
+86,Under 45 years old,86.0,Category_4,Female,2235
+87,Under 45 years old,87.0,Category_4,Female,1843
+88,Under 45 years old,88.0,Category_4,Female,1315
+89,Under 45 years old,89.0,Category_4,Female,979
+nan,Under 45 years old,,Category_4,Female,
+90,Under 45 years old,90.0,Category_4,Female,775
+91,Under 45 years old,91.0,Category_4,Female,449
+92,Under 45 years old,92.0,Category_4,Female,364
+93,Under 45 years old,93.0,Category_4,Female,234
+94,Under 45 years old,94.0,Category_4,Female,179
+nan,Under 45 years old,,Category_4,Female,
+95,Under 45 years old,95.0,Category_4,Female,154
+96,Under 45 years old,96.0,Category_4,Female,84
+97,Under 45 years old,97.0,Category_4,Female,65
+98,Under 45 years old,98.0,Category_4,Female,43
+99,Under 45 years old,99.0,Category_4,Female,48
+nan,Under 45 years old,,Category_4,Female,
+nan,Total,,Category_7,Male,
+nan,Under 45 years old,,Category_7,Male,
+45,Under 45 years old,45.0,Category_7,Male,375
+46,Under 45 years old,46.0,Category_7,Male,471
+47,Under 45 years old,47.0,Category_7,Male,709
+48,Under 45 years old,48.0,Category_7,Male,942
+49,Under 45 years old,49.0,Category_7,Male,1311
+nan,Under 45 years old,,Category_7,Male,
+50,Under 45 years old,50.0,Category_7,Male,9207
+51,Under 45 years old,51.0,Category_7,Male,15077
+52,Under 45 years old,52.0,Category_7,Male,20652
+53,Under 45 years old,53.0,Category_7,Male,20162
+54,Under 45 years old,54.0,Category_7,Male,31761
+nan,Under 45 years old,,Category_7,Male,
+55,Under 45 years old,55.0,Category_7,Male,55978
+56,Under 45 years old,56.0,Category_7,Male,73740
+57,Under 45 years old,57.0,Category_7,Male,102707
+58,Under 45 years old,58.0,Category_7,Male,81886
+59,Under 45 years old,59.0,Category_7,Male,68752
+nan,Under 45 years old,,Category_7,Male,
+60,Under 45 years old,60.0,Category_7,Male,206017
+61,Under 45 years old,61.0,Category_7,Male,206488
+62,Under 45 years old,62.0,Category_7,Male,264568
+63,Under 45 years old,63.0,Category_7,Male,287165
+64,Under 45 years old,64.0,Category_7,Male,262328
+nan,Under 45 years old,,Category_7,Male,
+65,Under 45 years old,65.0,Category_7,Male,274340
+66,Under 45 years old,66.0,Category_7,Male,278079
+67,Under 45 years old,67.0,Category_7,Male,243519
+68,Under 45 years old,68.0,Category_7,Male,242441
+69,Under 45 years old,69.0,Category_7,Male,209287
+70,Under 45 years old,70.0,Category_7,Male,206607
+71,Under 45 years old,71.0,Category_7,Male,197991
+72,Under 45 years old,72.0,Category_7,Male,167387
+73,Under 45 years old,73.0,Category_7,Male,161799
+74,Under 45 years old,74.0,Category_7,Male,146037
+nan,Under 45 years old,,Category_7,Male,
+75,Under 45 years old,75.0,Category_7,Male,125596
+76,Under 45 years old,76.0,Category_7,Male,119719
+77,Under 45 years old,77.0,Category_7,Male,105721
+78,Under 45 years old,78.0,Category_7,Male,102089
+79,Under 45 years old,79.0,Category_7,Male,100038
+nan,Under 45 years old,,Category_7,Male,
+80,Under 45 years old,80.0,Category_7,Male,91862
+81,Under 45 years old,81.0,Category_7,Male,75541
+82,Under 45 years old,82.0,Category_7,Male,76774
+83,Under 45 years old,83.0,Category_7,Male,66738
+84,Under 45 years old,84.0,Category_7,Male,58933
+nan,Under 45 years old,,Category_7,Male,
+85,Under 45 years old,85.0,Category_7,Male,48831
+86,Under 45 years old,86.0,Category_7,Male,41481
+87,Under 45 years old,87.0,Category_7,Male,37938
+88,Under 45 years old,88.0,Category_7,Male,27960
+89,Under 45 years old,89.0,Category_7,Male,22671
+nan,Under 45 years old,,Category_7,Male,
+90,Under 45 years old,90.0,Category_7,Male,19484
+91,Under 45 years old,91.0,Category_7,Male,12666
+92,Under 45 years old,92.0,Category_7,Male,10122
+93,Under 45 years old,93.0,Category_7,Male,6880
+94,Under 45 years old,94.0,Category_7,Male,4804
+nan,Under 45 years old,,Category_7,Male,
+95,Under 45 years old,95.0,Category_7,Male,3374
+96,Under 45 years old,96.0,Category_7,Male,2242
+97,Under 45 years old,97.0,Category_7,Male,1466
+98,Under 45 years old,98.0,Category_7,Male,906
+99,Under 45 years old,99.0,Category_7,Male,650
+nan,Under 45 years old,,Category_7,Male,
+nan,Total,,Category_7,Female,
+nan,Under 45 years old,,Category_7,Female,
+45,Under 45 years old,45.0,Category_7,Female,4556
+46,Under 45 years old,46.0,Category_7,Female,7290
+47,Under 45 years old,47.0,Category_7,Female,10836
+48,Under 45 years old,48.0,Category_7,Female,15779
+49,Under 45 years old,49.0,Category_7,Female,30808
+nan,Under 45 years old,,Category_7,Female,
+50,Under 45 years old,50.0,Category_7,Female,136508
+51,Under 45 years old,51.0,Category_7,Female,163925
+52,Under 45 years old,52.0,Category_7,Female,184715
+53,Under 45 years old,53.0,Category_7,Female,148783
+54,Under 45 years old,54.0,Category_7,Female,188700
+nan,Under 45 years old,,Category_7,Female,
+55,Under 45 years old,55.0,Category_7,Female,250245
+56,Under 45 years old,56.0,Category_7,Female,280370
+57,Under 45 years old,57.0,Category_7,Female,353210
+58,Under 45 years old,58.0,Category_7,Female,251884
+59,Under 45 years old,59.0,Category_7,Female,161868
+nan,Under 45 years old,,Category_7,Female,
+60,Under 45 years old,60.0,Category_7,Female,223195
+61,Under 45 years old,61.0,Category_7,Female,209067
+62,Under 45 years old,62.0,Category_7,Female,263422
+63,Under 45 years old,63.0,Category_7,Female,285977
+64,Under 45 years old,64.0,Category_7,Female,260878
+nan,Under 45 years old,,Category_7,Female,
+65,Under 45 years old,65.0,Category_7,Female,267103
+66,Under 45 years old,66.0,Category_7,Female,271865
+67,Under 45 years old,67.0,Category_7,Female,237020
+68,Under 45 years old,68.0,Category_7,Female,231993
+69,Under 45 years old,69.0,Category_7,Female,198809
+70,Under 45 years old,70.0,Category_7,Female,187851
+71,Under 45 years old,71.0,Category_7,Female,177744
+72,Under 45 years old,72.0,Category_7,Female,151795
+73,Under 45 years old,73.0,Category_7,Female,143466
+74,Under 45 years old,74.0,Category_7,Female,130112
+nan,Under 45 years old,,Category_7,Female,
+75,Under 45 years old,75.0,Category_7,Female,112809
+76,Under 45 years old,76.0,Category_7,Female,107781
+77,Under 45 years old,77.0,Category_7,Female,97228
+78,Under 45 years old,78.0,Category_7,Female,94491
+79,Under 45 years old,79.0,Category_7,Female,92095
+nan,Under 45 years old,,Category_7,Female,
+80,Under 45 years old,80.0,Category_7,Female,83344
+81,Under 45 years old,81.0,Category_7,Female,72636
+82,Under 45 years old,82.0,Category_7,Female,72350
+83,Under 45 years old,83.0,Category_7,Female,61532
+84,Under 45 years old,84.0,Category_7,Female,56855
+nan,Under 45 years old,,Category_7,Female,
+85,Under 45 years old,85.0,Category_7,Female,48993
+86,Under 45 years old,86.0,Category_7,Female,41382
+87,Under 45 years old,87.0,Category_7,Female,36185
+88,Under 45 years old,88.0,Category_7,Female,27056
+89,Under 45 years old,89.0,Category_7,Female,20457
+nan,Under 45 years old,,Category_7,Female,
+90,Under 45 years old,90.0,Category_7,Female,17782
+91,Under 45 years old,91.0,Category_7,Female,12698
+92,Under 45 years old,92.0,Category_7,Female,10214
+93,Under 45 years old,93.0,Category_7,Female,7041
+94,Under 45 years old,94.0,Category_7,Female,5064
+nan,Under 45 years old,,Category_7,Female,
+95,Under 45 years old,95.0,Category_7,Female,3894
+96,Under 45 years old,96.0,Category_7,Female,2707
+97,Under 45 years old,97.0,Category_7,Female,1739
+98,Under 45 years old,98.0,Category_7,Female,1104
+99,Under 45 years old,99.0,Category_7,Female,809
+nan,Under 45 years old,,Category_7,Female,
+nan,Total,,Category_10,Male,
+nan,Under 45 years old,,Category_10,Male,
+45,Under 45 years old,45.0,Category_10,Male,10976
+46,Under 45 years old,46.0,Category_10,Male,12634
+47,Under 45 years old,47.0,Category_10,Male,13943
+48,Under 45 years old,48.0,Category_10,Male,14981
+49,Under 45 years old,49.0,Category_10,Male,16167
+nan,Under 45 years old,,Category_10,Male,
+50,Under 45 years old,50.0,Category_10,Male,17203
+51,Under 45 years old,51.0,Category_10,Male,17262
+52,Under 45 years old,52.0,Category_10,Male,18854
+53,Under 45 years old,53.0,Category_10,Male,15784
+54,Under 45 years old,54.0,Category_10,Male,18652
+nan,Under 45 years old,,Category_10,Male,
+55,Under 45 years old,55.0,Category_10,Male,18914
+56,Under 45 years old,56.0,Category_10,Male,19061
+57,Under 45 years old,57.0,Category_10,Male,22912
+58,Under 45 years old,58.0,Category_10,Male,17027
+59,Under 45 years old,59.0,Category_10,Male,10114
+nan,Under 45 years old,,Category_10,Male,
+60,Under 45 years old,60.0,Category_10,Male,14551
+61,Under 45 years old,61.0,Category_10,Male,16102
+62,Under 45 years old,62.0,Category_10,Male,23435
+63,Under 45 years old,63.0,Category_10,Male,28226
+64,Under 45 years old,64.0,Category_10,Male,26640
+nan,Under 45 years old,,Category_10,Male,
+65,Under 45 years old,65.0,Category_10,Male,30345
+66,Under 45 years old,66.0,Category_10,Male,32047
+67,Under 45 years old,67.0,Category_10,Male,31550
+68,Under 45 years old,68.0,Category_10,Male,32709
+69,Under 45 years old,69.0,Category_10,Male,28595
+70,Under 45 years old,70.0,Category_10,Male,28895
+71,Under 45 years old,71.0,Category_10,Male,30358
+72,Under 45 years old,72.0,Category_10,Male,26719
+73,Under 45 years old,73.0,Category_10,Male,26346
+74,Under 45 years old,74.0,Category_10,Male,24098
+nan,Under 45 years old,,Category_10,Male,
+75,Under 45 years old,75.0,Category_10,Male,21701
+76,Under 45 years old,76.0,Category_10,Male,21500
+77,Under 45 years old,77.0,Category_10,Male,18676
+78,Under 45 years old,78.0,Category_10,Male,17277
+79,Under 45 years old,79.0,Category_10,Male,17202
+nan,Under 45 years old,,Category_10,Male,
+80,Under 45 years old,80.0,Category_10,Male,14891
+81,Under 45 years old,81.0,Category_10,Male,12372
+82,Under 45 years old,82.0,Category_10,Male,12425
+83,Under 45 years old,83.0,Category_10,Male,10267
+84,Under 45 years old,84.0,Category_10,Male,8885
+nan,Under 45 years old,,Category_10,Male,
+85,Under 45 years old,85.0,Category_10,Male,7502
+86,Under 45 years old,86.0,Category_10,Male,6055
+87,Under 45 years old,87.0,Category_10,Male,5295
+88,Under 45 years old,88.0,Category_10,Male,3857
+89,Under 45 years old,89.0,Category_10,Male,2917
+nan,Under 45 years old,,Category_10,Male,
+90,Under 45 years old,90.0,Category_10,Male,2458
+91,Under 45 years old,91.0,Category_10,Male,1606
+92,Under 45 years old,92.0,Category_10,Male,1285
+93,Under 45 years old,93.0,Category_10,Male,842
+94,Under 45 years old,94.0,Category_10,Male,582
+nan,Under 45 years old,,Category_10,Male,
+95,Under 45 years old,95.0,Category_10,Male,483
+96,Under 45 years old,96.0,Category_10,Male,277
+97,Under 45 years old,97.0,Category_10,Male,225
+98,Under 45 years old,98.0,Category_10,Male,135
+99,Under 45 years old,99.0,Category_10,Male,90
+nan,Under 45 years old,,Category_10,Male,
+nan,Total,,Category_10,Female,
+nan,Under 45 years old,,Category_10,Female,
+45,Under 45 years old,45.0,Category_10,Female,7566
+46,Under 45 years old,46.0,Category_10,Female,8579
+47,Under 45 years old,47.0,Category_10,Female,9389
+48,Under 45 years old,48.0,Category_10,Female,9848
+49,Under 45 years old,49.0,Category_10,Female,10476
+nan,Under 45 years old,,Category_10,Female,
+50,Under 45 years old,50.0,Category_10,Female,10653
+51,Under 45 years old,51.0,Category_10,Female,10284
+52,Under 45 years old,52.0,Category_10,Female,11355
+53,Under 45 years old,53.0,Category_10,Female,9923
+54,Under 45 years old,54.0,Category_10,Female,11581
+nan,Under 45 years old,,Category_10,Female,
+55,Under 45 years old,55.0,Category_10,Female,11862
+56,Under 45 years old,56.0,Category_10,Female,12469
+57,Under 45 years old,57.0,Category_10,Female,14461
+58,Under 45 years old,58.0,Category_10,Female,12397
+59,Under 45 years old,59.0,Category_10,Female,7766
+nan,Under 45 years old,,Category_10,Female,
+60,Under 45 years old,60.0,Category_10,Female,11239
+61,Under 45 years old,61.0,Category_10,Female,11965
+62,Under 45 years old,62.0,Category_10,Female,16204
+63,Under 45 years old,63.0,Category_10,Female,19795
+64,Under 45 years old,64.0,Category_10,Female,20094
+nan,Under 45 years old,,Category_10,Female,
+65,Under 45 years old,65.0,Category_10,Female,23079
+66,Under 45 years old,66.0,Category_10,Female,24854
+67,Under 45 years old,67.0,Category_10,Female,24803
+68,Under 45 years old,68.0,Category_10,Female,26584
+69,Under 45 years old,69.0,Category_10,Female,23681
+70,Under 45 years old,70.0,Category_10,Female,24290
+71,Under 45 years old,71.0,Category_10,Female,24573
+72,Under 45 years old,72.0,Category_10,Female,22162
+73,Under 45 years old,73.0,Category_10,Female,21953
+74,Under 45 years old,74.0,Category_10,Female,20601
+nan,Under 45 years old,,Category_10,Female,
+75,Under 45 years old,75.0,Category_10,Female,18978
+76,Under 45 years old,76.0,Category_10,Female,17779
+77,Under 45 years old,77.0,Category_10,Female,16269
+78,Under 45 years old,78.0,Category_10,Female,15212
+79,Under 45 years old,79.0,Category_10,Female,15151
+nan,Under 45 years old,,Category_10,Female,
+80,Under 45 years old,80.0,Category_10,Female,13706
+81,Under 45 years old,81.0,Category_10,Female,11584
+82,Under 45 years old,82.0,Category_10,Female,11903
+83,Under 45 years old,83.0,Category_10,Female,10665
+84,Under 45 years old,84.0,Category_10,Female,9692
+nan,Under 45 years old,,Category_10,Female,
+85,Under 45 years old,85.0,Category_10,Female,8522
+86,Under 45 years old,86.0,Category_10,Female,7696
+87,Under 45 years old,87.0,Category_10,Female,7116
+88,Under 45 years old,88.0,Category_10,Female,5369
+89,Under 45 years old,89.0,Category_10,Female,4453
+nan,Under 45 years old,,Category_10,Female,
+90,Under 45 years old,90.0,Category_10,Female,3947
+91,Under 45 years old,91.0,Category_10,Female,2839
+92,Under 45 years old,92.0,Category_10,Female,2404
+93,Under 45 years old,93.0,Category_10,Female,1786
+94,Under 45 years old,94.0,Category_10,Female,1338
+nan,Under 45 years old,,Category_10,Female,
+95,Under 45 years old,95.0,Category_10,Female,1066
+96,Under 45 years old,96.0,Category_10,Female,802
+97,Under 45 years old,97.0,Category_10,Female,563
+98,Under 45 years old,98.0,Category_10,Female,377
+99,Under 45 years old,99.0,Category_10,Female,269
+nan,Under 45 years old,,Category_10,Female,
+nan,Total,,Category_13,Male,
+nan,Under 45 years old,,Category_13,Male,
+45,Under 45 years old,45.0,Category_13,Male,727
+46,Under 45 years old,46.0,Category_13,Male,816
+47,Under 45 years old,47.0,Category_13,Male,886
+48,Under 45 years old,48.0,Category_13,Male,966
+49,Under 45 years old,49.0,Category_13,Male,1106
+nan,Under 45 years old,,Category_13,Male,
+50,Under 45 years old,50.0,Category_13,Male,1101
+51,Under 45 years old,51.0,Category_13,Male,1101
+52,Under 45 years old,52.0,Category_13,Male,1208
+53,Under 45 years old,53.0,Category_13,Male,926
+54,Under 45 years old,54.0,Category_13,Male,1054
+nan,Under 45 years old,,Category_13,Male,
+55,Under 45 years old,55.0,Category_13,Male,1132
+56,Under 45 years old,56.0,Category_13,Male,446
+57,Under 45 years old,57.0,Category_13,Male,643
+58,Under 45 years old,58.0,Category_13,Male,563
+59,Under 45 years old,59.0,Category_13,Male,406
+nan,Under 45 years old,,Category_13,Male,
+60,Under 45 years old,60.0,Category_13,Male,29
+61,Under 45 years old,61.0,Category_13,Male,24
+62,Under 45 years old,62.0,Category_13,Male,27
+63,Under 45 years old,63.0,Category_13,Male,43
+64,Under 45 years old,64.0,Category_13,Male,36
+nan,Under 45 years old,,Category_13,Male,
+65,Under 45 years old,65.0,Category_13,Male,51
+66,Under 45 years old,66.0,Category_13,Male,44
+67,Under 45 years old,67.0,Category_13,Male,39
+68,Under 45 years old,68.0,Category_13,Male,37
+69,Under 45 years old,69.0,Category_13,Male,34
+70,Under 45 years old,70.0,Category_13,Male,40
+71,Under 45 years old,71.0,Category_13,Male,49
+72,Under 45 years old,72.0,Category_13,Male,25
+73,Under 45 years old,73.0,Category_13,Male,28
+74,Under 45 years old,74.0,Category_13,Male,20
+nan,Under 45 years old,,Category_13,Male,
+75,Under 45 years old,75.0,Category_13,Male,25
+76,Under 45 years old,76.0,Category_13,Male,20
+77,Under 45 years old,77.0,Category_13,Male,19
+78,Under 45 years old,78.0,Category_13,Male,13
+79,Under 45 years old,79.0,Category_13,Male,13
+nan,Under 45 years old,,Category_13,Male,
+80,Under 45 years old,80.0,Category_13,Male,13
+81,Under 45 years old,81.0,Category_13,Male,11
+82,Under 45 years old,82.0,Category_13,Male,7
+83,Under 45 years old,83.0,Category_13,Male,13
+84,Under 45 years old,84.0,Category_13,Male,5
+nan,Under 45 years old,,Category_13,Male,
+85,Under 45 years old,85.0,Category_13,Male,3
+86,Under 45 years old,86.0,Category_13,Male,5
+87,Under 45 years old,87.0,Category_13,Male,3
+88,Under 45 years old,88.0,Category_13,Male,3
+89,Under 45 years old,89.0,Category_13,Male,3
+nan,Under 45 years old,,Category_13,Male,
+90,Under 45 years old,90.0,Category_13,Male,1
+91,Under 45 years old,91.0,Category_13,Male,1
+92,Under 45 years old,92.0,Category_13,Male,0
+93,Under 45 years old,93.0,Category_13,Male,0
+94,Under 45 years old,94.0,Category_13,Male,0
+nan,Under 45 years old,,Category_13,Male,
+95,Under 45 years old,95.0,Category_13,Male,0
+96,Under 45 years old,96.0,Category_13,Male,2
+97,Under 45 years old,97.0,Category_13,Male,0
+98,Under 45 years old,98.0,Category_13,Male,0
+99,Under 45 years old,99.0,Category_13,Male,0
+nan,Under 45 years old,,Category_13,Male,
+nan,Total,,Category_13,Female,
+nan,Under 45 years old,,Category_13,Female,
+45,Under 45 years old,45.0,Category_13,Female,783
+46,Under 45 years old,46.0,Category_13,Female,841
+47,Under 45 years old,47.0,Category_13,Female,1085
+48,Under 45 years old,48.0,Category_13,Female,1325
+49,Under 45 years old,49.0,Category_13,Female,1523
+nan,Under 45 years old,,Category_13,Female,
+50,Under 45 years old,50.0,Category_13,Female,572
+51,Under 45 years old,51.0,Category_13,Female,77
+52,Under 45 years old,52.0,Category_13,Female,67
+53,Under 45 years old,53.0,Category_13,Female,53
+54,Under 45 years old,54.0,Category_13,Female,72
+nan,Under 45 years old,,Category_13,Female,
+55,Under 45 years old,55.0,Category_13,Female,31
+56,Under 45 years old,56.0,Category_13,Female,36
+57,Under 45 years old,57.0,Category_13,Female,53
+58,Under 45 years old,58.0,Category_13,Female,29
+59,Under 45 years old,59.0,Category_13,Female,16
+nan,Under 45 years old,,Category_13,Female,
+60,Under 45 years old,60.0,Category_13,Female,26
+61,Under 45 years old,61.0,Category_13,Female,31
+62,Under 45 years old,62.0,Category_13,Female,38
+63,Under 45 years old,63.0,Category_13,Female,32
+64,Under 45 years old,64.0,Category_13,Female,38
+nan,Under 45 years old,,Category_13,Female,
+65,Under 45 years old,65.0,Category_13,Female,45
+66,Under 45 years old,66.0,Category_13,Female,48
+67,Under 45 years old,67.0,Category_13,Female,43
+68,Under 45 years old,68.0,Category_13,Female,64
+69,Under 45 years old,69.0,Category_13,Female,37
+70,Under 45 years old,70.0,Category_13,Female,36
+71,Under 45 years old,71.0,Category_13,Female,27
+72,Under 45 years old,72.0,Category_13,Female,40
+73,Under 45 years old,73.0,Category_13,Female,35
+74,Under 45 years old,74.0,Category_13,Female,26
+nan,Under 45 years old,,Category_13,Female,
+75,Under 45 years old,75.0,Category_13,Female,22
+76,Under 45 years old,76.0,Category_13,Female,17
+77,Under 45 years old,77.0,Category_13,Female,14
+78,Under 45 years old,78.0,Category_13,Female,15
+79,Under 45 years old,79.0,Category_13,Female,16
+nan,Under 45 years old,,Category_13,Female,
+80,Under 45 years old,80.0,Category_13,Female,10
+81,Under 45 years old,81.0,Category_13,Female,8
+82,Under 45 years old,82.0,Category_13,Female,10
+83,Under 45 years old,83.0,Category_13,Female,9
+84,Under 45 years old,84.0,Category_13,Female,10
+nan,Under 45 years old,,Category_13,Female,
+85,Under 45 years old,85.0,Category_13,Female,7
+86,Under 45 years old,86.0,Category_13,Female,4
+87,Under 45 years old,87.0,Category_13,Female,5
+88,Under 45 years old,88.0,Category_13,Female,5
+89,Under 45 years old,89.0,Category_13,Female,3
+nan,Under 45 years old,,Category_13,Female,
+90,Under 45 years old,90.0,Category_13,Female,3
+91,Under 45 years old,91.0,Category_13,Female,4
+92,Under 45 years old,92.0,Category_13,Female,3
+93,Under 45 years old,93.0,Category_13,Female,0
+94,Under 45 years old,94.0,Category_13,Female,1
+nan,Under 45 years old,,Category_13,Female,
+95,Under 45 years old,95.0,Category_13,Female,1
+96,Under 45 years old,96.0,Category_13,Female,0
+97,Under 45 years old,97.0,Category_13,Female,0
+98,Under 45 years old,98.0,Category_13,Female,0
+99,Under 45 years old,99.0,Category_13,Female,1
+nan,Under 45 years old,,Category_13,Female,
+nan,Total,,Category_16,Male,
+nan,Under 45 years old,,Category_16,Male,
+45,Under 45 years old,45.0,Category_16,Male,9497
+46,Under 45 years old,46.0,Category_16,Male,10631
+47,Under 45 years old,47.0,Category_16,Male,11459
+48,Under 45 years old,48.0,Category_16,Male,12101
+49,Under 45 years old,49.0,Category_16,Male,12665
+nan,Under 45 years old,,Category_16,Male,
+50,Under 45 years old,50.0,Category_16,Male,13624
+51,Under 45 years old,51.0,Category_16,Male,13209
+52,Under 45 years old,52.0,Category_16,Male,14405
+53,Under 45 years old,53.0,Category_16,Male,11744
+54,Under 45 years old,54.0,Category_16,Male,13508
+nan,Under 45 years old,,Category_16,Male,
+55,Under 45 years old,55.0,Category_16,Male,13684
+56,Under 45 years old,56.0,Category_16,Male,13373
+57,Under 45 years old,57.0,Category_16,Male,15877
+58,Under 45 years old,58.0,Category_16,Male,12170
+59,Under 45 years old,59.0,Category_16,Male,6502
+nan,Under 45 years old,,Category_16,Male,
+60,Under 45 years old,60.0,Category_16,Male,6778
+61,Under 45 years old,61.0,Category_16,Male,6086
+62,Under 45 years old,62.0,Category_16,Male,7389
+63,Under 45 years old,63.0,Category_16,Male,8603
+64,Under 45 years old,64.0,Category_16,Male,7890
+nan,Under 45 years old,,Category_16,Male,
+65,Under 45 years old,65.0,Category_16,Male,8475
+66,Under 45 years old,66.0,Category_16,Male,8412
+67,Under 45 years old,67.0,Category_16,Male,7806
+68,Under 45 years old,68.0,Category_16,Male,7688
+69,Under 45 years old,69.0,Category_16,Male,6533
+70,Under 45 years old,70.0,Category_16,Male,6099
+71,Under 45 years old,71.0,Category_16,Male,5730
+72,Under 45 years old,72.0,Category_16,Male,4580
+73,Under 45 years old,73.0,Category_16,Male,4295
+74,Under 45 years old,74.0,Category_16,Male,3658
+nan,Under 45 years old,,Category_16,Male,
+75,Under 45 years old,75.0,Category_16,Male,3077
+76,Under 45 years old,76.0,Category_16,Male,2782
+77,Under 45 years old,77.0,Category_16,Male,2309
+78,Under 45 years old,78.0,Category_16,Male,1991
+79,Under 45 years old,79.0,Category_16,Male,1904
+nan,Under 45 years old,,Category_16,Male,
+80,Under 45 years old,80.0,Category_16,Male,1478
+81,Under 45 years old,81.0,Category_16,Male,1107
+82,Under 45 years old,82.0,Category_16,Male,1065
+83,Under 45 years old,83.0,Category_16,Male,805
+84,Under 45 years old,84.0,Category_16,Male,673
+nan,Under 45 years old,,Category_16,Male,
+85,Under 45 years old,85.0,Category_16,Male,549
+86,Under 45 years old,86.0,Category_16,Male,488
+87,Under 45 years old,87.0,Category_16,Male,355
+88,Under 45 years old,88.0,Category_16,Male,217
+89,Under 45 years old,89.0,Category_16,Male,169
+nan,Under 45 years old,,Category_16,Male,
+90,Under 45 years old,90.0,Category_16,Male,154
+91,Under 45 years old,91.0,Category_16,Male,97
+92,Under 45 years old,92.0,Category_16,Male,78
+93,Under 45 years old,93.0,Category_16,Male,55
+94,Under 45 years old,94.0,Category_16,Male,30
+nan,Under 45 years old,,Category_16,Male,
+95,Under 45 years old,95.0,Category_16,Male,25
+96,Under 45 years old,96.0,Category_16,Male,12
+97,Under 45 years old,97.0,Category_16,Male,8
+98,Under 45 years old,98.0,Category_16,Male,8
+99,Under 45 years old,99.0,Category_16,Male,4
+nan,Under 45 years old,,Category_16,Male,
+nan,Total,,Category_16,Female,
+nan,Under 45 years old,,Category_16,Female,
+45,Under 45 years old,45.0,Category_16,Female,9046
+46,Under 45 years old,46.0,Category_16,Female,10017
+47,Under 45 years old,47.0,Category_16,Female,10673
+48,Under 45 years old,48.0,Category_16,Female,11465
+49,Under 45 years old,49.0,Category_16,Female,12009
+nan,Under 45 years old,,Category_16,Female,
+50,Under 45 years old,50.0,Category_16,Female,11776
+51,Under 45 years old,51.0,Category_16,Female,10886
+52,Under 45 years old,52.0,Category_16,Female,11829
+53,Under 45 years old,53.0,Category_16,Female,9552
+54,Under 45 years old,54.0,Category_16,Female,10880
+nan,Under 45 years old,,Category_16,Female,
+55,Under 45 years old,55.0,Category_16,Female,10216
+56,Under 45 years old,56.0,Category_16,Female,10059
+57,Under 45 years old,57.0,Category_16,Female,11406
+58,Under 45 years old,58.0,Category_16,Female,8739
+59,Under 45 years old,59.0,Category_16,Female,5221
+nan,Under 45 years old,,Category_16,Female,
+60,Under 45 years old,60.0,Category_16,Female,6076
+61,Under 45 years old,61.0,Category_16,Female,5568
+62,Under 45 years old,62.0,Category_16,Female,6630
+63,Under 45 years old,63.0,Category_16,Female,7619
+64,Under 45 years old,64.0,Category_16,Female,7294
+nan,Under 45 years old,,Category_16,Female,
+65,Under 45 years old,65.0,Category_16,Female,7862
+66,Under 45 years old,66.0,Category_16,Female,7778
+67,Under 45 years old,67.0,Category_16,Female,7122
+68,Under 45 years old,68.0,Category_16,Female,7063
+69,Under 45 years old,69.0,Category_16,Female,5793
+70,Under 45 years old,70.0,Category_16,Female,5389
+71,Under 45 years old,71.0,Category_16,Female,4864
+72,Under 45 years old,72.0,Category_16,Female,4040
+73,Under 45 years old,73.0,Category_16,Female,3557
+74,Under 45 years old,74.0,Category_16,Female,3006
+nan,Under 45 years old,,Category_16,Female,
+75,Under 45 years old,75.0,Category_16,Female,2459
+76,Under 45 years old,76.0,Category_16,Female,2191
+77,Under 45 years old,77.0,Category_16,Female,1868
+78,Under 45 years old,78.0,Category_16,Female,1570
+79,Under 45 years old,79.0,Category_16,Female,1491
+nan,Under 45 years old,,Category_16,Female,
+80,Under 45 years old,80.0,Category_16,Female,1216
+81,Under 45 years old,81.0,Category_16,Female,931
+82,Under 45 years old,82.0,Category_16,Female,928
+83,Under 45 years old,83.0,Category_16,Female,774
+84,Under 45 years old,84.0,Category_16,Female,636
+nan,Under 45 years old,,Category_16,Female,
+85,Under 45 years old,85.0,Category_16,Female,543
+86,Under 45 years old,86.0,Category_16,Female,451
+87,Under 45 years old,87.0,Category_16,Female,358
+88,Under 45 years old,88.0,Category_16,Female,274
+89,Under 45 years old,89.0,Category_16,Female,217
+nan,Under 45 years old,,Category_16,Female,
+90,Under 45 years old,90.0,Category_16,Female,175
+91,Under 45 years old,91.0,Category_16,Female,116
+92,Under 45 years old,92.0,Category_16,Female,118
+93,Under 45 years old,93.0,Category_16,Female,83
+94,Under 45 years old,94.0,Category_16,Female,44
+nan,Under 45 years old,,Category_16,Female,
+95,Under 45 years old,95.0,Category_16,Female,42
+96,Under 45 years old,96.0,Category_16,Female,30
+97,Under 45 years old,97.0,Category_16,Female,18
+98,Under 45 years old,98.0,Category_16,Female,15
+99,Under 45 years old,99.0,Category_16,Female,7
+nan,Under 45 years old,,Category_16,Female,
+nan,Total,,Category_19,Male,
+nan,Under 45 years old,,Category_19,Male,
+45,Under 45 years old,45.0,Category_19,Male,26305
+46,Under 45 years old,46.0,Category_19,Male,30401
+47,Under 45 years old,47.0,Category_19,Male,34637
+48,Under 45 years old,48.0,Category_19,Male,38273
+49,Under 45 years old,49.0,Category_19,Male,44248
+nan,Under 45 years old,,Category_19,Male,
+50,Under 45 years old,50.0,Category_19,Male,51109
+51,Under 45 years old,51.0,Category_19,Male,56916
+52,Under 45 years old,52.0,Category_19,Male,68638
+53,Under 45 years old,53.0,Category_19,Male,62142
+54,Under 45 years old,54.0,Category_19,Male,79682
+nan,Under 45 years old,,Category_19,Male,
+55,Under 45 years old,55.0,Category_19,Male,87781
+56,Under 45 years old,56.0,Category_19,Male,94381
+57,Under 45 years old,57.0,Category_19,Male,122108
+58,Under 45 years old,58.0,Category_19,Male,98368
+59,Under 45 years old,59.0,Category_19,Male,56962
+nan,Under 45 years old,,Category_19,Male,
+60,Under 45 years old,60.0,Category_19,Male,64808
+61,Under 45 years old,61.0,Category_19,Male,71213
+62,Under 45 years old,62.0,Category_19,Male,100459
+63,Under 45 years old,63.0,Category_19,Male,122697
+64,Under 45 years old,64.0,Category_19,Male,117980
+nan,Under 45 years old,,Category_19,Male,
+65,Under 45 years old,65.0,Category_19,Male,134936
+66,Under 45 years old,66.0,Category_19,Male,141942
+67,Under 45 years old,67.0,Category_19,Male,139538
+68,Under 45 years old,68.0,Category_19,Male,148772
+69,Under 45 years old,69.0,Category_19,Male,133028
+70,Under 45 years old,70.0,Category_19,Male,136544
+71,Under 45 years old,71.0,Category_19,Male,146444
+72,Under 45 years old,72.0,Category_19,Male,129206
+73,Under 45 years old,73.0,Category_19,Male,125519
+74,Under 45 years old,74.0,Category_19,Male,114992
+nan,Under 45 years old,,Category_19,Male,
+75,Under 45 years old,75.0,Category_19,Male,106217
+76,Under 45 years old,76.0,Category_19,Male,106375
+77,Under 45 years old,77.0,Category_19,Male,95563
+78,Under 45 years old,78.0,Category_19,Male,89996
+79,Under 45 years old,79.0,Category_19,Male,90224
+nan,Under 45 years old,,Category_19,Male,
+80,Under 45 years old,80.0,Category_19,Male,79208
+81,Under 45 years old,81.0,Category_19,Male,67524
+82,Under 45 years old,82.0,Category_19,Male,71224
+83,Under 45 years old,83.0,Category_19,Male,61240
+84,Under 45 years old,84.0,Category_19,Male,54009
+nan,Under 45 years old,,Category_19,Male,
+85,Under 45 years old,85.0,Category_19,Male,44795
+86,Under 45 years old,86.0,Category_19,Male,38218
+87,Under 45 years old,87.0,Category_19,Male,34371
+88,Under 45 years old,88.0,Category_19,Male,25109
+89,Under 45 years old,89.0,Category_19,Male,19469
+nan,Under 45 years old,,Category_19,Male,
+90,Under 45 years old,90.0,Category_19,Male,16321
+91,Under 45 years old,91.0,Category_19,Male,11026
+92,Under 45 years old,92.0,Category_19,Male,9132
+93,Under 45 years old,93.0,Category_19,Male,6379
+94,Under 45 years old,94.0,Category_19,Male,4203
+nan,Under 45 years old,,Category_19,Male,
+95,Under 45 years old,95.0,Category_19,Male,3173
+96,Under 45 years old,96.0,Category_19,Male,2182
+97,Under 45 years old,97.0,Category_19,Male,1390
+98,Under 45 years old,98.0,Category_19,Male,949
+99,Under 45 years old,99.0,Category_19,Male,670
+nan,Under 45 years old,,Category_19,Male,
+nan,Total,,Category_19,Female,
+nan,Under 45 years old,,Category_19,Female,
+45,Under 45 years old,45.0,Category_19,Female,191233
+46,Under 45 years old,46.0,Category_19,Female,215292
+47,Under 45 years old,47.0,Category_19,Female,232819
+48,Under 45 years old,48.0,Category_19,Female,252062
+49,Under 45 years old,49.0,Category_19,Female,273402
+nan,Under 45 years old,,Category_19,Female,
+50,Under 45 years old,50.0,Category_19,Female,291862
+51,Under 45 years old,51.0,Category_19,Female,288236
+52,Under 45 years old,52.0,Category_19,Female,328959
+53,Under 45 years old,53.0,Category_19,Female,284434
+54,Under 45 years old,54.0,Category_19,Female,330614
+nan,Under 45 years old,,Category_19,Female,
+55,Under 45 years old,55.0,Category_19,Female,322361
+56,Under 45 years old,56.0,Category_19,Female,319866
+57,Under 45 years old,57.0,Category_19,Female,371885
+58,Under 45 years old,58.0,Category_19,Female,289664
+59,Under 45 years old,59.0,Category_19,Female,157031
+nan,Under 45 years old,,Category_19,Female,
+60,Under 45 years old,60.0,Category_19,Female,184096
+61,Under 45 years old,61.0,Category_19,Female,180572
+62,Under 45 years old,62.0,Category_19,Female,239221
+63,Under 45 years old,63.0,Category_19,Female,279603
+64,Under 45 years old,64.0,Category_19,Female,264830
+nan,Under 45 years old,,Category_19,Female,
+65,Under 45 years old,65.0,Category_19,Female,284537
+66,Under 45 years old,66.0,Category_19,Female,294028
+67,Under 45 years old,67.0,Category_19,Female,278149
+68,Under 45 years old,68.0,Category_19,Female,286658
+69,Under 45 years old,69.0,Category_19,Female,250599
+70,Under 45 years old,70.0,Category_19,Female,243727
+71,Under 45 years old,71.0,Category_19,Female,244191
+72,Under 45 years old,72.0,Category_19,Female,215602
+73,Under 45 years old,73.0,Category_19,Female,208825
+74,Under 45 years old,74.0,Category_19,Female,195964
+nan,Under 45 years old,,Category_19,Female,
+75,Under 45 years old,75.0,Category_19,Female,178037
+76,Under 45 years old,76.0,Category_19,Female,169133
+77,Under 45 years old,77.0,Category_19,Female,152812
+78,Under 45 years old,78.0,Category_19,Female,143528
+79,Under 45 years old,79.0,Category_19,Female,144057
+nan,Under 45 years old,,Category_19,Female,
+80,Under 45 years old,80.0,Category_19,Female,127655
+81,Under 45 years old,81.0,Category_19,Female,109963
+82,Under 45 years old,82.0,Category_19,Female,114241
+83,Under 45 years old,83.0,Category_19,Female,103446
+84,Under 45 years old,84.0,Category_19,Female,95656
+nan,Under 45 years old,,Category_19,Female,
+85,Under 45 years old,85.0,Category_19,Female,84918
+86,Under 45 years old,86.0,Category_19,Female,75172
+87,Under 45 years old,87.0,Category_19,Female,69141
+88,Under 45 years old,88.0,Category_19,Female,54032
+89,Under 45 years old,89.0,Category_19,Female,44067
+nan,Under 45 years old,,Category_19,Female,
+90,Under 45 years old,90.0,Category_19,Female,38950
+91,Under 45 years old,91.0,Category_19,Female,27420
+92,Under 45 years old,92.0,Category_19,Female,23899
+93,Under 45 years old,93.0,Category_19,Female,17042
+94,Under 45 years old,94.0,Category_19,Female,12282
+nan,Under 45 years old,,Category_19,Female,
+95,Under 45 years old,95.0,Category_19,Female,9913
+96,Under 45 years old,96.0,Category_19,Female,7130
+97,Under 45 years old,97.0,Category_19,Female,4860
+98,Under 45 years old,98.0,Category_19,Female,3279
+99,Under 45 years old,99.0,Category_19,Female,2517
+nan,Under 45 years old,,Category_19,Female,
+nan,Total,,Category_22,Male,
+nan,Under 45 years old,,Category_22,Male,
+45,Under 45 years old,45.0,Category_22,Male,45836
+46,Under 45 years old,46.0,Category_22,Male,51060
+47,Under 45 years old,47.0,Category_22,Male,54641
+48,Under 45 years old,48.0,Category_22,Male,56736
+49,Under 45 years old,49.0,Category_22,Male,59536
+nan,Under 45 years old,,Category_22,Male,
+50,Under 45 years old,50.0,Category_22,Male,63042
+51,Under 45 years old,51.0,Category_22,Male,60665
+52,Under 45 years old,52.0,Category_22,Male,66255
+53,Under 45 years old,53.0,Category_22,Male,53716
+54,Under 45 years old,54.0,Category_22,Male,61239
+nan,Under 45 years old,,Category_22,Male,
+55,Under 45 years old,55.0,Category_22,Male,60845
+56,Under 45 years old,56.0,Category_22,Male,61011
+57,Under 45 years old,57.0,Category_22,Male,71755
+58,Under 45 years old,58.0,Category_22,Male,53224
+59,Under 45 years old,59.0,Category_22,Male,28961
+nan,Under 45 years old,,Category_22,Male,
+60,Under 45 years old,60.0,Category_22,Male,30454
+61,Under 45 years old,61.0,Category_22,Male,29745
+62,Under 45 years old,62.0,Category_22,Male,38248
+63,Under 45 years old,63.0,Category_22,Male,43801
+64,Under 45 years old,64.0,Category_22,Male,40269
+nan,Under 45 years old,,Category_22,Male,
+65,Under 45 years old,65.0,Category_22,Male,42948
+66,Under 45 years old,66.0,Category_22,Male,42662
+67,Under 45 years old,67.0,Category_22,Male,39755
+68,Under 45 years old,68.0,Category_22,Male,39975
+69,Under 45 years old,69.0,Category_22,Male,33634
+70,Under 45 years old,70.0,Category_22,Male,31971
+71,Under 45 years old,71.0,Category_22,Male,31761
+72,Under 45 years old,72.0,Category_22,Male,26738
+73,Under 45 years old,73.0,Category_22,Male,24920
+74,Under 45 years old,74.0,Category_22,Male,21905
+nan,Under 45 years old,,Category_22,Male,
+75,Under 45 years old,75.0,Category_22,Male,19676
+76,Under 45 years old,76.0,Category_22,Male,18467
+77,Under 45 years old,77.0,Category_22,Male,15643
+78,Under 45 years old,78.0,Category_22,Male,14386
+79,Under 45 years old,79.0,Category_22,Male,13678
+nan,Under 45 years old,,Category_22,Male,
+80,Under 45 years old,80.0,Category_22,Male,11554
+81,Under 45 years old,81.0,Category_22,Male,9232
+82,Under 45 years old,82.0,Category_22,Male,9254
+83,Under 45 years old,83.0,Category_22,Male,7713
+84,Under 45 years old,84.0,Category_22,Male,6725
+nan,Under 45 years old,,Category_22,Male,
+85,Under 45 years old,85.0,Category_22,Male,5605
+86,Under 45 years old,86.0,Category_22,Male,4533
+87,Under 45 years old,87.0,Category_22,Male,4081
+88,Under 45 years old,88.0,Category_22,Male,2898
+89,Under 45 years old,89.0,Category_22,Male,2324
+nan,Under 45 years old,,Category_22,Male,
+90,Under 45 years old,90.0,Category_22,Male,1926
+91,Under 45 years old,91.0,Category_22,Male,1251
+92,Under 45 years old,92.0,Category_22,Male,1074
+93,Under 45 years old,93.0,Category_22,Male,737
+94,Under 45 years old,94.0,Category_22,Male,506
+nan,Under 45 years old,,Category_22,Male,
+95,Under 45 years old,95.0,Category_22,Male,373
+96,Under 45 years old,96.0,Category_22,Male,276
+97,Under 45 years old,97.0,Category_22,Male,184
+98,Under 45 years old,98.0,Category_22,Male,113
+99,Under 45 years old,99.0,Category_22,Male,96
+nan,Under 45 years old,,Category_22,Male,
+nan,Total,,Category_22,Female,
+nan,Under 45 years old,,Category_22,Female,
+45,Under 45 years old,45.0,Category_22,Female,52632
+46,Under 45 years old,46.0,Category_22,Female,58659
+47,Under 45 years old,47.0,Category_22,Female,62913
+48,Under 45 years old,48.0,Category_22,Female,65544
+49,Under 45 years old,49.0,Category_22,Female,68092
+nan,Under 45 years old,,Category_22,Female,
+50,Under 45 years old,50.0,Category_22,Female,70201
+51,Under 45 years old,51.0,Category_22,Female,65689
+52,Under 45 years old,52.0,Category_22,Female,71997
+53,Under 45 years old,53.0,Category_22,Female,59090
+54,Under 45 years old,54.0,Category_22,Female,66197
+nan,Under 45 years old,,Category_22,Female,
+55,Under 45 years old,55.0,Category_22,Female,63507
+56,Under 45 years old,56.0,Category_22,Female,61510
+57,Under 45 years old,57.0,Category_22,Female,69697
+58,Under 45 years old,58.0,Category_22,Female,53407
+59,Under 45 years old,59.0,Category_22,Female,29116
+nan,Under 45 years old,,Category_22,Female,
+60,Under 45 years old,60.0,Category_22,Female,33834
+61,Under 45 years old,61.0,Category_22,Female,31464
+62,Under 45 years old,62.0,Category_22,Female,40400
+63,Under 45 years old,63.0,Category_22,Female,45795
+64,Under 45 years old,64.0,Category_22,Female,43565
+nan,Under 45 years old,,Category_22,Female,
+65,Under 45 years old,65.0,Category_22,Female,45255
+66,Under 45 years old,66.0,Category_22,Female,46062
+67,Under 45 years old,67.0,Category_22,Female,42568
+68,Under 45 years old,68.0,Category_22,Female,42536
+69,Under 45 years old,69.0,Category_22,Female,36629
+70,Under 45 years old,70.0,Category_22,Female,33997
+71,Under 45 years old,71.0,Category_22,Female,32516
+72,Under 45 years old,72.0,Category_22,Female,28008
+73,Under 45 years old,73.0,Category_22,Female,26411
+74,Under 45 years old,74.0,Category_22,Female,24289
+nan,Under 45 years old,,Category_22,Female,
+75,Under 45 years old,75.0,Category_22,Female,21039
+76,Under 45 years old,76.0,Category_22,Female,19323
+77,Under 45 years old,77.0,Category_22,Female,16920
+78,Under 45 years old,78.0,Category_22,Female,15805
+79,Under 45 years old,79.0,Category_22,Female,15141
+nan,Under 45 years old,,Category_22,Female,
+80,Under 45 years old,80.0,Category_22,Female,13282
+81,Under 45 years old,81.0,Category_22,Female,10974
+82,Under 45 years old,82.0,Category_22,Female,10971
+83,Under 45 years old,83.0,Category_22,Female,9701
+84,Under 45 years old,84.0,Category_22,Female,8909
+nan,Under 45 years old,,Category_22,Female,
+85,Under 45 years old,85.0,Category_22,Female,7872
+86,Under 45 years old,86.0,Category_22,Female,6805
+87,Under 45 years old,87.0,Category_22,Female,6066
+88,Under 45 years old,88.0,Category_22,Female,4783
+89,Under 45 years old,89.0,Category_22,Female,3815
+nan,Under 45 years old,,Category_22,Female,
+90,Under 45 years old,90.0,Category_22,Female,3391
+91,Under 45 years old,91.0,Category_22,Female,2323
+92,Under 45 years old,92.0,Category_22,Female,1952
+93,Under 45 years old,93.0,Category_22,Female,1455
+94,Under 45 years old,94.0,Category_22,Female,1034
+nan,Under 45 years old,,Category_22,Female,
+95,Under 45 years old,95.0,Category_22,Female,856
+96,Under 45 years old,96.0,Category_22,Female,673
+97,Under 45 years old,97.0,Category_22,Female,416
+98,Under 45 years old,98.0,Category_22,Female,327
+99,Under 45 years old,99.0,Category_22,Female,241
+nan,Under 45 years old,,Category_22,Female,

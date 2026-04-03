@@ -1,0 +1,401 @@
+municipality_id,municipality_name,province,administrative_type,land_area_km2,year,population
+1,Toronto,Ontario,city,630.21,2016,2615060
+2,Montreal,Quebec,ville,365.13,2016,1649519
+3,Calgary,Alberta,city,825.29,2016,1096833
+4,Ottawa,Ontario,city,2790.22,2016,883391
+5,Edmonton,Alberta,city,684.37,2016,812201
+6,Mississauga,Ontario,city,292.4,2016,713443
+7,Winnipeg,Manitoba,city,464.08,2016,663617
+8,Vancouver,British Columbia,city,114.97,2016,603502
+9,Brampton,Ontario,city,266.34,2016,523911
+10,Hamilton,Ontario,city,1117.23,2016,519949
+11,Quebec City,Quebec,ville,454.1,2016,516622
+12,Surrey,British Columbia,city,316.41,2016,468251
+13,Laval,Quebec,ville,247.09,2016,401553
+14,Halifax,Nova Scotia,regional municipality,5490.28,2016,390096
+15,London,Ontario,city,420.57,2016,366151
+16,Markham,Ontario,city,212.58,2016,301709
+17,Vaughan,Ontario,city,273.52,2016,288301
+18,Gatineau,Quebec,ville,342.98,2016,265349
+19,Longueuil,Quebec,ville,115.59,2016,231409
+20,Burnaby,British Columbia,city,90.61,2016,223218
+21,Saskatoon,Saskatchewan,city,209.56,2016,222189
+22,Kitchener,Ontario,city,136.79,2016,219153
+23,Windsor,Ontario,city,146.32,2016,210891
+24,Regina,Saskatchewan,city,145.45,2016,193100
+25,Richmond,British Columbia,city,129.27,2016,190473
+26,Richmond Hill,Ontario,town,100.95,2016,185541
+27,Oakville,Ontario,town,138.88,2016,182520
+28,Burlington,Ontario,city,185.66,2016,175779
+29,Greater Sudbury,Ontario,city,3227.38,2016,160274
+30,Sherbrooke,Quebec,ville,353.49,2016,154601
+31,Oshawa,Ontario,city,145.68,2016,149607
+32,Saguenay,Quebec,ville,1126.48,2016,144746
+33,Lévis,Quebec,ville,449.31,2016,138769
+34,Barrie,Ontario,city,77.39,2016,135711
+35,Abbotsford,British Columbia,city,375.55,2016,133497
+36,St. Catharines,Ontario,city,96.11,2016,131400
+37,Trois-Rivières,Quebec,ville,288.9,2016,131338
+38,Cambridge,Ontario,city,113.0,2016,126748
+39,Coquitlam,British Columbia,city,122.3,2016,126456
+40,Kingston,Ontario,city,451.17,2016,123363
+41,Whitby,Ontario,town,146.53,2016,122022
+42,Guelph,Ontario,city,87.2,2016,121688
+43,Kelowna,British Columbia,city,211.62,2016,117312
+44,Saanich,British Columbia,district municipality,103.78,2016,109752
+45,Ajax,Ontario,town,67.07,2016,109600
+46,Thunder Bay,Ontario,city,328.24,2016,108359
+47,Terrebonne,Quebec,ville,154.74,2016,106322
+48,St. John's,Newfoundland and Labrador,city,446.04,2016,106172
+49,Langley,British Columbia,district municipality,308.03,2016,104177
+50,Chatham-Kent,Ontario,municipality,2458.09,2016,103671
+51,Delta,British Columbia,district municipality,180.11,2016,99863
+52,Waterloo,Ontario,city,64.02,2016,98780
+53,Cape Breton,Nova Scotia,regional municipality,2433.35,2016,97398
+54,Brantford,Ontario,city,72.47,2016,93650
+55,Strathcona County,Alberta,specialized municipality,1180.56,2016,92490
+56,Saint-Jean-sur-Richelieu,Quebec,ville,225.78,2016,92394
+57,Red Deer,Alberta,city,104.29,2016,90564
+58,Pickering,Ontario,city,231.59,2016,88721
+59,Kamloops,British Columbia,city,299.23,2016,85678
+60,Clarington,Ontario,municipality,611.3,2016,84548
+61,North Vancouver,British Columbia,district municipality,160.76,2016,84412
+62,Milton,Ontario,town,363.22,2016,84362
+63,Nanaimo,British Columbia,city,91.3,2016,83810
+64,Lethbridge,Alberta,city,122.36,2016,83517
+65,Niagara Falls,Ontario,city,209.71,2016,82997
+66,Repentigny,Quebec,ville,61.79,2016,82000
+67,Victoria,British Columbia,city,19.47,2016,80017
+68,Newmarket,Ontario,town,38.33,2016,79978
+69,Brossard,Quebec,ville,45.2,2016,79273
+70,Peterborough,Ontario,city,63.8,2016,78698
+71,Chilliwack,British Columbia,city,261.5,2016,77936
+72,Maple Ridge,British Columbia,district municipality,266.78,2016,76052
+73,Sault Ste. Marie,Ontario,city,223.26,2016,75141
+74,Kawartha Lakes,Ontario,city,3083.06,2016,73214
+75,Sarnia,Ontario,city,164.71,2016,72366
+76,Prince George,British Columbia,city,318.26,2016,71974
+77,Drummondville,Quebec,ville,246.85,2016,71852
+78,Saint John,New Brunswick,city,315.82,2016,70063
+79,Moncton,New Brunswick,city,141.17,2016,69074
+80,Saint-Jérôme,Quebec,ville,90.52,2016,68456
+81,New Westminster,British Columbia,city,15.63,2016,65976
+82,Wood Buffalo,Alberta,specialized municipality,63637.47,2016,65565
+83,Granby,Quebec,ville,152.72,2016,63433
+84,Norfolk County,Ontario,city,1607.6,2016,63175
+85,St. Albert,Alberta,city,48.27,2016,61466
+86,Medicine Hat,Alberta,city,112.01,2016,60005
+87,Caledon,Ontario,town,688.15,2016,59460
+88,Halton Hills,Ontario,town,276.25,2016,59008
+89,Port Coquitlam,British Columbia,city,29.17,2016,56342
+90,Fredericton,New Brunswick,city,131.67,2016,56224
+91,Grande Prairie,Alberta,city,72.8,2016,55032
+92,North Bay,Ontario,city,319.05,2016,53651
+93,Blainville,Quebec,ville,55.1,2016,53510
+94,Saint-Hyacinthe,Quebec,ville,188.69,2016,53236
+95,Aurora,Ontario,town,49.78,2016,53203
+96,Welland,Ontario,city,81.09,2016,50631
+97,Shawinigan,Quebec,ville,733.48,2016,50060
+98,Dollard-des-Ormeaux,Quebec,ville,15.1,2016,49637
+99,Belleville,Ontario,city,247.21,2016,49454
+100,North Vancouver,British Columbia,city,11.83,2016,48196
+1,Toronto,Ontario,city,630.21,2017,2503281
+2,Montreal,Quebec,ville,365.13,2017,1620693
+3,Calgary,Alberta,city,825.29,2017,988193
+4,Ottawa,Ontario,city,2790.22,2017,812129
+5,Edmonton,Alberta,city,684.37,2017,730372
+6,Mississauga,Ontario,city,292.4,2017,668549
+7,Winnipeg,Manitoba,city,464.08,2017,633451
+8,Vancouver,British Columbia,city,114.97,2017,578041
+9,Brampton,Ontario,city,266.34,2017,433806
+10,Hamilton,Ontario,city,1117.23,2017,504559
+11,Quebec City,Quebec,ville,454.1,2017,491142
+12,Surrey,British Columbia,city,316.41,2017,394976
+13,Laval,Quebec,ville,247.09,2017,368709
+14,Halifax,Nova Scotia,regional municipality,5490.28,2017,372679
+15,London,Ontario,city,420.57,2017,352395
+16,Markham,Ontario,city,212.58,2017,261573
+17,Vaughan,Ontario,city,273.52,2017,238866
+18,Gatineau,Quebec,ville,342.98,2017,242124
+19,Longueuil,Quebec,ville,115.59,2017,229330
+20,Burnaby,British Columbia,city,90.61,2017,202799
+21,Saskatoon,Saskatchewan,city,209.56,2017,202340
+22,Kitchener,Ontario,city,136.79,2017,204668
+23,Windsor,Ontario,city,146.32,2017,216473
+24,Regina,Saskatchewan,city,145.45,2017,179246
+25,Richmond,British Columbia,city,129.27,2017,174461
+26,Richmond Hill,Ontario,town,100.95,2017,162704
+27,Oakville,Ontario,town,138.88,2017,165613
+28,Burlington,Ontario,city,185.66,2017,164415
+29,Greater Sudbury,Ontario,city,3227.38,2017,157857
+30,Sherbrooke,Quebec,ville,353.49,2017,147427
+31,Oshawa,Ontario,city,145.68,2017,141590
+32,Saguenay,Quebec,ville,1126.48,2017,143692
+33,Lévis,Quebec,ville,449.31,2017,130006
+34,Barrie,Ontario,city,77.39,2017,128430
+35,Abbotsford,British Columbia,city,375.55,2017,123864
+36,St. Catharines,Ontario,city,96.11,2017,131989
+37,Trois-Rivières,Quebec,ville,288.9,2017,126323
+38,Cambridge,Ontario,city,113.0,2017,120371
+39,Coquitlam,British Columbia,city,122.3,2017,114565
+40,Kingston,Ontario,city,451.17,2017,117207
+41,Whitby,Ontario,town,146.53,2017,111184
+42,Guelph,Ontario,city,87.2,2017,114943
+43,Kelowna,British Columbia,city,211.62,2017,106707
+44,Saanich,British Columbia,district municipality,103.78,2017,108265
+45,Ajax,Ontario,town,67.07,2017,90167
+46,Thunder Bay,Ontario,city,328.24,2017,109140
+47,Terrebonne,Quebec,ville,154.74,2017,94703
+48,St. John's,Newfoundland and Labrador,city,446.04,2017,100646
+49,Langley,British Columbia,district municipality,308.03,2017,93726
+50,Chatham-Kent,Ontario,municipality,2458.09,2017,108177
+51,Delta,British Columbia,district municipality,180.11,2017,96723
+52,Waterloo,Ontario,city,64.02,2017,97475
+53,Cape Breton,Nova Scotia,regional municipality,2433.35,2017,102250
+54,Brantford,Ontario,city,72.47,2017,90192
+55,Strathcona County,Alberta,specialized municipality,1180.56,2017,82511
+56,Saint-Jean-sur-Richelieu,Quebec,ville,225.78,2017,87492
+57,Red Deer,Alberta,city,104.29,2017,82772
+58,Pickering,Ontario,city,231.59,2017,87838
+59,Kamloops,British Columbia,city,299.23,2017,80376
+60,Clarington,Ontario,municipality,611.3,2017,77820
+61,North Vancouver,British Columbia,district municipality,160.76,2017,82562
+62,Milton,Ontario,town,363.22,2017,53939
+63,Nanaimo,British Columbia,city,91.3,2017,78692
+64,Lethbridge,Alberta,city,122.36,2017,74637
+65,Niagara Falls,Ontario,city,209.71,2017,82184
+66,Repentigny,Quebec,ville,61.79,2017,76237
+67,Victoria,British Columbia,city,19.47,2017,78057
+68,Newmarket,Ontario,town,38.33,2017,74295
+69,Brossard,Quebec,ville,45.2,2017,71154
+70,Peterborough,Ontario,city,63.8,2017,74898
+71,Chilliwack,British Columbia,city,261.5,2017,69217
+72,Maple Ridge,British Columbia,district municipality,266.78,2017,68949
+73,Sault Ste. Marie,Ontario,city,223.26,2017,74948
+74,Kawartha Lakes,Ontario,city,3083.06,2017,74561
+75,Sarnia,Ontario,city,164.71,2017,71419
+76,Prince George,British Columbia,city,318.26,2017,70981
+77,Drummondville,Quebec,ville,246.85,2017,67392
+78,Saint John,New Brunswick,city,315.82,2017,68043
+79,Moncton,New Brunswick,city,141.17,2017,64128
+80,Saint-Jérôme,Quebec,ville,90.52,2017,63729
+81,New Westminster,British Columbia,city,15.63,2017,58549
+82,Wood Buffalo,Alberta,specialized municipality,63637.47,2017,51496
+83,Granby,Quebec,ville,152.72,2017,47637
+84,Norfolk County,Ontario,city,1607.6,2017,62563
+85,St. Albert,Alberta,city,48.27,2017,57719
+86,Medicine Hat,Alberta,city,112.01,2017,56997
+87,Caledon,Ontario,town,688.15,2017,57050
+88,Halton Hills,Ontario,town,276.25,2017,55289
+89,Port Coquitlam,British Columbia,city,29.17,2017,52687
+90,Fredericton,New Brunswick,city,131.67,2017,50535
+91,Grande Prairie,Alberta,city,72.8,2017,47076
+92,North Bay,Ontario,city,319.05,2017,53966
+93,Blainville,Quebec,ville,55.1,2017,46493
+94,Saint-Hyacinthe,Quebec,ville,188.69,2017,51616
+95,Aurora,Ontario,town,49.78,2017,47629
+96,Welland,Ontario,city,81.09,2017,50331
+97,Shawinigan,Quebec,ville,733.48,2017,51904
+98,Dollard-des-Ormeaux,Quebec,ville,15.1,2017,48930
+99,Belleville,Ontario,city,247.21,2017,48821
+100,North Vancouver,British Columbia,city,11.83,2017,45165
+1,Toronto,Ontario,city,630.21,2018,2481494
+2,Montreal,Quebec,ville,365.13,2018,1583590
+3,Calgary,Alberta,city,825.29,2018,879003
+4,Ottawa,Ontario,city,2790.22,2018,774072
+5,Edmonton,Alberta,city,684.37,2018,666104
+6,Mississauga,Ontario,city,292.4,2018,612000
+7,Winnipeg,Manitoba,city,464.08,2018,619544
+8,Vancouver,British Columbia,city,114.97,2018,545671
+9,Brampton,Ontario,city,266.34,2018,325428
+10,Hamilton,Ontario,city,1117.23,2018,490268
+11,Quebec City,Quebec,ville,454.1,2018,476330
+12,Surrey,British Columbia,city,316.41,2018,347820
+13,Laval,Quebec,ville,247.09,2018,343005
+14,Halifax,Nova Scotia,regional municipality,5490.28,2018,359111
+15,London,Ontario,city,420.57,2018,336539
+16,Markham,Ontario,city,212.58,2018,208615
+17,Vaughan,Ontario,city,273.52,2018,182022
+18,Gatineau,Quebec,ville,342.98,2018,226696
+19,Longueuil,Quebec,ville,115.59,2018,225761
+20,Burnaby,British Columbia,city,90.61,2018,193954
+21,Saskatoon,Saskatchewan,city,209.56,2018,196861
+22,Kitchener,Ontario,city,136.79,2018,190399
+23,Windsor,Ontario,city,146.32,2018,209218
+24,Regina,Saskatchewan,city,145.45,2018,178225
+25,Richmond,British Columbia,city,129.27,2018,164345
+26,Richmond Hill,Ontario,town,100.95,2018,132030
+27,Oakville,Ontario,town,138.88,2018,144738
+28,Burlington,Ontario,city,185.66,2018,150836
+29,Greater Sudbury,Ontario,city,3227.38,2018,155219
+30,Sherbrooke,Quebec,ville,353.49,2018,138785
+31,Oshawa,Ontario,city,145.68,2018,139051
+32,Saguenay,Quebec,ville,1126.48,2018,147133
+33,Lévis,Quebec,ville,449.31,2018,121999
+34,Barrie,Ontario,city,77.39,2018,103710
+35,Abbotsford,British Columbia,city,375.55,2018,115494
+36,St. Catharines,Ontario,city,96.11,2018,129170
+37,Trois-Rivières,Quebec,ville,288.9,2018,122395
+38,Cambridge,Ontario,city,113.0,2018,110372
+39,Coquitlam,British Columbia,city,122.3,2018,112890
+40,Kingston,Ontario,city,451.17,2018,114195
+41,Whitby,Ontario,town,146.53,2018,87413
+42,Guelph,Ontario,city,87.2,2018,106170
+43,Kelowna,British Columbia,city,211.62,2018,96288
+44,Saanich,British Columbia,district municipality,103.78,2018,103654
+45,Ajax,Ontario,town,67.07,2018,73753
+46,Thunder Bay,Ontario,city,328.24,2018,109016
+47,Terrebonne,Quebec,ville,154.74,2018,80536
+48,St. John's,Newfoundland and Labrador,city,446.04,2018,99182
+49,Langley,British Columbia,district municipality,308.03,2018,86896
+50,Chatham-Kent,Ontario,municipality,2458.09,2018,107341
+51,Delta,British Columbia,district municipality,180.11,2018,96950
+52,Waterloo,Ontario,city,64.02,2018,86543
+53,Cape Breton,Nova Scotia,regional municipality,2433.35,2018,105968
+54,Brantford,Ontario,city,72.47,2018,86417
+55,Strathcona County,Alberta,specialized municipality,1180.56,2018,71986
+56,Saint-Jean-sur-Richelieu,Quebec,ville,225.78,2018,79600
+57,Red Deer,Alberta,city,104.29,2018,67829
+58,Pickering,Ontario,city,231.59,2018,87139
+59,Kamloops,British Columbia,city,299.23,2018,77281
+60,Clarington,Ontario,municipality,611.3,2018,69834
+61,North Vancouver,British Columbia,district municipality,160.76,2018,82310
+62,Milton,Ontario,town,363.22,2018,31471
+63,Nanaimo,British Columbia,city,91.3,2018,73000
+64,Lethbridge,Alberta,city,122.36,2018,67374
+65,Niagara Falls,Ontario,city,209.71,2018,78815
+66,Repentigny,Quebec,ville,61.79,2018,72218
+67,Victoria,British Columbia,city,19.47,2018,74125
+68,Newmarket,Ontario,town,38.33,2018,65788
+69,Brossard,Quebec,ville,45.2,2018,65026
+70,Peterborough,Ontario,city,63.8,2018,71446
+71,Chilliwack,British Columbia,city,261.5,2018,62567
+72,Maple Ridge,British Columbia,district municipality,266.78,2018,63169
+73,Sault Ste. Marie,Ontario,city,223.26,2018,74566
+74,Kawartha Lakes,Ontario,city,3083.06,2018,69179
+75,Sarnia,Ontario,city,164.71,2018,70876
+76,Prince George,British Columbia,city,318.26,2018,72406
+77,Drummondville,Quebec,ville,246.85,2018,63029
+78,Saint John,New Brunswick,city,315.82,2018,69661
+79,Moncton,New Brunswick,city,141.17,2018,61046
+80,Saint-Jérôme,Quebec,ville,90.52,2018,59614
+81,New Westminster,British Columbia,city,15.63,2018,54656
+82,Wood Buffalo,Alberta,specialized municipality,63637.47,2018,41445
+83,Granby,Quebec,ville,152.72,2018,44121
+84,Norfolk County,Ontario,city,1607.6,2018,60847
+85,St. Albert,Alberta,city,48.27,2018,53081
+86,Medicine Hat,Alberta,city,112.01,2018,51249
+87,Caledon,Ontario,town,688.15,2018,50605
+88,Halton Hills,Ontario,town,276.25,2018,48184
+89,Port Coquitlam,British Columbia,city,29.17,2018,51257
+90,Fredericton,New Brunswick,city,131.67,2018,47580
+91,Grande Prairie,Alberta,city,72.8,2018,36983
+92,North Bay,Ontario,city,319.05,2018,52771
+93,Blainville,Quebec,ville,55.1,2018,36029
+94,Saint-Hyacinthe,Quebec,ville,188.69,2018,50394
+95,Aurora,Ontario,town,49.78,2018,40167
+96,Welland,Ontario,city,81.09,2018,48402
+97,Shawinigan,Quebec,ville,733.48,2018,52040
+98,Dollard-des-Ormeaux,Quebec,ville,15.1,2018,48206
+99,Belleville,Ontario,city,247.21,2018,46029
+100,North Vancouver,British Columbia,city,11.83,2018,44303
+1,Toronto,Ontario,city,630.21,2019,2385421
+2,Montreal,Quebec,ville,365.13,2019,1547030
+3,Calgary,Alberta,city,825.29,2019,768082
+4,Ottawa,Ontario,city,2790.22,2019,721136
+5,Edmonton,Alberta,city,684.37,2019,616306
+6,Mississauga,Ontario,city,292.4,2019,544382
+7,Winnipeg,Manitoba,city,464.08,2019,618477
+8,Vancouver,British Columbia,city,114.97,2019,514008
+9,Brampton,Ontario,city,266.34,2019,268251
+10,Hamilton,Ontario,city,1117.23,2019,467799
+11,Quebec City,Quebec,ville,454.1,2019,467728
+12,Surrey,British Columbia,city,316.41,2019,304477
+13,Laval,Quebec,ville,247.09,2019,330393
+14,Halifax,Nova Scotia,regional municipality,5490.28,2019,342851
+15,London,Ontario,city,420.57,2019,325669
+16,Markham,Ontario,city,212.58,2019,173383
+17,Vaughan,Ontario,city,273.52,2019,132549
+18,Gatineau,Quebec,ville,342.98,2019,217591
+19,Longueuil,Quebec,ville,115.59,2019,225722
+20,Burnaby,British Columbia,city,90.61,2019,179209
+21,Saskatoon,Saskatchewan,city,209.56,2019,193653
+22,Kitchener,Ontario,city,136.79,2019,178420
+23,Windsor,Ontario,city,146.32,2019,197694
+24,Regina,Saskatchewan,city,145.45,2019,180404
+25,Richmond,British Columbia,city,129.27,2019,148867
+26,Richmond Hill,Ontario,town,100.95,2019,101725
+27,Oakville,Ontario,town,138.88,2019,128405
+28,Burlington,Ontario,city,185.66,2019,136976
+29,Greater Sudbury,Ontario,city,3227.38,2019,165336
+30,Sherbrooke,Quebec,ville,353.49,2019,136883
+31,Oshawa,Ontario,city,145.68,2019,134464
+32,Saguenay,Quebec,ville,1126.48,2019,152811
+33,Lévis,Quebec,ville,449.31,2019,103750
+34,Barrie,Ontario,city,77.39,2019,79191
+35,Abbotsford,British Columbia,city,375.55,2019,105403
+36,St. Catharines,Ontario,city,96.11,2019,130926
+37,Trois-Rivières,Quebec,ville,288.9,2019,124417
+38,Cambridge,Ontario,city,113.0,2019,101429
+39,Coquitlam,British Columbia,city,122.3,2019,101820
+40,Kingston,Ontario,city,451.17,2019,112605
+41,Whitby,Ontario,town,146.53,2019,73794
+42,Guelph,Ontario,city,87.2,2019,95821
+43,Kelowna,British Columbia,city,211.62,2019,89442
+44,Saanich,British Columbia,district municipality,103.78,2019,101388
+45,Ajax,Ontario,town,67.07,2019,64430
+46,Thunder Bay,Ontario,city,328.24,2019,113662
+47,Terrebonne,Quebec,ville,154.74,2019,75116
+48,St. John's,Newfoundland and Labrador,city,446.04,2019,101936
+49,Langley,British Columbia,district municipality,308.03,2019,80179
+50,Chatham-Kent,Ontario,municipality,2458.09,2019,109950
+51,Delta,British Columbia,district municipality,180.11,2019,95411
+52,Waterloo,Ontario,city,64.02,2019,77949
+53,Cape Breton,Nova Scotia,regional municipality,2433.35,2019,114733
+54,Brantford,Ontario,city,72.47,2019,86417
+55,Strathcona County,Alberta,specialized municipality,1180.56,2019,64176
+56,Saint-Jean-sur-Richelieu,Quebec,ville,225.78,2019,76461
+57,Red Deer,Alberta,city,104.29,2019,60080
+58,Pickering,Ontario,city,231.59,2019,78989
+59,Kamloops,British Columbia,city,299.23,2019,76394
+60,Clarington,Ontario,municipality,611.3,2019,60615
+61,North Vancouver,British Columbia,district municipality,160.76,2019,80418
+62,Milton,Ontario,town,363.22,2019,32104
+63,Nanaimo,British Columbia,city,91.3,2019,70130
+64,Lethbridge,Alberta,city,122.36,2019,63053
+65,Niagara Falls,Ontario,city,209.71,2019,76917
+66,Repentigny,Quebec,ville,61.79,2019,70677
+67,Victoria,British Columbia,city,19.47,2019,73405
+68,Newmarket,Ontario,town,38.33,2019,57125
+69,Brossard,Quebec,ville,45.2,2019,65927
+70,Peterborough,Ontario,city,63.8,2019,69742
+71,Chilliwack,British Columbia,city,261.5,2019,60186
+72,Maple Ridge,British Columbia,district municipality,266.78,2019,56173
+73,Sault Ste. Marie,Ontario,city,223.26,2019,80054
+74,Kawartha Lakes,Ontario,city,3083.06,2019,67926
+75,Sarnia,Ontario,city,164.71,2019,72738
+76,Prince George,British Columbia,city,318.26,2019,75510
+77,Drummondville,Quebec,ville,246.85,2019,58588
+78,Saint John,New Brunswick,city,315.82,2019,72494
+79,Moncton,New Brunswick,city,141.17,2019,59313
+80,Saint-Jérôme,Quebec,ville,90.52,2019,59533
+81,New Westminster,British Columbia,city,15.63,2019,49350
+82,Wood Buffalo,Alberta,specialized municipality,63637.47,2019,35213
+83,Granby,Quebec,ville,152.72,2019,43316
+84,Norfolk County,Ontario,city,1607.6,2019,60534
+85,St. Albert,Alberta,city,48.27,2019,46888
+86,Medicine Hat,Alberta,city,112.01,2019,46783
+87,Caledon,Ontario,town,688.15,2019,39893
+88,Halton Hills,Ontario,town,276.25,2019,42390
+89,Port Coquitlam,British Columbia,city,29.17,2019,46682
+90,Fredericton,New Brunswick,city,131.67,2019,46507
+91,Grande Prairie,Alberta,city,72.8,2019,31353
+92,North Bay,Ontario,city,319.05,2019,54332
+93,Blainville,Quebec,ville,55.1,2019,29603
+94,Saint-Hyacinthe,Quebec,ville,188.69,2019,50027
+95,Aurora,Ontario,town,49.78,2019,34857
+96,Welland,Ontario,city,81.09,2019,48411
+97,Shawinigan,Quebec,ville,733.48,2019,56721
+98,Dollard-des-Ormeaux,Quebec,ville,15.1,2019,47826
+99,Belleville,Ontario,city,247.21,2019,46195
+100,North Vancouver,British Columbia,city,11.83,2019,41475

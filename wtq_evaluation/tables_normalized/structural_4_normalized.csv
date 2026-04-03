@@ -1,0 +1,109 @@
+region_cn,region_en,district_cn,district_en,parental_status,statistic_type,value
+,,中西區,Central and Western,single_father,median_age,49.4
+,,中西區,Central and Western,single_father,avg_dependent_children,1.2
+,,中西區,Central and Western,single_father,median_age_dependent_children,10.2
+,,中西區,Central and Western,single_mother,median_age,45.7
+,,中西區,Central and Western,single_mother,avg_dependent_children,1.3
+,,中西區,Central and Western,single_mother,median_age_dependent_children,11.0
+,,灣仔,Wan Chai,single_father,median_age,52.6
+,,灣仔,Wan Chai,single_father,avg_dependent_children,1.2
+,,灣仔,Wan Chai,single_father,median_age_dependent_children,11.0
+,,灣仔,Wan Chai,single_mother,median_age,43.4
+,,灣仔,Wan Chai,single_mother,avg_dependent_children,1.3
+,,灣仔,Wan Chai,single_mother,median_age_dependent_children,10.8
+,,東區,Eastern,single_father,median_age,45.4
+,,東區,Eastern,single_father,avg_dependent_children,1.3
+,,東區,Eastern,single_father,median_age_dependent_children,12.2
+,,東區,Eastern,single_mother,median_age,44.4
+,,東區,Eastern,single_mother,avg_dependent_children,1.4
+,,東區,Eastern,single_mother,median_age_dependent_children,12.1
+,,南區,Southern,single_father,median_age,46.4
+,,南區,Southern,single_father,avg_dependent_children,1.2
+,,南區,Southern,single_father,median_age_dependent_children,11.0
+,,南區,Southern,single_mother,median_age,44.5
+,,南區,Southern,single_mother,avg_dependent_children,1.4
+,,南區,Southern,single_mother,median_age_dependent_children,12.8
+,,油尖旺,Yau Tsim Mong,single_father,median_age,43.6
+,,油尖旺,Yau Tsim Mong,single_father,avg_dependent_children,1.2
+,,油尖旺,Yau Tsim Mong,single_father,median_age_dependent_children,12.1
+,,油尖旺,Yau Tsim Mong,single_mother,median_age,41.2
+,,油尖旺,Yau Tsim Mong,single_mother,avg_dependent_children,1.3
+,,油尖旺,Yau Tsim Mong,single_mother,median_age_dependent_children,8.6
+,,深水,Sham Shui Po,single_father,median_age,48.7
+,,深水,Sham Shui Po,single_father,avg_dependent_children,1.3
+,,深水,Sham Shui Po,single_father,median_age_dependent_children,13.0
+,,深水,Sham Shui Po,single_mother,median_age,43.9
+,,深水,Sham Shui Po,single_mother,avg_dependent_children,1.3
+,,深水,Sham Shui Po,single_mother,median_age_dependent_children,11.4
+,,九龍城,Kowloon City,single_father,median_age,46.4
+,,九龍城,Kowloon City,single_father,avg_dependent_children,1.2
+,,九龍城,Kowloon City,single_father,median_age_dependent_children,12.8
+,,九龍城,Kowloon City,single_mother,median_age,43.5
+,,九龍城,Kowloon City,single_mother,avg_dependent_children,1.3
+,,九龍城,Kowloon City,single_mother,median_age_dependent_children,12.1
+,,黃大仙,Wong Tai Sin,single_father,median_age,46.1
+,,黃大仙,Wong Tai Sin,single_father,avg_dependent_children,1.2
+,,黃大仙,Wong Tai Sin,single_father,median_age_dependent_children,12.5
+,,黃大仙,Wong Tai Sin,single_mother,median_age,42.7
+,,黃大仙,Wong Tai Sin,single_mother,avg_dependent_children,1.3
+,,黃大仙,Wong Tai Sin,single_mother,median_age_dependent_children,12.2
+,,觀塘,Kwun Tong,single_father,median_age,47.8
+,,觀塘,Kwun Tong,single_father,avg_dependent_children,1.2
+,,觀塘,Kwun Tong,single_father,median_age_dependent_children,13.3
+,,觀塘,Kwun Tong,single_mother,median_age,43.5
+,,觀塘,Kwun Tong,single_mother,avg_dependent_children,1.3
+,,觀塘,Kwun Tong,single_mother,median_age_dependent_children,12.5
+,,葵青,Kwai Tsing,single_father,median_age,45.9
+,,葵青,Kwai Tsing,single_father,avg_dependent_children,1.3
+,,葵青,Kwai Tsing,single_father,median_age_dependent_children,11.5
+,,葵青,Kwai Tsing,single_mother,median_age,41.6
+,,葵青,Kwai Tsing,single_mother,avg_dependent_children,1.4
+,,葵青,Kwai Tsing,single_mother,median_age_dependent_children,11.7
+,,荃灣,Tsuen Wan,single_father,median_age,46.2
+,,荃灣,Tsuen Wan,single_father,avg_dependent_children,1.3
+,,荃灣,Tsuen Wan,single_father,median_age_dependent_children,13.0
+,,荃灣,Tsuen Wan,single_mother,median_age,44.7
+,,荃灣,Tsuen Wan,single_mother,avg_dependent_children,1.5
+,,荃灣,Tsuen Wan,single_mother,median_age_dependent_children,12.4
+,,屯門,Tuen Mun,single_father,median_age,44.8
+,,屯門,Tuen Mun,single_father,avg_dependent_children,1.2
+,,屯門,Tuen Mun,single_father,median_age_dependent_children,12.3
+,,屯門,Tuen Mun,single_mother,median_age,41.2
+,,屯門,Tuen Mun,single_mother,avg_dependent_children,1.3
+,,屯門,Tuen Mun,single_mother,median_age_dependent_children,12.0
+,,元朗,Yuen Long,single_father,median_age,44.2
+,,元朗,Yuen Long,single_father,avg_dependent_children,1.3
+,,元朗,Yuen Long,single_father,median_age_dependent_children,12.1
+,,元朗,Yuen Long,single_mother,median_age,42.4
+,,元朗,Yuen Long,single_mother,avg_dependent_children,1.4
+,,元朗,Yuen Long,single_mother,median_age_dependent_children,11.4
+,,北區,North,single_father,median_age,44.9
+,,北區,North,single_father,avg_dependent_children,1.1
+,,北區,North,single_father,median_age_dependent_children,13.0
+,,北區,North,single_mother,median_age,41.6
+,,北區,North,single_mother,avg_dependent_children,1.4
+,,北區,North,single_mother,median_age_dependent_children,11.3
+,,大埔,Tai Po,single_father,median_age,44.3
+,,大埔,Tai Po,single_father,avg_dependent_children,1.5
+,,大埔,Tai Po,single_father,median_age_dependent_children,14.1
+,,大埔,Tai Po,single_mother,median_age,41.9
+,,大埔,Tai Po,single_mother,avg_dependent_children,1.3
+,,大埔,Tai Po,single_mother,median_age_dependent_children,10.9
+,,沙田,Sha Tin,single_father,median_age,45.4
+,,沙田,Sha Tin,single_father,avg_dependent_children,1.2
+,,沙田,Sha Tin,single_father,median_age_dependent_children,12.0
+,,沙田,Sha Tin,single_mother,median_age,43.1
+,,沙田,Sha Tin,single_mother,avg_dependent_children,1.3
+,,沙田,Sha Tin,single_mother,median_age_dependent_children,12.4
+,,西貢,Sai Kung,single_father,median_age,47.0
+,,西貢,Sai Kung,single_father,avg_dependent_children,1.2
+,,西貢,Sai Kung,single_father,median_age_dependent_children,10.7
+,,西貢,Sai Kung,single_mother,median_age,41.7
+,,西貢,Sai Kung,single_mother,avg_dependent_children,1.2
+,,西貢,Sai Kung,single_mother,median_age_dependent_children,11.1
+,,離島,Islands,single_father,median_age,48.4
+,,離島,Islands,single_father,avg_dependent_children,1.3
+,,離島,Islands,single_father,median_age_dependent_children,12.8
+,,離島,Islands,single_mother,median_age,41.2
+,,離島,Islands,single_mother,avg_dependent_children,1.5
+,,離島,Islands,single_mother,median_age_dependent_children,11.8

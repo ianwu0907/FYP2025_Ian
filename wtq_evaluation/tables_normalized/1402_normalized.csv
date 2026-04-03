@@ -1,0 +1,51 @@
+category,subgroup,age_group,metric_id,percent,ci_from,ci_to
+,17 to 19,17 to 19,1,43.0,37.0,50.0
+,17 to 19,17 to 19,2,20.0,15.0,25.0
+,20 to 22,20 to 22,1,46.0,39.0,52.0
+,20 to 22,20 to 22,2,21.0,16.0,26.0
+23 to 25,25 years or older,25 years or older,1,12.0,8.0,18.0
+23 to 25,25 years or older,25 years or older,2,,,
+visible minority status,visible minority,visible minority,1,29.0,22.0,38.0
+visible minority status,visible minority,visible minority,2,13.0,8.0,20.0
+visible minority status,not a visible minority,,1,36.0,33.0,41.0
+visible minority status,not a visible minority,,2,18.0,15.0,22.0
+indigenous,not indigenous,,1,36.0,33.0,40.0
+indigenous,not indigenous,,2,18.0,15.0,21.0
+sexual orientation,heterosexual,,1,33.0,30.0,37.0
+sexual orientation,heterosexual,,2,15.0,12.0,18.0
+sexual orientation,non-heterosexual,,1,62.0,47.0,74.0
+sexual orientation,non-heterosexual,,2,50.0,36.0,63.0
+religious affiliation,religious affiliation,,1,32.0,27.0,37.0
+religious affiliation,religious affiliation,,2,16.0,12.0,20.0
+religious affiliation,no religious affiliation,,1,39.0,34.0,44.0
+religious affiliation,no religious affiliation,,2,19.0,15.0,23.0
+disablility,living with a disability,,1,46.0,38.0,54.0
+disablility,living with a disability,,2,28.0,22.0,35.0
+disablility,not living with a disability,,1,32.0,28.0,36.0
+disablility,not living with a disability,,2,14.0,11.0,17.0
+marital status,single,,1,42.0,37.0,46.0
+marital status,single,,2,19.0,16.0,23.0
+marital status,married or common law,,1,14.0,10.0,20.0
+marital status,married or common law,,2,10.0,6.0,17.0
+marital status,"widowed, separated, divorced",,1,,,
+marital status,"widowed, separated, divorced",,2,,,
+dating status,not dating,,1,38.0,33.0,44.0
+dating status,not dating,,2,18.0,14.0,23.0
+dating status,dating relationship,,1,47.0,40.0,55.0
+dating status,dating relationship,,2,20.0,15.0,27.0
+dating status,dating casually,,1,36.0,23.0,50.0
+dating status,dating casually,,2,,,
+number of years at school,less than one year,,1,41.0,34.0,50.0
+number of years at school,less than one year,,2,20.0,14.0,29.0
+number of years at school,one or two years,,1,40.0,32.0,49.0
+number of years at school,one or two years,,2,15.0,10.0,22.0
+number of years at school,three or four years,,1,40.0,34.0,47.0
+number of years at school,three or four years,,2,19.0,14.0,24.0
+number of years at school,five or more years,,1,22.0,16.0,29.0
+number of years at school,five or more years,,2,15.0,10.0,21.0
+type of student in the past 12 months,full time,,1,38.0,34.0,41.0
+type of student in the past 12 months,full time,,2,18.0,15.0,21.0
+living arrangements,campus housing,,1,42.0,38.0,47.0
+living arrangements,campus housing,,2,19.0,16.0,23.0
+living arrangements,off campus,,1,11.0,7.0,18.0
+living arrangements,off campus,,2,,,

@@ -1,0 +1,41 @@
+category,measure_type,value
+custody,number,1652
+pre-trial detention,number,1583
+sentenced custody,number,69
+secure custody and supervision,number,31
+open custody and supervision,number,38
+community supervision,number,3988
+probation,number,2649
+deferred custody and supervision,number,93
+intensive support and supervision,number,27
+other community,number,1219
+custody,percent,29
+pre-trial detention,percent,28
+sentenced custody,percent,1
+secure custody and supervision,percent,1
+open custody and supervision,percent,1
+community supervision,percent,71
+probation,percent,47
+deferred custody and supervision,percent,2
+intensive support and supervision,percent,0
+other community,percent,22
+custody,percent change in the number from 2016/2017,-13
+pre-trial detention,percent change in the number from 2016/2017,-13
+sentenced custody,percent change in the number from 2016/2017,0
+secure custody and supervision,percent change in the number from 2016/2017,0
+open custody and supervision,percent change in the number from 2016/2017,0
+community supervision,percent change in the number from 2016/2017,-1
+probation,percent change in the number from 2016/2017,-4
+deferred custody and supervision,percent change in the number from 2016/2017,22
+intensive support and supervision,percent change in the number from 2016/2017,42
+other community,percent change in the number from 2016/2017,5
+custody,percent change in the number from 2013/2014,-25
+pre-trial detention,percent change in the number from 2013/2014,-25
+sentenced custody,percent change in the number from 2013/2014,-30
+secure custody and supervision,percent change in the number from 2013/2014,-24
+open custody and supervision,percent change in the number from 2013/2014,-35
+community supervision,percent change in the number from 2013/2014,-35
+probation,percent change in the number from 2013/2014,-38
+deferred custody and supervision,percent change in the number from 2013/2014,-18
+intensive support and supervision,percent change in the number from 2013/2014,59
+other community,percent change in the number from 2013/2014,-29

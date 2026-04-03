@@ -1,0 +1,109 @@
+jurisdiction,custody_or_sanction,component,metric_type,value
+newfoundland and labrador,sentenced custody,sentenced custody,number,1085.0
+newfoundland and labrador,sentenced custody,remand,number,719.0
+newfoundland and labrador,sentenced custody,other temporary custody,number,97.0
+newfoundland and labrador,sentenced custody,,percent,0.0
+newfoundland and labrador,community sanctions,probation,number,1427.0
+newfoundland and labrador,community sanctions,conditional sentences,number,436.0
+newfoundland and labrador,community sanctions,other,number,0.0
+newfoundland and labrador,community sanctions,,percent,-4.0
+newfoundland and labrador,change from 2012/2013,,percent,-2.0
+prince edward island,sentenced custody,sentenced custody,number,562.0
+prince edward island,sentenced custody,remand,number,216.0
+prince edward island,sentenced custody,other temporary custody,number,1.0
+prince edward island,sentenced custody,,percent,-3.0
+prince edward island,community sanctions,probation,number,912.0
+prince edward island,community sanctions,conditional sentences,number,19.0
+prince edward island,community sanctions,other,number,189.0
+prince edward island,community sanctions,,percent,0.0
+prince edward island,change from 2012/2013,,percent,-1.0
+nova scotia,sentenced custody,sentenced custody,number,2053.0
+nova scotia,sentenced custody,remand,number,3093.0
+nova scotia,sentenced custody,other temporary custody,number,257.0
+nova scotia,sentenced custody,,percent,-1.0
+nova scotia,community sanctions,probation,number,2863.0
+nova scotia,community sanctions,conditional sentences,number,771.0
+nova scotia,community sanctions,other,number,1170.0
+nova scotia,community sanctions,,percent,-7.0
+nova scotia,change from 2012/2013,,percent,-4.0
+new brunswick,sentenced custody,sentenced custody,number,2278.0
+new brunswick,sentenced custody,remand,number,2054.0
+new brunswick,sentenced custody,other temporary custody,number,467.0
+new brunswick,sentenced custody,,percent,-8.0
+new brunswick,community sanctions,probation,number,1677.0
+new brunswick,community sanctions,conditional sentences,number,488.0
+new brunswick,community sanctions,other,number,422.0
+new brunswick,community sanctions,,percent,-8.0
+new brunswick,change from 2012/2013,,percent,-8.0
+quebec,sentenced custody,sentenced custody,number,9752.0
+quebec,sentenced custody,remand,number,30556.0
+quebec,sentenced custody,other temporary custody,number,3253.0
+quebec,sentenced custody,,percent,2.0
+quebec,community sanctions,probation,number,9295.0
+quebec,community sanctions,conditional sentences,number,3016.0
+quebec,community sanctions,other,number,11070.0
+quebec,community sanctions,,percent,4.0
+quebec,change from 2012/2013,,percent,3.0
+ontario,sentenced custody,sentenced custody,number,27724.0
+ontario,sentenced custody,remand,number,48328.0
+ontario,sentenced custody,other temporary custody,number,4648.0
+ontario,sentenced custody,,percent,-9.0
+ontario,community sanctions,probation,number,31501.0
+ontario,community sanctions,conditional sentences,number,4271.0
+ontario,community sanctions,other,number,359.0
+ontario,community sanctions,,percent,-7.0
+ontario,change from 2012/2013,,percent,-8.0
+manitoba,sentenced custody,sentenced custody,number,6316.0
+manitoba,sentenced custody,remand,number,13123.0
+manitoba,sentenced custody,other temporary custody,number,7643.0
+manitoba,sentenced custody,,percent,-1.0
+manitoba,community sanctions,probation,number,8166.0
+manitoba,community sanctions,conditional sentences,number,1196.0
+manitoba,community sanctions,other,number,2063.0
+manitoba,community sanctions,,percent,3.0
+manitoba,change from 2012/2013,,percent,0.0
+saskatchewan,sentenced custody,sentenced custody,number,4501.0
+saskatchewan,sentenced custody,remand,number,6862.0
+saskatchewan,sentenced custody,other temporary custody,number,314.0
+saskatchewan,sentenced custody,,percent,3.0
+saskatchewan,community sanctions,probation,number,4113.0
+saskatchewan,community sanctions,conditional sentences,number,1547.0
+saskatchewan,community sanctions,other,number,4306.0
+saskatchewan,community sanctions,,percent,1.0
+saskatchewan,change from 2012/2013,,percent,2.0
+british columbia,sentenced custody,sentenced custody,number,9010.0
+british columbia,sentenced custody,remand,number,12155.0
+british columbia,sentenced custody,other temporary custody,number,1283.0
+british columbia,sentenced custody,,percent,-1.0
+british columbia,community sanctions,probation,number,9447.0
+british columbia,community sanctions,conditional sentences,number,2660.0
+british columbia,community sanctions,other,number,18937.0
+british columbia,community sanctions,,percent,-1.0
+british columbia,change from 2012/2013,,percent,-1.0
+yukon,sentenced custody,sentenced custody,number,240.0
+yukon,sentenced custody,remand,number,475.0
+yukon,sentenced custody,other temporary custody,number,20.0
+yukon,sentenced custody,,percent,-9.0
+yukon,community sanctions,probation,number,322.0
+yukon,community sanctions,conditional sentences,number,88.0
+yukon,community sanctions,other,number,727.0
+yukon,community sanctions,,percent,0.0
+yukon,change from 2012/2013,,percent,-4.0
+northwest territories,sentenced custody,sentenced custody,number,522.0
+northwest territories,sentenced custody,remand,number,459.0
+northwest territories,sentenced custody,other temporary custody,number,0.0
+northwest territories,sentenced custody,,percent,-6.0
+northwest territories,community sanctions,probation,number,342.0
+northwest territories,community sanctions,conditional sentences,number,56.0
+northwest territories,community sanctions,other,number,43.0
+northwest territories,community sanctions,,percent,-9.0
+northwest territories,change from 2012/2013,,percent,-7.0
+nunavut,sentenced custody,sentenced custody,number,561.0
+nunavut,sentenced custody,remand,number,472.0
+nunavut,sentenced custody,other temporary custody,number,0.0
+nunavut,sentenced custody,,percent,19.0
+nunavut,community sanctions,probation,number,353.0
+nunavut,community sanctions,conditional sentences,number,75.0
+nunavut,community sanctions,other,number,523.0
+nunavut,community sanctions,,percent,0.0
+nunavut,change from 2012/2013,,percent,9.0

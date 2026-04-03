@@ -1,0 +1,9 @@
+facet_count,model_spec,avg_marginal_effect
+one,model_1,0.01
+two,model_1,0.04
+three,model_1,0.09
+all,model_1,0.186
+one,model_2,0.047
+two,model_2,0.063
+three,model_2,0.095
+all,model_2,0.177

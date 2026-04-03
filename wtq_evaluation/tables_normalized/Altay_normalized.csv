@@ -1,0 +1,455 @@
+section,serial_number,material_type,grade,diameter,composition,unit,price
+,1,Low carbon hot-rolled,HPB300,Φ6.5,,t,3290.0
+,2,Low carbon hot-rolled,HPB300,Φ8,,t,3290.0
+,3,Low carbon hot-rolled,HPB300,Φ10,,t,3290.0
+,4,Low carbon hot-rolled,HPB300,Φ12,,t,3240.0
+,5,Low carbon hot-rolled,HPB300,Φ14,,t,3240.0
+,6,Low carbon,HPB300,Φ16,,t,3240.0
+,7,Hot-rolled round,HPB300,Φ10,,t,3400.0
+,8,Hot-rolled round,HPB300,Φ12,,t,3350.0
+,9,Hot-rolled round,HPB300,Φ14,,t,3350.0
+,10,Hot-rolled round,HPB300,Φ16,,t,3350.0
+,11,Hot-rolled round,HPB300,Φ18,,t,3500.0
+,12,Hot-rolled round,HPB300,Φ20,,t,3500.0
+,13,Hot-rolled round,HPB300,Φ22,,t,3500.0
+,14,Hot-rolled,HRB400E,Φ10,,t,3650.0
+,15,Hot-rolled,HRB400E,Φ12,,t,3600.0
+,16,Hot-rolled,HRB400E,Φ14,,t,3600.0
+,17,Hot-rolled,HRB400E,Φ16,,t,3350.0
+,18,Hot-rolled,HRB400E,Φ18,,t,3350.0
+,19,Hot-rolled,HRB400E,Φ20,,t,3350.0
+,20,Hot-rolled,HRB400E,Φ22,,t,3350.0
+,21,Hot-rolled,HRB400E,Φ25,,t,3350.0
+,22,Hot-rolled,HRB400E,Φ28,,t,3630.0
+,23,Hot-rolled,HRB400E,Φ30,,t,3630.0
+,24,Hot-rolled,HRB400E,Φ32,,t,3630.0
+,25,Hot-rolled and above,HRB400E,Φ36,,t,3730.0
+,26,Hot-rolled,HRB500E,Φ10,,t,3900.0
+,27,Hot-rolled,HRB500E,Φ12,,t,3850.0
+,28,Hot-rolled,HRB500E,Φ14,,t,3850.0
+,29,Hot-rolled,HRB500E,Φ16,,t,3600.0
+,30,Hot-rolled,HRB500E,Φ18,,t,3600.0
+,31,Hot-rolled,HRB500E,Φ20,,t,3600.0
+,32,Hot-rolled,HRB500E,Φ22,,t,3600.0
+,33,Hot-rolled,HRB500E,Φ25,,t,3600.0
+,34,Hot-rolled,HRB500E,Φ28,,t,3880.0
+,35,Hot-rolled,HRB500E,Φ30,,t,3880.0
+,36,Hot-rolled,HRB500E,Φ32,,t,3880.0
+,37,Hot-rolled and above,HRB500E,Φ36,,t,3980.0
+,38,Ribbed steel,HRB335E,Φ8,,t,3550.0
+,39,-14,HRB335E,Φ10,,t,3550.0
+,40,Ribbed steel,HRB400E,Φ8,,t,3800.0
+,41,-14,HRB400E,Φ10,,t,3800.0
+,44,Cold-rolled,,Φ5,,t,3350.0
+,45,Cold-rolled,,Φ6,,t,3350.0
+,46,Cold-rolled,,Φ7,,t,3350.0
+,47,Cold-rolled,,Φ8,,t,3350.0
+,48,Cold-rolled,,Φ9,,t,3450.0
+,49,Cold-rolled,,Φ10,,t,3450.0
+Sectional Materials,50,Hot-rolled I-beam I20a,,,,t,4500.0
+Sectional Materials,51,Hot-rolled I-beam I25a,,,,t,4500.0
+Sectional Materials,52,Hot-rolled I-beam I28a,,,,t,4500.0
+Sectional Materials,53,Hot-rolled channel,Q235,,,t,4060.0
+Sectional Materials,54,Hot-rolled channel,Q235,,,t,4060.0
+Sectional Materials,55,Hot-rolled channel 10,Q235,,,t,4060.0
+Sectional Materials,56,Hot-rolled channel 12,Q235,,,t,4060.0
+Sectional Materials,57,Hot-rolled channel 16a,Q235,,,t,4060.0
+Sectional Materials,58,Hot-rolled channel 20,Q235,,,t,4060.0
+Sectional Materials,59,Hot-rolled channel 28a,Q235,,,t,4060.0
+Sectional Materials,60,Hot-rolled unequal angle,Q235,63×40×4,,t,4000.0
+Sectional Materials,61,Hot-rolled unequal angle,Q235,75×50×6,,t,4000.0
+Sectional Materials,62,Hot-rolled unequal angle,Q235,80×50×6,,t,4000.0
+Sectional Materials,63,Hot-rolled unequal angle,Q235,90×56×6,,t,4000.0
+Sectional Materials,64,Hot-rolled unequal angle,Q235,100×60×10,,t,4000.0
+Sectional Materials,65,Hot-rolled unequal angle,Q235,100×63×6,,t,4000.0
+Sectional Materials,66,Hot-rolled unequal angle,Q235,100×63×8,,t,4000.0
+Sectional Materials,67,Hot-rolled unequal angle,Q235,100×63×10,,t,4210.0
+Sectional Materials,68,Hot-rolled unequal angle,Q235,100×75×10,,t,4210.0
+Sectional Materials,69,Hot-rolled unequal angle,Q235,100×80×6,,t,4210.0
+Sectional Materials,70,Hot-rolled unequal angle,Q235,100×80×7,,t,4210.0
+Sectional Materials,71,Hot-rolled unequal angle,Q235,110×70×6,,t,4210.0
+Sectional Materials,72,Hot-rolled unequal angle,Q235,110×70×8,,t,4410.0
+Sectional Materials,73,Hot-rolled unequal angle,Q235,125×80×7,,t,4410.0
+Sectional Materials,74,Hot-rolled unequal angle,Q235,125×80×8,,t,4410.0
+Sectional Materials,75,Hot-rolled unequal angle,Q235,125×80×10,,t,4410.0
+Sectional Materials,76,Hot-rolled unequal angle,Q235,140×90×10,,t,4410.0
+Sectional Materials,77,Hot-rolled unequal angle,Q235,140×90×12,,t,4410.0
+Sectional Materials,78,Hot-rolled unequal angle,Q235,160×100×10,,t,4410.0
+Sectional Materials,79,Hot-rolled unequal angle,Q235,160×100×12,,t,4410.0
+Sectional Materials,80,Hot-rolled unequal angle,Q235,180×110×10,,t,4410.0
+Sectional Materials,81,Hot-rolled unequal angle,Q235,180×110×12,,t,4410.0
+Sectional Materials,82,Hot-rolled unequal angle,Q235,200×125×12,,t,4410.0
+Sectional Materials,83,Equal Angle 20,Q235,,,t,3900.0
+Sectional Materials,84,Equal Angle 25,Q235,,,t,3900.0
+Sectional Materials,85,Equal Angle 25,Q235,,,t,3900.0
+Sectional Materials,86,Equal Angle 30,Q235,,,t,3900.0
+Sectional Materials,87,Equal Angle 30,Q235,,,t,3900.0
+Sectional Materials,88,Equal Angle 32,Q235,,,t,3900.0
+Sectional Materials,89,Equal Angle 32,Q235,,,t,3900.0
+Sectional Materials,90,Equal Angle 35,Q235,,,t,3900.0
+Sectional Materials,91,Equal Angle 36,Q235,,,t,3900.0
+Sectional Materials,92,Equal Angle 40,Q235,,,t,3900.0
+Sectional Materials,93,Equal Angle 40,Q235,,,t,3900.0
+Sectional Materials,94,Equal Angle 40,Q235,,,t,3900.0
+Sectional Materials,95,Equal Angle 45,Q235,,,t,3890.0
+Sectional Materials,96,Equal Angle 45,Q235,,,t,3890.0
+Sectional Materials,97,Equal Angle 45,Q235,,,t,3890.0
+Sectional Materials,98,Equal Angle 50,Q235,,,t,3890.0
+Sectional Materials,99,Equal Angle 50,Q235,,,t,3890.0
+Sectional Materials,100,Equal Angle 50,Q235,,,t,3890.0
+Sectional Materials,101,Equal Angle 56,Q235,,,t,3870.0
+Sectional Materials,102,Equal Angle 56,Q235,,,t,3870.0
+Sectional Materials,103,Equal Angle 56,Q235,,,t,3870.0
+Sectional Materials,104,Equal Angle 63,Q235,,,t,3860.0
+Sectional Materials,105,Equal Angle 63,Q235,,,t,3860.0
+Sectional Materials,106,Equal Angle 70,Q235,,,t,3860.0
+Sectional Materials,107,Equal Angle 70,Q235,,,t,3860.0
+Sectional Materials,108,Equal Angle 75,Q235,,,t,3860.0
+Sectional Materials,109,Equal Angle 75,Q235,,,t,3860.0
+Sectional Materials,110,Equal Angle 75,Q235,,,t,3860.0
+Sectional Materials,111,Equal Angle 80,Q235,,,t,4060.0
+Sectional Materials,112,Equal Angle 80,Q235,,,t,4060.0
+Sectional Materials,113,Equal Angle 80,Q235,,,t,4060.0
+Sectional Materials,114,Equal Angle 90,Q235,,,t,4060.0
+Sectional Materials,115,Equal Angle 90,Q235,,,t,4060.0
+Sectional Materials,116,Equal Angle 90 10,Q235,,,t,4060.0
+Sectional Materials,117,Equal Angle 100,Q235,,,t,4060.0
+Sectional Materials,118,Equal Angle 100 10,Q235,,,t,4060.0
+Sectional Materials,119,Equal Angle 100 16,Q235,,,t,4060.0
+Sectional Materials,120,Equal Angle 110,Q235,,,t,4060.0
+Sectional Materials,121,Equal Angle 125 14,Q235,,,t,4060.0
+Sectional Materials,122,Hot-rolled flat 12,Q235,,,t,3880.0
+Sectional Materials,123,Hot-rolled flat 14,Q235,,,t,3880.0
+Sectional Materials,124,Hot-rolled flat 14,Q235,,,t,3880.0
+Sectional Materials,125,Hot-rolled flat 14,Q235,,,t,3880.0
+Sectional Materials,126,Hot-rolled flat 14,Q235,,,t,3880.0
+Sectional Materials,127,Hot-rolled flat 16,Q235,,,t,3880.0
+Sectional Materials,128,Hot-rolled flat 20,Q235,,,t,3880.0
+Sectional Materials,129,Hot-rolled flat 20,Q235,,,t,3880.0
+Sectional Materials,130,Hot-rolled flat 24,Q235,,,t,3880.0
+Sectional Materials,131,Hot-rolled flat 25,Q235,,,t,3880.0
+Sectional Materials,132,Hot-rolled flat 25,Q235,,,t,3880.0
+Sectional Materials,133,Hot-rolled flat 25,Q235,,,t,3880.0
+Sectional Materials,134,Hot-rolled flat 25,Q235,,,t,3880.0
+Sectional Materials,135,Hot-rolled flat 30,Q235,,,t,3880.0
+Sectional Materials,136,Hot-rolled flat 30,Q235,,,t,3880.0
+Sectional Materials,137,Hot-rolled flat 30,Q235,,,t,3880.0
+Sectional Materials,138,Hot-rolled flat 30,Q235,,,t,3880.0
+Sectional Materials,139,Hot-rolled flat 32,Q235,,,t,3880.0
+Sectional Materials,140,Hot-rolled flat 35,Q235,,,t,3880.0
+Sectional Materials,141,Hot-rolled flat 36,Q235,,,t,3880.0
+Sectional Materials,142,Hot-rolled flat 40,Q235,,,t,3880.0
+Sectional Materials,143,Hot-rolled flat 40,Q235,,,t,3880.0
+Sectional Materials,144,Hot-rolled flat 40,Q235,,,t,3880.0
+Sectional Materials,145,Hot-rolled flat 45,Q235,,,t,3880.0
+Sectional Materials,146,Hot-rolled flat 50,Q235,,,t,3880.0
+Sectional Materials,147,Hot-rolled flat 50,Q235,,,t,3880.0
+Sectional Materials,148,Hot-rolled flat 50,Q235,,,t,3880.0
+Sectional Materials,149,Hot-rolled flat 60,Q235,,,t,3880.0
+Sectional Materials,150,Hot-rolled flat 65,Q235,,,t,3880.0
+Sectional Materials,151,Hot-rolled flat 70,Q235,,,t,3880.0
+Sectional Materials,152,Hot-rolled flat 100 10,Q235,,,t,3880.0
+Sectional Materials,153,Cold-rolled plate,Q235,δ1,,t,4510.0
+Sectional Materials,154,Hot-rolled plate,Q235,δ1.5,,t,4160.0
+Sectional Materials,155,Hot-rolled plate,Q235,δ2,,t,3910.0
+Sectional Materials,156,Hot-rolled plate,Q235,δ3,,t,3960.0
+Sectional Materials,157,Hot-rolled plate,Q235,δ4,,t,3860.0
+Sectional Materials,158,Hot-rolled plate,Q235,δ5,,t,3860.0
+Sectional Materials,159,Hot-rolled plate,Q235,δ6,,t,3860.0
+Sectional Materials,160,Hot-rolled plate,Q235,δ8,,t,3860.0
+Sectional Materials,161,Hot-rolled plate,Q235,δ10,,t,3860.0
+Sectional Materials,162,Hot-rolled plate,Q235,δ12,,t,3860.0
+Sectional Materials,163,Hot-rolled plate,Q235,δ14,,t,3860.0
+Sectional Materials,164,Hot-rolled plate,Q235,δ16,,t,3860.0
+Sectional Materials,165,Hot-rolled plate,Q235,δ18,,t,3860.0
+Sectional Materials,166,Hot-rolled plate,Q235,δ20,,t,3860.0
+Sectional Materials,167,Hot-rolled plate,Q235,δ24,,t,3860.0
+Sectional Materials,168,Hot-rolled plate,Q235,δ25,,t,3860.0
+Sectional Materials,169,Hot-rolled plate,Q235,δ28,,t,4110.0
+Sectional Materials,170,Hot-rolled plate,Q235,δ30,,t,4110.0
+Sectional Materials,171,Hot-rolled plate,Q235,δ35,,t,4110.0
+Sectional Materials,172,Hot-rolled plate,Q235,δ40,,t,4160.0
+Sectional Materials,173,Hot-rolled plate,Q235,δ42,,t,4160.0
+Sectional Materials,174,Hot-rolled plate,Q235,δ45,,t,4160.0
+Sectional Materials,175,Hot-rolled plate,Q235,δ50,,t,4260.0
+Sectional Materials,176,Hot-rolled plate,Q235,δ60,,t,4260.0
+Cement,177,Portland Silicate,32.5,,,t,300.0
+Cement,178,Ordinary Portland,42.5,,,t,400.0
+Cement,179,Ordinary Portland,52.5,,,t,620.0
+Concrete,180,Commercial,C10,,,m3,340.0
+Concrete,181,Commercial,C15,,,m3,360.0
+Concrete,182,Commercial,C20,,,m3,380.0
+Concrete,183,Commercial,C25,,,m3,400.0
+Concrete,184,Commercial,C30,,,m3,420.0
+Concrete,185,Commercial,C35,,,m3,445.0
+Concrete,186,Commercial,C40,,,m3,470.0
+Concrete,187,Commercial,C45,,,m3,495.0
+Concrete,188,Commercial,C50,,,m3,510.0
+Concrete,189,Commercial,C55,,,m3,540.0
+Concrete,190,Commercial,C60,,,m3,570.0
+Concrete,191,Asphalt concrete,AC-13,,,t,472.0
+Concrete,192,Asphalt concrete,AC-16,,,t,443.0
+Concrete,193,Asphalt concrete,AC-20,,,t,412.0
+Concrete,194,Asphalt concrete,AC-25,,,t,378.0
+Concrete,195,with polyester or lignin,SMA-13,,,t,819.0
+Concrete,196,with polyester or lignin,SMA-16,,,t,766.0
+"Brick, Sand, Stone",197,Perforated Hollow Blocks with,,,,m3,250.0
+"Brick, Sand, Stone",198,Autoclaved aerated blocks,,,,m3,250.0
+"Brick, Sand, Stone",199,Perforated brick,,,,thousand blocks,670.0
+"Brick, Sand, Stone",200,Masonry Sand,,,,m3,46.0
+"Brick, Sand, Stone",201,Plastering Sand,,,,m3,48.0
+"Brick, Sand, Stone",202,gravel,,,,m3,50.0
+"Brick, Sand, Stone",203,Gravel 10mm,,,,m3,50.0
+"Brick, Sand, Stone",204,gravel less than 10mm,,,,m3,50.0
+"Brick, Sand, Stone",205,Gravel 20mm,,,,m3,50.0
+"Brick, Sand, Stone",206,gravel 20mm and below,,,,m3,50.0
+"Brick, Sand, Stone",207,Gravel 40mm,,,,m3,48.0
+"Brick, Sand, Stone",208,gravel 40mm and below,,,,m3,48.0
+"Brick, Sand, Stone",209,Crushed stone 5mm,,,,m3,52.0
+"Brick, Sand, Stone",210,Crushed stone 10mm,,,,m3,52.0
+"Brick, Sand, Stone",211,Crushed stone 15mm,,,,m3,52.0
+"Brick, Sand, Stone",212,Crushed stone 20mm,,,,m3,52.0
+"Brick, Sand, Stone",213,Crushed stone 25mm,,,,m3,52.0
+"Brick, Sand, Stone",214,Crushed stone 30mm,,,,m3,52.0
+"Brick, Sand, Stone",215,Crushed stone 40mm,,,,m3,52.0
+"Brick, Sand, Stone",216,Crushed stone 50mm,,,,m3,52.0
+"Brick, Sand, Stone",217,Crushed stone 60mm,,,,m3,50.0
+"Brick, Sand, Stone",218,Crushed stone 70mm,,,,m3,50.0
+"Brick, Sand, Stone",219,Stabilized soil,,,,t,75.0
+"Brick, Sand, Stone",220,Stabilized soil,,,,t,77.0
+"Brick, Sand, Stone",221,Stabilized soil,,,,t,80.0
+Windows and Doors,222,60 Series Single Frame,,,,m2,275.0
+Windows and Doors,223,60 Series Single Frame,,,,m2,296.0
+Windows and Doors,224,65 Series Single Frame,,,,m2,317.0
+Windows and Doors,225,65 Series Single Frame,,,,m2,338.0
+Windows and Doors,226,65 Series Single Frame,,,,m2,348.0
+Windows and Doors,227,65 Series Single Frame,,,,m2,370.0
+Windows and Doors,228,65 Series Single Frame,,,,m2,575.0
+Windows and Doors,229,65 Series Single Frame,,,,m2,670.0
+Windows and Doors,230,65 Series Single Frame,,,,m2,1161.0
+Windows and Doors,231,EPDM Strip,,,Ethylene Propylene Diene Monomer,kg,23.0
+Insulation Material,232,Polystyrene Board Dry Density,B1 Grade,,Flame Retardant B1 Grade,m3,463.0
+Insulation Material,233,Extruded Polystyrene Board Dry,B1 Grade,,Flame Retardant B1 Grade,m3,790.0
+Insulation Material,235,Polymer powder for insulation,2.5,,,t,1735.0
+Insulation Material,236,Polymer cementitious mortar for,2.5,,,t,1790.0
+Waterproofing Materials,237,Self-adhesive polymer bitumen waterproof,,,,m2,39.1
+Waterproofing Materials,238,SBS Waterproof Roll Material,,35#,,m2,37.5
+Waterproofing Materials,239,SB and Polypropylene Waterproof,C120,,Polyethylene,m2,28.5
+Waterproofing Materials,240,Polymer Waterproof Coating JS,,,,kg,6.3
+Waterproofing Materials,241,Cement-based permeable crystalline waterproof,,,,kg,7.4
+Pipe Materials,242,Welded,,DN15,,t,4047.0
+Pipe Materials,243,Welded,,DN20,,t,4047.0
+Pipe Materials,244,Welded,,DN25,,t,3997.0
+Pipe Materials,245,Welded,,DN32,,t,3997.0
+Pipe Materials,246,Welded,,DN40,,t,3997.0
+Pipe Materials,247,Welded,,DN50,,t,3997.0
+Pipe Materials,248,Welded,,DN70,,t,3997.0
+Pipe Materials,249,Welded,,DN80,,t,3997.0
+Pipe Materials,250,Welded,,DN100,,t,4097.0
+Pipe Materials,251,Welded,,DN125,,t,4147.0
+Pipe Materials,252,Welded,,DN150,,t,4147.0
+Pipe Materials,253,Galvanized hot-dip galvanized,,DN15,,t,5227.0
+Pipe Materials,254,Galvanized hot-dip galvanized,,DN20,,t,5177.0
+Pipe Materials,255,Galvanized hot-dip galvanized,,DN25,,t,5027.0
+Pipe Materials,256,Galvanized hot-dip galvanized,,DN32,,t,4977.0
+Pipe Materials,257,Galvanized hot-dip galvanized,,DN40,,t,5027.0
+Pipe Materials,258,Galvanized hot-dip galvanized,,DN50,,t,4827.0
+Pipe Materials,259,Galvanized hot-dip galvanized,,DN70,,t,5027.0
+Pipe Materials,260,Galvanized hot-dip galvanized,,DN80,,t,5027.0
+Pipe Materials,261,Galvanized hot-dip galvanized,,DN100,,t,5027.0
+Pipe Materials,262,Galvanized hot-dip galvanized,,DN125,,t,5027.0
+Pipe Materials,263,Galvanized hot-dip galvanized,,DN150,,t,5027.0
+Pipe Materials,264,Hot-rolled seamless,,DN22,,t,5310.0
+Pipe Materials,265,Hot-rolled seamless,,DN25,,t,5310.0
+Pipe Materials,266,Hot-rolled seamless 25,,DN38,,t,5140.0
+Pipe Materials,267,Hot-rolled seamless,,DN42.5,,t,4640.0
+Pipe Materials,268,Hot-rolled seamless,,DN57,,t,4640.0
+Pipe Materials,269,Hot-rolled seamless,,DN89,,t,4940.0
+Pipe Materials,270,Hot-rolled seamless,,DN108,,t,4640.0
+Pipe Materials,271,Hot-rolled seamless,,DN219,,t,4840.0
+Pipe Materials,272,Hot-rolled seamless,,DN273,,t,5040.0
+Pipe Materials,273,Hot-rolled seamless,,DN325,,t,5040.0
+Pipe Materials,274,PP-R 25MPa Cold water,,De20,Random copolypropylene,m,2.004
+Pipe Materials,275,PP-R 25MPa Cold water,,De25,Random copolymer polypropylene,m,2.926
+Pipe Materials,276,PP-R 25MPa Cold water,,De32,Random copolypropylene,m,4.66
+Pipe Materials,277,PP-R 25MPa Cold water,,De40,Random copolymer polypropylene,m,7.411
+Pipe Materials,278,PP-R 25MPa Cold water,,De50,Random copolypropylene,m,11.496
+Pipe Materials,279,PP-R 25MPa Cold water,,De63,Random copolymer polypropylene,m,18.193
+Pipe Materials,280,PP-R 25MPa Cold water,,De75,Random copolypropylene,m,25.376
+Pipe Materials,281,PP-R 25MPa Cold water,,De90,Random copolymer polypropylene,m,36.8
+Pipe Materials,282,PP-R 25MPa 10 Cold,,De110,Random copolypropylene,m,54.545
+Pipe Materials,283,PP-R 6MPa Cold water,,De25,Random copolymer polypropylene,m,2.275
+Pipe Materials,284,PP-R 6MPa Cold water,,De25,Random copolypropylene,m,3.445
+Pipe Materials,285,PP-R 6MPa Cold water,,De32,Random copolymer polypropylene,m,5.634
+Pipe Materials,286,PP-R 6MPa Cold water,,De40,Random copolypropylene,m,8.777
+Pipe Materials,287,PP-R 6MPa Cold water,,De50,Random copolypropylene,m,13.642
+Pipe Materials,288,PP-R 6MPa Cold water,,De63,Random copolypropylene,m,21.779
+Pipe Materials,289,PP-R 6MPa Cold water,,De75,Random copolymer polypropylene,m,30.588
+Pipe Materials,290,PP-R 6MPa 10 Cold,,De90,Random copolypropylene,m,44.154
+Pipe Materials,291,PP-R 6MPa 12 Cold,,De110,Random copolymer polypropylene,m,65.587
+Pipe Materials,292,PP-R 0MPa water,,De20,Random copolypropylene,m,2.655
+Pipe Materials,293,PP-R 0MPa water,,De25,Random copolypropylene,m,4.15
+Pipe Materials,294,PP-R 0MPa water,,De32,Random copolypropylene,m,6.675
+Pipe Materials,295,PP-R 0MPa water,,De40,Random copolypropylene,m,10.391
+Pipe Materials,296,PP-R 0MPa water,,De50,Random copolypropylene,m,16.231
+Pipe Materials,297,PP-R 0MPa water,,De63,Random copolypropylene,m,25.517
+Pipe Materials,298,PP-R 0MPa 10 water,,De75,Random copolypropylene,m,36.342
+Pipe Materials,299,PP-R 0MPa 12 water,,De90,Random copolymer polypropylene,m,52.107
+Pipe Materials,300,PP-R 0MPa 15 water,,De110,Random copolypropylene,m,78.036
+Pipe Materials,301,PP-R 5MPa water,,De20,Random copolypropylene,m,3.11
+Pipe Materials,302,PP-R 5MPa water,,De25,Random copolypropylene,m,4.811
+Pipe Materials,303,PP-R 5MPa water,,De32,Random copolypropylene,m,7.866
+Pipe Materials,304,PP-R 5MPa water,,De40,Random copolypropylene,m,12.157
+Pipe Materials,305,PP-R 5MPa water,,De50,Random copolypropylene,m,18.875
+Pipe Materials,306,PP-R 5MPa 10 water,,De63,Random copolypropylene,m,29.992
+Pipe Materials,307,PP-R Steel,,De32,PP-R Steel Plastic Composite,m,32.497
+Pipe Materials,308,PP-R Steel,,De40,PP-R Steel Plastic Composite,m,48.378
+Pipe Materials,309,PP-R Steel,,De50,PP-R Steel Plastic Composite,m,73.264
+Pipe Materials,310,PP-R Steel,,De63,PP-R Steel Plastic Composite,m,98.264
+Pipe Materials,311,PP-R Steel,,De75,PP-R Steel Plastic Composite,m,125.543
+Pipe Materials,312,PP-R Steel,,De90,PP-R Steel Plastic Composite,m,177.18
+Pipe Materials,313,PP-R Steel,,De110,PP-R Steel Plastic Composite,m,250.0
+Pipe Materials,314,PP-R Steel,,De160,PP-R Steel Plastic Composite,m,472.05
+Pipe Materials,315,PP-R,,De20,aluminum-plastic,m,16.262
+Pipe Materials,316,PP-R,,De25,aluminum-plastic,m,23.136
+Pipe Materials,317,PP-R,,De32,aluminum-plastic,m,33.832
+Pipe Materials,318,PP-R,,De40,Aluminum-plastic,m,48.421
+Pipe Materials,319,PP-R,,De50,aluminum-plastic,m,70.04
+Pipe Materials,320,PP-R,,De63,Aluminum-plastic,m,106.239
+Pipe Materials,321,PP-R,,De75,Aluminum-plastic,m,161.967
+Pipe Materials,322,PP-R,,De90,Aluminum-plastic,m,227.162
+Pipe Materials,323,PP-R,,De110,aluminum-plastic,m,315.821
+Pipe Materials,324,Ductile Iron,,DN100,,m,91.971
+Pipe Materials,325,Ductile Iron,,DN200,,m,168.165
+Pipe Materials,326,Ductile Iron,,DN300,,m,279.986
+Pipe Materials,327,Ductile Iron,,DN400,,m,417.812
+Pipe Materials,328,Ductile Iron,,DN500,,m,579.909
+Pipe Materials,329,Ductile Iron,,DN600,,m,764.544
+Pipe Materials,330,Ductile Iron,,DN700,,m,973.45
+Pipe Materials,331,Ductile Iron,,DN800,,m,1208.361
+Pipe Materials,332,Ductile Iron,,DN1000,,m,1748.4
+Pipe Materials,333,for Water Supply PE100,,DN90,Polyethylene,m,23.466
+Pipe Materials,334,for Water Supply PE100,,DN110,Polyethylene,m,35.15
+Pipe Materials,335,for Water Supply PE100,,DN125,Polyethylene,m,45.362
+Pipe Materials,336,for Water Supply PE100,,DN140,Polyethylene,m,56.604
+Pipe Materials,337,for Water Supply PE100,,DN160,Polyethylene,m,74.166
+Pipe Materials,338,for Water Supply PE100,,DN180,Polyethylene,m,93.323
+Pipe Materials,339,for Water Supply PE100,,DN200,Polyethylene,m,115.635
+Pipe Materials,340,for Water Supply PE100,,DN225,Polyethylene,m,146.321
+Pipe Materials,341,for Water Supply PE100,,DN250,Polyethylene,m,179.114
+Pipe Materials,342,for Water Supply PE100,,DN280,Polyethylene,m,225.549
+Pipe Materials,343,for Water Supply PE100,,DN315,Polyethylene,m,284.424
+Pipe Materials,344,for Water Supply PE100,,DN355,Polyethylene,m,362.136
+Pipe Materials,345,for Water Supply PE100,,DN400,Polyethylene,m,459.229
+Pipe Materials,346,for Water Supply PE100,,DN450,Polyethylene,m,579.193
+Pipe Materials,347,for Water Supply PE100,,DN500,Polyethylene,m,723.3
+Pipe Materials,348,for Water Supply PE100,,DN560,Polyethylene,m,904.901
+Pipe Materials,349,for Water Supply PE100,,DN630,Polyethylene,m,1144.112
+Plumbing and Heating,350,radiator,,670×50×100,Steel-aluminum composite,Sheet,18.033
+Plumbing and Heating,351,radiator,,650×70×80,Steel-aluminum composite,Sheet,16.316
+Plumbing and Heating,352,radiator,,650×50×80,Steel-aluminum composite,Sheet,16.316
+Plumbing and Heating,353,radiator,,640×68×30,Steel-aluminum composite,Sheet,9.704
+Plumbing and Heating,354,radiator,,650×80×50,Steel-aluminum composite,Sheet,12.881
+Plumbing and Heating,355,radiator,,650×78×38,Steel-aluminum composite,Sheet,11.593
+Plumbing and Heating,356,radiator,,650×65×45,Steel-aluminum composite,Sheet,9.017
+Paint,357,-1 Alkyd Enamel 12,C03,,,kg,13.452
+Paint,358,-1 Alkyd Enamel,C03,,,kg,14.635
+Paint,359,-1 Alkyd Enamel 18,C03,,,kg,15.281
+Paint,360,-1 Alkyd Enamel 32,C03,,,kg,17.218
+Wires and Cables,361,BX1,,,Copper-core,m,1.107
+Wires and Cables,362,BX2,,,Copper-core,m,1.762
+Wires and Cables,363,BX4,,,Copper-core,m,2.9
+Wires and Cables,364,BX6,,,Copper-core,m,4.287
+Wires and Cables,365,BX10,,,Copper-core,m,7.081
+Wires and Cables,366,BX16,,,Copper-core,m,10.799
+Wires and Cables,367,BX25,,,Copper-core,m,17.428
+Wires and Cables,368,BX35,,,Copper-core,m,22.693
+Wires and Cables,369,BX50,,,Copper-core,m,32.277
+Wires and Cables,370,BLX2,,,Aluminum-core,m,0.655
+Wires and Cables,371,BLX4,,,Aluminum-core,m,0.924
+Wires and Cables,372,BLX6,,,Aluminum-core,m,1.214
+Wires and Cables,373,BLX10,,,Aluminum-core,m,2.224
+Wires and Cables,374,BLX16,,,Aluminum-core,m,3.095
+Wires and Cables,375,BLX25,,,Aluminum-core,m,4.846
+Wires and Cables,376,BLX35,,,Aluminum-core,m,6.114
+Wires and Cables,377,BLX50,,,Aluminum-core,m,8.005
+Wires and Cables,378,rubber-insulated BLX70,,,Aluminum-core,m,11.067
+Wires and Cables,379,BLX95,,,Aluminum-core,m,14.677
+Wires and Cables,380,BLX120,,,Aluminum-core,m,17.45
+Wires and Cables,381,PVC,BV,,Copper-core,m,0.967
+Wires and Cables,382,PVC,BV,,Copper-core,m,1.547
+Wires and Cables,383,Copper-core polyvinyl,BV,,Copper-core,m,2.525
+Wires and Cables,384,PVC,BV,,Copper-core,m,3.728
+Wires and Cables,385,10,BV,,Copper-core,m,6.157
+Wires and Cables,386,PVC 16,BV,,Copper-core,m,9.391
+Wires and Cables,387,25,BV,,Copper-core,m,15.161
+Wires and Cables,388,35,BV,,Copper-core,m,19.728
+Wires and Cables,389,50,BV,,Copper-core,m,28.066
+Wires and Cables,390,70,BV,,Copper-core,m,39.122
+Wires and Cables,391,95,BV,,Copper-core,m,53.09
+Wires and Cables,392,Aluminum-core plastic,BLV,,Aluminum-core,m,0.484
+Wires and Cables,393,Aluminum-core plastic,BLV,,Aluminum-core,m,0.655
+Wires and Cables,394,Aluminum-core plastic,BLV,,Aluminum-core,m,0.956
+Wires and Cables,395,Flame-retardant copper ZR-1,BV,,,m,0.999
+Wires and Cables,396,Flame-retardant copper ZR-2,BV,,,m,1.569
+Wires and Cables,397,Flame-retardant copper ZR-4,BV,,,m,2.579
+Wires and Cables,398,Flame-retardant copper ZR-6,BV,,,m,3.793
+Wires and Cables,399,Flame-retardant copper ZR-10,BV,,,m,6.264
+Wires and Cables,400,Flame-retardant copper ZR-16,BV,,,m,9.574
+Wires and Cables,401,Flame-retardant copper ZR-25,BV,,,m,15.451
+Wires and Cables,402,Flame-retardant copper ZR-35,BV,,,m,20.114
+Wires and Cables,403,Flame-retardant copper ZR-50,BV,,,m,28.613
+Wires and Cables,404,Flame-retardant copper ZR-70,BV,,,m,39.906
+Wires and Cables,405,Flame-retardant copper ZR-95,BV,,,m,54.132
+Wires and Cables,406,copper PVC -1,NH-BV,,Fire-resistant,m,1.074
+Wires and Cables,407,copper PVC -2,NH-BV,,Fire-resistant,m,1.676
+Wires and Cables,408,copper PVC -4,NH-BV,,Fire-resistant,m,2.751
+Wires and Cables,409,copper PVC -6,NH-BV,,Fire-resistant,m,4.094
+Wires and Cables,410,copper PVC -10,NH-BV,,Fire-resistant,m,6.769
+Wires and Cables,411,copper PVC -16,NH-BV,,Fire-resistant,m,10.347
+Wires and Cables,412,copper PVC -25,NH-BV,,Fire-resistant,m,16.676
+Wires and Cables,413,copper PVC -35,NH-BV,,Fire-resistant,m,21.694
+Wires and Cables,414,copper PVC -50,NH-BV,,Fire-resistant,m,30.87
+Wires and Cables,415,copper PVC -70,NH-BV,,Fire-resistant,m,43.055
+Wires and Cables,416,copper PVC -95,NH-BV,,Fire-resistant,m,58.387
+Wires and Cables,417,copper WL--1,BV,,Halogen-free,m,1.128
+Wires and Cables,418,copper WL--2,BV,,Halogen-free,m,1.719
+Wires and Cables,419,copper WL--4,BV,,Halogen-free,m,2.772
+Wires and Cables,420,copper WL--6,BV,,Halogen-free,m,4.051
+Wires and Cables,421,copper WL--10,BV,,Halogen-free,m,6.522
+Wires and Cables,422,copper WL--16,BV,,Halogen-free,m,9.821
+Wires and Cables,423,copper WL--25,BV,,Halogen-free,m,15.763
+Wires and Cables,424,copper WL--35,BV,,Halogen-free,m,20.458
+Wires and Cables,425,copper WL--50,BV,,Halogen-free,m,28.925
+Wires and Cables,426,copper WL--70,BV,,Halogen-free,m,40.046
+Wires and Cables,427,copper WL--95,BV,,Halogen-free,m,54.347
+Wires and Cables,428,copper -1,BYJ(F),,Irradiated plastic,m,1.16
+Wires and Cables,429,copper -2,BYJ(F),,Irradiated plastic,m,1.923
+Wires and Cables,430,copper -4,BYJ(F),,Irradiated plastic,m,3.073
+Wires and Cables,431,copper -6,BYJ(F),,Irradiated plastic,m,4.448
+Wires and Cables,432,copper -10,BYJ(F),,Irradiated plastic,m,7.285
+Wires and Cables,433,copper -16,BYJ(F),,Irradiated plastic,m,10.294
+Wires and Cables,434,copper -25,BYJ(F),,Irradiated plastic,m,16.547
+Wires and Cables,435,copper -35,BYJ(F),,Irradiated plastic,m,21.457
+Wires and Cables,436,copper -50,BYJ(F),,Irradiated plastic,m,30.376
+Wires and Cables,437,copper -70,BYJ(F),,Irradiated plastic,m,42.045
+Wires and Cables,438,copper -95,BYJ(F),,Irradiated plastic,m,57.055
+Wires and Cables,439,Cross-linked polyethylene,YJV,3*35+2*16,polyethylene,m,86.174
+Wires and Cables,440,Cross-linked polyethylene,YJV,3*50+2*25,polyethylene,m,125.5
+Wires and Cables,441,Cross-linked polyethylene,YJV,3*70+2*35,polyethylene,m,171.917
+Wires and Cables,442,Cross-linked polyethylene,YJV,3*25+1*16,polyethylene,m,60.816
+Wires and Cables,443,Cross-linked polyethylene,YJV,3*185+2*95,polyethylene,m,452.357
+Wires and Cables,444,Low Smoke WDZ YJE,,3*50+2*25,Halogen-Free,m,131.087
+Wires and Cables,445,Low Smoke WDZ YJE,,5*16,Halogen-Free,m,54.799
+Wires and Cables,446,Low Smoke WDZ YJE,,4*95,Halogen-Free,m,272.919
+Wires and Cables,447,Low Smoke WDZ YJE,,4*50,Halogen-Free,m,146.13
+"Water, electricity, oil",448,Water,,,,m3,2.13
+"Water, electricity, oil",449,Electricity,,,,kwh,0.55
+"Water, electricity, oil",450,Diesel,,0#,,kg,7.943
+"Water, electricity, oil",451,Diesel,,-10#,,kg,8.42
+"Water, electricity, oil",452,Diesel,,-20#,,kg,8.817
+"Water, electricity, oil",453,Diesel,,-35#,,kg,9.136
+"Water, electricity, oil",454,Gasoline,,90#,,kg,8.653
+"Water, electricity, oil",455,Gasoline,,93#,,kg,9.172
+"Water, electricity, oil",456,Gasoline,,97#,,kg,9.692
+"Water, electricity, oil",457,Petroleum,,90#,,t,5810.0

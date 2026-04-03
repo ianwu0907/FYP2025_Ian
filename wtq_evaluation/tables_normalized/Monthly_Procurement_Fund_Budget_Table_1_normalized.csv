@@ -1,0 +1,16 @@
+serial_number,name,category,planning_department,plan_month,period,metric_type,amount
+1,Name 1,Raw materials,Department 1,Unknown,,Monthly Planned Fund,78170.0
+1,Name 1,Raw materials,Department 1,Unknown,First ten days of the month,Monthly Planned Fund,
+1,Name 1,Raw materials,Department 1,Unknown,Mid-month,Monthly Planned Fund,
+1,Name 1,Raw materials,Department 1,Unknown,Lower Ten-day Period,Monthly Planned Fund,
+1,Name 1,Raw materials,Department 1,Unknown,,Last Month's Actual Procurement Amount,68500.0
+2,Name 2,Consumables,Department 2,Unknown,,Monthly Planned Fund,106225.0
+2,Name 2,Consumables,Department 2,Unknown,First ten days of the month,Monthly Planned Fund,
+2,Name 2,Consumables,Department 2,Unknown,Mid-month,Monthly Planned Fund,
+2,Name 2,Consumables,Department 2,Unknown,Lower Ten-day Period,Monthly Planned Fund,
+2,Name 2,Consumables,Department 2,Unknown,,Last Month's Actual Procurement Amount,113750.0
+3,Name 3,Tools and Equipment,Department 3,Unknown,,Monthly Planned Fund,61960.0
+3,Name 3,Tools and Equipment,Department 3,Unknown,First ten days of the month,Monthly Planned Fund,
+3,Name 3,Tools and Equipment,Department 3,Unknown,Mid-month,Monthly Planned Fund,
+3,Name 3,Tools and Equipment,Department 3,Unknown,Lower Ten-day Period,Monthly Planned Fund,
+3,Name 3,Tools and Equipment,Department 3,Unknown,,Last Month's Actual Procurement Amount,59000.0

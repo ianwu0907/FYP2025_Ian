@@ -1,0 +1,89 @@
+team,season,competition_type,competition_id,metric_type,value
+nan,nan,nan,1,apps,0
+nan,nan,nan,1,goals,0
+nan,nan,nan,2,apps,0
+nan,nan,nan,2,goals,0
+nan,nan,nan,3,apps,0
+nan,nan,nan,3,goals,0
+nan,nan,nan,4,apps,0
+nan,nan,nan,4,goals,0
+burslem port vale,1882-83,,1,apps,0
+burslem port vale,1882-83,,1,goals,0
+burslem port vale,1882-83,,2,apps,0
+burslem port vale,1882-83,,2,goals,0
+burslem port vale,1882-83,,3,apps,2
+burslem port vale,1882-83,,3,goals,1
+burslem port vale,1882-83,,4,apps,2
+burslem port vale,1882-83,,4,goals,1
+burslem port vale,1883-84,,1,apps,0
+burslem port vale,1883-84,,1,goals,0
+burslem port vale,1883-84,,2,apps,0
+burslem port vale,1883-84,,2,goals,0
+burslem port vale,1883-84,,3,apps,15
+burslem port vale,1883-84,,3,goals,12
+burslem port vale,1883-84,,4,apps,15
+burslem port vale,1883-84,,4,goals,12
+burslem port vale,1884-85,,1,apps,0
+burslem port vale,1884-85,,1,goals,0
+burslem port vale,1884-85,,2,apps,0
+burslem port vale,1884-85,,2,goals,0
+burslem port vale,1884-85,,3,apps,35
+burslem port vale,1884-85,,3,goals,21
+burslem port vale,1884-85,,4,apps,35
+burslem port vale,1884-85,,4,goals,21
+burslem port vale,1885-86,,1,apps,0
+burslem port vale,1885-86,,1,goals,0
+burslem port vale,1885-86,,2,apps,6
+burslem port vale,1885-86,,2,goals,4
+burslem port vale,1885-86,,3,apps,32
+burslem port vale,1885-86,,3,goals,18
+burslem port vale,1885-86,,4,apps,38
+burslem port vale,1885-86,,4,goals,22
+burslem port vale,1886-87,,1,apps,0
+burslem port vale,1886-87,,1,goals,0
+burslem port vale,1886-87,,2,apps,4
+burslem port vale,1886-87,,2,goals,3
+burslem port vale,1886-87,,3,apps,35
+burslem port vale,1886-87,,3,goals,20
+burslem port vale,1886-87,,4,apps,39
+burslem port vale,1886-87,,4,goals,23
+burslem port vale,1887-88,,1,apps,0
+burslem port vale,1887-88,,1,goals,0
+burslem port vale,1887-88,,2,apps,1
+burslem port vale,1887-88,,2,goals,0
+burslem port vale,1887-88,,3,apps,33
+burslem port vale,1887-88,,3,goals,11
+burslem port vale,1887-88,,4,apps,34
+burslem port vale,1887-88,,4,goals,11
+burslem port vale,1888-89,combination,1,apps,14
+burslem port vale,1888-89,combination,1,goals,4
+burslem port vale,1888-89,combination,2,apps,0
+burslem port vale,1888-89,combination,2,goals,0
+burslem port vale,1888-89,combination,3,apps,14
+burslem port vale,1888-89,combination,3,goals,3
+burslem port vale,1888-89,combination,4,apps,28
+burslem port vale,1888-89,combination,4,goals,7
+burslem port vale,1889-90,,1,apps,0
+burslem port vale,1889-90,,1,goals,0
+burslem port vale,1889-90,,2,apps,0
+burslem port vale,1889-90,,2,goals,0
+burslem port vale,1889-90,,3,apps,28
+burslem port vale,1889-90,,3,goals,7
+burslem port vale,1889-90,,4,apps,28
+burslem port vale,1889-90,,4,goals,7
+burslem port vale,1890-91,midland league,1,apps,2
+burslem port vale,1890-91,midland league,1,goals,0
+burslem port vale,1890-91,midland league,2,apps,0
+burslem port vale,1890-91,midland league,2,goals,0
+burslem port vale,1890-91,midland league,3,apps,0
+burslem port vale,1890-91,midland league,3,goals,0
+burslem port vale,1890-91,midland league,4,apps,2
+burslem port vale,1890-91,midland league,4,goals,0
+burslem port vale,1891-92,midland league,1,apps,0
+burslem port vale,1891-92,midland league,1,goals,0
+burslem port vale,1891-92,midland league,2,apps,0
+burslem port vale,1891-92,midland league,2,goals,0
+burslem port vale,1891-92,midland league,3,apps,1
+burslem port vale,1891-92,midland league,3,goals,0
+burslem port vale,1891-92,midland league,4,apps,1
+burslem port vale,1891-92,midland league,4,goals,0

@@ -1,0 +1,40 @@
+domain,subcategory,measurement_context,percentage,ci_from,ci_to
+None,none,1,36.1,27.9,45.2
+None,none,2,33.4,29.7,37.4
+None,none,3,61.5,55.9,66.9
+None,one,1,34.9,26.7,44.0
+None,one,2,27.6,23.7,32.0
+None,one,3,25.0,20.4,30.3
+None,two or more,1,29.1,21.5,38.0
+None,two or more,2,38.9,35.1,42.9
+None,two or more,3,13.4,10.4,17.2
+self-perceived physical health,excellent/very good,1,28.5,21.5,36.6
+self-perceived physical health,excellent/very good,2,28.9,25.2,32.9
+self-perceived physical health,excellent/very good,3,47.6,42.3,52.9
+self-perceived physical health,good,1,36.7,28.1,46.2
+self-perceived physical health,good,2,34.1,30.5,38.0
+self-perceived physical health,good,3,35.8,31.1,40.7
+self-perceived physical health,fair/poor,1,34.8,26.0,44.8
+self-perceived physical health,fair/poor,2,36.8,32.8,41.0
+self-perceived physical health,fair/poor,3,16.6,12.8,21.3
+self-perceived mental health,excellent/very good,1,15.9,10.7,23.0
+self-perceived mental health,excellent/very good,2,19.4,16.1,23.2
+self-perceived mental health,excellent/very good,3,50.8,45.8,55.8
+self-perceived mental health,good,1,31.6,23.4,41.1
+self-perceived mental health,good,2,32.2,28.4,36.1
+self-perceived mental health,good,3,40.1,35.0,45.5
+self-perceived mental health,fair/poor,1,52.5,43.6,61.2
+self-perceived mental health,fair/poor,2,48.4,44.3,52.6
+self-perceived mental health,fair/poor,3,9.0,6.8,11.8
+self-perceived life stress,not at all/not very stressful,1,9.1,5.7,14.2
+self-perceived life stress,not at all/not very stressful,2,11.4,8.9,14.5
+self-perceived life stress,not at all/not very stressful,3,33.6,28.5,39.1
+self-perceived life stress,a bit stressful,1,39.6,30.9,49.1
+self-perceived life stress,a bit stressful,2,37.6,33.8,41.6
+self-perceived life stress,a bit stressful,3,44.6,39.5,50.0
+self-perceived life stress,quite a bit/extremely stressful,1,51.2,41.6,60.7
+self-perceived life stress,quite a bit/extremely stressful,2,50.9,46.8,54.9
+self-perceived life stress,quite a bit/extremely stressful,3,21.7,17.3,27.0
+psychological distress score,high distress,1,90.6,84.6,94.4
+psychological distress score,high distress,2,79.1,75.8,82.1
+psychological distress score,high distress,3,33.7,29.0,38.8

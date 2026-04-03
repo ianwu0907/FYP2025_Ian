@@ -1,0 +1,46 @@
+requirement_type,requirement_category,cohort,percentage
+,level of education required,Cohort A,100.0
+,no minimum level of education sought,Cohort A,30.1
+,high school diploma or equivalent,Cohort A,30.0
+,apprenticeship or trades certificate or diploma,Cohort A,7.4
+,"college, cegep or other non-university certificate or diploma",Cohort A,15.4
+,university certificate or diploma below bachelor's degree,Cohort A,4.0
+,bachelor's degree,Cohort A,10.9
+,university certificate or diploma above bachelor's degree,Cohort A,2.2
+professional certification requested,yes,Cohort A,20.7
+professional certification requested,no,Cohort A,79.3
+work experience required,less than 1 year,Cohort A,46.9
+work experience required,1 year to less than 3 years,Cohort A,31.9
+work experience required,3 years to less than 5 years,Cohort A,9.8
+work experience required,5 years to less than 8 years,Cohort A,9.1
+work experience required,8 years or more,Cohort A,2.2
+,level of education required,Cohort B,20.9
+,no minimum level of education sought,Cohort B,22.5
+,high school diploma or equivalent,Cohort B,26.1
+,apprenticeship or trades certificate or diploma,Cohort B,9.6
+,"college, cegep or other non-university certificate or diploma",Cohort B,17.1
+,university certificate or diploma below bachelor's degree,Cohort B,3.8
+,bachelor's degree,Cohort B,16.6
+,university certificate or diploma above bachelor's degree,Cohort B,4.3
+professional certification requested,yes,Cohort B,31.3
+professional certification requested,no,Cohort B,68.7
+work experience required,less than 1 year,Cohort B,41.7
+work experience required,1 year to less than 3 years,Cohort B,28.5
+work experience required,3 years to less than 5 years,Cohort B,12.2
+work experience required,5 years to less than 8 years,Cohort B,13.7
+work experience required,8 years or more,Cohort B,3.9
+,level of education required,Cohort C,9.3
+,no minimum level of education sought,Cohort C,6.3
+,high school diploma or equivalent,Cohort C,8.5
+,apprenticeship or trades certificate or diploma,Cohort C,10.9
+,"college, cegep or other non-university certificate or diploma",Cohort C,11.2
+,university certificate or diploma below bachelor's degree,Cohort C,10.2
+,bachelor's degree,Cohort C,15.2
+,university certificate or diploma above bachelor's degree,Cohort C,18.6
+professional certification requested,yes,Cohort C,13.3
+professional certification requested,no,Cohort C,8.2
+work experience required,less than 1 year,Cohort C,7.9
+work experience required,1 year to less than 3 years,Cohort C,8.6
+work experience required,3 years to less than 5 years,Cohort C,12.2
+work experience required,5 years to less than 8 years,Cohort C,14.7
+work experience required,8 years or more,Cohort C,17.5

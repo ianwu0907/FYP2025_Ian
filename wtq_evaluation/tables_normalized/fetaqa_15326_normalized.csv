@@ -1,0 +1,15 @@
+year,competition_cn,competition_en,location,result,event,representation_era,time_value,time_hms,wind_mps,wind_flag,is_relay,is_wind_affected
+1986,,World Junior Championships,"Athens, Greece",2nd,4 × 100 m,East Germany,43.97,,,,True,False
+1987,,European Junior Championships,"Birmingham, England",1st,4 × 100 m,East Germany,44.62,,,,True,False
+1988,,World Junior Championships,"Greater Sudbury, Canada",2nd,100 m,East Germany,11.23,,-0.4,,False,True
+1988,,World Junior Championships,"Greater Sudbury, Canada",1st,200 m,East Germany,22.34,,2.3,w,False,True
+1988,,World Junior Championships,"Greater Sudbury, Canada",1st,4 × 100 m,East Germany,43.48,,,,True,False
+1988,,Olympic Games,"Seoul, South Korea",semi-final,200 m,East Germany,22.59,,,,False,False
+1990,,European Championships,"Split, Yugoslavia",1st,100 m,East Germany,10.89,,1.8,,False,True
+1990,,European Championships,"Split, Yugoslavia",1st,200 m,East Germany,21.95,,0.3,,False,True
+1990,,European Championships,"Split, Yugoslavia",1st,4 × 100 m,East Germany,41.68,,,,True,False
+1991,,World Indoor Championships,"Seville, Spain",6th,60 m,Germany,7.2,,,,False,False
+1991,,World Championships,"Tokyo, Japan",1st,100 m,Germany,10.99,,,,False,False
+1991,,World Championships,"Tokyo, Japan",1st,200 m,Germany,22.09,,,,False,False
+1991,,World Championships,"Tokyo, Japan",3rd,4 × 100 m,Germany,42.33,,,,True,False
+1991,,World Championships,"Tokyo, Japan",3rd,4 × 400 m,Germany,201.25,3:21.25,,,True,False

@@ -1,0 +1,49 @@
+metric,month,value,unit
+Precipitation,1,31.8,mm
+Precipitation,2,29.9,mm
+Precipitation,3,43.7,mm
+Precipitation,4,57.0,mm
+Precipitation,5,43.9,mm
+Precipitation,6,57.6,mm
+Precipitation,7,50.7,mm
+Precipitation,8,41.4,mm
+Precipitation,9,44.1,mm
+Precipitation,10,42.6,mm
+Precipitation,11,55.6,mm
+Precipitation,12,42.0,mm
+Avg. precipitation,1,13.5,days
+Avg. precipitation,2,11.3,days
+Avg. precipitation,3,11.9,days
+Avg. precipitation,4,9.3,days
+Avg. precipitation,5,6.9,days
+Avg. precipitation,6,6.2,days
+Avg. precipitation,7,4.7,days
+Avg. precipitation,8,3.3,days
+Avg. precipitation,9,6.5,days
+Avg. precipitation,10,9.6,days
+Avg. precipitation,11,8.9,days
+Avg. precipitation,12,11.5,days
+% humidity,1,77.9,%
+% humidity,2,75.0,%
+% humidity,3,73.3,%
+% humidity,4,73.7,%
+% humidity,5,74.8,%
+% humidity,6,72.5,%
+% humidity,7,69.7,%
+% humidity,8,69.4,%
+% humidity,9,73.1,%
+% humidity,10,77.6,%
+% humidity,11,78.1,%
+% humidity,12,79.0,%
+Mean monthly sunshine,1,96.1,hours
+Mean monthly sunshine,2,117.6,hours
+Mean monthly sunshine,3,164.3,hours
+Mean monthly sunshine,4,201.0,hours
+Mean monthly sunshine,5,275.9,hours
+Mean monthly sunshine,6,300.0,hours
+Mean monthly sunshine,7,319.3,hours
+Mean monthly sunshine,8,319.3,hours
+Mean monthly sunshine,9,219.0,hours
+Mean monthly sunshine,10,170.5,hours
+Mean monthly sunshine,11,105.0,hours
+Mean monthly sunshine,12,86.8,hours

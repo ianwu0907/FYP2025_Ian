@@ -1,0 +1,199 @@
+school_name,cohort,metric_type,value
+Xiamen University Affiliated High School,A,enrolled,435
+Xiamen University Affiliated High School,A,graduated,360
+Xiamen University Affiliated High School,A,admitted_to_key_universities,313
+Xiamen University Affiliated High School,B,enrolled,311
+Xiamen University Affiliated High School,B,graduated,122
+Xiamen University Affiliated High School,B,admitted_to_key_universities,119
+Zhangzhou Liren School,A,enrolled,786
+Zhangzhou Liren School,A,graduated,610
+Zhangzhou Liren School,A,admitted_to_key_universities,551
+Zhangzhou Liren School,B,enrolled,547
+Zhangzhou Liren School,B,graduated,235
+Zhangzhou Liren School,B,admitted_to_key_universities,226
+Zhangzhou Experimental Middle School,A,enrolled,527
+Zhangzhou Experimental Middle School,A,graduated,403
+Zhangzhou Experimental Middle School,A,admitted_to_key_universities,404
+Zhangzhou Experimental Middle School,B,enrolled,394
+Zhangzhou Experimental Middle School,B,graduated,123
+Zhangzhou Experimental Middle School,B,admitted_to_key_universities,113
+Zhangzhou No.1 Middle School,A,enrolled,775
+Zhangzhou No.1 Middle School,A,graduated,527
+Zhangzhou No.1 Middle School,A,admitted_to_key_universities,570
+Zhangzhou No.1 Middle School,B,enrolled,547
+Zhangzhou No.1 Middle School,B,graduated,205
+Zhangzhou No.1 Middle School,B,admitted_to_key_universities,193
+Zhangpu No.1 High School,A,enrolled,803
+Zhangpu No.1 High School,A,graduated,546
+Zhangpu No.1 High School,A,admitted_to_key_universities,492
+Zhangpu No.1 High School,B,enrolled,483
+Zhangpu No.1 High School,B,graduated,311
+Zhangpu No.1 High School,B,admitted_to_key_universities,298
+Zhangzhou Zhengxing School,A,enrolled,732
+Zhangzhou Zhengxing School,A,graduated,441
+Zhangzhou Zhengxing School,A,admitted_to_key_universities,500
+Zhangzhou Zhengxing School,B,enrolled,494
+Zhangzhou Zhengxing School,B,graduated,232
+Zhangzhou Zhengxing School,B,admitted_to_key_universities,215
+Shi Shang Zhangzhou Campus,A,enrolled,327
+Shi Shang Zhangzhou Campus,A,graduated,188
+Shi Shang Zhangzhou Campus,A,admitted_to_key_universities,203
+Shi Shang Zhangzhou Campus,B,enrolled,202
+Shi Shang Zhangzhou Campus,B,graduated,124
+Shi Shang Zhangzhou Campus,B,admitted_to_key_universities,116
+Longhai No.1 High School,A,enrolled,705
+Longhai No.1 High School,A,graduated,349
+Longhai No.1 High School,A,admitted_to_key_universities,485
+Longhai No.1 High School,B,enrolled,460
+Longhai No.1 High School,B,graduated,220
+Longhai No.1 High School,B,admitted_to_key_universities,197
+Zhangzhou Foreign Language School,A,enrolled,430
+Zhangzhou Foreign Language School,A,graduated,167
+Zhangzhou Foreign Language School,A,admitted_to_key_universities,321
+Zhangzhou Foreign Language School,B,enrolled,284
+Zhangzhou Foreign Language School,B,graduated,109
+Zhangzhou Foreign Language School,B,admitted_to_key_universities,72
+Pinghe Zhengxing School,A,enrolled,797
+Pinghe Zhengxing School,A,graduated,295
+Pinghe Zhengxing School,A,admitted_to_key_universities,471
+Pinghe Zhengxing School,B,enrolled,409
+Pinghe Zhengxing School,B,graduated,326
+Pinghe Zhengxing School,B,admitted_to_key_universities,254
+Yunxiao No.1 High School,A,enrolled,709
+Yunxiao No.1 High School,A,graduated,245
+Yunxiao No.1 High School,A,admitted_to_key_universities,493
+Yunxiao No.1 High School,B,enrolled,469
+Yunxiao No.1 High School,B,graduated,216
+Yunxiao No.1 High School,B,admitted_to_key_universities,170
+Zhangzhou Liren School,A,enrolled,286
+Zhangzhou Liren School,A,graduated,87
+Zhangzhou Liren School,A,admitted_to_key_universities,207
+Zhangzhou Liren School,B,enrolled,164
+Zhangzhou Liren School,B,graduated,79
+Zhangzhou Liren School,B,admitted_to_key_universities,49
+Zhao'an No.1 High School,A,enrolled,705
+Zhao'an No.1 High School,A,graduated,161
+Zhao'an No.1 High School,A,admitted_to_key_universities,455
+Zhao'an No.1 High School,B,enrolled,393
+Zhao'an No.1 High School,B,graduated,250
+Zhao'an No.1 High School,B,admitted_to_key_universities,152
+Liren High School Affiliated Center,A,enrolled,603
+Liren High School Affiliated Center,A,graduated,132
+Liren High School Affiliated Center,A,admitted_to_key_universities,467
+Liren High School Affiliated Center,B,enrolled,380
+Liren High School Affiliated Center,B,graduated,136
+Liren High School Affiliated Center,B,admitted_to_key_universities,84
+Nanjing No.1 High School,A,enrolled,631
+Nanjing No.1 High School,A,graduated,119
+Nanjing No.1 High School,A,admitted_to_key_universities,363
+Nanjing No.1 High School,B,enrolled,274
+Nanjing No.1 High School,B,graduated,268
+Nanjing No.1 High School,B,admitted_to_key_universities,129
+Dongshan No.2 High School,A,enrolled,326
+Dongshan No.2 High School,A,graduated,49
+Dongshan No.2 High School,A,admitted_to_key_universities,169
+Dongshan No.2 High School,B,enrolled,91
+Dongshan No.2 High School,B,graduated,157
+Dongshan No.2 High School,B,admitted_to_key_universities,51
+Zhangpu Liren School,A,enrolled,627
+Zhangpu Liren School,A,graduated,93
+Zhangpu Liren School,A,admitted_to_key_universities,329
+Zhangpu Liren School,B,enrolled,280
+Zhangpu Liren School,B,graduated,298
+Zhangpu Liren School,B,admitted_to_key_universities,152
+Zhangzhou Lixing Examination Tutorial School,A,enrolled,434
+Zhangzhou Lixing Examination Tutorial School,A,graduated,61
+Zhangzhou Lixing Examination Tutorial School,A,admitted_to_key_universities,216
+Zhangzhou Lixing Examination Tutorial School,B,enrolled,136
+Zhangzhou Lixing Examination Tutorial School,B,graduated,218
+Zhangzhou Lixing Examination Tutorial School,B,admitted_to_key_universities,25
+Dongshan No.1 High School,A,enrolled,480
+Dongshan No.1 High School,A,graduated,65
+Dongshan No.1 High School,A,admitted_to_key_universities,283
+Dongshan No.1 High School,B,enrolled,188
+Dongshan No.1 High School,B,graduated,197
+Dongshan No.1 High School,B,admitted_to_key_universities,73
+Pinghe No.1 High School,A,enrolled,789
+Pinghe No.1 High School,A,graduated,104
+Pinghe No.1 High School,A,admitted_to_key_universities,389
+Pinghe No.1 High School,B,enrolled,259
+Pinghe No.1 High School,B,graduated,400
+Pinghe No.1 High School,B,admitted_to_key_universities,172
+Zhangzhou No.3 Middle School,A,enrolled,387
+Zhangzhou No.3 Middle School,A,graduated,51
+Zhangzhou No.3 Middle School,A,admitted_to_key_universities,239
+Zhangzhou No.3 Middle School,B,enrolled,203
+Zhangzhou No.3 Middle School,B,graduated,148
+Zhangzhou No.3 Middle School,B,admitted_to_key_universities,85
+Changtai No.1 High School,A,enrolled,440
+Changtai No.1 High School,A,graduated,49
+Changtai No.1 High School,A,admitted_to_key_universities,321
+Changtai No.1 High School,B,enrolled,194
+Changtai No.1 High School,B,graduated,119
+Changtai No.1 High School,B,admitted_to_key_universities,54
+Zhengxing High School Tutoring Center,A,enrolled,395
+Zhengxing High School Tutoring Center,A,graduated,39
+Zhengxing High School Tutoring Center,A,admitted_to_key_universities,197
+Zhengxing High School Tutoring Center,B,enrolled,145
+Zhengxing High School Tutoring Center,B,graduated,198
+Zhengxing High School Tutoring Center,B,admitted_to_key_universities,63
+Yunxiao Liren School,A,enrolled,277
+Yunxiao Liren School,A,graduated,27
+Yunxiao Liren School,A,admitted_to_key_universities,208
+Yunxiao Liren School,B,enrolled,164
+Yunxiao Liren School,B,graduated,69
+Yunxiao Liren School,B,admitted_to_key_universities,26
+Tai Shang Jiaomei Middle School,A,enrolled,332
+Tai Shang Jiaomei Middle School,A,graduated,28
+Tai Shang Jiaomei Middle School,A,admitted_to_key_universities,205
+Tai Shang Jiaomei Middle School,B,enrolled,119
+Tai Shang Jiaomei Middle School,B,graduated,127
+Tai Shang Jiaomei Middle School,B,admitted_to_key_universities,37
+Zhangzhou Kangqiao School,A,enrolled,432
+Zhangzhou Kangqiao School,A,graduated,28
+Zhangzhou Kangqiao School,A,admitted_to_key_universities,266
+Zhangzhou Kangqiao School,B,enrolled,126
+Zhangzhou Kangqiao School,B,graduated,166
+Zhangzhou Kangqiao School,B,admitted_to_key_universities,44
+Huaan No.1 High School,A,enrolled,309
+Huaan No.1 High School,A,graduated,19
+Huaan No.1 High School,A,admitted_to_key_universities,208
+Huaan No.1 High School,B,enrolled,89
+Huaan No.1 High School,B,graduated,101
+Huaan No.1 High School,B,admitted_to_key_universities,24
+Longhai No.2 High School,A,enrolled,474
+Longhai No.2 High School,A,graduated,29
+Longhai No.2 High School,A,admitted_to_key_universities,304
+Longhai No.2 High School,B,enrolled,236
+Longhai No.2 High School,B,graduated,170
+Longhai No.2 High School,B,admitted_to_key_universities,94
+Zhangpu Daozhou High School,A,enrolled,446
+Zhangpu Daozhou High School,A,graduated,19
+Zhangpu Daozhou High School,A,admitted_to_key_universities,265
+Zhangpu Daozhou High School,B,enrolled,203
+Zhangpu Daozhou High School,B,graduated,181
+Zhangpu Daozhou High School,B,admitted_to_key_universities,89
+Hain School,A,enrolled,121
+Hain School,A,graduated,5
+Hain School,A,admitted_to_key_universities,52
+Hain School,B,enrolled,30
+Hain School,B,graduated,69
+Hain School,B,admitted_to_key_universities,26
+Longwen High School,A,enrolled,330
+Longwen High School,A,graduated,12
+Longwen High School,A,admitted_to_key_universities,254
+Longwen High School,B,enrolled,94
+Longwen High School,B,graduated,76
+Longwen High School,B,admitted_to_key_universities,13
+Changtai No.2 High School,A,enrolled,151
+Changtai No.2 High School,A,graduated,5
+Changtai No.2 High School,A,admitted_to_key_universities,87
+Changtai No.2 High School,B,enrolled,39
+Changtai No.2 High School,B,graduated,64
+Changtai No.2 High School,B,admitted_to_key_universities,14
+Zhangzhou No.1 Foreign Languages School,A,enrolled,153
+Zhangzhou No.1 Foreign Languages School,A,graduated,5
+Zhangzhou No.1 Foreign Languages School,A,admitted_to_key_universities,84
+Zhangzhou No.1 Foreign Languages School,B,enrolled,54
+Zhangzhou No.1 Foreign Languages School,B,graduated,69
+Zhangzhou No.1 Foreign Languages School,B,admitted_to_key_universities,25

@@ -1,0 +1,22 @@
+offence_category,jurisdiction_group,number,rate
+failure to comply with conditions,group_1,4880,405
+failure to comply with conditions,group_2,2074,182
+failure to comply with conditions,group_4,942,40
+escape custody,group_1,126,10
+escape custody,group_2,13,1
+escape custody,group_4,9,0
+prisoner unlawfully at large,group_1,93,8
+prisoner unlawfully at large,group_2,12,1
+prisoner unlawfully at large,group_4,9,0
+failure to attend court,group_1,894,74
+failure to attend court,group_2,446,39
+failure to attend court,group_4,51,2
+breach of probation,group_1,1013,84
+breach of probation,group_2,292,26
+breach of probation,group_4,459,20
+other offences against the administration of law and justice,group_1,120,10
+other offences against the administration of law and justice,group_2,78,7
+other offences against the administration of law and justice,group_4,310,13
+youth criminal justice act,group_1,2709,225
+youth criminal justice act,group_2,1084,95
+youth criminal justice act,group_4,592,25

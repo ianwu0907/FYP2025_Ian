@@ -1,0 +1,35 @@
+indicator_group,indicator_label,group_id,gender,percent
+canadian marginalization index: material deprivation,1 - least deprived quintile,Group A,male,8.0
+canadian marginalization index: material deprivation,1 - least deprived quintile,Group A,female,6.0
+canadian marginalization index: material deprivation,1 - least deprived quintile,Group B,male,13.0
+canadian marginalization index: material deprivation,1 - least deprived quintile,Group B,female,13.0
+canadian marginalization index: material deprivation,2,Group A,male,12.0
+canadian marginalization index: material deprivation,2,Group A,female,13.0
+canadian marginalization index: material deprivation,2,Group B,male,15.0
+canadian marginalization index: material deprivation,2,Group B,female,15.0
+canadian marginalization index: material deprivation,3,Group A,male,13.0
+canadian marginalization index: material deprivation,3,Group A,female,13.0
+canadian marginalization index: material deprivation,3,Group B,male,16.0
+canadian marginalization index: material deprivation,3,Group B,female,16.0
+canadian marginalization index: material deprivation,4,Group A,male,26.0
+canadian marginalization index: material deprivation,4,Group A,female,21.0
+canadian marginalization index: material deprivation,4,Group B,male,21.0
+canadian marginalization index: material deprivation,4,Group B,female,22.0
+canadian marginalization index: material deprivation,5 - most deprived quintile,Group A,male,41.0
+canadian marginalization index: material deprivation,5 - most deprived quintile,Group A,female,48.0
+canadian marginalization index: material deprivation,5 - most deprived quintile,Group B,male,34.0
+canadian marginalization index: material deprivation,5 - most deprived quintile,Group B,female,34.0
+"income characteristics of 16 and 17 year olds, 2009",non-child tax filer,Group A,male,9.0
+"income characteristics of 16 and 17 year olds, 2009",non-child tax filer,Group A,female,20.0
+"income characteristics of 16 and 17 year olds, 2009",non-child tax filer,Group B,male,5.0
+"income characteristics of 16 and 17 year olds, 2009",non-child tax filer,Group B,female,6.0
+"income characteristics of 16 and 17 year olds, 2009",low-income family,Group A,male,31.0
+"income characteristics of 16 and 17 year olds, 2009",low-income family,Group A,female,50.0
+"income characteristics of 16 and 17 year olds, 2009",low-income family,Group B,male,20.0
+"income characteristics of 16 and 17 year olds, 2009",low-income family,Group B,female,23.0
+"income characteristics of 16 and 17 year olds, 2009",reporting employment earnings,Group A,male,32.0
+"income characteristics of 16 and 17 year olds, 2009",reporting employment earnings,Group A,female,33.0
+"income characteristics of 16 and 17 year olds, 2009",reporting employment earnings,Group B,male,31.0
+"income characteristics of 16 and 17 year olds, 2009",reporting employment earnings,Group B,female,33.0
+"income characteristics of 16 and 17 year olds, 2009",reporting government transfers,Group B,male,1.0
+"income characteristics of 16 and 17 year olds, 2009",reporting government transfers,Group B,female,1.0

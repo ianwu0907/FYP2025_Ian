@@ -1,0 +1,31 @@
+sector,metric_type,period_id,value
+Agricultural,Volume (thousand tons),1,273.0
+Agricultural,Value (billion rials),1,772.6
+Manufacturing and Metal,Volume (thousand tons),1,6443.8
+Manufacturing and Metal,Value (billion rials),1,58044.2
+Oil and Petrochemical,Volume (thousand tons),1,89.7
+Oil and Petrochemical,Value (billion rials),1,352.7
+Agricultural,Volume (thousand tons),2,173.5
+Agricultural,Value (billion rials),2,3729.7
+Manufacturing and Metal,Volume (thousand tons),2,6679.7
+Manufacturing and Metal,Value (billion rials),2,62120.6
+Oil and Petrochemical,Volume (thousand tons),2,4339.2
+Oil and Petrochemical,Value (billion rials),2,19921.0
+Agricultural,Volume (thousand tons),3,175.2
+Agricultural,Value (billion rials),3,484.8
+Manufacturing and Metal,Volume (thousand tons),3,7438.5
+Manufacturing and Metal,Value (billion rials),3,53842.0
+Oil and Petrochemical,Volume (thousand tons),3,7052.9
+Oil and Petrochemical,Value (billion rials),3,36450.7
+Agricultural,Volume (thousand tons),4,1633.9
+Agricultural,Value (billion rials),4,3729.0
+Manufacturing and Metal,Volume (thousand tons),4,8694.0
+Manufacturing and Metal,Value (billion rials),4,75235.5
+Oil and Petrochemical,Volume (thousand tons),4,6662.6
+Oil and Petrochemical,Value (billion rials),4,41478.0
+Agricultural,Volume (thousand tons),5,550.0
+Agricultural,Value (billion rials),5,3793.0
+Manufacturing and Metal,Volume (thousand tons),5,11685.0
+Manufacturing and Metal,Value (billion rials),5,102356.0
+Oil and Petrochemical,Volume (thousand tons),5,8117.0
+Oil and Petrochemical,Value (billion rials),5,64370.0

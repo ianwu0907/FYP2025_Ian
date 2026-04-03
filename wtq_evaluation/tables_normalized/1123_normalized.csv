@@ -1,0 +1,118 @@
+region,cohort_type,value_type,value
+canada,linked_cctlp,number_a,6070.0
+canada,surgical_intervention,number_b,5745.0
+canada,surgical_intervention,percent,94.7
+canada,linked_cctlp,number_a,5120.0
+canada,surgical_intervention,number_b,4775.0
+canada,surgical_intervention,percent,93.3
+canada,linked_cctlp,number_a,1360.0
+canada,surgical_intervention,number_b,1170.0
+canada,surgical_intervention,percent,86.1
+newfoundland and labrador,linked_cctlp,number_a,125.0
+newfoundland and labrador,surgical_intervention,number_b,125.0
+newfoundland and labrador,surgical_intervention,percent,100.0
+newfoundland and labrador,linked_cctlp,number_a,145.0
+newfoundland and labrador,surgical_intervention,number_b,145.0
+newfoundland and labrador,surgical_intervention,percent,98.6
+newfoundland and labrador,linked_cctlp,number_a,45.0
+newfoundland and labrador,surgical_intervention,number_b,40.0
+newfoundland and labrador,surgical_intervention,percent,93.3
+prince edward island,linked_cctlp,number_a,10.0
+prince edward island,surgical_intervention,number_b,10.0
+prince edward island,surgical_intervention,percent,100.0
+prince edward island,linked_cctlp,number_a,15.0
+prince edward island,surgical_intervention,number_b,10.0
+prince edward island,surgical_intervention,percent,80.0
+prince edward island,linked_cctlp,number_a,5.0
+prince edward island,surgical_intervention,number_b,5.0
+prince edward island,surgical_intervention,percent,100.0
+nova scotia,linked_cctlp,number_a,140.0
+nova scotia,surgical_intervention,number_b,135.0
+nova scotia,surgical_intervention,percent,96.4
+nova scotia,linked_cctlp,number_a,160.0
+nova scotia,surgical_intervention,number_b,160.0
+nova scotia,surgical_intervention,percent,98.8
+nova scotia,linked_cctlp,number_a,55.0
+nova scotia,surgical_intervention,number_b,50.0
+nova scotia,surgical_intervention,percent,92.9
+new brunswick,linked_cctlp,number_a,140.0
+new brunswick,surgical_intervention,number_b,145.0
+new brunswick,surgical_intervention,percent,100.0
+new brunswick,linked_cctlp,number_a,215.0
+new brunswick,surgical_intervention,number_b,215.0
+new brunswick,surgical_intervention,percent,98.6
+new brunswick,linked_cctlp,number_a,50.0
+new brunswick,surgical_intervention,number_b,45.0
+new brunswick,surgical_intervention,percent,81.1
+ontario,linked_cctlp,number_a,4095.0
+ontario,surgical_intervention,number_b,3855.0
+ontario,surgical_intervention,percent,94.1
+ontario,linked_cctlp,number_a,3380.0
+ontario,surgical_intervention,number_b,3115.0
+ontario,surgical_intervention,percent,92.2
+ontario,linked_cctlp,number_a,830.0
+ontario,surgical_intervention,number_b,715.0
+ontario,surgical_intervention,percent,86.5
+manitoba,linked_cctlp,number_a,185.0
+manitoba,surgical_intervention,number_b,170.0
+manitoba,surgical_intervention,percent,90.9
+manitoba,linked_cctlp,number_a,145.0
+manitoba,surgical_intervention,number_b,140.0
+manitoba,surgical_intervention,percent,94.6
+manitoba,linked_cctlp,number_a,45.0
+manitoba,surgical_intervention,number_b,40.0
+manitoba,surgical_intervention,percent,84.4
+saskatchewan,linked_cctlp,number_a,135.0
+saskatchewan,surgical_intervention,number_b,135.0
+saskatchewan,surgical_intervention,percent,98.5
+saskatchewan,linked_cctlp,number_a,105.0
+saskatchewan,surgical_intervention,number_b,100.0
+saskatchewan,surgical_intervention,percent,96.2
+saskatchewan,linked_cctlp,number_a,35.0
+saskatchewan,surgical_intervention,number_b,30.0
+saskatchewan,surgical_intervention,percent,80.0
+alberta,linked_cctlp,number_a,720.0
+alberta,surgical_intervention,number_b,695.0
+alberta,surgical_intervention,percent,96.7
+alberta,linked_cctlp,number_a,495.0
+alberta,surgical_intervention,number_b,470.0
+alberta,surgical_intervention,percent,94.5
+alberta,linked_cctlp,number_a,125.0
+alberta,surgical_intervention,number_b,105.0
+alberta,surgical_intervention,percent,85.5
+british columbia,linked_cctlp,number_a,505.0
+british columbia,surgical_intervention,number_b,470.0
+british columbia,surgical_intervention,percent,93.5
+british columbia,linked_cctlp,number_a,450.0
+british columbia,surgical_intervention,number_b,420.0
+british columbia,surgical_intervention,percent,92.9
+british columbia,linked_cctlp,number_a,165.0
+british columbia,surgical_intervention,number_b,140.0
+british columbia,surgical_intervention,percent,83.1
+yukon,linked_cctlp,number_a,
+yukon,surgical_intervention,number_b,
+yukon,surgical_intervention,percent,0.0
+yukon,linked_cctlp,number_a,
+yukon,surgical_intervention,number_b,
+yukon,surgical_intervention,percent,100.0
+yukon,linked_cctlp,number_a,
+yukon,surgical_intervention,number_b,
+yukon,surgical_intervention,percent,100.0
+northwest territories,linked_cctlp,number_a,
+northwest territories,surgical_intervention,number_b,
+northwest territories,surgical_intervention,percent,0.0
+northwest territories,linked_cctlp,number_a,
+northwest territories,surgical_intervention,number_b,
+northwest territories,surgical_intervention,percent,100.0
+northwest territories,linked_cctlp,number_a,0.0
+northwest territories,surgical_intervention,number_b,0.0
+northwest territories,surgical_intervention,percent,0.0
+nunavut,linked_cctlp,number_a,
+nunavut,surgical_intervention,number_b,
+nunavut,surgical_intervention,percent,0.0
+nunavut,linked_cctlp,number_a,
+nunavut,surgical_intervention,number_b,
+nunavut,surgical_intervention,percent,100.0
+nunavut,linked_cctlp,number_a,
+nunavut,surgical_intervention,number_b,
+nunavut,surgical_intervention,percent,0.0

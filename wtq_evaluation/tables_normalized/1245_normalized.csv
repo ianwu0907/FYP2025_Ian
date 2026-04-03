@@ -1,0 +1,265 @@
+city,metric_type,index_variant,time_delta,value
+st. john's,number,,,207695.0
+st. john's,index,A,,79.2
+st. john's,percent_change,A,2015_to_2016,7.0
+st. john's,percent_change,A,2006_to_2016,-14.0
+st. john's,index,B,,88.9
+st. john's,percent_change,B,2015_to_2016,11.0
+st. john's,index,C,,75.5
+st. john's,percent_change,C,2015_to_2016,5.0
+halifax,number,,,426083.0
+halifax,index,A,,61.0
+halifax,percent_change,A,2015_to_2016,-4.0
+halifax,percent_change,A,2006_to_2016,-50.0
+halifax,index,B,,77.3
+halifax,percent_change,B,2015_to_2016,-5.0
+halifax,index,C,,55.0
+halifax,percent_change,C,2015_to_2016,-3.0
+moncton,number,,,157321.0
+moncton,index,A,,75.7
+moncton,percent_change,A,2015_to_2016,-4.0
+moncton,percent_change,A,2006_to_2016,
+moncton,index,B,,79.3
+moncton,percent_change,B,2015_to_2016,7.0
+moncton,index,C,,74.2
+moncton,percent_change,C,2015_to_2016,-7.0
+saint john,number,,,127930.0
+saint john,index,A,,52.7
+saint john,percent_change,A,2015_to_2016,-6.0
+saint john,percent_change,A,2006_to_2016,
+saint john,index,B,,63.8
+saint john,percent_change,B,2015_to_2016,-3.0
+saint john,index,C,,48.5
+saint john,percent_change,C,2015_to_2016,-7.0
+saguenay,number,,,167054.0
+saguenay,index,A,,56.9
+saguenay,percent_change,A,2015_to_2016,6.0
+saguenay,percent_change,A,2006_to_2016,-2.0
+saguenay,index,B,,67.7
+saguenay,percent_change,B,2015_to_2016,10.0
+saguenay,index,C,,52.9
+saguenay,percent_change,C,2015_to_2016,4.0
+quebec,number,,,800570.0
+quebec,index,A,,45.2
+quebec,percent_change,A,2015_to_2016,8.0
+quebec,percent_change,A,2006_to_2016,-38.0
+quebec,index,B,,51.5
+quebec,percent_change,B,2015_to_2016,17.0
+quebec,index,C,,42.8
+quebec,percent_change,C,2015_to_2016,4.0
+sherbrooke,number,,,199344.0
+sherbrooke,index,A,,50.3
+sherbrooke,percent_change,A,2015_to_2016,1.0
+sherbrooke,percent_change,A,2006_to_2016,-38.0
+sherbrooke,index,B,,55.6
+sherbrooke,percent_change,B,2015_to_2016,25.0
+sherbrooke,index,C,,48.2
+sherbrooke,percent_change,C,2015_to_2016,-6.0
+trois-rivieres,number,,,156649.0
+trois-rivieres,index,A,,48.7
+trois-rivieres,percent_change,A,2015_to_2016,-14.0
+trois-rivieres,percent_change,A,2006_to_2016,-34.0
+trois-rivieres,index,B,,46.2
+trois-rivieres,percent_change,B,2015_to_2016,-23.0
+trois-rivieres,index,C,,49.5
+trois-rivieres,percent_change,C,2015_to_2016,-10.0
+montreal,number,,,4102619.0
+montreal,index,A,,57.8
+montreal,percent_change,A,2015_to_2016,-5.0
+montreal,percent_change,A,2006_to_2016,-44.0
+montreal,index,B,,73.1
+montreal,percent_change,B,2015_to_2016,-4.0
+montreal,index,C,,52.1
+montreal,percent_change,C,2015_to_2016,-5.0
+gatineau,number,,,331114.0
+gatineau,index,A,,56.7
+gatineau,percent_change,A,2015_to_2016,6.0
+gatineau,percent_change,A,2006_to_2016,-34.0
+gatineau,index,B,,63.8
+gatineau,percent_change,B,2015_to_2016,15.0
+gatineau,index,C,,54.0
+gatineau,percent_change,C,2015_to_2016,3.0
+ottawa,number,,,1013615.0
+ottawa,index,A,,51.3
+ottawa,percent_change,A,2015_to_2016,10.0
+ottawa,percent_change,A,2006_to_2016,-37.0
+ottawa,index,B,,62.1
+ottawa,percent_change,B,2015_to_2016,15.0
+ottawa,index,C,,47.2
+ottawa,percent_change,C,2015_to_2016,8.0
+kingston,number,,,167773.0
+kingston,index,A,,55.2
+kingston,percent_change,A,2015_to_2016,-2.0
+kingston,percent_change,A,2006_to_2016,-30.0
+kingston,index,B,,38.5
+kingston,percent_change,B,2015_to_2016,-29.0
+kingston,index,C,,61.2
+kingston,percent_change,C,2015_to_2016,7.0
+peterborough,number,,,123555.0
+peterborough,index,A,,55.1
+peterborough,percent_change,A,2015_to_2016,0.0
+peterborough,percent_change,A,2006_to_2016,-31.0
+peterborough,index,B,,68.9
+peterborough,percent_change,B,2015_to_2016,20.0
+peterborough,index,C,,50.0
+peterborough,percent_change,C,2015_to_2016,-7.0
+toronto,number,,,6184845.0
+toronto,index,A,,47.5
+toronto,percent_change,A,2015_to_2016,4.0
+toronto,percent_change,A,2006_to_2016,-35.0
+toronto,index,B,,70.4
+toronto,percent_change,B,2015_to_2016,8.0
+toronto,index,C,,39.1
+toronto,percent_change,C,2015_to_2016,2.0
+hamilton,number,,,760381.0
+hamilton,index,A,,53.6
+hamilton,percent_change,A,2015_to_2016,6.0
+hamilton,percent_change,A,2006_to_2016,-37.0
+hamilton,index,B,,66.0
+hamilton,percent_change,B,2015_to_2016,20.0
+hamilton,index,C,,49.0
+hamilton,percent_change,C,2015_to_2016,0.0
+st. catharines-niagara,number,,,453817.0
+st. catharines-niagara,index,A,,50.3
+st. catharines-niagara,percent_change,A,2015_to_2016,-4.0
+st. catharines-niagara,percent_change,A,2006_to_2016,-41.0
+st. catharines-niagara,index,B,,37.6
+st. catharines-niagara,percent_change,B,2015_to_2016,-11.0
+st. catharines-niagara,index,C,,54.9
+st. catharines-niagara,percent_change,C,2015_to_2016,-1.0
+kitchener-cambridge-waterloo,number,,,548936.0
+kitchener-cambridge-waterloo,index,A,,61.2
+kitchener-cambridge-waterloo,percent_change,A,2015_to_2016,1.0
+kitchener-cambridge-waterloo,percent_change,A,2006_to_2016,-23.0
+kitchener-cambridge-waterloo,index,B,,60.1
+kitchener-cambridge-waterloo,percent_change,B,2015_to_2016,8.0
+kitchener-cambridge-waterloo,index,C,,61.4
+kitchener-cambridge-waterloo,percent_change,C,2015_to_2016,-1.0
+brantford,number,,,146557.0
+brantford,index,A,,86.8
+brantford,percent_change,A,2015_to_2016,13.0
+brantford,percent_change,A,2006_to_2016,-24.0
+brantford,index,B,,88.4
+brantford,percent_change,B,2015_to_2016,27.0
+brantford,index,C,,86.0
+brantford,percent_change,C,2015_to_2016,8.0
+guelph,number,,,132350.0
+guelph,index,A,,54.6
+guelph,percent_change,A,2015_to_2016,9.0
+guelph,percent_change,A,2006_to_2016,-9.0
+guelph,index,B,,49.1
+guelph,percent_change,B,2015_to_2016,1.0
+guelph,index,C,,56.5
+guelph,percent_change,C,2015_to_2016,12.0
+london,number,,,515409.0
+london,index,A,,68.4
+london,percent_change,A,2015_to_2016,5.0
+london,percent_change,A,2006_to_2016,-33.0
+london,index,B,,59.4
+london,percent_change,B,2015_to_2016,5.0
+london,index,C,,71.5
+london,percent_change,C,2015_to_2016,5.0
+windsor,number,,,334859.0
+windsor,index,A,,65.1
+windsor,percent_change,A,2015_to_2016,4.0
+windsor,percent_change,A,2006_to_2016,-27.0
+windsor,index,B,,58.1
+windsor,percent_change,B,2015_to_2016,-12.0
+windsor,index,C,,67.6
+windsor,percent_change,C,2015_to_2016,11.0
+barrie,number,,,216661.0
+barrie,index,A,,45.4
+barrie,percent_change,A,2015_to_2016,5.0
+barrie,percent_change,A,2006_to_2016,-42.0
+barrie,index,B,,46.3
+barrie,percent_change,B,2015_to_2016,6.0
+barrie,index,C,,45.0
+barrie,percent_change,C,2015_to_2016,4.0
+greater sudbury,number,,,165154.0
+greater sudbury,index,A,,63.5
+greater sudbury,percent_change,A,2015_to_2016,7.0
+greater sudbury,percent_change,A,2006_to_2016,-29.0
+greater sudbury,index,B,,61.4
+greater sudbury,percent_change,B,2015_to_2016,-5.0
+greater sudbury,index,C,,64.2
+greater sudbury,percent_change,C,2015_to_2016,12.0
+thunder bay,number,,,120520.0
+thunder bay,index,A,,85.9
+thunder bay,percent_change,A,2015_to_2016,6.0
+thunder bay,percent_change,A,2006_to_2016,-23.0
+thunder bay,index,B,,125.6
+thunder bay,percent_change,B,2015_to_2016,4.0
+thunder bay,index,C,,71.2
+thunder bay,percent_change,C,2015_to_2016,8.0
+winnipeg,number,,,795643.0
+winnipeg,index,A,,103.9
+winnipeg,percent_change,A,2015_to_2016,16.0
+winnipeg,percent_change,A,2006_to_2016,-37.0
+winnipeg,index,B,,149.6
+winnipeg,percent_change,B,2015_to_2016,20.0
+winnipeg,index,C,,87.0
+winnipeg,percent_change,C,2015_to_2016,14.0
+regina,number,,,247634.0
+regina,index,A,,125.8
+regina,percent_change,A,2015_to_2016,15.0
+regina,percent_change,A,2006_to_2016,-36.0
+regina,index,B,,124.1
+regina,percent_change,B,2015_to_2016,14.0
+regina,index,C,,126.2
+regina,percent_change,C,2015_to_2016,15.0
+saskatoon,number,,,320527.0
+saskatoon,index,A,,117.8
+saskatoon,percent_change,A,2015_to_2016,5.0
+saskatoon,percent_change,A,2006_to_2016,-29.0
+saskatoon,index,B,,114.0
+saskatoon,percent_change,B,2015_to_2016,1.0
+saskatoon,index,C,,118.9
+saskatoon,percent_change,C,2015_to_2016,6.0
+calgary,number,,,1474624.0
+calgary,index,A,,74.6
+calgary,percent_change,A,2015_to_2016,-6.0
+calgary,percent_change,A,2006_to_2016,-23.0
+calgary,index,B,,61.3
+calgary,percent_change,B,2015_to_2016,-16.0
+calgary,index,C,,79.3
+calgary,percent_change,C,2015_to_2016,-2.0
+edmonton,number,,,1387281.0
+edmonton,index,A,,105.7
+edmonton,percent_change,A,2015_to_2016,3.0
+edmonton,percent_change,A,2006_to_2016,-19.0
+edmonton,index,B,,102.5
+edmonton,percent_change,B,2015_to_2016,-2.0
+edmonton,index,C,,106.7
+edmonton,percent_change,C,2015_to_2016,5.0
+kelowna,number,,,196940.0
+kelowna,index,A,,100.3
+kelowna,percent_change,A,2015_to_2016,0.0
+kelowna,percent_change,A,2006_to_2016,-29.0
+kelowna,index,B,,62.7
+kelowna,percent_change,B,2015_to_2016,-15.0
+kelowna,index,C,,113.7
+kelowna,percent_change,C,2015_to_2016,4.0
+abbotsford-mission,number,,,186274.0
+abbotsford-mission,index,A,,91.4
+abbotsford-mission,percent_change,A,2015_to_2016,-5.0
+abbotsford-mission,percent_change,A,2006_to_2016,-36.0
+abbotsford-mission,index,B,,82.3
+abbotsford-mission,percent_change,B,2015_to_2016,-8.0
+abbotsford-mission,index,C,,94.4
+abbotsford-mission,percent_change,C,2015_to_2016,-4.0
+vancouver,number,,,2551096.0
+vancouver,index,A,,94.3
+vancouver,percent_change,A,2015_to_2016,-1.0
+vancouver,percent_change,A,2006_to_2016,-32.0
+vancouver,index,B,,72.8
+vancouver,percent_change,B,2015_to_2016,-14.0
+vancouver,index,C,,102.0
+vancouver,percent_change,C,2015_to_2016,3.0
+victoria,number,,,371057.0
+victoria,index,A,,63.8
+victoria,percent_change,A,2015_to_2016,-12.0
+victoria,percent_change,A,2006_to_2016,-45.0
+victoria,index,B,,56.8
+victoria,percent_change,B,2015_to_2016,-18.0
+victoria,index,C,,66.2
+victoria,percent_change,C,2015_to_2016,-9.0

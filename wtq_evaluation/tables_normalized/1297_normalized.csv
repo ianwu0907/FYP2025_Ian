@@ -1,0 +1,57 @@
+entry_type,entity,year,metric,value_type,value
+one-year entry,alu,2011,employment_creation_rate,numbers,166580.0
+one-year entry,ilu,2011,employment_creation_rate,,305671.0
+one-year entry,alu,2012,employment_creation_rate,,262475.0
+one-year entry,ilu,2012,employment_creation_rate,,378678.0
+one-year entry,br,,employment,,130932.0
+one-year entry,pd7,,pd7,,235252.0
+one-year entry,pd7,,pd7,,138428.0
+two-year entry,alu,2011,employment_creation_rate,numbers,147340.0
+two-year entry,ilu,2011,employment_creation_rate,,258774.0
+two-year entry,alu,2012,employment_creation_rate,,262475.0
+two-year entry,ilu,2012,employment_creation_rate,,378678.0
+two-year entry,br,,employment,,
+two-year entry,pd7,,pd7,,214572.0
+two-year entry,pd7,,pd7,,126482.0
+short-lived entry,alu,2011,employment_creation_rate,numbers,19240.0
+short-lived entry,ilu,2011,employment_creation_rate,,46897.0
+short-lived entry,alu,2012,employment_creation_rate,,0.0
+short-lived entry,ilu,2012,employment_creation_rate,,0.0
+short-lived entry,br,,employment,,
+short-lived entry,pd7,,pd7,,20680.0
+short-lived entry,pd7,,pd7,,11947.0
+previously active excluded,alu,2011,employment_creation_rate,numbers,150488.0
+previously active excluded,ilu,2011,employment_creation_rate,,277297.0
+previously active excluded,alu,2012,employment_creation_rate,,247819.0
+previously active excluded,ilu,2012,employment_creation_rate,,355144.0
+previously active excluded,br,,employment,,
+previously active excluded,pd7,,pd7,,220805.0
+previously active excluded,pd7,,pd7,,127594.0
+ever previously active excluded,alu,2011,employment_creation_rate,numbers,139007.0
+ever previously active excluded,ilu,2011,employment_creation_rate,,256260.0
+ever previously active excluded,alu,2012,employment_creation_rate,,235158.0
+ever previously active excluded,ilu,2012,employment_creation_rate,,334747.0
+ever previously active excluded,br,,employment,,
+ever previously active excluded,pd7,,pd7,,208963.0
+ever previously active excluded,pd7,,pd7,,121396.0
+one year with no pre-existing up,alu,2011,employment_creation_rate,numbers,135656.0
+one year with no pre-existing up,ilu,2011,employment_creation_rate,,251905.0
+one year with no pre-existing up,alu,2012,employment_creation_rate,,230675.0
+one year with no pre-existing up,ilu,2012,employment_creation_rate,,329333.0
+one year with no pre-existing up,br,,employment,,
+one year with no pre-existing up,pd7,,pd7,,205335.0
+one year with no pre-existing up,pd7,,pd7,,118715.0
+previously active excluded with no up,alu,2011,employment_creation_rate,numbers,135569.0
+previously active excluded with no up,ilu,2011,employment_creation_rate,,251828.0
+previously active excluded with no up,alu,2012,employment_creation_rate,,230608.0
+previously active excluded with no up,ilu,2012,employment_creation_rate,,329265.0
+previously active excluded with no up,br,,employment,,
+previously active excluded with no up,pd7,,pd7,,205285.0
+previously active excluded with no up,pd7,,pd7,,118671.0
+ever previously active excluded with no up,alu,2011,employment_creation_rate,numbers,135507.0
+ever previously active excluded with no up,ilu,2011,employment_creation_rate,,251750.0
+ever previously active excluded with no up,alu,2012,employment_creation_rate,,230531.0
+ever previously active excluded with no up,ilu,2012,employment_creation_rate,,329173.0
+ever previously active excluded with no up,br,,employment,,
+ever previously active excluded with no up,pd7,,pd7,,205234.0
+ever previously active excluded with no up,pd7,,pd7,,118652.0

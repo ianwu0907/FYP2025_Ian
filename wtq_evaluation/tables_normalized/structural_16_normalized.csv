@@ -1,0 +1,169 @@
+class_of_service,section,category,behaviour_or_discrimination,metric_type,value
+class a only,,class a only,total sexualized behaviours,percent,11.0
+class b/c only,,class b/c only,total sexualized behaviours,percent,15.0
+mixed,,mixed,total sexualized behaviours,percent,18.0
+mixed,environmental command,canadian army,total sexualized behaviours,percent,15.0
+mixed,environmental command,royal canadian navy,total sexualized behaviours,percent,20.0
+mixed,environmental command,royal canadian air force,total sexualized behaviours,percent,8.5
+mixed,environmental command,military personnel command,total sexualized behaviours,percent,19.0
+mixed,environmental command,other,total sexualized behaviours,percent,13.0
+mixed,gender,women,total sexualized behaviours,percent,32.0
+mixed,gender,men,total sexualized behaviours,percent,12.0
+mixed,indigenous identity,"indigenous (first nations, metis, inuit) person",total sexualized behaviours,percent,20.0
+mixed,indigenous identity,non-indigenous person,total sexualized behaviours,percent,15.0
+mixed,persons with disabilities,persons with disabilities,total sexualized behaviours,percent,18.0
+mixed,persons with disabilities,persons without disabilities,total sexualized behaviours,percent,15.0
+mixed,visible minority,visible minority,total sexualized behaviours,percent,15.0
+mixed,visible minority,non-visible minority,total sexualized behaviours,percent,16.0
+mixed,rank,junior non-commissioned member,total sexualized behaviours,percent,18.0
+mixed,rank,senior non-commissioned member,total sexualized behaviours,percent,11.0
+mixed,rank,junior officer,total sexualized behaviours,percent,13.0
+mixed,rank,senior officer,total sexualized behaviours,percent,7.5
+mixed,age group,24 years and younger,total sexualized behaviours,percent,19.0
+mixed,age group,25 to 29 years,total sexualized behaviours,percent,20.0
+mixed,age group,30 to 34 years,total sexualized behaviours,percent,17.0
+mixed,age group,35 to 39 years,total sexualized behaviours,percent,15.0
+mixed,age group,40 to 44 years,total sexualized behaviours,percent,10.0
+mixed,age group,45 to 49 years,total sexualized behaviours,percent,9.4
+mixed,age group,50 years and older,total sexualized behaviours,percent,5.2
+class a only,,class a only,inappropriate verbal or non-verbal communication,percent,9.5
+class b/c only,,class b/c only,inappropriate verbal or non-verbal communication,percent,14.0
+mixed,,mixed,inappropriate verbal or non-verbal communication,percent,15.0
+mixed,environmental command,canadian army,inappropriate verbal or non-verbal communication,percent,14.0
+mixed,environmental command,royal canadian navy,inappropriate verbal or non-verbal communication,percent,17.0
+mixed,environmental command,royal canadian air force,inappropriate verbal or non-verbal communication,percent,7.1
+mixed,environmental command,military personnel command,inappropriate verbal or non-verbal communication,percent,17.0
+mixed,environmental command,other,inappropriate verbal or non-verbal communication,percent,11.0
+mixed,gender,women,inappropriate verbal or non-verbal communication,percent,26.0
+mixed,gender,men,inappropriate verbal or non-verbal communication,percent,11.0
+mixed,indigenous identity,"indigenous (first nations, metis, inuit) person",inappropriate verbal or non-verbal communication,percent,18.0
+mixed,indigenous identity,non-indigenous person,inappropriate verbal or non-verbal communication,percent,13.0
+mixed,persons with disabilities,persons with disabilities,inappropriate verbal or non-verbal communication,percent,17.0
+mixed,persons with disabilities,persons without disabilities,inappropriate verbal or non-verbal communication,percent,13.0
+mixed,visible minority,visible minority,inappropriate verbal or non-verbal communication,percent,12.0
+mixed,visible minority,non-visible minority,inappropriate verbal or non-verbal communication,percent,14.0
+mixed,rank,junior non-commissioned member,inappropriate verbal or non-verbal communication,percent,16.0
+mixed,rank,senior non-commissioned member,inappropriate verbal or non-verbal communication,percent,9.5
+mixed,rank,junior officer,inappropriate verbal or non-verbal communication,percent,11.0
+mixed,rank,senior officer,inappropriate verbal or non-verbal communication,percent,6.3
+mixed,age group,24 years and younger,inappropriate verbal or non-verbal communication,percent,16.0
+mixed,age group,25 to 29 years,inappropriate verbal or non-verbal communication,percent,19.0
+mixed,age group,30 to 34 years,inappropriate verbal or non-verbal communication,percent,15.0
+mixed,age group,35 to 39 years,inappropriate verbal or non-verbal communication,percent,12.0
+mixed,age group,40 to 44 years,inappropriate verbal or non-verbal communication,percent,8.7
+mixed,age group,45 to 49 years,inappropriate verbal or non-verbal communication,percent,8.3
+mixed,age group,50 years and older,inappropriate verbal or non-verbal communication,percent,4.3
+class a only,,class a only,sexually explicit materials,percent,1.6
+class b/c only,,class b/c only,sexually explicit materials,percent,2.3
+mixed,,mixed,sexually explicit materials,percent,2.8
+mixed,environmental command,canadian army,sexually explicit materials,percent,2.6
+mixed,environmental command,royal canadian navy,sexually explicit materials,percent,2.9
+mixed,gender,women,sexually explicit materials,percent,5.1
+mixed,gender,men,sexually explicit materials,percent,1.8
+mixed,indigenous identity,"indigenous (first nations, metis, inuit) person",sexually explicit materials,percent,4.0
+mixed,indigenous identity,non-indigenous person,sexually explicit materials,percent,2.3
+mixed,persons with disabilities,persons without disabilities,sexually explicit materials,percent,2.3
+mixed,visible minority,visible minority,sexually explicit materials,percent,2.4
+mixed,visible minority,non-visible minority,sexually explicit materials,percent,2.4
+mixed,rank,junior non-commissioned member,sexually explicit materials,percent,3.0
+mixed,rank,senior non-commissioned member,sexually explicit materials,percent,1.4
+mixed,rank,junior officer,sexually explicit materials,percent,1.2
+mixed,age group,24 years and younger,sexually explicit materials,percent,2.8
+mixed,age group,25 to 29 years,sexually explicit materials,percent,3.9
+mixed,age group,30 to 34 years,sexually explicit materials,percent,2.3
+mixed,age group,35 to 39 years,sexually explicit materials,percent,2.7
+class a only,,class a only,physical contact or suggested sexual relations,percent,3.4
+class b/c only,,class b/c only,physical contact or suggested sexual relations,percent,5.6
+mixed,,mixed,physical contact or suggested sexual relations,percent,7.7
+mixed,environmental command,canadian army,physical contact or suggested sexual relations,percent,5.7
+mixed,environmental command,royal canadian navy,physical contact or suggested sexual relations,percent,9.7
+mixed,environmental command,royal canadian air force,physical contact or suggested sexual relations,percent,3.1
+mixed,environmental command,military personnel command,physical contact or suggested sexual relations,percent,7.0
+mixed,environmental command,other,physical contact or suggested sexual relations,percent,5.6
+mixed,gender,women,physical contact or suggested sexual relations,percent,19.0
+mixed,gender,men,physical contact or suggested sexual relations,percent,3.5
+mixed,indigenous identity,"indigenous (first nations, metis, inuit) person",physical contact or suggested sexual relations,percent,11.0
+mixed,indigenous identity,non-indigenous person,physical contact or suggested sexual relations,percent,5.9
+mixed,persons with disabilities,persons with disabilities,physical contact or suggested sexual relations,percent,6.8
+mixed,persons with disabilities,persons without disabilities,physical contact or suggested sexual relations,percent,6.0
+mixed,visible minority,visible minority,physical contact or suggested sexual relations,percent,6.9
+mixed,visible minority,non-visible minority,physical contact or suggested sexual relations,percent,5.9
+mixed,rank,junior non-commissioned member,physical contact or suggested sexual relations,percent,7.2
+mixed,rank,senior non-commissioned member,physical contact or suggested sexual relations,percent,2.8
+mixed,rank,junior officer,physical contact or suggested sexual relations,percent,5.4
+mixed,rank,senior officer,physical contact or suggested sexual relations,percent,2.5
+mixed,age group,24 years and younger,physical contact or suggested sexual relations,percent,8.3
+mixed,age group,25 to 29 years,physical contact or suggested sexual relations,percent,7.4
+mixed,age group,30 to 34 years,physical contact or suggested sexual relations,percent,5.7
+mixed,age group,35 to 39 years,physical contact or suggested sexual relations,percent,5.2
+mixed,age group,40 to 44 years,physical contact or suggested sexual relations,percent,3.3
+mixed,age group,45 to 49 years,physical contact or suggested sexual relations,percent,3.1
+mixed,age group,50 years and older,physical contact or suggested sexual relations,percent,1.5
+class a only,,class a only,total discriminatory behaviours,percent,3.8
+class b/c only,,class b/c only,total discriminatory behaviours,percent,7.2
+mixed,,mixed,total discriminatory behaviours,percent,6.6
+mixed,environmental command,canadian army,total discriminatory behaviours,percent,5.5
+mixed,environmental command,royal canadian navy,total discriminatory behaviours,percent,9.0
+mixed,environmental command,royal canadian air force,total discriminatory behaviours,percent,2.7
+mixed,environmental command,military personnel command,total discriminatory behaviours,percent,9.7
+mixed,environmental command,other,total discriminatory behaviours,percent,4.1
+mixed,gender,women,total discriminatory behaviours,percent,18.0
+mixed,gender,men,total discriminatory behaviours,percent,3.6
+mixed,indigenous identity,"indigenous (first nations, metis, inuit) person",total discriminatory behaviours,percent,9.8
+mixed,indigenous identity,non-indigenous person,total discriminatory behaviours,percent,5.8
+mixed,persons with disabilities,persons with disabilities,total discriminatory behaviours,percent,14.0
+mixed,persons with disabilities,persons without disabilities,total discriminatory behaviours,percent,5.7
+mixed,visible minority,visible minority,total discriminatory behaviours,percent,4.6
+mixed,visible minority,non-visible minority,total discriminatory behaviours,percent,6.2
+mixed,rank,junior non-commissioned member,total discriminatory behaviours,percent,6.9
+mixed,rank,senior non-commissioned member,total discriminatory behaviours,percent,3.8
+mixed,rank,junior officer,total discriminatory behaviours,percent,5.1
+mixed,rank,senior officer,total discriminatory behaviours,percent,2.9
+mixed,age group,24 years and younger,total discriminatory behaviours,percent,7.4
+mixed,age group,25 to 29 years,total discriminatory behaviours,percent,7.4
+mixed,age group,30 to 34 years,total discriminatory behaviours,percent,8.0
+mixed,age group,35 to 39 years,total discriminatory behaviours,percent,4.3
+mixed,age group,40 to 44 years,total discriminatory behaviours,percent,3.0
+mixed,age group,45 to 49 years,total discriminatory behaviours,percent,3.4
+mixed,age group,50 years and older,total discriminatory behaviours,percent,1.8
+class a only,,class a only,discrimination on the basis of sex,percent,3.7
+class b/c only,,class b/c only,discrimination on the basis of sex,percent,6.8
+mixed,,mixed,discrimination on the basis of sex,percent,6.3
+mixed,environmental command,canadian army,discrimination on the basis of sex,percent,5.2
+mixed,environmental command,royal canadian navy,discrimination on the basis of sex,percent,8.9
+mixed,environmental command,royal canadian air force,discrimination on the basis of sex,percent,2.5
+mixed,environmental command,military personnel command,discrimination on the basis of sex,percent,9.4
+mixed,environmental command,other,discrimination on the basis of sex,percent,3.3
+mixed,gender,women,discrimination on the basis of sex,percent,18.0
+mixed,gender,men,discrimination on the basis of sex,percent,3.3
+mixed,indigenous identity,"indigenous (first nations, metis, inuit) person",discrimination on the basis of sex,percent,8.4
+mixed,indigenous identity,non-indigenous person,discrimination on the basis of sex,percent,5.6
+mixed,persons with disabilities,persons with disabilities,discrimination on the basis of sex,percent,14.0
+mixed,persons with disabilities,persons without disabilities,discrimination on the basis of sex,percent,5.5
+mixed,visible minority,visible minority,discrimination on the basis of sex,percent,4.6
+mixed,visible minority,non-visible minority,discrimination on the basis of sex,percent,5.9
+mixed,rank,junior non-commissioned member,discrimination on the basis of sex,percent,6.6
+mixed,rank,senior non-commissioned member,discrimination on the basis of sex,percent,3.5
+mixed,rank,junior officer,discrimination on the basis of sex,percent,4.8
+mixed,rank,senior officer,discrimination on the basis of sex,percent,2.8
+mixed,age group,24 years and younger,discrimination on the basis of sex,percent,7.1
+mixed,age group,25 to 29 years,discrimination on the basis of sex,percent,7.1
+mixed,age group,30 to 34 years,discrimination on the basis of sex,percent,7.7
+mixed,age group,35 to 39 years,discrimination on the basis of sex,percent,4.1
+mixed,age group,40 to 44 years,discrimination on the basis of sex,percent,2.8
+mixed,age group,45 to 49 years,discrimination on the basis of sex,percent,3.2
+mixed,age group,50 years and older,discrimination on the basis of sex,percent,1.7
+class b/c only,,class b/c only,discrimination on the basis of sexual orientation or gender ...,percent,1.0
+mixed,,mixed,discrimination on the basis of sexual orientation or gender ...,percent,1.2
+mixed,environmental command,canadian army,discrimination on the basis of sexual orientation or gender ...,percent,0.8
+mixed,environmental command,royal canadian navy,discrimination on the basis of sexual orientation or gender ...,percent,1.4
+mixed,gender,women,discrimination on the basis of sexual orientation or gender ...,percent,2.3
+mixed,gender,men,discrimination on the basis of sexual orientation or gender ...,percent,0.7
+mixed,indigenous identity,non-indigenous person,discrimination on the basis of sexual orientation or gender ...,percent,0.9
+mixed,persons with disabilities,persons without disabilities,discrimination on the basis of sexual orientation or gender ...,percent,0.9
+mixed,visible minority,non-visible minority,discrimination on the basis of sexual orientation or gender ...,percent,0.9
+mixed,rank,junior non-commissioned member,discrimination on the basis of sexual orientation or gender ...,percent,1.1
+mixed,rank,senior non-commissioned member,discrimination on the basis of sexual orientation or gender ...,percent,0.6
+mixed,age group,24 years and younger,discrimination on the basis of sexual orientation or gender ...,percent,1.2
+mixed,age group,25 to 29 years,discrimination on the basis of sexual orientation or gender ...,percent,1.1
+mixed,age group,30 to 34 years,discrimination on the basis of sexual orientation or gender ...,percent,1.1

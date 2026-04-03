@@ -1,0 +1,91 @@
+region,age_group,population_type,sex,count
+Hunan Province,0-30,Population aged 0-30,Total,253952
+Hunan Province,0-30,Population aged 0-30,Male,133017
+Hunan Province,0-30,Population aged 0-30,Female,120935
+Hunan Province,0-30,Number of only children aged 0-30,Total,74005
+Hunan Province,0-30,Number of only children aged 0-30,Male,43208
+Hunan Province,0-30,Number of only children aged 0-30,Female,30797
+Changsha City,0-30,Population aged 0-30,Total,24380
+Changsha City,0-30,Population aged 0-30,Male,12149
+Changsha City,0-30,Population aged 0-30,Female,12231
+Changsha City,0-30,Number of only children aged 0-30,Total,9278
+Changsha City,0-30,Number of only children aged 0-30,Male,5463
+Changsha City,0-30,Number of only children aged 0-30,Female,3815
+Zhuzhou City,0-30,Population aged 0-30,Total,13997
+Zhuzhou City,0-30,Population aged 0-30,Male,7149
+Zhuzhou City,0-30,Population aged 0-30,Female,6848
+Zhuzhou City,0-30,Number of only children aged 0-30,Total,4989
+Zhuzhou City,0-30,Number of only children aged 0-30,Male,2991
+Zhuzhou City,0-30,Number of only children aged 0-30,Female,1998
+Xiangtan City,0-30,Population aged 0-30,Total,11335
+Xiangtan City,0-30,Population aged 0-30,Male,5888
+Xiangtan City,0-30,Population aged 0-30,Female,5447
+Xiangtan City,0-30,Number of only children aged 0-30,Total,4201
+Xiangtan City,0-30,Number of only children aged 0-30,Male,2529
+Xiangtan City,0-30,Number of only children aged 0-30,Female,1672
+Hengyang City,0-30,Population aged 0-30,Total,28311
+Hengyang City,0-30,Population aged 0-30,Male,15274
+Hengyang City,0-30,Population aged 0-30,Female,13037
+Hengyang City,0-30,Number of only children aged 0-30,Total,6645
+Hengyang City,0-30,Number of only children aged 0-30,Male,3789
+Hengyang City,0-30,Number of only children aged 0-30,Female,2856
+Shaoyang City,0-30,Population aged 0-30,Total,30800
+Shaoyang City,0-30,Population aged 0-30,Male,16490
+Shaoyang City,0-30,Population aged 0-30,Female,14310
+Shaoyang City,0-30,Number of only children aged 0-30,Total,6439
+Shaoyang City,0-30,Number of only children aged 0-30,Male,3868
+Shaoyang City,0-30,Number of only children aged 0-30,Female,2571
+Yueyang City,0-30,Population aged 0-30,Total,19844
+Yueyang City,0-30,Population aged 0-30,Male,10488
+Yueyang City,0-30,Population aged 0-30,Female,9356
+Yueyang City,0-30,Number of only children aged 0-30,Total,5913
+Yueyang City,0-30,Number of only children aged 0-30,Male,3557
+Yueyang City,0-30,Number of only children aged 0-30,Female,2356
+Changde City,0-30,Population aged 0-30,Total,16195
+Changde City,0-30,Population aged 0-30,Male,8194
+Changde City,0-30,Population aged 0-30,Female,8001
+Changde City,0-30,Number of only children aged 0-30,Total,9397
+Changde City,0-30,Number of only children aged 0-30,Male,5008
+Changde City,0-30,Number of only children aged 0-30,Female,4389
+Zhangjiajie City,0-30,Population aged 0-30,Total,5786
+Zhangjiajie City,0-30,Population aged 0-30,Male,2945
+Zhangjiajie City,0-30,Population aged 0-30,Female,2841
+Zhangjiajie City,0-30,Number of only children aged 0-30,Total,1750
+Zhangjiajie City,0-30,Number of only children aged 0-30,Male,980
+Zhangjiajie City,0-30,Number of only children aged 0-30,Female,770
+Yiyang City,0-30,Population aged 0-30,Total,15088
+Yiyang City,0-30,Population aged 0-30,Male,7592
+Yiyang City,0-30,Population aged 0-30,Female,7496
+Yiyang City,0-30,Number of only children aged 0-30,Total,4783
+Yiyang City,0-30,Number of only children aged 0-30,Male,2919
+Yiyang City,0-30,Number of only children aged 0-30,Female,1864
+Chenzhou City,0-30,Population aged 0-30,Total,22099
+Chenzhou City,0-30,Population aged 0-30,Male,11896
+Chenzhou City,0-30,Population aged 0-30,Female,10203
+Chenzhou City,0-30,Number of only children aged 0-30,Total,4587
+Chenzhou City,0-30,Number of only children aged 0-30,Male,2716
+Chenzhou City,0-30,Number of only children aged 0-30,Female,1871
+Yongzhou City,0-30,Population aged 0-30,Total,20005
+Yongzhou City,0-30,Population aged 0-30,Male,10794
+Yongzhou City,0-30,Population aged 0-30,Female,9211
+Yongzhou City,0-30,Number of only children aged 0-30,Total,4544
+Yongzhou City,0-30,Number of only children aged 0-30,Male,2716
+Yongzhou City,0-30,Number of only children aged 0-30,Female,1828
+Huaihua City,0-30,Population aged 0-30,Total,18169
+Huaihua City,0-30,Population aged 0-30,Male,9556
+Huaihua City,0-30,Population aged 0-30,Female,8613
+Huaihua City,0-30,Number of only children aged 0-30,Total,5385
+Huaihua City,0-30,Number of only children aged 0-30,Male,3257
+Huaihua City,0-30,Number of only children aged 0-30,Female,2128
+Loudi City,0-30,Population aged 0-30,Total,15772
+Loudi City,0-30,Population aged 0-30,Male,8323
+Loudi City,0-30,Population aged 0-30,Female,7449
+Loudi City,0-30,Number of only children aged 0-30,Total,4121
+Loudi City,0-30,Number of only children aged 0-30,Male,2410
+Loudi City,0-30,Number of only children aged 0-30,Female,1711
+Xiangxi Tujia and Miao Autonomous Prefecture,0-30,Population aged 0-30,Total,12171
+Xiangxi Tujia and Miao Autonomous Prefecture,0-30,Population aged 0-30,Male,6279
+Xiangxi Tujia and Miao Autonomous Prefecture,0-30,Population aged 0-30,Female,5892
+Xiangxi Tujia and Miao Autonomous Prefecture,0-30,Number of only children aged 0-30,Total,1973
+Xiangxi Tujia and Miao Autonomous Prefecture,0-30,Number of only children aged 0-30,Male,1005
+Xiangxi Tujia and Miao Autonomous Prefecture,0-30,Number of only children aged 0-30,Female,968

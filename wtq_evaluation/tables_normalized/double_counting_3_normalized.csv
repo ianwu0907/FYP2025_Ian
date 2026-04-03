@@ -1,0 +1,49 @@
+sex_cn,sex_en,duration_of_residence,year,metric_type,value
+男,Male,< 7,2011,Number,425.0
+男,Male,< 7,2011,%,2.4
+男,Male,< 7,2016,Number,811.0
+男,Male,< 7,2016,%,4.8
+男,Male,< 7,2021,Number,479.0
+男,Male,< 7,2021,%,3.0
+男,Male,7 – 14,2011,Number,674.0
+男,Male,7 – 14,2011,%,3.8
+男,Male,7 – 14,2016,Number,534.0
+男,Male,7 – 14,2016,%,3.2
+男,Male,7 – 14,2021,Number,864.0
+男,Male,7 – 14,2021,%,5.4
+男,Male,15+,2011,Number,16566.0
+男,Male,15+,2011,%,93.8
+男,Male,15+,2016,Number,15538.0
+男,Male,15+,2016,%,92.0
+男,Male,15+,2021,Number,14687.0
+男,Male,15+,2021,%,91.6
+男,Male,< 7,2011,Number,6745.0
+男,Male,< 7,2011,%,10.5
+男,Male,< 7,2016,Number,7459.0
+男,Male,< 7,2016,%,13.2
+男,Male,< 7,2021,Number,5488.0
+男,Male,< 7,2021,%,9.8
+女,Female,7 – 14,2011,Number,15619.0
+女,Female,7 – 14,2011,%,24.4
+女,Female,7 – 14,2016,Number,12424.0
+女,Female,7 – 14,2016,%,22.0
+女,Female,7 – 14,2021,Number,11492.0
+女,Female,7 – 14,2021,%,20.4
+女,Female,15+,2011,Number,41676.0
+女,Female,15+,2011,%,65.1
+女,Female,15+,2016,Number,36662.0
+女,Female,15+,2016,%,64.8
+女,Female,15+,2021,Number,39269.0
+女,Female,15+,2021,%,69.8
+女,Female,< 7,2011,Number,7170.0
+女,Female,< 7,2011,%,8.8
+女,Female,< 7,2016,Number,8270.0
+女,Female,< 7,2016,%,11.3
+女,Female,< 7,2021,Number,5967.0
+女,Female,< 7,2021,%,8.3
+女,Female,7 – 14,2011,Number,16293.0
+女,Female,7 – 14,2011,%,19.9
+女,Female,7 – 14,2016,Number,12958.0
+女,Female,7 – 14,2016,%,17.6
+女,Female,7 – 14,2021,Number,12356.0
+女,Female,7 – 14,2021,%,17.1

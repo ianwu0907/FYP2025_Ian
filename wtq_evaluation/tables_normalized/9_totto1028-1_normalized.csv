@@ -1,0 +1,133 @@
+player_id,position,nationality,name,competition_id,apps_primary,apps_secondary,goals,section
+1,gk,croatia,danijel subasic,1,36,0,0,current squad
+1,gk,croatia,danijel subasic,2,0,0,0,current squad
+1,gk,croatia,danijel subasic,3,0,0,0,current squad
+1,gk,croatia,danijel subasic,4,10,0,0,current squad
+2,df,brazil,fabinho,1,34,0,6,current squad
+2,df,brazil,fabinho,2,3,0,2,current squad
+2,df,brazil,fabinho,3,1,0,0,current squad
+2,df,brazil,fabinho,4,9,0,0,current squad
+4,df,portugal,fabio coentrao,1,13,2,3,current squad
+4,df,portugal,fabio coentrao,2,0,1,0,current squad
+4,df,portugal,fabio coentrao,3,0,0,0,current squad
+4,df,portugal,fabio coentrao,4,3,0,0,current squad
+5,df,brazil,jemerson,1,3,1,0,current squad
+5,df,brazil,jemerson,2,1,0,0,current squad
+5,df,brazil,jemerson,3,0,0,0,current squad
+5,df,brazil,jemerson,4,0,0,0,current squad
+6,df,portugal,ricardo carvalho,1,33,0,2,current squad
+6,df,portugal,ricardo carvalho,2,2,0,0,current squad
+6,df,portugal,ricardo carvalho,3,1,0,0,current squad
+6,df,portugal,ricardo carvalho,4,8,0,0,current squad
+7,mf,morocco,nabil dirar,1,20,0,2,current squad
+7,mf,morocco,nabil dirar,2,0,1,0,current squad
+7,mf,morocco,nabil dirar,3,0,0,0,current squad
+7,mf,morocco,nabil dirar,4,4,3,0,current squad
+8,mf,portugal,joao moutinho,1,24,2,1,current squad
+8,mf,portugal,joao moutinho,2,3,0,0,current squad
+8,mf,portugal,joao moutinho,3,0,0,0,current squad
+8,mf,portugal,joao moutinho,4,8,0,0,current squad
+9,fw,brazil,vagner love,1,9,3,4,current squad
+9,fw,brazil,vagner love,2,0,1,0,current squad
+9,fw,brazil,vagner love,3,0,0,0,current squad
+9,fw,brazil,vagner love,4,0,0,0,current squad
+10,mf,portugal,bernardo silva,1,22,10,7,current squad
+10,mf,portugal,bernardo silva,2,3,0,0,current squad
+10,mf,portugal,bernardo silva,3,1,0,0,current squad
+10,mf,portugal,bernardo silva,4,8,0,0,current squad
+11,fw,argentina,guido carrillo,1,15,16,4,current squad
+11,fw,argentina,guido carrillo,2,1,1,0,current squad
+11,fw,argentina,guido carrillo,3,0,0,0,current squad
+11,fw,argentina,guido carrillo,4,0,7,1,current squad
+12,mf,france,fares bahlouli,1,2,6,1,current squad
+12,mf,france,fares bahlouli,2,1,0,1,current squad
+12,mf,france,fares bahlouli,3,0,0,0,current squad
+12,mf,france,fares bahlouli,4,0,2,0,current squad
+13,df,brazil,wallace,1,25,1,1,current squad
+13,df,brazil,wallace,2,2,0,0,current squad
+13,df,brazil,wallace,3,1,0,0,current squad
+13,df,brazil,wallace,4,5,0,0,current squad
+14,mf,france,tiemoue bakayoko,1,14,5,1,current squad
+14,mf,france,tiemoue bakayoko,2,1,1,1,current squad
+14,mf,france,tiemoue bakayoko,3,1,0,0,current squad
+14,mf,france,tiemoue bakayoko,4,1,0,0,current squad
+16,gk,france,paul nardi,1,2,0,0,current squad
+16,gk,france,paul nardi,2,3,0,0,current squad
+16,gk,france,paul nardi,3,1,0,0,current squad
+16,gk,france,paul nardi,4,0,0,0,current squad
+17,fw,portugal,ivan cavaleiro,1,6,6,1,current squad
+17,fw,portugal,ivan cavaleiro,2,0,0,0,current squad
+17,fw,portugal,ivan cavaleiro,3,1,0,0,current squad
+17,fw,portugal,ivan cavaleiro,4,5,1,2,current squad
+18,mf,portugal,helder costa,1,15,10,3,current squad
+18,mf,portugal,helder costa,2,3,0,2,current squad
+18,mf,portugal,helder costa,3,0,0,0,current squad
+18,mf,portugal,helder costa,4,0,0,0,current squad
+19,fw,ivory coast,lacina traore,1,11,8,3,current squad
+19,fw,ivory coast,lacina traore,2,2,0,5,current squad
+19,fw,ivory coast,lacina traore,3,0,0,0,current squad
+19,fw,ivory coast,lacina traore,4,5,1,2,current squad
+20,mf,croatia,mario pasalic,1,12,4,3,current squad
+20,mf,croatia,mario pasalic,2,1,2,2,current squad
+20,mf,croatia,mario pasalic,3,1,0,0,current squad
+20,mf,croatia,mario pasalic,4,8,1,2,current squad
+21,df,nigeria,elderson echiejile,1,18,2,0,current squad
+21,df,nigeria,elderson echiejile,2,0,0,0,current squad
+21,df,nigeria,elderson echiejile,3,0,1,0,current squad
+21,df,nigeria,elderson echiejile,4,3,3,1,current squad
+23,mf,mali,adama traore,1,4,2,0,current squad
+23,mf,mali,adama traore,2,0,0,0,current squad
+23,mf,mali,adama traore,3,0,0,0,current squad
+23,mf,mali,adama traore,4,1,1,0,current squad
+24,df,italy,andrea raggi,1,29,2,2,current squad
+24,df,italy,andrea raggi,2,3,0,1,current squad
+24,df,italy,andrea raggi,3,1,0,0,current squad
+24,df,italy,andrea raggi,4,9,0,1,current squad
+27,mf,france,thomas lemar,1,21,5,5,current squad
+27,mf,france,thomas lemar,2,1,1,0,current squad
+27,mf,france,thomas lemar,3,0,1,0,current squad
+27,mf,france,thomas lemar,4,2,3,0,current squad
+28,mf,france,jeremy toulalan,1,25,0,0,current squad
+28,mf,france,jeremy toulalan,2,1,0,0,current squad
+28,mf,france,jeremy toulalan,3,0,1,0,current squad
+28,mf,france,jeremy toulalan,4,9,0,0,current squad
+29,fw,france,kyllian mbappe lottin,1,2,8,1,current squad
+29,fw,france,kyllian mbappe lottin,2,1,0,0,current squad
+29,fw,france,kyllian mbappe lottin,3,1,0,0,current squad
+29,fw,france,kyllian mbappe lottin,4,0,1,0,current squad
+34,df,france,raphael diarra,1,0,0,0,current squad
+34,df,france,raphael diarra,2,0,0,0,current squad
+34,df,france,raphael diarra,3,0,0,0,current squad
+34,df,france,raphael diarra,4,0,1,0,current squad
+38,df,mali,almamy toure,1,9,1,3,current squad
+38,df,mali,almamy toure,2,1,0,0,current squad
+38,df,mali,almamy toure,3,0,0,0,current squad
+38,df,mali,almamy toure,4,1,1,0,current squad
+39,fw,france,kylian mbappe,1,0,3,0,current squad
+39,fw,france,kylian mbappe,2,0,1,0,current squad
+39,fw,france,kylian mbappe,3,1,0,0,current squad
+39,fw,france,kylian mbappe,4,0,1,0,current squad
+none,mf,france,mohamed chaibi,1,0,1,0,current squad
+none,mf,france,mohamed chaibi,2,0,1,0,current squad
+none,mf,france,mohamed chaibi,3,0,0,0,current squad
+none,mf,france,mohamed chaibi,4,0,0,0,current squad
+29,mf,brazil,gabriel boschilia,1,1,4,0,players away from the club on loan:
+29,mf,brazil,gabriel boschilia,2,0,0,0,players away from the club on loan:
+29,mf,brazil,gabriel boschilia,3,1,0,0,players away from the club on loan:
+29,mf,brazil,gabriel boschilia,4,0,0,0,players away from the club on loan:
+25,mf,portugal,rony lopes,1,2,0,0,players away from the club on loan:
+25,mf,portugal,rony lopes,2,0,0,0,players away from the club on loan:
+25,mf,portugal,rony lopes,3,0,0,0,players away from the club on loan:
+25,mf,portugal,rony lopes,4,0,0,0,players away from the club on loan:
+3,df,france,layvin kurzawa,1,3,0,1,players who appeared for monaco no longer at the club:
+3,df,france,layvin kurzawa,2,0,0,0,players who appeared for monaco no longer at the club:
+3,df,france,layvin kurzawa,3,0,0,0,players who appeared for monaco no longer at the club:
+3,df,france,layvin kurzawa,4,3,0,2,players who appeared for monaco no longer at the club:
+9,fw,france,anthony martial,1,2,1,0,players who appeared for monaco no longer at the club:
+9,fw,france,anthony martial,2,0,0,0,players who appeared for monaco no longer at the club:
+9,fw,france,anthony martial,3,0,0,0,players who appeared for monaco no longer at the club:
+9,fw,france,anthony martial,4,4,0,1,players who appeared for monaco no longer at the club:
+22,fw,italy,stephan el shaarawy,1,7,8,0,players who appeared for monaco no longer at the club:
+22,fw,italy,stephan el shaarawy,2,0,0,0,players who appeared for monaco no longer at the club:
+22,fw,italy,stephan el shaarawy,3,0,0,0,players who appeared for monaco no longer at the club:
+22,fw,italy,stephan el shaarawy,4,4,5,3,players who appeared for monaco no longer at the club:

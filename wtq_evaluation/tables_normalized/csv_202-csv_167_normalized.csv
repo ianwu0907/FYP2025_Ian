@@ -1,0 +1,97 @@
+measurement_type,unit_system,month,value
+Average high,imperial,Jan,70.0
+Average high,metric,Jan,21.0
+Average high,imperial,Feb,71.0
+Average high,metric,Feb,22.0
+Average high,imperial,Mar,74.0
+Average high,metric,Mar,23.0
+Average high,imperial,Apr,77.0
+Average high,metric,Apr,25.0
+Average high,imperial,May,82.0
+Average high,metric,May,28.0
+Average high,imperial,Jun,85.0
+Average high,metric,Jun,29.0
+Average high,imperial,Jul,90.0
+Average high,metric,Jul,32.0
+Average high,imperial,Aug,92.0
+Average high,metric,Aug,33.0
+Average high,imperial,Sep,91.0
+Average high,metric,Sep,33.0
+Average high,imperial,Oct,83.0
+Average high,metric,Oct,28.0
+Average high,imperial,Nov,76.0
+Average high,metric,Nov,24.0
+Average high,imperial,Dec,70.0
+Average high,metric,Dec,21.0
+Average low,imperial,Jan,45.0
+Average low,metric,Jan,7.0
+Average low,imperial,Feb,46.0
+Average low,metric,Feb,8.0
+Average low,imperial,Mar,47.0
+Average low,metric,Mar,8.0
+Average low,imperial,Apr,50.0
+Average low,metric,Apr,10.0
+Average low,imperial,May,55.0
+Average low,metric,May,13.0
+Average low,imperial,Jun,61.0
+Average low,metric,Jun,16.0
+Average low,imperial,Jul,64.0
+Average low,metric,Jul,18.0
+Average low,imperial,Aug,65.0
+Average low,metric,Aug,18.0
+Average low,imperial,Sep,63.0
+Average low,metric,Sep,17.0
+Average low,imperial,Oct,57.0
+Average low,metric,Oct,14.0
+Average low,imperial,Nov,48.0
+Average low,metric,Nov,9.0
+Average low,imperial,Dec,45.0
+Average low,metric,Dec,7.0
+Record low,imperial,Jan,22.0
+Record low,metric,Jan,-6.0
+Record low,imperial,Feb,27.0
+Record low,metric,Feb,-3.0
+Record low,imperial,Mar,22.0
+Record low,metric,Mar,-6.0
+Record low,imperial,Apr,32.0
+Record low,metric,Apr,0.0
+Record low,imperial,May,39.0
+Record low,metric,May,4.0
+Record low,imperial,Jun,43.0
+Record low,metric,Jun,6.0
+Record low,imperial,Jul,45.0
+Record low,metric,Jul,7.0
+Record low,imperial,Aug,46.0
+Record low,metric,Aug,8.0
+Record low,imperial,Sep,43.0
+Record low,metric,Sep,6.0
+Record low,imperial,Oct,33.0
+Record low,metric,Oct,1.0
+Record low,imperial,Nov,29.0
+Record low,metric,Nov,-2.0
+Record low,imperial,Dec,22.0
+Record low,metric,Dec,-6.0
+Precipitation,imperial,Jan,3.53
+Precipitation,metric,Jan,89.7
+Precipitation,imperial,Feb,4.62
+Precipitation,metric,Feb,117.3
+Precipitation,imperial,Mar,2.97
+Precipitation,metric,Mar,75.4
+Precipitation,imperial,Apr,1.11
+Precipitation,metric,Apr,28.2
+Precipitation,imperial,May,0.35
+Precipitation,metric,May,8.9
+Precipitation,imperial,Jun,0.11
+Precipitation,metric,Jun,2.8
+Precipitation,imperial,Jul,0.02
+Precipitation,metric,Jul,0.5
+Precipitation,imperial,Aug,0.07
+Precipitation,metric,Aug,1.8
+Precipitation,imperial,Sep,0.23
+Precipitation,metric,Sep,5.8
+Precipitation,imperial,Oct,0.97
+Precipitation,metric,Oct,24.6
+Precipitation,imperial,Nov,1.07
+Precipitation,metric,Nov,27.2
+Precipitation,imperial,Dec,2.4
+Precipitation,metric,Dec,61.0

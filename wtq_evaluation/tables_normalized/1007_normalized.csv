@@ -1,0 +1,115 @@
+sector,generation_group,generation_block,percent
+"agriculture, forestry, fishing and hunting",immigrant,Block 1,0.2
+"agriculture, forestry, fishing and hunting",second generation,Block 1,0.1
+"agriculture, forestry, fishing and hunting",third generation or more,Block 1,0.5
+"agriculture, forestry, fishing and hunting",immigrant,Block 2,1.0
+"agriculture, forestry, fishing and hunting",second generation,Block 2,1.0
+"agriculture, forestry, fishing and hunting",third generation or more,Block 2,1.5
+"mining, quarrying, and oil and gas extraction",immigrant,Block 1,0.3
+"mining, quarrying, and oil and gas extraction",second generation,Block 1,0.2
+"mining, quarrying, and oil and gas extraction",third generation or more,Block 1,0.4
+"mining, quarrying, and oil and gas extraction",immigrant,Block 2,0.5
+"mining, quarrying, and oil and gas extraction",second generation,Block 2,0.6
+"mining, quarrying, and oil and gas extraction",third generation or more,Block 2,0.8
+utilities,immigrant,Block 1,0.2
+utilities,second generation,Block 1,0.3
+utilities,third generation or more,Block 1,0.1
+utilities,immigrant,Block 2,0.3
+utilities,second generation,Block 2,0.5
+utilities,third generation or more,Block 2,0.5
+construction,immigrant,Block 1,0.7
+construction,second generation,Block 1,1.0
+construction,third generation or more,Block 1,1.3
+construction,immigrant,Block 2,1.7
+construction,second generation,Block 2,2.2
+construction,third generation or more,Block 2,2.3
+manufacturing,immigrant,Block 1,5.4
+manufacturing,second generation,Block 1,2.8
+manufacturing,third generation or more,Block 1,4.0
+manufacturing,immigrant,Block 2,7.9
+manufacturing,second generation,Block 2,4.1
+manufacturing,third generation or more,Block 2,4.9
+wholesale trade,immigrant,Block 1,2.0
+wholesale trade,second generation,Block 1,2.5
+wholesale trade,third generation or more,Block 1,2.0
+wholesale trade,immigrant,Block 2,3.3
+wholesale trade,second generation,Block 2,3.0
+wholesale trade,third generation or more,Block 2,2.4
+retail trade,immigrant,Block 1,7.5
+retail trade,second generation,Block 1,9.7
+retail trade,third generation or more,Block 1,11.9
+retail trade,immigrant,Block 2,11.1
+retail trade,second generation,Block 2,9.7
+retail trade,third generation or more,Block 2,10.8
+transportation and warehousing,immigrant,Block 1,2.7
+transportation and warehousing,second generation,Block 1,3.3
+transportation and warehousing,third generation or more,Block 1,3.3
+transportation and warehousing,immigrant,Block 2,2.8
+transportation and warehousing,second generation,Block 2,2.8
+transportation and warehousing,third generation or more,Block 2,2.7
+information and cultural industries,immigrant,Block 1,1.6
+information and cultural industries,second generation,Block 1,3.8
+information and cultural industries,third generation or more,Block 1,2.6
+information and cultural industries,immigrant,Block 2,1.9
+information and cultural industries,second generation,Block 2,2.7
+information and cultural industries,third generation or more,Block 2,2.0
+finance and insurance,immigrant,Block 1,5.8
+finance and insurance,second generation,Block 1,7.9
+finance and insurance,third generation or more,Block 1,4.4
+finance and insurance,immigrant,Block 2,6.9
+finance and insurance,second generation,Block 2,7.1
+finance and insurance,third generation or more,Block 2,5.2
+real estate and rental and leasing,immigrant,Block 1,1.1
+real estate and rental and leasing,second generation,Block 1,1.6
+real estate and rental and leasing,third generation or more,Block 1,1.4
+real estate and rental and leasing,immigrant,Block 2,2.2
+real estate and rental and leasing,second generation,Block 2,2.1
+real estate and rental and leasing,third generation or more,Block 2,1.4
+"professional, scientific and technical services",immigrant,Block 1,4.6
+"professional, scientific and technical services",second generation,Block 1,8.4
+"professional, scientific and technical services",third generation or more,Block 1,4.7
+"professional, scientific and technical services",immigrant,Block 2,8.7
+"professional, scientific and technical services",second generation,Block 2,9.2
+"professional, scientific and technical services",third generation or more,Block 2,6.7
+"administrative and support, waste management and remediation services",immigrant,Block 1,7.9
+"administrative and support, waste management and remediation services",second generation,Block 1,5.6
+"administrative and support, waste management and remediation services",third generation or more,Block 1,6.5
+"administrative and support, waste management and remediation services",immigrant,Block 2,5.1
+"administrative and support, waste management and remediation services",second generation,Block 2,3.5
+"administrative and support, waste management and remediation services",third generation or more,Block 2,3.5
+educational services,immigrant,Block 1,6.9
+educational services,second generation,Block 1,9.8
+educational services,third generation or more,Block 1,8.5
+educational services,immigrant,Block 2,8.1
+educational services,second generation,Block 2,14.2
+educational services,third generation or more,Block 2,12.3
+health care and social assistance,immigrant,Block 1,36.6
+health care and social assistance,second generation,Block 1,24.0
+health care and social assistance,third generation or more,Block 1,23.5
+health care and social assistance,immigrant,Block 2,19.0
+health care and social assistance,second generation,Block 2,19.1
+health care and social assistance,third generation or more,Block 2,22.7
+"arts, entertainment and recreation",immigrant,Block 1,0.9
+"arts, entertainment and recreation",second generation,Block 1,2.1
+"arts, entertainment and recreation",third generation or more,Block 1,2.4
+"arts, entertainment and recreation",immigrant,Block 2,1.3
+"arts, entertainment and recreation",second generation,Block 2,2.1
+"arts, entertainment and recreation",third generation or more,Block 2,1.9
+accommodation and food services,immigrant,Block 1,5.5
+accommodation and food services,second generation,Block 1,4.6
+accommodation and food services,third generation or more,Block 1,9.5
+accommodation and food services,immigrant,Block 2,8.7
+accommodation and food services,second generation,Block 2,4.4
+accommodation and food services,third generation or more,Block 2,5.6
+other services,immigrant,Block 1,4.2
+other services,second generation,Block 1,4.1
+other services,third generation or more,Block 1,5.1
+other services,immigrant,Block 2,5.8
+other services,second generation,Block 2,4.4
+other services,third generation or more,Block 2,4.9
+public administration,immigrant,Block 1,5.9
+public administration,second generation,Block 1,8.2
+public administration,third generation or more,Block 1,8.0
+public administration,immigrant,Block 2,3.7
+public administration,second generation,Block 2,7.2
+public administration,third generation or more,Block 2,8.0

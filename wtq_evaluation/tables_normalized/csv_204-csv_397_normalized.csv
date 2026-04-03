@@ -1,0 +1,81 @@
+rank,country,country_code,team_id,crew,lap_number,split_time
+Silver,Italy,ITA,II,"Eugenio Monti, Ulrico Girardi, Renzo Alverà, & Renato Mocellini",1,1:17.69
+Bronze,United States,USA,I,"Arthur Tyler, William Dodge, Charles Butler, & James Lamy",1,1:17.75
+4,Switzerland,SUI,II,"Max Angst, Aby Gartmann, Harry Warburton, & Rolf Gerber",1,1:17.41
+5,Italy,ITA,I,"Dino De Martin, Giovanni De Martin, Giovanni Tabacchi, & Carlo Da Prà",1,1:18.10
+6,Germany,GER,I,"Hans Rösch, Michael Pössinger, Lorenz Nieberl, & Sylvester Wackerle",1,1:18.61
+7,Austria,AUT,II,"Kurt Loserth, Wilfried Thurner, Karl Schwarzböck, & Franz Dominik",1,1:19.37
+8,Germany,GER,II,"Franz Schelle, Jakob Nirschl, Hans Henn, & Edmund Koller",1,1:19.03
+9,Spain,ESP,I,"Alfonso de Portago, Vicente Sartorius y Cabeza de Vaca, Gonzalo Taboada, & Luis Muñoz",1,1:18.87
+10,Austria,AUT,I,"Karl Wagner, Fritz Rursch, Adolf Tonn, & Heinrich Isser",1,1:19.60
+11,Norway,NOR,I,"Arne Røgden, Arnold Dyrdahl, Odd Solli, & Trygve Brudevold",1,1:20.96
+12,Great Britain,GBR,I,"Keith Schellenberg, Rollo Brandt, Ralph Raffles, & John Rainforth",1,1:21.39
+13,Sweden,SWE,II,"Kjell Holmström, Sven Erbs, Walter Aronson, & Jan Lapidoth",1,1:20.58
+14,Romania,ROU,I,"Heinrich Enea, Dumitru Peteu, Nicolae Moiceanu, & Mărgărit Blăgescu",1,1:21.53
+15,Poland,POL,I,"Stefan Ciapała, Jerzy Olesiak, Józef Szymański, & Aleksander Habala",1,1:19.95
+16,Sweden,SWE,I,"Olle Axelsson, Ebbe Wallén, Sune Skagerling, & Gunnar Åhs",1,1:18.95
+17,Great Britain,GBR,II,"Stuart Parkinson, John Read, Christopher Williams, & Rodney Mann",1,1:20.72
+18,France,FRA,I,"André Robin, Pierre Bouvier, Jacques Panciroli, & Lucien Grosso",1,1:20.00
+19,United States,USA,II,"James Bickford, Donald Jacques, Lawrence McKillip, & Hubert Miller",1,1:20.97
+20,Romania,ROU,II,"Constantin Dragomir, Vasile Panait, Ion Staicu, & Gheorghe Moldoveanu",1,1:21.21
+21,Poland,POL,II,"Aleksy Konieczny, Zygmunt Konieczny, Włodzimierz Źróbik, & Zbigniew Skowroński/Jan Dąbrowski(*)",1,nan
+Silver,Italy,ITA,II,"Eugenio Monti, Ulrico Girardi, Renzo Alverà, & Renato Mocellini",2,1:17.97
+Bronze,United States,USA,I,"Arthur Tyler, William Dodge, Charles Butler, & James Lamy",2,1:17.87
+4,Switzerland,SUI,II,"Max Angst, Aby Gartmann, Harry Warburton, & Rolf Gerber",2,1:17.85
+5,Italy,ITA,I,"Dino De Martin, Giovanni De Martin, Giovanni Tabacchi, & Carlo Da Prà",2,1:18.65
+6,Germany,GER,I,"Hans Rösch, Michael Pössinger, Lorenz Nieberl, & Sylvester Wackerle",2,1:19.04
+7,Austria,AUT,II,"Kurt Loserth, Wilfried Thurner, Karl Schwarzböck, & Franz Dominik",2,1:19.12
+8,Germany,GER,II,"Franz Schelle, Jakob Nirschl, Hans Henn, & Edmund Koller",2,1:18.84
+9,Spain,ESP,I,"Alfonso de Portago, Vicente Sartorius y Cabeza de Vaca, Gonzalo Taboada, & Luis Muñoz",2,1:19.27
+10,Austria,AUT,I,"Karl Wagner, Fritz Rursch, Adolf Tonn, & Heinrich Isser",2,1:20.74
+11,Norway,NOR,I,"Arne Røgden, Arnold Dyrdahl, Odd Solli, & Trygve Brudevold",2,1:20.08
+12,Great Britain,GBR,I,"Keith Schellenberg, Rollo Brandt, Ralph Raffles, & John Rainforth",2,1:18.73
+13,Sweden,SWE,II,"Kjell Holmström, Sven Erbs, Walter Aronson, & Jan Lapidoth",2,1:20.32
+14,Romania,ROU,I,"Heinrich Enea, Dumitru Peteu, Nicolae Moiceanu, & Mărgărit Blăgescu",2,1:20.58
+15,Poland,POL,I,"Stefan Ciapała, Jerzy Olesiak, Józef Szymański, & Aleksander Habala",2,1:20.25
+16,Sweden,SWE,I,"Olle Axelsson, Ebbe Wallén, Sune Skagerling, & Gunnar Åhs",2,1:19.98
+17,Great Britain,GBR,II,"Stuart Parkinson, John Read, Christopher Williams, & Rodney Mann",2,1:19.92
+18,France,FRA,I,"André Robin, Pierre Bouvier, Jacques Panciroli, & Lucien Grosso",2,1:21.25
+19,United States,USA,II,"James Bickford, Donald Jacques, Lawrence McKillip, & Hubert Miller",2,1:22.47
+20,Romania,ROU,II,"Constantin Dragomir, Vasile Panait, Ion Staicu, & Gheorghe Moldoveanu",2,1:21.22
+21,Poland,POL,II,"Aleksy Konieczny, Zygmunt Konieczny, Włodzimierz Źróbik, & Zbigniew Skowroński/Jan Dąbrowski(*)",2,nan
+Silver,Italy,ITA,II,"Eugenio Monti, Ulrico Girardi, Renzo Alverà, & Renato Mocellini",3,1:18.13
+Bronze,United States,USA,I,"Arthur Tyler, William Dodge, Charles Butler, & James Lamy",3,1:18.25
+4,Switzerland,SUI,II,"Max Angst, Aby Gartmann, Harry Warburton, & Rolf Gerber",3,1:18.68
+5,Italy,ITA,I,"Dino De Martin, Giovanni De Martin, Giovanni Tabacchi, & Carlo Da Prà",3,1:18.50
+6,Germany,GER,I,"Hans Rösch, Michael Pössinger, Lorenz Nieberl, & Sylvester Wackerle",3,1:19.43
+7,Austria,AUT,II,"Kurt Loserth, Wilfried Thurner, Karl Schwarzböck, & Franz Dominik",3,1:20.08
+8,Germany,GER,II,"Franz Schelle, Jakob Nirschl, Hans Henn, & Edmund Koller",3,1:19.31
+9,Spain,ESP,I,"Alfonso de Portago, Vicente Sartorius y Cabeza de Vaca, Gonzalo Taboada, & Luis Muñoz",3,1:21.37
+10,Austria,AUT,I,"Karl Wagner, Fritz Rursch, Adolf Tonn, & Heinrich Isser",3,1:19.98
+11,Norway,NOR,I,"Arne Røgden, Arnold Dyrdahl, Odd Solli, & Trygve Brudevold",3,1:20.45
+12,Great Britain,GBR,I,"Keith Schellenberg, Rollo Brandt, Ralph Raffles, & John Rainforth",3,1:20.42
+13,Sweden,SWE,II,"Kjell Holmström, Sven Erbs, Walter Aronson, & Jan Lapidoth",3,1:21.15
+14,Romania,ROU,I,"Heinrich Enea, Dumitru Peteu, Nicolae Moiceanu, & Mărgărit Blăgescu",3,1:20.64
+15,Poland,POL,I,"Stefan Ciapała, Jerzy Olesiak, Józef Szymański, & Aleksander Habala",3,1:21.10
+16,Sweden,SWE,I,"Olle Axelsson, Ebbe Wallén, Sune Skagerling, & Gunnar Åhs",3,1:22.75
+17,Great Britain,GBR,II,"Stuart Parkinson, John Read, Christopher Williams, & Rodney Mann",3,1:22.51
+18,France,FRA,I,"André Robin, Pierre Bouvier, Jacques Panciroli, & Lucien Grosso",3,1:20.95
+19,United States,USA,II,"James Bickford, Donald Jacques, Lawrence McKillip, & Hubert Miller",3,1:21.22
+20,Romania,ROU,II,"Constantin Dragomir, Vasile Panait, Ion Staicu, & Gheorghe Moldoveanu",3,1:22.37
+21,Poland,POL,II,"Aleksy Konieczny, Zygmunt Konieczny, Włodzimierz Źróbik, & Zbigniew Skowroński/Jan Dąbrowski(*)",3,nan
+Silver,Italy,ITA,II,"Eugenio Monti, Ulrico Girardi, Renzo Alverà, & Renato Mocellini",4,1:18.31
+Bronze,United States,USA,I,"Arthur Tyler, William Dodge, Charles Butler, & James Lamy",4,1:18.52
+4,Switzerland,SUI,II,"Max Angst, Aby Gartmann, Harry Warburton, & Rolf Gerber",4,1:20.33
+5,Italy,ITA,I,"Dino De Martin, Giovanni De Martin, Giovanni Tabacchi, & Carlo Da Prà",4,1:19.41
+6,Germany,GER,I,"Hans Rösch, Michael Pössinger, Lorenz Nieberl, & Sylvester Wackerle",4,1:20.94
+7,Austria,AUT,II,"Kurt Loserth, Wilfried Thurner, Karl Schwarzböck, & Franz Dominik",4,1:19.72
+8,Germany,GER,II,"Franz Schelle, Jakob Nirschl, Hans Henn, & Edmund Koller",4,1:21.35
+9,Spain,ESP,I,"Alfonso de Portago, Vicente Sartorius y Cabeza de Vaca, Gonzalo Taboada, & Luis Muñoz",4,1:19.08
+10,Austria,AUT,I,"Karl Wagner, Fritz Rursch, Adolf Tonn, & Heinrich Isser",4,1:20.30
+11,Norway,NOR,I,"Arne Røgden, Arnold Dyrdahl, Odd Solli, & Trygve Brudevold",4,1:20.01
+12,Great Britain,GBR,I,"Keith Schellenberg, Rollo Brandt, Ralph Raffles, & John Rainforth",4,1:21.58
+13,Sweden,SWE,II,"Kjell Holmström, Sven Erbs, Walter Aronson, & Jan Lapidoth",4,1:21.13
+14,Romania,ROU,I,"Heinrich Enea, Dumitru Peteu, Nicolae Moiceanu, & Mărgărit Blăgescu",4,1:20.44
+15,Poland,POL,I,"Stefan Ciapała, Jerzy Olesiak, Józef Szymański, & Aleksander Habala",4,1:22.19
+16,Sweden,SWE,I,"Olle Axelsson, Ebbe Wallén, Sune Skagerling, & Gunnar Åhs",4,1:21.86
+17,Great Britain,GBR,II,"Stuart Parkinson, John Read, Christopher Williams, & Rodney Mann",4,1:20.58
+18,France,FRA,I,"André Robin, Pierre Bouvier, Jacques Panciroli, & Lucien Grosso",4,1:21.63
+19,United States,USA,II,"James Bickford, Donald Jacques, Lawrence McKillip, & Hubert Miller",4,1:20.50
+20,Romania,ROU,II,"Constantin Dragomir, Vasile Panait, Ion Staicu, & Gheorghe Moldoveanu",4,1:23.03
+21,Poland,POL,II,"Aleksy Konieczny, Zygmunt Konieczny, Włodzimierz Źróbik, & Zbigniew Skowroński/Jan Dąbrowski(*)",4,nan

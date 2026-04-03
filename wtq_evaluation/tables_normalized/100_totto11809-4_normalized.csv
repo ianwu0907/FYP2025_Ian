@@ -1,0 +1,53 @@
+team,season,division,competition,apps,goals
+parnu/kalev,1995-96,meistriliiga,competition_1,8,1
+parnu/kalev,1995-96,meistriliiga,competition_4,8,1
+lelle,1997-98,meistriliiga,competition_1,9,0
+lelle,1997-98,meistriliiga,competition_4,9,0
+lelle,1998,meistriliiga,competition_1,6,1
+lelle,1998,meistriliiga,competition_4,6,1
+lelle,1999,meistriliiga,competition_1,7,2
+lelle,1999,meistriliiga,competition_4,7,2
+flora,1999,meistriliiga,competition_1,11,2
+flora,1999,meistriliiga,competition_3,2,0
+flora,1999,meistriliiga,competition_4,1,0
+flora,2000,meistriliiga,competition_1,26,1
+flora,2000,meistriliiga,competition_3,2,0
+flora,2001,meistriliiga,competition_1,24,2
+flora,2001,meistriliiga,competition_3,1,0
+flora,2002,meistriliiga,competition_1,26,9
+flora,2002,meistriliiga,competition_3,2,0
+flora,2002,meistriliiga,competition_4,0,0
+flora,2004,meistriliiga,competition_1,15,3
+flora,2004,meistriliiga,competition_3,2,0
+flora,2004,meistriliiga,competition_4,3,0
+tervis parnu,2000,esiliiga,competition_1,1,0
+tervis parnu,2000,esiliiga,competition_4,1,0
+valga,2001,esiliiga,competition_1,1,0
+valga,2001,esiliiga,competition_4,1,0
+valerenga,2003,tippeligaen,competition_1,11,1
+valerenga,2003,tippeligaen,competition_2,3,0
+valerenga,2003,tippeligaen,competition_3,3,0
+valerenga,2003,tippeligaen,competition_4,2,1
+fredrikstad,2004,tippeligaen,competition_1,9,0
+fredrikstad,2004,tippeligaen,competition_4,9,0
+fredrikstad,2005,tippeligaen,competition_1,12,1
+fredrikstad,2005,tippeligaen,competition_4,12,1
+fredrikstad,2006,tippeligaen,competition_1,25,0
+fredrikstad,2006,tippeligaen,competition_2,2,3
+fredrikstad,2006,tippeligaen,competition_4,27,4
+fredrikstad,2007,tippeligaen,competition_1,22,3
+fredrikstad,2007,tippeligaen,competition_3,2,0
+fredrikstad,2008,tippeligaen,competition_1,23,2
+fredrikstad,2008,tippeligaen,competition_4,23,2
+fredrikstad,2009,tippeligaen,competition_1,25,2
+fredrikstad,2009,tippeligaen,competition_3,2,1
+fredrikstad,2009,tippeligaen,competition_4,1,0
+fredrikstad,2010,adeccoligaen,competition_1,28,4
+fredrikstad,2010,adeccoligaen,competition_4,3,2
+fredrikstad,2011,tippeligaen,competition_1,15,0
+fredrikstad,2011,tippeligaen,competition_4,16,0
+vitesse,2011-12,eredivisie,competition_1,2,0
+vitesse,2011-12,eredivisie,competition_2,0,0
+vitesse,2011-12,eredivisie,competition_4,0,0
+chengdu blades,2013,china league one,competition_1,18,1
+chengdu blades,2013,china league one,competition_4,18,1

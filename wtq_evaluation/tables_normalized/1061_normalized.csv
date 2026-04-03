@@ -1,0 +1,37 @@
+indicator,group,metric,value
+positive,group_1,percent,88.1
+positive,group_1,ci_from,87.6
+positive,group_1,ci_to,88.6
+positive,group_2,percent,34.1
+positive,group_2,ci_from,17.0
+positive,group_2,ci_to,54.9
+negative,group_1,percent,11.3
+negative,group_1,ci_from,10.8
+negative,group_1,ci_to,11.9
+negative,group_2,percent,65.4
+negative,group_2,ci_from,44.6
+negative,group_2,ci_to,82.7
+ever seriously contemplated suicide,group_1,percent,15.6
+ever seriously contemplated suicide,group_1,ci_from,15.1
+ever seriously contemplated suicide,group_1,ci_to,16.2
+ever seriously contemplated suicide,group_2,percent,44.8
+ever seriously contemplated suicide,group_2,ci_from,25.7
+ever seriously contemplated suicide,group_2,ci_to,65.2
+diagnosed mood or anxiety disorder,group_1,percent,17.1
+diagnosed mood or anxiety disorder,group_1,ci_from,16.6
+diagnosed mood or anxiety disorder,group_1,ci_to,17.7
+diagnosed mood or anxiety disorder,group_2,percent,61.1
+diagnosed mood or anxiety disorder,group_2,ci_from,40.6
+diagnosed mood or anxiety disorder,group_2,ci_to,79.1
+mood disorder,group_1,percent,10.2
+mood disorder,group_1,ci_from,9.7
+mood disorder,group_1,ci_to,10.7
+mood disorder,group_2,percent,39.9
+mood disorder,group_2,ci_from,21.5
+mood disorder,group_2,ci_to,60.6
+anxiety disorder,group_1,percent,13.1
+anxiety disorder,group_1,ci_from,12.6
+anxiety disorder,group_1,ci_to,13.7
+anxiety disorder,group_2,percent,57.0
+anxiety disorder,group_2,ci_from,36.5
+anxiety disorder,group_2,ci_to,75.8

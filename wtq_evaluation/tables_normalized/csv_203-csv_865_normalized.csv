@@ -1,0 +1,73 @@
+rank,name,country,attempt_number,distance,is_valid
+1,Tamara Press,Soviet Union,1,17.51,True
+2,Renate Culmberger,Germany,1,17.41,True
+3,Galina Zybina,Soviet Union,1,17.38,True
+4,Valerie Young,New Zealand,1,17.08,True
+5,Margitta Helmbold,Germany,1,16.67,True
+6,Irina Press,Soviet Union,1,,False
+7,Nancy McCredie,Canada,1,15.89,True
+8,Ana Salagean,Romania,1,15.79,True
+9,Johanna Hubner,Germany,1,15.77,True
+10,Ivanka Khristova,Bulgaria,1,15.69,True
+11,Judit Bognar,Hungary,1,15.65,True
+12,Earlene Brown,United States,1,14.25,True
+1,Tamara Press,Soviet Union,2,17.72,True
+2,Renate Culmberger,Germany,2,17.1,True
+3,Galina Zybina,Soviet Union,2,17.25,True
+4,Valerie Young,New Zealand,2,15.84,True
+5,Margitta Helmbold,Germany,2,15.87,True
+6,Irina Press,Soviet Union,2,16.5,True
+7,Nancy McCredie,Canada,2,15.13,True
+8,Ana Salagean,Romania,2,15.83,True
+9,Johanna Hubner,Germany,2,,False
+10,Ivanka Khristova,Bulgaria,2,,False
+11,Judit Bognar,Hungary,2,,False
+12,Earlene Brown,United States,2,13.43,True
+1,Tamara Press,Soviet Union,3,17.18,True
+2,Renate Culmberger,Germany,3,16.38,True
+3,Galina Zybina,Soviet Union,3,17.45,True
+4,Valerie Young,New Zealand,3,16.81,True
+5,Margitta Helmbold,Germany,3,,False
+6,Irina Press,Soviet Union,3,,False
+7,Nancy McCredie,Canada,3,15.27,True
+8,Ana Salagean,Romania,3,15.7,True
+9,Johanna Hubner,Germany,3,,False
+10,Ivanka Khristova,Bulgaria,3,15.35,True
+11,Judit Bognar,Hungary,3,,False
+12,Earlene Brown,United States,3,14.8,True
+1,Tamara Press,Soviet Union,4,16.49,True
+2,Renate Culmberger,Germany,4,17.61,True
+3,Galina Zybina,Soviet Union,4,17.42,True
+4,Valerie Young,New Zealand,4,17.26,True
+5,Margitta Helmbold,Germany,4,16.6,True
+6,Irina Press,Soviet Union,4,15.81,True
+7,Nancy McCredie,Canada,4,,False
+8,Ana Salagean,Romania,4,,False
+9,Johanna Hubner,Germany,4,,False
+10,Ivanka Khristova,Bulgaria,4,,False
+11,Judit Bognar,Hungary,4,,False
+12,Earlene Brown,United States,4,,False
+1,Tamara Press,Soviet Union,5,,False
+2,Renate Culmberger,Germany,5,17.0,True
+3,Galina Zybina,Soviet Union,5,16.65,True
+4,Valerie Young,New Zealand,5,17.24,True
+5,Margitta Helmbold,Germany,5,16.91,True
+6,Irina Press,Soviet Union,5,15.78,True
+7,Nancy McCredie,Canada,5,,False
+8,Ana Salagean,Romania,5,,False
+9,Johanna Hubner,Germany,5,,False
+10,Ivanka Khristova,Bulgaria,5,,False
+11,Judit Bognar,Hungary,5,,False
+12,Earlene Brown,United States,5,,False
+1,Tamara Press,Soviet Union,6,18.14,True
+2,Renate Culmberger,Germany,6,17.01,True
+3,Galina Zybina,Soviet Union,6,17.36,True
+4,Valerie Young,New Zealand,6,17.23,True
+5,Margitta Helmbold,Germany,6,16.34,True
+6,Irina Press,Soviet Union,6,16.71,True
+7,Nancy McCredie,Canada,6,,False
+8,Ana Salagean,Romania,6,,False
+9,Johanna Hubner,Germany,6,,False
+10,Ivanka Khristova,Bulgaria,6,,False
+11,Judit Bognar,Hungary,6,,False
+12,Earlene Brown,United States,6,,False

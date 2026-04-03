@@ -1,0 +1,49 @@
+stratification_dimension,category,category_part_1,category_part_2,metric_group,percentage,ci_lower,ci_upper
+,male,male,,1,56.1,47.4,64.4
+,male,male,,2,36.4,32.3,40.7
+,male,male,,3,75.6,71.3,79.4
+,female,female,,1,43.9,35.6,52.6
+,female,female,,2,63.6,59.3,67.7
+,female,female,,3,24.4,20.6,28.7
+age group,15 to 24,15 to 24,,1,42.7,33.1,52.9
+age group,15 to 24,15 to 24,,2,19.7,16.9,23.0
+age group,15 to 24,15 to 24,,3,44.9,39.5,50.3
+age group,25 to 44,25 to 44,,1,38.4,29.2,48.5
+age group,25 to 44,25 to 44,,2,42.7,38.5,46.9
+age group,25 to 44,25 to 44,,3,34.8,30.0,39.9
+age group,45 to 64,45 to 64,,1,19.0,13.8,25.5
+age group,45 to 64,45 to 64,,2,37.6,33.7,41.6
+age group,45 to 64,45 to 64,,3,20.3,15.7,26.0
+marital status,married/common-law,married,common-law,1,26.9,19.0,36.5
+marital status,married/common-law,married,common-law,2,45.6,41.5,49.7
+marital status,married/common-law,married,common-law,3,34.7,29.0,40.9
+marital status,"widowed, separated, divorced",widowed,"separated, divorced",1,12.1,8.2,17.3
+marital status,"widowed, separated, divorced",widowed,"separated, divorced",2,15.7,12.6,19.4
+marital status,"widowed, separated, divorced",widowed,"separated, divorced",3,3.7,2.6,5.3
+marital status,"single, never married",single,never married,1,61.0,51.2,69.9
+marital status,"single, never married",single,never married,2,38.4,34.5,42.5
+marital status,"single, never married",single,never married,3,61.5,55.4,67.1
+highest level of household education,secondary school graduation or less,secondary school graduation or less,,1,20.5,13.8,29.2
+highest level of household education,secondary school graduation or less,secondary school graduation or less,,2,15.2,12.7,18.1
+highest level of household education,secondary school graduation or less,secondary school graduation or less,,3,18.0,14.3,22.4
+highest level of household education,at least some postsecondary,at least some postsecondary,,1,69.2,59.4,77.6
+highest level of household education,at least some postsecondary,at least some postsecondary,,2,76.1,72.5,79.4
+highest level of household education,at least some postsecondary,at least some postsecondary,,3,73.7,68.8,78.1
+employment status,employed,employed,,1,59.6,50.3,68.3
+employment status,employed,employed,,2,52.1,48.1,56.2
+employment status,employed,employed,,3,72.8,68.1,77.0
+employment status,unemployed,unemployed,,1,33.7,25.7,42.8
+employment status,unemployed,unemployed,,2,37.3,33.3,41.4
+employment status,unemployed,unemployed,,3,24.3,20.4,28.7
+employment status,not in labour force,not in labour force,,1,6.5,4.0,10.5
+employment status,not in labour force,not in labour force,,2,10.3,8.0,13.1
+employment status,not in labour force,not in labour force,,3,,,
+household income adequacy quintile,1 and 2,1,2,1,53.0,43.6,62.2
+household income adequacy quintile,1 and 2,1,2,2,53.2,48.9,57.4
+household income adequacy quintile,1 and 2,1,2,3,35.1,30.3,40.2
+household income adequacy quintile,3,3,,1,18.9,12.5,27.5
+household income adequacy quintile,3,3,,2,18.1,15.1,21.4
+household income adequacy quintile,3,3,,3,17.8,14.1,22.3
+household income adequacy quintile,4 and 5,4,5,1,28.1,20.1,37.8
+household income adequacy quintile,4 and 5,4,5,2,28.8,25.2,32.6
+household income adequacy quintile,4 and 5,4,5,3,47.1,41.5,52.7

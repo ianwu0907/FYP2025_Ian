@@ -1,0 +1,36 @@
+vessel_id,vessel_name,shipbuilder,event_type,event_date,cost_millions,disposition
+F170,Antelope,Vosper Thornycroft,event_1,11 May 1970,14.4,Bombed by Argentine A-4 Skyhawks on 23 May 1982 and sank following day in San Carlos Water
+F172,Ambuscade,"Yarrow Shipbuilders, Scotstoun",event_1,11 November 1971,16.5,To Pakistan as Tariq
+F173,Arrow,YSL,event_1,11 November 1971,20.2,To Pakistan as Khaibar
+F171,Active,Vosper Thornycroft,event_1,11 May 1970,24.1,To Pakistan as Shah Jahan
+F174,Alacrity,YSL,event_1,11 November 1971,23.8,To Pakistan as Badr
+F184,Ardent,YSL,event_1,11 November 1971,26.3,Bombed by Argentine A-4 Skyhawks on 21 May 1982 in San Carlos Water and sank following day in Grantham Sound
+F185,Avenger,YSL,event_1,11 November 1971,27.7,To Pakistan as Tippu Sultan
+,,,event_2,23 March 1971,,
+,,,event_2,1 September 1971,,
+,,,event_2,28 September 1972,,
+,,,event_2,21 July 1971,,
+,,,event_2,5 March 1973,,
+,,,event_2,26 February 1974,,
+,,,event_2,30 October 1974,,
+,,,event_3,16 March 1972,,
+,,,event_3,18 January 1973,,
+,,,event_3,5 February 1974,,
+,,,event_3,23 November 1972,,
+,,,event_3,18 September 1974,,
+,,,event_3,9 May 1975,,
+,,,event_3,20 November 1975,,
+,,,event_4,30 June 1975,,
+,,,event_4,23 August 1975,,
+,,,event_4,16 May 1975,,
+,,,event_4,2 June 1977,,
+,,,event_4,2 April 1977,,
+,,,event_4,10 September 1977,,
+,,,event_4,15 April 1978,,
+,,,event_5,16 July 1975,,
+,,,event_5,5 September 1975,,
+,,,event_5,29 July 1976,,
+,,,event_5,17 June 1977,,
+,,,event_5,2 July 1977,,
+,,,event_5,14 October 1977,,
+,,,event_5,15 April 1978,,

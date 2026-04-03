@@ -1,0 +1,53 @@
+geography,metric,unit,value
+newfoundland and labrador,Metric 1,thousands,3.6
+newfoundland and labrador,Metric 1,percent,1.8
+newfoundland and labrador,Metric 2,thousands,10.6
+newfoundland and labrador,Metric 2,percent,0.19
+prince edward island,Metric 1,thousands,1.2
+prince edward island,Metric 1,percent,2.0
+prince edward island,Metric 2,thousands,5.6
+prince edward island,Metric 2,percent,0.11
+nova scotia,Metric 1,thousands,8.6
+nova scotia,Metric 1,percent,2.2
+nova scotia,Metric 2,thousands,9.1
+nova scotia,Metric 2,percent,0.2
+new brunswick,Metric 1,thousands,6.3
+new brunswick,Metric 1,percent,2.1
+new brunswick,Metric 2,thousands,8.0
+new brunswick,Metric 2,percent,0.17
+quebec,Metric 1,thousands,62.5
+quebec,Metric 1,percent,1.8
+quebec,Metric 2,thousands,9.0
+quebec,Metric 2,percent,0.17
+ontario,Metric 1,thousands,160.2
+ontario,Metric 1,percent,2.6
+ontario,Metric 2,thousands,9.0
+ontario,Metric 2,percent,0.24
+manitoba,Metric 1,thousands,11.2
+manitoba,Metric 1,percent,1.9
+manitoba,Metric 2,thousands,7.1
+manitoba,Metric 2,percent,0.14
+saskatchewan,Metric 1,thousands,9.3
+saskatchewan,Metric 1,percent,2.0
+saskatchewan,Metric 2,thousands,10.6
+saskatchewan,Metric 2,percent,0.21
+alberta,Metric 1,thousands,42.1
+alberta,Metric 1,percent,2.2
+alberta,Metric 2,thousands,10.7
+alberta,Metric 2,percent,0.23
+british columbia,Metric 1,thousands,71.0
+british columbia,Metric 1,percent,3.4
+british columbia,Metric 2,thousands,9.7
+british columbia,Metric 2,percent,0.33
+yukon,Metric 1,thousands,0.6
+yukon,Metric 1,percent,3.4
+yukon,Metric 2,thousands,14.8
+yukon,Metric 2,percent,0.5
+northwest territories,Metric 1,thousands,0.6
+northwest territories,Metric 1,percent,2.6
+northwest territories,Metric 2,thousands,16.2
+northwest territories,Metric 2,percent,0.42
+nunavut,Metric 1,thousands,0.3
+nunavut,Metric 1,percent,2.8
+nunavut,Metric 2,thousands,16.9
+nunavut,Metric 2,percent,0.47

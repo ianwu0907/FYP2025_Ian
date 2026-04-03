@@ -1,0 +1,201 @@
+offence_category,offence_level,offence_aggravator,period,metric_type,value
+homicide,,,2022,number,
+homicide,,,2022,rate,
+homicide,,,2023,number,658.0
+homicide,,,2023,rate,1.78
+other violations causing death,,,2022,number,
+other violations causing death,,,2022,rate,
+other violations causing death,,,2023,number,133.0
+other violations causing death,,,2023,rate,0.0
+attempted murder,,,2022,number,
+attempted murder,,,2022,rate,
+attempted murder,,,2023,number,821.0
+attempted murder,,,2023,rate,2.22
+sexual assault,level 3,aggravated,2022,number,
+sexual assault,level 3,aggravated,2022,rate,
+sexual assault,level 3,aggravated,2023,number,158.0
+sexual assault,level 3,aggravated,2023,rate,0.0
+sexual assault,level 2,weapon or bodily harm,2022,number,
+sexual assault,level 2,weapon or bodily harm,2022,rate,
+sexual assault,level 2,weapon or bodily harm,2023,number,490.0
+sexual assault,level 2,weapon or bodily harm,2023,rate,1.0
+sexual assault,level 1,,2022,number,
+sexual assault,level 1,,2022,rate,
+sexual assault,level 1,,2023,number,27909.0
+sexual assault,level 1,,2023,rate,75.0
+"sexual offence occurring prior to january 4, 1983",,,2022,number,
+"sexual offence occurring prior to january 4, 1983",,,2022,rate,
+"sexual offence occurring prior to january 4, 1983",,,2023,number,574.0
+"sexual offence occurring prior to january 4, 1983",,,2023,rate,2.0
+sexual violations against children,,,2022,number,
+sexual violations against children,,,2022,rate,
+sexual violations against children,,,2023,number,9075.0
+sexual violations against children,,,2023,rate,24.0
+assault,level 3,aggravated,2022,number,
+assault,level 3,aggravated,2022,rate,
+assault,level 3,aggravated,2023,number,3584.0
+assault,level 3,aggravated,2023,rate,10.0
+assault,level 2,weapon or bodily harm,2022,number,
+assault,level 2,weapon or bodily harm,2022,rate,
+assault,level 2,weapon or bodily harm,2023,number,54218.0
+assault,level 2,weapon or bodily harm,2023,rate,146.0
+assault,level 1,,2022,number,
+assault,level 1,,2022,rate,
+assault,level 1,,2023,number,170138.0
+assault,level 1,,2023,rate,459.0
+assault against a peace officer,,,2022,number,
+assault against a peace officer,,,2022,rate,
+assault against a peace officer,,,2023,number,11751.0
+assault against a peace officer,,,2023,rate,32.0
+other assaults,,,2022,number,
+other assaults,,,2022,rate,
+other assaults,,,2023,number,2124.0
+other assaults,,,2023,rate,6.0
+firearms,"use of, discharge, pointing",,2022,number,
+firearms,"use of, discharge, pointing",,2022,rate,
+firearms,"use of, discharge, pointing",,2023,number,2861.0
+firearms,"use of, discharge, pointing",,2023,rate,8.0
+robbery,,,2022,number,
+robbery,,,2022,rate,
+robbery,,,2023,number,22550.0
+robbery,,,2023,rate,61.0
+forcible confinement or kidnapping,,,2022,number,
+forcible confinement or kidnapping,,,2022,rate,
+forcible confinement or kidnapping,,,2023,number,3490.0
+forcible confinement or kidnapping,,,2023,rate,9.0
+trafficking in persons,,,2022,number,
+trafficking in persons,,,2022,rate,
+trafficking in persons,,,2023,number,238.0
+trafficking in persons,,,2023,rate,1.0
+extortion,,,2022,number,
+extortion,,,2022,rate,
+extortion,,,2023,number,4724.0
+extortion,,,2023,rate,13.0
+criminal harassment,,,2022,number,
+criminal harassment,,,2022,rate,
+criminal harassment,,,2023,number,19691.0
+criminal harassment,,,2023,rate,53.0
+uttering threats,,,2022,number,
+uttering threats,,,2022,rate,
+uttering threats,,,2023,number,66806.0
+uttering threats,,,2023,rate,180.0
+indecent or harassing communications,,,2022,number,
+indecent or harassing communications,,,2022,rate,
+indecent or harassing communications,,,2023,number,17772.0
+indecent or harassing communications,,,2023,rate,48.0
+non-consensual distribution of intimate images,,,2022,number,
+non-consensual distribution of intimate images,,,2022,rate,
+non-consensual distribution of intimate images,,,2023,number,1483.0
+non-consensual distribution of intimate images,,,2023,rate,4.0
+offences in relation to sexual services,,,2022,number,
+offences in relation to sexual services,,,2022,rate,
+offences in relation to sexual services,,,2023,number,1044.0
+offences in relation to sexual services,,,2023,rate,3.0
+other violent criminal code violations,,,2022,number,
+other violent criminal code violations,,,2022,rate,
+other violent criminal code violations,,,2023,number,4547.0
+other violent criminal code violations,,,2023,rate,12.0
+breaking and entering,,,2022,number,
+breaking and entering,,,2022,rate,
+breaking and entering,,,2023,number,160329.0
+breaking and entering,,,2023,rate,433.0
+possess stolen property,,,2022,number,
+possess stolen property,,,2022,rate,
+possess stolen property,,,2023,number,24358.0
+possess stolen property,,,2023,rate,66.0
+theft of motor vehicle,,,2022,number,
+theft of motor vehicle,,,2022,rate,
+theft of motor vehicle,,,2023,number,86192.0
+theft of motor vehicle,,,2023,rate,233.0
+"theft over $5,000",,,2022,number,
+"theft over $5,000",,,2022,rate,
+"theft over $5,000",,,2023,number,20104.0
+"theft over $5,000",,,2023,rate,54.0
+"shoplifting under $5,000",,,2022,number,
+"shoplifting under $5,000",,,2022,rate,
+"shoplifting under $5,000",,,2023,number,124896.0
+"shoplifting under $5,000",,,2023,rate,337.0
+"theft of $5,000 or under",,,2022,number,
+"theft of $5,000 or under",,,2022,rate,
+"theft of $5,000 or under",,,2023,number,407567.0
+"theft of $5,000 or under",,,2023,rate,1100.0
+fraud,,,2022,number,
+fraud,,,2022,rate,
+fraud,,,2023,number,130008.0
+fraud,,,2023,rate,351.0
+identity theft,,,2022,number,
+identity theft,,,2022,rate,
+identity theft,,,2023,number,3815.0
+identity theft,,,2023,rate,10.0
+identity fraud,,,2022,number,
+identity fraud,,,2022,rate,
+identity fraud,,,2023,number,15848.0
+identity fraud,,,2023,rate,43.0
+mischief,,,2022,number,
+mischief,,,2022,rate,
+mischief,,,2023,number,259917.0
+mischief,,,2023,rate,701.0
+arson,,,2022,number,
+arson,,,2022,rate,
+arson,,,2023,number,8049.0
+arson,,,2023,rate,22.0
+weapons violations,,,2022,number,
+weapons violations,,,2022,rate,
+weapons violations,,,2023,number,16589.0
+weapons violations,,,2023,rate,45.0
+child pornography,,,2022,number,
+child pornography,,,2022,rate,
+child pornography,,,2023,number,5934.0
+child pornography,,,2023,rate,16.0
+prostitution,,,2022,number,
+prostitution,,,2022,rate,
+prostitution,,,2023,number,115.0
+prostitution,,,2023,rate,0.0
+terrorism,,,2022,number,
+terrorism,,,2022,rate,
+terrorism,,,2023,number,108.0
+terrorism,,,2023,rate,0.0
+disturb the peace,,,2022,number,
+disturb the peace,,,2022,rate,
+disturb the peace,,,2023,number,94379.0
+disturb the peace,,,2023,rate,255.0
+administration of justice violations,,,2022,number,
+administration of justice violations,,,2022,rate,
+administration of justice violations,,,2023,number,229250.0
+administration of justice violations,,,2023,rate,619.0
+other violations,,,2022,number,
+other violations,,,2022,rate,
+other violations,,,2023,number,29031.0
+other violations,,,2023,rate,78.0
+alcohol-impaired driving,,,2022,number,
+alcohol-impaired driving,,,2022,rate,
+alcohol-impaired driving,,,2023,number,66008.0
+alcohol-impaired driving,,,2023,rate,178.0
+drug-impaired driving,,,2022,number,
+drug-impaired driving,,,2022,rate,
+drug-impaired driving,,,2023,number,4444.0
+drug-impaired driving,,,2023,rate,12.0
+alcohol- and drug-impaired driving,,,2022,number,
+alcohol- and drug-impaired driving,,,2022,rate,
+alcohol- and drug-impaired driving,,,2023,number,267.0
+alcohol- and drug-impaired driving,,,2023,rate,1.0
+impaired driving,,,2022,number,
+impaired driving,,,2022,rate,
+impaired driving,,,2023,number,113.0
+impaired driving,,,2023,rate,0.0
+other criminal code traffic violations,,,2022,number,
+other criminal code traffic violations,,,2022,rate,
+other criminal code traffic violations,,,2023,number,55058.0
+other criminal code traffic violations,,,2023,rate,149.0
+human trafficking under the immigration and refugee protection act,,,2022,number,
+human trafficking under the immigration and refugee protection act,,,2022,rate,
+human trafficking under the immigration and refugee protection act,,,2023,number,117.0
+human trafficking under the immigration and refugee protection act,,,2023,rate,0.0
+youth criminal justice act,,,2022,number,
+youth criminal justice act,,,2022,rate,
+youth criminal justice act,,,2023,number,4765.0
+youth criminal justice act,,,2023,rate,13.0
+other federal statutes,,,2022,number,
+other federal statutes,,,2022,rate,
+other federal statutes,,,2023,number,21301.0
+other federal statutes,,,2023,rate,57.0

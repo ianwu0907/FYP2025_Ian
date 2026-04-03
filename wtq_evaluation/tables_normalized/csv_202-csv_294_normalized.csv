@@ -1,0 +1,99 @@
+year,team,car_model,engine_spec,chassis_code,driver,grand_prix,result
+1998,,,,,Giancarlo Fisichella,AUS,Ret
+1998,Mild Seven Benetton,Benetton B198,GC37-01 V10,B,Alexander Wurz,AUS,7
+1999,Mild Seven Benetton,Benetton B199,FB01 V10,B,Giancarlo Fisichella,AUS,4
+1999,Mild Seven Benetton,Benetton B199,FB01 V10,B,Alexander Wurz,AUS,Ret
+2000,Mild Seven Benetton,Benetton B200,FB02 V10,B,Giancarlo Fisichella,AUS,5
+2000,Mild Seven Benetton,Benetton B200,FB02 V10,B,Alexander Wurz,AUS,7
+1998,,,,,Giancarlo Fisichella,BRA,6
+1998,Mild Seven Benetton,Benetton B198,GC37-01 V10,B,Alexander Wurz,BRA,4
+1999,Mild Seven Benetton,Benetton B199,FB01 V10,B,Giancarlo Fisichella,BRA,Ret
+1999,Mild Seven Benetton,Benetton B199,FB01 V10,B,Alexander Wurz,BRA,7
+2000,Mild Seven Benetton,Benetton B200,FB02 V10,B,Giancarlo Fisichella,BRA,2
+2000,Mild Seven Benetton,Benetton B200,FB02 V10,B,Alexander Wurz,BRA,Ret
+1998,,,,,Giancarlo Fisichella,ARG,7
+1998,Mild Seven Benetton,Benetton B198,GC37-01 V10,B,Alexander Wurz,ARG,4
+1999,Mild Seven Benetton,Benetton B199,FB01 V10,B,Giancarlo Fisichella,ARG,5
+1999,Mild Seven Benetton,Benetton B199,FB01 V10,B,Alexander Wurz,ARG,Ret
+2000,Mild Seven Benetton,Benetton B200,FB02 V10,B,Giancarlo Fisichella,ARG,11
+2000,Mild Seven Benetton,Benetton B200,FB02 V10,B,Alexander Wurz,ARG,9
+1998,,,,,Giancarlo Fisichella,SMR,Ret
+1998,Mild Seven Benetton,Benetton B198,GC37-01 V10,B,Alexander Wurz,SMR,Ret
+1999,Mild Seven Benetton,Benetton B199,FB01 V10,B,Giancarlo Fisichella,SMR,5
+1999,Mild Seven Benetton,Benetton B199,FB01 V10,B,Alexander Wurz,SMR,6
+2000,Mild Seven Benetton,Benetton B200,FB02 V10,B,Giancarlo Fisichella,SMR,7
+2000,Mild Seven Benetton,Benetton B200,FB02 V10,B,Alexander Wurz,SMR,9
+1998,,,,,Giancarlo Fisichella,ESP,Ret
+1998,Mild Seven Benetton,Benetton B198,GC37-01 V10,B,Alexander Wurz,ESP,4
+1999,Mild Seven Benetton,Benetton B199,FB01 V10,B,Giancarlo Fisichella,ESP,9
+1999,Mild Seven Benetton,Benetton B199,FB01 V10,B,Alexander Wurz,ESP,10
+2000,Mild Seven Benetton,Benetton B200,FB02 V10,B,Giancarlo Fisichella,ESP,9
+2000,Mild Seven Benetton,Benetton B200,FB02 V10,B,Alexander Wurz,ESP,10
+1998,,,,,Giancarlo Fisichella,MON,2
+1998,Mild Seven Benetton,Benetton B198,GC37-01 V10,B,Alexander Wurz,MON,Ret
+1999,Mild Seven Benetton,Benetton B199,FB01 V10,B,Giancarlo Fisichella,MON,2
+1999,Mild Seven Benetton,Benetton B199,FB01 V10,B,Alexander Wurz,MON,Ret
+2000,Mild Seven Benetton,Benetton B200,FB02 V10,B,Giancarlo Fisichella,MON,5
+2000,Mild Seven Benetton,Benetton B200,FB02 V10,B,Alexander Wurz,MON,12
+1998,,,,,Giancarlo Fisichella,CAN,2
+1998,Mild Seven Benetton,Benetton B198,GC37-01 V10,B,Alexander Wurz,CAN,4
+1999,Mild Seven Benetton,Benetton B199,FB01 V10,B,Giancarlo Fisichella,CAN,Ret
+1999,Mild Seven Benetton,Benetton B199,FB01 V10,B,Alexander Wurz,CAN,Ret
+2000,Mild Seven Benetton,Benetton B200,FB02 V10,B,Giancarlo Fisichella,CAN,3
+2000,Mild Seven Benetton,Benetton B200,FB02 V10,B,Alexander Wurz,CAN,Ret
+1998,,,,,Giancarlo Fisichella,FRA,9
+1998,Mild Seven Benetton,Benetton B198,GC37-01 V10,B,Alexander Wurz,FRA,5
+1999,Mild Seven Benetton,Benetton B199,FB01 V10,B,Giancarlo Fisichella,FRA,7
+1999,Mild Seven Benetton,Benetton B199,FB01 V10,B,Alexander Wurz,FRA,10
+2000,Mild Seven Benetton,Benetton B200,FB02 V10,B,Giancarlo Fisichella,FRA,3
+2000,Mild Seven Benetton,Benetton B200,FB02 V10,B,Alexander Wurz,FRA,9
+1998,,,,,Giancarlo Fisichella,GBR,5
+1998,Mild Seven Benetton,Benetton B198,GC37-01 V10,B,Alexander Wurz,GBR,4
+1999,Mild Seven Benetton,Benetton B199,FB01 V10,B,Giancarlo Fisichella,GBR,12
+1999,Mild Seven Benetton,Benetton B199,FB01 V10,B,Alexander Wurz,GBR,5
+2000,Mild Seven Benetton,Benetton B200,FB02 V10,B,Giancarlo Fisichella,GBR,9
+2000,Mild Seven Benetton,Benetton B200,FB02 V10,B,Alexander Wurz,GBR,Ret
+1998,,,,,Giancarlo Fisichella,AUT,Ret
+1998,Mild Seven Benetton,Benetton B198,GC37-01 V10,B,Alexander Wurz,AUT,9
+1999,Mild Seven Benetton,Benetton B199,FB01 V10,B,Giancarlo Fisichella,AUT,Ret
+1999,Mild Seven Benetton,Benetton B199,FB01 V10,B,Alexander Wurz,AUT,7
+2000,Mild Seven Benetton,Benetton B200,FB02 V10,B,Giancarlo Fisichella,AUT,Ret
+2000,Mild Seven Benetton,Benetton B200,FB02 V10,B,Alexander Wurz,AUT,10
+1998,,,,,Giancarlo Fisichella,GER,7
+1998,Mild Seven Benetton,Benetton B198,GC37-01 V10,B,Alexander Wurz,GER,11
+1999,Mild Seven Benetton,Benetton B199,FB01 V10,B,Giancarlo Fisichella,GER,Ret
+1999,Mild Seven Benetton,Benetton B199,FB01 V10,B,Alexander Wurz,GER,7
+2000,Mild Seven Benetton,Benetton B200,FB02 V10,B,Giancarlo Fisichella,GER,Ret
+2000,Mild Seven Benetton,Benetton B200,FB02 V10,B,Alexander Wurz,GER,Ret
+1998,,,,,Giancarlo Fisichella,HUN,8
+1998,Mild Seven Benetton,Benetton B198,GC37-01 V10,B,Alexander Wurz,HUN,16
+1999,Mild Seven Benetton,Benetton B199,FB01 V10,B,Giancarlo Fisichella,HUN,11
+1999,Mild Seven Benetton,Benetton B199,FB01 V10,B,Alexander Wurz,HUN,14
+2000,Mild Seven Benetton,Benetton B200,FB02 V10,B,Giancarlo Fisichella,HUN,Ret
+2000,Mild Seven Benetton,Benetton B200,FB02 V10,B,Alexander Wurz,HUN,11
+1998,,,,,Giancarlo Fisichella,BEL,Ret
+1998,Mild Seven Benetton,Benetton B198,GC37-01 V10,B,Alexander Wurz,BEL,Ret
+1999,Mild Seven Benetton,Benetton B199,FB01 V10,B,Giancarlo Fisichella,BEL,Ret
+1999,Mild Seven Benetton,Benetton B199,FB01 V10,B,Alexander Wurz,BEL,Ret
+2000,Mild Seven Benetton,Benetton B200,FB02 V10,B,Giancarlo Fisichella,BEL,Ret
+2000,Mild Seven Benetton,Benetton B200,FB02 V10,B,Alexander Wurz,BEL,13
+1998,,,,,Giancarlo Fisichella,ITA,8
+1998,Mild Seven Benetton,Benetton B198,GC37-01 V10,B,Alexander Wurz,ITA,Ret
+1999,Mild Seven Benetton,Benetton B199,FB01 V10,B,Giancarlo Fisichella,ITA,Ret
+1999,Mild Seven Benetton,Benetton B199,FB01 V10,B,Alexander Wurz,ITA,Ret
+2000,Mild Seven Benetton,Benetton B200,FB02 V10,B,Giancarlo Fisichella,ITA,11
+2000,Mild Seven Benetton,Benetton B200,FB02 V10,B,Alexander Wurz,ITA,5
+1998,,,,,Giancarlo Fisichella,LUX,6
+1998,Mild Seven Benetton,Benetton B198,GC37-01 V10,B,Alexander Wurz,LUX,7
+1999,Mild Seven Benetton,Benetton B199,FB01 V10,B,Giancarlo Fisichella,LUX,11
+1999,Mild Seven Benetton,Benetton B199,FB01 V10,B,Alexander Wurz,LUX,8
+2000,Mild Seven Benetton,Benetton B200,FB02 V10,B,Giancarlo Fisichella,LUX,Ret
+2000,Mild Seven Benetton,Benetton B200,FB02 V10,B,Alexander Wurz,LUX,10
+1998,,,,,Giancarlo Fisichella,JPN,8
+1998,Mild Seven Benetton,Benetton B198,GC37-01 V10,B,Alexander Wurz,JPN,9
+1999,Mild Seven Benetton,Benetton B199,FB01 V10,B,Giancarlo Fisichella,JPN,14
+1999,Mild Seven Benetton,Benetton B199,FB01 V10,B,Alexander Wurz,JPN,10
+2000,Mild Seven Benetton,Benetton B200,FB02 V10,B,Giancarlo Fisichella,JPN,14
+2000,Mild Seven Benetton,Benetton B200,FB02 V10,B,Alexander Wurz,JPN,Ret
+2000,Mild Seven Benetton,Benetton B200,FB02 V10,B,Giancarlo Fisichella,MAL,9
+2000,Mild Seven Benetton,Benetton B200,FB02 V10,B,Alexander Wurz,MAL,7

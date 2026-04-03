@@ -1,0 +1,73 @@
+geographic_section,language_group,scenario,scenario_type,time_window,percentage
+canada,english,low immigration,low im,,77.7
+canada,english,high immigration,high im,,77.8
+canada,english,geographic distribution of immigrants 2005 to 2010,geographic distribution,2005 to 2010,77.6
+canada,english,geographic distribution of immigrants 2000 to 2005,geographic distribution,2000 to 2005,77.7
+canada,english,alternative immigration composition,alternative immigration composition,,77.8
+canada,english,internal migration 2006 to 2011,internal,2006 to 2011,77.8
+canada,english,internal migration 2001 to 2006,internal,2001 to 2006,77.8
+canada,english,internal migration 1996 to 2001,internal,1996 to 2001,77.9
+canada,french,low immigration,low im,,20.9
+canada,french,high immigration,high im,,20.2
+canada,french,geographic distribution of immigrants 2005 to 2010,geographic distribution,2005 to 2010,20.6
+canada,french,geographic distribution of immigrants 2000 to 2005,geographic distribution,2000 to 2005,20.5
+canada,french,alternative immigration composition,alternative immigration composition,,20.3
+canada,french,internal migration 2006 to 2011,internal,2006 to 2011,20.4
+canada,french,internal migration 2001 to 2006,internal,2001 to 2006,20.4
+canada,french,internal migration 1996 to 2001,internal,1996 to 2001,20.3
+canada,neither english nor french,low immigration,low im,,1.4
+canada,neither english nor french,high immigration,high im,,1.9
+canada,neither english nor french,geographic distribution of immigrants 2005 to 2010,geographic distribution,2005 to 2010,1.8
+canada,neither english nor french,geographic distribution of immigrants 2000 to 2005,geographic distribution,2000 to 2005,1.9
+canada,neither english nor french,alternative immigration composition,alternative immigration composition,,1.8
+canada,neither english nor french,internal migration 2006 to 2011,internal,2006 to 2011,1.8
+canada,neither english nor french,internal migration 2001 to 2006,internal,2001 to 2006,1.8
+canada,neither english nor french,internal migration 1996 to 2001,internal,1996 to 2001,1.8
+quebec,english,low immigration,low im,,16.4
+quebec,english,high immigration,high im,,17.2
+quebec,english,geographic distribution of immigrants 2005 to 2010,geographic distribution,2005 to 2010,17.0
+quebec,english,geographic distribution of immigrants 2000 to 2005,geographic distribution,2000 to 2005,16.9
+quebec,english,alternative immigration composition,alternative immigration composition,,17.1
+quebec,english,internal migration 2006 to 2011,internal,2006 to 2011,17.2
+quebec,english,internal migration 2001 to 2006,internal,2001 to 2006,17.3
+quebec,english,internal migration 1996 to 2001,internal,1996 to 2001,16.4
+quebec,french,low immigration,low im,,83.0
+quebec,french,high immigration,high im,,82.0
+quebec,french,geographic distribution of immigrants 2005 to 2010,geographic distribution,2005 to 2010,82.2
+quebec,french,geographic distribution of immigrants 2000 to 2005,geographic distribution,2000 to 2005,82.4
+quebec,french,alternative immigration composition,alternative immigration composition,,82.2
+quebec,french,internal migration 2006 to 2011,internal,2006 to 2011,82.1
+quebec,french,internal migration 2001 to 2006,internal,2001 to 2006,82.0
+quebec,french,internal migration 1996 to 2001,internal,1996 to 2001,82.9
+quebec,neither english nor french,low immigration,low im,,0.6
+quebec,neither english nor french,high immigration,high im,,0.8
+quebec,neither english nor french,geographic distribution of immigrants 2005 to 2010,geographic distribution,2005 to 2010,0.7
+quebec,neither english nor french,geographic distribution of immigrants 2000 to 2005,geographic distribution,2000 to 2005,0.7
+quebec,neither english nor french,alternative immigration composition,alternative immigration composition,,0.7
+quebec,neither english nor french,internal migration 2006 to 2011,internal,2006 to 2011,0.7
+quebec,neither english nor french,internal migration 2001 to 2006,internal,2001 to 2006,0.7
+quebec,neither english nor french,internal migration 1996 to 2001,internal,1996 to 2001,0.7
+canada outside quebec,english,low immigration,low im,,95.1
+canada outside quebec,english,high immigration,high im,,94.6
+canada outside quebec,english,geographic distribution of immigrants 2005 to 2010,geographic distribution,2005 to 2010,94.7
+canada outside quebec,english,geographic distribution of immigrants 2000 to 2005,geographic distribution,2000 to 2005,94.6
+canada outside quebec,english,alternative immigration composition,alternative immigration composition,,94.7
+canada outside quebec,english,internal migration 2006 to 2011,internal,2006 to 2011,94.9
+canada outside quebec,english,internal migration 2001 to 2006,internal,2001 to 2006,94.9
+canada outside quebec,english,internal migration 1996 to 2001,internal,1996 to 2001,94.3
+canada outside quebec,french,low immigration,low im,,3.2
+canada outside quebec,french,high immigration,high im,,3.2
+canada outside quebec,french,geographic distribution of immigrants 2005 to 2010,geographic distribution,2005 to 2010,3.2
+canada outside quebec,french,geographic distribution of immigrants 2000 to 2005,geographic distribution,2000 to 2005,3.2
+canada outside quebec,french,alternative immigration composition,alternative immigration composition,,3.2
+canada outside quebec,french,internal migration 2006 to 2011,internal,2006 to 2011,3.1
+canada outside quebec,french,internal migration 2001 to 2006,internal,2001 to 2006,3.0
+canada outside quebec,french,internal migration 1996 to 2001,internal,1996 to 2001,3.6
+canada outside quebec,neither english nor french,low immigration,low im,,1.7
+canada outside quebec,neither english nor french,high immigration,high im,,2.2
+canada outside quebec,neither english nor french,geographic distribution of immigrants 2005 to 2010,geographic distribution,2005 to 2010,2.1
+canada outside quebec,neither english nor french,geographic distribution of immigrants 2000 to 2005,geographic distribution,2000 to 2005,2.2
+canada outside quebec,neither english nor french,alternative immigration composition,alternative immigration composition,,2.1
+canada outside quebec,neither english nor french,internal migration 2006 to 2011,internal,2006 to 2011,2.1
+canada outside quebec,neither english nor french,internal migration 2001 to 2006,internal,2001 to 2006,2.1
+canada outside quebec,neither english nor french,internal migration 1996 to 2001,internal,1996 to 2001,2.0

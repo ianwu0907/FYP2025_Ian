@@ -1,0 +1,4 @@
+serial_number,date,direction,price,number_of_shares,commission,total_amount,account_cost,account_shares,average_cost_per_share,current_price,account_profit_and_loss
+01,44198,Buy,24,2000,35,,,,,,
+02,44211,Buy,25,1000,20,,,,,,
+03,44216,Sell,30,1000,20,,,,,,

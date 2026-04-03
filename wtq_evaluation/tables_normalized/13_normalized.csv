@@ -1,0 +1,55 @@
+year,age_group,sex_group,metric_domain,value_type,value
+2004,aged 19 years and older,both sexes,domain_1,%,28.2
+2004,aged 19 years and older,both sexes,domain_1,from,27.0
+2004,aged 19 years and older,both sexes,domain_1,to,29.4
+2004,aged 19 years and older,both sexes,domain_2,%,58.2
+2004,aged 19 years and older,both sexes,domain_2,from,56.8
+2004,aged 19 years and older,both sexes,domain_2,to,59.6
+2004,aged 19 years and older,both sexes,domain_3,%,13.6
+2004,aged 19 years and older,both sexes,domain_3,from,12.6
+2004,aged 19 years and older,both sexes,domain_3,to,14.6
+2015,aged 19 years and older,both sexes,domain_1,%,34.5
+2015,aged 19 years and older,both sexes,domain_1,from,32.8
+2015,aged 19 years and older,both sexes,domain_1,to,36.2
+2015,aged 19 years and older,both sexes,domain_2,%,58.1
+2015,aged 19 years and older,both sexes,domain_2,from,56.4
+2015,aged 19 years and older,both sexes,domain_2,to,59.8
+2015,aged 19 years and older,both sexes,domain_3,%,7.4
+2015,aged 19 years and older,both sexes,domain_3,from,6.6
+2015,aged 19 years and older,both sexes,domain_3,to,8.3
+2004,aged 19 years and older,males,domain_1,%,28.6
+2004,aged 19 years and older,males,domain_1,from,26.7
+2004,aged 19 years and older,males,domain_1,to,30.5
+2004,aged 19 years and older,males,domain_2,%,57.3
+2004,aged 19 years and older,males,domain_2,from,55.3
+2004,aged 19 years and older,males,domain_2,to,59.3
+2004,aged 19 years and older,males,domain_3,%,14.1
+2004,aged 19 years and older,males,domain_3,from,12.8
+2004,aged 19 years and older,males,domain_3,to,15.6
+2015,aged 19 years and older,males,domain_1,%,34.2
+2015,aged 19 years and older,males,domain_1,from,31.9
+2015,aged 19 years and older,males,domain_1,to,36.6
+2015,aged 19 years and older,males,domain_2,%,58.1
+2015,aged 19 years and older,males,domain_2,from,55.7
+2015,aged 19 years and older,males,domain_2,to,60.5
+2015,aged 19 years and older,males,domain_3,%,7.7
+2015,aged 19 years and older,males,domain_3,from,6.5
+2015,aged 19 years and older,males,domain_3,to,9.0
+2004,aged 19 years and older,females,domain_1,%,27.8
+2004,aged 19 years and older,females,domain_1,from,26.2
+2004,aged 19 years and older,females,domain_1,to,29.5
+2004,aged 19 years and older,females,domain_2,%,59.2
+2004,aged 19 years and older,females,domain_2,from,57.2
+2004,aged 19 years and older,females,domain_2,to,61.1
+2004,aged 19 years and older,females,domain_3,%,13.0
+2004,aged 19 years and older,females,domain_3,from,11.6
+2004,aged 19 years and older,females,domain_3,to,14.5
+2015,aged 19 years and older,females,domain_1,%,34.8
+2015,aged 19 years and older,females,domain_1,from,32.5
+2015,aged 19 years and older,females,domain_1,to,37.1
+2015,aged 19 years and older,females,domain_2,%,58.1
+2015,aged 19 years and older,females,domain_2,from,55.7
+2015,aged 19 years and older,females,domain_2,to,60.4
+2015,aged 19 years and older,females,domain_3,%,7.1
+2015,aged 19 years and older,females,domain_3,from,6.2
+2015,aged 19 years and older,females,domain_3,to,8.2

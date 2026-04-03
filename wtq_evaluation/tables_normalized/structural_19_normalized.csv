@@ -1,0 +1,86 @@
+population,section,subgroup,employment_status,value_type,value
+all u.s. seh doctorate holders,,all u.s. seh doctorate holders,all,n,805500.0
+all u.s. seh doctorate holders,,all u.s. seh doctorate holders,all,%,88.1
+all u.s. seh doctorate holders,,all u.s. seh doctorate holders,full time,%,76.1
+all u.s. seh doctorate holders,,all u.s. seh doctorate holders,part time,%,9.9
+all u.s. seh doctorate holders,,all u.s. seh doctorate holders,unemployeda,%,2.1
+all u.s. seh doctorate holders,,all u.s. seh doctorate holders,retired,%,10.0
+all u.s. seh doctorate holders,,all u.s. seh doctorate holders,"not working, not seeking work",%,1.9
+male,sex,male,all,n,551700.0
+male,sex,male,all,%,87.7
+male,sex,male,full time,%,77.9
+male,sex,male,part time,%,7.8
+male,sex,male,unemployeda,%,2.0
+male,sex,male,retired,%,11.5
+male,sex,male,"not working, not seeking work",%,0.8
+female,sex,female,all,n,253700.0
+female,sex,female,all,%,88.9
+female,sex,female,full time,%,72.4
+female,sex,female,part time,%,14.4
+female,sex,female,unemployeda,%,2.1
+female,sex,female,retired,%,6.7
+female,sex,female,"not working, not seeking work",%,4.3
+hispanic or latino,ethnicity and race,hispanic or latino,all,n,25800.0
+hispanic or latino,ethnicity and race,hispanic or latino,all,%,93.0
+hispanic or latino,ethnicity and race,hispanic or latino,full time,%,81.8
+hispanic or latino,ethnicity and race,hispanic or latino,part time,%,8.9
+hispanic or latino,ethnicity and race,hispanic or latino,unemployeda,%,1.9
+hispanic or latino,ethnicity and race,hispanic or latino,retired,%,5.0
+hispanic or latino,ethnicity and race,hispanic or latino,"not working, not seeking work",%,1.9
+not hispanic or latino,ethnicity and race,not hispanic or latino,all,n,779700.0
+not hispanic or latino,ethnicity and race,not hispanic or latino,all,%,87.9
+not hispanic or latino,ethnicity and race,not hispanic or latino,full time,%,76.0
+not hispanic or latino,ethnicity and race,not hispanic or latino,part time,%,9.9
+not hispanic or latino,ethnicity and race,not hispanic or latino,unemployeda,%,2.1
+not hispanic or latino,ethnicity and race,not hispanic or latino,retired,%,10.2
+not hispanic or latino,ethnicity and race,not hispanic or latino,"not working, not seeking work",%,1.9
+american indian or alaska native,ethnicity and race,american indian or alaska native,all,n,1700.0
+american indian or alaska native,ethnicity and race,american indian or alaska native,all,%,88.2
+american indian or alaska native,ethnicity and race,american indian or alaska native,full time,%,76.5
+american indian or alaska native,ethnicity and race,american indian or alaska native,part time,%,11.8
+asian,ethnicity and race,asian,all,n,147500.0
+asian,ethnicity and race,asian,all,%,93.6
+asian,ethnicity and race,asian,full time,%,86.4
+asian,ethnicity and race,asian,part time,%,4.7
+asian,ethnicity and race,asian,unemployeda,%,2.3
+asian,ethnicity and race,asian,retired,%,4.7
+asian,ethnicity and race,asian,"not working, not seeking work",%,1.7
+black or african american,ethnicity and race,black or african american,all,n,24500.0
+black or african american,ethnicity and race,black or african american,all,%,93.9
+black or african american,ethnicity and race,black or african american,full time,%,80.4
+black or african american,ethnicity and race,black or african american,part time,%,11.0
+black or african american,ethnicity and race,black or african american,unemployeda,%,2.4
+black or african american,ethnicity and race,black or african american,retired,%,4.9
+black or african american,ethnicity and race,black or african american,"not working, not seeking work",%,1.2
+native hawaiian or other pacific islander,ethnicity and race,native hawaiian or other pacific islander,all,n,900.0
+native hawaiian or other pacific islander,ethnicity and race,native hawaiian or other pacific islander,all,%,88.9
+native hawaiian or other pacific islander,ethnicity and race,native hawaiian or other pacific islander,full time,%,77.8
+native hawaiian or other pacific islander,ethnicity and race,native hawaiian or other pacific islander,part time,%,11.1
+native hawaiian or other pacific islander,ethnicity and race,native hawaiian or other pacific islander,"not working, not seeking work",%,11.1
+white,ethnicity and race,white,all,n,596300.0
+white,ethnicity and race,white,all,%,86.2
+white,ethnicity and race,white,full time,%,73.1
+white,ethnicity and race,white,part time,%,11.1
+white,ethnicity and race,white,unemployeda,%,2.0
+white,ethnicity and race,white,retired,%,11.8
+white,ethnicity and race,white,"not working, not seeking work",%,1.9
+more than one race,ethnicity and race,more than one race,all,n,8800.0
+more than one race,ethnicity and race,more than one race,all,%,93.2
+more than one race,ethnicity and race,more than one race,full time,%,79.5
+more than one race,ethnicity and race,more than one race,part time,%,10.2
+more than one race,ethnicity and race,more than one race,unemployeda,%,2.3
+more than one race,ethnicity and race,more than one race,retired,%,4.5
+more than one race,ethnicity and race,more than one race,"not working, not seeking work",%,2.3
+u.s. citizen or permanent resident,citizenship,u.s. citizen or permanent resident,all,n,775300.0
+u.s. citizen or permanent resident,citizenship,u.s. citizen or permanent resident,all,%,87.7
+u.s. citizen or permanent resident,citizenship,u.s. citizen or permanent resident,full time,%,75.4
+u.s. citizen or permanent resident,citizenship,u.s. citizen or permanent resident,part time,%,10.2
+u.s. citizen or permanent resident,citizenship,u.s. citizen or permanent resident,unemployeda,%,2.1
+u.s. citizen or permanent resident,citizenship,u.s. citizen or permanent resident,retired,%,10.4
+u.s. citizen or permanent resident,citizenship,u.s. citizen or permanent resident,"not working, not seeking work",%,1.9
+temporary visa holder,citizenship,temporary visa holder,all,n,30200.0
+temporary visa holder,citizenship,temporary visa holder,all,%,98.3
+temporary visa holder,citizenship,temporary visa holder,full time,%,95.4
+temporary visa holder,citizenship,temporary visa holder,part time,%,2.0
+temporary visa holder,citizenship,temporary visa holder,unemployeda,%,1.0
+temporary visa holder,citizenship,temporary visa holder,"not working, not seeking work",%,1.3

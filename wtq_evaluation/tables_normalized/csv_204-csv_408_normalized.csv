@@ -1,0 +1,166 @@
+country,metric_id,rank,count
+Brazil,1,3rd,11
+Canada,1,2nd,7
+Chile,1,-,2
+Colombia,1,-,2
+Costa Rica,1,-,1
+Cuba,1,-,2
+Dominican Republic,1,-,5
+Greenland,1,-,2
+Guatemala,1,-,1
+Mexico,1,-,6
+Paraguay,1,-,3
+Puerto Rico,1,-,1
+Uruguay,1,-,9
+United States,1,1st,6
+Venezuela,1,-,1
+Brazil,2,3rd,11
+Canada,2,1st,7
+Chile,2,-,2
+Colombia,2,-,2
+Costa Rica,2,-,1
+Cuba,2,-,2
+Dominican Republic,2,-,5
+Greenland,2,-,2
+Guatemala,2,-,1
+Mexico,2,4th,6
+Paraguay,2,-,3
+Puerto Rico,2,-,1
+Uruguay,2,-,9
+United States,2,2nd,6
+Venezuela,2,-,1
+Brazil,3,3rd,11
+Canada,3,2nd,7
+Chile,3,-,2
+Colombia,3,-,2
+Costa Rica,3,-,1
+Cuba,3,-,2
+Dominican Republic,3,-,5
+Greenland,3,-,2
+Guatemala,3,-,1
+Mexico,3,-,6
+Paraguay,3,6th,3
+Puerto Rico,3,7th,1
+Uruguay,3,5th,9
+United States,3,1st,6
+Venezuela,3,-,1
+Brazil,4,1st,11
+Canada,4,2nd,7
+Chile,4,-,2
+Colombia,4,-,2
+Costa Rica,4,5th,1
+Cuba,4,-,2
+Dominican Republic,4,-,5
+Greenland,4,-,2
+Guatemala,4,-,1
+Mexico,4,6th,6
+Paraguay,4,-,3
+Puerto Rico,4,-,1
+Uruguay,4,3rd,9
+United States,4,-,6
+Venezuela,4,-,1
+Brazil,5,1st,11
+Canada,5,-,7
+Chile,5,-,2
+Colombia,5,6th,2
+Costa Rica,5,-,1
+Cuba,5,2nd,2
+Dominican Republic,5,-,5
+Greenland,5,5th,2
+Guatemala,5,-,1
+Mexico,5,-,6
+Paraguay,5,-,3
+Puerto Rico,5,-,1
+Uruguay,5,4th,9
+United States,5,-,6
+Venezuela,5,-,1
+Brazil,6,1st,11
+Canada,6,-,7
+Chile,6,-,2
+Colombia,6,6th,2
+Costa Rica,6,-,1
+Cuba,6,-,2
+Dominican Republic,6,-,5
+Greenland,6,3rd,2
+Guatemala,6,-,1
+Mexico,6,5th,6
+Paraguay,6,-,3
+Puerto Rico,6,-,1
+Uruguay,6,2nd,9
+United States,6,-,6
+Venezuela,6,-,1
+Brazil,7,1st,11
+Canada,7,5th,7
+Chile,7,-,2
+Colombia,7,-,2
+Costa Rica,7,-,1
+Cuba,7,-,2
+Dominican Republic,7,6th,5
+Greenland,7,-,2
+Guatemala,7,7th,1
+Mexico,7,-,6
+Paraguay,7,-,3
+Puerto Rico,7,-,1
+Uruguay,7,3rd,9
+United States,7,4th,6
+Venezuela,7,-,1
+Brazil,8,1st,11
+Canada,8,4th,7
+Chile,8,-,2
+Colombia,8,-,2
+Costa Rica,8,-,1
+Cuba,8,-,2
+Dominican Republic,8,5th,5
+Greenland,8,-,2
+Guatemala,8,-,1
+Mexico,8,-,6
+Paraguay,8,-,3
+Puerto Rico,8,-,1
+Uruguay,8,3rd,9
+United States,8,6th,6
+Venezuela,8,-,1
+Brazil,9,1st,11
+Canada,9,6th,7
+Chile,9,-,2
+Colombia,9,-,2
+Costa Rica,9,-,1
+Cuba,9,-,2
+Dominican Republic,9,3rd,5
+Greenland,9,-,2
+Guatemala,9,-,1
+Mexico,9,8th,6
+Paraguay,9,4th,3
+Puerto Rico,9,-,1
+Uruguay,9,5th,9
+United States,9,7th,6
+Venezuela,9,-,1
+Brazil,10,2nd,11
+Canada,10,-,7
+Chile,10,3rd,2
+Colombia,10,-,2
+Costa Rica,10,-,1
+Cuba,10,-,2
+Dominican Republic,10,4th,5
+Greenland,10,-,2
+Guatemala,10,-,1
+Mexico,10,5th,6
+Paraguay,10,7th,3
+Puerto Rico,10,-,1
+Uruguay,10,6th,9
+United States,10,-,6
+Venezuela,10,-,1
+Brazil,11,1st,11
+Canada,11,-,7
+Chile,11,5th,2
+Colombia,11,-,2
+Costa Rica,11,-,1
+Cuba,11,3rd,2
+Dominican Republic,11,6th,5
+Greenland,11,-,2
+Guatemala,11,-,1
+Mexico,11,7th,6
+Paraguay,11,-,3
+Puerto Rico,11,-,1
+Uruguay,11,4th,9
+United States,11,-,6
+Venezuela,11,8th,1

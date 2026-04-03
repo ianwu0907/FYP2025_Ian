@@ -1,0 +1,46 @@
+demographic_dimension,demographic_value,jurisdiction_id,number,percent_of_total
+age,12 years,1,69,1.0
+age,12 years,2,87,1.0
+age,12 years,3,156,1.0
+age,13 years,1,293,4.0
+age,13 years,2,393,4.0
+age,13 years,3,686,4.0
+age,14 years,1,723,10.0
+age,14 years,2,794,9.0
+age,14 years,3,1517,9.0
+age,15 years,1,1309,18.0
+age,15 years,2,1466,16.0
+age,15 years,3,2775,17.0
+age,16 years,1,2020,27.0
+age,16 years,2,2066,22.0
+age,16 years,3,4086,25.0
+age,17 years,1,2397,33.0
+age,17 years,2,2480,27.0
+age,17 years,3,4877,29.0
+age,18 years and older,1,549,7.0
+age,18 years and older,2,2014,22.0
+age,18 years and older,3,2563,15.0
+age,aboriginal,1,3541,48.0
+age,aboriginal,2,3653,39.0
+age,aboriginal,3,7194,43.0
+age,female,1,1732,24.0
+age,female,2,2169,23.0
+age,female,3,3901,23.0
+age,male,1,5625,76.0
+age,male,2,7113,76.0
+age,male,3,12738,76.0
+age,nan,1,,
+age,nan,2,,
+age,nan,3,,
+age,non-aboriginal,1,3621,49.0
+age,non-aboriginal,2,5009,54.0
+age,non-aboriginal,3,8630,52.0
+age,unknown,1,199,3.0
+age,unknown,2,641,7.0
+age,unknown,3,840,5.0
+age,unknown age,1,1,0.0
+age,unknown age,2,3,0.0
+age,unknown age,3,4,0.0
+age,unknown sex,1,4,0.0
+age,unknown sex,2,21,0.0
+age,unknown sex,3,25,0.0

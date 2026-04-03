@@ -1,0 +1,9 @@
+serial_number,e_commerce_channel,brand,name,delivery_time,seven_day_return_successful,invoice_provided_status,quantity,unit_price,amount
+1,Gome,Xiaomi,earphones,November 16,Yes,has an invoice,20,150,3000.0
+2,Taobao,Huawei,P40,November 17,Yes,has an invoice,5,4200,21000.0
+3,Dangdang,Lins Wood Industry,Mattress,November 18,Yes,has an invoice,10,1500,15000.0
+4,Gome,Kang Shibo,Iced Black Tea,November 19,Yes,has an invoice,500,2,1000.0
+5,Suning,Yichun,Jeans,November 20,Yes,has an invoice,50,50,2500.0
+6,JD.com,Uyicar,Maoxian Kaisan (Wool Cardigan),November 21,Yes,Have an invoice,35,120,4200.0
+7,JD.com,Jie Liang Qiong Juan,Jacket,November 22,Yes,has an invoice,5,1500,7500.0
+8,Vipshop,Qing Liang'er,Perfume,November 23,Yes,has an invoice,15,650,9750.0

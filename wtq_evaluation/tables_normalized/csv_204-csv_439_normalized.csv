@@ -1,0 +1,77 @@
+rank,country,team_id,driver,brakewoman,run_number,run_time_seconds
+1,Canada,CAN-1,Kaillie Humphries,Heather Moyse,1,57.39
+1,Canada,CAN-1,Kaillie Humphries,Heather Moyse,2,57.73
+1,Canada,CAN-1,Kaillie Humphries,Heather Moyse,3,57.57
+1,Canada,CAN-1,Kaillie Humphries,Heather Moyse,4,57.92
+2,United States,USA-1,Elana Meyers,Lauryn Williams,1,57.26
+2,United States,USA-1,Elana Meyers,Lauryn Williams,2,57.63
+2,United States,USA-1,Elana Meyers,Lauryn Williams,3,57.69
+2,United States,USA-1,Elana Meyers,Lauryn Williams,4,58.13
+3,United States,USA-2,Jamie Greubel,Aja Evans,1,57.45
+3,United States,USA-2,Jamie Greubel,Aja Evans,2,58.0
+3,United States,USA-2,Jamie Greubel,Aja Evans,3,58.0
+3,United States,USA-2,Jamie Greubel,Aja Evans,4,58.16
+9,Netherlands,NED-1,Esmé Kamphuis,Judith Vis,1,57.94
+9,Netherlands,NED-1,Esmé Kamphuis,Judith Vis,2,58.1
+9,Netherlands,NED-1,Esmé Kamphuis,Judith Vis,3,58.2
+9,Netherlands,NED-1,Esmé Kamphuis,Judith Vis,4,58.03
+4,Germany,GER-1,Sandra Kiriasis,Franziska Fritz,1,57.95
+4,Germany,GER-1,Sandra Kiriasis,Franziska Fritz,2,58.08
+4,Germany,GER-1,Sandra Kiriasis,Franziska Fritz,3,58.06
+4,Germany,GER-1,Sandra Kiriasis,Franziska Fritz,4,58.2
+10,Belgium,BEL-1,Elfje Willemsen,Hanna Mariën,1,57.92
+10,Belgium,BEL-1,Elfje Willemsen,Hanna Mariën,2,58.02
+10,Belgium,BEL-1,Elfje Willemsen,Hanna Mariën,3,58.33
+10,Belgium,BEL-1,Elfje Willemsen,Hanna Mariën,4,58.3
+5,Germany,GER-2,Cathleen Martini,Christin Senkel,1,57.99
+5,Germany,GER-2,Cathleen Martini,Christin Senkel,2,58.42
+5,Germany,GER-2,Cathleen Martini,Christin Senkel,3,58.17
+5,Germany,GER-2,Cathleen Martini,Christin Senkel,4,58.13
+8,Switzerland,SUI-1,Fabienne Meyer,Tanja Mayer,1,58.18
+8,Switzerland,SUI-1,Fabienne Meyer,Tanja Mayer,2,58.34
+8,Switzerland,SUI-1,Fabienne Meyer,Tanja Mayer,3,58.29
+8,Switzerland,SUI-1,Fabienne Meyer,Tanja Mayer,4,58.39
+11,Russia,RUS-1,Olga Stulneva,Liudmila Udobkina,1,58.03
+11,Russia,RUS-1,Olga Stulneva,Liudmila Udobkina,2,58.24
+11,Russia,RUS-1,Olga Stulneva,Liudmila Udobkina,3,58.45
+11,Russia,RUS-1,Olga Stulneva,Liudmila Udobkina,4,58.74
+6,Germany,GER-3,Anja Schneiderheinze,Stephanie Schneider,1,58.17
+6,Germany,GER-3,Anja Schneiderheinze,Stephanie Schneider,2,58.3
+6,Germany,GER-3,Anja Schneiderheinze,Stephanie Schneider,3,58.53
+6,Germany,GER-3,Anja Schneiderheinze,Stephanie Schneider,4,58.74
+7,United States,USA-3,Jazmine Fenlator,Lolo Jones,1,58.27
+7,United States,USA-3,Jazmine Fenlator,Lolo Jones,2,58.46
+7,United States,USA-3,Jazmine Fenlator,Lolo Jones,3,58.5
+7,United States,USA-3,Jazmine Fenlator,Lolo Jones,4,58.74
+12,Great Britain,GBR-1,Paula Walker,Rebekah Wilson,1,58.36
+12,Great Britain,GBR-1,Paula Walker,Rebekah Wilson,2,58.4
+12,Great Britain,GBR-1,Paula Walker,Rebekah Wilson,3,58.88
+12,Great Britain,GBR-1,Paula Walker,Rebekah Wilson,4,58.6
+13,Canada,CAN-2,Jennifer Ciochetti,Chelsea Valois,1,58.43
+13,Canada,CAN-2,Jennifer Ciochetti,Chelsea Valois,2,58.63
+13,Canada,CAN-2,Jennifer Ciochetti,Chelsea Valois,3,58.72
+13,Canada,CAN-2,Jennifer Ciochetti,Chelsea Valois,4,58.71
+14,Australia,AUS-1,Astrid Radjenovic,Jana Pittman,1,58.62
+14,Australia,AUS-1,Astrid Radjenovic,Jana Pittman,2,58.5
+14,Australia,AUS-1,Astrid Radjenovic,Jana Pittman,3,59.06
+14,Australia,AUS-1,Astrid Radjenovic,Jana Pittman,4,58.37
+15,Austria,AUT-1,Christina Hengster,Viola Kleiser,1,58.59
+15,Austria,AUT-1,Christina Hengster,Viola Kleiser,2,58.56
+15,Austria,AUT-1,Christina Hengster,Viola Kleiser,3,58.73
+15,Austria,AUT-1,Christina Hengster,Viola Kleiser,4,58.91
+17,Russia,RUS-2,Nadezhda Sergeeva,Nadezhda Paleeva,1,58.8
+17,Russia,RUS-2,Nadezhda Sergeeva,Nadezhda Paleeva,2,58.69
+17,Russia,RUS-2,Nadezhda Sergeeva,Nadezhda Paleeva,3,59.27
+17,Russia,RUS-2,Nadezhda Sergeeva,Nadezhda Paleeva,4,59.1
+16,Romania,ROU-1,Maria Constantin,Andreea Grecu,1,59.04
+16,Romania,ROU-1,Maria Constantin,Andreea Grecu,2,59.08
+16,Romania,ROU-1,Maria Constantin,Andreea Grecu,3,59.38
+16,Romania,ROU-1,Maria Constantin,Andreea Grecu,4,59.09
+18,South Korea,KOR-1,Kim Su-Nok,Shin Mi-Hwa,1,60.09
+18,South Korea,KOR-1,Kim Su-Nok,Shin Mi-Hwa,2,60.02
+18,South Korea,KOR-1,Kim Su-Nok,Shin Mi-Hwa,3,60.44
+18,South Korea,KOR-1,Kim Su-Nok,Shin Mi-Hwa,4,60.26
+19,Brazil,BRA-1,Fabiana Santos,Sally Mayara da Silva,1,59.57
+19,Brazil,BRA-1,Fabiana Santos,Sally Mayara da Silva,2,60.45
+19,Brazil,BRA-1,Fabiana Santos,Sally Mayara da Silva,3,60.73
+19,Brazil,BRA-1,Fabiana Santos,Sally Mayara da Silva,4,61.2

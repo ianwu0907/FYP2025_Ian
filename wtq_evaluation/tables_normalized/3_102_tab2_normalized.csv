@@ -1,0 +1,145 @@
+year,funding_type,function,amount
+2010 actual,r&d,"general science, basic research",9280.0
+2011 actual,r&d,"general science, basic research",9483.0
+2012 actual,r&d,"general science, basic research",9304.0
+2013 actual,r&d,"general science, basic research",8802.0
+2014 actual,r&d,"general science, basic research",9482.0
+2015 actual,r&d,"general science, basic research",10068.0
+2016 preliminary,r&d,"general science, basic research",10198.0
+2017 proposed,r&d,"general science, basic research",10898.0
+2010 actual,r&d,"general science, basic research",1229.0
+2011 actual,r&d plant,"general science, basic research",1098.0
+2012 actual,r&d plant,"general science, basic research",1232.0
+2013 actual,r&d plant,"general science, basic research",818.0
+2014 actual,r&d plant,"general science, basic research",1042.0
+2015 actual,r&d plant,"general science, basic research",1020.0
+2016 preliminary,r&d plant,"general science, basic research",1224.0
+2017 proposed,r&d plant,"general science, basic research",1254.0
+2010 actual,r&d,"space flight, research, and related",8232.0
+2011 actual,r&d,"space flight, research, and related",8398.0
+2012 actual,r&d,"space flight, research, and related",10661.0
+2013 actual,r&d,"space flight, research, and related",10476.0
+2014 actual,r&d,"space flight, research, and related",11055.0
+2015 actual,r&d,"space flight, research, and related",10875.0
+2016 preliminary,r&d,"space flight, research, and related",12789.0
+2017 proposed,r&d,"space flight, research, and related",12189.0
+2010 actual,r&d,"space flight, research, and related",0.0
+2011 actual,r&d plant,"space flight, research, and related",260.0
+2012 actual,r&d plant,"space flight, research, and related",140.0
+2013 actual,r&d plant,"space flight, research, and related",0.0
+2014 actual,r&d plant,"space flight, research, and related",173.0
+2015 actual,r&d plant,"space flight, research, and related",53.0
+2016 preliminary,r&d plant,"space flight, research, and related",22.0
+2017 proposed,r&d plant,"space flight, research, and related",38.0
+2010 actual,r&d,energy,2455.0
+2011 actual,r&d,energy,2233.0
+2012 actual,r&d,energy,2197.0
+2013 actual,r&d,energy,2269.0
+2014 actual,r&d,energy,2387.0
+2015 actual,r&d,energy,3153.0
+2016 preliminary,r&d,energy,3436.0
+2017 proposed,r&d,energy,4745.0
+2010 actual,r&d,energy,115.0
+2011 actual,r&d plant,energy,32.0
+2012 actual,r&d plant,energy,34.0
+2013 actual,r&d plant,energy,20.0
+2014 actual,r&d plant,energy,20.0
+2015 actual,r&d plant,energy,20.0
+2016 preliminary,r&d plant,energy,19.0
+2017 proposed,r&d plant,energy,44.0
+2010 actual,r&d,natural resources and environment,2237.0
+2011 actual,r&d,natural resources and environment,2171.0
+2012 actual,r&d,natural resources and environment,2147.0
+2013 actual,r&d,natural resources and environment,2020.0
+2014 actual,r&d,natural resources and environment,2172.0
+2015 actual,r&d,natural resources and environment,2161.0
+2016 preliminary,r&d,natural resources and environment,2340.0
+2017 proposed,r&d,natural resources and environment,2470.0
+2010 actual,r&d,natural resources and environment,193.0
+2011 actual,r&d plant,natural resources and environment,143.0
+2012 actual,r&d plant,natural resources and environment,153.0
+2013 actual,r&d plant,natural resources and environment,149.0
+2014 actual,r&d plant,natural resources and environment,156.0
+2015 actual,r&d plant,natural resources and environment,197.0
+2016 preliminary,r&d plant,natural resources and environment,259.0
+2017 proposed,r&d plant,natural resources and environment,212.0
+2010 actual,r&d,agri-culture,2043.0
+2011 actual,r&d,agri-culture,1916.0
+2012 actual,r&d,agri-culture,1920.0
+2013 actual,r&d,agri-culture,1753.0
+2014 actual,r&d,agri-culture,1967.0
+2015 actual,r&d,agri-culture,1989.0
+2016 preliminary,r&d,agri-culture,2008.0
+2017 proposed,r&d,agri-culture,2412.0
+2010 actual,r&d,agri-culture,163.0
+2011 actual,r&d plant,agri-culture,-148.0
+2012 actual,r&d plant,agri-culture,85.0
+2013 actual,r&d plant,agri-culture,65.0
+2014 actual,r&d plant,agri-culture,110.0
+2015 actual,r&d plant,agri-culture,160.0
+2016 preliminary,r&d plant,agri-culture,348.0
+2017 proposed,r&d plant,agri-culture,216.0
+2010 actual,r&d,trans-portation,1496.0
+2011 actual,r&d,trans-portation,1395.0
+2012 actual,r&d,trans-portation,1486.0
+2013 actual,r&d,trans-portation,1337.0
+2014 actual,r&d,trans-portation,1261.0
+2015 actual,r&d,trans-portation,1363.0
+2016 preliminary,r&d,trans-portation,1369.0
+2017 proposed,r&d,trans-portation,1735.0
+2010 actual,r&d,trans-portation,21.0
+2011 actual,r&d plant,trans-portation,25.0
+2012 actual,r&d plant,trans-portation,25.0
+2013 actual,r&d plant,trans-portation,22.0
+2014 actual,r&d plant,trans-portation,17.0
+2015 actual,r&d plant,trans-portation,26.0
+2016 preliminary,r&d plant,trans-portation,35.0
+2017 proposed,r&d plant,trans-portation,35.0
+2010 actual,r&d,health,31488.0
+2011 actual,r&d,health,30903.0
+2012 actual,r&d,health,31243.0
+2013 actual,r&d,health,30044.0
+2014 actual,r&d,health,30927.0
+2015 actual,r&d,health,30331.0
+2016 preliminary,r&d,health,32182.0
+2017 proposed,r&d,health,32992.0
+2010 actual,r&d,health,205.0
+2011 actual,r&d plant,health,87.0
+2012 actual,r&d plant,health,168.0
+2013 actual,r&d plant,health,156.0
+2014 actual,r&d plant,health,172.0
+2015 actual,r&d plant,health,164.0
+2016 preliminary,r&d plant,health,171.0
+2017 proposed,r&d plant,health,214.0
+2010 actual,r&d,veterans benefits and services,1034.0
+2011 actual,r&d,veterans benefits and services,1160.0
+2012 actual,r&d,veterans benefits and services,1160.0
+2013 actual,r&d,veterans benefits and services,1164.0
+2014 actual,r&d,veterans benefits and services,1101.0
+2015 actual,r&d,veterans benefits and services,1178.0
+2016 preliminary,r&d,veterans benefits and services,1220.0
+2017 proposed,r&d,veterans benefits and services,1252.0
+2010 actual,r&d,veterans benefits and services,0.0
+2011 actual,r&d plant,veterans benefits and services,0.0
+2012 actual,r&d plant,veterans benefits and services,0.0
+2013 actual,r&d plant,veterans benefits and services,0.0
+2014 actual,r&d plant,veterans benefits and services,0.0
+2015 actual,r&d plant,veterans benefits and services,0.0
+2016 preliminary,r&d plant,veterans benefits and services,0.0
+2017 proposed,r&d plant,veterans benefits and services,0.0
+2010 actual,r&d,othera,1814.0
+2011 actual,r&d,othera,1826.0
+2012 actual,r&d,othera,1773.0
+2013 actual,r&d,othera,2376.0
+2014 actual,r&d,othera,2584.0
+2015 actual,r&d,othera,2412.0
+2016 preliminary,r&d,othera,2521.0
+2017 proposed,r&d,othera,2577.0
+2010 actual,r&d,othera,168.0
+2011 actual,r&d plant,othera,171.0
+2012 actual,r&d plant,othera,134.0
+2013 actual,r&d plant,othera,225.0
+2014 actual,r&d plant,othera,541.0
+2015 actual,r&d plant,othera,424.0
+2016 preliminary,r&d plant,othera,189.0
+2017 proposed,r&d plant,othera,157.0

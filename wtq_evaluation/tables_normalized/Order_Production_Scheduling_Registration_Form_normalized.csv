@@ -1,0 +1,10 @@
+order_date,order_name,salesperson,contract_number,order_delivery_date,order_quantity,production_date,this_time_production_quantity,completion_date,completed_quantity,inbound_quantity,delivery_date,whether_delayed,delay_days,exception
+2020-09-15,Name 1,Tian Wancheng,LEA1815034,2020-09-27,164,2020-09-20,250,2020-09-28,250,0,2020-09-30,,,No
+2020-09-16,Name 2,Tian Wancheng,LEA1815036,2020-09-29,100,2020-09-21,125,2020-09-29,125,0,2020-09-29,,,No
+2020-09-17,Name 3,Bai Jie,LEA1715027,2020-09-30,40,2020-09-22,82,2020-09-30,82,0,2020-09-29,,,No
+2020-09-18,Name 4,Bai Jie,LEA1715027,2020-09-30,411,2020-09-23,452,2020-10-01,452,0,2020-10-02,,,No
+2020-09-19,Name 5,Liu Zhaoling,LEA1818037-D,2020-10-02,511,2020-09-24,511,2020-10-02,511,0,2020-10-02,,,No
+2020-09-20,Name 6,Liu Zhengying,LEA1825006,2020-10-03,144,2020-09-25,195,2020-10-03,195,0,2020-10-03,,,No
+2020-09-21,Name 7,Liu Zhengying,LEA1825006,2020-09-15,441,2020-09-26,198,2020-10-04,198,0,2020-09-20,,,No
+2020-09-22,Name 8,Liu Zhengying,LEA1825006,2020-10-05,841,2020-09-27,950,2020-10-05,950,0,2020-10-05,,,No
+2020-09-23,Name 9,Yu Wenzhou,LEA1629004,2020-10-06,111,2020-09-28,251,2020-10-06,251,0,2020-10-06,,,No

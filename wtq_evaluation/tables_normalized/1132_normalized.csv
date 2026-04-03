@@ -1,0 +1,118 @@
+offence_category,inclusion_status,year,count
+None,include,2011,16459
+None,exclude,2011,77520
+property offences,include,2011,28976
+property offences,exclude,2011,67653
+offences against the administration of justice,include,2011,72645
+drug offences,include,2011,3180
+drug offences,exclude,2011,21462
+other criminal code offences,include,2011,11013
+other criminal code offences,exclude,2011,82116
+youth criminal justice act,include,2011,154
+youth criminal justice act,exclude,2011,1144
+total offences,include,2011,132427
+total offences,exclude,2011,249895
+None,include,2012,16599
+None,exclude,2012,75737
+property offences,include,2012,29128
+property offences,exclude,2012,65140
+offences against the administration of justice,include,2012,75542
+drug offences,include,2012,3606
+drug offences,exclude,2012,22002
+other criminal code offences,include,2012,11295
+other criminal code offences,exclude,2012,80283
+youth criminal justice act,include,2012,131
+youth criminal justice act,exclude,2012,1074
+total offences,include,2012,136301
+total offences,exclude,2012,244236
+None,include,2013,17540
+None,exclude,2013,76523
+property offences,include,2013,29564
+property offences,exclude,2013,65006
+offences against the administration of justice,include,2013,82106
+drug offences,include,2013,3938
+drug offences,exclude,2013,23645
+other criminal code offences,include,2013,12036
+other criminal code offences,exclude,2013,81656
+youth criminal justice act,include,2013,140
+youth criminal justice act,exclude,2013,1039
+total offences,include,2013,145324
+total offences,exclude,2013,247869
+None,include,2014,18056
+None,exclude,2014,77058
+property offences,include,2014,28507
+property offences,exclude,2014,64549
+offences against the administration of justice,include,2014,83499
+drug offences,include,2014,4309
+drug offences,exclude,2014,24378
+other criminal code offences,include,2014,12473
+other criminal code offences,exclude,2014,84642
+youth criminal justice act,include,2014,146
+youth criminal justice act,exclude,2014,1080
+total offences,include,2014,146990
+total offences,exclude,2014,251707
+None,include,2015,18371
+None,exclude,2015,78317
+property offences,include,2015,29269
+property offences,exclude,2015,68911
+offences against the administration of justice,include,2015,84684
+drug offences,include,2015,3934
+drug offences,exclude,2015,24632
+other criminal code offences,include,2015,12761
+other criminal code offences,exclude,2015,87763
+youth criminal justice act,include,2015,181
+youth criminal justice act,exclude,2015,1228
+total offences,include,2015,149200
+total offences,exclude,2015,260851
+None,include,2016,18450
+None,exclude,2016,76270
+property offences,include,2016,29685
+property offences,exclude,2016,68229
+offences against the administration of justice,include,2016,85947
+drug offences,include,2016,3811
+drug offences,exclude,2016,25562
+other criminal code offences,include,2016,13210
+other criminal code offences,exclude,2016,87315
+youth criminal justice act,include,2016,198
+youth criminal justice act,exclude,2016,1280
+total offences,include,2016,151301
+total offences,exclude,2016,258656
+None,include,2017,18306
+None,exclude,2017,74919
+property offences,include,2017,27207
+property offences,exclude,2017,64173
+offences against the administration of justice,include,2017,85607
+drug offences,include,2017,3753
+drug offences,exclude,2017,25922
+other criminal code offences,include,2017,12706
+other criminal code offences,exclude,2017,80156
+youth criminal justice act,include,2017,188
+youth criminal justice act,exclude,2017,1179
+total offences,include,2017,147767
+total offences,exclude,2017,246349
+None,include,2018,18001
+None,exclude,2018,73032
+property offences,include,2018,26393
+property offences,exclude,2018,62271
+offences against the administration of justice,include,2018,85554
+drug offences,include,2018,3461
+drug offences,exclude,2018,24419
+other criminal code offences,include,2018,13255
+other criminal code offences,exclude,2018,80014
+youth criminal justice act,include,2018,143
+youth criminal justice act,exclude,2018,1071
+total offences,include,2018,146807
+total offences,exclude,2018,240807
+None,include,2019,16681
+None,exclude,2019,68181
+property offences,include,2019,25647
+property offences,exclude,2019,56540
+offences against the administration of justice,include,2019,82116
+drug offences,include,2019,3290
+drug offences,exclude,2019,21735
+other criminal code offences,include,2019,11896
+other criminal code offences,exclude,2019,73422
+youth criminal justice act,include,2019,146
+youth criminal justice act,exclude,2019,986
+total offences,include,2019,139776
+total offences,exclude,2019,220864

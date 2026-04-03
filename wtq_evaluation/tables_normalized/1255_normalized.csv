@@ -1,0 +1,92 @@
+jurisdiction,metric_variant,time_period,measure_type,value
+newfoundland and labrador,Variant A,2006 to 2016,index,59.3
+newfoundland and labrador,Variant A,2006 to 2016,percent_change,-2.0
+newfoundland and labrador,Variant A,2006 to 2016,index,-43.0
+newfoundland and labrador,Variant B,2015 to 2016,index,47.9
+newfoundland and labrador,Variant B,2015 to 2016,percent_change,-6.0
+newfoundland and labrador,Variant C,2015 to 2016,index,67.0
+newfoundland and labrador,Variant C,2015 to 2016,percent_change,0.0
+prince edward island,Variant A,2006 to 2016,index,30.7
+prince edward island,Variant A,2006 to 2016,percent_change,-12.0
+prince edward island,Variant A,2006 to 2016,index,-70.0
+prince edward island,Variant B,2015 to 2016,index,25.2
+prince edward island,Variant B,2015 to 2016,percent_change,-18.0
+prince edward island,Variant C,2015 to 2016,index,34.5
+prince edward island,Variant C,2015 to 2016,percent_change,-9.0
+nova scotia,Variant A,2006 to 2016,index,77.5
+nova scotia,Variant A,2006 to 2016,percent_change,8.0
+nova scotia,Variant A,2006 to 2016,index,-41.0
+nova scotia,Variant B,2015 to 2016,index,84.4
+nova scotia,Variant B,2015 to 2016,percent_change,25.0
+nova scotia,Variant C,2015 to 2016,index,72.3
+nova scotia,Variant C,2015 to 2016,percent_change,-2.0
+new brunswick,Variant A,2006 to 2016,index,55.7
+new brunswick,Variant A,2006 to 2016,percent_change,-3.0
+new brunswick,Variant A,2006 to 2016,index,-38.0
+new brunswick,Variant B,2015 to 2016,index,49.0
+new brunswick,Variant B,2015 to 2016,percent_change,-5.0
+new brunswick,Variant C,2015 to 2016,index,60.1
+new brunswick,Variant C,2015 to 2016,percent_change,-2.0
+quebec,Variant A,2006 to 2016,index,56.4
+quebec,Variant A,2006 to 2016,percent_change,4.0
+quebec,Variant A,2006 to 2016,index,-11.0
+quebec,Variant B,2015 to 2016,index,75.0
+quebec,Variant B,2015 to 2016,percent_change,16.0
+quebec,Variant C,2015 to 2016,index,43.0
+quebec,Variant C,2015 to 2016,percent_change,-8.0
+ontario,Variant A,2006 to 2016,index,52.7
+ontario,Variant A,2006 to 2016,percent_change,4.0
+ontario,Variant A,2006 to 2016,index,-46.0
+ontario,Variant B,2015 to 2016,index,69.1
+ontario,Variant B,2015 to 2016,percent_change,14.0
+ontario,Variant C,2015 to 2016,index,40.9
+ontario,Variant C,2015 to 2016,percent_change,-5.0
+manitoba,Variant A,2006 to 2016,index,113.1
+manitoba,Variant A,2006 to 2016,percent_change,-5.0
+manitoba,Variant A,2006 to 2016,index,-38.0
+manitoba,Variant B,2015 to 2016,index,127.5
+manitoba,Variant B,2015 to 2016,percent_change,0.0
+manitoba,Variant C,2015 to 2016,index,102.3
+manitoba,Variant C,2015 to 2016,percent_change,-10.0
+saskatchewan,Variant A,2006 to 2016,index,170.2
+saskatchewan,Variant A,2006 to 2016,percent_change,-9.0
+saskatchewan,Variant A,2006 to 2016,index,-36.0
+saskatchewan,Variant B,2015 to 2016,index,160.0
+saskatchewan,Variant B,2015 to 2016,percent_change,-8.0
+saskatchewan,Variant C,2015 to 2016,index,176.7
+saskatchewan,Variant C,2015 to 2016,percent_change,-10.0
+alberta,Variant A,2006 to 2016,index,57.0
+alberta,Variant A,2006 to 2016,percent_change,-15.0
+alberta,Variant A,2006 to 2016,index,-48.0
+alberta,Variant B,2015 to 2016,index,61.1
+alberta,Variant B,2015 to 2016,percent_change,-16.0
+alberta,Variant C,2015 to 2016,index,53.8
+alberta,Variant C,2015 to 2016,percent_change,-13.0
+british columbia,Variant A,2006 to 2016,index,35.7
+british columbia,Variant A,2006 to 2016,percent_change,-9.0
+british columbia,Variant A,2006 to 2016,index,-56.0
+british columbia,Variant B,2015 to 2016,index,37.2
+british columbia,Variant B,2015 to 2016,percent_change,-8.0
+british columbia,Variant C,2015 to 2016,index,34.5
+british columbia,Variant C,2015 to 2016,percent_change,-10.0
+yukon,Variant A,2006 to 2016,index,191.9
+yukon,Variant A,2006 to 2016,percent_change,-28.0
+yukon,Variant A,2006 to 2016,index,-30.0
+yukon,Variant B,2015 to 2016,index,184.1
+yukon,Variant B,2015 to 2016,percent_change,15.0
+yukon,Variant C,2015 to 2016,index,196.5
+yukon,Variant C,2015 to 2016,percent_change,-42.0
+northwest territories,Variant A,2006 to 2016,index,266.8
+northwest territories,Variant A,2006 to 2016,percent_change,-10.0
+northwest territories,Variant A,2006 to 2016,index,-48.0
+northwest territories,Variant B,2015 to 2016,index,149.0
+northwest territories,Variant B,2015 to 2016,percent_change,-28.0
+northwest territories,Variant C,2015 to 2016,index,349.0
+northwest territories,Variant C,2015 to 2016,percent_change,-3.0
+nunavut,Variant A,2006 to 2016,index,296.3
+nunavut,Variant A,2006 to 2016,percent_change,-10.0
+nunavut,Variant A,2006 to 2016,index,-26.0
+nunavut,Variant B,2015 to 2016,index,191.0
+nunavut,Variant B,2015 to 2016,percent_change,-17.0
+nunavut,Variant C,2015 to 2016,index,369.5
+nunavut,Variant C,2015 to 2016,percent_change,-8.0

@@ -1,0 +1,561 @@
+rank,driver,car_number,car_model,sponsor,criterion,score
+1,Greg Crick,3,Dodge Viper GTS ACR,Crickcars.com,Acceleration,98.0
+2,Bryce Washington,1 & 54,Porsche 996 GT3 Cup Car,ADRAD Radiator Experts,Acceleration,85.0
+3,James Koundouris,69,Porsche 996 GT3 Cup Car,"Dare Shots
+Supabarn Supermarkets",Acceleration,76.0
+4,Theo Koundouris,19,Porsche 996 GT3 Cup Car,"Dare Shots
+Supabarn Supermarkets",Acceleration,74.0
+5,Sven Burchartz,90,Porsche 996 GT3,Cargraphic AG,Acceleration,32.0
+6,David Wall,38,Porsche 996 GT3 RSR,RDS,Acceleration,32.0
+7,John Teulan,88,"Ferrari 360 Challenge
+Ferrari F430 Challenge",Industry Central - Stahlwille,Acceleration,47.0
+8,Max Twigg,18 & 17,Porsche 996 GT3,"Twigg Waste Management
+Luxton Plan",Acceleration,45.0
+9,D'Arcy Russell,7,Dodge Viper GTS ACR,Dupont,Acceleration,34.0
+10,David Reynolds,6 & 90,"Porsche 996 GT3 Cup Car
+Porsche 996 GT3","Bob Jane T-marts
+Cargraphics",Acceleration,
+11,Allan Simonsen,4,"Ferrari 360 GT
+Porsche 996 GT3 Cup Car","Consolidated Chemical Company
+Dare Shots
+Supabarn Supermarkets",Acceleration,104.0
+12,Paul Bolinowsky,45,Porsche 996 GT3,Bolin Racing,Acceleration,24.0
+13,Dave Stevens,43,"Porsche 996 GT3 Cup Car
+Ferrari F430 Challenge","Bennanit
+Secure Telecom",Acceleration,
+14,Paul Tressider,23,Porsche 996 GT3 Cup Car,Wynn Tressider Management,Acceleration,29.0
+15,Mark Eddy,12,Porsche 996 GT3R,Quarterback Shirts,Acceleration,41.0
+16,Damien Flack,55,Porsche 996 GT3 Cup Car,Roock,Acceleration,
+17,Matthew Turnbull,13,Porsche 996 GT3 Cup Car,PROMAT,Acceleration,43.0
+18,Bill Pye,44,Porsche 996 GT3 Cup Car,"AutoHaus Hamilton
+Property Solutions Group",Acceleration,
+19,Anthony Skinner,46,Porsche 996 GT3,Travelplan Ski Holiday,Acceleration,52.0
+20,Andrew Luxton,17 & 18,Porsche 996 GT3 Cup Car,"Luxton Plant
+Twigg Waste Management",Acceleration,
+21,John Kaias,77,Porsche 996 GT3 Cup Car,"ABCOR
+Preston General Engine",Acceleration,53.0
+22,Ian Palmer,20,Honda NSX,"Instant Fountains
+Paluky Ho",Acceleration,25.0
+23,Ross Lilley,51,Porsche 996 GT3 Cup Car,Loala Furniture International,Acceleration,29.0
+24,Kevin Miller,2,Ferrari F430,Property Solutions Group,Acceleration,
+25,Shaun Juniper,30,Porsche 996 GT3 Cup Car,Juniper Racing,Acceleration,
+26,Peter Hackett,5,Lamborghini Diablo GTR,Team Lamborghini Australia,Acceleration,
+27,Marc Cini,9,Porsche 996 GT3 Cup Car,Hallmarc,Acceleration,
+28,Graeme Cook,91,Porsche 996 GT3 Cup Car,Container Solutions,Acceleration,27.0
+29,Ash Samadi,55,Porsche 996 GT3 Cup Car,Rook,Acceleration,54.0
+30,Greg Ward,14,Porsche 996 GT3 Cup Car,Greg Ward,Acceleration,
+31,Peter Lucas,99,Lotus Elise Motorsport 200,Urban Developments,Acceleration,10.0
+32,Stuart Kostera,70,Porsche 996 GT3 Cup Car,PHR Scuderia,Acceleration,
+33,Paul Ryan,22,Lotus Exige,"Steel Force
+Choice Petroleum",Acceleration,
+34,Justin Levis,78,"Lotus Elise Motorsport 200
+Porsche 996 GT3 Cup Car","CUE
+AutoHaus Hamilton",Acceleration,
+35,Dean Lindstrom,7,Dodge Viper GTS ACR,Dupont,Acceleration,
+36,Maher Algadri,70,Porsche 996 GT3 Cup Car,PHR Scuderia,Acceleration,
+37,Andre Morriss,6,Lotus Exige,Witches Chase Cheese Co,Acceleration,
+38,Paul Pizzati,45,Porsche 996 GT3,Bolin Racing,Acceleration,
+39,Neil Bryson,25,Ferrari 360 Challenge,Betterdeal.com.au,Acceleration,
+40,Christian D'Agostin,45,Porsche 996 GT3,Bolin Racing,Acceleration,
+41,Dean Fiore,9,Porsche 996 GT3 Cup Car,Hallmarc,Acceleration,
+42,Blake Lynn,32,Porsche 996 GT3,Lynn Building Supplies,Acceleration,
+43,Malcolm Lynn,32,Porsche 996 GT3,Lynn Building Supplies,Acceleration,
+44,Claude Giorgi,29,Porsche 996 GT3 Cup Car,Buildwise,Acceleration,
+45,David Giugni,14,Porsche 996 GT3 Cup Car,Ech Ridge Wines,Acceleration,
+46,Garth Rainsbury,66,Ferrari 360 Challenge,Speed Energy Drink,Acceleration,24.0
+47,Scott Bargwanna,99,Lotus Elise Motorsport 200,Urban Developments,Acceleration,
+48,Tim Poulton,56,Lotus Exige,Urban Arrangement,Acceleration,
+49,Angela Coradine,86,Lotus Elise,Urban Arrangement,Acceleration,
+50,Glenn Townsend,86,Lotus Elise,Urban Arrangement,Acceleration,
+51,Andrew Fisher,6,Lotus Exige,Witches Chase Cheese Co,Acceleration,
+52,Geoff Munday,10,Ford Mustang,Jim Beam Racing,Acceleration,8.0
+1,Greg Crick,3,Dodge Viper GTS ACR,Crickcars.com,Braking,108.0
+2,Bryce Washington,1 & 54,Porsche 996 GT3 Cup Car,ADRAD Radiator Experts,Braking,79.5
+3,James Koundouris,69,Porsche 996 GT3 Cup Car,"Dare Shots
+Supabarn Supermarkets",Braking,28.5
+4,Theo Koundouris,19,Porsche 996 GT3 Cup Car,"Dare Shots
+Supabarn Supermarkets",Braking,57.0
+5,Sven Burchartz,90,Porsche 996 GT3,Cargraphic AG,Braking,18.0
+6,David Wall,38,Porsche 996 GT3 RSR,RDS,Braking,37.5
+7,John Teulan,88,"Ferrari 360 Challenge
+Ferrari F430 Challenge",Industry Central - Stahlwille,Braking,48.0
+8,Max Twigg,18 & 17,Porsche 996 GT3,"Twigg Waste Management
+Luxton Plan",Braking,33.0
+9,D'Arcy Russell,7,Dodge Viper GTS ACR,Dupont,Braking,31.5
+10,David Reynolds,6 & 90,"Porsche 996 GT3 Cup Car
+Porsche 996 GT3","Bob Jane T-marts
+Cargraphics",Braking,90.0
+11,Allan Simonsen,4,"Ferrari 360 GT
+Porsche 996 GT3 Cup Car","Consolidated Chemical Company
+Dare Shots
+Supabarn Supermarkets",Braking,
+12,Paul Bolinowsky,45,Porsche 996 GT3,Bolin Racing,Braking,30.0
+13,Dave Stevens,43,"Porsche 996 GT3 Cup Car
+Ferrari F430 Challenge","Bennanit
+Secure Telecom",Braking,37.5
+14,Paul Tressider,23,Porsche 996 GT3 Cup Car,Wynn Tressider Management,Braking,22.5
+15,Mark Eddy,12,Porsche 996 GT3R,Quarterback Shirts,Braking,15.0
+16,Damien Flack,55,Porsche 996 GT3 Cup Car,Roock,Braking,
+17,Matthew Turnbull,13,Porsche 996 GT3 Cup Car,PROMAT,Braking,49.5
+18,Bill Pye,44,Porsche 996 GT3 Cup Car,"AutoHaus Hamilton
+Property Solutions Group",Braking,58.5
+19,Anthony Skinner,46,Porsche 996 GT3,Travelplan Ski Holiday,Braking,18.0
+20,Andrew Luxton,17 & 18,Porsche 996 GT3 Cup Car,"Luxton Plant
+Twigg Waste Management",Braking,
+21,John Kaias,77,Porsche 996 GT3 Cup Car,"ABCOR
+Preston General Engine",Braking,25.5
+22,Ian Palmer,20,Honda NSX,"Instant Fountains
+Paluky Ho",Braking,
+23,Ross Lilley,51,Porsche 996 GT3 Cup Car,Loala Furniture International,Braking,36.0
+24,Kevin Miller,2,Ferrari F430,Property Solutions Group,Braking,
+25,Shaun Juniper,30,Porsche 996 GT3 Cup Car,Juniper Racing,Braking,
+26,Peter Hackett,5,Lamborghini Diablo GTR,Team Lamborghini Australia,Braking,91.5
+27,Marc Cini,9,Porsche 996 GT3 Cup Car,Hallmarc,Braking,45.0
+28,Graeme Cook,91,Porsche 996 GT3 Cup Car,Container Solutions,Braking,
+29,Ash Samadi,55,Porsche 996 GT3 Cup Car,Rook,Braking,
+30,Greg Ward,14,Porsche 996 GT3 Cup Car,Greg Ward,Braking,
+31,Peter Lucas,99,Lotus Elise Motorsport 200,Urban Developments,Braking,
+32,Stuart Kostera,70,Porsche 996 GT3 Cup Car,PHR Scuderia,Braking,
+33,Paul Ryan,22,Lotus Exige,"Steel Force
+Choice Petroleum",Braking,
+34,Justin Levis,78,"Lotus Elise Motorsport 200
+Porsche 996 GT3 Cup Car","CUE
+AutoHaus Hamilton",Braking,24.0
+35,Dean Lindstrom,7,Dodge Viper GTS ACR,Dupont,Braking,
+36,Maher Algadri,70,Porsche 996 GT3 Cup Car,PHR Scuderia,Braking,
+37,Andre Morriss,6,Lotus Exige,Witches Chase Cheese Co,Braking,
+38,Paul Pizzati,45,Porsche 996 GT3,Bolin Racing,Braking,
+39,Neil Bryson,25,Ferrari 360 Challenge,Betterdeal.com.au,Braking,
+40,Christian D'Agostin,45,Porsche 996 GT3,Bolin Racing,Braking,
+41,Dean Fiore,9,Porsche 996 GT3 Cup Car,Hallmarc,Braking,
+42,Blake Lynn,32,Porsche 996 GT3,Lynn Building Supplies,Braking,
+43,Malcolm Lynn,32,Porsche 996 GT3,Lynn Building Supplies,Braking,
+44,Claude Giorgi,29,Porsche 996 GT3 Cup Car,Buildwise,Braking,
+45,David Giugni,14,Porsche 996 GT3 Cup Car,Ech Ridge Wines,Braking,
+46,Garth Rainsbury,66,Ferrari 360 Challenge,Speed Energy Drink,Braking,
+47,Scott Bargwanna,99,Lotus Elise Motorsport 200,Urban Developments,Braking,
+48,Tim Poulton,56,Lotus Exige,Urban Arrangement,Braking,
+49,Angela Coradine,86,Lotus Elise,Urban Arrangement,Braking,
+50,Glenn Townsend,86,Lotus Elise,Urban Arrangement,Braking,
+51,Andrew Fisher,6,Lotus Exige,Witches Chase Cheese Co,Braking,
+52,Geoff Munday,10,Ford Mustang,Jim Beam Racing,Braking,
+1,Greg Crick,3,Dodge Viper GTS ACR,Crickcars.com,Handling,91.0
+2,Bryce Washington,1 & 54,Porsche 996 GT3 Cup Car,ADRAD Radiator Experts,Handling,104.0
+3,James Koundouris,69,Porsche 996 GT3 Cup Car,"Dare Shots
+Supabarn Supermarkets",Handling,78.0
+4,Theo Koundouris,19,Porsche 996 GT3 Cup Car,"Dare Shots
+Supabarn Supermarkets",Handling,55.0
+5,Sven Burchartz,90,Porsche 996 GT3,Cargraphic AG,Handling,
+6,David Wall,38,Porsche 996 GT3 RSR,RDS,Handling,63.0
+7,John Teulan,88,"Ferrari 360 Challenge
+Ferrari F430 Challenge",Industry Central - Stahlwille,Handling,61.0
+8,Max Twigg,18 & 17,Porsche 996 GT3,"Twigg Waste Management
+Luxton Plan",Handling,51.0
+9,D'Arcy Russell,7,Dodge Viper GTS ACR,Dupont,Handling,
+10,David Reynolds,6 & 90,"Porsche 996 GT3 Cup Car
+Porsche 996 GT3","Bob Jane T-marts
+Cargraphics",Handling,
+11,Allan Simonsen,4,"Ferrari 360 GT
+Porsche 996 GT3 Cup Car","Consolidated Chemical Company
+Dare Shots
+Supabarn Supermarkets",Handling,
+12,Paul Bolinowsky,45,Porsche 996 GT3,Bolin Racing,Handling,
+13,Dave Stevens,43,"Porsche 996 GT3 Cup Car
+Ferrari F430 Challenge","Bennanit
+Secure Telecom",Handling,
+14,Paul Tressider,23,Porsche 996 GT3 Cup Car,Wynn Tressider Management,Handling,49.0
+15,Mark Eddy,12,Porsche 996 GT3R,Quarterback Shirts,Handling,
+16,Damien Flack,55,Porsche 996 GT3 Cup Car,Roock,Handling,69.0
+17,Matthew Turnbull,13,Porsche 996 GT3 Cup Car,PROMAT,Handling,38.0
+18,Bill Pye,44,Porsche 996 GT3 Cup Car,"AutoHaus Hamilton
+Property Solutions Group",Handling,
+19,Anthony Skinner,46,Porsche 996 GT3,Travelplan Ski Holiday,Handling,
+20,Andrew Luxton,17 & 18,Porsche 996 GT3 Cup Car,"Luxton Plant
+Twigg Waste Management",Handling,
+21,John Kaias,77,Porsche 996 GT3 Cup Car,"ABCOR
+Preston General Engine",Handling,
+22,Ian Palmer,20,Honda NSX,"Instant Fountains
+Paluky Ho",Handling,33.0
+23,Ross Lilley,51,Porsche 996 GT3 Cup Car,Loala Furniture International,Handling,
+24,Kevin Miller,2,Ferrari F430,Property Solutions Group,Handling,
+25,Shaun Juniper,30,Porsche 996 GT3 Cup Car,Juniper Racing,Handling,
+26,Peter Hackett,5,Lamborghini Diablo GTR,Team Lamborghini Australia,Handling,
+27,Marc Cini,9,Porsche 996 GT3 Cup Car,Hallmarc,Handling,
+28,Graeme Cook,91,Porsche 996 GT3 Cup Car,Container Solutions,Handling,
+29,Ash Samadi,55,Porsche 996 GT3 Cup Car,Rook,Handling,
+30,Greg Ward,14,Porsche 996 GT3 Cup Car,Greg Ward,Handling,
+31,Peter Lucas,99,Lotus Elise Motorsport 200,Urban Developments,Handling,
+32,Stuart Kostera,70,Porsche 996 GT3 Cup Car,PHR Scuderia,Handling,
+33,Paul Ryan,22,Lotus Exige,"Steel Force
+Choice Petroleum",Handling,
+34,Justin Levis,78,"Lotus Elise Motorsport 200
+Porsche 996 GT3 Cup Car","CUE
+AutoHaus Hamilton",Handling,
+35,Dean Lindstrom,7,Dodge Viper GTS ACR,Dupont,Handling,
+36,Maher Algadri,70,Porsche 996 GT3 Cup Car,PHR Scuderia,Handling,51.0
+37,Andre Morriss,6,Lotus Exige,Witches Chase Cheese Co,Handling,
+38,Paul Pizzati,45,Porsche 996 GT3,Bolin Racing,Handling,
+39,Neil Bryson,25,Ferrari 360 Challenge,Betterdeal.com.au,Handling,
+40,Christian D'Agostin,45,Porsche 996 GT3,Bolin Racing,Handling,
+41,Dean Fiore,9,Porsche 996 GT3 Cup Car,Hallmarc,Handling,
+42,Blake Lynn,32,Porsche 996 GT3,Lynn Building Supplies,Handling,
+43,Malcolm Lynn,32,Porsche 996 GT3,Lynn Building Supplies,Handling,
+44,Claude Giorgi,29,Porsche 996 GT3 Cup Car,Buildwise,Handling,
+45,David Giugni,14,Porsche 996 GT3 Cup Car,Ech Ridge Wines,Handling,
+46,Garth Rainsbury,66,Ferrari 360 Challenge,Speed Energy Drink,Handling,
+47,Scott Bargwanna,99,Lotus Elise Motorsport 200,Urban Developments,Handling,
+48,Tim Poulton,56,Lotus Exige,Urban Arrangement,Handling,
+49,Angela Coradine,86,Lotus Elise,Urban Arrangement,Handling,
+50,Glenn Townsend,86,Lotus Elise,Urban Arrangement,Handling,
+51,Andrew Fisher,6,Lotus Exige,Witches Chase Cheese Co,Handling,
+52,Geoff Munday,10,Ford Mustang,Jim Beam Racing,Handling,
+1,Greg Crick,3,Dodge Viper GTS ACR,Crickcars.com,Cornering,72.0
+2,Bryce Washington,1 & 54,Porsche 996 GT3 Cup Car,ADRAD Radiator Experts,Cornering,42.0
+3,James Koundouris,69,Porsche 996 GT3 Cup Car,"Dare Shots
+Supabarn Supermarkets",Cornering,84.0
+4,Theo Koundouris,19,Porsche 996 GT3 Cup Car,"Dare Shots
+Supabarn Supermarkets",Cornering,
+5,Sven Burchartz,90,Porsche 996 GT3,Cargraphic AG,Cornering,63.0
+6,David Wall,38,Porsche 996 GT3 RSR,RDS,Cornering,
+7,John Teulan,88,"Ferrari 360 Challenge
+Ferrari F430 Challenge",Industry Central - Stahlwille,Cornering,77.0
+8,Max Twigg,18 & 17,Porsche 996 GT3,"Twigg Waste Management
+Luxton Plan",Cornering,14.0
+9,D'Arcy Russell,7,Dodge Viper GTS ACR,Dupont,Cornering,23.0
+10,David Reynolds,6 & 90,"Porsche 996 GT3 Cup Car
+Porsche 996 GT3","Bob Jane T-marts
+Cargraphics",Cornering,
+11,Allan Simonsen,4,"Ferrari 360 GT
+Porsche 996 GT3 Cup Car","Consolidated Chemical Company
+Dare Shots
+Supabarn Supermarkets",Cornering,102.0
+12,Paul Bolinowsky,45,Porsche 996 GT3,Bolin Racing,Cornering,
+13,Dave Stevens,43,"Porsche 996 GT3 Cup Car
+Ferrari F430 Challenge","Bennanit
+Secure Telecom",Cornering,45.0
+14,Paul Tressider,23,Porsche 996 GT3 Cup Car,Wynn Tressider Management,Cornering,
+15,Mark Eddy,12,Porsche 996 GT3R,Quarterback Shirts,Cornering,
+16,Damien Flack,55,Porsche 996 GT3 Cup Car,Roock,Cornering,12.0
+17,Matthew Turnbull,13,Porsche 996 GT3 Cup Car,PROMAT,Cornering,
+18,Bill Pye,44,Porsche 996 GT3 Cup Car,"AutoHaus Hamilton
+Property Solutions Group",Cornering,
+19,Anthony Skinner,46,Porsche 996 GT3,Travelplan Ski Holiday,Cornering,
+20,Andrew Luxton,17 & 18,Porsche 996 GT3 Cup Car,"Luxton Plant
+Twigg Waste Management",Cornering,
+21,John Kaias,77,Porsche 996 GT3 Cup Car,"ABCOR
+Preston General Engine",Cornering,42.0
+22,Ian Palmer,20,Honda NSX,"Instant Fountains
+Paluky Ho",Cornering,53.0
+23,Ross Lilley,51,Porsche 996 GT3 Cup Car,Loala Furniture International,Cornering,
+24,Kevin Miller,2,Ferrari F430,Property Solutions Group,Cornering,
+25,Shaun Juniper,30,Porsche 996 GT3 Cup Car,Juniper Racing,Cornering,
+26,Peter Hackett,5,Lamborghini Diablo GTR,Team Lamborghini Australia,Cornering,
+27,Marc Cini,9,Porsche 996 GT3 Cup Car,Hallmarc,Cornering,
+28,Graeme Cook,91,Porsche 996 GT3 Cup Car,Container Solutions,Cornering,
+29,Ash Samadi,55,Porsche 996 GT3 Cup Car,Rook,Cornering,
+30,Greg Ward,14,Porsche 996 GT3 Cup Car,Greg Ward,Cornering,48.0
+31,Peter Lucas,99,Lotus Elise Motorsport 200,Urban Developments,Cornering,
+32,Stuart Kostera,70,Porsche 996 GT3 Cup Car,PHR Scuderia,Cornering,73.0
+33,Paul Ryan,22,Lotus Exige,"Steel Force
+Choice Petroleum",Cornering,
+34,Justin Levis,78,"Lotus Elise Motorsport 200
+Porsche 996 GT3 Cup Car","CUE
+AutoHaus Hamilton",Cornering,
+35,Dean Lindstrom,7,Dodge Viper GTS ACR,Dupont,Cornering,
+36,Maher Algadri,70,Porsche 996 GT3 Cup Car,PHR Scuderia,Cornering,
+37,Andre Morriss,6,Lotus Exige,Witches Chase Cheese Co,Cornering,
+38,Paul Pizzati,45,Porsche 996 GT3,Bolin Racing,Cornering,
+39,Neil Bryson,25,Ferrari 360 Challenge,Betterdeal.com.au,Cornering,18.0
+40,Christian D'Agostin,45,Porsche 996 GT3,Bolin Racing,Cornering,
+41,Dean Fiore,9,Porsche 996 GT3 Cup Car,Hallmarc,Cornering,
+42,Blake Lynn,32,Porsche 996 GT3,Lynn Building Supplies,Cornering,
+43,Malcolm Lynn,32,Porsche 996 GT3,Lynn Building Supplies,Cornering,
+44,Claude Giorgi,29,Porsche 996 GT3 Cup Car,Buildwise,Cornering,
+45,David Giugni,14,Porsche 996 GT3 Cup Car,Ech Ridge Wines,Cornering,
+46,Garth Rainsbury,66,Ferrari 360 Challenge,Speed Energy Drink,Cornering,
+47,Scott Bargwanna,99,Lotus Elise Motorsport 200,Urban Developments,Cornering,
+48,Tim Poulton,56,Lotus Exige,Urban Arrangement,Cornering,
+49,Angela Coradine,86,Lotus Elise,Urban Arrangement,Cornering,
+50,Glenn Townsend,86,Lotus Elise,Urban Arrangement,Cornering,
+51,Andrew Fisher,6,Lotus Exige,Witches Chase Cheese Co,Cornering,
+52,Geoff Munday,10,Ford Mustang,Jim Beam Racing,Cornering,
+1,Greg Crick,3,Dodge Viper GTS ACR,Crickcars.com,Top_Speed,98.0
+2,Bryce Washington,1 & 54,Porsche 996 GT3 Cup Car,ADRAD Radiator Experts,Top_Speed,102.0
+3,James Koundouris,69,Porsche 996 GT3 Cup Car,"Dare Shots
+Supabarn Supermarkets",Top_Speed,69.0
+4,Theo Koundouris,19,Porsche 996 GT3 Cup Car,"Dare Shots
+Supabarn Supermarkets",Top_Speed,79.0
+5,Sven Burchartz,90,Porsche 996 GT3,Cargraphic AG,Top_Speed,57.0
+6,David Wall,38,Porsche 996 GT3 RSR,RDS,Top_Speed,80.0
+7,John Teulan,88,"Ferrari 360 Challenge
+Ferrari F430 Challenge",Industry Central - Stahlwille,Top_Speed,
+8,Max Twigg,18 & 17,Porsche 996 GT3,"Twigg Waste Management
+Luxton Plan",Top_Speed,37.0
+9,D'Arcy Russell,7,Dodge Viper GTS ACR,Dupont,Top_Speed,
+10,David Reynolds,6 & 90,"Porsche 996 GT3 Cup Car
+Porsche 996 GT3","Bob Jane T-marts
+Cargraphics",Top_Speed,
+11,Allan Simonsen,4,"Ferrari 360 GT
+Porsche 996 GT3 Cup Car","Consolidated Chemical Company
+Dare Shots
+Supabarn Supermarkets",Top_Speed,
+12,Paul Bolinowsky,45,Porsche 996 GT3,Bolin Racing,Top_Speed,
+13,Dave Stevens,43,"Porsche 996 GT3 Cup Car
+Ferrari F430 Challenge","Bennanit
+Secure Telecom",Top_Speed,72.0
+14,Paul Tressider,23,Porsche 996 GT3 Cup Car,Wynn Tressider Management,Top_Speed,
+15,Mark Eddy,12,Porsche 996 GT3R,Quarterback Shirts,Top_Speed,
+16,Damien Flack,55,Porsche 996 GT3 Cup Car,Roock,Top_Speed,
+17,Matthew Turnbull,13,Porsche 996 GT3 Cup Car,PROMAT,Top_Speed,27.0
+18,Bill Pye,44,Porsche 996 GT3 Cup Car,"AutoHaus Hamilton
+Property Solutions Group",Top_Speed,
+19,Anthony Skinner,46,Porsche 996 GT3,Travelplan Ski Holiday,Top_Speed,
+20,Andrew Luxton,17 & 18,Porsche 996 GT3 Cup Car,"Luxton Plant
+Twigg Waste Management",Top_Speed,
+21,John Kaias,77,Porsche 996 GT3 Cup Car,"ABCOR
+Preston General Engine",Top_Speed,
+22,Ian Palmer,20,Honda NSX,"Instant Fountains
+Paluky Ho",Top_Speed,
+23,Ross Lilley,51,Porsche 996 GT3 Cup Car,Loala Furniture International,Top_Speed,46.0
+24,Kevin Miller,2,Ferrari F430,Property Solutions Group,Top_Speed,
+25,Shaun Juniper,30,Porsche 996 GT3 Cup Car,Juniper Racing,Top_Speed,43.0
+26,Peter Hackett,5,Lamborghini Diablo GTR,Team Lamborghini Australia,Top_Speed,
+27,Marc Cini,9,Porsche 996 GT3 Cup Car,Hallmarc,Top_Speed,
+28,Graeme Cook,91,Porsche 996 GT3 Cup Car,Container Solutions,Top_Speed,58.0
+29,Ash Samadi,55,Porsche 996 GT3 Cup Car,Rook,Top_Speed,
+30,Greg Ward,14,Porsche 996 GT3 Cup Car,Greg Ward,Top_Speed,
+31,Peter Lucas,99,Lotus Elise Motorsport 200,Urban Developments,Top_Speed,42.0
+32,Stuart Kostera,70,Porsche 996 GT3 Cup Car,PHR Scuderia,Top_Speed,
+33,Paul Ryan,22,Lotus Exige,"Steel Force
+Choice Petroleum",Top_Speed,
+34,Justin Levis,78,"Lotus Elise Motorsport 200
+Porsche 996 GT3 Cup Car","CUE
+AutoHaus Hamilton",Top_Speed,
+35,Dean Lindstrom,7,Dodge Viper GTS ACR,Dupont,Top_Speed,
+36,Maher Algadri,70,Porsche 996 GT3 Cup Car,PHR Scuderia,Top_Speed,
+37,Andre Morriss,6,Lotus Exige,Witches Chase Cheese Co,Top_Speed,
+38,Paul Pizzati,45,Porsche 996 GT3,Bolin Racing,Top_Speed,
+39,Neil Bryson,25,Ferrari 360 Challenge,Betterdeal.com.au,Top_Speed,25.0
+40,Christian D'Agostin,45,Porsche 996 GT3,Bolin Racing,Top_Speed,
+41,Dean Fiore,9,Porsche 996 GT3 Cup Car,Hallmarc,Top_Speed,
+42,Blake Lynn,32,Porsche 996 GT3,Lynn Building Supplies,Top_Speed,
+43,Malcolm Lynn,32,Porsche 996 GT3,Lynn Building Supplies,Top_Speed,
+44,Claude Giorgi,29,Porsche 996 GT3 Cup Car,Buildwise,Top_Speed,32.0
+45,David Giugni,14,Porsche 996 GT3 Cup Car,Ech Ridge Wines,Top_Speed,
+46,Garth Rainsbury,66,Ferrari 360 Challenge,Speed Energy Drink,Top_Speed,
+47,Scott Bargwanna,99,Lotus Elise Motorsport 200,Urban Developments,Top_Speed,
+48,Tim Poulton,56,Lotus Exige,Urban Arrangement,Top_Speed,
+49,Angela Coradine,86,Lotus Elise,Urban Arrangement,Top_Speed,
+50,Glenn Townsend,86,Lotus Elise,Urban Arrangement,Top_Speed,
+51,Andrew Fisher,6,Lotus Exige,Witches Chase Cheese Co,Top_Speed,
+52,Geoff Munday,10,Ford Mustang,Jim Beam Racing,Top_Speed,
+1,Greg Crick,3,Dodge Viper GTS ACR,Crickcars.com,Lap_Time,96.0
+2,Bryce Washington,1 & 54,Porsche 996 GT3 Cup Car,ADRAD Radiator Experts,Lap_Time,84.0
+3,James Koundouris,69,Porsche 996 GT3 Cup Car,"Dare Shots
+Supabarn Supermarkets",Lap_Time,30.0
+4,Theo Koundouris,19,Porsche 996 GT3 Cup Car,"Dare Shots
+Supabarn Supermarkets",Lap_Time,75.0
+5,Sven Burchartz,90,Porsche 996 GT3,Cargraphic AG,Lap_Time,69.0
+6,David Wall,38,Porsche 996 GT3 RSR,RDS,Lap_Time,33.0
+7,John Teulan,88,"Ferrari 360 Challenge
+Ferrari F430 Challenge",Industry Central - Stahlwille,Lap_Time,48.0
+8,Max Twigg,18 & 17,Porsche 996 GT3,"Twigg Waste Management
+Luxton Plan",Lap_Time,57.0
+9,D'Arcy Russell,7,Dodge Viper GTS ACR,Dupont,Lap_Time,117.0
+10,David Reynolds,6 & 90,"Porsche 996 GT3 Cup Car
+Porsche 996 GT3","Bob Jane T-marts
+Cargraphics",Lap_Time,69.0
+11,Allan Simonsen,4,"Ferrari 360 GT
+Porsche 996 GT3 Cup Car","Consolidated Chemical Company
+Dare Shots
+Supabarn Supermarkets",Lap_Time,30.0
+12,Paul Bolinowsky,45,Porsche 996 GT3,Bolin Racing,Lap_Time,42.0
+13,Dave Stevens,43,"Porsche 996 GT3 Cup Car
+Ferrari F430 Challenge","Bennanit
+Secure Telecom",Lap_Time,36.0
+14,Paul Tressider,23,Porsche 996 GT3 Cup Car,Wynn Tressider Management,Lap_Time,45.0
+15,Mark Eddy,12,Porsche 996 GT3R,Quarterback Shirts,Lap_Time,63.0
+16,Damien Flack,55,Porsche 996 GT3 Cup Car,Roock,Lap_Time,54.0
+17,Matthew Turnbull,13,Porsche 996 GT3 Cup Car,PROMAT,Lap_Time,
+18,Bill Pye,44,Porsche 996 GT3 Cup Car,"AutoHaus Hamilton
+Property Solutions Group",Lap_Time,39.0
+19,Anthony Skinner,46,Porsche 996 GT3,Travelplan Ski Holiday,Lap_Time,
+20,Andrew Luxton,17 & 18,Porsche 996 GT3 Cup Car,"Luxton Plant
+Twigg Waste Management",Lap_Time,57.0
+21,John Kaias,77,Porsche 996 GT3 Cup Car,"ABCOR
+Preston General Engine",Lap_Time,
+22,Ian Palmer,20,Honda NSX,"Instant Fountains
+Paluky Ho",Lap_Time,
+23,Ross Lilley,51,Porsche 996 GT3 Cup Car,Loala Furniture International,Lap_Time,
+24,Kevin Miller,2,Ferrari F430,Property Solutions Group,Lap_Time,
+25,Shaun Juniper,30,Porsche 996 GT3 Cup Car,Juniper Racing,Lap_Time,51.0
+26,Peter Hackett,5,Lamborghini Diablo GTR,Team Lamborghini Australia,Lap_Time,
+27,Marc Cini,9,Porsche 996 GT3 Cup Car,Hallmarc,Lap_Time,
+28,Graeme Cook,91,Porsche 996 GT3 Cup Car,Container Solutions,Lap_Time,
+29,Ash Samadi,55,Porsche 996 GT3 Cup Car,Rook,Lap_Time,
+30,Greg Ward,14,Porsche 996 GT3 Cup Car,Greg Ward,Lap_Time,
+31,Peter Lucas,99,Lotus Elise Motorsport 200,Urban Developments,Lap_Time,
+32,Stuart Kostera,70,Porsche 996 GT3 Cup Car,PHR Scuderia,Lap_Time,
+33,Paul Ryan,22,Lotus Exige,"Steel Force
+Choice Petroleum",Lap_Time,
+34,Justin Levis,78,"Lotus Elise Motorsport 200
+Porsche 996 GT3 Cup Car","CUE
+AutoHaus Hamilton",Lap_Time,39.0
+35,Dean Lindstrom,7,Dodge Viper GTS ACR,Dupont,Lap_Time,
+36,Maher Algadri,70,Porsche 996 GT3 Cup Car,PHR Scuderia,Lap_Time,
+37,Andre Morriss,6,Lotus Exige,Witches Chase Cheese Co,Lap_Time,
+38,Paul Pizzati,45,Porsche 996 GT3,Bolin Racing,Lap_Time,
+39,Neil Bryson,25,Ferrari 360 Challenge,Betterdeal.com.au,Lap_Time,
+40,Christian D'Agostin,45,Porsche 996 GT3,Bolin Racing,Lap_Time,42.0
+41,Dean Fiore,9,Porsche 996 GT3 Cup Car,Hallmarc,Lap_Time,
+42,Blake Lynn,32,Porsche 996 GT3,Lynn Building Supplies,Lap_Time,
+43,Malcolm Lynn,32,Porsche 996 GT3,Lynn Building Supplies,Lap_Time,
+44,Claude Giorgi,29,Porsche 996 GT3 Cup Car,Buildwise,Lap_Time,
+45,David Giugni,14,Porsche 996 GT3 Cup Car,Ech Ridge Wines,Lap_Time,
+46,Garth Rainsbury,66,Ferrari 360 Challenge,Speed Energy Drink,Lap_Time,
+47,Scott Bargwanna,99,Lotus Elise Motorsport 200,Urban Developments,Lap_Time,
+48,Tim Poulton,56,Lotus Exige,Urban Arrangement,Lap_Time,
+49,Angela Coradine,86,Lotus Elise,Urban Arrangement,Lap_Time,
+50,Glenn Townsend,86,Lotus Elise,Urban Arrangement,Lap_Time,
+51,Andrew Fisher,6,Lotus Exige,Witches Chase Cheese Co,Lap_Time,
+52,Geoff Munday,10,Ford Mustang,Jim Beam Racing,Lap_Time,
+1,Greg Crick,3,Dodge Viper GTS ACR,Crickcars.com,Consistency,60.0
+2,Bryce Washington,1 & 54,Porsche 996 GT3 Cup Car,ADRAD Radiator Experts,Consistency,75.0
+3,James Koundouris,69,Porsche 996 GT3 Cup Car,"Dare Shots
+Supabarn Supermarkets",Consistency,96.0
+4,Theo Koundouris,19,Porsche 996 GT3 Cup Car,"Dare Shots
+Supabarn Supermarkets",Consistency,84.0
+5,Sven Burchartz,90,Porsche 996 GT3,Cargraphic AG,Consistency,114.0
+6,David Wall,38,Porsche 996 GT3 RSR,RDS,Consistency,
+7,John Teulan,88,"Ferrari 360 Challenge
+Ferrari F430 Challenge",Industry Central - Stahlwille,Consistency,48.0
+8,Max Twigg,18 & 17,Porsche 996 GT3,"Twigg Waste Management
+Luxton Plan",Consistency,
+9,D'Arcy Russell,7,Dodge Viper GTS ACR,Dupont,Consistency,
+10,David Reynolds,6 & 90,"Porsche 996 GT3 Cup Car
+Porsche 996 GT3","Bob Jane T-marts
+Cargraphics",Consistency,
+11,Allan Simonsen,4,"Ferrari 360 GT
+Porsche 996 GT3 Cup Car","Consolidated Chemical Company
+Dare Shots
+Supabarn Supermarkets",Consistency,
+12,Paul Bolinowsky,45,Porsche 996 GT3,Bolin Racing,Consistency,54.0
+13,Dave Stevens,43,"Porsche 996 GT3 Cup Car
+Ferrari F430 Challenge","Bennanit
+Secure Telecom",Consistency,
+14,Paul Tressider,23,Porsche 996 GT3 Cup Car,Wynn Tressider Management,Consistency,
+15,Mark Eddy,12,Porsche 996 GT3R,Quarterback Shirts,Consistency,
+16,Damien Flack,55,Porsche 996 GT3 Cup Car,Roock,Consistency,
+17,Matthew Turnbull,13,Porsche 996 GT3 Cup Car,PROMAT,Consistency,
+18,Bill Pye,44,Porsche 996 GT3 Cup Car,"AutoHaus Hamilton
+Property Solutions Group",Consistency,
+19,Anthony Skinner,46,Porsche 996 GT3,Travelplan Ski Holiday,Consistency,69.0
+20,Andrew Luxton,17 & 18,Porsche 996 GT3 Cup Car,"Luxton Plant
+Twigg Waste Management",Consistency,
+21,John Kaias,77,Porsche 996 GT3 Cup Car,"ABCOR
+Preston General Engine",Consistency,
+22,Ian Palmer,20,Honda NSX,"Instant Fountains
+Paluky Ho",Consistency,
+23,Ross Lilley,51,Porsche 996 GT3 Cup Car,Loala Furniture International,Consistency,
+24,Kevin Miller,2,Ferrari F430,Property Solutions Group,Consistency,63.0
+25,Shaun Juniper,30,Porsche 996 GT3 Cup Car,Juniper Racing,Consistency,
+26,Peter Hackett,5,Lamborghini Diablo GTR,Team Lamborghini Australia,Consistency,
+27,Marc Cini,9,Porsche 996 GT3 Cup Car,Hallmarc,Consistency,
+28,Graeme Cook,91,Porsche 996 GT3 Cup Car,Container Solutions,Consistency,
+29,Ash Samadi,55,Porsche 996 GT3 Cup Car,Rook,Consistency,
+30,Greg Ward,14,Porsche 996 GT3 Cup Car,Greg Ward,Consistency,
+31,Peter Lucas,99,Lotus Elise Motorsport 200,Urban Developments,Consistency,
+32,Stuart Kostera,70,Porsche 996 GT3 Cup Car,PHR Scuderia,Consistency,
+33,Paul Ryan,22,Lotus Exige,"Steel Force
+Choice Petroleum",Consistency,45.0
+34,Justin Levis,78,"Lotus Elise Motorsport 200
+Porsche 996 GT3 Cup Car","CUE
+AutoHaus Hamilton",Consistency,
+35,Dean Lindstrom,7,Dodge Viper GTS ACR,Dupont,Consistency,
+36,Maher Algadri,70,Porsche 996 GT3 Cup Car,PHR Scuderia,Consistency,
+37,Andre Morriss,6,Lotus Exige,Witches Chase Cheese Co,Consistency,42.0
+38,Paul Pizzati,45,Porsche 996 GT3,Bolin Racing,Consistency,
+39,Neil Bryson,25,Ferrari 360 Challenge,Betterdeal.com.au,Consistency,
+40,Christian D'Agostin,45,Porsche 996 GT3,Bolin Racing,Consistency,
+41,Dean Fiore,9,Porsche 996 GT3 Cup Car,Hallmarc,Consistency,
+42,Blake Lynn,32,Porsche 996 GT3,Lynn Building Supplies,Consistency,
+43,Malcolm Lynn,32,Porsche 996 GT3,Lynn Building Supplies,Consistency,
+44,Claude Giorgi,29,Porsche 996 GT3 Cup Car,Buildwise,Consistency,
+45,David Giugni,14,Porsche 996 GT3 Cup Car,Ech Ridge Wines,Consistency,
+46,Garth Rainsbury,66,Ferrari 360 Challenge,Speed Energy Drink,Consistency,
+47,Scott Bargwanna,99,Lotus Elise Motorsport 200,Urban Developments,Consistency,
+48,Tim Poulton,56,Lotus Exige,Urban Arrangement,Consistency,
+49,Angela Coradine,86,Lotus Elise,Urban Arrangement,Consistency,
+50,Glenn Townsend,86,Lotus Elise,Urban Arrangement,Consistency,
+51,Andrew Fisher,6,Lotus Exige,Witches Chase Cheese Co,Consistency,
+52,Geoff Munday,10,Ford Mustang,Jim Beam Racing,Consistency,
+1,Greg Crick,3,Dodge Viper GTS ACR,Crickcars.com,Overall,90.0
+2,Bryce Washington,1 & 54,Porsche 996 GT3 Cup Car,ADRAD Radiator Experts,Overall,79.5
+3,James Koundouris,69,Porsche 996 GT3 Cup Car,"Dare Shots
+Supabarn Supermarkets",Overall,63.0
+4,Theo Koundouris,19,Porsche 996 GT3 Cup Car,"Dare Shots
+Supabarn Supermarkets",Overall,63.0
+5,Sven Burchartz,90,Porsche 996 GT3,Cargraphic AG,Overall,85.5
+6,David Wall,38,Porsche 996 GT3 RSR,RDS,Overall,117.0
+7,John Teulan,88,"Ferrari 360 Challenge
+Ferrari F430 Challenge",Industry Central - Stahlwille,Overall,19.5
+8,Max Twigg,18 & 17,Porsche 996 GT3,"Twigg Waste Management
+Luxton Plan",Overall,66.0
+9,D'Arcy Russell,7,Dodge Viper GTS ACR,Dupont,Overall,60.0
+10,David Reynolds,6 & 90,"Porsche 996 GT3 Cup Car
+Porsche 996 GT3","Bob Jane T-marts
+Cargraphics",Overall,85.5
+11,Allan Simonsen,4,"Ferrari 360 GT
+Porsche 996 GT3 Cup Car","Consolidated Chemical Company
+Dare Shots
+Supabarn Supermarkets",Overall,
+12,Paul Bolinowsky,45,Porsche 996 GT3,Bolin Racing,Overall,45.0
+13,Dave Stevens,43,"Porsche 996 GT3 Cup Car
+Ferrari F430 Challenge","Bennanit
+Secure Telecom",Overall,
+14,Paul Tressider,23,Porsche 996 GT3 Cup Car,Wynn Tressider Management,Overall,43.5
+15,Mark Eddy,12,Porsche 996 GT3R,Quarterback Shirts,Overall,52.5
+16,Damien Flack,55,Porsche 996 GT3 Cup Car,Roock,Overall,25.5
+17,Matthew Turnbull,13,Porsche 996 GT3 Cup Car,PROMAT,Overall,
+18,Bill Pye,44,Porsche 996 GT3 Cup Car,"AutoHaus Hamilton
+Property Solutions Group",Overall,43.5
+19,Anthony Skinner,46,Porsche 996 GT3,Travelplan Ski Holiday,Overall,
+20,Andrew Luxton,17 & 18,Porsche 996 GT3 Cup Car,"Luxton Plant
+Twigg Waste Management",Overall,66.0
+21,John Kaias,77,Porsche 996 GT3 Cup Car,"ABCOR
+Preston General Engine",Overall,
+22,Ian Palmer,20,Honda NSX,"Instant Fountains
+Paluky Ho",Overall,
+23,Ross Lilley,51,Porsche 996 GT3 Cup Car,Loala Furniture International,Overall,
+24,Kevin Miller,2,Ferrari F430,Property Solutions Group,Overall,36.0
+25,Shaun Juniper,30,Porsche 996 GT3 Cup Car,Juniper Racing,Overall,
+26,Peter Hackett,5,Lamborghini Diablo GTR,Team Lamborghini Australia,Overall,
+27,Marc Cini,9,Porsche 996 GT3 Cup Car,Hallmarc,Overall,42.0
+28,Graeme Cook,91,Porsche 996 GT3 Cup Car,Container Solutions,Overall,
+29,Ash Samadi,55,Porsche 996 GT3 Cup Car,Rook,Overall,25.5
+30,Greg Ward,14,Porsche 996 GT3 Cup Car,Greg Ward,Overall,30.0
+31,Peter Lucas,99,Lotus Elise Motorsport 200,Urban Developments,Overall,24.0
+32,Stuart Kostera,70,Porsche 996 GT3 Cup Car,PHR Scuderia,Overall,
+33,Paul Ryan,22,Lotus Exige,"Steel Force
+Choice Petroleum",Overall,27.0
+34,Justin Levis,78,"Lotus Elise Motorsport 200
+Porsche 996 GT3 Cup Car","CUE
+AutoHaus Hamilton",Overall,
+35,Dean Lindstrom,7,Dodge Viper GTS ACR,Dupont,Overall,60.0
+36,Maher Algadri,70,Porsche 996 GT3 Cup Car,PHR Scuderia,Overall,
+37,Andre Morriss,6,Lotus Exige,Witches Chase Cheese Co,Overall,9.0
+38,Paul Pizzati,45,Porsche 996 GT3,Bolin Racing,Overall,45.0
+39,Neil Bryson,25,Ferrari 360 Challenge,Betterdeal.com.au,Overall,
+40,Christian D'Agostin,45,Porsche 996 GT3,Bolin Racing,Overall,
+41,Dean Fiore,9,Porsche 996 GT3 Cup Car,Hallmarc,Overall,42.0
+42,Blake Lynn,32,Porsche 996 GT3,Lynn Building Supplies,Overall,36.0
+43,Malcolm Lynn,32,Porsche 996 GT3,Lynn Building Supplies,Overall,36.0
+44,Claude Giorgi,29,Porsche 996 GT3 Cup Car,Buildwise,Overall,
+45,David Giugni,14,Porsche 996 GT3 Cup Car,Ech Ridge Wines,Overall,30.0
+46,Garth Rainsbury,66,Ferrari 360 Challenge,Speed Energy Drink,Overall,
+47,Scott Bargwanna,99,Lotus Elise Motorsport 200,Urban Developments,Overall,24.0
+48,Tim Poulton,56,Lotus Exige,Urban Arrangement,Overall,13.5
+49,Angela Coradine,86,Lotus Elise,Urban Arrangement,Overall,12.0
+50,Glenn Townsend,86,Lotus Elise,Urban Arrangement,Overall,12.0
+51,Andrew Fisher,6,Lotus Exige,Witches Chase Cheese Co,Overall,9.0
+52,Geoff Munday,10,Ford Mustang,Jim Beam Racing,Overall,

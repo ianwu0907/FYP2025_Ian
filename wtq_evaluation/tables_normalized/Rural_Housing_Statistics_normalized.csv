@@ -1,0 +1,76 @@
+region,metric,value
+Hunan Province,Number of family households (households),123956.0
+Changsha City,Number of family households (households),8239.0
+Zhuzhou City,Number of family households (households),6117.0
+Xiangtan City,Number of family households (households),5106.0
+Hengyang City,Number of family households (households),12459.0
+Shaoyang City,Number of family households (households),14512.0
+Yueyang City,Number of family households (households),8331.0
+Changde City,Number of family households (households),12059.0
+Zhangjiajie City,Number of family households (households),3693.0
+Yiyang City,Number of family households (households),7824.0
+Chenzhou City,Number of family households (households),10573.0
+Yongzhou City,Number of family households (households),10913.0
+Huaihua City,Number of family households (households),11300.0
+Loudi City,Number of family households (households),6642.0
+Xiangxi Tujia and Miao Autonomous Prefecture,Number of family households (households),6188.0
+Hunan Province,Number of family household members (persons),397014.0
+Changsha City,Number of family household members (persons),28541.0
+Zhuzhou City,Number of family household members (persons),20188.0
+Xiangtan City,Number of family household members (persons),16739.0
+Hengyang City,Number of family household members (persons),41367.0
+Shaoyang City,Number of family household members (persons),46487.0
+Yueyang City,Number of family household members (persons),28188.0
+Changde City,Number of family household members (persons),32323.0
+Zhangjiajie City,Number of family household members (persons),11460.0
+Yiyang City,Number of family household members (persons),24058.0
+Chenzhou City,Number of family household members (persons),34551.0
+Yongzhou City,Number of family household members (persons),34491.0
+Huaihua City,Number of family household members (persons),37127.0
+Loudi City,Number of family household members (persons),21066.0
+Xiangxi Tujia and Miao Autonomous Prefecture,Number of family household members (persons),20428.0
+Hunan Province,Average number of rooms per household (rooms/household),3.57
+Changsha City,Average number of rooms per household (rooms/household),4.44
+Zhuzhou City,Average number of rooms per household (rooms/household),4.6
+Xiangtan City,Average number of rooms per household (rooms/household),4.32
+Hengyang City,Average number of rooms per household (rooms/household),3.7
+Shaoyang City,Average number of rooms per household (rooms/household),3.17
+Yueyang City,Average number of rooms per household (rooms/household),3.73
+Changde City,Average number of rooms per household (rooms/household),2.88
+Zhangjiajie City,Average number of rooms per household (rooms/household),3.28
+Yiyang City,Average number of rooms per household (rooms/household),3.85
+Chenzhou City,Average number of rooms per household (rooms/household),3.16
+Yongzhou City,Average number of rooms per household (rooms/household),3.57
+Huaihua City,Average number of rooms per household (rooms/household),3.45
+Loudi City,Average number of rooms per household (rooms/household),3.55
+Xiangxi Tujia and Miao Autonomous Prefecture,Average number of rooms per household (rooms/household),3.4
+Hunan Province,Per capita floor area of housing (square meters/person),34.96
+Changsha City,Per capita floor area of housing (square meters/person),38.72
+Zhuzhou City,Per capita floor area of housing (square meters/person),47.3
+Xiangtan City,Per capita floor area of housing (square meters/person),40.55
+Hengyang City,Per capita floor area of housing (square meters/person),35.85
+Shaoyang City,Per capita floor area of housing (square meters/person),33.04
+Yueyang City,Per capita floor area of housing (square meters/person),32.02
+Changde City,Per capita floor area of housing (square meters/person),41.75
+Zhangjiajie City,Per capita floor area of housing (square meters/person),36.6
+Yiyang City,Per capita floor area of housing (square meters/person),36.29
+Chenzhou City,Per capita floor area of housing (square meters/person),26.78
+Yongzhou City,Per capita floor area of housing (square meters/person),30.59
+Huaihua City,Per capita floor area of housing (square meters/person),32.66
+Loudi City,Per capita floor area of housing (square meters/person),37.82
+Xiangxi Tujia and Miao Autonomous Prefecture,Per capita floor area of housing (square meters/person),28.68
+Hunan Province,Number of housing rooms per person (rooms/person),1.12
+Changsha City,Number of housing rooms per person (rooms/person),1.28
+Zhuzhou City,Number of housing rooms per person (rooms/person),1.4
+Xiangtan City,Number of housing rooms per person (rooms/person),1.32
+Hengyang City,Number of housing rooms per person (rooms/person),1.11
+Shaoyang City,Number of housing rooms per person (rooms/person),0.99
+Yueyang City,Number of housing rooms per person (rooms/person),1.1
+Changde City,Number of housing rooms per person (rooms/person),1.08
+Zhangjiajie City,Number of housing rooms per person (rooms/person),1.06
+Yiyang City,Number of housing rooms per person (rooms/person),1.25
+Chenzhou City,Number of housing rooms per person (rooms/person),0.97
+Yongzhou City,Number of housing rooms per person (rooms/person),1.13
+Huaihua City,Number of housing rooms per person (rooms/person),1.05
+Loudi City,Number of housing rooms per person (rooms/person),1.12
+Xiangxi Tujia and Miao Autonomous Prefecture,Number of housing rooms per person (rooms/person),1.03

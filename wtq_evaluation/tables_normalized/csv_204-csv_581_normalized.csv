@@ -1,0 +1,96 @@
+subgroup,metric,value
+White,metric_1,50.0
+Black,metric_1,50.0
+College educated,metric_1,22.0
+High School educated,metric_1,51.0
+Grade School educated,metric_1,64.0
+Professional & Business,metric_1,19.0
+White Collar,metric_1,47.0
+Manual worker,metric_1,66.0
+Farmer,metric_1,60.0
+Union member,metric_1,76.0
+Not union,metric_1,42.0
+Protestant,metric_1,43.0
+Catholic,metric_1,62.0
+East,metric_1,48.0
+Midwest,metric_1,50.0
+West,metric_1,49.0
+South,metric_1,53.0
+White,metric_2,43.0
+Black,metric_2,79.0
+College educated,metric_2,34.0
+High School educated,metric_2,45.0
+Grade School educated,metric_2,52.0
+Professional & Business,metric_2,36.0
+White Collar,metric_2,40.0
+Manual worker,metric_2,55.0
+Farmer,metric_2,33.0
+Protestant,metric_2,37.0
+Catholic,metric_2,56.0
+Republican,metric_2,8.0
+Independent,metric_2,35.0
+Democrat,metric_2,77.0
+East,metric_2,45.0
+Midwest,metric_2,42.0
+West,metric_2,42.0
+South,metric_2,51.0
+White,metric_3,41.0
+Black,metric_3,61.0
+College educated,metric_3,31.0
+High School educated,metric_3,42.0
+Grade School educated,metric_3,50.0
+Professional & Business,metric_3,32.0
+White Collar,metric_3,37.0
+Manual worker,metric_3,50.0
+Farmer,metric_3,46.0
+Union member,metric_3,51.0
+Not union,metric_3,35.0
+Protestant,metric_3,37.0
+Catholic,metric_3,51.0
+Republican,metric_3,4.0
+Independent,metric_3,30.0
+Democrat,metric_3,85.0
+East,metric_3,40.0
+Midwest,metric_3,41.0
+West,metric_3,43.0
+South,metric_3,49.0
+White,metric_4,49.0
+Black,metric_4,68.0
+College educated,metric_4,39.0
+High School educated,metric_4,52.0
+Grade School educated,metric_4,55.0
+Professional & Business,metric_4,42.0
+White Collar,metric_4,48.0
+Manual worker,metric_4,60.0
+Farmer,metric_4,48.0
+Union member,metric_4,62.0
+Not union,metric_4,44.0
+Protestant,metric_4,38.0
+Catholic,metric_4,78.0
+Republican,metric_4,5.0
+Independent,metric_4,43.0
+Democrat,metric_4,84.0
+East,metric_4,53.0
+Midwest,metric_4,48.0
+West,metric_4,49.0
+South,metric_4,51.0
+White,metric_5,59.0
+Black,metric_5,94.0
+College educated,metric_5,52.0
+High School educated,metric_5,62.0
+Grade School educated,metric_5,66.0
+Professional & Business,metric_5,54.0
+White Collar,metric_5,57.0
+Manual worker,metric_5,71.0
+Farmer,metric_5,53.0
+Union member,metric_5,77.0
+Not union,metric_5,56.0
+Protestant,metric_5,55.0
+Catholic,metric_5,76.0
+Republican,metric_5,20.0
+Independent,metric_5,56.0
+Democrat,metric_5,87.0
+East,metric_5,68.0
+Midwest,metric_5,61.0
+West,metric_5,60.0
+South,metric_5,52.0

@@ -1,0 +1,6 @@
+part,iso_standard,itu_recommendation,publication_date,amendment_date,title_en,description_en
+Part 2,ISO/IEC 10918-2:1995,T.83 (11/94),"Nov 11, 1994",-,Compliance testing,Rules and checks for software conformance (to Part 1).
+Part 3,ISO/IEC 10918-3:1997,T.84 (07/96),"Jul 3, 1996","Apr 1, 1999",Extensions,"Set of extensions to improve the Part 1, including the Still Picture Interchange File Format (SPIFF)."
+Part 4,ISO/IEC 10918-4:1999,T.86 (06/98),"Jun 18, 1998","Jun 29, 2012","Registration of JPEG profiles, SPIFF profiles, SPIFF tags, SPIFF colour spaces, APPn markers, SPIFF compression types and Registration Authorities (REGAUT)",methods for registering some of the parameters used to extend JPEG
+Part 5,ISO/IEC 10918-5:2013,T.871 (05/11),"May 14, 2011",-,JPEG File Interchange Format (JFIF),"A popular format which has been the de facto file format for images encoded by the JPEG standard. In 2009, the JPEG Committee formally established an Ad Hoc Group to standardize JFIF as JPEG Part 5."
+Part 6,ISO/IEC 10918-6:2013,T.872 (06/12),Jun 2012,-,Application to printing systems,Specifies a subset of features and application tools for the interchange of images encoded according to the ISO/IEC 10918-1 for printing.

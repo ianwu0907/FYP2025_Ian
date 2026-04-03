@@ -1,0 +1,40 @@
+region,metric_type,value
+newfoundland and labrador,case_count,32.0
+prince edward island,case_count,7.0
+nova scotia,case_count,50.0
+new brunswick,case_count,52.0
+quebec,case_count,487.0
+ontario,case_count,909.0
+manitoba,case_count,81.0
+saskatchewan,case_count,103.0
+alberta,case_count,219.0
+british columbia,case_count,353.0
+yukon,case_count,7.0
+northwest territories,case_count,16.0
+nunavut,case_count,13.0
+newfoundland and labrador,participation_rate_pct,76.0
+prince edward island,participation_rate_pct,64.0
+nova scotia,participation_rate_pct,79.0
+new brunswick,participation_rate_pct,81.0
+quebec,participation_rate_pct,87.0
+ontario,participation_rate_pct,73.0
+manitoba,participation_rate_pct,79.0
+saskatchewan,participation_rate_pct,77.0
+alberta,participation_rate_pct,73.0
+british columbia,participation_rate_pct,82.0
+yukon,participation_rate_pct,58.0
+northwest territories,participation_rate_pct,70.0
+nunavut,participation_rate_pct,76.0
+newfoundland and labrador,rate_per_100000,20.6
+prince edward island,rate_per_100000,16.7
+nova scotia,rate_per_100000,18.4
+new brunswick,rate_per_100000,23.6
+quebec,rate_per_100000,21.7
+ontario,rate_per_100000,23.7
+manitoba,rate_per_100000,24.0
+saskatchewan,rate_per_100000,35.3
+alberta,rate_per_100000,19.3
+british columbia,rate_per_100000,26.7
+yukon,rate_per_100000,71.9
+northwest territories,rate_per_100000,152.7
+nunavut,rate_per_100000,190.4

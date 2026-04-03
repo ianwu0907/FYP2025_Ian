@@ -1,0 +1,295 @@
+section,reason,frequency_count,subgroup_id,percent_women
+abuse:,emotional abuse,2933,1,66.0
+abuse:,physical abuse,2193,1,50.0
+abuse:,financial abuse,1671,1,38.0
+abuse:,threats,1593,1,36.0
+abuse:,harassment,1183,1,27.0
+abuse:,sexual abuse,925,1,21.0
+abuse:,human trafficking,67,1,2.0
+abuse:,other abuse,523,1,12.0
+protecting children from:,witnessing abuse of mother,1158,1,26.0
+protecting children from:,psychological abuse,784,1,18.0
+protecting children from:,physical abuse,428,1,10.0
+protecting children from:,threats,348,1,8.0
+protecting children from:,neglect,267,1,6.0
+protecting children from:,sexual abuse,72,1,2.0
+housing:,unable to find affordable housing,1311,1,30.0
+housing:,short-term housing problem,767,1,17.0
+housing:,housing emergency,428,1,10.0
+housing:,mental health,1087,1,25.0
+housing:,drug/alcohol addiction,862,1,19.0
+housing:,other,482,1,11.0
+housing:,unknown,53,1,
+abuse:,emotional abuse,2933,2,77.0
+abuse:,physical abuse,2193,2,45.0
+abuse:,financial abuse,1671,2,32.0
+abuse:,threats,1593,2,40.0
+abuse:,harassment,1183,2,38.0
+abuse:,sexual abuse,925,2,15.0
+abuse:,human trafficking,67,2,
+abuse:,other abuse,523,2,
+protecting children from:,witnessing abuse of mother,1158,2,18.0
+protecting children from:,psychological abuse,784,2,17.0
+protecting children from:,physical abuse,428,2,11.0
+protecting children from:,threats,348,2,5.0
+protecting children from:,neglect,267,2,6.0
+protecting children from:,sexual abuse,72,2,
+housing:,unable to find affordable housing,1311,2,25.0
+housing:,short-term housing problem,767,2,15.0
+housing:,housing emergency,428,2,11.0
+housing:,mental health,1087,2,43.0
+housing:,drug/alcohol addiction,862,2,20.0
+housing:,other,482,2,
+housing:,unknown,53,2,
+abuse:,emotional abuse,2933,3,67.0
+abuse:,physical abuse,2193,3,27.0
+abuse:,financial abuse,1671,3,27.0
+abuse:,threats,1593,3,33.0
+abuse:,harassment,1183,3,40.0
+abuse:,sexual abuse,925,3,27.0
+abuse:,human trafficking,67,3,
+abuse:,other abuse,523,3,
+protecting children from:,witnessing abuse of mother,1158,3,27.0
+protecting children from:,psychological abuse,784,3,
+protecting children from:,physical abuse,428,3,
+protecting children from:,threats,348,3,
+protecting children from:,neglect,267,3,
+protecting children from:,sexual abuse,72,3,
+housing:,unable to find affordable housing,1311,3,67.0
+housing:,short-term housing problem,767,3,
+housing:,housing emergency,428,3,
+housing:,mental health,1087,3,
+housing:,drug/alcohol addiction,862,3,20.0
+housing:,other,482,3,
+housing:,unknown,53,3,
+abuse:,emotional abuse,2933,4,56.0
+abuse:,physical abuse,2193,4,48.0
+abuse:,financial abuse,1671,4,36.0
+abuse:,threats,1593,4,40.0
+abuse:,harassment,1183,4,31.0
+abuse:,sexual abuse,925,4,17.0
+abuse:,human trafficking,67,4,
+abuse:,other abuse,523,4,
+protecting children from:,witnessing abuse of mother,1158,4,30.0
+protecting children from:,psychological abuse,784,4,21.0
+protecting children from:,physical abuse,428,4,10.0
+protecting children from:,threats,348,4,6.0
+protecting children from:,neglect,267,4,
+protecting children from:,sexual abuse,72,4,
+housing:,unable to find affordable housing,1311,4,23.0
+housing:,short-term housing problem,767,4,11.0
+housing:,housing emergency,428,4,14.0
+housing:,mental health,1087,4,27.0
+housing:,drug/alcohol addiction,862,4,20.0
+housing:,other,482,4,4.0
+housing:,unknown,53,4,
+abuse:,emotional abuse,2933,5,80.0
+abuse:,physical abuse,2193,5,47.0
+abuse:,financial abuse,1671,5,42.0
+abuse:,threats,1593,5,51.0
+abuse:,harassment,1183,5,33.0
+abuse:,sexual abuse,925,5,22.0
+abuse:,human trafficking,67,5,5.0
+abuse:,other abuse,523,5,
+protecting children from:,witnessing abuse of mother,1158,5,20.0
+protecting children from:,psychological abuse,784,5,18.0
+protecting children from:,physical abuse,428,5,10.0
+protecting children from:,threats,348,5,8.0
+protecting children from:,neglect,267,5,10.0
+protecting children from:,sexual abuse,72,5,4.0
+housing:,unable to find affordable housing,1311,5,21.0
+housing:,short-term housing problem,767,5,5.0
+housing:,housing emergency,428,5,
+housing:,mental health,1087,5,39.0
+housing:,drug/alcohol addiction,862,5,28.0
+housing:,other,482,5,12.0
+housing:,unknown,53,5,
+abuse:,emotional abuse,2933,6,68.0
+abuse:,physical abuse,2193,6,47.0
+abuse:,financial abuse,1671,6,36.0
+abuse:,threats,1593,6,35.0
+abuse:,harassment,1183,6,28.0
+abuse:,sexual abuse,925,6,23.0
+abuse:,human trafficking,67,6,2.0
+abuse:,other abuse,523,6,19.0
+protecting children from:,witnessing abuse of mother,1158,6,23.0
+protecting children from:,psychological abuse,784,6,17.0
+protecting children from:,physical abuse,428,6,11.0
+protecting children from:,threats,348,6,9.0
+protecting children from:,neglect,267,6,4.0
+protecting children from:,sexual abuse,72,6,1.0
+housing:,unable to find affordable housing,1311,6,23.0
+housing:,short-term housing problem,767,6,10.0
+housing:,housing emergency,428,6,6.0
+housing:,mental health,1087,6,30.0
+housing:,drug/alcohol addiction,862,6,14.0
+housing:,other,482,6,7.0
+housing:,unknown,53,6,
+abuse:,emotional abuse,2933,7,65.0
+abuse:,physical abuse,2193,7,46.0
+abuse:,financial abuse,1671,7,37.0
+abuse:,threats,1593,7,33.0
+abuse:,harassment,1183,7,24.0
+abuse:,sexual abuse,925,7,18.0
+abuse:,human trafficking,67,7,1.0
+abuse:,other abuse,523,7,13.0
+protecting children from:,witnessing abuse of mother,1158,7,25.0
+protecting children from:,psychological abuse,784,7,16.0
+protecting children from:,physical abuse,428,7,8.0
+protecting children from:,threats,348,7,7.0
+protecting children from:,neglect,267,7,5.0
+protecting children from:,sexual abuse,72,7,1.0
+housing:,unable to find affordable housing,1311,7,31.0
+housing:,short-term housing problem,767,7,25.0
+housing:,housing emergency,428,7,12.0
+housing:,mental health,1087,7,23.0
+housing:,drug/alcohol addiction,862,7,16.0
+housing:,other,482,7,12.0
+housing:,unknown,53,7,
+abuse:,emotional abuse,2933,8,67.0
+abuse:,physical abuse,2193,8,65.0
+abuse:,financial abuse,1671,8,42.0
+abuse:,threats,1593,8,37.0
+abuse:,harassment,1183,8,26.0
+abuse:,sexual abuse,925,8,28.0
+abuse:,human trafficking,67,8,
+abuse:,other abuse,523,8,
+protecting children from:,witnessing abuse of mother,1158,8,31.0
+protecting children from:,psychological abuse,784,8,20.0
+protecting children from:,physical abuse,428,8,19.0
+protecting children from:,threats,348,8,7.0
+protecting children from:,neglect,267,8,7.0
+protecting children from:,sexual abuse,72,8,
+housing:,unable to find affordable housing,1311,8,19.0
+housing:,short-term housing problem,767,8,9.0
+housing:,housing emergency,428,8,4.0
+housing:,mental health,1087,8,19.0
+housing:,drug/alcohol addiction,862,8,32.0
+housing:,other,482,8,3.0
+housing:,unknown,53,8,
+abuse:,emotional abuse,2933,9,60.0
+abuse:,physical abuse,2193,9,53.0
+abuse:,financial abuse,1671,9,20.0
+abuse:,threats,1593,9,34.0
+abuse:,harassment,1183,9,21.0
+abuse:,sexual abuse,925,9,21.0
+abuse:,human trafficking,67,9,4.0
+abuse:,other abuse,523,9,3.0
+protecting children from:,witnessing abuse of mother,1158,9,25.0
+protecting children from:,psychological abuse,784,9,19.0
+protecting children from:,physical abuse,428,9,11.0
+protecting children from:,threats,348,9,5.0
+protecting children from:,neglect,267,9,3.0
+protecting children from:,sexual abuse,72,9,2.0
+housing:,unable to find affordable housing,1311,9,25.0
+housing:,short-term housing problem,767,9,16.0
+housing:,housing emergency,428,9,10.0
+housing:,mental health,1087,9,18.0
+housing:,drug/alcohol addiction,862,9,26.0
+housing:,other,482,9,7.0
+housing:,unknown,53,9,
+abuse:,emotional abuse,2933,10,67.0
+abuse:,physical abuse,2193,10,59.0
+abuse:,financial abuse,1671,10,44.0
+abuse:,threats,1593,10,33.0
+abuse:,harassment,1183,10,27.0
+abuse:,sexual abuse,925,10,26.0
+abuse:,human trafficking,67,10,2.0
+abuse:,other abuse,523,10,18.0
+protecting children from:,witnessing abuse of mother,1158,10,36.0
+protecting children from:,psychological abuse,784,10,23.0
+protecting children from:,physical abuse,428,10,11.0
+protecting children from:,threats,348,10,6.0
+protecting children from:,neglect,267,10,14.0
+protecting children from:,sexual abuse,72,10,2.0
+housing:,unable to find affordable housing,1311,10,35.0
+housing:,short-term housing problem,767,10,15.0
+housing:,housing emergency,428,10,9.0
+housing:,mental health,1087,10,27.0
+housing:,drug/alcohol addiction,862,10,29.0
+housing:,other,482,10,10.0
+housing:,unknown,53,10,
+abuse:,emotional abuse,2933,11,65.0
+abuse:,physical abuse,2193,11,51.0
+abuse:,financial abuse,1671,11,43.0
+abuse:,threats,1593,11,43.0
+abuse:,harassment,1183,11,30.0
+abuse:,sexual abuse,925,11,22.0
+abuse:,human trafficking,67,11,2.0
+abuse:,other abuse,523,11,4.0
+protecting children from:,witnessing abuse of mother,1158,11,27.0
+protecting children from:,psychological abuse,784,11,18.0
+protecting children from:,physical abuse,428,11,12.0
+protecting children from:,threats,348,11,10.0
+protecting children from:,neglect,267,11,8.0
+protecting children from:,sexual abuse,72,11,2.0
+housing:,unable to find affordable housing,1311,11,35.0
+housing:,short-term housing problem,767,11,16.0
+housing:,housing emergency,428,11,9.0
+housing:,mental health,1087,11,21.0
+housing:,drug/alcohol addiction,862,11,25.0
+housing:,other,482,11,18.0
+housing:,unknown,53,11,
+abuse:,emotional abuse,2933,12,85.0
+abuse:,physical abuse,2193,12,62.0
+abuse:,financial abuse,1671,12,23.0
+abuse:,threats,1593,12,31.0
+abuse:,harassment,1183,12,31.0
+abuse:,sexual abuse,925,12,
+abuse:,human trafficking,67,12,
+abuse:,other abuse,523,12,
+protecting children from:,witnessing abuse of mother,1158,12,
+protecting children from:,psychological abuse,784,12,
+protecting children from:,physical abuse,428,12,
+protecting children from:,threats,348,12,
+protecting children from:,neglect,267,12,
+protecting children from:,sexual abuse,72,12,
+housing:,unable to find affordable housing,1311,12,
+housing:,short-term housing problem,767,12,
+housing:,housing emergency,428,12,
+housing:,mental health,1087,12,
+housing:,drug/alcohol addiction,862,12,31.0
+housing:,other,482,12,
+housing:,unknown,53,12,
+abuse:,emotional abuse,2933,13,89.0
+abuse:,physical abuse,2193,13,59.0
+abuse:,financial abuse,1671,13,41.0
+abuse:,threats,1593,13,44.0
+abuse:,harassment,1183,13,19.0
+abuse:,sexual abuse,925,13,19.0
+abuse:,human trafficking,67,13,
+abuse:,other abuse,523,13,19.0
+protecting children from:,witnessing abuse of mother,1158,13,52.0
+protecting children from:,psychological abuse,784,13,
+protecting children from:,physical abuse,428,13,
+protecting children from:,threats,348,13,
+protecting children from:,neglect,267,13,
+protecting children from:,sexual abuse,72,13,
+housing:,unable to find affordable housing,1311,13,37.0
+housing:,short-term housing problem,767,13,19.0
+housing:,housing emergency,428,13,15.0
+housing:,mental health,1087,13,15.0
+housing:,drug/alcohol addiction,862,13,
+housing:,other,482,13,
+housing:,unknown,53,13,
+abuse:,emotional abuse,2933,14,89.0
+abuse:,physical abuse,2193,14,53.0
+abuse:,financial abuse,1671,14,42.0
+abuse:,threats,1593,14,68.0
+abuse:,harassment,1183,14,63.0
+abuse:,sexual abuse,925,14,21.0
+abuse:,human trafficking,67,14,
+abuse:,other abuse,523,14,
+protecting children from:,witnessing abuse of mother,1158,14,
+protecting children from:,psychological abuse,784,14,
+protecting children from:,physical abuse,428,14,
+protecting children from:,threats,348,14,
+protecting children from:,neglect,267,14,
+protecting children from:,sexual abuse,72,14,
+housing:,unable to find affordable housing,1311,14,47.0
+housing:,short-term housing problem,767,14,
+housing:,housing emergency,428,14,37.0
+housing:,mental health,1087,14,16.0
+housing:,drug/alcohol addiction,862,14,42.0
+housing:,other,482,14,
+housing:,unknown,53,14,

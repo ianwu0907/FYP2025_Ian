@@ -1,0 +1,129 @@
+age_group,demographic_group,metric,value
+,female,number,0
+,female,rate,0
+,male,number,0
+,male,rate,0
+,female,number,0
+,female,rate,0
+,male,number,0
+,male,rate,0
+24 and younger,female,number,70058
+24 and younger,female,rate,1394
+24 and younger,male,number,54684
+24 and younger,male,rate,1030
+11 and younger,female,number,8569
+11 and younger,female,rate,374
+11 and younger,male,number,8030
+11 and younger,male,rate,333
+younger than 1,female,number,190
+younger than 1,female,rate,101
+younger than 1,male,number,245
+younger than 1,male,rate,124
+1,female,number,285
+1,female,rate,151
+1,male,number,305
+1,male,rate,154
+2,female,number,324
+2,female,rate,172
+2,male,number,292
+2,male,rate,147
+3,female,number,452
+3,female,rate,239
+3,male,number,405
+3,male,rate,204
+4,female,number,583
+4,female,rate,307
+4,male,number,479
+4,male,rate,238
+5,female,number,670
+5,female,rate,350
+5,male,number,628
+5,male,rate,312
+6,female,number,793
+6,female,rate,413
+6,male,number,655
+6,male,rate,325
+7,female,number,824
+7,female,rate,423
+7,male,number,765
+7,male,rate,375
+8,female,number,891
+8,female,rate,456
+8,male,number,851
+8,male,rate,413
+9,female,number,979
+9,female,rate,498
+9,male,number,972
+9,male,rate,473
+10,female,number,1142
+10,female,rate,596
+10,male,number,1132
+10,male,rate,562
+11,female,number,1436
+11,female,rate,768
+11,male,number,1301
+11,male,rate,663
+12 to 17,female,number,24430
+12 to 17,female,rate,2181
+12 to 17,male,number,18207
+12 to 17,male,rate,1538
+12,female,number,2283
+12,female,rate,1244
+12,male,number,1890
+12,male,rate,977
+13,female,number,3461
+13,female,rate,1878
+13,male,number,2401
+13,male,rate,1235
+14,female,number,4345
+14,female,rate,2378
+14,male,number,3100
+14,male,rate,1612
+15,female,number,4943
+15,female,rate,2684
+15,male,number,3402
+15,male,rate,1749
+16,female,number,4598
+16,female,rate,2437
+16,male,number,3614
+16,male,rate,1804
+17,female,number,4800
+17,female,rate,2438
+17,male,number,3800
+17,male,rate,1823
+18 to 24,female,number,37059
+18 to 24,female,rate,2295
+18 to 24,male,number,28447
+18 to 24,male,rate,1658
+18,female,number,4908
+18,female,rate,2406
+18,male,number,3731
+18,male,rate,1728
+19,female,number,5174
+19,female,rate,2375
+19,male,number,3938
+19,male,rate,1697
+20,female,number,5392
+20,female,rate,2400
+20,male,number,4155
+20,male,rate,1716
+21,female,number,5385
+21,female,rate,2285
+21,male,number,4170
+21,male,rate,1668
+22,female,number,5383
+22,female,rate,2239
+22,male,number,4212
+22,male,rate,1640
+23,female,number,5392
+23,female,rate,2215
+23,male,number,4124
+23,male,rate,1594
+24,female,number,5425
+24,female,rate,2183
+24,male,number,4117
+24,male,rate,1583
+25 and older,female,number,115528
+25 and older,female,rate,878
+25 and older,male,number,110187
+25 and older,male,rate,867

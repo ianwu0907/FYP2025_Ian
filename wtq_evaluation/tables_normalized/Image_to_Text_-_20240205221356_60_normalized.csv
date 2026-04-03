@@ -1,0 +1,10 @@
+order_id,order_date,customer_name,product_full_name,unit_price,shipping_cost,fulfillment_date,order_status,staff_name,remark,product_short_name,quantity,total_amount_computed
+BH45002,2021-01-08,Customer 2,High-quality product name 2,3095.0,29.0,2021-01-06,Shipped,Read well,Remark 2,Product Name 2,29,8975500.0
+BH37003,2021-01-10,Customer 3,Product Name 3,2449.0,18.0,2021-01-07,Received and Paid in Full,Wei Jiaopeng,Remark3,Product Name 3,18,
+BH4004,2021-01-08,Customer4,Product Name 4,3404.0,43.0,2021-01-11,Cleared,Tong Luya,Remark 4,Product Name 4,43,146.372
+BH31005,2021-01-11,Customer 5,Product Name S,4433.0,23.0,2021-01-11,Pending,B Feng,Remark 5,Product Name 5,23,101.969
+BH35006,2021-01-12,Customer 6,Product Name 6,1852.0,9.0,2021-01-12,Shipped,Tian Dun,Remark 6,Product Name 6,9,16668.0
+BH0007,2021-01-15,Customer 7,Product Name 7,1512.0,34.0,2021-01-12,Delivered,Shi Yijin,Remark7,Product Name,34,51.408
+BH21008,2021-01-14,Customer4,Product Name 8,1464.0,37.0,2021-01-14,Cleared,Bilan Used,Remark8,Product Name 8,37,5416800.0
+BH20009,2021-01-15,Customer9,Product Name 9,751.0,30.0,2021-01-16,Pending,Hejun,Remark 9,Product Name 9,30,22.53
+BH130010,2021-01-16,Customer10,Product Name 10,2649.0,39.0,2021-01-17,Shipped,Fang Jingyi,Remark10,Product Name 10,39,103.311

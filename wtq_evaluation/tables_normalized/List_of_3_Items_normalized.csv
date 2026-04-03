@@ -1,0 +1,55 @@
+section_id,infrastructure_type,infrastructure_specifier,activity_id,activity_description,unit,quantity
+,,,1,"Bulldozer earth pushing (first and second category soil, pushing distance 30~40m)",100(m3),181.4
+Two,,,1,Manual earth excavation (Class I and II soil),100(m3),9.1018816491879
+Two,,,2,Earthwork backfilling for buildings (Manual compaction of earthwork backfilling),100(m3),1.43270359292773
+Two,,,3,"Manual loading of dump trucks for soil transportation, transportation distance (1~1.5km)",100(m3),7.39275053950706
+(二),Irrigation and Drainage Channel,14070m,1,Manual earth excavation (Class I and II soil),100(m3),8.1164653784219
+(二),Irrigation and Drainage Channel,14070m,2,"Manual loading of dump trucks for soil transportation, transportation distance (0.5~1 km)",100(m3),2.54799640777902
+(二),Irrigation and Drainage Channel,14070m,3,Earthwork backfilling for buildings (Manual compaction of earthwork backfilling),100(m3),2.63236714975845
+(二),Irrigation and Drainage Channel,14070m,4,Sod Laying (Full Coverage),1(hm2),78.6335315248359
+(二),Irrigation and Drainage Channel,14070m,5,"C15 concrete lining for open channel (slope steeper than 1:0.5, lining thickness 10~15cm)",100(m3),11.8726508113465
+(Three),Agricultural channel,31203m,1,"Open channel C15 concrete lining (slope steeper than 1:0.75, lining thickness 10-15cm)",100(m3),7.75671698234144
+(Three),Agricultural channel,31203m,2,Manual earth excavation (Class I and II soil),100(m3),8.96236900298048
+(Three),Agricultural channel,31203m,3,"Manual loading of dump trucks for soil transportation, transportation distance (0.5~1 km)",100(m3),10.4827708874147
+(Three),Agricultural channel,31203m,4,Earthwork backfilling for buildings (Manual compaction of earthwork backfilling),100(m3),4.64122680511489
+(4),Head ditch,1794m,1,"Open channel C20 concrete lining (slope steeper than 1:0.75, lining thickness 10~15cm)",100(m3),2.22744858254586
+(4),Head ditch,1794m,2,Manual earth excavation (Class I and II soil),100(m3),6.58904947192885
+(4),Head ditch,1794m,3,"Manual loading of dump trucks for soil transportation, transportation distance (0.5~1 km)",100(m3),4.44323513062813
+(4),Head ditch,1794m,4,Earthwork backfilling for buildings (Manual compaction of earthwork backfilling),100(m3),1.9242356864925
+(5),Farm gate,110,1,Manual earth excavation (Class I and II soil),100(m3),7.65818181818182
+(5),Farm gate,110,2,Earthwork backfilling for buildings (Manual compaction of earthwork backfilling),100(m3),5.60727272727273
+(5),Farm gate,110,3,Middle hole floor slab,100(m3),0.126545454545454
+(5),Farm gate,110,4,M7.5 rubble masonry (foundation),100(m3),0.189818181818182
+(5),Farm gate,110,5,M7.5 rubble masonry (retaining wall),100(m3),0.558545454545454
+(5),Farm gate,110,6,Pier (monolithic pier thickness below 0.8m),100(m3),0.0916363636363636
+(5),Farm gate,110,7,Reinforcing Steel Fabrication and Installation (Manual Labor),1 (t),2.98909090909091
+(5),Farm gate,110,8,Prefabricated reinforced concrete gate (volume ≤0.5m³),100(m3),0.0130909090909091
+(5),Farm gate,110,9,"Truck transportation of prefabricated concrete small components (volume ≤ 0.6m3, transportation distance 0~1km)",100(m3),0.0130909090909091
+(6),Doumen,13,1,Manual earth excavation (Class I and II soil),100(m3),0.423076923076923
+(6),Doumen,13,2,Earthwork backfilling for buildings (Manual compaction of earthwork backfilling),100(m3),0.269230769230769
+(6),Doumen,13,3,Middle hole floor slab,100(m3),0.0230769230769231
+(6),Doumen,13,4,M7.5 rubble masonry (foundation),100(m3),0.0576923076923077
+(6),Doumen,13,5,M7.5 rubble masonry (retaining wall),100(m3),0.188461538461538
+(6),Doumen,13,6,Pier (monolithic pier thickness below 0.8m),100(m3),0.0230769230769231
+(6),Doumen,13,7,Reinforcing Steel Fabrication and Installation (Manual Labor),1 (t),0.538461538461538
+(Seven),Farm bridge 4*4,7,1,Manual earth excavation (Class I and II soil),100(m3),7.0
+(Seven),Farm bridge 4*4,7,2,Earthwork backfilling for buildings (Earthwork backfilling with mechanical compaction),100(m3),2.1
+(Seven),Farm bridge 4*4,7,3,Prefabricated C25 concrete slab,100(m3),0.4
+(Seven),Farm bridge 4*4,7,4,Dump Truck Transport of Small Prefabricated Concrete Components (Transport Distance 50m),100(m3),0.4
+(Seven),Farm bridge 4*4,7,5,Prefabricated concrete small components (railings and handrails),100(m3),0.3
+(Seven),Farm bridge 4*4,7,6,Precast concrete slab installation (single component volume 0.6~2m3),100(m3),0.4
+(Seven),Farm bridge 4*4,7,7,C20 concrete base slab,100(m3),1.5
+(Seven),Farm bridge 4*4,7,8,Dry-laid rubble stone (foundation),100(m3),0.6
+(Seven),Farm bridge 4*4,7,9,Reinforcing Steel Fabrication and Installation (Manual Labor),1 (t),10.8
+(Seven),Farm bridge 4*4,7,10,M10 rubble masonry (retaining wall),100(m3),2.3
+(8),Production Access Bridge,873 units,1,Manual earth excavation (Class I and II soil),100(m3),83.2
+(8),Production Access Bridge,873 units,2,Earthwork backfilling for buildings (Manual compaction of earthwork backfilling),100(m3),24.0069644902635
+(8),Production Access Bridge,873 units,3,Prefabricated C25 concrete slab,100(m3),30.6496219931271
+(8),Production Access Bridge,873 units,4,Precast concrete slab installation (single component volume 0.6~2m3),100(m3),30.6496219931271
+(8),Production Access Bridge,873 units,5,Dump Truck Transport of Small Prefabricated Concrete Components (Transport Distance 50m),100(m3),3.51670103092783
+(9),Irrigation and Drainage Channel Tail Gate,14,1,Manual earth excavation (Class I and II soil),100(m3),1.5
+(9),Irrigation and Drainage Channel Tail Gate,14,2,Earthwork backfilling for buildings (Manual compaction of earthwork backfilling),100(m3),1.14285714285714
+(9),Irrigation and Drainage Channel Tail Gate,14,3,C25 slab base,100(m3),0.232142857142857
+(9),Irrigation and Drainage Channel Tail Gate,14,4,C25 Gate Pier (Whole Pier Thickness Below 0.8m),100(m3),0.0178571428571429
+(9),Irrigation and Drainage Channel Tail Gate,14,5,M10 rubble masonry (foundation),100(m3),0.225
+(9),Irrigation and Drainage Channel Tail Gate,14,6,Reinforcing Steel Fabrication and Installation (Manual Labor),1 (t),2.78571428571429

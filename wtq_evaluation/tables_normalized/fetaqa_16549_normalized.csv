@@ -1,0 +1,15 @@
+party,votes,vote_share_pct,seats,seat_change
+Centre Party,1182900,23.2,100,+6
+German Conservative Party,830800,16.3,50,−9
+National Liberal Party,746600,14.6,47,−52
+German Progress Party,649300,12.7,60,+34
+Liberal Union,429200,8.4,46,+36
+German Reich Party,379300,7.4,28,−29
+Social Democratic Party,312000,6.1,12,+3
+Polish Party,194900,3.8,18,+4
+Alsace-Lorraine Party,153000,3.0,15,0
+German People's Party,103400,2.0,9,+6
+German-Hanoverian Party,86700,1.7,10,0
+Danish Party,14000,0.3,2,+1
+Others,15300,0.3,0,0
+Invalid/blank votes,20600,,,–

@@ -1,0 +1,47 @@
+spending_range,source,estimation_group,value_000,percentage,ci_lower,ci_upper
+,grown by the user or another person,A,152.1,10.4,7.7,13.9
+,grown by the user or another person,B,170.0,14.0,10.3,18.8
+,illegal,A,347.6,23.7,19.6,28.3
+,illegal,B,313.6,25.8,21.0,31.3
+,legal,A,110.1,7.5,4.8,11.5
+,legal,B,143.3,11.8,9.1,15.2
+,only legal,A,34.3,2.3,1.3,4.2
+,only legal,B,60.7,5.0,3.3,7.5
+,friends and family,A,1130.7,77.1,72.6,81.0
+,friends and family,B,848.3,69.8,64.8,74.4
+,other,A,46.7,3.2,2.0,5.1
+,other,B,53.1,4.4,2.7,6.9
+$1 to $50,grown by the user or another person,A,36.9,5.2,3.1,8.8
+$1 to $50,grown by the user or another person,B,78.4,7.2,4.5,11.5
+$1 to $50,illegal,A,424.9,60.4,52.8,67.4
+$1 to $50,illegal,B,375.3,34.7,29.3,40.5
+$1 to $50,legal,A,134.0,19.0,13.6,26.0
+$1 to $50,legal,B,693.4,64.0,58.3,69.3
+$1 to $50,only legal,A,67.4,9.6,6.1,14.8
+$1 to $50,only legal,B,466.4,43.1,37.6,48.8
+$1 to $50,friends and family,A,329.9,46.9,38.8,55.1
+$1 to $50,friends and family,B,346.6,32.0,26.7,37.8
+$51 to $250,grown by the user or another person,A,95.9,7.8,5.6,10.6
+$51 to $250,grown by the user or another person,B,136.3,7.6,5.8,10.0
+$51 to $250,illegal,A,800.6,64.7,59.1,69.9
+$51 to $250,illegal,B,743.8,41.6,37.3,46.0
+$51 to $250,legal,A,355.8,28.8,24.1,34.0
+$51 to $250,legal,B,1212.9,67.8,63.6,71.7
+$51 to $250,only legal,A,201.4,16.3,12.5,20.9
+$51 to $250,only legal,B,715.1,40.0,35.6,44.5
+$51 to $250,friends and family,A,399.8,32.3,27.0,38.1
+$51 to $250,friends and family,B,442.5,24.7,20.8,29.2
+$51 to $250,other,A,60.8,4.9,3.0,7.9
+$51 to $250,other,B,50.2,2.8,1.7,4.6
+$251 or more,grown by the user or another person,A,108.2,10.6,6.8,16.1
+$251 or more,grown by the user or another person,B,120.9,12.2,8.8,16.7
+$251 or more,illegal,A,715.9,70.1,64.2,75.4
+$251 or more,illegal,B,615.2,62.0,56.4,67.3
+$251 or more,legal,A,401.4,39.3,33.1,45.9
+$251 or more,legal,B,588.6,59.4,53.6,64.8
+$251 or more,only legal,A,169.0,16.6,12.6,21.4
+$251 or more,only legal,B,241.4,24.3,19.7,29.7
+$251 or more,friends and family,A,290.4,28.4,22.5,35.3
+$251 or more,friends and family,B,287.8,29.0,24.1,34.5
+$251 or more,other,A,43.0,4.2,2.4,7.3
+$251 or more,other,B,33.3,3.4,2.1,5.3

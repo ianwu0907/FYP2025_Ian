@@ -1,0 +1,68 @@
+product_id,primary_name_cn,primary_name_en,primary_metric_a,primary_metric_b,secondary_name_premium,secondary_name_base,secondary_metric
+125778,,Little Red Pepper,15.4149816936766,5.7,Premium Lettuce,Celtuce,2.06108459137026
+346956,,Perilla Leaf Vegetable,14.4844553778871,0.0,Premium Water Chestnut Bulb,Jiaotou,0.0
+81974,,Leek Yellow,12.4444553778871,1.0,Premium young ginger,tender ginger,0.0
+125747,,Chive Flower,12.4444553778871,1.0,Premium Purple Bud Vegetable,Red Bud Cabbage,4.0
+125780,,Snow pea,12.4444553778871,5.0,Premium Corn,corn,4.49525537788711
+125750,,garlic sprout,10.5190621194601,8.9,Premium Enoki Mushrooms,Enoki Mushrooms,0.0
+122590,,Water gourd,8.7254430322081,24.3,Premium Onion,Onion,4.48845537788711
+125789,,Broccoli,8.45614077114554,44.5,Premium Xiu Zhen Mushroom,Xiu Zhen Mushroom,0.0
+125730,,Water spinach,8.39423639978492,8.7,Premium King Oyster Mushroom,King oyster mushroom,0.0
+125734,,Cai Xin,8.36445537788711,5.0,Premium crab-flavored mushroom,Crab Flavor Mushroom,0.0
+108767,,Purple Shell Vegetable,8.36445537788711,0.0,Premium Small Red Pepper,Little Red Pepper,15.4149816936766
+312616,,Japanese Green Cucumber,8.36445537788711,5.0,Premium Small Melon,Cucumbers,3.20895356410235
+122618,,Big Red Pepper,8.11965537788711,0.0,Premium Bok Choy,Bok Choy,3.0
+70469,,Sichuan pepper,7.36235011472922,14.0,Premium Small Taro,Baby Taro,3.0
+125738,,Chinese broccoli rabe,7.34445537788711,2.0,Premium Fragrant Wheat Greens,Xiangmai Cai,2.4
+125779,,Green pointed chili pepper,7.33588394931568,63.3,Premium Enoki Mushroom,Button Mushroom,0.0
+70486,,Long Bean,7.30010755180015,9.6,Premium chili pepper,Sichuan pepper,7.36235011472922
+130483,四季豆,green beans,7.24245537788711,0.0,Premium Fresh Wood Ear Mushroom,Fresh Wood Ear Mushroom,0.0
+125758,,garlic clove,7.08085987226913,19.7,Premium Celery,Celery,0.204455377887112
+126447,,Red chili pepper,6.75175267518441,14.6,Premium Broccoli,Broccoli,8.45614077114554
+130169,,Horned Leaf,6.73245537788711,5.0,Premium Tomato,Tomato,4.47683749668687
+258481,,Jiaotou,6.64656064104501,0.0,Premium Potato,Potato,4.84545537788711
+70508,,Bitter Melon,6.30331548151406,57.9,Premium Garlic Clove,garlic clove,7.08085987226913
+11012,,Xili Hong,6.06945537788711,0.0,Premium Garlic Shoots,garlic sprout,10.5190621194601
+648947,,Premium Garlic Cloves,5.91645537788711,3.0,Premium Garlic Cloves,Premium Garlic Cloves,5.91645537788711
+463342,,Purple Heart Sweet Potato,5.76809174152348,0.0,Premium Green Garlic Shoots,green onion sprout,2.41
+122587,,Red Eggplant,5.14125537788711,0.0,Premium Four-Season Beans,"四季豆 translates to ""green beans"" in English.",7.24245537788711
+125733,,Bok Choy,4.89411055030091,33.2,Premium Luffa,Luffa,0.0
+272001,,Premium Cucumber,4.84561359919011,96.7,Premium Ginger,Ginger,3.0
+125763,,Potato,4.84545537788711,0.0,Premium green onion,Leek,5.0
+70499,,Lotus root,4.69245537788711,60.0,Premium lettuce,Lettuce,2.4
+652307,,Premium peeled taro,4.69245537788711,5.0,Premium Shanghai Green,Bok Choy,4.89411055030091
+125745,,Cabbage,4.49919221999238,0.0,Premium Japanese Green Cucumber,Japanese Green Cucumber,0.0
+70473,,corn,4.49525537788711,35.0,Premium peeled taro,Peel Taro,0.0
+125760,,Onion,4.48845537788711,0.0,Premium Green Pointed Chili,Green pointed chili pepper,7.33588394931568
+125775,,Tomato,4.47683749668687,73.3,Premium Cucumber,Cucumber,3.94037537788711
+70467,,Chinese yam,4.37029696204553,40.8,Premium Seven-Color Pepper,Premium Seven-Color Pepper,0.0
+70507,,Cucumber,3.94037537788711,0.0,Premium Burdock Root,burdock root,7.8
+122630,,Cucumbers,3.20895356410235,64.7,Premium Pumpkin,Pumpkin,2.03
+146301,,Green Pumpkin,3.1467630701948,104.0,Premium Lotus Root,Lotus root,4.69245537788711
+81969,,Red Radish,3.14205537788711,97.0,Premium Bitter Melon,Bitter Melon,6.30331548151406
+122588,,Long Chinese Cabbage,3.10886215754813,29.5,Premium Leek Seedling,Leek Yellow,12.4444553778871
+70556,,sweet potato,2.97700083243257,0.0,Premium Noodles Flower,Chive Flower,12.4444553778871
+125731,,Chinese cabbage,2.36685537788711,0.0,Premium Leek Flower,Leek Flower,4.71
+125784,,Celtuce,2.06108459137026,8.9,Premium Jing Bao Cabbage,Red Cabbage,1.8
+11013,,Mung Bean Sprouts,1.86764009126291,7.8,Premium Huai Mountain Yam,Chinese yam,4.37029696204553
+125782,,Scallion,1.8672478307173,8.0,Premium Peanut Seedlings,peanut sprout,0.0
+149566,,Mung Bean Sprouts,1.81544250235063,15.7,Premium Cauliflower,Cauliflower,3.859
+125756,,Winter Melon,1.71512906209764,0.0,Premium Sweet Potato,sweet potato,2.97700083243257
+125773,,Radish,1.43760636256983,61.4,Premium Red Eggplant,Red Eggplant,5.14125537788711
+125742,Big苞菜,Big Headed Cabbage,0.863938136507802,23.2,Premium Carrot,Red Radish,3.14205537788711
+70475,,Celery,0.204455377887112,5.5,Premium Red Chili Pepper,Red chili pepper,6.75175267518441
+125732,,Bok Choy,3.0,11.4,Premium Eggplant,Eggplant,6.4
+122633,,Chinese cabbage heart,3.6,35.4,Premium Dutch Bean,Snow pea,12.4444553778871
+130775,,Winter Cold Vegetable,4.0,5.2,Premium Baby Bok Choy,High Mountain Baby Cabbage,0.0
+125751,,Celery,2.4,66.6,Premium Single Garlic Bulb,Garlic Bulb,19.0
+125736,,Lettuce,2.4,20.3,Premium Winter Melon,Winter Melon,1.71512906209764
+125749,,Cilantro,5.6,2.3,Premium Red Chili Pepper,Big Red Pepper,8.11965537788711
+125749,,,,,Premium Scallion,Scallion,1.8672478307173
+125749,,,,,Premium Large Headed Cabbage,Big苞菜 (Big Headed Cabbage),0.863938136507802
+125749,,,,,Premium Cabbage,Chinese cabbage,2.36685537788711
+125749,,,,,Premium Long Green Beans,Long Bean,7.30010755180015
+125749,,,,,Premium Long Chinese Cabbage,Long Chinese Cabbage,3.10886215754813
+125749,,,,,Premium Tea Tree Mushroom,Tea Tree Mushroom,0.0
+125749,,,,,Premium Vegetable Core,Cai Xin,8.36445537788711
+125749,,,,,Premium Spinach,Spinach,4.4
+125749,,,,,Premium Radish,Radish,1.43760636256983

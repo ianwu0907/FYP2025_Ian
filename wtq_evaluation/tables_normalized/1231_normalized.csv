@@ -1,0 +1,11 @@
+config_id,metric_type,entity,unit_or_scope,value
+53,number,booking lags,,2
+53,frequency,collection,per month,3
+53,prices,prices,per collection,2
+53,number,airlines,,4
+53,total,total prices used,per month,636
+180,number,booking lags,,4
+180,frequency,collection,per month,daily
+180,prices,prices,per collection,up to 15
+180,number,airlines,,all airlines serving the canadian market
+180,total,total prices used,per month,"over 300,000 per api"

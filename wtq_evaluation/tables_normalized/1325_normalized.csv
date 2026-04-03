@@ -1,0 +1,21 @@
+income_band,measure_type,value
+"under $5,000",pct,8.1
+"$5,000 to $9,999",pct,8.4
+"$10,000 to $19,999",pct,15.6
+"$20,000 to $29,999",pct,13.6
+"$30,000 to $39,999",pct,12.7
+"$40,000 to $49,999",pct,11.5
+"$50,000 to $59,999",pct,7.8
+"$60,000 to $79,999",pct,11.0
+"$80,000 to $99,999",pct,6.6
+"$100,000 and over",pct,4.8
+"under $5,000",avg_dollars,6.4
+"$5,000 to $9,999",avg_dollars,5.8
+"$10,000 to $19,999",avg_dollars,10.4
+"$20,000 to $29,999",avg_dollars,9.3
+"$30,000 to $39,999",avg_dollars,10.2
+"$40,000 to $49,999",avg_dollars,10.4
+"$50,000 to $59,999",avg_dollars,9.2
+"$60,000 to $79,999",avg_dollars,14.3
+"$80,000 to $99,999",avg_dollars,9.6
+"$100,000 and over",avg_dollars,14.3

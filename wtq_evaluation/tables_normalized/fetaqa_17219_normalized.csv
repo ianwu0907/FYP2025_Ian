@@ -1,0 +1,365 @@
+season,team,game_type,play_type,stat_name,stat_value
+2001,IND,Regular season,general,gp,13
+2001,IND,Regular season,general,gs,9
+2001,IND,Regular season,receiving,rec,27
+2001,IND,Regular season,receiving,yds,345
+2001,IND,Regular season,receiving,avg,12.8
+2001,IND,Regular season,receiving,lng,43
+2001,IND,Regular season,receiving,td,0
+2001,IND,Regular season,rushing,att,–
+2001,IND,Regular season,rushing,yds,–
+2001,IND,Regular season,rushing,avg,–
+2001,IND,Regular season,rushing,lng,–
+2001,IND,Regular season,rushing,td,–
+2001,IND,Regular season,fumbles,fum,–
+2001,IND,Regular season,fumbles,lost,–
+2002,IND,Regular season,general,gp,16
+2002,IND,Regular season,general,gs,7
+2002,IND,Regular season,receiving,rec,49
+2002,IND,Regular season,receiving,yds,716
+2002,IND,Regular season,receiving,avg,14.6
+2002,IND,Regular season,receiving,lng,49
+2002,IND,Regular season,receiving,td,4
+2002,IND,Regular season,rushing,att,–
+2002,IND,Regular season,rushing,yds,–
+2002,IND,Regular season,rushing,avg,–
+2002,IND,Regular season,rushing,lng,–
+2002,IND,Regular season,rushing,td,–
+2002,IND,Regular season,fumbles,fum,2
+2002,IND,Regular season,fumbles,lost,1
+2003,IND,Regular season,general,gp,16
+2003,IND,Regular season,general,gs,16
+2003,IND,Regular season,receiving,rec,68
+2003,IND,Regular season,receiving,yds,838
+2003,IND,Regular season,receiving,avg,12.3
+2003,IND,Regular season,receiving,lng,57T
+2003,IND,Regular season,receiving,td,7
+2003,IND,Regular season,rushing,att,–
+2003,IND,Regular season,rushing,yds,–
+2003,IND,Regular season,rushing,avg,–
+2003,IND,Regular season,rushing,lng,–
+2003,IND,Regular season,rushing,td,–
+2003,IND,Regular season,fumbles,fum,–
+2003,IND,Regular season,fumbles,lost,–
+2004,IND,Regular season,general,gp,16
+2004,IND,Regular season,general,gs,16
+2004,IND,Regular season,receiving,rec,77
+2004,IND,Regular season,receiving,yds,"1,210"
+2004,IND,Regular season,receiving,avg,15.7
+2004,IND,Regular season,receiving,lng,71T
+2004,IND,Regular season,receiving,td,12
+2004,IND,Regular season,rushing,att,1
+2004,IND,Regular season,rushing,yds,4
+2004,IND,Regular season,rushing,avg,4.0
+2004,IND,Regular season,rushing,lng,4
+2004,IND,Regular season,rushing,td,0
+2004,IND,Regular season,fumbles,fum,-
+2004,IND,Regular season,fumbles,lost,-
+2005,IND,Regular season,general,gp,16
+2005,IND,Regular season,general,gs,16
+2005,IND,Regular season,receiving,rec,83
+2005,IND,Regular season,receiving,yds,"1,055"
+2005,IND,Regular season,receiving,avg,12.7
+2005,IND,Regular season,receiving,lng,66T
+2005,IND,Regular season,receiving,td,5
+2005,IND,Regular season,rushing,att,–
+2005,IND,Regular season,rushing,yds,–
+2005,IND,Regular season,rushing,avg,–
+2005,IND,Regular season,rushing,lng,–
+2005,IND,Regular season,rushing,td,–
+2005,IND,Regular season,fumbles,fum,1
+2005,IND,Regular season,fumbles,lost,0
+2006,IND,Regular season,general,gp,16
+2006,IND,Regular season,general,gs,16
+2006,IND,Regular season,receiving,rec,86
+2006,IND,Regular season,receiving,yds,"1,310"
+2006,IND,Regular season,receiving,avg,15.2
+2006,IND,Regular season,receiving,lng,51T
+2006,IND,Regular season,receiving,td,9
+2006,IND,Regular season,rushing,att,–
+2006,IND,Regular season,rushing,yds,–
+2006,IND,Regular season,rushing,avg,–
+2006,IND,Regular season,rushing,lng,–
+2006,IND,Regular season,rushing,td,–
+2006,IND,Regular season,fumbles,fum,1
+2006,IND,Regular season,fumbles,lost,0
+2007,IND,Regular season,general,gp,16
+2007,IND,Regular season,general,gs,16
+2007,IND,Regular season,receiving,rec,104
+2007,IND,Regular season,receiving,yds,"1,510"
+2007,IND,Regular season,receiving,avg,14.5
+2007,IND,Regular season,receiving,lng,64
+2007,IND,Regular season,receiving,td,10
+2007,IND,Regular season,rushing,att,1
+2007,IND,Regular season,rushing,yds,4
+2007,IND,Regular season,rushing,avg,4.0
+2007,IND,Regular season,rushing,lng,4
+2007,IND,Regular season,rushing,td,0
+2007,IND,Regular season,fumbles,fum,3
+2007,IND,Regular season,fumbles,lost,3
+2008,IND,Regular season,general,gp,16
+2008,IND,Regular season,general,gs,16
+2008,IND,Regular season,receiving,rec,82
+2008,IND,Regular season,receiving,yds,"1,145"
+2008,IND,Regular season,receiving,avg,14.0
+2008,IND,Regular season,receiving,lng,65T
+2008,IND,Regular season,receiving,td,6
+2008,IND,Regular season,rushing,att,–
+2008,IND,Regular season,rushing,yds,–
+2008,IND,Regular season,rushing,avg,–
+2008,IND,Regular season,rushing,lng,–
+2008,IND,Regular season,rushing,td,–
+2008,IND,Regular season,fumbles,fum,–
+2008,IND,Regular season,fumbles,lost,–
+2009,IND,Regular season,general,gp,16
+2009,IND,Regular season,general,gs,16
+2009,IND,Regular season,receiving,rec,100
+2009,IND,Regular season,receiving,yds,"1,264"
+2009,IND,Regular season,receiving,avg,12.6
+2009,IND,Regular season,receiving,lng,65T
+2009,IND,Regular season,receiving,td,10
+2009,IND,Regular season,rushing,att,–
+2009,IND,Regular season,rushing,yds,–
+2009,IND,Regular season,rushing,avg,–
+2009,IND,Regular season,rushing,lng,–
+2009,IND,Regular season,rushing,td,–
+2009,IND,Regular season,fumbles,fum,–
+2009,IND,Regular season,fumbles,lost,–
+2010,IND,Regular season,general,gp,16
+2010,IND,Regular season,general,gs,16
+2010,IND,Regular season,receiving,rec,111
+2010,IND,Regular season,receiving,yds,"1,355"
+2010,IND,Regular season,receiving,avg,12.2
+2010,IND,Regular season,receiving,lng,50
+2010,IND,Regular season,receiving,td,6
+2010,IND,Regular season,rushing,att,–
+2010,IND,Regular season,rushing,yds,–
+2010,IND,Regular season,rushing,avg,–
+2010,IND,Regular season,rushing,lng,–
+2010,IND,Regular season,rushing,td,–
+2010,IND,Regular season,fumbles,fum,1
+2010,IND,Regular season,fumbles,lost,1
+2011,IND,Regular season,general,gp,16
+2011,IND,Regular season,general,gs,16
+2011,IND,Regular season,receiving,rec,75
+2011,IND,Regular season,receiving,yds,960
+2011,IND,Regular season,receiving,avg,12.8
+2011,IND,Regular season,receiving,lng,56T
+2011,IND,Regular season,receiving,td,4
+2011,IND,Regular season,rushing,att,–
+2011,IND,Regular season,rushing,yds,–
+2011,IND,Regular season,rushing,avg,–
+2011,IND,Regular season,rushing,lng,–
+2011,IND,Regular season,rushing,td,–
+2011,IND,Regular season,fumbles,fum,–
+2011,IND,Regular season,fumbles,lost,–
+2012,IND,Regular season,general,gp,16
+2012,IND,Regular season,general,gs,15
+2012,IND,Regular season,receiving,rec,106
+2012,IND,Regular season,receiving,yds,"1,355"
+2012,IND,Regular season,receiving,avg,12.8
+2012,IND,Regular season,receiving,lng,33
+2012,IND,Regular season,receiving,td,5
+2012,IND,Regular season,rushing,att,1
+2012,IND,Regular season,rushing,yds,5
+2012,IND,Regular season,rushing,avg,5.0
+2012,IND,Regular season,rushing,lng,5
+2012,IND,Regular season,rushing,td,0
+2012,IND,Regular season,fumbles,fum,1
+2012,IND,Regular season,fumbles,lost,1
+2013,IND,Regular season,general,gp,7
+2013,IND,Regular season,general,gs,7
+2013,IND,Regular season,receiving,rec,38
+2013,IND,Regular season,receiving,yds,503
+2013,IND,Regular season,receiving,avg,13.2
+2013,IND,Regular season,receiving,lng,35
+2013,IND,Regular season,receiving,td,2
+2013,IND,Regular season,rushing,att,1
+2013,IND,Regular season,rushing,yds,5
+2013,IND,Regular season,rushing,avg,5.0
+2013,IND,Regular season,rushing,lng,5
+2013,IND,Regular season,rushing,td,0
+2013,IND,Regular season,fumbles,fum,–
+2013,IND,Regular season,fumbles,lost,–
+2014,IND,Regular season,general,gp,15
+2014,IND,Regular season,general,gs,15
+2014,IND,Regular season,receiving,rec,64
+2014,IND,Regular season,receiving,yds,779
+2014,IND,Regular season,receiving,avg,12.2
+2014,IND,Regular season,receiving,lng,80
+2014,IND,Regular season,receiving,td,2
+2014,IND,Regular season,rushing,att,–
+2014,IND,Regular season,rushing,yds,–
+2014,IND,Regular season,rushing,avg,–
+2014,IND,Regular season,rushing,lng,–
+2014,IND,Regular season,rushing,td,–
+2014,IND,Regular season,fumbles,fum,1
+2014,IND,Regular season,fumbles,lost,1
+Postseason,Postseason,Postseason,general,gp,Postseason
+Postseason,Postseason,Postseason,general,gs,Postseason
+Postseason,Postseason,Postseason,receiving,rec,Postseason
+Postseason,Postseason,Postseason,receiving,yds,Postseason
+Postseason,Postseason,Postseason,receiving,avg,Postseason
+Postseason,Postseason,Postseason,receiving,lng,Postseason
+Postseason,Postseason,Postseason,receiving,td,Postseason
+Postseason,Postseason,Postseason,rushing,att,Postseason
+Postseason,Postseason,Postseason,rushing,yds,Postseason
+Postseason,Postseason,Postseason,rushing,avg,Postseason
+Postseason,Postseason,Postseason,rushing,lng,Postseason
+Postseason,Postseason,Postseason,rushing,td,Postseason
+Postseason,Postseason,Postseason,fumbles,fum,Postseason
+Postseason,Postseason,Postseason,fumbles,lost,Postseason
+2002,IND,Postseason,general,gp,1
+2002,IND,Postseason,general,gs,1
+2002,IND,Postseason,receiving,rec,3
+2002,IND,Postseason,receiving,yds,17
+2002,IND,Postseason,receiving,avg,5.7
+2002,IND,Postseason,receiving,lng,7
+2002,IND,Postseason,receiving,td,0
+2002,IND,Postseason,rushing,att,–
+2002,IND,Postseason,rushing,yds,–
+2002,IND,Postseason,rushing,avg,–
+2002,IND,Postseason,rushing,lng,–
+2002,IND,Postseason,rushing,td,–
+2002,IND,Postseason,fumbles,fum,–
+2002,IND,Postseason,fumbles,lost,–
+2003,IND,Postseason,general,gp,3
+2003,IND,Postseason,general,gs,3
+2003,IND,Postseason,receiving,rec,15
+2003,IND,Postseason,receiving,yds,172
+2003,IND,Postseason,receiving,avg,11.5
+2003,IND,Postseason,receiving,lng,20
+2003,IND,Postseason,receiving,td,2
+2003,IND,Postseason,rushing,att,–
+2003,IND,Postseason,rushing,yds,–
+2003,IND,Postseason,rushing,avg,–
+2003,IND,Postseason,rushing,lng,–
+2003,IND,Postseason,rushing,td,–
+2003,IND,Postseason,fumbles,fum,–
+2003,IND,Postseason,fumbles,lost,–
+2004,IND,Postseason,general,gp,2
+2004,IND,Postseason,general,gs,2
+2004,IND,Postseason,receiving,rec,13
+2004,IND,Postseason,receiving,yds,256
+2004,IND,Postseason,receiving,avg,19.7
+2004,IND,Postseason,receiving,lng,49
+2004,IND,Postseason,receiving,td,2
+2004,IND,Postseason,rushing,att,–
+2004,IND,Postseason,rushing,yds,–
+2004,IND,Postseason,rushing,avg,–
+2004,IND,Postseason,rushing,lng,–
+2004,IND,Postseason,rushing,td,–
+2004,IND,Postseason,fumbles,fum,1
+2004,IND,Postseason,fumbles,lost,1
+2005,IND,Postseason,general,gp,1
+2005,IND,Postseason,general,gs,1
+2005,IND,Postseason,receiving,rec,7
+2005,IND,Postseason,receiving,yds,97
+2005,IND,Postseason,receiving,avg,13.9
+2005,IND,Postseason,receiving,lng,24
+2005,IND,Postseason,receiving,td,0
+2005,IND,Postseason,rushing,att,–
+2005,IND,Postseason,rushing,yds,–
+2005,IND,Postseason,rushing,avg,–
+2005,IND,Postseason,rushing,lng,–
+2005,IND,Postseason,rushing,td,–
+2005,IND,Postseason,fumbles,fum,–
+2005,IND,Postseason,fumbles,lost,–
+2006,IND,Postseason,general,gp,4
+2006,IND,Postseason,general,gs,4
+2006,IND,Postseason,receiving,rec,17
+2006,IND,Postseason,receiving,yds,216
+2006,IND,Postseason,receiving,avg,12.7
+2006,IND,Postseason,receiving,lng,53
+2006,IND,Postseason,receiving,td,2
+2006,IND,Postseason,rushing,att,–
+2006,IND,Postseason,rushing,yds,–
+2006,IND,Postseason,rushing,avg,–
+2006,IND,Postseason,rushing,lng,–
+2006,IND,Postseason,rushing,td,–
+2006,IND,Postseason,fumbles,fum,–
+2006,IND,Postseason,fumbles,lost,–
+2007,IND,Postseason,general,gp,1
+2007,IND,Postseason,general,gs,1
+2007,IND,Postseason,receiving,rec,7
+2007,IND,Postseason,receiving,yds,76
+2007,IND,Postseason,receiving,avg,10.9
+2007,IND,Postseason,receiving,lng,21
+2007,IND,Postseason,receiving,td,1
+2007,IND,Postseason,rushing,att,–
+2007,IND,Postseason,rushing,yds,–
+2007,IND,Postseason,rushing,avg,–
+2007,IND,Postseason,rushing,lng,–
+2007,IND,Postseason,rushing,td,–
+2007,IND,Postseason,fumbles,fum,–
+2007,IND,Postseason,fumbles,lost,–
+2008,IND,Postseason,general,gp,1
+2008,IND,Postseason,general,gs,1
+2008,IND,Postseason,receiving,rec,4
+2008,IND,Postseason,receiving,yds,129
+2008,IND,Postseason,receiving,avg,32.2
+2008,IND,Postseason,receiving,lng,72
+2008,IND,Postseason,receiving,td,1
+2008,IND,Postseason,rushing,att,–
+2008,IND,Postseason,rushing,yds,–
+2008,IND,Postseason,rushing,avg,–
+2008,IND,Postseason,rushing,lng,–
+2008,IND,Postseason,rushing,td,–
+2008,IND,Postseason,fumbles,fum,–
+2008,IND,Postseason,fumbles,lost,–
+2009,IND,Postseason,general,gp,3
+2009,IND,Postseason,general,gs,3
+2009,IND,Postseason,receiving,rec,16
+2009,IND,Postseason,receiving,yds,164
+2009,IND,Postseason,receiving,avg,10.2
+2009,IND,Postseason,receiving,lng,25
+2009,IND,Postseason,receiving,td,1
+2009,IND,Postseason,rushing,att,–
+2009,IND,Postseason,rushing,yds,–
+2009,IND,Postseason,rushing,avg,–
+2009,IND,Postseason,rushing,lng,–
+2009,IND,Postseason,rushing,td,–
+2009,IND,Postseason,fumbles,fum,1
+2009,IND,Postseason,fumbles,lost,0
+2010,IND,Postseason,general,gp,1
+2010,IND,Postseason,general,gs,1
+2010,IND,Postseason,receiving,rec,1
+2010,IND,Postseason,receiving,yds,1
+2010,IND,Postseason,receiving,avg,1.0
+2010,IND,Postseason,receiving,lng,1
+2010,IND,Postseason,receiving,td,0
+2010,IND,Postseason,rushing,att,–
+2010,IND,Postseason,rushing,yds,–
+2010,IND,Postseason,rushing,avg,–
+2010,IND,Postseason,rushing,lng,–
+2010,IND,Postseason,rushing,td,–
+2010,IND,Postseason,fumbles,fum,–
+2010,IND,Postseason,fumbles,lost,–
+2012,IND,Postseason,general,gp,1
+2012,IND,Postseason,general,gs,1
+2012,IND,Postseason,receiving,rec,9
+2012,IND,Postseason,receiving,yds,114
+2012,IND,Postseason,receiving,avg,12.7
+2012,IND,Postseason,receiving,lng,20
+2012,IND,Postseason,receiving,td,0
+2012,IND,Postseason,rushing,att,–
+2012,IND,Postseason,rushing,yds,–
+2012,IND,Postseason,rushing,avg,–
+2012,IND,Postseason,rushing,lng,–
+2012,IND,Postseason,rushing,td,–
+2012,IND,Postseason,fumbles,fum,–
+2012,IND,Postseason,fumbles,lost,–
+2014,IND,Postseason,general,gp,3
+2014,IND,Postseason,general,gs,3
+2014,IND,Postseason,receiving,rec,1
+2014,IND,Postseason,receiving,yds,12
+2014,IND,Postseason,receiving,avg,12.0
+2014,IND,Postseason,receiving,lng,12
+2014,IND,Postseason,receiving,td,0
+2014,IND,Postseason,rushing,att,–
+2014,IND,Postseason,rushing,yds,–
+2014,IND,Postseason,rushing,avg,–
+2014,IND,Postseason,rushing,lng,–
+2014,IND,Postseason,rushing,td,–
+2014,IND,Postseason,fumbles,fum,–
+2014,IND,Postseason,fumbles,lost,–

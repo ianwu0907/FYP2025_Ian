@@ -1,0 +1,31 @@
+time_period,category,count
+April 1944,Category A,25
+May 1944,Category A,100
+June 1944,Category A,120
+July 1944,Category A,155
+August 1944,Category A,100
+October 1944,Category A,75
+November 1944,Category A,290
+December 1944,Category A,348
+May 1945,Category A,10
+Post-war,Category A,190
+April 1944,Category B,0
+May 1944,Category B,0
+June 1944,Category B,0
+July 1944,Category B,0
+August 1944,Category B,0
+October 1944,Category B,50
+November 1944,Category B,93
+December 1944,Category B,44
+May 1945,Category B,0
+Post-war,Category B,0
+April 1944,Category C,0
+May 1944,Category C,0
+June 1944,Category C,0
+July 1944,Category C,0
+August 1944,Category C,0
+October 1944,Category C,0
+November 1944,Category C,0
+December 1944,Category C,0
+May 1945,Category C,50
+Post-war,Category C,674

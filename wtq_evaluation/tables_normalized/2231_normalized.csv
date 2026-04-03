@@ -1,0 +1,31 @@
+student_id,name,class,grade,subject,score,club_activities,attendance_rate
+1,Zhang San,Class 2,Grade 3,Math,90,Basketball Club,0.98
+2,Li Si,Class 2,Grade 3,Math,85,Calligraphy Club,0.95
+3,Wang Wu,Class 2,Grade 3,Math,92,Science Club,0.99
+4,Zhao Liu,Class 2,Grade 3,Math,88,Music Club,0.97
+5,Zhou Qi,Class 2,Grade 3,Math,80,Art Club,0.96
+1,Zhang San,Class 2,Grade 3,English,85,Basketball Club,0.98
+2,Li Si,Class 2,Grade 3,English,82,Calligraphy Club,0.95
+3,Wang Wu,Class 2,Grade 3,English,90,Science Club,0.99
+4,Zhao Liu,Class 2,Grade 3,English,87,Music Club,0.97
+5,Zhou Qi,Class 2,Grade 3,English,82,Art Club,0.96
+1,Zhang San,Class 2,Grade 3,Science,92,Basketball Club,0.98
+2,Li Si,Class 2,Grade 3,Science,88,Calligraphy Club,0.95
+3,Wang Wu,Class 2,Grade 3,Science,94,Science Club,0.99
+4,Zhao Liu,Class 2,Grade 3,Science,89,Music Club,0.97
+5,Zhou Qi,Class 2,Grade 3,Science,85,Art Club,0.96
+1,Zhang San,Class 2,Grade 3,History,88,Basketball Club,0.98
+2,Li Si,Class 2,Grade 3,History,90,Calligraphy Club,0.95
+3,Wang Wu,Class 2,Grade 3,History,93,Science Club,0.99
+4,Zhao Liu,Class 2,Grade 3,History,85,Music Club,0.97
+5,Zhou Qi,Class 2,Grade 3,History,80,Art Club,0.96
+1,Zhang San,Class 2,Grade 3,Physical Education,95,Basketball Club,0.98
+2,Li Si,Class 2,Grade 3,Physical Education,90,Calligraphy Club,0.95
+3,Wang Wu,Class 2,Grade 3,Physical Education,88,Science Club,0.99
+4,Zhao Liu,Class 2,Grade 3,Physical Education,93,Music Club,0.97
+5,Zhou Qi,Class 2,Grade 3,Physical Education,85,Art Club,0.96
+1,Zhang San,Class 2,Grade 3,Art,93,Basketball Club,0.98
+2,Li Si,Class 2,Grade 3,Art,88,Calligraphy Club,0.95
+3,Wang Wu,Class 2,Grade 3,Art,90,Science Club,0.99
+4,Zhao Liu,Class 2,Grade 3,Art,85,Music Club,0.97
+5,Zhou Qi,Class 2,Grade 3,Art,82,Art Club,0.96

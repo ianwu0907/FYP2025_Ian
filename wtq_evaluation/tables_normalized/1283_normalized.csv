@@ -1,0 +1,11 @@
+consumption_group,item,channel,weight,notes
+,child care services,all_items,0.15,
+,housekeeping services,all_items,0.31,
+health and personal care,personal care services,all_items,0.93,
+recreation,recreational services,all_items,0.13,
+recreation,travel tours,all_items,1.21,
+recreation,spectator entertainment,all_items,0.35,
+recreation,use of recreational facilities and services,all_items,0.62,
+"alcoholic beverages, tobacco products and recreational cannabis",beer served in licensed establishments,served_in_licensed_establishments,0.34,
+"alcoholic beverages, tobacco products and recreational cannabis",wine served in licensed establishments,served_in_licensed_establishments,0.13,
+"alcoholic beverages, tobacco products and recreational cannabis",liquor served in licensed establishments,served_in_licensed_establishments,0.19,

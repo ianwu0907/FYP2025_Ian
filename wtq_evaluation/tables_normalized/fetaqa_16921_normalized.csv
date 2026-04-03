@@ -1,0 +1,51 @@
+club,season,division,competition,apps,goals
+Club,Season,Division,League,0,0
+Club,Season,Division,FA Cup,0,0
+Club,Season,Division,League Cup,0,0
+Club,Season,Division,Play-offs,0,0
+Club,Season,Division,Other,0,0
+Everton,2009–10,Premier League,League,0,0
+Everton,2009–10,Premier League,FA Cup,0,0
+Everton,2009–10,Premier League,League Cup,0,0
+Everton,2009–10,Premier League,Play-offs,1,0
+Everton,2009–10,Premier League,Other,1,0
+Brentford (loan),2011–12,League One,League,24,0
+Brentford (loan),2011–12,League One,FA Cup,0,0
+Brentford (loan),2011–12,League One,League Cup,1,0
+Brentford (loan),2011–12,League One,Play-offs,25,0
+Brentford (loan),2011–12,League One,Other,0,0
+Brentford (loan),2012–13,League One,League,40,0
+Brentford (loan),2012–13,League One,FA Cup,6,0
+Brentford (loan),2012–13,League One,League Cup,0,0
+Brentford (loan),2012–13,League One,Play-offs,4,0
+Brentford (loan),2012–13,League One,Other,50,0
+Brentford,2013–14,League One,League,38,0
+Brentford,2013–14,League One,FA Cup,2,0
+Brentford,2013–14,League One,League Cup,0,0
+Brentford,2013–14,League One,Play-offs,1,0
+Brentford,2013–14,League One,Other,41,0
+Brentford,2014–15,Championship,League,43,0
+Brentford,2014–15,Championship,FA Cup,1,0
+Brentford,2014–15,Championship,League Cup,2,0
+Brentford,2014–15,Championship,Play-offs,2,0
+Brentford,2014–15,Championship,Other,48,0
+Brentford,2015–16,Championship,League,45,3
+Brentford,2015–16,Championship,FA Cup,1,0
+Brentford,2015–16,Championship,League Cup,1,0
+Brentford,2015–16,Championship,Play-offs,0,0
+Brentford,2015–16,Championship,Other,47,3
+Queens Park Rangers,2016–17,Championship,League,36,0
+Queens Park Rangers,2016–17,Championship,FA Cup,1,1
+Queens Park Rangers,2016–17,Championship,League Cup,1,0
+Queens Park Rangers,2016–17,Championship,Play-offs,0,0
+Queens Park Rangers,2016–17,Championship,Other,38,1
+Queens Park Rangers,2017–18,Championship,League,46,2
+Queens Park Rangers,2017–18,Championship,FA Cup,1,0
+Queens Park Rangers,2017–18,Championship,League Cup,0,0
+Queens Park Rangers,2017–18,Championship,Play-offs,0,0
+Queens Park Rangers,2017–18,Championship,Other,47,2
+Queens Park Rangers,2018–19,Championship,League,12,0
+Queens Park Rangers,2018–19,Championship,FA Cup,0,0
+Queens Park Rangers,2018–19,Championship,League Cup,1,0
+Queens Park Rangers,2018–19,Championship,Play-offs,0,0
+Queens Park Rangers,2018–19,Championship,Other,13,0

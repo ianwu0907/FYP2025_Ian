@@ -1,0 +1,43 @@
+lift_name,operation_mode,configuration,manufacturer,installation_year,metric_name,metric_value
+Bruno,fixed,double,Poma,1987,top_elevation,5885.0
+Molly's Express,detach,quad,Doppelmayr,2000,top_elevation,5835.0
+Pucci,fixed,triple,Poma,1987,top_elevation,5920.0
+Stormin' Norman,detach,quad,Doppelmayr,2000,top_elevation,6245.0
+Magic Mile Express,detach,quad,Poma,1992,top_elevation,6990.0
+Palmer Express,detach,quad,Doppelmayr,1996,top_elevation,8470.0
+Jeff Flood Express (Still Creek Basin),detach,quad,Doppelmayr,2007,top_elevation,6020.0
+Bruno,fixed,double,Poma,1987,base_elevation,5840.0
+Molly's Express,detach,quad,Doppelmayr,2000,base_elevation,4990.0
+Pucci,fixed,triple,Poma,1987,base_elevation,5350.0
+Stormin' Norman,detach,quad,Doppelmayr,2000,base_elevation,5460.0
+Magic Mile Express,detach,quad,Poma,1992,base_elevation,5915.0
+Palmer Express,detach,quad,Doppelmayr,1996,base_elevation,6940.0
+Jeff Flood Express (Still Creek Basin),detach,quad,Doppelmayr,2007,base_elevation,4850.0
+Bruno,fixed,double,Poma,1987,length,368.0
+Molly's Express,detach,quad,Doppelmayr,2000,length,5244.0
+Pucci,fixed,triple,Poma,1987,length,3398.0
+Stormin' Norman,detach,quad,Doppelmayr,2000,length,4396.0
+Magic Mile Express,detach,quad,Poma,1992,length,5359.0
+Palmer Express,detach,quad,Doppelmayr,1996,length,5468.0
+Jeff Flood Express (Still Creek Basin),detach,quad,Doppelmayr,2007,length,6506.0
+Bruno,fixed,double,Poma,1987,grade,
+Molly's Express,detach,quad,Doppelmayr,2000,grade,
+Pucci,fixed,triple,Poma,1987,grade,
+Stormin' Norman,detach,quad,Doppelmayr,2000,grade,
+Magic Mile Express,detach,quad,Poma,1992,grade,
+Palmer Express,detach,quad,Doppelmayr,1996,grade,
+Jeff Flood Express (Still Creek Basin),detach,quad,Doppelmayr,2007,grade,
+Bruno,fixed,double,Poma,1987,capacity_hourly,630.0
+Molly's Express,detach,quad,Doppelmayr,2000,capacity_hourly,1200.0
+Pucci,fixed,triple,Poma,1987,capacity_hourly,1330.0
+Stormin' Norman,detach,quad,Doppelmayr,2000,capacity_hourly,1500.0
+Magic Mile Express,detach,quad,Poma,1992,capacity_hourly,1600.0
+Palmer Express,detach,quad,Doppelmayr,1996,capacity_hourly,1800.0
+Jeff Flood Express (Still Creek Basin),detach,quad,Doppelmayr,2007,capacity_hourly,1800.0
+Bruno,fixed,double,Poma,1987,capacity_daily,300.0
+Molly's Express,detach,quad,Doppelmayr,2000,capacity_daily,1000.0
+Pucci,fixed,triple,Poma,1987,capacity_daily,450.0
+Stormin' Norman,detach,quad,Doppelmayr,2000,capacity_daily,1000.0
+Magic Mile Express,detach,quad,Poma,1992,capacity_daily,950.0
+Palmer Express,detach,quad,Doppelmayr,1996,capacity_daily,1000.0
+Jeff Flood Express (Still Creek Basin),detach,quad,Doppelmayr,2007,capacity_daily,1000.0

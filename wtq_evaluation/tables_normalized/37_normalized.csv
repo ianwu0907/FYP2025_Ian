@@ -1,0 +1,9 @@
+size_category,condition_group,coverage_rate
+fewer than 200,Group A,0.89
+fewer than 200,Group B,0.85
+200 to 399,Group A,0.89
+200 to 399,Group B,0.83
+400 to 999,Group A,0.88
+400 to 999,Group B,0.86
+"1,000 or more",Group A,0.81
+"1,000 or more",Group B,0.88

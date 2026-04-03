@@ -1,0 +1,45 @@
+indicator_group,item,year_range,percent
+,any childhood physical abuse,2000 to 2019,17.8
+childhood sexual abuse,no childhood sexual abuse,2000 to 2019,15.0
+childhood sexual abuse,any childhood sexual abuse,2000 to 2019,46.4
+witnessed parental violence,never,2000 to 2019,13.3
+witnessed parental violence,1 to 5 times,2000 to 2019,44.8
+witnessed parental violence,6 or more times,2000 to 2019,69.5
+accumulation of violent events,childhood physical abuse only,2000 to 2019,52.9
+accumulation of violent events,childhood sexual abuse only,2000 to 2019,18.8
+accumulation of violent events,witnessed only parental violence 6 or more times,2000 to 2019,4.2
+accumulation of violent events,a combination of any two forms of violence,2000 to 2019,19.4
+accumulation of violent events,all three forms of violence,2000 to 2019,4.7
+,any childhood physical abuse,1940 to 1959,19.3
+childhood sexual abuse,no childhood sexual abuse,1940 to 1959,16.1
+childhood sexual abuse,any childhood sexual abuse,1940 to 1959,43.6
+witnessed parental violence,never,1940 to 1959,14.3
+witnessed parental violence,1 to 5 times,1940 to 1959,47.4
+witnessed parental violence,6 or more times,1940 to 1959,71.7
+accumulation of violent events,childhood physical abuse only,1940 to 1959,46.8
+accumulation of violent events,childhood sexual abuse only,1940 to 1959,23.3
+accumulation of violent events,witnessed only parental violence 6 or more times,1940 to 1959,4.0
+accumulation of violent events,a combination of any two forms of violence,1940 to 1959,20.5
+accumulation of violent events,all three forms of violence,1940 to 1959,5.3
+,any childhood physical abuse,1960 to 1979,20.9
+childhood sexual abuse,no childhood sexual abuse,1960 to 1979,17.7
+childhood sexual abuse,any childhood sexual abuse,1960 to 1979,47.9
+witnessed parental violence,never,1960 to 1979,15.8
+witnessed parental violence,1 to 5 times,1960 to 1979,47.5
+witnessed parental violence,6 or more times,1960 to 1979,69.7
+accumulation of violent events,childhood physical abuse only,1960 to 1979,51.3
+accumulation of violent events,childhood sexual abuse only,1960 to 1979,18.8
+accumulation of violent events,witnessed only parental violence 6 or more times,1960 to 1979,4.1
+accumulation of violent events,a combination of any two forms of violence,1960 to 1979,20.8
+accumulation of violent events,all three forms of violence,1960 to 1979,5.1
+,any childhood physical abuse,1980 to 1999,13.3
+childhood sexual abuse,no childhood sexual abuse,1980 to 1999,11.7
+childhood sexual abuse,any childhood sexual abuse,1980 to 1999,48.3
+witnessed parental violence,never,1980 to 1999,10.1
+witnessed parental violence,1 to 5 times,1980 to 1999,38.9
+witnessed parental violence,6 or more times,1980 to 1999,65.9
+accumulation of violent events,childhood physical abuse only,1980 to 1999,63.5
+accumulation of violent events,childhood sexual abuse only,1980 to 1999,12.9
+accumulation of violent events,witnessed only parental violence 6 or more times,1980 to 1999,4.8
+accumulation of violent events,a combination of any two forms of violence,1980 to 1999,15.5
+accumulation of violent events,all three forms of violence,1980 to 1999,3.3

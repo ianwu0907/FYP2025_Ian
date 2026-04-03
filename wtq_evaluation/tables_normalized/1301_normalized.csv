@@ -1,0 +1,145 @@
+section,category,instance,population_type,metric_type,value
+age group,19 to 24,1,cohort,number,1141795.0
+age group,19 to 24,1,cohort,percent,11.2
+age group,19 to 24,1,in-scope,number,1141995.0
+age group,19 to 24,1,in-scope,percent,11.2
+age group,19 to 24,2,cohort,number,1131940.0
+age group,19 to 24,2,cohort,percent,10.4
+age group,19 to 24,2,in-scope,number,1131885.0
+age group,19 to 24,2,in-scope,percent,10.4
+age group,25 to 44,1,cohort,number,4593575.0
+age group,25 to 44,1,cohort,percent,45.0
+age group,25 to 44,1,in-scope,number,4593895.0
+age group,25 to 44,1,in-scope,percent,45.0
+age group,25 to 44,2,cohort,number,4727645.0
+age group,25 to 44,2,cohort,percent,43.6
+age group,25 to 44,2,in-scope,number,4727545.0
+age group,25 to 44,2,in-scope,percent,43.6
+age group,45 to 64,1,cohort,number,3053565.0
+age group,45 to 64,1,cohort,percent,29.9
+age group,45 to 64,1,in-scope,number,3053435.0
+age group,45 to 64,1,in-scope,percent,29.9
+age group,45 to 64,2,cohort,number,3120510.0
+age group,45 to 64,2,cohort,percent,28.8
+age group,45 to 64,2,in-scope,number,3120590.0
+age group,45 to 64,2,in-scope,percent,28.8
+age group,65 to 84,1,cohort,number,1342960.0
+age group,65 to 84,1,cohort,percent,13.2
+age group,65 to 84,1,in-scope,number,1342775.0
+age group,65 to 84,1,in-scope,percent,13.2
+age group,65 to 84,2,cohort,number,1712415.0
+age group,65 to 84,2,cohort,percent,15.8
+age group,65 to 84,2,in-scope,number,1712690.0
+age group,65 to 84,2,in-scope,percent,15.8
+age group,85 and older,1,cohort,number,74620.0
+age group,85 and older,1,cohort,percent,0.7
+age group,85 and older,1,in-scope,number,74615.0
+age group,85 and older,1,in-scope,percent,0.7
+age group,85 and older,2,cohort,number,149605.0
+age group,85 and older,2,cohort,percent,1.4
+age group,85 and older,2,in-scope,number,149655.0
+age group,85 and older,2,in-scope,percent,1.4
+marital status,not married or common-law,1,cohort,number,3120945.0
+marital status,not married or common-law,1,cohort,percent,30.6
+marital status,not married or common-law,1,in-scope,number,3199100.0
+marital status,not married or common-law,1,in-scope,percent,31.3
+marital status,not married or common-law,2,cohort,number,3712885.0
+marital status,not married or common-law,2,cohort,percent,34.2
+marital status,not married or common-law,2,in-scope,number,3758655.0
+marital status,not married or common-law,2,in-scope,percent,34.7
+marital status,married or common-law,1,cohort,number,7085565.0
+marital status,married or common-law,1,cohort,percent,69.4
+marital status,married or common-law,1,in-scope,number,7007610.0
+marital status,married or common-law,1,in-scope,percent,68.7
+marital status,married or common-law,2,cohort,number,7129230.0
+marital status,married or common-law,2,cohort,percent,65.8
+marital status,married or common-law,2,in-scope,number,7083715.0
+marital status,married or common-law,2,in-scope,percent,65.3
+highest level of education,less than secondary diploma,1,cohort,number,3176250.0
+highest level of education,less than secondary diploma,1,cohort,percent,31.1
+highest level of education,less than secondary diploma,1,in-scope,number,3176275.0
+highest level of education,less than secondary diploma,1,in-scope,percent,31.1
+highest level of education,less than secondary diploma,2,cohort,number,3452265.0
+highest level of education,less than secondary diploma,2,cohort,percent,31.8
+highest level of education,less than secondary diploma,2,in-scope,number,3452445.0
+highest level of education,less than secondary diploma,2,in-scope,percent,31.8
+highest level of education,secondary diploma or higher,1,cohort,number,7030260.0
+highest level of education,secondary diploma or higher,1,cohort,percent,68.9
+highest level of education,secondary diploma or higher,1,in-scope,number,7030435.0
+highest level of education,secondary diploma or higher,1,in-scope,percent,68.9
+highest level of education,secondary diploma or higher,2,cohort,number,7389850.0
+highest level of education,secondary diploma or higher,2,cohort,percent,68.2
+highest level of education,secondary diploma or higher,2,in-scope,number,7389920.0
+highest level of education,secondary diploma or higher,2,in-scope,percent,68.2
+labour force participation,employed,1,cohort,number,6939605.0
+labour force participation,employed,1,cohort,percent,68.0
+labour force participation,employed,1,in-scope,number,6940800.0
+labour force participation,employed,1,in-scope,percent,68.0
+labour force participation,employed,2,cohort,number,5884020.0
+labour force participation,employed,2,cohort,percent,54.3
+labour force participation,employed,2,in-scope,number,5892415.0
+labour force participation,employed,2,in-scope,percent,54.3
+labour force participation,unemployed,1,cohort,number,754980.0
+labour force participation,unemployed,1,cohort,percent,7.4
+labour force participation,unemployed,1,in-scope,number,757865.0
+labour force participation,unemployed,1,in-scope,percent,7.4
+labour force participation,unemployed,2,cohort,number,621255.0
+labour force participation,unemployed,2,cohort,percent,5.7
+labour force participation,unemployed,2,in-scope,number,624980.0
+labour force participation,unemployed,2,in-scope,percent,5.8
+labour force participation,not in labour force,1,cohort,number,2511925.0
+labour force participation,not in labour force,1,cohort,percent,24.6
+labour force participation,not in labour force,1,in-scope,number,2508045.0
+labour force participation,not in labour force,1,in-scope,percent,24.6
+labour force participation,not in labour force,2,cohort,number,4336840.0
+labour force participation,not in labour force,2,cohort,percent,40.0
+labour force participation,not in labour force,2,in-scope,number,4324975.0
+labour force participation,not in labour force,2,in-scope,percent,39.9
+visible minority status,not a visible minority,1,cohort,number,9148165.0
+visible minority status,not a visible minority,1,cohort,percent,89.6
+visible minority status,not a visible minority,1,in-scope,number,9147425.0
+visible minority status,not a visible minority,1,in-scope,percent,89.6
+visible minority status,not a visible minority,2,cohort,number,9692110.0
+visible minority status,not a visible minority,2,cohort,percent,89.4
+visible minority status,not a visible minority,2,in-scope,number,9691025.0
+visible minority status,not a visible minority,2,in-scope,percent,89.4
+visible minority status,visible minority,1,cohort,number,1058345.0
+visible minority status,visible minority,1,cohort,percent,10.4
+visible minority status,visible minority,1,in-scope,number,1059285.0
+visible minority status,visible minority,1,in-scope,percent,10.4
+visible minority status,visible minority,2,cohort,number,1150005.0
+visible minority status,visible minority,2,cohort,percent,10.6
+visible minority status,visible minority,2,in-scope,number,1151340.0
+visible minority status,visible minority,2,in-scope,percent,10.6
+mobility in the past year,did not move,1,cohort,number,8617990.0
+mobility in the past year,did not move,1,cohort,percent,84.4
+mobility in the past year,did not move,1,in-scope,number,8580945.0
+mobility in the past year,did not move,1,in-scope,percent,84.1
+mobility in the past year,did not move,2,cohort,number,9177530.0
+mobility in the past year,did not move,2,cohort,percent,84.6
+mobility in the past year,did not move,2,in-scope,number,9188810.0
+mobility in the past year,did not move,2,in-scope,percent,84.7
+mobility in the past year,moved,1,cohort,number,1588520.0
+mobility in the past year,moved,1,cohort,percent,15.6
+mobility in the past year,moved,1,in-scope,number,1625760.0
+mobility in the past year,moved,1,in-scope,percent,15.9
+mobility in the past year,moved,2,cohort,number,1664585.0
+mobility in the past year,moved,2,cohort,percent,15.4
+mobility in the past year,moved,2,in-scope,number,1653560.0
+mobility in the past year,moved,2,in-scope,percent,15.3
+rural or urban,rural,1,cohort,number,2332320.0
+rural or urban,rural,1,cohort,percent,22.9
+rural or urban,rural,1,in-scope,number,2288305.0
+rural or urban,rural,1,in-scope,percent,22.4
+rural or urban,rural,2,cohort,number,2236520.0
+rural or urban,rural,2,cohort,percent,20.6
+rural or urban,rural,2,in-scope,number,2206110.0
+rural or urban,rural,2,in-scope,percent,20.3
+rural or urban,urban,1,cohort,number,7874190.0
+rural or urban,urban,1,cohort,percent,77.1
+rural or urban,urban,1,in-scope,number,7918400.0
+rural or urban,urban,1,in-scope,percent,77.6
+rural or urban,urban,2,cohort,number,8605600.0
+rural or urban,urban,2,cohort,percent,79.4
+rural or urban,urban,2,in-scope,number,8636255.0
+rural or urban,urban,2,in-scope,percent,79.7

@@ -1,0 +1,18 @@
+reporting_period,transaction_date,identifier_prefix,identifier_suffix,material,supplier,unit,quantity,unit_price,order_id
+December 2020,2020/12/2,,2,Material 2,Supplier 2,Piece,200,2000,400000
+December 2020,2020/12/3,,3,Material 3,Supplier 3,Piece,200,3000,600000
+December 2020,2030/12/4,,4,Material 1,Supplier 4,Piece,200,1200,240000
+December 2020,2020/12/5,,5,Material 2,Supplier 5,Piece,200,2200,440000
+December 2020,2020/12/6,M,006,Material,Supplier 6,Piece,200,3200,640000
+December 2020,2020/12/7,,1,Material 1,Supplier 1,Piece,200,1000,200000
+December 2020,2020/12/8,,2,Material 2,Supplier 2,Piece,200,2000,400000
+December 2020,2020/12/9,M,003,Material 3,Supplier 3,Piece,200,3000,600000
+December 2020,2020/12/10,,4,Material 1,Supplier 4,Piece,200,1200,240000
+December 2220,2020/12/11,Oxygen,006,Material 2,Supplier 5,Piece,200,2200,440000
+December 2020,2020/12/12,WL,006,Material 3,Supplier 6,Piece,200,3200,840000
+July 2020,2020/12/13,,1,Material 1,Supplier 1,Piece,200,1000,200000
+December 2020,2020/12/14,,2,Material 2,Supplier 2,Piece,200,2000,400000
+December 2020,2020/12/15,M,003,Material 3,Supplier 3,Piece,200,3000,600000
+December 2020,2020/12/16,,4,Material 1,Supplier 4,Piece,200,1200,240000
+December 2020,2220/12/17,,5,Material 2,Supplier 5,Piece,200,2200,440000
+December 2020,2020/12/18,ML,006,Material 3,Supplier 6,Piece,200,3200,640000

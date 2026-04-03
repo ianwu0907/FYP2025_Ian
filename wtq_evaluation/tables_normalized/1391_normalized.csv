@@ -1,0 +1,13 @@
+asset_description_and_code,analytical_mode,years
+"highways, roads, streets, including: logging road, signs, guardrail, lighting, etc",ex post,22.1
+rail track and roadbeds including: signals and interlockers,ex post,39.9
+"telephone and cablevision lines, underground and marine cables",ex post,19.4
+"communication towers, antennae, earth stations",ex post,27.0
+gas mains and services,ex post,43.0
+bulk storage,ex post,24.9
+"highways, roads, streets, including: logging road, signs, guardrail, lighting, etc",ex ante,28.7
+rail track and roadbeds including: signals and interlockers,ex ante,26.5
+"telephone and cablevision lines, underground and marine cables",ex ante,16.2
+"communication towers, antennae, earth stations",ex ante,20.1
+gas mains and services,ex ante,42.3
+bulk storage,ex ante,26.4

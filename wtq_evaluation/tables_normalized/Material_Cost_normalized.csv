@@ -1,0 +1,31 @@
+part_number,material_category,process_step,specifications,indirect_cost_production_volume,indirect_cost_direct_labor,indirect_cost_direct_depreciation,indirect_cost_other_auxiliary_materials,material_type,direct_material_cost
+YP-U356A,Low-value Consumables,Big Panel Testing,1.5*7.0 Green Ring Set,252.4,728.0,1293.09,570.0,Aluminum Base Plate,144.0
+YP-U357A,Low-value Consumables,Big Panel Testing,1.5*7.0 Green Ring Set,631.0,1293.09,862.06,1330.0,Aluminum Base Plate,144.0
+YP-U358A,Cutter,CNC Forming,0.71*1.185*0.98,126.2,1293.09,1293.09,189.6,Aluminum Base Plate,144.4656
+YP-U385A,Cutter,CNC Forming,0.65*1.185*0.98,126.2,862.06,2155.15,90.517,Aluminum Base Plate,151.4568
+YP-U390A,Cutter,CNC Forming,M6*35mm [Half Thread],387.931,2155.15,862.06,168.103,Aluminum Base Plate,100.9712
+YP-U428A,Machine Repair Parts,Inbound warehouse,Upper half,87.4,4310.3,1293.09,181.034,Aluminum Base Plate,100.9712
+YP-U431A,Machine Repair Parts,Inbound warehouse,Upper half,145.6,1293.09,862.06,297.413,Aluminum Base Plate,37.8642
+YP-U453A,Low-value Consumables,Big Panel Testing,0.65*1.185*0.98,728.0,1293.09,2155.15,,Aluminum Base Plate,63.107
+YP-U456A,Low-value Consumables,Final Inspection (FQC),M6*35mm [Half Thread],582.4,4310.3,1293.09,181.034,Aluminum Base Plate,302.9136
+YP-U457A,Low-value Consumables,Final Inspection (FQC),1.5*7.0 Green Ring Set,291.2,1293.09,862.06,297.413,Aluminum Base Plate,63.107
+YP-U356A,Low-value Consumables,Big Panel Testing,1.5*7.0 Green Ring Set,252.4,728.0,1293.09,570.0,Fiberglass board,659.483
+YP-U357A,Low-value Consumables,Big Panel Testing,1.5*7.0 Green Ring Set,631.0,1293.09,862.06,1330.0,Fiberglass board,923.2762
+YP-U358A,Cutter,CNC Forming,0.71*1.185*0.98,126.2,1293.09,1293.09,189.6,Fiberglass board,1120.69
+YP-U385A,Cutter,CNC Forming,0.65*1.185*0.98,126.2,862.06,2155.15,90.517,Fiberglass board,1120.69
+YP-U390A,Cutter,CNC Forming,M6*35mm [Half Thread],387.931,2155.15,862.06,168.103,Fiberglass board,3.8834
+YP-U428A,Machine Repair Parts,Inbound warehouse,Upper half,87.4,4310.3,1293.09,181.034,Fiberglass board,40.0
+YP-U431A,Machine Repair Parts,Inbound warehouse,Upper half,145.6,1293.09,862.06,297.413,Fiberglass board,40.0
+YP-U453A,Low-value Consumables,Big Panel Testing,0.65*1.185*0.98,728.0,1293.09,2155.15,,Fiberglass board,1120.69
+YP-U456A,Low-value Consumables,Final Inspection (FQC),M6*35mm [Half Thread],582.4,4310.3,1293.09,181.034,Fiberglass board,3.8834
+YP-U457A,Low-value Consumables,Final Inspection (FQC),1.5*7.0 Green Ring Set,291.2,1293.09,862.06,297.413,Fiberglass board,1120.69
+YP-U356A,Low-value Consumables,Big Panel Testing,1.5*7.0 Green Ring Set,252.4,728.0,1293.09,570.0,Self-made boards,52.65
+YP-U357A,Low-value Consumables,Big Panel Testing,1.5*7.0 Green Ring Set,631.0,1293.09,862.06,1330.0,Self-made boards,52.65
+YP-U358A,Cutter,CNC Forming,0.71*1.185*0.98,126.2,1293.09,1293.09,189.6,Self-made boards,35.1
+YP-U385A,Cutter,CNC Forming,0.65*1.185*0.98,126.2,862.06,2155.15,90.517,Self-made boards,35.1
+YP-U390A,Cutter,CNC Forming,M6*35mm [Half Thread],387.931,2155.15,862.06,168.103,Self-made boards,70.2
+YP-U428A,Machine Repair Parts,Inbound warehouse,Upper half,87.4,4310.3,1293.09,181.034,Self-made boards,17.55
+YP-U431A,Machine Repair Parts,Inbound warehouse,Upper half,145.6,1293.09,862.06,297.413,Self-made boards,35.1
+YP-U453A,Low-value Consumables,Big Panel Testing,0.65*1.185*0.98,728.0,1293.09,2155.15,,Self-made boards,35.1
+YP-U456A,Low-value Consumables,Final Inspection (FQC),M6*35mm [Half Thread],582.4,4310.3,1293.09,181.034,Self-made boards,70.2
+YP-U457A,Low-value Consumables,Final Inspection (FQC),1.5*7.0 Green Ring Set,291.2,1293.09,862.06,297.413,Self-made boards,35.1

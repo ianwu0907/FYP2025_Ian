@@ -1,0 +1,145 @@
+sex_cn,sex_en,economic_activity_status_cn,economic_activity_status_en,year,measure_type,value
+Male,Male,料理家務者,,2011,Number,1748
+Male,Male,料理家務者,,2011,%,13358
+Male,Male,料理家務者,,2016,Number,940
+Male,Male,料理家務者,,2016,%,11600
+Male,Male,料理家務者,,2021,Number,260
+Male,Male,料理家務者,,2021,%,7320
+Male,Male,Home-makers,,2011,Number,33.2
+Male,Male,Home-makers,,2011,%,16.6
+Male,Male,Home-makers,,2016,Number,22.8
+Male,Male,Home-makers,,2016,%,18.4
+Male,Male,Home-makers,,2021,Number,6.9
+Male,Male,Home-makers,,2021,%,10.5
+Male,Male,退休人士,,2011,Number,984
+Male,Male,退休人士,,2011,%,18718
+Male,Male,退休人士,,2016,Number,1153
+Male,Male,退休人士,,2016,%,13107
+Male,Male,退休人士,,2021,Number,588
+Male,Male,退休人士,,2021,%,14221
+Male,Male,Retired persons,,2011,Number,18.7
+Male,Male,Retired persons,,2011,%,23.3
+Male,Male,Retired persons,,2016,Number,28
+Male,Male,Retired persons,,2016,%,20.8
+Male,Male,Retired persons,,2021,Number,15.7
+Male,Male,Retired persons,,2021,%,20.4
+Male,Male,無酬照顧者[3],,2011,Number,N.A.
+Male,Male,無酬照顧者[3],,2011,%,N.A.
+Male,Male,無酬照顧者[3],,2016,Number,N.A.
+Male,Male,無酬照顧者[3],,2016,%,N.A.
+Male,Male,無酬照顧者[3],,2021,Number,776
+Male,Male,無酬照顧者[3],,2021,%,7544
+Male,Male,Unpaid carers[3],,2011,Number,N.A.
+Male,Male,Unpaid carers[3],,2011,%,N.A.
+Male,Male,Unpaid carers[3],,2016,Number,N.A.
+Male,Male,Unpaid carers[3],,2016,%,N.A.
+Male,Male,Unpaid carers[3],,2021,Number,20.7
+Male,Male,Unpaid carers[3],,2021,%,10.8
+Male,Male,其他[4],,2011,Number,2526
+Male,Male,其他[4],,2011,%,48309
+Male,Male,其他[4],,2016,Number,2030
+Male,Male,其他[4],,2016,%,38441
+Male,Male,其他[4],,2021,Number,2126
+Male,Male,其他[4],,2021,%,40626
+Male,Male,Others[4],,2011,Number,48
+Male,Male,Others[4],,2011,%,60.1
+Male,Male,Others[4],,2016,Number,49.2
+Male,Male,Others[4],,2016,%,60.9
+Male,Male,Others[4],,2021,Number,56.7
+Male,Male,Others[4],,2021,%,58.3
+Female,Female,料理家務者,,2011,Number,19311
+Female,Female,料理家務者,,2011,%,245137
+Female,Female,料理家務者,,2016,Number,13002
+Female,Female,料理家務者,,2016,%,223962
+Female,Female,料理家務者,,2021,Number,8359
+Female,Female,料理家務者,,2021,%,134809
+Female,Female,Home-makers,,2011,Number,67.2
+Female,Female,Home-makers,,2011,%,81.1
+Female,Female,Home-makers,,2016,Number,66.1
+Female,Female,Home-makers,,2016,%,81.5
+Female,Female,Home-makers,,2021,Number,35.4
+Female,Female,Home-makers,,2021,%,50.7
+Female,Female,退休人士,,2011,Number,688
+Female,Female,退休人士,,2011,%,4001
+Female,Female,退休人士,,2016,Number,198
+Female,Female,退休人士,,2016,%,2760
+Female,Female,退休人士,,2021,Number,451
+Female,Female,退休人士,,2021,%,4007
+Female,Female,Retired persons,,2011,Number,2.4
+Female,Female,Retired persons,,2011,%,1.3
+Female,Female,Retired persons,,2016,Number,1
+Female,Female,Retired persons,,2016,%,1
+Female,Female,Retired persons,,2021,Number,1.9
+Female,Female,Retired persons,,2021,%,1.5
+Female,Female,無酬照顧者[3],,2011,Number,N.A.
+Female,Female,無酬照顧者[3],,2011,%,N.A.
+Female,Female,無酬照顧者[3],,2016,Number,N.A.
+Female,Female,無酬照顧者[3],,2016,%,N.A.
+Female,Female,無酬照顧者[3],,2021,Number,9397
+Female,Female,無酬照顧者[3],,2021,%,92062
+Female,Female,Unpaid carers[3],,2011,Number,N.A.
+Female,Female,Unpaid carers[3],,2011,%,N.A.
+Female,Female,Unpaid carers[3],,2016,Number,N.A.
+Female,Female,Unpaid carers[3],,2016,%,N.A.
+Female,Female,Unpaid carers[3],,2021,Number,39.8
+Female,Female,Unpaid carers[3],,2021,%,34.6
+Female,Female,其他[4],,2011,Number,8731
+Female,Female,其他[4],,2011,%,53279
+Female,Female,其他[4],,2016,Number,6480
+Female,Female,其他[4],,2016,%,48198
+Female,Female,其他[4],,2021,Number,5387
+Female,Female,其他[4],,2021,%,35221
+Female,Female,Others[4],,2011,Number,30.4
+Female,Female,Others[4],,2011,%,17.6
+Female,Female,Others[4],,2016,Number,32.9
+Female,Female,Others[4],,2016,%,17.5
+Female,Female,Others[4],,2021,Number,22.8
+Female,Female,Others[4],,2021,%,13.2
+Both sexes,Both sexes,料理家務者,,2011,Number,21059
+Both sexes,Both sexes,料理家務者,,2011,%,258495
+Both sexes,Both sexes,料理家務者,,2016,Number,13942
+Both sexes,Both sexes,料理家務者,,2016,%,235562
+Both sexes,Both sexes,料理家務者,,2021,Number,8619
+Both sexes,Both sexes,料理家務者,,2021,%,142129
+Both sexes,Both sexes,Home-makers,,2011,Number,62
+Both sexes,Both sexes,Home-makers,,2011,%,67.5
+Both sexes,Both sexes,Home-makers,,2016,Number,58.6
+Both sexes,Both sexes,Home-makers,,2016,%,69.7
+Both sexes,Both sexes,Home-makers,,2021,Number,31.5
+Both sexes,Both sexes,Home-makers,,2021,%,42.3
+Both sexes,Both sexes,退休人士,,2011,Number,1672
+Both sexes,Both sexes,退休人士,,2011,%,22719
+Both sexes,Both sexes,退休人士,,2016,Number,1351
+Both sexes,Both sexes,退休人士,,2016,%,15867
+Both sexes,Both sexes,退休人士,,2021,Number,1039
+Both sexes,Both sexes,退休人士,,2021,%,18228
+Both sexes,Both sexes,Retired persons,,2011,Number,4.9
+Both sexes,Both sexes,Retired persons,,2011,%,5.9
+Both sexes,Both sexes,Retired persons,,2016,Number,5.7
+Both sexes,Both sexes,Retired persons,,2016,%,4.7
+Both sexes,Both sexes,Retired persons,,2021,Number,3.8
+Both sexes,Both sexes,Retired persons,,2021,%,5.4
+Both sexes,Both sexes,無酬照顧者[3],,2011,Number,N.A.
+Both sexes,Both sexes,無酬照顧者[3],,2011,%,N.A.
+Both sexes,Both sexes,無酬照顧者[3],,2016,Number,N.A.
+Both sexes,Both sexes,無酬照顧者[3],,2016,%,N.A.
+Both sexes,Both sexes,無酬照顧者[3],,2021,Number,10173
+Both sexes,Both sexes,無酬照顧者[3],,2021,%,99606
+Both sexes,Both sexes,Unpaid carers[3],,2011,Number,N.A.
+Both sexes,Both sexes,Unpaid carers[3],,2011,%,N.A.
+Both sexes,Both sexes,Unpaid carers[3],,2016,Number,N.A.
+Both sexes,Both sexes,Unpaid carers[3],,2016,%,N.A.
+Both sexes,Both sexes,Unpaid carers[3],,2021,Number,37.2
+Both sexes,Both sexes,Unpaid carers[3],,2021,%,29.7
+Both sexes,Both sexes,其他[4],,2011,Number,11257
+Both sexes,Both sexes,其他[4],,2011,%,101588
+Both sexes,Both sexes,其他[4],,2016,Number,8510
+Both sexes,Both sexes,其他[4],,2016,%,86639
+Both sexes,Both sexes,其他[4],,2021,Number,7513
+Both sexes,Both sexes,其他[4],,2021,%,75847
+Both sexes,Both sexes,Others[4],,2011,Number,33.1
+Both sexes,Both sexes,Others[4],,2011,%,26.5
+Both sexes,Both sexes,Others[4],,2016,Number,35.8
+Both sexes,Both sexes,Others[4],,2016,%,25.6
+Both sexes,Both sexes,Others[4],,2021,Number,27.5
+Both sexes,Both sexes,Others[4],,2021,%,22.6

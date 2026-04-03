@@ -1,0 +1,62 @@
+dimension_group,category,model_spec,predicted_probability
+,up to 0.25,model_a,0.048
+,above 0.25 and up to 0.50,model_a,0.068
+,above 0.50,model_a,0.098
+age group of main income earner,15 to 34 years,model_a,0.071
+age group of main income earner,35 to 44 years,model_a,0.065
+age group of main income earner,45 to 54 years,model_a,0.094
+age group of main income earner,55 to 64 years,model_a,0.074
+age group of main income earner,over 64 years,model_a,0.034
+family type,unattached,model_a,0.067
+family type,couple with no children,model_a,0.054
+family type,couple with children,model_a,0.072
+family type,lone parent,model_a,0.091
+family type,"""other"" family types",model_a,0.085
+education of main income earner,less than high school,model_a,0.083
+education of main income earner,high school,model_a,0.077
+education of main income earner,some postsecondary,model_a,0.087
+education of main income earner,university diploma or degree,model_a,0.042
+income group,first quintile,model_a,0.097
+income group,second quintile,model_a,0.095
+income group,third quintile,model_a,0.057
+income group,fourth quintile,model_a,0.054
+income group,fifth quintile,model_a,0.02
+region,atlantic,model_a,0.049
+region,quebec,model_a,0.075
+region,ontario,model_a,0.062
+region,prairies,model_a,0.091
+region,british columbia,model_a,0.071
+sex of main income earner,male,model_a,0.071
+sex of main income earner,female,model_a,0.07
+home ownership status,own without mortgage,model_a,0.048
+home ownership status,own with mortgage,model_a,0.051
+home ownership status,do not own,model_a,0.099
+,up to 0.25,model_b,0.013
+,above 0.25 and up to 0.50,model_b,0.027
+,above 0.50,model_b,0.056
+age group of main income earner,15 to 34 years,model_b,0.015
+age group of main income earner,35 to 44 years,model_b,0.027
+age group of main income earner,45 to 54 years,model_b,0.035
+age group of main income earner,55 to 64 years,model_b,0.057
+age group of main income earner,over 64 years,model_b,0.029
+family type,unattached,model_b,0.03
+family type,couple with no children,model_b,0.019
+family type,couple with children,model_b,0.03
+family type,lone parent,model_b,0.077
+family type,"""other"" family types",model_b,0.029
+education of main income earner,less than high school,model_b,0.044
+education of main income earner,high school,model_b,0.031
+education of main income earner,some postsecondary,model_b,0.034
+education of main income earner,university diploma or degree,model_b,0.021
+income group,first quintile,model_b,0.062
+income group,second quintile,model_b,0.031
+income group,third quintile,model_b,0.028
+income group,fourth quintile,model_b,0.032
+income group,fifth quintile,model_b,0.012
+region,atlantic,model_b,0.037
+region,quebec,model_b,0.027
+region,ontario,model_b,0.022
+region,prairies,model_b,0.049
+region,british columbia,model_b,0.031
+sex of main income earner,male,model_b,0.03
+sex of main income earner,female,model_b,0.03

@@ -1,0 +1,15 @@
+serial_number,expense_category,project_description,amount,unit_set_room,unit_day,unit_person,unit_times,notes
+2,Venue Rental Fee,Teahouse Restaurant,50.0,1,1,1,2,
+3,Meal expenses,Lunch,80.0,0,1,1,2,
+3,Meal expenses,Dinner,100.0,0,1,1,2,
+3,Meal expenses,Tea Break,20.0,0,1,1,2,
+3,Meal expenses,Beverages and drinks,50.0,0,1,1,2,"Bring your own alcohol, fruits, and melons."
+3,Meal expenses,Subtotal,,0,0,0,0,
+4,Photography,Photography,10.0,0,1,1,2,
+5,Office Supplies,Office Supplies,5.0,0,1,1,2,
+5,Office Supplies,Drinking water,5.0,0,1,1,2,
+5,Office Supplies,Food,20.0,0,1,1,2,
+5,Office Supplies,Subtotal,,0,0,0,0,
+6,Souvenir,"Water cups, etc.",50.0,0,1,1,2,
+7,Other,Other unforeseen expenses,10.0,0,1,1,2,
+7,Other,Subtotal,,0,0,0,0,

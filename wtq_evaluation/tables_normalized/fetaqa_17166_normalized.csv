@@ -1,0 +1,3 @@
+vessel_id,vessel_name,shipyard_location,temporal_dimension,temporal_value,status
+YTR 562,Firebrand,"Vancouver Shipyards, North Vancouver",build_year,1978,In active service
+YTR 562,Firebrand,"Vancouver Shipyards, North Vancouver",service_period,-,In active service

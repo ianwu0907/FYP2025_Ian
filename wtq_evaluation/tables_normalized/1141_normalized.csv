@@ -1,0 +1,31 @@
+section,category,gender_configuration,parental_arrangement,number,percent,ratio,percentage_points
+,married,,married,2179467,54.1,1.3,18.2
+,common law,,common law,916691,48.9,1.6,28.7
+,lone parent,,lone parent,508553,28.6,1.6,15.9
+parents' sex,opposite-sex parents,opposite-sex,parents,3089827,52.5,1.4,21.3
+parents' sex,same-sex parents,same-sex,parents,1852,52.6,1.4,21.1
+parents' sex,same-sex parents,same-sex,parents,4479,62.8,1.3,20.4
+parents' sex,male lone parent,male,lone parent,9977,8.1,3.1,17.0
+parents' sex,female lone parent,male,lone parent,498576,29.0,1.5,15.9
+family income in pre-birth year,"less than $30,000",,,925199,21.9,1.8,16.5
+family income in pre-birth year,"$30,000 to $59,999",,,868464,43.8,1.7,28.7
+family income in pre-birth year,"$60,000 to $89,999",,,784526,59.2,1.4,23.0
+family income in pre-birth year,"$90,000 to $119,999",,,525228,69.6,1.3,17.7
+family income in pre-birth year,"$120,000 to $149,999",,,259397,73.9,1.2,14.8
+family income in pre-birth year,"$150,000 or more",,,241899,69.4,1.2,13.3
+number of children,0,,,3452200,48.4,1.4,20.4
+number of children,1,,,115774,68.0,1.3,23.1
+number of children,2,,,30387,62.0,1.4,24.6
+number of children,3,,,5179,55.8,1.5,25.6
+number of children,4 or more,,,1173,48.3,1.5,24.3
+province or territory,newfoundland and labrador,,,63480,31.6,2.0,30.7
+province or territory,prince edward island,,,14821,49.5,1.7,34.8
+province or territory,nova scotia,,,92757,47.7,1.5,25.8
+province or territory,new brunswick,,,77176,46.5,1.7,30.5
+province or territory,quebec,,,828392,49.7,1.6,28.8
+province or territory,ontario,,,1354528,52.8,1.3,15.8
+province or territory,manitoba,,,144359,45.7,1.3,15.9
+province or territory,saskatchewan,,,126468,44.5,1.4,16.0
+province or territory,alberta,,,424162,46.7,1.4,18.4
+province or territory,british columbia,,,431247,47.5,1.4,20.6
+province or territory,territories,,,19236,34.4,1.5,16.5

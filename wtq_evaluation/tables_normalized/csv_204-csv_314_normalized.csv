@@ -1,0 +1,55 @@
+rank,team,metric,value
+2,Fylkir,Played,18
+3,Víðir,Played,18
+4,ÍR,Played,18
+5,Selfoss,Played,18
+6,Tindastóll,Played,18
+7,Breiðablik,Played,18
+8,ÍBV,Played,18
+9,KS,Played,18
+10,Þróttur R.,Played,18
+2,Fylkir,Won,9
+3,Víðir,Won,8
+4,ÍR,Won,8
+5,Selfoss,Won,7
+6,Tindastóll,Won,7
+7,Breiðablik,Won,6
+8,ÍBV,Won,6
+9,KS,Won,5
+10,Þróttur R.,Won,2
+2,Fylkir,Drawn,6
+3,Víðir,Drawn,3
+4,ÍR,Drawn,2
+5,Selfoss,Drawn,4
+6,Tindastóll,Drawn,2
+7,Breiðablik,Drawn,5
+8,ÍBV,Drawn,2
+9,KS,Drawn,4
+10,Þróttur R.,Drawn,6
+2,Fylkir,Lost,3
+3,Víðir,Lost,7
+4,ÍR,Lost,8
+5,Selfoss,Lost,7
+6,Tindastóll,Lost,9
+7,Breiðablik,Lost,7
+8,ÍBV,Lost,10
+9,KS,Lost,9
+10,Þróttur R.,Lost,10
+2,Fylkir,Goals_For,39
+3,Víðir,Goals_For,38
+4,ÍR,Goals_For,31
+5,Selfoss,Goals_For,27
+6,Tindastóll,Goals_For,27
+7,Breiðablik,Goals_For,27
+8,ÍBV,Goals_For,29
+9,KS,Goals_For,38
+10,Þróttur R.,Goals_For,27
+2,Fylkir,Goals_Against,30
+3,Víðir,Goals_Against,31
+4,ÍR,Goals_Against,35
+5,Selfoss,Goals_Against,26
+6,Tindastóll,Goals_Against,31
+7,Breiðablik,Goals_Against,33
+8,ÍBV,Goals_Against,36
+9,KS,Goals_Against,46
+10,Þróttur R.,Goals_Against,42

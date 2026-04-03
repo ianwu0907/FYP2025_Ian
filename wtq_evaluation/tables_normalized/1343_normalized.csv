@@ -1,0 +1,36 @@
+city,change_percent,trend_direction,offense_description
+st. john's,0,decrease,robbery and violent and non-violent firearm offences; partially offset by increase in homicide and child pornography
+halifax,-10,decrease,"sexual assault (level 1), breaking and entering, and robbery, as well as fraud and homicide; partially offset by increase in attempted murder and child pornography"
+moncton,8,increase,"trafficking, production, importation or exportation of other drugs, violent firearms offences, theft of $5,000 or under (non-shoplifting), homicide and mischief; partially offset by decrease in fraud"
+saint john,-2,decrease,"fraud, robbery and violent firearm offences; partially offset by increase in homicide"
+saguenay,-2,decrease,failure to stop or remain (traffic violation); partially offset by increase in breaking and entering
+quebec,-1,decrease,breaking and entering
+sherbrooke,-10,decrease,"failure to stop or remain (traffic violation), homicide and robbery; partially offset by increase in breaking and entering"
+trois-rivieres,-5,decrease,"breaking and entering, homicide and failure to stop or remain (traffic violation); partially offset by increase in fraud"
+montreal,-1,decrease,"trafficking, production, importation or exportation of cannabis (cdsa), and breaking and entering; partially offset by increase in importation or exportation under the cannabis act"
+gatineau,-1,decrease,"failure to stop or remain (traffic violation), and homicide; partially offset by increase in child pornography and fraud"
+ottawa,4,increase,"shoplifting of $5,000 or under, and fraud; partially offset by decrease in breaking and entering"
+kingston,-3,decrease,"breaking and entering, and sexual assault (level 1); partially offset by increase in fraud"
+belleville,13,increase,"homicide, attempted murder, fraud and sexual assault (level 1); partially offset by decrease in robbery"
+peterborough,10,increase,"sexual violations against children, and breaking and entering; partially offset by decrease in homicide"
+toronto,1,increase,"fraud; partially offset by decrease in shoplifting of $5,000 or under"
+hamilton,3,increase,homicide
+st. catharines-niagara,-7,decrease,"trafficking, production, importation or exportation of cannabis (cdsa) and cocaine, and breaking and entering; partially offset by increase in importation or exportation of cannabis under the cannabis act, fraud and homicide"
+kitchener-cambridge-waterloo,-1,decrease,"breaking and entering, as well as administration of justice violations; partially offset by increase in robbery and child pornography"
+brantford,-10,decrease,"breaking and entering, motor vehicle theft and arson; partially offset by increase in violent firearm offences and sexual assault (level 1"
+guelph,-9,decrease,"breaking and entering, as well as sexual violations against children; partially offset by increase in fraud"
+london,-2,decrease,"shoplifting of $5,000 or under, and fraud; partially offset by increase in theft of $5,000 or under"
+windsor,-8,decrease,"breaking and entering, trafficking, production, importation or exportation of cannabis (cdsa), as well as homicide and theft of $5,000 or under (non-shoplifting); partially offset by increase in importation or exportation under the cannabis act"
+barrie,9,increase,fraud and homicide; partially offset by decrease in breaking and entering
+greater sudbury,3,increase,"fraud, theft of $5,000 or under (non-shoplifting), identity fraud, and homicide; partially offset by decrease in breaking and entering"
+thunder bay,2,increase,"shoplifting of $5,000 or under, and breaking and entering; partially offset by decrease in robbery, trafficking, production, importation or exportation of cannabis (cdsa), and homicide"
+winnipeg,10,increase,"homicide, fraud, shoplifting of $5,000 or under, as well as breaking and entering, and child pornography; partially offset by decrease in robbery"
+regina,1,increase,"attempted murder and shoplifting of $5,000 or under; partially offset by decrease in breaking and entering, and motor vehicle theft"
+saskatoon,0,decrease,"fraud, administration of justice violations, breaking and entering, and theft of $5,000 or under (non-shoplifting); offset by increase in homicide and robbery"
+lethbridge,2,increase,"breaking and entering and administration of justice violations; partially offset by decrease in fraud and trafficking, production, importation or exportation of cocaine and other drugs"
+calgary,4,increase,"breaking and entering, and administration of justice violations"
+edmonton,-1,decrease,"breaking and entering, and administration of justice violations; partially offset by increase in shoplifting of $5,000 or under"
+kelowna,20,increase,"breaking and entering, identity fraud, shoplifting of $5,000 or under, sexual assault (level 1), and robbery, as well as mischief and uttering threats; partially offset by decrease in fraud and trafficking, production, importation or exportation of methamphetamine"
+abbotsford-mission,-3,decrease,"homicide, breaking and entering, theft of $5,000 or under (non-shoplifting), and fraud; partially offset by trafficking, production, importation or exportation of other drugs, and robbery"
+vancouver,11,increase,child pornography and importation or exportation under the cannabis act
+victoria,16,increase,"breaking and entering, theft of $5,000 or under (non-shoplifting), and fraud"

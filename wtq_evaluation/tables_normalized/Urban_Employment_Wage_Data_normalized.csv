@@ -1,0 +1,294 @@
+sector_cn,sector_en,demographic,metric,value
+Agriculture,Farming,total,headcount,1553.424
+Agriculture,Farming,female,headcount,609.67
+Agriculture,Farming,total,total_wages,466.18343
+Forestry,Forestry,total,headcount,622.088
+Forestry,Forestry,female,headcount,174.079
+Forestry,Forestry,total,total_wages,213.38885
+Animal husbandry,Animal Husbandry,total,headcount,150.325
+Animal husbandry,Animal Husbandry,female,headcount,57.304
+Animal husbandry,Animal Husbandry,total,total_wages,48.36888
+Fishing,Fishery,total,headcount,31.953
+Fishing,Fishery,female,headcount,8.366
+Fishing,Fishery,total,total_wages,14.31099
+"Agriculture, Forestry, Animal Husbandry, and Fisheries Services",Service in Support of Agriculture,total,headcount,274.418
+"Agriculture, Forestry, Animal Husbandry, and Fisheries Services",Service in Support of Agriculture,female,headcount,85.108
+"Agriculture, Forestry, Animal Husbandry, and Fisheries Services",Service in Support of Agriculture,total,total_wages,139.88723
+COAL MINING AND WASHING INDUSTRY,Mining and Washing of Coal,total,headcount,3307.085
+COAL MINING AND WASHING INDUSTRY,Mining and Washing of Coal,female,headcount,511.147
+COAL MINING AND WASHING INDUSTRY,Mining and Washing of Coal,total,total_wages,1891.7546
+OIL AND NATURAL GAS EXTRACTION INDUSTRY,Extraction of Petroleum and Natural Gas,total,headcount,689.457
+OIL AND NATURAL GAS EXTRACTION INDUSTRY,Extraction of Petroleum and Natural Gas,female,headcount,221.71
+OIL AND NATURAL GAS EXTRACTION INDUSTRY,Extraction of Petroleum and Natural Gas,total,total_wages,611.3
+FERROUS METAL MINING AND SELECTION INDUSTRY,Mining and Processing of Ferrous Metal Ores,total,headcount,208.56
+FERROUS METAL MINING AND SELECTION INDUSTRY,Mining and Processing of Ferrous Metal Ores,female,headcount,35.117
+FERROUS METAL MINING AND SELECTION INDUSTRY,Mining and Processing of Ferrous Metal Ores,total,total_wages,113.65304
+NON-FERROUS METAL MINING AND SELECTION INDUSTRY,Mining and Processing of Non-Ferrous Metal Ores,total,headcount,238.627
+NON-FERROUS METAL MINING AND SELECTION INDUSTRY,Mining and Processing of Non-Ferrous Metal Ores,female,headcount,46.269
+NON-FERROUS METAL MINING AND SELECTION INDUSTRY,Mining and Processing of Non-Ferrous Metal Ores,total,total_wages,121.78421
+NON-METALLIC MINERAL MINING AND SELECTION INDUSTRY,Mining and Processing of Non-metal Ores,total,headcount,180.239
+NON-METALLIC MINERAL MINING AND SELECTION INDUSTRY,Mining and Processing of Non-metal Ores,female,headcount,40.068
+NON-METALLIC MINERAL MINING AND SELECTION INDUSTRY,Mining and Processing of Non-metal Ores,total,total_wages,87.039
+MINING SUPPORT ACTIVITIES,Support Activities for Mining,total,headcount,283.4
+MINING SUPPORT ACTIVITIES,Support Activities for Mining,female,headcount,73.759
+MINING SUPPORT ACTIVITIES,Support Activities for Mining,total,total_wages,211.64788
+OTHER MINING INDUSTRIES,Mining of Other Ores,total,headcount,1.809
+OTHER MINING INDUSTRIES,Mining of Other Ores,total,total_wages,0.94636
+Processing of Agricultural and sideline Food Products,Processing of Food from Agricultural Products,total,headcount,1794.626
+Processing of Agricultural and sideline Food Products,Processing of Food from Agricultural Products,female,headcount,753.613
+Processing of Agricultural and sideline Food Products,Processing of Food from Agricultural Products,total,total_wages,819.89613
+FOOD MANUFACTURING INDUSTRY,Manufacture of Foods,total,headcount,1238.379
+FOOD MANUFACTURING INDUSTRY,Manufacture of Foods,female,headcount,602.2
+FOOD MANUFACTURING INDUSTRY,Manufacture of Foods,total,total_wages,643.41438
+"ALCOHOLIC BEVERAGES, DRINKS AND REFINED TEA MANUFACTURING","Manufacture of Liquor, Beverages and Refined Tea",total,headcount,993.036
+"ALCOHOLIC BEVERAGES, DRINKS AND REFINED TEA MANUFACTURING","Manufacture of Liquor, Beverages and Refined Tea",female,headcount,375.563
+"ALCOHOLIC BEVERAGES, DRINKS AND REFINED TEA MANUFACTURING","Manufacture of Liquor, Beverages and Refined Tea",total,total_wages,536.08882
+Tobacco Product Manufacturing,Manufacture of Tobacco,total,headcount,210.793
+Tobacco Product Manufacturing,Manufacture of Tobacco,female,headcount,69.915
+Tobacco Product Manufacturing,Manufacture of Tobacco,total,total_wages,293.80959
+TEXTILE INDUSTRY,Manufacture of Textile,total,headcount,1948.594
+TEXTILE INDUSTRY,Manufacture of Textile,female,headcount,1154.82
+TEXTILE INDUSTRY,Manufacture of Textile,total,total_wages,903.0949
+"TEXTILE, APPAREL, AND ACCESSORY INDUSTRY","Manufacture of Textile, Wearing Apparel and Accessories",total,headcount,2380.961
+"TEXTILE, APPAREL, AND ACCESSORY INDUSTRY","Manufacture of Textile, Wearing Apparel and Accessories",female,headcount,1624.442
+"TEXTILE, APPAREL, AND ACCESSORY INDUSTRY","Manufacture of Textile, Wearing Apparel and Accessories",total,total_wages,1125.50642
+"Leather, Fur, Feather and Their Products and","Manufacture of Leather, Fur, Feather and Related Products",total,headcount,1533.269
+"Leather, Fur, Feather and Their Products and","Manufacture of Leather, Fur, Feather and Related Products",female,headcount,910.395
+"Leather, Fur, Feather and Their Products and","Manufacture of Leather, Fur, Feather and Related Products",total,total_wages,691.09029
+"Wood processing and wood, bamboo, rattan, and palm","Processing of Timber, Manufacture of Wood, Bamboo, Rattan,",total,headcount,391.423
+"Wood processing and wood, bamboo, rattan, and palm","Processing of Timber, Manufacture of Wood, Bamboo, Rattan,",female,headcount,154.016
+"Wood processing and wood, bamboo, rattan, and palm","Processing of Timber, Manufacture of Wood, Bamboo, Rattan,",total,total_wages,167.54827
+Furniture Manufacturing Industry,Manufacture of Furniture,total,headcount,557.444
+Furniture Manufacturing Industry,Manufacture of Furniture,female,headcount,196.225
+Furniture Manufacturing Industry,Manufacture of Furniture,total,total_wages,284.01626
+PAPERMAKING AND PAPER PRODUCTS INDUSTRY,Manufacture of Paper and Paper Products,total,headcount,654.716
+PAPERMAKING AND PAPER PRODUCTS INDUSTRY,Manufacture of Paper and Paper Products,female,headcount,239.211
+PAPERMAKING AND PAPER PRODUCTS INDUSTRY,Manufacture of Paper and Paper Products,total,total_wages,348.99021
+PRINTING AND RECORDING MEDIA REPRODUCTION INDUSTRY,Printing and Reproduction of Recording Media,total,headcount,586.904
+PRINTING AND RECORDING MEDIA REPRODUCTION INDUSTRY,Printing and Reproduction of Recording Media,female,headcount,252.11
+PRINTING AND RECORDING MEDIA REPRODUCTION INDUSTRY,Printing and Reproduction of Recording Media,total,total_wages,319.27306
+"Cultural and educational, handicrafts, sports, and entertainment products","Manufacture of Articles for Culture, Education, Arts and Crafts,",total,headcount,1268.787
+"Cultural and educational, handicrafts, sports, and entertainment products","Manufacture of Articles for Culture, Education, Arts and Crafts,",female,headcount,728.117
+"Cultural and educational, handicrafts, sports, and entertainment products","Manufacture of Articles for Culture, Education, Arts and Crafts,",total,total_wages,605.76321
+"PETROLEUM REFINING, COKE OVEN AND NUCLEAR FUEL","Processing of Petroleum, Coking and Processing of Nuclear Fuel",total,headcount,643.045
+"PETROLEUM REFINING, COKE OVEN AND NUCLEAR FUEL","Processing of Petroleum, Coking and Processing of Nuclear Fuel",female,headcount,172.666
+"PETROLEUM REFINING, COKE OVEN AND NUCLEAR FUEL","Processing of Petroleum, Coking and Processing of Nuclear Fuel",total,total_wages,466.38685
+CHEMICAL RAW MATERIALS AND CHEMICAL PRODUCTS MANUFACTURING,Manufacture of Raw Chemical Materials and Chemical Products,total,headcount,2613.421
+CHEMICAL RAW MATERIALS AND CHEMICAL PRODUCTS MANUFACTURING,Manufacture of Raw Chemical Materials and Chemical Products,female,headcount,792.18
+CHEMICAL RAW MATERIALS AND CHEMICAL PRODUCTS MANUFACTURING,Manufacture of Raw Chemical Materials and Chemical Products,total,total_wages,1631.53355
+PHARMACEUTICAL MANUFACTURING,Manufacture of Medicines,total,headcount,1622.727
+PHARMACEUTICAL MANUFACTURING,Manufacture of Medicines,female,headcount,761.258
+PHARMACEUTICAL MANUFACTURING,Manufacture of Medicines,total,total_wages,1021.04573
+CHEMICAL FIBER MANUFACTURING INDUSTRY,Manufacture of Chemical Fibres,total,headcount,254.006
+CHEMICAL FIBER MANUFACTURING INDUSTRY,Manufacture of Chemical Fibres,female,headcount,95.933
+CHEMICAL FIBER MANUFACTURING INDUSTRY,Manufacture of Chemical Fibres,total,total_wages,142.77729
+RUBBER AND PLASTICS MANUFACTURING INDUSTRY,Manufacture of Rubber and Plastics Products,total,headcount,1806.222
+RUBBER AND PLASTICS MANUFACTURING INDUSTRY,Manufacture of Rubber and Plastics Products,female,headcount,745.788
+RUBBER AND PLASTICS MANUFACTURING INDUSTRY,Manufacture of Rubber and Plastics Products,total,total_wages,963.42867
+NON-METALLIC MINERAL PRODUCTS INDUSTRY,Manufacture of Non-metallic Mineral Products,total,headcount,2392.051
+NON-METALLIC MINERAL PRODUCTS INDUSTRY,Manufacture of Non-metallic Mineral Products,female,headcount,696.898
+NON-METALLIC MINERAL PRODUCTS INDUSTRY,Manufacture of Non-metallic Mineral Products,total,total_wages,1174.75314
+IRON AND STEEL SMELTING AND ROLLING INDUSTRY,Smelting and Pressing of Ferrous Metals,total,headcount,1994.189
+IRON AND STEEL SMELTING AND ROLLING INDUSTRY,Smelting and Pressing of Ferrous Metals,female,headcount,377.237
+IRON AND STEEL SMELTING AND ROLLING INDUSTRY,Smelting and Pressing of Ferrous Metals,total,total_wages,1194.97976
+NON-FERROUS METAL SMELTING AND ROLLING MANUFACTURING INDUSTRY,Smelting and Pressing of Non-ferrous Metals,total,headcount,1217.088
+NON-FERROUS METAL SMELTING AND ROLLING MANUFACTURING INDUSTRY,Smelting and Pressing of Non-ferrous Metals,female,headcount,268.9
+NON-FERROUS METAL SMELTING AND ROLLING MANUFACTURING INDUSTRY,Smelting and Pressing of Non-ferrous Metals,total,total_wages,682.26869
+METAL PRODUCTS INDUSTRY,Manufacture of Metal Products,total,headcount,1731.385
+METAL PRODUCTS INDUSTRY,Manufacture of Metal Products,female,headcount,543.009
+METAL PRODUCTS INDUSTRY,Manufacture of Metal Products,total,total_wages,950.42676
+GENERAL MACHINERY MANUFACTURING INDUSTRY,Manufacture of General Purpose Machinery,total,headcount,2574.462
+GENERAL MACHINERY MANUFACTURING INDUSTRY,Manufacture of General Purpose Machinery,female,headcount,723.518
+GENERAL MACHINERY MANUFACTURING INDUSTRY,Manufacture of General Purpose Machinery,total,total_wages,1632.14187
+SPECIALTY EQUIPMENT MANUFACTURING,Manufacture of Special Purpose Machinery,total,headcount,1992.875
+SPECIALTY EQUIPMENT MANUFACTURING,Manufacture of Special Purpose Machinery,female,headcount,555.368
+SPECIALTY EQUIPMENT MANUFACTURING,Manufacture of Special Purpose Machinery,total,total_wages,1280.15213
+AUTOMOBILE MANUFACTURING INDUSTRY,Manufacture of Automobiles,total,headcount,3411.476
+AUTOMOBILE MANUFACTURING INDUSTRY,Manufacture of Automobiles,female,headcount,900.228
+AUTOMOBILE MANUFACTURING INDUSTRY,Manufacture of Automobiles,total,total_wages,2540.31012
+"RAILWAY, SHIPBUILDING, AEROSPACE AND OTHERS","Manufacture of Railway, Ship, Aerospace and Other Transport",total,headcount,1126.967
+"RAILWAY, SHIPBUILDING, AEROSPACE AND OTHERS","Manufacture of Railway, Ship, Aerospace and Other Transport",female,headcount,297.029
+"RAILWAY, SHIPBUILDING, AEROSPACE AND OTHERS","Manufacture of Railway, Ship, Aerospace and Other Transport",total,total_wages,814.29181
+ELECTRICAL MACHINERY AND EQUIPMENT MANUFACTURING INDUSTRY,Manufacture of Electrical Machinery and Apparatus,total,headcount,3802.546
+ELECTRICAL MACHINERY AND EQUIPMENT MANUFACTURING INDUSTRY,Manufacture of Electrical Machinery and Apparatus,female,headcount,1567.922
+ELECTRICAL MACHINERY AND EQUIPMENT MANUFACTURING INDUSTRY,Manufacture of Electrical Machinery and Apparatus,total,total_wages,2350.32036
+"COMPUTERS, COMMUNICATIONS, AND OTHER ELECTRONICS","Manufacture of Computers, Communication and",total,headcount,7063.557
+"COMPUTERS, COMMUNICATIONS, AND OTHER ELECTRONICS","Manufacture of Computers, Communication and",female,headcount,3237.811
+"COMPUTERS, COMMUNICATIONS, AND OTHER ELECTRONICS","Manufacture of Computers, Communication and",total,total_wages,4747.79316
+INSTRUMENT AND METER MANUFACTURING INDUSTRY,Manufacture of Measuring Instruments and Machinery,total,headcount,711.042
+INSTRUMENT AND METER MANUFACTURING INDUSTRY,Manufacture of Measuring Instruments and Machinery,female,headcount,304.717
+INSTRUMENT AND METER MANUFACTURING INDUSTRY,Manufacture of Measuring Instruments and Machinery,total,total_wages,482.77793
+OTHER MANUFACTURING,Other Manufacture,total,headcount,215.574
+OTHER MANUFACTURING,Other Manufacture,female,headcount,106.59
+OTHER MANUFACTURING,Other Manufacture,total,total_wages,119.19701
+COMPREHENSIVE UTILIZATION INDUSTRY OF SCRAP RESOURCES,Utilization of Waste Resources,total,headcount,77.996
+COMPREHENSIVE UTILIZATION INDUSTRY OF SCRAP RESOURCES,Utilization of Waste Resources,female,headcount,21.72
+COMPREHENSIVE UTILIZATION INDUSTRY OF SCRAP RESOURCES,Utilization of Waste Resources,total,total_wages,39.65811
+"Metal Products, Machinery, and Equipment Repair Industry","Repair Service of Metal Products, Machinery and Equipment",total,headcount,128.842
+"Metal Products, Machinery, and Equipment Repair Industry","Repair Service of Metal Products, Machinery and Equipment",female,headcount,23.95
+"Metal Products, Machinery, and Equipment Repair Industry","Repair Service of Metal Products, Machinery and Equipment",total,total_wages,116.14508
+"ELECTRICITY, HEAT PRODUCTION AND SUPPLY INDUSTRY",Production and Supply of Electric Power and Heat Power,total,headcount,3022.18
+"ELECTRICITY, HEAT PRODUCTION AND SUPPLY INDUSTRY",Production and Supply of Electric Power and Heat Power,female,headcount,758.222
+"ELECTRICITY, HEAT PRODUCTION AND SUPPLY INDUSTRY",Production and Supply of Electric Power and Heat Power,total,total_wages,2696.34162
+GAS PRODUCTION AND SUPPLY INDUSTRY,Production and Supply of Gas,total,headcount,273.432
+GAS PRODUCTION AND SUPPLY INDUSTRY,Production and Supply of Gas,female,headcount,87.864
+GAS PRODUCTION AND SUPPLY INDUSTRY,Production and Supply of Gas,total,total_wages,195.37876
+WATER PRODUCTION AND SUPPLY INDUSTRY,Production and Supply of Water,total,headcount,580.519
+WATER PRODUCTION AND SUPPLY INDUSTRY,Production and Supply of Water,female,headcount,212.699
+WATER PRODUCTION AND SUPPLY INDUSTRY,Production and Supply of Water,total,total_wages,343.99532
+HOUSE CONSTRUCTION INDUSTRY,Construction of Buildings,total,headcount,18987.467
+HOUSE CONSTRUCTION INDUSTRY,Construction of Buildings,female,headcount,1898.342
+HOUSE CONSTRUCTION INDUSTRY,Construction of Buildings,total,total_wages,9433.4725
+Civil Engineering Construction Industry,Civil Engineering,total,headcount,5254.507
+Civil Engineering Construction Industry,Civil Engineering,female,headcount,699.639
+Civil Engineering Construction Industry,Civil Engineering,total,total_wages,2951.96029
+CONSTRUCTION AND INSTALLATION INDUSTRY,Building Installation,total,headcount,1467.042
+CONSTRUCTION AND INSTALLATION INDUSTRY,Building Installation,female,headcount,200.113
+CONSTRUCTION AND INSTALLATION INDUSTRY,Building Installation,total,total_wages,829.77277
+BUILDING DECORATION AND OTHER CONSTRUCTION INDUSTRIES,Building Decoration and Other Constructions,total,headcount,1538.277
+BUILDING DECORATION AND OTHER CONSTRUCTION INDUSTRIES,Building Decoration and Other Constructions,female,headcount,181.562
+BUILDING DECORATION AND OTHER CONSTRUCTION INDUSTRIES,Building Decoration and Other Constructions,total,total_wages,753.98422
+Wholesale Industry,Wholesale Trade,total,headcount,3846.331
+Wholesale Industry,Wholesale Trade,female,headcount,1617.178
+Wholesale Industry,Wholesale Trade,total,total_wages,3357.71705
+Retail Industry,Retail Trade,total,headcount,4903.663
+Retail Industry,Retail Trade,female,headcount,2797.046
+Retail Industry,Retail Trade,total,total_wages,2323.45655
+RAILWAY TRANSPORTATION INDUSTRY,Railway Transport,total,headcount,1874.131
+RAILWAY TRANSPORTATION INDUSTRY,Railway Transport,female,headcount,305.182
+RAILWAY TRANSPORTATION INDUSTRY,Railway Transport,total,total_wages,1677.67872
+ROAD TRANSPORTATION INDUSTRY,Road Transport,total,headcount,3855.896
+ROAD TRANSPORTATION INDUSTRY,Road Transport,female,headcount,986.145
+ROAD TRANSPORTATION INDUSTRY,Road Transport,total,total_wages,2125.81856
+Water Transport Industry,Water Transport,total,headcount,460.259
+Water Transport Industry,Water Transport,female,headcount,81.043
+Water Transport Industry,Water Transport,total,total_wages,426.03853
+AIR TRANSPORTATION INDUSTRY,Air Transport,total,headcount,595.301
+AIR TRANSPORTATION INDUSTRY,Air Transport,female,headcount,225.579
+AIR TRANSPORTATION INDUSTRY,Air Transport,total,total_wages,789.33218
+PIPELINE TRANSPORTATION INDUSTRY,Transport Via Pipelines,total,headcount,36.444
+PIPELINE TRANSPORTATION INDUSTRY,Transport Via Pipelines,female,headcount,9.157
+PIPELINE TRANSPORTATION INDUSTRY,Transport Via Pipelines,total,total_wages,37.48479
+"LOADING, UNLOADING, TRANSPORTATION HANDLING AND TRANSPORTATION AGENCY INDUSTRY","Loading, Unloading and Forwarding Agency",total,headcount,432.424
+"LOADING, UNLOADING, TRANSPORTATION HANDLING AND TRANSPORTATION AGENCY INDUSTRY","Loading, Unloading and Forwarding Agency",female,headcount,140.517
+"LOADING, UNLOADING, TRANSPORTATION HANDLING AND TRANSPORTATION AGENCY INDUSTRY","Loading, Unloading and Forwarding Agency",total,total_wages,328.35025
+Warehousing Industry,Storage,total,headcount,309.876
+Warehousing Industry,Storage,female,headcount,86.82
+Warehousing Industry,Storage,total,total_wages,188.71778
+POSTAL SERVICES,Post,total,headcount,930.745
+POSTAL SERVICES,Post,female,headcount,383.456
+POSTAL SERVICES,Post,total,total_wages,665.26875
+Accommodation Industry,Hotels,total,headcount,1402.132
+Accommodation Industry,Hotels,female,headcount,763.862
+Accommodation Industry,Hotels,total,total_wages,647.60755
+Catering Industry,Catering Services,total,headcount,1295.321
+Catering Industry,Catering Services,female,headcount,719.388
+Catering Industry,Catering Services,total,total_wages,520.29452
+"Telecommunications, Radio, Television, and Satellite Transmission Services","Telecommunication, Radio and Television and",total,headcount,1717.671
+"Telecommunications, Radio, Television, and Satellite Transmission Services","Telecommunication, Radio and Television and",female,headcount,720.939
+"Telecommunications, Radio, Television, and Satellite Transmission Services","Telecommunication, Radio and Television and",total,total_wages,1581.26076
+INTERNET AND RELATED SERVICES,Internet and Related Service,total,headcount,304.397
+INTERNET AND RELATED SERVICES,Internet and Related Service,female,headcount,118.829
+INTERNET AND RELATED SERVICES,Internet and Related Service,total,total_wages,486.91441
+SOFTWARE AND INFORMATION TECHNOLOGY SERVICES INDUSTRY,Software and Information Technology,total,headcount,1618.599
+SOFTWARE AND INFORMATION TECHNOLOGY SERVICES INDUSTRY,Software and Information Technology,female,headcount,582.15
+SOFTWARE AND INFORMATION TECHNOLOGY SERVICES INDUSTRY,Software and Information Technology,total,total_wages,2363.57926
+MONETARY AND FINANCIAL SERVICES,Monetary and Financial Service,total,headcount,3605.277
+MONETARY AND FINANCIAL SERVICES,Monetary and Financial Service,female,headcount,1791.256
+MONETARY AND FINANCIAL SERVICES,Monetary and Financial Service,total,total_wages,5050.85397
+Capital Market Services,Capital Market Service,total,headcount,243.872
+Capital Market Services,Capital Market Service,female,headcount,104.162
+Capital Market Services,Capital Market Service,total,total_wages,637.23474
+INSURANCE INDUSTRY,Insurance,total,headcount,2672.212
+INSURANCE INDUSTRY,Insurance,female,headcount,1524.913
+INSURANCE INDUSTRY,Insurance,total,total_wages,1645.06702
+OTHER FINANCIAL INDUSTRY,Other Financial Activities,total,headcount,130.299
+OTHER FINANCIAL INDUSTRY,Other Financial Activities,female,headcount,54.089
+OTHER FINANCIAL INDUSTRY,Other Financial Activities,total,total_wages,224.12801
+REAL ESTATE DEVELOPMENT AND OPERATION,Development and Management of Real Estate,total,headcount,1814.877
+REAL ESTATE DEVELOPMENT AND OPERATION,Development and Management of Real Estate,female,headcount,642.139
+REAL ESTATE DEVELOPMENT AND OPERATION,Development and Management of Real Estate,total,total_wages,1513.1739
+PROPERTY MANAGEMENT,Property Management,total,headcount,2047.557
+PROPERTY MANAGEMENT,Property Management,female,headcount,792.522
+PROPERTY MANAGEMENT,Property Management,total,total_wages,925.11209
+REAL ESTATE INTERMEDIARY SERVICES,Agency Services of Real Estate,total,headcount,246.03
+REAL ESTATE INTERMEDIARY SERVICES,Agency Services of Real Estate,female,headcount,97.458
+REAL ESTATE INTERMEDIARY SERVICES,Agency Services of Real Estate,total,total_wages,208.51771
+Leasing Industry,Leasing,total,headcount,121.77
+Leasing Industry,Leasing,female,headcount,28.042
+Leasing Industry,Leasing,total,total_wages,94.7548
+Business and Service Industry,Business Services,total,headcount,4762.355
+Business and Service Industry,Business Services,female,headcount,1570.605
+Business and Service Industry,Business Services,total,total_wages,3609.52395
+RESEARCH AND EXPERIMENTAL DEVELOPMENT,Research and Experimental Development,total,headcount,837.1
+RESEARCH AND EXPERIMENTAL DEVELOPMENT,Research and Experimental Development,female,headcount,298.487
+RESEARCH AND EXPERIMENTAL DEVELOPMENT,Research and Experimental Development,total,total_wages,942.49182
+PROFESSIONAL AND TECHNICAL SERVICES,Professional Technical Services,total,headcount,2676.53
+PROFESSIONAL AND TECHNICAL SERVICES,Professional Technical Services,female,headcount,775.119
+PROFESSIONAL AND TECHNICAL SERVICES,Professional Technical Services,total,total_wages,2527.66221
+TECHNOLOGY PROMOTION AND APPLICATION SERVICES,Science and Technology Popularization and,total,headcount,681.948
+TECHNOLOGY PROMOTION AND APPLICATION SERVICES,Science and Technology Popularization and,female,headcount,246.603
+TECHNOLOGY PROMOTION AND APPLICATION SERVICES,Science and Technology Popularization and,total,total_wages,567.11469
+Water Conservancy Management Industry,Management of Water Conservancy,total,headcount,466.843
+Water Conservancy Management Industry,Management of Water Conservancy,female,headcount,132.07
+Water Conservancy Management Industry,Management of Water Conservancy,total,total_wages,283.28059
+ECOLOGICAL PROTECTION AND ENVIRONMENTAL GOVERNANCE INDUSTRY,Ecological Protection and Environmental Treatment,total,headcount,132.55
+ECOLOGICAL PROTECTION AND ENVIRONMENTAL GOVERNANCE INDUSTRY,Ecological Protection and Environmental Treatment,female,headcount,42.262
+ECOLOGICAL PROTECTION AND ENVIRONMENTAL GOVERNANCE INDUSTRY,Ecological Protection and Environmental Treatment,total,total_wages,84.8259
+PUBLIC UTILITIES MANAGEMENT,Management of Public Facilities,total,headcount,2096.569
+PUBLIC UTILITIES MANAGEMENT,Management of Public Facilities,female,headcount,928.275
+PUBLIC UTILITIES MANAGEMENT,Management of Public Facilities,total,total_wages,910.12333
+Resident Services Industry,Service to Households,total,headcount,308.848
+Resident Services Industry,Service to Households,female,headcount,146.638
+Resident Services Industry,Service to Households,total,total_wages,153.79197
+"Motor Vehicles, Electronic Products, and Daily Necessities","Repair of Motor Vehicle, Electronics and Household",total,headcount,121.667
+"Motor Vehicles, Electronic Products, and Daily Necessities","Repair of Motor Vehicle, Electronics and Household",female,headcount,32.137
+"Motor Vehicles, Electronic Products, and Daily Necessities","Repair of Motor Vehicle, Electronics and Household",total,total_wages,68.42862
+OTHER SERVICES SECTOR,Other Services,total,headcount,323.242
+OTHER SERVICES SECTOR,Other Services,female,headcount,149.977
+OTHER SERVICES SECTOR,Other Services,total,total_wages,135.5554
+# Primary Education,Primary Education,total,headcount,5927.071
+# Primary Education,Primary Education,female,headcount,3534.832
+# Primary Education,Primary Education,total,total_wages,4062.21892
+Secondary Education,Secondary Education,total,headcount,7445.982
+Secondary Education,Secondary Education,female,headcount,3814.576
+Secondary Education,Secondary Education,total,total_wages,5456.50477
+HIGHER EDUCATION,Senior Education,total,headcount,2220.281
+HIGHER EDUCATION,Senior Education,female,headcount,1045.291
+HIGHER EDUCATION,Senior Education,total,total_wages,2185.59594
+HEALTH CARE,Health,total,headcount,8468.189
+HEALTH CARE,Health,female,headcount,5453.899
+HEALTH CARE,Health,total,total_wages,6709.95974
+SOCIAL WORK,Social Service,total,headcount,201.685
+SOCIAL WORK,Social Service,female,headcount,115.57
+SOCIAL WORK,Social Service,total,total_wages,115.59846
+NEWS AND PUBLISHING INDUSTRY,Journalism and Publishing Activities,total,headcount,325.197
+NEWS AND PUBLISHING INDUSTRY,Journalism and Publishing Activities,female,headcount,147.869
+NEWS AND PUBLISHING INDUSTRY,Journalism and Publishing Activities,total,total_wages,318.08842
+"BROADCASTING, TELEVISION, FILM, AND VIDEO RECORDING","Radio, Television, Motion Picture and Videotape Programme",total,headcount,466.129
+"BROADCASTING, TELEVISION, FILM, AND VIDEO RECORDING","Radio, Television, Motion Picture and Videotape Programme",female,headcount,194.008
+"BROADCASTING, TELEVISION, FILM, AND VIDEO RECORDING","Radio, Television, Motion Picture and Videotape Programme",total,total_wages,392.76893
+Cultural and Artistic Industry,Cultural and Art Activities,total,headcount,467.828
+Cultural and Artistic Industry,Cultural and Art Activities,female,headcount,228.245
+Cultural and Artistic Industry,Cultural and Art Activities,total,total_wages,310.86511
+Sports,Sports Activities,total,headcount,131.285
+Sports,Sports Activities,female,headcount,56.377
+Sports,Sports Activities,total,total_wages,116.85021
+Entertainment Industry,Entertainment,total,headcount,117.289
+Entertainment Industry,Entertainment,female,headcount,54.049
+Entertainment Industry,Entertainment,total,total_wages,65.86852
+COMMUNIST PARTY OF CHINA ORGANS,Organs of Communist Party of China,total,headcount,593.348
+COMMUNIST PARTY OF CHINA ORGANS,Organs of Communist Party of China,female,headcount,165.23
+COMMUNIST PARTY OF CHINA ORGANS,Organs of Communist Party of China,total,total_wages,458.41218
+NATIONAL ORGANIZATION,Government Agencies,total,headcount,15383.487
+NATIONAL ORGANIZATION,Government Agencies,female,headcount,4799.504
+NATIONAL ORGANIZATION,Government Agencies,total,total_wages,10828.15215
+"PEOPLE'S POLITICAL COUNCIL, DEMOCRATIC PARTIES",People's Political Consultative Conference and Democratic Parties,total,headcount,105.88
+"PEOPLE'S POLITICAL COUNCIL, DEMOCRATIC PARTIES",People's Political Consultative Conference and Democratic Parties,female,headcount,29.378
+"PEOPLE'S POLITICAL COUNCIL, DEMOCRATIC PARTIES",People's Political Consultative Conference and Democratic Parties,total,total_wages,89.32563
+SOCIAL SECURITY,Social Security,total,headcount,185.409
+SOCIAL SECURITY,Social Security,female,headcount,88.34
+SOCIAL SECURITY,Social Security,total,total_wages,113.68042
+"PEASANT MUNICIPALITIES, SOCIAL ORGANIZATIONS AND OTHERS","Non-Governmental Organizations, Social Organizations and",total,headcount,394.042
+"PEASANT MUNICIPALITIES, SOCIAL ORGANIZATIONS AND OTHERS","Non-Governmental Organizations, Social Organizations and",female,headcount,167.456
+"PEASANT MUNICIPALITIES, SOCIAL ORGANIZATIONS AND OTHERS","Non-Governmental Organizations, Social Organizations and",total,total_wages,273.15615

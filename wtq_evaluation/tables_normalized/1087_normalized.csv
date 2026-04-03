@@ -1,0 +1,137 @@
+section,category,vacancy_duration,repetition_id,wage_median
+,all vacant positions,vacant for less than 90 days,1,19.63
+,all vacant positions,vacant for 90 days or more,1,23.61
+,all vacant positions,vacant for less than 90 days,2,21.94
+,all vacant positions,vacant for 90 days or more,2,25.71
+main industrial sector,construction,vacant for less than 90 days,1,22.19
+main industrial sector,construction,vacant for 90 days or more,1,24.22
+main industrial sector,construction,vacant for less than 90 days,2,22.53
+main industrial sector,construction,vacant for 90 days or more,2,24.24
+main industrial sector,manufacturing,vacant for less than 90 days,1,20.48
+main industrial sector,manufacturing,vacant for 90 days or more,1,27.04
+main industrial sector,manufacturing,vacant for less than 90 days,2,20.99
+main industrial sector,manufacturing,vacant for 90 days or more,2,27.35
+main industrial sector,wholesale trade,vacant for less than 90 days,1,22.34
+main industrial sector,wholesale trade,vacant for 90 days or more,1,26.68
+main industrial sector,wholesale trade,vacant for less than 90 days,2,23.13
+main industrial sector,wholesale trade,vacant for 90 days or more,2,27.24
+main industrial sector,retail trade,vacant for less than 90 days,1,13.57
+main industrial sector,retail trade,vacant for 90 days or more,1,13.71
+main industrial sector,retail trade,vacant for less than 90 days,2,16.84
+main industrial sector,retail trade,vacant for 90 days or more,2,18.64
+main industrial sector,transportation and warehousing,vacant for less than 90 days,1,20.95
+main industrial sector,transportation and warehousing,vacant for 90 days or more,1,27.79
+main industrial sector,transportation and warehousing,vacant for less than 90 days,2,22.47
+main industrial sector,transportation and warehousing,vacant for 90 days or more,2,30.04
+main industrial sector,"professional, scientific and technical services",vacant for less than 90 days,1,27.78
+main industrial sector,"professional, scientific and technical services",vacant for 90 days or more,1,32.71
+main industrial sector,"professional, scientific and technical services",vacant for less than 90 days,2,29.2
+main industrial sector,"professional, scientific and technical services",vacant for 90 days or more,2,33.23
+main industrial sector,administrative and support services,vacant for less than 90 days,1,17.11
+main industrial sector,administrative and support services,vacant for 90 days or more,1,21.46
+main industrial sector,administrative and support services,vacant for less than 90 days,2,17.99
+main industrial sector,administrative and support services,vacant for 90 days or more,2,22.5
+main industrial sector,educational services,vacant for less than 90 days,1,26.82
+main industrial sector,educational services,vacant for 90 days or more,1,29.64
+main industrial sector,educational services,vacant for less than 90 days,2,27.42
+main industrial sector,educational services,vacant for 90 days or more,2,31.11
+main industrial sector,health care and social assistance,vacant for less than 90 days,1,22.95
+main industrial sector,health care and social assistance,vacant for 90 days or more,1,27.87
+main industrial sector,health care and social assistance,vacant for less than 90 days,2,24.61
+main industrial sector,health care and social assistance,vacant for 90 days or more,2,29.36
+main industrial sector,accommodation and food services,vacant for less than 90 days,1,12.32
+main industrial sector,accommodation and food services,vacant for 90 days or more,1,14.28
+main industrial sector,accommodation and food services,vacant for less than 90 days,2,13.05
+main industrial sector,accommodation and food services,vacant for 90 days or more,2,14.8
+main industrial sector,other,vacant for less than 90 days,1,22.11
+main industrial sector,other,vacant for 90 days or more,1,25.35
+main industrial sector,other,vacant for less than 90 days,2,24.17
+main industrial sector,other,vacant for 90 days or more,2,26.79
+occupational category,management,vacant for less than 90 days,1,33.89
+occupational category,management,vacant for 90 days or more,1,37.35
+occupational category,management,vacant for less than 90 days,2,35.3
+occupational category,management,vacant for 90 days or more,2,38.93
+occupational category,"business, finance and administration",vacant for less than 90 days,1,21.69
+occupational category,"business, finance and administration",vacant for 90 days or more,1,24.17
+occupational category,"business, finance and administration",vacant for less than 90 days,2,22.97
+occupational category,"business, finance and administration",vacant for 90 days or more,2,25.65
+occupational category,natural and applied sciences and related occupations,vacant for less than 90 days,1,29.54
+occupational category,natural and applied sciences and related occupations,vacant for 90 days or more,1,34.46
+occupational category,natural and applied sciences and related occupations,vacant for less than 90 days,2,29.75
+occupational category,natural and applied sciences and related occupations,vacant for 90 days or more,2,34.57
+occupational category,health,vacant for less than 90 days,1,25.36
+occupational category,health,vacant for 90 days or more,1,29.65
+occupational category,health,vacant for less than 90 days,2,26.73
+occupational category,health,vacant for 90 days or more,2,30.72
+occupational category,"education, law and social, community and government services",vacant for less than 90 days,1,23.88
+occupational category,"education, law and social, community and government services",vacant for 90 days or more,1,27.8
+occupational category,"education, law and social, community and government services",vacant for less than 90 days,2,25.41
+occupational category,"education, law and social, community and government services",vacant for 90 days or more,2,29.26
+occupational category,"art, culture, recreation and sport",vacant for less than 90 days,1,17.9
+occupational category,"art, culture, recreation and sport",vacant for 90 days or more,1,20.98
+occupational category,"art, culture, recreation and sport",vacant for less than 90 days,2,19.5
+occupational category,"art, culture, recreation and sport",vacant for 90 days or more,2,22.39
+occupational category,sales and service,vacant for less than 90 days,1,13.45
+occupational category,sales and service,vacant for 90 days or more,1,14.61
+occupational category,sales and service,vacant for less than 90 days,2,14.97
+occupational category,sales and service,vacant for 90 days or more,2,16.44
+occupational category,"trades, transport and equipment operators and related occupations",vacant for less than 90 days,1,20.19
+occupational category,"trades, transport and equipment operators and related occupations",vacant for 90 days or more,1,22.06
+occupational category,"trades, transport and equipment operators and related occupations",vacant for less than 90 days,2,20.84
+occupational category,"trades, transport and equipment operators and related occupations",vacant for 90 days or more,2,22.43
+occupational category,"natural resources, agriculture and related production occupations",vacant for less than 90 days,1,14.88
+occupational category,"natural resources, agriculture and related production occupations",vacant for 90 days or more,1,14.35
+occupational category,"natural resources, agriculture and related production occupations",vacant for less than 90 days,2,15.08
+occupational category,"natural resources, agriculture and related production occupations",vacant for 90 days or more,2,14.31
+occupational category,manufacturing and utilities,vacant for less than 90 days,1,15.93
+occupational category,manufacturing and utilities,vacant for 90 days or more,1,18.47
+occupational category,manufacturing and utilities,vacant for less than 90 days,2,16.2
+occupational category,manufacturing and utilities,vacant for 90 days or more,2,18.64
+level of education required,no minimum level of education sought,vacant for less than 90 days,1,13.7
+level of education required,no minimum level of education sought,vacant for 90 days or more,1,15.24
+level of education required,no minimum level of education sought,vacant for less than 90 days,2,15.05
+level of education required,no minimum level of education sought,vacant for 90 days or more,2,16.72
+level of education required,high school diploma or equivalent,vacant for less than 90 days,1,15.45
+level of education required,high school diploma or equivalent,vacant for 90 days or more,1,17.03
+level of education required,high school diploma or equivalent,vacant for less than 90 days,2,16.59
+level of education required,high school diploma or equivalent,vacant for 90 days or more,2,18.62
+level of education required,apprenticeship or trades certificate or diploma,vacant for less than 90 days,1,21.19
+level of education required,apprenticeship or trades certificate or diploma,vacant for 90 days or more,1,21.8
+level of education required,apprenticeship or trades certificate or diploma,vacant for less than 90 days,2,22.51
+level of education required,apprenticeship or trades certificate or diploma,vacant for 90 days or more,2,22.5
+level of education required,"college, cegep or other non-university certificate or diploma",vacant for less than 90 days,1,23.05
+level of education required,"college, cegep or other non-university certificate or diploma",vacant for 90 days or more,1,25.07
+level of education required,"college, cegep or other non-university certificate or diploma",vacant for less than 90 days,2,24.06
+level of education required,"college, cegep or other non-university certificate or diploma",vacant for 90 days or more,2,25.58
+level of education required,university certificate or diploma below bachelor's degree,vacant for less than 90 days,1,28.43
+level of education required,university certificate or diploma below bachelor's degree,vacant for 90 days or more,1,32.49
+level of education required,university certificate or diploma below bachelor's degree,vacant for less than 90 days,2,29.07
+level of education required,university certificate or diploma below bachelor's degree,vacant for 90 days or more,2,33.77
+level of education required,bachelor's degree,vacant for less than 90 days,1,34.4
+level of education required,bachelor's degree,vacant for 90 days or more,1,37.57
+level of education required,bachelor's degree,vacant for less than 90 days,2,34.87
+level of education required,bachelor's degree,vacant for 90 days or more,2,38.59
+level of education required,university certificate or diploma above bachelor's degree,vacant for less than 90 days,1,39.95
+level of education required,university certificate or diploma above bachelor's degree,vacant for 90 days or more,1,44.46
+level of education required,university certificate or diploma above bachelor's degree,vacant for less than 90 days,2,40.62
+level of education required,university certificate or diploma above bachelor's degree,vacant for 90 days or more,2,44.9
+work experience required,less than 1 year,vacant for less than 90 days,1,15.46
+work experience required,less than 1 year,vacant for 90 days or more,1,18.93
+work experience required,less than 1 year,vacant for less than 90 days,2,16.89
+work experience required,less than 1 year,vacant for 90 days or more,2,21.4
+work experience required,1 year to less than 3 years,vacant for less than 90 days,1,18.24
+work experience required,1 year to less than 3 years,vacant for 90 days or more,1,20.17
+work experience required,1 year to less than 3 years,vacant for less than 90 days,2,19.16
+work experience required,1 year to less than 3 years,vacant for 90 days or more,2,20.19
+work experience required,3 years to less than 5 years,vacant for less than 90 days,1,25.9
+work experience required,3 years to less than 5 years,vacant for 90 days or more,1,26.36
+work experience required,3 years to less than 5 years,vacant for less than 90 days,2,26.34
+work experience required,3 years to less than 5 years,vacant for 90 days or more,2,26.23
+work experience required,5 years to less than 8 years,vacant for less than 90 days,1,32.48
+work experience required,5 years to less than 8 years,vacant for 90 days or more,1,34.7
+work experience required,5 years to less than 8 years,vacant for less than 90 days,2,32.84
+work experience required,5 years to less than 8 years,vacant for 90 days or more,2,35.13
+work experience required,8 years or more,vacant for less than 90 days,1,47.04
+work experience required,8 years or more,vacant for 90 days or more,1,50.9
+work experience required,8 years or more,vacant for less than 90 days,2,48.05
+work experience required,8 years or more,vacant for 90 days or more,2,50.85

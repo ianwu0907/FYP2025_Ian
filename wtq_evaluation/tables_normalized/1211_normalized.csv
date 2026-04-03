@@ -1,0 +1,16 @@
+subgroup_type,subgroup_label,block_id,estimated_number_000,percentage,ci_from,ci_to
+sex,male,1,158,1.4,1.1,1.7
+sex,male,2,523,4.5,3.9,5.1
+sex,male,3,679,5.8,5.1,6.6
+sex,female,1,124,1.1,0.8,1.4
+sex,female,2,912,7.8,7.0,8.7
+sex,female,3,219,1.9,1.6,2.3
+age group,15 to 24,1,120,2.7,2.0,3.7
+age group,15 to 24,2,283,6.4,5.4,7.6
+age group,15 to 24,3,403,9.1,7.9,10.4
+age group,25 to 44,1,108,1.2,0.9,1.6
+age group,25 to 44,2,612,6.6,5.8,7.6
+age group,25 to 44,3,312,3.4,2.8,4.1
+age group,45 to 64,1,53,0.6,0.4,0.8
+age group,45 to 64,2,539,5.6,4.9,6.3
+age group,45 to 64,3,183,1.9,1.4,2.5

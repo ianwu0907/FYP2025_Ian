@@ -1,0 +1,217 @@
+section,subgroup,behaviour_or_discrimination_type,number,percent
+,class a only,any,4380,64.0
+,class a only,total sexualized behaviours,,62.0
+,class a only,inappropriate verbal or non-verbal communication,,61.0
+,class a only,sexually explicit materials,,8.5
+,class a only,physical contact or suggested sexual relations,,9.7
+,class a only,total discriminatory behaviours,,21.0
+,class a only,discrimination on the basis of sex,,20.0
+,class a only,discrimination on the basis of sexual orientation or gender identity,,5.3
+,class b/c only,any,4860,72.0
+,class b/c only,total sexualized behaviours,,71.0
+,class b/c only,inappropriate verbal or non-verbal communication,,70.0
+,class b/c only,sexually explicit materials,,10.0
+,class b/c only,physical contact or suggested sexual relations,,14.0
+,class b/c only,total discriminatory behaviours,,30.0
+,class b/c only,discrimination on the basis of sex,,29.0
+,class b/c only,discrimination on the basis of sexual orientation or gender identity,,7.5
+,mixed,any,10150,74.0
+,mixed,total sexualized behaviours,,73.0
+,mixed,inappropriate verbal or non-verbal communication,,72.0
+,mixed,sexually explicit materials,,14.0
+,mixed,physical contact or suggested sexual relations,,19.0
+,mixed,total discriminatory behaviours,,32.0
+,mixed,discrimination on the basis of sex,,31.0
+,mixed,discrimination on the basis of sexual orientation or gender identity,,7.1
+environmental command,canadian army,any,14050,72.0
+environmental command,canadian army,total sexualized behaviours,,71.0
+environmental command,canadian army,inappropriate verbal or non-verbal communication,,69.0
+environmental command,canadian army,sexually explicit materials,,13.0
+environmental command,canadian army,physical contact or suggested sexual relations,,16.0
+environmental command,canadian army,total discriminatory behaviours,,29.0
+environmental command,canadian army,discrimination on the basis of sex,,28.0
+environmental command,canadian army,discrimination on the basis of sexual orientation or gender identity,,6.6
+environmental command,royal canadian navy,any,2460,75.0
+environmental command,royal canadian navy,total sexualized behaviours,,73.0
+environmental command,royal canadian navy,inappropriate verbal or non-verbal communication,,71.0
+environmental command,royal canadian navy,sexually explicit materials,,9.1
+environmental command,royal canadian navy,physical contact or suggested sexual relations,,22.0
+environmental command,royal canadian navy,total discriminatory behaviours,,36.0
+environmental command,royal canadian navy,discrimination on the basis of sex,,35.0
+environmental command,royal canadian navy,discrimination on the basis of sexual orientation or gender identity,,8.1
+environmental command,royal canadian air force,any,1200,59.0
+environmental command,royal canadian air force,total sexualized behaviours,,58.0
+environmental command,royal canadian air force,inappropriate verbal or non-verbal communication,,56.0
+environmental command,royal canadian air force,sexually explicit materials,,5.7
+environmental command,royal canadian air force,physical contact or suggested sexual relations,,7.4
+environmental command,royal canadian air force,total discriminatory behaviours,,19.0
+environmental command,royal canadian air force,discrimination on the basis of sex,,17.0
+environmental command,royal canadian air force,discrimination on the basis of sexual orientation or gender identity,,4.3
+environmental command,military personnel command,any,1350,73.0
+environmental command,military personnel command,total sexualized behaviours,,72.0
+environmental command,military personnel command,inappropriate verbal or non-verbal communication,,71.0
+environmental command,military personnel command,sexually explicit materials,,6.5
+environmental command,military personnel command,physical contact or suggested sexual relations,,13.0
+environmental command,military personnel command,total discriminatory behaviours,,30.0
+environmental command,military personnel command,discrimination on the basis of sex,,29.0
+environmental command,military personnel command,discrimination on the basis of sexual orientation or gender identity,,7.8
+environmental command,other,any,480,67.0
+environmental command,other,total sexualized behaviours,,65.0
+environmental command,other,inappropriate verbal or non-verbal communication,,64.0
+environmental command,other,sexually explicit materials,,6.0
+environmental command,other,physical contact or suggested sexual relations,,10.0
+environmental command,other,total discriminatory behaviours,,25.0
+environmental command,other,discrimination on the basis of sex,,22.0
+environmental command,other,discrimination on the basis of sexual orientation or gender identity,,6.8
+gender,women,any,3430,78.0
+gender,women,total sexualized behaviours,,76.0
+gender,women,inappropriate verbal or non-verbal communication,,75.0
+gender,women,sexually explicit materials,,14.0
+gender,women,physical contact or suggested sexual relations,,28.0
+gender,women,total discriminatory behaviours,,43.0
+gender,women,discrimination on the basis of sex,,41.0
+gender,women,discrimination on the basis of sexual orientation or gender identity,,11.0
+gender,men,any,15990,70.0
+gender,men,total sexualized behaviours,,69.0
+gender,men,inappropriate verbal or non-verbal communication,,67.0
+gender,men,sexually explicit materials,,11.0
+gender,men,physical contact or suggested sexual relations,,13.0
+gender,men,total discriminatory behaviours,,26.0
+gender,men,discrimination on the basis of sex,,25.0
+gender,men,discrimination on the basis of sexual orientation or gender identity,,5.8
+indigenous identity,"indigenous (first nations, metis, inuit) person",any,780,72.0
+indigenous identity,"indigenous (first nations, metis, inuit) person",total sexualized behaviours,,70.0
+indigenous identity,"indigenous (first nations, metis, inuit) person",inappropriate verbal or non-verbal communication,,68.0
+indigenous identity,"indigenous (first nations, metis, inuit) person",sexually explicit materials,,15.0
+indigenous identity,"indigenous (first nations, metis, inuit) person",physical contact or suggested sexual relations,,20.0
+indigenous identity,"indigenous (first nations, metis, inuit) person",total discriminatory behaviours,,38.0
+indigenous identity,"indigenous (first nations, metis, inuit) person",discrimination on the basis of sex,,34.0
+indigenous identity,"indigenous (first nations, metis, inuit) person",discrimination on the basis of sexual orientation or gender identity,,11.0
+indigenous identity,non-indigenous person,any,18730,71.0
+indigenous identity,non-indigenous person,total sexualized behaviours,,70.0
+indigenous identity,non-indigenous person,inappropriate verbal or non-verbal communication,,69.0
+indigenous identity,non-indigenous person,sexually explicit materials,,11.0
+indigenous identity,non-indigenous person,physical contact or suggested sexual relations,,15.0
+indigenous identity,non-indigenous person,total discriminatory behaviours,,28.0
+indigenous identity,non-indigenous person,discrimination on the basis of sex,,27.0
+indigenous identity,non-indigenous person,discrimination on the basis of sexual orientation or gender identity,,6.6
+persons with disabilities,persons with disabilities,any,540,73.0
+persons with disabilities,persons with disabilities,total sexualized behaviours,,69.0
+persons with disabilities,persons with disabilities,inappropriate verbal or non-verbal communication,,66.0
+persons with disabilities,persons with disabilities,sexually explicit materials,,16.0
+persons with disabilities,persons with disabilities,physical contact or suggested sexual relations,,20.0
+persons with disabilities,persons with disabilities,total discriminatory behaviours,,40.0
+persons with disabilities,persons with disabilities,discrimination on the basis of sex,,38.0
+persons with disabilities,persons with disabilities,discrimination on the basis of sexual orientation or gender identity,,13.0
+persons with disabilities,persons without disabilities,any,18970,71.0
+persons with disabilities,persons without disabilities,total sexualized behaviours,,70.0
+persons with disabilities,persons without disabilities,inappropriate verbal or non-verbal communication,,69.0
+persons with disabilities,persons without disabilities,sexually explicit materials,,11.0
+persons with disabilities,persons without disabilities,physical contact or suggested sexual relations,,15.0
+persons with disabilities,persons without disabilities,total discriminatory behaviours,,29.0
+persons with disabilities,persons without disabilities,discrimination on the basis of sex,,27.0
+persons with disabilities,persons without disabilities,discrimination on the basis of sexual orientation or gender identity,,6.6
+visible minority,visible minority,any,2800,69.0
+visible minority,visible minority,total sexualized behaviours,,67.0
+visible minority,visible minority,inappropriate verbal or non-verbal communication,,66.0
+visible minority,visible minority,sexually explicit materials,,11.0
+visible minority,visible minority,physical contact or suggested sexual relations,,19.0
+visible minority,visible minority,total discriminatory behaviours,,30.0
+visible minority,visible minority,discrimination on the basis of sex,,29.0
+visible minority,visible minority,discrimination on the basis of sexual orientation or gender identity,,7.2
+visible minority,non-visible minority,any,16720,72.0
+visible minority,non-visible minority,total sexualized behaviours,,70.0
+visible minority,non-visible minority,inappropriate verbal or non-verbal communication,,69.0
+visible minority,non-visible minority,sexually explicit materials,,12.0
+visible minority,non-visible minority,physical contact or suggested sexual relations,,15.0
+visible minority,non-visible minority,total discriminatory behaviours,,29.0
+visible minority,non-visible minority,discrimination on the basis of sex,,27.0
+visible minority,non-visible minority,discrimination on the basis of sexual orientation or gender identity,,6.6
+rank,junior non-commissioned member,any,13250,72.0
+rank,junior non-commissioned member,total sexualized behaviours,,71.0
+rank,junior non-commissioned member,inappropriate verbal or non-verbal communication,,70.0
+rank,junior non-commissioned member,sexually explicit materials,,13.0
+rank,junior non-commissioned member,physical contact or suggested sexual relations,,18.0
+rank,junior non-commissioned member,total discriminatory behaviours,,31.0
+rank,junior non-commissioned member,discrimination on the basis of sex,,29.0
+rank,junior non-commissioned member,discrimination on the basis of sexual orientation or gender identity,,7.3
+rank,senior non-commissioned member,any,3070,71.0
+rank,senior non-commissioned member,total sexualized behaviours,,70.0
+rank,senior non-commissioned member,inappropriate verbal or non-verbal communication,,69.0
+rank,senior non-commissioned member,sexually explicit materials,,9.8
+rank,senior non-commissioned member,physical contact or suggested sexual relations,,10.0
+rank,senior non-commissioned member,total discriminatory behaviours,,24.0
+rank,senior non-commissioned member,discrimination on the basis of sex,,24.0
+rank,senior non-commissioned member,discrimination on the basis of sexual orientation or gender identity,,5.8
+rank,junior officer,any,2370,71.0
+rank,junior officer,total sexualized behaviours,,69.0
+rank,junior officer,inappropriate verbal or non-verbal communication,,68.0
+rank,junior officer,sexually explicit materials,,8.7
+rank,junior officer,physical contact or suggested sexual relations,,13.0
+rank,junior officer,total discriminatory behaviours,,29.0
+rank,junior officer,discrimination on the basis of sex,,28.0
+rank,junior officer,discrimination on the basis of sexual orientation or gender identity,,5.9
+rank,senior officer,any,870,60.0
+rank,senior officer,total sexualized behaviours,,57.0
+rank,senior officer,inappropriate verbal or non-verbal communication,,55.0
+rank,senior officer,sexually explicit materials,,4.5
+rank,senior officer,physical contact or suggested sexual relations,,6.3
+rank,senior officer,total discriminatory behaviours,,21.0
+rank,senior officer,discrimination on the basis of sex,,20.0
+rank,senior officer,discrimination on the basis of sexual orientation or gender identity,,4.8
+age group,24 years and younger,any,6850,73.0
+age group,24 years and younger,total sexualized behaviours,,71.0
+age group,24 years and younger,inappropriate verbal or non-verbal communication,,70.0
+age group,24 years and younger,sexually explicit materials,,13.0
+age group,24 years and younger,physical contact or suggested sexual relations,,21.0
+age group,24 years and younger,total discriminatory behaviours,,31.0
+age group,24 years and younger,discrimination on the basis of sex,,30.0
+age group,24 years and younger,discrimination on the basis of sexual orientation or gender identity,,6.8
+age group,25 to 29 years,any,4030,76.0
+age group,25 to 29 years,total sexualized behaviours,,75.0
+age group,25 to 29 years,inappropriate verbal or non-verbal communication,,75.0
+age group,25 to 29 years,sexually explicit materials,,15.0
+age group,25 to 29 years,physical contact or suggested sexual relations,,18.0
+age group,25 to 29 years,total discriminatory behaviours,,34.0
+age group,25 to 29 years,discrimination on the basis of sex,,33.0
+age group,25 to 29 years,discrimination on the basis of sexual orientation or gender identity,,7.9
+age group,30 to 34 years,any,2730,78.0
+age group,30 to 34 years,total sexualized behaviours,,77.0
+age group,30 to 34 years,inappropriate verbal or non-verbal communication,,76.0
+age group,30 to 34 years,sexually explicit materials,,14.0
+age group,30 to 34 years,physical contact or suggested sexual relations,,15.0
+age group,30 to 34 years,total discriminatory behaviours,,33.0
+age group,30 to 34 years,discrimination on the basis of sex,,33.0
+age group,30 to 34 years,discrimination on the basis of sexual orientation or gender identity,,8.6
+age group,35 to 39 years,any,1730,72.0
+age group,35 to 39 years,total sexualized behaviours,,71.0
+age group,35 to 39 years,inappropriate verbal or non-verbal communication,,70.0
+age group,35 to 39 years,sexually explicit materials,,10.0
+age group,35 to 39 years,physical contact or suggested sexual relations,,13.0
+age group,35 to 39 years,total discriminatory behaviours,,27.0
+age group,35 to 39 years,discrimination on the basis of sex,,26.0
+age group,35 to 39 years,discrimination on the basis of sexual orientation or gender identity,,6.0
+age group,40 to 44 years,any,1100,64.0
+age group,40 to 44 years,total sexualized behaviours,,62.0
+age group,40 to 44 years,inappropriate verbal or non-verbal communication,,62.0
+age group,40 to 44 years,sexually explicit materials,,7.9
+age group,40 to 44 years,physical contact or suggested sexual relations,,8.9
+age group,40 to 44 years,total discriminatory behaviours,,22.0
+age group,40 to 44 years,discrimination on the basis of sex,,21.0
+age group,40 to 44 years,discrimination on the basis of sexual orientation or gender identity,,5.3
+age group,45 to 49 years,any,1180,64.0
+age group,45 to 49 years,total sexualized behaviours,,62.0
+age group,45 to 49 years,inappropriate verbal or non-verbal communication,,60.0
+age group,45 to 49 years,sexually explicit materials,,7.6
+age group,45 to 49 years,physical contact or suggested sexual relations,,8.5
+age group,45 to 49 years,total discriminatory behaviours,,21.0
+age group,45 to 49 years,discrimination on the basis of sex,,20.0
+age group,45 to 49 years,discrimination on the basis of sexual orientation or gender identity,,4.5
+age group,50 years and older,any,1950,59.0
+age group,50 years and older,total sexualized behaviours,,57.0
+age group,50 years and older,inappropriate verbal or non-verbal communication,,56.0
+age group,50 years and older,sexually explicit materials,,4.7
+age group,50 years and older,physical contact or suggested sexual relations,,5.7
+age group,50 years and older,total discriminatory behaviours,,19.0
+age group,50 years and older,discrimination on the basis of sex,,17.0
+age group,50 years and older,discrimination on the basis of sexual orientation or gender identity,,5.2

@@ -1,0 +1,77 @@
+indicator_category,subgroup,group,metric_type,value
+overall,overall,men,percent,62.2
+overall,overall,women,percent,58.6
+overall,overall,men,percent,21.5
+overall,overall,women,percent,14.7
+18 to 24,18 to 24,men,percent,56.1
+18 to 24,18 to 24,women,percent,58.0
+18 to 24,18 to 24,men,percent,12.4
+18 to 24,18 to 24,women,percent,13.8
+25 to 34,25 to 34,men,percent,61.5
+25 to 34,25 to 34,women,percent,58.5
+25 to 34,25 to 34,men,percent,19.9
+25 to 34,25 to 34,women,percent,14.7
+35 to 54,35 to 54,men,percent,65.1
+35 to 54,35 to 54,women,percent,61.8
+35 to 54,35 to 54,men,percent,23.7
+35 to 54,35 to 54,women,percent,16.3
+55 to 64,55 to 64,men,percent,66.7
+55 to 64,55 to 64,women,percent,60.4
+55 to 64,55 to 64,men,percent,31.2
+55 to 64,55 to 64,women,percent,15.6
+65 and over,65 and over,men,percent,58.5
+65 and over,65 and over,women,percent,51.2
+65 and over,65 and over,men,percent,18.5
+65 and over,65 and over,women,percent,11.6
+high school or less,high school or less,men,percent,53.9
+high school or less,high school or less,women,percent,52.3
+high school or less,high school or less,men,percent,15.6
+high school or less,high school or less,women,percent,10.9
+some postsecondary,some postsecondary,men,percent,62.7
+some postsecondary,some postsecondary,women,percent,60.4
+some postsecondary,some postsecondary,men,percent,20.0
+some postsecondary,some postsecondary,women,percent,15.8
+university degree,university degree,men,percent,72.6
+university degree,university degree,women,percent,64.3
+university degree,university degree,men,percent,31.5
+university degree,university degree,women,percent,18.4
+canadian-born,canadian-born,men,percent,64.5
+canadian-born,canadian-born,women,percent,61.2
+canadian-born,canadian-born,men,percent,23.6
+canadian-born,canadian-born,women,percent,16.6
+immigrant,immigrant,men,percent,54.3
+immigrant,immigrant,women,percent,48.4
+immigrant,immigrant,men,percent,14.4
+immigrant,immigrant,women,percent,7.6
+not working,not working,men,percent,54.5
+not working,not working,women,percent,53.0
+not working,not working,men,percent,12.6
+not working,not working,women,percent,12.7
+retired,retired,men,percent,57.4
+retired,retired,women,percent,55.2
+retired,retired,men,percent,18.8
+retired,retired,women,percent,13.0
+bottom income quartile,bottom income quartile,men,percent,57.9
+bottom income quartile,bottom income quartile,women,percent,56.1
+bottom income quartile,bottom income quartile,men,percent,17.0
+bottom income quartile,bottom income quartile,women,percent,13.8
+2nd and 3rd income quartile,2nd and 3rd income quartile,men,percent,63.9
+2nd and 3rd income quartile,2nd and 3rd income quartile,women,percent,61.1
+2nd and 3rd income quartile,2nd and 3rd income quartile,men,percent,22.6
+2nd and 3rd income quartile,2nd and 3rd income quartile,women,percent,15.0
+top income quartile,top income quartile,men,percent,74.8
+top income quartile,top income quartile,women,percent,68.5
+top income quartile,top income quartile,men,percent,34.2
+top income quartile,top income quartile,women,percent,20.5
+married or common law,married or common law,men,percent,64.5
+married or common law,married or common law,women,percent,60.6
+married or common law,married or common law,men,percent,24.3
+married or common law,married or common law,women,percent,16.1
+"separated, divorced or widowed","separated, divorced or widowed",men,percent,60.1
+"separated, divorced or widowed","separated, divorced or widowed",women,percent,54.9
+"separated, divorced or widowed","separated, divorced or widowed",men,percent,21.5
+"separated, divorced or widowed","separated, divorced or widowed",women,percent,13.0
+"single, never married","single, never married",men,percent,57.9
+"single, never married","single, never married",women,percent,55.9
+"single, never married","single, never married",men,percent,15.5
+"single, never married","single, never married",women,percent,12.5

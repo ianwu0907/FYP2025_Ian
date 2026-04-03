@@ -1,0 +1,4001 @@
+age_group,education_level,marital_status,sex,count
+15,Total,Unmarried,Male,844803
+15,Total,Unmarried,Female,740863
+15,Total,With Spouse,Male,160
+15,Total,With Spouse,Female,646
+15,Total,Divorced,Male,1
+15,Total,Divorced,Female,3
+15,Total,Widowed,Male,1
+15,Total,Widowed,Female,0
+16,Total,Unmarried,Male,933657
+16,Total,Unmarried,Female,816619
+16,Total,With Spouse,Male,478
+16,Total,With Spouse,Female,2190
+16,Total,Divorced,Male,3
+16,Total,Divorced,Female,20
+16,Total,Widowed,Male,2
+16,Total,Widowed,Female,2
+17,Total,Unmarried,Male,824821
+17,Total,Unmarried,Female,716750
+17,Total,With Spouse,Male,1382
+17,Total,With Spouse,Female,5126
+17,Total,Divorced,Male,19
+17,Total,Divorced,Female,45
+17,Total,Widowed,Male,1
+17,Total,Widowed,Female,5
+18,Total,Unmarried,Male,752915
+18,Total,Unmarried,Female,646197
+18,Total,With Spouse,Male,3098
+18,Total,With Spouse,Female,11020
+18,Total,Divorced,Male,37
+18,Total,Divorced,Female,111
+18,Total,Widowed,Male,1
+18,Total,Widowed,Female,11
+19,Total,Unmarried,Male,769398
+19,Total,Unmarried,Female,689659
+19,Total,With Spouse,Male,6616
+19,Total,With Spouse,Female,21446
+19,Total,Divorced,Male,104
+19,Total,Divorced,Female,185
+19,Total,Widowed,Male,4
+19,Total,Widowed,Female,16
+20,Total,Unmarried,Male,772588
+20,Total,Unmarried,Female,686292
+20,Total,With Spouse,Male,13743
+20,Total,With Spouse,Female,42799
+20,Total,Divorced,Male,216
+20,Total,Divorced,Female,437
+20,Total,Widowed,Male,11
+20,Total,Widowed,Female,30
+21,Total,Unmarried,Male,700986
+21,Total,Unmarried,Female,599815
+21,Total,With Spouse,Male,26104
+21,Total,With Spouse,Female,72669
+21,Total,Divorced,Male,398
+21,Total,Divorced,Female,801
+21,Total,Widowed,Male,14
+21,Total,Widowed,Female,44
+22,Total,Unmarried,Male,704019
+22,Total,Unmarried,Female,568170
+22,Total,With Spouse,Male,54548
+22,Total,With Spouse,Female,124761
+22,Total,Divorced,Male,843
+22,Total,Divorced,Female,1563
+22,Total,Widowed,Male,24
+22,Total,Widowed,Female,92
+23,Total,Unmarried,Male,655912
+23,Total,Unmarried,Female,505267
+23,Total,With Spouse,Male,91842
+23,Total,With Spouse,Female,181244
+23,Total,Divorced,Male,1482
+23,Total,Divorced,Female,2432
+23,Total,Widowed,Male,41
+23,Total,Widowed,Female,121
+24,Total,Unmarried,Male,629268
+24,Total,Unmarried,Female,456834
+24,Total,With Spouse,Male,144873
+24,Total,With Spouse,Female,256181
+24,Total,Divorced,Male,2572
+24,Total,Divorced,Female,4004
+24,Total,Widowed,Male,54
+24,Total,Widowed,Female,179
+25,Total,Unmarried,Male,617366
+25,Total,Unmarried,Female,414845
+25,Total,With Spouse,Male,225211
+25,Total,With Spouse,Female,359929
+25,Total,Divorced,Male,4424
+25,Total,Divorced,Female,5958
+25,Total,Widowed,Male,95
+25,Total,Widowed,Female,270
+26,Total,Unmarried,Male,530136
+26,Total,Unmarried,Female,329916
+26,Total,With Spouse,Male,298955
+26,Total,With Spouse,Female,435502
+26,Total,Divorced,Male,6492
+26,Total,Divorced,Female,7977
+26,Total,Widowed,Male,116
+26,Total,Widowed,Female,390
+27,Total,Unmarried,Male,490692
+27,Total,Unmarried,Female,277396
+27,Total,With Spouse,Male,415655
+27,Total,With Spouse,Female,566291
+27,Total,Divorced,Male,9995
+27,Total,Divorced,Female,11088
+27,Total,Widowed,Male,175
+27,Total,Widowed,Female,509
+28,Total,Unmarried,Male,426183
+28,Total,Unmarried,Female,219580
+28,Total,With Spouse,Male,523749
+28,Total,With Spouse,Female,662000
+28,Total,Divorced,Male,14176
+28,Total,Divorced,Female,14247
+28,Total,Widowed,Male,255
+28,Total,Widowed,Female,686
+29,Total,Unmarried,Male,376509
+29,Total,Unmarried,Female,179540
+29,Total,With Spouse,Male,651617
+29,Total,With Spouse,Female,776772
+29,Total,Divorced,Male,19713
+29,Total,Divorced,Female,18243
+29,Total,Widowed,Male,329
+29,Total,Widowed,Female,935
+30,Total,Unmarried,Male,386298
+30,Total,Unmarried,Female,174540
+30,Total,With Spouse,Male,911350
+30,Total,With Spouse,Female,1048928
+30,Total,Divorced,Male,29837
+30,Total,Divorced,Female,25968
+30,Total,Widowed,Male,592
+30,Total,Widowed,Female,1373
+31,Total,Unmarried,Male,305168
+31,Total,Unmarried,Female,131841
+31,Total,With Spouse,Male,956967
+31,Total,With Spouse,Female,1072645
+31,Total,Divorced,Male,34680
+31,Total,Divorced,Female,29612
+31,Total,Widowed,Male,715
+31,Total,Widowed,Female,1795
+32,Total,Unmarried,Male,238005
+32,Total,Unmarried,Female,102145
+32,Total,With Spouse,Male,950633
+32,Total,With Spouse,Female,1039220
+32,Total,Divorced,Male,37388
+32,Total,Divorced,Female,31549
+32,Total,Widowed,Male,833
+32,Total,Widowed,Female,2064
+33,Total,Unmarried,Male,214816
+33,Total,Unmarried,Female,88776
+33,Total,With Spouse,Male,1072055
+33,Total,With Spouse,Female,1141961
+33,Total,Divorced,Male,45509
+33,Total,Divorced,Female,37133
+33,Total,Widowed,Male,982
+33,Total,Widowed,Female,2688
+34,Total,Unmarried,Male,161235
+34,Total,Unmarried,Female,66624
+34,Total,With Spouse,Male,963052
+34,Total,With Spouse,Female,1007825
+34,Total,Divorced,Male,43177
+34,Total,Divorced,Female,34874
+34,Total,Widowed,Male,1022
+34,Total,Widowed,Female,2776
+35,Total,Unmarried,Male,121137
+35,Total,Unmarried,Female,49809
+35,Total,With Spouse,Male,848834
+35,Total,With Spouse,Female,867823
+35,Total,Divorced,Male,39266
+35,Total,Divorced,Female,31102
+35,Total,Widowed,Male,1028
+35,Total,Widowed,Female,2973
+36,Total,Unmarried,Male,103953
+36,Total,Unmarried,Female,43164
+36,Total,With Spouse,Male,859775
+36,Total,With Spouse,Female,868540
+36,Total,Divorced,Male,40271
+36,Total,Divorced,Female,32018
+36,Total,Widowed,Male,1108
+36,Total,Widowed,Female,3373
+37,Total,Unmarried,Male,90227
+37,Total,Unmarried,Female,38009
+37,Total,With Spouse,Male,851994
+37,Total,With Spouse,Female,849775
+37,Total,Divorced,Male,41147
+37,Total,Divorced,Female,32965
+37,Total,Widowed,Male,1270
+37,Total,Widowed,Female,3854
+38,Total,Unmarried,Male,90956
+38,Total,Unmarried,Female,38083
+38,Total,With Spouse,Male,984703
+38,Total,With Spouse,Female,976051
+38,Total,Divorced,Male,49742
+38,Total,Divorced,Female,39468
+38,Total,Widowed,Male,1636
+38,Total,Widowed,Female,5025
+39,Total,Unmarried,Male,71684
+39,Total,Unmarried,Female,28785
+39,Total,With Spouse,Male,864343
+39,Total,With Spouse,Female,856683
+39,Total,Divorced,Male,43338
+39,Total,Divorced,Female,34623
+39,Total,Widowed,Male,1616
+39,Total,Widowed,Female,5129
+40,Total,Unmarried,Male,60272
+40,Total,Unmarried,Female,23435
+40,Total,With Spouse,Male,798786
+40,Total,With Spouse,Female,788408
+40,Total,Divorced,Male,40074
+40,Total,Divorced,Female,32338
+40,Total,Widowed,Male,1820
+40,Total,Widowed,Female,5788
+41,Total,Unmarried,Male,60206
+41,Total,Unmarried,Female,21391
+41,Total,With Spouse,Male,886403
+41,Total,With Spouse,Female,868184
+41,Total,Divorced,Male,45610
+41,Total,Divorced,Female,36930
+41,Total,Widowed,Male,2413
+41,Total,Widowed,Female,7394
+42,Total,Unmarried,Male,53402
+42,Total,Unmarried,Female,18831
+42,Total,With Spouse,Male,848104
+42,Total,With Spouse,Female,833585
+42,Total,Divorced,Male,42810
+42,Total,Divorced,Female,35945
+42,Total,Widowed,Male,2583
+42,Total,Widowed,Female,8388
+43,Total,Unmarried,Male,48739
+43,Total,Unmarried,Female,16123
+43,Total,With Spouse,Male,814976
+43,Total,With Spouse,Female,796056
+43,Total,Divorced,Male,41368
+43,Total,Divorced,Female,34913
+43,Total,Widowed,Male,3050
+43,Total,Widowed,Female,9087
+44,Total,Unmarried,Male,50664
+44,Total,Unmarried,Female,15717
+44,Total,With Spouse,Male,908747
+44,Total,With Spouse,Female,885965
+44,Total,Divorced,Male,44586
+44,Total,Divorced,Female,37742
+44,Total,Widowed,Male,3825
+44,Total,Widowed,Female,11674
+45,Total,Unmarried,Male,50714
+45,Total,Unmarried,Female,14723
+45,Total,With Spouse,Male,929386
+45,Total,With Spouse,Female,909973
+45,Total,Divorced,Male,44972
+45,Total,Divorced,Female,38567
+45,Total,Widowed,Male,4486
+45,Total,Widowed,Female,13891
+46,Total,Unmarried,Male,52876
+46,Total,Unmarried,Female,14677
+46,Total,With Spouse,Male,1017868
+46,Total,With Spouse,Female,1000834
+46,Total,Divorced,Male,47541
+46,Total,Divorced,Female,40793
+46,Total,Widowed,Male,5664
+46,Total,Widowed,Female,17241
+47,Total,Unmarried,Male,52252
+47,Total,Unmarried,Female,14528
+47,Total,With Spouse,Male,1069195
+47,Total,With Spouse,Female,1043930
+47,Total,Divorced,Male,48282
+47,Total,Divorced,Female,42611
+47,Total,Widowed,Male,6769
+47,Total,Widowed,Female,20483
+48,Total,Unmarried,Male,50710
+48,Total,Unmarried,Female,13056
+48,Total,With Spouse,Male,1095793
+48,Total,With Spouse,Female,1072910
+48,Total,Divorced,Male,48015
+48,Total,Divorced,Female,42466
+48,Total,Widowed,Male,8026
+48,Total,Widowed,Female,23860
+49,Total,Unmarried,Male,50027
+49,Total,Unmarried,Female,12316
+49,Total,With Spouse,Male,1134544
+49,Total,With Spouse,Female,1104314
+49,Total,Divorced,Male,48112
+49,Total,Divorced,Female,42658
+49,Total,Widowed,Male,9223
+49,Total,Widowed,Female,27993
+50,Total,Unmarried,Male,48963
+50,Total,Unmarried,Female,11363
+50,Total,With Spouse,Male,1188439
+50,Total,With Spouse,Female,1176457
+50,Total,Divorced,Male,49029
+50,Total,Divorced,Female,43815
+50,Total,Widowed,Male,11599
+50,Total,Widowed,Female,35164
+51,Total,Unmarried,Male,43248
+51,Total,Unmarried,Female,8864
+51,Total,With Spouse,Male,1115599
+51,Total,With Spouse,Female,1100599
+51,Total,Divorced,Male,44333
+51,Total,Divorced,Female,39759
+51,Total,Widowed,Male,13419
+51,Total,Widowed,Female,39138
+52,Total,Unmarried,Male,43237
+52,Total,Unmarried,Female,8653
+52,Total,With Spouse,Male,1194062
+52,Total,With Spouse,Female,1179980
+52,Total,Divorced,Male,45225
+52,Total,Divorced,Female,39886
+52,Total,Widowed,Male,16322
+52,Total,Widowed,Female,48156
+53,Total,Unmarried,Male,33931
+53,Total,Unmarried,Female,6058
+53,Total,With Spouse,Male,951928
+53,Total,With Spouse,Female,945172
+53,Total,Divorced,Male,33403
+53,Total,Divorced,Female,28676
+53,Total,Widowed,Male,15174
+53,Total,Widowed,Female,45104
+54,Total,Unmarried,Male,36767
+54,Total,Unmarried,Female,6088
+54,Total,With Spouse,Male,1078951
+54,Total,With Spouse,Female,1055352
+54,Total,Divorced,Male,36610
+54,Total,Divorced,Female,31320
+54,Total,Widowed,Male,19563
+54,Total,Widowed,Female,56774
+55,Total,Unmarried,Male,33816
+55,Total,Unmarried,Female,5654
+55,Total,With Spouse,Male,1053268
+55,Total,With Spouse,Female,1031025
+55,Total,Divorced,Male,35931
+55,Total,Divorced,Female,31532
+55,Total,Widowed,Male,21481
+55,Total,Widowed,Female,63470
+56,Total,Unmarried,Male,32007
+56,Total,Unmarried,Female,5300
+56,Total,With Spouse,Male,1021190
+56,Total,With Spouse,Female,1004945
+56,Total,Divorced,Male,35120
+56,Total,Divorced,Female,31924
+56,Total,Widowed,Male,22764
+56,Total,Widowed,Female,70137
+57,Total,Unmarried,Male,35161
+57,Total,Unmarried,Female,5748
+57,Total,With Spouse,Male,1186450
+57,Total,With Spouse,Female,1147005
+57,Total,Divorced,Male,39441
+57,Total,Divorced,Female,36184
+57,Total,Widowed,Male,29265
+57,Total,Widowed,Female,88296
+58,Total,Unmarried,Male,24163
+58,Total,Unmarried,Female,4041
+58,Total,With Spouse,Male,860670
+58,Total,With Spouse,Female,842344
+58,Total,Divorced,Male,26404
+58,Total,Divorced,Female,23864
+58,Total,Widowed,Male,24022
+58,Total,Widowed,Female,73587
+59,Total,Unmarried,Male,13107
+59,Total,Unmarried,Female,2374
+59,Total,With Spouse,Male,462063
+59,Total,With Spouse,Female,466897
+59,Total,Divorced,Male,15383
+59,Total,Divorced,Female,13882
+59,Total,Widowed,Male,14324
+59,Total,Widowed,Female,45923
+60,Total,Unmarried,Male,16617
+60,Total,Unmarried,Female,2614
+60,Total,With Spouse,Male,573911
+60,Total,With Spouse,Female,553958
+60,Total,Divorced,Male,18880
+60,Total,Divorced,Female,16720
+60,Total,Widowed,Male,21035
+60,Total,Widowed,Female,62000
+61,Total,Unmarried,Male,16994
+61,Total,Unmarried,Female,2216
+61,Total,With Spouse,Male,544594
+61,Total,With Spouse,Female,509447
+61,Total,Divorced,Male,16525
+61,Total,Divorced,Female,13438
+61,Total,Widowed,Male,23484
+61,Total,Widowed,Female,64792
+62,Total,Unmarried,Male,23724
+62,Total,Unmarried,Female,2632
+62,Total,With Spouse,Male,689598
+62,Total,With Spouse,Female,645018
+62,Total,Divorced,Male,19252
+62,Total,Divorced,Female,15508
+62,Total,Widowed,Male,33069
+62,Total,Widowed,Female,90307
+63,Total,Unmarried,Male,26487
+63,Total,Unmarried,Female,2592
+63,Total,With Spouse,Male,766634
+63,Total,With Spouse,Female,716427
+63,Total,Divorced,Male,18876
+63,Total,Divorced,Female,15245
+63,Total,Widowed,Male,41244
+63,Total,Widowed,Female,108864
+64,Total,Unmarried,Male,23884
+64,Total,Unmarried,Female,2371
+64,Total,With Spouse,Male,679999
+64,Total,With Spouse,Female,653268
+64,Total,Divorced,Male,15806
+64,Total,Divorced,Female,12920
+64,Total,Widowed,Male,40921
+64,Total,Widowed,Female,110460
+15,Never attended school,Unmarried,Male,1347
+15,Never attended school,Unmarried,Female,888
+15,Never attended school,With Spouse,Male,1
+15,Never attended school,With Spouse,Female,9
+15,Never attended school,Divorced,Male,0
+15,Never attended school,Divorced,Female,0
+15,Never attended school,Widowed,Male,0
+15,Never attended school,Widowed,Female,0
+16,Never attended school,Unmarried,Male,1428
+16,Never attended school,Unmarried,Female,942
+16,Never attended school,With Spouse,Male,3
+16,Never attended school,With Spouse,Female,15
+16,Never attended school,Divorced,Male,0
+16,Never attended school,Divorced,Female,0
+16,Never attended school,Widowed,Male,0
+16,Never attended school,Widowed,Female,0
+17,Never attended school,Unmarried,Male,1350
+17,Never attended school,Unmarried,Female,1008
+17,Never attended school,With Spouse,Male,5
+17,Never attended school,With Spouse,Female,35
+17,Never attended school,Divorced,Male,0
+17,Never attended school,Divorced,Female,0
+17,Never attended school,Widowed,Male,0
+17,Never attended school,Widowed,Female,0
+18,Never attended school,Unmarried,Male,1613
+18,Never attended school,Unmarried,Female,1079
+18,Never attended school,With Spouse,Male,12
+18,Never attended school,With Spouse,Female,97
+18,Never attended school,Divorced,Male,0
+18,Never attended school,Divorced,Female,2
+18,Never attended school,Widowed,Male,0
+18,Never attended school,Widowed,Female,0
+19,Never attended school,Unmarried,Male,1710
+19,Never attended school,Unmarried,Female,1200
+19,Never attended school,With Spouse,Male,18
+19,Never attended school,With Spouse,Female,156
+19,Never attended school,Divorced,Male,1
+19,Never attended school,Divorced,Female,7
+19,Never attended school,Widowed,Male,0
+19,Never attended school,Widowed,Female,1
+20,Never attended school,Unmarried,Male,1923
+20,Never attended school,Unmarried,Female,1325
+20,Never attended school,With Spouse,Male,40
+20,Never attended school,With Spouse,Female,317
+20,Never attended school,Divorced,Male,0
+20,Never attended school,Divorced,Female,6
+20,Never attended school,Widowed,Male,1
+20,Never attended school,Widowed,Female,0
+21,Never attended school,Unmarried,Male,1870
+21,Never attended school,Unmarried,Female,1164
+21,Never attended school,With Spouse,Male,89
+21,Never attended school,With Spouse,Female,463
+21,Never attended school,Divorced,Male,1
+21,Never attended school,Divorced,Female,13
+21,Never attended school,Widowed,Male,1
+21,Never attended school,Widowed,Female,1
+22,Never attended school,Unmarried,Male,2003
+22,Never attended school,Unmarried,Female,1166
+22,Never attended school,With Spouse,Male,118
+22,Never attended school,With Spouse,Female,637
+22,Never attended school,Divorced,Male,5
+22,Never attended school,Divorced,Female,17
+22,Never attended school,Widowed,Male,1
+22,Never attended school,Widowed,Female,1
+23,Never attended school,Unmarried,Male,1932
+23,Never attended school,Unmarried,Female,1169
+23,Never attended school,With Spouse,Male,189
+23,Never attended school,With Spouse,Female,805
+23,Never attended school,Divorced,Male,2
+23,Never attended school,Divorced,Female,19
+23,Never attended school,Widowed,Male,0
+23,Never attended school,Widowed,Female,3
+24,Never attended school,Unmarried,Male,1969
+24,Never attended school,Unmarried,Female,1117
+24,Never attended school,With Spouse,Male,230
+24,Never attended school,With Spouse,Female,1031
+24,Never attended school,Divorced,Male,4
+24,Never attended school,Divorced,Female,31
+24,Never attended school,Widowed,Male,1
+24,Never attended school,Widowed,Female,4
+25,Never attended school,Unmarried,Male,2087
+25,Never attended school,Unmarried,Female,1177
+25,Never attended school,With Spouse,Male,377
+25,Never attended school,With Spouse,Female,1277
+25,Never attended school,Divorced,Male,9
+25,Never attended school,Divorced,Female,37
+25,Never attended school,Widowed,Male,4
+25,Never attended school,Widowed,Female,2
+26,Never attended school,Unmarried,Male,2026
+26,Never attended school,Unmarried,Female,1019
+26,Never attended school,With Spouse,Male,439
+26,Never attended school,With Spouse,Female,1516
+26,Never attended school,Divorced,Male,11
+26,Never attended school,Divorced,Female,38
+26,Never attended school,Widowed,Male,0
+26,Never attended school,Widowed,Female,14
+27,Never attended school,Unmarried,Male,2096
+27,Never attended school,Unmarried,Female,986
+27,Never attended school,With Spouse,Male,590
+27,Never attended school,With Spouse,Female,1701
+27,Never attended school,Divorced,Male,23
+27,Never attended school,Divorced,Female,53
+27,Never attended school,Widowed,Male,2
+27,Never attended school,Widowed,Female,14
+28,Never attended school,Unmarried,Male,2140
+28,Never attended school,Unmarried,Female,959
+28,Never attended school,With Spouse,Male,721
+28,Never attended school,With Spouse,Female,2117
+28,Never attended school,Divorced,Male,39
+28,Never attended school,Divorced,Female,71
+28,Never attended school,Widowed,Male,0
+28,Never attended school,Widowed,Female,11
+29,Never attended school,Unmarried,Male,2203
+29,Never attended school,Unmarried,Female,973
+29,Never attended school,With Spouse,Male,877
+29,Never attended school,With Spouse,Female,2433
+29,Never attended school,Divorced,Male,32
+29,Never attended school,Divorced,Female,93
+29,Never attended school,Widowed,Male,7
+29,Never attended school,Widowed,Female,20
+30,Never attended school,Unmarried,Male,2670
+30,Never attended school,Unmarried,Female,1179
+30,Never attended school,With Spouse,Male,1228
+30,Never attended school,With Spouse,Female,3382
+30,Never attended school,Divorced,Male,57
+30,Never attended school,Divorced,Female,109
+30,Never attended school,Widowed,Male,7
+30,Never attended school,Widowed,Female,19
+31,Never attended school,Unmarried,Male,2707
+31,Never attended school,Unmarried,Female,1099
+31,Never attended school,With Spouse,Male,1501
+31,Never attended school,With Spouse,Female,3946
+31,Never attended school,Divorced,Male,73
+31,Never attended school,Divorced,Female,121
+31,Never attended school,Widowed,Male,8
+31,Never attended school,Widowed,Female,38
+32,Never attended school,Unmarried,Male,2462
+32,Never attended school,Unmarried,Female,1031
+32,Never attended school,With Spouse,Male,1533
+32,Never attended school,With Spouse,Female,4078
+32,Never attended school,Divorced,Male,79
+32,Never attended school,Divorced,Female,136
+32,Never attended school,Widowed,Male,8
+32,Never attended school,Widowed,Female,55
+33,Never attended school,Unmarried,Male,2744
+33,Never attended school,Unmarried,Female,1046
+33,Never attended school,With Spouse,Male,1805
+33,Never attended school,With Spouse,Female,4663
+33,Never attended school,Divorced,Male,117
+33,Never attended school,Divorced,Female,136
+33,Never attended school,Widowed,Male,16
+33,Never attended school,Widowed,Female,65
+34,Never attended school,Unmarried,Male,2588
+34,Never attended school,Unmarried,Female,902
+34,Never attended school,With Spouse,Male,1830
+34,Never attended school,With Spouse,Female,4789
+34,Never attended school,Divorced,Male,96
+34,Never attended school,Divorced,Female,172
+34,Never attended school,Widowed,Male,11
+34,Never attended school,Widowed,Female,72
+35,Never attended school,Unmarried,Male,2176
+35,Never attended school,Unmarried,Female,804
+35,Never attended school,With Spouse,Male,1944
+35,Never attended school,With Spouse,Female,5018
+35,Never attended school,Divorced,Male,92
+35,Never attended school,Divorced,Female,187
+35,Never attended school,Widowed,Male,14
+35,Never attended school,Widowed,Female,71
+36,Never attended school,Unmarried,Male,2180
+36,Never attended school,Unmarried,Female,797
+36,Never attended school,With Spouse,Male,1946
+36,Never attended school,With Spouse,Female,5547
+36,Never attended school,Divorced,Male,129
+36,Never attended school,Divorced,Female,171
+36,Never attended school,Widowed,Male,19
+36,Never attended school,Widowed,Female,85
+37,Never attended school,Unmarried,Male,2254
+37,Never attended school,Unmarried,Female,776
+37,Never attended school,With Spouse,Male,2122
+37,Never attended school,With Spouse,Female,5666
+37,Never attended school,Divorced,Male,125
+37,Never attended school,Divorced,Female,172
+37,Never attended school,Widowed,Male,18
+37,Never attended school,Widowed,Female,114
+38,Never attended school,Unmarried,Male,2486
+38,Never attended school,Unmarried,Female,820
+38,Never attended school,With Spouse,Male,2477
+38,Never attended school,With Spouse,Female,6761
+38,Never attended school,Divorced,Male,134
+38,Never attended school,Divorced,Female,198
+38,Never attended school,Widowed,Male,22
+38,Never attended school,Widowed,Female,155
+39,Never attended school,Unmarried,Male,2384
+39,Never attended school,Unmarried,Female,741
+39,Never attended school,With Spouse,Male,2436
+39,Never attended school,With Spouse,Female,6930
+39,Never attended school,Divorced,Male,154
+39,Never attended school,Divorced,Female,225
+39,Never attended school,Widowed,Male,34
+39,Never attended school,Widowed,Female,171
+40,Never attended school,Unmarried,Male,2207
+40,Never attended school,Unmarried,Female,696
+40,Never attended school,With Spouse,Male,2577
+40,Never attended school,With Spouse,Female,7807
+40,Never attended school,Divorced,Male,155
+40,Never attended school,Divorced,Female,227
+40,Never attended school,Widowed,Male,35
+40,Never attended school,Widowed,Female,199
+41,Never attended school,Unmarried,Male,2612
+41,Never attended school,Unmarried,Female,738
+41,Never attended school,With Spouse,Male,2813
+41,Never attended school,With Spouse,Female,8797
+41,Never attended school,Divorced,Male,170
+41,Never attended school,Divorced,Female,231
+41,Never attended school,Widowed,Male,63
+41,Never attended school,Widowed,Female,261
+42,Never attended school,Unmarried,Male,2508
+42,Never attended school,Unmarried,Female,692
+42,Never attended school,With Spouse,Male,2991
+42,Never attended school,With Spouse,Female,9826
+42,Never attended school,Divorced,Male,189
+42,Never attended school,Divorced,Female,247
+42,Never attended school,Widowed,Male,44
+42,Never attended school,Widowed,Female,287
+43,Never attended school,Unmarried,Male,2578
+43,Never attended school,Unmarried,Female,658
+43,Never attended school,With Spouse,Male,3277
+43,Never attended school,With Spouse,Female,10212
+43,Never attended school,Divorced,Male,213
+43,Never attended school,Divorced,Female,291
+43,Never attended school,Widowed,Male,84
+43,Never attended school,Widowed,Female,342
+44,Never attended school,Unmarried,Male,2748
+44,Never attended school,Unmarried,Female,705
+44,Never attended school,With Spouse,Male,3715
+44,Never attended school,With Spouse,Female,12689
+44,Never attended school,Divorced,Male,224
+44,Never attended school,Divorced,Female,294
+44,Never attended school,Widowed,Male,96
+44,Never attended school,Widowed,Female,501
+45,Never attended school,Unmarried,Male,2862
+45,Never attended school,Unmarried,Female,716
+45,Never attended school,With Spouse,Male,3889
+45,Never attended school,With Spouse,Female,14477
+45,Never attended school,Divorced,Male,234
+45,Never attended school,Divorced,Female,323
+45,Never attended school,Widowed,Male,101
+45,Never attended school,Widowed,Female,538
+46,Never attended school,Unmarried,Male,3330
+46,Never attended school,Unmarried,Female,757
+46,Never attended school,With Spouse,Male,4654
+46,Never attended school,With Spouse,Female,17126
+46,Never attended school,Divorced,Male,326
+46,Never attended school,Divorced,Female,354
+46,Never attended school,Widowed,Male,103
+46,Never attended school,Widowed,Female,782
+47,Never attended school,Unmarried,Male,3564
+47,Never attended school,Unmarried,Female,744
+47,Never attended school,With Spouse,Male,5335
+47,Never attended school,With Spouse,Female,20009
+47,Never attended school,Divorced,Male,309
+47,Never attended school,Divorced,Female,375
+47,Never attended school,Widowed,Male,137
+47,Never attended school,Widowed,Female,932
+48,Never attended school,Unmarried,Male,3674
+48,Never attended school,Unmarried,Female,715
+48,Never attended school,With Spouse,Male,5772
+48,Never attended school,With Spouse,Female,22365
+48,Never attended school,Divorced,Male,371
+48,Never attended school,Divorced,Female,388
+48,Never attended school,Widowed,Male,165
+48,Never attended school,Widowed,Female,1131
+49,Never attended school,Unmarried,Male,3933
+49,Never attended school,Unmarried,Female,744
+49,Never attended school,With Spouse,Male,6221
+49,Never attended school,With Spouse,Female,24116
+49,Never attended school,Divorced,Male,424
+49,Never attended school,Divorced,Female,420
+49,Never attended school,Widowed,Male,186
+49,Never attended school,Widowed,Female,1335
+50,Never attended school,Unmarried,Male,4147
+50,Never attended school,Unmarried,Female,747
+50,Never attended school,With Spouse,Male,7021
+50,Never attended school,With Spouse,Female,28879
+50,Never attended school,Divorced,Male,421
+50,Never attended school,Divorced,Female,449
+50,Never attended school,Widowed,Male,228
+50,Never attended school,Widowed,Female,1716
+51,Never attended school,Unmarried,Male,3941
+51,Never attended school,Unmarried,Female,693
+51,Never attended school,With Spouse,Male,7224
+51,Never attended school,With Spouse,Female,29473
+51,Never attended school,Divorced,Male,391
+51,Never attended school,Divorced,Female,476
+51,Never attended school,Widowed,Male,287
+51,Never attended school,Widowed,Female,2028
+52,Never attended school,Unmarried,Male,4097
+52,Never attended school,Unmarried,Female,627
+52,Never attended school,With Spouse,Male,8116
+52,Never attended school,With Spouse,Female,34069
+52,Never attended school,Divorced,Male,428
+52,Never attended school,Divorced,Female,491
+52,Never attended school,Widowed,Male,354
+52,Never attended school,Widowed,Female,2681
+53,Never attended school,Unmarried,Male,3423
+53,Never attended school,Unmarried,Female,506
+53,Never attended school,With Spouse,Male,7178
+53,Never attended school,With Spouse,Female,30022
+53,Never attended school,Divorced,Male,381
+53,Never attended school,Divorced,Female,417
+53,Never attended school,Widowed,Male,352
+53,Never attended school,Widowed,Female,2639
+54,Never attended school,Unmarried,Male,3919
+54,Never attended school,Unmarried,Female,549
+54,Never attended school,With Spouse,Male,7674
+54,Never attended school,With Spouse,Female,35027
+54,Never attended school,Divorced,Male,422
+54,Never attended school,Divorced,Female,432
+54,Never attended school,Widowed,Male,413
+54,Never attended school,Widowed,Female,3493
+55,Never attended school,Unmarried,Male,3959
+55,Never attended school,Unmarried,Female,537
+55,Never attended school,With Spouse,Male,7547
+55,Never attended school,With Spouse,Female,35043
+55,Never attended school,Divorced,Male,373
+55,Never attended school,Divorced,Female,447
+55,Never attended school,Widowed,Male,459
+55,Never attended school,Widowed,Female,3887
+56,Never attended school,Unmarried,Male,3748
+56,Never attended school,Unmarried,Female,488
+56,Never attended school,With Spouse,Male,7450
+56,Never attended school,With Spouse,Female,36467
+56,Never attended school,Divorced,Male,358
+56,Never attended school,Divorced,Female,417
+56,Never attended school,Widowed,Male,501
+56,Never attended school,Widowed,Female,4480
+57,Never attended school,Unmarried,Male,3991
+57,Never attended school,Unmarried,Female,517
+57,Never attended school,With Spouse,Male,8106
+57,Never attended school,With Spouse,Female,42453
+57,Never attended school,Divorced,Male,400
+57,Never attended school,Divorced,Female,432
+57,Never attended school,Widowed,Male,536
+57,Never attended school,Widowed,Female,5640
+58,Never attended school,Unmarried,Male,2851
+58,Never attended school,Unmarried,Female,436
+58,Never attended school,With Spouse,Male,7014
+58,Never attended school,With Spouse,Female,39332
+58,Never attended school,Divorced,Male,288
+58,Never attended school,Divorced,Female,364
+58,Never attended school,Widowed,Male,467
+58,Never attended school,Widowed,Female,5686
+59,Never attended school,Unmarried,Male,1641
+59,Never attended school,Unmarried,Female,254
+59,Never attended school,With Spouse,Male,4663
+59,Never attended school,With Spouse,Female,24963
+59,Never attended school,Divorced,Male,226
+59,Never attended school,Divorced,Female,230
+59,Never attended school,Widowed,Male,372
+59,Never attended school,Widowed,Female,3965
+60,Never attended school,Unmarried,Male,2268
+60,Never attended school,Unmarried,Female,319
+60,Never attended school,With Spouse,Male,6636
+60,Never attended school,With Spouse,Female,31122
+60,Never attended school,Divorced,Male,281
+60,Never attended school,Divorced,Female,301
+60,Never attended school,Widowed,Male,583
+60,Never attended school,Widowed,Female,5676
+61,Never attended school,Unmarried,Male,2462
+61,Never attended school,Unmarried,Female,294
+61,Never attended school,With Spouse,Male,7870
+61,Never attended school,With Spouse,Female,33481
+61,Never attended school,Divorced,Male,287
+61,Never attended school,Divorced,Female,333
+61,Never attended school,Widowed,Male,740
+61,Never attended school,Widowed,Female,6817
+62,Never attended school,Unmarried,Male,3994
+62,Never attended school,Unmarried,Female,357
+62,Never attended school,With Spouse,Male,11574
+62,Never attended school,With Spouse,Female,48919
+62,Never attended school,Divorced,Male,427
+62,Never attended school,Divorced,Female,431
+62,Never attended school,Widowed,Male,1158
+62,Never attended school,Widowed,Female,10721
+63,Never attended school,Unmarried,Male,4725
+63,Never attended school,Unmarried,Female,320
+63,Never attended school,With Spouse,Male,13925
+63,Never attended school,With Spouse,Female,60202
+63,Never attended school,Divorced,Male,459
+63,Never attended school,Divorced,Female,430
+63,Never attended school,Widowed,Male,1536
+63,Never attended school,Widowed,Female,14110
+64,Never attended school,Unmarried,Male,4368
+64,Never attended school,Unmarried,Female,333
+64,Never attended school,With Spouse,Male,13770
+64,Never attended school,With Spouse,Female,59812
+64,Never attended school,Divorced,Male,433
+64,Never attended school,Divorced,Female,425
+64,Never attended school,Widowed,Male,1720
+64,Never attended school,Widowed,Female,15064
+15,Preschool education,Unmarried,Male,921
+15,Preschool education,Unmarried,Female,820
+15,Preschool education,With Spouse,Male,0
+15,Preschool education,With Spouse,Female,1
+15,Preschool education,Divorced,Male,0
+15,Preschool education,Divorced,Female,0
+15,Preschool education,Widowed,Male,0
+15,Preschool education,Widowed,Female,0
+16,Preschool education,Unmarried,Male,562
+16,Preschool education,Unmarried,Female,560
+16,Preschool education,With Spouse,Male,2
+16,Preschool education,With Spouse,Female,3
+16,Preschool education,Divorced,Male,0
+16,Preschool education,Divorced,Female,0
+16,Preschool education,Widowed,Male,0
+16,Preschool education,Widowed,Female,0
+17,Preschool education,Unmarried,Male,300
+17,Preschool education,Unmarried,Female,265
+17,Preschool education,With Spouse,Male,0
+17,Preschool education,With Spouse,Female,5
+17,Preschool education,Divorced,Male,0
+17,Preschool education,Divorced,Female,0
+17,Preschool education,Widowed,Male,0
+17,Preschool education,Widowed,Female,0
+18,Preschool education,Unmarried,Male,290
+18,Preschool education,Unmarried,Female,261
+18,Preschool education,With Spouse,Male,4
+18,Preschool education,With Spouse,Female,2
+18,Preschool education,Divorced,Male,0
+18,Preschool education,Divorced,Female,0
+18,Preschool education,Widowed,Male,0
+18,Preschool education,Widowed,Female,0
+19,Preschool education,Unmarried,Male,213
+19,Preschool education,Unmarried,Female,201
+19,Preschool education,With Spouse,Male,2
+19,Preschool education,With Spouse,Female,3
+19,Preschool education,Divorced,Male,0
+19,Preschool education,Divorced,Female,0
+19,Preschool education,Widowed,Male,0
+19,Preschool education,Widowed,Female,0
+20,Preschool education,Unmarried,Male,268
+20,Preschool education,Unmarried,Female,205
+20,Preschool education,With Spouse,Male,3
+20,Preschool education,With Spouse,Female,18
+20,Preschool education,Divorced,Male,1
+20,Preschool education,Divorced,Female,0
+20,Preschool education,Widowed,Male,0
+20,Preschool education,Widowed,Female,0
+21,Preschool education,Unmarried,Male,184
+21,Preschool education,Unmarried,Female,147
+21,Preschool education,With Spouse,Male,5
+21,Preschool education,With Spouse,Female,20
+21,Preschool education,Divorced,Male,0
+21,Preschool education,Divorced,Female,2
+21,Preschool education,Widowed,Male,0
+21,Preschool education,Widowed,Female,0
+22,Preschool education,Unmarried,Male,175
+22,Preschool education,Unmarried,Female,137
+22,Preschool education,With Spouse,Male,12
+22,Preschool education,With Spouse,Female,36
+22,Preschool education,Divorced,Male,0
+22,Preschool education,Divorced,Female,1
+22,Preschool education,Widowed,Male,0
+22,Preschool education,Widowed,Female,0
+23,Preschool education,Unmarried,Male,182
+23,Preschool education,Unmarried,Female,150
+23,Preschool education,With Spouse,Male,16
+23,Preschool education,With Spouse,Female,52
+23,Preschool education,Divorced,Male,1
+23,Preschool education,Divorced,Female,0
+23,Preschool education,Widowed,Male,0
+23,Preschool education,Widowed,Female,1
+24,Preschool education,Unmarried,Male,169
+24,Preschool education,Unmarried,Female,131
+24,Preschool education,With Spouse,Male,22
+24,Preschool education,With Spouse,Female,73
+24,Preschool education,Divorced,Male,1
+24,Preschool education,Divorced,Female,1
+24,Preschool education,Widowed,Male,0
+24,Preschool education,Widowed,Female,0
+25,Preschool education,Unmarried,Male,162
+25,Preschool education,Unmarried,Female,111
+25,Preschool education,With Spouse,Male,47
+25,Preschool education,With Spouse,Female,97
+25,Preschool education,Divorced,Male,2
+25,Preschool education,Divorced,Female,1
+25,Preschool education,Widowed,Male,0
+25,Preschool education,Widowed,Female,0
+26,Preschool education,Unmarried,Male,138
+26,Preschool education,Unmarried,Female,74
+26,Preschool education,With Spouse,Male,43
+26,Preschool education,With Spouse,Female,109
+26,Preschool education,Divorced,Male,2
+26,Preschool education,Divorced,Female,1
+26,Preschool education,Widowed,Male,0
+26,Preschool education,Widowed,Female,0
+27,Preschool education,Unmarried,Male,121
+27,Preschool education,Unmarried,Female,74
+27,Preschool education,With Spouse,Male,58
+27,Preschool education,With Spouse,Female,112
+27,Preschool education,Divorced,Male,4
+27,Preschool education,Divorced,Female,1
+27,Preschool education,Widowed,Male,0
+27,Preschool education,Widowed,Female,0
+28,Preschool education,Unmarried,Male,111
+28,Preschool education,Unmarried,Female,53
+28,Preschool education,With Spouse,Male,65
+28,Preschool education,With Spouse,Female,168
+28,Preschool education,Divorced,Male,2
+28,Preschool education,Divorced,Female,4
+28,Preschool education,Widowed,Male,0
+28,Preschool education,Widowed,Female,0
+29,Preschool education,Unmarried,Male,87
+29,Preschool education,Unmarried,Female,65
+29,Preschool education,With Spouse,Male,85
+29,Preschool education,With Spouse,Female,156
+29,Preschool education,Divorced,Male,3
+29,Preschool education,Divorced,Female,5
+29,Preschool education,Widowed,Male,0
+29,Preschool education,Widowed,Female,0
+30,Preschool education,Unmarried,Male,126
+30,Preschool education,Unmarried,Female,50
+30,Preschool education,With Spouse,Male,113
+30,Preschool education,With Spouse,Female,198
+30,Preschool education,Divorced,Male,8
+30,Preschool education,Divorced,Female,4
+30,Preschool education,Widowed,Male,1
+30,Preschool education,Widowed,Female,0
+31,Preschool education,Unmarried,Male,113
+31,Preschool education,Unmarried,Female,44
+31,Preschool education,With Spouse,Male,145
+31,Preschool education,With Spouse,Female,222
+31,Preschool education,Divorced,Male,7
+31,Preschool education,Divorced,Female,4
+31,Preschool education,Widowed,Male,0
+31,Preschool education,Widowed,Female,0
+32,Preschool education,Unmarried,Male,80
+32,Preschool education,Unmarried,Female,48
+32,Preschool education,With Spouse,Male,117
+32,Preschool education,With Spouse,Female,208
+32,Preschool education,Divorced,Male,4
+32,Preschool education,Divorced,Female,0
+32,Preschool education,Widowed,Male,1
+32,Preschool education,Widowed,Female,1
+33,Preschool education,Unmarried,Male,98
+33,Preschool education,Unmarried,Female,39
+33,Preschool education,With Spouse,Male,113
+33,Preschool education,With Spouse,Female,229
+33,Preschool education,Divorced,Male,6
+33,Preschool education,Divorced,Female,9
+33,Preschool education,Widowed,Male,0
+33,Preschool education,Widowed,Female,4
+34,Preschool education,Unmarried,Male,85
+34,Preschool education,Unmarried,Female,41
+34,Preschool education,With Spouse,Male,155
+34,Preschool education,With Spouse,Female,195
+34,Preschool education,Divorced,Male,6
+34,Preschool education,Divorced,Female,4
+34,Preschool education,Widowed,Male,0
+34,Preschool education,Widowed,Female,3
+35,Preschool education,Unmarried,Male,55
+35,Preschool education,Unmarried,Female,33
+35,Preschool education,With Spouse,Male,113
+35,Preschool education,With Spouse,Female,177
+35,Preschool education,Divorced,Male,9
+35,Preschool education,Divorced,Female,3
+35,Preschool education,Widowed,Male,0
+35,Preschool education,Widowed,Female,3
+36,Preschool education,Unmarried,Male,64
+36,Preschool education,Unmarried,Female,41
+36,Preschool education,With Spouse,Male,124
+36,Preschool education,With Spouse,Female,175
+36,Preschool education,Divorced,Male,6
+36,Preschool education,Divorced,Female,2
+36,Preschool education,Widowed,Male,1
+36,Preschool education,Widowed,Female,2
+37,Preschool education,Unmarried,Male,69
+37,Preschool education,Unmarried,Female,18
+37,Preschool education,With Spouse,Male,125
+37,Preschool education,With Spouse,Female,188
+37,Preschool education,Divorced,Male,6
+37,Preschool education,Divorced,Female,3
+37,Preschool education,Widowed,Male,0
+37,Preschool education,Widowed,Female,0
+38,Preschool education,Unmarried,Male,64
+38,Preschool education,Unmarried,Female,20
+38,Preschool education,With Spouse,Male,143
+38,Preschool education,With Spouse,Female,217
+38,Preschool education,Divorced,Male,6
+38,Preschool education,Divorced,Female,9
+38,Preschool education,Widowed,Male,0
+38,Preschool education,Widowed,Female,4
+39,Preschool education,Unmarried,Male,63
+39,Preschool education,Unmarried,Female,19
+39,Preschool education,With Spouse,Male,97
+39,Preschool education,With Spouse,Female,183
+39,Preschool education,Divorced,Male,7
+39,Preschool education,Divorced,Female,8
+39,Preschool education,Widowed,Male,0
+39,Preschool education,Widowed,Female,4
+40,Preschool education,Unmarried,Male,56
+40,Preschool education,Unmarried,Female,15
+40,Preschool education,With Spouse,Male,113
+40,Preschool education,With Spouse,Female,200
+40,Preschool education,Divorced,Male,8
+40,Preschool education,Divorced,Female,7
+40,Preschool education,Widowed,Male,1
+40,Preschool education,Widowed,Female,5
+41,Preschool education,Unmarried,Male,65
+41,Preschool education,Unmarried,Female,14
+41,Preschool education,With Spouse,Male,132
+41,Preschool education,With Spouse,Female,234
+41,Preschool education,Divorced,Male,7
+41,Preschool education,Divorced,Female,11
+41,Preschool education,Widowed,Male,3
+41,Preschool education,Widowed,Female,4
+42,Preschool education,Unmarried,Male,59
+42,Preschool education,Unmarried,Female,21
+42,Preschool education,With Spouse,Male,125
+42,Preschool education,With Spouse,Female,292
+42,Preschool education,Divorced,Male,6
+42,Preschool education,Divorced,Female,8
+42,Preschool education,Widowed,Male,1
+42,Preschool education,Widowed,Female,7
+43,Preschool education,Unmarried,Male,61
+43,Preschool education,Unmarried,Female,15
+43,Preschool education,With Spouse,Male,154
+43,Preschool education,With Spouse,Female,272
+43,Preschool education,Divorced,Male,9
+43,Preschool education,Divorced,Female,4
+43,Preschool education,Widowed,Male,0
+43,Preschool education,Widowed,Female,6
+44,Preschool education,Unmarried,Male,58
+44,Preschool education,Unmarried,Female,17
+44,Preschool education,With Spouse,Male,170
+44,Preschool education,With Spouse,Female,359
+44,Preschool education,Divorced,Male,6
+44,Preschool education,Divorced,Female,12
+44,Preschool education,Widowed,Male,3
+44,Preschool education,Widowed,Female,10
+45,Preschool education,Unmarried,Male,82
+45,Preschool education,Unmarried,Female,20
+45,Preschool education,With Spouse,Male,179
+45,Preschool education,With Spouse,Female,382
+45,Preschool education,Divorced,Male,16
+45,Preschool education,Divorced,Female,12
+45,Preschool education,Widowed,Male,0
+45,Preschool education,Widowed,Female,14
+46,Preschool education,Unmarried,Male,76
+46,Preschool education,Unmarried,Female,23
+46,Preschool education,With Spouse,Male,216
+46,Preschool education,With Spouse,Female,487
+46,Preschool education,Divorced,Male,12
+46,Preschool education,Divorced,Female,9
+46,Preschool education,Widowed,Male,6
+46,Preschool education,Widowed,Female,7
+47,Preschool education,Unmarried,Male,75
+47,Preschool education,Unmarried,Female,19
+47,Preschool education,With Spouse,Male,225
+47,Preschool education,With Spouse,Female,511
+47,Preschool education,Divorced,Male,15
+47,Preschool education,Divorced,Female,13
+47,Preschool education,Widowed,Male,5
+47,Preschool education,Widowed,Female,9
+48,Preschool education,Unmarried,Male,62
+48,Preschool education,Unmarried,Female,13
+48,Preschool education,With Spouse,Male,272
+48,Preschool education,With Spouse,Female,580
+48,Preschool education,Divorced,Male,14
+48,Preschool education,Divorced,Female,14
+48,Preschool education,Widowed,Male,4
+48,Preschool education,Widowed,Female,24
+49,Preschool education,Unmarried,Male,91
+49,Preschool education,Unmarried,Female,21
+49,Preschool education,With Spouse,Male,307
+49,Preschool education,With Spouse,Female,670
+49,Preschool education,Divorced,Male,19
+49,Preschool education,Divorced,Female,15
+49,Preschool education,Widowed,Male,4
+49,Preschool education,Widowed,Female,38
+50,Preschool education,Unmarried,Male,84
+50,Preschool education,Unmarried,Female,18
+50,Preschool education,With Spouse,Male,317
+50,Preschool education,With Spouse,Female,878
+50,Preschool education,Divorced,Male,23
+50,Preschool education,Divorced,Female,14
+50,Preschool education,Widowed,Male,10
+50,Preschool education,Widowed,Female,37
+51,Preschool education,Unmarried,Male,103
+51,Preschool education,Unmarried,Female,18
+51,Preschool education,With Spouse,Male,364
+51,Preschool education,With Spouse,Female,881
+51,Preschool education,Divorced,Male,12
+51,Preschool education,Divorced,Female,15
+51,Preschool education,Widowed,Male,11
+51,Preschool education,Widowed,Female,59
+52,Preschool education,Unmarried,Male,99
+52,Preschool education,Unmarried,Female,14
+52,Preschool education,With Spouse,Male,447
+52,Preschool education,With Spouse,Female,1087
+52,Preschool education,Divorced,Male,14
+52,Preschool education,Divorced,Female,14
+52,Preschool education,Widowed,Male,14
+52,Preschool education,Widowed,Female,76
+53,Preschool education,Unmarried,Male,92
+53,Preschool education,Unmarried,Female,14
+53,Preschool education,With Spouse,Male,400
+53,Preschool education,With Spouse,Female,991
+53,Preschool education,Divorced,Male,15
+53,Preschool education,Divorced,Female,13
+53,Preschool education,Widowed,Male,9
+53,Preschool education,Widowed,Female,81
+54,Preschool education,Unmarried,Male,120
+54,Preschool education,Unmarried,Female,15
+54,Preschool education,With Spouse,Male,425
+54,Preschool education,With Spouse,Female,1168
+54,Preschool education,Divorced,Male,21
+54,Preschool education,Divorced,Female,11
+54,Preschool education,Widowed,Male,29
+54,Preschool education,Widowed,Female,107
+55,Preschool education,Unmarried,Male,84
+55,Preschool education,Unmarried,Female,12
+55,Preschool education,With Spouse,Male,465
+55,Preschool education,With Spouse,Female,1144
+55,Preschool education,Divorced,Male,17
+55,Preschool education,Divorced,Female,5
+55,Preschool education,Widowed,Male,18
+55,Preschool education,Widowed,Female,108
+56,Preschool education,Unmarried,Male,98
+56,Preschool education,Unmarried,Female,18
+56,Preschool education,With Spouse,Male,429
+56,Preschool education,With Spouse,Female,1160
+56,Preschool education,Divorced,Male,17
+56,Preschool education,Divorced,Female,10
+56,Preschool education,Widowed,Male,15
+56,Preschool education,Widowed,Female,120
+57,Preschool education,Unmarried,Male,112
+57,Preschool education,Unmarried,Female,12
+57,Preschool education,With Spouse,Male,484
+57,Preschool education,With Spouse,Female,1427
+57,Preschool education,Divorced,Male,19
+57,Preschool education,Divorced,Female,22
+57,Preschool education,Widowed,Male,20
+57,Preschool education,Widowed,Female,180
+58,Preschool education,Unmarried,Male,80
+58,Preschool education,Unmarried,Female,13
+58,Preschool education,With Spouse,Male,391
+58,Preschool education,With Spouse,Female,1291
+58,Preschool education,Divorced,Male,21
+58,Preschool education,Divorced,Female,15
+58,Preschool education,Widowed,Male,31
+58,Preschool education,Widowed,Female,136
+59,Preschool education,Unmarried,Male,37
+59,Preschool education,Unmarried,Female,3
+59,Preschool education,With Spouse,Male,232
+59,Preschool education,With Spouse,Female,723
+59,Preschool education,Divorced,Male,7
+59,Preschool education,Divorced,Female,3
+59,Preschool education,Widowed,Male,21
+59,Preschool education,Widowed,Female,102
+60,Preschool education,Unmarried,Male,61
+60,Preschool education,Unmarried,Female,12
+60,Preschool education,With Spouse,Male,328
+60,Preschool education,With Spouse,Female,924
+60,Preschool education,Divorced,Male,14
+60,Preschool education,Divorced,Female,4
+60,Preschool education,Widowed,Male,27
+60,Preschool education,Widowed,Female,162
+61,Preschool education,Unmarried,Male,84
+61,Preschool education,Unmarried,Female,3
+61,Preschool education,With Spouse,Male,409
+61,Preschool education,With Spouse,Female,1051
+61,Preschool education,Divorced,Male,18
+61,Preschool education,Divorced,Female,20
+61,Preschool education,Widowed,Male,33
+61,Preschool education,Widowed,Female,197
+62,Preschool education,Unmarried,Male,99
+62,Preschool education,Unmarried,Female,7
+62,Preschool education,With Spouse,Male,572
+62,Preschool education,With Spouse,Female,1556
+62,Preschool education,Divorced,Male,15
+62,Preschool education,Divorced,Female,11
+62,Preschool education,Widowed,Male,52
+62,Preschool education,Widowed,Female,269
+63,Preschool education,Unmarried,Male,149
+63,Preschool education,Unmarried,Female,12
+63,Preschool education,With Spouse,Male,706
+63,Preschool education,With Spouse,Female,1938
+63,Preschool education,Divorced,Male,23
+63,Preschool education,Divorced,Female,17
+63,Preschool education,Widowed,Male,72
+63,Preschool education,Widowed,Female,386
+64,Preschool education,Unmarried,Male,107
+64,Preschool education,Unmarried,Female,7
+64,Preschool education,With Spouse,Male,654
+64,Preschool education,With Spouse,Female,1831
+64,Preschool education,Divorced,Male,26
+64,Preschool education,Divorced,Female,12
+64,Preschool education,Widowed,Male,60
+64,Preschool education,Widowed,Female,458
+15,Primary School,Unmarried,Male,5518
+15,Primary School,Unmarried,Female,4431
+15,Primary School,With Spouse,Male,12
+15,Primary School,With Spouse,Female,99
+15,Primary School,Divorced,Male,0
+15,Primary School,Divorced,Female,0
+15,Primary School,Widowed,Male,0
+15,Primary School,Widowed,Female,0
+16,Primary School,Unmarried,Male,6005
+16,Primary School,Unmarried,Female,4424
+16,Primary School,With Spouse,Male,37
+16,Primary School,With Spouse,Female,286
+16,Primary School,Divorced,Male,1
+16,Primary School,Divorced,Female,2
+16,Primary School,Widowed,Male,0
+16,Primary School,Widowed,Female,1
+17,Primary School,Unmarried,Male,6849
+17,Primary School,Unmarried,Female,4883
+17,Primary School,With Spouse,Male,94
+17,Primary School,With Spouse,Female,635
+17,Primary School,Divorced,Male,4
+17,Primary School,Divorced,Female,9
+17,Primary School,Widowed,Male,0
+17,Primary School,Widowed,Female,1
+18,Primary School,Unmarried,Male,8649
+18,Primary School,Unmarried,Female,5802
+18,Primary School,With Spouse,Male,223
+18,Primary School,With Spouse,Female,1322
+18,Primary School,Divorced,Male,5
+18,Primary School,Divorced,Female,16
+18,Primary School,Widowed,Male,0
+18,Primary School,Widowed,Female,5
+19,Primary School,Unmarried,Male,10635
+19,Primary School,Unmarried,Female,6609
+19,Primary School,With Spouse,Male,507
+19,Primary School,With Spouse,Female,2255
+19,Primary School,Divorced,Male,11
+19,Primary School,Divorced,Female,34
+19,Primary School,Widowed,Male,0
+19,Primary School,Widowed,Female,3
+20,Primary School,Unmarried,Male,11556
+20,Primary School,Unmarried,Female,6510
+20,Primary School,With Spouse,Male,949
+20,Primary School,With Spouse,Female,3843
+20,Primary School,Divorced,Male,26
+20,Primary School,Divorced,Female,83
+20,Primary School,Widowed,Male,3
+20,Primary School,Widowed,Female,6
+21,Primary School,Unmarried,Male,11879
+21,Primary School,Unmarried,Female,5822
+21,Primary School,With Spouse,Male,1735
+21,Primary School,With Spouse,Female,5505
+21,Primary School,Divorced,Male,50
+21,Primary School,Divorced,Female,104
+21,Primary School,Widowed,Male,4
+21,Primary School,Widowed,Female,8
+22,Primary School,Unmarried,Male,13603
+22,Primary School,Unmarried,Female,6169
+22,Primary School,With Spouse,Male,2984
+22,Primary School,With Spouse,Female,8052
+22,Primary School,Divorced,Male,102
+22,Primary School,Divorced,Female,173
+22,Primary School,Widowed,Male,4
+22,Primary School,Widowed,Female,17
+23,Primary School,Unmarried,Male,13514
+23,Primary School,Unmarried,Female,5730
+23,Primary School,With Spouse,Male,4337
+23,Primary School,With Spouse,Female,10037
+23,Primary School,Divorced,Male,169
+23,Primary School,Divorced,Female,218
+23,Primary School,Widowed,Male,3
+23,Primary School,Widowed,Female,17
+24,Primary School,Unmarried,Male,13750
+24,Primary School,Unmarried,Female,5367
+24,Primary School,With Spouse,Male,6069
+24,Primary School,With Spouse,Female,12513
+24,Primary School,Divorced,Male,238
+24,Primary School,Divorced,Female,273
+24,Primary School,Widowed,Male,12
+24,Primary School,Widowed,Female,29
+25,Primary School,Unmarried,Male,14152
+25,Primary School,Unmarried,Female,5115
+25,Primary School,With Spouse,Male,8570
+25,Primary School,With Spouse,Female,15972
+25,Primary School,Divorced,Male,368
+25,Primary School,Divorced,Female,420
+25,Primary School,Widowed,Male,15
+25,Primary School,Widowed,Female,30
+26,Primary School,Unmarried,Male,13645
+26,Primary School,Unmarried,Female,4442
+26,Primary School,With Spouse,Male,10556
+26,Primary School,With Spouse,Female,18374
+26,Primary School,Divorced,Male,476
+26,Primary School,Divorced,Female,489
+26,Primary School,Widowed,Male,16
+26,Primary School,Widowed,Female,38
+27,Primary School,Unmarried,Male,14189
+27,Primary School,Unmarried,Female,4379
+27,Primary School,With Spouse,Male,14407
+27,Primary School,With Spouse,Female,23174
+27,Primary School,Divorced,Male,741
+27,Primary School,Divorced,Female,655
+27,Primary School,Widowed,Male,17
+27,Primary School,Widowed,Female,64
+28,Primary School,Unmarried,Male,14098
+28,Primary School,Unmarried,Female,4031
+28,Primary School,With Spouse,Male,17826
+28,Primary School,With Spouse,Female,27666
+28,Primary School,Divorced,Male,1047
+28,Primary School,Divorced,Female,833
+28,Primary School,Widowed,Male,27
+28,Primary School,Widowed,Female,75
+29,Primary School,Unmarried,Male,14231
+29,Primary School,Unmarried,Female,3781
+29,Primary School,With Spouse,Male,22408
+29,Primary School,With Spouse,Female,32991
+29,Primary School,Divorced,Male,1338
+29,Primary School,Divorced,Female,976
+29,Primary School,Widowed,Male,47
+29,Primary School,Widowed,Female,105
+30,Primary School,Unmarried,Male,16970
+30,Primary School,Unmarried,Female,4270
+30,Primary School,With Spouse,Male,32135
+30,Primary School,With Spouse,Female,47250
+30,Primary School,Divorced,Male,1969
+30,Primary School,Divorced,Female,1401
+30,Primary School,Widowed,Male,63
+30,Primary School,Widowed,Female,176
+31,Primary School,Unmarried,Male,16436
+31,Primary School,Unmarried,Female,3841
+31,Primary School,With Spouse,Male,36930
+31,Primary School,With Spouse,Female,53236
+31,Primary School,Divorced,Male,2397
+31,Primary School,Divorced,Female,1697
+31,Primary School,Widowed,Male,92
+31,Primary School,Widowed,Female,245
+32,Primary School,Unmarried,Male,14613
+32,Primary School,Unmarried,Female,3327
+32,Primary School,With Spouse,Male,38488
+32,Primary School,With Spouse,Female,55989
+32,Primary School,Divorced,Male,2717
+32,Primary School,Divorced,Female,1711
+32,Primary School,Widowed,Male,109
+32,Primary School,Widowed,Female,284
+33,Primary School,Unmarried,Male,15382
+33,Primary School,Unmarried,Female,3259
+33,Primary School,With Spouse,Male,45931
+33,Primary School,With Spouse,Female,65918
+33,Primary School,Divorced,Male,3286
+33,Primary School,Divorced,Female,2125
+33,Primary School,Widowed,Male,146
+33,Primary School,Widowed,Female,401
+34,Primary School,Unmarried,Male,13312
+34,Primary School,Unmarried,Female,2715
+34,Primary School,With Spouse,Male,44169
+34,Primary School,With Spouse,Female,64218
+34,Primary School,Divorced,Male,3360
+34,Primary School,Divorced,Female,2031
+34,Primary School,Widowed,Male,145
+34,Primary School,Widowed,Female,365
+35,Primary School,Unmarried,Male,11541
+35,Primary School,Unmarried,Female,2291
+35,Primary School,With Spouse,Male,42409
+35,Primary School,With Spouse,Female,61788
+35,Primary School,Divorced,Male,3152
+35,Primary School,Divorced,Female,1868
+35,Primary School,Widowed,Male,168
+35,Primary School,Widowed,Female,461
+36,Primary School,Unmarried,Male,11322
+36,Primary School,Unmarried,Female,2254
+36,Primary School,With Spouse,Male,44621
+36,Primary School,With Spouse,Female,65471
+36,Primary School,Divorced,Male,3349
+36,Primary School,Divorced,Female,1944
+36,Primary School,Widowed,Male,190
+36,Primary School,Widowed,Female,561
+37,Primary School,Unmarried,Male,10730
+37,Primary School,Unmarried,Female,1952
+37,Primary School,With Spouse,Male,46126
+37,Primary School,With Spouse,Female,67468
+37,Primary School,Divorced,Male,3416
+37,Primary School,Divorced,Female,1946
+37,Primary School,Widowed,Male,215
+37,Primary School,Widowed,Female,593
+38,Primary School,Unmarried,Male,12191
+38,Primary School,Unmarried,Female,2175
+38,Primary School,With Spouse,Male,55655
+38,Primary School,With Spouse,Female,82211
+38,Primary School,Divorced,Male,4259
+38,Primary School,Divorced,Female,2399
+38,Primary School,Widowed,Male,301
+38,Primary School,Widowed,Female,816
+39,Primary School,Unmarried,Male,11431
+39,Primary School,Unmarried,Female,1959
+39,Primary School,With Spouse,Male,55381
+39,Primary School,With Spouse,Female,82987
+39,Primary School,Divorced,Male,4222
+39,Primary School,Divorced,Female,2364
+39,Primary School,Widowed,Male,348
+39,Primary School,Widowed,Female,924
+40,Primary School,Unmarried,Male,10947
+40,Primary School,Unmarried,Female,1815
+40,Primary School,With Spouse,Male,58587
+40,Primary School,With Spouse,Female,89006
+40,Primary School,Divorced,Male,4395
+40,Primary School,Divorced,Female,2394
+40,Primary School,Widowed,Male,336
+40,Primary School,Widowed,Female,1219
+41,Primary School,Unmarried,Male,12631
+41,Primary School,Unmarried,Female,1862
+41,Primary School,With Spouse,Male,74924
+41,Primary School,With Spouse,Female,109872
+41,Primary School,Divorced,Male,5502
+41,Primary School,Divorced,Female,3040
+41,Primary School,Widowed,Male,543
+41,Primary School,Widowed,Female,1589
+42,Primary School,Unmarried,Male,12406
+42,Primary School,Unmarried,Female,1868
+42,Primary School,With Spouse,Male,79614
+42,Primary School,With Spouse,Female,120340
+42,Primary School,Divorced,Male,5573
+42,Primary School,Divorced,Female,3232
+42,Primary School,Widowed,Male,575
+42,Primary School,Widowed,Female,1970
+43,Primary School,Unmarried,Male,12555
+43,Primary School,Unmarried,Female,1759
+43,Primary School,With Spouse,Male,86639
+43,Primary School,With Spouse,Female,128530
+43,Primary School,Divorced,Male,5907
+43,Primary School,Divorced,Female,3261
+43,Primary School,Widowed,Male,794
+43,Primary School,Widowed,Female,2273
+44,Primary School,Unmarried,Male,14382
+44,Primary School,Unmarried,Female,1910
+44,Primary School,With Spouse,Male,106257
+44,Primary School,With Spouse,Female,159225
+44,Primary School,Divorced,Male,6774
+44,Primary School,Divorced,Female,4000
+44,Primary School,Widowed,Male,986
+44,Primary School,Widowed,Female,3201
+45,Primary School,Unmarried,Male,15145
+45,Primary School,Unmarried,Female,1929
+45,Primary School,With Spouse,Male,120535
+45,Primary School,With Spouse,Female,181852
+45,Primary School,Divorced,Male,7535
+45,Primary School,Divorced,Female,4268
+45,Primary School,Widowed,Male,1211
+45,Primary School,Widowed,Female,3900
+46,Primary School,Unmarried,Male,17025
+46,Primary School,Unmarried,Female,2022
+46,Primary School,With Spouse,Male,143297
+46,Primary School,With Spouse,Female,216096
+46,Primary School,Divorced,Male,8243
+46,Primary School,Divorced,Female,4952
+46,Primary School,Widowed,Male,1534
+46,Primary School,Widowed,Female,5149
+47,Primary School,Unmarried,Male,17147
+47,Primary School,Unmarried,Female,1931
+47,Primary School,With Spouse,Male,157975
+47,Primary School,With Spouse,Female,238515
+47,Primary School,Divorced,Male,8638
+47,Primary School,Divorced,Female,4939
+47,Primary School,Widowed,Male,1972
+47,Primary School,Widowed,Female,6331
+48,Primary School,Unmarried,Male,17462
+48,Primary School,Unmarried,Female,1917
+48,Primary School,With Spouse,Male,171431
+48,Primary School,With Spouse,Female,263085
+48,Primary School,Divorced,Male,8795
+48,Primary School,Divorced,Female,5309
+48,Primary School,Widowed,Male,2372
+48,Primary School,Widowed,Female,7787
+49,Primary School,Unmarried,Male,18039
+49,Primary School,Unmarried,Female,1855
+49,Primary School,With Spouse,Male,191032
+49,Primary School,With Spouse,Female,289118
+49,Primary School,Divorced,Male,9289
+49,Primary School,Divorced,Female,5419
+49,Primary School,Widowed,Male,2801
+49,Primary School,Widowed,Female,9408
+50,Primary School,Unmarried,Male,18362
+50,Primary School,Unmarried,Female,1920
+50,Primary School,With Spouse,Male,217064
+50,Primary School,With Spouse,Female,331793
+50,Primary School,Divorced,Male,10071
+50,Primary School,Divorced,Female,5849
+50,Primary School,Widowed,Male,3686
+50,Primary School,Widowed,Female,12543
+51,Primary School,Unmarried,Male,18082
+51,Primary School,Unmarried,Female,1726
+51,Primary School,With Spouse,Male,234065
+51,Primary School,With Spouse,Female,343535
+51,Primary School,Divorced,Male,9876
+51,Primary School,Divorced,Female,5966
+51,Primary School,Widowed,Male,4518
+51,Primary School,Widowed,Female,15226
+52,Primary School,Unmarried,Male,18798
+52,Primary School,Unmarried,Female,1763
+52,Primary School,With Spouse,Male,262501
+52,Primary School,With Spouse,Female,387804
+52,Primary School,Divorced,Male,10509
+52,Primary School,Divorced,Female,6388
+52,Primary School,Widowed,Male,5706
+52,Primary School,Widowed,Female,19771
+53,Primary School,Unmarried,Male,15582
+53,Primary School,Unmarried,Female,1352
+53,Primary School,With Spouse,Male,221462
+53,Primary School,With Spouse,Female,328990
+53,Primary School,Divorced,Male,8351
+53,Primary School,Divorced,Female,4938
+53,Primary School,Widowed,Male,5479
+53,Primary School,Widowed,Female,19378
+54,Primary School,Unmarried,Male,17426
+54,Primary School,Unmarried,Female,1473
+54,Primary School,With Spouse,Male,252547
+54,Primary School,With Spouse,Female,369761
+54,Primary School,Divorced,Male,9235
+54,Primary School,Divorced,Female,5199
+54,Primary School,Widowed,Male,7089
+54,Primary School,Widowed,Female,24173
+55,Primary School,Unmarried,Male,15803
+55,Primary School,Unmarried,Female,1349
+55,Primary School,With Spouse,Male,235909
+55,Primary School,With Spouse,Female,351670
+55,Primary School,Divorced,Male,8451
+55,Primary School,Divorced,Female,4911
+55,Primary School,Widowed,Male,7613
+55,Primary School,Widowed,Female,26825
+56,Primary School,Unmarried,Male,14654
+56,Primary School,Unmarried,Female,1131
+56,Primary School,With Spouse,Male,219164
+56,Primary School,With Spouse,Female,336072
+56,Primary School,Divorced,Male,7767
+56,Primary School,Divorced,Female,4640
+56,Primary School,Widowed,Male,7736
+56,Primary School,Widowed,Female,29384
+57,Primary School,Unmarried,Male,15907
+57,Primary School,Unmarried,Female,1161
+57,Primary School,With Spouse,Male,244824
+57,Primary School,With Spouse,Female,375565
+57,Primary School,Divorced,Male,8169
+57,Primary School,Divorced,Female,4741
+57,Primary School,Widowed,Male,9545
+57,Primary School,Widowed,Female,36176
+58,Primary School,Unmarried,Male,11063
+58,Primary School,Unmarried,Female,885
+58,Primary School,With Spouse,Male,185228
+58,Primary School,With Spouse,Female,297904
+58,Primary School,Divorced,Male,5686
+58,Primary School,Divorced,Female,3508
+58,Primary School,Widowed,Male,8097
+58,Primary School,Widowed,Female,31740
+59,Primary School,Unmarried,Male,5983
+59,Primary School,Unmarried,Female,510
+59,Primary School,With Spouse,Male,101575
+59,Primary School,With Spouse,Female,166665
+59,Primary School,Divorced,Male,3070
+59,Primary School,Divorced,Female,1894
+59,Primary School,Widowed,Male,4831
+59,Primary School,Widowed,Female,20018
+60,Primary School,Unmarried,Male,8168
+60,Primary School,Unmarried,Female,596
+60,Primary School,With Spouse,Male,134432
+60,Primary School,With Spouse,Female,201208
+60,Primary School,Divorced,Male,4217
+60,Primary School,Divorced,Female,2460
+60,Primary School,Widowed,Male,7417
+60,Primary School,Widowed,Female,27035
+61,Primary School,Unmarried,Male,8954
+61,Primary School,Unmarried,Female,499
+61,Primary School,With Spouse,Male,144610
+61,Primary School,With Spouse,Female,200374
+61,Primary School,Divorced,Male,4280
+61,Primary School,Divorced,Female,2235
+61,Primary School,Widowed,Male,9062
+61,Primary School,Widowed,Female,30483
+62,Primary School,Unmarried,Male,13216
+62,Primary School,Unmarried,Female,687
+62,Primary School,With Spouse,Male,202268
+62,Primary School,With Spouse,Female,271024
+62,Primary School,Divorced,Male,5471
+62,Primary School,Divorced,Female,2821
+62,Primary School,Widowed,Male,13942
+62,Primary School,Widowed,Female,44250
+63,Primary School,Unmarried,Male,14905
+63,Primary School,Unmarried,Female,693
+63,Primary School,With Spouse,Male,243475
+63,Primary School,With Spouse,Female,319754
+63,Primary School,Divorced,Male,5696
+63,Primary School,Divorced,Female,3021
+63,Primary School,Widowed,Male,18202
+63,Primary School,Widowed,Female,56091
+64,Primary School,Unmarried,Male,13877
+64,Primary School,Unmarried,Female,625
+64,Primary School,With Spouse,Male,230713
+64,Primary School,With Spouse,Female,305318
+64,Primary School,Divorced,Male,5060
+64,Primary School,Divorced,Female,2754
+64,Primary School,Widowed,Male,18831
+64,Primary School,Widowed,Female,58697
+15,Junior high school,Unmarried,Male,383975
+15,Junior high school,Unmarried,Female,306889
+15,Junior high school,With Spouse,Male,108
+15,Junior high school,With Spouse,Female,487
+15,Junior high school,Divorced,Male,0
+15,Junior high school,Divorced,Female,2
+15,Junior high school,Widowed,Male,0
+15,Junior high school,Widowed,Female,0
+16,Junior high school,Unmarried,Male,194908
+16,Junior high school,Unmarried,Female,147998
+16,Junior high school,With Spouse,Male,329
+16,Junior high school,With Spouse,Female,1665
+16,Junior high school,Divorced,Male,1
+16,Junior high school,Divorced,Female,15
+16,Junior high school,Widowed,Male,2
+16,Junior high school,Widowed,Female,0
+17,Junior high school,Unmarried,Male,130514
+17,Junior high school,Unmarried,Female,89095
+17,Junior high school,With Spouse,Male,992
+17,Junior high school,With Spouse,Female,3803
+17,Junior high school,Divorced,Male,11
+17,Junior high school,Divorced,Female,31
+17,Junior high school,Widowed,Male,0
+17,Junior high school,Widowed,Female,3
+18,Junior high school,Unmarried,Male,125775
+18,Junior high school,Unmarried,Female,75036
+18,Junior high school,With Spouse,Male,2177
+18,Junior high school,With Spouse,Female,7708
+18,Junior high school,Divorced,Male,25
+18,Junior high school,Divorced,Female,76
+18,Junior high school,Widowed,Male,0
+18,Junior high school,Widowed,Female,6
+19,Junior high school,Unmarried,Male,135144
+19,Junior high school,Unmarried,Female,75961
+19,Junior high school,With Spouse,Male,4490
+19,Junior high school,With Spouse,Female,14419
+19,Junior high school,Divorced,Male,74
+19,Junior high school,Divorced,Female,116
+19,Junior high school,Widowed,Male,4
+19,Junior high school,Widowed,Female,6
+20,Junior high school,Unmarried,Male,139013
+20,Junior high school,Unmarried,Female,69651
+20,Junior high school,With Spouse,Male,9099
+20,Junior high school,With Spouse,Female,26818
+20,Junior high school,Divorced,Male,152
+20,Junior high school,Divorced,Female,261
+20,Junior high school,Widowed,Male,1
+20,Junior high school,Widowed,Female,17
+21,Junior high school,Unmarried,Male,147735
+21,Junior high school,Unmarried,Female,69923
+21,Junior high school,With Spouse,Male,16346
+21,Junior high school,With Spouse,Female,42443
+21,Junior high school,Divorced,Male,290
+21,Junior high school,Divorced,Female,500
+21,Junior high school,Widowed,Male,7
+21,Junior high school,Widowed,Female,26
+22,Junior high school,Unmarried,Male,169041
+22,Junior high school,Unmarried,Female,75501
+22,Junior high school,With Spouse,Male,31642
+22,Junior high school,With Spouse,Female,68440
+22,Junior high school,Divorced,Male,569
+22,Junior high school,Divorced,Female,994
+22,Junior high school,Widowed,Male,17
+22,Junior high school,Widowed,Female,55
+23,Junior high school,Unmarried,Male,165889
+23,Junior high school,Unmarried,Female,70065
+23,Junior high school,With Spouse,Male,49087
+23,Junior high school,With Spouse,Female,91780
+23,Junior high school,Divorced,Male,1006
+23,Junior high school,Divorced,Female,1514
+23,Junior high school,Widowed,Male,30
+23,Junior high school,Widowed,Female,63
+24,Junior high school,Unmarried,Male,165542
+24,Junior high school,Unmarried,Female,65361
+24,Junior high school,With Spouse,Male,72361
+24,Junior high school,With Spouse,Female,119640
+24,Junior high school,Divorced,Male,1736
+24,Junior high school,Divorced,Female,2308
+24,Junior high school,Widowed,Male,27
+24,Junior high school,Widowed,Female,90
+25,Junior high school,Unmarried,Male,168563
+25,Junior high school,Unmarried,Female,60949
+25,Junior high school,With Spouse,Male,103068
+25,Junior high school,With Spouse,Female,154993
+25,Junior high school,Divorced,Male,2827
+25,Junior high school,Divorced,Female,3261
+25,Junior high school,Widowed,Male,48
+25,Junior high school,Widowed,Female,167
+26,Junior high school,Unmarried,Male,148240
+26,Junior high school,Unmarried,Female,49609
+26,Junior high school,With Spouse,Male,128954
+26,Junior high school,With Spouse,Female,176497
+26,Junior high school,Divorced,Male,4064
+26,Junior high school,Divorced,Female,4112
+26,Junior high school,Widowed,Male,85
+26,Junior high school,Widowed,Female,219
+27,Junior high school,Unmarried,Male,145156
+27,Junior high school,Unmarried,Female,45035
+27,Junior high school,With Spouse,Male,171003
+27,Junior high school,With Spouse,Female,221773
+27,Junior high school,Divorced,Male,6022
+27,Junior high school,Divorced,Female,5521
+27,Junior high school,Widowed,Male,101
+27,Junior high school,Widowed,Female,294
+28,Junior high school,Unmarried,Male,133139
+28,Junior high school,Unmarried,Female,38281
+28,Junior high school,With Spouse,Male,208185
+28,Junior high school,With Spouse,Female,255459
+28,Junior high school,Divorced,Male,8307
+28,Junior high school,Divorced,Female,6758
+28,Junior high school,Widowed,Male,149
+28,Junior high school,Widowed,Female,377
+29,Junior high school,Unmarried,Male,125855
+29,Junior high school,Unmarried,Female,35137
+29,Junior high school,With Spouse,Male,256815
+29,Junior high school,With Spouse,Female,303483
+29,Junior high school,Divorced,Male,11336
+29,Junior high school,Divorced,Female,8331
+29,Junior high school,Widowed,Male,188
+29,Junior high school,Widowed,Female,505
+30,Junior high school,Unmarried,Male,137679
+30,Junior high school,Unmarried,Female,37357
+30,Junior high school,With Spouse,Male,367100
+30,Junior high school,With Spouse,Female,421440
+30,Junior high school,Divorced,Male,17085
+30,Junior high school,Divorced,Female,11680
+30,Junior high school,Widowed,Male,338
+30,Junior high school,Widowed,Female,740
+31,Junior high school,Unmarried,Male,114589
+31,Junior high school,Unmarried,Female,29327
+31,Junior high school,With Spouse,Male,385054
+31,Junior high school,With Spouse,Female,437310
+31,Junior high school,Divorced,Male,19413
+31,Junior high school,Divorced,Female,13029
+31,Junior high school,Widowed,Male,431
+31,Junior high school,Widowed,Female,987
+32,Junior high school,Unmarried,Male,92084
+32,Junior high school,Unmarried,Female,23581
+32,Junior high school,With Spouse,Male,385125
+32,Junior high school,With Spouse,Female,429716
+32,Junior high school,Divorced,Male,20429
+32,Junior high school,Divorced,Female,13277
+32,Junior high school,Widowed,Male,498
+32,Junior high school,Widowed,Female,1066
+33,Junior high school,Unmarried,Male,87472
+33,Junior high school,Unmarried,Female,21771
+33,Junior high school,With Spouse,Male,444006
+33,Junior high school,With Spouse,Female,484786
+33,Junior high school,Divorced,Male,24941
+33,Junior high school,Divorced,Female,15429
+33,Junior high school,Widowed,Male,529
+33,Junior high school,Widowed,Female,1442
+34,Junior high school,Unmarried,Male,67643
+34,Junior high school,Unmarried,Female,17098
+34,Junior high school,With Spouse,Male,407425
+34,Junior high school,With Spouse,Female,439662
+34,Junior high school,Divorced,Male,23405
+34,Junior high school,Divorced,Female,14415
+34,Junior high school,Widowed,Male,575
+34,Junior high school,Widowed,Female,1522
+35,Junior high school,Unmarried,Male,51945
+35,Junior high school,Unmarried,Female,13194
+35,Junior high school,With Spouse,Male,372806
+35,Junior high school,With Spouse,Female,392709
+35,Junior high school,Divorced,Male,21421
+35,Junior high school,Divorced,Female,12866
+35,Junior high school,Widowed,Male,612
+35,Junior high school,Widowed,Female,1651
+36,Junior high school,Unmarried,Male,45478
+36,Junior high school,Unmarried,Female,11507
+36,Junior high school,With Spouse,Male,385647
+36,Junior high school,With Spouse,Female,400834
+36,Junior high school,Divorced,Male,22035
+36,Junior high school,Divorced,Female,13172
+36,Junior high school,Widowed,Male,644
+36,Junior high school,Widowed,Female,1810
+37,Junior high school,Unmarried,Male,39144
+37,Junior high school,Unmarried,Female,9952
+37,Junior high school,With Spouse,Male,385425
+37,Junior high school,With Spouse,Female,390356
+37,Junior high school,Divorced,Male,22049
+37,Junior high school,Divorced,Female,13014
+37,Junior high school,Widowed,Male,756
+37,Junior high school,Widowed,Female,2136
+38,Junior high school,Unmarried,Male,40118
+38,Junior high school,Unmarried,Female,10271
+38,Junior high school,With Spouse,Male,450495
+38,Junior high school,With Spouse,Female,450506
+38,Junior high school,Divorced,Male,26604
+38,Junior high school,Divorced,Female,15357
+38,Junior high school,Widowed,Male,957
+38,Junior high school,Widowed,Female,2698
+39,Junior high school,Unmarried,Male,32115
+39,Junior high school,Unmarried,Female,8355
+39,Junior high school,With Spouse,Male,406112
+39,Junior high school,With Spouse,Female,404840
+39,Junior high school,Divorced,Male,23436
+39,Junior high school,Divorced,Female,13580
+39,Junior high school,Widowed,Male,895
+39,Junior high school,Widowed,Female,2715
+40,Junior high school,Unmarried,Male,27173
+40,Junior high school,Unmarried,Female,7052
+40,Junior high school,With Spouse,Male,379288
+40,Junior high school,With Spouse,Female,373529
+40,Junior high school,Divorced,Male,21237
+40,Junior high school,Divorced,Female,12963
+40,Junior high school,Widowed,Male,1069
+40,Junior high school,Widowed,Female,2976
+41,Junior high school,Unmarried,Male,27346
+41,Junior high school,Unmarried,Female,6690
+41,Junior high school,With Spouse,Male,428838
+41,Junior high school,With Spouse,Female,418615
+41,Junior high school,Divorced,Male,24336
+41,Junior high school,Divorced,Female,15122
+41,Junior high school,Widowed,Male,1341
+41,Junior high school,Widowed,Female,3714
+42,Junior high school,Unmarried,Male,24058
+42,Junior high school,Unmarried,Female,5923
+42,Junior high school,With Spouse,Male,417172
+42,Junior high school,With Spouse,Female,404560
+42,Junior high school,Divorced,Male,22716
+42,Junior high school,Divorced,Female,14812
+42,Junior high school,Widowed,Male,1486
+42,Junior high school,Widowed,Female,4289
+43,Junior high school,Unmarried,Male,21745
+43,Junior high school,Unmarried,Female,5347
+43,Junior high school,With Spouse,Male,410093
+43,Junior high school,With Spouse,Female,391894
+43,Junior high school,Divorced,Male,21976
+43,Junior high school,Divorced,Female,14607
+43,Junior high school,Widowed,Male,1637
+43,Junior high school,Widowed,Female,4579
+44,Junior high school,Unmarried,Male,22287
+44,Junior high school,Unmarried,Female,5399
+44,Junior high school,With Spouse,Male,466951
+44,Junior high school,With Spouse,Female,443988
+44,Junior high school,Divorced,Male,23856
+44,Junior high school,Divorced,Female,15969
+44,Junior high school,Widowed,Male,2090
+44,Junior high school,Widowed,Female,5698
+45,Junior high school,Unmarried,Male,22205
+45,Junior high school,Unmarried,Female,5103
+45,Junior high school,With Spouse,Male,484948
+45,Junior high school,With Spouse,Female,458039
+45,Junior high school,Divorced,Male,23778
+45,Junior high school,Divorced,Female,16753
+45,Junior high school,Widowed,Male,2522
+45,Junior high school,Widowed,Female,6977
+46,Junior high school,Unmarried,Male,22629
+46,Junior high school,Unmarried,Female,5225
+46,Junior high school,With Spouse,Male,538084
+46,Junior high school,With Spouse,Female,508952
+46,Junior high school,Divorced,Male,25108
+46,Junior high school,Divorced,Female,17854
+46,Junior high school,Widowed,Male,3212
+46,Junior high school,Widowed,Female,8349
+47,Junior high school,Unmarried,Male,21885
+47,Junior high school,Unmarried,Female,5114
+47,Junior high school,With Spouse,Male,567672
+47,Junior high school,With Spouse,Female,525974
+47,Junior high school,Divorced,Male,25152
+47,Junior high school,Divorced,Female,18474
+47,Junior high school,Widowed,Male,3715
+47,Junior high school,Widowed,Female,9877
+48,Junior high school,Unmarried,Male,20682
+48,Junior high school,Unmarried,Female,4763
+48,Junior high school,With Spouse,Male,585264
+48,Junior high school,With Spouse,Female,537540
+48,Junior high school,Divorced,Male,24543
+48,Junior high school,Divorced,Female,18536
+48,Junior high school,Widowed,Male,4467
+48,Junior high school,Widowed,Female,11121
+49,Junior high school,Unmarried,Male,19600
+49,Junior high school,Unmarried,Female,4486
+49,Junior high school,With Spouse,Male,608812
+49,Junior high school,With Spouse,Female,547956
+49,Junior high school,Divorced,Male,24542
+49,Junior high school,Divorced,Female,18574
+49,Junior high school,Widowed,Male,5045
+49,Junior high school,Widowed,Female,13130
+50,Junior high school,Unmarried,Male,18776
+50,Junior high school,Unmarried,Female,4009
+50,Junior high school,With Spouse,Male,635646
+50,Junior high school,With Spouse,Female,573434
+50,Junior high school,Divorced,Male,24697
+50,Junior high school,Divorced,Female,18955
+50,Junior high school,Widowed,Male,6229
+50,Junior high school,Widowed,Female,15985
+51,Junior high school,Unmarried,Male,15394
+51,Junior high school,Unmarried,Female,3221
+51,Junior high school,With Spouse,Male,587072
+51,Junior high school,With Spouse,Female,519360
+51,Junior high school,Divorced,Male,21986
+51,Junior high school,Divorced,Female,17317
+51,Junior high school,Widowed,Male,6973
+51,Junior high school,Widowed,Female,16687
+52,Junior high school,Unmarried,Male,14908
+52,Junior high school,Unmarried,Female,3085
+52,Junior high school,With Spouse,Male,630863
+52,Junior high school,With Spouse,Female,550545
+52,Junior high school,Divorced,Male,22407
+52,Junior high school,Divorced,Female,17585
+52,Junior high school,Widowed,Male,8412
+52,Junior high school,Widowed,Female,19884
+53,Junior high school,Unmarried,Male,11309
+53,Junior high school,Unmarried,Female,2227
+53,Junior high school,With Spouse,Male,509637
+53,Junior high school,With Spouse,Female,439265
+53,Junior high school,Divorced,Male,16666
+53,Junior high school,Divorced,Female,13052
+53,Junior high school,Widowed,Male,7725
+53,Junior high school,Widowed,Female,18327
+54,Junior high school,Unmarried,Male,11731
+54,Junior high school,Unmarried,Female,2169
+54,Junior high school,With Spouse,Male,575489
+54,Junior high school,With Spouse,Female,486238
+54,Junior high school,Divorced,Male,18128
+54,Junior high school,Divorced,Female,14420
+54,Junior high school,Widowed,Male,9950
+54,Junior high school,Widowed,Female,22872
+55,Junior high school,Unmarried,Male,10614
+55,Junior high school,Unmarried,Female,2008
+55,Junior high school,With Spouse,Male,550498
+55,Junior high school,With Spouse,Female,470127
+55,Junior high school,Divorced,Male,17723
+55,Junior high school,Divorced,Female,14297
+55,Junior high school,Widowed,Male,10804
+55,Junior high school,Widowed,Female,25224
+56,Junior high school,Unmarried,Male,9892
+56,Junior high school,Unmarried,Female,1853
+56,Junior high school,With Spouse,Male,512857
+56,Junior high school,With Spouse,Female,441070
+56,Junior high school,Divorced,Male,16886
+56,Junior high school,Divorced,Female,13613
+56,Junior high school,Widowed,Male,11382
+56,Junior high school,Widowed,Female,27005
+57,Junior high school,Unmarried,Male,10977
+57,Junior high school,Unmarried,Female,1921
+57,Junior high school,With Spouse,Male,576937
+57,Junior high school,With Spouse,Female,483035
+57,Junior high school,Divorced,Male,18335
+57,Junior high school,Divorced,Female,14323
+57,Junior high school,Widowed,Male,14447
+57,Junior high school,Widowed,Female,33055
+58,Junior high school,Unmarried,Male,7137
+58,Junior high school,Unmarried,Female,1242
+58,Junior high school,With Spouse,Male,400913
+58,Junior high school,With Spouse,Female,325525
+58,Junior high school,Divorced,Male,11523
+58,Junior high school,Divorced,Female,8758
+58,Junior high school,Widowed,Male,11379
+58,Junior high school,Widowed,Female,24940
+59,Junior high school,Unmarried,Male,3631
+59,Junior high school,Unmarried,Female,671
+59,Junior high school,With Spouse,Male,201620
+59,Junior high school,With Spouse,Female,166143
+59,Junior high school,Divorced,Male,6517
+59,Junior high school,Divorced,Female,4841
+59,Junior high school,Widowed,Male,6355
+59,Junior high school,Widowed,Female,14169
+60,Junior high school,Unmarried,Male,4225
+60,Junior high school,Unmarried,Female,758
+60,Junior high school,With Spouse,Male,244004
+60,Junior high school,With Spouse,Female,191320
+60,Junior high school,Divorced,Male,7783
+60,Junior high school,Divorced,Female,6104
+60,Junior high school,Widowed,Male,8954
+60,Junior high school,Widowed,Female,18672
+61,Junior high school,Unmarried,Male,3877
+61,Junior high school,Unmarried,Female,622
+61,Junior high school,With Spouse,Male,226204
+61,Junior high school,With Spouse,Female,165449
+61,Junior high school,Divorced,Male,6693
+61,Junior high school,Divorced,Female,4853
+61,Junior high school,Widowed,Male,9463
+61,Junior high school,Widowed,Female,17592
+62,Junior high school,Unmarried,Male,4795
+62,Junior high school,Unmarried,Female,744
+62,Junior high school,With Spouse,Male,284837
+62,Junior high school,With Spouse,Female,200538
+62,Junior high school,Divorced,Male,7764
+62,Junior high school,Divorced,Female,5674
+62,Junior high school,Widowed,Male,12709
+62,Junior high school,Widowed,Female,23319
+63,Junior high school,Unmarried,Male,5089
+63,Junior high school,Unmarried,Female,732
+63,Junior high school,With Spouse,Male,314124
+63,Junior high school,With Spouse,Female,212732
+63,Junior high school,Divorced,Male,7553
+63,Junior high school,Divorced,Female,5625
+63,Junior high school,Widowed,Male,15584
+63,Junior high school,Widowed,Female,26250
+64,Junior high school,Unmarried,Male,4300
+64,Junior high school,Unmarried,Female,685
+64,Junior high school,With Spouse,Male,274045
+64,Junior high school,With Spouse,Female,188015
+64,Junior high school,Divorced,Male,6295
+64,Junior high school,Divorced,Female,4936
+64,Junior high school,Widowed,Male,14998
+64,Junior high school,Widowed,Female,25533
+15,High School,Unmarried,Male,440365
+15,High School,Unmarried,Female,416583
+15,High School,With Spouse,Male,33
+15,High School,With Spouse,Female,43
+15,High School,Divorced,Male,1
+15,High School,Divorced,Female,1
+15,High School,Widowed,Male,0
+15,High School,Widowed,Female,0
+16,High School,Unmarried,Male,702970
+16,High School,Unmarried,Female,637672
+16,High School,With Spouse,Male,89
+16,High School,With Spouse,Female,205
+16,High School,Divorced,Male,1
+16,High School,Divorced,Female,2
+16,High School,Widowed,Male,0
+16,High School,Widowed,Female,1
+17,High School,Unmarried,Male,619220
+17,High School,Unmarried,Female,551979
+17,High School,With Spouse,Male,254
+17,High School,With Spouse,Female,573
+17,High School,Divorced,Male,4
+17,High School,Divorced,Female,5
+17,High School,Widowed,Male,1
+17,High School,Widowed,Female,1
+18,High School,Unmarried,Male,355155
+18,High School,Unmarried,Female,288030
+18,High School,With Spouse,Male,559
+18,High School,With Spouse,Female,1629
+18,High School,Divorced,Male,5
+18,High School,Divorced,Female,12
+18,High School,Widowed,Male,1
+18,High School,Widowed,Female,0
+19,High School,Unmarried,Male,192829
+19,High School,Unmarried,Female,143453
+19,High School,With Spouse,Male,1278
+19,High School,With Spouse,Female,3719
+19,High School,Divorced,Male,16
+19,High School,Divorced,Female,21
+19,High School,Widowed,Male,0
+19,High School,Widowed,Female,3
+20,High School,Unmarried,Male,153676
+20,High School,Unmarried,Female,107210
+20,High School,With Spouse,Male,2736
+20,High School,With Spouse,Female,8757
+20,High School,Divorced,Male,28
+20,High School,Divorced,Female,71
+20,High School,Widowed,Male,4
+20,High School,Widowed,Female,6
+21,High School,Unmarried,Male,136582
+21,High School,Unmarried,Female,87484
+21,High School,With Spouse,Male,5560
+21,High School,With Spouse,Female,16133
+21,High School,Divorced,Male,40
+21,High School,Divorced,Female,131
+21,High School,Widowed,Male,2
+21,High School,Widowed,Female,6
+22,High School,Unmarried,Male,145541
+22,High School,Unmarried,Female,86802
+22,High School,With Spouse,Male,12880
+22,High School,With Spouse,Female,28499
+22,High School,Divorced,Male,128
+22,High School,Divorced,Female,271
+22,High School,Widowed,Male,2
+22,High School,Widowed,Female,12
+23,High School,Unmarried,Male,140286
+23,High School,Unmarried,Female,77863
+23,High School,With Spouse,Male,22374
+23,High School,With Spouse,Female,41674
+23,High School,Divorced,Male,227
+23,High School,Divorced,Female,457
+23,High School,Widowed,Male,7
+23,High School,Widowed,Female,23
+24,High School,Unmarried,Male,137529
+24,High School,Unmarried,Female,70474
+24,High School,With Spouse,Male,35205
+24,High School,With Spouse,Female,57876
+24,High School,Divorced,Male,427
+24,High School,Divorced,Female,872
+24,High School,Widowed,Male,8
+24,High School,Widowed,Female,36
+25,High School,Unmarried,Male,133733
+25,High School,Unmarried,Female,63180
+25,High School,With Spouse,Male,54721
+25,High School,With Spouse,Female,79359
+25,High School,Divorced,Male,806
+25,High School,Divorced,Female,1315
+25,High School,Widowed,Male,12
+25,High School,Widowed,Female,40
+26,High School,Unmarried,Male,116244
+26,High School,Unmarried,Female,51244
+26,High School,With Spouse,Male,70119
+26,High School,With Spouse,Female,92243
+26,High School,Divorced,Male,1261
+26,High School,Divorced,Female,1812
+26,High School,Widowed,Male,11
+26,High School,Widowed,Female,60
+27,High School,Unmarried,Male,109198
+27,High School,Unmarried,Female,44769
+27,High School,With Spouse,Male,96077
+27,High School,With Spouse,Female,118386
+27,High School,Divorced,Male,2004
+27,High School,Divorced,Female,2598
+27,High School,Widowed,Male,31
+27,High School,Widowed,Female,85
+28,High School,Unmarried,Male,95928
+28,High School,Unmarried,Female,37719
+28,High School,With Spouse,Male,120593
+28,High School,With Spouse,Female,136126
+28,High School,Divorced,Male,2838
+28,High School,Divorced,Female,3259
+28,High School,Widowed,Male,44
+28,High School,Widowed,Female,122
+29,High School,Unmarried,Male,86951
+29,High School,Unmarried,Female,32341
+29,High School,With Spouse,Male,149945
+29,High School,With Spouse,Female,161380
+29,High School,Divorced,Male,4214
+29,High School,Divorced,Female,4384
+29,High School,Widowed,Male,52
+29,High School,Widowed,Female,176
+30,High School,Unmarried,Male,89299
+30,High School,Unmarried,Female,32807
+30,High School,With Spouse,Male,206579
+30,High School,With Spouse,Female,216158
+30,High School,Divorced,Male,6191
+30,High School,Divorced,Female,6071
+30,High School,Widowed,Male,120
+30,High School,Widowed,Female,251
+31,High School,Unmarried,Male,68985
+31,High School,Unmarried,Female,24656
+31,High School,With Spouse,Male,213310
+31,High School,With Spouse,Female,214653
+31,High School,Divorced,Male,7207
+31,High School,Divorced,Female,6645
+31,High School,Widowed,Male,109
+31,High School,Widowed,Female,273
+32,High School,Unmarried,Male,53261
+32,High School,Unmarried,Female,19417
+32,High School,With Spouse,Male,207649
+32,High School,With Spouse,Female,203664
+32,High School,Divorced,Male,7695
+32,High School,Divorced,Female,7130
+32,High School,Widowed,Male,126
+32,High School,Widowed,Female,333
+33,High School,Unmarried,Male,46648
+33,High School,Unmarried,Female,17317
+33,High School,With Spouse,Male,229949
+33,High School,With Spouse,Female,219624
+33,High School,Divorced,Male,9224
+33,High School,Divorced,Female,8377
+33,High School,Widowed,Male,176
+33,High School,Widowed,Female,411
+34,High School,Unmarried,Male,33196
+34,High School,Unmarried,Female,12719
+34,High School,With Spouse,Male,198209
+34,High School,With Spouse,Female,185578
+34,High School,Divorced,Male,8614
+34,High School,Divorced,Female,7479
+34,High School,Widowed,Male,149
+34,High School,Widowed,Female,432
+35,High School,Unmarried,Male,23585
+35,High School,Unmarried,Female,9431
+35,High School,With Spouse,Male,166656
+35,High School,With Spouse,Female,152589
+35,High School,Divorced,Male,7372
+35,High School,Divorced,Female,6600
+35,High School,Widowed,Male,136
+35,High School,Widowed,Female,405
+36,High School,Unmarried,Male,19287
+36,High School,Unmarried,Female,7886
+36,High School,With Spouse,Male,164091
+36,High School,With Spouse,Female,149034
+36,High School,Divorced,Male,7405
+36,High School,Divorced,Female,6717
+36,High School,Widowed,Male,133
+36,High School,Widowed,Female,461
+37,High School,Unmarried,Male,16301
+37,High School,Unmarried,Female,7234
+37,High School,With Spouse,Male,162815
+37,High School,With Spouse,Female,146064
+37,High School,Divorced,Male,7716
+37,High School,Divorced,Female,6874
+37,High School,Widowed,Male,149
+37,High School,Widowed,Female,478
+38,High School,Unmarried,Male,16311
+38,High School,Unmarried,Female,7555
+38,High School,With Spouse,Male,192528
+38,High School,With Spouse,Female,172828
+38,High School,Divorced,Male,9372
+38,High School,Divorced,Female,8717
+38,High School,Widowed,Male,199
+38,High School,Widowed,Female,718
+39,High School,Unmarried,Male,12536
+39,High School,Unmarried,Female,5904
+39,High School,With Spouse,Male,173437
+39,High School,With Spouse,Female,153594
+39,High School,Divorced,Male,8193
+39,High School,Divorced,Female,7862
+39,High School,Widowed,Male,211
+39,High School,Widowed,Female,747
+40,High School,Unmarried,Male,10184
+40,High School,Unmarried,Female,4945
+40,High School,With Spouse,Male,161775
+40,High School,With Spouse,Female,140869
+40,High School,Divorced,Male,7738
+40,High School,Divorced,Female,7436
+40,High School,Widowed,Male,222
+40,High School,Widowed,Female,763
+41,High School,Unmarried,Male,9442
+41,High School,Unmarried,Female,4548
+41,High School,With Spouse,Male,179420
+41,High School,With Spouse,Female,154525
+41,High School,Divorced,Male,8859
+41,High School,Divorced,Female,8674
+41,High School,Widowed,Male,300
+41,High School,Widowed,Female,1058
+42,High School,Unmarried,Male,7803
+42,High School,Unmarried,Female,4026
+42,High School,With Spouse,Male,166305
+42,High School,With Spouse,Female,142072
+42,High School,Divorced,Male,8149
+42,High School,Divorced,Female,8396
+42,High School,Widowed,Male,273
+42,High School,Widowed,Female,1078
+43,High School,Unmarried,Male,6701
+43,High School,Unmarried,Female,3509
+43,High School,With Spouse,Male,153248
+43,High School,With Spouse,Female,129301
+43,High School,Divorced,Male,7765
+43,High School,Divorced,Female,8270
+43,High School,Widowed,Male,345
+43,High School,Widowed,Female,1120
+44,High School,Unmarried,Male,6547
+44,High School,Unmarried,Female,3391
+44,High School,With Spouse,Male,164700
+44,High School,With Spouse,Female,136539
+44,High School,Divorced,Male,8033
+44,High School,Divorced,Female,8896
+44,High School,Widowed,Male,416
+44,High School,Widowed,Female,1367
+45,High School,Unmarried,Male,6220
+45,High School,Unmarried,Female,3168
+45,High School,With Spouse,Male,162509
+45,High School,With Spouse,Female,133687
+45,High School,Divorced,Male,8013
+45,High School,Divorced,Female,8986
+45,High School,Widowed,Male,404
+45,High School,Widowed,Female,1514
+46,High School,Unmarried,Male,5993
+46,High School,Unmarried,Female,3114
+46,High School,With Spouse,Male,172126
+46,High School,With Spouse,Female,139299
+46,High School,Divorced,Male,8452
+46,High School,Divorced,Female,9311
+46,High School,Widowed,Male,513
+46,High School,Widowed,Female,1871
+47,High School,Unmarried,Male,5952
+47,High School,Unmarried,Female,3131
+47,High School,With Spouse,Male,178299
+47,High School,With Spouse,Female,141941
+47,High School,Divorced,Male,8688
+47,High School,Divorced,Female,9972
+47,High School,Widowed,Male,633
+47,High School,Widowed,Female,2145
+48,High School,Unmarried,Male,5534
+48,High School,Unmarried,Female,2748
+48,High School,With Spouse,Male,179400
+48,High School,With Spouse,Female,140091
+48,High School,Divorced,Male,8920
+48,High School,Divorced,Female,9917
+48,High School,Widowed,Male,712
+48,High School,Widowed,Female,2470
+49,High School,Unmarried,Male,5476
+49,High School,Unmarried,Female,2600
+49,High School,With Spouse,Male,181680
+49,High School,With Spouse,Female,138866
+49,High School,Divorced,Male,8678
+49,High School,Divorced,Female,10044
+49,High School,Widowed,Male,820
+49,High School,Widowed,Female,2736
+50,High School,Unmarried,Male,4960
+50,High School,Unmarried,Female,2391
+50,High School,With Spouse,Male,185617
+50,High School,With Spouse,Female,142325
+50,High School,Divorced,Male,8759
+50,High School,Divorced,Female,10562
+50,High School,Widowed,Male,1034
+50,High School,Widowed,Female,3329
+51,High School,Unmarried,Male,3831
+51,High School,Unmarried,Female,1703
+51,High School,With Spouse,Male,162555
+51,High School,With Spouse,Female,124015
+51,High School,Divorced,Male,7791
+51,High School,Divorced,Female,9297
+51,High School,Widowed,Male,1136
+51,High School,Widowed,Female,3518
+52,High School,Unmarried,Male,3560
+52,High School,Unmarried,Female,1717
+52,High School,With Spouse,Male,166903
+52,High School,With Spouse,Female,125441
+52,High School,Divorced,Male,7621
+52,High School,Divorced,Female,9043
+52,High School,Widowed,Male,1325
+52,High School,Widowed,Female,4013
+53,High School,Unmarried,Male,2384
+53,High School,Unmarried,Female,1106
+53,High School,With Spouse,Male,123993
+53,High School,With Spouse,Female,91388
+53,High School,Divorced,Male,5196
+53,High School,Divorced,Female,6141
+53,High School,Widowed,Male,1234
+53,High School,Widowed,Female,3427
+54,High School,Unmarried,Male,2464
+54,High School,Unmarried,Female,1110
+54,High School,With Spouse,Male,141952
+54,High School,With Spouse,Female,103888
+54,High School,Divorced,Male,5799
+54,High School,Divorced,Female,6877
+54,High School,Widowed,Male,1567
+54,High School,Widowed,Female,4528
+55,High School,Unmarried,Male,2376
+55,High School,Unmarried,Female,1051
+55,High School,With Spouse,Male,155177
+55,High School,With Spouse,Female,115001
+55,High School,Divorced,Male,6251
+55,High School,Divorced,Female,7615
+55,High School,Widowed,Male,1943
+55,High School,Widowed,Female,5558
+56,High School,Unmarried,Male,2631
+56,High School,Unmarried,Female,1117
+56,High School,With Spouse,Male,174984
+56,High School,With Spouse,Female,132153
+56,High School,Divorced,Male,6943
+56,High School,Divorced,Female,8841
+56,High School,Widowed,Male,2415
+56,High School,Widowed,Female,7105
+57,High School,Unmarried,Male,3171
+57,High School,Unmarried,Female,1388
+57,High School,With Spouse,Male,233925
+57,High School,With Spouse,Female,178731
+57,High School,Divorced,Male,8955
+57,High School,Divorced,Female,11583
+57,High School,Widowed,Male,3732
+57,High School,Widowed,Female,10765
+58,High School,Unmarried,Male,2321
+58,High School,Unmarried,Female,951
+58,High School,With Spouse,Male,186907
+58,High School,With Spouse,Female,136796
+58,High School,Divorced,Male,6536
+58,High School,Divorced,Female,8166
+58,High School,Widowed,Male,3330
+58,High School,Widowed,Female,9282
+59,High School,Unmarried,Male,1480
+59,High School,Unmarried,Female,628
+59,High School,With Spouse,Male,111296
+59,High School,With Spouse,Female,85821
+59,High School,Divorced,Male,4211
+59,High School,Divorced,Female,5206
+59,High School,Widowed,Male,2320
+59,High School,Widowed,Female,6544
+60,High School,Unmarried,Male,1562
+60,High School,Unmarried,Female,634
+60,High School,With Spouse,Male,141128
+60,High School,With Spouse,Female,104952
+60,High School,Divorced,Male,5112
+60,High School,Divorced,Female,6106
+60,High School,Widowed,Male,3446
+60,High School,Widowed,Female,9057
+61,High School,Unmarried,Male,1356
+61,High School,Unmarried,Female,537
+61,High School,With Spouse,Male,125755
+61,High School,With Spouse,Female,89505
+61,High School,Divorced,Male,4147
+61,High School,Divorced,Female,4616
+61,High School,Widowed,Male,3606
+61,High School,Widowed,Female,8436
+62,High School,Unmarried,Male,1356
+62,High School,Unmarried,Female,564
+62,High School,With Spouse,Male,143017
+62,High School,With Spouse,Female,99529
+62,High School,Divorced,Male,4331
+62,High School,Divorced,Female,5046
+62,High School,Widowed,Male,4448
+62,High School,Widowed,Female,10085
+63,High School,Unmarried,Male,1327
+63,High School,Unmarried,Female,531
+63,High School,With Spouse,Male,142741
+63,High School,With Spouse,Female,96370
+63,High School,Divorced,Male,3894
+63,High School,Divorced,Female,4543
+63,High School,Widowed,Male,4868
+63,High School,Widowed,Female,10155
+64,High School,Unmarried,Male,1001
+64,High School,Unmarried,Female,453
+64,High School,With Spouse,Male,114394
+64,High School,With Spouse,Female,75603
+64,High School,Divorced,Male,2847
+64,High School,Divorced,Female,3394
+64,High School,Widowed,Male,4341
+64,High School,Widowed,Female,8802
+15,College (Associate Degree),Unmarried,Male,11785
+15,College (Associate Degree),Unmarried,Female,10278
+15,College (Associate Degree),With Spouse,Male,2
+15,College (Associate Degree),With Spouse,Female,5
+15,College (Associate Degree),Divorced,Male,0
+15,College (Associate Degree),Divorced,Female,0
+15,College (Associate Degree),Widowed,Male,0
+15,College (Associate Degree),Widowed,Female,0
+16,College (Associate Degree),Unmarried,Male,25447
+16,College (Associate Degree),Unmarried,Female,22425
+16,College (Associate Degree),With Spouse,Male,14
+16,College (Associate Degree),With Spouse,Female,13
+16,College (Associate Degree),Divorced,Male,0
+16,College (Associate Degree),Divorced,Female,1
+16,College (Associate Degree),Widowed,Male,0
+16,College (Associate Degree),Widowed,Female,0
+17,College (Associate Degree),Unmarried,Male,49670
+17,College (Associate Degree),Unmarried,Female,47459
+17,College (Associate Degree),With Spouse,Male,27
+17,College (Associate Degree),With Spouse,Female,66
+17,College (Associate Degree),Divorced,Male,0
+17,College (Associate Degree),Divorced,Female,0
+17,College (Associate Degree),Widowed,Male,0
+17,College (Associate Degree),Widowed,Female,0
+18,College (Associate Degree),Unmarried,Male,152107
+18,College (Associate Degree),Unmarried,Female,147211
+18,College (Associate Degree),With Spouse,Male,99
+18,College (Associate Degree),With Spouse,Female,222
+18,College (Associate Degree),Divorced,Male,1
+18,College (Associate Degree),Divorced,Female,3
+18,College (Associate Degree),Widowed,Male,0
+18,College (Associate Degree),Widowed,Female,0
+19,College (Associate Degree),Unmarried,Male,233304
+19,College (Associate Degree),Unmarried,Female,233236
+19,College (Associate Degree),With Spouse,Male,268
+19,College (Associate Degree),With Spouse,Female,763
+19,College (Associate Degree),Divorced,Male,2
+19,College (Associate Degree),Divorced,Female,6
+19,College (Associate Degree),Widowed,Male,0
+19,College (Associate Degree),Widowed,Female,3
+20,College (Associate Degree),Unmarried,Male,235196
+20,College (Associate Degree),Unmarried,Female,231139
+20,College (Associate Degree),With Spouse,Male,763
+20,College (Associate Degree),With Spouse,Female,2682
+20,College (Associate Degree),Divorced,Male,6
+20,College (Associate Degree),Divorced,Female,15
+20,College (Associate Degree),Widowed,Male,2
+20,College (Associate Degree),Widowed,Female,1
+21,College (Associate Degree),Unmarried,Male,185086
+21,College (Associate Degree),Unmarried,Female,181408
+21,College (Associate Degree),With Spouse,Male,1991
+21,College (Associate Degree),With Spouse,Female,6920
+21,College (Associate Degree),Divorced,Male,14
+21,College (Associate Degree),Divorced,Female,40
+21,College (Associate Degree),Widowed,Male,0
+21,College (Associate Degree),Widowed,Female,1
+22,College (Associate Degree),Unmarried,Male,176767
+22,College (Associate Degree),Unmarried,Female,170549
+22,College (Associate Degree),With Spouse,Male,5715
+22,College (Associate Degree),With Spouse,Female,15589
+22,College (Associate Degree),Divorced,Male,27
+22,College (Associate Degree),Divorced,Female,95
+22,College (Associate Degree),Widowed,Male,0
+22,College (Associate Degree),Widowed,Female,7
+23,College (Associate Degree),Unmarried,Male,163041
+23,College (Associate Degree),Unmarried,Female,152293
+23,College (Associate Degree),With Spouse,Male,12290
+23,College (Associate Degree),With Spouse,Female,28608
+23,College (Associate Degree),Divorced,Male,59
+23,College (Associate Degree),Divorced,Female,178
+23,College (Associate Degree),Widowed,Male,1
+23,College (Associate Degree),Widowed,Female,11
+24,College (Associate Degree),Unmarried,Male,152298
+24,College (Associate Degree),Unmarried,Female,133991
+24,College (Associate Degree),With Spouse,Male,22435
+24,College (Associate Degree),With Spouse,Female,46036
+24,College (Associate Degree),Divorced,Male,131
+24,College (Associate Degree),Divorced,Female,400
+24,College (Associate Degree),Widowed,Male,5
+24,College (Associate Degree),Widowed,Female,16
+25,College (Associate Degree),Unmarried,Male,144856
+25,College (Associate Degree),Unmarried,Female,117752
+25,College (Associate Degree),With Spouse,Male,38990
+25,College (Associate Degree),With Spouse,Female,69822
+25,College (Associate Degree),Divorced,Male,330
+25,College (Associate Degree),Divorced,Female,686
+25,College (Associate Degree),Widowed,Male,13
+25,College (Associate Degree),Widowed,Female,28
+26,College (Associate Degree),Unmarried,Male,118789
+26,College (Associate Degree),Unmarried,Female,87873
+26,College (Associate Degree),With Spouse,Male,54205
+26,College (Associate Degree),With Spouse,Female,85833
+26,College (Associate Degree),Divorced,Male,496
+26,College (Associate Degree),Divorced,Female,1119
+26,College (Associate Degree),Widowed,Male,2
+26,College (Associate Degree),Widowed,Female,42
+27,College (Associate Degree),Unmarried,Male,104407
+27,College (Associate Degree),Unmarried,Female,70757
+27,College (Associate Degree),With Spouse,Male,76418
+27,College (Associate Degree),With Spouse,Female,109644
+27,College (Associate Degree),Divorced,Male,835
+27,College (Associate Degree),Divorced,Female,1559
+27,College (Associate Degree),Widowed,Male,21
+27,College (Associate Degree),Widowed,Female,41
+28,College (Associate Degree),Unmarried,Male,85441
+28,College (Associate Degree),Unmarried,Female,53783
+28,College (Associate Degree),With Spouse,Male,96088
+28,College (Associate Degree),With Spouse,Female,125958
+28,College (Associate Degree),Divorced,Male,1354
+28,College (Associate Degree),Divorced,Female,2181
+28,College (Associate Degree),Widowed,Male,24
+28,College (Associate Degree),Widowed,Female,73
+29,College (Associate Degree),Unmarried,Male,71619
+29,College (Associate Degree),Unmarried,Female,42702
+29,College (Associate Degree),With Spouse,Male,118092
+29,College (Associate Degree),With Spouse,Female,143292
+29,College (Associate Degree),Divorced,Male,1897
+29,College (Associate Degree),Divorced,Female,2844
+29,College (Associate Degree),Widowed,Male,24
+29,College (Associate Degree),Widowed,Female,91
+30,College (Associate Degree),Unmarried,Male,69434
+30,College (Associate Degree),Unmarried,Female,40384
+30,College (Associate Degree),With Spouse,Male,160906
+30,College (Associate Degree),With Spouse,Female,186590
+30,College (Associate Degree),Divorced,Male,3006
+30,College (Associate Degree),Divorced,Female,4167
+30,College (Associate Degree),Widowed,Male,44
+30,College (Associate Degree),Widowed,Female,124
+31,College (Associate Degree),Unmarried,Male,51351
+31,College (Associate Degree),Unmarried,Female,30016
+31,College (Associate Degree),With Spouse,Male,166082
+31,College (Associate Degree),With Spouse,Female,185877
+31,College (Associate Degree),Divorced,Male,3584
+31,College (Associate Degree),Divorced,Female,4874
+31,College (Associate Degree),Widowed,Male,48
+31,College (Associate Degree),Widowed,Female,179
+32,College (Associate Degree),Unmarried,Male,38438
+32,College (Associate Degree),Unmarried,Female,22605
+32,College (Associate Degree),With Spouse,Male,161614
+32,College (Associate Degree),With Spouse,Female,174207
+32,College (Associate Degree),Divorced,Male,4073
+32,College (Associate Degree),Divorced,Female,5377
+32,College (Associate Degree),Widowed,Male,62
+32,College (Associate Degree),Widowed,Female,212
+33,College (Associate Degree),Unmarried,Male,32369
+33,College (Associate Degree),Unmarried,Female,19069
+33,College (Associate Degree),With Spouse,Male,176294
+33,College (Associate Degree),With Spouse,Female,184154
+33,College (Associate Degree),Divorced,Male,4918
+33,College (Associate Degree),Divorced,Female,6328
+33,College (Associate Degree),Widowed,Male,72
+33,College (Associate Degree),Widowed,Female,224
+34,College (Associate Degree),Unmarried,Male,22988
+34,College (Associate Degree),Unmarried,Female,13862
+34,College (Associate Degree),With Spouse,Male,152429
+34,College (Associate Degree),With Spouse,Female,154031
+34,College (Associate Degree),Divorced,Male,4593
+34,College (Associate Degree),Divorced,Female,5909
+34,College (Associate Degree),Widowed,Male,84
+34,College (Associate Degree),Widowed,Female,235
+35,College (Associate Degree),Unmarried,Male,15946
+35,College (Associate Degree),Unmarried,Female,9812
+35,College (Associate Degree),With Spouse,Male,125395
+35,College (Associate Degree),With Spouse,Female,121752
+35,College (Associate Degree),Divorced,Male,4227
+35,College (Associate Degree),Divorced,Female,5161
+35,College (Associate Degree),Widowed,Male,55
+35,College (Associate Degree),Widowed,Female,228
+36,College (Associate Degree),Unmarried,Male,12744
+36,College (Associate Degree),Unmarried,Female,8442
+36,College (Associate Degree),With Spouse,Male,120925
+36,College (Associate Degree),With Spouse,Female,115153
+36,College (Associate Degree),Divorced,Male,4071
+36,College (Associate Degree),Divorced,Female,5161
+36,College (Associate Degree),Widowed,Male,72
+36,College (Associate Degree),Widowed,Female,267
+37,College (Associate Degree),Unmarried,Male,10676
+37,College (Associate Degree),Unmarried,Female,7255
+37,College (Associate Degree),With Spouse,Male,115865
+37,College (Associate Degree),With Spouse,Female,111367
+37,College (Associate Degree),Divorced,Male,4307
+37,College (Associate Degree),Divorced,Female,5592
+37,College (Associate Degree),Widowed,Male,71
+37,College (Associate Degree),Widowed,Female,310
+38,College (Associate Degree),Unmarried,Male,9731
+38,College (Associate Degree),Unmarried,Female,7040
+38,College (Associate Degree),With Spouse,Male,130180
+38,College (Associate Degree),With Spouse,Female,123910
+38,College (Associate Degree),Divorced,Male,5228
+38,College (Associate Degree),Divorced,Female,6510
+38,College (Associate Degree),Widowed,Male,82
+38,College (Associate Degree),Widowed,Female,344
+39,College (Associate Degree),Unmarried,Male,6610
+39,College (Associate Degree),Unmarried,Female,5116
+39,College (Associate Degree),With Spouse,Male,106809
+39,College (Associate Degree),With Spouse,Female,101316
+39,College (Associate Degree),Divorced,Male,4038
+39,College (Associate Degree),Divorced,Female,5544
+39,College (Associate Degree),Widowed,Male,71
+39,College (Associate Degree),Widowed,Female,319
+40,College (Associate Degree),Unmarried,Male,5163
+40,College (Associate Degree),Unmarried,Female,4109
+40,College (Associate Degree),With Spouse,Male,94690
+40,College (Associate Degree),With Spouse,Female,88489
+40,College (Associate Degree),Divorced,Male,3731
+40,College (Associate Degree),Divorced,Female,5041
+40,College (Associate Degree),Widowed,Male,84
+40,College (Associate Degree),Widowed,Female,383
+41,College (Associate Degree),Unmarried,Male,4324
+41,College (Associate Degree),Unmarried,Female,3551
+41,College (Associate Degree),With Spouse,Male,99686
+41,College (Associate Degree),With Spouse,Female,90660
+41,College (Associate Degree),Divorced,Male,3971
+41,College (Associate Degree),Divorced,Female,5505
+41,College (Associate Degree),Widowed,Male,88
+41,College (Associate Degree),Widowed,Female,472
+42,College (Associate Degree),Unmarried,Male,3632
+42,College (Associate Degree),Unmarried,Female,2915
+42,College (Associate Degree),With Spouse,Male,92043
+42,College (Associate Degree),With Spouse,Female,81925
+42,College (Associate Degree),Divorced,Male,3673
+42,College (Associate Degree),Divorced,Female,5220
+42,College (Associate Degree),Widowed,Male,126
+42,College (Associate Degree),Widowed,Female,476
+43,College (Associate Degree),Unmarried,Male,2804
+43,College (Associate Degree),Unmarried,Female,2347
+43,College (Associate Degree),With Spouse,Male,82998
+43,College (Associate Degree),With Spouse,Female,72360
+43,College (Associate Degree),Divorced,Male,3402
+43,College (Associate Degree),Divorced,Female,4864
+43,College (Associate Degree),Widowed,Male,118
+43,College (Associate Degree),Widowed,Female,484
+44,College (Associate Degree),Unmarried,Male,2648
+44,College (Associate Degree),Unmarried,Female,2174
+44,College (Associate Degree),With Spouse,Male,87326
+44,College (Associate Degree),With Spouse,Female,72685
+44,College (Associate Degree),Divorced,Male,3515
+44,College (Associate Degree),Divorced,Female,4991
+44,College (Associate Degree),Widowed,Male,135
+44,College (Associate Degree),Widowed,Female,549
+45,College (Associate Degree),Unmarried,Male,2474
+45,College (Associate Degree),Unmarried,Female,1973
+45,College (Associate Degree),With Spouse,Male,83292
+45,College (Associate Degree),With Spouse,Female,67816
+45,College (Associate Degree),Divorced,Male,3281
+45,College (Associate Degree),Divorced,Female,4905
+45,College (Associate Degree),Widowed,Male,146
+45,College (Associate Degree),Widowed,Female,627
+46,College (Associate Degree),Unmarried,Male,2226
+46,College (Associate Degree),Unmarried,Female,1827
+46,College (Associate Degree),With Spouse,Male,85147
+46,College (Associate Degree),With Spouse,Female,67191
+46,College (Associate Degree),Divorced,Male,3259
+46,College (Associate Degree),Divorced,Female,5034
+46,College (Associate Degree),Widowed,Male,172
+46,College (Associate Degree),Widowed,Female,681
+47,College (Associate Degree),Unmarried,Male,2126
+47,College (Associate Degree),Unmarried,Female,1922
+47,College (Associate Degree),With Spouse,Male,85674
+47,College (Associate Degree),With Spouse,Female,66728
+47,College (Associate Degree),Divorced,Male,3367
+47,College (Associate Degree),Divorced,Female,5292
+47,College (Associate Degree),Widowed,Male,187
+47,College (Associate Degree),Widowed,Female,798
+48,College (Associate Degree),Unmarried,Male,1944
+48,College (Associate Degree),Unmarried,Female,1562
+48,College (Associate Degree),With Spouse,Male,82638
+48,College (Associate Degree),With Spouse,Female,62959
+48,College (Associate Degree),Divorced,Male,3321
+48,College (Associate Degree),Divorced,Female,4998
+48,College (Associate Degree),Widowed,Male,193
+48,College (Associate Degree),Widowed,Female,875
+49,College (Associate Degree),Unmarried,Male,1706
+49,College (Associate Degree),Unmarried,Female,1406
+49,College (Associate Degree),With Spouse,Male,79106
+49,College (Associate Degree),With Spouse,Female,59577
+49,College (Associate Degree),Divorced,Male,3229
+49,College (Associate Degree),Divorced,Female,4825
+49,College (Associate Degree),Widowed,Male,228
+49,College (Associate Degree),Widowed,Female,863
+50,College (Associate Degree),Unmarried,Male,1542
+50,College (Associate Degree),Unmarried,Female,1269
+50,College (Associate Degree),With Spouse,Male,77797
+50,College (Associate Degree),With Spouse,Female,58019
+50,College (Associate Degree),Divorced,Male,3092
+50,College (Associate Degree),Divorced,Female,4887
+50,College (Associate Degree),Widowed,Male,271
+50,College (Associate Degree),Widowed,Female,1056
+51,College (Associate Degree),Unmarried,Male,1110
+51,College (Associate Degree),Unmarried,Female,798
+51,College (Associate Degree),With Spouse,Male,67166
+51,College (Associate Degree),With Spouse,Female,48787
+51,College (Associate Degree),Divorced,Male,2635
+51,College (Associate Degree),Divorced,Female,4080
+51,College (Associate Degree),Widowed,Male,305
+51,College (Associate Degree),Widowed,Female,1051
+52,College (Associate Degree),Unmarried,Male,1021
+52,College (Associate Degree),Unmarried,Female,774
+52,College (Associate Degree),With Spouse,Male,66855
+52,College (Associate Degree),With Spouse,Female,47435
+52,College (Associate Degree),Divorced,Male,2564
+52,College (Associate Degree),Divorced,Female,3798
+52,College (Associate Degree),Widowed,Male,309
+52,College (Associate Degree),Widowed,Female,1130
+53,College (Associate Degree),Unmarried,Male,646
+53,College (Associate Degree),Unmarried,Female,461
+53,College (Associate Degree),With Spouse,Male,47697
+53,College (Associate Degree),With Spouse,Female,32305
+53,College (Associate Degree),Divorced,Male,1717
+53,College (Associate Degree),Divorced,Female,2521
+53,College (Associate Degree),Widowed,Male,204
+53,College (Associate Degree),Widowed,Female,889
+54,College (Associate Degree),Unmarried,Male,619
+54,College (Associate Degree),Unmarried,Female,421
+54,College (Associate Degree),With Spouse,Male,53771
+54,College (Associate Degree),With Spouse,Female,35544
+54,College (Associate Degree),Divorced,Male,1746
+54,College (Associate Degree),Divorced,Female,2685
+54,College (Associate Degree),Widowed,Male,313
+54,College (Associate Degree),Widowed,Female,1126
+55,College (Associate Degree),Unmarried,Male,528
+55,College (Associate Degree),Unmarried,Female,398
+55,College (Associate Degree),With Spouse,Male,55933
+55,College (Associate Degree),With Spouse,Female,35807
+55,College (Associate Degree),Divorced,Male,1847
+55,College (Associate Degree),Divorced,Female,2683
+55,College (Associate Degree),Widowed,Male,421
+55,College (Associate Degree),Widowed,Female,1282
+56,College (Associate Degree),Unmarried,Male,587
+56,College (Associate Degree),Unmarried,Female,397
+56,College (Associate Degree),With Spouse,Male,59113
+56,College (Associate Degree),With Spouse,Female,37111
+56,College (Associate Degree),Divorced,Male,1911
+56,College (Associate Degree),Divorced,Female,2792
+56,College (Associate Degree),Widowed,Male,440
+56,College (Associate Degree),Widowed,Female,1484
+57,College (Associate Degree),Unmarried,Male,586
+57,College (Associate Degree),Unmarried,Female,448
+57,College (Associate Degree),With Spouse,Male,69356
+57,College (Associate Degree),With Spouse,Female,43113
+57,College (Associate Degree),Divorced,Male,2181
+57,College (Associate Degree),Divorced,Female,3310
+57,College (Associate Degree),Widowed,Male,640
+57,College (Associate Degree),Widowed,Female,1783
+58,College (Associate Degree),Unmarried,Male,428
+58,College (Associate Degree),Unmarried,Female,288
+58,College (Associate Degree),With Spouse,Male,47553
+58,College (Associate Degree),With Spouse,Female,28040
+58,College (Associate Degree),Divorced,Male,1427
+58,College (Associate Degree),Divorced,Female,1999
+58,College (Associate Degree),Widowed,Male,476
+58,College (Associate Degree),Widowed,Female,1330
+59,College (Associate Degree),Unmarried,Male,200
+59,College (Associate Degree),Unmarried,Female,189
+59,College (Associate Degree),With Spouse,Male,25965
+59,College (Associate Degree),With Spouse,Female,15394
+59,College (Associate Degree),Divorced,Male,853
+59,College (Associate Degree),Divorced,Female,1168
+59,College (Associate Degree),Widowed,Male,283
+59,College (Associate Degree),Widowed,Female,847
+60,College (Associate Degree),Unmarried,Male,213
+60,College (Associate Degree),Unmarried,Female,189
+60,College (Associate Degree),With Spouse,Male,30042
+60,College (Associate Degree),With Spouse,Female,17152
+60,College (Associate Degree),Divorced,Male,971
+60,College (Associate Degree),Divorced,Female,1213
+60,College (Associate Degree),Widowed,Male,429
+60,College (Associate Degree),Widowed,Female,1063
+61,College (Associate Degree),Unmarried,Male,158
+61,College (Associate Degree),Unmarried,Female,161
+61,College (Associate Degree),With Spouse,Male,26310
+61,College (Associate Degree),With Spouse,Female,14065
+61,College (Associate Degree),Divorced,Male,732
+61,College (Associate Degree),Divorced,Female,950
+61,College (Associate Degree),Widowed,Male,403
+61,College (Associate Degree),Widowed,Female,953
+62,College (Associate Degree),Unmarried,Male,172
+62,College (Associate Degree),Unmarried,Female,163
+62,College (Associate Degree),With Spouse,Male,32069
+62,College (Associate Degree),With Spouse,Female,17107
+62,College (Associate Degree),Divorced,Male,843
+62,College (Associate Degree),Divorced,Female,1054
+62,College (Associate Degree),Widowed,Male,549
+62,College (Associate Degree),Widowed,Female,1282
+63,College (Associate Degree),Unmarried,Male,198
+63,College (Associate Degree),Unmarried,Female,184
+63,College (Associate Degree),With Spouse,Male,34651
+63,College (Associate Degree),With Spouse,Female,18453
+63,College (Associate Degree),Divorced,Male,829
+63,College (Associate Degree),Divorced,Female,1138
+63,College (Associate Degree),Widowed,Male,704
+63,College (Associate Degree),Widowed,Female,1431
+64,College (Associate Degree),Unmarried,Male,161
+64,College (Associate Degree),Unmarried,Female,174
+64,College (Associate Degree),With Spouse,Male,31505
+64,College (Associate Degree),With Spouse,Female,16326
+64,College (Associate Degree),Divorced,Male,758
+64,College (Associate Degree),Divorced,Female,967
+64,College (Associate Degree),Widowed,Male,708
+64,College (Associate Degree),Widowed,Female,1471
+15,Bachelor's degree,Unmarried,Male,891
+15,Bachelor's degree,Unmarried,Female,972
+15,Bachelor's degree,With Spouse,Male,4
+15,Bachelor's degree,With Spouse,Female,2
+15,Bachelor's degree,Divorced,Male,0
+15,Bachelor's degree,Divorced,Female,0
+15,Bachelor's degree,Widowed,Male,1
+15,Bachelor's degree,Widowed,Female,0
+16,Bachelor's degree,Unmarried,Male,2337
+16,Bachelor's degree,Unmarried,Female,2594
+16,Bachelor's degree,With Spouse,Male,4
+16,Bachelor's degree,With Spouse,Female,3
+16,Bachelor's degree,Divorced,Male,0
+16,Bachelor's degree,Divorced,Female,0
+16,Bachelor's degree,Widowed,Male,0
+16,Bachelor's degree,Widowed,Female,0
+17,Bachelor's degree,Unmarried,Male,16856
+17,Bachelor's degree,Unmarried,Female,22019
+17,Bachelor's degree,With Spouse,Male,10
+17,Bachelor's degree,With Spouse,Female,8
+17,Bachelor's degree,Divorced,Male,0
+17,Bachelor's degree,Divorced,Female,0
+17,Bachelor's degree,Widowed,Male,0
+17,Bachelor's degree,Widowed,Female,0
+18,Bachelor's degree,Unmarried,Male,109163
+18,Bachelor's degree,Unmarried,Female,128652
+18,Bachelor's degree,With Spouse,Male,24
+18,Bachelor's degree,With Spouse,Female,39
+18,Bachelor's degree,Divorced,Male,1
+18,Bachelor's degree,Divorced,Female,2
+18,Bachelor's degree,Widowed,Male,0
+18,Bachelor's degree,Widowed,Female,0
+19,Bachelor's degree,Unmarried,Male,195236
+19,Bachelor's degree,Unmarried,Female,228757
+19,Bachelor's degree,With Spouse,Male,53
+19,Bachelor's degree,With Spouse,Female,130
+19,Bachelor's degree,Divorced,Male,0
+19,Bachelor's degree,Divorced,Female,1
+19,Bachelor's degree,Widowed,Male,0
+19,Bachelor's degree,Widowed,Female,0
+20,Bachelor's degree,Unmarried,Male,230297
+20,Bachelor's degree,Unmarried,Female,269564
+20,Bachelor's degree,With Spouse,Male,151
+20,Bachelor's degree,With Spouse,Female,356
+20,Bachelor's degree,Divorced,Male,3
+20,Bachelor's degree,Divorced,Female,1
+20,Bachelor's degree,Widowed,Male,0
+20,Bachelor's degree,Widowed,Female,0
+21,Bachelor's degree,Unmarried,Male,214646
+21,Bachelor's degree,Unmarried,Female,249609
+21,Bachelor's degree,With Spouse,Male,372
+21,Bachelor's degree,With Spouse,Female,1167
+21,Bachelor's degree,Divorced,Male,3
+21,Bachelor's degree,Divorced,Female,11
+21,Bachelor's degree,Widowed,Male,0
+21,Bachelor's degree,Widowed,Female,2
+22,Bachelor's degree,Unmarried,Male,181785
+22,Bachelor's degree,Unmarried,Female,208664
+22,Bachelor's degree,With Spouse,Male,1165
+22,Bachelor's degree,With Spouse,Female,3447
+22,Bachelor's degree,Divorced,Male,12
+22,Bachelor's degree,Divorced,Female,12
+22,Bachelor's degree,Widowed,Male,0
+22,Bachelor's degree,Widowed,Female,0
+23,Bachelor's degree,Unmarried,Male,146319
+23,Bachelor's degree,Unmarried,Female,165877
+23,Bachelor's degree,With Spouse,Male,3470
+23,Bachelor's degree,With Spouse,Female,8100
+23,Bachelor's degree,Divorced,Male,17
+23,Bachelor's degree,Divorced,Female,44
+23,Bachelor's degree,Widowed,Male,0
+23,Bachelor's degree,Widowed,Female,2
+24,Bachelor's degree,Unmarried,Male,130087
+24,Bachelor's degree,Unmarried,Female,145649
+24,Bachelor's degree,With Spouse,Male,8246
+24,Bachelor's degree,With Spouse,Female,18466
+24,Bachelor's degree,Divorced,Male,33
+24,Bachelor's degree,Divorced,Female,115
+24,Bachelor's degree,Widowed,Male,0
+24,Bachelor's degree,Widowed,Female,3
+25,Bachelor's degree,Unmarried,Male,126875
+25,Bachelor's degree,Unmarried,Female,134028
+25,Bachelor's degree,With Spouse,Male,18531
+25,Bachelor's degree,With Spouse,Female,36818
+25,Bachelor's degree,Divorced,Male,79
+25,Bachelor's degree,Divorced,Female,233
+25,Bachelor's degree,Widowed,Male,3
+25,Bachelor's degree,Widowed,Female,2
+26,Bachelor's degree,Unmarried,Male,109288
+26,Bachelor's degree,Unmarried,Female,109694
+26,Bachelor's degree,With Spouse,Male,32664
+26,Bachelor's degree,With Spouse,Female,57448
+26,Bachelor's degree,Divorced,Male,175
+26,Bachelor's degree,Divorced,Female,392
+26,Bachelor's degree,Widowed,Male,2
+26,Bachelor's degree,Widowed,Female,16
+27,Bachelor's degree,Unmarried,Male,97190
+27,Bachelor's degree,Unmarried,Female,90085
+27,Bachelor's degree,With Spouse,Male,53135
+27,Bachelor's degree,With Spouse,Female,84603
+27,Bachelor's degree,Divorced,Male,352
+27,Bachelor's degree,Divorced,Female,670
+27,Bachelor's degree,Widowed,Male,3
+27,Bachelor's degree,Widowed,Female,10
+28,Bachelor's degree,Unmarried,Male,80551
+28,Bachelor's degree,Unmarried,Female,68464
+28,Bachelor's degree,With Spouse,Male,73645
+28,Bachelor's degree,With Spouse,Female,104406
+28,Bachelor's degree,Divorced,Male,571
+28,Bachelor's degree,Divorced,Female,1088
+28,Bachelor's degree,Widowed,Male,9
+28,Bachelor's degree,Widowed,Female,26
+29,Bachelor's degree,Unmarried,Male,63813
+29,Bachelor's degree,Unmarried,Female,52215
+29,Bachelor's degree,With Spouse,Male,93365
+29,Bachelor's degree,With Spouse,Female,119707
+29,Bachelor's degree,Divorced,Male,857
+29,Bachelor's degree,Divorced,Female,1509
+29,Bachelor's degree,Widowed,Male,10
+29,Bachelor's degree,Widowed,Female,38
+30,Bachelor's degree,Unmarried,Male,59361
+30,Bachelor's degree,Unmarried,Female,47286
+30,Bachelor's degree,With Spouse,Male,128390
+30,Bachelor's degree,With Spouse,Female,154472
+30,Bachelor's degree,Divorced,Male,1421
+30,Bachelor's degree,Divorced,Female,2393
+30,Bachelor's degree,Widowed,Male,18
+30,Bachelor's degree,Widowed,Female,61
+31,Bachelor's degree,Unmarried,Male,43069
+31,Bachelor's degree,Unmarried,Female,34787
+31,Bachelor's degree,With Spouse,Male,136569
+31,Bachelor's degree,With Spouse,Female,156299
+31,Bachelor's degree,Divorced,Male,1861
+31,Bachelor's degree,Divorced,Female,2984
+31,Bachelor's degree,Widowed,Male,24
+31,Bachelor's degree,Widowed,Female,69
+32,Bachelor's degree,Unmarried,Male,31507
+32,Bachelor's degree,Unmarried,Female,26250
+32,Bachelor's degree,With Spouse,Male,138077
+32,Bachelor's degree,With Spouse,Female,150737
+32,Bachelor's degree,Divorced,Male,2223
+32,Bachelor's degree,Divorced,Female,3595
+32,Bachelor's degree,Widowed,Male,25
+32,Bachelor's degree,Widowed,Female,108
+33,Bachelor's degree,Unmarried,Male,25835
+33,Bachelor's degree,Unmarried,Female,21799
+33,Bachelor's degree,With Spouse,Male,153869
+33,Bachelor's degree,With Spouse,Female,160969
+33,Bachelor's degree,Divorced,Male,2782
+33,Bachelor's degree,Divorced,Female,4334
+33,Bachelor's degree,Widowed,Male,40
+33,Bachelor's degree,Widowed,Female,136
+34,Bachelor's degree,Unmarried,Male,18561
+34,Bachelor's degree,Unmarried,Female,15995
+34,Bachelor's degree,With Spouse,Male,139605
+34,Bachelor's degree,With Spouse,Female,140144
+34,Bachelor's degree,Divorced,Male,2863
+34,Bachelor's degree,Divorced,Female,4455
+34,Bachelor's degree,Widowed,Male,51
+34,Bachelor's degree,Widowed,Female,137
+35,Bachelor's degree,Unmarried,Male,13745
+35,Bachelor's degree,Unmarried,Female,11857
+35,Bachelor's degree,With Spouse,Male,122397
+35,Bachelor's degree,With Spouse,Female,117442
+35,Bachelor's degree,Divorced,Male,2699
+35,Bachelor's degree,Divorced,Female,3978
+35,Bachelor's degree,Widowed,Male,42
+35,Bachelor's degree,Widowed,Female,146
+36,Bachelor's degree,Unmarried,Male,11115
+36,Bachelor's degree,Unmarried,Female,10191
+36,Bachelor's degree,With Spouse,Male,124117
+36,Bachelor's degree,With Spouse,Female,115707
+36,Bachelor's degree,Divorced,Male,2965
+36,Bachelor's degree,Divorced,Female,4341
+36,Bachelor's degree,Widowed,Male,46
+36,Bachelor's degree,Widowed,Female,180
+37,Bachelor's degree,Unmarried,Male,9470
+37,Bachelor's degree,Unmarried,Female,8964
+37,Bachelor's degree,With Spouse,Male,120814
+37,Bachelor's degree,With Spouse,Female,111992
+37,Bachelor's degree,Divorced,Male,3137
+37,Bachelor's degree,Divorced,Female,4777
+37,Bachelor's degree,Widowed,Male,57
+37,Bachelor's degree,Widowed,Female,209
+38,Bachelor's degree,Unmarried,Male,8646
+38,Bachelor's degree,Unmarried,Female,8430
+38,Bachelor's degree,With Spouse,Male,131761
+38,Bachelor's degree,With Spouse,Female,121334
+38,Bachelor's degree,Divorced,Male,3662
+38,Bachelor's degree,Divorced,Female,5550
+38,Bachelor's degree,Widowed,Male,67
+38,Bachelor's degree,Widowed,Female,275
+39,Bachelor's degree,Unmarried,Male,5625
+39,Bachelor's degree,Unmarried,Female,5531
+39,Bachelor's degree,With Spouse,Male,102862
+39,Bachelor's degree,With Spouse,Female,92877
+39,Bachelor's degree,Divorced,Male,2890
+39,Bachelor's degree,Divorced,Female,4436
+39,Bachelor's degree,Widowed,Male,54
+39,Bachelor's degree,Widowed,Female,222
+40,Bachelor's degree,Unmarried,Male,3893
+40,Bachelor's degree,Unmarried,Female,3982
+40,Bachelor's degree,With Spouse,Male,86938
+40,Bachelor's degree,With Spouse,Female,77182
+40,Bachelor's degree,Divorced,Male,2483
+40,Bachelor's degree,Divorced,Female,3826
+40,Bachelor's degree,Widowed,Male,68
+40,Bachelor's degree,Widowed,Female,224
+41,Bachelor's degree,Unmarried,Male,3249
+41,Bachelor's degree,Unmarried,Female,3278
+41,Bachelor's degree,With Spouse,Male,86099
+41,Bachelor's degree,With Spouse,Female,75081
+41,Bachelor's degree,Divorced,Male,2437
+41,Bachelor's degree,Divorced,Female,3884
+41,Bachelor's degree,Widowed,Male,68
+41,Bachelor's degree,Widowed,Female,273
+42,Bachelor's degree,Unmarried,Male,2509
+42,Bachelor's degree,Unmarried,Female,2792
+42,Bachelor's degree,With Spouse,Male,77544
+42,Bachelor's degree,With Spouse,Female,66322
+42,Bachelor's degree,Divorced,Male,2201
+42,Bachelor's degree,Divorced,Female,3605
+42,Bachelor's degree,Widowed,Male,66
+42,Bachelor's degree,Widowed,Female,265
+43,Bachelor's degree,Unmarried,Male,1953
+43,Bachelor's degree,Unmarried,Female,2096
+43,Bachelor's degree,With Spouse,Male,68373
+43,Bachelor's degree,With Spouse,Female,56955
+43,Bachelor's degree,Divorced,Male,1858
+43,Bachelor's degree,Divorced,Female,3252
+43,Bachelor's degree,Widowed,Male,62
+43,Bachelor's degree,Widowed,Female,262
+44,Bachelor's degree,Unmarried,Male,1693
+44,Bachelor's degree,Unmarried,Female,1743
+44,Bachelor's degree,With Spouse,Male,69904
+44,Bachelor's degree,With Spouse,Female,54804
+44,Bachelor's degree,Divorced,Male,1976
+44,Bachelor's degree,Divorced,Female,3207
+44,Bachelor's degree,Widowed,Male,86
+44,Bachelor's degree,Widowed,Female,334
+45,Bachelor's degree,Unmarried,Male,1481
+45,Bachelor's degree,Unmarried,Female,1512
+45,Bachelor's degree,With Spouse,Male,65194
+45,Bachelor's degree,With Spouse,Female,48957
+45,Bachelor's degree,Divorced,Male,1898
+45,Bachelor's degree,Divorced,Female,2994
+45,Bachelor's degree,Widowed,Male,97
+45,Bachelor's degree,Widowed,Female,307
+46,Bachelor's degree,Unmarried,Male,1366
+46,Bachelor's degree,Unmarried,Female,1408
+46,Bachelor's degree,With Spouse,Male,65746
+46,Bachelor's degree,With Spouse,Female,47150
+46,Bachelor's degree,Divorced,Male,1903
+46,Bachelor's degree,Divorced,Female,2985
+46,Bachelor's degree,Widowed,Male,113
+46,Bachelor's degree,Widowed,Female,380
+47,Bachelor's degree,Unmarried,Male,1321
+47,Bachelor's degree,Unmarried,Female,1410
+47,Bachelor's degree,With Spouse,Male,65270
+47,Bachelor's degree,With Spouse,Female,45686
+47,Bachelor's degree,Divorced,Male,1910
+47,Bachelor's degree,Divorced,Female,3198
+47,Bachelor's degree,Widowed,Male,111
+47,Bachelor's degree,Widowed,Female,371
+48,Bachelor's degree,Unmarried,Male,1193
+48,Bachelor's degree,Unmarried,Female,1173
+48,Bachelor's degree,With Spouse,Male,63032
+48,Bachelor's degree,With Spouse,Female,42254
+48,Bachelor's degree,Divorced,Male,1835
+48,Bachelor's degree,Divorced,Female,2991
+48,Bachelor's degree,Widowed,Male,102
+48,Bachelor's degree,Widowed,Female,417
+49,Bachelor's degree,Unmarried,Male,1048
+49,Bachelor's degree,Unmarried,Female,1027
+49,Bachelor's degree,With Spouse,Male,60017
+49,Bachelor's degree,With Spouse,Female,40530
+49,Bachelor's degree,Divorced,Male,1722
+49,Bachelor's degree,Divorced,Female,3044
+49,Bachelor's degree,Widowed,Male,123
+49,Bachelor's degree,Widowed,Female,462
+50,Bachelor's degree,Unmarried,Male,940
+50,Bachelor's degree,Unmarried,Female,873
+50,Bachelor's degree,With Spouse,Male,58171
+50,Bachelor's degree,With Spouse,Female,38025
+50,Bachelor's degree,Divorced,Male,1757
+50,Bachelor's degree,Divorced,Female,2806
+50,Bachelor's degree,Widowed,Male,128
+50,Bachelor's degree,Widowed,Female,474
+51,Bachelor's degree,Unmarried,Male,699
+51,Bachelor's degree,Unmarried,Female,617
+51,Bachelor's degree,With Spouse,Male,51077
+51,Bachelor's degree,With Spouse,Female,31960
+51,Bachelor's degree,Divorced,Male,1482
+51,Bachelor's degree,Divorced,Female,2356
+51,Bachelor's degree,Widowed,Male,178
+51,Bachelor's degree,Widowed,Female,532
+52,Bachelor's degree,Unmarried,Male,657
+52,Bachelor's degree,Unmarried,Female,585
+52,Bachelor's degree,With Spouse,Male,52510
+52,Bachelor's degree,With Spouse,Female,31107
+52,Bachelor's degree,Divorced,Male,1527
+52,Bachelor's degree,Divorced,Female,2327
+52,Bachelor's degree,Widowed,Male,188
+52,Bachelor's degree,Widowed,Female,575
+53,Bachelor's degree,Unmarried,Male,446
+53,Bachelor's degree,Unmarried,Female,351
+53,Bachelor's degree,With Spouse,Male,37407
+53,Bachelor's degree,With Spouse,Female,20635
+53,Bachelor's degree,Divorced,Male,977
+53,Bachelor's degree,Divorced,Female,1430
+53,Bachelor's degree,Widowed,Male,159
+53,Bachelor's degree,Widowed,Female,349
+54,Bachelor's degree,Unmarried,Male,411
+54,Bachelor's degree,Unmarried,Female,316
+54,Bachelor's degree,With Spouse,Male,42104
+54,Bachelor's degree,With Spouse,Female,22049
+54,Bachelor's degree,Divorced,Male,1122
+54,Bachelor's degree,Divorced,Female,1535
+54,Bachelor's degree,Widowed,Male,186
+54,Bachelor's degree,Widowed,Female,455
+55,Bachelor's degree,Unmarried,Male,386
+55,Bachelor's degree,Unmarried,Female,273
+55,Bachelor's degree,With Spouse,Male,42342
+55,Bachelor's degree,With Spouse,Female,20521
+55,Bachelor's degree,Divorced,Male,1140
+55,Bachelor's degree,Divorced,Female,1414
+55,Bachelor's degree,Widowed,Male,204
+55,Bachelor's degree,Widowed,Female,558
+56,Bachelor's degree,Unmarried,Male,341
+56,Bachelor's degree,Unmarried,Female,266
+56,Bachelor's degree,With Spouse,Male,41803
+56,Bachelor's degree,With Spouse,Female,19275
+56,Bachelor's degree,Divorced,Male,1096
+56,Bachelor's degree,Divorced,Female,1447
+56,Bachelor's degree,Widowed,Male,255
+56,Bachelor's degree,Widowed,Female,518
+57,Bachelor's degree,Unmarried,Male,368
+57,Bachelor's degree,Unmarried,Female,272
+57,Bachelor's degree,With Spouse,Male,46652
+57,Bachelor's degree,With Spouse,Female,21083
+57,Bachelor's degree,Divorced,Male,1207
+57,Bachelor's degree,Divorced,Female,1597
+57,Bachelor's degree,Widowed,Male,311
+57,Bachelor's degree,Widowed,Female,655
+58,Bachelor's degree,Unmarried,Male,255
+58,Bachelor's degree,Unmarried,Female,205
+58,Bachelor's degree,With Spouse,Male,29073
+58,Bachelor's degree,With Spouse,Female,12516
+58,Bachelor's degree,Divorced,Male,840
+58,Bachelor's degree,Divorced,Female,963
+58,Bachelor's degree,Widowed,Male,230
+58,Bachelor's degree,Widowed,Female,448
+59,Bachelor's degree,Unmarried,Male,120
+59,Bachelor's degree,Unmarried,Female,107
+59,Bachelor's degree,With Spouse,Male,14928
+59,Bachelor's degree,With Spouse,Female,6711
+59,Bachelor's degree,Divorced,Male,454
+59,Bachelor's degree,Divorced,Female,497
+59,Bachelor's degree,Widowed,Male,133
+59,Bachelor's degree,Widowed,Female,267
+60,Bachelor's degree,Unmarried,Male,106
+60,Bachelor's degree,Unmarried,Female,97
+60,Bachelor's degree,With Spouse,Male,15676
+60,Bachelor's degree,With Spouse,Female,6892
+60,Bachelor's degree,Divorced,Male,447
+60,Bachelor's degree,Divorced,Female,497
+60,Bachelor's degree,Widowed,Male,171
+60,Bachelor's degree,Widowed,Female,324
+61,Bachelor's degree,Unmarried,Male,88
+61,Bachelor's degree,Unmarried,Female,96
+61,Bachelor's degree,With Spouse,Male,12184
+61,Bachelor's degree,With Spouse,Female,5233
+61,Bachelor's degree,Divorced,Male,338
+61,Bachelor's degree,Divorced,Female,396
+61,Bachelor's degree,Widowed,Male,162
+61,Bachelor's degree,Widowed,Female,298
+62,Bachelor's degree,Unmarried,Male,78
+62,Bachelor's degree,Unmarried,Female,102
+62,Bachelor's degree,With Spouse,Male,13787
+62,Bachelor's degree,With Spouse,Female,5989
+62,Bachelor's degree,Divorced,Male,360
+62,Bachelor's degree,Divorced,Female,444
+62,Bachelor's degree,Widowed,Male,193
+62,Bachelor's degree,Widowed,Female,358
+63,Bachelor's degree,Unmarried,Male,85
+63,Bachelor's degree,Unmarried,Female,99
+63,Bachelor's degree,With Spouse,Male,15394
+63,Bachelor's degree,With Spouse,Female,6597
+63,Bachelor's degree,Divorced,Male,375
+63,Bachelor's degree,Divorced,Female,436
+63,Bachelor's degree,Widowed,Male,254
+63,Bachelor's degree,Widowed,Female,417
+64,Bachelor's degree,Unmarried,Male,66
+64,Bachelor's degree,Unmarried,Female,83
+64,Bachelor's degree,With Spouse,Male,13602
+64,Bachelor's degree,With Spouse,Female,6035
+64,Bachelor's degree,Divorced,Male,339
+64,Bachelor's degree,Divorced,Female,403
+64,Bachelor's degree,Widowed,Male,247
+64,Bachelor's degree,Widowed,Female,424
+15,Master's Degree,Unmarried,Male,0
+15,Master's Degree,Unmarried,Female,2
+15,Master's Degree,With Spouse,Male,0
+15,Master's Degree,With Spouse,Female,0
+15,Master's Degree,Divorced,Male,0
+15,Master's Degree,Divorced,Female,0
+15,Master's Degree,Widowed,Male,0
+15,Master's Degree,Widowed,Female,0
+16,Master's Degree,Unmarried,Male,0
+16,Master's Degree,Unmarried,Female,1
+16,Master's Degree,With Spouse,Male,0
+16,Master's Degree,With Spouse,Female,0
+16,Master's Degree,Divorced,Male,0
+16,Master's Degree,Divorced,Female,0
+16,Master's Degree,Widowed,Male,0
+16,Master's Degree,Widowed,Female,0
+17,Master's Degree,Unmarried,Male,61
+17,Master's Degree,Unmarried,Female,42
+17,Master's Degree,With Spouse,Male,0
+17,Master's Degree,With Spouse,Female,1
+17,Master's Degree,Divorced,Male,0
+17,Master's Degree,Divorced,Female,0
+17,Master's Degree,Widowed,Male,0
+17,Master's Degree,Widowed,Female,0
+18,Master's Degree,Unmarried,Male,162
+18,Master's Degree,Unmarried,Female,125
+18,Master's Degree,With Spouse,Male,0
+18,Master's Degree,With Spouse,Female,1
+18,Master's Degree,Divorced,Male,0
+18,Master's Degree,Divorced,Female,0
+18,Master's Degree,Widowed,Male,0
+18,Master's Degree,Widowed,Female,0
+19,Master's Degree,Unmarried,Male,278
+19,Master's Degree,Unmarried,Female,215
+19,Master's Degree,With Spouse,Male,0
+19,Master's Degree,With Spouse,Female,1
+19,Master's Degree,Divorced,Male,0
+19,Master's Degree,Divorced,Female,0
+19,Master's Degree,Widowed,Male,0
+19,Master's Degree,Widowed,Female,0
+20,Master's Degree,Unmarried,Male,590
+20,Master's Degree,Unmarried,Female,635
+20,Master's Degree,With Spouse,Male,1
+20,Master's Degree,With Spouse,Female,7
+20,Master's Degree,Divorced,Male,0
+20,Master's Degree,Divorced,Female,0
+20,Master's Degree,Widowed,Male,0
+20,Master's Degree,Widowed,Female,0
+21,Master's Degree,Unmarried,Male,2847
+21,Master's Degree,Unmarried,Female,4100
+21,Master's Degree,With Spouse,Male,4
+21,Master's Degree,With Spouse,Female,16
+21,Master's Degree,Divorced,Male,0
+21,Master's Degree,Divorced,Female,0
+21,Master's Degree,Widowed,Male,0
+21,Master's Degree,Widowed,Female,0
+22,Master's Degree,Unmarried,Male,14471
+22,Master's Degree,Unmarried,Female,18614
+22,Master's Degree,With Spouse,Male,26
+22,Master's Degree,With Spouse,Female,55
+22,Master's Degree,Divorced,Male,0
+22,Master's Degree,Divorced,Female,0
+22,Master's Degree,Widowed,Male,0
+22,Master's Degree,Widowed,Female,0
+23,Master's Degree,Unmarried,Male,23640
+23,Master's Degree,Unmarried,Female,31191
+23,Master's Degree,With Spouse,Male,74
+23,Master's Degree,With Spouse,Female,176
+23,Master's Degree,Divorced,Male,1
+23,Master's Degree,Divorced,Female,2
+23,Master's Degree,Widowed,Male,0
+23,Master's Degree,Widowed,Female,1
+24,Master's Degree,Unmarried,Male,26127
+24,Master's Degree,Unmarried,Female,33261
+24,Master's Degree,With Spouse,Male,270
+24,Master's Degree,With Spouse,Female,512
+24,Master's Degree,Divorced,Male,1
+24,Master's Degree,Divorced,Female,4
+24,Master's Degree,Widowed,Male,1
+24,Master's Degree,Widowed,Female,0
+25,Master's Degree,Unmarried,Male,24287
+25,Master's Degree,Unmarried,Female,30315
+25,Master's Degree,With Spouse,Male,805
+25,Master's Degree,With Spouse,Female,1495
+25,Master's Degree,Divorced,Male,3
+25,Master's Degree,Divorced,Female,3
+25,Master's Degree,Widowed,Male,0
+25,Master's Degree,Widowed,Female,1
+26,Master's Degree,Unmarried,Male,18770
+26,Master's Degree,Unmarried,Female,23445
+26,Master's Degree,With Spouse,Male,1763
+26,Master's Degree,With Spouse,Female,3248
+26,Master's Degree,Divorced,Male,7
+26,Master's Degree,Divorced,Female,12
+26,Master's Degree,Widowed,Male,0
+26,Master's Degree,Widowed,Female,1
+27,Master's Degree,Unmarried,Male,15335
+27,Master's Degree,Unmarried,Female,18860
+27,Master's Degree,With Spouse,Male,3494
+27,Master's Degree,With Spouse,Female,6434
+27,Master's Degree,Divorced,Male,11
+27,Master's Degree,Divorced,Female,30
+27,Master's Degree,Widowed,Male,0
+27,Master's Degree,Widowed,Female,1
+28,Master's Degree,Unmarried,Male,12034
+28,Master's Degree,Unmarried,Female,14277
+28,Master's Degree,With Spouse,Male,5838
+28,Master's Degree,With Spouse,Female,9361
+28,Master's Degree,Divorced,Male,16
+28,Master's Degree,Divorced,Female,47
+28,Master's Degree,Widowed,Male,2
+28,Master's Degree,Widowed,Female,2
+29,Master's Degree,Unmarried,Male,9479
+29,Master's Degree,Unmarried,Female,10721
+29,Master's Degree,With Spouse,Male,8850
+29,Master's Degree,With Spouse,Female,12343
+29,Master's Degree,Divorced,Male,32
+29,Master's Degree,Divorced,Female,94
+29,Master's Degree,Widowed,Male,1
+29,Master's Degree,Widowed,Female,0
+30,Master's Degree,Unmarried,Male,8698
+30,Master's Degree,Unmarried,Female,9760
+30,Master's Degree,With Spouse,Male,13130
+30,Master's Degree,With Spouse,Female,17997
+30,Master's Degree,Divorced,Male,89
+30,Master's Degree,Divorced,Female,139
+30,Master's Degree,Widowed,Male,1
+30,Master's Degree,Widowed,Female,1
+31,Master's Degree,Unmarried,Male,6435
+31,Master's Degree,Unmarried,Female,7013
+31,Master's Degree,With Spouse,Male,15364
+31,Master's Degree,With Spouse,Female,19527
+31,Master's Degree,Divorced,Male,126
+31,Master's Degree,Divorced,Female,238
+31,Master's Degree,Widowed,Male,3
+31,Master's Degree,Widowed,Female,4
+32,Master's Degree,Unmarried,Male,4449
+32,Master's Degree,Unmarried,Female,5119
+32,Master's Degree,With Spouse,Male,15862
+32,Master's Degree,With Spouse,Female,19053
+32,Master's Degree,Divorced,Male,153
+32,Master's Degree,Divorced,Female,300
+32,Master's Degree,Widowed,Male,3
+32,Master's Degree,Widowed,Female,5
+33,Master's Degree,Unmarried,Male,3455
+33,Master's Degree,Unmarried,Female,3917
+33,Master's Degree,With Spouse,Male,17589
+33,Master's Degree,With Spouse,Female,19914
+33,Master's Degree,Divorced,Male,211
+33,Master's Degree,Divorced,Female,360
+33,Master's Degree,Widowed,Male,3
+33,Master's Degree,Widowed,Female,5
+34,Master's Degree,Unmarried,Male,2309
+34,Master's Degree,Unmarried,Female,2889
+34,Master's Degree,With Spouse,Male,16814
+34,Master's Degree,With Spouse,Female,17657
+34,Master's Degree,Divorced,Male,218
+34,Master's Degree,Divorced,Female,386
+34,Master's Degree,Widowed,Male,4
+34,Master's Degree,Widowed,Female,9
+35,Master's Degree,Unmarried,Male,1709
+35,Master's Degree,Unmarried,Female,2097
+35,Master's Degree,With Spouse,Male,14926
+35,Master's Degree,With Spouse,Female,14961
+35,Master's Degree,Divorced,Male,263
+35,Master's Degree,Divorced,Female,400
+35,Master's Degree,Widowed,Male,0
+35,Master's Degree,Widowed,Female,8
+36,Master's Degree,Unmarried,Male,1422
+36,Master's Degree,Unmarried,Female,1781
+36,Master's Degree,With Spouse,Male,15926
+36,Master's Degree,With Spouse,Female,15077
+36,Master's Degree,Divorced,Male,283
+36,Master's Degree,Divorced,Female,470
+36,Master's Degree,Widowed,Male,3
+36,Master's Degree,Widowed,Female,6
+37,Master's Degree,Unmarried,Male,1310
+37,Master's Degree,Unmarried,Female,1633
+37,Master's Degree,With Spouse,Male,16281
+37,Master's Degree,With Spouse,Female,15035
+37,Master's Degree,Divorced,Male,342
+37,Master's Degree,Divorced,Female,545
+37,Master's Degree,Widowed,Male,4
+37,Master's Degree,Widowed,Female,12
+38,Master's Degree,Unmarried,Male,1169
+38,Master's Degree,Unmarried,Female,1551
+38,Master's Degree,With Spouse,Male,18486
+38,Master's Degree,With Spouse,Female,16384
+38,Master's Degree,Divorced,Male,426
+38,Master's Degree,Divorced,Female,656
+38,Master's Degree,Widowed,Male,8
+38,Master's Degree,Widowed,Female,15
+39,Master's Degree,Unmarried,Male,732
+39,Master's Degree,Unmarried,Female,1021
+39,Master's Degree,With Spouse,Male,14626
+39,Master's Degree,With Spouse,Female,12296
+39,Master's Degree,Divorced,Male,345
+39,Master's Degree,Divorced,Female,537
+39,Master's Degree,Widowed,Male,3
+39,Master's Degree,Widowed,Female,23
+40,Master's Degree,Unmarried,Male,545
+40,Master's Degree,Unmarried,Female,697
+40,Master's Degree,With Spouse,Male,12504
+40,Master's Degree,With Spouse,Female,9913
+40,Master's Degree,Divorced,Male,280
+40,Master's Degree,Divorced,Female,402
+40,Master's Degree,Widowed,Male,4
+40,Master's Degree,Widowed,Female,17
+41,Master's Degree,Unmarried,Male,433
+41,Master's Degree,Unmarried,Female,604
+41,Master's Degree,With Spouse,Male,12067
+41,Master's Degree,With Spouse,Female,8878
+41,Master's Degree,Divorced,Male,281
+41,Master's Degree,Divorced,Female,404
+41,Master's Degree,Widowed,Male,6
+41,Master's Degree,Widowed,Female,20
+42,Master's Degree,Unmarried,Male,347
+42,Master's Degree,Unmarried,Female,507
+42,Master's Degree,With Spouse,Male,10230
+42,Master's Degree,With Spouse,Female,6986
+42,Master's Degree,Divorced,Male,256
+42,Master's Degree,Divorced,Female,370
+42,Master's Degree,Widowed,Male,11
+42,Master's Degree,Widowed,Female,14
+43,Master's Degree,Unmarried,Male,285
+43,Master's Degree,Unmarried,Female,345
+43,Master's Degree,With Spouse,Male,8401
+43,Master's Degree,With Spouse,Female,5472
+43,Master's Degree,Divorced,Male,201
+43,Master's Degree,Divorced,Female,311
+43,Master's Degree,Widowed,Male,6
+43,Master's Degree,Widowed,Female,18
+44,Master's Degree,Unmarried,Male,236
+44,Master's Degree,Unmarried,Female,313
+44,Master's Degree,With Spouse,Male,8008
+44,Master's Degree,With Spouse,Female,4752
+44,Master's Degree,Divorced,Male,176
+44,Master's Degree,Divorced,Female,327
+44,Master's Degree,Widowed,Male,9
+44,Master's Degree,Widowed,Female,13
+45,Master's Degree,Unmarried,Male,199
+45,Master's Degree,Unmarried,Female,255
+45,Master's Degree,With Spouse,Male,7333
+45,Master's Degree,With Spouse,Female,3948
+45,Master's Degree,Divorced,Male,179
+45,Master's Degree,Divorced,Female,271
+45,Master's Degree,Widowed,Male,3
+45,Master's Degree,Widowed,Female,12
+46,Master's Degree,Unmarried,Male,186
+46,Master's Degree,Unmarried,Female,255
+46,Master's Degree,With Spouse,Male,7109
+46,Master's Degree,With Spouse,Female,3747
+46,Master's Degree,Divorced,Male,198
+46,Master's Degree,Divorced,Female,249
+46,Master's Degree,Widowed,Male,10
+46,Master's Degree,Widowed,Female,20
+47,Master's Degree,Unmarried,Male,147
+47,Master's Degree,Unmarried,Female,210
+47,Master's Degree,With Spouse,Male,7197
+47,Master's Degree,With Spouse,Female,3834
+47,Master's Degree,Divorced,Male,164
+47,Master's Degree,Divorced,Female,277
+47,Master's Degree,Widowed,Male,9
+47,Master's Degree,Widowed,Female,14
+48,Master's Degree,Unmarried,Male,123
+48,Master's Degree,Unmarried,Female,142
+48,Master's Degree,With Spouse,Male,6617
+48,Master's Degree,With Spouse,Female,3383
+48,Master's Degree,Divorced,Male,188
+48,Master's Degree,Divorced,Female,270
+48,Master's Degree,Widowed,Male,10
+48,Master's Degree,Widowed,Female,27
+49,Master's Degree,Unmarried,Male,105
+49,Master's Degree,Unmarried,Female,155
+49,Master's Degree,With Spouse,Male,6114
+49,Master's Degree,With Spouse,Female,2873
+49,Master's Degree,Divorced,Male,172
+49,Master's Degree,Divorced,Female,277
+49,Master's Degree,Widowed,Male,12
+49,Master's Degree,Widowed,Female,15
+50,Master's Degree,Unmarried,Male,122
+50,Master's Degree,Unmarried,Female,110
+50,Master's Degree,With Spouse,Male,5615
+50,Master's Degree,With Spouse,Female,2623
+50,Master's Degree,Divorced,Male,164
+50,Master's Degree,Divorced,Female,251
+50,Master's Degree,Widowed,Male,11
+50,Master's Degree,Widowed,Female,17
+51,Master's Degree,Unmarried,Male,65
+51,Master's Degree,Unmarried,Female,75
+51,Master's Degree,With Spouse,Male,5014
+51,Master's Degree,With Spouse,Female,2224
+51,Master's Degree,Divorced,Male,134
+51,Master's Degree,Divorced,Female,211
+51,Master's Degree,Widowed,Male,9
+51,Master's Degree,Widowed,Female,33
+52,Master's Degree,Unmarried,Male,77
+52,Master's Degree,Unmarried,Female,74
+52,Master's Degree,With Spouse,Male,4850
+52,Master's Degree,With Spouse,Female,2062
+52,Master's Degree,Divorced,Male,121
+52,Master's Degree,Divorced,Female,209
+52,Master's Degree,Widowed,Male,13
+52,Master's Degree,Widowed,Female,24
+53,Master's Degree,Unmarried,Male,39
+53,Master's Degree,Unmarried,Female,36
+53,Master's Degree,With Spouse,Male,3383
+53,Master's Degree,With Spouse,Female,1319
+53,Master's Degree,Divorced,Male,86
+53,Master's Degree,Divorced,Female,149
+53,Master's Degree,Widowed,Male,10
+53,Master's Degree,Widowed,Female,11
+54,Master's Degree,Unmarried,Male,60
+54,Master's Degree,Unmarried,Female,29
+54,Master's Degree,With Spouse,Male,4003
+54,Master's Degree,With Spouse,Female,1421
+54,Master's Degree,Divorced,Male,110
+54,Master's Degree,Divorced,Female,136
+54,Master's Degree,Widowed,Male,13
+54,Master's Degree,Widowed,Female,19
+55,Master's Degree,Unmarried,Male,51
+55,Master's Degree,Unmarried,Female,23
+55,Master's Degree,With Spouse,Male,4295
+55,Master's Degree,With Spouse,Female,1418
+55,Master's Degree,Divorced,Male,101
+55,Master's Degree,Divorced,Female,146
+55,Master's Degree,Widowed,Male,16
+55,Master's Degree,Widowed,Female,26
+56,Master's Degree,Unmarried,Male,46
+56,Master's Degree,Unmarried,Female,20
+56,Master's Degree,With Spouse,Male,4302
+56,Master's Degree,With Spouse,Female,1357
+56,Master's Degree,Divorced,Male,116
+56,Master's Degree,Divorced,Female,137
+56,Master's Degree,Widowed,Male,15
+56,Master's Degree,Widowed,Female,37
+57,Master's Degree,Unmarried,Male,37
+57,Master's Degree,Unmarried,Female,25
+57,Master's Degree,With Spouse,Male,4901
+57,Master's Degree,With Spouse,Female,1316
+57,Master's Degree,Divorced,Male,138
+57,Master's Degree,Divorced,Female,161
+57,Master's Degree,Widowed,Male,28
+57,Master's Degree,Widowed,Female,33
+58,Master's Degree,Unmarried,Male,17
+58,Master's Degree,Unmarried,Female,15
+58,Master's Degree,With Spouse,Male,2912
+58,Master's Degree,With Spouse,Female,802
+58,Master's Degree,Divorced,Male,71
+58,Master's Degree,Divorced,Female,82
+58,Master's Degree,Widowed,Male,9
+58,Master's Degree,Widowed,Female,24
+59,Master's Degree,Unmarried,Male,14
+59,Master's Degree,Unmarried,Female,6
+59,Master's Degree,With Spouse,Male,1445
+59,Master's Degree,With Spouse,Female,417
+59,Master's Degree,Divorced,Male,38
+59,Master's Degree,Divorced,Female,40
+59,Master's Degree,Widowed,Male,6
+59,Master's Degree,Widowed,Female,9
+60,Master's Degree,Unmarried,Male,11
+60,Master's Degree,Unmarried,Female,7
+60,Master's Degree,With Spouse,Male,1362
+60,Master's Degree,With Spouse,Female,339
+60,Master's Degree,Divorced,Male,46
+60,Master's Degree,Divorced,Female,30
+60,Master's Degree,Widowed,Male,7
+60,Master's Degree,Widowed,Female,9
+61,Master's Degree,Unmarried,Male,13
+61,Master's Degree,Unmarried,Female,3
+61,Master's Degree,With Spouse,Male,1028
+61,Master's Degree,With Spouse,Female,247
+61,Master's Degree,Divorced,Male,26
+61,Master's Degree,Divorced,Female,31
+61,Master's Degree,Widowed,Male,12
+61,Master's Degree,Widowed,Female,16
+62,Master's Degree,Unmarried,Male,11
+62,Master's Degree,Unmarried,Female,7
+62,Master's Degree,With Spouse,Male,1223
+62,Master's Degree,With Spouse,Female,309
+62,Master's Degree,Divorced,Male,29
+62,Master's Degree,Divorced,Female,23
+62,Master's Degree,Widowed,Male,17
+62,Master's Degree,Widowed,Female,20
+63,Master's Degree,Unmarried,Male,8
+63,Master's Degree,Unmarried,Female,14
+63,Master's Degree,With Spouse,Male,1320
+63,Master's Degree,With Spouse,Female,319
+63,Master's Degree,Divorced,Male,36
+63,Master's Degree,Divorced,Female,30
+63,Master's Degree,Widowed,Male,21
+63,Master's Degree,Widowed,Female,24
+64,Master's Degree,Unmarried,Male,4
+64,Master's Degree,Unmarried,Female,11
+64,Master's Degree,With Spouse,Male,1074
+64,Master's Degree,With Spouse,Female,285
+64,Master's Degree,Divorced,Male,44
+64,Master's Degree,Divorced,Female,26
+64,Master's Degree,Widowed,Male,11
+64,Master's Degree,Widowed,Female,9
+15,Doctorate degree holders,Unmarried,Male,1
+15,Doctorate degree holders,Unmarried,Female,0
+15,Doctorate degree holders,With Spouse,Male,0
+15,Doctorate degree holders,With Spouse,Female,0
+15,Doctorate degree holders,Divorced,Male,0
+15,Doctorate degree holders,Divorced,Female,0
+15,Doctorate degree holders,Widowed,Male,0
+15,Doctorate degree holders,Widowed,Female,0
+16,Doctorate degree holders,Unmarried,Male,0
+16,Doctorate degree holders,Unmarried,Female,3
+16,Doctorate degree holders,With Spouse,Male,0
+16,Doctorate degree holders,With Spouse,Female,0
+16,Doctorate degree holders,Divorced,Male,0
+16,Doctorate degree holders,Divorced,Female,0
+16,Doctorate degree holders,Widowed,Male,0
+16,Doctorate degree holders,Widowed,Female,0
+17,Doctorate degree holders,Unmarried,Male,1
+17,Doctorate degree holders,Unmarried,Female,0
+17,Doctorate degree holders,With Spouse,Male,0
+17,Doctorate degree holders,With Spouse,Female,0
+17,Doctorate degree holders,Divorced,Male,0
+17,Doctorate degree holders,Divorced,Female,0
+17,Doctorate degree holders,Widowed,Male,0
+17,Doctorate degree holders,Widowed,Female,0
+18,Doctorate degree holders,Unmarried,Male,1
+18,Doctorate degree holders,Unmarried,Female,1
+18,Doctorate degree holders,With Spouse,Male,0
+18,Doctorate degree holders,With Spouse,Female,0
+18,Doctorate degree holders,Divorced,Male,0
+18,Doctorate degree holders,Divorced,Female,0
+18,Doctorate degree holders,Widowed,Male,0
+18,Doctorate degree holders,Widowed,Female,0
+19,Doctorate degree holders,Unmarried,Male,49
+19,Doctorate degree holders,Unmarried,Female,27
+19,Doctorate degree holders,With Spouse,Male,0
+19,Doctorate degree holders,With Spouse,Female,0
+19,Doctorate degree holders,Divorced,Male,0
+19,Doctorate degree holders,Divorced,Female,0
+19,Doctorate degree holders,Widowed,Male,0
+19,Doctorate degree holders,Widowed,Female,0
+20,Doctorate degree holders,Unmarried,Male,69
+20,Doctorate degree holders,Unmarried,Female,53
+20,Doctorate degree holders,With Spouse,Male,1
+20,Doctorate degree holders,With Spouse,Female,1
+20,Doctorate degree holders,Divorced,Male,0
+20,Doctorate degree holders,Divorced,Female,0
+20,Doctorate degree holders,Widowed,Male,0
+20,Doctorate degree holders,Widowed,Female,0
+21,Doctorate degree holders,Unmarried,Male,157
+21,Doctorate degree holders,Unmarried,Female,158
+21,Doctorate degree holders,With Spouse,Male,2
+21,Doctorate degree holders,With Spouse,Female,2
+21,Doctorate degree holders,Divorced,Male,0
+21,Doctorate degree holders,Divorced,Female,0
+21,Doctorate degree holders,Widowed,Male,0
+21,Doctorate degree holders,Widowed,Female,0
+22,Doctorate degree holders,Unmarried,Male,633
+22,Doctorate degree holders,Unmarried,Female,568
+22,Doctorate degree holders,With Spouse,Male,6
+22,Doctorate degree holders,With Spouse,Female,6
+22,Doctorate degree holders,Divorced,Male,0
+22,Doctorate degree holders,Divorced,Female,0
+22,Doctorate degree holders,Widowed,Male,0
+22,Doctorate degree holders,Widowed,Female,0
+23,Doctorate degree holders,Unmarried,Male,1109
+23,Doctorate degree holders,Unmarried,Female,929
+23,Doctorate degree holders,With Spouse,Male,5
+23,Doctorate degree holders,With Spouse,Female,12
+23,Doctorate degree holders,Divorced,Male,0
+23,Doctorate degree holders,Divorced,Female,0
+23,Doctorate degree holders,Widowed,Male,0
+23,Doctorate degree holders,Widowed,Female,0
+24,Doctorate degree holders,Unmarried,Male,1797
+24,Doctorate degree holders,Unmarried,Female,1483
+24,Doctorate degree holders,With Spouse,Male,35
+24,Doctorate degree holders,With Spouse,Female,34
+24,Doctorate degree holders,Divorced,Male,1
+24,Doctorate degree holders,Divorced,Female,0
+24,Doctorate degree holders,Widowed,Male,0
+24,Doctorate degree holders,Widowed,Female,1
+25,Doctorate degree holders,Unmarried,Male,2651
+25,Doctorate degree holders,Unmarried,Female,2218
+25,Doctorate degree holders,With Spouse,Male,102
+25,Doctorate degree holders,With Spouse,Female,96
+25,Doctorate degree holders,Divorced,Male,0
+25,Doctorate degree holders,Divorced,Female,2
+25,Doctorate degree holders,Widowed,Male,0
+25,Doctorate degree holders,Widowed,Female,0
+26,Doctorate degree holders,Unmarried,Male,2996
+26,Doctorate degree holders,Unmarried,Female,2516
+26,Doctorate degree holders,With Spouse,Male,212
+26,Doctorate degree holders,With Spouse,Female,234
+26,Doctorate degree holders,Divorced,Male,0
+26,Doctorate degree holders,Divorced,Female,2
+26,Doctorate degree holders,Widowed,Male,0
+26,Doctorate degree holders,Widowed,Female,0
+27,Doctorate degree holders,Unmarried,Male,3000
+27,Doctorate degree holders,Unmarried,Female,2451
+27,Doctorate degree holders,With Spouse,Male,473
+27,Doctorate degree holders,With Spouse,Female,464
+27,Doctorate degree holders,Divorced,Male,3
+27,Doctorate degree holders,Divorced,Female,1
+27,Doctorate degree holders,Widowed,Male,0
+27,Doctorate degree holders,Widowed,Female,0
+28,Doctorate degree holders,Unmarried,Male,2741
+28,Doctorate degree holders,Unmarried,Female,2013
+28,Doctorate degree holders,With Spouse,Male,788
+28,Doctorate degree holders,With Spouse,Female,739
+28,Doctorate degree holders,Divorced,Male,2
+28,Doctorate degree holders,Divorced,Female,6
+28,Doctorate degree holders,Widowed,Male,0
+28,Doctorate degree holders,Widowed,Female,0
+29,Doctorate degree holders,Unmarried,Male,2271
+29,Doctorate degree holders,Unmarried,Female,1605
+29,Doctorate degree holders,With Spouse,Male,1180
+29,Doctorate degree holders,With Spouse,Female,987
+29,Doctorate degree holders,Divorced,Male,4
+29,Doctorate degree holders,Divorced,Female,7
+29,Doctorate degree holders,Widowed,Male,0
+29,Doctorate degree holders,Widowed,Female,0
+30,Doctorate degree holders,Unmarried,Male,2061
+30,Doctorate degree holders,Unmarried,Female,1447
+30,Doctorate degree holders,With Spouse,Male,1769
+30,Doctorate degree holders,With Spouse,Female,1441
+30,Doctorate degree holders,Divorced,Male,11
+30,Doctorate degree holders,Divorced,Female,4
+30,Doctorate degree holders,Widowed,Male,0
+30,Doctorate degree holders,Widowed,Female,1
+31,Doctorate degree holders,Unmarried,Male,1483
+31,Doctorate degree holders,Unmarried,Female,1058
+31,Doctorate degree holders,With Spouse,Male,2012
+31,Doctorate degree holders,With Spouse,Female,1575
+31,Doctorate degree holders,Divorced,Male,12
+31,Doctorate degree holders,Divorced,Female,20
+31,Doctorate degree holders,Widowed,Male,0
+31,Doctorate degree holders,Widowed,Female,0
+32,Doctorate degree holders,Unmarried,Male,1111
+32,Doctorate degree holders,Unmarried,Female,767
+32,Doctorate degree holders,With Spouse,Male,2168
+32,Doctorate degree holders,With Spouse,Female,1568
+32,Doctorate degree holders,Divorced,Male,15
+32,Doctorate degree holders,Divorced,Female,23
+32,Doctorate degree holders,Widowed,Male,1
+32,Doctorate degree holders,Widowed,Female,0
+33,Doctorate degree holders,Unmarried,Male,813
+33,Doctorate degree holders,Unmarried,Female,559
+33,Doctorate degree holders,With Spouse,Male,2499
+33,Doctorate degree holders,With Spouse,Female,1704
+33,Doctorate degree holders,Divorced,Male,24
+33,Doctorate degree holders,Divorced,Female,35
+33,Doctorate degree holders,Widowed,Male,0
+33,Doctorate degree holders,Widowed,Female,0
+34,Doctorate degree holders,Unmarried,Male,553
+34,Doctorate degree holders,Unmarried,Female,403
+34,Doctorate degree holders,With Spouse,Male,2416
+34,Doctorate degree holders,With Spouse,Female,1551
+34,Doctorate degree holders,Divorced,Male,22
+34,Doctorate degree holders,Divorced,Female,23
+34,Doctorate degree holders,Widowed,Male,3
+34,Doctorate degree holders,Widowed,Female,1
+35,Doctorate degree holders,Unmarried,Male,435
+35,Doctorate degree holders,Unmarried,Female,290
+35,Doctorate degree holders,With Spouse,Male,2188
+35,Doctorate degree holders,With Spouse,Female,1387
+35,Doctorate degree holders,Divorced,Male,31
+35,Doctorate degree holders,Divorced,Female,39
+35,Doctorate degree holders,Widowed,Male,1
+35,Doctorate degree holders,Widowed,Female,0
+36,Doctorate degree holders,Unmarried,Male,341
+36,Doctorate degree holders,Unmarried,Female,265
+36,Doctorate degree holders,With Spouse,Male,2378
+36,Doctorate degree holders,With Spouse,Female,1542
+36,Doctorate degree holders,Divorced,Male,28
+36,Doctorate degree holders,Divorced,Female,40
+36,Doctorate degree holders,Widowed,Male,0
+36,Doctorate degree holders,Widowed,Female,1
+37,Doctorate degree holders,Unmarried,Male,273
+37,Doctorate degree holders,Unmarried,Female,225
+37,Doctorate degree holders,With Spouse,Male,2421
+37,Doctorate degree holders,With Spouse,Female,1639
+37,Doctorate degree holders,Divorced,Male,49
+37,Doctorate degree holders,Divorced,Female,42
+37,Doctorate degree holders,Widowed,Male,0
+37,Doctorate degree holders,Widowed,Female,2
+38,Doctorate degree holders,Unmarried,Male,240
+38,Doctorate degree holders,Unmarried,Female,221
+38,Doctorate degree holders,With Spouse,Male,2978
+38,Doctorate degree holders,With Spouse,Female,1900
+38,Doctorate degree holders,Divorced,Male,51
+38,Doctorate degree holders,Divorced,Female,72
+38,Doctorate degree holders,Widowed,Male,0
+38,Doctorate degree holders,Widowed,Female,0
+39,Doctorate degree holders,Unmarried,Male,188
+39,Doctorate degree holders,Unmarried,Female,139
+39,Doctorate degree holders,With Spouse,Male,2583
+39,Doctorate degree holders,With Spouse,Female,1660
+39,Doctorate degree holders,Divorced,Male,53
+39,Doctorate degree holders,Divorced,Female,67
+39,Doctorate degree holders,Widowed,Male,0
+39,Doctorate degree holders,Widowed,Female,4
+40,Doctorate degree holders,Unmarried,Male,104
+40,Doctorate degree holders,Unmarried,Female,124
+40,Doctorate degree holders,With Spouse,Male,2314
+40,Doctorate degree holders,With Spouse,Female,1413
+40,Doctorate degree holders,Divorced,Male,47
+40,Doctorate degree holders,Divorced,Female,42
+40,Doctorate degree holders,Widowed,Male,1
+40,Doctorate degree holders,Widowed,Female,2
+41,Doctorate degree holders,Unmarried,Male,104
+41,Doctorate degree holders,Unmarried,Female,106
+41,Doctorate degree holders,With Spouse,Male,2424
+41,Doctorate degree holders,With Spouse,Female,1522
+41,Doctorate degree holders,Divorced,Male,47
+41,Doctorate degree holders,Divorced,Female,59
+41,Doctorate degree holders,Widowed,Male,1
+41,Doctorate degree holders,Widowed,Female,3
+42,Doctorate degree holders,Unmarried,Male,80
+42,Doctorate degree holders,Unmarried,Female,87
+42,Doctorate degree holders,With Spouse,Male,2080
+42,Doctorate degree holders,With Spouse,Female,1262
+42,Doctorate degree holders,Divorced,Male,47
+42,Doctorate degree holders,Divorced,Female,55
+42,Doctorate degree holders,Widowed,Male,1
+42,Doctorate degree holders,Widowed,Female,2
+43,Doctorate degree holders,Unmarried,Male,57
+43,Doctorate degree holders,Unmarried,Female,47
+43,Doctorate degree holders,With Spouse,Male,1793
+43,Doctorate degree holders,With Spouse,Female,1060
+43,Doctorate degree holders,Divorced,Male,37
+43,Doctorate degree holders,Divorced,Female,53
+43,Doctorate degree holders,Widowed,Male,4
+43,Doctorate degree holders,Widowed,Female,3
+44,Doctorate degree holders,Unmarried,Male,65
+44,Doctorate degree holders,Unmarried,Female,65
+44,Doctorate degree holders,With Spouse,Male,1716
+44,Doctorate degree holders,With Spouse,Female,924
+44,Doctorate degree holders,Divorced,Male,26
+44,Doctorate degree holders,Divorced,Female,46
+44,Doctorate degree holders,Widowed,Male,4
+44,Doctorate degree holders,Widowed,Female,1
+45,Doctorate degree holders,Unmarried,Male,46
+45,Doctorate degree holders,Unmarried,Female,47
+45,Doctorate degree holders,With Spouse,Male,1507
+45,Doctorate degree holders,With Spouse,Female,815
+45,Doctorate degree holders,Divorced,Male,38
+45,Doctorate degree holders,Divorced,Female,55
+45,Doctorate degree holders,Widowed,Male,2
+45,Doctorate degree holders,Widowed,Female,2
+46,Doctorate degree holders,Unmarried,Male,45
+46,Doctorate degree holders,Unmarried,Female,46
+46,Doctorate degree holders,With Spouse,Male,1489
+46,Doctorate degree holders,With Spouse,Female,786
+46,Doctorate degree holders,Divorced,Male,40
+46,Doctorate degree holders,Divorced,Female,45
+46,Doctorate degree holders,Widowed,Male,1
+46,Doctorate degree holders,Widowed,Female,2
+47,Doctorate degree holders,Unmarried,Male,35
+47,Doctorate degree holders,Unmarried,Female,47
+47,Doctorate degree holders,With Spouse,Male,1548
+47,Doctorate degree holders,With Spouse,Female,732
+47,Doctorate degree holders,Divorced,Male,39
+47,Doctorate degree holders,Divorced,Female,71
+47,Doctorate degree holders,Widowed,Male,0
+47,Doctorate degree holders,Widowed,Female,6
+48,Doctorate degree holders,Unmarried,Male,36
+48,Doctorate degree holders,Unmarried,Female,23
+48,Doctorate degree holders,With Spouse,Male,1367
+48,Doctorate degree holders,With Spouse,Female,653
+48,Doctorate degree holders,Divorced,Male,28
+48,Doctorate degree holders,Divorced,Female,43
+48,Doctorate degree holders,Widowed,Male,1
+48,Doctorate degree holders,Widowed,Female,8
+49,Doctorate degree holders,Unmarried,Male,29
+49,Doctorate degree holders,Unmarried,Female,22
+49,Doctorate degree holders,With Spouse,Male,1255
+49,Doctorate degree holders,With Spouse,Female,608
+49,Doctorate degree holders,Divorced,Male,37
+49,Doctorate degree holders,Divorced,Female,40
+49,Doctorate degree holders,Widowed,Male,4
+49,Doctorate degree holders,Widowed,Female,6
+50,Doctorate degree holders,Unmarried,Male,30
+50,Doctorate degree holders,Unmarried,Female,26
+50,Doctorate degree holders,With Spouse,Male,1191
+50,Doctorate degree holders,With Spouse,Female,481
+50,Doctorate degree holders,Divorced,Male,45
+50,Doctorate degree holders,Divorced,Female,42
+50,Doctorate degree holders,Widowed,Male,2
+50,Doctorate degree holders,Widowed,Female,7
+51,Doctorate degree holders,Unmarried,Male,23
+51,Doctorate degree holders,Unmarried,Female,13
+51,Doctorate degree holders,With Spouse,Male,1062
+51,Doctorate degree holders,With Spouse,Female,364
+51,Doctorate degree holders,Divorced,Male,26
+51,Doctorate degree holders,Divorced,Female,41
+51,Doctorate degree holders,Widowed,Male,2
+51,Doctorate degree holders,Widowed,Female,4
+52,Doctorate degree holders,Unmarried,Male,20
+52,Doctorate degree holders,Unmarried,Female,14
+52,Doctorate degree holders,With Spouse,Male,1017
+52,Doctorate degree holders,With Spouse,Female,430
+52,Doctorate degree holders,Divorced,Male,34
+52,Doctorate degree holders,Divorced,Female,31
+52,Doctorate degree holders,Widowed,Male,1
+52,Doctorate degree holders,Widowed,Female,2
+53,Doctorate degree holders,Unmarried,Male,10
+53,Doctorate degree holders,Unmarried,Female,5
+53,Doctorate degree holders,With Spouse,Male,771
+53,Doctorate degree holders,With Spouse,Female,257
+53,Doctorate degree holders,Divorced,Male,14
+53,Doctorate degree holders,Divorced,Female,15
+53,Doctorate degree holders,Widowed,Male,2
+53,Doctorate degree holders,Widowed,Female,3
+54,Doctorate degree holders,Unmarried,Male,17
+54,Doctorate degree holders,Unmarried,Female,6
+54,Doctorate degree holders,With Spouse,Male,986
+54,Doctorate degree holders,With Spouse,Female,256
+54,Doctorate degree holders,Divorced,Male,27
+54,Doctorate degree holders,Divorced,Female,25
+54,Doctorate degree holders,Widowed,Male,3
+54,Doctorate degree holders,Widowed,Female,1
+55,Doctorate degree holders,Unmarried,Male,15
+55,Doctorate degree holders,Unmarried,Female,3
+55,Doctorate degree holders,With Spouse,Male,1102
+55,Doctorate degree holders,With Spouse,Female,294
+55,Doctorate degree holders,Divorced,Male,28
+55,Doctorate degree holders,Divorced,Female,14
+55,Doctorate degree holders,Widowed,Male,3
+55,Doctorate degree holders,Widowed,Female,2
+56,Doctorate degree holders,Unmarried,Male,10
+56,Doctorate degree holders,Unmarried,Female,10
+56,Doctorate degree holders,With Spouse,Male,1088
+56,Doctorate degree holders,With Spouse,Female,280
+56,Doctorate degree holders,Divorced,Male,26
+56,Doctorate degree holders,Divorced,Female,27
+56,Doctorate degree holders,Widowed,Male,5
+56,Doctorate degree holders,Widowed,Female,4
+57,Doctorate degree holders,Unmarried,Male,12
+57,Doctorate degree holders,Unmarried,Female,4
+57,Doctorate degree holders,With Spouse,Male,1265
+57,Doctorate degree holders,With Spouse,Female,282
+57,Doctorate degree holders,Divorced,Male,37
+57,Doctorate degree holders,Divorced,Female,15
+57,Doctorate degree holders,Widowed,Male,6
+57,Doctorate degree holders,Widowed,Female,9
+58,Doctorate degree holders,Unmarried,Male,11
+58,Doctorate degree holders,Unmarried,Female,6
+58,Doctorate degree holders,With Spouse,Male,679
+58,Doctorate degree holders,With Spouse,Female,138
+58,Doctorate degree holders,Divorced,Male,12
+58,Doctorate degree holders,Divorced,Female,9
+58,Doctorate degree holders,Widowed,Male,3
+58,Doctorate degree holders,Widowed,Female,1
+59,Doctorate degree holders,Unmarried,Male,1
+59,Doctorate degree holders,Unmarried,Female,6
+59,Doctorate degree holders,With Spouse,Male,339
+59,Doctorate degree holders,With Spouse,Female,60
+59,Doctorate degree holders,Divorced,Male,7
+59,Doctorate degree holders,Divorced,Female,3
+59,Doctorate degree holders,Widowed,Male,3
+59,Doctorate degree holders,Widowed,Female,2
+60,Doctorate degree holders,Unmarried,Male,3
+60,Doctorate degree holders,Unmarried,Female,2
+60,Doctorate degree holders,With Spouse,Male,303
+60,Doctorate degree holders,With Spouse,Female,49
+60,Doctorate degree holders,Divorced,Male,9
+60,Doctorate degree holders,Divorced,Female,5
+60,Doctorate degree holders,Widowed,Male,1
+60,Doctorate degree holders,Widowed,Female,2
+61,Doctorate degree holders,Unmarried,Male,2
+61,Doctorate degree holders,Unmarried,Female,1
+61,Doctorate degree holders,With Spouse,Male,224
+61,Doctorate degree holders,With Spouse,Female,42
+61,Doctorate degree holders,Divorced,Male,4
+61,Doctorate degree holders,Divorced,Female,4
+61,Doctorate degree holders,Widowed,Male,3
+61,Doctorate degree holders,Widowed,Female,0
+62,Doctorate degree holders,Unmarried,Male,3
+62,Doctorate degree holders,Unmarried,Female,1
+62,Doctorate degree holders,With Spouse,Male,251
+62,Doctorate degree holders,With Spouse,Female,47
+62,Doctorate degree holders,Divorced,Male,12
+62,Doctorate degree holders,Divorced,Female,4
+62,Doctorate degree holders,Widowed,Male,1
+62,Doctorate degree holders,Widowed,Female,3
+63,Doctorate degree holders,Unmarried,Male,1
+63,Doctorate degree holders,Unmarried,Female,7
+63,Doctorate degree holders,With Spouse,Male,298
+63,Doctorate degree holders,With Spouse,Female,62
+63,Doctorate degree holders,Divorced,Male,11
+63,Doctorate degree holders,Divorced,Female,5
+63,Doctorate degree holders,Widowed,Male,3
+63,Doctorate degree holders,Widowed,Female,0
+64,Doctorate degree holders,Unmarried,Male,0
+64,Doctorate degree holders,Unmarried,Female,0
+64,Doctorate degree holders,With Spouse,Male,242
+64,Doctorate degree holders,With Spouse,Female,43
+64,Doctorate degree holders,Divorced,Male,4
+64,Doctorate degree holders,Divorced,Female,3
+64,Doctorate degree holders,Widowed,Male,5
+64,Doctorate degree holders,Widowed,Female,2

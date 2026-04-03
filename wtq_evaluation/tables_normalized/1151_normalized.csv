@@ -1,0 +1,58 @@
+dimension_label,dimension_type,year,percentage
+men,sex,2003,43.0
+women,sex,2003,44.0
+15 to 24 years,age_group,2003,42.0
+25 to 34 years,age_group,2003,31.0
+35 to 44 years,age_group,2003,46.0
+45 to 54 years,age_group,2003,46.0
+55 to 64 years,age_group,2003,49.0
+65 to 74 years,age_group,2003,51.0
+75 years and older,age_group,2003,48.0
+newfoundland and labrador,province,2003,73.0
+prince edward island,province,2003,65.0
+nova scotia,province,2003,61.0
+new brunswick,province,2003,63.0
+quebec,province,2003,39.0
+ontario,province,2003,43.0
+manitoba,province,2003,50.0
+saskatchewan,province,2003,57.0
+alberta,province,2003,39.0
+british columbia,province,2003,40.0
+men,sex,2008,47.0
+women,sex,2008,45.0
+15 to 24 years,age_group,2008,45.0
+25 to 34 years,age_group,2008,33.0
+35 to 44 years,age_group,2008,45.0
+45 to 54 years,age_group,2008,50.0
+55 to 64 years,age_group,2008,53.0
+65 to 74 years,age_group,2008,54.0
+75 years and older,age_group,2008,49.0
+newfoundland and labrador,province,2008,71.0
+prince edward island,province,2008,65.0
+nova scotia,province,2008,58.0
+new brunswick,province,2008,61.0
+quebec,province,2008,48.0
+ontario,province,2008,44.0
+manitoba,province,2008,48.0
+saskatchewan,province,2008,57.0
+alberta,province,2008,40.0
+british columbia,province,2008,43.0
+men,sex,2013,42.0
+women,sex,2013,43.0
+15 to 24 years,age_group,2013,42.0
+25 to 34 years,age_group,2013,29.0
+35 to 44 years,age_group,2013,42.0
+45 to 54 years,age_group,2013,45.0
+55 to 64 years,age_group,2013,46.0
+65 to 74 years,age_group,2013,51.0
+75 years and older,age_group,2013,47.0
+newfoundland and labrador,province,2013,68.0
+prince edward island,province,2013,59.0
+nova scotia,province,2013,53.0
+new brunswick,province,2013,63.0
+quebec,province,2013,40.0
+ontario,province,2013,41.0
+manitoba,province,2013,45.0
+saskatchewan,province,2013,54.0
+alberta,province,2013,37.0
+british columbia,province,2013,42.0

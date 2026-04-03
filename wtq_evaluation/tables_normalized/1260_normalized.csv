@@ -1,0 +1,13 @@
+metric,condition,percentage
+advice from a financial advisor,A,43.9
+average quiz score,A,67.5
+answered all five key questions correctly,A,25.8
+no advice from a financial advisor,A,56.1
+average test score,A,58.1
+answered all five key questions correctly,A,18.2
+advice from a financial advisor,B,51.5
+average quiz score,B,62.7
+answered all five key questions correctly,B,17.6
+no advice from a financial advisor,B,48.5
+average test score,B,54.2
+answered all five key questions correctly,B,11.7

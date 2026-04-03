@@ -1,0 +1,169 @@
+subgroup,section,indicator_id,measure_type,value
+men,,1,percent,40.6
+men,,1,ci_from,34.6
+men,,1,ci_to,46.8
+men,,2,percent,32.2
+men,,2,ci_from,26.3
+men,,2,ci_to,38.8
+men,,3,percent,47.3
+men,,3,ci_from,41.0
+men,,3,ci_to,53.8
+men,,4,percent,25.5
+men,,4,ci_from,20.8
+men,,4,ci_to,30.8
+women,,1,percent,68.7
+women,,1,ci_from,63.5
+women,,1,ci_to,73.5
+women,,2,percent,40.5
+women,,2,ci_from,34.8
+women,,2,ci_to,46.4
+women,,3,percent,45.3
+women,,3,ci_from,39.5
+women,,3,ci_to,51.2
+women,,4,percent,50.4
+women,,4,ci_from,44.4
+women,,4,ci_to,56.4
+15 to 24,age group,1,percent,79.7
+15 to 24,age group,1,ci_from,71.7
+15 to 24,age group,1,ci_to,85.9
+15 to 24,age group,2,percent,45.2
+15 to 24,age group,2,ci_from,36.2
+15 to 24,age group,2,ci_to,54.6
+15 to 24,age group,3,percent,40.8
+15 to 24,age group,3,ci_from,32.0
+15 to 24,age group,3,ci_to,50.2
+15 to 24,age group,4,percent,30.4
+15 to 24,age group,4,ci_from,23.4
+15 to 24,age group,4,ci_to,38.5
+25 to 34,age group,1,percent,59.0
+25 to 34,age group,1,ci_from,50.2
+25 to 34,age group,1,ci_to,67.4
+25 to 34,age group,2,percent,38.5
+25 to 34,age group,2,ci_from,30.3
+25 to 34,age group,2,ci_to,47.4
+25 to 34,age group,3,percent,50.3
+25 to 34,age group,3,ci_from,40.9
+25 to 34,age group,3,ci_to,59.6
+25 to 34,age group,4,percent,44.5
+25 to 34,age group,4,ci_from,35.8
+25 to 34,age group,4,ci_to,53.5
+35 to 44,age group,1,percent,48.0
+35 to 44,age group,1,ci_from,38.9
+35 to 44,age group,1,ci_to,57.4
+35 to 44,age group,2,percent,39.5
+35 to 44,age group,2,ci_from,30.6
+35 to 44,age group,2,ci_to,49.1
+35 to 44,age group,3,percent,58.3
+35 to 44,age group,3,ci_from,49.1
+35 to 44,age group,3,ci_to,67.0
+35 to 44,age group,4,percent,50.8
+35 to 44,age group,4,ci_from,41.8
+35 to 44,age group,4,ci_to,59.7
+45 to 54,age group,1,percent,44.5
+45 to 54,age group,1,ci_from,35.2
+45 to 54,age group,1,ci_to,54.1
+45 to 54,age group,2,percent,31.0
+45 to 54,age group,2,ci_from,23.1
+45 to 54,age group,2,ci_to,40.3
+45 to 54,age group,3,percent,55.4
+45 to 54,age group,3,ci_from,46.1
+45 to 54,age group,3,ci_to,64.4
+45 to 54,age group,4,percent,40.5
+45 to 54,age group,4,ci_from,32.1
+45 to 54,age group,4,ci_to,49.5
+55 to 64,age group,1,percent,32.6
+55 to 64,age group,1,ci_from,23.8
+55 to 64,age group,1,ci_to,43.0
+55 to 64,age group,2,percent,18.8
+55 to 64,age group,2,ci_from,11.9
+55 to 64,age group,2,ci_to,28.4
+55 to 64,age group,3,percent,43.9
+55 to 64,age group,3,ci_from,34.3
+55 to 64,age group,3,ci_to,54.0
+55 to 64,age group,4,percent,37.0
+55 to 64,age group,4,ci_from,28.5
+55 to 64,age group,4,ci_to,46.4
+65 to 74,age group,1,percent,28.2
+65 to 74,age group,1,ci_from,18.1
+65 to 74,age group,1,ci_to,40.9
+65 to 74,age group,2,percent,10.7
+65 to 74,age group,2,ci_from,5.6
+65 to 74,age group,2,ci_to,19.6
+65 to 74,age group,3,percent,31.2
+65 to 74,age group,3,ci_from,21.4
+65 to 74,age group,3,ci_to,43.1
+65 to 74,age group,4,percent,31.9
+65 to 74,age group,4,ci_from,21.6
+65 to 74,age group,4,ci_to,44.2
+yes,visible minority,1,percent,58.1
+yes,visible minority,1,ci_from,45.7
+yes,visible minority,1,ci_to,69.5
+yes,visible minority,2,percent,32.7
+yes,visible minority,2,ci_from,21.8
+yes,visible minority,2,ci_to,45.9
+yes,visible minority,3,percent,30.6
+yes,visible minority,3,ci_from,20.9
+yes,visible minority,3,ci_to,42.4
+yes,visible minority,4,percent,19.7
+yes,visible minority,4,ci_from,13.0
+yes,visible minority,4,ci_to,28.5
+no,visible minority,1,percent,56.7
+no,visible minority,1,ci_from,52.3
+no,visible minority,1,ci_to,60.9
+no,visible minority,2,percent,37.9
+no,visible minority,2,ci_from,33.6
+no,visible minority,2,ci_to,42.4
+no,visible minority,3,percent,50.6
+no,visible minority,3,ci_from,46.1
+no,visible minority,3,ci_to,55.1
+no,visible minority,4,percent,43.4
+no,visible minority,4,ci_from,39.1
+no,visible minority,4,ci_to,47.9
+person with disability,disability,1,percent,67.3
+person with disability,disability,1,ci_from,61.9
+person with disability,disability,1,ci_to,72.3
+person with disability,disability,2,percent,45.8
+person with disability,disability,2,ci_from,39.6
+person with disability,disability,2,ci_to,52.2
+person with disability,disability,3,percent,55.0
+person with disability,disability,3,ci_from,48.8
+person with disability,disability,3,ci_to,60.9
+person with disability,disability,4,percent,46.0
+person with disability,disability,4,ci_from,40.1
+person with disability,disability,4,ci_to,52.0
+person without disability,disability,1,percent,43.9
+person without disability,disability,1,ci_from,37.9
+person without disability,disability,1,ci_to,50.0
+person without disability,disability,2,percent,25.3
+person without disability,disability,2,ci_from,20.4
+person without disability,disability,2,ci_to,30.9
+person without disability,disability,3,percent,36.4
+person without disability,disability,3,ci_from,30.6
+person without disability,disability,3,ci_to,42.7
+person without disability,disability,4,percent,29.2
+person without disability,disability,4,ci_from,24.2
+person without disability,disability,4,ci_to,34.9
+indigenous person,indigenous identity,1,percent,63.2
+indigenous person,indigenous identity,1,ci_from,48.3
+indigenous person,indigenous identity,1,ci_to,75.9
+indigenous person,indigenous identity,2,percent,61.8
+indigenous person,indigenous identity,2,ci_from,46.9
+indigenous person,indigenous identity,2,ci_to,74.8
+indigenous person,indigenous identity,3,percent,72.7
+indigenous person,indigenous identity,3,ci_from,58.4
+indigenous person,indigenous identity,3,ci_to,83.5
+indigenous person,indigenous identity,4,percent,65.2
+indigenous person,indigenous identity,4,ci_from,50.9
+indigenous person,indigenous identity,4,ci_to,77.2
+non-indigenous person,indigenous identity,1,percent,56.8
+non-indigenous person,indigenous identity,1,ci_from,52.5
+non-indigenous person,indigenous identity,1,ci_to,61.0
+non-indigenous person,indigenous identity,2,percent,35.2
+non-indigenous person,indigenous identity,2,ci_from,30.9
+non-indigenous person,indigenous identity,2,ci_to,39.8
+non-indigenous person,indigenous identity,3,percent,45.0
+non-indigenous person,indigenous identity,3,ci_from,40.5
+non-indigenous person,indigenous identity,3,ci_to,49.5
+non-indigenous person,indigenous identity,4,percent,37.1
+non-indigenous person,indigenous identity,4,ci_from,33.0
+non-indigenous person,indigenous identity,4,ci_to,41.5

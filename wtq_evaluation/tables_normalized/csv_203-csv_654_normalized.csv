@@ -1,0 +1,64 @@
+rank,team_name,metric,value
+1,Palestra Itália-SP,played,18
+2,Auto,played,14
+3,Corinthians,played,13
+4,Santos,played,11
+5,Sílex,played,8
+6,Sírio,played,7
+7,Ypiranga-SP,played,7
+8,Portuguesa,played,7
+9,AA São Bento,played,4
+1,Palestra Itália-SP,wins,9
+2,Auto,wins,9
+3,Corinthians,wins,9
+4,Santos,wins,9
+5,Sílex,wins,9
+6,Sírio,wins,9
+7,Ypiranga-SP,wins,9
+8,Portuguesa,wins,9
+9,AA São Bento,wins,9
+1,Palestra Itália-SP,losses,9
+2,Auto,losses,7
+3,Corinthians,losses,6
+4,Santos,losses,5
+5,Sílex,losses,3
+6,Sírio,losses,3
+7,Ypiranga-SP,losses,3
+8,Portuguesa,losses,2
+9,AA São Bento,losses,2
+1,Palestra Itália-SP,draws,0
+2,Auto,draws,0
+3,Corinthians,draws,1
+4,Santos,draws,1
+5,Sílex,draws,2
+6,Sírio,draws,1
+7,Ypiranga-SP,draws,1
+8,Portuguesa,draws,3
+9,AA São Bento,draws,0
+1,Palestra Itália-SP,points,0
+2,Auto,points,2
+3,Corinthians,points,2
+4,Santos,points,3
+5,Sílex,points,4
+6,Sírio,points,5
+7,Ypiranga-SP,points,5
+8,Portuguesa,points,4
+9,AA São Bento,points,7
+1,Palestra Itália-SP,goals_for,33
+2,Auto,goals_for,25
+3,Corinthians,goals_for,26
+4,Santos,goals_for,24
+5,Sílex,goals_for,17
+6,Sírio,goals_for,21
+7,Ypiranga-SP,goals_for,16
+8,Portuguesa,goals_for,17
+9,AA São Bento,goals_for,9
+1,Palestra Itália-SP,goals_against,8
+2,Auto,goals_against,14
+3,Corinthians,goals_against,9
+4,Santos,goals_against,17
+5,Sílex,goals_against,26
+6,Sírio,goals_against,20
+7,Ypiranga-SP,goals_against,22
+8,Portuguesa,goals_against,26
+9,AA São Bento,goals_against,31

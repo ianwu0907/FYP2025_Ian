@@ -1,0 +1,105 @@
+geographic_unit,geographic_level,education_level,survey_group,percentage
+jamaica,country,non_university_or_university_postsecondary_diploma,group_1,73.4
+jamaica,country,university_degree_only,group_1,19.5
+jamaica,country,non_university_or_university_postsecondary_diploma,group_2,52.1
+jamaica,country,university_degree_only,group_2,12.7
+haiti,country,non_university_or_university_postsecondary_diploma,group_1,75.0
+haiti,country,university_degree_only,group_1,15.6
+haiti,country,non_university_or_university_postsecondary_diploma,group_2,66.3
+haiti,country,university_degree_only,group_2,20.3
+trinidad and tobago,country,non_university_or_university_postsecondary_diploma,group_1,70.8
+trinidad and tobago,country,university_degree_only,group_1,21.9
+trinidad and tobago,country,non_university_or_university_postsecondary_diploma,group_2,58.6
+trinidad and tobago,country,university_degree_only,group_2,13.0
+guyana,country,non_university_or_university_postsecondary_diploma,group_1,67.3
+guyana,country,university_degree_only,group_1,19.2
+guyana,country,non_university_or_university_postsecondary_diploma,group_2,58.6
+guyana,country,university_degree_only,group_2,14.3
+barbados,country,non_university_or_university_postsecondary_diploma,group_1,71.2
+barbados,country,university_degree_only,group_1,17.6
+barbados,country,non_university_or_university_postsecondary_diploma,group_2,55.6
+barbados,country,university_degree_only,group_2,14.4
+saint vincent and the grenadines,country,non_university_or_university_postsecondary_diploma,group_1,56.2
+saint vincent and the grenadines,country,university_degree_only,group_1,8.0
+saint vincent and the grenadines,country,non_university_or_university_postsecondary_diploma,group_2,37.9
+saint vincent and the grenadines,country,university_degree_only,group_2,7.6
+grenada,country,non_university_or_university_postsecondary_diploma,group_1,58.9
+grenada,country,university_degree_only,group_1,10.1
+grenada,country,non_university_or_university_postsecondary_diploma,group_2,44.5
+grenada,country,university_degree_only,group_2,7.0
+saint lucia,country,non_university_or_university_postsecondary_diploma,group_1,57.0
+saint lucia,country,university_degree_only,group_1,14.2
+saint lucia,country,non_university_or_university_postsecondary_diploma,group_2,43.0
+saint lucia,country,university_degree_only,group_2,8.1
+united kingdom,country,non_university_or_university_postsecondary_diploma,group_1,80.6
+united kingdom,country,university_degree_only,group_1,36.6
+united kingdom,country,non_university_or_university_postsecondary_diploma,group_2,70.9
+united kingdom,country,university_degree_only,group_2,28.6
+united states,country,non_university_or_university_postsecondary_diploma,group_1,75.8
+united states,country,university_degree_only,group_1,42.6
+united states,country,non_university_or_university_postsecondary_diploma,group_2,62.1
+united states,country,university_degree_only,group_2,32.2
+ethiopia,country,non_university_or_university_postsecondary_diploma,group_1,51.3
+ethiopia,country,university_degree_only,group_1,11.2
+ethiopia,country,non_university_or_university_postsecondary_diploma,group_2,52.0
+ethiopia,country,university_degree_only,group_2,20.7
+somalia,country,non_university_or_university_postsecondary_diploma,group_1,35.9
+somalia,country,university_degree_only,group_1,12.4
+somalia,country,non_university_or_university_postsecondary_diploma,group_2,39.8
+somalia,country,university_degree_only,group_2,16.0
+eritrea,country,non_university_or_university_postsecondary_diploma,group_1,38.4
+eritrea,country,university_degree_only,group_1,6.8
+eritrea,country,non_university_or_university_postsecondary_diploma,group_2,40.4
+eritrea,country,university_degree_only,group_2,13.2
+sudan,country,non_university_or_university_postsecondary_diploma,group_1,48.7
+sudan,country,university_degree_only,group_1,25.2
+sudan,country,non_university_or_university_postsecondary_diploma,group_2,52.4
+sudan,country,university_degree_only,group_2,26.1
+south sudan,country,non_university_or_university_postsecondary_diploma,group_1,38.2
+south sudan,country,university_degree_only,group_1,8.6
+south sudan,country,non_university_or_university_postsecondary_diploma,group_2,51.8
+south sudan,country,university_degree_only,group_2,19.5
+burundi,country,non_university_or_university_postsecondary_diploma,group_1,71.8
+burundi,country,university_degree_only,group_1,34.4
+burundi,country,non_university_or_university_postsecondary_diploma,group_2,69.9
+burundi,country,university_degree_only,group_2,39.9
+kenya,country,non_university_or_university_postsecondary_diploma,group_1,81.5
+kenya,country,university_degree_only,group_1,44.3
+kenya,country,non_university_or_university_postsecondary_diploma,group_2,78.4
+kenya,country,university_degree_only,group_2,51.1
+zimbabwe,country,non_university_or_university_postsecondary_diploma,group_1,83.3
+zimbabwe,country,university_degree_only,group_1,38.9
+zimbabwe,country,non_university_or_university_postsecondary_diploma,group_2,82.9
+zimbabwe,country,university_degree_only,group_2,35.6
+rwanda,country,non_university_or_university_postsecondary_diploma,group_1,78.1
+rwanda,country,university_degree_only,group_1,38.0
+rwanda,country,non_university_or_university_postsecondary_diploma,group_2,72.8
+rwanda,country,university_degree_only,group_2,44.9
+democratic republic of the congo,country,non_university_or_university_postsecondary_diploma,group_1,69.8
+democratic republic of the congo,country,university_degree_only,group_1,22.0
+democratic republic of the congo,country,non_university_or_university_postsecondary_diploma,group_2,73.0
+democratic republic of the congo,country,university_degree_only,group_2,36.2
+cameroon,country,non_university_or_university_postsecondary_diploma,group_1,87.2
+cameroon,country,university_degree_only,group_1,55.6
+cameroon,country,non_university_or_university_postsecondary_diploma,group_2,90.2
+cameroon,country,university_degree_only,group_2,67.4
+nigeria,country,non_university_or_university_postsecondary_diploma,group_1,89.6
+nigeria,country,university_degree_only,group_1,62.2
+nigeria,country,non_university_or_university_postsecondary_diploma,group_2,87.1
+nigeria,country,university_degree_only,group_2,67.6
+ghana,country,non_university_or_university_postsecondary_diploma,group_1,69.3
+ghana,country,university_degree_only,group_1,23.2
+ghana,country,non_university_or_university_postsecondary_diploma,group_2,68.3
+ghana,country,university_degree_only,group_2,30.3
+cote d'ivoire,country,non_university_or_university_postsecondary_diploma,group_1,81.1
+cote d'ivoire,country,university_degree_only,group_1,37.0
+cote d'ivoire,country,non_university_or_university_postsecondary_diploma,group_2,87.2
+cote d'ivoire,country,university_degree_only,group_2,55.5
+senegal,country,non_university_or_university_postsecondary_diploma,group_1,81.2
+senegal,country,university_degree_only,group_1,52.9
+senegal,country,non_university_or_university_postsecondary_diploma,group_2,89.2
+senegal,country,university_degree_only,group_2,62.8
+guinea,country,non_university_or_university_postsecondary_diploma,group_1,78.8
+guinea,country,university_degree_only,group_1,37.1
+guinea,country,non_university_or_university_postsecondary_diploma,group_2,82.1
+guinea,country,university_degree_only,group_2,59.4

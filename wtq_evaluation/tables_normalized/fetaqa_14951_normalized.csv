@@ -1,0 +1,7 @@
+population_group,sex,value,unit
+Adult,Male,"7,345",count
+Children (0-6),Male,"1,440",count
+Literacy,Male,66.16%,percent
+Adult,Female,"6,546",count
+Children (0-6),Female,"1,236",count
+Literacy,Female,42.77%,percent

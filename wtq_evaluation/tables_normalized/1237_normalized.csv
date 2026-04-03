@@ -1,0 +1,115 @@
+region,indicator_group,time_period,unit_type,value
+newfoundland and labrador,indicator_1,1999/2000,percent,60.8
+newfoundland and labrador,indicator_1,2009/2010,percent,68.0
+newfoundland and labrador,indicator_1,change,percentage points,7.3
+newfoundland and labrador,indicator_2,1999/2000,percent,16.6
+newfoundland and labrador,indicator_2,2009/2010,percent,14.1
+newfoundland and labrador,indicator_2,change,percentage points,-2.5
+prince edward island,indicator_1,1999/2000,percent,74.0
+prince edward island,indicator_1,2009/2010,percent,76.8
+prince edward island,indicator_1,change,percentage points,2.8
+prince edward island,indicator_2,1999/2000,percent,13.1
+prince edward island,indicator_2,2009/2010,percent,11.2
+prince edward island,indicator_2,change,percentage points,-2.0
+nova scotia,indicator_1,1999/2000,percent,72.7
+nova scotia,indicator_1,2009/2010,percent,76.2
+nova scotia,indicator_1,change,percentage points,3.5
+nova scotia,indicator_2,1999/2000,percent,9.1
+nova scotia,indicator_2,2009/2010,percent,9.2
+nova scotia,indicator_2,change,percentage points,0.1
+new brunswick,indicator_1,1999/2000,percent,71.2
+new brunswick,indicator_1,2009/2010,percent,76.3
+new brunswick,indicator_1,change,percentage points,5.1
+new brunswick,indicator_2,1999/2000,percent,9.9
+new brunswick,indicator_2,2009/2010,percent,8.5
+new brunswick,indicator_2,change,percentage points,-1.4
+city of quebec,indicator_1,1999/2000,percent,76.4
+city of quebec,indicator_1,2009/2010,percent,84.3
+city of quebec,indicator_1,change,percentage points,7.9
+city of quebec,indicator_2,1999/2000,percent,8.0
+city of quebec,indicator_2,2009/2010,percent,4.6
+city of quebec,indicator_2,change,percentage points,-3.4
+montreal,indicator_1,1999/2000,percent,75.5
+montreal,indicator_1,2009/2010,percent,77.1
+montreal,indicator_1,change,percentage points,1.6
+montreal,indicator_2,1999/2000,percent,8.0
+montreal,indicator_2,2009/2010,percent,8.4
+montreal,indicator_2,change,percentage points,0.3
+rest of quebec,indicator_1,1999/2000,percent,71.6
+rest of quebec,indicator_1,2009/2010,percent,77.9
+rest of quebec,indicator_1,change,percentage points,6.3
+rest of quebec,indicator_2,1999/2000,percent,9.9
+rest of quebec,indicator_2,2009/2010,percent,7.9
+rest of quebec,indicator_2,change,percentage points,-2.0
+ottawa,indicator_1,1999/2000,percent,79.1
+ottawa,indicator_1,2009/2010,percent,81.7
+ottawa,indicator_1,change,percentage points,2.7
+ottawa,indicator_2,1999/2000,percent,5.7
+ottawa,indicator_2,2009/2010,percent,5.8
+ottawa,indicator_2,change,percentage points,0.1
+toronto,indicator_1,1999/2000,percent,78.7
+toronto,indicator_1,2009/2010,percent,75.4
+toronto,indicator_1,change,percentage points,-3.3
+toronto,indicator_2,1999/2000,percent,5.5
+toronto,indicator_2,2009/2010,percent,9.2
+toronto,indicator_2,change,percentage points,3.7
+hamilton,indicator_1,1999/2000,percent,79.6
+hamilton,indicator_1,2009/2010,percent,77.4
+hamilton,indicator_1,change,percentage points,-2.1
+hamilton,indicator_2,1999/2000,percent,4.6
+hamilton,indicator_2,2009/2010,percent,7.5
+hamilton,indicator_2,change,percentage points,2.9
+rest of ontario,indicator_1,1999/2000,percent,79.1
+rest of ontario,indicator_1,2009/2010,percent,76.2
+rest of ontario,indicator_1,change,percentage points,-2.9
+rest of ontario,indicator_2,1999/2000,percent,6.0
+rest of ontario,indicator_2,2009/2010,percent,8.8
+rest of ontario,indicator_2,change,percentage points,2.8
+winnipeg,indicator_1,1999/2000,percent,82.0
+winnipeg,indicator_1,2009/2010,percent,82.8
+winnipeg,indicator_1,change,percentage points,0.9
+winnipeg,indicator_2,1999/2000,percent,5.2
+winnipeg,indicator_2,2009/2010,percent,5.2
+winnipeg,indicator_2,change,percentage points,0.0
+rest of manitoba,indicator_1,1999/2000,percent,82.2
+rest of manitoba,indicator_1,2009/2010,percent,81.2
+rest of manitoba,indicator_1,change,percentage points,-1.0
+rest of manitoba,indicator_2,1999/2000,percent,4.7
+rest of manitoba,indicator_2,2009/2010,percent,4.8
+rest of manitoba,indicator_2,change,percentage points,0.1
+saskatchewan,indicator_1,1999/2000,percent,80.0
+saskatchewan,indicator_1,2009/2010,percent,82.7
+saskatchewan,indicator_1,change,percentage points,2.6
+saskatchewan,indicator_2,1999/2000,percent,5.7
+saskatchewan,indicator_2,2009/2010,percent,4.9
+saskatchewan,indicator_2,change,percentage points,-0.7
+calgary,indicator_1,1999/2000,percent,83.8
+calgary,indicator_1,2009/2010,percent,81.1
+calgary,indicator_1,change,percentage points,-2.6
+calgary,indicator_2,1999/2000,percent,4.5
+calgary,indicator_2,2009/2010,percent,6.5
+calgary,indicator_2,change,percentage points,2.0
+edmonton,indicator_1,1999/2000,percent,80.7
+edmonton,indicator_1,2009/2010,percent,79.6
+edmonton,indicator_1,change,percentage points,-1.2
+edmonton,indicator_2,1999/2000,percent,5.3
+edmonton,indicator_2,2009/2010,percent,6.6
+edmonton,indicator_2,change,percentage points,1.2
+rest of alberta,indicator_1,1999/2000,percent,81.6
+rest of alberta,indicator_1,2009/2010,percent,80.8
+rest of alberta,indicator_1,change,percentage points,-0.8
+rest of alberta,indicator_2,1999/2000,percent,5.1
+rest of alberta,indicator_2,2009/2010,percent,6.2
+rest of alberta,indicator_2,change,percentage points,1.0
+vancouver,indicator_1,1999/2000,percent,75.7
+vancouver,indicator_1,2009/2010,percent,76.0
+vancouver,indicator_1,change,percentage points,0.3
+vancouver,indicator_2,1999/2000,percent,6.6
+vancouver,indicator_2,2009/2010,percent,7.3
+vancouver,indicator_2,change,percentage points,0.8
+rest of british columbia,indicator_1,1999/2000,percent,75.7
+rest of british columbia,indicator_1,2009/2010,percent,77.0
+rest of british columbia,indicator_1,change,percentage points,1.3
+rest of british columbia,indicator_2,1999/2000,percent,8.6
+rest of british columbia,indicator_2,2009/2010,percent,7.9
+rest of british columbia,indicator_2,change,percentage points,-0.7

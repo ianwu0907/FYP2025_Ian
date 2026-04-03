@@ -1,0 +1,49 @@
+food_item,context_id,estimate,ci_lower,ci_upper
+sugar-sweetened beverages,1,-71.0,-78.0,-64.0
+sugar-sweetened beverages,2,-30.0,-39.0,-21.0
+sugar-sweetened beverages,3,-70.0,-78.0,-62.0
+sugar-sweetened beverages,4,-86.0,-114.0,-57.0
+meat,1,-37.0,-51.0,-23.0
+meat,2,-8.0,-24.0,9.0
+meat,3,-10.0,-28.0,8.0
+meat,4,-71.0,-122.0,-20.0
+milk,1,-34.0,-40.0,-27.0
+milk,2,-12.0,-19.0,-4.0
+milk,3,-26.0,-33.0,-18.0
+milk,4,-44.0,-68.0,-20.0
+"pasta, rice, cereal grains and flours",1,-25.0,-37.0,-13.0
+"pasta, rice, cereal grains and flours",2,16.0,2.0,30.0
+"pasta, rice, cereal grains and flours",3,-4.0,-18.0,9.0
+"pasta, rice, cereal grains and flours",4,-59.0,-106.0,-13.0
+sugars,1,-20.0,-25.0,-14.0
+sugars,2,-3.0,-8.0,2.0
+sugars,3,-11.0,-17.0,-5.0
+sugars,4,-34.0,-57.0,-12.0
+pastries,1,19.0,10.0,28.0
+pastries,2,9.0,-2.0,20.0
+pastries,3,32.0,20.0,45.0
+pastries,4,30.0,-1.0,61.0
+oils,1,-18.0,-25.0,-10.0
+oils,2,12.0,5.0,20.0
+oils,3,-3.0,-12.0,6.0
+oils,4,-46.0,-75.0,-16.0
+breakfast cereals,1,-17.0,-23.0,-12.0
+breakfast cereals,2,3.0,-5.0,10.0
+breakfast cereals,3,-12.0,-20.0,-5.0
+breakfast cereals,4,-53.0,-75.0,-31.0
+soups,1,-13.0,-18.0,-8.0
+soups,2,-3.0,-9.0,3.0
+soups,3,-5.0,-12.0,1.0
+soups,4,-37.0,-54.0,-19.0
+"potatoes, fried, roasted, chips",1,-10.0,-17.0,-4.0
+"potatoes, fried, roasted, chips",2,0.0,-6.0,6.0
+"potatoes, fried, roasted, chips",3,-8.0,-15.0,0.0
+"potatoes, fried, roasted, chips",4,1.0,-32.0,35.0
+cheese,1,-10.0,-17.0,-2.0
+cheese,2,-4.0,-11.0,3.0
+cheese,3,-7.0,-17.0,3.0
+cheese,4,49.0,16.0,83.0
+nuts,1,10.0,2.0,17.0
+nuts,2,11.0,2.0,19.0
+nuts,3,16.0,6.0,26.0
+nuts,4,29.0,-6.0,63.0

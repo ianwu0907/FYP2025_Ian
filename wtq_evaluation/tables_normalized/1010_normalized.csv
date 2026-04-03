@@ -1,0 +1,45 @@
+year,demographic_group,income_definition,category_index,percentage
+2000,,,1,percent
+2000,,,2,
+2000,,,3,
+2000,,,4,
+2000,black children,low income before taxes,1,46.1
+2000,black children,low income before taxes,2,35.5
+2000,black children,low income before taxes,3,35.2
+2000,black children,low income before taxes,4,43.4
+2005,black children,low income before taxes,1,43.5
+2005,black children,low income before taxes,2,34.9
+2005,black children,low income before taxes,3,31.9
+2005,black children,low income before taxes,4,40.7
+2010,black children,low income before taxes,1,35.8
+2010,black children,low income before taxes,2,28.8
+2010,black children,low income before taxes,3,30.0
+2010,black children,low income before taxes,4,34.4
+2015,black children,low income before taxes,1,30.0
+2015,black children,low income before taxes,2,24.9
+2015,black children,low income before taxes,3,24.4
+2015,black children,low income before taxes,4,28.8
+2015,black children,low income,1,27.0
+2015,black children,low income,2,24.3
+2015,black children,low income,3,26.7
+2015,black children,low income,4,27.2
+2000,other children,low income before taxes,1,24.2
+2000,other children,low income before taxes,2,11.7
+2000,other children,low income before taxes,3,16.4
+2000,other children,low income before taxes,4,17.5
+2005,other children,low income before taxes,1,25.3
+2005,other children,low income before taxes,2,11.2
+2005,other children,low income before taxes,3,14.2
+2005,other children,low income before taxes,4,16.5
+2010,other children,low income before taxes,1,21.8
+2010,other children,low income before taxes,2,10.4
+2010,other children,low income before taxes,3,12.7
+2010,other children,low income before taxes,4,14.9
+2015,other children,low income before taxes,1,19.2
+2015,other children,low income before taxes,2,8.1
+2015,other children,low income before taxes,3,10.3
+2015,other children,low income before taxes,4,12.8
+2015,other children,low income,1,18.8
+2015,other children,low income,2,9.7
+2015,other children,low income,3,12.8
+2015,other children,low income,4,14.4

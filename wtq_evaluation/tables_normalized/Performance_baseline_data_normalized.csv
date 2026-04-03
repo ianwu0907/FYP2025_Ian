@@ -1,0 +1,250 @@
+project,project_phase,asset_type,assessment_context,metric_group,metric_subtype,value
+Yunhe Jinshang,,,Opening Edition,Purchase Commitment,,18000.0
+Yunhe Jinshang,,,Opening Edition,Signing,,21500.0
+Yunhe Jinshang,,,Regional Version,Purchase Commitment,,20100.0
+Yunhe Jinshang,,,Regional Version,Signing,,27000.0
+Yunhe Jinshang,,,Purchase Bottom Line (Projects Excluding Offsetting),Already Committed,,2554.1153
+Yunhe Jinshang,,,Purchase Bottom Line (Projects Excluding Offsetting),Expected Purchase,,6005.0
+Yunhe Jinshang,,,Purchase Bottom Line (Projects Excluding Offsetting),0715 Sprint,,10800.7454
+Yunhe Jinshang,,,Signing Baseline (Projects Excluding Offsetting),Already converted to signing,,2441.2187
+Yunhe Jinshang,,,Signing Baseline (Projects Excluding Offsetting),Normal pending signing ①②③④ mutually exclusive,,23514.0
+Yunhe Jinshang,,,Signing Baseline (Projects Excluding Offsetting),Normal pending signing,① Among them: Intended to withdraw and cancel,7267.0
+Yunhe Jinshang,,,Signing Baseline (Projects Excluding Offsetting),Normal pending signing,② Among them: Signed but not transferred,1124.0
+Yunhe Jinshang,,,Signing Baseline (Projects Excluding Offsetting),Normal pending signing,④ Among them: Trade-in signable + FX,8300.0
+Yunhe Jinshang,,,Signing Baseline (Projects Excluding Offsetting),0715 Sprint Signing,,18436.5933
+Gucui Yinxiu,,,Opening Edition,Purchase Commitment,,2140.0
+Gucui Yinxiu,,,Opening Edition,Signing,,2600.0
+Gucui Yinxiu,,,Regional Version,Purchase Commitment,,1400.0
+Gucui Yinxiu,,,Regional Version,Signing,,2800.0
+Gucui Yinxiu,,,Purchase Bottom Line (Projects Excluding Offsetting),Already Committed,,944.6054000000001
+Gucui Yinxiu,,,Purchase Bottom Line (Projects Excluding Offsetting),Projected New Additions,,1350.0
+Gucui Yinxiu,,,Purchase Bottom Line (Projects Excluding Offsetting),0715 Sprint,,2314.6157
+Gucui Yinxiu,,,Signing Baseline (Projects Excluding Offsetting),Already converted to signing,,1909.0
+Gucui Yinxiu,,,Signing Baseline (Projects Excluding Offsetting),Normal pending signing ①②③④ mutually exclusive,,478.0
+Gucui Yinxiu,,,Signing Baseline (Projects Excluding Offsetting),Normal pending signing,① Among them: Intended to withdraw and cancel,0.0
+Gucui Yinxiu,,,Signing Baseline (Projects Excluding Offsetting),Normal pending signing,② Among them: Signed but not transferred,0.0
+Gucui Yinxiu,,,Signing Baseline (Projects Excluding Offsetting),Normal pending signing,③ Among them: to be signed and signable,0.0
+Gucui Yinxiu,,,Signing Baseline (Projects Excluding Offsetting),Normal pending signing,④ Among them: Trade-in signable + FX,0.0
+Gucui Yinxiu,,,Signing Baseline (Projects Excluding Offsetting),New and signed,,395.0
+Gucui Yinxiu,,,Signing Baseline (Projects Excluding Offsetting),0715 Sprint Signing,,1938.7658
+Cuiwan Zhongcheng,,,Opening Edition,Purchase Commitment,,9500.0
+Cuiwan Zhongcheng,,,Opening Edition,Signing,,10400.0
+Cuiwan Zhongcheng,,,Regional Version,Purchase Commitment,,11500.0
+Cuiwan Zhongcheng,,,Regional Version,Signing,,12210.0
+Cuiwan Zhongcheng,,,Purchase Bottom Line (Projects Excluding Offsetting),Already Committed,,3602.6584
+Cuiwan Zhongcheng,,,Purchase Bottom Line (Projects Excluding Offsetting),Expected Purchase,,5733.0
+Cuiwan Zhongcheng,,,Purchase Bottom Line (Projects Excluding Offsetting),0715 Sprint,,4945.893
+Cuiwan Zhongcheng,,,Signing Baseline (Projects Excluding Offsetting),Already converted to signing,,2094.0
+Cuiwan Zhongcheng,,,Signing Baseline (Projects Excluding Offsetting),Normal pending signing ①②③④ mutually exclusive,,6128.0
+Cuiwan Zhongcheng,,,Signing Baseline (Projects Excluding Offsetting),Normal pending signing,① Among them: Intended to withdraw and cancel,1410.0
+Cuiwan Zhongcheng,,,Signing Baseline (Projects Excluding Offsetting),Normal pending signing,② Among them: Signed but not transferred,0.0
+Cuiwan Zhongcheng,,,Signing Baseline (Projects Excluding Offsetting),Normal pending signing,③ Among them: to be signed and signable,1994.0
+Cuiwan Zhongcheng,,,Signing Baseline (Projects Excluding Offsetting),Normal pending signing,④ Among them: Trade-in signable + FX,2418.0
+Cuiwan Zhongcheng,,,Signing Baseline (Projects Excluding Offsetting),0715 Sprint Signing,,6279.838400000001
+Future Times,,,Opening Edition,Purchase Commitment,,700.0
+Future Times,,,Opening Edition,Signing,,3880.0
+Future Times,,,Regional Version,Purchase Commitment,,170.0
+Future Times,,,Regional Version,Signing,,610.0
+Future Times,,,Purchase Bottom Line (Projects Excluding Offsetting),Already Committed,,494.2043
+Future Times,,,Purchase Bottom Line (Projects Excluding Offsetting),Expected Purchase,,494.2043
+Future Times,,,Purchase Bottom Line (Projects Excluding Offsetting),0715 Sprint,,492.1642
+Future Times,,,Signing Baseline (Projects Excluding Offsetting),Already converted to signing,,1014.0
+Future Times,,,Signing Baseline (Projects Excluding Offsetting),Normal pending signing ①②③④ mutually exclusive,,226.0
+Future Times,,,Signing Baseline (Projects Excluding Offsetting),Normal pending signing,③ Among them: to be signed and signable,226.0
+Future Times,,,Signing Baseline (Projects Excluding Offsetting),0715 Sprint Signing,,1238.2639
+City Skyline,,,Opening Edition,Purchase Commitment,,11000.0
+City Skyline,,,Opening Edition,Signing,,9360.0
+City Skyline,,,Regional Version,Purchase Commitment,,11570.0
+City Skyline,,,Regional Version,Signing,,10900.0
+City Skyline,,,Purchase Bottom Line (Projects Excluding Offsetting),Already Committed,,3214.7897
+City Skyline,,,Purchase Bottom Line (Projects Excluding Offsetting),0715 Sprint,,6026.5808
+City Skyline,,,Signing Baseline (Projects Excluding Offsetting),Already converted to signing,,2092.5193
+City Skyline,,,Signing Baseline (Projects Excluding Offsetting),Normal pending signing ①②③④ mutually exclusive,,3469.0
+City Skyline,,,Signing Baseline (Projects Excluding Offsetting),Normal pending signing,① Among them: Intended to withdraw and cancel,1304.0
+City Skyline,,,Signing Baseline (Projects Excluding Offsetting),Normal pending signing,② Among them: Signed but not transferred,193.0
+City Skyline,,,Signing Baseline (Projects Excluding Offsetting),Normal pending signing,④ Among them: Trade-in signable + FX,927.0
+City Skyline,,,Signing Baseline (Projects Excluding Offsetting),New and signed,,1200.0
+City Skyline,,,Signing Baseline (Projects Excluding Offsetting),0715 Sprint Signing,,5553.0923
+Zhoukou Longtang,,,Opening Edition,Purchase Commitment,,2850.0
+Zhoukou Longtang,,,Opening Edition,Signing,,2800.0
+Zhoukou Longtang,,,Regional Version,Purchase Commitment,,3000.0
+Zhoukou Longtang,,,Regional Version,Signing,,3000.0
+Zhoukou Longtang,,,Purchase Bottom Line (Projects Excluding Offsetting),Already Committed,,890.7585999999999
+Zhoukou Longtang,,,Purchase Bottom Line (Projects Excluding Offsetting),Expected Purchase,,1226.0
+Zhoukou Longtang,,,Purchase Bottom Line (Projects Excluding Offsetting),0715 Sprint,,1984.8817
+Zhoukou Longtang,,,Weekly Meeting - Sprint Version,Sprint New Additions,,455.0
+Zhoukou Longtang,,,Signing Baseline (Projects Excluding Offsetting),Already converted to signing,,330.0
+Zhoukou Longtang,,,Signing Baseline (Projects Excluding Offsetting),Normal pending signing ①②③④ mutually exclusive,,1296.0
+Zhoukou Longtang,,,Signing Baseline (Projects Excluding Offsetting),Normal pending signing,① Among them: Intended to withdraw and cancel,129.0
+Zhoukou Longtang,,,Signing Baseline (Projects Excluding Offsetting),Normal pending signing,② Among them: Signed but not transferred,133.0
+Zhoukou Longtang,,,Signing Baseline (Projects Excluding Offsetting),Normal pending signing,④ Among them: Trade-in signable + FX,605.0
+Zhoukou Longtang,,,Signing Baseline (Projects Excluding Offsetting),New and signed,,260.0
+Zhoukou Longtang,,,Signing Baseline (Projects Excluding Offsetting),0715 Sprint Signing,,2302.8081
+Star Map,,,Opening Edition,Purchase Commitment,,2250.0
+Star Map,,,Opening Edition,Signing,,2450.0
+Star Map,,,Regional Version,Purchase Commitment,,2500.0
+Star Map,,,Regional Version,Signing,,2620.0
+Star Map,,,Purchase Bottom Line (Projects Excluding Offsetting),Already Committed,,1220.6496
+Star Map,,,Purchase Bottom Line (Projects Excluding Offsetting),Expected Purchase,,2020.0
+Star Map,,,Purchase Bottom Line (Projects Excluding Offsetting),0715 Sprint,,2043.518
+Star Map,,,Signing Baseline (Projects Excluding Offsetting),Already converted to signing,,676.0
+Star Map,,,Signing Baseline (Projects Excluding Offsetting),Normal pending signing ①②③④ mutually exclusive,,1132.0
+Star Map,,,Signing Baseline (Projects Excluding Offsetting),Normal pending signing,① Among them: Intended to withdraw and cancel,0.0
+Star Map,,,Signing Baseline (Projects Excluding Offsetting),Normal pending signing,② Among them: Signed but not transferred,0.0
+Star Map,,,Signing Baseline (Projects Excluding Offsetting),Normal pending signing,④ Among them: Trade-in signable + FX,813.0
+Star Map,,,Signing Baseline (Projects Excluding Offsetting),New and signed,,650.0
+Star Map,,,Signing Baseline (Projects Excluding Offsetting),0715 Sprint Signing,,2049.2861
+Yuntu,,,Opening Edition,Purchase Commitment,,2250.0
+Yuntu,,,Opening Edition,Signing,,2300.0
+Yuntu,,,Regional Version,Purchase Commitment,,2500.0
+Yuntu,,,Regional Version,Signing,,2300.0
+Yuntu,,,Purchase Bottom Line (Projects Excluding Offsetting),Already Committed,,478.4646
+Yuntu,,,Purchase Bottom Line (Projects Excluding Offsetting),Expected Purchase,,1035.0
+Yuntu,,,Purchase Bottom Line (Projects Excluding Offsetting),0715 Sprint,,1200.3897
+Yuntu,,,Signing Baseline (Projects Excluding Offsetting),Already converted to signing,,545.0
+Yuntu,,,Signing Baseline (Projects Excluding Offsetting),Normal pending signing ①②③④ mutually exclusive,,231.0
+Yuntu,,,Signing Baseline (Projects Excluding Offsetting),Normal pending signing,① Among them: Intended to withdraw and cancel,66.0
+Yuntu,,,Signing Baseline (Projects Excluding Offsetting),Normal pending signing,② Among them: Signed but not transferred,68.0
+Yuntu,,,Signing Baseline (Projects Excluding Offsetting),Normal pending signing,③ Among them: to be signed and signable,97.0
+Yuntu,,,Signing Baseline (Projects Excluding Offsetting),New and signed,,340.0
+Yuntu,,,Signing Baseline (Projects Excluding Offsetting),0715 Sprint Signing,,1202.0446
+Lanjiao,,,Opening Edition,Purchase Commitment,,400.0
+Lanjiao,,,Opening Edition,Signing,,400.0
+Lanjiao,,,Regional Version,Purchase Commitment,,400.0
+Lanjiao,,,Regional Version,Signing,,400.0
+Lanjiao,,,Purchase Bottom Line (Projects Excluding Offsetting),Already Committed,,0.0
+Lanjiao,,,Purchase Bottom Line (Projects Excluding Offsetting),Expected Purchase,,400.0
+Lanjiao,,,Purchase Bottom Line (Projects Excluding Offsetting),0715 Sprint,,400.0
+Lanjiao,,,Signing Baseline (Projects Excluding Offsetting),Already converted to signing,,0.0
+Lanjiao,,,Signing Baseline (Projects Excluding Offsetting),Normal pending signing ①②③④ mutually exclusive,,0.0
+Lanjiao,,,Signing Baseline (Projects Excluding Offsetting),Normal pending signing,① Among them: Intended to withdraw and cancel,0.0
+Lanjiao,,,Signing Baseline (Projects Excluding Offsetting),Normal pending signing,② Among them: Signed but not transferred,0.0
+Lanjiao,,,Signing Baseline (Projects Excluding Offsetting),Normal pending signing,③ Among them: to be signed and signable,0.0
+Lanjiao,,,Signing Baseline (Projects Excluding Offsetting),Normal pending signing,④ Among them: Trade-in signable + FX,0.0
+Lanjiao,,,Signing Baseline (Projects Excluding Offsetting),New and signed,,400.0
+Lanjiao,,,Signing Baseline (Projects Excluding Offsetting),0715 Sprint Signing,,400.0
+Yunlu,,,Opening Edition,Purchase Commitment,,150.0
+Yunlu,,,Opening Edition,Signing,,150.0
+Yunlu,,,Regional Version,Purchase Commitment,,6000.0
+Yunlu,,,Regional Version,Signing,,6000.0
+Yunlu,,,Purchase Bottom Line (Projects Excluding Offsetting),Already Committed,,0.0
+Yunlu,,,Purchase Bottom Line (Projects Excluding Offsetting),Expected Purchase,,143.0
+Yunlu,,,Purchase Bottom Line (Projects Excluding Offsetting),0715 Sprint,,150.0
+Yunlu,,,Signing Baseline (Projects Excluding Offsetting),Already converted to signing,,0.0
+Yunlu,,,Signing Baseline (Projects Excluding Offsetting),Normal pending signing ①②③④ mutually exclusive,,599.0
+Yunlu,,,Signing Baseline (Projects Excluding Offsetting),Normal pending signing,① Among them: Intended to withdraw and cancel,599.0
+Yunlu,,,Signing Baseline (Projects Excluding Offsetting),Normal pending signing,② Among them: Signed but not transferred,0.0
+Yunlu,,,Signing Baseline (Projects Excluding Offsetting),Normal pending signing,③ Among them: to be signed and signable,0.0
+Yunlu,,,Signing Baseline (Projects Excluding Offsetting),Normal pending signing,④ Among them: Trade-in signable + FX,0.0
+Yunlu,,,Signing Baseline (Projects Excluding Offsetting),New and signed,,143.0
+Yunlu,,,Signing Baseline (Projects Excluding Offsetting),0715 Sprint Signing,,150.0
+Lake and City,,,Opening Edition,Purchase Commitment,,110.0
+Lake and City,,,Opening Edition,Signing,,110.0
+Lake and City,,,Regional Version,Purchase Commitment,,110.0
+Lake and City,,,Regional Version,Signing,,110.0
+Lake and City,,,Purchase Bottom Line (Projects Excluding Offsetting),Already Committed,,0.0
+Lake and City,,,Purchase Bottom Line (Projects Excluding Offsetting),Expected Purchase,,110.0
+Lake and City,,,Purchase Bottom Line (Projects Excluding Offsetting),0715 Sprint,,110.0
+Lake and City,,,Signing Baseline (Projects Excluding Offsetting),New and signed,,110.0
+Lake and City,,,Signing Baseline (Projects Excluding Offsetting),0715 Sprint Signing,,110.0
+Fangdingyi,,,Opening Edition,Purchase Commitment,,0.0
+Fangdingyi,,,Opening Edition,Signing,,0.0
+Fangdingyi,,,Purchase Bottom Line (Projects Excluding Offsetting),Already Committed,,0.0
+Fangdingyi,,,Purchase Bottom Line (Projects Excluding Offsetting),Expected Purchase,,0.0
+Fangdingyi,,,Purchase Bottom Line (Projects Excluding Offsetting),0715 Sprint,,0.0
+Fangdingyi,,,Signing Baseline (Projects Excluding Offsetting),0715 Sprint Signing,,0.0
+Silent Whisper Forest,,,Opening Edition,Purchase Commitment,,0.0
+Silent Whisper Forest,,,Opening Edition,Signing,,0.0
+Silent Whisper Forest,,,Purchase Bottom Line (Projects Excluding Offsetting),Already Committed,,38.8
+Silent Whisper Forest,,,Purchase Bottom Line (Projects Excluding Offsetting),Expected Purchase,,38.8
+Silent Whisper Forest,,,Purchase Bottom Line (Projects Excluding Offsetting),0715 Sprint,,0.0
+Silent Whisper Forest,,,Signing Baseline (Projects Excluding Offsetting),Normal pending signing ①②③④ mutually exclusive,,285.0
+Silent Whisper Forest,,,Signing Baseline (Projects Excluding Offsetting),Normal pending signing,① Among them: Intended to withdraw and cancel,285.0
+Silent Whisper Forest,,,Signing Baseline (Projects Excluding Offsetting),0715 Sprint Signing,,0.0
+Luoyang Xiyuan Jiadi,Luoyang,Xiyuan Jiadi,Opening Edition,Purchase Commitment,,0.0
+Luoyang Xiyuan Jiadi,Luoyang,Xiyuan Jiadi,Opening Edition,Signing,,0.0
+Luoyang Xiyuan Jiadi,Luoyang,Xiyuan Jiadi,Purchase Bottom Line (Projects Excluding Offsetting),Already Committed,,0.0
+Luoyang Xiyuan Jiadi,Luoyang,Xiyuan Jiadi,Purchase Bottom Line (Projects Excluding Offsetting),Expected Purchase,,0.0
+Luoyang Xiyuan Jiadi,Luoyang,Xiyuan Jiadi,Purchase Bottom Line (Projects Excluding Offsetting),0715 Sprint,,0.0
+Luoyang Xiyuan Jiadi,Luoyang,Xiyuan Jiadi,Signing Baseline (Projects Excluding Offsetting),Already converted to signing,,-5.3772
+Luoyang Xiyuan Jiadi,Luoyang,Xiyuan Jiadi,Signing Baseline (Projects Excluding Offsetting),Expected Signing,,-5.3772
+Luoyang Xiyuan Jiadi,Luoyang,Xiyuan Jiadi,Signing Baseline (Projects Excluding Offsetting),0715 Sprint Signing,,-5.3772
+Metropolitan Xianyue Yard,,,Opening Edition,Purchase Commitment,,0.0
+Metropolitan Xianyue Yard,,,Opening Edition,Signing,,0.0
+Metropolitan Xianyue Yard,,,Purchase Bottom Line (Projects Excluding Offsetting),Already Committed,,0.0
+Metropolitan Xianyue Yard,,,Purchase Bottom Line (Projects Excluding Offsetting),Expected Purchase,,0.0
+Metropolitan Xianyue Yard,,,Purchase Bottom Line (Projects Excluding Offsetting),0715 Sprint,,0.0
+Metropolitan Xianyue Yard,,,Signing Baseline (Projects Excluding Offsetting),Already converted to signing,,-4.5645
+Metropolitan Xianyue Yard,,,Signing Baseline (Projects Excluding Offsetting),Expected Signing,,-4.5645
+Metropolitan Xianyue Yard,,,Signing Baseline (Projects Excluding Offsetting),0715 Sprint Signing,,-4.5645
+Shanhedao,,,Opening Edition,Purchase Commitment,,0.0
+Shanhedao,,,Opening Edition,Signing,,0.0
+Shanhedao,,,Purchase Bottom Line (Projects Excluding Offsetting),Already Committed,,0.0
+Shanhedao,,,Purchase Bottom Line (Projects Excluding Offsetting),Expected Purchase,,0.0
+Shanhedao,,,Purchase Bottom Line (Projects Excluding Offsetting),0715 Sprint,,0.0
+Shanhedao,,,Signing Baseline (Projects Excluding Offsetting),Already converted to signing,,13.0989
+Shanhedao,,,Signing Baseline (Projects Excluding Offsetting),Expected Signing,,13.0989
+Shanhedao,,,Signing Baseline (Projects Excluding Offsetting),0715 Sprint Signing,,13.0989
+Ideal Light,,,Opening Edition,Purchase Commitment,,2400.0
+Ideal Light,,,Opening Edition,Signing,,1000.0
+Ideal Light,,,Purchase Bottom Line (Projects Excluding Offsetting),Already Committed,,0.0
+Ideal Light,,,Purchase Bottom Line (Projects Excluding Offsetting),Expected Purchase,,0.0
+Ideal Light,,,Purchase Bottom Line (Projects Excluding Offsetting),0715 Sprint,,0.0
+Ideal Light,,,Signing Baseline (Projects Excluding Offsetting),0715 Sprint Signing,,0.0
+Tail-end parking spaces,Tail-end,parking spaces,Opening Edition,Purchase Commitment,,300.0
+Tail-end parking spaces,Tail-end,parking spaces,Opening Edition,Signing,,300.0
+Tail-end parking spaces,Tail-end,parking spaces,Regional Version,Purchase Commitment,,300.0
+Tail-end parking spaces,Tail-end,parking spaces,Regional Version,Signing,,300.0
+Tail-end parking spaces,Tail-end,parking spaces,Purchase Bottom Line (Projects Excluding Offsetting),Already Committed,,127.077
+Tail-end parking spaces,Tail-end,parking spaces,Purchase Bottom Line (Projects Excluding Offsetting),Expected Purchase,,227.0
+Tail-end parking spaces,Tail-end,parking spaces,Purchase Bottom Line (Projects Excluding Offsetting),0715 Sprint,,300.0
+Tail-end parking spaces,Tail-end,parking spaces,Signing Baseline (Projects Excluding Offsetting),Already converted to signing,,111.0
+Tail-end parking spaces,Tail-end,parking spaces,Signing Baseline (Projects Excluding Offsetting),Normal pending signing ①②③④ mutually exclusive,,135.0
+Tail-end parking spaces,Tail-end,parking spaces,Signing Baseline (Projects Excluding Offsetting),Normal pending signing,① Among them: Intended to withdraw and cancel,23.0
+Tail-end parking spaces,Tail-end,parking spaces,Signing Baseline (Projects Excluding Offsetting),Normal pending signing,② Among them: Signed but not transferred,61.0
+Tail-end parking spaces,Tail-end,parking spaces,Signing Baseline (Projects Excluding Offsetting),Normal pending signing,③ Among them: to be signed and signable,51.0
+Tail-end parking spaces,Tail-end,parking spaces,Signing Baseline (Projects Excluding Offsetting),Normal pending signing,④ Among them: Trade-in signable + FX,0.0
+Tail-end parking spaces,Tail-end,parking spaces,Signing Baseline (Projects Excluding Offsetting),New and signed,,77.0
+Tail-end parking spaces,Tail-end,parking spaces,Signing Baseline (Projects Excluding Offsetting),0715 Sprint Signing,,300.0
+Tail-end commercial office,Tail-end,commercial office,Opening Edition,Purchase Commitment,,220.0
+Tail-end commercial office,Tail-end,commercial office,Opening Edition,Signing,,220.0
+Tail-end commercial office,Tail-end,commercial office,Regional Version,Purchase Commitment,,220.0
+Tail-end commercial office,Tail-end,commercial office,Regional Version,Signing,,220.0
+Tail-end commercial office,Tail-end,commercial office,Purchase Bottom Line (Projects Excluding Offsetting),Already Committed,,221.6544
+Tail-end commercial office,Tail-end,commercial office,Purchase Bottom Line (Projects Excluding Offsetting),Expected Purchase,,222.0
+Tail-end commercial office,Tail-end,commercial office,Purchase Bottom Line (Projects Excluding Offsetting),0715 Sprint,,222.0
+Tail-end commercial office,Tail-end,commercial office,Signing Baseline (Projects Excluding Offsetting),Already converted to signing,,13.053
+Tail-end commercial office,Tail-end,commercial office,Signing Baseline (Projects Excluding Offsetting),Normal pending signing ①②③④ mutually exclusive,,222.0
+Tail-end commercial office,Tail-end,commercial office,Signing Baseline (Projects Excluding Offsetting),Normal pending signing,① Among them: Intended to withdraw and cancel,0.0
+Tail-end commercial office,Tail-end,commercial office,Signing Baseline (Projects Excluding Offsetting),Normal pending signing,② Among them: Signed but not transferred,222.0
+Tail-end commercial office,Tail-end,commercial office,Signing Baseline (Projects Excluding Offsetting),Normal pending signing,③ Among them: to be signed and signable,0.0
+Tail-end commercial office,Tail-end,commercial office,Signing Baseline (Projects Excluding Offsetting),Normal pending signing,④ Among them: Trade-in signable + FX,0.0
+Tail-end commercial office,Tail-end,commercial office,Signing Baseline (Projects Excluding Offsetting),New and signed,,0.0
+Tail-end commercial office,Tail-end,commercial office,Signing Baseline (Projects Excluding Offsetting),0715 Sprint Signing,,222.0
+Tail-end residential units,Tail-end,residential units,Opening Edition,Purchase Commitment,,230.0
+Tail-end residential units,Tail-end,residential units,Opening Edition,Signing,,530.0
+Tail-end residential units,Tail-end,residential units,Regional Version,Purchase Commitment,,230.0
+Tail-end residential units,Tail-end,residential units,Regional Version,Signing,,230.0
+Tail-end residential units,Tail-end,residential units,Purchase Bottom Line (Projects Excluding Offsetting),Already Committed,,0.0
+Tail-end residential units,Tail-end,residential units,Purchase Bottom Line (Projects Excluding Offsetting),Expected Purchase,,100.0
+Tail-end residential units,Tail-end,residential units,Purchase Bottom Line (Projects Excluding Offsetting),0715 Sprint,,100.0
+Tail-end residential units,Tail-end,residential units,Signing Baseline (Projects Excluding Offsetting),Already converted to signing,,0.0
+Tail-end residential units,Tail-end,residential units,Signing Baseline (Projects Excluding Offsetting),Normal pending signing ①②③④ mutually exclusive,,340.0
+Tail-end residential units,Tail-end,residential units,Signing Baseline (Projects Excluding Offsetting),Normal pending signing,① Among them: Intended to withdraw and cancel,0.0
+Tail-end residential units,Tail-end,residential units,Signing Baseline (Projects Excluding Offsetting),Normal pending signing,② Among them: Signed but not transferred,0.0
+Tail-end residential units,Tail-end,residential units,Signing Baseline (Projects Excluding Offsetting),Normal pending signing,③ Among them: to be signed and signable,340.0
+Tail-end residential units,Tail-end,residential units,Signing Baseline (Projects Excluding Offsetting),Normal pending signing,④ Among them: Trade-in signable + FX,0.0
+Tail-end residential units,Tail-end,residential units,Signing Baseline (Projects Excluding Offsetting),New and signed,,100.0
+Tail-end residential units,Tail-end,residential units,Signing Baseline (Projects Excluding Offsetting),0715 Sprint Signing,,440.0
+Future Time Parking Space,Future Time,Parking Space,Purchase Bottom Line (Projects Excluding Offsetting),Projected New Additions,,2000.0
+Future Time Parking Space,Future Time,Parking Space,Purchase Bottom Line (Projects Excluding Offsetting),0715 Sprint,,2000.0
+Future Time Parking Space,Future Time,Parking Space,Weekly Meeting - Sprint Version,Sprint New Additions,,2000.0
+Future Time Parking Space,Future Time,Parking Space,Signing Baseline (Projects Excluding Offsetting),New and signed,,2000.0
+Future Time Parking Space,Future Time,Parking Space,Signing Baseline (Projects Excluding Offsetting),0715 Sprint Signing,,2000.0
+Luoyang Parking Space,Luoyang,Parking Space,Purchase Bottom Line (Projects Excluding Offsetting),Projected New Additions,,2900.0
+Luoyang Parking Space,Luoyang,Parking Space,Purchase Bottom Line (Projects Excluding Offsetting),0715 Sprint,,2900.0
+Luoyang Parking Space,Luoyang,Parking Space,Weekly Meeting - Sprint Version,Sprint New Additions,,2900.0
+Luoyang Parking Space,Luoyang,Parking Space,Signing Baseline (Projects Excluding Offsetting),New and signed,,2900.0
+Luoyang Parking Space,Luoyang,Parking Space,Signing Baseline (Projects Excluding Offsetting),0715 Sprint Signing,,2900.0
+Lanjiao Commercial Property,Lanjiao,Commercial Property,Purchase Bottom Line (Projects Excluding Offsetting),0715 Sprint,,470.0
+Lanjiao Commercial Property,Lanjiao,Commercial Property,Signing Baseline (Projects Excluding Offsetting),0715 Sprint Signing,,470.0

@@ -1,0 +1,61 @@
+cohort,category_type,primary_category,skill_level_code,occupation_class,value
+1,,,,,percent
+2,,,,,
+3,,,,,
+4,,,,,
+5,,,,,
+1,educational attainments,high school or less,high school or less,,9.13
+2,educational attainments,high school or less,high school or less,,10.10
+3,educational attainments,high school or less,high school or less,,20.28
+4,educational attainments,high school or less,high school or less,,9.52
+5,educational attainments,high school or less,high school or less,,8.00
+1,educational attainments,diploma,diploma,,17.76
+2,educational attainments,diploma,diploma,,22.02
+3,educational attainments,diploma,diploma,,27.27
+4,educational attainments,diploma,diploma,,24.04
+5,educational attainments,diploma,diploma,,39.75
+1,educational attainments,bachelor,bachelor,,36.07
+2,educational attainments,bachelor,bachelor,,39.62
+3,educational attainments,bachelor,bachelor,,28.74
+4,educational attainments,bachelor,bachelor,,34.20
+5,educational attainments,bachelor,bachelor,,49.92
+1,educational attainments,graduate,graduate,,37.04
+2,educational attainments,graduate,graduate,,28.26
+3,educational attainments,graduate,graduate,,23.71
+4,educational attainments,graduate,graduate,,32.24
+5,educational attainments,graduate,graduate,,2.32
+1,skill levels,level 0 - managerial,level 0,managerial,16.68
+2,skill levels,level 0 - managerial,level 0,managerial,41.71
+3,skill levels,level 0 - managerial,level 0,managerial,5.48
+4,skill levels,level 0 - managerial,level 0,managerial,6.27
+5,skill levels,level 0 - managerial,level 0,managerial,0.00
+1,skill levels,level a - professional,level a,professional,59.25
+2,skill levels,level a - professional,level a,professional,39.90
+3,skill levels,level a - professional,level a,professional,65.98
+4,skill levels,level a - professional,level a,professional,61.79
+5,skill levels,level a - professional,level a,professional,0.08
+1,skill levels,level b - skilled and technical,level b,skilled and technical,13.10
+2,skill levels,level b - skilled and technical,level b,skilled and technical,11.01
+3,skill levels,level b - skilled and technical,level b,skilled and technical,16.96
+4,skill levels,level b - skilled and technical,level b,skilled and technical,27.11
+5,skill levels,level b - skilled and technical,level b,skilled and technical,0.12
+1,skill levels,level c - intermediate and clerical,level c,intermediate and clerical,9.51
+2,skill levels,level c - intermediate and clerical,level c,intermediate and clerical,5.41
+3,skill levels,level c - intermediate and clerical,level c,intermediate and clerical,10.35
+4,skill levels,level c - intermediate and clerical,level c,intermediate and clerical,4.46
+5,skill levels,level c - intermediate and clerical,level c,intermediate and clerical,99.12
+1,skill levels,level d - elemental and labourers,level d,elemental and labourers,1.46
+2,skill levels,level d - elemental and labourers,level d,elemental and labourers,1.97
+3,skill levels,level d - elemental and labourers,level d,elemental and labourers,1.23
+4,skill levels,level d - elemental and labourers,level d,elemental and labourers,0.38
+5,skill levels,level d - elemental and labourers,level d,elemental and labourers,0.68
+1,skill levels,type of work permit,type of work permit,,mixed
+2,skill levels,type of work permit,type of work permit,,mixed
+3,skill levels,type of work permit,type of work permit,,generally open
+4,skill levels,type of work permit,type of work permit,,restricted
+5,skill levels,type of work permit,type of work permit,,restricted
+1,skill levels,labour market opinion required,labour market opinion required,,no
+2,skill levels,labour market opinion required,labour market opinion required,,no
+3,skill levels,labour market opinion required,labour market opinion required,,no
+4,skill levels,labour market opinion required,labour market opinion required,,yes
+5,skill levels,labour market opinion required,labour market opinion required,,yes

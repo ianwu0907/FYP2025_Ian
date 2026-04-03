@@ -1,0 +1,211 @@
+age_group,women_of_childbearing_age,birth_order,value_type,value
+15,7133,First,number_of_births,0.0
+15,7133,First,fertility_rate,0.0
+15,7133,Second,number_of_births,0.0
+15,7133,Second,fertility_rate,0.0
+15,7133,Third and above,number_of_births,0.0
+15,7133,Third and above,fertility_rate,0.0
+16,5792,First,number_of_births,3.0
+16,5792,First,fertility_rate,0.52
+16,5792,Second,number_of_births,0.0
+16,5792,Second,fertility_rate,0.0
+16,5792,Third and above,number_of_births,0.0
+16,5792,Third and above,fertility_rate,0.0
+17,5050,First,number_of_births,15.0
+17,5050,First,fertility_rate,2.97
+17,5050,Second,number_of_births,0.0
+17,5050,Second,fertility_rate,0.0
+17,5050,Third and above,number_of_births,0.0
+17,5050,Third and above,fertility_rate,0.0
+18,3825,First,number_of_births,17.0
+18,3825,First,fertility_rate,4.44
+18,3825,Second,number_of_births,0.0
+18,3825,Second,fertility_rate,0.0
+18,3825,Third and above,number_of_births,0.0
+18,3825,Third and above,fertility_rate,0.0
+19,3272,First,number_of_births,73.0
+19,3272,First,fertility_rate,22.31
+19,3272,Second,number_of_births,1.0
+19,3272,Second,fertility_rate,0.31
+19,3272,Third and above,number_of_births,0.0
+19,3272,Third and above,fertility_rate,0.0
+20,3209,First,number_of_births,264.0
+20,3209,First,fertility_rate,82.27
+20,3209,Second,number_of_births,13.0
+20,3209,Second,fertility_rate,4.05
+20,3209,Third and above,number_of_births,1.0
+20,3209,Third and above,fertility_rate,0.31
+21,3538,First,number_of_births,400.0
+21,3538,First,fertility_rate,113.06
+21,3538,Second,number_of_births,16.0
+21,3538,Second,fertility_rate,4.52
+21,3538,Third and above,number_of_births,2.0
+21,3538,Third and above,fertility_rate,0.57
+22,4146,First,number_of_births,533.0
+22,4146,First,fertility_rate,128.56
+22,4146,Second,number_of_births,40.0
+22,4146,Second,fertility_rate,9.65
+22,4146,Third and above,number_of_births,4.0
+22,4146,Third and above,fertility_rate,0.96
+23,4055,First,number_of_births,513.0
+23,4055,First,fertility_rate,126.51
+23,4055,Second,number_of_births,44.0
+23,4055,Second,fertility_rate,10.85
+23,4055,Third and above,number_of_births,10.0
+23,4055,Third and above,fertility_rate,2.47
+24,3323,First,number_of_births,397.0
+24,3323,First,fertility_rate,119.47
+24,3323,Second,number_of_births,50.0
+24,3323,Second,fertility_rate,15.05
+24,3323,Third and above,number_of_births,2.0
+24,3323,Third and above,fertility_rate,0.6
+25,3723,First,number_of_births,354.0
+25,3723,First,fertility_rate,95.08
+25,3723,Second,number_of_births,81.0
+25,3723,Second,fertility_rate,21.76
+25,3723,Third and above,number_of_births,6.0
+25,3723,Third and above,fertility_rate,1.61
+26,3485,First,number_of_births,259.0
+26,3485,First,fertility_rate,74.32
+26,3485,Second,number_of_births,127.0
+26,3485,Second,fertility_rate,36.44
+26,3485,Third and above,number_of_births,15.0
+26,3485,Third and above,fertility_rate,4.3
+27,3363,First,number_of_births,188.0
+27,3363,First,fertility_rate,55.9
+27,3363,Second,number_of_births,131.0
+27,3363,Second,fertility_rate,38.95
+27,3363,Third and above,number_of_births,12.0
+27,3363,Third and above,fertility_rate,3.57
+28,3818,First,number_of_births,141.0
+28,3818,First,fertility_rate,36.93
+28,3818,Second,number_of_births,167.0
+28,3818,Second,fertility_rate,43.74
+28,3818,Third and above,number_of_births,16.0
+28,3818,Third and above,fertility_rate,4.19
+29,4298,First,number_of_births,125.0
+29,4298,First,fertility_rate,29.08
+29,4298,Second,number_of_births,188.0
+29,4298,Second,fertility_rate,43.74
+29,4298,Third and above,number_of_births,29.0
+29,4298,Third and above,fertility_rate,6.75
+30,4856,First,number_of_births,89.0
+30,4856,First,fertility_rate,18.33
+30,4856,Second,number_of_births,197.0
+30,4856,Second,fertility_rate,40.57
+30,4856,Third and above,number_of_births,19.0
+30,4856,Third and above,fertility_rate,3.91
+31,5066,First,number_of_births,57.0
+31,5066,First,fertility_rate,11.25
+31,5066,Second,number_of_births,189.0
+31,5066,Second,fertility_rate,37.31
+31,5066,Third and above,number_of_births,17.0
+31,5066,Third and above,fertility_rate,3.36
+32,5320,First,number_of_births,40.0
+32,5320,First,fertility_rate,7.52
+32,5320,Second,number_of_births,162.0
+32,5320,Second,fertility_rate,30.45
+32,5320,Third and above,number_of_births,21.0
+32,5320,Third and above,fertility_rate,3.95
+33,5148,First,number_of_births,30.0
+33,5148,First,fertility_rate,5.83
+33,5148,Second,number_of_births,144.0
+33,5148,Second,fertility_rate,27.97
+33,5148,Third and above,number_of_births,18.0
+33,5148,Third and above,fertility_rate,3.5
+34,5812,First,number_of_births,31.0
+34,5812,First,fertility_rate,5.33
+34,5812,Second,number_of_births,140.0
+34,5812,Second,fertility_rate,24.09
+34,5812,Third and above,number_of_births,11.0
+34,5812,Third and above,fertility_rate,1.89
+35,6272,First,number_of_births,18.0
+35,6272,First,fertility_rate,2.87
+35,6272,Second,number_of_births,101.0
+35,6272,Second,fertility_rate,16.1
+35,6272,Third and above,number_of_births,25.0
+35,6272,Third and above,fertility_rate,3.99
+36,7422,First,number_of_births,21.0
+36,7422,First,fertility_rate,2.83
+36,7422,Second,number_of_births,86.0
+36,7422,Second,fertility_rate,11.59
+36,7422,Third and above,number_of_births,14.0
+36,7422,Third and above,fertility_rate,1.89
+37,6096,First,number_of_births,12.0
+37,6096,First,fertility_rate,1.97
+37,6096,Second,number_of_births,34.0
+37,6096,Second,fertility_rate,5.58
+37,6096,Third and above,number_of_births,9.0
+37,6096,Third and above,fertility_rate,1.48
+38,5720,First,number_of_births,5.0
+38,5720,First,fertility_rate,0.87
+38,5720,Second,number_of_births,29.0
+38,5720,Second,fertility_rate,5.07
+38,5720,Third and above,number_of_births,14.0
+38,5720,Third and above,fertility_rate,2.45
+39,6513,First,number_of_births,7.0
+39,6513,First,fertility_rate,1.07
+39,6513,Second,number_of_births,34.0
+39,6513,Second,fertility_rate,5.22
+39,6513,Third and above,number_of_births,6.0
+39,6513,Third and above,fertility_rate,0.92
+40,6753,First,number_of_births,2.0
+40,6753,First,fertility_rate,0.3
+40,6753,Second,number_of_births,13.0
+40,6753,Second,fertility_rate,1.93
+40,6753,Third and above,number_of_births,7.0
+40,6753,Third and above,fertility_rate,1.04
+41,6904,First,number_of_births,3.0
+41,6904,First,fertility_rate,0.43
+41,6904,Second,number_of_births,14.0
+41,6904,Second,fertility_rate,2.03
+41,6904,Third and above,number_of_births,4.0
+41,6904,Third and above,fertility_rate,0.58
+42,7268,First,number_of_births,2.0
+42,7268,First,fertility_rate,0.28
+42,7268,Second,number_of_births,14.0
+42,7268,Second,fertility_rate,1.93
+42,7268,Third and above,number_of_births,6.0
+42,7268,Third and above,fertility_rate,0.83
+43,3157,First,number_of_births,2.0
+43,3157,First,fertility_rate,0.63
+43,3157,Second,number_of_births,4.0
+43,3157,Second,fertility_rate,1.27
+43,3157,Third and above,number_of_births,3.0
+43,3157,Third and above,fertility_rate,0.95
+44,2439,First,number_of_births,2.0
+44,2439,First,fertility_rate,0.82
+44,2439,Second,number_of_births,3.0
+44,2439,Second,fertility_rate,1.23
+44,2439,Third and above,number_of_births,0.0
+44,2439,Third and above,fertility_rate,0.0
+45,3269,First,number_of_births,1.0
+45,3269,First,fertility_rate,0.31
+45,3269,Second,number_of_births,4.0
+45,3269,Second,fertility_rate,1.22
+45,3269,Third and above,number_of_births,0.0
+45,3269,Third and above,fertility_rate,0.0
+46,3589,First,number_of_births,1.0
+46,3589,First,fertility_rate,0.28
+46,3589,Second,number_of_births,3.0
+46,3589,Second,fertility_rate,0.84
+46,3589,Third and above,number_of_births,2.0
+46,3589,Third and above,fertility_rate,0.56
+47,4950,First,number_of_births,0.0
+47,4950,First,fertility_rate,0.0
+47,4950,Second,number_of_births,3.0
+47,4950,Second,fertility_rate,0.61
+47,4950,Third and above,number_of_births,6.0
+47,4950,Third and above,fertility_rate,1.21
+48,4939,First,number_of_births,3.0
+48,4939,First,fertility_rate,0.61
+48,4939,Second,number_of_births,8.0
+48,4939,Second,fertility_rate,1.62
+48,4939,Third and above,number_of_births,1.0
+48,4939,Third and above,fertility_rate,0.2
+49,4502,First,number_of_births,1.0
+49,4502,First,fertility_rate,0.22
+49,4502,Second,number_of_births,7.0
+49,4502,Second,fertility_rate,1.55
+49,4502,Third and above,number_of_births,1.0
+49,4502,Third and above,fertility_rate,0.22

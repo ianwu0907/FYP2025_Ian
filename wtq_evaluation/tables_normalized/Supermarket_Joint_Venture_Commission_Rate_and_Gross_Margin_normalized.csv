@@ -1,0 +1,32 @@
+serial_number,project,joint_venture_commission_rate,annual_guaranteed_sales_amount_ten_thousand_yuan,amount_yuan_per_day,gross_profit
+1,"Pork, beef, and mutton",0.05,6480000,18000,324000
+2,Poultry,0.06,5184000,14400,311040
+3,Assorted Vegetables,0.11,432000,1200,47520
+4,Fruit,0.04,4752000,13200,190080
+5,Vegetables,0.02,2160000,6000,43200
+6,Canned food,0.15,2880000,8000,432000
+7,Salad Vegetables,0.16,1296000,3600,207360
+8,Cereals and Grains,0.16,1296000,3600,207360
+9,Cured Products,0.16,648000,1800,103680
+10,Processed food,0.18,2808000,7800,505440
+11,Bulk Pickled Vegetables,0.16,432000,1200,69120
+12,Live fish,0.02,936000,2600,18720
+13,Aquatic Products (Fresh and Frozen),0.02,1080000,3000,21600
+14,Dried Southern and Northern Goods,0.16,2419200,6720,387072
+15,Instant food,0.16,2160000,6000,345600
+16,Dairy products,0.16,5184000,14400,829440
+17,Alcoholic Drinks and Beverages,0.13,4320000,12000,561600
+18,Frozen and refrigerated food products,0.16,4320000,12000,691200
+19,Dry Side Food Products,0.16,3888000,10800,622080
+20,Imported food,0.25,2880000,8000,720000
+21,Cosmetics,0.18,1296000,3600,233280
+22,Personal hygiene products,0.18,3456000,9600,622080
+23,Home cleaning supplies,0.19,3456000,9600,656640
+24,Stationery and books,0.22,648000,1800,142560
+25,Leisure and Tool Supplies,0.21,475200,1320,99792
+27,Communication Equipment,0.2,2160000,6000,432000
+29,Bicycle electric vehicle,0.2,2361600,6560,472320
+30,Shoes,0.2,1296000,3600,259200
+31,Apparel and accessories,0.2,2376000,6600,475200
+32,Baby Products,0.2,1375200,3820,275040
+33,Textiles,0.2,2095200,5820,419040

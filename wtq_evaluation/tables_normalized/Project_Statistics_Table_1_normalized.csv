@@ -1,0 +1,9 @@
+serial_number,contract_number,customer_name,customer_unit,contact_information,project_name,quantity,project_start_time,estimated_end_time,estimated_required_duration,status,statistician,notes,section_header,quick_search_hint
+Serial Number,Contract Number,Customer Name,Customer Unit,Contact Information,Project Name,Quantity,Project Start Time,Estimated End Time,Estimated required duration,Status,Statistician,Notes,,"Quick search  
+(Enter or select contract number)"
+,DH1029331,Rice Husk 1,China Aviation,180xxxx1021,Robot Trolley,10 sets,2021-10-03 00:00:00,2021-12-12 00:00:00,,Completed,Zhang Xiaomei,,,
+,DH1029332,Rice Husk 2,Cheng Wei,180xxxx1022,Medical Trolley Cart,20 sets,2021-09-12 00:00:00,2021-12-05 00:00:00,,Completed,Zhang Xiaomei,,,DH1029332
+,DH1029333,Rice Husk 3,eight hundred and ninety,180xxxx1023,Handle,200 sets,2021-07-23 00:00:00,2021-11-19 00:00:00,,Completed,Zhang Xiaomei,,,
+,DH1029334,Rice Husk 4,Achievement of Martial Officers,180xxxx1024,Portable machine,150 sets,2021-08-23 00:00:00,2021-12-19 00:00:00,,Completed,Zhang Xiaomei,,,Find customer contact information
+,DH1029335,Rice Husk 5,Smiley face,180xxxx1025,Transportation Robot,230 sets,2021-09-28 00:00:00,2021-12-28 00:00:00,,In progress,Zhang Xiaomei,,,Customer Name
+,DH1029336,Rice Husk 6,Southeast Lathe Factory,180xxxx1026,Welcoming Robot,35 sets,2021-09-29 00:00:00,2021-12-29 00:00:00,,In progress,Zhang Xiaomei,,,Rice Husk 1

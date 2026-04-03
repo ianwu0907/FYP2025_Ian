@@ -1,0 +1,213 @@
+team,season,division,period_id,metric_type,value
+rangers,2001-02,premier league,1,apps,1
+rangers,2001-02,premier league,1,goals,0
+rangers,2001-02,premier league,2,apps,0
+rangers,2001-02,premier league,2,goals,0
+rangers,2001-02,premier league,3,apps,0
+rangers,2001-02,premier league,3,goals,0
+rangers,2001-02,premier league,4,apps,0
+rangers,2001-02,premier league,4,goals,0
+rangers,2001-02,premier league,5,apps,1
+rangers,2001-02,premier league,5,goals,0
+brechin city,2003-04,first division,1,apps,15
+brechin city,2003-04,first division,1,goals,0
+brechin city,2003-04,first division,2,apps,0
+brechin city,2003-04,first division,2,goals,0
+brechin city,2003-04,first division,3,apps,0
+brechin city,2003-04,first division,3,goals,0
+brechin city,2003-04,first division,4,apps,0
+brechin city,2003-04,first division,4,goals,0
+brechin city,2003-04,first division,5,apps,15
+brechin city,2003-04,first division,5,goals,0
+partick thistle,2004-05,first division,1,apps,27
+partick thistle,2004-05,first division,1,goals,0
+partick thistle,2004-05,first division,2,apps,2
+partick thistle,2004-05,first division,2,goals,0
+partick thistle,2004-05,first division,3,apps,2
+partick thistle,2004-05,first division,3,goals,1
+partick thistle,2004-05,first division,4,apps,2
+partick thistle,2004-05,first division,4,goals,0
+partick thistle,2004-05,first division,5,apps,33
+partick thistle,2004-05,first division,5,goals,1
+stranraer,2005-06,first division,1,apps,22
+stranraer,2005-06,first division,1,goals,0
+stranraer,2005-06,first division,2,apps,1
+stranraer,2005-06,first division,2,goals,0
+stranraer,2005-06,first division,3,apps,2
+stranraer,2005-06,first division,3,goals,0
+stranraer,2005-06,first division,4,apps,1
+stranraer,2005-06,first division,4,goals,0
+stranraer,2005-06,first division,5,apps,26
+stranraer,2005-06,first division,5,goals,0
+ross county,2006-07,first division,1,apps,36
+ross county,2006-07,first division,1,goals,2
+ross county,2006-07,first division,2,apps,1
+ross county,2006-07,first division,2,goals,0
+ross county,2006-07,first division,3,apps,2
+ross county,2006-07,first division,3,goals,0
+ross county,2006-07,first division,4,apps,3
+ross county,2006-07,first division,4,goals,1
+ross county,2006-07,first division,5,apps,42
+ross county,2006-07,first division,5,goals,3
+ross county,2007-08,second division,1,apps,34
+ross county,2007-08,second division,1,goals,2
+ross county,2007-08,second division,2,apps,3
+ross county,2007-08,second division,2,goals,1
+ross county,2007-08,second division,3,apps,2
+ross county,2007-08,second division,3,goals,1
+ross county,2007-08,second division,4,apps,2
+ross county,2007-08,second division,4,goals,0
+ross county,2007-08,second division,5,apps,41
+ross county,2007-08,second division,5,goals,4
+ross county,2008-09,first division,1,apps,29
+ross county,2008-09,first division,1,goals,1
+ross county,2008-09,first division,2,apps,1
+ross county,2008-09,first division,2,goals,0
+ross county,2008-09,first division,3,apps,1
+ross county,2008-09,first division,3,goals,0
+ross county,2008-09,first division,4,apps,3
+ross county,2008-09,first division,4,goals,1
+ross county,2008-09,first division,5,apps,34
+ross county,2008-09,first division,5,goals,2
+ross county,ross county total,,1,apps,99
+ross county,ross county total,,1,goals,5
+ross county,ross county total,,2,apps,5
+ross county,ross county total,,2,goals,1
+ross county,ross county total,,3,apps,5
+ross county,ross county total,,3,goals,1
+ross county,ross county total,,4,apps,8
+ross county,ross county total,,4,goals,2
+ross county,ross county total,,5,apps,117
+ross county,ross county total,,5,goals,9
+dunfermline athletic,2009-10,first division,1,apps,32
+dunfermline athletic,2009-10,first division,1,goals,0
+dunfermline athletic,2009-10,first division,2,apps,3
+dunfermline athletic,2009-10,first division,2,goals,0
+dunfermline athletic,2009-10,first division,3,apps,1
+dunfermline athletic,2009-10,first division,3,goals,0
+dunfermline athletic,2009-10,first division,4,apps,1
+dunfermline athletic,2009-10,first division,4,goals,0
+dunfermline athletic,2009-10,first division,5,apps,37
+dunfermline athletic,2009-10,first division,5,goals,0
+dunfermline athletic,2010-11,,1,apps,26
+dunfermline athletic,2010-11,,1,goals,0
+dunfermline athletic,2010-11,,2,apps,0
+dunfermline athletic,2010-11,,2,goals,0
+dunfermline athletic,2010-11,,3,apps,2
+dunfermline athletic,2010-11,,3,goals,0
+dunfermline athletic,2010-11,,4,apps,0
+dunfermline athletic,2010-11,,4,goals,0
+dunfermline athletic,2010-11,,5,apps,28
+dunfermline athletic,2010-11,,5,goals,0
+dunfermline athletic,2011-12,premier league,1,apps,30
+dunfermline athletic,2011-12,premier league,1,goals,0
+dunfermline athletic,2011-12,premier league,2,apps,2
+dunfermline athletic,2011-12,premier league,2,goals,0
+dunfermline athletic,2011-12,premier league,3,apps,2
+dunfermline athletic,2011-12,premier league,3,goals,0
+dunfermline athletic,2011-12,premier league,5,apps,34
+dunfermline athletic,2011-12,premier league,5,goals,0
+dunfermline athletic,2012-13,first division,1,apps,30
+dunfermline athletic,2012-13,first division,1,goals,2
+dunfermline athletic,2012-13,first division,2,apps,2
+dunfermline athletic,2012-13,first division,2,goals,0
+dunfermline athletic,2012-13,first division,3,apps,2
+dunfermline athletic,2012-13,first division,3,goals,0
+dunfermline athletic,2012-13,first division,4,apps,1
+dunfermline athletic,2012-13,first division,4,goals,0
+dunfermline athletic,2012-13,first division,5,apps,35
+dunfermline athletic,2012-13,first division,5,goals,2
+dunfermline athletic,dunfermline total,,1,apps,118
+dunfermline athletic,dunfermline total,,1,goals,2
+dunfermline athletic,dunfermline total,,2,apps,7
+dunfermline athletic,dunfermline total,,2,goals,0
+dunfermline athletic,dunfermline total,,3,apps,7
+dunfermline athletic,dunfermline total,,3,goals,0
+dunfermline athletic,dunfermline total,,4,apps,2
+dunfermline athletic,dunfermline total,,4,goals,0
+dunfermline athletic,dunfermline total,,5,apps,134
+dunfermline athletic,dunfermline total,,5,goals,2
+partick thistle,2012-13,first division,1,apps,5
+partick thistle,2012-13,first division,1,goals,1
+partick thistle,2012-13,first division,3,apps,5
+partick thistle,2012-13,first division,3,goals,1
+queen of the south,2013-14,championship,1,apps,28
+queen of the south,2013-14,championship,1,goals,2
+queen of the south,2013-14,championship,2,apps,0
+queen of the south,2013-14,championship,2,goals,0
+queen of the south,2013-14,championship,3,apps,3
+queen of the south,2013-14,championship,3,goals,0
+queen of the south,2013-14,championship,4,apps,3
+queen of the south,2013-14,championship,4,goals,0
+queen of the south,2013-14,championship,5,apps,34
+queen of the south,2013-14,championship,5,goals,2
+queen of the south,2014-15,,1,apps,34
+queen of the south,2014-15,,1,goals,2
+queen of the south,2014-15,,2,apps,3
+queen of the south,2014-15,,2,goals,0
+queen of the south,2014-15,,3,apps,2
+queen of the south,2014-15,,3,goals,0
+queen of the south,2014-15,,4,apps,3
+queen of the south,2014-15,,4,goals,1
+queen of the south,2014-15,,5,apps,42
+queen of the south,2014-15,,5,goals,3
+queen of the south,2015-16,,1,apps,29
+queen of the south,2015-16,,1,goals,0
+queen of the south,2015-16,,2,apps,1
+queen of the south,2015-16,,2,goals,0
+queen of the south,2015-16,,3,apps,2
+queen of the south,2015-16,,3,goals,0
+queen of the south,2015-16,,4,apps,1
+queen of the south,2015-16,,4,goals,0
+queen of the south,2015-16,,5,apps,33
+queen of the south,2015-16,,5,goals,0
+queen of the south,2016-17,,1,apps,27
+queen of the south,2016-17,,1,goals,0
+queen of the south,2016-17,,2,apps,1
+queen of the south,2016-17,,2,goals,0
+queen of the south,2016-17,,3,apps,6
+queen of the south,2016-17,,3,goals,1
+queen of the south,2016-17,,4,apps,4
+queen of the south,2016-17,,4,goals,0
+queen of the south,2016-17,,5,apps,38
+queen of the south,2016-17,,5,goals,1
+queen of the south,queen of the south total,,1,apps,118
+queen of the south,queen of the south total,,1,goals,4
+queen of the south,queen of the south total,,2,apps,5
+queen of the south,queen of the south total,,2,goals,0
+queen of the south,queen of the south total,,3,apps,13
+queen of the south,queen of the south total,,3,goals,1
+queen of the south,queen of the south total,,4,apps,11
+queen of the south,queen of the south total,,4,goals,1
+queen of the south,queen of the south total,,5,apps,147
+queen of the south,queen of the south total,,5,goals,6
+dumbarton,2017-18,championship,1,apps,31
+dumbarton,2017-18,championship,1,goals,0
+dumbarton,2017-18,championship,2,apps,3
+dumbarton,2017-18,championship,2,goals,0
+dumbarton,2017-18,championship,3,apps,4
+dumbarton,2017-18,championship,3,goals,0
+dumbarton,2017-18,championship,4,apps,10
+dumbarton,2017-18,championship,4,goals,0
+dumbarton,2017-18,championship,5,apps,48
+dumbarton,2017-18,championship,5,goals,0
+dumbarton,2018-19,league one,1,apps,19
+dumbarton,2018-19,league one,1,goals,2
+dumbarton,2018-19,league one,2,apps,1
+dumbarton,2018-19,league one,2,goals,0
+dumbarton,2018-19,league one,3,apps,4
+dumbarton,2018-19,league one,3,goals,0
+dumbarton,2018-19,league one,4,apps,2
+dumbarton,2018-19,league one,4,goals,0
+dumbarton,2018-19,league one,5,apps,26
+dumbarton,2018-19,league one,5,goals,2
+dumbarton,dumbarton total,,1,apps,50
+dumbarton,dumbarton total,,1,goals,2
+dumbarton,dumbarton total,,2,apps,4
+dumbarton,dumbarton total,,2,goals,0
+dumbarton,dumbarton total,,3,apps,8
+dumbarton,dumbarton total,,3,goals,0
+dumbarton,dumbarton total,,4,apps,12
+dumbarton,dumbarton total,,4,goals,0
+dumbarton,dumbarton total,,5,apps,74
+dumbarton,dumbarton total,,5,goals,2

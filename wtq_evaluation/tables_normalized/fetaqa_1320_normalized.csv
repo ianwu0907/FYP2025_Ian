@@ -1,0 +1,11 @@
+phenomenon,item_id,status
+PRO Control,1,✓
+Subject-Object Anaphora Binding,1,✓
+PRO Control,2,✓
+Subject-Object Anaphora Binding,2,✓
+PRO Control,3,x
+Subject-Object Anaphora Binding,3,✓
+PRO Control,4,x
+Subject-Object Anaphora Binding,4,✓
+PRO Control,5,x
+Subject-Object Anaphora Binding,5,✓

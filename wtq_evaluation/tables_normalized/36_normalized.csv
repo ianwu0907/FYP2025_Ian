@@ -1,0 +1,11 @@
+size_range,category,farms,acres
+nan,Group 1,0,0
+nan,Group 2,0,0
+fewer than 200,Group 1,44,5586
+fewer than 200,Group 2,9,716
+200 to 399,Group 1,78,11558
+200 to 399,Group 2,47,4557
+400 to 999,Group 1,58,8873
+400 to 999,Group 2,24,3272
+"1,000 or more",Group 1,12,3859
+"1,000 or more",Group 2,9,5263

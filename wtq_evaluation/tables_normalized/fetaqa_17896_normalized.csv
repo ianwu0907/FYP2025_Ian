@@ -1,0 +1,12 @@
+model,year_range,start_year,end_year,horsepower_description,torque_description,horsepower_hp,horsepower_kw,torque_lbft,torque_nm
+Cadillac Eldorado ESC,1995–2001,1995,2001,275 hp (205 kW) @ 5750 rpm,300 lb⋅ft (407 N⋅m),275.0,205.0,300.0,407.0
+Cadillac Eldorado ESC,2002,2002,2002,275 hp (205 kW) @ 5600 rpm,300 lb⋅ft (407 N⋅m) @ 4000 rpm,275.0,205.0,300.0,407.0
+Cadillac Seville SLS,1993-1994,1993,1994,270 hp (201 kW),300 lb⋅ft (407 N⋅m),270.0,201.0,300.0,407.0
+Cadillac Seville SLS,1995–2004,1995,2004,275 hp (205 kW) @ 5600 rpm,300 lb⋅ft (407 N⋅m) @ 4000 rpm,275.0,205.0,300.0,407.0
+Cadillac DeVille Concours,1994,1994,1994,270 hp (201 kW),300 lb⋅ft (407 N⋅m),270.0,201.0,300.0,407.0
+Cadillac DeVille Concours,1995,1995,1995,275 hp (205 kW) @ 5750 rpm,300 lb⋅ft (407 N⋅m),275.0,205.0,300.0,407.0
+Cadillac DeVille,1996–2001,1996,2001,275 hp (205 kW) @ 5750 rpm,300 lb⋅ft (407 N⋅m) @ 4000 rpm,275.0,205.0,300.0,407.0
+Cadillac DeVille,2002–2005,2002,2005,275 hp (205 kW) @ 5600 rpm,300 lb⋅ft (407 N⋅m) @ 4000 rpm,275.0,205.0,300.0,407.0
+Cadillac DTS,2006–2011,2006,2011,275 hp (205 kW) @ 6000 rpm,295 lb⋅ft (400 N⋅m) @ 4400 rpm,275.0,205.0,295.0,400.0
+Pontiac Bonneville GXP,2004–2005,2004,2005,275 hp (205 kW) @ 5600 rpm,300 lb⋅ft (407 N⋅m) @ 4000 rpm,275.0,205.0,300.0,407.0
+Buick Lucerne CXL (optional)/CXS,2006–2007,2006,2007,275 hp (205 kW) @ 6000 rpm,295 lb⋅ft (400 N⋅m) @ 4400 rpm,275.0,205.0,295.0,400.0

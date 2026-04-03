@@ -1,0 +1,65 @@
+offence_category,metric_type,demographic,value
+total charges,rate,females,2913.0
+total charges,rate,total,669.0
+total charges,rate,males,1775.0
+total charges,rate,females,2252.0
+total charges,rate,total,619.0
+total charges,percent,males,1425.0
+total charges,percent,females,-22.7
+total charges,percent,total,-7.5
+offences against the administration of justice,rate,females,654.0
+offences against the administration of justice,rate,total,151.0
+offences against the administration of justice,rate,males,399.0
+offences against the administration of justice,rate,females,683.0
+offences against the administration of justice,rate,total,182.0
+offences against the administration of justice,percent,males,429.0
+offences against the administration of justice,percent,females,4.5
+offences against the administration of justice,percent,total,20.7
+failure to comply with conditions,rate,females,379.0
+failure to comply with conditions,rate,total,85.0
+failure to comply with conditions,rate,males,230.0
+failure to comply with conditions,rate,females,391.0
+failure to comply with conditions,rate,total,103.0
+failure to comply with conditions,percent,males,245.0
+failure to comply with conditions,percent,females,3.1
+failure to comply with conditions,percent,total,21.4
+escape custody,rate,females,8.0
+escape custody,rate,total,1.0
+escape custody,rate,males,4.0
+escape custody,rate,females,3.0
+escape custody,rate,total,0.0
+escape custody,percent,males,2.0
+escape custody,percent,females,-61.7
+escape custody,percent,total,-57.5
+prisoner unlawfully at large,rate,females,14.0
+prisoner unlawfully at large,rate,total,2.0
+prisoner unlawfully at large,rate,males,8.0
+prisoner unlawfully at large,rate,females,15.0
+prisoner unlawfully at large,rate,total,2.0
+prisoner unlawfully at large,percent,males,8.0
+prisoner unlawfully at large,percent,females,11.2
+prisoner unlawfully at large,percent,total,-11.1
+failure to attend court,rate,females,103.0
+failure to attend court,rate,total,31.0
+failure to attend court,rate,males,67.0
+failure to attend court,rate,females,103.0
+failure to attend court,rate,total,39.0
+failure to attend court,percent,males,70.0
+failure to attend court,percent,females,-0.8
+failure to attend court,percent,total,26.3
+breach of probation,rate,females,134.0
+breach of probation,rate,total,27.0
+breach of probation,rate,males,80.0
+breach of probation,rate,females,155.0
+breach of probation,rate,total,32.0
+breach of probation,percent,males,93.0
+breach of probation,percent,females,15.8
+breach of probation,percent,total,19.4
+other offences against the administration of law and justice,rate,females,15.0
+other offences against the administration of law and justice,rate,total,5.0
+other offences against the administration of law and justice,rate,males,10.0
+other offences against the administration of law and justice,rate,females,16.0
+other offences against the administration of law and justice,rate,total,6.0
+other offences against the administration of law and justice,percent,males,11.0
+other offences against the administration of law and justice,percent,females,4.5
+other offences against the administration of law and justice,percent,total,8.8

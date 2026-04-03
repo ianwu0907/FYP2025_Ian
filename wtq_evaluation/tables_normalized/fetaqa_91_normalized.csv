@@ -1,0 +1,29 @@
+election_id,year,candidate_role,candidate_name,party
+2,1967,winner,Ramakant Dwivedi,INC
+2,1967,runner-up,Panna Lal,IND
+3,1969,winner,Panna Lal,BKD
+3,1969,runner-up,Ramakant Dwivedi,INC
+4,1974,winner,Ramakant Dwivedi,INC
+4,1974,runner-up,Jagannath Singh,BJS
+5,1977,winner,Jagannath Singh,JNP
+5,1977,runner-up,Rabendra Pal Singh,INC
+6,1980,winner,Ram Pyare Pandey,INC
+6,1980,runner-up,Achal Singh,JNP
+7,1985,winner,Achal Singh,LKD
+7,1985,runner-up,Ram Pyare Pandey,INC
+8,1989,winner,Achal Singh,JD
+8,1989,runner-up,Ram Singh,INC
+9,1991,winner,Abhimanyu Singh,JD
+9,1991,runner-up,Amarjeet Singh,BJP
+10,1993,winner,Amarjeet Singh,BJP
+10,1993,runner-up,Achal Singh,SP
+11,1996,winner,Rajendra Singh Patel,BSP
+11,1996,runner-up,Amarjeet Singh,BJP
+12,2002,winner,Amarjeet Singh,BJP
+12,2002,runner-up,Sukhdev Prasad Verma,BSP
+13,2007,winner,Sukhdev Prasad Verma,BSP
+13,2007,runner-up,Rajendra Singh Patel,BJP
+14,2012,winner,Sukhdev Prasad Verma,BSP
+14,2012,runner-up,Rajendra Singh Patel,BJP
+15,2017,winner,Karan Singh Patel,BJP
+15,2017,runner-up,Rameshwar Dayal,SP

@@ -1,0 +1,10 @@
+metric,period,kilograms
+production,Period 1,9659
+sales,Period 1,8446
+inventories,Period 1,17985
+production,Period 2,35912
+sales,Period 2,26716
+inventories,Period 2,18087
+production,Period 3,80535
+sales,Period 3,46186
+inventories,Period 3,38927

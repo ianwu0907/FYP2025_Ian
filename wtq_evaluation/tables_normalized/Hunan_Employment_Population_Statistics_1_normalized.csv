@@ -1,0 +1,253 @@
+age_group,sex,occupation,count
+    16-19,,"Government agencies, party and mass organizations, enterprise, and institution heads",32
+    20-24,,"Government agencies, party and mass organizations, enterprise, and institution heads",123
+    25-29,,"Government agencies, party and mass organizations, enterprise, and institution heads",276
+    30-34,,"Government agencies, party and mass organizations, enterprise, and institution heads",493
+    35-39,,"Government agencies, party and mass organizations, enterprise, and institution heads",732
+    40-44,,"Government agencies, party and mass organizations, enterprise, and institution heads",810
+    45-49,,"Government agencies, party and mass organizations, enterprise, and institution heads",535
+    50-54,,"Government agencies, party and mass organizations, enterprise, and institution heads",479
+    55-59,,"Government agencies, party and mass organizations, enterprise, and institution heads",235
+    60-64,,"Government agencies, party and mass organizations, enterprise, and institution heads",64
+    65-69,,"Government agencies, party and mass organizations, enterprise, and institution heads",35
+70 and above,,"Government agencies, party and mass organizations, enterprise, and institution heads",20
+    16-19,,"Government agencies, party and mass organizations, enterprise, and institution heads",22
+    20-24,,"Government agencies, party and mass organizations, enterprise, and institution heads",71
+    25-29,,"Government agencies, party and mass organizations, enterprise, and institution heads",175
+    30-34,,"Government agencies, party and mass organizations, enterprise, and institution heads",345
+    35-39,,"Government agencies, party and mass organizations, enterprise, and institution heads",545
+    40-44,,"Government agencies, party and mass organizations, enterprise, and institution heads",632
+    45-49,,"Government agencies, party and mass organizations, enterprise, and institution heads",422
+    50-54,,"Government agencies, party and mass organizations, enterprise, and institution heads",401
+    55-59,,"Government agencies, party and mass organizations, enterprise, and institution heads",205
+    60-64,,"Government agencies, party and mass organizations, enterprise, and institution heads",48
+    65-69,,"Government agencies, party and mass organizations, enterprise, and institution heads",26
+70 and above,,"Government agencies, party and mass organizations, enterprise, and institution heads",16
+    16-19,,"Government agencies, party and mass organizations, enterprise, and institution heads",10
+    20-24,,"Government agencies, party and mass organizations, enterprise, and institution heads",52
+    25-29,,"Government agencies, party and mass organizations, enterprise, and institution heads",101
+    30-34,,"Government agencies, party and mass organizations, enterprise, and institution heads",148
+    35-39,,"Government agencies, party and mass organizations, enterprise, and institution heads",187
+    40-44,,"Government agencies, party and mass organizations, enterprise, and institution heads",178
+    45-49,,"Government agencies, party and mass organizations, enterprise, and institution heads",113
+    50-54,,"Government agencies, party and mass organizations, enterprise, and institution heads",78
+    55-59,,"Government agencies, party and mass organizations, enterprise, and institution heads",30
+    60-64,,"Government agencies, party and mass organizations, enterprise, and institution heads",16
+    65-69,,"Government agencies, party and mass organizations, enterprise, and institution heads",9
+70 and above,,"Government agencies, party and mass organizations, enterprise, and institution heads",4
+    16-19,,Professional and technical personnel,347
+    20-24,,Professional and technical personnel,1753
+    25-29,,Professional and technical personnel,2709
+    30-34,,Professional and technical personnel,3269
+    35-39,,Professional and technical personnel,3418
+    40-44,,Professional and technical personnel,3227
+    45-49,,Professional and technical personnel,2129
+    50-54,,Professional and technical personnel,1995
+    55-59,,Professional and technical personnel,1012
+    60-64,,Professional and technical personnel,368
+    65-69,,Professional and technical personnel,245
+70 and above,,Professional and technical personnel,119
+    16-19,,Professional and technical personnel,166
+    20-24,,Professional and technical personnel,726
+    25-29,,Professional and technical personnel,1215
+    30-34,,Professional and technical personnel,1607
+    35-39,,Professional and technical personnel,1787
+    40-44,,Professional and technical personnel,1723
+    45-49,,Professional and technical personnel,1209
+    50-54,,Professional and technical personnel,1262
+    55-59,,Professional and technical personnel,763
+    60-64,,Professional and technical personnel,250
+    65-69,,Professional and technical personnel,175
+70 and above,,Professional and technical personnel,88
+    16-19,,Professional and technical personnel,181
+    20-24,,Professional and technical personnel,1027
+    25-29,,Professional and technical personnel,1494
+    30-34,,Professional and technical personnel,1662
+    35-39,,Professional and technical personnel,1631
+    40-44,,Professional and technical personnel,1504
+    45-49,,Professional and technical personnel,920
+    50-54,,Professional and technical personnel,733
+    55-59,,Professional and technical personnel,249
+    60-64,,Professional and technical personnel,118
+    65-69,,Professional and technical personnel,70
+70 and above,,Professional and technical personnel,31
+    16-19,,clerical staff and related personnel,176
+    20-24,,clerical staff and related personnel,880
+    25-29,,clerical staff and related personnel,1539
+    30-34,,clerical staff and related personnel,1795
+    35-39,,clerical staff and related personnel,1847
+    40-44,,clerical staff and related personnel,1879
+    45-49,,clerical staff and related personnel,1149
+    50-54,,clerical staff and related personnel,975
+    55-59,,clerical staff and related personnel,461
+    60-64,,clerical staff and related personnel,83
+    65-69,,clerical staff and related personnel,37
+70 and above,,clerical staff and related personnel,21
+    16-19,,clerical staff and related personnel,111
+    20-24,,clerical staff and related personnel,504
+    25-29,,clerical staff and related personnel,990
+    30-34,,clerical staff and related personnel,1178
+    35-39,,clerical staff and related personnel,1195
+    40-44,,clerical staff and related personnel,1280
+    45-49,,clerical staff and related personnel,830
+    50-54,,clerical staff and related personnel,809
+    55-59,,clerical staff and related personnel,437
+    60-64,,clerical staff and related personnel,75
+    65-69,,clerical staff and related personnel,27
+70 and above,,clerical staff and related personnel,15
+    16-19,,clerical staff and related personnel,65
+    20-24,,clerical staff and related personnel,376
+    25-29,,clerical staff and related personnel,549
+    30-34,,clerical staff and related personnel,617
+    35-39,,clerical staff and related personnel,652
+    40-44,,clerical staff and related personnel,599
+    45-49,,clerical staff and related personnel,319
+    50-54,,clerical staff and related personnel,166
+    55-59,,clerical staff and related personnel,24
+    60-64,,clerical staff and related personnel,8
+    65-69,,clerical staff and related personnel,10
+70 and above,,clerical staff and related personnel,6
+    16-19,,Commercial and service industry personnel,2490
+    20-24,,Commercial and service industry personnel,5245
+    25-29,,Commercial and service industry personnel,5458
+    30-34,,Commercial and service industry personnel,7180
+    35-39,,Commercial and service industry personnel,8244
+    40-44,,Commercial and service industry personnel,6645
+    45-49,,Commercial and service industry personnel,3649
+    50-54,,Commercial and service industry personnel,2581
+    55-59,,Commercial and service industry personnel,1185
+    60-64,,Commercial and service industry personnel,485
+    65-69,,Commercial and service industry personnel,206
+70 and above,,Commercial and service industry personnel,131
+    16-19,,Commercial and service industry personnel,966
+    20-24,,Commercial and service industry personnel,2283
+    25-29,,Commercial and service industry personnel,2580
+    30-34,,Commercial and service industry personnel,3541
+    35-39,,Commercial and service industry personnel,4153
+    40-44,,Commercial and service industry personnel,3348
+    45-49,,Commercial and service industry personnel,2091
+    50-54,,Commercial and service industry personnel,1664
+    55-59,,Commercial and service industry personnel,816
+    60-64,,Commercial and service industry personnel,335
+    65-69,,Commercial and service industry personnel,148
+70 and above,,Commercial and service industry personnel,86
+    16-19,,Commercial and service industry personnel,1524
+    20-24,,Commercial and service industry personnel,2962
+    25-29,,Commercial and service industry personnel,2878
+    30-34,,Commercial and service industry personnel,3639
+    35-39,,Commercial and service industry personnel,4091
+    40-44,,Commercial and service industry personnel,3297
+    45-49,,Commercial and service industry personnel,1558
+    50-54,,Commercial and service industry personnel,917
+    55-59,,Commercial and service industry personnel,369
+    60-64,,Commercial and service industry personnel,150
+    65-69,,Commercial and service industry personnel,58
+70 and above,,Commercial and service industry personnel,45
+    16-19,,"Agriculture, forestry, animal husbandry, fishery, and water conservancy production personnel",6995
+    20-24,,"Agriculture, forestry, animal husbandry, fishery, and water conservancy production personnel",13251
+    25-29,,"Agriculture, forestry, animal husbandry, fishery, and water conservancy production personnel",13891
+    30-34,,"Agriculture, forestry, animal husbandry, fishery, and water conservancy production personnel",23194
+    35-39,,"Agriculture, forestry, animal husbandry, fishery, and water conservancy production personnel",32820
+    40-44,,"Agriculture, forestry, animal husbandry, fishery, and water conservancy production personnel",30448
+    45-49,,"Agriculture, forestry, animal husbandry, fishery, and water conservancy production personnel",23536
+    50-54,,"Agriculture, forestry, animal husbandry, fishery, and water conservancy production personnel",28164
+    55-59,,"Agriculture, forestry, animal husbandry, fishery, and water conservancy production personnel",20597
+    60-64,,"Agriculture, forestry, animal husbandry, fishery, and water conservancy production personnel",11338
+    65-69,,"Agriculture, forestry, animal husbandry, fishery, and water conservancy production personnel",7530
+70 and above,,"Agriculture, forestry, animal husbandry, fishery, and water conservancy production personnel",4066
+    16-19,,"Agriculture, forestry, animal husbandry, fishery, and water conservancy production personnel",3850
+    20-24,,"Agriculture, forestry, animal husbandry, fishery, and water conservancy production personnel",6477
+    25-29,,"Agriculture, forestry, animal husbandry, fishery, and water conservancy production personnel",6819
+    30-34,,"Agriculture, forestry, animal husbandry, fishery, and water conservancy production personnel",11319
+    35-39,,"Agriculture, forestry, animal husbandry, fishery, and water conservancy production personnel",15742
+    40-44,,"Agriculture, forestry, animal husbandry, fishery, and water conservancy production personnel",14744
+    45-49,,"Agriculture, forestry, animal husbandry, fishery, and water conservancy production personnel",11914
+    50-54,,"Agriculture, forestry, animal husbandry, fishery, and water conservancy production personnel",15302
+    55-59,,"Agriculture, forestry, animal husbandry, fishery, and water conservancy production personnel",12167
+    60-64,,"Agriculture, forestry, animal husbandry, fishery, and water conservancy production personnel",7314
+    65-69,,"Agriculture, forestry, animal husbandry, fishery, and water conservancy production personnel",5265
+70 and above,,"Agriculture, forestry, animal husbandry, fishery, and water conservancy production personnel",2931
+    16-19,,"Agriculture, forestry, animal husbandry, fishery, and water conservancy production personnel",3145
+    20-24,,"Agriculture, forestry, animal husbandry, fishery, and water conservancy production personnel",6774
+    25-29,,"Agriculture, forestry, animal husbandry, fishery, and water conservancy production personnel",7072
+    30-34,,"Agriculture, forestry, animal husbandry, fishery, and water conservancy production personnel",11875
+    35-39,,"Agriculture, forestry, animal husbandry, fishery, and water conservancy production personnel",17078
+    40-44,,"Agriculture, forestry, animal husbandry, fishery, and water conservancy production personnel",15704
+    45-49,,"Agriculture, forestry, animal husbandry, fishery, and water conservancy production personnel",11622
+    50-54,,"Agriculture, forestry, animal husbandry, fishery, and water conservancy production personnel",12862
+    55-59,,"Agriculture, forestry, animal husbandry, fishery, and water conservancy production personnel",8430
+    60-64,,"Agriculture, forestry, animal husbandry, fishery, and water conservancy production personnel",4024
+    65-69,,"Agriculture, forestry, animal husbandry, fishery, and water conservancy production personnel",2265
+70 and above,,"Agriculture, forestry, animal husbandry, fishery, and water conservancy production personnel",1135
+    16-19,,"Production, transportation equipment operators and related personnel",2995
+    20-24,,"Production, transportation equipment operators and related personnel",5326
+    25-29,,"Production, transportation equipment operators and related personnel",5433
+    30-34,,"Production, transportation equipment operators and related personnel",7544
+    35-39,,"Production, transportation equipment operators and related personnel",8883
+    40-44,,"Production, transportation equipment operators and related personnel",6823
+    45-49,,"Production, transportation equipment operators and related personnel",3519
+    50-54,,"Production, transportation equipment operators and related personnel",2602
+    55-59,,"Production, transportation equipment operators and related personnel",1054
+    60-64,,"Production, transportation equipment operators and related personnel",314
+    65-69,,"Production, transportation equipment operators and related personnel",137
+70 and above,,"Production, transportation equipment operators and related personnel",58
+    16-19,,"Production, transportation equipment operators and related personnel",1680
+    20-24,,"Production, transportation equipment operators and related personnel",3409
+    25-29,,"Production, transportation equipment operators and related personnel",3760
+    30-34,,"Production, transportation equipment operators and related personnel",5221
+    35-39,,"Production, transportation equipment operators and related personnel",6211
+    40-44,,"Production, transportation equipment operators and related personnel",5004
+    45-49,,"Production, transportation equipment operators and related personnel",2828
+    50-54,,"Production, transportation equipment operators and related personnel",2183
+    55-59,,"Production, transportation equipment operators and related personnel",897
+    60-64,,"Production, transportation equipment operators and related personnel",275
+    65-69,,"Production, transportation equipment operators and related personnel",114
+70 and above,,"Production, transportation equipment operators and related personnel",48
+    16-19,,"Production, transportation equipment operators and related personnel",1315
+    20-24,,"Production, transportation equipment operators and related personnel",1917
+    25-29,,"Production, transportation equipment operators and related personnel",1673
+    30-34,,"Production, transportation equipment operators and related personnel",2323
+    35-39,,"Production, transportation equipment operators and related personnel",2672
+    40-44,,"Production, transportation equipment operators and related personnel",1819
+    45-49,,"Production, transportation equipment operators and related personnel",691
+    50-54,,"Production, transportation equipment operators and related personnel",419
+    55-59,,"Production, transportation equipment operators and related personnel",157
+    60-64,,"Production, transportation equipment operators and related personnel",39
+    65-69,,"Production, transportation equipment operators and related personnel",23
+70 and above,,"Production, transportation equipment operators and related personnel",10
+    16-19,,Other occupational categories that are difficult to classify,43
+    20-24,,Other occupational categories that are difficult to classify,83
+    25-29,,Other occupational categories that are difficult to classify,103
+    30-34,,Other occupational categories that are difficult to classify,165
+    35-39,,Other occupational categories that are difficult to classify,163
+    40-44,,Other occupational categories that are difficult to classify,173
+    45-49,,Other occupational categories that are difficult to classify,104
+    50-54,,Other occupational categories that are difficult to classify,84
+    55-59,,Other occupational categories that are difficult to classify,59
+    60-64,,Other occupational categories that are difficult to classify,24
+    65-69,,Other occupational categories that are difficult to classify,18
+70 and above,,Other occupational categories that are difficult to classify,4
+    16-19,,Other occupational categories that are difficult to classify,24
+    20-24,,Other occupational categories that are difficult to classify,46
+    25-29,,Other occupational categories that are difficult to classify,63
+    30-34,,Other occupational categories that are difficult to classify,108
+    35-39,,Other occupational categories that are difficult to classify,105
+    40-44,,Other occupational categories that are difficult to classify,108
+    45-49,,Other occupational categories that are difficult to classify,69
+    50-54,,Other occupational categories that are difficult to classify,70
+    55-59,,Other occupational categories that are difficult to classify,43
+    60-64,,Other occupational categories that are difficult to classify,19
+    65-69,,Other occupational categories that are difficult to classify,15
+70 and above,,Other occupational categories that are difficult to classify,3
+    16-19,,Other occupational categories that are difficult to classify,19
+    20-24,,Other occupational categories that are difficult to classify,37
+    25-29,,Other occupational categories that are difficult to classify,40
+    30-34,,Other occupational categories that are difficult to classify,57
+    35-39,,Other occupational categories that are difficult to classify,58
+    40-44,,Other occupational categories that are difficult to classify,65
+    45-49,,Other occupational categories that are difficult to classify,35
+    50-54,,Other occupational categories that are difficult to classify,14
+    55-59,,Other occupational categories that are difficult to classify,16
+    60-64,,Other occupational categories that are difficult to classify,5
+    65-69,,Other occupational categories that are difficult to classify,3
+70 and above,,Other occupational categories that are difficult to classify,1

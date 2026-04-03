@@ -1,0 +1,141 @@
+region,income_range,household_count
+Changsha City,"Below 10,000 yuan",3297
+Zhuzhou City,"Below 10,000 yuan",2029
+Xiangtan City,"Below 10,000 yuan",1611
+Hengyang City,"Below 10,000 yuan",4202
+Shaoyang City,"Below 10,000 yuan",7515
+Yueyang City,"Below 10,000 yuan",3457
+Changde City,"Below 10,000 yuan",5917
+Zhangjiajie City,"Below 10,000 yuan",1891
+Yiyang City,"Below 10,000 yuan",3979
+Chenzhou City,"Below 10,000 yuan",5056
+Yongzhou City,"Below 10,000 yuan",4508
+Huaihua City,"Below 10,000 yuan",6840
+Loudi City,"Below 10,000 yuan",3445
+Xiangxi Tujia and Miao Autonomous Prefecture,"Below 10,000 yuan",3821
+Changsha City,"10,000–20,000 yuan",2318
+Zhuzhou City,"10,000–20,000 yuan",1359
+Xiangtan City,"10,000–20,000 yuan",1110
+Hengyang City,"10,000–20,000 yuan",3051
+Shaoyang City,"10,000–20,000 yuan",3400
+Yueyang City,"10,000–20,000 yuan",1849
+Changde City,"10,000–20,000 yuan",3393
+Zhangjiajie City,"10,000–20,000 yuan",824
+Yiyang City,"10,000–20,000 yuan",1769
+Chenzhou City,"10,000–20,000 yuan",3185
+Yongzhou City,"10,000–20,000 yuan",3190
+Huaihua City,"10,000–20,000 yuan",3268
+Loudi City,"10,000–20,000 yuan",2166
+Xiangxi Tujia and Miao Autonomous Prefecture,"10,000–20,000 yuan",1438
+Changsha City,"20,000–30,000 yuan",1754
+Zhuzhou City,"20,000–30,000 yuan",1114
+Xiangtan City,"20,000–30,000 yuan",1062
+Hengyang City,"20,000–30,000 yuan",3016
+Shaoyang City,"20,000–30,000 yuan",2295
+Yueyang City,"20,000–30,000 yuan",1736
+Changde City,"20,000–30,000 yuan",1809
+Zhangjiajie City,"20,000–30,000 yuan",438
+Yiyang City,"20,000–30,000 yuan",1422
+Chenzhou City,"20,000–30,000 yuan",2159
+Yongzhou City,"20,000–30,000 yuan",2116
+Huaihua City,"20,000–30,000 yuan",1406
+Loudi City,"20,000–30,000 yuan",1327
+Xiangxi Tujia and Miao Autonomous Prefecture,"20,000–30,000 yuan",562
+Changsha City,"30,000–50,000 yuan",3757
+Zhuzhou City,"30,000–50,000 yuan",2562
+Xiangtan City,"30,000–50,000 yuan",3000
+Hengyang City,"30,000–50,000 yuan",4758
+Shaoyang City,"30,000–50,000 yuan",2906
+Yueyang City,"30,000–50,000 yuan",3436
+Changde City,"30,000–50,000 yuan",2781
+Zhangjiajie City,"30,000–50,000 yuan",731
+Yiyang City,"30,000–50,000 yuan",2892
+Chenzhou City,"30,000–50,000 yuan",1870
+Yongzhou City,"30,000–50,000 yuan",2017
+Huaihua City,"30,000–50,000 yuan",1091
+Loudi City,"30,000–50,000 yuan",1589
+Xiangxi Tujia and Miao Autonomous Prefecture,"30,000–50,000 yuan",587
+Changsha City,"50,000–100,000 yuan",3389
+Zhuzhou City,"50,000–100,000 yuan",2368
+Xiangtan City,"50,000–100,000 yuan",1520
+Hengyang City,"50,000–100,000 yuan",3419
+Shaoyang City,"50,000–100,000 yuan",2085
+Yueyang City,"50,000–100,000 yuan",2494
+Changde City,"50,000–100,000 yuan",3084
+Zhangjiajie City,"50,000–100,000 yuan",503
+Yiyang City,"50,000–100,000 yuan",1525
+Chenzhou City,"50,000–100,000 yuan",1228
+Yongzhou City,"50,000–100,000 yuan",1116
+Huaihua City,"50,000–100,000 yuan",722
+Loudi City,"50,000–100,000 yuan",1401
+Xiangxi Tujia and Miao Autonomous Prefecture,"50,000–100,000 yuan",577
+Changsha City,"100,000–200,000 yuan",1108
+Zhuzhou City,"100,000–200,000 yuan",572
+Xiangtan City,"100,000–200,000 yuan",335
+Hengyang City,"100,000–200,000 yuan",519
+Shaoyang City,"100,000–200,000 yuan",544
+Yueyang City,"100,000–200,000 yuan",418
+Changde City,"100,000–200,000 yuan",755
+Zhangjiajie City,"100,000–200,000 yuan",134
+Yiyang City,"100,000–200,000 yuan",272
+Chenzhou City,"100,000–200,000 yuan",254
+Yongzhou City,"100,000–200,000 yuan",384
+Huaihua City,"100,000–200,000 yuan",108
+Loudi City,"100,000–200,000 yuan",203
+Xiangxi Tujia and Miao Autonomous Prefecture,"100,000–200,000 yuan",157
+Changsha City,"200,000–300,000 yuan",307
+Zhuzhou City,"200,000–300,000 yuan",32
+Xiangtan City,"200,000–300,000 yuan",39
+Hengyang City,"200,000–300,000 yuan",57
+Shaoyang City,"200,000–300,000 yuan",71
+Yueyang City,"200,000–300,000 yuan",38
+Changde City,"200,000–300,000 yuan",81
+Zhangjiajie City,"200,000–300,000 yuan",7
+Yiyang City,"200,000–300,000 yuan",27
+Chenzhou City,"200,000–300,000 yuan",33
+Yongzhou City,"200,000–300,000 yuan",47
+Huaihua City,"200,000–300,000 yuan",27
+Loudi City,"200,000–300,000 yuan",22
+Xiangxi Tujia and Miao Autonomous Prefecture,"200,000–300,000 yuan",20
+Changsha City,"300,000–500,000 yuan",109
+Zhuzhou City,"300,000–500,000 yuan",5
+Xiangtan City,"300,000–500,000 yuan",16
+Hengyang City,"300,000–500,000 yuan",13
+Shaoyang City,"300,000–500,000 yuan",17
+Yueyang City,"300,000–500,000 yuan",19
+Changde City,"300,000–500,000 yuan",19
+Zhangjiajie City,"300,000–500,000 yuan",3
+Yiyang City,"300,000–500,000 yuan",5
+Chenzhou City,"300,000–500,000 yuan",12
+Yongzhou City,"300,000–500,000 yuan",12
+Huaihua City,"300,000–500,000 yuan",7
+Loudi City,"300,000–500,000 yuan",9
+Xiangxi Tujia and Miao Autonomous Prefecture,"300,000–500,000 yuan",2
+Changsha City,50-70 thousand yuan,13
+Zhuzhou City,50-70 thousand yuan,2
+Xiangtan City,50-70 thousand yuan,8
+Hengyang City,50-70 thousand yuan,5
+Shaoyang City,50-70 thousand yuan,7
+Yueyang City,50-70 thousand yuan,5
+Changde City,50-70 thousand yuan,11
+Zhangjiajie City,50-70 thousand yuan,2
+Yiyang City,50-70 thousand yuan,2
+Chenzhou City,50-70 thousand yuan,0
+Yongzhou City,50-70 thousand yuan,1
+Huaihua City,50-70 thousand yuan,2
+Loudi City,50-70 thousand yuan,3
+Xiangxi Tujia and Miao Autonomous Prefecture,50-70 thousand yuan,5
+Changsha City,"Over 700,000 yuan",24
+Zhuzhou City,"Over 700,000 yuan",4
+Xiangtan City,"Over 700,000 yuan",10
+Hengyang City,"Over 700,000 yuan",13
+Shaoyang City,"Over 700,000 yuan",19
+Yueyang City,"Over 700,000 yuan",7
+Changde City,"Over 700,000 yuan",21
+Zhangjiajie City,"Over 700,000 yuan",1
+Yiyang City,"Over 700,000 yuan",5
+Chenzhou City,"Over 700,000 yuan",10
+Yongzhou City,"Over 700,000 yuan",4
+Huaihua City,"Over 700,000 yuan",13
+Loudi City,"Over 700,000 yuan",5
+Xiangxi Tujia and Miao Autonomous Prefecture,"Over 700,000 yuan",9

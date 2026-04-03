@@ -1,0 +1,185 @@
+building_name,city,year_completed,attribute,value
+Beijing TV Center,Beijing,2006,floor_count,41
+Jingguang Center,Beijing,1990,floor_count,57
+CCTV Headquarters Building,Beijing,2009,floor_count,52
+Water Cube,Beijing,2008,floor_count,-
+Yintai Center,Beijing,2008,floor_count,63
+Shanghai International Shipping Tower,Shanghai,1999,floor_count,50
+John Hancock Center,Shanghai,2008,floor_count,101
+Jinmao Tower,Shanghai,1998,floor_count,88
+Shanghai Shimao International Plaza,Shanghai,2007,floor_count,60
+Shanghai Information Hub Center Building,Shanghai,2001,floor_count,41
+Bank of China Tower in Shanghai,Shanghai,2000,floor_count,53
+Tomorrow Square,Shanghai,2003,floor_count,58
+CITIC Plaza,Guangzhou,1997,floor_count,80
+Guangzhou CTF Finance Centre {Guangzhou International Financial Center},Guangzhou,2010,floor_count,103
+Guangdong Telecom Plaza,Guangzhou,2005,floor_count,68
+Guangzhou Opera House,Guangzhou,2010,floor_count,7
+Guangdong TV Observation Tower,Guangzhou,2010,floor_count,-
+Nanfang International Mansion,Guangzhou,1999,floor_count,50
+Zhonghua Plaza Office Building,Guangzhou,2000,floor_count,62
+Brain International Plaza,Guangzhou,2010,floor_count,59
+Zifeng Tower,Nanjing,2009,floor_count,89
+Nanjing International Plaza,Nanjing,2008,floor_count,82
+Jinao Mansion,Nanjing,2007,floor_count,54
+nan,nan,,height_m,239.0
+nan,nan,,height_m,209.0
+nan,nan,,height_m,234.0
+nan,nan,,height_m,177.0
+nan,nan,,height_m,249.0
+nan,nan,,height_m,232.4
+nan,nan,,height_m,492.0
+nan,nan,,height_m,420.5
+nan,nan,,height_m,333.3
+nan,nan,,height_m,288.0
+nan,nan,,height_m,258.0
+nan,nan,,height_m,283.0
+nan,nan,,height_m,391.0
+nan,nan,,height_m,432.0
+nan,nan,,height_m,249.9
+nan,nan,,height_m,43.1
+nan,nan,,height_m,601.0
+nan,nan,,height_m,201.0
+nan,nan,,height_m,270.0
+nan,nan,,height_m,269.2
+nan,nan,,height_m,450.0
+nan,nan,,height_m,357.0
+nan,nan,,height_m,232.0
+nan,nan,,ratio,3.61
+nan,nan,,ratio,2.89
+nan,nan,,ratio,-
+nan,nan,,ratio,6.3
+nan,nan,,ratio,3.1
+nan,nan,,ratio,1.2
+nan,nan,,ratio,3
+nan,nan,,ratio,2.3
+nan,nan,,ratio,-
+nan,nan,,ratio,0.825
+nan,nan,,ratio,0.4126
+nan,nan,,ratio,10
+nan,nan,,ratio,2.3
+nan,nan,,ratio,3.1084
+nan,nan,,ratio,0.9
+nan,nan,,ratio,4.2
+nan,nan,,ratio,17.546
+nan,nan,,ratio,1.28
+nan,nan,,ratio,3.5
+nan,nan,,ratio,0.7429
+nan,nan,,ratio,1.8721
+nan,nan,,ratio,3.2477
+nan,nan,,ratio,2.551
+nan,nan,,area_per_floor_m2,20.2
+nan,nan,,area_per_floor_m2,14.5
+nan,nan,,area_per_floor_m2,49.49
+nan,nan,,area_per_floor_m2,7.95
+nan,nan,,area_per_floor_m2,35.0
+nan,nan,,area_per_floor_m2,12.5
+nan,nan,,area_per_floor_m2,38.16
+nan,nan,,area_per_floor_m2,29.0
+nan,nan,,area_per_floor_m2,17.0
+nan,nan,,area_per_floor_m2,10.12
+nan,nan,,area_per_floor_m2,12.3
+nan,nan,,area_per_floor_m2,12.7
+nan,nan,,area_per_floor_m2,29.0
+nan,nan,,area_per_floor_m2,45.6
+nan,nan,,area_per_floor_m2,14.5
+nan,nan,,area_per_floor_m2,7.3
+nan,nan,,area_per_floor_m2,11.4
+nan,nan,,area_per_floor_m2,12.0
+nan,nan,,area_per_floor_m2,17.0
+nan,nan,,area_per_floor_m2,12.3
+nan,nan,,area_per_floor_m2,26.1057
+nan,nan,,area_per_floor_m2,48.0
+nan,nan,,area_per_floor_m2,22.1536
+nan,nan,,weight_or_cost_indicator,35
+nan,nan,,weight_or_cost_indicator,22.4
+nan,nan,,weight_or_cost_indicator,50
+nan,nan,,weight_or_cost_indicator,-
+nan,nan,,weight_or_cost_indicator,40
+nan,nan,,weight_or_cost_indicator,15
+nan,nan,,weight_or_cost_indicator,83
+nan,nan,,weight_or_cost_indicator,50
+nan,nan,,weight_or_cost_indicator,30
+nan,nan,,weight_or_cost_indicator,10
+nan,nan,,weight_or_cost_indicator,$230 million
+nan,nan,,weight_or_cost_indicator,28
+nan,nan,,weight_or_cost_indicator,40
+nan,nan,,weight_or_cost_indicator,60
+nan,nan,,weight_or_cost_indicator,-
+nan,nan,,weight_or_cost_indicator,13.8
+nan,nan,,weight_or_cost_indicator,22
+nan,nan,,weight_or_cost_indicator,11
+nan,nan,,weight_or_cost_indicator,16
+nan,nan,,weight_or_cost_indicator,13.88
+nan,nan,,weight_or_cost_indicator,-
+nan,nan,,weight_or_cost_indicator,About 50
+nan,nan,,weight_or_cost_indicator,15
+nan,nan,,total_area_m2,17327
+nan,nan,,total_area_m2,15448
+nan,nan,,total_area_m2,10103
+nan,nan,,total_area_m2,-
+nan,nan,,total_area_m2,11429
+nan,nan,,total_area_m2,12000
+nan,nan,,total_area_m2,21751
+nan,nan,,total_area_m2,17241
+nan,nan,,total_area_m2,17647
+nan,nan,,total_area_m2,9881
+nan,nan,,total_area_m2,1870 dollars
+nan,nan,,total_area_m2,22047
+nan,nan,,total_area_m2,13793
+nan,nan,,total_area_m2,13158
+nan,nan,,total_area_m2,-
+nan,nan,,total_area_m2,18904
+nan,nan,,total_area_m2,19298
+nan,nan,,total_area_m2,9167
+nan,nan,,total_area_m2,9412
+nan,nan,,total_area_m2,11285
+nan,nan,,total_area_m2,-
+nan,nan,,total_area_m2,10417
+nan,nan,,total_area_m2,6771
+nan,nan,,metric_7,20
+nan,nan,,metric_7,-
+nan,nan,,metric_7,46.5
+nan,nan,,metric_7,10.2
+nan,nan,,metric_7,35
+nan,nan,,metric_7,-
+nan,nan,,metric_7,52
+nan,nan,,metric_7,-
+nan,nan,,metric_7,-
+nan,nan,,metric_7,-
+nan,nan,,metric_7,-
+nan,nan,,metric_7,-
+nan,nan,,metric_7,-
+nan,nan,,metric_7,-
+nan,nan,,metric_7,9.6
+nan,nan,,metric_7,10
+nan,nan,,metric_7,-
+nan,nan,,metric_7,-
+nan,nan,,metric_7,-
+nan,nan,,metric_7,-
+nan,nan,,metric_7,40
+nan,nan,,metric_7,-
+nan,nan,,metric_7,-
+nan,nan,,metric_8,9901
+nan,nan,,metric_8,-
+nan,nan,,metric_8,9396
+nan,nan,,metric_8,12830
+nan,nan,,metric_8,10000
+nan,nan,,metric_8,-
+nan,nan,,metric_8,13627
+nan,nan,,metric_8,-
+nan,nan,,metric_8,-
+nan,nan,,metric_8,-
+nan,nan,,metric_8,-
+nan,nan,,metric_8,-
+nan,nan,,metric_8,-
+nan,nan,,metric_8,-
+nan,nan,,metric_8,6621
+nan,nan,,metric_8,13699
+nan,nan,,metric_8,-
+nan,nan,,metric_8,-
+nan,nan,,metric_8,-
+nan,nan,,metric_8,-
+nan,nan,,metric_8,15322
+nan,nan,,metric_8,-
+nan,nan,,metric_8,-

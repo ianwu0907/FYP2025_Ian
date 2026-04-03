@@ -1,0 +1,11 @@
+support_source,cohort,percentage,ci_from,ci_to
+family in same household,Cohort 1,65.3,63.3,67.3
+family in same household,Cohort 2,65.6,64.6,66.0
+family not in same household,Cohort 1,44.4,42.5,46.3
+family not in same household,Cohort 2,40.4,39.6,40.8
+friends/neighbours,Cohort 1,30.4,28.8,32.1
+friends/neighbours,Cohort 2,25.6,25.0,25.9
+paid organizations/individuals,Cohort 1,27.0,25.8,28.2
+paid organizations/individuals,Cohort 2,20.4,19.9,20.7
+unpaid organizations/individuals,Cohort 1,35.4,33.5,37.4
+unpaid organizations/individuals,Cohort 2,11.0,10.5,11.5

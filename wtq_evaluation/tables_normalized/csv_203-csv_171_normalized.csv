@@ -1,0 +1,61 @@
+rank,team,metric,value
+1,Tauro F.C.,played,13
+2,San Francisco F.C.,played,13
+3,Chepo F.C.,played,13
+4,Sporting San Miguelito,played,13
+5,Árabe Unido,played,13
+6,Plaza Amador,played,13
+7,Chorrillo F.C.,played,13
+8,Atlético Chiriquí,played,13
+9,Atlético Veragüense,played,13
+10,Alianza,played,13
+1,Tauro F.C.,won,7
+2,San Francisco F.C.,won,5
+3,Chepo F.C.,won,5
+4,Sporting San Miguelito,won,6
+5,Árabe Unido,won,6
+6,Plaza Amador,won,4
+7,Chorrillo F.C.,won,3
+8,Atlético Chiriquí,won,4
+9,Atlético Veragüense,won,2
+10,Alianza,won,3
+1,Tauro F.C.,drawn,2
+2,San Francisco F.C.,drawn,6
+3,Chepo F.C.,drawn,5
+4,Sporting San Miguelito,drawn,2
+5,Árabe Unido,drawn,2
+6,Plaza Amador,drawn,7
+7,Chorrillo F.C.,drawn,7
+8,Atlético Chiriquí,drawn,3
+9,Atlético Veragüense,drawn,5
+10,Alianza,drawn,1
+1,Tauro F.C.,lost,4
+2,San Francisco F.C.,lost,2
+3,Chepo F.C.,lost,3
+4,Sporting San Miguelito,lost,5
+5,Árabe Unido,lost,5
+6,Plaza Amador,lost,2
+7,Chorrillo F.C.,lost,3
+8,Atlético Chiriquí,lost,6
+9,Atlético Veragüense,lost,6
+10,Alianza,lost,9
+1,Tauro F.C.,gf,21
+2,San Francisco F.C.,gf,19
+3,Chepo F.C.,gf,19
+4,Sporting San Miguelito,gf,18
+5,Árabe Unido,gf,15
+6,Plaza Amador,gf,13
+7,Chorrillo F.C.,gf,14
+8,Atlético Chiriquí,gf,14
+9,Atlético Veragüense,gf,15
+10,Alianza,gf,25
+1,Tauro F.C.,ga,18
+2,San Francisco F.C.,ga,15
+3,Chepo F.C.,ga,12
+4,Sporting San Miguelito,ga,16
+5,Árabe Unido,ga,14
+6,Plaza Amador,ga,9
+7,Chorrillo F.C.,ga,13
+8,Atlético Chiriquí,ga,22
+9,Atlético Veragüense,ga,28
+10,Alianza,ga,27

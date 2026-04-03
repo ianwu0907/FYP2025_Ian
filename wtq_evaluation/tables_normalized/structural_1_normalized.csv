@@ -1,0 +1,49 @@
+age_group,fdh_inclusion,population_group,sex,proportion
+60 – 64,,ethnic minorities,Male,3.8
+60 – 64,,ethnic minorities,Female,3.4
+60 – 64,,whole population,Male,3.5
+60 – 64,,whole population,Female,4.4
+65 – 69,,ethnic minorities,Male,4.4
+65 – 69,,ethnic minorities,Female,16.2
+65 – 69,,whole population,Male,6.5
+65 – 69,,whole population,Female,8.9
+70 – 74,,ethnic minorities,Male,13.3
+70 – 74,,ethnic minorities,Female,21.6
+70 – 74,,whole population,Male,11.1
+70 – 74,,whole population,Female,15.1
+75 – 79,,ethnic minorities,Male,13.4
+75 – 79,,ethnic minorities,Female,23.8
+75 – 79,,whole population,Male,19.0
+75 – 79,,whole population,Female,27.5
+80 – 84,,ethnic minorities,Male,36.9
+80 – 84,,ethnic minorities,Female,45.3
+80 – 84,,whole population,Male,30.2
+80 – 84,,whole population,Female,43.9
+85+,,ethnic minorities,Male,64.6
+85+,,ethnic minorities,Female,73.2
+85+,,whole population,Male,52.4
+85+,,whole population,Female,67.9
+60 – 64,excluding,ethnic minorities,Male,3.8
+60 – 64,excluding,ethnic minorities,Female,5.5
+60 – 64,excluding,whole population,Male,3.5
+60 – 64,excluding,whole population,Female,4.5
+65 – 69,excluding,ethnic minorities,Male,4.4
+65 – 69,excluding,ethnic minorities,Female,18.0
+65 – 69,excluding,whole population,Male,6.5
+65 – 69,excluding,whole population,Female,9.0
+70 – 74,excluding,ethnic minorities,Male,13.3
+70 – 74,excluding,ethnic minorities,Female,21.6
+70 – 74,excluding,whole population,Male,11.1
+70 – 74,excluding,whole population,Female,15.1
+75 – 79,excluding,ethnic minorities,Male,13.4
+75 – 79,excluding,ethnic minorities,Female,23.8
+75 – 79,excluding,whole population,Male,19.0
+75 – 79,excluding,whole population,Female,27.5
+80 – 84,excluding,ethnic minorities,Male,36.9
+80 – 84,excluding,ethnic minorities,Female,45.3
+80 – 84,excluding,whole population,Male,30.2
+80 – 84,excluding,whole population,Female,43.9
+85+,excluding,ethnic minorities,Male,64.6
+85+,excluding,ethnic minorities,Female,73.2
+85+,excluding,whole population,Male,52.4
+85+,excluding,whole population,Female,67.9

@@ -1,0 +1,141 @@
+year,metric_type,funding_stream,status,amount
+2007,current $millions,1,arra,
+2007,current $millions,1,non-arra,28182.0
+2007,current $millions,2,arra,
+2007,current $millions,2,non-arra,24998.0
+2007,current $millions,3,arra,
+2007,current $millions,3,non-arra,279.0
+2007,current $millions,4,arra,
+2007,current $millions,4,non-arra,13.0
+2007,current $millions,5,arra,
+2007,current $millions,5,non-arra,1101.0
+2007,current $millions,6,arra,
+2007,current $millions,6,non-arra,222.0
+2007,current $millions,7,arra,
+2007,current $millions,7,non-arra,1569.0
+2008,current $millions,1,arra,
+2008,current $millions,1,non-arra,28389.0
+2008,current $millions,2,arra,
+2008,current $millions,2,non-arra,25489.0
+2008,current $millions,3,arra,
+2008,current $millions,3,non-arra,275.0
+2008,current $millions,4,arra,
+2008,current $millions,4,non-arra,4.0
+2008,current $millions,5,arra,
+2008,current $millions,5,non-arra,916.0
+2008,current $millions,6,arra,
+2008,current $millions,6,non-arra,300.0
+2008,current $millions,7,arra,
+2008,current $millions,7,non-arra,1405.0
+2009,current $millions,1,arra,5886.0
+2009,current $millions,1,non-arra,29601.0
+2009,current $millions,2,arra,5201.0
+2009,current $millions,2,non-arra,26578.0
+2009,current $millions,3,arra,404.0
+2009,current $millions,3,non-arra,386.0
+2009,current $millions,4,arra,0.0
+2009,current $millions,4,non-arra,5.0
+2009,current $millions,5,arra,41.0
+2009,current $millions,5,non-arra,925.0
+2009,current $millions,6,arra,45.0
+2009,current $millions,6,non-arra,197.0
+2009,current $millions,7,arra,194.0
+2009,current $millions,7,non-arra,1509.0
+2010,current $millions,1,arra,5138.0
+2010,current $millions,1,non-arra,30190.0
+2010,current $millions,2,arra,3578.0
+2010,current $millions,2,non-arra,27055.0
+2010,current $millions,3,arra,1194.0
+2010,current $millions,3,non-arra,467.0
+2010,current $millions,4,arra,0.0
+2010,current $millions,4,non-arra,6.0
+2010,current $millions,5,arra,32.0
+2010,current $millions,5,non-arra,1103.0
+2010,current $millions,6,arra,212.0
+2010,current $millions,6,non-arra,142.0
+2010,current $millions,7,arra,121.0
+2010,current $millions,7,non-arra,1417.0
+2011,current $millions,1,arra,
+2011,current $millions,1,non-arra,31427.0
+2011,current $millions,2,arra,
+2011,current $millions,2,non-arra,27939.0
+2011,current $millions,3,arra,
+2011,current $millions,3,non-arra,323.0
+2011,current $millions,4,arra,
+2011,current $millions,4,non-arra,4.0
+2011,current $millions,5,arra,
+2011,current $millions,5,non-arra,1013.0
+2011,current $millions,6,arra,
+2011,current $millions,6,non-arra,208.0
+2011,current $millions,7,arra,
+2011,current $millions,7,non-arra,1941.0
+2007,constant fy 2005 $millions,1,arra,
+2007,constant fy 2005 $millions,1,non-arra,26472.0
+2007,constant fy 2005 $millions,2,arra,
+2007,constant fy 2005 $millions,2,non-arra,23481.0
+2007,constant fy 2005 $millions,3,arra,
+2007,constant fy 2005 $millions,3,non-arra,262.0
+2007,constant fy 2005 $millions,4,arra,
+2007,constant fy 2005 $millions,4,non-arra,12.0
+2007,constant fy 2005 $millions,5,arra,
+2007,constant fy 2005 $millions,5,non-arra,1034.0
+2007,constant fy 2005 $millions,6,arra,
+2007,constant fy 2005 $millions,6,non-arra,209.0
+2007,constant fy 2005 $millions,7,arra,
+2007,constant fy 2005 $millions,7,non-arra,1474.0
+2008,constant fy 2005 $millions,1,arra,
+2008,constant fy 2005 $millions,1,non-arra,26062.0
+2008,constant fy 2005 $millions,2,arra,
+2008,constant fy 2005 $millions,2,non-arra,23399.0
+2008,constant fy 2005 $millions,3,arra,
+2008,constant fy 2005 $millions,3,non-arra,252.0
+2008,constant fy 2005 $millions,4,arra,
+2008,constant fy 2005 $millions,4,non-arra,4.0
+2008,constant fy 2005 $millions,5,arra,
+2008,constant fy 2005 $millions,5,non-arra,841.0
+2008,constant fy 2005 $millions,6,arra,
+2008,constant fy 2005 $millions,6,non-arra,275.0
+2008,constant fy 2005 $millions,7,arra,
+2008,constant fy 2005 $millions,7,non-arra,1290.0
+2009,constant fy 2005 $millions,1,arra,5327.0
+2009,constant fy 2005 $millions,1,non-arra,26788.0
+2009,constant fy 2005 $millions,2,arra,4707.0
+2009,constant fy 2005 $millions,2,non-arra,24052.0
+2009,constant fy 2005 $millions,3,arra,366.0
+2009,constant fy 2005 $millions,3,non-arra,349.0
+2009,constant fy 2005 $millions,4,arra,0.0
+2009,constant fy 2005 $millions,4,non-arra,5.0
+2009,constant fy 2005 $millions,5,arra,37.0
+2009,constant fy 2005 $millions,5,non-arra,837.0
+2009,constant fy 2005 $millions,6,arra,41.0
+2009,constant fy 2005 $millions,6,non-arra,178.0
+2009,constant fy 2005 $millions,7,arra,176.0
+2009,constant fy 2005 $millions,7,non-arra,1366.0
+2010,constant fy 2005 $millions,1,arra,4607.0
+2010,constant fy 2005 $millions,1,non-arra,27071.0
+2010,constant fy 2005 $millions,2,arra,3208.0
+2010,constant fy 2005 $millions,2,non-arra,24260.0
+2010,constant fy 2005 $millions,3,arra,1071.0
+2010,constant fy 2005 $millions,3,non-arra,419.0
+2010,constant fy 2005 $millions,4,arra,0.0
+2010,constant fy 2005 $millions,4,non-arra,5.0
+2010,constant fy 2005 $millions,5,arra,29.0
+2010,constant fy 2005 $millions,5,non-arra,989.0
+2010,constant fy 2005 $millions,6,arra,190.0
+2010,constant fy 2005 $millions,6,non-arra,127.0
+2010,constant fy 2005 $millions,7,arra,109.0
+2010,constant fy 2005 $millions,7,non-arra,1271.0
+2011,constant fy 2005 $millions,1,arra,
+2011,constant fy 2005 $millions,1,non-arra,27635.0
+2011,constant fy 2005 $millions,2,arra,
+2011,constant fy 2005 $millions,2,non-arra,24568.0
+2011,constant fy 2005 $millions,3,arra,
+2011,constant fy 2005 $millions,3,non-arra,284.0
+2011,constant fy 2005 $millions,4,arra,
+2011,constant fy 2005 $millions,4,non-arra,4.0
+2011,constant fy 2005 $millions,5,arra,
+2011,constant fy 2005 $millions,5,non-arra,891.0
+2011,constant fy 2005 $millions,6,arra,
+2011,constant fy 2005 $millions,6,non-arra,183.0
+2011,constant fy 2005 $millions,7,arra,
+2011,constant fy 2005 $millions,7,non-arra,1707.0

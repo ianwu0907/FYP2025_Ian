@@ -1,0 +1,9 @@
+team,start_year,end_year,stat_context,g,w,l,win_pct
+san francisco giants,1993,2002,career,1555,840,715,0.54
+san francisco giants,1993,2002,recent,24,11,13,0.458
+chicago cubs,2003,2006,career,648,326,322,0.503
+chicago cubs,2003,2006,recent,12,6,6,0.5
+cincinnati reds,2008,2013,career,972,509,463,0.524
+cincinnati reds,2008,2013,recent,9,2,7,0.222
+washington nationals,2016,2017,career,324,192,132,0.593
+washington nationals,2016,2017,recent,10,4,6,0.4

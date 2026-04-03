@@ -1,0 +1,265 @@
+city,subgroup_id,measure_type,value
+st. john's,1,rate,69.0
+st. john's,1,percent_change,-7.0
+st. john's,2,rate,87.0
+st. john's,2,percent_change,20.0
+st. john's,3,rate,602.0
+st. john's,3,percent_change,18.0
+st. john's,4,rate,118.0
+st. john's,4,percent_change,12.0
+halifax,1,rate,75.0
+halifax,1,percent_change,-9.0
+halifax,2,rate,45.0
+halifax,2,percent_change,-23.0
+halifax,3,rate,239.0
+halifax,3,percent_change,-16.0
+halifax,4,rate,90.0
+halifax,4,percent_change,-5.0
+moncton,1,rate,43.0
+moncton,1,percent_change,-2.0
+moncton,2,rate,64.0
+moncton,2,percent_change,62.0
+moncton,3,rate,561.0
+moncton,3,percent_change,-3.0
+moncton,4,rate,147.0
+moncton,4,percent_change,13.0
+saint john,1,rate,41.0
+saint john,1,percent_change,-46.0
+saint john,2,rate,48.0
+saint john,2,percent_change,48.0
+saint john,3,rate,231.0
+saint john,3,percent_change,-8.0
+saint john,4,rate,58.0
+saint john,4,percent_change,-15.0
+saguenay,1,rate,53.0
+saguenay,1,percent_change,-10.0
+saguenay,2,rate,16.0
+saguenay,2,percent_change,-15.0
+saguenay,3,rate,338.0
+saguenay,3,percent_change,0.0
+saguenay,4,rate,117.0
+saguenay,4,percent_change,-9.0
+quebec,1,rate,47.0
+quebec,1,percent_change,3.0
+quebec,2,rate,19.0
+quebec,2,percent_change,13.0
+quebec,3,rate,319.0
+quebec,3,percent_change,-1.0
+quebec,4,rate,71.0
+quebec,4,percent_change,-2.0
+sherbrooke,1,rate,58.0
+sherbrooke,1,percent_change,15.0
+sherbrooke,2,rate,19.0
+sherbrooke,2,percent_change,-23.0
+sherbrooke,3,rate,286.0
+sherbrooke,3,percent_change,-12.0
+sherbrooke,4,rate,54.0
+sherbrooke,4,percent_change,-2.0
+trois-rivieres,1,rate,54.0
+trois-rivieres,1,percent_change,1.0
+trois-rivieres,2,rate,12.0
+trois-rivieres,2,percent_change,-66.0
+trois-rivieres,3,rate,336.0
+trois-rivieres,3,percent_change,-11.0
+trois-rivieres,4,rate,85.0
+trois-rivieres,4,percent_change,-25.0
+montreal,1,rate,46.0
+montreal,1,percent_change,11.0
+montreal,2,rate,74.0
+montreal,2,percent_change,-10.0
+montreal,3,rate,386.0
+montreal,3,percent_change,-5.0
+montreal,4,rate,168.0
+montreal,4,percent_change,-11.0
+gatineau,1,rate,48.0
+gatineau,1,percent_change,9.0
+gatineau,2,rate,32.0
+gatineau,2,percent_change,44.0
+gatineau,3,rate,320.0
+gatineau,3,percent_change,5.0
+gatineau,4,rate,71.0
+gatineau,4,percent_change,-28.0
+ottawa,1,rate,59.0
+ottawa,1,percent_change,14.0
+ottawa,2,rate,50.0
+ottawa,2,percent_change,-13.0
+ottawa,3,rate,270.0
+ottawa,3,percent_change,16.0
+ottawa,4,rate,88.0
+ottawa,4,percent_change,-1.0
+kingston,1,rate,60.0
+kingston,1,percent_change,-7.0
+kingston,2,rate,18.0
+kingston,2,percent_change,-17.0
+kingston,3,rate,395.0
+kingston,3,percent_change,19.0
+kingston,4,rate,72.0
+kingston,4,percent_change,-9.0
+peterborough,1,rate,97.0
+peterborough,1,percent_change,10.0
+peterborough,2,rate,41.0
+peterborough,2,percent_change,-15.0
+peterborough,3,rate,304.0
+peterborough,3,percent_change,-25.0
+peterborough,4,rate,57.0
+peterborough,4,percent_change,-1.0
+toronto,1,rate,44.0
+toronto,1,percent_change,-2.0
+toronto,2,rate,83.0
+toronto,2,percent_change,10.0
+toronto,3,rate,205.0
+toronto,3,percent_change,-9.0
+toronto,4,rate,113.0
+toronto,4,percent_change,4.0
+hamilton,1,rate,64.0
+hamilton,1,percent_change,6.0
+hamilton,2,rate,70.0
+hamilton,2,percent_change,21.0
+hamilton,3,rate,308.0
+hamilton,3,percent_change,5.0
+hamilton,4,rate,217.0
+hamilton,4,percent_change,-1.0
+st. catharines-niagara,1,rate,53.0
+st. catharines-niagara,1,percent_change,-7.0
+st. catharines-niagara,2,rate,31.0
+st. catharines-niagara,2,percent_change,-11.0
+st. catharines-niagara,3,rate,373.0
+st. catharines-niagara,3,percent_change,-11.0
+st. catharines-niagara,4,rate,160.0
+st. catharines-niagara,4,percent_change,5.0
+kitchener-cambridge-waterloo,1,rate,51.0
+kitchener-cambridge-waterloo,1,percent_change,-12.0
+kitchener-cambridge-waterloo,2,rate,51.0
+kitchener-cambridge-waterloo,2,percent_change,6.0
+kitchener-cambridge-waterloo,3,rate,358.0
+kitchener-cambridge-waterloo,3,percent_change,-11.0
+kitchener-cambridge-waterloo,4,rate,137.0
+kitchener-cambridge-waterloo,4,percent_change,-3.0
+brantford,1,rate,68.0
+brantford,1,percent_change,-12.0
+brantford,2,rate,68.0
+brantford,2,percent_change,14.0
+brantford,3,rate,588.0
+brantford,3,percent_change,12.0
+brantford,4,rate,454.0
+brantford,4,percent_change,-2.0
+guelph,1,rate,64.0
+guelph,1,percent_change,33.0
+guelph,2,rate,22.0
+guelph,2,percent_change,-8.0
+guelph,3,rate,347.0
+guelph,3,percent_change,16.0
+guelph,4,rate,119.0
+guelph,4,percent_change,49.0
+london,1,rate,46.0
+london,1,percent_change,10.0
+london,2,rate,55.0
+london,2,percent_change,4.0
+london,3,rate,389.0
+london,3,percent_change,9.0
+london,4,rate,195.0
+london,4,percent_change,-12.0
+windsor,1,rate,52.0
+windsor,1,percent_change,15.0
+windsor,2,rate,61.0
+windsor,2,percent_change,10.0
+windsor,3,rate,506.0
+windsor,3,percent_change,23.0
+windsor,4,rate,199.0
+windsor,4,percent_change,14.0
+barrie,1,rate,54.0
+barrie,1,percent_change,14.0
+barrie,2,rate,32.0
+barrie,2,percent_change,28.0
+barrie,3,rate,200.0
+barrie,3,percent_change,-8.0
+barrie,4,rate,68.0
+barrie,4,percent_change,-12.0
+greater sudbury,1,rate,61.0
+greater sudbury,1,percent_change,1.0
+greater sudbury,2,rate,48.0
+greater sudbury,2,percent_change,10.0
+greater sudbury,3,rate,454.0
+greater sudbury,3,percent_change,20.0
+greater sudbury,4,rate,101.0
+greater sudbury,4,percent_change,-17.0
+thunder bay,1,rate,85.0
+thunder bay,1,percent_change,7.0
+thunder bay,2,rate,118.0
+thunder bay,2,percent_change,-21.0
+thunder bay,3,rate,492.0
+thunder bay,3,percent_change,18.0
+thunder bay,4,rate,158.0
+thunder bay,4,percent_change,1.0
+winnipeg,1,rate,98.0
+winnipeg,1,percent_change,14.0
+winnipeg,2,rate,229.0
+winnipeg,2,percent_change,27.0
+winnipeg,3,rate,682.0
+winnipeg,3,percent_change,14.0
+winnipeg,4,rate,315.0
+winnipeg,4,percent_change,3.0
+regina,1,rate,59.0
+regina,1,percent_change,-4.0
+regina,2,rate,118.0
+regina,2,percent_change,18.0
+regina,3,rate,760.0
+regina,3,percent_change,7.0
+regina,4,rate,523.0
+regina,4,percent_change,17.0
+saskatoon,1,rate,95.0
+saskatoon,1,percent_change,44.0
+saskatoon,2,rate,116.0
+saskatoon,2,percent_change,-11.0
+saskatoon,3,rate,791.0
+saskatoon,3,percent_change,-3.0
+saskatoon,4,rate,453.0
+saskatoon,4,percent_change,16.0
+calgary,1,rate,44.0
+calgary,1,percent_change,-14.0
+calgary,2,rate,62.0
+calgary,2,percent_change,-24.0
+calgary,3,rate,576.0
+calgary,3,percent_change,-10.0
+calgary,4,rate,535.0
+calgary,4,percent_change,0.0
+edmonton,1,rate,72.0
+edmonton,1,percent_change,-8.0
+edmonton,2,rate,103.0
+edmonton,2,percent_change,-8.0
+edmonton,3,rate,582.0
+edmonton,3,percent_change,-4.0
+edmonton,4,rate,483.0
+edmonton,4,percent_change,10.0
+kelowna,1,rate,34.0
+kelowna,1,percent_change,-18.0
+kelowna,2,rate,41.0
+kelowna,2,percent_change,-28.0
+kelowna,3,rate,620.0
+kelowna,3,percent_change,-3.0
+kelowna,4,rate,316.0
+kelowna,4,percent_change,-11.0
+abbotsford-mission,1,rate,42.0
+abbotsford-mission,1,percent_change,0.0
+abbotsford-mission,2,rate,64.0
+abbotsford-mission,2,percent_change,-36.0
+abbotsford-mission,3,rate,577.0
+abbotsford-mission,3,percent_change,-19.0
+abbotsford-mission,4,rate,493.0
+abbotsford-mission,4,percent_change,-1.0
+vancouver,1,rate,44.0
+vancouver,1,percent_change,2.0
+vancouver,2,rate,78.0
+vancouver,2,percent_change,-24.0
+vancouver,3,rate,678.0
+vancouver,3,percent_change,-1.0
+vancouver,4,rate,312.0
+vancouver,4,percent_change,-7.0
+victoria,1,rate,64.0
+victoria,1,percent_change,7.0
+victoria,2,rate,37.0
+victoria,2,percent_change,-15.0
+victoria,3,rate,326.0
+victoria,3,percent_change,-20.0
+victoria,4,rate,108.0
+victoria,4,percent_change,0.0

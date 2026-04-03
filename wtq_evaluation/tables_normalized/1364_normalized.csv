@@ -1,0 +1,73 @@
+demographic_type,demographic_value,indicator,total_count,percentage
+gender,men,indicator_1,81,44.0
+gender,women,indicator_1,81,35.0
+age_group,15 to 24 years,indicator_1,59,53.0
+age_group,25 to 34 years,indicator_1,70,50.0
+age_group,35 to 44 years,indicator_1,79,42.0
+age_group,45 to 54 years,indicator_1,83,35.0
+age_group,55 to 64 years,indicator_1,89,34.0
+age_group,65 to 74 years,indicator_1,92,29.0
+age_group,75 years and older,indicator_1,92,19.0
+gender,men,indicator_2,81,11.0
+gender,women,indicator_2,81,9.0
+age_group,15 to 24 years,indicator_2,59,5.0
+age_group,25 to 34 years,indicator_2,70,9.0
+age_group,35 to 44 years,indicator_2,79,10.0
+age_group,45 to 54 years,indicator_2,83,11.0
+age_group,55 to 64 years,indicator_2,89,13.0
+age_group,65 to 74 years,indicator_2,92,15.0
+age_group,75 years and older,indicator_2,92,10.0
+gender,men,indicator_3,81,14.0
+gender,women,indicator_3,81,10.0
+age_group,15 to 24 years,indicator_3,59,17.0
+age_group,25 to 34 years,indicator_3,70,16.0
+age_group,35 to 44 years,indicator_3,79,15.0
+age_group,45 to 54 years,indicator_3,83,10.0
+age_group,55 to 64 years,indicator_3,89,9.0
+age_group,65 to 74 years,indicator_3,92,8.0
+age_group,75 years and older,indicator_3,92,3.0
+gender,men,indicator_4,81,27.0
+gender,women,indicator_4,81,28.0
+age_group,15 to 24 years,indicator_4,59,31.0
+age_group,25 to 34 years,indicator_4,70,32.0
+age_group,35 to 44 years,indicator_4,79,30.0
+age_group,45 to 54 years,indicator_4,83,27.0
+age_group,55 to 64 years,indicator_4,89,26.0
+age_group,65 to 74 years,indicator_4,92,22.0
+age_group,75 years and older,indicator_4,92,14.0
+gender,men,indicator_5,81,22.0
+gender,women,indicator_5,81,23.0
+age_group,15 to 24 years,indicator_5,59,19.0
+age_group,25 to 34 years,indicator_5,70,28.0
+age_group,35 to 44 years,indicator_5,79,27.0
+age_group,45 to 54 years,indicator_5,83,23.0
+age_group,55 to 64 years,indicator_5,89,23.0
+age_group,65 to 74 years,indicator_5,92,18.0
+age_group,75 years and older,indicator_5,92,9.0
+gender,men,indicator_6,81,17.0
+gender,women,indicator_6,81,13.0
+age_group,15 to 24 years,indicator_6,59,11.0
+age_group,25 to 34 years,indicator_6,70,12.0
+age_group,35 to 44 years,indicator_6,79,16.0
+age_group,45 to 54 years,indicator_6,83,16.0
+age_group,55 to 64 years,indicator_6,89,18.0
+age_group,65 to 74 years,indicator_6,92,19.0
+age_group,75 years and older,indicator_6,92,14.0
+gender,men,indicator_7,81,5.0
+gender,women,indicator_7,81,5.0
+age_group,15 to 24 years,indicator_7,59,9.0
+age_group,25 to 34 years,indicator_7,70,5.0
+age_group,35 to 44 years,indicator_7,79,5.0
+age_group,45 to 54 years,indicator_7,83,4.0
+age_group,55 to 64 years,indicator_7,89,4.0
+age_group,65 to 74 years,indicator_7,92,2.0
+age_group,75 years and older,indicator_7,92,1.0
+gender,men,indicator_8,81,10.0
+gender,women,indicator_8,81,11.0
+age_group,15 to 24 years,indicator_8,59,14.0
+age_group,25 to 34 years,indicator_8,70,11.0
+age_group,35 to 44 years,indicator_8,79,11.0
+age_group,45 to 54 years,indicator_8,83,10.0
+age_group,55 to 64 years,indicator_8,89,10.0
+age_group,65 to 74 years,indicator_8,92,8.0
+age_group,75 years and older,indicator_8,92,7.0

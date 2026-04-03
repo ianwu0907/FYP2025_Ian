@@ -1,0 +1,115 @@
+subgroup_label,section,year,block_id,percentage
+men,sex,2003,1,6.0
+men,sex,2008,1,6.0
+men,sex,2013,1,7.0
+men,sex,2003,2,71.0
+men,sex,2008,2,76.0
+men,sex,2013,2,75.0
+women,sex,2003,1,6.0
+women,sex,2008,1,6.0
+women,sex,2013,1,5.0
+women,sex,2003,2,69.0
+women,sex,2008,2,74.0
+women,sex,2013,2,75.0
+15 to 24 years,age_group,2003,1,1.0
+15 to 24 years,age_group,2008,1,1.0
+15 to 24 years,age_group,2013,1,1.0
+15 to 24 years,age_group,2003,2,82.0
+15 to 24 years,age_group,2008,2,88.0
+15 to 24 years,age_group,2013,2,88.0
+25 to 34 years,age_group,2003,1,3.0
+25 to 34 years,age_group,2008,1,3.0
+25 to 34 years,age_group,2013,1,3.0
+25 to 34 years,age_group,2003,2,75.0
+25 to 34 years,age_group,2008,2,79.0
+25 to 34 years,age_group,2013,2,82.0
+35 to 44 years,age_group,2003,1,5.0
+35 to 44 years,age_group,2008,1,5.0
+35 to 44 years,age_group,2013,1,5.0
+35 to 44 years,age_group,2003,2,68.0
+35 to 44 years,age_group,2008,2,74.0
+35 to 44 years,age_group,2013,2,75.0
+45 to 54 years,age_group,2003,1,7.0
+45 to 54 years,age_group,2008,1,6.0
+45 to 54 years,age_group,2013,1,7.0
+45 to 54 years,age_group,2003,2,65.0
+45 to 54 years,age_group,2008,2,70.0
+45 to 54 years,age_group,2013,2,71.0
+55 to 64 years,age_group,2003,1,9.0
+55 to 64 years,age_group,2008,1,7.0
+55 to 64 years,age_group,2013,1,8.0
+55 to 64 years,age_group,2003,2,65.0
+55 to 64 years,age_group,2008,2,71.0
+55 to 64 years,age_group,2013,2,69.0
+65 to 74 years,age_group,2003,1,11.0
+65 to 74 years,age_group,2008,1,10.0
+65 to 74 years,age_group,2013,1,10.0
+65 to 74 years,age_group,2003,2,67.0
+65 to 74 years,age_group,2008,2,70.0
+65 to 74 years,age_group,2013,2,68.0
+75 years and older,age_group,2003,1,18.0
+75 years and older,age_group,2008,1,15.0
+75 years and older,age_group,2013,1,15.0
+75 years and older,age_group,2003,2,61.0
+75 years and older,age_group,2008,2,65.0
+75 years and older,age_group,2013,2,66.0
+newfoundland and labrador,province,2003,1,5.0
+newfoundland and labrador,province,2008,1,3.0
+newfoundland and labrador,province,2013,1,4.0
+newfoundland and labrador,province,2003,2,72.0
+newfoundland and labrador,province,2008,2,77.0
+newfoundland and labrador,province,2013,2,80.0
+prince edward island,province,2003,1,4.0
+prince edward island,province,2008,1,4.0
+prince edward island,province,2013,1,2.0
+prince edward island,province,2003,2,78.0
+prince edward island,province,2008,2,81.0
+prince edward island,province,2013,2,82.0
+nova scotia,province,2003,1,4.0
+nova scotia,province,2008,1,5.0
+nova scotia,province,2013,1,6.0
+nova scotia,province,2003,2,76.0
+nova scotia,province,2008,2,78.0
+nova scotia,province,2013,2,77.0
+new brunswick,province,2003,1,5.0
+new brunswick,province,2008,1,5.0
+new brunswick,province,2013,1,6.0
+new brunswick,province,2003,2,73.0
+new brunswick,province,2008,2,74.0
+new brunswick,province,2013,2,74.0
+quebec,province,2003,1,10.0
+quebec,province,2008,1,8.0
+quebec,province,2013,1,8.0
+quebec,province,2003,2,57.0
+quebec,province,2008,2,66.0
+quebec,province,2013,2,67.0
+ontario,province,2003,1,6.0
+ontario,province,2008,1,5.0
+ontario,province,2013,1,6.0
+ontario,province,2003,2,74.0
+ontario,province,2008,2,77.0
+ontario,province,2013,2,76.0
+manitoba,province,2003,1,6.0
+manitoba,province,2008,1,6.0
+manitoba,province,2013,1,5.0
+manitoba,province,2003,2,74.0
+manitoba,province,2008,2,76.0
+manitoba,province,2013,2,79.0
+saskatchewan,province,2003,1,5.0
+saskatchewan,province,2008,1,5.0
+saskatchewan,province,2013,1,5.0
+saskatchewan,province,2003,2,76.0
+saskatchewan,province,2008,2,79.0
+saskatchewan,province,2013,2,77.0
+alberta,province,2003,1,5.0
+alberta,province,2008,1,5.0
+alberta,province,2013,1,5.0
+alberta,province,2003,2,75.0
+alberta,province,2008,2,79.0
+alberta,province,2013,2,80.0
+british columbia,province,2003,1,4.0
+british columbia,province,2008,1,5.0
+british columbia,province,2013,1,4.0
+british columbia,province,2003,2,76.0
+british columbia,province,2008,2,79.0
+british columbia,province,2013,2,79.0

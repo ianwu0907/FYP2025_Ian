@@ -1,0 +1,73 @@
+education_level,residence_category,sex,count
+Never attended school,Overall,Male,2613475
+Never attended school,Overall,Female,5423128
+Never attended school,Province,Male,2034759
+Never attended school,Province,Female,4316651
+Never attended school,Intra-city separation,Male,537545
+Never attended school,Intra-city separation,Female,1128385
+Never attended school,Out-of-province,Male,578716
+Never attended school,Out-of-province,Female,1106477
+Preschool education,Overall,Male,8246272
+Preschool education,Overall,Female,7357647
+Preschool education,Province,Male,6752281
+Preschool education,Province,Female,6049670
+Preschool education,Intra-city separation,Male,2153915
+Preschool education,Intra-city separation,Female,1947072
+Preschool education,Out-of-province,Male,1493991
+Preschool education,Out-of-province,Female,1307977
+Primary School,Overall,Male,38765200
+Primary School,Overall,Female,42390805
+Primary School,Province,Male,28252529
+Primary School,Province,Female,32618090
+Primary School,Intra-city separation,Male,7427623
+Primary School,Intra-city separation,Female,8882796
+Primary School,Out-of-province,Male,10512671
+Primary School,Out-of-province,Female,9772715
+Junior high school,Overall,Male,86519795
+Junior high school,Overall,Female,73776218
+Junior high school,Province,Male,55460578
+Junior high school,Province,Female,53535322
+Junior high school,Intra-city separation,Male,14813592
+Junior high school,Intra-city separation,Female,15519222
+Junior high school,Out-of-province,Male,31059217
+Junior high school,Out-of-province,Female,20240896
+High School,Overall,Male,54572667
+High School,Overall,Female,45510386
+High School,Province,Male,41567081
+High School,Province,Female,37261898
+High School,Intra-city separation,Male,13265296
+High School,Intra-city separation,Female,13088050
+High School,Out-of-province,Male,13005586
+High School,Out-of-province,Female,8248488
+College (Associate Degree),Overall,Male,30237296
+College (Associate Degree),Overall,Female,27983664
+College (Associate Degree),Province,Male,23807089
+College (Associate Degree),Province,Female,23052866
+College (Associate Degree),Intra-city separation,Male,8101203
+College (Associate Degree),Intra-city separation,Female,8176625
+College (Associate Degree),Out-of-province,Male,6430207
+College (Associate Degree),Out-of-province,Female,4930798
+Bachelor's degree,Overall,Male,26132045
+Bachelor's degree,Overall,Female,26253378
+Bachelor's degree,Province,Male,19503692
+Bachelor's degree,Province,Female,20548919
+Bachelor's degree,Intra-city separation,Male,8002841
+Bachelor's degree,Intra-city separation,Female,8311724
+Bachelor's degree,Out-of-province,Male,6628353
+Bachelor's degree,Out-of-province,Female,5704459
+Master's Degree,Overall,Male,2534372
+Master's Degree,Overall,Female,2629863
+Master's Degree,Province,Male,1683920
+Master's Degree,Province,Female,1763038
+Master's Degree,Intra-city separation,Male,1075003
+Master's Degree,Intra-city separation,Female,1082604
+Master's Degree,Out-of-province,Male,850452
+Master's Degree,Out-of-province,Female,866825
+Doctorate degree holders,Overall,Male,379629
+Doctorate degree holders,Overall,Female,246669
+Doctorate degree holders,Province,Male,253962
+Doctorate degree holders,Province,Female,169610
+Doctorate degree holders,Intra-city separation,Male,191793
+Doctorate degree holders,Intra-city separation,Female,125489
+Doctorate degree holders,Out-of-province,Male,125667
+Doctorate degree holders,Out-of-province,Female,77059

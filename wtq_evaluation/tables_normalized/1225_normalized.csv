@@ -1,0 +1,92 @@
+geographic_area,personnel_category,metric_type,value
+newfoundland and labrador,experienced police officers,number,48.0
+newfoundland and labrador,experienced police officers,percent,2.0
+newfoundland and labrador,recruit graduates,number,98.0
+newfoundland and labrador,retirements,number,37.0
+newfoundland and labrador,retirements,percent,76.0
+newfoundland and labrador,other,number,11.0
+newfoundland and labrador,other,percent,20.0
+prince edward island,experienced police officers,number,8.0
+prince edward island,experienced police officers,percent,0.0
+prince edward island,recruit graduates,number,100.0
+prince edward island,retirements,number,8.0
+prince edward island,retirements,percent,38.0
+prince edward island,other,number,0.0
+prince edward island,other,percent,18.0
+nova scotia,experienced police officers,number,62.0
+nova scotia,experienced police officers,percent,32.0
+nova scotia,recruit graduates,number,68.0
+nova scotia,retirements,number,78.0
+nova scotia,retirements,percent,76.0
+nova scotia,other,number,-16.0
+nova scotia,other,percent,15.0
+new brunswick,experienced police officers,number,57.0
+new brunswick,experienced police officers,percent,9.0
+new brunswick,recruit graduates,number,91.0
+new brunswick,retirements,number,65.0
+new brunswick,retirements,percent,48.0
+new brunswick,other,number,-8.0
+new brunswick,other,percent,14.0
+quebec,experienced police officers,number,556.0
+quebec,experienced police officers,percent,35.0
+quebec,recruit graduates,number,65.0
+quebec,retirements,number,645.0
+quebec,retirements,percent,82.0
+quebec,other,number,-89.0
+quebec,other,percent,13.0
+ontario,experienced police officers,number,725.0
+ontario,experienced police officers,percent,12.0
+ontario,recruit graduates,number,88.0
+ontario,retirements,number,886.0
+ontario,retirements,percent,71.0
+ontario,other,number,-161.0
+ontario,other,percent,7.0
+manitoba,experienced police officers,number,72.0
+manitoba,experienced police officers,percent,6.0
+manitoba,recruit graduates,number,94.0
+manitoba,retirements,number,113.0
+manitoba,retirements,percent,29.0
+manitoba,other,number,-41.0
+manitoba,other,percent,19.0
+saskatchewan,experienced police officers,number,138.0
+saskatchewan,experienced police officers,percent,8.0
+saskatchewan,recruit graduates,number,92.0
+saskatchewan,retirements,number,102.0
+saskatchewan,retirements,percent,56.0
+saskatchewan,other,number,36.0
+saskatchewan,other,percent,8.0
+alberta,experienced police officers,number,468.0
+alberta,experienced police officers,percent,4.0
+alberta,recruit graduates,number,96.0
+alberta,retirements,number,280.0
+alberta,retirements,percent,59.0
+alberta,other,number,188.0
+alberta,other,percent,7.0
+british columbia,experienced police officers,number,486.0
+british columbia,experienced police officers,percent,6.0
+british columbia,recruit graduates,number,94.0
+british columbia,retirements,number,341.0
+british columbia,retirements,percent,65.0
+british columbia,other,number,145.0
+british columbia,other,percent,11.0
+yukon,experienced police officers,number,2.0
+yukon,experienced police officers,percent,0.0
+yukon,recruit graduates,number,100.0
+yukon,retirements,number,6.0
+yukon,retirements,percent,50.0
+yukon,other,number,-4.0
+yukon,other,percent,14.0
+northwest territories,experienced police officers,number,8.0
+northwest territories,experienced police officers,percent,13.0
+northwest territories,recruit graduates,number,88.0
+northwest territories,retirements,number,6.0
+northwest territories,retirements,percent,50.0
+northwest territories,other,number,2.0
+northwest territories,other,percent,10.0
+nunavut,experienced police officers,number,0.0
+nunavut,experienced police officers,percent,
+nunavut,recruit graduates,number,
+nunavut,retirements,number,3.0
+nunavut,retirements,percent,100.0
+nunavut,other,number,-3.0
+nunavut,other,percent,11.0

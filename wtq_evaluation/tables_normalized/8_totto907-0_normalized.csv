@@ -1,0 +1,49 @@
+team,season,division,period_index,metric_type,value
+patronato,2015,primera b nacional,1,apps,39
+patronato,2015,primera b nacional,1,goals,9
+patronato,2015,primera b nacional,2,apps,1
+patronato,2015,primera b nacional,2,goals,0
+patronato,2015,primera b nacional,4,apps,4
+patronato,2015,primera b nacional,4,goals,1
+patronato,2015,primera b nacional,5,apps,44
+patronato,2015,primera b nacional,5,goals,10
+patronato,2016,primera division,1,apps,15
+patronato,2016,primera division,1,goals,2
+patronato,2016,primera division,2,apps,0
+patronato,2016,primera division,2,goals,0
+patronato,2016,primera division,4,apps,0
+patronato,2016,primera division,4,goals,0
+patronato,2016,primera division,5,apps,15
+patronato,2016,primera division,5,goals,2
+patronato,2016-17,primera division,1,apps,13
+patronato,2016-17,primera division,1,goals,0
+patronato,2016-17,primera division,2,apps,2
+patronato,2016-17,primera division,2,goals,0
+patronato,2016-17,primera division,4,apps,0
+patronato,2016-17,primera division,4,goals,0
+patronato,2016-17,primera division,5,apps,15
+patronato,2016-17,primera division,5,goals,0
+patronato,2017-18,primera division,1,apps,14
+patronato,2017-18,primera division,1,goals,3
+patronato,2017-18,primera division,2,apps,0
+patronato,2017-18,primera division,2,goals,0
+patronato,2017-18,primera division,4,apps,0
+patronato,2017-18,primera division,4,goals,0
+patronato,2017-18,primera division,5,apps,14
+patronato,2017-18,primera division,5,goals,3
+patronato,2018-19,primera division,1,apps,13
+patronato,2018-19,primera division,1,goals,1
+patronato,2018-19,primera division,2,apps,1
+patronato,2018-19,primera division,2,goals,0
+patronato,2018-19,primera division,4,apps,0
+patronato,2018-19,primera division,4,goals,0
+patronato,2018-19,primera division,5,apps,14
+patronato,2018-19,primera division,5,goals,1
+sarmiento,2018-19,primera b nacional,1,apps,0
+sarmiento,2018-19,primera b nacional,1,goals,0
+sarmiento,2018-19,primera b nacional,2,apps,0
+sarmiento,2018-19,primera b nacional,2,goals,0
+sarmiento,2018-19,primera b nacional,4,apps,0
+sarmiento,2018-19,primera b nacional,4,goals,0
+sarmiento,2018-19,primera b nacional,5,apps,0
+sarmiento,2018-19,primera b nacional,5,goals,0

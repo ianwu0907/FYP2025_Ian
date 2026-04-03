@@ -1,0 +1,305 @@
+tournament,edition,outcome,ranking
+Australian Open,1,A,235
+Australian Open,2,A,135
+Australian Open,3,1R,91
+Australian Open,4,QF,158
+Australian Open,5,A,103
+Australian Open,6,2R,92
+Australian Open,7,1R,35
+Australian Open,8,1R,26
+Australian Open,9,2R,34
+Australian Open,10,QF,13
+Australian Open,11,QF,11
+Australian Open,12,3R,18
+Australian Open,13,QF,9
+Australian Open,14,W,6
+Australian Open,15,SF,8
+Australian Open,16,SF,10
+Australian Open,17,3R,8
+Australian Open,18,3R,24
+Australian Open,19,A,
+French Open,1,A,235
+French Open,2,A,135
+French Open,3,1R,91
+French Open,4,A,158
+French Open,5,1R,103
+French Open,6,1R,92
+French Open,7,2R,35
+French Open,8,3R,26
+French Open,9,3R,34
+French Open,10,3R,13
+French Open,11,3R,11
+French Open,12,2R,18
+French Open,13,QF,9
+French Open,14,1R,6
+French Open,15,2R,8
+French Open,16,2R,10
+French Open,17,QF,8
+French Open,18,QF,24
+French Open,19,A,
+Wimbledon,1,A,235
+Wimbledon,2,LQ,135
+Wimbledon,3,1R,91
+Wimbledon,4,1R,158
+Wimbledon,5,A,103
+Wimbledon,6,1R,92
+Wimbledon,7,2R,35
+Wimbledon,8,3R,26
+Wimbledon,9,1R,34
+Wimbledon,10,1R,13
+Wimbledon,11,2R,11
+Wimbledon,12,3R,18
+Wimbledon,13,QF,9
+Wimbledon,14,SF,6
+Wimbledon,15,QF,8
+Wimbledon,16,2R,10
+Wimbledon,17,F,8
+Wimbledon,18,QF,24
+Wimbledon,19,1R,
+US Open,1,A,235
+US Open,2,A,135
+US Open,3,1R,91
+US Open,4,A,158
+US Open,5,A,103
+US Open,6,1R,92
+US Open,7,2R,35
+US Open,8,1R,26
+US Open,9,1R,34
+US Open,10,W,13
+US Open,11,QF,11
+US Open,12,3R,18
+US Open,13,QF,9
+US Open,14,SF,6
+US Open,15,SF,8
+US Open,16,SF,10
+US Open,17,2R,8
+US Open,18,2R,24
+US Open,19,A,
+Grand Slam W-L,1,0–0,235
+Grand Slam W-L,2,0–0,135
+Grand Slam W-L,3,0–4,91
+Grand Slam W-L,4,3–2,158
+Grand Slam W-L,5,0–1,103
+Grand Slam W-L,6,1–4,92
+Grand Slam W-L,7,3–4,35
+Grand Slam W-L,8,4–4,26
+Grand Slam W-L,9,2–4,34
+Grand Slam W-L,10,11–3,13
+Grand Slam W-L,11,9–4,11
+Grand Slam W-L,12,7–4,18
+Grand Slam W-L,13,12–4,9
+Grand Slam W-L,14,14–3,6
+Grand Slam W-L,15,12–4,8
+Grand Slam W-L,16,10–4,10
+Grand Slam W-L,17,8–4,8
+Grand Slam W-L,18,9–4,24
+Grand Slam W-L,19,0–1,
+Indian Wells,1,A,235
+Indian Wells,2,A,135
+Indian Wells,3,SF,91
+Indian Wells,4,LQ,158
+Indian Wells,5,A,103
+Indian Wells,6,A,92
+Indian Wells,7,A,35
+Indian Wells,8,2R,26
+Indian Wells,9,1R,34
+Indian Wells,10,1R,13
+Indian Wells,11,QF,11
+Indian Wells,12,2R,18
+Indian Wells,13,F,9
+Indian Wells,14,QF,6
+Indian Wells,15,1R,8
+Indian Wells,16,QF,10
+Indian Wells,17,QF,8
+Indian Wells,18,1R,24
+Indian Wells,19,A,
+Miami,1,A,235
+Miami,2,A,135
+Miami,3,2R,91
+Miami,4,1R,158
+Miami,5,A,103
+Miami,6,A,92
+Miami,7,2R,35
+Miami,8,2R,26
+Miami,9,3R,34
+Miami,10,3R,13
+Miami,11,3R,11
+Miami,12,2R,18
+Miami,13,W,9
+Miami,14,F,6
+Miami,15,SF,8
+Miami,16,QF,10
+Miami,17,2R,8
+Miami,18,QF,24
+Miami,19,A,
+Monte Carlo,1,A,235
+Monte Carlo,2,A,135
+Monte Carlo,3,A,91
+Monte Carlo,4,A,158
+Monte Carlo,5,A,103
+Monte Carlo,6,A,92
+Monte Carlo,7,A,35
+Monte Carlo,8,2R,26
+Monte Carlo,9,1R,34
+Monte Carlo,10,1R,13
+Monte Carlo,11,A,11
+Monte Carlo,12,SF,18
+Monte Carlo,13,A,9
+Monte Carlo,14,A,6
+Monte Carlo,15,A,8
+Monte Carlo,16,SF,10
+Monte Carlo,17,SF,8
+Monte Carlo,18,2R,24
+Monte Carlo,19,A,
+Rome,1,A,235
+Rome,2,A,135
+Rome,3,A,91
+Rome,4,A,158
+Rome,5,A,103
+Rome,6,A,92
+Rome,7,A,35
+Rome,8,1R,26
+Rome,9,A,34
+Rome,10,1R,13
+Rome,11,F,11
+Rome,12,2R,18
+Rome,13,QF,9
+Rome,14,2R,6
+Rome,15,QF,8
+Rome,16,QF,10
+Rome,17,SF,8
+Rome,18,SF,24
+Rome,19,A,
+Madrid (Stuttgart),1,A,235
+Madrid (Stuttgart),2,A,135
+Madrid (Stuttgart),3,A,91
+Madrid (Stuttgart),4,A,158
+Madrid (Stuttgart),5,A,103
+Madrid (Stuttgart),6,A,92
+Madrid (Stuttgart),7,1R,35
+Madrid (Stuttgart),8,1R,26
+Madrid (Stuttgart),9,2R,34
+Madrid (Stuttgart),10,2R,13
+Madrid (Stuttgart),11,2R,11
+Madrid (Stuttgart),12,F,18
+Madrid (Stuttgart),13,A,9
+Madrid (Stuttgart),14,SF,6
+Madrid (Stuttgart),15,SF,8
+Madrid (Stuttgart),16,2R,10
+Madrid (Stuttgart),17,SF,8
+Madrid (Stuttgart),18,SF,24
+Madrid (Stuttgart),19,A,
+Canada,1,A,235
+Canada,2,A,135
+Canada,3,A,91
+Canada,4,A,158
+Canada,5,A,103
+Canada,6,A,92
+Canada,7,1R,35
+Canada,8,2R,26
+Canada,9,2R,34
+Canada,10,2R,13
+Canada,11,2R,11
+Canada,12,1R,18
+Canada,13,2R,9
+Canada,14,W,6
+Canada,15,F,8
+Canada,16,F,10
+Canada,17,QF,8
+Canada,18,2R,24
+Canada,19,A,
+Cincinnati,1,A,235
+Cincinnati,2,LQ,135
+Cincinnati,3,LQ,91
+Cincinnati,4,A,158
+Cincinnati,5,A,103
+Cincinnati,6,1R,92
+Cincinnati,7,1R,35
+Cincinnati,8,1R,26
+Cincinnati,9,1R,34
+Cincinnati,10,1R,13
+Cincinnati,11,2R,11
+Cincinnati,12,1R,18
+Cincinnati,13,2R,9
+Cincinnati,14,F,6
+Cincinnati,15,2R,8
+Cincinnati,16,QF,10
+Cincinnati,17,2R,8
+Cincinnati,18,2R,24
+Cincinnati,19,A,
+Shanghai,1,Not Held,235
+Shanghai,2,Not Held,135
+Shanghai,3,Not Held,91
+Shanghai,4,Not Held,158
+Shanghai,5,Not Held,103
+Shanghai,6,Not Held,92
+Shanghai,7,Not Held,35
+Shanghai,8,Not Held,26
+Shanghai,9,Not Held,34
+Shanghai,10,Not Held,13
+Shanghai,11,Not Held,11
+Shanghai,12,Not Held,18
+Shanghai,13,Not Held,9
+Shanghai,14,Not Held,6
+Shanghai,15,Not Held,8
+Shanghai,16,Not Held,10
+Shanghai,17,Not Held,8
+Shanghai,18,2R,24
+Shanghai,19,A,
+Paris,1,A,235
+Paris,2,A,135
+Paris,3,A,91
+Paris,4,A,158
+Paris,5,A,103
+Paris,6,A,92
+Paris,7,QF,35
+Paris,8,1R,26
+Paris,9,1R,34
+Paris,10,SF,13
+Paris,11,2R,11
+Paris,12,QF,18
+Paris,13,F,9
+Paris,14,SF,6
+Paris,15,1R,8
+Paris,16,QF,10
+Paris,17,W,8
+Paris,18,2R,24
+Paris,19,A,
+Hamburg,1,A,235
+Hamburg,2,A,135
+Hamburg,3,A,91
+Hamburg,4,A,158
+Hamburg,5,A,103
+Hamburg,6,A,92
+Hamburg,7,A,35
+Hamburg,8,2R,26
+Hamburg,9,A,34
+Hamburg,10,2R,13
+Hamburg,11,1R,11
+Hamburg,12,2R,18
+Hamburg,13,W,9
+Hamburg,14,2R,6
+Hamburg,15,W,8
+Hamburg,16,F,10
+Hamburg,17,2R,8
+Hamburg,18,NME,24
+Hamburg,19,NME,
+Masters W-L,1,0–0,235
+Masters W-L,2,0–0,135
+Masters W-L,3,4–2,91
+Masters W-L,4,0–1,158
+Masters W-L,5,0–0,103
+Masters W-L,6,0–1,92
+Masters W-L,7,3–5,35
+Masters W-L,8,4–9,26
+Masters W-L,9,3–7,34
+Masters W-L,10,5–9,13
+Masters W-L,11,9–8,11
+Masters W-L,12,8–9,18
+Masters W-L,13,17–5,9
+Masters W-L,14,17–7,6
+Masters W-L,15,12–7,8
+Masters W-L,16,14–9,10
+Masters W-L,17,13–8,8
+Masters W-L,18,7–9,24
+Masters W-L,19,0–0,

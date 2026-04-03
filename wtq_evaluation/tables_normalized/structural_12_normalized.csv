@@ -1,0 +1,90 @@
+category,subgroup,cohort,victim_sex,metric_type,value
+,canadian army,cohort_1,male,percent,1.2
+,canadian army,cohort_1,total,number,430.0
+,canadian army,cohort_1,total,percent,2.2
+,canadian army,cohort_2,male,percent,1.5
+,canadian army,cohort_2,total,number,440.0
+,canadian army,cohort_2,total,percent,2.4
+,royal canadian navy,cohort_1,male,percent,2.4
+,royal canadian navy,cohort_1,total,number,120.0
+,royal canadian navy,cohort_1,total,percent,3.6
+,royal canadian navy,cohort_2,total,number,120.0
+,royal canadian navy,cohort_2,total,percent,4.0
+,royal canadian air force,cohort_2,total,number,20.0
+,royal canadian air force,cohort_2,total,percent,1.1
+,military personnel command,cohort_2,total,number,70.0
+,military personnel command,cohort_2,total,percent,3.7
+,"indigenous (first nations, metis, inuit) person",cohort_1,total,number,70.0
+,"indigenous (first nations, metis, inuit) person",cohort_1,total,percent,6.1
+,"indigenous (first nations, metis, inuit) person",cohort_2,male,percent,5.3
+,"indigenous (first nations, metis, inuit) person",cohort_2,total,number,70.0
+,"indigenous (first nations, metis, inuit) person",cohort_2,total,percent,8.1
+,non-indigenous person,cohort_1,male,percent,1.1
+,non-indigenous person,cohort_1,total,number,540.0
+,non-indigenous person,cohort_1,total,percent,2.0
+,non-indigenous person,cohort_2,male,percent,1.3
+,non-indigenous person,cohort_2,total,number,610.0
+,non-indigenous person,cohort_2,total,percent,2.4
+persons with disabilities,persons with disabilities,cohort_2,total,number,40.0
+persons with disabilities,persons with disabilities,cohort_2,total,percent,5.6
+persons with disabilities,persons without disabilities,cohort_1,male,percent,1.2
+persons with disabilities,persons without disabilities,cohort_1,total,number,570.0
+persons with disabilities,persons without disabilities,cohort_1,total,percent,2.1
+persons with disabilities,persons without disabilities,cohort_2,male,percent,1.4
+persons with disabilities,persons without disabilities,cohort_2,total,number,640.0
+persons with disabilities,persons without disabilities,cohort_2,total,percent,2.5
+visible minority,visible minority,cohort_1,total,number,100.0
+visible minority,visible minority,cohort_1,total,percent,2.4
+visible minority,visible minority,cohort_2,total,number,50.0
+visible minority,visible minority,cohort_2,total,percent,1.7
+visible minority,non-visible minority,cohort_1,male,percent,1.3
+visible minority,non-visible minority,cohort_1,total,number,500.0
+visible minority,non-visible minority,cohort_1,total,percent,2.2
+visible minority,non-visible minority,cohort_2,male,percent,1.6
+visible minority,non-visible minority,cohort_2,total,number,620.0
+visible minority,non-visible minority,cohort_2,total,percent,2.7
+visible minority,junior non-commissioned member,cohort_1,male,percent,1.5
+visible minority,junior non-commissioned member,cohort_1,total,number,480.0
+visible minority,junior non-commissioned member,cohort_1,total,percent,2.6
+visible minority,junior non-commissioned member,cohort_2,male,percent,1.9
+visible minority,junior non-commissioned member,cohort_2,total,number,570.0
+visible minority,junior non-commissioned member,cohort_2,total,percent,3.3
+visible minority,senior non-commissioned member,cohort_1,male,percent,0.9
+visible minority,senior non-commissioned member,cohort_1,total,number,50.0
+visible minority,senior non-commissioned member,cohort_1,total,percent,1.3
+visible minority,senior non-commissioned member,cohort_2,male,percent,0.7
+visible minority,senior non-commissioned member,cohort_2,total,number,40.0
+visible minority,senior non-commissioned member,cohort_2,total,percent,0.9
+visible minority,junior officer,cohort_1,total,number,50.0
+visible minority,junior officer,cohort_1,total,percent,1.6
+visible minority,junior officer,cohort_2,total,number,50.0
+visible minority,junior officer,cohort_2,total,percent,1.6
+visible minority,senior officer,cohort_2,total,number,20.0
+visible minority,senior officer,cohort_2,total,percent,1.2
+visible minority,24 years and younger,cohort_1,male,percent,1.2
+visible minority,24 years and younger,cohort_1,total,number,260.0
+visible minority,24 years and younger,cohort_1,total,percent,2.8
+visible minority,24 years and younger,cohort_2,male,percent,1.8
+visible minority,24 years and younger,cohort_2,total,number,340.0
+visible minority,24 years and younger,cohort_2,total,percent,4.0
+visible minority,25 to 29 years,cohort_1,male,percent,2.2
+visible minority,25 to 29 years,cohort_1,total,number,160.0
+visible minority,25 to 29 years,cohort_1,total,percent,3.1
+visible minority,25 to 29 years,cohort_2,male,percent,2.7
+visible minority,25 to 29 years,cohort_2,total,number,180.0
+visible minority,25 to 29 years,cohort_2,total,percent,3.4
+visible minority,30 to 34 years,cohort_1,male,percent,1.5
+visible minority,30 to 34 years,cohort_1,total,number,80.0
+visible minority,30 to 34 years,cohort_1,total,percent,2.4
+visible minority,30 to 34 years,cohort_2,total,number,60.0
+visible minority,30 to 34 years,cohort_2,total,percent,2.0
+visible minority,35 to 39 years,cohort_1,total,number,40.0
+visible minority,35 to 39 years,cohort_1,total,percent,1.7
+visible minority,35 to 39 years,cohort_2,total,number,40.0
+visible minority,35 to 39 years,cohort_2,total,percent,1.9
+visible minority,40 to 44 years,cohort_2,total,number,20.0
+visible minority,40 to 44 years,cohort_2,total,percent,1.2
+visible minority,45 to 49 years,cohort_1,total,number,30.0
+visible minority,45 to 49 years,cohort_1,total,percent,1.4
+visible minority,50 years and older,cohort_2,total,number,20.0
+visible minority,50 years and older,cohort_2,total,percent,0.6
