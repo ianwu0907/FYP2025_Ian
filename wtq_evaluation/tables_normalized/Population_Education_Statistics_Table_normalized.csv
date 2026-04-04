@@ -1,0 +1,577 @@
+region,education_level,sex,count
+Whole Country,Never attended school,Male,14455827
+Whole Country,Never attended school,Female,34140110
+Whole Country,Preschool education,Male,27868882
+Whole Country,Preschool education,Female,25486963
+Whole Country,Elementary School,Male,164893183
+Whole Country,Elementary School,Female,184765550
+Whole Country,Junior high school,Male,263448804
+Whole Country,Junior high school,Female,223646206
+Whole Country,High School,Male,116996970
+Whole Country,High School,Female,95212952
+Whole Country,College (Associate Degree),Male,58727560
+Whole Country,College (Associate Degree),Female,53575442
+Whole Country,Bachelor's degree,Male,47637012
+Whole Country,Bachelor's degree,Female,46519060
+Whole Country,Master's degree students,Male,4721323
+Whole Country,Master's degree students,Female,4766905
+Whole Country,Doctoral degree students,Male,774020
+Whole Country,Doctoral degree students,Female,503329
+Beijing,Never attended school,Male,99043
+Beijing,Never attended school,Female,200977
+Beijing,Preschool education,Male,311609
+Beijing,Preschool education,Female,291683
+Beijing,Elementary School,Male,1083828
+Beijing,Elementary School,Female,1215608
+Beijing,Junior high school,Male,2835520
+Beijing,Junior high school,Female,2263269
+Beijing,High School,Male,1998990
+Beijing,High School,Female,1852760
+Beijing,College (Associate Degree),Male,1473704
+Beijing,College (Associate Degree),Female,1454703
+Beijing,Bachelor's degree,Male,2353594
+Beijing,Bachelor's degree,Female,2417901
+Beijing,Master's degree students,Male,616649
+Beijing,Master's degree students,Female,646366
+Beijing,Doctoral degree students,Male,137675
+Beijing,Doctoral degree students,Female,90191
+Tianjin,Never attended school,Male,77563
+Tianjin,Never attended school,Female,167818
+Tianjin,Preschool education,Male,204887
+Tianjin,Preschool education,Female,189645
+Tianjin,Elementary School,Male,1071316
+Tianjin,Elementary School,Female,1164282
+Tianjin,Junior high school,Male,2441338
+Tianjin,Junior high school,Female,2036533
+Tianjin,High School,Male,1283238
+Tianjin,High School,Female,1173634
+Tianjin,College (Associate Degree),Male,799341
+Tianjin,College (Associate Degree),Female,722574
+Tianjin,Bachelor's degree,Male,974316
+Tianjin,Bachelor's degree,Female,975383
+Tianjin,Master's degree students,Male,109833
+Tianjin,Master's degree students,Female,123695
+Tianjin,Doctoral degree students,Male,16983
+Tianjin,Doctoral degree students,Female,13418
+Hebei,Never attended school,Male,477744
+Hebei,Never attended school,Female,1107695
+Hebei,Preschool education,Male,1589403
+Hebei,Preschool education,Female,1449301
+Hebei,Elementary School,Male,8581062
+Hebei,Elementary School,Female,9820942
+Hebei,Junior high school,Male,15793154
+Hebei,Junior high school,Female,14013839
+Hebei,High School,Male,5555492
+Hebei,High School,Female,4785971
+Hebei,College (Associate Degree),Male,2649100
+Hebei,College (Associate Degree),Female,2621523
+Hebei,Bachelor's degree,Male,1773591
+Hebei,Bachelor's degree,Female,1935474
+Hebei,Master's degree students,Male,116564
+Hebei,Master's degree students,Female,144386
+Hebei,Doctoral degree students,Male,12913
+Hebei,Doctoral degree students,Female,11358
+Shanxi,Never attended school,Male,192641
+Shanxi,Never attended school,Female,365604
+Shanxi,Preschool education,Male,586288
+Shanxi,Preschool education,Female,557682
+Shanxi,Elementary School,Male,3135342
+Shanxi,Elementary School,Female,3675152
+Shanxi,Junior high school,Male,7211213
+Shanxi,Junior high school,Female,6388295
+Shanxi,High School,Male,3138030
+Shanxi,High School,Female,2617922
+Shanxi,College (Associate Degree),Male,1692381
+Shanxi,College (Associate Degree),Female,1570648
+Shanxi,Bachelor's degree,Male,1245712
+Shanxi,Bachelor's degree,Female,1324236
+Shanxi,Master's degree students,Male,87607
+Shanxi,Master's degree students,Female,118816
+Shanxi,Doctoral degree students,Male,10618
+Shanxi,Doctoral degree students,Female,10462
+Inner Mongolia,Never attended school,Male,269547
+Inner Mongolia,Never attended school,Female,631656
+Inner Mongolia,Preschool education,Male,353091
+Inner Mongolia,Preschool education,Female,327689
+Inner Mongolia,Elementary School,Male,2660207
+Inner Mongolia,Elementary School,Female,3021828
+Inner Mongolia,Junior high school,Male,4453870
+Inner Mongolia,Junior high school,Female,3689382
+Inner Mongolia,High School,Male,1932094
+Inner Mongolia,High School,Female,1630651
+Inner Mongolia,College (Associate Degree),Male,1288416
+Inner Mongolia,College (Associate Degree),Female,1110599
+Inner Mongolia,Bachelor's degree,Male,950199
+Inner Mongolia,Bachelor's degree,Female,993303
+Inner Mongolia,Master's degree students,Male,59877
+Inner Mongolia,Master's degree students,Female,80649
+Inner Mongolia,Doctoral degree students,Male,5556
+Inner Mongolia,Doctoral degree students,Female,5709
+Liaoning,Never attended school,Male,229275
+Liaoning,Never attended school,Female,407886
+Liaoning,Preschool education,Male,463414
+Liaoning,Preschool education,Female,434652
+Liaoning,Elementary School,Male,3715818
+Liaoning,Elementary School,Female,4328949
+Liaoning,Junior high school,Male,9332828
+Liaoning,Junior high school,Female,8895701
+Liaoning,High School,Male,3216122
+Liaoning,High School,Female,3032202
+Liaoning,College (Associate Degree),Male,1922438
+Liaoning,College (Associate Degree),Female,1847375
+Liaoning,Bachelor's degree,Male,1814004
+Liaoning,Bachelor's degree,Female,1817680
+Liaoning,Master's degree students,Male,149734
+Liaoning,Master's degree students,Female,171892
+Liaoning,Doctoral degree students,Male,19795
+Liaoning,Doctoral degree students,Female,15418
+Jilin,Never attended school,Male,161207
+Jilin,Never attended school,Female,291341
+Jilin,Preschool education,Male,252719
+Jilin,Preschool education,Female,238854
+Jilin,Elementary School,Male,2518160
+Jilin,Elementary School,Female,2854662
+Jilin,Junior high school,Male,4746766
+Jilin,Junior high school,Female,4457595
+Jilin,High School,Male,2114922
+Jilin,High School,Female,1996865
+Jilin,College (Associate Degree),Male,936634
+Jilin,College (Associate Degree),Female,876967
+Jilin,Bachelor's degree,Male,988951
+Jilin,Bachelor's degree,Female,1037016
+Jilin,Master's degree students,Male,74468
+Jilin,Master's degree students,Female,91290
+Jilin,Doctoral degree students,Male,12636
+Jilin,Doctoral degree students,Female,11525
+Heilongjiang,Never attended school,Male,216081
+Heilongjiang,Never attended school,Female,391033
+Heilongjiang,Preschool education,Male,283318
+Heilongjiang,Preschool education,Female,271218
+Heilongjiang,Elementary School,Male,3256487
+Heilongjiang,Elementary School,Female,3706799
+Heilongjiang,Junior high school,Male,7042829
+Heilongjiang,Junior high school,Female,6586808
+Heilongjiang,High School,Male,2544418
+Heilongjiang,High School,Female,2400196
+Heilongjiang,College (Associate Degree),Male,1217073
+Heilongjiang,College (Associate Degree),Female,1117434
+Heilongjiang,Bachelor's degree,Male,1077875
+Heilongjiang,Bachelor's degree,Female,1115560
+Heilongjiang,Master's degree students,Male,73108
+Heilongjiang,Master's degree students,Female,84944
+Heilongjiang,Doctoral degree students,Male,14718
+Heilongjiang,Doctoral degree students,Female,10731
+Shanghai,Never attended school,Male,125256
+Shanghai,Never attended school,Female,375784
+Shanghai,Preschool education,Male,309463
+Shanghai,Preschool education,Female,287965
+Shanghai,Elementary School,Male,1369563
+Shanghai,Elementary School,Female,1597281
+Shanghai,Junior high school,Male,3940356
+Shanghai,Junior high school,Female,3256066
+Shanghai,High School,Male,2543192
+Shanghai,High School,Female,2187167
+Shanghai,College (Associate Degree),Male,1630768
+Shanghai,College (Associate Degree),Female,1441055
+Shanghai,Bachelor's degree,Male,2167527
+Shanghai,Bachelor's degree,Female,2113232
+Shanghai,Master's degree students,Male,471285
+Shanghai,Master's degree students,Female,466259
+Shanghai,Doctoral degree students,Male,81950
+Shanghai,Doctoral degree students,Female,52138
+Jiangsu,Never attended school,Male,686569
+Jiangsu,Never attended school,Female,2116843
+Jiangsu,Preschool education,Male,1502630
+Jiangsu,Preschool education,Female,1410236
+Jiangsu,Elementary School,Male,8702944
+Jiangsu,Elementary School,Female,10570435
+Jiangsu,Junior high school,Male,15058047
+Jiangsu,Junior high school,Female,13169935
+Jiangsu,High School,Male,7673049
+Jiangsu,High School,Female,6048813
+Jiangsu,College (Associate Degree),Male,4412757
+Jiangsu,College (Associate Degree),Female,3774725
+Jiangsu,Bachelor's degree,Male,3510224
+Jiangsu,Bachelor's degree,Female,3296340
+Jiangsu,Master's degree students,Male,386818
+Jiangsu,Master's degree students,Female,340346
+Jiangsu,Doctoral degree students,Male,61147
+Jiangsu,Doctoral degree students,Female,34408
+Zhejiang,Never attended school,Male,721329
+Zhejiang,Never attended school,Female,1745183
+Zhejiang,Preschool education,Male,1025744
+Zhejiang,Preschool education,Female,959107
+Zhejiang,Elementary School,Male,8229110
+Zhejiang,Elementary School,Female,8806588
+Zhejiang,Junior high school,Male,11865837
+Zhejiang,Junior high school,Female,9251458
+Zhejiang,High School,Male,5366119
+Zhejiang,High School,Female,4031518
+Zhejiang,College (Associate Degree),Male,2877746
+Zhejiang,College (Associate Degree),Female,2597582
+Zhejiang,Bachelor's degree,Male,2467073
+Zhejiang,Bachelor's degree,Female,2484061
+Zhejiang,Master's degree students,Male,251993
+Zhejiang,Master's degree students,Female,230626
+Zhejiang,Doctoral degree students,Male,38589
+Zhejiang,Doctoral degree students,Female,22642
+Anhui,Never attended school,Male,922536
+Anhui,Never attended school,Female,2505798
+Anhui,Preschool education,Male,1278903
+Anhui,Preschool education,Female,1162088
+Anhui,Elementary School,Male,7651045
+Anhui,Elementary School,Female,8749975
+Anhui,Junior high school,Male,11211154
+Anhui,Junior high school,Female,9369901
+Anhui,High School,Male,4622745
+Anhui,High School,Female,3490502
+Anhui,College (Associate Degree),Male,2353427
+Anhui,College (Associate Degree),Female,2057879
+Anhui,Bachelor's degree,Male,1834059
+Anhui,Bachelor's degree,Female,1517068
+Anhui,Master's degree students,Male,168767
+Anhui,Master's degree students,Female,137048
+Anhui,Doctoral degree students,Male,24721
+Anhui,Doctoral degree students,Female,11659
+Fujian,Never attended school,Male,385462
+Fujian,Never attended school,Female,1140440
+Fujian,Preschool education,Male,1000943
+Fujian,Preschool education,Female,879355
+Fujian,Elementary School,Male,5335122
+Fujian,Elementary School,Female,6308835
+Fujian,Junior high school,Male,7585075
+Fujian,Junior high school,Female,5798147
+Fujian,High School,Male,3372383
+Fujian,High School,Female,2531460
+Fujian,College (Associate Degree),Male,1520534
+Fujian,College (Associate Degree),Female,1380054
+Fujian,Bachelor's degree,Male,1432220
+Fujian,Bachelor's degree,Female,1321994
+Fujian,Master's degree students,Male,100063
+Fujian,Master's degree students,Female,95969
+Fujian,Doctoral degree students,Male,16498
+Fujian,Doctoral degree students,Female,9741
+Jiangxi,Never attended school,Male,318658
+Jiangxi,Never attended school,Female,862848
+Jiangxi,Preschool education,Male,992537
+Jiangxi,Preschool education,Female,873350
+Jiangxi,Elementary School,Male,5670601
+Jiangxi,Elementary School,Female,6762585
+Jiangxi,Junior high school,Male,8695411
+Jiangxi,Junior high school,Female,7347033
+Jiangxi,High School,Male,3930875
+Jiangxi,High School,Female,2912757
+Jiangxi,College (Associate Degree),Male,1652911
+Jiangxi,College (Associate Degree),Female,1385198
+Jiangxi,Bachelor's degree,Male,1179874
+Jiangxi,Bachelor's degree,Female,990492
+Jiangxi,Master's degree students,Male,80273
+Jiangxi,Master's degree students,Female,70831
+Jiangxi,Doctoral degree students,Male,11082
+Jiangxi,Doctoral degree students,Female,5234
+Shandong,Never attended school,Male,1193301
+Shandong,Never attended school,Female,3167127
+Shandong,Preschool education,Male,2314673
+Shandong,Preschool education,Female,2050814
+Shandong,Elementary School,Male,11034528
+Shandong,Elementary School,Female,13020031
+Shandong,Junior high school,Male,19499036
+Shandong,Junior high school,Female,16825177
+Shandong,High School,Male,8064406
+Shandong,High School,Female,6488353
+Shandong,College (Associate Degree),Male,4151742
+Shandong,College (Associate Degree),Female,3696259
+Shandong,Bachelor's degree,Male,3119051
+Shandong,Bachelor's degree,Female,2963241
+Shandong,Master's degree students,Male,290012
+Shandong,Master's degree students,Female,311763
+Shandong,Doctoral degree students,Male,40906
+Shandong,Doctoral degree students,Female,30496
+Henan,Never attended school,Male,896451
+Henan,Never attended school,Female,2159040
+Henan,Preschool education,Male,2372328
+Henan,Preschool education,Female,2197856
+Henan,Elementary School,Male,11418873
+Henan,Elementary School,Female,12982069
+Henan,Junior high school,Male,19423408
+Henan,Junior high school,Female,17856461
+Henan,High School,Male,8189929
+Henan,High School,Female,6952321
+Henan,College (Associate Degree),Male,3474543
+Henan,College (Associate Degree),Female,3328797
+Henan,Bachelor's degree,Male,2193216
+Henan,Bachelor's degree,Female,2307710
+Henan,Master's degree students,Male,152344
+Henan,Master's degree students,Female,173850
+Henan,Doctoral degree students,Male,22999
+Henan,Doctoral degree students,Female,16415
+Hubei,Never attended school,Male,457794
+Hubei,Never attended school,Female,1271472
+Hubei,Preschool education,Male,1055261
+Hubei,Preschool education,Female,948029
+Hubei,Elementary School,Male,6302894
+Hubei,Elementary School,Female,7280480
+Hubei,Junior high school,Male,10615140
+Hubei,Junior high school,Female,9182383
+Hubei,High School,Male,5597853
+Hubei,High School,Female,4467095
+Hubei,College (Associate Degree),Male,2551279
+Hubei,College (Associate Degree),Female,2146438
+Hubei,Bachelor's degree,Male,1995037
+Hubei,Bachelor's degree,Female,1780422
+Hubei,Master's degree students,Male,215858
+Hubei,Master's degree students,Female,198079
+Hubei,Doctoral degree students,Male,40989
+Hubei,Doctoral degree students,Female,24442
+Hunan,Never attended school,Male,519688
+Hunan,Never attended school,Female,1064674
+Hunan,Preschool education,Male,1322377
+Hunan,Preschool education,Female,1207008
+Hunan,Elementary School,Male,7926050
+Hunan,Elementary School,Female,8827035
+Hunan,Junior high school,Male,12491345
+Hunan,Junior high school,Female,11186816
+Hunan,High School,Male,6513011
+Hunan,High School,Female,5297946
+Hunan,College (Associate Degree),Male,2447913
+Hunan,College (Associate Degree),Female,2269914
+Hunan,Bachelor's degree,Male,1594082
+Hunan,Bachelor's degree,Female,1547718
+Hunan,Master's degree students,Male,118650
+Hunan,Master's degree students,Female,119217
+Hunan,Doctoral degree students,Male,21776
+Hunan,Doctoral degree students,Female,12975
+Guangdong,Never attended school,Male,968789
+Guangdong,Never attended school,Female,1936188
+Guangdong,Preschool education,Male,2758368
+Guangdong,Preschool education,Female,2443800
+Guangdong,Elementary School,Male,12294766
+Guangdong,Elementary School,Female,13759652
+Guangdong,Junior high school,Male,24895602
+Guangdong,Junior high school,Female,19818646
+Guangdong,High School,Male,13224360
+Guangdong,High School,Female,9740736
+Guangdong,College (Associate Degree),Male,5690177
+Guangdong,College (Associate Degree),Female,5134705
+Guangdong,Bachelor's degree,Male,4213472
+Guangdong,Bachelor's degree,Female,3861537
+Guangdong,Master's degree students,Male,423599
+Guangdong,Master's degree students,Female,365547
+Guangdong,Doctoral degree students,Male,60214
+Guangdong,Doctoral degree students,Female,33658
+Guangxi,Never attended school,Male,448916
+Guangxi,Never attended school,Female,1078633
+Guangxi,Preschool education,Male,1358632
+Guangxi,Preschool education,Female,1199724
+Guangxi,Elementary School,Male,6663885
+Guangxi,Elementary School,Female,7299128
+Guangxi,Junior high school,Male,10106028
+Guangxi,Junior high school,Female,8134324
+Guangxi,High School,Male,3593806
+Guangxi,High School,Female,2903728
+Guangxi,College (Associate Degree),Male,1574358
+Guangxi,College (Associate Degree),Female,1463375
+Guangxi,Bachelor's degree,Male,1075565
+Guangxi,Bachelor's degree,Female,1159931
+Guangxi,Master's degree students,Male,64160
+Guangxi,Master's degree students,Female,66122
+Guangxi,Doctoral degree students,Male,8067
+Guangxi,Doctoral degree students,Female,4980
+Hainan,Never attended school,Male,82475
+Hainan,Never attended school,Female,221602
+Hainan,Preschool education,Male,225445
+Hainan,Preschool education,Female,191639
+Hainan,Elementary School,Male,943931
+Hainan,Elementary School,Female,1042171
+Hainan,Junior high school,Male,2227745
+Hainan,Junior high school,Female,1822255
+Hainan,High School,Male,911574
+Hainan,High School,Female,657187
+Hainan,College (Associate Degree),Male,409354
+Hainan,College (Associate Degree),Female,327291
+Hainan,Bachelor's degree,Male,331459
+Hainan,Bachelor's degree,Female,293900
+Hainan,Master's degree students,Male,18190
+Hainan,Master's degree students,Female,18564
+Hainan,Doctoral degree students,Male,2673
+Hainan,Doctoral degree students,Female,1763
+Chongqing,Never attended school,Male,216050
+Chongqing,Never attended school,Female,486922
+Chongqing,Preschool education,Male,557131
+Chongqing,Preschool education,Female,524334
+Chongqing,Elementary School,Male,4544916
+Chongqing,Elementary School,Female,5037257
+Chongqing,Junior high school,Male,5201319
+Chongqing,Junior high school,Female,4601563
+Chongqing,High School,Male,2756774
+Chongqing,High School,Female,2357906
+Chongqing,College (Associate Degree),Male,1337036
+Chongqing,College (Associate Degree),Female,1277694
+Chongqing,Bachelor's degree,Male,1053865
+Chongqing,Bachelor's degree,Female,1066034
+Chongqing,Master's degree students,Male,90420
+Chongqing,Master's degree students,Female,92202
+Chongqing,Doctoral degree students,Male,14144
+Chongqing,Doctoral degree students,Female,8822
+Sichuan,Never attended school,Male,1170589
+Sichuan,Never attended school,Female,2647393
+Sichuan,Preschool education,Male,1484995
+Sichuan,Preschool education,Female,1436016
+Sichuan,Elementary School,Male,12638740
+Sichuan,Elementary School,Female,13566088
+Sichuan,Junior high school,Male,14188760
+Sichuan,Junior high school,Female,12120751
+Sichuan,High School,Male,6035213
+Sichuan,High School,Female,5094533
+Sichuan,College (Associate Degree),Male,3067955
+Sichuan,College (Associate Degree),Female,2978147
+Sichuan,Bachelor's degree,Male,2315609
+Sichuan,Bachelor's degree,Female,2263115
+Sichuan,Master's degree students,Male,216004
+Sichuan,Master's degree students,Female,204789
+Sichuan,Doctoral degree students,Male,34578
+Sichuan,Doctoral degree students,Female,20650
+Guizhou,Never attended school,Male,789029
+Guizhou,Never attended school,Female,2162790
+Guizhou,Preschool education,Male,941148
+Guizhou,Preschool education,Female,829327
+Guizhou,Elementary School,Male,6121540
+Guizhou,Elementary School,Female,6187751
+Guizhou,Junior high school,Male,6680427
+Guizhou,Junior high school,Female,5067178
+Guizhou,High School,Male,2091886
+Guizhou,High School,Female,1745529
+Guizhou,College (Associate Degree),Male,1119230
+Guizhou,College (Associate Degree),Female,1031419
+Guizhou,Bachelor's degree,Male,1002236
+Guizhou,Bachelor's degree,Female,974701
+Guizhou,Master's degree students,Male,41087
+Guizhou,Master's degree students,Female,45464
+Guizhou,Doctoral degree students,Male,5555
+Guizhou,Doctoral degree students,Female,3578
+Yunnan,Never attended school,Male,851209
+Yunnan,Never attended school,Female,1794763
+Yunnan,Preschool education,Male,950328
+Yunnan,Preschool education,Female,890068
+Yunnan,Elementary School,Male,8351242
+Yunnan,Elementary School,Female,8487001
+Yunnan,Junior high school,Male,7979378
+Yunnan,Junior high school,Female,5824993
+Yunnan,High School,Male,2662907
+Yunnan,High School,Female,2217509
+Yunnan,College (Associate Degree),Male,1473842
+Yunnan,College (Associate Degree),Female,1400568
+Yunnan,Bachelor's degree,Male,1180513
+Yunnan,Bachelor's degree,Female,1261944
+Yunnan,Master's degree students,Male,66535
+Yunnan,Master's degree students,Female,76030
+Yunnan,Doctoral degree students,Male,9765
+Yunnan,Doctoral degree students,Female,7533
+Tibet,Never attended school,Male,371034
+Tibet,Never attended school,Female,529944
+Tibet,Preschool education,Male,87282
+Tibet,Preschool education,Female,83415
+Tibet,Elementary School,Male,649009
+Tibet,Elementary School,Female,522326
+Tibet,Junior high school,Male,355820
+Tibet,Junior high school,Female,219011
+Tibet,High School,Male,147301
+Tibet,High School,Female,109925
+Tibet,College (Associate Degree),Male,104041
+Tibet,College (Associate Degree),Female,84948
+Tibet,Bachelor's degree,Male,106716
+Tibet,Bachelor's degree,Female,98018
+Tibet,Master's degree students,Male,4472
+Tibet,Master's degree students,Female,3169
+Tibet,Doctoral degree students,Male,433
+Tibet,Doctoral degree students,Female,183
+Shaanxi,Never attended school,Male,434741
+Shaanxi,Never attended school,Female,924039
+Shaanxi,Preschool education,Male,774383
+Shaanxi,Preschool education,Female,726682
+Shaanxi,Elementary School,Male,4022853
+Shaanxi,Elementary School,Female,4549306
+Shaanxi,Junior high school,Male,7214803
+Shaanxi,Junior high school,Female,6216885
+Shaanxi,High School,Male,3365801
+Shaanxi,High School,Female,2793403
+Shaanxi,College (Associate Degree),Male,2009046
+Shaanxi,College (Associate Degree),Female,1796258
+Shaanxi,Bachelor's degree,Male,1572133
+Shaanxi,Bachelor's degree,Female,1515921
+Shaanxi,Master's degree students,Male,160430
+Shaanxi,Master's degree students,Female,163827
+Shaanxi,Doctoral degree students,Male,31917
+Shaanxi,Doctoral degree students,Female,22498
+Gansu,Never attended school,Male,586554
+Gansu,Never attended school,Female,1349666
+Gansu,Preschool education,Male,519296
+Gansu,Preschool education,Female,488089
+Gansu,Elementary School,Male,3541271
+Gansu,Elementary School,Female,3916634
+Gansu,Junior high school,Male,3839670
+Gansu,Junior high school,Female,3021554
+Gansu,High School,Male,1824369
+Gansu,High School,Female,1412549
+Gansu,College (Associate Degree),Male,1037137
+Gansu,College (Associate Degree),Female,894105
+Gansu,Bachelor's degree,Male,831116
+Gansu,Bachelor's degree,Female,747326
+Gansu,Master's degree students,Male,51656
+Gansu,Master's degree students,Female,54212
+Gansu,Doctoral degree students,Male,8581
+Gansu,Doctoral degree students,Female,5216
+Qinghai,Never attended school,Male,202266
+Qinghai,Never attended school,Female,376433
+Qinghai,Preschool education,Male,121957
+Qinghai,Preschool education,Female,115016
+Qinghai,Elementary School,Male,960145
+Qinghai,Elementary School,Female,978481
+Qinghai,Junior high school,Male,838949
+Qinghai,Junior high school,Female,603200
+Qinghai,High School,Male,338930
+Qinghai,High School,Female,287108
+Qinghai,College (Associate Degree),Male,247576
+Qinghai,College (Associate Degree),Female,214759
+Qinghai,Bachelor's degree,Male,200337
+Qinghai,Bachelor's degree,Female,197796
+Qinghai,Master's degree students,Male,9201
+Qinghai,Master's degree students,Female,9869
+Qinghai,Doctoral degree students,Male,1136
+Qinghai,Doctoral degree students,Female,820
+Ningxia,Never attended school,Male,133717
+Ningxia,Never attended school,Female,289020
+Ningxia,Preschool education,Male,137968
+Ningxia,Preschool education,Female,129449
+Ningxia,Elementary School,Male,889341
+Ningxia,Elementary School,Female,991331
+Ningxia,Junior high school,Male,1208827
+Ningxia,Junior high school,Female,931576
+Ningxia,High School,Male,528316
+Ningxia,High School,Female,439113
+Ningxia,College (Associate Degree),Male,331865
+Ningxia,College (Associate Degree),Female,313658
+Ningxia,Bachelor's degree,Male,279437
+Ningxia,Bachelor's degree,Female,285631
+Ningxia,Master's degree students,Male,15728
+Ningxia,Master's degree students,Female,19490
+Ningxia,Doctoral degree students,Male,1654
+Ningxia,Doctoral degree students,Female,1475
+Xinjiang,Never attended school,Male,250313
+Xinjiang,Never attended school,Female,369498
+Xinjiang,Preschool education,Male,732361
+Xinjiang,Preschool education,Female,692872
+Xinjiang,Elementary School,Male,3608594
+Xinjiang,Elementary School,Female,3734888
+Xinjiang,Junior high school,Male,4469149
+Xinjiang,Junior high school,Female,3689471
+Xinjiang,High School,Male,1858865
+Xinjiang,High School,Female,1555593
+Xinjiang,College (Associate Degree),Male,1273236
+Xinjiang,College (Associate Degree),Female,1258791
+Xinjiang,Bachelor's degree,Male,803949
+Xinjiang,Bachelor's degree,Female,854375
+Xinjiang,Master's degree students,Male,35938
+Xinjiang,Master's degree students,Female,41594
+Xinjiang,Doctoral degree students,Male,3752
+Xinjiang,Doctoral degree students,Female,3191

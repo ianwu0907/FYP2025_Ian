@@ -4983,7 +4983,7 @@
     },
     {
       "id": "qa-385",
-      "table_file": "Demographic_Statistics_2.xls",
+      "table_file": "Demographic_Statistics_2.xlsx",
       "question": "How many males aged 16 have divorced?",
       "answers": [
         "3.0"
@@ -4998,7 +4998,7 @@
     },
     {
       "id": "qa-386",
-      "table_file": "Household_Size_Statistics.xls",
+      "table_file": "Household_Size_Statistics.xlsx",
       "question": "How many three-person households are there in Heilongjiang",
       "answers": [
         "2969241.0"
@@ -5058,7 +5058,7 @@
     },
     {
       "id": "qa-390",
-      "table_file": "Housing_Condition_Statistics_Table_1.xls",
+      "table_file": "Housing_Condition_Statistics_Table_1.xlsx",
       "question": "Did the average housing area per household in Xiangtan City between 2000 and 2005 increase or decrease compared to Hengyang City?",
       "answers": [
         "More"
@@ -5103,7 +5103,7 @@
     },
     {
       "id": "qa-393",
-      "table_file": "Hunan_Only_Child_Data_1.xls",
+      "table_file": "Hunan_Only_Child_Data_1.xlsx",
       "question": "First, identify the regions where the population aged 0-30 exceeds 20,000, then calculate the average of the differences between the number of male and female only children in these regions aged 0-30.",
       "answers": [
         "1122.2"
@@ -5118,7 +5118,7 @@
     },
     {
       "id": "qa-394",
-      "table_file": "Enterprise_Salary_Grade_Structure_Table_(201004).xls",
+      "table_file": "Enterprise_Salary_Grade_Structure_Table_(201004).xlsx",
       "question": "Based on the table data, calculate the average salary of positions in each job level, and identify the job levels with the highest and lowest average salaries. Please list the names of these two job levels along with their average salaries, and calculate the difference between them.",
       "answers": [
         "Job Level with Highest Average Salary: Senior Management, Highest Average Salary: 4940.0, Job Level with Lowest Average Salary: Employee, Lowest Average Salary: 2070.0, Salary Difference: 2870.0"
@@ -5208,7 +5208,7 @@
     },
     {
       "id": "qa-400",
-      "table_file": "Shandong_Budget_Expenditure_Table.xls",
+      "table_file": "Shandong_Budget_Expenditure_Table.xlsx",
       "question": "What is the average annual growth amount in ten thousand yuan of housing security expenditure in Shandong Province from 2020 to 2023?",
       "answers": [
         "246625.66666666666"
@@ -5283,7 +5283,7 @@
     },
     {
       "id": "qa-405",
-      "table_file": "Garbage_Station_Renovation_Details.xls",
+      "table_file": "Garbage_Station_Renovation_Details.xlsx",
       "question": "How many doors of customized track sliding door style are there at the placement point?",
       "answers": [
         "15.0"
@@ -5298,7 +5298,7 @@
     },
     {
       "id": "qa-406",
-      "table_file": "Housing_Source_Statistics.xls",
+      "table_file": "Housing_Source_Statistics.xlsx",
       "question": "How many household families in Inner Mongolia have self-built housing?",
       "answers": [
         "280830.0"
@@ -5313,7 +5313,7 @@
     },
     {
       "id": "qa-407",
-      "table_file": "Shandong_Foreign_Trade_Data_2023.xls",
+      "table_file": "Shandong_Foreign_Trade_Data_2023.xlsx",
       "question": "What is the total value (in ten thousand US dollars) of Shandong Province's exports to Japan in 2023?",
       "answers": [
         "1985754.0"
@@ -5328,7 +5328,7 @@
     },
     {
       "id": "qa-408",
-      "table_file": "Household_Population_Statistics_Table.xls",
+      "table_file": "Household_Population_Statistics_Table.xlsx",
       "question": "Count the number of age groups where the number of males is greater than the number of females among the population whose household registration is outside the province.",
       "answers": [
         "16.0"
@@ -5388,7 +5388,7 @@
     },
     {
       "id": "qa-412",
-      "table_file": "Hunan_Only-Child_Data.xls",
+      "table_file": "Hunan_Only-Child_Data.xlsx",
       "question": "What is the average sex ratio for each age group from 0 to 9 years old?",
       "answers": [
         "1.374"
@@ -5433,7 +5433,7 @@
     },
     {
       "id": "qa-415",
-      "table_file": "Housing_Cost_Distribution_Table.xls",
+      "table_file": "Housing_Cost_Distribution_Table.xlsx",
       "question": "How many regions have more than 3,000 households with housing purchase or construction costs between 50,000 and 100,000 yuan?",
       "answers": [
         "3.0"
@@ -5448,7 +5448,7 @@
     },
     {
       "id": "qa-416",
-      "table_file": "Common_Formulas_and_Data_for_Saturated_Water_and_Steam.xls",
+      "table_file": "Common_Formulas_and_Data_for_Saturated_Water_and_Steam.xlsx",
       "question": "What is the recommended overall heat transfer coefficient K value in W/(m²℃) for ammonia as the medium in the data of air condenser K values?",
       "answers": [
         "625"
@@ -5463,7 +5463,7 @@
     },
     {
       "id": "qa-417",
-      "table_file": "Same_Condition_Temperature_Table.xls",
+      "table_file": "Same_Condition_Temperature_Table.xlsx",
       "question": "What is the earliest recorded date in the file \"Same Condition Temperature Table_Renhe Foundation to Ground Beam.csv\"?",
       "answers": [
         "2011.10.3"
@@ -5628,7 +5628,7 @@
     },
     {
       "id": "qa-428",
-      "table_file": "Urban_Employment_Wage_Data.xls",
+      "table_file": "Urban_Employment_Wage_Data.xlsx",
       "question": "Taking into account the differences in employment numbers across industries, calculate the ratio of the average salary to the number of employees at year-end for each industry in 2016, and identify the three industries with the highest ratios. Please provide the names of these three industries, their average salaries, the number of employees at year-end, and the calculated ratios of average salary to the number of employees at year-end.",
       "answers": [
         "Other mining industries, average salary: 51293.0, number of people at year-end: 2.0, ratio: 25646.50; Pipeline transportation industry, average salary: 100996.0, number of people at year-end: 36.0, ratio: 2805.44; Other financial industries, average salary: 192432.0, number of people at year-end: 130.0, ratio: 1480.25"
@@ -5658,7 +5658,7 @@
     },
     {
       "id": "qa-430",
-      "table_file": "Employment_Population_Statistics_Table_1.xls",
+      "table_file": "Employment_Population_Statistics_Table_1.xlsx",
       "question": "Based on the data in the employment population statistics table, calculate the proportion of employed population who have never attended school in each region, and identify the region with the highest proportion.",
       "answers": [
         "The highest proportion of employed population who have never attended school in any region should be 19.66%."
@@ -5688,7 +5688,7 @@
     },
     {
       "id": "qa-432",
-      "table_file": "Rural_Housing_Statistics.xls",
+      "table_file": "Rural_Housing_Statistics.xlsx",
       "question": "Considering the impact of housing area and the number of rooms on living comfort, calculate the housing comfort index for rural households in cities across Hunan Province. This index is the product of the per capita floor area of housing and the per capita number of rooms. Please rank the cities under Hunan Province based on this index, and identify the city with the highest housing comfort index.",
       "answers": [
         "Zhuzhou City"
@@ -5793,7 +5793,7 @@
     },
     {
       "id": "qa-439",
-      "table_file": "Statistics_on_the_Number_of_Children_Educated_by_Women.xls",
+      "table_file": "Statistics_on_the_Number_of_Children_Educated_by_Women.xlsx",
       "question": "How many women who have never attended school and have 0 live births are there?",
       "answers": [
         "66314.0"
@@ -5808,7 +5808,7 @@
     },
     {
       "id": "qa-440",
-      "table_file": "Employment_Population_Statistics_Table_2.xls",
+      "table_file": "Employment_Population_Statistics_Table_2.xlsx",
       "question": "What is the number of employed males aged 30-34 who have never attended school?",
       "answers": [
         "8467.0"
@@ -5823,7 +5823,7 @@
     },
     {
       "id": "qa-441",
-      "table_file": "Maternal_Fertility_Data_Table_1.xls",
+      "table_file": "Maternal_Fertility_Data_Table_1.xlsx",
       "question": "How many women with live birth of 1 child are there among professional and technical personnel?",
       "answers": [
         "1689734.0"
@@ -5838,7 +5838,7 @@
     },
     {
       "id": "qa-442",
-      "table_file": "Natural_Gas_Balance_Data.xls",
+      "table_file": "Natural_Gas_Balance_Data.xlsx",
       "question": "What was the production volume in 2017?",
       "answers": [
         "34.4 billion cubic meters"
@@ -5853,7 +5853,7 @@
     },
     {
       "id": "qa-443",
-      "table_file": "Industrial_Economic_Indicators_2021_2.xls",
+      "table_file": "Industrial_Economic_Indicators_2021_2.xlsx",
       "question": "What was the total assets in ten thousand yuan of enterprises controlled by foreign investors and Hong Kong, Macao, and Taiwan merchants in 2021?",
       "answers": [
         "67753562.0"
@@ -5868,7 +5868,7 @@
     },
     {
       "id": "qa-444",
-      "table_file": "Table_of_Population_Education_Distribution.xls",
+      "table_file": "Table_of_Population_Education_Distribution.xlsx",
       "question": "What is the total number of female population whose household registration is located in other towns and streets and who have never attended school or preschool education?",
       "answers": [
         "12780775.0"
@@ -5898,7 +5898,7 @@
     },
     {
       "id": "qa-446",
-      "table_file": "Demographic_Statistics_1.xls",
+      "table_file": "Demographic_Statistics_1.xlsx",
       "question": "What is the number of unmarried women in the occupational category of \"personnel in social production services and living services\"?",
       "answers": [
         "1445259.0"
@@ -5913,7 +5913,7 @@
     },
     {
       "id": "qa-447",
-      "table_file": "Population_Education_Statistics_Table.xls",
+      "table_file": "Population_Education_Statistics_Table.xlsx",
       "question": "In this population education statistics table, which region has the largest number of people with a master's degree?",
       "answers": [
         "Beijing"
@@ -5958,7 +5958,7 @@
     },
     {
       "id": "qa-450",
-      "table_file": "Home_Renovation_Budget_Table_Template.xls",
+      "table_file": "Home_Renovation_Budget_Table_Template.xlsx",
       "question": "Based on the table data, what is the decoration material with the highest unit price, and what is its specific unit price in yuan?",
       "answers": [
         "The building material with the highest unit price is: range hood, its specific unit price is: 3000.0 yuan."
@@ -5973,7 +5973,7 @@
     },
     {
       "id": "qa-451",
-      "table_file": "Childbearing_Table_of_Women_of_Childbearing_Age_in_Hunan.xls",
+      "table_file": "Childbearing_Table_of_Women_of_Childbearing_Age_in_Hunan.xlsx",
       "question": "In the fertility table of women of childbearing age in Hunan Province, which age group has the highest fertility rate for the first child?",
       "answers": [
         "20-24"
@@ -6048,7 +6048,7 @@
     },
     {
       "id": "qa-456",
-      "table_file": "Statistical_Data_on_the_Source_of_Livelihood_for_the_Population.xls",
+      "table_file": "Statistical_Data_on_the_Source_of_Livelihood_for_the_Population.xlsx",
       "question": "What is the difference in the number of males and females aged 45 - 49 whose main source of living is the minimum living allowance?",
       "answers": [
         "22843.0"
@@ -6078,7 +6078,7 @@
     },
     {
       "id": "qa-458",
-      "table_file": "2010_Land_Dev_Project_Detail.xls",
+      "table_file": "2010_Land_Dev_Project_Detail.xlsx",
       "question": "How many projects in the second batch of land development and consolidation projects of the autonomous region in 2010 were undertaken by the Land Development and Consolidation Construction Administration Bureau of the autonomous region?",
       "answers": [
         "6"
@@ -6108,7 +6108,7 @@
     },
     {
       "id": "qa-460",
-      "table_file": "Lubrication_Table.xls",
+      "table_file": "Lubrication_Table.xlsx",
       "question": "In the lubrication_table_Sheet1.csv, calculate the number of equipment corresponding to each lubricant grade, and sort them in descending order based on the number of equipment. Please list the top 3 lubricant grades and their corresponding number of equipment after sorting.",
       "answers": [
         "The top 3 lubricating oil grades and equipment counts ranked by equipment count are: No. 2 Extreme Pressure Lithium Grease (27 units of equipment), No. 3 or No. 2 Lithium Grease (9 units of equipment), Refer to Manual (6 units of equipment)"
@@ -6228,7 +6228,7 @@
     },
     {
       "id": "qa-468",
-      "table_file": "State-owned_Holding_Industrial_Indicators.xls",
+      "table_file": "State-owned_Holding_Industrial_Indicators.xlsx",
       "question": "Screen out industries where the total current assets are greater than 10 billion yuan and the original price of fixed assets is greater than 200 billion yuan, and calculate the total sum of the total profits of these industries in billion yuan?",
       "answers": [
         "90.0"
@@ -6333,7 +6333,7 @@
     },
     {
       "id": "qa-475",
-      "table_file": "Hunan_Employment_Population_Statistics_1.xls",
+      "table_file": "Hunan_Employment_Population_Statistics_1.xlsx",
       "question": "In the employment population statistics of Hunan, which age group has the largest number of \"commercial and service industry personnel\"?",
       "answers": [
         "35-39 years old"
@@ -6378,7 +6378,7 @@
     },
     {
       "id": "qa-478",
-      "table_file": "Global_Per_Capita_GNI_Data.xls",
+      "table_file": "Global_Per_Capita_GNI_Data.xlsx",
       "question": "How many columns have an average greater than 1000 in the numeric columns?",
       "answers": [
         "6.0"
@@ -6438,7 +6438,7 @@
     },
     {
       "id": "qa-482",
-      "table_file": "Survival_Statistics_of_Women's_Children.xls",
+      "table_file": "Survival_Statistics_of_Women's_Children.xlsx",
       "question": "In this table of surviving children statistics for women, which region has the highest number of women aged 15-64 with 0 surviving children?",
       "answers": [
         "National"
@@ -6483,7 +6483,7 @@
     },
     {
       "id": "qa-485",
-      "table_file": "Home_Renovation_Owner's_Self_Budget_Table.xls",
+      "table_file": "Home_Renovation_Owner's_Self_Budget_Table.xlsx",
       "question": "What is the name of the project with the highest unit price in the Home Renovation Owner Self-budget Table _ Budget.csv?",
       "answers": [
         "Lighting Fixtures and Switches Outlets"
@@ -6528,7 +6528,7 @@
     },
     {
       "id": "qa-488",
-      "table_file": "Deflection_Value_Record_Table.xls",
+      "table_file": "Deflection_Value_Record_Table.xlsx",
       "question": "Which deflection value is greater, the one at position K0+850 on the left side of the Minzhu Road project or the one at position K0+900?",
       "answers": [
         "The deflection values at positions K0+850 and K0+900 are the same."
