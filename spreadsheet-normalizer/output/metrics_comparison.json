@@ -1,0 +1,56 @@
+{
+  "substring_containment": {
+    "before": 0.0581,
+    "after": 0.056,
+    "delta": -0.0021,
+    "direction": "= unchanged"
+  },
+  "cell_coverage": {
+    "before": 0.9167,
+    "after": 0.8593,
+    "delta": -0.0574,
+    "direction": "✗ degraded"
+  },
+  "row_completeness_uniformity": {
+    "before": 0.9411,
+    "after": 0.9086,
+    "delta": -0.0325,
+    "direction": "✗ degraded"
+  },
+  "data_row_ratio": {
+    "before": 1.0,
+    "after": 1.0,
+    "delta": 0.0,
+    "direction": "= unchanged"
+  },
+  "type_consistency": {
+    "before": 1.0,
+    "after": 1.0,
+    "delta": 0.0,
+    "direction": "= unchanged"
+  },
+  "header_uniqueness": {
+    "before": 1.0,
+    "after": 1.0,
+    "delta": 0.0,
+    "direction": "= unchanged"
+  },
+  "column_completeness_min": {
+    "before": 0.3333,
+    "after": 0.2963,
+    "delta": -0.037,
+    "direction": "✗ degraded"
+  },
+  "column_type_homogeneity": {
+    "before": 0.9444,
+    "after": 0.9166,
+    "delta": -0.0278,
+    "direction": "✗ degraded"
+  },
+  "inter_column_nmi": {
+    "before": 0.3527,
+    "after": 0.1004,
+    "delta": -0.2523,
+    "direction": "✓ improved"
+  }
+}

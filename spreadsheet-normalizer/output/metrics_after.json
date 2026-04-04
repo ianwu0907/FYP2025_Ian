@@ -1,0 +1,15 @@
+{
+  "shape": {
+    "rows": 1296,
+    "cols": 5
+  },
+  "cell_coverage": 0.8593,
+  "row_completeness_uniformity": 0.9086,
+  "column_type_homogeneity": 0.9166,
+  "data_row_ratio": 1.0,
+  "column_completeness_min": 0.2963,
+  "header_uniqueness": 1.0,
+  "type_consistency": 1.0,
+  "substring_containment": 0.056,
+  "inter_column_nmi": 0.1004
+}

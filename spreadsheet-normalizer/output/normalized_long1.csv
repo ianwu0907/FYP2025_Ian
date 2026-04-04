@@ -1,4 +1,4 @@
-ethnicity_cn,ethnicity_en,year,number,percentage
+ethnicity_cn,ethnicity_en,year,count,percentage
 亞洲人（非華人）,Asian (other than Chinese),2011,365611,81.0
 亞洲人（非華人）,Asian (other than Chinese),2016,457188,78.2
 亞洲人（非華人）,Asian (other than Chinese),2021,487862,78.7
@@ -50,6 +50,6 @@ ethnicity_cn,ethnicity_en,year,number,percentage
 其他[2],Others[2],2011,1335,0.3
 其他[2],Others[2],2016,3731,0.6
 其他[2],Others[2],2021,3392,0.5
-全港人口,Whole population,2011,7071576,
-全港人口,Whole population,2016,7336585,
-全港人口,Whole population,2021,7413070,
+所有少數族裔人士[3],All ethnic minorities[3],2011,451183,100.0
+所有少數族裔人士[3],All ethnic minorities[3],2016,584383,100.0
+所有少數族裔人士[3],All ethnic minorities[3],2021,619568,100.0

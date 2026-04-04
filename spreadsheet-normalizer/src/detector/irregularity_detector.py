@@ -95,25 +95,42 @@ IRREGULARITY_TAXONOMY = {
             "dimension column. Each row in the wide table generates "
             "multiple rows in the tidy output (one per column-group).",
         "code_guidance":
-            "Use pd.melt() or manual iteration to unpivot. Identify "
-            "which columns are ID columns (to keep) and which are "
-            "value columns (to unpivot). The column header becomes "
-            "the value of the new dimension column.",
+            "Choose the unpivot approach based on table complexity. "
+            "If WIDE_FORMAT is the ONLY structural irregularity (no "
+            "MULTI_LEVEL_HEADER, NESTED_COLUMN_GROUPS, or "
+            "BILINGUAL_ALTERNATING_ROWS), use pd.melt(): identify "
+            "id_vars (columns to keep) and value_vars (columns to "
+            "unpivot), set var_name to the new dimension column name. "
+            "If ANY of those co-occurring irregularities are present, "
+            "use a record-collection loop instead: build a column "
+            "mapping from the headers, then iterate rows and columns "
+            "to append one record per value cell.",
     },
 
     # --- Row irregularities ---
 
     "BILINGUAL_ALTERNATING_ROWS": {
-        "description":
-            "Data rows alternate between two languages. Typically "
-            "row N has labels in language A (with numeric data) and "
-            "row N+1 has the same label in language B (with or "
-            "without duplicate numeric data).",
-        "schema_guidance":
-            "Bilingual pairs represent a SINGLE observation. The "
-            "tidy output should have one row per observation, "
-            "optionally with separate columns for each language "
-            "label (e.g., name_cn, name_en). Do NOT double-count.",
+        "description": (
+            "Data rows appear in pairs: the primary-language row contains both the label "
+            "AND numeric values, while the immediately following secondary-language row "
+            "contains ONLY a translated label and NO numeric values whatsoever. "
+            "The secondary-language row is a pure label duplicate — it adds no data. "
+            "PHYSICAL DISCRIMINATOR (check this first): if the candidate 'secondary' row "
+            "has ANY non-empty numeric columns, it is NOT a bilingual duplicate row — "
+            "it is an independent data row with its own dimension value. "
+            "CRITICAL: Do NOT flag a dimension column whose values naturally cycle through "
+            "two categories (e.g., 有/沒有, Yes/No, Male/Female, True/False) — those are "
+            "normal data rows where every row has numeric values. "
+            "CRITICAL: Do NOT flag this if bilingual labels are in SEPARATE ADJACENT COLUMNS "
+            "(that is INLINE_BILINGUAL, not this irregularity)."
+        ),
+        "schema_guidance": (
+            "The paired bilingual rows represent a SINGLE observation unit. The tidy output MUST "
+            "combine them into one row. Create separate dimension columns for each language "
+            "(e.g., 'name_cn', 'name_en'). If the secondary language row contains a different "
+            "metric (e.g., Row 1 has Counts, Row 2 has Percentages), design the schema to capture "
+            "BOTH metrics in the same single tidy row."
+        ),
         "code_guidance":
             "Pair up consecutive rows. Take numeric data from "
             "whichever row has it (usually the first of the pair). "
@@ -124,17 +141,22 @@ IRREGULARITY_TAXONOMY = {
     "INLINE_BILINGUAL": {
         "description":
             "Individual cells contain text in two languages within "
-            "the same cell, often separated by a newline (\\n). "
-            "Example: '種族\\nEthnicity'. This may appear in headers, "
-            "data cells, or both.",
+            "the same cell, separated by a detectable pattern. "
+            "Common separators: newline (\\n), slash (/), parenthesis, "
+            "or a space before a Latin character following CJK text. "
+            "Example: '種族\\nEthnicity' or '種族/Ethnicity'. "
+            "This may appear in headers, data cells, or both.",
         "schema_guidance":
             "The multilingual content in a single cell is a display "
             "convention. Decide which language to keep, or split "
             "into two columns (one per language).",
         "code_guidance":
-            "Split cell values on '\\n' and take the desired language "
-            "part. Apply to both header cells and data cells as "
-            "needed.",
+            "First detect the separator used in this specific spreadsheet "
+            "by inspecting the bilingual cells in the EVIDENCE "
+            "(e.g. '\\n', '/', '(', or a space before a Latin word). "
+            "Then split on that separator and take the desired language part. "
+            "Do NOT assume '\\n' — always verify from the actual cell values. "
+            "Apply to both header cells and data cells as needed.",
     },
 
     "SECTION_HEADER_ROWS": {
@@ -161,13 +183,16 @@ IRREGULARITY_TAXONOMY = {
             "rows. This includes:\n"
             "(a) Keyword-based totals: rows with labels like Total, "
             "Overall, 合計 that sum the detail rows in their group.\n"
-            "(b) Cross-group aggregation: an entire category group "
-            "is a coarser version of another group. For example, "
-            "group 'Type of Abuse' has 'Physical abuse = 390', "
-            "while group 'Type of Abuse and Sex' has "
+            "(b) Cross-group aggregation: a single category column "
+            "contains two or more distinct category values, where one "
+            "value represents a coarser aggregation of another. "
+            "For example, column 3 has value 'Type of Abuse' whose "
+            "rows have 'Physical abuse = 390', while another value "
+            "'Type of Abuse and Sex' in the same column has rows "
             "'Physical abuse - Male = 200' and "
-            "'Physical abuse - Female = 190' (200+190=390). The "
-            "coarser group is entirely redundant.\n"
+            "'Physical abuse - Female = 190' (200+190=390). The rows "
+            "belonging to the coarser category value are entirely "
+            "redundant and must be excluded.\n"
             "(c) Semantic hierarchy: a row is a parent-level "
             "aggregate of child rows below it, with no keyword or "
             "delimiter signal. For example, 'Asian (other than "
@@ -184,9 +209,12 @@ IRREGULARITY_TAXONOMY = {
             "Filter out aggregation rows BEFORE any reshaping. "
             "For keyword-based: filter by label keywords (Total, "
             "Overall, 合計, etc.). "
-            "For cross-group: identify which category values "
-            "represent the coarser group and drop all rows with "
-            "those category values. "
+            "For cross-group: identify the EXACT category value(s) "
+            "in the category column that represent the coarser group. "
+            "Use .isin([exact_value]) for filtering — NEVER "
+            "str.contains(), because coarser category names are often "
+            "substrings of finer ones and str.contains() "
+            "will silently delete valid granular rows. "
             "For semantic hierarchy: use the specific parent-level "
             "labels identified in the detection EVIDENCE to build "
             "an exclusion list. This cannot be done generically — "
@@ -296,6 +324,12 @@ class PhysicalFeatureExtractor:
         data_end = self._find_data_end(df, data_start)
         col_dtypes = self._column_dtype_profile(df, data_start, data_end)
         blank_rows = self._find_blank_rows(df, data_start, data_end)
+        bilingual_candidate = self._detect_bilingual_candidate(
+            df, data_start, data_end, col_dtypes
+        )
+        inline_bilingual_candidate = self._detect_inline_bilingual_candidate(
+            df, data_start, data_end
+        )
 
         return {
             "shape": {"rows": len(df), "cols": len(df.columns)},
@@ -305,6 +339,8 @@ class PhysicalFeatureExtractor:
             "data_rows": data_end - data_start + 1,
             "column_dtype_profile": col_dtypes,
             "blank_rows_in_data": blank_rows,
+            "bilingual_row_candidate": bilingual_candidate,
+            "inline_bilingual_candidate": inline_bilingual_candidate,
         }
 
     def _find_data_start(self, df: pd.DataFrame) -> tuple:
@@ -393,6 +429,106 @@ class PhysicalFeatureExtractor:
                 return False
         return False
 
+    def _detect_bilingual_candidate(
+            self,
+            df: pd.DataFrame,
+            data_start: int,
+            data_end: int,
+            col_dtypes: Dict[int, str],
+    ) -> bool:
+        """
+        Deterministic check: does a consistent pattern exist where one row
+        has numeric values and the immediately following row has NONE?
+
+        This is the physical precondition for BILINGUAL_ALTERNATING_ROWS.
+        If False, the LLM is instructed not to flag that irregularity,
+        preventing false positives from binary dimension columns (有/沒有,
+        Male/Female, Yes/No) whose rows all contain numeric values.
+
+        Uses only the first 40 data row pairs for efficiency.
+        Requires >80% of sampled consecutive pairs to match the pattern.
+        """
+        numeric_cols = [j for j, t in col_dtypes.items() if t == "numeric"]
+        if not numeric_cols:
+            return False
+
+        matched = 0
+        total = 0
+        limit = min(data_end, data_start + 39)
+
+        for i in range(data_start, limit):
+            if i + 1 > data_end:
+                break
+            row_a = df.iloc[i]
+            row_b = df.iloc[i + 1]
+            a_has_numeric = any(
+                self._is_numeric(row_a.iloc[j])
+                for j in numeric_cols
+                if pd.notna(row_a.iloc[j])
+            )
+            b_has_numeric = any(
+                self._is_numeric(row_b.iloc[j])
+                for j in numeric_cols
+                if pd.notna(row_b.iloc[j])
+            )
+            total += 1
+            if a_has_numeric and not b_has_numeric:
+                matched += 1
+
+        if total == 0:
+            return False
+        return (matched / total) >= 0.8
+
+    def _detect_inline_bilingual_candidate(
+            self,
+            df: pd.DataFrame,
+            data_start: int,
+            data_end: int,
+    ) -> bool:
+        """
+        Deterministic check: do any text cells physically contain BOTH
+        CJK characters AND Latin alphabetic characters within the same cell?
+
+        This is the physical precondition for INLINE_BILINGUAL.
+        Binary dimension columns (有/沒有, Male/Female) contain only one
+        script and will return False, preventing misdetection.
+
+        Scans the first 100 data rows. Returns True if at least 5% of
+        non-numeric text cells contain both scripts.
+        """
+        def _has_cjk(s: str) -> bool:
+            return any(
+                '\u4e00' <= c <= '\u9fff' or '\u3400' <= c <= '\u4dbf'
+                or '\uf900' <= c <= '\ufaff'
+                for c in s
+            )
+
+        def _has_latin(s: str) -> bool:
+            return any('a' <= c.lower() <= 'z' for c in s)
+
+        mixed_count = 0
+        total_text = 0
+        limit = min(data_end + 1, data_start + 100)
+
+        for i in range(data_start, limit):
+            for j in range(len(df.columns)):
+                val = df.iloc[i, j]
+                if pd.isna(val):
+                    continue
+                s = str(val).strip()
+                if not s:
+                    continue
+                # Skip purely numeric cells
+                if self._is_numeric(val):
+                    continue
+                total_text += 1
+                if _has_cjk(s) and _has_latin(s):
+                    mixed_count += 1
+
+        if total_text == 0:
+            return False
+        return (mixed_count / total_text) >= 0.05
+
 
 # ============================================================================
 # Irregularity Detector (LLM-based)
@@ -442,6 +578,7 @@ class IrregularityDetector:
 
         logger.info("Detecting irregularities (LLM call)...")
         irregularities = self._detect_irregularities(df, physical)
+        irregularities = self._postfilter_irregularities(irregularities, physical)
         labels = [ir["label"] for ir in irregularities]
         logger.info(f"Detected {len(irregularities)} irregularities: {labels}")
 
@@ -452,7 +589,46 @@ class IrregularityDetector:
         }
 
     # ---- LLM call ----
+    def _postfilter_irregularities(
+            self,
+            irregularities: List[Dict[str, Any]],
+            physical: Dict[str, Any],
+    ) -> List[Dict[str, Any]]:
+        """
+        Deterministically remove detected labels that contradict physical
+        features. This is a hard gate — it runs after the LLM call and
+        cannot be overridden by LLM output.
+        """
+        filtered = []
+        for ir in irregularities:
+            label = ir["label"]
 
+            if label == "BILINGUAL_ALTERNATING_ROWS" and \
+                    not physical.get("bilingual_row_candidate", False):
+                logger.info(
+                    f"  [postfilter] Removed {label}: "
+                    f"bilingual_row_candidate=False"
+                )
+                continue
+
+            if label == "INLINE_BILINGUAL" and \
+                    not physical.get("inline_bilingual_candidate", False):
+                logger.info(
+                    f"  [postfilter] Removed {label}: "
+                    f"inline_bilingual_candidate=False"
+                )
+                continue
+
+            filtered.append(ir)
+
+        removed = len(irregularities) - len(filtered)
+        if removed:
+            logger.info(
+                f"  [postfilter] Removed {removed} label(s) contradicting "
+                f"physical features. Remaining: "
+                f"{[ir['label'] for ir in filtered]}"
+            )
+        return filtered
     def _detect_irregularities(self, df: pd.DataFrame,
                                physical: Dict[str, Any]) -> List[Dict[str, Any]]:
         prompt = self._build_prompt(df, physical)
@@ -629,11 +805,11 @@ SAMPLE_ROW: year=2005, report_status_cn=不適用, report_status_en=N/A, indicat
 
 === MANDATORY CHECKLIST ===
 Before finishing, verify EACH of the following. Report any that apply:
-1. Do any label columns contain " - " or "/" separating two dimensions? → EMBEDDED_DIMENSION_IN_COLUMN
-2. Are there category groups where one is a coarser aggregation of another? → IMPLICIT_AGGREGATION_ROWS
+1. Do any label cells embed two dimensions in one value using a delimiter (e.g. " - ", " – ", "/", ":", "_", or any other separator)? If so, what is the exact delimiter? → EMBEDDED_DIMENSION_IN_COLUMN
+2. Are there category groups where one is entirely a coarser aggregation of another? If yes, name the SPECIFIC COLUMN and the EXACT coarser category value(s) that must be excluded (e.g. "column 3 value '虐待長者性質' is a coarser version of '虐待長者性質及受虐長者性別'"). → IMPLICIT_AGGREGATION_ROWS
 3. Are there rows with Total/Overall/合計 keywords? → IMPLICIT_AGGREGATION_ROWS
-4. Do adjacent columns contain the same content in two languages? → INLINE_BILINGUAL
-5. Do consecutive rows alternate between two languages? → BILINGUAL_ALTERNATING_ROWS
+4. Is "inline_bilingual_candidate" True in the PHYSICAL FEATURES above? If NO, do NOT flag INLINE_BILINGUAL. If YES, confirm that cells physically contain both CJK and Latin text mixed within the same cell (not just two separate columns with different languages). → INLINE_BILINGUAL
+5. Is "bilingual_row_candidate" True in the PHYSICAL FEATURES above? If NO, do NOT flag BILINGUAL_ALTERNATING_ROWS under any circumstances. If YES, confirm that the label-only rows are language translations of the preceding data rows (not an independent observation). → BILINGUAL_ALTERNATING_ROWS
 6. Are any dimension columns only filled at block starts? → SPARSE_ROW_FILL
 
 === YOUR TASK ===
@@ -715,6 +891,8 @@ Only report irregularities you have clear evidence for. Do not guess."""
             f"Header depth: {physical['header_depth']} rows before data",
             f"Data region: rows {physical['data_start_row']} to {physical['data_end_row']} ({physical['data_rows']} rows)",
             f"Column types: {physical['column_dtype_profile']}",
+            f"bilingual_row_candidate: {physical.get('bilingual_row_candidate', False)}",
+            f"inline_bilingual_candidate: {physical.get('inline_bilingual_candidate', False)}",
         ]
         if physical["blank_rows_in_data"]:
             parts.append(f"Blank rows within data: {physical['blank_rows_in_data']}")
@@ -770,6 +948,8 @@ Only report irregularities you have clear evidence for. Do not guess."""
                     f" to {physical['data_end_row']}"
                     f" ({physical['data_rows']} rows)")
         logger.info(f"  Column types: {physical['column_dtype_profile']}")
+        logger.info(f"  bilingual_row_candidate: {physical.get('bilingual_row_candidate', False)}")
+        logger.info(f"  inline_bilingual_candidate: {physical.get('inline_bilingual_candidate', False)}")
         if physical["blank_rows_in_data"]:
             logger.info(f"  Blank rows in data: {physical['blank_rows_in_data']}")
 

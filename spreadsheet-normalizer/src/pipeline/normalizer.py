@@ -20,6 +20,7 @@ from ..encoder import SpreadsheetEncoder
 from ..detector import IrregularityDetector
 from ..estimator import SchemaEstimator
 from ..generator import TransformationGenerator
+from ..metrics import tidiness_metrics
 
 logger = logging.getLogger(__name__)
 
@@ -85,6 +86,18 @@ class TableNormalizer:
                     'encoded_text_preview': encoded_data['encoded_text'][:2000]
                 })
 
+            # --- Compute BEFORE tidiness metrics on raw input ---
+            logger.info("\n" + "-" * 60)
+            logger.info("TIDINESS METRICS [BEFORE]")
+            logger.info("-" * 60)
+            raw_df = encoded_data['dataframe']
+            metrics_before = tidiness_metrics.compute_all_metrics(
+                raw_df, label="BEFORE"
+            )
+            pipeline_log['metrics_before'] = metrics_before
+            if self.save_intermediate:
+                self._save_intermediate('metrics_before.json', metrics_before)
+
             # ================================================================
             # Stage 2: IRREGULARITY DETECTION
             # ================================================================
@@ -149,6 +162,45 @@ class TableNormalizer:
                                         transformation_result['transformation_code'],
                                         is_text=True)
 
+            # --- Compute AFTER tidiness metrics on transformed output ---
+            logger.info("\n" + "-" * 60)
+            logger.info("TIDINESS METRICS [AFTER]")
+            logger.info("-" * 60)
+            result_df = transformation_result['normalized_df']
+
+            # Use schema target columns as dimension columns for NMI
+            dim_cols_for_nmi = [
+                c["name"] for c in schema.get("target_columns", [])
+                if c.get("role") == "dimension"
+                   or c.get("is_dimension", False)
+                   or c.get("data_type") == "string"
+            ]
+            # Filter to columns that actually exist in result
+            dim_cols_for_nmi = [
+                c for c in dim_cols_for_nmi if c in result_df.columns
+            ]
+
+            metrics_after = tidiness_metrics.compute_all_metrics(
+                result_df,
+                dim_cols=dim_cols_for_nmi if dim_cols_for_nmi else None,
+                label="AFTER"
+            )
+            pipeline_log['metrics_after'] = metrics_after
+
+            # --- Compare BEFORE vs AFTER ---
+            logger.info("\n" + "=" * 65)
+            metrics_comparison = tidiness_metrics.compare_metrics(
+                metrics_before, metrics_after
+            )
+            tidiness_metrics.log_comparison(metrics_comparison)
+            logger.info("=" * 65)
+
+            pipeline_log['metrics_comparison'] = metrics_comparison
+            if self.save_intermediate:
+                self._save_intermediate('metrics_after.json', metrics_after)
+                self._save_intermediate('metrics_comparison.json',
+                                        metrics_comparison)
+
             # ================================================================
             # Stage 5: SAVE OUTPUT
             # ================================================================
@@ -180,6 +232,11 @@ class TableNormalizer:
                 'normalized_df': transformation_result['normalized_df'],
                 'output_path': output_path,
                 'pipeline_log': pipeline_log,
+                'metrics': {
+                    'before': metrics_before,
+                    'after': metrics_after,
+                    'comparison': metrics_comparison,
+                },
                 'intermediate_results': {
                     'encoded_data': encoded_data,
                     'detection_result': detection_result,
