@@ -1,1319 +1,1081 @@
-year,abuse_type,gender,count,relationship_to_elder
-2005,Type of Elder Abuse,,3,虐待長者性質
-2005,Type of Elder Abuse,,87,虐待長者性質
-2005,Type of Elder Abuse,,1,虐待長者性質
-2005,Type of Elder Abuse,,1,虐待長者性質
-2005,Type of Elder Abuse,,0,虐待長者性質
-2005,Type of Elder Abuse,,20,虐待長者性質
-2005,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,200,虐待長者性質及受虐長者性別
-2005,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,15,虐待長者性質及受虐長者性別
-2005,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,1,虐待長者性質及受虐長者性別
-2005,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,41,虐待長者性質及受虐長者性別
-2005,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,1,虐待長者性質及受虐長者性別
-2005,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,1,虐待長者性質及受虐長者性別
-2005,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2005,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,6,虐待長者性質及受虐長者性別
-2005,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,190,虐待長者性質及受虐長者性別
-2005,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,11,虐待長者性質及受虐長者性別
-2005,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,2,虐待長者性質及受虐長者性別
-2005,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,46,虐待長者性質及受虐長者性別
-2005,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,0,虐待長者性質及受虐長者性別
-2005,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,0,虐待長者性質及受虐長者性別
-2005,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,0,虐待長者性質及受虐長者性別
-2005,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,14,虐待長者性質及受虐長者性別
-2005,Abuser's Relationship with Elderly Person Being Abused,,57,施虐者與受虐長者關係
-2005,Abuser's Relationship with Elderly Person Being Abused,,8,施虐者與受虐長者關係
-2005,Abuser's Relationship with Elderly Person Being Abused,,3,施虐者與受虐長者關係
-2005,Abuser's Relationship with Elderly Person Being Abused,,16,施虐者與受虐長者關係
-2005,Abuser's Relationship with Elderly Person Being Abused,,226,施虐者與受虐長者關係
-2005,Abuser's Relationship with Elderly Person Being Abused,,7,施虐者與受虐長者關係
-2005,Abuser's Relationship with Elderly Person Being Abused,,11,施虐者與受虐長者關係
-2005,Abuser's Relationship with Elderly Person Being Abused,,129,施虐者與受虐長者關係
-2005,Abuser's Relationship with Elderly Person Being Abused,,21,施虐者與受虐長者關係
-2005,Abuser's Relationship with Elderly Person Being Abused,,37,施虐者與受虐長者關係
-2005,Abuser's Relationship with Elderly Person Being Abused,,3,施虐者與受虐長者關係
-2005,Abuser's Relationship with Elderly Person Being Abused,,10,施虐者與受虐長者關係
-2005,Residential District of Elderly Person Being Abused,,19,受虐長者居住地區
-2005,Residential District of Elderly Person Being Abused,,19,受虐長者居住地區
-2005,Residential District of Elderly Person Being Abused,,7,受虐長者居住地區
-2005,Residential District of Elderly Person Being Abused,,42,受虐長者居住地區
-2005,Residential District of Elderly Person Being Abused,,10,受虐長者居住地區
-2005,Residential District of Elderly Person Being Abused,,33,受虐長者居住地區
-2005,Residential District of Elderly Person Being Abused,,29,受虐長者居住地區
-2005,Residential District of Elderly Person Being Abused,,25,受虐長者居住地區
-2005,Residential District of Elderly Person Being Abused,,43,受虐長者居住地區
-2005,Residential District of Elderly Person Being Abused,,11,受虐長者居住地區
-2005,Residential District of Elderly Person Being Abused,,79,受虐長者居住地區
-2005,Residential District of Elderly Person Being Abused,,31,受虐長者居住地區
-2005,Residential District of Elderly Person Being Abused,,19,受虐長者居住地區
-2005,Residential District of Elderly Person Being Abused,,12,受虐長者居住地區
-2005,Residential District of Elderly Person Being Abused,,40,受虐長者居住地區
-2005,Residential District of Elderly Person Being Abused,,36,受虐長者居住地區
-2005,Residential District of Elderly Person Being Abused,,44,受虐長者居住地區
-2005,Residential District of Elderly Person Being Abused,,29,受虐長者居住地區
-2005,Residential District of Elderly Person Being Abused,,0,受虐長者居住地區
-2006,Type of Elder Abuse,,327,虐待長者性質
-2006,Type of Elder Abuse,,57,虐待長者性質
-2006,Type of Elder Abuse,,3,虐待長者性質
-2006,Type of Elder Abuse,,92,虐待長者性質
-2006,Type of Elder Abuse,,1,虐待長者性質
-2006,Type of Elder Abuse,,4,虐待長者性質
-2006,Type of Elder Abuse,,0,虐待長者性質
-2006,Type of Elder Abuse,,38,虐待長者性質
-2006,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,151,虐待長者性質及受虐長者性別
-2006,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,25,虐待長者性質及受虐長者性別
-2006,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,2,虐待長者性質及受虐長者性別
-2006,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,44,虐待長者性質及受虐長者性別
-2006,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,1,虐待長者性質及受虐長者性別
-2006,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2006,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2006,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,15,虐待長者性質及受虐長者性別
-2006,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,176,虐待長者性質及受虐長者性別
-2006,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,32,虐待長者性質及受虐長者性別
-2006,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,1,虐待長者性質及受虐長者性別
-2006,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,48,虐待長者性質及受虐長者性別
-2006,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,0,虐待長者性質及受虐長者性別
-2006,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,4,虐待長者性質及受虐長者性別
-2006,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,0,虐待長者性質及受虐長者性別
-2006,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,23,虐待長者性質及受虐長者性別
-2006,Abuser's Relationship with Elderly Person Being Abused,,74,施虐者與受虐長者關係
-2006,Abuser's Relationship with Elderly Person Being Abused,,19,施虐者與受虐長者關係
-2006,Abuser's Relationship with Elderly Person Being Abused,,6,施虐者與受虐長者關係
-2006,Abuser's Relationship with Elderly Person Being Abused,,21,施虐者與受虐長者關係
-2006,Abuser's Relationship with Elderly Person Being Abused,,262,施虐者與受虐長者關係
-2006,Abuser's Relationship with Elderly Person Being Abused,,6,施虐者與受虐長者關係
-2006,Abuser's Relationship with Elderly Person Being Abused,,12,施虐者與受虐長者關係
-2006,Abuser's Relationship with Elderly Person Being Abused,,50,施虐者與受虐長者關係
-2006,Abuser's Relationship with Elderly Person Being Abused,,10,施虐者與受虐長者關係
-2006,Abuser's Relationship with Elderly Person Being Abused,,49,施虐者與受虐長者關係
-2006,Abuser's Relationship with Elderly Person Being Abused,,4,施虐者與受虐長者關係
-2006,Abuser's Relationship with Elderly Person Being Abused,,9,施虐者與受虐長者關係
-2006,Residential District of Elderly Person Being Abused,,14,受虐長者居住地區
-2006,Residential District of Elderly Person Being Abused,,21,受虐長者居住地區
-2006,Residential District of Elderly Person Being Abused,,3,受虐長者居住地區
-2006,Residential District of Elderly Person Being Abused,,67,受虐長者居住地區
-2006,Residential District of Elderly Person Being Abused,,6,受虐長者居住地區
-2006,Residential District of Elderly Person Being Abused,,20,受虐長者居住地區
-2006,Residential District of Elderly Person Being Abused,,20,受虐長者居住地區
-2006,Residential District of Elderly Person Being Abused,,42,受虐長者居住地區
-2006,Residential District of Elderly Person Being Abused,,32,受虐長者居住地區
-2006,Residential District of Elderly Person Being Abused,,13,受虐長者居住地區
-2006,Residential District of Elderly Person Being Abused,,78,受虐長者居住地區
-2006,Residential District of Elderly Person Being Abused,,30,受虐長者居住地區
-2006,Residential District of Elderly Person Being Abused,,13,受虐長者居住地區
-2006,Residential District of Elderly Person Being Abused,,15,受虐長者居住地區
-2006,Residential District of Elderly Person Being Abused,,48,受虐長者居住地區
-2006,Residential District of Elderly Person Being Abused,,27,受虐長者居住地區
-2006,Residential District of Elderly Person Being Abused,,40,受虐長者居住地區
-2006,Residential District of Elderly Person Being Abused,,30,受虐長者居住地區
-2006,Residential District of Elderly Person Being Abused,,3,受虐長者居住地區
-2007,Type of Elder Abuse,,355,虐待長者性質
-2007,Type of Elder Abuse,,141,虐待長者性質
-2007,Type of Elder Abuse,,2,虐待長者性質
-2007,Type of Elder Abuse,,76,虐待長者性質
-2007,Type of Elder Abuse,,0,虐待長者性質
-2007,Type of Elder Abuse,,1,虐待長者性質
-2007,Type of Elder Abuse,,0,虐待長者性質
-2007,Type of Elder Abuse,,37,虐待長者性質
-2007,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,159,虐待長者性質及受虐長者性別
-2007,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,66,虐待長者性質及受虐長者性別
-2007,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2007,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,26,虐待長者性質及受虐長者性別
-2007,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2007,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2007,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2007,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,13,虐待長者性質及受虐長者性別
-2007,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,196,虐待長者性質及受虐長者性別
-2007,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,75,虐待長者性質及受虐長者性別
-2007,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,2,虐待長者性質及受虐長者性別
-2007,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,50,虐待長者性質及受虐長者性別
-2007,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,0,虐待長者性質及受虐長者性別
-2007,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,1,虐待長者性質及受虐長者性別
-2007,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,0,虐待長者性質及受虐長者性別
-2007,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,24,虐待長者性質及受虐長者性別
-2007,Abuser's Relationship with Elderly Person Being Abused,,73,施虐者與受虐長者關係
-2007,Abuser's Relationship with Elderly Person Being Abused,,17,施虐者與受虐長者關係
-2007,Abuser's Relationship with Elderly Person Being Abused,,6,施虐者與受虐長者關係
-2007,Abuser's Relationship with Elderly Person Being Abused,,21,施虐者與受虐長者關係
-2007,Abuser's Relationship with Elderly Person Being Abused,,415,施虐者與受虐長者關係
-2007,Abuser's Relationship with Elderly Person Being Abused,,16,施虐者與受虐長者關係
-2007,Abuser's Relationship with Elderly Person Being Abused,,6,施虐者與受虐長者關係
-2007,Abuser's Relationship with Elderly Person Being Abused,,2,施虐者與受虐長者關係
-2007,Abuser's Relationship with Elderly Person Being Abused,,0,施虐者與受虐長者關係
-2007,Abuser's Relationship with Elderly Person Being Abused,,49,施虐者與受虐長者關係
-2007,Abuser's Relationship with Elderly Person Being Abused,,4,施虐者與受虐長者關係
-2007,Abuser's Relationship with Elderly Person Being Abused,,3,施虐者與受虐長者關係
-2007,Residential District of Elderly Person Being Abused,,16,受虐長者居住地區
-2007,Residential District of Elderly Person Being Abused,,19,受虐長者居住地區
-2007,Residential District of Elderly Person Being Abused,,1,受虐長者居住地區
-2007,Residential District of Elderly Person Being Abused,,48,受虐長者居住地區
-2007,Residential District of Elderly Person Being Abused,,16,受虐長者居住地區
-2007,Residential District of Elderly Person Being Abused,,29,受虐長者居住地區
-2007,Residential District of Elderly Person Being Abused,,32,受虐長者居住地區
-2007,Residential District of Elderly Person Being Abused,,40,受虐長者居住地區
-2007,Residential District of Elderly Person Being Abused,,57,受虐長者居住地區
-2007,Residential District of Elderly Person Being Abused,,11,受虐長者居住地區
-2007,Residential District of Elderly Person Being Abused,,83,受虐長者居住地區
-2007,Residential District of Elderly Person Being Abused,,44,受虐長者居住地區
-2007,Residential District of Elderly Person Being Abused,,8,受虐長者居住地區
-2007,Residential District of Elderly Person Being Abused,,22,受虐長者居住地區
-2007,Residential District of Elderly Person Being Abused,,39,受虐長者居住地區
-2007,Residential District of Elderly Person Being Abused,,30,受虐長者居住地區
-2007,Residential District of Elderly Person Being Abused,,90,受虐長者居住地區
-2007,Residential District of Elderly Person Being Abused,,24,受虐長者居住地區
-2007,Residential District of Elderly Person Being Abused,,3,受虐長者居住地區
-2008,Type of Elder Abuse,,363,虐待長者性質
-2008,Type of Elder Abuse,,188,虐待長者性質
-2008,Type of Elder Abuse,,1,虐待長者性質
-2008,Type of Elder Abuse,,66,虐待長者性質
-2008,Type of Elder Abuse,,1,虐待長者性質
-2008,Type of Elder Abuse,,6,虐待長者性質
-2008,Type of Elder Abuse,,0,虐待長者性質
-2008,Type of Elder Abuse,,22,虐待長者性質
-2008,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,151,虐待長者性質及受虐長者性別
-2008,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,93,虐待長者性質及受虐長者性別
-2008,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2008,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,28,虐待長者性質及受虐長者性別
-2008,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2008,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2008,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2008,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,9,虐待長者性質及受虐長者性別
-2008,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,212,虐待長者性質及受虐長者性別
-2008,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,95,虐待長者性質及受虐長者性別
-2008,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,1,虐待長者性質及受虐長者性別
-2008,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,38,虐待長者性質及受虐長者性別
-2008,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,1,虐待長者性質及受虐長者性別
-2008,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,6,虐待長者性質及受虐長者性別
-2008,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,0,虐待長者性質及受虐長者性別
-2008,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,13,虐待長者性質及受虐長者性別
-2008,Abuser's Relationship with Elderly Person Being Abused,,61,施虐者與受虐長者關係
-2008,Abuser's Relationship with Elderly Person Being Abused,,13,施虐者與受虐長者關係
-2008,Abuser's Relationship with Elderly Person Being Abused,,0,施虐者與受虐長者關係
-2008,Abuser's Relationship with Elderly Person Being Abused,,13,施虐者與受虐長者關係
-2008,Abuser's Relationship with Elderly Person Being Abused,,484,施虐者與受虐長者關係
-2008,Abuser's Relationship with Elderly Person Being Abused,,10,施虐者與受虐長者關係
-2008,Abuser's Relationship with Elderly Person Being Abused,,3,施虐者與受虐長者關係
-2008,Abuser's Relationship with Elderly Person Being Abused,,3,施虐者與受虐長者關係
-2008,Abuser's Relationship with Elderly Person Being Abused,,2,施虐者與受虐長者關係
-2008,Abuser's Relationship with Elderly Person Being Abused,,49,施虐者與受虐長者關係
-2008,Abuser's Relationship with Elderly Person Being Abused,,8,施虐者與受虐長者關係
-2008,Abuser's Relationship with Elderly Person Being Abused,,1,施虐者與受虐長者關係
-2008,Residential District of Elderly Person Being Abused,,17,受虐長者居住地區
-2008,Residential District of Elderly Person Being Abused,,19,受虐長者居住地區
-2008,Residential District of Elderly Person Being Abused,,4,受虐長者居住地區
-2008,Residential District of Elderly Person Being Abused,,33,受虐長者居住地區
-2008,Residential District of Elderly Person Being Abused,,11,受虐長者居住地區
-2008,Residential District of Elderly Person Being Abused,,26,受虐長者居住地區
-2008,Residential District of Elderly Person Being Abused,,27,受虐長者居住地區
-2008,Residential District of Elderly Person Being Abused,,33,受虐長者居住地區
-2008,Residential District of Elderly Person Being Abused,,103,受虐長者居住地區
-2008,Residential District of Elderly Person Being Abused,,13,受虐長者居住地區
-2008,Residential District of Elderly Person Being Abused,,77,受虐長者居住地區
-2008,Residential District of Elderly Person Being Abused,,33,受虐長者居住地區
-2008,Residential District of Elderly Person Being Abused,,24,受虐長者居住地區
-2008,Residential District of Elderly Person Being Abused,,33,受虐長者居住地區
-2008,Residential District of Elderly Person Being Abused,,42,受虐長者居住地區
-2008,Residential District of Elderly Person Being Abused,,29,受虐長者居住地區
-2008,Residential District of Elderly Person Being Abused,,90,受虐長者居住地區
-2008,Residential District of Elderly Person Being Abused,,29,受虐長者居住地區
-2008,Residential District of Elderly Person Being Abused,,4,受虐長者居住地區
-2009,Type of Elder Abuse,,344,虐待長者性質
-2009,Type of Elder Abuse,,35,虐待長者性質
-2009,Type of Elder Abuse,,0,虐待長者性質
-2009,Type of Elder Abuse,,62,虐待長者性質
-2009,Type of Elder Abuse,,0,虐待長者性質
-2009,Type of Elder Abuse,,4,虐待長者性質
-2009,Type of Elder Abuse,,0,虐待長者性質
-2009,Type of Elder Abuse,,20,虐待長者性質
-2009,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,148,虐待長者性質及受虐長者性別
-2009,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,17,虐待長者性質及受虐長者性別
-2009,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2009,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,19,虐待長者性質及受虐長者性別
-2009,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2009,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2009,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2009,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,6,虐待長者性質及受虐長者性別
-2009,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,196,虐待長者性質及受虐長者性別
-2009,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,18,虐待長者性質及受虐長者性別
-2009,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,0,虐待長者性質及受虐長者性別
-2009,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,43,虐待長者性質及受虐長者性別
-2009,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,0,虐待長者性質及受虐長者性別
-2009,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,4,虐待長者性質及受虐長者性別
-2009,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,0,虐待長者性質及受虐長者性別
-2009,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,14,虐待長者性質及受虐長者性別
-2009,Abuser's Relationship with Elderly Person Being Abused,,57,施虐者與受虐長者關係
-2009,Abuser's Relationship with Elderly Person Being Abused,,11,施虐者與受虐長者關係
-2009,Abuser's Relationship with Elderly Person Being Abused,,1,施虐者與受虐長者關係
-2009,Abuser's Relationship with Elderly Person Being Abused,,13,施虐者與受虐長者關係
-2009,Abuser's Relationship with Elderly Person Being Abused,,313,施虐者與受虐長者關係
-2009,Abuser's Relationship with Elderly Person Being Abused,,7,施虐者與受虐長者關係
-2009,Abuser's Relationship with Elderly Person Being Abused,,1,施虐者與受虐長者關係
-2009,Abuser's Relationship with Elderly Person Being Abused,,3,施虐者與受虐長者關係
-2009,Abuser's Relationship with Elderly Person Being Abused,,1,施虐者與受虐長者關係
-2009,Abuser's Relationship with Elderly Person Being Abused,,46,施虐者與受虐長者關係
-2009,Abuser's Relationship with Elderly Person Being Abused,,9,施虐者與受虐長者關係
-2009,Abuser's Relationship with Elderly Person Being Abused,,3,施虐者與受虐長者關係
-2009,Residential District of Elderly Person Being Abused,,13,受虐長者居住地區
-2009,Residential District of Elderly Person Being Abused,,12,受虐長者居住地區
-2009,Residential District of Elderly Person Being Abused,,12,受虐長者居住地區
-2009,Residential District of Elderly Person Being Abused,,21,受虐長者居住地區
-2009,Residential District of Elderly Person Being Abused,,7,受虐長者居住地區
-2009,Residential District of Elderly Person Being Abused,,36,受虐長者居住地區
-2009,Residential District of Elderly Person Being Abused,,25,受虐長者居住地區
-2009,Residential District of Elderly Person Being Abused,,27,受虐長者居住地區
-2009,Residential District of Elderly Person Being Abused,,43,受虐長者居住地區
-2009,Residential District of Elderly Person Being Abused,,7,受虐長者居住地區
-2009,Residential District of Elderly Person Being Abused,,57,受虐長者居住地區
-2009,Residential District of Elderly Person Being Abused,,33,受虐長者居住地區
-2009,Residential District of Elderly Person Being Abused,,14,受虐長者居住地區
-2009,Residential District of Elderly Person Being Abused,,12,受虐長者居住地區
-2009,Residential District of Elderly Person Being Abused,,35,受虐長者居住地區
-2009,Residential District of Elderly Person Being Abused,,24,受虐長者居住地區
-2009,Residential District of Elderly Person Being Abused,,36,受虐長者居住地區
-2009,Residential District of Elderly Person Being Abused,,25,受虐長者居住地區
-2009,Residential District of Elderly Person Being Abused,,26,受虐長者居住地區
-2010,Type of Elder Abuse,,248,虐待長者性質
-2010,Type of Elder Abuse,,24,虐待長者性質
-2010,Type of Elder Abuse,,3,虐待長者性質
-2010,Type of Elder Abuse,,18,虐待長者性質
-2010,Type of Elder Abuse,,1,虐待長者性質
-2010,Type of Elder Abuse,,1,虐待長者性質
-2010,Type of Elder Abuse,,3,虐待長者性質
-2010,Type of Elder Abuse,,21,虐待長者性質
-2010,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,94,虐待長者性質及受虐長者性別
-2010,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,8,虐待長者性質及受虐長者性別
-2010,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,2,虐待長者性質及受虐長者性別
-2010,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,4,虐待長者性質及受虐長者性別
-2010,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,1,虐待長者性質及受虐長者性別
-2010,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2010,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2010,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,5,虐待長者性質及受虐長者性別
-2010,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,154,虐待長者性質及受虐長者性別
-2010,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,16,虐待長者性質及受虐長者性別
-2010,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,1,虐待長者性質及受虐長者性別
-2010,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,14,虐待長者性質及受虐長者性別
-2010,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,0,虐待長者性質及受虐長者性別
-2010,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,1,虐待長者性質及受虐長者性別
-2010,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,3,虐待長者性質及受虐長者性別
-2010,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,16,虐待長者性質及受虐長者性別
-2010,Abuser's Relationship with Elderly Person Being Abused,,27,施虐者與受虐長者關係
-2010,Abuser's Relationship with Elderly Person Being Abused,,6,施虐者與受虐長者關係
-2010,Abuser's Relationship with Elderly Person Being Abused,,2,施虐者與受虐長者關係
-2010,Abuser's Relationship with Elderly Person Being Abused,,4,施虐者與受虐長者關係
-2010,Abuser's Relationship with Elderly Person Being Abused,,250,施虐者與受虐長者關係
-2010,Abuser's Relationship with Elderly Person Being Abused,,1,施虐者與受虐長者關係
-2010,Abuser's Relationship with Elderly Person Being Abused,,3,施虐者與受虐長者關係
-2010,Abuser's Relationship with Elderly Person Being Abused,,2,施虐者與受虐長者關係
-2010,Abuser's Relationship with Elderly Person Being Abused,,2,施虐者與受虐長者關係
-2010,Abuser's Relationship with Elderly Person Being Abused,,15,施虐者與受虐長者關係
-2010,Abuser's Relationship with Elderly Person Being Abused,,2,施虐者與受虐長者關係
-2010,Abuser's Relationship with Elderly Person Being Abused,,5,施虐者與受虐長者關係
-2010,Residential District of Elderly Person Being Abused,,19,受虐長者居住地區
-2010,Residential District of Elderly Person Being Abused,,16,受虐長者居住地區
-2010,Residential District of Elderly Person Being Abused,,3,受虐長者居住地區
-2010,Residential District of Elderly Person Being Abused,,15,受虐長者居住地區
-2010,Residential District of Elderly Person Being Abused,,5,受虐長者居住地區
-2010,Residential District of Elderly Person Being Abused,,8,受虐長者居住地區
-2010,Residential District of Elderly Person Being Abused,,8,受虐長者居住地區
-2010,Residential District of Elderly Person Being Abused,,7,受虐長者居住地區
-2010,Residential District of Elderly Person Being Abused,,21,受虐長者居住地區
-2010,Residential District of Elderly Person Being Abused,,10,受虐長者居住地區
-2010,Residential District of Elderly Person Being Abused,,26,受虐長者居住地區
-2010,Residential District of Elderly Person Being Abused,,26,受虐長者居住地區
-2010,Residential District of Elderly Person Being Abused,,9,受虐長者居住地區
-2010,Residential District of Elderly Person Being Abused,,8,受虐長者居住地區
-2010,Residential District of Elderly Person Being Abused,,24,受虐長者居住地區
-2010,Residential District of Elderly Person Being Abused,,19,受虐長者居住地區
-2010,Residential District of Elderly Person Being Abused,,28,受虐長者居住地區
-2010,Residential District of Elderly Person Being Abused,,13,受虐長者居住地區
-2010,Residential District of Elderly Person Being Abused,,54,受虐長者居住地區
-2011,Type of Elder Abuse,,271,虐待長者性質
-2011,Type of Elder Abuse,,23,虐待長者性質
-2011,Type of Elder Abuse,,2,虐待長者性質
-2011,Type of Elder Abuse,,43,虐待長者性質
-2011,Type of Elder Abuse,,3,虐待長者性質
-2011,Type of Elder Abuse,,2,虐待長者性質
-2011,Type of Elder Abuse,,7,虐待長者性質
-2011,Type of Elder Abuse,,17,虐待長者性質
-2011,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,130,虐待長者性質及受虐長者性別
-2011,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,10,虐待長者性質及受虐長者性別
-2011,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2011,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,12,虐待長者性質及受虐長者性別
-2011,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,2,虐待長者性質及受虐長者性別
-2011,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2011,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,1,虐待長者性質及受虐長者性別
-2011,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,5,虐待長者性質及受虐長者性別
-2011,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,141,虐待長者性質及受虐長者性別
-2011,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,13,虐待長者性質及受虐長者性別
-2011,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,2,虐待長者性質及受虐長者性別
-2011,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,31,虐待長者性質及受虐長者性別
-2011,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,1,虐待長者性質及受虐長者性別
-2011,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,2,虐待長者性質及受虐長者性別
-2011,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,6,虐待長者性質及受虐長者性別
-2011,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,12,虐待長者性質及受虐長者性別
-2011,Abuser's Relationship with Elderly Person Being Abused,,32,施虐者與受虐長者關係
-2011,Abuser's Relationship with Elderly Person Being Abused,,8,施虐者與受虐長者關係
-2011,Abuser's Relationship with Elderly Person Being Abused,,3,施虐者與受虐長者關係
-2011,Abuser's Relationship with Elderly Person Being Abused,,11,施虐者與受虐長者關係
-2011,Abuser's Relationship with Elderly Person Being Abused,,243,施虐者與受虐長者關係
-2011,Abuser's Relationship with Elderly Person Being Abused,,2,施虐者與受虐長者關係
-2011,Abuser's Relationship with Elderly Person Being Abused,,6,施虐者與受虐長者關係
-2011,Abuser's Relationship with Elderly Person Being Abused,,8,施虐者與受虐長者關係
-2011,Abuser's Relationship with Elderly Person Being Abused,,2,施虐者與受虐長者關係
-2011,Abuser's Relationship with Elderly Person Being Abused,,42,施虐者與受虐長者關係
-2011,Abuser's Relationship with Elderly Person Being Abused,,3,施虐者與受虐長者關係
-2011,Abuser's Relationship with Elderly Person Being Abused,,8,施虐者與受虐長者關係
-2011,Residential District of Elderly Person Being Abused,,17,受虐長者居住地區
-2011,Residential District of Elderly Person Being Abused,,14,受虐長者居住地區
-2011,Residential District of Elderly Person Being Abused,,9,受虐長者居住地區
-2011,Residential District of Elderly Person Being Abused,,16,受虐長者居住地區
-2011,Residential District of Elderly Person Being Abused,,5,受虐長者居住地區
-2011,Residential District of Elderly Person Being Abused,,12,受虐長者居住地區
-2011,Residential District of Elderly Person Being Abused,,17,受虐長者居住地區
-2011,Residential District of Elderly Person Being Abused,,19,受虐長者居住地區
-2011,Residential District of Elderly Person Being Abused,,40,受虐長者居住地區
-2011,Residential District of Elderly Person Being Abused,,9,受虐長者居住地區
-2011,Residential District of Elderly Person Being Abused,,34,受虐長者居住地區
-2011,Residential District of Elderly Person Being Abused,,17,受虐長者居住地區
-2011,Residential District of Elderly Person Being Abused,,10,受虐長者居住地區
-2011,Residential District of Elderly Person Being Abused,,17,受虐長者居住地區
-2011,Residential District of Elderly Person Being Abused,,33,受虐長者居住地區
-2011,Residential District of Elderly Person Being Abused,,17,受虐長者居住地區
-2011,Residential District of Elderly Person Being Abused,,47,受虐長者居住地區
-2011,Residential District of Elderly Person Being Abused,,16,受虐長者居住地區
-2011,Residential District of Elderly Person Being Abused,,19,受虐長者居住地區
-2012,Type of Elder Abuse,,257,虐待長者性質
-2012,Type of Elder Abuse,,36,虐待長者性質
-2012,Type of Elder Abuse,,3,虐待長者性質
-2012,Type of Elder Abuse,,68,虐待長者性質
-2012,Type of Elder Abuse,,2,虐待長者性質
-2012,Type of Elder Abuse,,4,虐待長者性質
-2012,Type of Elder Abuse,,5,虐待長者性質
-2012,Type of Elder Abuse,,33,虐待長者性質
-2012,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,92,虐待長者性質及受虐長者性別
-2012,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,15,虐待長者性質及受虐長者性別
-2012,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,1,虐待長者性質及受虐長者性別
-2012,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,23,虐待長者性質及受虐長者性別
-2012,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2012,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2012,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,2,虐待長者性質及受虐長者性別
-2012,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,10,虐待長者性質及受虐長者性別
-2012,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,165,虐待長者性質及受虐長者性別
-2012,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,21,虐待長者性質及受虐長者性別
-2012,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,2,虐待長者性質及受虐長者性別
-2012,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,45,虐待長者性質及受虐長者性別
-2012,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,2,虐待長者性質及受虐長者性別
-2012,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,4,虐待長者性質及受虐長者性別
-2012,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,3,虐待長者性質及受虐長者性別
-2012,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,23,虐待長者性質及受虐長者性別
-2012,Abuser's Relationship with Elderly Person Being Abused,,45,施虐者與受虐長者關係
-2012,Abuser's Relationship with Elderly Person Being Abused,,9,施虐者與受虐長者關係
-2012,Abuser's Relationship with Elderly Person Being Abused,,0,施虐者與受虐長者關係
-2012,Abuser's Relationship with Elderly Person Being Abused,,14,施虐者與受虐長者關係
-2012,Abuser's Relationship with Elderly Person Being Abused,,231,施虐者與受虐長者關係
-2012,Abuser's Relationship with Elderly Person Being Abused,,7,施虐者與受虐長者關係
-2012,Abuser's Relationship with Elderly Person Being Abused,,10,施虐者與受虐長者關係
-2012,Abuser's Relationship with Elderly Person Being Abused,,15,施虐者與受虐長者關係
-2012,Abuser's Relationship with Elderly Person Being Abused,,2,施虐者與受虐長者關係
-2012,Abuser's Relationship with Elderly Person Being Abused,,55,施虐者與受虐長者關係
-2012,Abuser's Relationship with Elderly Person Being Abused,,16,施虐者與受虐長者關係
-2012,Abuser's Relationship with Elderly Person Being Abused,,4,施虐者與受虐長者關係
-2012,Residential District of Elderly Person Being Abused,,18,受虐長者居住地區
-2012,Residential District of Elderly Person Being Abused,,15,受虐長者居住地區
-2012,Residential District of Elderly Person Being Abused,,6,受虐長者居住地區
-2012,Residential District of Elderly Person Being Abused,,24,受虐長者居住地區
-2012,Residential District of Elderly Person Being Abused,,4,受虐長者居住地區
-2012,Residential District of Elderly Person Being Abused,,16,受虐長者居住地區
-2012,Residential District of Elderly Person Being Abused,,21,受虐長者居住地區
-2012,Residential District of Elderly Person Being Abused,,26,受虐長者居住地區
-2012,Residential District of Elderly Person Being Abused,,31,受虐長者居住地區
-2012,Residential District of Elderly Person Being Abused,,6,受虐長者居住地區
-2012,Residential District of Elderly Person Being Abused,,35,受虐長者居住地區
-2012,Residential District of Elderly Person Being Abused,,29,受虐長者居住地區
-2012,Residential District of Elderly Person Being Abused,,11,受虐長者居住地區
-2012,Residential District of Elderly Person Being Abused,,9,受虐長者居住地區
-2012,Residential District of Elderly Person Being Abused,,33,受虐長者居住地區
-2012,Residential District of Elderly Person Being Abused,,29,受虐長者居住地區
-2012,Residential District of Elderly Person Being Abused,,63,受虐長者居住地區
-2012,Residential District of Elderly Person Being Abused,,30,受虐長者居住地區
-2012,Residential District of Elderly Person Being Abused,,2,受虐長者居住地區
-2013,Type of Elder Abuse,,399,虐待長者性質
-2013,Type of Elder Abuse,,73,虐待長者性質
-2013,Type of Elder Abuse,,0,虐待長者性質
-2013,Type of Elder Abuse,,70,虐待長者性質
-2013,Type of Elder Abuse,,2,虐待長者性質
-2013,Type of Elder Abuse,,9,虐待長者性質
-2013,Type of Elder Abuse,,0,虐待長者性質
-2013,Type of Elder Abuse,,36,虐待長者性質
-2013,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,181,虐待長者性質及受虐長者性別
-2013,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,19,虐待長者性質及受虐長者性別
-2013,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2013,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,24,虐待長者性質及受虐長者性別
-2013,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2013,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,1,虐待長者性質及受虐長者性別
-2013,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2013,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,11,虐待長者性質及受虐長者性別
-2013,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,218,虐待長者性質及受虐長者性別
-2013,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,54,虐待長者性質及受虐長者性別
-2013,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,0,虐待長者性質及受虐長者性別
-2013,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,46,虐待長者性質及受虐長者性別
-2013,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,2,虐待長者性質及受虐長者性別
-2013,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,8,虐待長者性質及受虐長者性別
-2013,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,0,虐待長者性質及受虐長者性別
-2013,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,25,虐待長者性質及受虐長者性別
-2013,Abuser's Relationship with Elderly Person Being Abused,,64,施虐者與受虐長者關係
-2013,Abuser's Relationship with Elderly Person Being Abused,,19,施虐者與受虐長者關係
-2013,Abuser's Relationship with Elderly Person Being Abused,,2,施虐者與受虐長者關係
-2013,Abuser's Relationship with Elderly Person Being Abused,,17,施虐者與受虐長者關係
-2013,Abuser's Relationship with Elderly Person Being Abused,,376,施虐者與受虐長者關係
-2013,Abuser's Relationship with Elderly Person Being Abused,,8,施虐者與受虐長者關係
-2013,Abuser's Relationship with Elderly Person Being Abused,,15,施虐者與受虐長者關係
-2013,Abuser's Relationship with Elderly Person Being Abused,,11,施虐者與受虐長者關係
-2013,Abuser's Relationship with Elderly Person Being Abused,,3,施虐者與受虐長者關係
-2013,Abuser's Relationship with Elderly Person Being Abused,,54,施虐者與受虐長者關係
-2013,Abuser's Relationship with Elderly Person Being Abused,,13,施虐者與受虐長者關係
-2013,Abuser's Relationship with Elderly Person Being Abused,,7,施虐者與受虐長者關係
-2013,Residential District of Elderly Person Being Abused,,23,受虐長者居住地區
-2013,Residential District of Elderly Person Being Abused,,24,受虐長者居住地區
-2013,Residential District of Elderly Person Being Abused,,4,受虐長者居住地區
-2013,Residential District of Elderly Person Being Abused,,46,受虐長者居住地區
-2013,Residential District of Elderly Person Being Abused,,8,受虐長者居住地區
-2013,Residential District of Elderly Person Being Abused,,16,受虐長者居住地區
-2013,Residential District of Elderly Person Being Abused,,21,受虐長者居住地區
-2013,Residential District of Elderly Person Being Abused,,48,受虐長者居住地區
-2013,Residential District of Elderly Person Being Abused,,52,受虐長者居住地區
-2013,Residential District of Elderly Person Being Abused,,17,受虐長者居住地區
-2013,Residential District of Elderly Person Being Abused,,70,受虐長者居住地區
-2013,Residential District of Elderly Person Being Abused,,42,受虐長者居住地區
-2013,Residential District of Elderly Person Being Abused,,19,受虐長者居住地區
-2013,Residential District of Elderly Person Being Abused,,20,受虐長者居住地區
-2013,Residential District of Elderly Person Being Abused,,49,受虐長者居住地區
-2013,Residential District of Elderly Person Being Abused,,28,受虐長者居住地區
-2013,Residential District of Elderly Person Being Abused,,62,受虐長者居住地區
-2013,Residential District of Elderly Person Being Abused,,39,受虐長者居住地區
-2013,Residential District of Elderly Person Being Abused,,1,受虐長者居住地區
-2014,Type of Elder Abuse,,400,虐待長者性質
-2014,Type of Elder Abuse,,50,虐待長者性質
-2014,Type of Elder Abuse,,1,虐待長者性質
-2014,Type of Elder Abuse,,91,虐待長者性質
-2014,Type of Elder Abuse,,0,虐待長者性質
-2014,Type of Elder Abuse,,17,虐待長者性質
-2014,Type of Elder Abuse,,0,虐待長者性質
-2014,Type of Elder Abuse,,15,虐待長者性質
-2014,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,173,虐待長者性質及受虐長者性別
-2014,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,17,虐待長者性質及受虐長者性別
-2014,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2014,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,33,虐待長者性質及受虐長者性別
-2014,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2014,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,2,虐待長者性質及受虐長者性別
-2014,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2014,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,10,虐待長者性質及受虐長者性別
-2014,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,227,虐待長者性質及受虐長者性別
-2014,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,33,虐待長者性質及受虐長者性別
-2014,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,1,虐待長者性質及受虐長者性別
-2014,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,58,虐待長者性質及受虐長者性別
-2014,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,0,虐待長者性質及受虐長者性別
-2014,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,15,虐待長者性質及受虐長者性別
-2014,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,0,虐待長者性質及受虐長者性別
-2014,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,5,虐待長者性質及受虐長者性別
-2014,Abuser's Relationship with Elderly Person Being Abused,,60,施虐者與受虐長者關係
-2014,Abuser's Relationship with Elderly Person Being Abused,,20,施虐者與受虐長者關係
-2014,Abuser's Relationship with Elderly Person Being Abused,,3,施虐者與受虐長者關係
-2014,Abuser's Relationship with Elderly Person Being Abused,,18,施虐者與受虐長者關係
-2014,Abuser's Relationship with Elderly Person Being Abused,,328,施虐者與受虐長者關係
-2014,Abuser's Relationship with Elderly Person Being Abused,,6,施虐者與受虐長者關係
-2014,Abuser's Relationship with Elderly Person Being Abused,,17,施虐者與受虐長者關係
-2014,Abuser's Relationship with Elderly Person Being Abused,,33,施虐者與受虐長者關係
-2014,Abuser's Relationship with Elderly Person Being Abused,,5,施虐者與受虐長者關係
-2014,Abuser's Relationship with Elderly Person Being Abused,,55,施虐者與受虐長者關係
-2014,Abuser's Relationship with Elderly Person Being Abused,,12,施虐者與受虐長者關係
-2014,Abuser's Relationship with Elderly Person Being Abused,,17,施虐者與受虐長者關係
-2014,Residential District of Elderly Person Being Abused,,14,受虐長者居住地區
-2014,Residential District of Elderly Person Being Abused,,12,受虐長者居住地區
-2014,Residential District of Elderly Person Being Abused,,7,受虐長者居住地區
-2014,Residential District of Elderly Person Being Abused,,32,受虐長者居住地區
-2014,Residential District of Elderly Person Being Abused,,10,受虐長者居住地區
-2014,Residential District of Elderly Person Being Abused,,41,受虐長者居住地區
-2014,Residential District of Elderly Person Being Abused,,30,受虐長者居住地區
-2014,Residential District of Elderly Person Being Abused,,30,受虐長者居住地區
-2014,Residential District of Elderly Person Being Abused,,64,受虐長者居住地區
-2014,Residential District of Elderly Person Being Abused,,25,受虐長者居住地區
-2014,Residential District of Elderly Person Being Abused,,46,受虐長者居住地區
-2014,Residential District of Elderly Person Being Abused,,48,受虐長者居住地區
-2014,Residential District of Elderly Person Being Abused,,25,受虐長者居住地區
-2014,Residential District of Elderly Person Being Abused,,34,受虐長者居住地區
-2014,Residential District of Elderly Person Being Abused,,42,受虐長者居住地區
-2014,Residential District of Elderly Person Being Abused,,27,受虐長者居住地區
-2014,Residential District of Elderly Person Being Abused,,42,受虐長者居住地區
-2014,Residential District of Elderly Person Being Abused,,43,受虐長者居住地區
-2014,Residential District of Elderly Person Being Abused,,2,受虐長者居住地區
-2015,Type of Elder Abuse,,359,虐待長者性質
-2015,Type of Elder Abuse,,49,虐待長者性質
-2015,Type of Elder Abuse,,2,虐待長者性質
-2015,Type of Elder Abuse,,93,虐待長者性質
-2015,Type of Elder Abuse,,3,虐待長者性質
-2015,Type of Elder Abuse,,14,虐待長者性質
-2015,Type of Elder Abuse,,0,虐待長者性質
-2015,Type of Elder Abuse,,37,虐待長者性質
-2015,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,150,虐待長者性質及受虐長者性別
-2015,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,26,虐待長者性質及受虐長者性別
-2015,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2015,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,40,虐待長者性質及受虐長者性別
-2015,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,2,虐待長者性質及受虐長者性別
-2015,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,3,虐待長者性質及受虐長者性別
-2015,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2015,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,15,虐待長者性質及受虐長者性別
-2015,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,209,虐待長者性質及受虐長者性別
-2015,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,23,虐待長者性質及受虐長者性別
-2015,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,2,虐待長者性質及受虐長者性別
-2015,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,53,虐待長者性質及受虐長者性別
-2015,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,1,虐待長者性質及受虐長者性別
-2015,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,11,虐待長者性質及受虐長者性別
-2015,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,0,虐待長者性質及受虐長者性別
-2015,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,22,虐待長者性質及受虐長者性別
-2015,Abuser's Relationship with Elderly Person Being Abused,,56,施虐者與受虐長者關係
-2015,Abuser's Relationship with Elderly Person Being Abused,,22,施虐者與受虐長者關係
-2015,Abuser's Relationship with Elderly Person Being Abused,,5,施虐者與受虐長者關係
-2015,Abuser's Relationship with Elderly Person Being Abused,,19,施虐者與受虐長者關係
-2015,Abuser's Relationship with Elderly Person Being Abused,,297,施虐者與受虐長者關係
-2015,Abuser's Relationship with Elderly Person Being Abused,,7,施虐者與受虐長者關係
-2015,Abuser's Relationship with Elderly Person Being Abused,,11,施虐者與受虐長者關係
-2015,Abuser's Relationship with Elderly Person Being Abused,,50,施虐者與受虐長者關係
-2015,Abuser's Relationship with Elderly Person Being Abused,,3,施虐者與受虐長者關係
-2015,Abuser's Relationship with Elderly Person Being Abused,,51,施虐者與受虐長者關係
-2015,Abuser's Relationship with Elderly Person Being Abused,,9,施虐者與受虐長者關係
-2015,Abuser's Relationship with Elderly Person Being Abused,,27,施虐者與受虐長者關係
-2015,Residential District of Elderly Person Being Abused,,14,受虐長者居住地區
-2015,Residential District of Elderly Person Being Abused,,15,受虐長者居住地區
-2015,Residential District of Elderly Person Being Abused,,6,受虐長者居住地區
-2015,Residential District of Elderly Person Being Abused,,45,受虐長者居住地區
-2015,Residential District of Elderly Person Being Abused,,9,受虐長者居住地區
-2015,Residential District of Elderly Person Being Abused,,27,受虐長者居住地區
-2015,Residential District of Elderly Person Being Abused,,33,受虐長者居住地區
-2015,Residential District of Elderly Person Being Abused,,28,受虐長者居住地區
-2015,Residential District of Elderly Person Being Abused,,56,受虐長者居住地區
-2015,Residential District of Elderly Person Being Abused,,20,受虐長者居住地區
-2015,Residential District of Elderly Person Being Abused,,61,受虐長者居住地區
-2015,Residential District of Elderly Person Being Abused,,48,受虐長者居住地區
-2015,Residential District of Elderly Person Being Abused,,30,受虐長者居住地區
-2015,Residential District of Elderly Person Being Abused,,16,受虐長者居住地區
-2015,Residential District of Elderly Person Being Abused,,45,受虐長者居住地區
-2015,Residential District of Elderly Person Being Abused,,20,受虐長者居住地區
-2015,Residential District of Elderly Person Being Abused,,52,受虐長者居住地區
-2015,Residential District of Elderly Person Being Abused,,32,受虐長者居住地區
-2015,Residential District of Elderly Person Being Abused,,0,受虐長者居住地區
-2016,Type of Elder Abuse,,389,虐待長者性質
-2016,Type of Elder Abuse,,69,虐待長者性質
-2016,Type of Elder Abuse,,3,虐待長者性質
-2016,Type of Elder Abuse,,102,虐待長者性質
-2016,Type of Elder Abuse,,2,虐待長者性質
-2016,Type of Elder Abuse,,13,虐待長者性質
-2016,Type of Elder Abuse,,0,虐待長者性質
-2016,Type of Elder Abuse,,35,虐待長者性質
-2016,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,176,虐待長者性質及受虐長者性別
-2016,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,38,虐待長者性質及受虐長者性別
-2016,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,2,虐待長者性質及受虐長者性別
-2016,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,45,虐待長者性質及受虐長者性別
-2016,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,2,虐待長者性質及受虐長者性別
-2016,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,1,虐待長者性質及受虐長者性別
-2016,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2016,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,11,虐待長者性質及受虐長者性別
-2016,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,213,虐待長者性質及受虐長者性別
-2016,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,31,虐待長者性質及受虐長者性別
-2016,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,1,虐待長者性質及受虐長者性別
-2016,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,57,虐待長者性質及受虐長者性別
-2016,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,0,虐待長者性質及受虐長者性別
-2016,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,12,虐待長者性質及受虐長者性別
-2016,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,0,虐待長者性質及受虐長者性別
-2016,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,24,虐待長者性質及受虐長者性別
-2016,Abuser's Relationship with Elderly Person Being Abused,,73,施虐者與受虐長者關係
-2016,Abuser's Relationship with Elderly Person Being Abused,,19,施虐者與受虐長者關係
-2016,Abuser's Relationship with Elderly Person Being Abused,,8,施虐者與受虐長者關係
-2016,Abuser's Relationship with Elderly Person Being Abused,,16,施虐者與受虐長者關係
-2016,Abuser's Relationship with Elderly Person Being Abused,,292,施虐者與受虐長者關係
-2016,Abuser's Relationship with Elderly Person Being Abused,,5,施虐者與受虐長者關係
-2016,Abuser's Relationship with Elderly Person Being Abused,,25,施虐者與受虐長者關係
-2016,Abuser's Relationship with Elderly Person Being Abused,,76,施虐者與受虐長者關係
-2016,Abuser's Relationship with Elderly Person Being Abused,,5,施虐者與受虐長者關係
-2016,Abuser's Relationship with Elderly Person Being Abused,,55,施虐者與受虐長者關係
-2016,Abuser's Relationship with Elderly Person Being Abused,,19,施虐者與受虐長者關係
-2016,Abuser's Relationship with Elderly Person Being Abused,,20,施虐者與受虐長者關係
-2016,Residential District of Elderly Person Being Abused,,25,受虐長者居住地區
-2016,Residential District of Elderly Person Being Abused,,13,受虐長者居住地區
-2016,Residential District of Elderly Person Being Abused,,9,受虐長者居住地區
-2016,Residential District of Elderly Person Being Abused,,41,受虐長者居住地區
-2016,Residential District of Elderly Person Being Abused,,10,受虐長者居住地區
-2016,Residential District of Elderly Person Being Abused,,34,受虐長者居住地區
-2016,Residential District of Elderly Person Being Abused,,17,受虐長者居住地區
-2016,Residential District of Elderly Person Being Abused,,39,受虐長者居住地區
-2016,Residential District of Elderly Person Being Abused,,53,受虐長者居住地區
-2016,Residential District of Elderly Person Being Abused,,18,受虐長者居住地區
-2016,Residential District of Elderly Person Being Abused,,77,受虐長者居住地區
-2016,Residential District of Elderly Person Being Abused,,45,受虐長者居住地區
-2016,Residential District of Elderly Person Being Abused,,19,受虐長者居住地區
-2016,Residential District of Elderly Person Being Abused,,29,受虐長者居住地區
-2016,Residential District of Elderly Person Being Abused,,67,受虐長者居住地區
-2016,Residential District of Elderly Person Being Abused,,20,受虐長者居住地區
-2016,Residential District of Elderly Person Being Abused,,62,受虐長者居住地區
-2016,Residential District of Elderly Person Being Abused,,34,受虐長者居住地區
-2016,Residential District of Elderly Person Being Abused,,1,受虐長者居住地區
-2017,Type of Elder Abuse,,355,虐待長者性質
-2017,Type of Elder Abuse,,74,虐待長者性質
-2017,Type of Elder Abuse,,2,虐待長者性質
-2017,Type of Elder Abuse,,109,虐待長者性質
-2017,Type of Elder Abuse,,0,虐待長者性質
-2017,Type of Elder Abuse,,5,虐待長者性質
-2017,Type of Elder Abuse,,0,虐待長者性質
-2017,Type of Elder Abuse,,24,虐待長者性質
-2017,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,159,虐待長者性質及受虐長者性別
-2017,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,29,虐待長者性質及受虐長者性別
-2017,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2017,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,46,虐待長者性質及受虐長者性別
-2017,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2017,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,1,虐待長者性質及受虐長者性別
-2017,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2017,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,2,虐待長者性質及受虐長者性別
-2017,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,196,虐待長者性質及受虐長者性別
-2017,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,45,虐待長者性質及受虐長者性別
-2017,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,2,虐待長者性質及受虐長者性別
-2017,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,63,虐待長者性質及受虐長者性別
-2017,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,0,虐待長者性質及受虐長者性別
-2017,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,4,虐待長者性質及受虐長者性別
-2017,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,0,虐待長者性質及受虐長者性別
-2017,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,22,虐待長者性質及受虐長者性別
-2017,Abuser's Relationship with Elderly Person Being Abused,,70,施虐者與受虐長者關係
-2017,Abuser's Relationship with Elderly Person Being Abused,,13,施虐者與受虐長者關係
-2017,Abuser's Relationship with Elderly Person Being Abused,,6,施虐者與受虐長者關係
-2017,Abuser's Relationship with Elderly Person Being Abused,,15,施虐者與受虐長者關係
-2017,Abuser's Relationship with Elderly Person Being Abused,,303,施虐者與受虐長者關係
-2017,Abuser's Relationship with Elderly Person Being Abused,,13,施虐者與受虐長者關係
-2017,Abuser's Relationship with Elderly Person Being Abused,,16,施虐者與受虐長者關係
-2017,Abuser's Relationship with Elderly Person Being Abused,,46,施虐者與受虐長者關係
-2017,Abuser's Relationship with Elderly Person Being Abused,,5,施虐者與受虐長者關係
-2017,Abuser's Relationship with Elderly Person Being Abused,,54,施虐者與受虐長者關係
-2017,Abuser's Relationship with Elderly Person Being Abused,,13,施虐者與受虐長者關係
-2017,Abuser's Relationship with Elderly Person Being Abused,,15,施虐者與受虐長者關係
-2017,Residential District of Elderly Person Being Abused,,23,受虐長者居住地區
-2017,Residential District of Elderly Person Being Abused,,19,受虐長者居住地區
-2017,Residential District of Elderly Person Being Abused,,9,受虐長者居住地區
-2017,Residential District of Elderly Person Being Abused,,26,受虐長者居住地區
-2017,Residential District of Elderly Person Being Abused,,13,受虐長者居住地區
-2017,Residential District of Elderly Person Being Abused,,25,受虐長者居住地區
-2017,Residential District of Elderly Person Being Abused,,17,受虐長者居住地區
-2017,Residential District of Elderly Person Being Abused,,45,受虐長者居住地區
-2017,Residential District of Elderly Person Being Abused,,39,受虐長者居住地區
-2017,Residential District of Elderly Person Being Abused,,17,受虐長者居住地區
-2017,Residential District of Elderly Person Being Abused,,70,受虐長者居住地區
-2017,Residential District of Elderly Person Being Abused,,59,受虐長者居住地區
-2017,Residential District of Elderly Person Being Abused,,24,受虐長者居住地區
-2017,Residential District of Elderly Person Being Abused,,21,受虐長者居住地區
-2017,Residential District of Elderly Person Being Abused,,48,受虐長者居住地區
-2017,Residential District of Elderly Person Being Abused,,8,受虐長者居住地區
-2017,Residential District of Elderly Person Being Abused,,60,受虐長者居住地區
-2017,Residential District of Elderly Person Being Abused,,46,受虐長者居住地區
-2017,Residential District of Elderly Person Being Abused,,0,受虐長者居住地區
-2018,Type of Elder Abuse,,340,虐待長者性質
-2018,Type of Elder Abuse,,43,虐待長者性質
-2018,Type of Elder Abuse,,2,虐待長者性質
-2018,Type of Elder Abuse,,68,虐待長者性質
-2018,Type of Elder Abuse,,0,虐待長者性質
-2018,Type of Elder Abuse,,15,虐待長者性質
-2018,Type of Elder Abuse,,0,虐待長者性質
-2018,Type of Elder Abuse,,28,虐待長者性質
-2018,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,141,虐待長者性質及受虐長者性別
-2018,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,9,虐待長者性質及受虐長者性別
-2018,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,1,虐待長者性質及受虐長者性別
-2018,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,28,虐待長者性質及受虐長者性別
-2018,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2018,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,4,虐待長者性質及受虐長者性別
-2018,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2018,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,6,虐待長者性質及受虐長者性別
-2018,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,199,虐待長者性質及受虐長者性別
-2018,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,34,虐待長者性質及受虐長者性別
-2018,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,1,虐待長者性質及受虐長者性別
-2018,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,40,虐待長者性質及受虐長者性別
-2018,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,0,虐待長者性質及受虐長者性別
-2018,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,11,虐待長者性質及受虐長者性別
-2018,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,0,虐待長者性質及受虐長者性別
-2018,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,22,虐待長者性質及受虐長者性別
-2018,Abuser's Relationship with Elderly Person Being Abused,,56,施虐者與受虐長者關係
-2018,Abuser's Relationship with Elderly Person Being Abused,,17,施虐者與受虐長者關係
-2018,Abuser's Relationship with Elderly Person Being Abused,,1,施虐者與受虐長者關係
-2018,Abuser's Relationship with Elderly Person Being Abused,,11,施虐者與受虐長者關係
-2018,Abuser's Relationship with Elderly Person Being Abused,,285,施虐者與受虐長者關係
-2018,Abuser's Relationship with Elderly Person Being Abused,,5,施虐者與受虐長者關係
-2018,Abuser's Relationship with Elderly Person Being Abused,,15,施虐者與受虐長者關係
-2018,Abuser's Relationship with Elderly Person Being Abused,,40,施虐者與受虐長者關係
-2018,Abuser's Relationship with Elderly Person Being Abused,,1,施虐者與受虐長者關係
-2018,Abuser's Relationship with Elderly Person Being Abused,,39,施虐者與受虐長者關係
-2018,Abuser's Relationship with Elderly Person Being Abused,,14,施虐者與受虐長者關係
-2018,Abuser's Relationship with Elderly Person Being Abused,,12,施虐者與受虐長者關係
-2018,Residential District of Elderly Person Being Abused,,23,受虐長者居住地區
-2018,Residential District of Elderly Person Being Abused,,17,受虐長者居住地區
-2018,Residential District of Elderly Person Being Abused,,8,受虐長者居住地區
-2018,Residential District of Elderly Person Being Abused,,43,受虐長者居住地區
-2018,Residential District of Elderly Person Being Abused,,5,受虐長者居住地區
-2018,Residential District of Elderly Person Being Abused,,21,受虐長者居住地區
-2018,Residential District of Elderly Person Being Abused,,17,受虐長者居住地區
-2018,Residential District of Elderly Person Being Abused,,26,受虐長者居住地區
-2018,Residential District of Elderly Person Being Abused,,55,受虐長者居住地區
-2018,Residential District of Elderly Person Being Abused,,22,受虐長者居住地區
-2018,Residential District of Elderly Person Being Abused,,43,受虐長者居住地區
-2018,Residential District of Elderly Person Being Abused,,41,受虐長者居住地區
-2018,Residential District of Elderly Person Being Abused,,28,受虐長者居住地區
-2018,Residential District of Elderly Person Being Abused,,10,受虐長者居住地區
-2018,Residential District of Elderly Person Being Abused,,48,受虐長者居住地區
-2018,Residential District of Elderly Person Being Abused,,14,受虐長者居住地區
-2018,Residential District of Elderly Person Being Abused,,39,受虐長者居住地區
-2018,Residential District of Elderly Person Being Abused,,36,受虐長者居住地區
-2018,Residential District of Elderly Person Being Abused,,0,受虐長者居住地區
-2019,Type of Elder Abuse,,331,虐待長者性質
-2019,Type of Elder Abuse,,41,虐待長者性質
-2019,Type of Elder Abuse,,5,虐待長者性質
-2019,Type of Elder Abuse,,71,虐待長者性質
-2019,Type of Elder Abuse,,0,虐待長者性質
-2019,Type of Elder Abuse,,6,虐待長者性質
-2019,Type of Elder Abuse,,0,虐待長者性質
-2019,Type of Elder Abuse,,34,虐待長者性質
-2019,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,123,虐待長者性質及受虐長者性別
-2019,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,11,虐待長者性質及受虐長者性別
-2019,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,2,虐待長者性質及受虐長者性別
-2019,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,20,虐待長者性質及受虐長者性別
-2019,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2019,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2019,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2019,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,10,虐待長者性質及受虐長者性別
-2019,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,208,虐待長者性質及受虐長者性別
-2019,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,30,虐待長者性質及受虐長者性別
-2019,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,3,虐待長者性質及受虐長者性別
-2019,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,51,虐待長者性質及受虐長者性別
-2019,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,0,虐待長者性質及受虐長者性別
-2019,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,6,虐待長者性質及受虐長者性別
-2019,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,0,虐待長者性質及受虐長者性別
-2019,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,24,虐待長者性質及受虐長者性別
-2019,Abuser's Relationship with Elderly Person Being Abused,,50,施虐者與受虐長者關係
-2019,Abuser's Relationship with Elderly Person Being Abused,,18,施虐者與受虐長者關係
-2019,Abuser's Relationship with Elderly Person Being Abused,,8,施虐者與受虐長者關係
-2019,Abuser's Relationship with Elderly Person Being Abused,,8,施虐者與受虐長者關係
-2019,Abuser's Relationship with Elderly Person Being Abused,,297,施虐者與受虐長者關係
-2019,Abuser's Relationship with Elderly Person Being Abused,,4,施虐者與受虐長者關係
-2019,Abuser's Relationship with Elderly Person Being Abused,,20,施虐者與受虐長者關係
-2019,Abuser's Relationship with Elderly Person Being Abused,,18,施虐者與受虐長者關係
-2019,Abuser's Relationship with Elderly Person Being Abused,,6,施虐者與受虐長者關係
-2019,Abuser's Relationship with Elderly Person Being Abused,,41,施虐者與受虐長者關係
-2019,Abuser's Relationship with Elderly Person Being Abused,,8,施虐者與受虐長者關係
-2019,Abuser's Relationship with Elderly Person Being Abused,,10,施虐者與受虐長者關係
-2019,Residential District of Elderly Person Being Abused,,30,受虐長者居住地區
-2019,Residential District of Elderly Person Being Abused,,13,受虐長者居住地區
-2019,Residential District of Elderly Person Being Abused,,7,受虐長者居住地區
-2019,Residential District of Elderly Person Being Abused,,30,受虐長者居住地區
-2019,Residential District of Elderly Person Being Abused,,7,受虐長者居住地區
-2019,Residential District of Elderly Person Being Abused,,15,受虐長者居住地區
-2019,Residential District of Elderly Person Being Abused,,16,受虐長者居住地區
-2019,Residential District of Elderly Person Being Abused,,29,受虐長者居住地區
-2019,Residential District of Elderly Person Being Abused,,33,受虐長者居住地區
-2019,Residential District of Elderly Person Being Abused,,17,受虐長者居住地區
-2019,Residential District of Elderly Person Being Abused,,47,受虐長者居住地區
-2019,Residential District of Elderly Person Being Abused,,49,受虐長者居住地區
-2019,Residential District of Elderly Person Being Abused,,27,受虐長者居住地區
-2019,Residential District of Elderly Person Being Abused,,18,受虐長者居住地區
-2019,Residential District of Elderly Person Being Abused,,47,受虐長者居住地區
-2019,Residential District of Elderly Person Being Abused,,15,受虐長者居住地區
-2019,Residential District of Elderly Person Being Abused,,51,受虐長者居住地區
-2019,Residential District of Elderly Person Being Abused,,36,受虐長者居住地區
-2019,Residential District of Elderly Person Being Abused,,1,受虐長者居住地區
-2020,Type of Elder Abuse,,331,虐待長者性質
-2020,Type of Elder Abuse,,49,虐待長者性質
-2020,Type of Elder Abuse,,0,虐待長者性質
-2020,Type of Elder Abuse,,46,虐待長者性質
-2020,Type of Elder Abuse,,0,虐待長者性質
-2020,Type of Elder Abuse,,10,虐待長者性質
-2020,Type of Elder Abuse,,0,虐待長者性質
-2020,Type of Elder Abuse,,33,虐待長者性質
-2020,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,143,虐待長者性質及受虐長者性別
-2020,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,22,虐待長者性質及受虐長者性別
-2020,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2020,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,14,虐待長者性質及受虐長者性別
-2020,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2020,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,1,虐待長者性質及受虐長者性別
-2020,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2020,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,12,虐待長者性質及受虐長者性別
-2020,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,188,虐待長者性質及受虐長者性別
-2020,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,27,虐待長者性質及受虐長者性別
-2020,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,0,虐待長者性質及受虐長者性別
-2020,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,32,虐待長者性質及受虐長者性別
-2020,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,0,虐待長者性質及受虐長者性別
-2020,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,9,虐待長者性質及受虐長者性別
-2020,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,0,虐待長者性質及受虐長者性別
-2020,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,21,虐待長者性質及受虐長者性別
-2020,Abuser's Relationship with Elderly Person Being Abused,,58,施虐者與受虐長者關係
-2020,Abuser's Relationship with Elderly Person Being Abused,,12,施虐者與受虐長者關係
-2020,Abuser's Relationship with Elderly Person Being Abused,,5,施虐者與受虐長者關係
-2020,Abuser's Relationship with Elderly Person Being Abused,,8,施虐者與受虐長者關係
-2020,Abuser's Relationship with Elderly Person Being Abused,,290,施虐者與受虐長者關係
-2020,Abuser's Relationship with Elderly Person Being Abused,,3,施虐者與受虐長者關係
-2020,Abuser's Relationship with Elderly Person Being Abused,,22,施虐者與受虐長者關係
-2020,Abuser's Relationship with Elderly Person Being Abused,,20,施虐者與受虐長者關係
-2020,Abuser's Relationship with Elderly Person Being Abused,,5,施虐者與受虐長者關係
-2020,Abuser's Relationship with Elderly Person Being Abused,,37,施虐者與受虐長者關係
-2020,Abuser's Relationship with Elderly Person Being Abused,,4,施虐者與受虐長者關係
-2020,Abuser's Relationship with Elderly Person Being Abused,,5,施虐者與受虐長者關係
-2020,Residential District of Elderly Person Being Abused,,13,受虐長者居住地區
-2020,Residential District of Elderly Person Being Abused,,10,受虐長者居住地區
-2020,Residential District of Elderly Person Being Abused,,4,受虐長者居住地區
-2020,Residential District of Elderly Person Being Abused,,45,受虐長者居住地區
-2020,Residential District of Elderly Person Being Abused,,6,受虐長者居住地區
-2020,Residential District of Elderly Person Being Abused,,14,受虐長者居住地區
-2020,Residential District of Elderly Person Being Abused,,12,受虐長者居住地區
-2020,Residential District of Elderly Person Being Abused,,22,受虐長者居住地區
-2020,Residential District of Elderly Person Being Abused,,32,受虐長者居住地區
-2020,Residential District of Elderly Person Being Abused,,21,受虐長者居住地區
-2020,Residential District of Elderly Person Being Abused,,47,受虐長者居住地區
-2020,Residential District of Elderly Person Being Abused,,33,受虐長者居住地區
-2020,Residential District of Elderly Person Being Abused,,29,受虐長者居住地區
-2020,Residential District of Elderly Person Being Abused,,22,受虐長者居住地區
-2020,Residential District of Elderly Person Being Abused,,46,受虐長者居住地區
-2020,Residential District of Elderly Person Being Abused,,8,受虐長者居住地區
-2020,Residential District of Elderly Person Being Abused,,70,受虐長者居住地區
-2020,Residential District of Elderly Person Being Abused,,34,受虐長者居住地區
-2020,Residential District of Elderly Person Being Abused,,1,受虐長者居住地區
-2021,Type of Elder Abuse,,265,虐待長者性質
-2021,Type of Elder Abuse,,33,虐待長者性質
-2021,Type of Elder Abuse,,0,虐待長者性質
-2021,Type of Elder Abuse,,31,虐待長者性質
-2021,Type of Elder Abuse,,0,虐待長者性質
-2021,Type of Elder Abuse,,11,虐待長者性質
-2021,Type of Elder Abuse,,0,虐待長者性質
-2021,Type of Elder Abuse,,18,虐待長者性質
-2021,Type of Elder Abuse,,59,虐待長者性質
-2021,Type of Elder Abuse,,13,虐待長者性質
-2021,Type of Elder Abuse,,2,虐待長者性質
-2021,Type of Elder Abuse,,0,虐待長者性質
-2021,Type of Elder Abuse,,1,虐待長者性質
-2021,Type of Elder Abuse,,2,虐待長者性質
-2021,Type of Elder Abuse,,0,虐待長者性質
-2021,Type of Elder Abuse,,16,虐待長者性質
-2021,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,118,虐待長者性質及受虐長者性別
-2021,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,17,虐待長者性質及受虐長者性別
-2021,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2021,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,10,虐待長者性質及受虐長者性別
-2021,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2021,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,3,虐待長者性質及受虐長者性別
-2021,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2021,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,5,虐待長者性質及受虐長者性別
-2021,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,147,虐待長者性質及受虐長者性別
-2021,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,16,虐待長者性質及受虐長者性別
-2021,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,0,虐待長者性質及受虐長者性別
-2021,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,21,虐待長者性質及受虐長者性別
-2021,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,0,虐待長者性質及受虐長者性別
-2021,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,8,虐待長者性質及受虐長者性別
-2021,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,0,虐待長者性質及受虐長者性別
-2021,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,13,虐待長者性質及受虐長者性別
-2021,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,24,虐待長者性質及受虐長者性別
-2021,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,2,虐待長者性質及受虐長者性別
-2021,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,1,虐待長者性質及受虐長者性別
-2021,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2021,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,1,虐待長者性質及受虐長者性別
-2021,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2021,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2021,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,4,虐待長者性質及受虐長者性別
-2021,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,35,虐待長者性質及受虐長者性別
-2021,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,11,虐待長者性質及受虐長者性別
-2021,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,1,虐待長者性質及受虐長者性別
-2021,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,0,虐待長者性質及受虐長者性別
-2021,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,0,虐待長者性質及受虐長者性別
-2021,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,2,虐待長者性質及受虐長者性別
-2021,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,0,虐待長者性質及受虐長者性別
-2021,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,12,虐待長者性質及受虐長者性別
-2021,Abuser's Relationship with Elderly Person Being Abused,,44,施虐者與受虐長者關係
-2021,Abuser's Relationship with Elderly Person Being Abused,,16,施虐者與受虐長者關係
-2021,Abuser's Relationship with Elderly Person Being Abused,,3,施虐者與受虐長者關係
-2021,Abuser's Relationship with Elderly Person Being Abused,,3,施虐者與受虐長者關係
-2021,Abuser's Relationship with Elderly Person Being Abused,,233,施虐者與受虐長者關係
-2021,Abuser's Relationship with Elderly Person Being Abused,,4,施虐者與受虐長者關係
-2021,Abuser's Relationship with Elderly Person Being Abused,,13,施虐者與受虐長者關係
-2021,Abuser's Relationship with Elderly Person Being Abused,,10,施虐者與受虐長者關係
-2021,Abuser's Relationship with Elderly Person Being Abused,,0,施虐者與受虐長者關係
-2021,Abuser's Relationship with Elderly Person Being Abused,,22,施虐者與受虐長者關係
-2021,Abuser's Relationship with Elderly Person Being Abused,,2,施虐者與受虐長者關係
-2021,Abuser's Relationship with Elderly Person Being Abused,,8,施虐者與受虐長者關係
-2021,Abuser's Relationship with Elderly Person Being Abused,,14,施虐者與受虐長者關係
-2021,Abuser's Relationship with Elderly Person Being Abused,,4,施虐者與受虐長者關係
-2021,Abuser's Relationship with Elderly Person Being Abused,,1,施虐者與受虐長者關係
-2021,Abuser's Relationship with Elderly Person Being Abused,,1,施虐者與受虐長者關係
-2021,Abuser's Relationship with Elderly Person Being Abused,,69,施虐者與受虐長者關係
-2021,Abuser's Relationship with Elderly Person Being Abused,,1,施虐者與受虐長者關係
-2021,Abuser's Relationship with Elderly Person Being Abused,,1,施虐者與受虐長者關係
-2021,Abuser's Relationship with Elderly Person Being Abused,,0,施虐者與受虐長者關係
-2021,Abuser's Relationship with Elderly Person Being Abused,,0,施虐者與受虐長者關係
-2021,Abuser's Relationship with Elderly Person Being Abused,,1,施虐者與受虐長者關係
-2021,Abuser's Relationship with Elderly Person Being Abused,,0,施虐者與受虐長者關係
-2021,Abuser's Relationship with Elderly Person Being Abused,,1,施虐者與受虐長者關係
-2021,Residential District of Elderly Person Being Abused,,9,受虐長者居住地區
-2021,Residential District of Elderly Person Being Abused,,6,受虐長者居住地區
-2021,Residential District of Elderly Person Being Abused,,4,受虐長者居住地區
-2021,Residential District of Elderly Person Being Abused,,33,受虐長者居住地區
-2021,Residential District of Elderly Person Being Abused,,8,受虐長者居住地區
-2021,Residential District of Elderly Person Being Abused,,19,受虐長者居住地區
-2021,Residential District of Elderly Person Being Abused,,8,受虐長者居住地區
-2021,Residential District of Elderly Person Being Abused,,13,受虐長者居住地區
-2021,Residential District of Elderly Person Being Abused,,9,受虐長者居住地區
-2021,Residential District of Elderly Person Being Abused,,21,受虐長者居住地區
-2021,Residential District of Elderly Person Being Abused,,38,受虐長者居住地區
-2021,Residential District of Elderly Person Being Abused,,40,受虐長者居住地區
-2021,Residential District of Elderly Person Being Abused,,20,受虐長者居住地區
-2021,Residential District of Elderly Person Being Abused,,18,受虐長者居住地區
-2021,Residential District of Elderly Person Being Abused,,36,受虐長者居住地區
-2021,Residential District of Elderly Person Being Abused,,12,受虐長者居住地區
-2021,Residential District of Elderly Person Being Abused,,32,受虐長者居住地區
-2021,Residential District of Elderly Person Being Abused,,32,受虐長者居住地區
-2021,Residential District of Elderly Person Being Abused,,0,受虐長者居住地區
-2021,Residential District of Elderly Person Being Abused,,0,受虐長者居住地區
-2021,Residential District of Elderly Person Being Abused,,3,受虐長者居住地區
-2021,Residential District of Elderly Person Being Abused,,0,受虐長者居住地區
-2021,Residential District of Elderly Person Being Abused,,6,受虐長者居住地區
-2021,Residential District of Elderly Person Being Abused,,0,受虐長者居住地區
-2021,Residential District of Elderly Person Being Abused,,4,受虐長者居住地區
-2021,Residential District of Elderly Person Being Abused,,3,受虐長者居住地區
-2021,Residential District of Elderly Person Being Abused,,6,受虐長者居住地區
-2021,Residential District of Elderly Person Being Abused,,3,受虐長者居住地區
-2021,Residential District of Elderly Person Being Abused,,6,受虐長者居住地區
-2021,Residential District of Elderly Person Being Abused,,16,受虐長者居住地區
-2021,Residential District of Elderly Person Being Abused,,7,受虐長者居住地區
-2021,Residential District of Elderly Person Being Abused,,3,受虐長者居住地區
-2021,Residential District of Elderly Person Being Abused,,8,受虐長者居住地區
-2021,Residential District of Elderly Person Being Abused,,9,受虐長者居住地區
-2021,Residential District of Elderly Person Being Abused,,6,受虐長者居住地區
-2021,Residential District of Elderly Person Being Abused,,7,受虐長者居住地區
-2021,Residential District of Elderly Person Being Abused,,6,受虐長者居住地區
-2021,Residential District of Elderly Person Being Abused,,0,受虐長者居住地區
-2022,Type of Elder Abuse,,190,虐待長者性質
-2022,Type of Elder Abuse,,31,虐待長者性質
-2022,Type of Elder Abuse,,0,虐待長者性質
-2022,Type of Elder Abuse,,10,虐待長者性質
-2022,Type of Elder Abuse,,0,虐待長者性質
-2022,Type of Elder Abuse,,5,虐待長者性質
-2022,Type of Elder Abuse,,0,虐待長者性質
-2022,Type of Elder Abuse,,26,虐待長者性質
-2022,Type of Elder Abuse,,56,虐待長者性質
-2022,Type of Elder Abuse,,12,虐待長者性質
-2022,Type of Elder Abuse,,0,虐待長者性質
-2022,Type of Elder Abuse,,0,虐待長者性質
-2022,Type of Elder Abuse,,0,虐待長者性質
-2022,Type of Elder Abuse,,2,虐待長者性質
-2022,Type of Elder Abuse,,0,虐待長者性質
-2022,Type of Elder Abuse,,8,虐待長者性質
-2022,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,82,虐待長者性質及受虐長者性別
-2022,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,9,虐待長者性質及受虐長者性別
-2022,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2022,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,4,虐待長者性質及受虐長者性別
-2022,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2022,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2022,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2022,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,5,虐待長者性質及受虐長者性別
-2022,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,108,虐待長者性質及受虐長者性別
-2022,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,22,虐待長者性質及受虐長者性別
-2022,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,0,虐待長者性質及受虐長者性別
-2022,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,6,虐待長者性質及受虐長者性別
-2022,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,0,虐待長者性質及受虐長者性別
-2022,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,5,虐待長者性質及受虐長者性別
-2022,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,0,虐待長者性質及受虐長者性別
-2022,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,21,虐待長者性質及受虐長者性別
-2022,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,12,虐待長者性質及受虐長者性別
-2022,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,3,虐待長者性質及受虐長者性別
-2022,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2022,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2022,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2022,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2022,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2022,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,1,虐待長者性質及受虐長者性別
-2022,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,44,虐待長者性質及受虐長者性別
-2022,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,9,虐待長者性質及受虐長者性別
-2022,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,0,虐待長者性質及受虐長者性別
-2022,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,0,虐待長者性質及受虐長者性別
-2022,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,0,虐待長者性質及受虐長者性別
-2022,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,2,虐待長者性質及受虐長者性別
-2022,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,0,虐待長者性質及受虐長者性別
-2022,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,7,虐待長者性質及受虐長者性別
-2022,Abuser's Relationship with Elderly Person Being Abused,,31,施虐者與受虐長者關係
-2022,Abuser's Relationship with Elderly Person Being Abused,,8,施虐者與受虐長者關係
-2022,Abuser's Relationship with Elderly Person Being Abused,,2,施虐者與受虐長者關係
-2022,Abuser's Relationship with Elderly Person Being Abused,,4,施虐者與受虐長者關係
-2022,Abuser's Relationship with Elderly Person Being Abused,,201,施虐者與受虐長者關係
-2022,Abuser's Relationship with Elderly Person Being Abused,,1,施虐者與受虐長者關係
-2022,Abuser's Relationship with Elderly Person Being Abused,,1,施虐者與受虐長者關係
-2022,Abuser's Relationship with Elderly Person Being Abused,,2,施虐者與受虐長者關係
-2022,Abuser's Relationship with Elderly Person Being Abused,,1,施虐者與受虐長者關係
-2022,Abuser's Relationship with Elderly Person Being Abused,,4,施虐者與受虐長者關係
-2022,Abuser's Relationship with Elderly Person Being Abused,,5,施虐者與受虐長者關係
-2022,Abuser's Relationship with Elderly Person Being Abused,,2,施虐者與受虐長者關係
-2022,Abuser's Relationship with Elderly Person Being Abused,,9,施虐者與受虐長者關係
-2022,Abuser's Relationship with Elderly Person Being Abused,,4,施虐者與受虐長者關係
-2022,Abuser's Relationship with Elderly Person Being Abused,,1,施虐者與受虐長者關係
-2022,Abuser's Relationship with Elderly Person Being Abused,,2,施虐者與受虐長者關係
-2022,Abuser's Relationship with Elderly Person Being Abused,,61,施虐者與受虐長者關係
-2022,Abuser's Relationship with Elderly Person Being Abused,,0,施虐者與受虐長者關係
-2022,Abuser's Relationship with Elderly Person Being Abused,,0,施虐者與受虐長者關係
-2022,Abuser's Relationship with Elderly Person Being Abused,,1,施虐者與受虐長者關係
-2022,Abuser's Relationship with Elderly Person Being Abused,,0,施虐者與受虐長者關係
-2022,Abuser's Relationship with Elderly Person Being Abused,,0,施虐者與受虐長者關係
-2022,Abuser's Relationship with Elderly Person Being Abused,,0,施虐者與受虐長者關係
-2022,Abuser's Relationship with Elderly Person Being Abused,,0,施虐者與受虐長者關係
-2022,Residential District of Elderly Person Being Abused,,1,受虐長者居住地區
-2022,Residential District of Elderly Person Being Abused,,10,受虐長者居住地區
-2022,Residential District of Elderly Person Being Abused,,7,受虐長者居住地區
-2022,Residential District of Elderly Person Being Abused,,13,受虐長者居住地區
-2022,Residential District of Elderly Person Being Abused,,1,受虐長者居住地區
-2022,Residential District of Elderly Person Being Abused,,8,受虐長者居住地區
-2022,Residential District of Elderly Person Being Abused,,7,受虐長者居住地區
-2022,Residential District of Elderly Person Being Abused,,21,受虐長者居住地區
-2022,Residential District of Elderly Person Being Abused,,37,受虐長者居住地區
-2022,Residential District of Elderly Person Being Abused,,8,受虐長者居住地區
-2022,Residential District of Elderly Person Being Abused,,28,受虐長者居住地區
-2022,Residential District of Elderly Person Being Abused,,17,受虐長者居住地區
-2022,Residential District of Elderly Person Being Abused,,13,受虐長者居住地區
-2022,Residential District of Elderly Person Being Abused,,17,受虐長者居住地區
-2022,Residential District of Elderly Person Being Abused,,22,受虐長者居住地區
-2022,Residential District of Elderly Person Being Abused,,3,受虐長者居住地區
-2022,Residential District of Elderly Person Being Abused,,20,受虐長者居住地區
-2022,Residential District of Elderly Person Being Abused,,29,受虐長者居住地區
-2022,Residential District of Elderly Person Being Abused,,0,受虐長者居住地區
-2022,Residential District of Elderly Person Being Abused,,1,受虐長者居住地區
-2022,Residential District of Elderly Person Being Abused,,3,受虐長者居住地區
-2022,Residential District of Elderly Person Being Abused,,1,受虐長者居住地區
-2022,Residential District of Elderly Person Being Abused,,7,受虐長者居住地區
-2022,Residential District of Elderly Person Being Abused,,2,受虐長者居住地區
-2022,Residential District of Elderly Person Being Abused,,0,受虐長者居住地區
-2022,Residential District of Elderly Person Being Abused,,1,受虐長者居住地區
-2022,Residential District of Elderly Person Being Abused,,4,受虐長者居住地區
-2022,Residential District of Elderly Person Being Abused,,6,受虐長者居住地區
-2022,Residential District of Elderly Person Being Abused,,5,受虐長者居住地區
-2022,Residential District of Elderly Person Being Abused,,5,受虐長者居住地區
-2022,Residential District of Elderly Person Being Abused,,13,受虐長者居住地區
-2022,Residential District of Elderly Person Being Abused,,1,受虐長者居住地區
-2022,Residential District of Elderly Person Being Abused,,6,受虐長者居住地區
-2022,Residential District of Elderly Person Being Abused,,10,受虐長者居住地區
-2022,Residential District of Elderly Person Being Abused,,1,受虐長者居住地區
-2022,Residential District of Elderly Person Being Abused,,5,受虐長者居住地區
-2022,Residential District of Elderly Person Being Abused,,7,受虐長者居住地區
-2022,Residential District of Elderly Person Being Abused,,0,受虐長者居住地區
-2023,Type of Elder Abuse,,182,虐待長者性質
-2023,Type of Elder Abuse,,16,虐待長者性質
-2023,Type of Elder Abuse,,1,虐待長者性質
-2023,Type of Elder Abuse,,23,虐待長者性質
-2023,Type of Elder Abuse,,0,虐待長者性質
-2023,Type of Elder Abuse,,2,虐待長者性質
-2023,Type of Elder Abuse,,0,虐待長者性質
-2023,Type of Elder Abuse,,16,虐待長者性質
-2023,Type of Elder Abuse,,48,虐待長者性質
-2023,Type of Elder Abuse,,14,虐待長者性質
-2023,Type of Elder Abuse,,0,虐待長者性質
-2023,Type of Elder Abuse,,1,虐待長者性質
-2023,Type of Elder Abuse,,0,虐待長者性質
-2023,Type of Elder Abuse,,1,虐待長者性質
-2023,Type of Elder Abuse,,0,虐待長者性質
-2023,Type of Elder Abuse,,14,虐待長者性質
-2023,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,73,虐待長者性質及受虐長者性別
-2023,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,5,虐待長者性質及受虐長者性別
-2023,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2023,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,4,虐待長者性質及受虐長者性別
-2023,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2023,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2023,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2023,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,4,虐待長者性質及受虐長者性別
-2023,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,109,虐待長者性質及受虐長者性別
-2023,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,11,虐待長者性質及受虐長者性別
-2023,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,1,虐待長者性質及受虐長者性別
-2023,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,19,虐待長者性質及受虐長者性別
-2023,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,0,虐待長者性質及受虐長者性別
-2023,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,2,虐待長者性質及受虐長者性別
-2023,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,0,虐待長者性質及受虐長者性別
-2023,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,12,虐待長者性質及受虐長者性別
-2023,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,20,虐待長者性質及受虐長者性別
-2023,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,2,虐待長者性質及受虐長者性別
-2023,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2023,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,1,虐待長者性質及受虐長者性別
-2023,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2023,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2023,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2023,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,3,虐待長者性質及受虐長者性別
-2023,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,28,虐待長者性質及受虐長者性別
-2023,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,12,虐待長者性質及受虐長者性別
-2023,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,0,虐待長者性質及受虐長者性別
-2023,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,0,虐待長者性質及受虐長者性別
-2023,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,0,虐待長者性質及受虐長者性別
-2023,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,1,虐待長者性質及受虐長者性別
-2023,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,0,虐待長者性質及受虐長者性別
-2023,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,11,虐待長者性質及受虐長者性別
-2023,Abuser's Relationship with Elderly Person Being Abused,,20,施虐者與受虐長者關係
-2023,Abuser's Relationship with Elderly Person Being Abused,,4,施虐者與受虐長者關係
-2023,Abuser's Relationship with Elderly Person Being Abused,,0,施虐者與受虐長者關係
-2023,Abuser's Relationship with Elderly Person Being Abused,,6,施虐者與受虐長者關係
-2023,Abuser's Relationship with Elderly Person Being Abused,,171,施虐者與受虐長者關係
-2023,Abuser's Relationship with Elderly Person Being Abused,,6,施虐者與受虐長者關係
-2023,Abuser's Relationship with Elderly Person Being Abused,,4,施虐者與受虐長者關係
-2023,Abuser's Relationship with Elderly Person Being Abused,,1,施虐者與受虐長者關係
-2023,Abuser's Relationship with Elderly Person Being Abused,,0,施虐者與受虐長者關係
-2023,Abuser's Relationship with Elderly Person Being Abused,,19,施虐者與受虐長者關係
-2023,Abuser's Relationship with Elderly Person Being Abused,,6,施虐者與受虐長者關係
-2023,Abuser's Relationship with Elderly Person Being Abused,,3,施虐者與受虐長者關係
-2023,Abuser's Relationship with Elderly Person Being Abused,,7,施虐者與受虐長者關係
-2023,Abuser's Relationship with Elderly Person Being Abused,,3,施虐者與受虐長者關係
-2023,Abuser's Relationship with Elderly Person Being Abused,,3,施虐者與受虐長者關係
-2023,Abuser's Relationship with Elderly Person Being Abused,,2,施虐者與受虐長者關係
-2023,Abuser's Relationship with Elderly Person Being Abused,,59,施虐者與受虐長者關係
-2023,Abuser's Relationship with Elderly Person Being Abused,,1,施虐者與受虐長者關係
-2023,Abuser's Relationship with Elderly Person Being Abused,,2,施虐者與受虐長者關係
-2023,Abuser's Relationship with Elderly Person Being Abused,,0,施虐者與受虐長者關係
-2023,Abuser's Relationship with Elderly Person Being Abused,,0,施虐者與受虐長者關係
-2023,Abuser's Relationship with Elderly Person Being Abused,,1,施虐者與受虐長者關係
-2023,Abuser's Relationship with Elderly Person Being Abused,,0,施虐者與受虐長者關係
-2023,Abuser's Relationship with Elderly Person Being Abused,,0,施虐者與受虐長者關係
-2023,Residential District of Elderly Person Being Abused,,9,受虐長者居住地區
-2023,Residential District of Elderly Person Being Abused,,3,受虐長者居住地區
-2023,Residential District of Elderly Person Being Abused,,2,受虐長者居住地區
-2023,Residential District of Elderly Person Being Abused,,26,受虐長者居住地區
-2023,Residential District of Elderly Person Being Abused,,6,受虐長者居住地區
-2023,Residential District of Elderly Person Being Abused,,14,受虐長者居住地區
-2023,Residential District of Elderly Person Being Abused,,8,受虐長者居住地區
-2023,Residential District of Elderly Person Being Abused,,13,受虐長者居住地區
-2023,Residential District of Elderly Person Being Abused,,20,受虐長者居住地區
-2023,Residential District of Elderly Person Being Abused,,5,受虐長者居住地區
-2023,Residential District of Elderly Person Being Abused,,13,受虐長者居住地區
-2023,Residential District of Elderly Person Being Abused,,20,受虐長者居住地區
-2023,Residential District of Elderly Person Being Abused,,8,受虐長者居住地區
-2023,Residential District of Elderly Person Being Abused,,12,受虐長者居住地區
-2023,Residential District of Elderly Person Being Abused,,27,受虐長者居住地區
-2023,Residential District of Elderly Person Being Abused,,14,受虐長者居住地區
-2023,Residential District of Elderly Person Being Abused,,17,受虐長者居住地區
-2023,Residential District of Elderly Person Being Abused,,23,受虐長者居住地區
-2023,Residential District of Elderly Person Being Abused,,0,受虐長者居住地區
-2023,Residential District of Elderly Person Being Abused,,1,受虐長者居住地區
-2023,Residential District of Elderly Person Being Abused,,7,受虐長者居住地區
-2023,Residential District of Elderly Person Being Abused,,1,受虐長者居住地區
-2023,Residential District of Elderly Person Being Abused,,8,受虐長者居住地區
-2023,Residential District of Elderly Person Being Abused,,2,受虐長者居住地區
-2023,Residential District of Elderly Person Being Abused,,3,受虐長者居住地區
-2023,Residential District of Elderly Person Being Abused,,3,受虐長者居住地區
-2023,Residential District of Elderly Person Being Abused,,4,受虐長者居住地區
-2023,Residential District of Elderly Person Being Abused,,4,受虐長者居住地區
-2023,Residential District of Elderly Person Being Abused,,1,受虐長者居住地區
-2023,Residential District of Elderly Person Being Abused,,9,受虐長者居住地區
-2023,Residential District of Elderly Person Being Abused,,4,受虐長者居住地區
-2023,Residential District of Elderly Person Being Abused,,2,受虐長者居住地區
-2023,Residential District of Elderly Person Being Abused,,4,受虐長者居住地區
-2023,Residential District of Elderly Person Being Abused,,8,受虐長者居住地區
-2023,Residential District of Elderly Person Being Abused,,2,受虐長者居住地區
-2023,Residential District of Elderly Person Being Abused,,8,受虐長者居住地區
-2023,Residential District of Elderly Person Being Abused,,7,受虐長者居住地區
-2023,Residential District of Elderly Person Being Abused,,0,受虐長者居住地區
-2024,Type of Elder Abuse,,152,虐待長者性質
-2024,Type of Elder Abuse,,14,虐待長者性質
-2024,Type of Elder Abuse,,2,虐待長者性質
-2024,Type of Elder Abuse,,5,虐待長者性質
-2024,Type of Elder Abuse,,0,虐待長者性質
-2024,Type of Elder Abuse,,3,虐待長者性質
-2024,Type of Elder Abuse,,0,虐待長者性質
-2024,Type of Elder Abuse,,14,虐待長者性質
-2024,Type of Elder Abuse,,59,虐待長者性質
-2024,Type of Elder Abuse,,14,虐待長者性質
-2024,Type of Elder Abuse,,2,虐待長者性質
-2024,Type of Elder Abuse,,0,虐待長者性質
-2024,Type of Elder Abuse,,0,虐待長者性質
-2024,Type of Elder Abuse,,4,虐待長者性質
-2024,Type of Elder Abuse,,0,虐待長者性質
-2024,Type of Elder Abuse,,14,虐待長者性質
-2024,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,44,虐待長者性質及受虐長者性別
-2024,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,4,虐待長者性質及受虐長者性別
-2024,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,1,虐待長者性質及受虐長者性別
-2024,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,3,虐待長者性質及受虐長者性別
-2024,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2024,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2024,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2024,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,4,虐待長者性質及受虐長者性別
-2024,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,108,虐待長者性質及受虐長者性別
-2024,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,10,虐待長者性質及受虐長者性別
-2024,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,1,虐待長者性質及受虐長者性別
-2024,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,2,虐待長者性質及受虐長者性別
-2024,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,0,虐待長者性質及受虐長者性別
-2024,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,3,虐待長者性質及受虐長者性別
-2024,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,0,虐待長者性質及受虐長者性別
-2024,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,10,虐待長者性質及受虐長者性別
-2024,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,14,虐待長者性質及受虐長者性別
-2024,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,1,虐待長者性質及受虐長者性別
-2024,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2024,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2024,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2024,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2024,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,0,虐待長者性質及受虐長者性別
-2024,Type of Elder Abuse and Sex of Elderly Person Being Abused,Male,1,虐待長者性質及受虐長者性別
-2024,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,45,虐待長者性質及受虐長者性別
-2024,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,13,虐待長者性質及受虐長者性別
-2024,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,2,虐待長者性質及受虐長者性別
-2024,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,0,虐待長者性質及受虐長者性別
-2024,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,0,虐待長者性質及受虐長者性別
-2024,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,4,虐待長者性質及受虐長者性別
-2024,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,0,虐待長者性質及受虐長者性別
-2024,Type of Elder Abuse and Sex of Elderly Person Being Abused,Female,13,虐待長者性質及受虐長者性別
-2024,Abuser's Relationship with Elderly Person Being Abused,,14,施虐者與受虐長者關係
-2024,Abuser's Relationship with Elderly Person Being Abused,,4,施虐者與受虐長者關係
-2024,Abuser's Relationship with Elderly Person Being Abused,,3,施虐者與受虐長者關係
-2024,Abuser's Relationship with Elderly Person Being Abused,,2,施虐者與受虐長者關係
-2024,Abuser's Relationship with Elderly Person Being Abused,,143,施虐者與受虐長者關係
-2024,Abuser's Relationship with Elderly Person Being Abused,,1,施虐者與受虐長者關係
-2024,Abuser's Relationship with Elderly Person Being Abused,,3,施虐者與受虐長者關係
-2024,Abuser's Relationship with Elderly Person Being Abused,,1,施虐者與受虐長者關係
-2024,Abuser's Relationship with Elderly Person Being Abused,,0,施虐者與受虐長者關係
-2024,Abuser's Relationship with Elderly Person Being Abused,,8,施虐者與受虐長者關係
-2024,Abuser's Relationship with Elderly Person Being Abused,,9,施虐者與受虐長者關係
-2024,Abuser's Relationship with Elderly Person Being Abused,,2,施虐者與受虐長者關係
-2024,Abuser's Relationship with Elderly Person Being Abused,,11,施虐者與受虐長者關係
-2024,Abuser's Relationship with Elderly Person Being Abused,,6,施虐者與受虐長者關係
-2024,Abuser's Relationship with Elderly Person Being Abused,,0,施虐者與受虐長者關係
-2024,Abuser's Relationship with Elderly Person Being Abused,,2,施虐者與受虐長者關係
-2024,Abuser's Relationship with Elderly Person Being Abused,,68,施虐者與受虐長者關係
-2024,Abuser's Relationship with Elderly Person Being Abused,,0,施虐者與受虐長者關係
-2024,Abuser's Relationship with Elderly Person Being Abused,,2,施虐者與受虐長者關係
-2024,Abuser's Relationship with Elderly Person Being Abused,,1,施虐者與受虐長者關係
-2024,Abuser's Relationship with Elderly Person Being Abused,,0,施虐者與受虐長者關係
-2024,Abuser's Relationship with Elderly Person Being Abused,,0,施虐者與受虐長者關係
-2024,Abuser's Relationship with Elderly Person Being Abused,,3,施虐者與受虐長者關係
-2024,Abuser's Relationship with Elderly Person Being Abused,,0,施虐者與受虐長者關係
-2024,Residential District of Elderly Person Being Abused,,1,受虐長者居住地區
-2024,Residential District of Elderly Person Being Abused,,3,受虐長者居住地區
-2024,Residential District of Elderly Person Being Abused,,4,受虐長者居住地區
-2024,Residential District of Elderly Person Being Abused,,8,受虐長者居住地區
-2024,Residential District of Elderly Person Being Abused,,2,受虐長者居住地區
-2024,Residential District of Elderly Person Being Abused,,17,受虐長者居住地區
-2024,Residential District of Elderly Person Being Abused,,14,受虐長者居住地區
-2024,Residential District of Elderly Person Being Abused,,7,受虐長者居住地區
-2024,Residential District of Elderly Person Being Abused,,15,受虐長者居住地區
-2024,Residential District of Elderly Person Being Abused,,8,受虐長者居住地區
-2024,Residential District of Elderly Person Being Abused,,13,受虐長者居住地區
-2024,Residential District of Elderly Person Being Abused,,20,受虐長者居住地區
-2024,Residential District of Elderly Person Being Abused,,7,受虐長者居住地區
-2024,Residential District of Elderly Person Being Abused,,6,受虐長者居住地區
-2024,Residential District of Elderly Person Being Abused,,19,受虐長者居住地區
-2024,Residential District of Elderly Person Being Abused,,4,受虐長者居住地區
-2024,Residential District of Elderly Person Being Abused,,17,受虐長者居住地區
-2024,Residential District of Elderly Person Being Abused,,25,受虐長者居住地區
-2024,Residential District of Elderly Person Being Abused,,0,受虐長者居住地區
-2024,Residential District of Elderly Person Being Abused,,1,受虐長者居住地區
-2024,Residential District of Elderly Person Being Abused,,3,受虐長者居住地區
-2024,Residential District of Elderly Person Being Abused,,2,受虐長者居住地區
-2024,Residential District of Elderly Person Being Abused,,7,受虐長者居住地區
-2024,Residential District of Elderly Person Being Abused,,0,受虐長者居住地區
-2024,Residential District of Elderly Person Being Abused,,2,受虐長者居住地區
-2024,Residential District of Elderly Person Being Abused,,3,受虐長者居住地區
-2024,Residential District of Elderly Person Being Abused,,8,受虐長者居住地區
-2024,Residential District of Elderly Person Being Abused,,2,受虐長者居住地區
-2024,Residential District of Elderly Person Being Abused,,1,受虐長者居住地區
-2024,Residential District of Elderly Person Being Abused,,13,受虐長者居住地區
-2024,Residential District of Elderly Person Being Abused,,9,受虐長者居住地區
-2024,Residential District of Elderly Person Being Abused,,4,受虐長者居住地區
-2024,Residential District of Elderly Person Being Abused,,6,受虐長者居住地區
-2024,Residential District of Elderly Person Being Abused,,9,受虐長者居住地區
-2024,Residential District of Elderly Person Being Abused,,1,受虐長者居住地區
-2024,Residential District of Elderly Person Being Abused,,11,受虐長者居住地區
-2024,Residential District of Elderly Person Being Abused,,11,受虐長者居住地區
-2024,Residential District of Elderly Person Being Abused,,0,受虐長者居住地區
+year,report_to_police,abuse_type,gender,relationship_to_elder,no_of_cases
+2005,不適用,身體虐待,男性,虐待長者性質及受虐長者性別,200
+2005,不適用,精神虐待,男性,虐待長者性質及受虐長者性別,15
+2005,不適用,疏忽照顧,男性,虐待長者性質及受虐長者性別,1
+2005,不適用,侵吞財產,男性,虐待長者性質及受虐長者性別,41
+2005,不適用,遺棄長者,男性,虐待長者性質及受虐長者性別,1
+2005,不適用,性侵犯,男性,虐待長者性質及受虐長者性別,1
+2005,不適用,其他,男性,虐待長者性質及受虐長者性別,0
+2005,不適用,身體虐待,女性,虐待長者性質及受虐長者性別,190
+2005,不適用,精神虐待,女性,虐待長者性質及受虐長者性別,11
+2005,不適用,疏忽照顧,女性,虐待長者性質及受虐長者性別,2
+2005,不適用,侵吞財產,女性,虐待長者性質及受虐長者性別,46
+2005,不適用,遺棄長者,女性,虐待長者性質及受虐長者性別,0
+2005,不適用,性侵犯,女性,虐待長者性質及受虐長者性別,0
+2005,不適用,其他,女性,虐待長者性質及受虐長者性別,0
+2005,不適用,子,,Son,57
+2005,不適用,女,,Daughter,8
+2005,不適用,女婿,,Son-in-law,3
+2005,不適用,媳婦,,Daughter-in-law,16
+2005,不適用,配偶／ 親密伴侶,,Spouse/ intimate partner,226
+2005,不適用,孫／外孫,,Grandchildren,7
+2005,不適用,親戚,,Relative,11
+2005,不適用,朋友／鄰居,,Friend/ neighbour,129
+2005,不適用,沒有親戚 關係但同住,,施虐者與受虐長者關係,21
+2005,不適用,家庭傭工,,Domestic helper,37
+2005,不適用,提供服務 給 長者的 機構 員工,,施虐者與受虐長者關係,3
+2005,不適用,其他,,Others,10
+2005,不適用,中西區,,Central and Western,19
+2005,不適用,南區,,Southern,19
+2005,不適用,離島區,,Islands,7
+2005,不適用,東區,,Eastern,42
+2005,不適用,灣仔區,,Wan Chai,10
+2005,不適用,九龍城區,,Kowloon City,33
+2005,不適用,油尖旺區,,Yau Tsim Mong,29
+2005,不適用,深水埗區,,Sham Shui Po,25
+2005,不適用,黃大仙區,,Wong Tai Sin,43
+2005,不適用,西貢區,,Sai Kung,11
+2005,不適用,觀塘區,,Kwun Tong,79
+2005,不適用,沙田區,,Sha Tin,31
+2005,不適用,大埔區,,Tai Po,19
+2005,不適用,北區,,North,12
+2005,不適用,元朗區,,Yuen Long,40
+2005,不適用,荃灣區,,Tsuen Wan,36
+2005,不適用,葵青區,,Kwai Tsing,44
+2005,不適用,屯門區,,Tuen Mun,29
+2005,不適用,不知道,,Unknown,0
+2006,不適用,身體虐待,男性,虐待長者性質及受虐長者性別,151
+2006,不適用,精神虐待,男性,虐待長者性質及受虐長者性別,25
+2006,不適用,疏忽照顧,男性,虐待長者性質及受虐長者性別,2
+2006,不適用,侵吞財產,男性,虐待長者性質及受虐長者性別,44
+2006,不適用,遺棄長者,男性,虐待長者性質及受虐長者性別,1
+2006,不適用,性侵犯,男性,虐待長者性質及受虐長者性別,0
+2006,不適用,其他,男性,虐待長者性質及受虐長者性別,0
+2006,不適用,身體虐待,女性,虐待長者性質及受虐長者性別,176
+2006,不適用,精神虐待,女性,虐待長者性質及受虐長者性別,32
+2006,不適用,疏忽照顧,女性,虐待長者性質及受虐長者性別,1
+2006,不適用,侵吞財產,女性,虐待長者性質及受虐長者性別,48
+2006,不適用,遺棄長者,女性,虐待長者性質及受虐長者性別,0
+2006,不適用,性侵犯,女性,虐待長者性質及受虐長者性別,4
+2006,不適用,其他,女性,虐待長者性質及受虐長者性別,0
+2006,不適用,子,,Son,74
+2006,不適用,女,,Daughter,19
+2006,不適用,女婿,,Son-in-law,6
+2006,不適用,媳婦,,Daughter-in-law,21
+2006,不適用,配偶／ 親密伴侶,,Spouse/ intimate partner,262
+2006,不適用,孫／外孫,,Grandchildren,6
+2006,不適用,親戚,,Relative,12
+2006,不適用,朋友／鄰居,,Friend/ neighbour,50
+2006,不適用,沒有親戚 關係但同住,,施虐者與受虐長者關係,10
+2006,不適用,家庭傭工,,Domestic helper,49
+2006,不適用,提供服務 給 長者的 機構 員工,,施虐者與受虐長者關係,4
+2006,不適用,其他,,Others,9
+2006,不適用,中西區,,Central and Western,14
+2006,不適用,南區,,Southern,21
+2006,不適用,離島區,,Islands,3
+2006,不適用,東區,,Eastern,67
+2006,不適用,灣仔區,,Wan Chai,6
+2006,不適用,九龍城區,,Kowloon City,20
+2006,不適用,油尖旺區,,Yau Tsim Mong,20
+2006,不適用,深水埗區,,Sham Shui Po,42
+2006,不適用,黃大仙區,,Wong Tai Sin,32
+2006,不適用,西貢區,,Sai Kung,13
+2006,不適用,觀塘區,,Kwun Tong,78
+2006,不適用,沙田區,,Sha Tin,30
+2006,不適用,大埔區,,Tai Po,13
+2006,不適用,北區,,North,15
+2006,不適用,元朗區,,Yuen Long,48
+2006,不適用,荃灣區,,Tsuen Wan,27
+2006,不適用,葵青區,,Kwai Tsing,40
+2006,不適用,屯門區,,Tuen Mun,30
+2006,不適用,不知道,,Unknown,3
+2007,不適用,身體虐待,男性,虐待長者性質及受虐長者性別,159
+2007,不適用,精神虐待,男性,虐待長者性質及受虐長者性別,66
+2007,不適用,疏忽照顧,男性,虐待長者性質及受虐長者性別,0
+2007,不適用,侵吞財產,男性,虐待長者性質及受虐長者性別,26
+2007,不適用,遺棄長者,男性,虐待長者性質及受虐長者性別,0
+2007,不適用,性侵犯,男性,虐待長者性質及受虐長者性別,0
+2007,不適用,其他,男性,虐待長者性質及受虐長者性別,0
+2007,不適用,身體虐待,女性,虐待長者性質及受虐長者性別,196
+2007,不適用,精神虐待,女性,虐待長者性質及受虐長者性別,75
+2007,不適用,疏忽照顧,女性,虐待長者性質及受虐長者性別,2
+2007,不適用,侵吞財產,女性,虐待長者性質及受虐長者性別,50
+2007,不適用,遺棄長者,女性,虐待長者性質及受虐長者性別,0
+2007,不適用,性侵犯,女性,虐待長者性質及受虐長者性別,1
+2007,不適用,其他,女性,虐待長者性質及受虐長者性別,0
+2007,不適用,子,,Son,73
+2007,不適用,女,,Daughter,17
+2007,不適用,女婿,,Son-in-law,6
+2007,不適用,媳婦,,Daughter-in-law,21
+2007,不適用,配偶／ 親密伴侶,,Spouse/ intimate partner,415
+2007,不適用,孫／外孫,,Grandchildren,16
+2007,不適用,親戚,,Relative,6
+2007,不適用,朋友／鄰居,,Friend/ neighbour,2
+2007,不適用,沒有親戚 關係但同住,,施虐者與受虐長者關係,0
+2007,不適用,家庭傭工,,Domestic helper,49
+2007,不適用,提供服務 給 長者的 機構 員工,,施虐者與受虐長者關係,4
+2007,不適用,其他,,Others,3
+2007,不適用,中西區,,Central and Western,16
+2007,不適用,南區,,Southern,19
+2007,不適用,離島區,,Islands,1
+2007,不適用,東區,,Eastern,48
+2007,不適用,灣仔區,,Wan Chai,16
+2007,不適用,九龍城區,,Kowloon City,29
+2007,不適用,油尖旺區,,Yau Tsim Mong,32
+2007,不適用,深水埗區,,Sham Shui Po,40
+2007,不適用,黃大仙區,,Wong Tai Sin,57
+2007,不適用,西貢區,,Sai Kung,11
+2007,不適用,觀塘區,,Kwun Tong,83
+2007,不適用,沙田區,,Sha Tin,44
+2007,不適用,大埔區,,Tai Po,8
+2007,不適用,北區,,North,22
+2007,不適用,元朗區,,Yuen Long,39
+2007,不適用,荃灣區,,Tsuen Wan,30
+2007,不適用,葵青區,,Kwai Tsing,90
+2007,不適用,屯門區,,Tuen Mun,24
+2007,不適用,不知道,,Unknown,3
+2008,不適用,身體虐待,男性,虐待長者性質及受虐長者性別,151
+2008,不適用,精神虐待,男性,虐待長者性質及受虐長者性別,93
+2008,不適用,疏忽照顧,男性,虐待長者性質及受虐長者性別,0
+2008,不適用,侵吞財產,男性,虐待長者性質及受虐長者性別,28
+2008,不適用,遺棄長者,男性,虐待長者性質及受虐長者性別,0
+2008,不適用,性侵犯,男性,虐待長者性質及受虐長者性別,0
+2008,不適用,其他,男性,虐待長者性質及受虐長者性別,0
+2008,不適用,身體虐待,女性,虐待長者性質及受虐長者性別,212
+2008,不適用,精神虐待,女性,虐待長者性質及受虐長者性別,95
+2008,不適用,疏忽照顧,女性,虐待長者性質及受虐長者性別,1
+2008,不適用,侵吞財產,女性,虐待長者性質及受虐長者性別,38
+2008,不適用,遺棄長者,女性,虐待長者性質及受虐長者性別,1
+2008,不適用,性侵犯,女性,虐待長者性質及受虐長者性別,6
+2008,不適用,其他,女性,虐待長者性質及受虐長者性別,0
+2008,不適用,子,,Son,61
+2008,不適用,女,,Daughter,13
+2008,不適用,女婿,,Son-in-law,0
+2008,不適用,媳婦,,Daughter-in-law,13
+2008,不適用,配偶／ 親密伴侶,,Spouse/ intimate partner,484
+2008,不適用,孫／外孫,,Grandchildren,10
+2008,不適用,親戚,,Relative,3
+2008,不適用,朋友／鄰居,,Friend/ neighbour,3
+2008,不適用,沒有親戚 關係但同住,,施虐者與受虐長者關係,2
+2008,不適用,家庭傭工,,Domestic helper,49
+2008,不適用,提供服務 給 長者的 機構 員工,,施虐者與受虐長者關係,8
+2008,不適用,其他,,Others,1
+2008,不適用,中西區,,Central and Western,17
+2008,不適用,南區,,Southern,19
+2008,不適用,離島區,,Islands,4
+2008,不適用,東區,,Eastern,33
+2008,不適用,灣仔區,,Wan Chai,11
+2008,不適用,九龍城區,,Kowloon City,26
+2008,不適用,油尖旺區,,Yau Tsim Mong,27
+2008,不適用,深水埗區,,Sham Shui Po,33
+2008,不適用,黃大仙區,,Wong Tai Sin,103
+2008,不適用,西貢區,,Sai Kung,13
+2008,不適用,觀塘區,,Kwun Tong,77
+2008,不適用,沙田區,,Sha Tin,33
+2008,不適用,大埔區,,Tai Po,24
+2008,不適用,北區,,North,33
+2008,不適用,元朗區,,Yuen Long,42
+2008,不適用,荃灣區,,Tsuen Wan,29
+2008,不適用,葵青區,,Kwai Tsing,90
+2008,不適用,屯門區,,Tuen Mun,29
+2008,不適用,不知道,,Unknown,4
+2009,不適用,身體虐待,男性,虐待長者性質及受虐長者性別,148
+2009,不適用,精神虐待,男性,虐待長者性質及受虐長者性別,17
+2009,不適用,疏忽照顧,男性,虐待長者性質及受虐長者性別,0
+2009,不適用,侵吞財產,男性,虐待長者性質及受虐長者性別,19
+2009,不適用,遺棄長者,男性,虐待長者性質及受虐長者性別,0
+2009,不適用,性侵犯,男性,虐待長者性質及受虐長者性別,0
+2009,不適用,其他,男性,虐待長者性質及受虐長者性別,0
+2009,不適用,身體虐待,女性,虐待長者性質及受虐長者性別,196
+2009,不適用,精神虐待,女性,虐待長者性質及受虐長者性別,18
+2009,不適用,疏忽照顧,女性,虐待長者性質及受虐長者性別,0
+2009,不適用,侵吞財產,女性,虐待長者性質及受虐長者性別,43
+2009,不適用,遺棄長者,女性,虐待長者性質及受虐長者性別,0
+2009,不適用,性侵犯,女性,虐待長者性質及受虐長者性別,4
+2009,不適用,其他,女性,虐待長者性質及受虐長者性別,0
+2009,不適用,子,,Son,57
+2009,不適用,女,,Daughter,11
+2009,不適用,女婿,,Son-in-law,1
+2009,不適用,媳婦,,Daughter-in-law,13
+2009,不適用,配偶／ 親密伴侶,,Spouse/ intimate partner,313
+2009,不適用,孫／外孫,,Grandchildren,7
+2009,不適用,親戚,,Relative,1
+2009,不適用,朋友／鄰居,,Friend/ neighbour,3
+2009,不適用,沒有親戚 關係但同住,,施虐者與受虐長者關係,1
+2009,不適用,家庭傭工,,Domestic helper,46
+2009,不適用,提供服務 給 長者的 機構 員工,,施虐者與受虐長者關係,9
+2009,不適用,其他,,Others,3
+2009,不適用,中西區,,Central and Western,13
+2009,不適用,南區,,Southern,12
+2009,不適用,離島區,,Islands,12
+2009,不適用,東區,,Eastern,21
+2009,不適用,灣仔區,,Wan Chai,7
+2009,不適用,九龍城區,,Kowloon City,36
+2009,不適用,油尖旺區,,Yau Tsim Mong,25
+2009,不適用,深水埗區,,Sham Shui Po,27
+2009,不適用,黃大仙區,,Wong Tai Sin,43
+2009,不適用,西貢區,,Sai Kung,7
+2009,不適用,觀塘區,,Kwun Tong,57
+2009,不適用,沙田區,,Sha Tin,33
+2009,不適用,大埔區,,Tai Po,14
+2009,不適用,北區,,North,12
+2009,不適用,元朗區,,Yuen Long,35
+2009,不適用,荃灣區,,Tsuen Wan,24
+2009,不適用,葵青區,,Kwai Tsing,36
+2009,不適用,屯門區,,Tuen Mun,25
+2009,不適用,不知道,,Unknown,26
+2010,不適用,身體虐待,男性,虐待長者性質及受虐長者性別,94
+2010,不適用,精神虐待,男性,虐待長者性質及受虐長者性別,8
+2010,不適用,疏忽照顧,男性,虐待長者性質及受虐長者性別,2
+2010,不適用,侵吞財產,男性,虐待長者性質及受虐長者性別,4
+2010,不適用,遺棄長者,男性,虐待長者性質及受虐長者性別,1
+2010,不適用,性侵犯,男性,虐待長者性質及受虐長者性別,0
+2010,不適用,其他,男性,虐待長者性質及受虐長者性別,0
+2010,不適用,身體虐待,女性,虐待長者性質及受虐長者性別,154
+2010,不適用,精神虐待,女性,虐待長者性質及受虐長者性別,16
+2010,不適用,疏忽照顧,女性,虐待長者性質及受虐長者性別,1
+2010,不適用,侵吞財產,女性,虐待長者性質及受虐長者性別,14
+2010,不適用,遺棄長者,女性,虐待長者性質及受虐長者性別,0
+2010,不適用,性侵犯,女性,虐待長者性質及受虐長者性別,1
+2010,不適用,其他,女性,虐待長者性質及受虐長者性別,3
+2010,不適用,子,,Son,27
+2010,不適用,女,,Daughter,6
+2010,不適用,女婿,,Son-in-law,2
+2010,不適用,媳婦,,Daughter-in-law,4
+2010,不適用,配偶／ 親密伴侶,,Spouse/ intimate partner,250
+2010,不適用,孫／外孫,,Grandchildren,1
+2010,不適用,親戚,,Relative,3
+2010,不適用,朋友／鄰居,,Friend/ neighbour,2
+2010,不適用,沒有親戚 關係但同住,,施虐者與受虐長者關係,2
+2010,不適用,家庭傭工,,Domestic helper,15
+2010,不適用,提供服務 給 長者的 機構 員工,,施虐者與受虐長者關係,2
+2010,不適用,其他,,Others,5
+2010,不適用,中西區,,Central and Western,19
+2010,不適用,南區,,Southern,16
+2010,不適用,離島區,,Islands,3
+2010,不適用,東區,,Eastern,15
+2010,不適用,灣仔區,,Wan Chai,5
+2010,不適用,九龍城區,,Kowloon City,8
+2010,不適用,油尖旺區,,Yau Tsim Mong,8
+2010,不適用,深水埗區,,Sham Shui Po,7
+2010,不適用,黃大仙區,,Wong Tai Sin,21
+2010,不適用,西貢區,,Sai Kung,10
+2010,不適用,觀塘區,,Kwun Tong,26
+2010,不適用,沙田區,,Sha Tin,26
+2010,不適用,大埔區,,Tai Po,9
+2010,不適用,北區,,North,8
+2010,不適用,元朗區,,Yuen Long,24
+2010,不適用,荃灣區,,Tsuen Wan,19
+2010,不適用,葵青區,,Kwai Tsing,28
+2010,不適用,屯門區,,Tuen Mun,13
+2010,不適用,不知道,,Unknown,54
+2011,不適用,身體虐待,男性,虐待長者性質及受虐長者性別,130
+2011,不適用,精神虐待,男性,虐待長者性質及受虐長者性別,10
+2011,不適用,疏忽照顧,男性,虐待長者性質及受虐長者性別,0
+2011,不適用,侵吞財產,男性,虐待長者性質及受虐長者性別,12
+2011,不適用,遺棄長者,男性,虐待長者性質及受虐長者性別,2
+2011,不適用,性侵犯,男性,虐待長者性質及受虐長者性別,0
+2011,不適用,其他,男性,虐待長者性質及受虐長者性別,1
+2011,不適用,身體虐待,女性,虐待長者性質及受虐長者性別,141
+2011,不適用,精神虐待,女性,虐待長者性質及受虐長者性別,13
+2011,不適用,疏忽照顧,女性,虐待長者性質及受虐長者性別,2
+2011,不適用,侵吞財產,女性,虐待長者性質及受虐長者性別,31
+2011,不適用,遺棄長者,女性,虐待長者性質及受虐長者性別,1
+2011,不適用,性侵犯,女性,虐待長者性質及受虐長者性別,2
+2011,不適用,其他,女性,虐待長者性質及受虐長者性別,6
+2011,不適用,子,,Son,32
+2011,不適用,女,,Daughter,8
+2011,不適用,女婿,,Son-in-law,3
+2011,不適用,媳婦,,Daughter-in-law,11
+2011,不適用,配偶／ 親密伴侶,,Spouse/ intimate partner,243
+2011,不適用,孫／外孫,,Grandchildren,2
+2011,不適用,親戚,,Relative,6
+2011,不適用,朋友／鄰居,,Friend/ neighbour,8
+2011,不適用,沒有親戚 關係但同住,,施虐者與受虐長者關係,2
+2011,不適用,家庭傭工,,Domestic helper,42
+2011,不適用,提供服務 給 長者的 機構 員工,,施虐者與受虐長者關係,3
+2011,不適用,其他,,Others,8
+2011,不適用,中西區,,Central and Western,17
+2011,不適用,南區,,Southern,14
+2011,不適用,離島區,,Islands,9
+2011,不適用,東區,,Eastern,16
+2011,不適用,灣仔區,,Wan Chai,5
+2011,不適用,九龍城區,,Kowloon City,12
+2011,不適用,油尖旺區,,Yau Tsim Mong,17
+2011,不適用,深水埗區,,Sham Shui Po,19
+2011,不適用,黃大仙區,,Wong Tai Sin,40
+2011,不適用,西貢區,,Sai Kung,9
+2011,不適用,觀塘區,,Kwun Tong,34
+2011,不適用,沙田區,,Sha Tin,17
+2011,不適用,大埔區,,Tai Po,10
+2011,不適用,北區,,North,17
+2011,不適用,元朗區,,Yuen Long,33
+2011,不適用,荃灣區,,Tsuen Wan,17
+2011,不適用,葵青區,,Kwai Tsing,47
+2011,不適用,屯門區,,Tuen Mun,16
+2011,不適用,不知道,,Unknown,19
+2012,不適用,身體虐待,男性,虐待長者性質及受虐長者性別,92
+2012,不適用,精神虐待,男性,虐待長者性質及受虐長者性別,15
+2012,不適用,疏忽照顧,男性,虐待長者性質及受虐長者性別,1
+2012,不適用,侵吞財產,男性,虐待長者性質及受虐長者性別,23
+2012,不適用,遺棄長者,男性,虐待長者性質及受虐長者性別,0
+2012,不適用,性侵犯,男性,虐待長者性質及受虐長者性別,0
+2012,不適用,其他,男性,虐待長者性質及受虐長者性別,2
+2012,不適用,身體虐待,女性,虐待長者性質及受虐長者性別,165
+2012,不適用,精神虐待,女性,虐待長者性質及受虐長者性別,21
+2012,不適用,疏忽照顧,女性,虐待長者性質及受虐長者性別,2
+2012,不適用,侵吞財產,女性,虐待長者性質及受虐長者性別,45
+2012,不適用,遺棄長者,女性,虐待長者性質及受虐長者性別,2
+2012,不適用,性侵犯,女性,虐待長者性質及受虐長者性別,4
+2012,不適用,其他,女性,虐待長者性質及受虐長者性別,3
+2012,不適用,子,,Son,45
+2012,不適用,女,,Daughter,9
+2012,不適用,女婿,,Son-in-law,0
+2012,不適用,媳婦,,Daughter-in-law,14
+2012,不適用,配偶／ 親密伴侶,,Spouse/ intimate partner,231
+2012,不適用,孫／外孫,,Grandchildren,7
+2012,不適用,親戚,,Relative,10
+2012,不適用,朋友／鄰居,,Friend/ neighbour,15
+2012,不適用,沒有親戚 關係但同住,,施虐者與受虐長者關係,2
+2012,不適用,家庭傭工,,Domestic helper,55
+2012,不適用,提供服務 給 長者的 機構 員工,,施虐者與受虐長者關係,16
+2012,不適用,其他,,Others,4
+2012,不適用,中西區,,Central and Western,18
+2012,不適用,南區,,Southern,15
+2012,不適用,離島區,,Islands,6
+2012,不適用,東區,,Eastern,24
+2012,不適用,灣仔區,,Wan Chai,4
+2012,不適用,九龍城區,,Kowloon City,16
+2012,不適用,油尖旺區,,Yau Tsim Mong,21
+2012,不適用,深水埗區,,Sham Shui Po,26
+2012,不適用,黃大仙區,,Wong Tai Sin,31
+2012,不適用,西貢區,,Sai Kung,6
+2012,不適用,觀塘區,,Kwun Tong,35
+2012,不適用,沙田區,,Sha Tin,29
+2012,不適用,大埔區,,Tai Po,11
+2012,不適用,北區,,North,9
+2012,不適用,元朗區,,Yuen Long,33
+2012,不適用,荃灣區,,Tsuen Wan,29
+2012,不適用,葵青區,,Kwai Tsing,63
+2012,不適用,屯門區,,Tuen Mun,30
+2012,不適用,不知道,,Unknown,2
+2013,不適用,身體虐待,男性,虐待長者性質及受虐長者性別,181
+2013,不適用,精神虐待,男性,虐待長者性質及受虐長者性別,19
+2013,不適用,疏忽照顧,男性,虐待長者性質及受虐長者性別,0
+2013,不適用,侵吞財產,男性,虐待長者性質及受虐長者性別,24
+2013,不適用,遺棄長者,男性,虐待長者性質及受虐長者性別,0
+2013,不適用,性侵犯,男性,虐待長者性質及受虐長者性別,1
+2013,不適用,其他,男性,虐待長者性質及受虐長者性別,0
+2013,不適用,身體虐待,女性,虐待長者性質及受虐長者性別,218
+2013,不適用,精神虐待,女性,虐待長者性質及受虐長者性別,54
+2013,不適用,疏忽照顧,女性,虐待長者性質及受虐長者性別,0
+2013,不適用,侵吞財產,女性,虐待長者性質及受虐長者性別,46
+2013,不適用,遺棄長者,女性,虐待長者性質及受虐長者性別,2
+2013,不適用,性侵犯,女性,虐待長者性質及受虐長者性別,8
+2013,不適用,其他,女性,虐待長者性質及受虐長者性別,0
+2013,不適用,子,,Son,64
+2013,不適用,女,,Daughter,19
+2013,不適用,女婿,,Son-in-law,2
+2013,不適用,媳婦,,Daughter-in-law,17
+2013,不適用,配偶／ 親密伴侶,,Spouse/ intimate partner,376
+2013,不適用,孫／外孫,,Grandchildren,8
+2013,不適用,親戚,,Relative,15
+2013,不適用,朋友／鄰居,,Friend/ neighbour,11
+2013,不適用,沒有親戚 關係但同住,,施虐者與受虐長者關係,3
+2013,不適用,家庭傭工,,Domestic helper,54
+2013,不適用,提供服務 給 長者的 機構 員工,,施虐者與受虐長者關係,13
+2013,不適用,其他,,Others,7
+2013,不適用,中西區,,Central and Western,23
+2013,不適用,南區,,Southern,24
+2013,不適用,離島區,,Islands,4
+2013,不適用,東區,,Eastern,46
+2013,不適用,灣仔區,,Wan Chai,8
+2013,不適用,九龍城區,,Kowloon City,16
+2013,不適用,油尖旺區,,Yau Tsim Mong,21
+2013,不適用,深水埗區,,Sham Shui Po,48
+2013,不適用,黃大仙區,,Wong Tai Sin,52
+2013,不適用,西貢區,,Sai Kung,17
+2013,不適用,觀塘區,,Kwun Tong,70
+2013,不適用,沙田區,,Sha Tin,42
+2013,不適用,大埔區,,Tai Po,19
+2013,不適用,北區,,North,20
+2013,不適用,元朗區,,Yuen Long,49
+2013,不適用,荃灣區,,Tsuen Wan,28
+2013,不適用,葵青區,,Kwai Tsing,62
+2013,不適用,屯門區,,Tuen Mun,39
+2013,不適用,不知道,,Unknown,1
+2014,不適用,身體虐待,男性,虐待長者性質及受虐長者性別,173
+2014,不適用,精神虐待,男性,虐待長者性質及受虐長者性別,17
+2014,不適用,疏忽照顧,男性,虐待長者性質及受虐長者性別,0
+2014,不適用,侵吞財產,男性,虐待長者性質及受虐長者性別,33
+2014,不適用,遺棄長者,男性,虐待長者性質及受虐長者性別,0
+2014,不適用,性侵犯,男性,虐待長者性質及受虐長者性別,2
+2014,不適用,其他,男性,虐待長者性質及受虐長者性別,0
+2014,不適用,身體虐待,女性,虐待長者性質及受虐長者性別,227
+2014,不適用,精神虐待,女性,虐待長者性質及受虐長者性別,33
+2014,不適用,疏忽照顧,女性,虐待長者性質及受虐長者性別,1
+2014,不適用,侵吞財產,女性,虐待長者性質及受虐長者性別,58
+2014,不適用,遺棄長者,女性,虐待長者性質及受虐長者性別,0
+2014,不適用,性侵犯,女性,虐待長者性質及受虐長者性別,15
+2014,不適用,其他,女性,虐待長者性質及受虐長者性別,0
+2014,不適用,子,,Son,60
+2014,不適用,女,,Daughter,20
+2014,不適用,女婿,,Son-in-law,3
+2014,不適用,媳婦,,Daughter-in-law,18
+2014,不適用,配偶／ 親密伴侶,,Spouse/ intimate partner,328
+2014,不適用,孫／外孫,,Grandchildren,6
+2014,不適用,親戚,,Relative,17
+2014,不適用,朋友／鄰居,,Friend/ neighbour,33
+2014,不適用,沒有親戚 關係但同住,,施虐者與受虐長者關係,5
+2014,不適用,家庭傭工,,Domestic helper,55
+2014,不適用,提供服務 給 長者的 機構 員工,,施虐者與受虐長者關係,12
+2014,不適用,其他,,Others,17
+2014,不適用,中西區,,Central and Western,14
+2014,不適用,南區,,Southern,12
+2014,不適用,離島區,,Islands,7
+2014,不適用,東區,,Eastern,32
+2014,不適用,灣仔區,,Wan Chai,10
+2014,不適用,九龍城區,,Kowloon City,41
+2014,不適用,油尖旺區,,Yau Tsim Mong,30
+2014,不適用,深水埗區,,Sham Shui Po,30
+2014,不適用,黃大仙區,,Wong Tai Sin,64
+2014,不適用,西貢區,,Sai Kung,25
+2014,不適用,觀塘區,,Kwun Tong,46
+2014,不適用,沙田區,,Sha Tin,48
+2014,不適用,大埔區,,Tai Po,25
+2014,不適用,北區,,North,34
+2014,不適用,元朗區,,Yuen Long,42
+2014,不適用,荃灣區,,Tsuen Wan,27
+2014,不適用,葵青區,,Kwai Tsing,42
+2014,不適用,屯門區,,Tuen Mun,43
+2014,不適用,不知道,,Unknown,2
+2015,不適用,身體虐待,男性,虐待長者性質及受虐長者性別,150
+2015,不適用,精神虐待,男性,虐待長者性質及受虐長者性別,26
+2015,不適用,疏忽照顧,男性,虐待長者性質及受虐長者性別,0
+2015,不適用,侵吞財產,男性,虐待長者性質及受虐長者性別,40
+2015,不適用,遺棄長者,男性,虐待長者性質及受虐長者性別,2
+2015,不適用,性侵犯,男性,虐待長者性質及受虐長者性別,3
+2015,不適用,其他,男性,虐待長者性質及受虐長者性別,0
+2015,不適用,身體虐待,女性,虐待長者性質及受虐長者性別,209
+2015,不適用,精神虐待,女性,虐待長者性質及受虐長者性別,23
+2015,不適用,疏忽照顧,女性,虐待長者性質及受虐長者性別,2
+2015,不適用,侵吞財產,女性,虐待長者性質及受虐長者性別,53
+2015,不適用,遺棄長者,女性,虐待長者性質及受虐長者性別,1
+2015,不適用,性侵犯,女性,虐待長者性質及受虐長者性別,11
+2015,不適用,其他,女性,虐待長者性質及受虐長者性別,0
+2015,不適用,子,,Son,56
+2015,不適用,女,,Daughter,22
+2015,不適用,女婿,,Son-in-law,5
+2015,不適用,媳婦,,Daughter-in-law,19
+2015,不適用,配偶／ 親密伴侶,,Spouse/ intimate partner,297
+2015,不適用,孫／外孫,,Grandchildren,7
+2015,不適用,親戚,,Relative,11
+2015,不適用,朋友／鄰居,,Friend/ neighbour,50
+2015,不適用,沒有親戚 關係但同住,,施虐者與受虐長者關係,3
+2015,不適用,家庭傭工,,Domestic helper,51
+2015,不適用,提供服務 給 長者的 機構 員工,,施虐者與受虐長者關係,9
+2015,不適用,其他,,Others,27
+2015,不適用,中西區,,Central and Western,14
+2015,不適用,南區,,Southern,15
+2015,不適用,離島區,,Islands,6
+2015,不適用,東區,,Eastern,45
+2015,不適用,灣仔區,,Wan Chai,9
+2015,不適用,九龍城區,,Kowloon City,27
+2015,不適用,油尖旺區,,Yau Tsim Mong,33
+2015,不適用,深水埗區,,Sham Shui Po,28
+2015,不適用,黃大仙區,,Wong Tai Sin,56
+2015,不適用,西貢區,,Sai Kung,20
+2015,不適用,觀塘區,,Kwun Tong,61
+2015,不適用,沙田區,,Sha Tin,48
+2015,不適用,大埔區,,Tai Po,30
+2015,不適用,北區,,North,16
+2015,不適用,元朗區,,Yuen Long,45
+2015,不適用,荃灣區,,Tsuen Wan,20
+2015,不適用,葵青區,,Kwai Tsing,52
+2015,不適用,屯門區,,Tuen Mun,32
+2015,不適用,不知道,,Unknown,0
+2016,不適用,身體虐待,男性,虐待長者性質及受虐長者性別,176
+2016,不適用,精神虐待,男性,虐待長者性質及受虐長者性別,38
+2016,不適用,疏忽照顧,男性,虐待長者性質及受虐長者性別,2
+2016,不適用,侵吞財產,男性,虐待長者性質及受虐長者性別,45
+2016,不適用,遺棄長者,男性,虐待長者性質及受虐長者性別,2
+2016,不適用,性侵犯,男性,虐待長者性質及受虐長者性別,1
+2016,不適用,其他,男性,虐待長者性質及受虐長者性別,0
+2016,不適用,身體虐待,女性,虐待長者性質及受虐長者性別,213
+2016,不適用,精神虐待,女性,虐待長者性質及受虐長者性別,31
+2016,不適用,疏忽照顧,女性,虐待長者性質及受虐長者性別,1
+2016,不適用,侵吞財產,女性,虐待長者性質及受虐長者性別,57
+2016,不適用,遺棄長者,女性,虐待長者性質及受虐長者性別,0
+2016,不適用,性侵犯,女性,虐待長者性質及受虐長者性別,12
+2016,不適用,其他,女性,虐待長者性質及受虐長者性別,0
+2016,不適用,子,,Son,73
+2016,不適用,女,,Daughter,19
+2016,不適用,女婿,,Son-in-law,8
+2016,不適用,媳婦,,Daughter-in-law,16
+2016,不適用,配偶／ 親密伴侶,,Spouse/ intimate partner,292
+2016,不適用,孫／外孫,,Grandchildren,5
+2016,不適用,親戚,,Relative,25
+2016,不適用,朋友／鄰居,,Friend/ neighbour,76
+2016,不適用,沒有親戚 關係但同住,,施虐者與受虐長者關係,5
+2016,不適用,家庭傭工,,Domestic helper,55
+2016,不適用,提供服務 給 長者的 機構 員工,,施虐者與受虐長者關係,19
+2016,不適用,其他,,Others,20
+2016,不適用,中西區,,Central and Western,25
+2016,不適用,南區,,Southern,13
+2016,不適用,離島區,,Islands,9
+2016,不適用,東區,,Eastern,41
+2016,不適用,灣仔區,,Wan Chai,10
+2016,不適用,九龍城區,,Kowloon City,34
+2016,不適用,油尖旺區,,Yau Tsim Mong,17
+2016,不適用,深水埗區,,Sham Shui Po,39
+2016,不適用,黃大仙區,,Wong Tai Sin,53
+2016,不適用,西貢區,,Sai Kung,18
+2016,不適用,觀塘區,,Kwun Tong,77
+2016,不適用,沙田區,,Sha Tin,45
+2016,不適用,大埔區,,Tai Po,19
+2016,不適用,北區,,North,29
+2016,不適用,元朗區,,Yuen Long,67
+2016,不適用,荃灣區,,Tsuen Wan,20
+2016,不適用,葵青區,,Kwai Tsing,62
+2016,不適用,屯門區,,Tuen Mun,34
+2016,不適用,不知道,,Unknown,1
+2017,不適用,身體虐待,男性,虐待長者性質及受虐長者性別,159
+2017,不適用,精神虐待,男性,虐待長者性質及受虐長者性別,29
+2017,不適用,疏忽照顧,男性,虐待長者性質及受虐長者性別,0
+2017,不適用,侵吞財產,男性,虐待長者性質及受虐長者性別,46
+2017,不適用,遺棄長者,男性,虐待長者性質及受虐長者性別,0
+2017,不適用,性侵犯,男性,虐待長者性質及受虐長者性別,1
+2017,不適用,其他,男性,虐待長者性質及受虐長者性別,0
+2017,不適用,身體虐待,女性,虐待長者性質及受虐長者性別,196
+2017,不適用,精神虐待,女性,虐待長者性質及受虐長者性別,45
+2017,不適用,疏忽照顧,女性,虐待長者性質及受虐長者性別,2
+2017,不適用,侵吞財產,女性,虐待長者性質及受虐長者性別,63
+2017,不適用,遺棄長者,女性,虐待長者性質及受虐長者性別,0
+2017,不適用,性侵犯,女性,虐待長者性質及受虐長者性別,4
+2017,不適用,其他,女性,虐待長者性質及受虐長者性別,0
+2017,不適用,子,,Son,70
+2017,不適用,女,,Daughter,13
+2017,不適用,女婿,,Son-in-law,6
+2017,不適用,媳婦,,Daughter-in-law,15
+2017,不適用,配偶／ 親密伴侶,,Spouse/ intimate partner,303
+2017,不適用,孫／外孫,,Grandchildren,13
+2017,不適用,親戚,,Relative,16
+2017,不適用,朋友／鄰居,,Friend/ neighbour,46
+2017,不適用,沒有親戚 關係但同住,,施虐者與受虐長者關係,5
+2017,不適用,家庭傭工,,Domestic helper,54
+2017,不適用,提供服務 給 長者的 機構 員工,,施虐者與受虐長者關係,13
+2017,不適用,其他,,Others,15
+2017,不適用,中西區,,Central and Western,23
+2017,不適用,南區,,Southern,19
+2017,不適用,離島區,,Islands,9
+2017,不適用,東區,,Eastern,26
+2017,不適用,灣仔區,,Wan Chai,13
+2017,不適用,九龍城區,,Kowloon City,25
+2017,不適用,油尖旺區,,Yau Tsim Mong,17
+2017,不適用,深水埗區,,Sham Shui Po,45
+2017,不適用,黃大仙區,,Wong Tai Sin,39
+2017,不適用,西貢區,,Sai Kung,17
+2017,不適用,觀塘區,,Kwun Tong,70
+2017,不適用,沙田區,,Sha Tin,59
+2017,不適用,大埔區,,Tai Po,24
+2017,不適用,北區,,North,21
+2017,不適用,元朗區,,Yuen Long,48
+2017,不適用,荃灣區,,Tsuen Wan,8
+2017,不適用,葵青區,,Kwai Tsing,60
+2017,不適用,屯門區,,Tuen Mun,46
+2017,不適用,不知道,,Unknown,0
+2018,不適用,身體虐待,男性,虐待長者性質及受虐長者性別,141
+2018,不適用,精神虐待,男性,虐待長者性質及受虐長者性別,9
+2018,不適用,疏忽照顧,男性,虐待長者性質及受虐長者性別,1
+2018,不適用,侵吞財產,男性,虐待長者性質及受虐長者性別,28
+2018,不適用,遺棄長者,男性,虐待長者性質及受虐長者性別,0
+2018,不適用,性侵犯,男性,虐待長者性質及受虐長者性別,4
+2018,不適用,其他,男性,虐待長者性質及受虐長者性別,0
+2018,不適用,身體虐待,女性,虐待長者性質及受虐長者性別,199
+2018,不適用,精神虐待,女性,虐待長者性質及受虐長者性別,34
+2018,不適用,疏忽照顧,女性,虐待長者性質及受虐長者性別,1
+2018,不適用,侵吞財產,女性,虐待長者性質及受虐長者性別,40
+2018,不適用,遺棄長者,女性,虐待長者性質及受虐長者性別,0
+2018,不適用,性侵犯,女性,虐待長者性質及受虐長者性別,11
+2018,不適用,其他,女性,虐待長者性質及受虐長者性別,0
+2018,不適用,子,,Son,56
+2018,不適用,女,,Daughter,17
+2018,不適用,女婿,,Son-in-law,1
+2018,不適用,媳婦,,Daughter-in-law,11
+2018,不適用,配偶／ 親密伴侶,,Spouse/ intimate partner,285
+2018,不適用,孫／外孫,,Grandchildren,5
+2018,不適用,親戚,,Relative,15
+2018,不適用,朋友／鄰居,,Friend/ neighbour,40
+2018,不適用,沒有親戚 關係但同住,,施虐者與受虐長者關係,1
+2018,不適用,家庭傭工,,Domestic helper,39
+2018,不適用,提供服務 給 長者的 機構 員工,,施虐者與受虐長者關係,14
+2018,不適用,其他,,Others,12
+2018,不適用,中西區,,Central and Western,23
+2018,不適用,南區,,Southern,17
+2018,不適用,離島區,,Islands,8
+2018,不適用,東區,,Eastern,43
+2018,不適用,灣仔區,,Wan Chai,5
+2018,不適用,九龍城區,,Kowloon City,21
+2018,不適用,油尖旺區,,Yau Tsim Mong,17
+2018,不適用,深水埗區,,Sham Shui Po,26
+2018,不適用,黃大仙區,,Wong Tai Sin,55
+2018,不適用,西貢區,,Sai Kung,22
+2018,不適用,觀塘區,,Kwun Tong,43
+2018,不適用,沙田區,,Sha Tin,41
+2018,不適用,大埔區,,Tai Po,28
+2018,不適用,北區,,North,10
+2018,不適用,元朗區,,Yuen Long,48
+2018,不適用,荃灣區,,Tsuen Wan,14
+2018,不適用,葵青區,,Kwai Tsing,39
+2018,不適用,屯門區,,Tuen Mun,36
+2018,不適用,不知道,,Unknown,0
+2019,不適用,身體虐待,男性,虐待長者性質及受虐長者性別,123
+2019,不適用,精神虐待,男性,虐待長者性質及受虐長者性別,11
+2019,不適用,疏忽照顧,男性,虐待長者性質及受虐長者性別,2
+2019,不適用,侵吞財產,男性,虐待長者性質及受虐長者性別,20
+2019,不適用,遺棄長者,男性,虐待長者性質及受虐長者性別,0
+2019,不適用,性侵犯,男性,虐待長者性質及受虐長者性別,0
+2019,不適用,其他,男性,虐待長者性質及受虐長者性別,0
+2019,不適用,身體虐待,女性,虐待長者性質及受虐長者性別,208
+2019,不適用,精神虐待,女性,虐待長者性質及受虐長者性別,30
+2019,不適用,疏忽照顧,女性,虐待長者性質及受虐長者性別,3
+2019,不適用,侵吞財產,女性,虐待長者性質及受虐長者性別,51
+2019,不適用,遺棄長者,女性,虐待長者性質及受虐長者性別,0
+2019,不適用,性侵犯,女性,虐待長者性質及受虐長者性別,6
+2019,不適用,其他,女性,虐待長者性質及受虐長者性別,0
+2019,不適用,子,,Son,50
+2019,不適用,女,,Daughter,18
+2019,不適用,女婿,,Son-in-law,8
+2019,不適用,媳婦,,Daughter-in-law,8
+2019,不適用,配偶／ 親密伴侶,,Spouse/ intimate partner,297
+2019,不適用,孫／外孫,,Grandchildren,4
+2019,不適用,親戚,,Relative,20
+2019,不適用,朋友／鄰居,,Friend/ neighbour,18
+2019,不適用,沒有親戚 關係但同住,,施虐者與受虐長者關係,6
+2019,不適用,家庭傭工,,Domestic helper,41
+2019,不適用,提供服務 給 長者的 機構 員工,,施虐者與受虐長者關係,8
+2019,不適用,其他,,Others,10
+2019,不適用,中西區,,Central and Western,30
+2019,不適用,南區,,Southern,13
+2019,不適用,離島區,,Islands,7
+2019,不適用,東區,,Eastern,30
+2019,不適用,灣仔區,,Wan Chai,7
+2019,不適用,九龍城區,,Kowloon City,15
+2019,不適用,油尖旺區,,Yau Tsim Mong,16
+2019,不適用,深水埗區,,Sham Shui Po,29
+2019,不適用,黃大仙區,,Wong Tai Sin,33
+2019,不適用,西貢區,,Sai Kung,17
+2019,不適用,觀塘區,,Kwun Tong,47
+2019,不適用,沙田區,,Sha Tin,49
+2019,不適用,大埔區,,Tai Po,27
+2019,不適用,北區,,North,18
+2019,不適用,元朗區,,Yuen Long,47
+2019,不適用,荃灣區,,Tsuen Wan,15
+2019,不適用,葵青區,,Kwai Tsing,51
+2019,不適用,屯門區,,Tuen Mun,36
+2019,不適用,不知道,,Unknown,1
+2020,不適用,身體虐待,男性,虐待長者性質及受虐長者性別,143
+2020,不適用,精神虐待,男性,虐待長者性質及受虐長者性別,22
+2020,不適用,疏忽照顧,男性,虐待長者性質及受虐長者性別,0
+2020,不適用,侵吞財產,男性,虐待長者性質及受虐長者性別,14
+2020,不適用,遺棄長者,男性,虐待長者性質及受虐長者性別,0
+2020,不適用,性侵犯,男性,虐待長者性質及受虐長者性別,1
+2020,不適用,其他,男性,虐待長者性質及受虐長者性別,0
+2020,不適用,身體虐待,女性,虐待長者性質及受虐長者性別,188
+2020,不適用,精神虐待,女性,虐待長者性質及受虐長者性別,27
+2020,不適用,疏忽照顧,女性,虐待長者性質及受虐長者性別,0
+2020,不適用,侵吞財產,女性,虐待長者性質及受虐長者性別,32
+2020,不適用,遺棄長者,女性,虐待長者性質及受虐長者性別,0
+2020,不適用,性侵犯,女性,虐待長者性質及受虐長者性別,9
+2020,不適用,其他,女性,虐待長者性質及受虐長者性別,0
+2020,不適用,子,,Son,58
+2020,不適用,女,,Daughter,12
+2020,不適用,女婿,,Son-in-law,5
+2020,不適用,媳婦,,Daughter-in-law,8
+2020,不適用,配偶／ 親密伴侶,,Spouse/ intimate partner,290
+2020,不適用,孫／外孫,,Grandchildren,3
+2020,不適用,親戚,,Relative,22
+2020,不適用,朋友／鄰居,,Friend/ neighbour,20
+2020,不適用,沒有親戚 關係但同住,,施虐者與受虐長者關係,5
+2020,不適用,家庭傭工,,Domestic helper,37
+2020,不適用,提供服務 給 長者的 機構 員工,,施虐者與受虐長者關係,4
+2020,不適用,其他,,Others,5
+2020,不適用,中西區,,Central and Western,13
+2020,不適用,南區,,Southern,10
+2020,不適用,離島區,,Islands,4
+2020,不適用,東區,,Eastern,45
+2020,不適用,灣仔區,,Wan Chai,6
+2020,不適用,九龍城區,,Kowloon City,14
+2020,不適用,油尖旺區,,Yau Tsim Mong,12
+2020,不適用,深水埗區,,Sham Shui Po,22
+2020,不適用,黃大仙區,,Wong Tai Sin,32
+2020,不適用,西貢區,,Sai Kung,21
+2020,不適用,觀塘區,,Kwun Tong,47
+2020,不適用,沙田區,,Sha Tin,33
+2020,不適用,大埔區,,Tai Po,29
+2020,不適用,北區,,North,22
+2020,不適用,元朗區,,Yuen Long,46
+2020,不適用,荃灣區,,Tsuen Wan,8
+2020,不適用,葵青區,,Kwai Tsing,70
+2020,不適用,屯門區,,Tuen Mun,34
+2020,不適用,不知道,,Unknown,1
+2021,有,身體虐待,男性,虐待長者性質及受虐長者性別,118
+2021,有,精神虐待,男性,虐待長者性質及受虐長者性別,17
+2021,有,疏忽照顧,男性,虐待長者性質及受虐長者性別,0
+2021,有,侵吞財產,男性,虐待長者性質及受虐長者性別,10
+2021,有,遺棄長者,男性,虐待長者性質及受虐長者性別,0
+2021,有,性侵犯,男性,虐待長者性質及受虐長者性別,3
+2021,有,其他,男性,虐待長者性質及受虐長者性別,0
+2021,有,身體虐待,女性,虐待長者性質及受虐長者性別,147
+2021,有,精神虐待,女性,虐待長者性質及受虐長者性別,16
+2021,有,疏忽照顧,女性,虐待長者性質及受虐長者性別,0
+2021,有,侵吞財產,女性,虐待長者性質及受虐長者性別,21
+2021,有,遺棄長者,女性,虐待長者性質及受虐長者性別,0
+2021,有,性侵犯,女性,虐待長者性質及受虐長者性別,8
+2021,有,其他,女性,虐待長者性質及受虐長者性別,0
+2021,沒有,身體虐待,男性,虐待長者性質及受虐長者性別,24
+2021,沒有,精神虐待,男性,虐待長者性質及受虐長者性別,2
+2021,沒有,疏忽照顧,男性,虐待長者性質及受虐長者性別,1
+2021,沒有,侵吞財產,男性,虐待長者性質及受虐長者性別,0
+2021,沒有,遺棄長者,男性,虐待長者性質及受虐長者性別,1
+2021,沒有,性侵犯,男性,虐待長者性質及受虐長者性別,0
+2021,沒有,其他,男性,虐待長者性質及受虐長者性別,0
+2021,沒有,身體虐待,女性,虐待長者性質及受虐長者性別,35
+2021,沒有,精神虐待,女性,虐待長者性質及受虐長者性別,11
+2021,沒有,疏忽照顧,女性,虐待長者性質及受虐長者性別,1
+2021,沒有,侵吞財產,女性,虐待長者性質及受虐長者性別,0
+2021,沒有,遺棄長者,女性,虐待長者性質及受虐長者性別,0
+2021,沒有,性侵犯,女性,虐待長者性質及受虐長者性別,2
+2021,沒有,其他,女性,虐待長者性質及受虐長者性別,0
+2021,有,子,,Son,44
+2021,有,女,,Daughter,16
+2021,有,女婿,,Son-in-law,3
+2021,有,媳婦,,Daughter-in-law,3
+2021,有,配偶／ 親密伴侶,,Spouse/ intimate partner,233
+2021,有,孫／外孫,,Grandchildren,4
+2021,有,親戚,,Relative,13
+2021,有,朋友／鄰居,,Friend/ neighbour,10
+2021,有,沒有親戚 關係但同住,,施虐者與受虐長者關係,0
+2021,有,家庭傭工,,Domestic helper,22
+2021,有,提供服務 給 長者的 機構 員工,,施虐者與受虐長者關係,2
+2021,有,其他,,Others,8
+2021,沒有,子,,Son,14
+2021,沒有,女,,Daughter,4
+2021,沒有,女婿,,Son-in-law,1
+2021,沒有,媳婦,,Daughter-in-law,1
+2021,沒有,配偶／ 親密伴侶,,Spouse/ intimate partner,69
+2021,沒有,孫／外孫,,Grandchildren,1
+2021,沒有,親戚,,Relative,1
+2021,沒有,朋友／鄰居,,Friend/ neighbour,0
+2021,沒有,沒有親戚 關係但同住,,施虐者與受虐長者關係,0
+2021,沒有,家庭傭工,,Domestic helper,1
+2021,沒有,提供服務 給 長者的 機構 員工,,施虐者與受虐長者關係,0
+2021,沒有,其他,,Others,1
+2021,有,中西區,,Central and Western,9
+2021,有,南區,,Southern,6
+2021,有,離島區,,Islands,4
+2021,有,東區,,Eastern,33
+2021,有,灣仔區,,Wan Chai,8
+2021,有,九龍城區,,Kowloon City,19
+2021,有,油尖旺區,,Yau Tsim Mong,8
+2021,有,深水埗區,,Sham Shui Po,13
+2021,有,黃大仙區,,Wong Tai Sin,9
+2021,有,西貢區,,Sai Kung,21
+2021,有,觀塘區,,Kwun Tong,38
+2021,有,沙田區,,Sha Tin,40
+2021,有,大埔區,,Tai Po,20
+2021,有,北區,,North,18
+2021,有,元朗區,,Yuen Long,36
+2021,有,荃灣區,,Tsuen Wan,12
+2021,有,葵青區,,Kwai Tsing,32
+2021,有,屯門區,,Tuen Mun,32
+2021,有,不知道,,Unknown,0
+2021,沒有,中西區,,Central and Western,0
+2021,沒有,南區,,Southern,3
+2021,沒有,離島區,,Islands,0
+2021,沒有,東區,,Eastern,6
+2021,沒有,灣仔區,,Wan Chai,0
+2021,沒有,九龍城區,,Kowloon City,4
+2021,沒有,油尖旺區,,Yau Tsim Mong,3
+2021,沒有,深水埗區,,Sham Shui Po,6
+2021,沒有,黃大仙區,,Wong Tai Sin,3
+2021,沒有,西貢區,,Sai Kung,6
+2021,沒有,觀塘區,,Kwun Tong,16
+2021,沒有,沙田區,,Sha Tin,7
+2021,沒有,大埔區,,Tai Po,3
+2021,沒有,北區,,North,8
+2021,沒有,元朗區,,Yuen Long,9
+2021,沒有,荃灣區,,Tsuen Wan,6
+2021,沒有,葵青區,,Kwai Tsing,7
+2021,沒有,屯門區,,Tuen Mun,6
+2021,沒有,不知道,,Unknown,0
+2022,有,身體虐待,男性,虐待長者性質及受虐長者性別,82
+2022,有,精神虐待,男性,虐待長者性質及受虐長者性別,9
+2022,有,疏忽照顧,男性,虐待長者性質及受虐長者性別,0
+2022,有,侵吞財產,男性,虐待長者性質及受虐長者性別,4
+2022,有,遺棄長者,男性,虐待長者性質及受虐長者性別,0
+2022,有,性侵犯,男性,虐待長者性質及受虐長者性別,0
+2022,有,其他,男性,虐待長者性質及受虐長者性別,0
+2022,有,身體虐待,女性,虐待長者性質及受虐長者性別,108
+2022,有,精神虐待,女性,虐待長者性質及受虐長者性別,22
+2022,有,疏忽照顧,女性,虐待長者性質及受虐長者性別,0
+2022,有,侵吞財產,女性,虐待長者性質及受虐長者性別,6
+2022,有,遺棄長者,女性,虐待長者性質及受虐長者性別,0
+2022,有,性侵犯,女性,虐待長者性質及受虐長者性別,5
+2022,有,其他,女性,虐待長者性質及受虐長者性別,0
+2022,沒有,身體虐待,男性,虐待長者性質及受虐長者性別,12
+2022,沒有,精神虐待,男性,虐待長者性質及受虐長者性別,3
+2022,沒有,疏忽照顧,男性,虐待長者性質及受虐長者性別,0
+2022,沒有,侵吞財產,男性,虐待長者性質及受虐長者性別,0
+2022,沒有,遺棄長者,男性,虐待長者性質及受虐長者性別,0
+2022,沒有,性侵犯,男性,虐待長者性質及受虐長者性別,0
+2022,沒有,其他,男性,虐待長者性質及受虐長者性別,0
+2022,沒有,身體虐待,女性,虐待長者性質及受虐長者性別,44
+2022,沒有,精神虐待,女性,虐待長者性質及受虐長者性別,9
+2022,沒有,疏忽照顧,女性,虐待長者性質及受虐長者性別,0
+2022,沒有,侵吞財產,女性,虐待長者性質及受虐長者性別,0
+2022,沒有,遺棄長者,女性,虐待長者性質及受虐長者性別,0
+2022,沒有,性侵犯,女性,虐待長者性質及受虐長者性別,2
+2022,沒有,其他,女性,虐待長者性質及受虐長者性別,0
+2022,有,子,,Son,31
+2022,有,女,,Daughter,8
+2022,有,女婿,,Son-in-law,2
+2022,有,媳婦,,Daughter-in-law,4
+2022,有,配偶／ 親密伴侶,,Spouse/ intimate partner,201
+2022,有,孫／外孫,,Grandchildren,1
+2022,有,親戚,,Relative,1
+2022,有,朋友／鄰居,,Friend/ neighbour,2
+2022,有,沒有親戚 關係但同住,,施虐者與受虐長者關係,1
+2022,有,家庭傭工,,Domestic helper,4
+2022,有,提供服務 給 長者的 機構 員工,,施虐者與受虐長者關係,5
+2022,有,其他,,Others,2
+2022,沒有,子,,Son,9
+2022,沒有,女,,Daughter,4
+2022,沒有,女婿,,Son-in-law,1
+2022,沒有,媳婦,,Daughter-in-law,2
+2022,沒有,配偶／ 親密伴侶,,Spouse/ intimate partner,61
+2022,沒有,孫／外孫,,Grandchildren,0
+2022,沒有,親戚,,Relative,0
+2022,沒有,朋友／鄰居,,Friend/ neighbour,1
+2022,沒有,沒有親戚 關係但同住,,施虐者與受虐長者關係,0
+2022,沒有,家庭傭工,,Domestic helper,0
+2022,沒有,提供服務 給 長者的 機構 員工,,施虐者與受虐長者關係,0
+2022,沒有,其他,,Others,0
+2022,有,中西區,,Central and Western,1
+2022,有,南區,,Southern,10
+2022,有,離島區,,Islands,7
+2022,有,東區,,Eastern,13
+2022,有,灣仔區,,Wan Chai,1
+2022,有,九龍城區,,Kowloon City,8
+2022,有,油尖旺區,,Yau Tsim Mong,7
+2022,有,深水埗區,,Sham Shui Po,21
+2022,有,黃大仙區,,Wong Tai Sin,37
+2022,有,西貢區,,Sai Kung,8
+2022,有,觀塘區,,Kwun Tong,28
+2022,有,沙田區,,Sha Tin,17
+2022,有,大埔區,,Tai Po,13
+2022,有,北區,,North,17
+2022,有,元朗區,,Yuen Long,22
+2022,有,荃灣區,,Tsuen Wan,3
+2022,有,葵青區,,Kwai Tsing,20
+2022,有,屯門區,,Tuen Mun,29
+2022,有,不知道,,Unknown,0
+2022,沒有,中西區,,Central and Western,1
+2022,沒有,南區,,Southern,3
+2022,沒有,離島區,,Islands,1
+2022,沒有,東區,,Eastern,7
+2022,沒有,灣仔區,,Wan Chai,2
+2022,沒有,九龍城區,,Kowloon City,0
+2022,沒有,油尖旺區,,Yau Tsim Mong,1
+2022,沒有,深水埗區,,Sham Shui Po,4
+2022,沒有,黃大仙區,,Wong Tai Sin,6
+2022,沒有,西貢區,,Sai Kung,5
+2022,沒有,觀塘區,,Kwun Tong,5
+2022,沒有,沙田區,,Sha Tin,13
+2022,沒有,大埔區,,Tai Po,1
+2022,沒有,北區,,North,6
+2022,沒有,元朗區,,Yuen Long,10
+2022,沒有,荃灣區,,Tsuen Wan,1
+2022,沒有,葵青區,,Kwai Tsing,5
+2022,沒有,屯門區,,Tuen Mun,7
+2022,沒有,不知道,,Unknown,0
+2023,有,身體虐待,男性,虐待長者性質及受虐長者性別,73
+2023,有,精神虐待,男性,虐待長者性質及受虐長者性別,5
+2023,有,疏忽照顧,男性,虐待長者性質及受虐長者性別,0
+2023,有,侵吞財產,男性,虐待長者性質及受虐長者性別,4
+2023,有,遺棄長者,男性,虐待長者性質及受虐長者性別,0
+2023,有,性侵犯,男性,虐待長者性質及受虐長者性別,0
+2023,有,其他,男性,虐待長者性質及受虐長者性別,0
+2023,有,身體虐待,女性,虐待長者性質及受虐長者性別,109
+2023,有,精神虐待,女性,虐待長者性質及受虐長者性別,11
+2023,有,疏忽照顧,女性,虐待長者性質及受虐長者性別,1
+2023,有,侵吞財產,女性,虐待長者性質及受虐長者性別,19
+2023,有,遺棄長者,女性,虐待長者性質及受虐長者性別,0
+2023,有,性侵犯,女性,虐待長者性質及受虐長者性別,2
+2023,有,其他,女性,虐待長者性質及受虐長者性別,0
+2023,沒有,身體虐待,男性,虐待長者性質及受虐長者性別,20
+2023,沒有,精神虐待,男性,虐待長者性質及受虐長者性別,2
+2023,沒有,疏忽照顧,男性,虐待長者性質及受虐長者性別,0
+2023,沒有,侵吞財產,男性,虐待長者性質及受虐長者性別,1
+2023,沒有,遺棄長者,男性,虐待長者性質及受虐長者性別,0
+2023,沒有,性侵犯,男性,虐待長者性質及受虐長者性別,0
+2023,沒有,其他,男性,虐待長者性質及受虐長者性別,0
+2023,沒有,身體虐待,女性,虐待長者性質及受虐長者性別,28
+2023,沒有,精神虐待,女性,虐待長者性質及受虐長者性別,12
+2023,沒有,疏忽照顧,女性,虐待長者性質及受虐長者性別,0
+2023,沒有,侵吞財產,女性,虐待長者性質及受虐長者性別,0
+2023,沒有,遺棄長者,女性,虐待長者性質及受虐長者性別,0
+2023,沒有,性侵犯,女性,虐待長者性質及受虐長者性別,1
+2023,沒有,其他,女性,虐待長者性質及受虐長者性別,0
+2023,有,子,,Son,20
+2023,有,女,,Daughter,4
+2023,有,女婿,,Son-in-law,0
+2023,有,媳婦,,Daughter-in-law,6
+2023,有,配偶／ 親密伴侶,,Spouse/ intimate partner,171
+2023,有,孫／外孫,,Grandchildren,6
+2023,有,親戚,,Relative,4
+2023,有,朋友／鄰居,,Friend/ neighbour,1
+2023,有,沒有親戚 關係但同住,,施虐者與受虐長者關係,0
+2023,有,家庭傭工,,Domestic helper,19
+2023,有,提供服務 給 長者的 機構 員工,,施虐者與受虐長者關係,6
+2023,有,其他,,Others,3
+2023,沒有,子,,Son,7
+2023,沒有,女,,Daughter,3
+2023,沒有,女婿,,Son-in-law,3
+2023,沒有,媳婦,,Daughter-in-law,2
+2023,沒有,配偶／ 親密伴侶,,Spouse/ intimate partner,59
+2023,沒有,孫／外孫,,Grandchildren,1
+2023,沒有,親戚,,Relative,2
+2023,沒有,朋友／鄰居,,Friend/ neighbour,0
+2023,沒有,沒有親戚 關係但同住,,施虐者與受虐長者關係,0
+2023,沒有,家庭傭工,,Domestic helper,1
+2023,沒有,提供服務 給 長者的 機構 員工,,施虐者與受虐長者關係,0
+2023,沒有,其他,,Others,0
+2023,有,中西區,,Central and Western,9
+2023,有,南區,,Southern,3
+2023,有,離島區,,Islands,2
+2023,有,東區,,Eastern,26
+2023,有,灣仔區,,Wan Chai,6
+2023,有,九龍城區,,Kowloon City,14
+2023,有,油尖旺區,,Yau Tsim Mong,8
+2023,有,深水埗區,,Sham Shui Po,13
+2023,有,黃大仙區,,Wong Tai Sin,20
+2023,有,西貢區,,Sai Kung,5
+2023,有,觀塘區,,Kwun Tong,13
+2023,有,沙田區,,Sha Tin,20
+2023,有,大埔區,,Tai Po,8
+2023,有,北區,,North,12
+2023,有,元朗區,,Yuen Long,27
+2023,有,荃灣區,,Tsuen Wan,14
+2023,有,葵青區,,Kwai Tsing,17
+2023,有,屯門區,,Tuen Mun,23
+2023,有,不知道,,Unknown,0
+2023,沒有,中西區,,Central and Western,1
+2023,沒有,南區,,Southern,7
+2023,沒有,離島區,,Islands,1
+2023,沒有,東區,,Eastern,8
+2023,沒有,灣仔區,,Wan Chai,2
+2023,沒有,九龍城區,,Kowloon City,3
+2023,沒有,油尖旺區,,Yau Tsim Mong,3
+2023,沒有,深水埗區,,Sham Shui Po,4
+2023,沒有,黃大仙區,,Wong Tai Sin,4
+2023,沒有,西貢區,,Sai Kung,1
+2023,沒有,觀塘區,,Kwun Tong,9
+2023,沒有,沙田區,,Sha Tin,4
+2023,沒有,大埔區,,Tai Po,2
+2023,沒有,北區,,North,4
+2023,沒有,元朗區,,Yuen Long,8
+2023,沒有,荃灣區,,Tsuen Wan,2
+2023,沒有,葵青區,,Kwai Tsing,8
+2023,沒有,屯門區,,Tuen Mun,7
+2023,沒有,不知道,,Unknown,0
+2024,有,身體虐待,男性,虐待長者性質及受虐長者性別,44
+2024,有,精神虐待,男性,虐待長者性質及受虐長者性別,4
+2024,有,疏忽照顧,男性,虐待長者性質及受虐長者性別,1
+2024,有,侵吞財產,男性,虐待長者性質及受虐長者性別,3
+2024,有,遺棄長者,男性,虐待長者性質及受虐長者性別,0
+2024,有,性侵犯,男性,虐待長者性質及受虐長者性別,0
+2024,有,其他,男性,虐待長者性質及受虐長者性別,0
+2024,有,身體虐待,女性,虐待長者性質及受虐長者性別,108
+2024,有,精神虐待,女性,虐待長者性質及受虐長者性別,10
+2024,有,疏忽照顧,女性,虐待長者性質及受虐長者性別,1
+2024,有,侵吞財產,女性,虐待長者性質及受虐長者性別,2
+2024,有,遺棄長者,女性,虐待長者性質及受虐長者性別,0
+2024,有,性侵犯,女性,虐待長者性質及受虐長者性別,3
+2024,有,其他,女性,虐待長者性質及受虐長者性別,0
+2024,沒有,身體虐待,男性,虐待長者性質及受虐長者性別,14
+2024,沒有,精神虐待,男性,虐待長者性質及受虐長者性別,1
+2024,沒有,疏忽照顧,男性,虐待長者性質及受虐長者性別,0
+2024,沒有,侵吞財產,男性,虐待長者性質及受虐長者性別,0
+2024,沒有,遺棄長者,男性,虐待長者性質及受虐長者性別,0
+2024,沒有,性侵犯,男性,虐待長者性質及受虐長者性別,0
+2024,沒有,其他,男性,虐待長者性質及受虐長者性別,0
+2024,沒有,身體虐待,女性,虐待長者性質及受虐長者性別,45
+2024,沒有,精神虐待,女性,虐待長者性質及受虐長者性別,13
+2024,沒有,疏忽照顧,女性,虐待長者性質及受虐長者性別,2
+2024,沒有,侵吞財產,女性,虐待長者性質及受虐長者性別,0
+2024,沒有,遺棄長者,女性,虐待長者性質及受虐長者性別,0
+2024,沒有,性侵犯,女性,虐待長者性質及受虐長者性別,4
+2024,沒有,其他,女性,虐待長者性質及受虐長者性別,0
+2024,有,子,,Son,14
+2024,有,女,,Daughter,4
+2024,有,女婿,,Son-in-law,3
+2024,有,媳婦,,Daughter-in-law,2
+2024,有,配偶／ 親密伴侶,,Spouse/ intimate partner,143
+2024,有,孫／外孫,,Grandchildren,1
+2024,有,親戚,,Relative,3
+2024,有,朋友／鄰居,,Friend/ neighbour,1
+2024,有,沒有親戚 關係但同住,,施虐者與受虐長者關係,0
+2024,有,家庭傭工,,Domestic helper,8
+2024,有,提供服務 給 長者的 機構 員工,,施虐者與受虐長者關係,9
+2024,有,其他,,Others,2
+2024,沒有,子,,Son,11
+2024,沒有,女,,Daughter,6
+2024,沒有,女婿,,Son-in-law,0
+2024,沒有,媳婦,,Daughter-in-law,2
+2024,沒有,配偶／ 親密伴侶,,Spouse/ intimate partner,68
+2024,沒有,孫／外孫,,Grandchildren,0
+2024,沒有,親戚,,Relative,2
+2024,沒有,朋友／鄰居,,Friend/ neighbour,1
+2024,沒有,沒有親戚 關係但同住,,施虐者與受虐長者關係,0
+2024,沒有,家庭傭工,,Domestic helper,0
+2024,沒有,提供服務 給 長者的 機構 員工,,施虐者與受虐長者關係,3
+2024,沒有,其他,,Others,0
+2024,有,中西區,,Central and Western,1
+2024,有,南區,,Southern,3
+2024,有,離島區,,Islands,4
+2024,有,東區,,Eastern,8
+2024,有,灣仔區,,Wan Chai,2
+2024,有,九龍城區,,Kowloon City,17
+2024,有,油尖旺區,,Yau Tsim Mong,14
+2024,有,深水埗區,,Sham Shui Po,7
+2024,有,黃大仙區,,Wong Tai Sin,15
+2024,有,西貢區,,Sai Kung,8
+2024,有,觀塘區,,Kwun Tong,13
+2024,有,沙田區,,Sha Tin,20
+2024,有,大埔區,,Tai Po,7
+2024,有,北區,,North,6
+2024,有,元朗區,,Yuen Long,19
+2024,有,荃灣區,,Tsuen Wan,4
+2024,有,葵青區,,Kwai Tsing,17
+2024,有,屯門區,,Tuen Mun,25
+2024,有,不知道,,Unknown,0
+2024,沒有,中西區,,Central and Western,1
+2024,沒有,南區,,Southern,3
+2024,沒有,離島區,,Islands,2
+2024,沒有,東區,,Eastern,7
+2024,沒有,灣仔區,,Wan Chai,0
+2024,沒有,九龍城區,,Kowloon City,2
+2024,沒有,油尖旺區,,Yau Tsim Mong,3
+2024,沒有,深水埗區,,Sham Shui Po,8
+2024,沒有,黃大仙區,,Wong Tai Sin,2
+2024,沒有,西貢區,,Sai Kung,1
+2024,沒有,觀塘區,,Kwun Tong,13
+2024,沒有,沙田區,,Sha Tin,9
+2024,沒有,大埔區,,Tai Po,4
+2024,沒有,北區,,North,6
+2024,沒有,元朗區,,Yuen Long,9
+2024,沒有,荃灣區,,Tsuen Wan,1
+2024,沒有,葵青區,,Kwai Tsing,11
+2024,沒有,屯門區,,Tuen Mun,11
+2024,沒有,不知道,,Unknown,0

@@ -185,9 +185,9 @@ result = result.dropna(subset=[result.columns[j] for j in numeric_col_indices], 
 #   result = result[~result.iloc[:, category_col_idx].isin(coarser_categories)]
 #
 #   TWO CRITICAL RULES:
-#   1. Filter on the CATEGORY column (the one that distinguishes group granularity),
-#      NOT on the item/label column (the one with specific item names like abuse types).
-#      Filtering the item column removes valid granular rows that share the same
+#   1. Filter on the column that distinguishes group granularity,
+#      NOT on the that one with specific item names.
+#      Filtering the column that distinguishes group granularity removes valid granular rows that share the same
 #      item name across different category groups.
 #   2. Use .isin() for EXACT match — NEVER str.contains().
 #      Coarser category names are often substrings of finer ones
@@ -315,7 +315,7 @@ class TransformationGenerator:
         if base_url:
             kw["base_url"] = base_url
         self.client = OpenAI(**kw)
-        self.model = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
+        self.model = os.getenv("OPENAI_CODEGEN_MODEL") or os.getenv("OPENAI_MODEL", "gpt-4o-mini")
         self.max_completion_tokens = config.get("max_completion_tokens", 6000)
         self.max_retries = config.get("max_retries", 5)
         self._last_execution_log = []  # captured print output from last execution
@@ -461,23 +461,28 @@ class TransformationGenerator:
 
         # Decide wide-format strategy in Python — store for reuse in regeneration
         self._simple_wide = self._is_simple_wide(labels)
+        self._has_wide = "WIDE_FORMAT" in labels
         if self._simple_wide:
             logger.info("  Wide-format strategy: pd.melt() "
                         "(WIDE_FORMAT only, no blocking irregularities)")
-        elif "WIDE_FORMAT" in labels:
+        elif self._has_wide:
             logger.info("  Wide-format strategy: record-collection loop "
                         "(blocking irregularities present: "
                         f"{[l for l in labels if l in ('MULTI_LEVEL_HEADER','NESTED_COLUMN_GROUPS','BILINGUAL_ALTERNATING_ROWS')]})")
+        else:
+            logger.info("  No wide-format reshaping needed "
+                        "(WIDE_FORMAT not detected)")
 
         prompt = self._build_code_prompt(
-            df, physical, detection_result, schema, labels, self._simple_wide
+            df, physical, detection_result, schema, labels,
+            self._simple_wide, self._has_wide
         )
 
         try:
             resp = self.client.chat.completions.create(
                 model=self.model,
                 messages=[
-                    {"role": "system", "content": self._system_prompt(self._simple_wide)},
+                    {"role": "system", "content": self._system_prompt(self._simple_wide, self._has_wide)},
                     {"role": "user", "content": prompt},
                 ],
                 max_completion_tokens=self.max_completion_tokens,
@@ -491,7 +496,7 @@ class TransformationGenerator:
             logger.error(f"Code generation failed: {e}")
             raise
 
-    def _system_prompt(self, simple_wide: bool = False) -> str:
+    def _system_prompt(self, simple_wide: bool = False, has_wide: bool = False) -> str:
         common_header = (
             "You are an expert Python/pandas programmer. You write a "
             "`def transform(df)` function that transforms a messy "
@@ -505,14 +510,16 @@ class TransformationGenerator:
 
             "RULES:\n"
             "1. Use only pandas, numpy, and standard library.\n"
-            "2. Use .iloc for positional access (column INDICES, not names). "
-            "The input df has numeric column names (0, 1, 2...).\n"
+            "2. Use .iloc for ALL column access throughout the function. "
+            "NEVER select/drop/slice columns early — keep all original columns "
+            "until the final output step. Slicing columns mid-function changes "
+            "positional indices and breaks all subsequent .iloc accesses.\n"
             "3. NEVER use `raise`, `assert`, or explicit row count checks "
             "(e.g., `if len(records) < expected`).\n"
             "4. Output ONLY the Python code. No markdown. No explanation.\n\n"
         )
 
-        if simple_wide:
+        if has_wide and simple_wide:
             mandatory = (
                 "*** MANDATORY PATTERN: pd.melt() ***\n"
                 "This table has WIDE_FORMAT with no blocking irregularities. "
@@ -536,7 +543,7 @@ class TransformationGenerator:
                 "    return result\n"
                 "```\n"
             )
-        else:
+        elif has_wide:
             mandatory = (
                 "*** MANDATORY PATTERN: record-collection loop ***\n"
                 "This table has co-occurring structural irregularities. "
@@ -563,8 +570,10 @@ class TransformationGenerator:
                 "    return result\n"
                 "```\n"
             )
-
+        else:
+            mandatory = ""
         return common_header + mandatory
+
     # 新增方法
     def _format_header_lineage(self, df: pd.DataFrame,
                                physical: Dict[str, Any],
@@ -610,7 +619,8 @@ class TransformationGenerator:
                            detection_result: Dict[str, Any],
                            schema: Dict[str, Any],
                            labels: List[str],
-                           simple_wide: bool = False) -> str:
+                           simple_wide: bool = False,
+                           has_wide: bool = False) -> str:
 
         lineage_text = self._format_header_lineage(df, physical, labels)
         recipes_text = self._get_relevant_recipes(labels, physical, simple_wide)
@@ -626,8 +636,14 @@ class TransformationGenerator:
             "row_count_estimate", "unknown"
         )
 
-        # Choose few-shot example to match the selected strategy
-        few_shot = self._few_shot_melt() if simple_wide else self._few_shot_loop()
+        # Choose few-shot example matching the actual strategy.
+        # No wide-format reshaping needed → no example required; recipes + schema suffice.
+        if has_wide and simple_wide:
+            few_shot = self._few_shot_melt()
+        elif has_wide:
+            few_shot = self._few_shot_loop()
+        else:
+            few_shot = ""
 
         return f"""Write a `def transform(df):` function to convert this spreadsheet to tidy format.
 
@@ -642,6 +658,7 @@ class TransformationGenerator:
 
 === SOURCE DATA ===
 Shape: {df.shape[0]} rows × {df.shape[1]} columns
+ACTUAL SOURCE COLUMNS: {self._format_col_names(physical)}
 Column types: {col_types}
 
 HEADERS:
@@ -796,10 +813,6 @@ def transform(df):
     return output
 ```"""
 
-    # ==================================================================
-    # Recipe assembly
-    # ==================================================================
-
     def _get_relevant_recipes(self, labels: List[str],
                               physical: Dict[str, Any],
                               simple_wide: bool = False) -> str:
@@ -841,14 +854,15 @@ def transform(df):
 
         # Universal best practice — wording adapts to chosen strategy
         lines.append("--- UNIVERSAL BEST PRACTICE (Apply to all tables) ---")
-        if simple_wide:
+        has_wide = "WIDE_FORMAT" in labels
+        if has_wide and simple_wide:
             lines.append(
                 "# SAFE TYPE HANDLING\n"
                 "# After pd.melt(), convert the value column with "
                 "pd.to_numeric(..., errors='coerce').\n"
                 "# ALWAYS check pd.notna(x) before .strip() or .split()."
             )
-        else:
+        elif has_wide:
             lines.append(
                 f"# THE GOLDEN EXTRACTION LOOP\n"
                 f"# Loop from {start_r} to {end_r}.\n"
@@ -857,6 +871,10 @@ def transform(df):
                 f"\n"
                 f"# SAFE STRING & TYPE HANDLING\n"
                 f"# ALWAYS check pd.notna(x) before .strip() or .split()."
+            )
+        else:
+            lines.append(
+                ""
             )
         lines.append("")
 
@@ -914,7 +932,6 @@ def transform(df):
         structural_labels = {"NESTED_COLUMN_GROUPS", "MULTI_LEVEL_HEADER", "WIDE_FORMAT"}
         if structural_labels & set(labels):
             comprehension = self._get_structure_comprehension(df, physical, labels)
-            # 把理解结果注入到 feedback 里，下面的 prompt 会用到
             feedback["structure_comprehension"] = comprehension
         """Regenerate code using detailed error feedback, data snapshots, and CoT."""
         logger.info("Regenerating code with feedback...")
@@ -1078,10 +1095,24 @@ Output the diagnosis, plan, and the Python code block."""
 
         # Check 4: Null check (Enhanced)
         if not result_df.empty:
+            # Collect schema column sources for diagnosis
+            schema_col_sources = {
+                c["name"]: c.get("source", "")
+                for c in schema.get("target_columns", [])
+            }
+            exclude_rows_desc = schema.get("exclusions", {}).get(
+                "exclude_rows", {}
+            ).get("description", "")
+
             for col in result_df.columns:
                 null_pct = result_df[col].isnull().mean() * 100
 
                 if null_pct == 100:
+                    source_hint = schema_col_sources.get(col, "")
+                    # Distinguish: likely a schema design error (dimension only
+                    # existed in the rows that were filtered out) vs. a code
+                    # extraction bug (the source column exists but nothing was
+                    # extracted).
                     errors.append(f"Column '{col}' is 100% null. Check your column renaming, unpivot/melt, or merge logic. Do NOT use `raise ValueError` to handle this, fix the dataframe manipulation.")
                 elif null_pct > 80:
                     errors.append(f"Column '{col}' is {null_pct:.0f}% null. The extraction logic is likely misaligned.")
@@ -1269,6 +1300,15 @@ Output the diagnosis, plan, and the Python code block."""
     # ==================================================================
     # Formatters
     # ==================================================================
+
+    def _format_col_names(self, physical: Dict[str, Any]) -> str:
+        names = physical.get("actual_column_names", [])
+        if not names:
+            return "(unnamed columns)"
+        return ", ".join(
+            f'[{j}]="{name}"' for j, name in enumerate(names)
+            if name and not name.startswith("Unnamed")
+        ) or "(unnamed columns)"
 
     def _format_schema(self, schema: Dict[str, Any]) -> str:
         lines = []

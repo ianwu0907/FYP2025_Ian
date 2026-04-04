@@ -205,11 +205,12 @@ IRREGULARITY_TAXONOMY = {
             "'Indonesian', etc. This can only be identified by "
             "understanding the domain meaning of the labels.",
         "schema_guidance":
-            "All forms of aggregation rows should be EXCLUDED from "
-            "the tidy output because they are redundant. Keep only "
-            "the MOST GRANULAR observations. For cross-group "
-            "aggregation, exclude the entire coarser category group. "
-            "For semantic hierarchy, exclude the parent-level rows.",
+            "All forms of aggregation rows that their values can be derived (typically summed) from other "
+            "rows should be EXCLUDED from "
+            "the tidy output. CRITICAL: You MUST explicitly list the EXACT "
+            "string values of the coarser categories that need to be dropped. "
+            "Do NOT write instructions to 'keep granular rows'—you must "
+            "instruct the downstream module to explicitly DROP the coarser values.",
         "code_guidance":
             "For cross-group: identify the EXACT category value(s) "
             "in the category column that represent the coarser group. "
@@ -316,7 +317,6 @@ class PhysicalFeatureExtractor:
 
     def __init__(self, config: dict = None):
         config = config or {}
-        self.min_numeric_ratio = config.get("min_numeric_ratio", 0.3)
 
     def extract(self, df: pd.DataFrame) -> Dict[str, Any]:
         header_depth, data_start = self._find_data_start(df)
@@ -348,14 +348,27 @@ class PhysicalFeatureExtractor:
         }
 
     def _find_data_start(self, df: pd.DataFrame) -> tuple:
-        """Find where numeric data begins. Returns (header_depth, data_start_row).
+        """Find where data begins. Returns (header_depth, data_start_row).
 
-        A row is treated as a column-header row (not a data row) when ALL of
-        its non-empty cells are numeric — because a real data row in a
-        structured government table always has at least one text dimension
-        label alongside its numeric values.  This is a purely structural
-        criterion and replaces the previous year-range (1900-2100) check,
-        which was a semantic assumption.
+        Two structural conditions identify a data row:
+
+        1. NOT all-numeric: if every non-empty cell is numeric the row has
+           no text dimension labels → it is a header row (e.g. a year-header
+           row [None, 2010, 2011, 2012]).  A real data row always has at
+           least one text label alongside its numeric values.
+
+        2. At least two numeric values: rows with 0-1 numerics are title /
+           metadata / pure-label rows and cannot be data rows.
+
+        The old ``ratio >= min_numeric_ratio`` check has been removed.
+        It was intended to filter out sparse rows but it also penalises wide
+        tables where most columns are text dimension labels (e.g. 6 text cols
+        + 2 numeric cols → ratio = 0.25 < 0.30 for every data row).  For
+        such tables the ratio check caused _find_data_start to skip ALL data
+        rows and fall back to row 1, misclassifying the first true data row
+        as a column-header row.  The two conditions above are sufficient:
+        the is_all_numeric_row gate handles the year-header case that the
+        ratio check was originally designed to address.
         """
         for i in range(len(df)):
             row = df.iloc[i]
@@ -365,12 +378,10 @@ class PhysicalFeatureExtractor:
                 continue
             numeric_count = sum(1 for v in non_empty if self._is_numeric(v))
 
-            # Structural gate: if every non-empty cell is numeric there are no
-            # text labels → this is a header row, not a data row.
+            # Gate 1: all-numeric rows have no text labels → header, not data.
             is_all_numeric_row = (numeric_count == len(non_empty))
-            ratio = numeric_count / len(non_empty)
-
-            if not is_all_numeric_row and ratio >= self.min_numeric_ratio and numeric_count >= 2:
+            # Gate 2: at least two numeric values (rules out title/label rows).
+            if not is_all_numeric_row and numeric_count >= 2:
                 return i, i  # header_depth = rows before this
         return 1, 1
 
@@ -415,23 +426,19 @@ class PhysicalFeatureExtractor:
     @staticmethod
     def _detect_left_dim_cols(col_dtypes: Dict[int, str]) -> int:
         """
-        Return the index of the first numeric column, which acts as the
-        boundary between the row-level dimension region (left) and the
-        value region (right).
+        Return the index of the first numeric column, used as the boundary
+        for [ROW_DIM] / [COL_HEADER] tagging in header rows.
 
-        ``set(range(left_header_cols_num))`` then gives the full set of
-        column indices that should be tagged as [ROW_DIM] when formatting
-        header rows for the LLM.  Columns in that range may be text, mixed,
-        or empty — they are all part of the left-hand label region.
+        This value is consumed ONLY by ``_format_headers`` in SchemaEstimator
+        and TransformationGenerator, which tag header-row cells to help the
+        LLM distinguish row-level dimension labels from column header values.
+        It is NOT used in postfilter gates (those use raw numeric counts).
 
-        Example — col_dtypes = {0: 'empty', 1: 'text', 2: 'empty',
-                                  3: 'numeric', ...}
-          → returns 3  →  left_dim_cols = {0, 1, 2}  (all three are [ROW_DIM])
-
-        This is a purely structural determination: the dtype profile is an
-        objective fact about cell contents, with no semantic judgment.
-        Falls back to 1 when no numeric column is found or the first column
-        is already numeric (pathological tables).
+        Assumption: in multi-row header tables (header_depth ≥ 2) the
+        leftmost columns are always text labels, so the first numeric column
+        is a reliable boundary.  When header_depth = 0 there are no header
+        rows to tag, so this value has no effect on LLM input regardless of
+        what it returns.
         """
         for j in sorted(col_dtypes.keys()):
             if col_dtypes[j] == "numeric":
@@ -440,7 +447,9 @@ class PhysicalFeatureExtractor:
 
     @staticmethod
     def _is_numeric(val) -> bool:
-        if isinstance(val, (int, float)):
+        # Native Python ints/floats and numpy scalar types (np.int64, np.float64, etc.)
+        # numpy scalars are NOT subclasses of int/float in Python 3, so check both.
+        if isinstance(val, (int, float, np.integer, np.floating)):
             try:
                 return val == val  # False for NaN
             except Exception:
@@ -608,7 +617,7 @@ class IrregularityDetector:
         logger.info("Detecting irregularities (LLM call)...")
         irregularities = self._detect_irregularities(df, physical)
         irregularities = self._postfilter_irregularities(irregularities, physical)
-        labels = [ir["label"] for ir in irregularities]
+        labels = list(dict.fromkeys(ir["label"] for ir in irregularities))
         logger.info(f"Detected {len(irregularities)} irregularities: {labels}")
 
         return {
@@ -647,6 +656,38 @@ class IrregularityDetector:
                     f"inline_bilingual_candidate=False"
                 )
                 continue
+
+            # MULTI_LEVEL_HEADER and NESTED_COLUMN_GROUPS both require at
+            # least two physical header rows.  header_depth < 2 means there
+            # is zero or one header row — multi-row structure is impossible.
+            # The LLM often misreads semantic hierarchies in column names or
+            # data cells as structural multi-level headers when header_depth=0.
+            if label in ("MULTI_LEVEL_HEADER", "NESTED_COLUMN_GROUPS") and \
+                    physical.get("header_depth", 0) < 2:
+                logger.info(
+                    f"  [postfilter] Removed {label}: "
+                    f"header_depth={physical.get('header_depth', 0)} < 2"
+                )
+                continue
+
+            # AGGREGATE_COLUMNS requires at least three numeric columns:
+            # one aggregate column plus at least two component columns that
+            # it sums.  With fewer than three numeric columns in the table,
+            # a "col A = col B + col C" column-aggregation structure is
+            # structurally impossible.  This is a pure count — no assumption
+            # is made about which columns are dimensions vs values.
+            if label == "AGGREGATE_COLUMNS":
+                total_numeric = sum(
+                    1 for t in physical["column_dtype_profile"].values()
+                    if t == "numeric"
+                )
+                if total_numeric < 3:
+                    logger.info(
+                        f"  [postfilter] Removed {label}: "
+                        f"only {total_numeric} numeric column(s), "
+                        f"need ≥ 3 for column-level aggregation"
+                    )
+                    continue
 
             filtered.append(ir)
 

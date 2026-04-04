@@ -137,8 +137,8 @@ class SchemaEstimator:
             "*** TIDY DATA PRINCIPLES (Hadley Wickham) YOU MUST ENFORCE ***:\n"
             "1. Each VARIABLE forms a column.\n"
             "2. Each OBSERVATION forms a row.\n"
-            "3. Each type of OBSERVATIONAL UNIT forms a table.\n\n"           
-            
+            "3. Each type of OBSERVATIONAL UNIT forms a table.\n\n"
+
             "Given a messy spreadsheet, its detected structural "
             "irregularities, and handling guidance for each irregularity, "
             "design the ideal tidy output schema. Answer in the EXACT "
@@ -211,7 +211,7 @@ only a description. If exact count is unknown, multiply your best estimates
 of each dimension and write the result as an integer. Example:
 "20 years × 8 types × 2 sexes = 320" — always conclude with "= <integer>".
 
-EXCLUDE_ROWS: <which rows to remove and why>
+EXCLUDE_ROWS: Drop rows where <Column Name> IN (<"Exact", "Values", "To", "Drop">). Be extremely specific.
 EXCLUDE_COLUMNS: <which columns to remove and why>
 
 SAMPLE_ROW: <col1>=<val1>, <col2>=<val2>, ...
@@ -226,7 +226,7 @@ Rules for TARGET_COLUMNS:
     included as a dimension — do not drop the column just because
     some of its values are excluded. The column encodes real
     variation across the rows that are kept.
-
+  - CRITICAL: Do NOT include a target column whose values can only be extracted from rows that are listed in EXCLUDE_ROWS
 === YOUR TASK ===
 
 IRREGULARITIES:
@@ -237,6 +237,8 @@ GUIDANCE:
 
 PHYSICAL FEATURES:
   Data region: rows {physical['data_start_row']} to {physical['data_end_row']} ({physical['data_rows']} rows)
+  ACTUAL SOURCE COLUMNS (these are the ONLY columns that exist in the data — do NOT invent target columns that have no source here):
+  {self._format_col_names(physical)}
   Column types: {physical['column_dtype_profile']}
 
 HEADERS:
@@ -253,6 +255,15 @@ Now design the tidy schema following the EXACT format above."""
     # ==================================================================
     # Formatters
     # ==================================================================
+
+    def _format_col_names(self, physical: Dict[str, Any]) -> str:
+        names = physical.get("actual_column_names", [])
+        if not names:
+            return "(unnamed columns)"
+        return ", ".join(
+            f'[{j}]="{name}"' for j, name in enumerate(names)
+            if name and not name.startswith("Unnamed")
+        ) or "(unnamed columns)"
 
     def _format_irregularities(self, irregularities: List[Dict]) -> str:
         lines = []

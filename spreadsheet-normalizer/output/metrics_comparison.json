@@ -1,56 +1,56 @@
 {
-  "row_completeness_uniformity": {
-    "before": 0.6219,
-    "after": 1.0,
-    "delta": 0.3781,
-    "direction": "✓ improved"
-  },
-  "column_completeness_min": {
-    "before": 0.0,
-    "after": 1.0,
-    "delta": 1.0,
-    "direction": "✓ improved"
-  },
-  "inter_column_nmi": {
-    "before": 0.2718,
-    "after": 0.0001,
-    "delta": -0.2717,
-    "direction": "✓ improved"
-  },
-  "data_row_ratio": {
-    "before": 0.4286,
-    "after": 1.0,
-    "delta": 0.5714,
-    "direction": "✓ improved"
-  },
-  "cell_coverage": {
-    "before": 0.3852,
-    "after": 1.0,
-    "delta": 0.6148,
-    "direction": "✓ improved"
-  },
-  "type_consistency": {
-    "before": 0.8647,
-    "after": 1.0,
-    "delta": 0.1353,
-    "direction": "✓ improved"
-  },
   "header_uniqueness": {
     "before": 1.0,
     "after": 1.0,
     "delta": 0.0,
     "direction": "= unchanged"
   },
-  "column_type_homogeneity": {
-    "before": 0.5857,
-    "after": 1.0,
-    "delta": 0.4143,
+  "inter_column_nmi": {
+    "before": 0.3527,
+    "after": 0.2027,
+    "delta": -0.15,
     "direction": "✓ improved"
   },
+  "column_completeness_min": {
+    "before": 0.3333,
+    "after": 0.3111,
+    "delta": -0.0222,
+    "direction": "✗ degraded"
+  },
   "substring_containment": {
-    "before": 0.0012,
-    "after": 0.0029,
-    "delta": 0.0017,
+    "before": 0.0581,
+    "after": 0.0426,
+    "delta": -0.0155,
+    "direction": "✓ improved"
+  },
+  "cell_coverage": {
+    "before": 0.9167,
+    "after": 0.8852,
+    "delta": -0.0315,
+    "direction": "✗ degraded"
+  },
+  "column_type_homogeneity": {
+    "before": 0.9444,
+    "after": 0.9286,
+    "delta": -0.0158,
+    "direction": "✗ degraded"
+  },
+  "data_row_ratio": {
+    "before": 1.0,
+    "after": 1.0,
+    "delta": 0.0,
+    "direction": "= unchanged"
+  },
+  "row_completeness_uniformity": {
+    "before": 0.9411,
+    "after": 0.9228,
+    "delta": -0.0183,
+    "direction": "✗ degraded"
+  },
+  "type_consistency": {
+    "before": 1.0,
+    "after": 1.0,
+    "delta": 0.0,
     "direction": "= unchanged"
   }
 }
