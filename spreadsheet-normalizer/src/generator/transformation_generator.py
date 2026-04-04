@@ -99,8 +99,6 @@ CODE_RECIPES = {
 # column_map = {col_index: (group_value, sub_value)}
 # Example for year x value_type:
 #   {3: ("2011", "Number"), 4: ("2011", "%"), 5: ("2016", "Number"), ...}
-# Example for marital_status x sex:
-#   {3: ("Never married", "Male"), 4: ("Never married", "Female"), ...}
 #
 # Forward-fill group labels across columns (groups span multiple cols):
 group_labels = {}

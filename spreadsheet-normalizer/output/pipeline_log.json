@@ -1,6 +1,6 @@
 {
   "input_file": "long3.xlsx",
-  "start_time": "2026-04-05 00:18:27",
+  "start_time": "2026-04-05 00:46:58",
   "stages": {
     "encoding": {
       "status": "success",
@@ -21,14 +21,14 @@
     },
     "schema_estimation": {
       "status": "success",
-      "observation_unit": "Each row represents the percentage distribution of an ethnic minority group by marital status and sex for the year 2011.",
+      "observation_unit": "Each row in the tidy output represents the percentage distribution of a specific ethnic group's marital status and sex for the year 2011.",
       "num_target_columns": 5,
-      "expected_rows": 492
+      "expected_rows": 41
     },
     "transformation": {
       "status": "success",
       "output_shape": [
-        215,
+        227,
         5
       ],
       "validation": {
@@ -36,15 +36,15 @@
         "errors": [],
         "warnings": [],
         "actual_shape": [
-          215,
+          227,
           5
         ],
         "expected_shape": [
-          492,
+          41,
           5
         ]
       },
-      "attempts": 3
+      "attempts": 2
     }
   },
   "metrics_before": {
@@ -64,7 +64,7 @@
   },
   "metrics_after": {
     "shape": {
-      "rows": 215,
+      "rows": 227,
       "cols": 5
     },
     "cell_coverage": 1.0,
@@ -74,40 +74,10 @@
     "column_completeness_min": 1.0,
     "header_uniqueness": 1.0,
     "type_consistency": 1.0,
-    "substring_containment": 0.0033,
-    "inter_column_nmi": 0.0
+    "substring_containment": 0.0029,
+    "inter_column_nmi": 0.0001
   },
   "metrics_comparison": {
-    "type_consistency": {
-      "before": 0.8647,
-      "after": 1.0,
-      "delta": 0.1353,
-      "direction": "✓ improved"
-    },
-    "header_uniqueness": {
-      "before": 1.0,
-      "after": 1.0,
-      "delta": 0.0,
-      "direction": "= unchanged"
-    },
-    "substring_containment": {
-      "before": 0.0012,
-      "after": 0.0033,
-      "delta": 0.0021,
-      "direction": "= unchanged"
-    },
-    "inter_column_nmi": {
-      "before": 0.2718,
-      "after": 0.0,
-      "delta": -0.2718,
-      "direction": "✓ improved"
-    },
-    "cell_coverage": {
-      "before": 0.3852,
-      "after": 1.0,
-      "delta": 0.6148,
-      "direction": "✓ improved"
-    },
     "row_completeness_uniformity": {
       "before": 0.6219,
       "after": 1.0,
@@ -120,10 +90,10 @@
       "delta": 1.0,
       "direction": "✓ improved"
     },
-    "column_type_homogeneity": {
-      "before": 0.5857,
-      "after": 1.0,
-      "delta": 0.4143,
+    "inter_column_nmi": {
+      "before": 0.2718,
+      "after": 0.0001,
+      "delta": -0.2717,
       "direction": "✓ improved"
     },
     "data_row_ratio": {
@@ -131,10 +101,40 @@
       "after": 1.0,
       "delta": 0.5714,
       "direction": "✓ improved"
+    },
+    "cell_coverage": {
+      "before": 0.3852,
+      "after": 1.0,
+      "delta": 0.6148,
+      "direction": "✓ improved"
+    },
+    "type_consistency": {
+      "before": 0.8647,
+      "after": 1.0,
+      "delta": 0.1353,
+      "direction": "✓ improved"
+    },
+    "header_uniqueness": {
+      "before": 1.0,
+      "after": 1.0,
+      "delta": 0.0,
+      "direction": "= unchanged"
+    },
+    "column_type_homogeneity": {
+      "before": 0.5857,
+      "after": 1.0,
+      "delta": 0.4143,
+      "direction": "✓ improved"
+    },
+    "substring_containment": {
+      "before": 0.0012,
+      "after": 0.0029,
+      "delta": 0.0017,
+      "direction": "= unchanged"
     }
   },
   "output_file": "output/normalized_long3.csv",
-  "end_time": "2026-04-05 00:19:40",
-  "elapsed_seconds": 72.85,
+  "end_time": "2026-04-05 00:47:43",
+  "elapsed_seconds": 45.26,
   "status": "success"
 }

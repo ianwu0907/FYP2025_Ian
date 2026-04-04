@@ -1,6 +1,6 @@
 {
   "shape": {
-    "rows": 215,
+    "rows": 227,
     "cols": 5
   },
   "cell_coverage": 1.0,
@@ -10,6 +10,6 @@
   "column_completeness_min": 1.0,
   "header_uniqueness": 1.0,
   "type_consistency": 1.0,
-  "substring_containment": 0.0033,
-  "inter_column_nmi": 0.0
+  "substring_containment": 0.0029,
+  "inter_column_nmi": 0.0001
 }

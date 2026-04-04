@@ -49,23 +49,24 @@
       46
     ],
     "bilingual_row_candidate": false,
-    "inline_bilingual_candidate": false
+    "inline_bilingual_candidate": false,
+    "left_header_cols_num": 3
   },
   "irregularities": [
     {
       "label": "MULTI_LEVEL_HEADER",
-      "evidence": "Rows 2 to 4",
-      "details": "Headers span multiple rows with group labels and sub-labels for marital status and demographics."
+      "evidence": "Rows 2-4",
+      "details": "The headers span multiple rows, indicating a hierarchical structure with overarching category labels and sub-labels."
     },
     {
       "label": "SPARSE_ROW_FILL",
-      "evidence": "Rows 7, 8, 39, 40, and 44  (values only in the first row of blocks)",
-      "details": "The dimension column (e.g., ethnic groups) contains values that only appear at the start of blocks, with blanks carried forward."
+      "evidence": "Rows 7-42, particularly the use of blank cells to carry forward values in the \"年份  \\nYear\" column.",
+      "details": "For various ethnic groups, the year is filled once and left blank for subsequent rows until a new block begins."
     },
     {
       "label": "METADATA_ROWS",
-      "evidence": "Rows 0, 1, 5, and 43 to 46",
-      "details": "These rows contain titles, source citations, and empty rows that do not follow the data structure."
+      "evidence": "Rows 0, 1, 5, and 15-16",
+      "details": "These rows contain title, subtitles, and footnotes, which are not part of the main dataset and exist outside the data structure."
     }
   ],
   "labels": [

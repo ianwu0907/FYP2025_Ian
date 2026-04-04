@@ -331,6 +331,7 @@ class PhysicalFeatureExtractor:
         )
 
         actual_col_names = [str(c) for c in df.columns]
+        left_dim_count = self._detect_left_dim_cols(col_dtypes)
 
         return {
             "shape": {"rows": len(df), "cols": len(df.columns)},
@@ -343,10 +344,19 @@ class PhysicalFeatureExtractor:
             "blank_rows_in_data": blank_rows,
             "bilingual_row_candidate": bilingual_candidate,
             "inline_bilingual_candidate": inline_bilingual_candidate,
+            "left_header_cols_num": left_dim_count,
         }
 
     def _find_data_start(self, df: pd.DataFrame) -> tuple:
-        """Find where numeric data begins. Returns (header_depth, data_start_row)."""
+        """Find where numeric data begins. Returns (header_depth, data_start_row).
+
+        A row is treated as a column-header row (not a data row) when ALL of
+        its non-empty cells are numeric — because a real data row in a
+        structured government table always has at least one text dimension
+        label alongside its numeric values.  This is a purely structural
+        criterion and replaces the previous year-range (1900-2100) check,
+        which was a semantic assumption.
+        """
         for i in range(len(df)):
             row = df.iloc[i]
             non_empty = row.dropna()
@@ -355,21 +365,12 @@ class PhysicalFeatureExtractor:
                 continue
             numeric_count = sum(1 for v in non_empty if self._is_numeric(v))
 
-            # Check if all numerics are year-like (header, not data)
-            year_count = 0
-            for v in non_empty:
-                if self._is_numeric(v):
-                    try:
-                        n = float(str(v).strip().replace(",", ""))
-                        if 1900 <= n <= 2100 and n == int(n):
-                            year_count += 1
-                    except (ValueError, OverflowError):
-                        pass
-
-            is_year_only_row = numeric_count > 0 and year_count == numeric_count
+            # Structural gate: if every non-empty cell is numeric there are no
+            # text labels → this is a header row, not a data row.
+            is_all_numeric_row = (numeric_count == len(non_empty))
             ratio = numeric_count / len(non_empty)
 
-            if not is_year_only_row and ratio >= self.min_numeric_ratio and numeric_count >= 2:
+            if not is_all_numeric_row and ratio >= self.min_numeric_ratio and numeric_count >= 2:
                 return i, i  # header_depth = rows before this
         return 1, 1
 
@@ -410,6 +411,32 @@ class PhysicalFeatureExtractor:
             if len(non_empty) == 0:
                 blanks.append(i)
         return blanks
+
+    @staticmethod
+    def _detect_left_dim_cols(col_dtypes: Dict[int, str]) -> int:
+        """
+        Return the index of the first numeric column, which acts as the
+        boundary between the row-level dimension region (left) and the
+        value region (right).
+
+        ``set(range(left_header_cols_num))`` then gives the full set of
+        column indices that should be tagged as [ROW_DIM] when formatting
+        header rows for the LLM.  Columns in that range may be text, mixed,
+        or empty — they are all part of the left-hand label region.
+
+        Example — col_dtypes = {0: 'empty', 1: 'text', 2: 'empty',
+                                  3: 'numeric', ...}
+          → returns 3  →  left_dim_cols = {0, 1, 2}  (all three are [ROW_DIM])
+
+        This is a purely structural determination: the dtype profile is an
+        objective fact about cell contents, with no semantic judgment.
+        Falls back to 1 when no numeric column is found or the first column
+        is already numeric (pathological tables).
+        """
+        for j in sorted(col_dtypes.keys()):
+            if col_dtypes[j] == "numeric":
+                return max(j, 1)
+        return 1
 
     @staticmethod
     def _is_numeric(val) -> bool:
@@ -683,11 +710,10 @@ Before finishing, verify EACH of the following. Report any that apply:
    - If DIMENSION VALUES → those columns are wide-format value columns → WIDE_FORMAT.
 1. Do any label cells embed two dimensions in one value using a delimiter (e.g. " - ", " – ", "/", ":", "_", or any other separator)? If so, what is the exact delimiter? → EMBEDDED_DIMENSION_IN_COLUMN
 2. Are there category groups where one is entirely a coarser aggregation of another? If yes, name the SPECIFIC COLUMN and the EXACT coarser category value(s) that must be excluded (e.g. "column 3 value '虐待長者性質' is a coarser version of '虐待長者性質及受虐長者性別'"). → IMPLICIT_AGGREGATION_ROWS
-3. Are there rows with Total/Overall/合計 keywords? → IMPLICIT_AGGREGATION_ROWS
-4. Is "inline_bilingual_candidate" True in the PHYSICAL FEATURES above? If NO, do NOT flag INLINE_BILINGUAL. If YES, confirm that cells physically contain both CJK and Latin text mixed within the same cell (not just two separate columns with different languages). → INLINE_BILINGUAL
-5. Is "bilingual_row_candidate" True in the PHYSICAL FEATURES above? If NO, do NOT flag BILINGUAL_ALTERNATING_ROWS under any circumstances. If YES, confirm that the label-only rows are language translations of the preceding data rows (not an independent observation). → BILINGUAL_ALTERNATING_ROWS
-6. Are any dimension columns only filled at block starts? → SPARSE_ROW_FILL
-7. If MULTI_LEVEL_HEADER is present: do the top-level header values 
+3. Is "inline_bilingual_candidate" True in the PHYSICAL FEATURES above? If NO, do NOT flag INLINE_BILINGUAL. If YES, confirm that cells physically contain both CJK and Latin text mixed within the same cell (not just two separate columns with different languages). → INLINE_BILINGUAL
+4. Is "bilingual_row_candidate" True in the PHYSICAL FEATURES above? If NO, do NOT flag BILINGUAL_ALTERNATING_ROWS under any circumstances. If YES, confirm that the label-only rows are language translations of the preceding data rows (not an independent observation). → BILINGUAL_ALTERNATING_ROWS
+5. Are any dimension columns only filled at block starts? → SPARSE_ROW_FILL
+6. If MULTI_LEVEL_HEADER is present: do the top-level header values 
    repeat across multiple column groups (e.g., "Never married" spans 
    cols 3-5, "Married" spans cols 6-8, "Widowed" spans cols 9-11)? 
    If yes → NESTED_COLUMN_GROUPS. If each top-level value appears 

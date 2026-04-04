@@ -1,78 +1,78 @@
 {
   "observation_unit": {
-    "description": "Each row represents the percentage distribution of an ethnic minority group by marital status and sex for the year 2011.",
+    "description": "Each row in the tidy output represents the percentage distribution of a specific ethnic group's marital status and sex for the year 2011.",
     "dimensions": [
       "year",
       "ethnicity",
       "marital_status",
       "sex"
     ],
-    "example": "Each row represents the percentage distribution of an ethnic minority group by marital status and sex for the year 2011."
+    "example": "Each row in the tidy output represents the percentage distribution of a specific ethnic group's marital status and sex for the year 2011."
   },
   "target_columns": [
     {
       "name": "year",
       "data_type": "integer",
-      "description": "The year of the data collection",
+      "description": "The year of the data, forward-filled for each ethnic group",
       "is_dimension": true,
       "nullable": false,
-      "source": "Row 6"
+      "source": "Year column"
     },
     {
       "name": "ethnicity",
       "data_type": "string",
-      "description": "The ethnic group under observation",
+      "description": "The ethnic group being reported",
       "is_dimension": true,
       "nullable": false,
-      "source": "Row 7 and onward (sparse forward fill)"
+      "source": "Ethnicity column"
     },
     {
       "name": "marital_status",
       "data_type": "string",
-      "description": "The marital status category (e.g., never married, married, widowed/divorced/separated)",
+      "description": "The marital status category",
       "is_dimension": true,
       "nullable": false,
-      "source": "Rows 2-3 (spanning multiple headers)"
+      "source": "Header for each marital status"
     },
     {
       "name": "sex",
       "data_type": "string",
-      "description": "The sex category (e.g., Male, Female, Overall)",
+      "description": "The sex category within each marital status",
       "is_dimension": true,
       "nullable": false,
-      "source": "Rows 4 (spanning multiple headers)"
+      "source": "Header for male/female/overall"
     },
     {
       "name": "percentage",
       "data_type": "float",
-      "description": "The percentage distribution for the corresponding ethnic group, marital status, and sex",
+      "description": "The percentage distribution value",
       "is_dimension": false,
       "nullable": true,
-      "source": "Raw data from Columns 3-14"
+      "source": "Corresponding percentage data cells"
     }
   ],
   "expected_output": {
-    "row_count_formula": "41 ethnic groups × 4 marital statuses × 3 sexes = 492",
-    "row_count_estimate": 492,
+    "row_count_formula": "41 rows (data entries) = 41",
+    "row_count_estimate": 41,
     "column_count": 5
   },
   "exclusions": {
     "exclude_rows": {
-      "description": "Rows 0-5 and 43-46 (metadata rows that do not contribute to the data structure)",
+      "description": "Rows 0, 1, 5, 15-16, 43, 44, 45, 46 (metadata rows with titles, subtitles, and unnecessary footnotes)",
       "criteria": [
-        "Rows 0-5 and 43-46 (metadata rows that do not contribute to the data structure)"
+        "Rows 0, 1, 5, 15-16, 43, 44, 45, 46 (metadata rows with titles, subtitles, and unnecessary footnotes)"
       ]
     },
     "exclude_columns": {
-      "description": "Column 0 (not applicable for observations), Column 2 (redundant) and Column 15 (empty)",
+      "description": "No columns to remove as all columns contain relevant data.",
       "criteria": [
-        "Column 0 (not applicable for observations), Column 2 (redundant) and Column 15 (empty)"
+        "No columns to remove as all columns contain relevant data."
       ]
     }
   },
   "handling_special_cases": {},
   "validation_samples": [],
-  "schema_reasoning": "Each row represents the percentage distribution of an ethnic minority group by marital status and sex for the year 2011.",
+  "schema_reasoning": "Each row in the tidy output represents the percentage distribution of a specific ethnic group's marital status and sex for the year 2011.",
   "expected_output_columns": [
     "year",
     "ethnicity",

@@ -1,34 +1,4 @@
 {
-  "type_consistency": {
-    "before": 0.8647,
-    "after": 1.0,
-    "delta": 0.1353,
-    "direction": "✓ improved"
-  },
-  "header_uniqueness": {
-    "before": 1.0,
-    "after": 1.0,
-    "delta": 0.0,
-    "direction": "= unchanged"
-  },
-  "substring_containment": {
-    "before": 0.0012,
-    "after": 0.0033,
-    "delta": 0.0021,
-    "direction": "= unchanged"
-  },
-  "inter_column_nmi": {
-    "before": 0.2718,
-    "after": 0.0,
-    "delta": -0.2718,
-    "direction": "✓ improved"
-  },
-  "cell_coverage": {
-    "before": 0.3852,
-    "after": 1.0,
-    "delta": 0.6148,
-    "direction": "✓ improved"
-  },
   "row_completeness_uniformity": {
     "before": 0.6219,
     "after": 1.0,
@@ -41,10 +11,10 @@
     "delta": 1.0,
     "direction": "✓ improved"
   },
-  "column_type_homogeneity": {
-    "before": 0.5857,
-    "after": 1.0,
-    "delta": 0.4143,
+  "inter_column_nmi": {
+    "before": 0.2718,
+    "after": 0.0001,
+    "delta": -0.2717,
     "direction": "✓ improved"
   },
   "data_row_ratio": {
@@ -52,5 +22,35 @@
     "after": 1.0,
     "delta": 0.5714,
     "direction": "✓ improved"
+  },
+  "cell_coverage": {
+    "before": 0.3852,
+    "after": 1.0,
+    "delta": 0.6148,
+    "direction": "✓ improved"
+  },
+  "type_consistency": {
+    "before": 0.8647,
+    "after": 1.0,
+    "delta": 0.1353,
+    "direction": "✓ improved"
+  },
+  "header_uniqueness": {
+    "before": 1.0,
+    "after": 1.0,
+    "delta": 0.0,
+    "direction": "= unchanged"
+  },
+  "column_type_homogeneity": {
+    "before": 0.5857,
+    "after": 1.0,
+    "delta": 0.4143,
+    "direction": "✓ improved"
+  },
+  "substring_containment": {
+    "before": 0.0012,
+    "after": 0.0029,
+    "delta": 0.0017,
+    "direction": "= unchanged"
   }
 }
