@@ -137,26 +137,54 @@ class SchemaEstimator:
             "*** TIDY DATA PRINCIPLES (Hadley Wickham) YOU MUST ENFORCE ***:\n"
             "1. Each VARIABLE forms a column.\n"
             "2. Each OBSERVATION forms a row.\n"
-            "3. Each type of OBSERVATIONAL UNIT forms a table.\n\n"
-
-            "This means:\n"
-            "- If column headers contain VALUES (years, categories, age "
-            "groups), those must become a new variable column, and the "
-            "table must be reshaped from wide to long.\n"
-            "- If a single row mixes multiple observations (e.g., male "
-            "and female counts side by side), they must be split into "
-            "separate rows.\n"
-            "- Aggregated/total rows and columns should be excluded "
-            "because they violate the principle that each row is one "
-            "atomic observation.\n\n"
-
+            "3. Each type of OBSERVATIONAL UNIT forms a table.\n\n"           
+            
             "Given a messy spreadsheet, its detected structural "
             "irregularities, and handling guidance for each irregularity, "
             "design the ideal tidy output schema. Answer in the EXACT "
             "text format shown in the examples. Be precise about column "
             "names and row estimates."
         )
+    # 新增方法
+    def _format_header_lineage(self, df: pd.DataFrame,
+                               physical: Dict[str, Any],
+                               labels: List[str]) -> str:
+        """
+        When NESTED_COLUMN_GROUPS is present, reconstruct the ancestor
+        path for each data column by forward-filling header rows.
+        This makes implicit hierarchy explicit for the LLM.
+        """
+        if "NESTED_COLUMN_GROUPS" not in labels and "MULTI_LEVEL_HEADER" not in labels:
+            return "(no nested groups detected)"
 
+        start = physical["data_start_row"]
+        if start < 2:
+            return "(single header row, no lineage needed)"
+
+        # Forward-fill each header row horizontally (mimics merged cell semantics)
+        header_rows = []
+        for i in range(start):
+            row = []
+            last_val = None
+            for j in range(len(df.columns)):
+                val = df.iloc[i, j]
+                if pd.notna(val) and str(val).strip():
+                    last_val = str(val).strip()
+                row.append(last_val)
+            header_rows.append(row)
+
+        # Build lineage string per column
+        lines = []
+        for j in range(len(df.columns)):
+            path_parts = []
+            for row in header_rows:
+                v = row[j]
+                if v and (not path_parts or v != path_parts[-1]):
+                    path_parts.append(v)
+            if path_parts:
+                lines.append(f"  Col {j}: {' > '.join(path_parts)}")
+
+        return "\n".join(lines) if lines else "(unable to reconstruct lineage)"
     def _build_prompt(self, df: pd.DataFrame,
                       physical: Dict[str, Any],
                       irregularities: List[Dict],
@@ -166,6 +194,7 @@ class SchemaEstimator:
         irregularity_text = self._format_irregularities(irregularities)
         headers_text = self._format_headers(df, physical)
         data_text = self._format_data(df, physical)
+        lineage_text = self._format_header_lineage(df, physical, labels)
 
         return f"""Design the tidy output schema for this spreadsheet.
 
@@ -176,7 +205,11 @@ OBSERVATION: <what one row in the tidy output represents>
 TARGET_COLUMNS:
 - <name> (<type>, <role>): <description> | source: <where this comes from>
 
-ROW_ESTIMATE: <formula> = <number>
+ROW_ESTIMATE: <formula> = <integer>
+NOTE: ROW_ESTIMATE MUST end with "= <a specific integer>". Do NOT write
+only a description. If exact count is unknown, multiply your best estimates
+of each dimension and write the result as an integer. Example:
+"20 years × 8 types × 2 sexes = 320" — always conclude with "= <integer>".
 
 EXCLUDE_ROWS: <which rows to remove and why>
 EXCLUDE_COLUMNS: <which columns to remove and why>
@@ -189,126 +222,10 @@ Rules for TARGET_COLUMNS:
   - One column per line, each starting with "- "
   - Use snake_case for all column names
   - Dimensions go first, then values
-
-=== FEW-SHOT EXAMPLES ===
-
---- Example 1 ---
-IRREGULARITIES:
-  METADATA_ROWS: Rows 0-1 contain titles
-  MULTI_LEVEL_HEADER: Row 3 has years (2019, 2020), Row 4 has Number/%
-  NESTED_COLUMN_GROUPS: 2019→[col3,col4], 2020→[col5,col6], each with Number/%
-  WIDE_FORMAT: Year × value-type encoded as columns
-  IMPLICIT_AGGREGATION_ROWS: Row 20 "Total" sums all regions
-  AGGREGATE_COLUMNS: Col 7 "Total" sums across years
-GUIDANCE:
-  [MULTI_LEVEL_HEADER] Read all header rows together to understand full column meaning.
-  [NESTED_COLUMN_GROUPS] Each nesting level becomes a dimension. Identify what each level represents.
-  [WIDE_FORMAT] Values in column headers become a new dimension column.
-  [IMPLICIT_AGGREGATION_ROWS] Exclude aggregation rows.
-  [AGGREGATE_COLUMNS] Exclude aggregate columns.
-HEADERS:
-  Row 0: [0]="Sales Report 2019-2020"
-  Row 3: [3]="2019", [5]="2020"
-  Row 4: [0]="Region", [1]="Product", [3]="Revenue", [4]="Units", [5]="Revenue", [6]="Units", [7]="Total Rev"
-DATA:
-  Row 5: [0]="North", [1]="Widget A", [3]="15000", [4]="120", [5]="18000", [6]="140", [7]="33000"
-  Row 6: [0]="North", [1]="Widget B", [3]="8000", [4]="65", [5]="9500", [6]="80", [7]="17500"
-  Row 20: [0]="Total", [3]="50000", [4]="400", [5]="60000", [6]="500", [7]="110000"
-SCHEMA:
-OBSERVATION: One product's sales metric in one region for one year
-
-TARGET_COLUMNS:
-- region (string, dimension): Geographic region | source: column 0
-- product (string, dimension): Product name | source: column 1
-- year (string, dimension): Year of sales | source: column headers (2019, 2020)
-- revenue (float, value): Sales revenue | source: columns 3,5 (under each year)
-- units (integer, value): Units sold | source: columns 4,6 (under each year)
-
-ROW_ESTIMATE: 14 detail rows × 2 years = 28
-
-EXCLUDE_ROWS: Row 20 "Total" (aggregation row)
-EXCLUDE_COLUMNS: Column 7 "Total Rev" (aggregate column, sums across years)
-
-SAMPLE_ROW: region=North, product=Widget A, year=2019, revenue=15000, units=120
-
---- Example 2 ---
-IRREGULARITIES:
-  METADATA_ROWS: Rows 0-1 contain table title in Chinese and English
-  MULTI_LEVEL_HEADER: Row 3 has marital status groups, Row 4 has Male/Female/Overall
-  NESTED_COLUMN_GROUPS: 3 marital-status groups × 3 sex sub-columns each
-  WIDE_FORMAT: Marital status × sex encoded as column headers
-  BILINGUAL_ALTERNATING_ROWS: Chinese rows have data, English rows are label-only
-  IMPLICIT_AGGREGATION_ROWS: Rows with "All ethnic minorities" are totals
-  AGGREGATE_COLUMNS: "Overall" sub-columns and "Total" group are aggregates
-GUIDANCE:
-  [NESTED_COLUMN_GROUPS] Each nesting level becomes a separate dimension.
-  [WIDE_FORMAT] Values in column headers become a new dimension column.
-  [BILINGUAL_ALTERNATING_ROWS] Pairs represent a SINGLE observation. One row per pair, with separate language columns.
-  [AGGREGATE_COLUMNS] Exclude aggregate columns.
-HEADERS:
-  Row 3: [3]="Never married", [6]="Married", [9]="Widowed/divorced", [12]="Total"
-  Row 4: [0]="Ethnicity", [3]="Male", [4]="Female", [5]="Overall", [6]="Male", [7]="Female", [8]="Overall", [9]="Male", [10]="Female", [11]="Overall", [12]="Male", [13]="Female", [14]="Overall"
-DATA:
-  Row 7: [1]="亞洲人（非華人）", [3]="23", [4]="35.6", [5]="34.1", [6]="73.9", ...
-  Row 8: [1]="Asian (other than Chinese)", (no numeric data)
-  Row 9: [1]="菲律賓人", [3]="26.1", [4]="36.4", ...
-  Row 10: [1]="Filipino", (no numeric data)
-SCHEMA:
-OBSERVATION: One ethnicity's marital-status percentage for one sex
-
-TARGET_COLUMNS:
-- ethnicity_cn (string, dimension): Ethnicity name in Chinese | source: column 1 (Chinese rows)
-- ethnicity_en (string, dimension): Ethnicity name in English | source: column 1 (English rows)
-- marital_status (string, dimension): Marital status category | source: column group headers (Never married, Married, Widowed/divorced)
-- sex (string, dimension): Sex category | source: sub-column headers (Male, Female)
-- percentage (float, value): Percentage distribution | source: value cells under each group×sex combination
-
-ROW_ESTIMATE: 17 ethnicities × 3 marital statuses × 2 sexes = 102
-
-EXCLUDE_ROWS: "All ethnic minorities" rows (aggregation), English-only rows (merged into Chinese rows as ethnicity_en)
-EXCLUDE_COLUMNS: "Overall" sub-columns within each group (col 5,8,11), entire "Total" group (col 12,13,14) — all are aggregates
-
-SAMPLE_ROW: ethnicity_cn=亞洲人（非華人）, ethnicity_en=Asian (other than Chinese), marital_status=Never married, sex=Male, percentage=23
-
---- Example 3 ---
-IRREGULARITIES:
-  INLINE_BILINGUAL: Chinese and English labels in adjacent columns (col 3/4, col 5/6)
-  EMBEDDED_DIMENSION_IN_COLUMN: Column 5/6 values like "Physical abuse - Male" encode abuse type + sex with " - "
-  IMPLICIT_AGGREGATION_ROWS: Category "Type of Abuse" is a coarser aggregation of "Type of Abuse and Sex" — the former has "Physical abuse = 390" while the latter has "Physical abuse - Male = 200" + "Physical abuse - Female = 190"
-  SPARSE_ROW_FILL: Year in column 0 written once per block, forward-fill needed
-GUIDANCE:
-  [EMBEDDED_DIMENSION_IN_COLUMN] Split compound labels into separate dimension columns. Rows without delimiter get NULL for secondary dimension.
-  [IMPLICIT_AGGREGATION_ROWS] Exclude the coarser category group entirely. Keep only the most granular observations.
-  [INLINE_BILINGUAL] Decide which language to keep, or split into two columns.
-  [SPARSE_ROW_FILL] Forward-fill before any other processing.
-HEADERS:
-  Row 0: [0]="Year", [1]="Report Status CN", [2]="Report Status EN", [3]="Category CN", [4]="Category EN", [5]="Item CN", [6]="Item EN", [7]="Count"
-DATA:
-  Row 1: [0]="2005", [1]="不適用", [3]="虐待長者性質", [4]="Type of Abuse", [5]="身體虐待", [6]="Physical abuse", [7]="390"
-  Row 2: [0]="2005", [3]="虐待長者性質", [5]="精神虐待", [6]="Psychological abuse", [7]="26"
-  Row 9: [0]="2005", [3]="虐待長者性質及受虐長者性別", [4]="Type of Abuse and Sex", [5]="身體虐待 - 男性", [6]="Physical abuse - Male", [7]="200"
-  Row 10: [0]="2005", [5]="精神虐待 - 男性", [6]="Psychological abuse - Male", [7]="15"
-  Row 17: [0]="2005", [5]="身體虐待 - 女性", [6]="Physical abuse - Female", [7]="190"
-  Row 25: [0]="2005", [3]="施虐者與受虐長者關係", [4]="Abuser Relationship", [5]="子", [6]="Son", [7]="57"
-  Row 37: [0]="2005", [3]="受虐長者居住地區", [4]="Residential District", [5]="中西區", [6]="Central and Western", [7]="19"
-SCHEMA:
-OBSERVATION: One case count for a specific year, report status, indicator group, item category, and optional sex breakdown
-
-TARGET_COLUMNS:
-- year (integer, dimension): Reporting year | source: column 0 (forward-filled)
-- report_status_cn (string, dimension): Report status in Chinese | source: column 1 (forward-filled)
-- report_status_en (string, dimension): Report status in English | source: column 2 (forward-filled)
-- indicator_group_cn (string, dimension): Indicator group in Chinese | source: column 3 (forward-filled)
-- indicator_group_en (string, dimension): Indicator group in English | source: column 4 (forward-filled)
-- item_cn (string, dimension): Item category in Chinese | source: column 5, primary part before " - " if delimiter present
-- item_en (string, dimension): Item category in English | source: column 6, primary part before " - " if delimiter present
-- sex (string, dimension): Sex extracted from embedded delimiter | source: columns 5/6, secondary part after " - "; NULL for rows without delimiter
-- count (integer, value): Number of cases | source: column 7
-
-ROW_ESTIMATE: 17 years × 3 non-redundant indicator groups × ~13 items average = 663
-
-EXCLUDE_ROWS: All rows where indicator_group is the coarser "虐待長者性質"/"Type of Abuse" — these are aggregates of the finer "虐待長者性質及受虐長者性別"/"Type of Abuse and Sex" group which fully decomposes the same items by sex
-EXCLUDE_COLUM
+  - If a source column contains values that will be filtered out, that column must still be
+    included as a dimension — do not drop the column just because
+    some of its values are excluded. The column encodes real
+    variation across the rows that are kept.
 
 === YOUR TASK ===
 
@@ -324,6 +241,9 @@ PHYSICAL FEATURES:
 
 HEADERS:
 {headers_text}
+
+COLUMN LINEAGE (semantic path for each data column):
+{lineage_text}
 
 DATA (full data region):
 {data_text}
@@ -345,6 +265,9 @@ Now design the tidy schema following the EXACT format above."""
     def _format_headers(self, df: pd.DataFrame,
                         physical: Dict[str, Any]) -> str:
         start = physical["data_start_row"]
+        # 新增：拿到左侧 dimension 列的列索引范围
+        left_dim_cols = set(range(physical.get("left_header_cols_num", 1)))
+
         lines = []
         for i in range(start):
             parts = []
@@ -354,12 +277,14 @@ Now design the tidy schema following the EXACT format above."""
                     s = str(val).strip().replace("\n", "\\n")
                     if len(s) > 60:
                         s = s[:60] + "..."
-                    parts.append(f'[{j}]="{s}"')
+                    # ← 核心改动：加 tag
+                    tag = "[ROW_DIM]" if j in left_dim_cols else "[COL_HEADER]"
+                    parts.append(f'[{j}]{tag}="{s}"')
             if parts:
                 lines.append(f"  Row {i}: {', '.join(parts)}")
             else:
                 lines.append(f"  Row {i}: (blank)")
-        return "\n".join(lines) if lines else "  (no header rows)"
+        return "\n".join(lines) if lines else "(no header rows)"
 
     def _format_data(self, df: pd.DataFrame,
                      physical: Dict[str, Any]) -> str:

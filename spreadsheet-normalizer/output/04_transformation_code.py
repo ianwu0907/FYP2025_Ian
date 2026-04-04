@@ -4,49 +4,42 @@ import numpy as np
 def transform(df):
     print(f"Input shape: {df.shape}")
 
-    # Step 1: Forward fill the year column to handle sparse rows
-    df.iloc[:, 0] = df.iloc[:, 0].replace(r'^\s*$', np.nan, regex=True).ffill()
-    
-    # Step 2: Remove aggregate rows that contain specific keywords
-    exclude_labels = ["Total", "Sum", "Average", "身體虐待", "精神虐待", "疏忽照顧", "侵吞財產", "遺棄長者", "性侵犯", "其他"]
-    df = df[~df.iloc[:, 5].isin(exclude_labels)]
-    print(f"After removing aggregate rows: {df.shape}")
-    
-    # Step 3: Identify and process the rows based on reporting status
-    records = []
-    for i in range(len(df)):
-        year = df.iloc[i, 0]
-        reporting_status = df.iloc[i, 1] if pd.notna(df.iloc[i, 1]) else df.iloc[i, 2]
-        abuse_type = df.iloc[i, 5]
-        count = df.iloc[i, 7]
-        
-        # Check if there are valid counts and relevant abuse types
-        if pd.notna(reporting_status) and pd.notna(abuse_type) and pd.notna(count):
-            # Process gender from abuse_type column
-            if "男性" in abuse_type:
-                gender = "Male"
-            elif "女性" in abuse_type:
-                gender = "Female"
-            else:
-                gender = None
-            
-            # Split the abuse_type to get main type and gender if applicable
-            if '-' in abuse_type:
-                main_abuse_type, gender = abuse_type.split(' - ')
-                main_abuse_type = main_abuse_type.strip()
-            else:
-                main_abuse_type = abuse_type
-            
-            # Append the record if all conditions satisfied
-            records.append({
-                "year": int(year),
-                "reporting_status": reporting_status.strip(),
-                "abuse_type": main_abuse_type.strip(),
-                "gender": gender,
-                "count": int(count)
-            })
+    # Step 1: Slice to data region
+    result = df.iloc[6:47].copy()
+    print(f"After slicing to data region: {result.shape}")
 
-    # Create DataFrame from collected records
-    output = pd.DataFrame(records, columns=['year', 'reporting_status', 'abuse_type', 'gender', 'count'])
+    # Step 2: Remove blank rows
+    result = result.dropna(how="all")
+    print(f"After removing blank rows: {result.shape}")
+
+    # Step 3: Clean up and forward fill ethnicity and marital status
+    result.iloc[:, 1] = result.iloc[:, 1].replace(r'^\s*$', np.nan, regex=True).ffill()
+    
+    marital_statuses = [str(result.iloc[2, j]).strip() if pd.notna(result.iloc[2, j]) else "" for j in range(3, 14, 3)]
+    sexes = [str(result.iloc[4, j]).strip() if pd.notna(result.iloc[4, j]) else "" for j in range(3, 14, 3)]
+
+    records = []
+    for i in range(len(result)):
+        if i < 2 or "Total" in str(result.iloc[i, 1]):
+            continue
+        
+        year = 2011
+        ethnicity = str(result.iloc[i, 1]).strip()
+
+        for j in range(3, 14, 3):
+            marital_status = marital_statuses[(j - 3) // 3]
+            for k in range(3):
+                sex = sexes[k]
+                percentage = pd.to_numeric(result.iloc[i, j + k], errors='coerce')
+                if pd.notna(percentage):
+                    records.append({
+                        "year": year,
+                        "ethnicity": ethnicity,
+                        "marital_status": marital_status,
+                        "sex": sex,
+                        "percentage": percentage
+                    })
+
+    output = pd.DataFrame(records, columns=['year', 'ethnicity', 'marital_status', 'sex', 'percentage'])
     print(f"Final output: {output.shape}")
     return output

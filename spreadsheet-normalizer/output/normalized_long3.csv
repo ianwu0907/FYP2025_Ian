@@ -1,361 +1,216 @@
-year,ethnicity_cn,ethnicity_en,marital_status,sex,percentage
-2011.0,亞洲人（非華人）,Asian (other than Chinese),從未結婚,Male,23.0
-2011.0,亞洲人（非華人）,Asian (other than Chinese),從未結婚,Female,35.6
-2011.0,亞洲人（非華人）,Asian (other than Chinese),從未結婚,Male,34.1
-2011.0,亞洲人（非華人）,Asian (other than Chinese),從未結婚,Female,73.9
-2011.0,亞洲人（非華人）,Asian (other than Chinese),從未結婚,Male,56.3
-2011.0,亞洲人（非華人）,Asian (other than Chinese),從未結婚,Female,58.4
-2011.0,亞洲人（非華人）,Asian (other than Chinese),已婚,Male,73.9
-2011.0,亞洲人（非華人）,Asian (other than Chinese),已婚,Female,56.3
-2011.0,亞洲人（非華人）,Asian (other than Chinese),已婚,Male,58.4
-2011.0,亞洲人（非華人）,Asian (other than Chinese),已婚,Female,3.1
-2011.0,亞洲人（非華人）,Asian (other than Chinese),已婚,Male,8.1
-2011.0,亞洲人（非華人）,Asian (other than Chinese),已婚,Female,7.5
-2011.0,亞洲人（非華人）,Asian (other than Chinese),喪偶／離婚／分居,Male,3.1
-2011.0,亞洲人（非華人）,Asian (other than Chinese),喪偶／離婚／分居,Female,8.1
-2011.0,亞洲人（非華人）,Asian (other than Chinese),喪偶／離婚／分居,Male,7.5
-2011.0,亞洲人（非華人）,Asian (other than Chinese),喪偶／離婚／分居,Female,100.0
-2011.0,亞洲人（非華人）,Asian (other than Chinese),喪偶／離婚／分居,Male,100.0
-2011.0,亞洲人（非華人）,Asian (other than Chinese),喪偶／離婚／分居,Female,100.0
-2011.0,菲律賓人,Filipino,從未結婚,Male,26.1
-2011.0,菲律賓人,Filipino,從未結婚,Female,36.4
-2011.0,菲律賓人,Filipino,從未結婚,Male,35.9
-2011.0,菲律賓人,Filipino,從未結婚,Female,68.8
-2011.0,菲律賓人,Filipino,從未結婚,Male,54.0
-2011.0,菲律賓人,Filipino,從未結婚,Female,54.7
-2011.0,菲律賓人,Filipino,已婚,Male,68.8
-2011.0,菲律賓人,Filipino,已婚,Female,54.0
-2011.0,菲律賓人,Filipino,已婚,Male,54.7
-2011.0,菲律賓人,Filipino,已婚,Female,5.1
-2011.0,菲律賓人,Filipino,已婚,Male,9.6
-2011.0,菲律賓人,Filipino,已婚,Female,9.4
-2011.0,菲律賓人,Filipino,喪偶／離婚／分居,Male,5.1
-2011.0,菲律賓人,Filipino,喪偶／離婚／分居,Female,9.6
-2011.0,菲律賓人,Filipino,喪偶／離婚／分居,Male,9.4
-2011.0,菲律賓人,Filipino,喪偶／離婚／分居,Female,100.0
-2011.0,菲律賓人,Filipino,喪偶／離婚／分居,Male,100.0
-2011.0,菲律賓人,Filipino,喪偶／離婚／分居,Female,100.0
-2011.0,印尼人,Indonesian,從未結婚,Male,29.2
-2011.0,印尼人,Indonesian,從未結婚,Female,40.4
-2011.0,印尼人,Indonesian,從未結婚,Male,40.4
-2011.0,印尼人,Indonesian,從未結婚,Female,68.2
-2011.0,印尼人,Indonesian,從未結婚,Male,52.6
-2011.0,印尼人,Indonesian,從未結婚,Female,52.7
-2011.0,印尼人,Indonesian,已婚,Male,68.2
-2011.0,印尼人,Indonesian,已婚,Female,52.6
-2011.0,印尼人,Indonesian,已婚,Male,52.7
-2011.0,印尼人,Indonesian,已婚,Female,2.6
-2011.0,印尼人,Indonesian,已婚,Male,7.0
-2011.0,印尼人,Indonesian,已婚,Female,6.9
-2011.0,印尼人,Indonesian,喪偶／離婚／分居,Male,2.6
-2011.0,印尼人,Indonesian,喪偶／離婚／分居,Female,7.0
-2011.0,印尼人,Indonesian,喪偶／離婚／分居,Male,6.9
-2011.0,印尼人,Indonesian,喪偶／離婚／分居,Female,100.0
-2011.0,印尼人,Indonesian,喪偶／離婚／分居,Male,100.0
-2011.0,印尼人,Indonesian,喪偶／離婚／分居,Female,100.0
-2011.0,南亞裔人士,South Asian,從未結婚,Male,23.7
-2011.0,南亞裔人士,South Asian,從未結婚,Female,20.2
-2011.0,南亞裔人士,South Asian,從未結婚,Male,22.0
-2011.0,南亞裔人士,South Asian,從未結婚,Female,73.6
-2011.0,南亞裔人士,South Asian,從未結婚,Male,74.6
-2011.0,南亞裔人士,South Asian,從未結婚,Female,74.1
-2011.0,南亞裔人士,South Asian,已婚,Male,73.6
-2011.0,南亞裔人士,South Asian,已婚,Female,74.6
-2011.0,南亞裔人士,South Asian,已婚,Male,74.1
-2011.0,南亞裔人士,South Asian,已婚,Female,2.7
-2011.0,南亞裔人士,South Asian,已婚,Male,5.2
-2011.0,南亞裔人士,South Asian,已婚,Female,3.9
-2011.0,南亞裔人士,South Asian,喪偶／離婚／分居,Male,2.7
-2011.0,南亞裔人士,South Asian,喪偶／離婚／分居,Female,5.2
-2011.0,南亞裔人士,South Asian,喪偶／離婚／分居,Male,3.9
-2011.0,南亞裔人士,South Asian,喪偶／離婚／分居,Female,100.0
-2011.0,南亞裔人士,South Asian,喪偶／離婚／分居,Male,100.0
-2011.0,南亞裔人士,South Asian,喪偶／離婚／分居,Female,100.0
-2011.0,印度人,Indian,從未結婚,Male,22.9
-2011.0,印度人,Indian,從未結婚,Female,20.9
-2011.0,印度人,Indian,從未結婚,Male,21.9
-2011.0,印度人,Indian,從未結婚,Female,74.4
-2011.0,印度人,Indian,從未結婚,Male,73.4
-2011.0,印度人,Indian,從未結婚,Female,73.9
-2011.0,印度人,Indian,已婚,Male,74.4
-2011.0,印度人,Indian,已婚,Female,73.4
-2011.0,印度人,Indian,已婚,Male,73.9
-2011.0,印度人,Indian,已婚,Female,2.7
-2011.0,印度人,Indian,已婚,Male,5.7
-2011.0,印度人,Indian,已婚,Female,4.2
-2011.0,印度人,Indian,喪偶／離婚／分居,Male,2.7
-2011.0,印度人,Indian,喪偶／離婚／分居,Female,5.7
-2011.0,印度人,Indian,喪偶／離婚／分居,Male,4.2
-2011.0,印度人,Indian,喪偶／離婚／分居,Female,100.0
-2011.0,印度人,Indian,喪偶／離婚／分居,Male,100.0
-2011.0,印度人,Indian,喪偶／離婚／分居,Female,100.0
-2011.0,尼泊爾人,Nepalese,從未結婚,Male,20.3
-2011.0,尼泊爾人,Nepalese,從未結婚,Female,22.0
-2011.0,尼泊爾人,Nepalese,從未結婚,Male,21.1
-2011.0,尼泊爾人,Nepalese,從未結婚,Female,75.3
-2011.0,尼泊爾人,Nepalese,從未結婚,Male,73.1
-2011.0,尼泊爾人,Nepalese,從未結婚,Female,74.3
-2011.0,尼泊爾人,Nepalese,已婚,Male,75.3
-2011.0,尼泊爾人,Nepalese,已婚,Female,73.1
-2011.0,尼泊爾人,Nepalese,已婚,Male,74.3
-2011.0,尼泊爾人,Nepalese,已婚,Female,4.3
-2011.0,尼泊爾人,Nepalese,已婚,Male,4.8
-2011.0,尼泊爾人,Nepalese,已婚,Female,4.6
-2011.0,尼泊爾人,Nepalese,喪偶／離婚／分居,Male,4.3
-2011.0,尼泊爾人,Nepalese,喪偶／離婚／分居,Female,4.8
-2011.0,尼泊爾人,Nepalese,喪偶／離婚／分居,Male,4.6
-2011.0,尼泊爾人,Nepalese,喪偶／離婚／分居,Female,100.0
-2011.0,尼泊爾人,Nepalese,喪偶／離婚／分居,Male,100.0
-2011.0,尼泊爾人,Nepalese,喪偶／離婚／分居,Female,100.0
-2011.0,巴基斯坦人,Pakistani,從未結婚,Male,26.5
-2011.0,巴基斯坦人,Pakistani,從未結婚,Female,15.8
-2011.0,巴基斯坦人,Pakistani,從未結婚,Male,22.1
-2011.0,巴基斯坦人,Pakistani,從未結婚,Female,72.1
-2011.0,巴基斯坦人,Pakistani,從未結婚,Male,81.0
-2011.0,巴基斯坦人,Pakistani,從未結婚,Female,75.7
-2011.0,巴基斯坦人,Pakistani,已婚,Male,72.1
-2011.0,巴基斯坦人,Pakistani,已婚,Female,81.0
-2011.0,巴基斯坦人,Pakistani,已婚,Male,75.7
-2011.0,巴基斯坦人,Pakistani,已婚,Female,1.4
-2011.0,巴基斯坦人,Pakistani,已婚,Male,3.2
-2011.0,巴基斯坦人,Pakistani,已婚,Female,2.1
-2011.0,巴基斯坦人,Pakistani,喪偶／離婚／分居,Male,1.4
-2011.0,巴基斯坦人,Pakistani,喪偶／離婚／分居,Female,3.2
-2011.0,巴基斯坦人,Pakistani,喪偶／離婚／分居,Male,2.1
-2011.0,巴基斯坦人,Pakistani,喪偶／離婚／分居,Female,100.0
-2011.0,巴基斯坦人,Pakistani,喪偶／離婚／分居,Male,100.0
-2011.0,巴基斯坦人,Pakistani,喪偶／離婚／分居,Female,100.0
-2011.0,其他南亞裔人士[1],Other South Asian[1],從未結婚,Male,39.9
-2011.0,其他南亞裔人士[1],Other South Asian[1],從未結婚,Female,20.0
-2011.0,其他南亞裔人士[1],Other South Asian[1],從未結婚,Male,28.3
-2011.0,其他南亞裔人士[1],Other South Asian[1],從未結婚,Female,59.7
-2011.0,其他南亞裔人士[1],Other South Asian[1],從未結婚,Male,71.0
-2011.0,其他南亞裔人士[1],Other South Asian[1],從未結婚,Female,66.3
-2011.0,其他南亞裔人士[1],Other South Asian[1],已婚,Male,59.7
-2011.0,其他南亞裔人士[1],Other South Asian[1],已婚,Female,71.0
-2011.0,其他南亞裔人士[1],Other South Asian[1],已婚,Male,66.3
-2011.0,其他南亞裔人士[1],Other South Asian[1],已婚,Female,0.4
-2011.0,其他南亞裔人士[1],Other South Asian[1],已婚,Male,9.0
-2011.0,其他南亞裔人士[1],Other South Asian[1],已婚,Female,5.4
-2011.0,其他南亞裔人士[1],Other South Asian[1],喪偶／離婚／分居,Male,0.4
-2011.0,其他南亞裔人士[1],Other South Asian[1],喪偶／離婚／分居,Female,9.0
-2011.0,其他南亞裔人士[1],Other South Asian[1],喪偶／離婚／分居,Male,5.4
-2011.0,其他南亞裔人士[1],Other South Asian[1],喪偶／離婚／分居,Female,100.0
-2011.0,其他南亞裔人士[1],Other South Asian[1],喪偶／離婚／分居,Male,100.0
-2011.0,其他南亞裔人士[1],Other South Asian[1],喪偶／離婚／分居,Female,100.0
-2011.0,泰國人,Thai,從未結婚,Male,25.2
-2011.0,泰國人,Thai,從未結婚,Female,13.3
-2011.0,泰國人,Thai,從未結婚,Male,14.4
-2011.0,泰國人,Thai,從未結婚,Female,73.4
-2011.0,泰國人,Thai,從未結婚,Male,71.6
-2011.0,泰國人,Thai,從未結婚,Female,71.7
-2011.0,泰國人,Thai,已婚,Male,73.4
-2011.0,泰國人,Thai,已婚,Female,71.6
-2011.0,泰國人,Thai,已婚,Male,71.7
-2011.0,泰國人,Thai,已婚,Female,1.4
-2011.0,泰國人,Thai,已婚,Male,15.1
-2011.0,泰國人,Thai,已婚,Female,13.9
-2011.0,泰國人,Thai,喪偶／離婚／分居,Male,1.4
-2011.0,泰國人,Thai,喪偶／離婚／分居,Female,15.1
-2011.0,泰國人,Thai,喪偶／離婚／分居,Male,13.9
-2011.0,泰國人,Thai,喪偶／離婚／分居,Female,100.0
-2011.0,泰國人,Thai,喪偶／離婚／分居,Male,100.0
-2011.0,泰國人,Thai,喪偶／離婚／分居,Female,100.0
-2011.0,日本人,Japanese,從未結婚,Male,15.6
-2011.0,日本人,Japanese,從未結婚,Female,20.1
-2011.0,日本人,Japanese,從未結婚,Male,17.7
-2011.0,日本人,Japanese,從未結婚,Female,81.4
-2011.0,日本人,Japanese,從未結婚,Male,77.1
-2011.0,日本人,Japanese,從未結婚,Female,79.4
-2011.0,日本人,Japanese,已婚,Male,81.4
-2011.0,日本人,Japanese,已婚,Female,77.1
-2011.0,日本人,Japanese,已婚,Male,79.4
-2011.0,日本人,Japanese,已婚,Female,3.0
-2011.0,日本人,Japanese,已婚,Male,2.8
-2011.0,日本人,Japanese,已婚,Female,2.9
-2011.0,日本人,Japanese,喪偶／離婚／分居,Male,3.0
-2011.0,日本人,Japanese,喪偶／離婚／分居,Female,2.8
-2011.0,日本人,Japanese,喪偶／離婚／分居,Male,2.9
-2011.0,日本人,Japanese,喪偶／離婚／分居,Female,100.0
-2011.0,日本人,Japanese,喪偶／離婚／分居,Male,100.0
-2011.0,日本人,Japanese,喪偶／離婚／分居,Female,100.0
-2011.0,韓國人,Korean,從未結婚,Male,17.5
-2011.0,韓國人,Korean,從未結婚,Female,20.5
-2011.0,韓國人,Korean,從未結婚,Male,19.2
-2011.0,韓國人,Korean,從未結婚,Female,81.7
-2011.0,韓國人,Korean,從未結婚,Male,71.4
-2011.0,韓國人,Korean,從未結婚,Female,75.8
-2011.0,韓國人,Korean,已婚,Male,81.7
-2011.0,韓國人,Korean,已婚,Female,71.4
-2011.0,韓國人,Korean,已婚,Male,75.8
-2011.0,韓國人,Korean,已婚,Female,0.8
-2011.0,韓國人,Korean,已婚,Male,8.1
-2011.0,韓國人,Korean,已婚,Female,5.0
-2011.0,韓國人,Korean,喪偶／離婚／分居,Male,0.8
-2011.0,韓國人,Korean,喪偶／離婚／分居,Female,8.1
-2011.0,韓國人,Korean,喪偶／離婚／分居,Male,5.0
-2011.0,韓國人,Korean,喪偶／離婚／分居,Female,100.0
-2011.0,韓國人,Korean,喪偶／離婚／分居,Male,100.0
-2011.0,韓國人,Korean,喪偶／離婚／分居,Female,100.0
-2011.0,其他亞洲人,Other Asian,從未結婚,Male,29.5
-2011.0,其他亞洲人,Other Asian,從未結婚,Female,21.1
-2011.0,其他亞洲人,Other Asian,從未結婚,Male,23.9
-2011.0,其他亞洲人,Other Asian,從未結婚,Female,64.2
-2011.0,其他亞洲人,Other Asian,從未結婚,Male,70.4
-2011.0,其他亞洲人,Other Asian,從未結婚,Female,68.4
-2011.0,其他亞洲人,Other Asian,已婚,Male,64.2
-2011.0,其他亞洲人,Other Asian,已婚,Female,70.4
-2011.0,其他亞洲人,Other Asian,已婚,Male,68.4
-2011.0,其他亞洲人,Other Asian,已婚,Female,6.3
-2011.0,其他亞洲人,Other Asian,已婚,Male,8.5
-2011.0,其他亞洲人,Other Asian,已婚,Female,7.7
-2011.0,其他亞洲人,Other Asian,喪偶／離婚／分居,Male,6.3
-2011.0,其他亞洲人,Other Asian,喪偶／離婚／分居,Female,8.5
-2011.0,其他亞洲人,Other Asian,喪偶／離婚／分居,Male,7.7
-2011.0,其他亞洲人,Other Asian,喪偶／離婚／分居,Female,100.0
-2011.0,其他亞洲人,Other Asian,喪偶／離婚／分居,Male,100.0
-2011.0,其他亞洲人,Other Asian,喪偶／離婚／分居,Female,100.0
-2011.0,白人,White,從未結婚,Male,29.1
-2011.0,白人,White,從未結婚,Female,27.0
-2011.0,白人,White,從未結婚,Male,28.3
-2011.0,白人,White,從未結婚,Female,64.8
-2011.0,白人,White,從未結婚,Male,63.8
-2011.0,白人,White,從未結婚,Female,64.5
-2011.0,白人,White,已婚,Male,64.8
-2011.0,白人,White,已婚,Female,63.8
-2011.0,白人,White,已婚,Male,64.5
-2011.0,白人,White,已婚,Female,6.1
-2011.0,白人,White,已婚,Male,9.2
-2011.0,白人,White,已婚,Female,7.2
-2011.0,白人,White,喪偶／離婚／分居,Male,6.1
-2011.0,白人,White,喪偶／離婚／分居,Female,9.2
-2011.0,白人,White,喪偶／離婚／分居,Male,7.2
-2011.0,白人,White,喪偶／離婚／分居,Female,100.0
-2011.0,白人,White,喪偶／離婚／分居,Male,100.0
-2011.0,白人,White,喪偶／離婚／分居,Female,100.0
-2011.0,混血兒,Mixed,從未結婚,Male,53.0
-2011.0,混血兒,Mixed,從未結婚,Female,48.6
-2011.0,混血兒,Mixed,從未結婚,Male,50.7
-2011.0,混血兒,Mixed,從未結婚,Female,42.3
-2011.0,混血兒,Mixed,從未結婚,Male,38.6
-2011.0,混血兒,Mixed,從未結婚,Female,40.3
-2011.0,混血兒,Mixed,已婚,Male,42.3
-2011.0,混血兒,Mixed,已婚,Female,38.6
-2011.0,混血兒,Mixed,已婚,Male,40.3
-2011.0,混血兒,Mixed,已婚,Female,4.7
-2011.0,混血兒,Mixed,已婚,Male,12.8
-2011.0,混血兒,Mixed,已婚,Female,9.1
-2011.0,混血兒,Mixed,喪偶／離婚／分居,Male,4.7
-2011.0,混血兒,Mixed,喪偶／離婚／分居,Female,12.8
-2011.0,混血兒,Mixed,喪偶／離婚／分居,Male,9.1
-2011.0,混血兒,Mixed,喪偶／離婚／分居,Female,100.0
-2011.0,混血兒,Mixed,喪偶／離婚／分居,Male,100.0
-2011.0,混血兒,Mixed,喪偶／離婚／分居,Female,100.0
-2011.0,華人父或母,With Chinese parent,從未結婚,Male,52.0
-2011.0,華人父或母,With Chinese parent,從未結婚,Female,48.6
-2011.0,華人父或母,With Chinese parent,從未結婚,Male,50.3
-2011.0,華人父或母,With Chinese parent,從未結婚,Female,43.1
-2011.0,華人父或母,With Chinese parent,從未結婚,Male,38.1
-2011.0,華人父或母,With Chinese parent,從未結婚,Female,40.5
-2011.0,華人父或母,With Chinese parent,已婚,Male,43.1
-2011.0,華人父或母,With Chinese parent,已婚,Female,38.1
-2011.0,華人父或母,With Chinese parent,已婚,Male,40.5
-2011.0,華人父或母,With Chinese parent,已婚,Female,4.9
-2011.0,華人父或母,With Chinese parent,已婚,Male,13.2
-2011.0,華人父或母,With Chinese parent,已婚,Female,9.2
-2011.0,華人父或母,With Chinese parent,喪偶／離婚／分居,Male,4.9
-2011.0,華人父或母,With Chinese parent,喪偶／離婚／分居,Female,13.2
-2011.0,華人父或母,With Chinese parent,喪偶／離婚／分居,Male,9.2
-2011.0,華人父或母,With Chinese parent,喪偶／離婚／分居,Female,100.0
-2011.0,華人父或母,With Chinese parent,喪偶／離婚／分居,Male,100.0
-2011.0,華人父或母,With Chinese parent,喪偶／離婚／分居,Female,100.0
-2011.0,其他混血兒,Other Mixed,從未結婚,Male,65.1
-2011.0,其他混血兒,Other Mixed,從未結婚,Female,48.3
-2011.0,其他混血兒,Other Mixed,從未結婚,Male,54.0
-2011.0,其他混血兒,Other Mixed,從未結婚,Female,32.2
-2011.0,其他混血兒,Other Mixed,從未結婚,Male,41.4
-2011.0,其他混血兒,Other Mixed,從未結婚,Female,38.3
-2011.0,其他混血兒,Other Mixed,已婚,Male,32.2
-2011.0,其他混血兒,Other Mixed,已婚,Female,41.4
-2011.0,其他混血兒,Other Mixed,已婚,Male,38.3
-2011.0,其他混血兒,Other Mixed,已婚,Female,2.7
-2011.0,其他混血兒,Other Mixed,已婚,Male,10.3
-2011.0,其他混血兒,Other Mixed,已婚,Female,7.8
-2011.0,其他混血兒,Other Mixed,喪偶／離婚／分居,Male,2.7
-2011.0,其他混血兒,Other Mixed,喪偶／離婚／分居,Female,10.3
-2011.0,其他混血兒,Other Mixed,喪偶／離婚／分居,Male,7.8
-2011.0,其他混血兒,Other Mixed,喪偶／離婚／分居,Female,100.0
-2011.0,其他混血兒,Other Mixed,喪偶／離婚／分居,Male,100.0
-2011.0,其他混血兒,Other Mixed,喪偶／離婚／分居,Female,100.0
-2011.0,其他[2],Others[2],從未結婚,Male,31.4
-2011.0,其他[2],Others[2],從未結婚,Female,30.4
-2011.0,其他[2],Others[2],從未結婚,Male,31.2
-2011.0,其他[2],Others[2],從未結婚,Female,64.0
-2011.0,其他[2],Others[2],從未結婚,Male,69.6
-2011.0,其他[2],Others[2],從未結婚,Female,65.4
-2011.0,其他[2],Others[2],已婚,Male,64.0
-2011.0,其他[2],Others[2],已婚,Female,69.6
-2011.0,其他[2],Others[2],已婚,Male,65.4
-2011.0,其他[2],Others[2],已婚,Female,4.6
-2011.0,其他[2],Others[2],已婚,Male,
-2011.0,其他[2],Others[2],已婚,Female,3.4
-2011.0,其他[2],Others[2],喪偶／離婚／分居,Male,4.6
-2011.0,其他[2],Others[2],喪偶／離婚／分居,Female,
-2011.0,其他[2],Others[2],喪偶／離婚／分居,Male,3.4
-2011.0,其他[2],Others[2],喪偶／離婚／分居,Female,100.0
-2011.0,其他[2],Others[2],喪偶／離婚／分居,Male,100.0
-2011.0,其他[2],Others[2],喪偶／離婚／分居,Female,100.0
-2011.0,所有少數族裔人士,All ethnic minorities,從未結婚,Male,28.4
-2011.0,所有少數族裔人士,All ethnic minorities,從未結婚,Female,35.5
-2011.0,所有少數族裔人士,All ethnic minorities,從未結婚,Male,34.1
-2011.0,所有少數族裔人士,All ethnic minorities,從未結婚,Female,67.2
-2011.0,所有少數族裔人士,All ethnic minorities,從未結婚,Male,56.1
-2011.0,所有少數族裔人士,All ethnic minorities,從未結婚,Female,58.3
-2011.0,所有少數族裔人士,All ethnic minorities,已婚,Male,67.2
-2011.0,所有少數族裔人士,All ethnic minorities,已婚,Female,56.1
-2011.0,所有少數族裔人士,All ethnic minorities,已婚,Male,58.3
-2011.0,所有少數族裔人士,All ethnic minorities,已婚,Female,4.4
-2011.0,所有少數族裔人士,All ethnic minorities,已婚,Male,8.3
-2011.0,所有少數族裔人士,All ethnic minorities,已婚,Female,7.5
-2011.0,所有少數族裔人士,All ethnic minorities,喪偶／離婚／分居,Male,4.4
-2011.0,所有少數族裔人士,All ethnic minorities,喪偶／離婚／分居,Female,8.3
-2011.0,所有少數族裔人士,All ethnic minorities,喪偶／離婚／分居,Male,7.5
-2011.0,所有少數族裔人士,All ethnic minorities,喪偶／離婚／分居,Female,100.0
-2011.0,所有少數族裔人士,All ethnic minorities,喪偶／離婚／分居,Male,100.0
-2011.0,所有少數族裔人士,All ethnic minorities,喪偶／離婚／分居,Female,100.0
-2011.0,撇除外籍家庭傭工後的所有少數族裔人士,"All ethnic minorities, excluding foreign domestic helpers",從未結婚,Male,28.7
-2011.0,撇除外籍家庭傭工後的所有少數族裔人士,"All ethnic minorities, excluding foreign domestic helpers",從未結婚,Female,23.2
-2011.0,撇除外籍家庭傭工後的所有少數族裔人士,"All ethnic minorities, excluding foreign domestic helpers",從未結婚,Male,26.0
-2011.0,撇除外籍家庭傭工後的所有少數族裔人士,"All ethnic minorities, excluding foreign domestic helpers",從未結婚,Female,66.9
-2011.0,撇除外籍家庭傭工後的所有少數族裔人士,"All ethnic minorities, excluding foreign domestic helpers",從未結婚,Male,68.3
-2011.0,撇除外籍家庭傭工後的所有少數族裔人士,"All ethnic minorities, excluding foreign domestic helpers",從未結婚,Female,67.6
-2011.0,撇除外籍家庭傭工後的所有少數族裔人士,"All ethnic minorities, excluding foreign domestic helpers",已婚,Male,66.9
-2011.0,撇除外籍家庭傭工後的所有少數族裔人士,"All ethnic minorities, excluding foreign domestic helpers",已婚,Female,68.3
-2011.0,撇除外籍家庭傭工後的所有少數族裔人士,"All ethnic minorities, excluding foreign domestic helpers",已婚,Male,67.6
-2011.0,撇除外籍家庭傭工後的所有少數族裔人士,"All ethnic minorities, excluding foreign domestic helpers",已婚,Female,4.4
-2011.0,撇除外籍家庭傭工後的所有少數族裔人士,"All ethnic minorities, excluding foreign domestic helpers",已婚,Male,8.5
-2011.0,撇除外籍家庭傭工後的所有少數族裔人士,"All ethnic minorities, excluding foreign domestic helpers",已婚,Female,6.4
-2011.0,撇除外籍家庭傭工後的所有少數族裔人士,"All ethnic minorities, excluding foreign domestic helpers",喪偶／離婚／分居,Male,4.4
-2011.0,撇除外籍家庭傭工後的所有少數族裔人士,"All ethnic minorities, excluding foreign domestic helpers",喪偶／離婚／分居,Female,8.5
-2011.0,撇除外籍家庭傭工後的所有少數族裔人士,"All ethnic minorities, excluding foreign domestic helpers",喪偶／離婚／分居,Male,6.4
-2011.0,撇除外籍家庭傭工後的所有少數族裔人士,"All ethnic minorities, excluding foreign domestic helpers",喪偶／離婚／分居,Female,100.0
-2011.0,撇除外籍家庭傭工後的所有少數族裔人士,"All ethnic minorities, excluding foreign domestic helpers",喪偶／離婚／分居,Male,100.0
-2011.0,撇除外籍家庭傭工後的所有少數族裔人士,"All ethnic minorities, excluding foreign domestic helpers",喪偶／離婚／分居,Female,100.0
-2011.0,全港人口,Whole population,從未結婚,Male,33.5
-2011.0,全港人口,Whole population,從未結婚,Female,29.9
-2011.0,全港人口,Whole population,從未結婚,Male,31.6
-2011.0,全港人口,Whole population,從未結婚,Female,61.2
-2011.0,全港人口,Whole population,從未結婚,Male,54.8
-2011.0,全港人口,Whole population,從未結婚,Female,57.7
-2011.0,全港人口,Whole population,已婚,Male,61.2
-2011.0,全港人口,Whole population,已婚,Female,54.8
-2011.0,全港人口,Whole population,已婚,Male,57.7
-2011.0,全港人口,Whole population,已婚,Female,5.3
-2011.0,全港人口,Whole population,已婚,Male,15.3
-2011.0,全港人口,Whole population,已婚,Female,10.7
-2011.0,全港人口,Whole population,喪偶／離婚／分居,Male,5.3
-2011.0,全港人口,Whole population,喪偶／離婚／分居,Female,15.3
-2011.0,全港人口,Whole population,喪偶／離婚／分居,Male,10.7
-2011.0,全港人口,Whole population,喪偶／離婚／分居,Female,100.0
-2011.0,全港人口,Whole population,喪偶／離婚／分居,Male,100.0
-2011.0,全港人口,Whole population,喪偶／離婚／分居,Female,100.0
+year,ethnicity,marital_status,sex,percentage
+2011,菲律賓人,,,26.1
+2011,菲律賓人,,,36.4
+2011,菲律賓人,,,35.9
+2011,菲律賓人,,,68.8
+2011,菲律賓人,,,54.0
+2011,菲律賓人,,,54.7
+2011,菲律賓人,,,5.1
+2011,菲律賓人,,,9.6
+2011,菲律賓人,,,9.4
+2011,菲律賓人,,,100.0
+2011,菲律賓人,,,100.0
+2011,菲律賓人,,,100.0
+2011,印尼人,,,29.2
+2011,印尼人,,,40.4
+2011,印尼人,,,40.4
+2011,印尼人,,,68.2
+2011,印尼人,,,52.6
+2011,印尼人,,,52.7
+2011,印尼人,,,2.6
+2011,印尼人,,,7.0
+2011,印尼人,,,6.9
+2011,印尼人,,,100.0
+2011,印尼人,,,100.0
+2011,印尼人,,,100.0
+2011,南亞裔人士,,,23.7
+2011,南亞裔人士,,,20.2
+2011,南亞裔人士,,,22.0
+2011,南亞裔人士,,,73.6
+2011,南亞裔人士,,,74.6
+2011,南亞裔人士,,,74.1
+2011,南亞裔人士,,,2.7
+2011,南亞裔人士,,,5.2
+2011,南亞裔人士,,,3.9
+2011,南亞裔人士,,,100.0
+2011,南亞裔人士,,,100.0
+2011,南亞裔人士,,,100.0
+2011,印度人,,,22.9
+2011,印度人,,,20.9
+2011,印度人,,,21.9
+2011,印度人,,,74.4
+2011,印度人,,,73.4
+2011,印度人,,,73.9
+2011,印度人,,,2.7
+2011,印度人,,,5.7
+2011,印度人,,,4.2
+2011,印度人,,,100.0
+2011,印度人,,,100.0
+2011,印度人,,,100.0
+2011,尼泊爾人,,,20.3
+2011,尼泊爾人,,,22.0
+2011,尼泊爾人,,,21.1
+2011,尼泊爾人,,,75.3
+2011,尼泊爾人,,,73.1
+2011,尼泊爾人,,,74.3
+2011,尼泊爾人,,,4.3
+2011,尼泊爾人,,,4.8
+2011,尼泊爾人,,,4.6
+2011,尼泊爾人,,,100.0
+2011,尼泊爾人,,,100.0
+2011,尼泊爾人,,,100.0
+2011,巴基斯坦人,,,26.5
+2011,巴基斯坦人,,,15.8
+2011,巴基斯坦人,,,22.1
+2011,巴基斯坦人,,,72.1
+2011,巴基斯坦人,,,81.0
+2011,巴基斯坦人,,,75.7
+2011,巴基斯坦人,,,1.4
+2011,巴基斯坦人,,,3.2
+2011,巴基斯坦人,,,2.1
+2011,巴基斯坦人,,,100.0
+2011,巴基斯坦人,,,100.0
+2011,巴基斯坦人,,,100.0
+2011,其他南亞裔人士[1],,,39.9
+2011,其他南亞裔人士[1],,,20.0
+2011,其他南亞裔人士[1],,,28.3
+2011,其他南亞裔人士[1],,,59.7
+2011,其他南亞裔人士[1],,,71.0
+2011,其他南亞裔人士[1],,,66.3
+2011,其他南亞裔人士[1],,,0.4
+2011,其他南亞裔人士[1],,,9.0
+2011,其他南亞裔人士[1],,,5.4
+2011,其他南亞裔人士[1],,,100.0
+2011,其他南亞裔人士[1],,,100.0
+2011,其他南亞裔人士[1],,,100.0
+2011,泰國人,,,25.2
+2011,泰國人,,,13.3
+2011,泰國人,,,14.4
+2011,泰國人,,,73.4
+2011,泰國人,,,71.6
+2011,泰國人,,,71.7
+2011,泰國人,,,1.4
+2011,泰國人,,,15.1
+2011,泰國人,,,13.9
+2011,泰國人,,,100.0
+2011,泰國人,,,100.0
+2011,泰國人,,,100.0
+2011,日本人,,,15.6
+2011,日本人,,,20.1
+2011,日本人,,,17.7
+2011,日本人,,,81.4
+2011,日本人,,,77.1
+2011,日本人,,,79.4
+2011,日本人,,,3.0
+2011,日本人,,,2.8
+2011,日本人,,,2.9
+2011,日本人,,,100.0
+2011,日本人,,,100.0
+2011,日本人,,,100.0
+2011,韓國人,,,17.5
+2011,韓國人,,,20.5
+2011,韓國人,,,19.2
+2011,韓國人,,,81.7
+2011,韓國人,,,71.4
+2011,韓國人,,,75.8
+2011,韓國人,,,0.8
+2011,韓國人,,,8.1
+2011,韓國人,,,5.0
+2011,韓國人,,,100.0
+2011,韓國人,,,100.0
+2011,韓國人,,,100.0
+2011,其他亞洲人,,,29.5
+2011,其他亞洲人,,,21.1
+2011,其他亞洲人,,,23.9
+2011,其他亞洲人,,,64.2
+2011,其他亞洲人,,,70.4
+2011,其他亞洲人,,,68.4
+2011,其他亞洲人,,,6.3
+2011,其他亞洲人,,,8.5
+2011,其他亞洲人,,,7.7
+2011,其他亞洲人,,,100.0
+2011,其他亞洲人,,,100.0
+2011,其他亞洲人,,,100.0
+2011,白人,,,29.1
+2011,白人,,,27.0
+2011,白人,,,28.3
+2011,白人,,,64.8
+2011,白人,,,63.8
+2011,白人,,,64.5
+2011,白人,,,6.1
+2011,白人,,,9.2
+2011,白人,,,7.2
+2011,白人,,,100.0
+2011,白人,,,100.0
+2011,白人,,,100.0
+2011,混血兒,,,53.0
+2011,混血兒,,,48.6
+2011,混血兒,,,50.7
+2011,混血兒,,,42.3
+2011,混血兒,,,38.6
+2011,混血兒,,,40.3
+2011,混血兒,,,4.7
+2011,混血兒,,,12.8
+2011,混血兒,,,9.1
+2011,混血兒,,,100.0
+2011,混血兒,,,100.0
+2011,混血兒,,,100.0
+2011,華人父或母,,,52.0
+2011,華人父或母,,,48.6
+2011,華人父或母,,,50.3
+2011,華人父或母,,,43.1
+2011,華人父或母,,,38.1
+2011,華人父或母,,,40.5
+2011,華人父或母,,,4.9
+2011,華人父或母,,,13.2
+2011,華人父或母,,,9.2
+2011,華人父或母,,,100.0
+2011,華人父或母,,,100.0
+2011,華人父或母,,,100.0
+2011,其他混血兒,,,65.1
+2011,其他混血兒,,,48.3
+2011,其他混血兒,,,54.0
+2011,其他混血兒,,,32.2
+2011,其他混血兒,,,41.4
+2011,其他混血兒,,,38.3
+2011,其他混血兒,,,2.7
+2011,其他混血兒,,,10.3
+2011,其他混血兒,,,7.8
+2011,其他混血兒,,,100.0
+2011,其他混血兒,,,100.0
+2011,其他混血兒,,,100.0
+2011,其他[2],,,31.4
+2011,其他[2],,,30.4
+2011,其他[2],,,31.2
+2011,其他[2],,,64.0
+2011,其他[2],,,69.6
+2011,其他[2],,,65.4
+2011,其他[2],,,4.6
+2011,其他[2],,,3.4
+2011,其他[2],,,100.0
+2011,其他[2],,,100.0
+2011,其他[2],,,100.0
+2011,所有少數族裔人士,,,28.4
+2011,所有少數族裔人士,,,35.5
+2011,所有少數族裔人士,,,34.1
+2011,所有少數族裔人士,,,67.2
+2011,所有少數族裔人士,,,56.1
+2011,所有少數族裔人士,,,58.3
+2011,所有少數族裔人士,,,4.4
+2011,所有少數族裔人士,,,8.3
+2011,所有少數族裔人士,,,7.5
+2011,所有少數族裔人士,,,100.0
+2011,所有少數族裔人士,,,100.0
+2011,所有少數族裔人士,,,100.0
+2011,撇除外籍家庭傭工後的所有少數族裔人士,,,28.7
+2011,撇除外籍家庭傭工後的所有少數族裔人士,,,23.2
+2011,撇除外籍家庭傭工後的所有少數族裔人士,,,26.0
+2011,撇除外籍家庭傭工後的所有少數族裔人士,,,66.9
+2011,撇除外籍家庭傭工後的所有少數族裔人士,,,68.3
+2011,撇除外籍家庭傭工後的所有少數族裔人士,,,67.6
+2011,撇除外籍家庭傭工後的所有少數族裔人士,,,4.4
+2011,撇除外籍家庭傭工後的所有少數族裔人士,,,8.5
+2011,撇除外籍家庭傭工後的所有少數族裔人士,,,6.4
+2011,撇除外籍家庭傭工後的所有少數族裔人士,,,100.0
+2011,撇除外籍家庭傭工後的所有少數族裔人士,,,100.0
+2011,撇除外籍家庭傭工後的所有少數族裔人士,,,100.0
