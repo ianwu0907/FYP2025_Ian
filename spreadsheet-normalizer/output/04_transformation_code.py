@@ -1,40 +1,45 @@
+import pandas as pd
+import numpy as np
+
 def transform(df):
-    import pandas as pd
-    import numpy as np
+    print(f"Input shape: {df.shape}")
 
-    # Step 1: Forward-fill the year and ethnicity headers
+    # Step 1: Forward-fill sparse rows for the self-rated mental health indicators
     df.iloc[:, 0] = df.iloc[:, 0].replace(r'^\s*$', np.nan, regex=True).ffill()
-    df.iloc[:, 1] = df.iloc[:, 1].replace(r'^\s*$', np.nan, regex=True).ffill()
+    print(f"After forward-fill on self-rated mental health: {df.iloc[:, 0].unique()}")
 
-    # Step 2: Create multi-level headers from the given rows
-    headers = df.iloc[2:4].ffill(axis=1)
+    # Step 2: Slice to data region
+    data_region = df.iloc[3:9].copy()  # Selecting rows 3 to 8
+    print(f"After slicing to data region: {data_region.shape}")
 
-    # Step 3: Delete rows that contain Total or Average rows based on ethnicity
-    exclude_ethnicities = ["合計", "總計", "全部", "全部少數族裔人士", "撇除外籍家庭傭工後的所有少數族裔人士"]
-    mask = ~df.iloc[:, 1].isin(exclude_ethnicities)
-    df = df[mask].reset_index(drop=True)
+    # Step 3: Remove rows where self-rated mental health is "Drop"
+    data_region = data_region[data_region.iloc[:, 0] != "Drop"]
+    print(f"After dropping excluded rows: {data_region.shape}")
 
-    # Step 4: Drop aggregate columns
-    agg_col_indices = [5, 8, 11, 14]
-    df = df.drop(columns=[df.columns[i] for i in agg_col_indices if i < len(df.columns)], errors="ignore")
+    # Step 4: Retrieve multi-level headers
+    headers = df.iloc[[0, 1, 2]].ffill(axis=1)
+    sexual_orientations = headers.iloc[0, [1, 4, 7, 10, 13]].values
+    print(f"Sexual orientations: {sexual_orientations}")
 
-    # Step 5: Reshape the DataFrame to long format using lists
+    # Step 5: Unpivot wide columns into long format using record-collection loop
     records = []
-    for i in range(len(df)):
-        year = df.iloc[i, 0]
-        ethnicity = df.iloc[i, 1]
-        for j in range(3):  # Marital status index
-            marital_status = headers.iloc[1, 3 * j + 0]  # Always starting with Male index
-            for k in range(3):  # Sex index (0: Male, 1: Female, 2: Overall)
-                sex = headers.iloc[1, 3 * j + k]
-                percentage = df.iloc[i, 3 + 3 * j + k]  # Start from column index 3
-                records.append({'year': year, 'ethnicity': ethnicity, 'marital_status': marital_status, 'sex': sex, 'percentage': percentage})
+    for i in range(len(data_region)):
+        mental_health_indicator = str(data_region.iloc[i, 0]).strip()
+        for j, sexual_orientation in enumerate(sexual_orientations):
+            percent = pd.to_numeric(data_region.iloc[i, 1 + j * 3], errors='coerce')
+            confidence_interval_from = pd.to_numeric(data_region.iloc[i, 2 + j * 3], errors='coerce')
+            confidence_interval_to = pd.to_numeric(data_region.iloc[i, 3 + j * 3], errors='coerce')
+            records.append({
+                "self_rated_mental_health": mental_health_indicator,
+                "sexual_orientation": str(sexual_orientation).strip(),
+                "percent": percent,
+                "confidence_interval_from": confidence_interval_from,
+                "confidence_interval_to": confidence_interval_to
+            })
 
-    # Step 6: Create DataFrame from the records list
-    long_df = pd.DataFrame(records)
-
-    # Step 7: Clean and convert percentage to numeric
-    long_df['percentage'] = pd.to_numeric(long_df['percentage'], errors='coerce')
-    long_df.dropna(subset=['percentage'], inplace=True)
-
-    return long_df[['year', 'ethnicity', 'marital_status', 'sex', 'percentage']]
+    # Step 6: Create a DataFrame and reorder to the target schema
+    result = pd.DataFrame(records)
+    target_cols = ['self_rated_mental_health', 'sexual_orientation', 'percent', 'confidence_interval_from', 'confidence_interval_to']
+    result = result[target_cols]
+    print(f"Final output: {result.shape}")
+    return result

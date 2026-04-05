@@ -84,7 +84,8 @@ IRREGULARITY_TAXONOMY = {
     "WIDE_FORMAT": {
         "description":
             "Column headers are VALUES of a variable rather than "
-            "variable names (Wickham 2014). The defining test: could "
+            "variable names. The table spreads observations across multiple columns that represent "
+            "different levels of the same variable. The defining test: could "
             "the column headers be placed into a single new column "
             "without losing information? If yes, it is wide format. "
             "Structural signature: multiple adjacent value columns "

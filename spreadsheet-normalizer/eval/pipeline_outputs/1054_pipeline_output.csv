@@ -1,3 +1,17 @@
-sexual_orientation,gender,number,percent,confidence_interval_from,confidence_interval_to,number_online,percent_online,confidence_interval_online_from,confidence_interval_online_to,section
-male gender,male gender,117,38.2,31.1,45.8,82,27.6,20.9,35.3,gay or lesbian
-male gender,male gender,71,41.4,30.3,53.5,66,40.3,29.5,52.2,bisexual
+sexual_orientation_and_gender,setting,gender,number,percent,confidence_interval_95_from,confidence_interval_95_to
+male gender,public,male gender,"1,788",12.5,11.7,13.3
+male gender,online,male gender,"1,688",13.0,12.1,13.8
+female gender,public,female gender,"4,465",30.5,29.5,31.6
+female gender,online,female gender,"2,291",17.5,16.6,18.5
+gay or lesbian,public,gay or lesbian,,,,
+gay or lesbian,online,gay or lesbian,,,,
+male gender,public,male gender,117,38.2,31.1,45.8
+male gender,online,male gender,82,27.6,20.9,35.3
+female gender,public,female gender,87,50.8,41.7,59.8
+female gender,online,female gender,35,21.0,13.9,30.3
+bisexual,public,bisexual,,,,
+bisexual,online,bisexual,,,,
+male gender,public,male gender,71,41.4,30.3,53.5
+male gender,online,male gender,66,40.3,29.5,52.2
+female gender,public,female gender,280,76.4,69.6,82.1
+female gender,online,female gender,179,49.8,41.9,57.6

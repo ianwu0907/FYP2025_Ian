@@ -1,13 +1,31 @@
-indicator,sexual_orientation,confidence_interval_type,confidence_interval,percentage_value
-positive,self-rated mental health,95% confidence interval from,88.3,52.4
-positive,self-rated mental health,95% confidence interval to,89.4,65.2
-negative,self-rated mental health,95% confidence interval from,10.2,34.7
-negative,self-rated mental health,95% confidence interval to,11.2,47.4
-ever seriously contemplated suicide,self-rated mental health,95% confidence interval from,14.3,39.8
-ever seriously contemplated suicide,self-rated mental health,95% confidence interval to,15.5,52.8
-diagnosed mood or anxiety disorder,self-rated mental health,95% confidence interval from,15.8,44.4
-diagnosed mood or anxiety disorder,self-rated mental health,95% confidence interval to,17.0,57.2
-mood disorder,self-rated mental health,95% confidence interval from,9.1,30.0
-mood disorder,self-rated mental health,95% confidence interval to,10.0,42.9
-anxiety disorder,self-rated mental health,95% confidence interval from,12.0,35.5
-anxiety disorder,self-rated mental health,95% confidence interval to,13.1,47.9
+self_rated_mental_health,sexual_orientation,percent,confidence_interval_from,confidence_interval_to
+positive,percent,88.9,88.3,89.4
+positive,percent,80.3,75.5,84.4
+positive,percent,58.9,52.4,65.2
+positive,percent,54.6,37.4,70.9
+positive,percent,67.8,63.6,71.7
+negative,percent,10.7,10.2,11.2
+negative,percent,19.7,15.6,24.4
+negative,percent,40.9,34.7,47.4
+negative,percent,45.4,29.1,62.6
+negative,percent,32.1,28.2,36.3
+ever seriously contemplated suicide,percent,14.9,14.3,15.5
+ever seriously contemplated suicide,percent,29.9,25.1,35.1
+ever seriously contemplated suicide,percent,46.3,39.8,52.8
+ever seriously contemplated suicide,percent,58.7,42.1,73.5
+ever seriously contemplated suicide,percent,40.1,36.1,44.3
+diagnosed mood or anxiety disorder,percent,16.4,15.8,17.0
+diagnosed mood or anxiety disorder,percent,29.6,24.7,35.0
+diagnosed mood or anxiety disorder,percent,50.8,44.4,57.2
+diagnosed mood or anxiety disorder,percent,40.9,25.8,58.0
+diagnosed mood or anxiety disorder,percent,41.1,36.9,45.3
+mood disorder,percent,9.5,9.1,10.0
+mood disorder,percent,20.6,16.4,25.4
+mood disorder,percent,36.2,30.0,42.9
+mood disorder,percent,31.1,18.0,48.1
+mood disorder,percent,29.1,25.3,33.3
+anxiety disorder,percent,12.5,12.0,13.1
+anxiety disorder,percent,23.4,18.8,28.8
+anxiety disorder,percent,41.6,35.5,47.9
+anxiety disorder,percent,30.4,18.5,45.8
+anxiety disorder,percent,33.1,29.2,37.2

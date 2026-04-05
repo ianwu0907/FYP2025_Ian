@@ -373,22 +373,27 @@ def generate_qa_pairs(
 # ======================================================================
 
 def _build_column_profiles(df: pd.DataFrame,
-                           max_distinct: int = 20) -> Dict[str, List[str]]:
+                           max_distinct: int = 20,
+                           must_include: List[Any] = None) -> Dict[str, List[str]]:
     """
-    For each column, collect up to max_distinct distinct non-null values.
-    Fix 5: float-integer values ("2020.0") are normalised to integer strings
-    ("2020") so LLM-filled slots consistently match during validation.
+    Ensures that 'must_include' values (Ground Truth) are prioritized in the
+    profile to avoid prompt truncation blind spots.
     """
+    targets = set([_norm_str(str(v).strip()) for v in (must_include or [])])
     profiles = {}
     for col in df.columns:
-        normalised: List[str] = []
-        seen: set = set()
-        for v in df[col].dropna().astype(str).str.strip().unique():
-            nv = _norm_str(v)
-            if nv not in seen:
-                seen.add(nv)
-                normalised.append(nv)
-        profiles[str(col)] = normalised[:max_distinct]
+        # 获取所有规范化后的唯一值
+        all_vals = [_norm_str(v) for v in df[col].dropna().astype(str).str.strip().unique()]
+
+        if len(all_vals) > max_distinct:
+            guaranteed = [v for v in all_vals if v in targets]
+            others = [v for v in all_vals if v not in targets]
+
+            final_vals = (guaranteed + others)[:max_distinct]
+        else:
+            final_vals = all_vals
+
+        profiles[str(col)] = final_vals
     return profiles
 
 
@@ -436,6 +441,7 @@ def _build_slot_prompt(
         df: pd.DataFrame,
         preview_rows: int = 15,
         max_distinct: int = 20,
+        target_values: list = None,
 ) -> str:
     """
     Build the user prompt for slot filling, including:
@@ -449,7 +455,7 @@ def _build_slot_prompt(
     template_code = TEMPLATES[qtype]["code"]
     col_list      = [str(c) for c in df.columns]
     preview       = df.head(preview_rows).to_string(index=False)
-    profiles      = _build_column_profiles(df, max_distinct=max_distinct)
+    profiles = _build_column_profiles(df, max_distinct=max_distinct, must_include=target_values)
 
     profiles_str = "\n".join(
         f'  "{col}": {vals}' for col, vals in profiles.items()
@@ -488,6 +494,7 @@ def fill_slots_via_llm(
         model: str = "gpt-4o-mini",
         preview_rows: int = 15,
         max_distinct: int = 20,
+        target_values: list = None
 ) -> Optional[Dict[str, str]]:
     """
     Ask the LLM to fill template slots for the given question and table.
@@ -506,6 +513,7 @@ def fill_slots_via_llm(
         df=df,
         preview_rows=preview_rows,
         max_distinct=max_distinct,
+        target_values=target_values
     )
 
     try:
@@ -516,7 +524,7 @@ def fill_slots_via_llm(
                 {"role": "user",   "content": user_prompt},
             ],
             temperature=0.0,
-            max_tokens=256,
+            max_tokens=12800,
         )
         raw = response.choices[0].message.content.strip()
 
@@ -720,6 +728,9 @@ def evaluate_code_retrievability(
                 f"  [{label}] {pair['qtype']}: "
                 f"{pair['question'][:70]}..."
             )
+            target_vals = []
+            if "_ref_x" in pair: target_vals.append(pair["_ref_x"])
+            if "_filters" in pair: target_vals.extend(pair["_filters"].values())
 
             slots = fill_slots_via_llm(
                 question=pair["question"],
@@ -729,6 +740,7 @@ def evaluate_code_retrievability(
                 model=model,
                 preview_rows=preview_rows,
                 max_distinct=max_distinct,
+                target_values=target_vals,
             )
 
             if slots is None:

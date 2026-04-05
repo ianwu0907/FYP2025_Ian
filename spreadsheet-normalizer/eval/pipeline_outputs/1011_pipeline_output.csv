@@ -1,49 +1,44 @@
-Unnamed: 0,low income rate
-immigrant families,
-region of birth:,..
-caribbean and latin america,24.3
-africa,29.5
-country of birth:,..
-jamaica,25.1
-haiti,17.5
-trinidad and tobago,24.5
-guyana,25.0
-barbados,27.7
-saint vincent and the grenadines,48.6
-grenada,33.7
-saint lucia,41.4
-united kingdom,14.8
-united states,22.4
-ethiopia,35.5
-somalia,47.5
-eritrea,34.1
-sudan,53.1
-south sudan,46.1
-burundi,25.3
-kenya,22.6
-zimbabwe,18.7
-rwanda,17.5
-democratic republic of the congo,27.4
-cameroon,13.3
-nigeria,22.3
-ghana,28.4
-cote d'ivoire,13.2
-senegal,10.9
-guinea,21.0
-second- and third- generation-or-more families,
-region of ancestry:,..
-caribbean and latin america,25.0
-africa,27.0
-country of ancestry:,..
-jamaica,28.6
-haiti,15.2
-trinidad and tobago,21.6
-barbados,18.3
-guyana,28.2
-saint vincent and the grenadines,22.2
-grenada,24.0
-ghana,33.1
-nigeria,18.9
-united states,35.2
-united kingdom,32.1
-canada,26.7
+region_of_birth_or_ancestry,country,low_income_rate,section
+caribbean and latin america,caribbean and latin america,24.3,
+africa,africa,29.5,
+jamaica,jamaica,25.1,
+haiti,haiti,17.5,
+trinidad and tobago,trinidad and tobago,24.5,
+guyana,guyana,25.0,
+barbados,barbados,27.7,
+saint vincent and the grenadines,saint vincent and the grenadines,48.6,
+grenada,grenada,33.7,
+saint lucia,saint lucia,41.4,
+united kingdom,united kingdom,14.8,
+united states,united states,22.4,
+ethiopia,ethiopia,35.5,
+somalia,somalia,47.5,
+eritrea,eritrea,34.1,
+sudan,sudan,53.1,
+south sudan,south sudan,46.1,
+burundi,burundi,25.3,
+kenya,kenya,22.6,
+zimbabwe,zimbabwe,18.7,
+rwanda,rwanda,17.5,
+democratic republic of the congo,democratic republic of the congo,27.4,
+cameroon,cameroon,13.3,
+nigeria,nigeria,22.3,
+ghana,ghana,28.4,
+cote d'ivoire,cote d'ivoire,13.2,
+senegal,senegal,10.9,
+guinea,guinea,21.0,
+region of ancestry:,region of ancestry:,,second- and third- generation-or-more families
+caribbean and latin america,caribbean and latin america,25.0,second- and third- generation-or-more families
+africa,africa,27.0,second- and third- generation-or-more families
+jamaica,jamaica,28.6,second- and third- generation-or-more families
+haiti,haiti,15.2,second- and third- generation-or-more families
+trinidad and tobago,trinidad and tobago,21.6,second- and third- generation-or-more families
+barbados,barbados,18.3,second- and third- generation-or-more families
+guyana,guyana,28.2,second- and third- generation-or-more families
+saint vincent and the grenadines,saint vincent and the grenadines,22.2,second- and third- generation-or-more families
+grenada,grenada,24.0,second- and third- generation-or-more families
+ghana,ghana,33.1,second- and third- generation-or-more families
+nigeria,nigeria,18.9,second- and third- generation-or-more families
+united states,united states,35.2,second- and third- generation-or-more families
+united kingdom,united kingdom,32.1,second- and third- generation-or-more families
+canada,canada,26.7,second- and third- generation-or-more families

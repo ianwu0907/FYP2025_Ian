@@ -396,7 +396,7 @@ class TransformationGenerator:
                             "a safe fallback — no data is lost."
                         )
                         return {
-                            "normalized_df": result_df,
+                            "normalized_df": df.copy(),
                             "transformation_code": code,
                             "transformation_strategy": {"approach": "code_recipe_guided"},
                             "validation_result": {

@@ -1,0 +1,35 @@
+country_of_birth,gender,principal_applicants_percent,secondary_applicants_percent,total_percent,family_sponsored_immigrants_percent,refugees_percent,other_immigrants_percent,total_percent_2
+women,women,,,,,,,
+ethiopia,women,3.6,6.6,100.0,34.9,58.0,0.5,100.0
+somalia,women,1.1,2.1,100.0,21.3,75.1,1.5,100.0
+eritrea,women,2.0,3.1,100.0,23.9,72.9,0.1,100.0
+sudan,women,6.3,10.6,100.0,23.9,65.0,0.6,100.0
+south sudan,women,0.4,0.4,100.0,14.5,85.1,0.0,100.0
+burundi,women,9.5,13.4,100.0,16.8,64.6,5.2,100.0
+kenya,women,22.6,55.6,100.0,23.8,18.1,2.5,100.0
+zimbabwe,women,9.0,17.5,100.0,12.8,59.0,10.7,100.0
+rwanda,women,7.4,13.8,100.0,16.1,67.4,2.7,100.0
+democratic republic of the congo,women,4.4,10.5,100.0,16.1,67.9,5.5,100.0
+cameroon,women,30.5,67.4,100.0,22.8,9.1,0.7,100.0
+nigeria,women,40.7,62.1,100.0,19.0,17.1,1.9,100.0
+ghana,women,14.8,26.9,100.0,52.0,18.5,2.7,100.0
+cote d'ivoire,women,33.2,63.0,100.0,28.7,7.5,0.8,100.0
+senegal,women,20.7,56.0,100.0,36.7,6.5,0.9,100.0
+guinea,women,15.8,31.3,100.0,34.1,32.0,2.7,100.0
+men,men,,,,,,,
+ethiopia,men,0.5,7.2,100.0,19.7,72.8,0.4,100.0
+somalia,men,0.1,3.5,100.0,11.9,83.6,1.0,100.0
+eritrea,men,0.1,1.9,100.0,8.8,89.2,0.0,100.0
+sudan,men,1.2,7.6,100.0,4.3,88.1,0.0,100.0
+south sudan,men,0.0,1.7,100.0,3.5,94.8,0.0,100.0
+burundi,men,1.3,16.5,100.0,8.2,70.0,5.4,100.0
+kenya,men,9.5,54.6,100.0,22.2,18.9,4.4,100.0
+zimbabwe,men,3.7,19.1,100.0,11.1,60.3,9.5,100.0
+rwanda,men,1.4,14.2,100.0,9.9,71.6,4.4,100.0
+democratic republic of the congo,men,1.8,14.1,100.0,10.2,69.6,6.1,100.0
+cameroon,men,9.5,81.0,100.0,11.2,7.5,0.3,100.0
+nigeria,men,12.0,63.3,100.0,21.2,13.5,2.0,100.0
+ghana,men,4.2,32.7,100.0,42.1,21.8,3.3,100.0
+cote d'ivoire,men,8.2,80.4,100.0,12.5,6.3,0.9,100.0
+senegal,men,6.2,73.7,100.0,21.2,4.9,0.2,100.0
+guinea,men,2.7,53.2,100.0,21.4,22.6,2.8,100.0

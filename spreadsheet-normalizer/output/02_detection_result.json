@@ -1,77 +1,56 @@
 {
   "physical": {
     "shape": {
-      "rows": 49,
-      "cols": 16
+      "rows": 21,
+      "cols": 7
     },
     "actual_column_names": [
-      "表4.1",
-      "Unnamed: 1",
-      "2011年、2016年及2021年按種族、婚姻狀況及性別劃分的15歲及以上少數族裔人士百分比分布",
+      "type of behaviour",
+      "cisgender",
+      "Unnamed: 2",
       "Unnamed: 3",
-      "Unnamed: 4",
+      "transgender",
       "Unnamed: 5",
-      "Unnamed: 6",
-      "Unnamed: 7",
-      "Unnamed: 8",
-      "Unnamed: 9",
-      "Unnamed: 10",
-      "Unnamed: 11",
-      "Unnamed: 12",
-      "Unnamed: 13",
-      "Unnamed: 14",
-      "索引 Index"
+      "Unnamed: 6"
     ],
-    "header_depth": 7,
-    "data_start_row": 7,
-    "data_end_row": 47,
-    "data_rows": 41,
+    "header_depth": 3,
+    "data_start_row": 3,
+    "data_end_row": 20,
+    "data_rows": 18,
     "column_dtype_profile": {
-      "0": "empty",
-      "1": "text",
-      "2": "empty",
+      "0": "text",
+      "1": "numeric",
+      "2": "numeric",
       "3": "numeric",
-      "4": "numeric",
-      "5": "numeric",
-      "6": "numeric",
-      "7": "numeric",
-      "8": "numeric",
-      "9": "numeric",
-      "10": "numeric",
-      "11": "numeric",
-      "12": "numeric",
-      "13": "numeric",
-      "14": "numeric",
-      "15": "empty"
+      "4": "mixed",
+      "5": "mixed",
+      "6": "mixed"
     },
-    "blank_rows_in_data": [
-      43,
-      46
-    ],
+    "blank_rows_in_data": [],
     "bilingual_row_candidate": false,
     "inline_bilingual_candidate": false,
-    "left_header_cols_num": 3
+    "left_header_cols_num": 1
   },
   "irregularities": [
     {
       "label": "MULTI_LEVEL_HEADER",
-      "evidence": "Row 2, Row 3, Row 4",
-      "details": "The header spans multiple rows with group labels for marital status and overall categories of ethnicity with sub-labels for gender."
+      "evidence": "Rows 0, 1, and 2 contain a hierarchy in which Row 0 has top-level headers (\"percent\", \"95% confidence interval\"), Row 1 contains sub-level headers (\"from\", \"to\"), and Row 2 describes the type of data (\"unwanted behaviours in public places\").",
+      "details": "The headers span multiple rows and form a structured hierarchy for the data below."
     },
     {
-      "label": "AGGREGATE_COLUMNS",
-      "evidence": "Columns 5, 8, 11, 14",
-      "details": "These columns contain overall summaries (e.g., Overall, 合計) that aggregate values from other columns representing Male and Female categories."
+      "label": "WIDE_FORMAT",
+      "evidence": "Columns 1 to 3 and 4 to 6 all contain numeric values representing percentages and confidence intervals for two different groups (\"cisgender\" and \"transgender\").",
+      "details": "The column headers represent dimensions of a single variable across multiple columns, making it wide format."
     },
     {
       "label": "SPARSE_ROW_FILL",
-      "evidence": "Rows 7 to 47, with blanks at Rows 43 and 46",
-      "details": "The column for \"Year\" has values filled at the start of a block and left blank for subsequent rows until a new block starts."
+      "evidence": "The first column has values that are only filled at the beginning of each section (e.g., \"unwanted physical contact\", \"unwanted behaviours online\", \"protective measures online\"), followed by blank rows.",
+      "details": "The first column's value repeats for sections of rows but does not fill every individual row, indicating a block start fill pattern."
     }
   ],
   "labels": [
     "MULTI_LEVEL_HEADER",
-    "AGGREGATE_COLUMNS",
+    "WIDE_FORMAT",
     "SPARSE_ROW_FILL"
   ]
 }
