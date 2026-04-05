@@ -59,7 +59,7 @@ CODE_RECIPES = {
     "METADATA_ROWS": "# Skip metadata rows in your loop using `if i < {data_start_row}: continue`",
 
     "MULTI_LEVEL_HEADER": '''
-# RECIPE: MULTI_LEVEL_HEADER (WIDE TABLE)
+# RECIPE: MULTI_LEVEL_HEADER
 # 1. Forward-fill the header rows horizontally:
 # headers = df.iloc[{header_row_indices}].ffill(axis=1)
 # 2. In your nested `for j` loop, use the BOTTOM-most row of `headers` for the specific category.
@@ -99,8 +99,6 @@ CODE_RECIPES = {
 # column_map = {col_index: (group_value, sub_value)}
 # Example for year x value_type:
 #   {3: ("2011", "Number"), 4: ("2011", "%"), 5: ("2016", "Number"), ...}
-# Example for marital_status x sex:
-#   {3: ("Never married", "Male"), 4: ("Never married", "Female"), ...}
 #
 # Forward-fill group labels across columns (groups span multiple cols):
 group_labels = {}
@@ -173,27 +171,28 @@ result = result.dropna(subset=[result.columns[j] for j in numeric_col_indices], 
 #
 # How to build the exclusion logic for each form:
 #
-# Form 1 — Keyword-based totals:
-#   Read the EXCLUDE_ROWS description in the schema. It will name specific label
-#   values (e.g. "Total", "Grand total"). Build your exclusion from those
-#   exact strings, not from a generic keyword list.
-#   agg_labels = ["<label A from EXCLUDE_ROWS>", "<label B>", ...]
-#   result = result[~result.iloc[:, label_col_idx].isin(agg_labels)]
-#
-# Form 2 — Semantic hierarchy aggregation (parent rows with no keyword signal):
+# Form 1 — Semantic hierarchy aggregation (parent rows with no keyword signal):
 #   Read the detection EVIDENCE. It will name the specific parent-level labels.
 #   semantic_agg_labels = ["<parent label from EVIDENCE>", ...]
 #   result = result[~result.iloc[:, label_col_idx].isin(semantic_agg_labels)]
 #
-# Form 3 — Cross-group aggregation (entire coarser category group):
-#   Read the EXCLUDE_ROWS description. It will name the coarser category value(s).
-#   coarser_categories = ["<coarser category value from EXCLUDE_ROWS>"]
+# Form 2 — Cross-group aggregation (entire coarser category group):
+#   The data has a CATEGORY column whose values distinguish coarse vs. granular
+#   groups (e.g. col 3 = "Type of Abuse" vs "Type of Abuse and Sex").
+#   Filter on that CATEGORY column using the exact coarser value from EXCLUDE_ROWS.
+#
+#   coarser_categories = ["<exact coarser category value from EXCLUDE_ROWS>"]
 #   result = result[~result.iloc[:, category_col_idx].isin(coarser_categories)]
 #
-#   CRITICAL: Use .isin() for exact match, NEVER str.contains().
-#   str.contains("虐待長者性質") will also match "虐待長者性質及受虐長者性別"
-#   because the former is a substring of the latter, silently deleting valid rows.
-#   Always filter by exact category value equality.
+#   TWO CRITICAL RULES:
+#   1. Filter on the column that distinguishes group granularity,
+#      NOT on the that one with specific item names.
+#      Filtering the column that distinguishes group granularity removes valid granular rows that share the same
+#      item name across different category groups.
+#   2. Use .isin() for EXACT match — NEVER str.contains().
+#      Coarser category names are often substrings of finer ones
+#      (e.g. "Type of Abuse" is contained in "Type of Abuse and Sex"),
+#      so str.contains() silently deletes valid granular rows.
 ''',
 
     "AGGREGATE_COLUMNS": '''
@@ -247,6 +246,9 @@ result[["primary_dim", "secondary_dim"]] = result.iloc[:, compound_col_idx].appl
 _WIDE_FORMAT_MELT_RECIPE = '''
 # RECIPE: WIDE_FORMAT (simple) — use pd.melt()
 # Applicable because WIDE_FORMAT is the only structural irregularity.
+# Wide format column headers may be numeric (years) OR non-numeric
+# (income brackets like "<$10k", age groups like "0-14", region names, etc.).
+# Treat all header values as strings when passing to value_vars.
 #
 # Step 1: Slice to data region and ensure string column names for melt
 result = df.iloc[{data_start_row}:{data_end_row} + 1].copy()
@@ -277,6 +279,9 @@ _WIDE_FORMAT_LOOP_RECIPE = '''
 # pd.melt() is NOT suitable here because co-occurring irregularities
 # (MULTI_LEVEL_HEADER, NESTED_COLUMN_GROUPS, or BILINGUAL_ALTERNATING_ROWS)
 # require irregular row handling that melt cannot perform.
+# Wide format column headers may be numeric OR non-numeric strings —
+# read the actual header row values to build your column mapping.
+# Do NOT assume headers are numeric; convert them to str before mapping.
 # See MULTI_LEVEL_HEADER / NESTED_COLUMN_GROUPS recipes for the loop pattern.
 '''.strip()
 
@@ -310,7 +315,7 @@ class TransformationGenerator:
         if base_url:
             kw["base_url"] = base_url
         self.client = OpenAI(**kw)
-        self.model = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
+        self.model = os.getenv("OPENAI_CODEGEN_MODEL") or os.getenv("OPENAI_MODEL", "gpt-4o-mini")
         self.max_completion_tokens = config.get("max_completion_tokens", 6000)
         self.max_retries = config.get("max_retries", 5)
         self._last_execution_log = []  # captured print output from last execution
@@ -440,7 +445,7 @@ class TransformationGenerator:
         """
         if "WIDE_FORMAT" not in labels:
             return False
-        blocking = {"MULTI_LEVEL_HEADER", "NESTED_COLUMN_GROUPS", "BILINGUAL_ALTERNATING_ROWS"}
+        blocking = {"MULTI_LEVEL_HEADER", "NESTED_COLUMN_GROUPS", "BILINGUAL_ALTERNATING_ROWS", "EMBEDDED_DIMENSION_IN_COLUMN"}
         return blocking.isdisjoint(labels)
 
     # ==================================================================
@@ -456,23 +461,28 @@ class TransformationGenerator:
 
         # Decide wide-format strategy in Python — store for reuse in regeneration
         self._simple_wide = self._is_simple_wide(labels)
+        self._has_wide = "WIDE_FORMAT" in labels
         if self._simple_wide:
             logger.info("  Wide-format strategy: pd.melt() "
                         "(WIDE_FORMAT only, no blocking irregularities)")
-        elif "WIDE_FORMAT" in labels:
+        elif self._has_wide:
             logger.info("  Wide-format strategy: record-collection loop "
                         "(blocking irregularities present: "
                         f"{[l for l in labels if l in ('MULTI_LEVEL_HEADER','NESTED_COLUMN_GROUPS','BILINGUAL_ALTERNATING_ROWS')]})")
+        else:
+            logger.info("  No wide-format reshaping needed "
+                        "(WIDE_FORMAT not detected)")
 
         prompt = self._build_code_prompt(
-            df, physical, detection_result, schema, labels, self._simple_wide
+            df, physical, detection_result, schema, labels,
+            self._simple_wide, self._has_wide
         )
 
         try:
             resp = self.client.chat.completions.create(
                 model=self.model,
                 messages=[
-                    {"role": "system", "content": self._system_prompt(self._simple_wide)},
+                    {"role": "system", "content": self._system_prompt(self._simple_wide, self._has_wide)},
                     {"role": "user", "content": prompt},
                 ],
                 max_completion_tokens=self.max_completion_tokens,
@@ -486,7 +496,7 @@ class TransformationGenerator:
             logger.error(f"Code generation failed: {e}")
             raise
 
-    def _system_prompt(self, simple_wide: bool = False) -> str:
+    def _system_prompt(self, simple_wide: bool = False, has_wide: bool = False) -> str:
         common_header = (
             "You are an expert Python/pandas programmer. You write a "
             "`def transform(df)` function that transforms a messy "
@@ -500,14 +510,16 @@ class TransformationGenerator:
 
             "RULES:\n"
             "1. Use only pandas, numpy, and standard library.\n"
-            "2. Use .iloc for positional access (column INDICES, not names). "
-            "The input df has numeric column names (0, 1, 2...).\n"
+            "2. Use .iloc for ALL column access throughout the function. "
+            "NEVER select/drop/slice columns early — keep all original columns "
+            "until the final output step. Slicing columns mid-function changes "
+            "positional indices and breaks all subsequent .iloc accesses.\n"
             "3. NEVER use `raise`, `assert`, or explicit row count checks "
             "(e.g., `if len(records) < expected`).\n"
             "4. Output ONLY the Python code. No markdown. No explanation.\n\n"
         )
 
-        if simple_wide:
+        if has_wide and simple_wide:
             mandatory = (
                 "*** MANDATORY PATTERN: pd.melt() ***\n"
                 "This table has WIDE_FORMAT with no blocking irregularities. "
@@ -531,7 +543,7 @@ class TransformationGenerator:
                 "    return result\n"
                 "```\n"
             )
-        else:
+        elif has_wide:
             mandatory = (
                 "*** MANDATORY PATTERN: record-collection loop ***\n"
                 "This table has co-occurring structural irregularities. "
@@ -545,7 +557,7 @@ class TransformationGenerator:
                 "    # 2. Isolate multi-level headers and forward-fill horizontally if needed.\n\n"
                 "    records = []\n"
                 "    for i in range(len(df)):\n"
-                "        # Skip unwanted rows (metadata, aggregates, alternate language rows)\n"
+                "        # Skip rows to exclude\n"
                 "        \n"
                 "        # Extract row-level dimensions\n"
                 "        \n"
@@ -558,16 +570,59 @@ class TransformationGenerator:
                 "    return result\n"
                 "```\n"
             )
-
+        else:
+            mandatory = ""
         return common_header + mandatory
 
+    # 新增方法
+    def _format_header_lineage(self, df: pd.DataFrame,
+                               physical: Dict[str, Any],
+                               labels: List[str]) -> str:
+        """
+        When NESTED_COLUMN_GROUPS is present, reconstruct the ancestor
+        path for each data column by forward-filling header rows.
+        This makes implicit hierarchy explicit for the LLM.
+        """
+        if "NESTED_COLUMN_GROUPS" not in labels and "MULTI_LEVEL_HEADER" not in labels:
+            return "(no nested groups detected)"
+
+        start = physical["data_start_row"]
+        if start < 2:
+            return "(single header row, no lineage needed)"
+
+        # Forward-fill each header row horizontally (mimics merged cell semantics)
+        header_rows = []
+        for i in range(start):
+            row = []
+            last_val = None
+            for j in range(len(df.columns)):
+                val = df.iloc[i, j]
+                if pd.notna(val) and str(val).strip():
+                    last_val = str(val).strip()
+                row.append(last_val)
+            header_rows.append(row)
+
+        # Build lineage string per column
+        lines = []
+        for j in range(len(df.columns)):
+            path_parts = []
+            for row in header_rows:
+                v = row[j]
+                if v and (not path_parts or v != path_parts[-1]):
+                    path_parts.append(v)
+            if path_parts:
+                lines.append(f"  Col {j}: {' > '.join(path_parts)}")
+
+        return "\n".join(lines) if lines else "(unable to reconstruct lineage)"
     def _build_code_prompt(self, df: pd.DataFrame,
                            physical: Dict[str, Any],
                            detection_result: Dict[str, Any],
                            schema: Dict[str, Any],
                            labels: List[str],
-                           simple_wide: bool = False) -> str:
+                           simple_wide: bool = False,
+                           has_wide: bool = False) -> str:
 
+        lineage_text = self._format_header_lineage(df, physical, labels)
         recipes_text = self._get_relevant_recipes(labels, physical, simple_wide)
         schema_text = self._format_schema(schema)
         headers_text = self._format_headers(df, physical)
@@ -581,8 +636,14 @@ class TransformationGenerator:
             "row_count_estimate", "unknown"
         )
 
-        # Choose few-shot example to match the selected strategy
-        few_shot = self._few_shot_melt() if simple_wide else self._few_shot_loop()
+        # Choose few-shot example matching the actual strategy.
+        # No wide-format reshaping needed → no example required; recipes + schema suffice.
+        if has_wide and simple_wide:
+            few_shot = self._few_shot_melt()
+        elif has_wide:
+            few_shot = self._few_shot_loop()
+        else:
+            few_shot = ""
 
         return f"""Write a `def transform(df):` function to convert this spreadsheet to tidy format.
 
@@ -597,10 +658,14 @@ class TransformationGenerator:
 
 === SOURCE DATA ===
 Shape: {df.shape[0]} rows × {df.shape[1]} columns
+ACTUAL SOURCE COLUMNS: {self._format_col_names(physical)}
 Column types: {col_types}
 
 HEADERS:
 {headers_text}
+
+COLUMN LINEAGE (semantic path for each data column):
+{lineage_text}
 
 DATA (full data region):
 {data_text}
@@ -748,10 +813,6 @@ def transform(df):
     return output
 ```"""
 
-    # ==================================================================
-    # Recipe assembly
-    # ==================================================================
-
     def _get_relevant_recipes(self, labels: List[str],
                               physical: Dict[str, Any],
                               simple_wide: bool = False) -> str:
@@ -793,14 +854,15 @@ def transform(df):
 
         # Universal best practice — wording adapts to chosen strategy
         lines.append("--- UNIVERSAL BEST PRACTICE (Apply to all tables) ---")
-        if simple_wide:
+        has_wide = "WIDE_FORMAT" in labels
+        if has_wide and simple_wide:
             lines.append(
                 "# SAFE TYPE HANDLING\n"
                 "# After pd.melt(), convert the value column with "
                 "pd.to_numeric(..., errors='coerce').\n"
                 "# ALWAYS check pd.notna(x) before .strip() or .split()."
             )
-        else:
+        elif has_wide:
             lines.append(
                 f"# THE GOLDEN EXTRACTION LOOP\n"
                 f"# Loop from {start_r} to {end_r}.\n"
@@ -810,6 +872,10 @@ def transform(df):
                 f"# SAFE STRING & TYPE HANDLING\n"
                 f"# ALWAYS check pd.notna(x) before .strip() or .split()."
             )
+        else:
+            lines.append(
+                ""
+            )
         lines.append("")
 
         return "\n".join(lines) if lines else "(no specific recipes)"
@@ -817,7 +883,45 @@ def transform(df):
     # ==================================================================
     # Code regeneration with feedback
     # ==================================================================
+    def _get_structure_comprehension(self, df: pd.DataFrame,
+                                     physical: Dict[str, Any],
+                                     labels: List[str]) -> str:
+        """
+        TreeThinker-style pre-step: ask LLM to explicitly describe
+        the header hierarchy before attempting code fix.
+        One small focused call, output is injected into retry prompt.
+        """
+        start = physical["data_start_row"]
+        header_preview = []
+        for i in range(start):
+            row_vals = []
+            for j in range(len(df.columns)):
+                v = df.iloc[i, j]
+                if pd.notna(v) and str(v).strip():
+                    row_vals.append(f"[{j}]='{str(v).strip()[:40]}'")
+            header_preview.append(f"Row {i}: {', '.join(row_vals)}")
 
+        prompt = (
+                "Look at these header rows from a spreadsheet:\n\n"
+                + "\n".join(header_preview)
+                + f"\n\ndata_start_row = {start}\n\n"
+                  "Answer ONLY these two questions:\n"
+                  "1. For each data column index (columns >= first non-dimension column), "
+                  "write its full semantic path by combining all header levels. "
+                  "Example: 'Col 3: Year=2019 > ValueType=Number'\n"
+                  "2. Which column indices are row-level dimensions (left side, "
+                  "they label each row, NOT values to unpivot)?\n"
+                  "Be concrete. List every column."
+        )
+        try:
+            resp = self.client.chat.completions.create(
+                model=self.model,
+                messages=[{"role": "user", "content": prompt}],
+                max_completion_tokens=600,
+            )
+            return resp.choices[0].message.content.strip()
+        except Exception:
+            return "(structure comprehension unavailable)"
     def _regenerate_code(self, df: pd.DataFrame,
                          physical: Dict[str, Any],
                          detection_result: Dict[str, Any],
@@ -825,6 +929,10 @@ def transform(df):
                          labels: List[str],
                          previous_code: str,
                          feedback: Dict[str, Any]) -> str:
+        structural_labels = {"NESTED_COLUMN_GROUPS", "MULTI_LEVEL_HEADER", "WIDE_FORMAT"}
+        if structural_labels & set(labels):
+            comprehension = self._get_structure_comprehension(df, physical, labels)
+            feedback["structure_comprehension"] = comprehension
         """Regenerate code using detailed error feedback, data snapshots, and CoT."""
         logger.info("Regenerating code with feedback...")
 
@@ -880,7 +988,15 @@ Columns: {feedback.get('result_columns')}
 Sample (first 5 rows):
 {feedback.get('result_sample', 'N/A')}
 """
-
+        if feedback.get("structure_comprehension"):
+            prompt += f"""
+        ## STRUCTURAL RE-ANALYSIS
+        Before fixing, here is the correct interpretation of this table's header hierarchy.
+        Use this as ground truth when writing your column_map — do NOT infer column meanings from the raw data again.
+        
+        {feedback['structure_comprehension']}
+        
+        """
         prompt += f"""## REQUIREMENTS
 1. Analyze the failure and write a brief ## DIAGNOSIS.
 2. Write a ## STEP-BY-STEP PLAN on how you will fix the code.
@@ -979,10 +1095,24 @@ Output the diagnosis, plan, and the Python code block."""
 
         # Check 4: Null check (Enhanced)
         if not result_df.empty:
+            # Collect schema column sources for diagnosis
+            schema_col_sources = {
+                c["name"]: c.get("source", "")
+                for c in schema.get("target_columns", [])
+            }
+            exclude_rows_desc = schema.get("exclusions", {}).get(
+                "exclude_rows", {}
+            ).get("description", "")
+
             for col in result_df.columns:
                 null_pct = result_df[col].isnull().mean() * 100
 
                 if null_pct == 100:
+                    source_hint = schema_col_sources.get(col, "")
+                    # Distinguish: likely a schema design error (dimension only
+                    # existed in the rows that were filtered out) vs. a code
+                    # extraction bug (the source column exists but nothing was
+                    # extracted).
                     errors.append(f"Column '{col}' is 100% null. Check your column renaming, unpivot/melt, or merge logic. Do NOT use `raise ValueError` to handle this, fix the dataframe manipulation.")
                 elif null_pct > 80:
                     errors.append(f"Column '{col}' is {null_pct:.0f}% null. The extraction logic is likely misaligned.")
@@ -1171,6 +1301,15 @@ Output the diagnosis, plan, and the Python code block."""
     # Formatters
     # ==================================================================
 
+    def _format_col_names(self, physical: Dict[str, Any]) -> str:
+        names = physical.get("actual_column_names", [])
+        if not names:
+            return "(unnamed columns)"
+        return ", ".join(
+            f'[{j}]="{name}"' for j, name in enumerate(names)
+            if name and not name.startswith("Unnamed")
+        ) or "(unnamed columns)"
+
     def _format_schema(self, schema: Dict[str, Any]) -> str:
         lines = []
         obs = schema.get("observation_unit", {})
@@ -1212,7 +1351,10 @@ Output the diagnosis, plan, and the Python code block."""
 
     def _format_headers(self, df: pd.DataFrame,
                         physical: Dict[str, Any]) -> str:
-        start = physical.get("data_start_row", 0)
+        start = physical["data_start_row"]
+        # 新增：拿到左侧 dimension 列的列索引范围
+        left_dim_cols = set(range(physical.get("left_header_cols_num", 1)))
+
         lines = []
         for i in range(start):
             parts = []
@@ -1222,10 +1364,14 @@ Output the diagnosis, plan, and the Python code block."""
                     s = str(val).strip().replace("\n", "\\n")
                     if len(s) > 60:
                         s = s[:60] + "..."
-                    parts.append(f'[{j}]="{s}"')
+                    # ← 核心改动：加 tag
+                    tag = "[ROW_DIM]" if j in left_dim_cols else "[COL_HEADER]"
+                    parts.append(f'[{j}]{tag}="{s}"')
             if parts:
                 lines.append(f"  Row {i}: {', '.join(parts)}")
-        return "\n".join(lines) if lines else "  (no headers)"
+            else:
+                lines.append(f"  Row {i}: (blank)")
+        return "\n".join(lines) if lines else "(no header rows)"
 
     def _format_data(self, df: pd.DataFrame,
                      physical: Dict[str, Any]) -> str:

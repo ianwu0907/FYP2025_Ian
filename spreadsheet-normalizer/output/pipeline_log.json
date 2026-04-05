@@ -1,6 +1,6 @@
 {
   "input_file": "testdata.xlsx",
-  "start_time": "2026-04-03 18:33:34",
+  "start_time": "2026-04-05 02:35:12",
   "stages": {
     "encoding": {
       "status": "success",
@@ -13,42 +13,39 @@
     "detection": {
       "status": "success",
       "irregularities": [
-        "NESTED_COLUMN_GROUPS",
-        "IMPLICIT_AGGREGATION_ROWS",
-        "WIDE_FORMAT",
         "EMBEDDED_DIMENSION_IN_COLUMN",
         "SPARSE_ROW_FILL"
       ],
-      "num_irregularities": 5
+      "num_irregularities": 2
     },
     "schema_estimation": {
       "status": "success",
-      "observation_unit": "One count of elder abuse type for a specific year, reporting status, and gender.",
-      "num_target_columns": 5,
-      "expected_rows": 1440
+      "observation_unit": "<one row in the tidy output represents the count of cases of elder abuse for a specific year, type of abuse, gender, and relationship to elder individuals>",
+      "num_target_columns": 6,
+      "expected_rows": 1026
     },
     "transformation": {
       "status": "success",
       "output_shape": [
-        1296,
-        5
+        1080,
+        6
       ],
       "validation": {
         "is_valid": true,
         "errors": [],
         "warnings": [
-          "Column 'gender' is 70% null"
+          "Column 'gender' is 69% null"
         ],
         "actual_shape": [
-          1296,
-          5
+          1080,
+          6
         ],
         "expected_shape": [
-          1440,
-          5
+          1026,
+          6
         ]
       },
-      "attempts": 1
+      "attempts": 3
     }
   },
   "metrics_before": {
@@ -68,36 +65,54 @@
   },
   "metrics_after": {
     "shape": {
-      "rows": 1296,
-      "cols": 5
+      "rows": 1080,
+      "cols": 6
     },
-    "cell_coverage": 0.8593,
-    "row_completeness_uniformity": 0.9086,
-    "column_type_homogeneity": 0.9166,
+    "cell_coverage": 0.8852,
+    "row_completeness_uniformity": 0.9228,
+    "column_type_homogeneity": 0.9286,
     "data_row_ratio": 1.0,
-    "column_completeness_min": 0.2963,
+    "column_completeness_min": 0.3111,
     "header_uniqueness": 1.0,
     "type_consistency": 1.0,
-    "substring_containment": 0.056,
-    "inter_column_nmi": 0.1004
+    "substring_containment": 0.0426,
+    "inter_column_nmi": 0.2027
   },
   "metrics_comparison": {
+    "header_uniqueness": {
+      "before": 1.0,
+      "after": 1.0,
+      "delta": 0.0,
+      "direction": "= unchanged"
+    },
+    "inter_column_nmi": {
+      "before": 0.3527,
+      "after": 0.2027,
+      "delta": -0.15,
+      "direction": "✓ improved"
+    },
+    "column_completeness_min": {
+      "before": 0.3333,
+      "after": 0.3111,
+      "delta": -0.0222,
+      "direction": "✗ degraded"
+    },
     "substring_containment": {
       "before": 0.0581,
-      "after": 0.056,
-      "delta": -0.0021,
-      "direction": "= unchanged"
+      "after": 0.0426,
+      "delta": -0.0155,
+      "direction": "✓ improved"
     },
     "cell_coverage": {
       "before": 0.9167,
-      "after": 0.8593,
-      "delta": -0.0574,
+      "after": 0.8852,
+      "delta": -0.0315,
       "direction": "✗ degraded"
     },
-    "row_completeness_uniformity": {
-      "before": 0.9411,
-      "after": 0.9086,
-      "delta": -0.0325,
+    "column_type_homogeneity": {
+      "before": 0.9444,
+      "after": 0.9286,
+      "delta": -0.0158,
       "direction": "✗ degraded"
     },
     "data_row_ratio": {
@@ -106,39 +121,21 @@
       "delta": 0.0,
       "direction": "= unchanged"
     },
+    "row_completeness_uniformity": {
+      "before": 0.9411,
+      "after": 0.9228,
+      "delta": -0.0183,
+      "direction": "✗ degraded"
+    },
     "type_consistency": {
       "before": 1.0,
       "after": 1.0,
       "delta": 0.0,
       "direction": "= unchanged"
-    },
-    "header_uniqueness": {
-      "before": 1.0,
-      "after": 1.0,
-      "delta": 0.0,
-      "direction": "= unchanged"
-    },
-    "column_completeness_min": {
-      "before": 0.3333,
-      "after": 0.2963,
-      "delta": -0.037,
-      "direction": "✗ degraded"
-    },
-    "column_type_homogeneity": {
-      "before": 0.9444,
-      "after": 0.9166,
-      "delta": -0.0278,
-      "direction": "✗ degraded"
-    },
-    "inter_column_nmi": {
-      "before": 0.3527,
-      "after": 0.1004,
-      "delta": -0.2523,
-      "direction": "✓ improved"
     }
   },
   "output_file": "output/normalized_test.csv",
-  "end_time": "2026-04-03 18:34:40",
-  "elapsed_seconds": 65.19,
+  "end_time": "2026-04-05 02:36:10",
+  "elapsed_seconds": 57.88,
   "status": "success"
 }

@@ -66,10 +66,7 @@ IRREGULARITY_TAXONOMY = {
     "NESTED_COLUMN_GROUPS": {
         "description":
             "Value columns are organized into repeating nested groups, "
-            "where a top-level category spans several sub-columns. "
-            "For example: three marital-status groups each containing "
-            "Male/Female/Overall sub-columns, or three year groups "
-            "each containing Count/% sub-columns.",
+            "where a top-level category spans several sub-columns. ",
         "schema_guidance":
             "Each nesting level typically becomes a separate dimension "
             "in the tidy output. Identify what each level represents. "
@@ -86,25 +83,37 @@ IRREGULARITY_TAXONOMY = {
 
     "WIDE_FORMAT": {
         "description":
-            "Column headers contain values that should be a dimension "
-            "in the tidy output. Common examples: years as columns, "
-            "age groups as columns, geographic regions as columns. "
-            "The table needs to be reshaped from wide to long.",
+            "Column headers are VALUES of a variable rather than "
+            "variable names (Wickham 2014). The defining test: could "
+            "the column headers be placed into a single new column "
+            "without losing information? If yes, it is wide format. "
+            "Structural signature: multiple adjacent value columns "
+            "whose headers all belong to the same domain. Headers may be "
+            "NUMERIC OR NON-NUMERIC (strings, ranges, coded labels). "
+            "CRITICAL — do NOT flag WIDE_FORMAT if the dimension values "
+            "appear in DATA CELLS of a single column (that is long/"
+            "tidy format, or SPARSE_ROW_FILL). Wide format requires "
+            "the variable to be spread ACROSS COLUMN HEADERS, not down "
+            "rows in one column",
         "schema_guidance":
             "The values encoded in column headers become a new "
-            "dimension column. Each row in the wide table generates "
-            "multiple rows in the tidy output (one per column-group).",
+            "dimension column. Identify which left-side columns are "
+            "ID/label columns (keep as-is) and which right-side "
+            "columns are value columns with dimension-value headers "
+            "(to unpivot). Each row in the wide table generates "
+            "multiple rows in the tidy output (one per header value).",
         "code_guidance":
-            "Choose the unpivot approach based on table complexity. "
-            "If WIDE_FORMAT is the ONLY structural irregularity (no "
-            "MULTI_LEVEL_HEADER, NESTED_COLUMN_GROUPS, or "
-            "BILINGUAL_ALTERNATING_ROWS), use pd.melt(): identify "
-            "id_vars (columns to keep) and value_vars (columns to "
-            "unpivot), set var_name to the new dimension column name. "
-            "If ANY of those co-occurring irregularities are present, "
-            "use a record-collection loop instead: build a column "
-            "mapping from the headers, then iterate rows and columns "
-            "to append one record per value cell.",
+            "Choose the unpivot approach based on co-occurring "
+            "irregularities (this decision is made automatically). "
+            "If WIDE_FORMAT is the ONLY structural irregularity: "
+            "use pd.melt() — identify id_vars and value_vars from the "
+            "header row, set var_name to the new dimension column name. "
+            "If MULTI_LEVEL_HEADER, NESTED_COLUMN_GROUPS, or "
+            "BILINGUAL_ALTERNATING_ROWS also present: use a "
+            "record-collection loop — build a column mapping from the "
+            "header rows, then iterate rows and columns to append one "
+            "record per value cell. Do NOT attempt to detect which "
+            "approach to use — it is provided in the CODE RECIPES.",
     },
 
     # --- Row irregularities ---
@@ -143,9 +152,7 @@ IRREGULARITY_TAXONOMY = {
             "Individual cells contain text in two languages within "
             "the same cell, separated by a detectable pattern. "
             "Common separators: newline (\\n), slash (/), parenthesis, "
-            "or a space before a Latin character following CJK text. "
-            "Example: '種族\\nEthnicity' or '種族/Ethnicity'. "
-            "This may appear in headers, data cells, or both.",
+            "or a space before a Latin character following CJK text. ",
         "schema_guidance":
             "The multilingual content in a single cell is a display "
             "convention. Decide which language to keep, or split "
@@ -181,9 +188,7 @@ IRREGULARITY_TAXONOMY = {
             "Some rows in the data are redundant because their "
             "values can be derived (typically summed) from other "
             "rows. This includes:\n"
-            "(a) Keyword-based totals: rows with labels like Total, "
-            "Overall, 合計 that sum the detail rows in their group.\n"
-            "(b) Cross-group aggregation: a single category column "
+            "(a) Cross-group aggregation: a single category column "
             "contains two or more distinct category values, where one "
             "value represents a coarser aggregation of another. "
             "For example, column 3 has value 'Type of Abuse' whose "
@@ -193,22 +198,20 @@ IRREGULARITY_TAXONOMY = {
             "'Physical abuse - Female = 190' (200+190=390). The rows "
             "belonging to the coarser category value are entirely "
             "redundant and must be excluded.\n"
-            "(c) Semantic hierarchy: a row is a parent-level "
+            "(b) Semantic hierarchy: a row is a parent-level "
             "aggregate of child rows below it, with no keyword or "
             "delimiter signal. For example, 'Asian (other than "
             "Chinese) = 365611' is the sum of 'Filipino', "
             "'Indonesian', etc. This can only be identified by "
             "understanding the domain meaning of the labels.",
         "schema_guidance":
-            "All forms of aggregation rows should be EXCLUDED from "
-            "the tidy output because they are redundant. Keep only "
-            "the MOST GRANULAR observations. For cross-group "
-            "aggregation, exclude the entire coarser category group. "
-            "For semantic hierarchy, exclude the parent-level rows.",
+            "All forms of aggregation rows that their values can be derived (typically summed) from other "
+            "rows should be EXCLUDED from "
+            "the tidy output. CRITICAL: You MUST explicitly list the EXACT "
+            "string values of the coarser categories that need to be dropped. "
+            "Do NOT write instructions to 'keep granular rows'—you must "
+            "instruct the downstream module to explicitly DROP the coarser values.",
         "code_guidance":
-            "Filter out aggregation rows BEFORE any reshaping. "
-            "For keyword-based: filter by label keywords (Total, "
-            "Overall, 合計, etc.). "
             "For cross-group: identify the EXACT category value(s) "
             "in the category column that represent the coarser group. "
             "Use .isin([exact_value]) for filtering — NEVER "
@@ -232,10 +235,7 @@ IRREGULARITY_TAXONOMY = {
             "'Median' column alongside distribution breakdowns.",
         "schema_guidance":
             "Aggregate columns should be EXCLUDED from the tidy "
-            "output. They are redundant and can be recomputed. "
-            "Identify them by their header text (Total, Overall, "
-            "合計, Median, etc.) or by their position (typically "
-            "the last column in a repeating group).",
+            "output. They are redundant and can be recomputed. ",
         "code_guidance":
             "Identify and drop aggregate columns before reshaping. "
             "Use the column indices from the schema exclusions. "
@@ -317,7 +317,6 @@ class PhysicalFeatureExtractor:
 
     def __init__(self, config: dict = None):
         config = config or {}
-        self.min_numeric_ratio = config.get("min_numeric_ratio", 0.3)
 
     def extract(self, df: pd.DataFrame) -> Dict[str, Any]:
         header_depth, data_start = self._find_data_start(df)
@@ -331,8 +330,12 @@ class PhysicalFeatureExtractor:
             df, data_start, data_end
         )
 
+        actual_col_names = [str(c) for c in df.columns]
+        left_dim_count = self._detect_left_dim_cols(col_dtypes)
+
         return {
             "shape": {"rows": len(df), "cols": len(df.columns)},
+            "actual_column_names": actual_col_names,
             "header_depth": header_depth,
             "data_start_row": data_start,
             "data_end_row": data_end,
@@ -341,10 +344,32 @@ class PhysicalFeatureExtractor:
             "blank_rows_in_data": blank_rows,
             "bilingual_row_candidate": bilingual_candidate,
             "inline_bilingual_candidate": inline_bilingual_candidate,
+            "left_header_cols_num": left_dim_count,
         }
 
     def _find_data_start(self, df: pd.DataFrame) -> tuple:
-        """Find where numeric data begins. Returns (header_depth, data_start_row)."""
+        """Find where data begins. Returns (header_depth, data_start_row).
+
+        Two structural conditions identify a data row:
+
+        1. NOT all-numeric: if every non-empty cell is numeric the row has
+           no text dimension labels → it is a header row (e.g. a year-header
+           row [None, 2010, 2011, 2012]).  A real data row always has at
+           least one text label alongside its numeric values.
+
+        2. At least two numeric values: rows with 0-1 numerics are title /
+           metadata / pure-label rows and cannot be data rows.
+
+        The old ``ratio >= min_numeric_ratio`` check has been removed.
+        It was intended to filter out sparse rows but it also penalises wide
+        tables where most columns are text dimension labels (e.g. 6 text cols
+        + 2 numeric cols → ratio = 0.25 < 0.30 for every data row).  For
+        such tables the ratio check caused _find_data_start to skip ALL data
+        rows and fall back to row 1, misclassifying the first true data row
+        as a column-header row.  The two conditions above are sufficient:
+        the is_all_numeric_row gate handles the year-header case that the
+        ratio check was originally designed to address.
+        """
         for i in range(len(df)):
             row = df.iloc[i]
             non_empty = row.dropna()
@@ -353,21 +378,10 @@ class PhysicalFeatureExtractor:
                 continue
             numeric_count = sum(1 for v in non_empty if self._is_numeric(v))
 
-            # Check if all numerics are year-like (header, not data)
-            year_count = 0
-            for v in non_empty:
-                if self._is_numeric(v):
-                    try:
-                        n = float(str(v).strip().replace(",", ""))
-                        if 1900 <= n <= 2100 and n == int(n):
-                            year_count += 1
-                    except (ValueError, OverflowError):
-                        pass
-
-            is_year_only_row = numeric_count > 0 and year_count == numeric_count
-            ratio = numeric_count / len(non_empty)
-
-            if not is_year_only_row and ratio >= self.min_numeric_ratio and numeric_count >= 2:
+            # Gate 1: all-numeric rows have no text labels → header, not data.
+            is_all_numeric_row = (numeric_count == len(non_empty))
+            # Gate 2: at least two numeric values (rules out title/label rows).
+            if not is_all_numeric_row and numeric_count >= 2:
                 return i, i  # header_depth = rows before this
         return 1, 1
 
@@ -410,8 +424,32 @@ class PhysicalFeatureExtractor:
         return blanks
 
     @staticmethod
+    def _detect_left_dim_cols(col_dtypes: Dict[int, str]) -> int:
+        """
+        Return the index of the first numeric column, used as the boundary
+        for [ROW_DIM] / [COL_HEADER] tagging in header rows.
+
+        This value is consumed ONLY by ``_format_headers`` in SchemaEstimator
+        and TransformationGenerator, which tag header-row cells to help the
+        LLM distinguish row-level dimension labels from column header values.
+        It is NOT used in postfilter gates (those use raw numeric counts).
+
+        Assumption: in multi-row header tables (header_depth ≥ 2) the
+        leftmost columns are always text labels, so the first numeric column
+        is a reliable boundary.  When header_depth = 0 there are no header
+        rows to tag, so this value has no effect on LLM input regardless of
+        what it returns.
+        """
+        for j in sorted(col_dtypes.keys()):
+            if col_dtypes[j] == "numeric":
+                return max(j, 1)
+        return 1
+
+    @staticmethod
     def _is_numeric(val) -> bool:
-        if isinstance(val, (int, float)):
+        # Native Python ints/floats and numpy scalar types (np.int64, np.float64, etc.)
+        # numpy scalars are NOT subclasses of int/float in Python 3, so check both.
+        if isinstance(val, (int, float, np.integer, np.floating)):
             try:
                 return val == val  # False for NaN
             except Exception:
@@ -579,7 +617,7 @@ class IrregularityDetector:
         logger.info("Detecting irregularities (LLM call)...")
         irregularities = self._detect_irregularities(df, physical)
         irregularities = self._postfilter_irregularities(irregularities, physical)
-        labels = [ir["label"] for ir in irregularities]
+        labels = list(dict.fromkeys(ir["label"] for ir in irregularities))
         logger.info(f"Detected {len(irregularities)} irregularities: {labels}")
 
         return {
@@ -618,6 +656,38 @@ class IrregularityDetector:
                     f"inline_bilingual_candidate=False"
                 )
                 continue
+
+            # MULTI_LEVEL_HEADER and NESTED_COLUMN_GROUPS both require at
+            # least two physical header rows.  header_depth < 2 means there
+            # is zero or one header row — multi-row structure is impossible.
+            # The LLM often misreads semantic hierarchies in column names or
+            # data cells as structural multi-level headers when header_depth=0.
+            if label in ("MULTI_LEVEL_HEADER", "NESTED_COLUMN_GROUPS") and \
+                    physical.get("header_depth", 0) < 2:
+                logger.info(
+                    f"  [postfilter] Removed {label}: "
+                    f"header_depth={physical.get('header_depth', 0)} < 2"
+                )
+                continue
+
+            # AGGREGATE_COLUMNS requires at least three numeric columns:
+            # one aggregate column plus at least two component columns that
+            # it sums.  With fewer than three numeric columns in the table,
+            # a "col A = col B + col C" column-aggregation structure is
+            # structurally impossible.  This is a pure count — no assumption
+            # is made about which columns are dimensions vs values.
+            if label == "AGGREGATE_COLUMNS":
+                total_numeric = sum(
+                    1 for t in physical["column_dtype_profile"].values()
+                    if t == "numeric"
+                )
+                if total_numeric < 3:
+                    logger.info(
+                        f"  [postfilter] Removed {label}: "
+                        f"only {total_numeric} numeric column(s), "
+                        f"need ≥ 3 for column-level aggregation"
+                    )
+                    continue
 
             filtered.append(ir)
 
@@ -671,147 +741,25 @@ class IrregularityDetector:
 
 {taxonomy_text}
 
-=== FEW-SHOT EXAMPLES ===
-
---- Example 1 ---
-HEADERS:
-  Row 0: [0]="表3.1", [2]="2011年...按種族劃分..."
-  Row 1: [0]="Table 3.1", [2]="Ethnic minorities by ethnicity..."
-  Row 3: [3]="2011", [5]="2016", [7]="2021"
-  Row 4: [0]="種族\\nEthnicity", [3]="數目\\nNumber", [4]="百分比\\n%", [5]="數目\\nNumber", [6]="百分比\\n%"
-DATA:
-  Row 6: [0]="亞洲人（非華人）", [3]="365611", [4]="81", [5]="457188", [6]="78.2"
-  Row 7: [0]="Asian (other than Chinese)", (no numeric data)
-  Row 8: [0]="菲律賓人", [3]="180000", [4]="39.9"
-  Row 9: [0]="Filipino", (no numeric data)
-  ...
-  Row 41: [0]="All ethnic minorities[3]", [3]="451700", [4]="100"
-DETECTED:
-IRREGULARITY: METADATA_ROWS
-EVIDENCE: Rows 0-1 contain table title and number, not data
-DETAILS: Title in Chinese (row 0) and English (row 1)
-
-IRREGULARITY: MULTI_LEVEL_HEADER
-EVIDENCE: Row 3 has year labels (2011, 2016, 2021), Row 4 has sub-labels (Number, %). Together they form a 2-level header.
-DETAILS: Level 1 = year (2011, 2016, 2021), Level 2 = value type (Number, %)
-
-IRREGULARITY: INLINE_BILINGUAL
-EVIDENCE: Header cell [0]="種族\\nEthnicity" contains Chinese and English separated by newline
-DETAILS: Pattern appears in multiple header cells
-
-IRREGULARITY: WIDE_FORMAT
-EVIDENCE: Columns 3-8 encode year (2011, 2016, 2021) × value type (Number, %) as column headers
-DETAILS: 3 year groups × 2 value types = 6 value columns that should be unpivoted
-
-IRREGULARITY: NESTED_COLUMN_GROUPS
-EVIDENCE: Each year (2011, 2016, 2021) has two sub-columns (Number, %). Columns: 2011→[3,4], 2016→[5,6], 2021→[7,8]
-DETAILS: 2 nesting levels: year × value_type
-
-IRREGULARITY: BILINGUAL_ALTERNATING_ROWS
-EVIDENCE: Row 6 "亞洲人（非華人）" has data, Row 7 "Asian (other than Chinese)" has no numeric values. Pattern repeats for all ethnicities.
-DETAILS: Chinese rows contain numeric data, English rows are label-only
-
-IRREGULARITY: IMPLICIT_AGGREGATION_ROWS
-EVIDENCE: Row 41 "All ethnic minorities[3]" contains totals (451700, 100%)
-DETAILS: Summary of all ethnicity detail rows above
-
---- Example 2 ---
-HEADERS:
-  Row 0: [0]="Case Type", [3]="2019", [4]="2020", [5]="2021"
-DATA:
-  Row 1: [0]="Physical abuse - Male", [3]="120", [4]="135", [5]="142"
-  Row 2: [0]="Physical abuse - Female", [3]="89", [4]="95"
-  Row 3: [0]="Sexual abuse", [3]="45", [4]="52", [5]="58"
-DETECTED:
-IRREGULARITY: WIDE_FORMAT
-EVIDENCE: Columns 3-5 have years (2019, 2020, 2021) as headers
-DETAILS: Year dimension encoded as columns
-
-IRREGULARITY: EMBEDDED_DIMENSION_IN_COLUMN
-EVIDENCE: Column 0 values like "Physical abuse - Male" contain two dimensions separated by " - ". Not all rows have the delimiter (e.g., "Sexual abuse").
-DETAILS: Primary dimension = case_type, secondary = gender, delimiter = " - "
-
-HEADERS:
-  Row 0: [0]="Year", [1]="Report Status", [3]="Category", [4]="Category EN", [5]="Item", [6]="Item EN", [7]="Count"
-DATA:
-  Row 1: [0]="2005", [1]="N/A", [3]="Type of Abuse", [4]="Type of Abuse", [5]="Physical abuse", [6]="Physical abuse", [7]="390"
-  Row 2: [0]="2005", [1]="N/A", [3]="Type of Abuse", [5]="Psychological abuse", [7]="26"
-  ...
-  Row 10: [0]="2005", [1]="N/A", [3]="Type of Abuse and Sex", [5]="Physical abuse - Male", [7]="200"
-  Row 11: [0]="2005", [1]="N/A", [3]="Type of Abuse and Sex", [5]="Physical abuse - Female", [7]="190"
-  Row 12: [0]="2005", [1]="N/A", [3]="Type of Abuse and Sex", [5]="Psychological abuse - Male", [7]="15"
-DETECTED:
-IRREGULARITY: IMPLICIT_AGGREGATION_ROWS
-EVIDENCE: Category "Type of Abuse" has "Physical abuse = 390", while category "Type of Abuse and Sex" has "Physical abuse - Male = 200" + "Physical abuse - Female = 190" = 390. The first group is a coarser aggregation of the second group along the sex dimension.
-DETAILS: Cross-group aggregation — the "Type of Abuse" group is entirely redundant because every value can be derived by summing the male + female rows from "Type of Abuse and Sex"
-
-IRREGULARITY: EMBEDDED_DIMENSION_IN_COLUMN
-EVIDENCE: Column 5 values like "Physical abuse - Male" encode both abuse type and sex separated by " - "
-DETAILS: Delimiter " - ", primary = abuse type, secondary = sex
-
---- Example 3 (distinguishing INLINE_BILINGUAL from BILINGUAL_ALTERNATING_ROWS) ---
-HEADERS:
-  Row 0: [0]="Year", [1]="Status CN", [2]="Status EN", [3]="Category CN", [4]="Category EN", [5]="Item CN", [6]="Item EN", [7]="Count"
-DATA:
-  Row 1: [0]="2005", [1]="不適用", [3]="虐待長者性質", [4]="Type of Abuse", [5]="身體虐待", [6]="Physical abuse", [7]="390"
-  Row 2: [0]="2005", [1]="不適用", [3]="虐待長者性質", [4]="Type of Abuse", [5]="精神虐待", [6]="Psychological abuse", [7]="26"
-  Row 3: [0]="2005", [1]="不適用", [3]="虐待長者性質", [4]="Type of Abuse", [5]="疏忽照顧", [6]="Neglect", [7]="3"
-DETECTED:
-IRREGULARITY: INLINE_BILINGUAL
-EVIDENCE: Chinese and English labels appear side-by-side in paired columns: [3]="虐待長者性質" with [4]="Type of Abuse", [5]="身體虐待" with [6]="Physical abuse". Every row contains BOTH languages with numeric data.
-DETAILS: This is NOT BILINGUAL_ALTERNATING_ROWS because every row has data — there are no label-only rows. The bilingual content is organized in adjacent column pairs, not alternating rows.
-
---- Example 3 ---
-IRREGULARITIES:
-  INLINE_BILINGUAL: Chinese and English labels in adjacent columns (col 3/4, col 5/6)
-  EMBEDDED_DIMENSION_IN_COLUMN: Column 5/6 values like "Physical abuse - Male" encode abuse type + sex with " - "
-  IMPLICIT_AGGREGATION_ROWS: Category "Type of Abuse" is a coarser aggregation of "Type of Abuse and Sex" — the former has "Physical abuse = 390" while the latter has "Physical abuse - Male = 200" + "Physical abuse - Female = 190"
-  SPARSE_ROW_FILL: Year in column 0 written once per block, forward-fill needed
-GUIDANCE:
-  [EMBEDDED_DIMENSION_IN_COLUMN] Split compound labels into separate dimension columns. Rows without delimiter get NULL for secondary dimension.
-  [IMPLICIT_AGGREGATION_ROWS] Exclude the coarser category group entirely. Keep only the most granular observations.
-  [INLINE_BILINGUAL] Decide which language to keep, or split into two columns.
-  [SPARSE_ROW_FILL] Forward-fill before any other processing.
-HEADERS:
-  Row 0: [0]="Year", [1]="Report Status CN", [2]="Report Status EN", [3]="Category CN", [4]="Category EN", [5]="Item CN", [6]="Item EN", [7]="Count"
-DATA:
-  Row 1: [0]="2005", [1]="不適用", [3]="虐待長者性質", [4]="Type of Abuse", [5]="身體虐待", [6]="Physical abuse", [7]="390"
-  Row 2: [0]="2005", [3]="虐待長者性質", [5]="精神虐待", [6]="Psychological abuse", [7]="26"
-  Row 9: [0]="2005", [3]="虐待長者性質及受虐長者性別", [4]="Type of Abuse and Sex", [5]="身體虐待 - 男性", [6]="Physical abuse - Male", [7]="200"
-  Row 10: [0]="2005", [5]="精神虐待 - 男性", [6]="Psychological abuse - Male", [7]="15"
-  Row 17: [0]="2005", [5]="身體虐待 - 女性", [6]="Physical abuse - Female", [7]="190"
-  Row 25: [0]="2005", [3]="施虐者與受虐長者關係", [4]="Abuser Relationship", [5]="子", [6]="Son", [7]="57"
-  Row 37: [0]="2005", [3]="受虐長者居住地區", [4]="Residential District", [5]="中西區", [6]="Central and Western", [7]="19"
-SCHEMA:
-OBSERVATION: One case count for a specific year, report status, indicator group, item category, and optional sex breakdown
-
-TARGET_COLUMNS:
-- year (integer, dimension): Reporting year | source: column 0 (forward-filled)
-- report_status_cn (string, dimension): Report status in Chinese | source: column 1 (forward-filled)
-- report_status_en (string, dimension): Report status in English | source: column 2 (forward-filled)
-- indicator_group_cn (string, dimension): Indicator group in Chinese | source: column 3 (forward-filled)
-- indicator_group_en (string, dimension): Indicator group in English | source: column 4 (forward-filled)
-- item_cn (string, dimension): Item category in Chinese | source: column 5, primary part before " - " if delimiter present
-- item_en (string, dimension): Item category in English | source: column 6, primary part before " - " if delimiter present
-- sex (string, dimension): Sex extracted from embedded delimiter | source: columns 5/6, secondary part after " - "; NULL for rows without delimiter
-- count (integer, value): Number of cases | source: column 7
-
-ROW_ESTIMATE: 17 years × 3 non-redundant indicator groups × ~13 items average = 663
-
-EXCLUDE_ROWS: All rows where indicator_group is the coarser "虐待長者性質"/"Type of Abuse" — these are aggregates of the finer "虐待長者性質及受虐長者性別"/"Type of Abuse and Sex" group which fully decomposes the same items by sex
-EXCLUDE_COLUMNS: None
-
-SAMPLE_ROW: year=2005, report_status_cn=不適用, report_status_en=N/A, indicator_group_cn=虐待長者性質及受虐長者性別, indicator_group_en=Type of Abuse and Sex, item_cn=身體虐待, item_en=Physical abuse, sex=Male, count=200
-
 === MANDATORY CHECKLIST ===
 Before finishing, verify EACH of the following. Report any that apply:
+0. Look at ACTUAL COLUMN NAMES above. Ask: do these look like 
+   VARIABLE NAMES (e.g. "Category", "Item", "Count", "年份/Year") 
+   or DIMENSION VALUES (e.g. "2010", "2011", "Male", "Female")?
+   - If VARIABLE NAMES → columns are properly labeled, do NOT flag WIDE_FORMAT
+     unless you find a separate group of columns whose HEADERS are dimension values.
+   - If DIMENSION VALUES → those columns are wide-format value columns → WIDE_FORMAT.
 1. Do any label cells embed two dimensions in one value using a delimiter (e.g. " - ", " – ", "/", ":", "_", or any other separator)? If so, what is the exact delimiter? → EMBEDDED_DIMENSION_IN_COLUMN
 2. Are there category groups where one is entirely a coarser aggregation of another? If yes, name the SPECIFIC COLUMN and the EXACT coarser category value(s) that must be excluded (e.g. "column 3 value '虐待長者性質' is a coarser version of '虐待長者性質及受虐長者性別'"). → IMPLICIT_AGGREGATION_ROWS
-3. Are there rows with Total/Overall/合計 keywords? → IMPLICIT_AGGREGATION_ROWS
-4. Is "inline_bilingual_candidate" True in the PHYSICAL FEATURES above? If NO, do NOT flag INLINE_BILINGUAL. If YES, confirm that cells physically contain both CJK and Latin text mixed within the same cell (not just two separate columns with different languages). → INLINE_BILINGUAL
-5. Is "bilingual_row_candidate" True in the PHYSICAL FEATURES above? If NO, do NOT flag BILINGUAL_ALTERNATING_ROWS under any circumstances. If YES, confirm that the label-only rows are language translations of the preceding data rows (not an independent observation). → BILINGUAL_ALTERNATING_ROWS
-6. Are any dimension columns only filled at block starts? → SPARSE_ROW_FILL
-
+3. Is "inline_bilingual_candidate" True in the PHYSICAL FEATURES above? If NO, do NOT flag INLINE_BILINGUAL. If YES, confirm that cells physically contain both CJK and Latin text mixed within the same cell (not just two separate columns with different languages). → INLINE_BILINGUAL
+4. Is "bilingual_row_candidate" True in the PHYSICAL FEATURES above? If NO, do NOT flag BILINGUAL_ALTERNATING_ROWS under any circumstances. If YES, confirm that the label-only rows are language translations of the preceding data rows (not an independent observation). → BILINGUAL_ALTERNATING_ROWS
+5. Are any dimension columns only filled at block starts? → SPARSE_ROW_FILL
+6. If MULTI_LEVEL_HEADER is present: do the top-level header values 
+   repeat across multiple column groups (e.g., "Never married" spans 
+   cols 3-5, "Married" spans cols 6-8, "Widowed" spans cols 9-11)? 
+   If yes → NESTED_COLUMN_GROUPS. If each top-level value appears 
+   only once → MULTI_LEVEL_HEADER only.
+   
 === YOUR TASK ===
 
 PHYSICAL FEATURES:
@@ -886,8 +834,15 @@ Only report irregularities you have clear evidence for. Do not guess."""
         return "\n".join(lines)
 
     def _format_physical(self, physical: Dict[str, Any]) -> str:
+        col_names = physical.get("actual_column_names", [])
+        col_names_str = ", ".join(
+            f'[{j}]="{name}"' for j, name in enumerate(col_names)
+            if name and not name.startswith("Unnamed")
+        ) or "(unnamed columns)"
+
         parts = [
             f"Shape: {physical['shape']['rows']} rows × {physical['shape']['cols']} cols",
+            f"ACTUAL COLUMN NAMES: {col_names_str}",
             f"Header depth: {physical['header_depth']} rows before data",
             f"Data region: rows {physical['data_start_row']} to {physical['data_end_row']} ({physical['data_rows']} rows)",
             f"Column types: {physical['column_dtype_profile']}",

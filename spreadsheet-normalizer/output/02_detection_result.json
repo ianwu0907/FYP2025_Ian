@@ -4,10 +4,20 @@
       "rows": 1320,
       "cols": 8
     },
-    "header_depth": 1,
-    "data_start_row": 1,
+    "actual_column_names": [
+      "年份/Year",
+      "有否向警方舉報事件",
+      "Incident Being or Not Reported to Police",
+      "類別",
+      "Category",
+      "項目",
+      "Item",
+      "個案數字/No. of Cases"
+    ],
+    "header_depth": 0,
+    "data_start_row": 0,
     "data_end_row": 1319,
-    "data_rows": 1319,
+    "data_rows": 1320,
     "column_dtype_profile": {
       "0": "numeric",
       "1": "text",
@@ -20,39 +30,22 @@
     },
     "blank_rows_in_data": [],
     "bilingual_row_candidate": false,
-    "inline_bilingual_candidate": false
+    "inline_bilingual_candidate": false,
+    "left_header_cols_num": 1
   },
   "irregularities": [
     {
-      "label": "NESTED_COLUMN_GROUPS",
-      "evidence": "Values in Column 1 indicate '有' (Yes) and '沒有' (No) paired with the condition \"受虐長者居住地區\" resulting in two sub-columns for the condition.",
-      "details": "Data is grouped by presence or absence of abuse type for each region."
-    },
-    {
-      "label": "IMPLICIT_AGGREGATION_ROWS",
-      "evidence": "Rows labeled with '身體虐待' show aggregated values for each gender that can be derived from detailed male and female entries.",
-      "details": "These rows summarize data for different types of elder abuse aggregated by sex which creates redundancy."
-    },
-    {
-      "label": "WIDE_FORMAT",
-      "evidence": "Columns [0] to [2] for each year contain reporting status categorized as '有/沒有' corresponding to yes or no.",
-      "details": "Reporting status is presented as separate columns instead of using a single dimension."
-    },
-    {
       "label": "EMBEDDED_DIMENSION_IN_COLUMN",
-      "evidence": "Column [5] entries include \"身體虐待 - 男性\" and \"精神虐待 - 女性\", containing multiple dimensions separated by \"-\".",
-      "details": "Entries encode both the type of abuse and the gender dimension using a delimiter."
+      "evidence": "Column [5] headers contain values such as \"身體虐待 - 男性\", \"精神虐待 - 男性\", and similar cells throughout the sheet.",
+      "details": "The cell values in Column [5] encode both the type of abuse and the gender using \" - \" as a delimiter, thus embedding multiple dimensions in one column."
     },
     {
       "label": "SPARSE_ROW_FILL",
-      "evidence": "Values in Column [0] for year only appear initially, with subsequent rows remaining blank until the next year starts.",
-      "details": "Each block of data for a year is indicated by a single entry, with subsequent rows requiring forward fill for the year dimension."
+      "evidence": "Column [0] (\"年份/Year\") has values only at the beginning of each year block (e.g., 2005, 2006) and mostly empty in between.",
+      "details": "This implies the year values are filled at the start of each new section, and the blank cells indicate continuation of the same year for subsequent rows."
     }
   ],
   "labels": [
-    "NESTED_COLUMN_GROUPS",
-    "IMPLICIT_AGGREGATION_ROWS",
-    "WIDE_FORMAT",
     "EMBEDDED_DIMENSION_IN_COLUMN",
     "SPARSE_ROW_FILL"
   ]

@@ -1,84 +1,94 @@
 {
   "observation_unit": {
-    "description": "One count of elder abuse type for a specific year, reporting status, and gender.",
+    "description": "<one row in the tidy output represents the count of cases of elder abuse for a specific year, type of abuse, gender, and relationship to elder individuals>",
     "dimensions": [
       "year",
-      "reporting_status",
+      "report_to_police",
       "abuse_type",
-      "gender"
+      "gender",
+      "relationship_to_elder"
     ],
-    "example": "One count of elder abuse type for a specific year, reporting status, and gender."
+    "example": "<one row in the tidy output represents the count of cases of elder abuse for a specific year, type of abuse, gender, and relationship to elder individuals>"
   },
   "target_columns": [
     {
       "name": "year",
       "data_type": "integer",
-      "description": "Reporting year",
+      "description": "the year the data represents",
       "is_dimension": true,
       "nullable": false,
-      "source": "column 0 (forward-filled)"
+      "source": "Column [0]"
     },
     {
-      "name": "reporting_status",
+      "name": "report_to_police",
       "data_type": "string",
-      "description": "Reporting status (Yes/No)",
+      "description": "indicates whether the case was reported to police",
       "is_dimension": true,
       "nullable": false,
-      "source": "columns 1-2 (flattened into one dimension)"
+      "source": "Column [1]"
     },
     {
       "name": "abuse_type",
       "data_type": "string",
-      "description": "Type of elder abuse",
+      "description": "type of elder abuse categorization",
       "is_dimension": true,
       "nullable": false,
-      "source": "columns 3-4"
+      "source": "Column [5] (split into separate columns)"
     },
     {
       "name": "gender",
       "data_type": "string",
-      "description": "Gender related to the elder abuse",
+      "description": "gender of the elderly victim",
       "is_dimension": true,
       "nullable": false,
-      "source": "column 5, primary part before \" - \" if delimiter present"
+      "source": "Column [5] (extracted from the abuse_type)"
     },
     {
-      "name": "count",
+      "name": "relationship_to_elder",
+      "data_type": "string",
+      "description": "the relationship of the abuser to the elderly person",
+      "is_dimension": true,
+      "nullable": false,
+      "source": "Column [5] (specific for the relationship analysis)"
+    },
+    {
+      "name": "no_of_cases",
       "data_type": "integer",
-      "description": "Count of cases",
+      "description": "number of cases for that year and category",
       "is_dimension": false,
       "nullable": true,
-      "source": "column 6"
+      "source": "Column [7]"
     }
   ],
   "expected_output": {
-    "row_count_formula": "(12 years × 5 elder abuse types × 2 genders) + (12 years × (1 reporting status Yes + 1 reporting status No) × number of unique districts for each year) = 1440 + 12 × 17 ≈ 1440 + 204 = ~1644 (exact average to find unique values in the source may be adjusted)",
-    "row_count_estimate": 1440,
-    "column_count": 5
+    "row_count_formula": "(each year has approximately 9 categories × 3 possible relationships × 2 genders (Male and Female) = 54) × 19 years (2005-2023) = 1026",
+    "row_count_estimate": 1026,
+    "column_count": 6
   },
   "exclusions": {
     "exclude_rows": {
-      "description": "Aggregate rows with total counts or summaries across abuse types or genders (e.g., any rows labeled with sums or totals)",
+      "description": "Drop rows where abuse_type IN (<\"多種虐待\", \"未適用\", \"Total\">). Be extremely specific.",
       "criteria": [
-        "Aggregate rows with total counts or summaries across abuse types or genders (e.g., any rows labeled with sums or totals)"
+        "Drop rows where abuse_type IN (<\"多種虐待\", \"未適用\", \"Total\">). Be extremely specific."
       ]
     },
     "exclude_columns": {
-      "description": "None (all columns contribute dimensions or values needed)",
+      "description": "Remove Columns [2], [3], and [4] as they do not provide unique information needed for analysis.",
       "criteria": [
-        "None (all columns contribute dimensions or values needed)"
+        "Remove Columns [2], [3], and [4] as they do not provide unique information needed for analysis."
       ]
     }
   },
   "handling_special_cases": {},
   "validation_samples": [],
-  "schema_reasoning": "One count of elder abuse type for a specific year, reporting status, and gender.",
+  "schema_reasoning": "<one row in the tidy output represents the count of cases of elder abuse for a specific year, type of abuse, gender, and relationship to elder individuals>",
   "expected_output_columns": [
     "year",
-    "reporting_status",
+    "report_to_police",
     "abuse_type",
     "gender",
-    "count"
+    "relationship_to_elder",
+    "no_of_cases"
   ],
   "source_metadata": {
     "num_rows": 1320,

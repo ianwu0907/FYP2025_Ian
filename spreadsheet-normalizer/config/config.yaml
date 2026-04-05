@@ -31,7 +31,7 @@ estimator:
 
 # Transformation Generator Configuration (Enhanced)
 generator:
-  max_retries: 5
+  max_retries: 7
   temperature: 0.1
   max_completion_tokens: 128000
 
