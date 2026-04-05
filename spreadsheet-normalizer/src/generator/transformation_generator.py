@@ -701,7 +701,7 @@ Now write the transform function for THIS spreadsheet. Output ONLY code."""
     def _few_shot_melt() -> str:
         return """\
 === FEW-SHOT EXAMPLE ===
-⚠️  WARNING: The values below (row indices, column indices, column names)
+WARNING: The values below (row indices, column indices, column names)
 are SPECIFIC TO THIS EXAMPLE spreadsheet. For YOUR spreadsheet, derive
 all such values from the HEADERS, PHYSICAL FEATURES, and SOURCE DATA above.
 Do NOT copy any number or string literal from this example into your code.
