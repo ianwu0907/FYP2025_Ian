@@ -14,6 +14,7 @@ Usage:
 """
 
 import os
+import sys
 import json
 import argparse
 import re
@@ -23,6 +24,22 @@ from pathlib import Path
 import pandas as pd
 from openai import OpenAI
 from dotenv import load_dotenv
+
+# ── metrics imports ────────────────────────────────────────────────────────
+NORMALIZER_DIR = Path(__file__).parent.parent / "spreadsheet-normalizer"
+sys.path.insert(0, str(NORMALIZER_DIR))
+try:
+    from src.metrics.tidiness_metrics import compute_all_metrics, compare_metrics
+    TIDINESS_METRICS_AVAILABLE = True
+except ImportError:
+    TIDINESS_METRICS_AVAILABLE = False
+
+try:
+    from structure_metrics import TableQualityMetrics
+    STRUCTURE_METRICS_AVAILABLE = True
+    _tqm = TableQualityMetrics()
+except ImportError:
+    STRUCTURE_METRICS_AVAILABLE = False
 
 # ── paths ──────────────────────────────────────────────────────────────────
 BASE_DIR = Path(__file__).parent
@@ -109,6 +126,42 @@ def make_client(provider: str) -> tuple[OpenAI, str]:
 
 
 # ── table loading ──────────────────────────────────────────────────────────
+def compute_table_metrics(orig_path: Path, norm_path: Path) -> dict:
+    """Compute tidiness and structural metrics for original and normalized tables."""
+    result = {}
+    try:
+        orig_df = pd.read_excel(orig_path, dtype=str) if orig_path.suffix.lower() in (".xlsx", ".xls") else pd.read_csv(orig_path, dtype=str)
+        norm_df = pd.read_excel(norm_path, dtype=str) if norm_path.suffix.lower() in (".xlsx", ".xls") else pd.read_csv(norm_path, dtype=str)
+    except Exception as e:
+        return {"error": str(e)}
+
+    if TIDINESS_METRICS_AVAILABLE:
+        try:
+            before = compute_all_metrics(orig_df, label="BEFORE")
+            after = compute_all_metrics(norm_df, label="AFTER")
+            comparison = compare_metrics(before, after)
+            result["tidiness"] = {
+                "before": {k: v for k, v in before.items() if k != "shape"},
+                "after": {k: v for k, v in after.items() if k != "shape"},
+                "comparison": comparison,
+            }
+        except Exception as e:
+            result["tidiness_error"] = str(e)
+
+    if STRUCTURE_METRICS_AVAILABLE:
+        try:
+            before_s = _tqm.compute_structural(orig_df)
+            after_s = _tqm.compute_structural(norm_df)
+            result["structural"] = {
+                "before": {k: v for k, v in before_s.items() if k != "column_type_purity_detail"},
+                "after": {k: v for k, v in after_s.items() if k != "column_type_purity_detail"},
+            }
+        except Exception as e:
+            result["structural_error"] = str(e)
+
+    return result
+
+
 def load_table_as_text(path: Path) -> str:
     """Load a CSV or Excel file and return as CSV text for the LLM prompt."""
     try:
@@ -274,6 +327,7 @@ def run_evaluation(
 
     orig_table_texts: dict[str, str] = {}
     norm_table_texts: dict[str, str] = {}
+    metrics_cache: dict[str, dict] = {}
 
     results = []
     orig_correct = 0
@@ -289,6 +343,11 @@ def run_evaluation(
             orig_path, norm_path = get_table_paths(table_file, normalized_dir)
             orig_table_texts[table_file] = load_table_as_text(orig_path) if orig_path else None
             norm_table_texts[table_file] = load_table_as_text(norm_path) if norm_path else None
+            # Compute metrics once per table pair
+            if orig_path and norm_path:
+                metrics_cache[table_file] = compute_table_metrics(orig_path, norm_path)
+            else:
+                metrics_cache[table_file] = {}
             if orig_path is None:
                 print(f"  [WARN] original table not found: {table_file}")
             if norm_path is None:
@@ -328,7 +387,7 @@ def run_evaluation(
         if norm_ok:
             norm_correct += 1
 
-        results.append({
+        entry = {
             "id": qa_id,
             "question": question,
             "ground_truth": ground_truths,
@@ -337,7 +396,10 @@ def run_evaluation(
             "normalized_answer": norm_answer,
             "normalized_correct": norm_ok,
             "table_file": table_file,
-        })
+        }
+        if metrics_cache.get(table_file):
+            entry["metrics"] = metrics_cache[table_file]
+        results.append(entry)
 
         status = f"[{i:02d}/{len(qa_pairs)}] {qa_id}"
         orig_mark = "✓" if orig_ok else "✗"
@@ -358,6 +420,25 @@ def run_evaluation(
     print(f"  [cache] original: {orig_hits} hits, {orig_new} new  |  {norm_tag}: {norm_hits} hits, {norm_new} new")
 
     total = len(results)
+
+    # Aggregate tidiness metrics across all tables
+    tidiness_summary = {}
+    if TIDINESS_METRICS_AVAILABLE:
+        metric_keys = ["cell_coverage", "row_completeness_uniformity", "column_type_homogeneity",
+                       "data_row_ratio", "column_completeness_min", "header_uniqueness",
+                       "type_consistency", "substring_containment", "inter_column_nmi"]
+        for k in metric_keys:
+            before_vals = [r["metrics"]["tidiness"]["before"][k] for r in results
+                           if r.get("metrics", {}).get("tidiness", {}).get("before", {}).get(k) is not None]
+            after_vals = [r["metrics"]["tidiness"]["after"][k] for r in results
+                          if r.get("metrics", {}).get("tidiness", {}).get("after", {}).get(k) is not None]
+            if before_vals and after_vals:
+                tidiness_summary[k] = {
+                    "avg_before": round(sum(before_vals) / len(before_vals), 4),
+                    "avg_after": round(sum(after_vals) / len(after_vals), 4),
+                    "avg_delta": round(sum(after_vals) / len(after_vals) - sum(before_vals) / len(before_vals), 4),
+                }
+
     summary = {
         "total": total,
         "normalized_dir": str(normalized_dir),
@@ -365,6 +446,7 @@ def run_evaluation(
         "normalized_correct": norm_correct,
         "original_accuracy": round(orig_correct / total * 100, 1) if total else 0,
         "normalized_accuracy": round(norm_correct / total * 100, 1) if total else 0,
+        "tidiness_metrics_avg": tidiness_summary,
     }
 
     output = {
@@ -389,6 +471,13 @@ def run_evaluation(
     delta = summary["normalized_accuracy"] - summary["original_accuracy"]
     sign = "+" if delta >= 0 else ""
     print(f"Improvement: {sign}{delta:.1f}%")
+    if tidiness_summary:
+        print(f"\n── Tidiness Metrics (avg across {len(metrics_cache)} tables) ──")
+        print(f"  {'Metric':<35} {'Before':>7} {'After':>7} {'Delta':>7}")
+        print(f"  {'-'*58}")
+        for k, v in tidiness_summary.items():
+            sign_d = "+" if v['avg_delta'] >= 0 else ""
+            print(f"  {k:<35} {v['avg_before']:>7.4f} {v['avg_after']:>7.4f} {sign_d}{v['avg_delta']:>6.4f}")
     print(f"{'='*50}")
 
     return output
