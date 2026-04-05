@@ -1007,6 +1007,5177 @@
           }
         }
       ]
+    },
+    {
+      "table_id": "1059",
+      "pipeline_status": "success",
+      "pipeline_error": null,
+      "n_qa_pairs": 4,
+      "scores": {
+        "raw": {
+          "n": 4,
+          "execution_rate": 0.5,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.0
+            }
+          }
+        },
+        "pipeline": {
+          "n": 4,
+          "execution_rate": 1.0,
+          "accuracy": 1.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 1.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 1.0
+            }
+          }
+        }
+      },
+      "qa_pairs": [
+        {
+          "qtype": "lookup",
+          "_ref_dim": "type_of_behaviour",
+          "_ref_x": "indecent exposure",
+          "_ref_measure": "value",
+          "_filters": {
+            "type_of_behaviour": "indecent exposure",
+            "gender": "cisgender",
+            "measure": "percent"
+          },
+          "answer": 3.8,
+          "question": "Find the value value where type_of_behaviour is 'indecent exposure' and gender is 'cisgender' and measure is 'percent'.",
+          "results": {
+            "raw": {
+              "slots": {
+                "filters": {
+                  "type of behaviour": "indecent exposure",
+                  "cisgender": "percent"
+                },
+                "B": "cisgender"
+              },
+              "executed": false,
+              "result": null,
+              "error": "IndexError: single positional indexer is out-of-bounds",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "type_of_behaviour": "indecent exposure",
+                  "group": "cisgender",
+                  "measurement_type": "percent"
+                },
+                "B": "value"
+              },
+              "executed": true,
+              "result": 3.8,
+              "error": null,
+              "correct": true
+            }
+          }
+        },
+        {
+          "qtype": "lookup",
+          "_ref_dim": "type_of_behaviour",
+          "_ref_x": "changed username or blocked others because of harassment",
+          "_ref_measure": "value",
+          "_filters": {
+            "type_of_behaviour": "changed username or blocked others because of harassment",
+            "gender": "cisgender",
+            "measure": "percent"
+          },
+          "answer": 13.5,
+          "question": "Find the value value where type_of_behaviour is 'changed username or blocked others because of harassment' and gender is 'cisgender' and measure is 'percent'.",
+          "results": {
+            "raw": {
+              "slots": {
+                "filters": {
+                  "type of behaviour": "changed username or blocked others because of harassment",
+                  "cisgender": "percent"
+                },
+                "B": "cisgender"
+              },
+              "executed": false,
+              "result": null,
+              "error": "IndexError: single positional indexer is out-of-bounds",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "type_of_behaviour": "changed username or blocked others because of harassment",
+                  "group": "cisgender",
+                  "measurement_type": "percent"
+                },
+                "B": "value"
+              },
+              "executed": true,
+              "result": 13.5,
+              "error": null,
+              "correct": true
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "type_of_behaviour",
+          "_ref_x": "shut down or deleted an account because of harassment",
+          "_ref_measure": "value",
+          "answer": 10.3,
+          "question": "What is the total value across all records where type_of_behaviour is 'shut down or deleted an account because of harassment'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "type of behaviour",
+                "x": "shut down or deleted an account because of harassment",
+                "B": "cisgender"
+              },
+              "executed": true,
+              "result": 3.4,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "type_of_behaviour",
+                "x": "shut down or deleted an account because of harassment",
+                "B": "value"
+              },
+              "executed": true,
+              "result": 10.3,
+              "error": null,
+              "correct": true
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "type_of_behaviour",
+          "_ref_x": "threatening or aggressive emails or messages directed at you personally",
+          "_ref_measure": "value",
+          "answer": 118.1,
+          "question": "What is the total value across all records where type_of_behaviour is 'threatening or aggressive emails or messages directed at you personally'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "type of behaviour",
+                "x": "threatening or aggressive emails or messages directed at you personally",
+                "B": "cisgender"
+              },
+              "executed": true,
+              "result": 8.9,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "type_of_behaviour",
+                "x": "threatening or aggressive emails or messages directed at you personally",
+                "B": "value"
+              },
+              "executed": true,
+              "result": 118.1,
+              "error": null,
+              "correct": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "table_id": "1061",
+      "pipeline_status": "success",
+      "pipeline_error": null,
+      "n_qa_pairs": 4,
+      "scores": {
+        "raw": {
+          "n": 4,
+          "execution_rate": 0.5,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.0
+            }
+          }
+        },
+        "pipeline": {
+          "n": 4,
+          "execution_rate": 0.25,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 0.5,
+              "accuracy": 0.0
+            }
+          }
+        }
+      },
+      "qa_pairs": [
+        {
+          "qtype": "lookup",
+          "_ref_dim": "gender_group",
+          "_ref_x": "transgender",
+          "_ref_measure": "value",
+          "_filters": {
+            "self_rated_mental_health": "positive",
+            "gender_group": "transgender",
+            "statistic_type": "percent"
+          },
+          "answer": 34.1,
+          "question": "Find the value value where self_rated_mental_health is 'positive' and gender_group is 'transgender' and statistic_type is 'percent'.",
+          "results": {
+            "raw": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "lookup",
+          "_ref_dim": "gender_group",
+          "_ref_x": "transgender",
+          "_ref_measure": "value",
+          "_filters": {
+            "self_rated_mental_health": "mood disorder",
+            "gender_group": "transgender",
+            "statistic_type": "percent"
+          },
+          "answer": 39.9,
+          "question": "Find the value value where self_rated_mental_health is 'mood disorder' and gender_group is 'transgender' and statistic_type is 'percent'.",
+          "results": {
+            "raw": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "self_rated_mental_health",
+          "_ref_x": "negative",
+          "_ref_measure": "value",
+          "answer": 226.70000000000002,
+          "question": "What is the total value across all records where self_rated_mental_health is 'negative'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "indicator",
+                "x": "negative",
+                "B": "cisgender"
+              },
+              "executed": true,
+              "result": 11.3,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "self_rated_mental_health",
+                "x": "negative",
+                "B": "percent"
+              },
+              "executed": true,
+              "result": 65.4,
+              "error": null,
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "statistic_type",
+          "_ref_x": "to",
+          "_ref_measure": "value",
+          "answer": 577.1,
+          "question": "What is the total value across all records where statistic_type is 'to'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "Unnamed: 3",
+                "x": "to",
+                "B": "cisgender"
+              },
+              "executed": true,
+              "result": 0.0,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "table_id": "1065",
+      "pipeline_status": "success",
+      "pipeline_error": null,
+      "n_qa_pairs": 4,
+      "scores": {
+        "raw": {
+          "n": 4,
+          "execution_rate": 0.5,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.0
+            }
+          }
+        },
+        "pipeline": {
+          "n": 4,
+          "execution_rate": 0.5,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.0
+            }
+          }
+        }
+      },
+      "qa_pairs": [
+        {
+          "qtype": "lookup",
+          "_ref_dim": "type_of_reason",
+          "_ref_x": "financial abuse",
+          "_ref_measure": "region",
+          "_filters": {
+            "type_of_reason": "financial abuse",
+            "section": "abuse:",
+            "frequency": "23.0"
+          },
+          "answer": 85.0,
+          "question": "Find the region value where type_of_reason is 'financial abuse' and section is 'abuse:' and frequency is '23.0'.",
+          "results": {
+            "raw": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "lookup",
+          "_ref_dim": "type_of_reason",
+          "_ref_x": "physical abuse",
+          "_ref_measure": "frequency",
+          "_filters": {
+            "type_of_reason": "physical abuse",
+            "section": "protecting children from:",
+            "region": "77"
+          },
+          "answer": 11.0,
+          "question": "Find the frequency value where type_of_reason is 'physical abuse' and section is 'protecting children from:' and region is '77'.",
+          "results": {
+            "raw": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "type_of_reason",
+          "_ref_x": "other abuse",
+          "_ref_measure": "frequency",
+          "answer": 611.0,
+          "question": "What is the total frequency across all records where type_of_reason is 'other abuse'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "type of reason",
+                "x": "other abuse",
+                "B": "canada"
+              },
+              "executed": true,
+              "result": 523.0,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "type of reason",
+                "x": "other abuse",
+                "B": "canada"
+              },
+              "executed": true,
+              "result": 523.0,
+              "error": null,
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "region",
+          "_ref_x": "89",
+          "_ref_measure": "frequency",
+          "answer": 906.0,
+          "question": "What is the total frequency across all records where region is '89'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "northwest territories",
+                "x": "89",
+                "B": "canada"
+              },
+              "executed": true,
+              "result": 0.0,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "northwest territories",
+                "x": "89",
+                "B": "canada"
+              },
+              "executed": true,
+              "result": 0.0,
+              "error": null,
+              "correct": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "table_id": "1072",
+      "pipeline_status": "success",
+      "pipeline_error": null,
+      "n_qa_pairs": 4,
+      "scores": {
+        "raw": {
+          "n": 4,
+          "execution_rate": 1.0,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.0
+            }
+          }
+        },
+        "pipeline": {
+          "n": 4,
+          "execution_rate": 1.0,
+          "accuracy": 0.5,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 1.0
+            }
+          }
+        }
+      },
+      "qa_pairs": [
+        {
+          "qtype": "lookup",
+          "_ref_dim": "source_of_assistance",
+          "_ref_x": "family in same household",
+          "_ref_measure": "value",
+          "_filters": {
+            "source_of_assistance": "family in same household",
+            "user_type": "wheeled mobility device users",
+            "measure": "95% confidence interval to"
+          },
+          "answer": 67.3,
+          "question": "Find the value value where source_of_assistance is 'family in same household' and user_type is 'wheeled mobility device users' and measure is '95% confidence interval to'.",
+          "results": {
+            "raw": {
+              "slots": {
+                "filters": {
+                  "source of assistance": "family in same household",
+                  "wheeled mobility device users": "65.3"
+                },
+                "B": "Unnamed: 2"
+              },
+              "executed": true,
+              "result": 63.3,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "source_of_assistance": "family in same household",
+                  "user_status": "95% confidence interval"
+                },
+                "B": "percentage_value"
+              },
+              "executed": true,
+              "result": 63.3,
+              "error": null,
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "lookup",
+          "_ref_dim": "source_of_assistance",
+          "_ref_x": "paid organizations/individuals",
+          "_ref_measure": "value",
+          "_filters": {
+            "source_of_assistance": "paid organizations/individuals",
+            "user_type": "non-users of wheeled mobility device",
+            "measure": "95% confidence interval to"
+          },
+          "answer": 20.7,
+          "question": "Find the value value where source_of_assistance is 'paid organizations/individuals' and user_type is 'non-users of wheeled mobility device' and measure is '95% confidence interval to'.",
+          "results": {
+            "raw": {
+              "slots": {
+                "filters": {
+                  "source of assistance": "paid organizations/individuals",
+                  "non-users of wheeled mobility device": "20.4"
+                },
+                "B": "Unnamed: 3"
+              },
+              "executed": true,
+              "result": 28.2,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "source_of_assistance": "paid organizations/individuals",
+                  "user_status": "95% confidence interval"
+                },
+                "B": "percentage_value"
+              },
+              "executed": true,
+              "result": 25.8,
+              "error": null,
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "source_of_assistance",
+          "_ref_x": "paid organizations/individuals",
+          "_ref_measure": "value",
+          "answer": 142.0,
+          "question": "What is the total value across all records where source_of_assistance is 'paid organizations/individuals'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "source of assistance",
+                "x": "paid organizations/individuals",
+                "B": "wheeled mobility device users"
+              },
+              "executed": true,
+              "result": 27.0,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "source_of_assistance",
+                "x": "paid organizations/individuals",
+                "B": "percentage_value"
+              },
+              "executed": true,
+              "result": 142.0,
+              "error": null,
+              "correct": true
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "source_of_assistance",
+          "_ref_x": "unpaid organizations/individuals",
+          "_ref_measure": "value",
+          "answer": 139.3,
+          "question": "What is the total value across all records where source_of_assistance is 'unpaid organizations/individuals'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "source of assistance",
+                "x": "unpaid organizations/individuals",
+                "B": "wheeled mobility device users"
+              },
+              "executed": true,
+              "result": 35.4,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "source_of_assistance",
+                "x": "unpaid organizations/individuals",
+                "B": "percentage_value"
+              },
+              "executed": true,
+              "result": 139.3,
+              "error": null,
+              "correct": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "table_id": "1090",
+      "pipeline_status": "success",
+      "pipeline_error": null,
+      "n_qa_pairs": 4,
+      "scores": {
+        "raw": {
+          "n": 4,
+          "execution_rate": 0.25,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 0.5,
+              "accuracy": 0.0
+            }
+          }
+        },
+        "pipeline": {
+          "n": 4,
+          "execution_rate": 0.25,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 0.5,
+              "accuracy": 0.0
+            }
+          }
+        }
+      },
+      "qa_pairs": [
+        {
+          "qtype": "lookup",
+          "_ref_dim": "country",
+          "_ref_x": "united states",
+          "_ref_measure": "year",
+          "_filters": {
+            "country": "united states",
+            "age_group": "aged 25 to 44",
+            "education_level": "all",
+            "percent": "77.0"
+          },
+          "answer": 1997.0,
+          "question": "Find the year value where country is 'united states' and age_group is 'aged 25 to 44' and education_level is 'all' and percent is '77.0'.",
+          "results": {
+            "raw": {
+              "slots": {
+                "filters": {
+                  "Unnamed: 0": "united states",
+                  "all": "77.0"
+                },
+                "B": "Unnamed: 0"
+              },
+              "executed": false,
+              "result": null,
+              "error": "IndexError: single positional indexer is out-of-bounds",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "Unnamed: 0": "united states",
+                  "all": "77.0"
+                },
+                "B": "Unnamed: 0"
+              },
+              "executed": false,
+              "result": null,
+              "error": "IndexError: single positional indexer is out-of-bounds",
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "lookup",
+          "_ref_dim": "country",
+          "_ref_x": "canada",
+          "_ref_measure": "percent",
+          "_filters": {
+            "country": "canada",
+            "age_group": "aged 25 to 44",
+            "year": "2000",
+            "education_level": "college, trade or other postsecondary"
+          },
+          "answer": 82.5,
+          "question": "Find the percent value where country is 'canada' and age_group is 'aged 25 to 44' and year is '2000' and education_level is 'college, trade or other postsecondary'.",
+          "results": {
+            "raw": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "age_group",
+          "_ref_x": "aged 25 to 54",
+          "_ref_measure": "year",
+          "answer": 64152.0,
+          "question": "What is the total year across all records where age_group is 'aged 25 to 54'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "Unnamed: 0",
+                "x": "aged 25 to 54",
+                "B": "all"
+              },
+              "executed": true,
+              "result": 0.0,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "Unnamed: 0",
+                "x": "aged 25 to 54",
+                "B": "all"
+              },
+              "executed": true,
+              "result": 0.0,
+              "error": null,
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "education_level",
+          "_ref_x": "university degree",
+          "_ref_measure": "year",
+          "answer": 48114.0,
+          "question": "What is the total year across all records where education_level is 'university degree'?",
+          "results": {
+            "raw": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "table_id": "1110",
+      "pipeline_status": "success",
+      "pipeline_error": null,
+      "n_qa_pairs": 4,
+      "scores": {
+        "raw": {
+          "n": 4,
+          "execution_rate": 0.75,
+          "accuracy": 0.25,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.5,
+              "accuracy": 0.5
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.0
+            }
+          }
+        },
+        "pipeline": {
+          "n": 4,
+          "execution_rate": 0.75,
+          "accuracy": 0.75,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.5,
+              "accuracy": 0.5
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 1.0
+            }
+          }
+        }
+      },
+      "qa_pairs": [
+        {
+          "qtype": "lookup",
+          "_ref_dim": "province_territory",
+          "_ref_x": "nova scotia",
+          "_ref_measure": "value",
+          "_filters": {
+            "province_territory": "nova scotia",
+            "measurement_type": "average"
+          },
+          "answer": -17.9,
+          "question": "Find the value value where province_territory is 'nova scotia' and measurement_type is 'average'.",
+          "results": {
+            "raw": {
+              "slots": {
+                "filters": {
+                  "province/territory": "nova scotia"
+                },
+                "B": "average"
+              },
+              "executed": true,
+              "result": -17.9,
+              "error": null,
+              "correct": true
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "province_territory": "nova scotia",
+                  "measurement_type": "average"
+                },
+                "B": "measurement_value"
+              },
+              "executed": true,
+              "result": -17.9,
+              "error": null,
+              "correct": true
+            }
+          }
+        },
+        {
+          "qtype": "lookup",
+          "_ref_dim": "province_territory",
+          "_ref_x": "manitoba",
+          "_ref_measure": "value",
+          "_filters": {
+            "province_territory": "manitoba",
+            "measurement_type": "standard deviation"
+          },
+          "answer": 4.0,
+          "question": "Find the value value where province_territory is 'manitoba' and measurement_type is 'standard deviation'.",
+          "results": {
+            "raw": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "province_territory",
+          "_ref_x": "northwest territories",
+          "_ref_measure": "value",
+          "answer": -4.5,
+          "question": "What is the total value across all records where province_territory is 'northwest territories'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "province/territory",
+                "x": "northwest territories",
+                "B": "average"
+              },
+              "executed": true,
+              "result": -9.6,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "province_territory",
+                "x": "northwest territories",
+                "B": "measurement_value"
+              },
+              "executed": true,
+              "result": -4.5,
+              "error": null,
+              "correct": true
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "province_territory",
+          "_ref_x": "nova scotia",
+          "_ref_measure": "value",
+          "answer": 10.3,
+          "question": "What is the total value across all records where province_territory is 'nova scotia'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "province/territory",
+                "x": "nova scotia",
+                "B": "average"
+              },
+              "executed": true,
+              "result": -17.9,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "province_territory",
+                "x": "nova scotia",
+                "B": "measurement_value"
+              },
+              "executed": true,
+              "result": 10.3,
+              "error": null,
+              "correct": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "table_id": "1117",
+      "pipeline_status": "success",
+      "pipeline_error": null,
+      "n_qa_pairs": 4,
+      "scores": {
+        "raw": {
+          "n": 4,
+          "execution_rate": 0.5,
+          "accuracy": 0.25,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.5
+            }
+          }
+        },
+        "pipeline": {
+          "n": 4,
+          "execution_rate": 0.25,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 0.5,
+              "accuracy": 0.0
+            }
+          }
+        }
+      },
+      "qa_pairs": [
+        {
+          "qtype": "lookup",
+          "_ref_dim": "region",
+          "_ref_x": "canada",
+          "_ref_measure": "value",
+          "_filters": {
+            "region": "canada",
+            "age_group": "70 years and older",
+            "cohort_type": "linked cctlp tumour cohort",
+            "metric": "percent"
+          },
+          "answer": 11.1,
+          "question": "Find the value value where region is 'canada' and age_group is '70 years and older' and cohort_type is 'linked cctlp tumour cohort' and metric is 'percent'.",
+          "results": {
+            "raw": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "province": "canada",
+                  "age_group": "percent",
+                  "surgical_intervention": "linked cctlp tumour cohort"
+                },
+                "B": "percent"
+              },
+              "executed": false,
+              "result": null,
+              "error": "IndexError: single positional indexer is out-of-bounds",
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "lookup",
+          "_ref_dim": "region",
+          "_ref_x": "alberta",
+          "_ref_measure": "value",
+          "_filters": {
+            "region": "alberta",
+            "age_group": "70 years and older",
+            "cohort_type": "linked cctlp tumour cohort",
+            "metric": "percent"
+          },
+          "answer": 14.2,
+          "question": "Find the value value where region is 'alberta' and age_group is '70 years and older' and cohort_type is 'linked cctlp tumour cohort' and metric is 'percent'.",
+          "results": {
+            "raw": {
+              "slots": {
+                "filters": {
+                  "Unnamed: 0": "alberta",
+                  "19 to 49 years": "linked cctlp tumour cohort",
+                  "Unnamed: 3": "percent",
+                  "70 years and older": "number"
+                },
+                "B": "Unnamed: 9"
+              },
+              "executed": false,
+              "result": null,
+              "error": "IndexError: single positional indexer is out-of-bounds",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "province": "alberta",
+                  "age_group": "percent",
+                  "surgical_intervention": "linked cctlp tumour cohort"
+                },
+                "B": "percent"
+              },
+              "executed": false,
+              "result": null,
+              "error": "IndexError: single positional indexer is out-of-bounds",
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "region",
+          "_ref_x": "nunavut",
+          "_ref_measure": "value",
+          "answer": 0.0,
+          "question": "What is the total value across all records where region is 'nunavut'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "Unnamed: 0",
+                "x": "nunavut",
+                "B": "Unnamed: 9"
+              },
+              "executed": true,
+              "result": 0.0,
+              "error": null,
+              "correct": true
+            },
+            "pipeline": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "metric",
+          "_ref_x": "percent",
+          "_ref_measure": "value",
+          "answer": 1123.9,
+          "question": "What is the total value across all records where metric is 'percent'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "Unnamed: 3",
+                "x": "percent",
+                "B": "Unnamed: 9"
+              },
+              "executed": true,
+              "result": 0.0,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "age_group",
+                "x": "percent",
+                "B": "percent"
+              },
+              "executed": true,
+              "result": 1013.3,
+              "error": null,
+              "correct": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "table_id": "1118",
+      "pipeline_status": "success",
+      "pipeline_error": null,
+      "n_qa_pairs": 4,
+      "scores": {
+        "raw": {
+          "n": 4,
+          "execution_rate": 0.25,
+          "accuracy": 0.25,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.5,
+              "accuracy": 0.5
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            }
+          }
+        },
+        "pipeline": {
+          "n": 4,
+          "execution_rate": 0.25,
+          "accuracy": 0.25,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.5,
+              "accuracy": 0.5
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            }
+          }
+        }
+      },
+      "qa_pairs": [
+        {
+          "qtype": "lookup",
+          "_ref_dim": "linked_cctlp_tumour_cohort",
+          "_ref_x": "prince edward island",
+          "_ref_measure": "value",
+          "_filters": {
+            "linked_cctlp_tumour_cohort": "prince edward island",
+            "measure": "linked cctlp tumour cohort"
+          },
+          "answer": 360.0,
+          "question": "Find the value value where linked_cctlp_tumour_cohort is 'prince edward island' and measure is 'linked cctlp tumour cohort'.",
+          "results": {
+            "raw": {
+              "slots": {
+                "filters": {
+                  "Unnamed: 0": "prince edward island",
+                  "linked cctlp tumour cohort": "360"
+                },
+                "B": "linked cctlp tumour cohort"
+              },
+              "executed": true,
+              "result": 360.0,
+              "error": null,
+              "correct": true
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "Unnamed: 0": "prince edward island",
+                  "linked cctlp tumour cohort": "360"
+                },
+                "B": "linked cctlp tumour cohort"
+              },
+              "executed": true,
+              "result": 360.0,
+              "error": null,
+              "correct": true
+            }
+          }
+        },
+        {
+          "qtype": "lookup",
+          "_ref_dim": "linked_cctlp_tumour_cohort",
+          "_ref_x": "nova scotia",
+          "_ref_measure": "value",
+          "_filters": {
+            "linked_cctlp_tumour_cohort": "nova scotia",
+            "measure": "Unnamed: 3"
+          },
+          "answer": 20.0,
+          "question": "Find the value value where linked_cctlp_tumour_cohort is 'nova scotia' and measure is 'Unnamed: 3'.",
+          "results": {
+            "raw": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "linked_cctlp_tumour_cohort",
+          "_ref_x": "newfoundland and labrador",
+          "_ref_measure": "value",
+          "answer": 1455.6,
+          "question": "What is the total value across all records where linked_cctlp_tumour_cohort is 'newfoundland and labrador'?",
+          "results": {
+            "raw": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "linked_cctlp_tumour_cohort",
+          "_ref_x": "nova scotia",
+          "_ref_measure": "value",
+          "answer": 3235.0,
+          "question": "What is the total value across all records where linked_cctlp_tumour_cohort is 'nova scotia'?",
+          "results": {
+            "raw": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "table_id": "1123",
+      "pipeline_status": "success",
+      "pipeline_error": null,
+      "n_qa_pairs": 4,
+      "scores": {
+        "raw": {
+          "n": 4,
+          "execution_rate": 0.5,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.0
+            }
+          }
+        },
+        "pipeline": {
+          "n": 4,
+          "execution_rate": 0.5,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.0
+            }
+          }
+        }
+      },
+      "qa_pairs": [
+        {
+          "qtype": "lookup",
+          "_ref_dim": "region",
+          "_ref_x": "newfoundland and labrador",
+          "_ref_measure": "value",
+          "_filters": {
+            "region": "newfoundland and labrador",
+            "cohort": "tumours with one or more surgical intervention",
+            "metric": "number",
+            "age_range": "50 to 69 years"
+          },
+          "answer": 145.0,
+          "question": "Find the value value where region is 'newfoundland and labrador' and cohort is 'tumours with one or more surgical intervention' and metric is 'number' and age_range is '50 to 69 years'.",
+          "results": {
+            "raw": {
+              "slots": {
+                "filters": {
+                  "Unnamed: 0": "newfoundland and labrador",
+                  "Unnamed: 2": "tumours with one or more surgical intervention",
+                  "50 to 69 years": "number"
+                },
+                "B": "50 to 69 years"
+              },
+              "executed": false,
+              "result": null,
+              "error": "IndexError: single positional indexer is out-of-bounds",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "Unnamed: 0": "newfoundland and labrador",
+                  "Unnamed: 2": "tumours with one or more surgical intervention",
+                  "19 to 49 years": "number",
+                  "50 to 69 years": "number"
+                },
+                "B": "50 to 69 years"
+              },
+              "executed": false,
+              "result": null,
+              "error": "IndexError: single positional indexer is out-of-bounds",
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "lookup",
+          "_ref_dim": "region",
+          "_ref_x": "saskatchewan",
+          "_ref_measure": "value",
+          "_filters": {
+            "region": "saskatchewan",
+            "cohort": "tumours with one or more surgical intervention",
+            "metric": "percent",
+            "age_range": "70 years and older"
+          },
+          "answer": 80.0,
+          "question": "Find the value value where region is 'saskatchewan' and cohort is 'tumours with one or more surgical intervention' and metric is 'percent' and age_range is '70 years and older'.",
+          "results": {
+            "raw": {
+              "slots": {
+                "filters": {
+                  "Unnamed: 0": "saskatchewan",
+                  "Unnamed: 2": "tumours with one or more surgical intervention",
+                  "Unnamed: 3": "percent",
+                  "70 years and older": "linked cctlp tumour cohort"
+                },
+                "B": "Unnamed: 9"
+              },
+              "executed": false,
+              "result": null,
+              "error": "IndexError: single positional indexer is out-of-bounds",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "Unnamed: 0": "saskatchewan",
+                  "Unnamed: 2": "tumours with one or more surgical intervention",
+                  "Unnamed: 3": "percent",
+                  "70 years and older": "linked cctlp tumour cohort"
+                },
+                "B": "Unnamed: 9"
+              },
+              "executed": false,
+              "result": null,
+              "error": "IndexError: single positional indexer is out-of-bounds",
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "region",
+          "_ref_x": "ontario",
+          "_ref_measure": "value",
+          "answer": 1817.0,
+          "question": "What is the total value across all records where region is 'ontario'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "Unnamed: 0",
+                "x": "ontario",
+                "B": "19 to 49 years"
+              },
+              "executed": true,
+              "result": 0.0,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "Unnamed: 0",
+                "x": "ontario",
+                "B": "19 to 49 years"
+              },
+              "executed": true,
+              "result": 0.0,
+              "error": null,
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "age_range",
+          "_ref_x": "70 years and older",
+          "_ref_measure": "value",
+          "answer": 3397.0,
+          "question": "What is the total value across all records where age_range is '70 years and older'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "Unnamed: 0",
+                "x": "canada",
+                "B": "70 years and older"
+              },
+              "executed": true,
+              "result": 0.0,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "Unnamed: 0",
+                "x": "canada",
+                "B": "70 years and older"
+              },
+              "executed": true,
+              "result": 0.0,
+              "error": null,
+              "correct": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "table_id": "1153",
+      "pipeline_status": "success",
+      "pipeline_error": null,
+      "n_qa_pairs": 4,
+      "scores": {
+        "raw": {
+          "n": 4,
+          "execution_rate": 0.5,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.0
+            }
+          }
+        },
+        "pipeline": {
+          "n": 4,
+          "execution_rate": 0.5,
+          "accuracy": 0.5,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 1.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            }
+          }
+        }
+      },
+      "qa_pairs": [
+        {
+          "qtype": "lookup",
+          "_ref_dim": "demographic_category",
+          "_ref_x": "15 to 24 years",
+          "_ref_measure": "year",
+          "_filters": {
+            "demographic_category": "15 to 24 years",
+            "activity_type": "people who saw their friends a few times or more a week",
+            "percentage": "73.0"
+          },
+          "answer": 2013.0,
+          "question": "Find the year value where demographic_category is '15 to 24 years' and activity_type is 'people who saw their friends a few times or more a week' and percentage is '73.0'.",
+          "results": {
+            "raw": {
+              "slots": {
+                "filters": {
+                  "Unnamed: 0": "15 to 24 years",
+                  "people who saw their friends a few times or more a week": "percentage"
+                },
+                "B": "Unnamed: 3"
+              },
+              "executed": false,
+              "result": null,
+              "error": "IndexError: single positional indexer is out-of-bounds",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "age_group": "15 to 24 years",
+                  "province": "women",
+                  "percentage": "73"
+                },
+                "B": "year"
+              },
+              "executed": true,
+              "result": 2013.0,
+              "error": null,
+              "correct": true
+            }
+          }
+        },
+        {
+          "qtype": "lookup",
+          "_ref_dim": "demographic_category",
+          "_ref_x": "prince edward island",
+          "_ref_measure": "percentage",
+          "_filters": {
+            "demographic_category": "prince edward island",
+            "year": "2008",
+            "activity_type": "people who saw their friends a few times or more a week"
+          },
+          "answer": 60.0,
+          "question": "Find the percentage value where demographic_category is 'prince edward island' and year is '2008' and activity_type is 'people who saw their friends a few times or more a week'.",
+          "results": {
+            "raw": {
+              "slots": {
+                "filters": {
+                  "Unnamed: 0": "prince edward island",
+                  "Unnamed: 2": "2008",
+                  "people who saw their friends a few times or more a week": "percentage"
+                },
+                "B": "people who saw their friends a few times or more a week"
+              },
+              "executed": false,
+              "result": null,
+              "error": "IndexError: single positional indexer is out-of-bounds",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "province": "prince edward island",
+                  "year": "2008",
+                  "age_group": "65 to 74 years"
+                },
+                "B": "percentage"
+              },
+              "executed": true,
+              "result": 60.0,
+              "error": null,
+              "correct": true
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "demographic_category",
+          "_ref_x": "manitoba",
+          "_ref_measure": "year",
+          "answer": 12048.0,
+          "question": "What is the total year across all records where demographic_category is 'manitoba'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "Unnamed: 0",
+                "x": "manitoba",
+                "B": "people who saw their friends a few times or more a week"
+              },
+              "executed": true,
+              "result": 59.0,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "activity_type",
+          "_ref_x": "people who saw their friends a few times or more a week",
+          "_ref_measure": "year",
+          "answer": 120480.0,
+          "question": "What is the total year across all records where activity_type is 'people who saw their friends a few times or more a week'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "people who saw their friends a few times or more a week",
+                "x": "2003",
+                "B": "Unnamed: 2"
+              },
+              "executed": true,
+              "result": 2008.0,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "table_id": "1188",
+      "pipeline_status": "success",
+      "pipeline_error": null,
+      "n_qa_pairs": 4,
+      "scores": {
+        "raw": {
+          "n": 4,
+          "execution_rate": 1.0,
+          "accuracy": 0.25,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.5
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.0
+            }
+          }
+        },
+        "pipeline": {
+          "n": 4,
+          "execution_rate": 1.0,
+          "accuracy": 0.25,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.5
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.0
+            }
+          }
+        }
+      },
+      "qa_pairs": [
+        {
+          "qtype": "lookup",
+          "_ref_dim": "flow",
+          "_ref_x": "actual employer social contributions",
+          "_ref_measure": "amount",
+          "_filters": {
+            "flow": "actual employer social contributions",
+            "sector": "non-financial corporations sector"
+          },
+          "answer": -25.0,
+          "question": "Find the amount value where flow is 'actual employer social contributions' and sector is 'non-financial corporations sector'.",
+          "results": {
+            "raw": {
+              "slots": {
+                "filters": {
+                  "flow": "actual employer social contributions",
+                  "non-financial corporations sector": "-25"
+                },
+                "B": "non-financial corporations sector"
+              },
+              "executed": true,
+              "result": -25.0,
+              "error": null,
+              "correct": true
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "flow_type": "actual employer social contributions",
+                  "non_financial_corporations_sector": "-25"
+                },
+                "B": "non_financial_corporations_sector"
+              },
+              "executed": true,
+              "result": -25.0,
+              "error": null,
+              "correct": true
+            }
+          }
+        },
+        {
+          "qtype": "lookup",
+          "_ref_dim": "flow",
+          "_ref_x": "change in pension entitlements",
+          "_ref_measure": "amount",
+          "_filters": {
+            "flow": "change in pension entitlements",
+            "sector": "household sector"
+          },
+          "answer": 55.0,
+          "question": "Find the amount value where flow is 'change in pension entitlements' and sector is 'household sector'.",
+          "results": {
+            "raw": {
+              "slots": {
+                "filters": {
+                  "flow": "change in pension entitlements",
+                  "household sector": "55"
+                },
+                "B": "financial corporations sector"
+              },
+              "executed": true,
+              "result": -55.0,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "flow_type": "change in pension entitlements",
+                  "household_sector": "55"
+                },
+                "B": "non_financial_corporations_sector"
+              },
+              "executed": true,
+              "result": -25.0,
+              "error": null,
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "flow",
+          "_ref_x": "imputed employer social contributions",
+          "_ref_measure": "amount",
+          "answer": 0.0,
+          "question": "What is the total amount across all records where flow is 'imputed employer social contributions'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "flow",
+                "x": "imputed employer social contributions",
+                "B": "non-financial corporations sector"
+              },
+              "executed": true,
+              "result": -25.0,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "flow_type",
+                "x": "imputed employer social contributions",
+                "B": "non_financial_corporations_sector"
+              },
+              "executed": true,
+              "result": -25.0,
+              "error": null,
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "sector",
+          "_ref_x": "non-financial corporations sector",
+          "_ref_measure": "amount",
+          "answer": -50.0,
+          "question": "What is the total amount across all records where sector is 'non-financial corporations sector'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "non-financial corporations sector",
+                "x": "-25",
+                "B": "flow"
+              },
+              "executed": true,
+              "result": 0.0,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "non_financial_corporations_sector",
+                "x": "-25",
+                "B": "flow_type"
+              },
+              "executed": true,
+              "result": 0.0,
+              "error": null,
+              "correct": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "table_id": "1191",
+      "pipeline_status": "success",
+      "pipeline_error": null,
+      "n_qa_pairs": 4,
+      "scores": {
+        "raw": {
+          "n": 4,
+          "execution_rate": 0.5,
+          "accuracy": 0.25,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.5,
+              "accuracy": 0.5
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 0.5,
+              "accuracy": 0.0
+            }
+          }
+        },
+        "pipeline": {
+          "n": 4,
+          "execution_rate": 1.0,
+          "accuracy": 1.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 1.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 1.0
+            }
+          }
+        }
+      },
+      "qa_pairs": [
+        {
+          "qtype": "lookup",
+          "_ref_dim": "province_or_territory",
+          "_ref_x": "new brunswick",
+          "_ref_measure": "value",
+          "_filters": {
+            "province_or_territory": "new brunswick",
+            "estimate_type": "revised estimate"
+          },
+          "answer": 2.03,
+          "question": "Find the value value where province_or_territory is 'new brunswick' and estimate_type is 'revised estimate'.",
+          "results": {
+            "raw": {
+              "slots": {
+                "filters": {
+                  "province or territory": "new brunswick"
+                },
+                "B": "revised estimate of the average growth in real gross domestic product"
+              },
+              "executed": true,
+              "result": 2.03,
+              "error": null,
+              "correct": true
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "province_or_territory": "new brunswick",
+                  "estimate_type": "revised estimate of the average growth in real gross domestic product"
+                },
+                "B": "growth_rate"
+              },
+              "executed": true,
+              "result": 2.03,
+              "error": null,
+              "correct": true
+            }
+          }
+        },
+        {
+          "qtype": "lookup",
+          "_ref_dim": "province_or_territory",
+          "_ref_x": "quebec",
+          "_ref_measure": "value",
+          "_filters": {
+            "province_or_territory": "quebec",
+            "estimate_type": "average absolute revision"
+          },
+          "answer": 0.19,
+          "question": "Find the value value where province_or_territory is 'quebec' and estimate_type is 'average absolute revision'.",
+          "results": {
+            "raw": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "province_or_territory": "quebec",
+                  "estimate_type": "average absolute revision to real gross domestic product"
+                },
+                "B": "growth_rate"
+              },
+              "executed": true,
+              "result": 0.19,
+              "error": null,
+              "correct": true
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "province_or_territory",
+          "_ref_x": "nova scotia",
+          "_ref_measure": "value",
+          "answer": 4.15,
+          "question": "What is the total value across all records where province_or_territory is 'nova scotia'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "province or territory",
+                "x": "nova scotia",
+                "B": "revised estimate of the average growth in real gross domestic product"
+              },
+              "executed": true,
+              "result": 1.95,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "province_or_territory",
+                "x": "nova scotia",
+                "B": "growth_rate"
+              },
+              "executed": true,
+              "result": 4.15,
+              "error": null,
+              "correct": true
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "estimate_type",
+          "_ref_x": "revised estimate",
+          "_ref_measure": "value",
+          "answer": 34.629999999999995,
+          "question": "What is the total value across all records where estimate_type is 'revised estimate'?",
+          "results": {
+            "raw": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "estimate_type",
+                "x": "revised estimate of the average growth in real gross domestic product",
+                "B": "growth_rate"
+              },
+              "executed": true,
+              "result": 34.629999999999995,
+              "error": null,
+              "correct": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "table_id": "12",
+      "pipeline_status": "success",
+      "pipeline_error": null,
+      "n_qa_pairs": 3,
+      "scores": {
+        "raw": {
+          "n": 3,
+          "execution_rate": 0.3333,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 1,
+              "execution_rate": 1.0,
+              "accuracy": 0.0
+            }
+          }
+        },
+        "pipeline": {
+          "n": 3,
+          "execution_rate": 0.0,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 1,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            }
+          }
+        }
+      },
+      "qa_pairs": [
+        {
+          "qtype": "lookup",
+          "_ref_dim": "aboriginal_identity_categories",
+          "_ref_x": "aboriginal identities not included elsewhere",
+          "_ref_measure": "number",
+          "_filters": {
+            "aboriginal_identity_categories": "aboriginal identities not included elsewhere",
+            "population_type": "number",
+            "percent": "nan"
+          },
+          "answer": 255.0,
+          "question": "Find the number value where aboriginal_identity_categories is 'aboriginal identities not included elsewhere' and population_type is 'number' and percent is 'nan'.",
+          "results": {
+            "raw": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "lookup",
+          "_ref_dim": "aboriginal_identity_categories",
+          "_ref_x": "inuit",
+          "_ref_measure": "percent",
+          "_filters": {
+            "aboriginal_identity_categories": "inuit",
+            "population_type": "percent",
+            "number": "nan"
+          },
+          "answer": 0.7,
+          "question": "Find the percent value where aboriginal_identity_categories is 'inuit' and population_type is 'percent' and number is 'nan'.",
+          "results": {
+            "raw": {
+              "slots": {
+                "filters": {
+                  "aboriginal identity categories": "inuit",
+                  "agricultural population": "number",
+                  "agricultural population.1": "percent"
+                },
+                "B": "total population.1"
+              },
+              "executed": false,
+              "result": null,
+              "error": "IndexError: single positional indexer is out-of-bounds",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "population_type",
+          "_ref_x": "number",
+          "_ref_measure": "number",
+          "answer": 15765.0,
+          "question": "What is the total number across all records where population_type is 'number'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "agricultural population",
+                "x": "number",
+                "B": "total population"
+              },
+              "executed": true,
+              "result": 0.0,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "table_id": "1214",
+      "pipeline_status": "success",
+      "pipeline_error": null,
+      "n_qa_pairs": 4,
+      "scores": {
+        "raw": {
+          "n": 4,
+          "execution_rate": 0.75,
+          "accuracy": 0.25,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.5,
+              "accuracy": 0.5
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.0
+            }
+          }
+        },
+        "pipeline": {
+          "n": 4,
+          "execution_rate": 0.25,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 0.5,
+              "accuracy": 0.0
+            }
+          }
+        }
+      },
+      "qa_pairs": [
+        {
+          "qtype": "lookup",
+          "_ref_dim": "service_use_and_perceived_health_care_needs",
+          "_ref_x": "formal consultation",
+          "_ref_measure": "percentage",
+          "_filters": {
+            "service_use_and_perceived_health_care_needs": "formal consultation",
+            "disorder_category": "mood/anxiety disorder only",
+            "section": "in past 12 months:",
+            "confidence_interval_from": "54.9",
+            "confidence_interval_to": "63.4"
+          },
+          "answer": 59.2,
+          "question": "Find the percentage value where service_use_and_perceived_health_care_needs is 'formal consultation' and disorder_category is 'mood/anxiety disorder only' and section is 'in past 12 months:' and confidence_interval_from is '54.9' and confidence_interval_to is '63.4'.",
+          "results": {
+            "raw": {
+              "slots": {
+                "filters": {
+                  "service use and perceived health care needs": "formal consultation",
+                  "mood/anxiety disorder only": "59.2",
+                  "Unnamed: 5": "54.9",
+                  "Unnamed: 6": "63.4",
+                  "Unnamed: 2": "from",
+                  "Unnamed: 3": "to"
+                },
+                "B": "concurrent disorders"
+              },
+              "executed": false,
+              "result": null,
+              "error": "IndexError: single positional indexer is out-of-bounds",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "lookup",
+          "_ref_dim": "service_use_and_perceived_health_care_needs",
+          "_ref_x": "formal consultation",
+          "_ref_measure": "confidence_interval_to",
+          "_filters": {
+            "service_use_and_perceived_health_care_needs": "formal consultation",
+            "disorder_category": "substance use disorder only",
+            "section": "in past 12 months:",
+            "percentage": "16.2",
+            "confidence_interval_from": "12.8"
+          },
+          "answer": 20.2,
+          "question": "Find the confidence_interval_to value where service_use_and_perceived_health_care_needs is 'formal consultation' and disorder_category is 'substance use disorder only' and section is 'in past 12 months:' and percentage is '16.2' and confidence_interval_from is '12.8'.",
+          "results": {
+            "raw": {
+              "slots": {
+                "filters": {
+                  "service use and perceived health care needs": "formal consultation",
+                  "substance use disorder only": "16.2",
+                  "Unnamed: 8": "12.8"
+                },
+                "B": "Unnamed: 9"
+              },
+              "executed": true,
+              "result": 20.2,
+              "error": null,
+              "correct": true
+            },
+            "pipeline": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "service_use_and_perceived_health_care_needs",
+          "_ref_x": "none",
+          "_ref_measure": "confidence_interval_to",
+          "answer": 125.60000000000001,
+          "question": "What is the total confidence_interval_to across all records where service_use_and_perceived_health_care_needs is 'none'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "service use and perceived health care needs",
+                "x": "none",
+                "B": "concurrent disorders"
+              },
+              "executed": true,
+              "result": 12.0,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "service_use",
+                "x": "none",
+                "B": "confidence_interval_value"
+              },
+              "executed": true,
+              "result": 322.0,
+              "error": null,
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "section",
+          "_ref_x": "perceived health care needs",
+          "_ref_measure": "confidence_interval_to",
+          "answer": 341.6,
+          "question": "What is the total confidence_interval_to across all records where section is 'perceived health care needs'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "service use and perceived health care needs",
+                "x": "perceived health care needs",
+                "B": "Unnamed: 2"
+              },
+              "executed": true,
+              "result": 0.0,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "table_id": "1241",
+      "pipeline_status": "success",
+      "pipeline_error": null,
+      "n_qa_pairs": 4,
+      "scores": {
+        "raw": {
+          "n": 4,
+          "execution_rate": 0.5,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.0
+            }
+          }
+        },
+        "pipeline": {
+          "n": 4,
+          "execution_rate": 0.5,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.0
+            }
+          }
+        }
+      },
+      "qa_pairs": [
+        {
+          "qtype": "lookup",
+          "_ref_dim": "crime_type",
+          "_ref_x": "total",
+          "_ref_measure": "year",
+          "_filters": {
+            "crime_type": "total",
+            "metric": "index",
+            "value": "90.6"
+          },
+          "answer": 2008.0,
+          "question": "Find the year value where crime_type is 'total' and metric is 'index' and value is '90.6'.",
+          "results": {
+            "raw": {
+              "slots": {
+                "filters": {
+                  "year": "2008",
+                  "total crime severity index": "index"
+                },
+                "B": "total crime severity index"
+              },
+              "executed": false,
+              "result": null,
+              "error": "IndexError: single positional indexer is out-of-bounds",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "year": "2008",
+                  "total crime severity index": "index"
+                },
+                "B": "total crime severity index"
+              },
+              "executed": false,
+              "result": null,
+              "error": "IndexError: single positional indexer is out-of-bounds",
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "lookup",
+          "_ref_dim": "crime_type",
+          "_ref_x": "non-violent",
+          "_ref_measure": "value",
+          "_filters": {
+            "year": "2012",
+            "crime_type": "non-violent",
+            "metric": "index"
+          },
+          "answer": 72.9,
+          "question": "Find the value value where year is '2012' and crime_type is 'non-violent' and metric is 'index'.",
+          "results": {
+            "raw": {
+              "slots": {
+                "filters": {
+                  "year": "2012",
+                  "total crime severity index": "index"
+                },
+                "B": "non-violent crime severity index"
+              },
+              "executed": false,
+              "result": null,
+              "error": "IndexError: single positional indexer is out-of-bounds",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "year": "2012",
+                  "total crime severity index": "index"
+                },
+                "B": "non-violent crime severity index"
+              },
+              "executed": false,
+              "result": null,
+              "error": "IndexError: single positional indexer is out-of-bounds",
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "crime_type",
+          "_ref_x": "non-violent",
+          "_ref_measure": "value",
+          "answer": 828.9,
+          "question": "What is the total value across all records where crime_type is 'non-violent'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "non-violent crime severity index",
+                "x": "index",
+                "B": "total crime severity index"
+              },
+              "executed": true,
+              "result": 0.0,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "non-violent crime severity index",
+                "x": "index",
+                "B": "total crime severity index"
+              },
+              "executed": true,
+              "result": 0.0,
+              "error": null,
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "crime_type",
+          "_ref_x": "total",
+          "_ref_measure": "value",
+          "answer": 851.2,
+          "question": "What is the total value across all records where crime_type is 'total'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "total crime severity index",
+                "x": "index",
+                "B": "total crime severity index"
+              },
+              "executed": true,
+              "result": 0.0,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "total crime severity index",
+                "x": "index",
+                "B": "total crime severity index"
+              },
+              "executed": true,
+              "result": 0.0,
+              "error": null,
+              "correct": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "table_id": "1243",
+      "pipeline_status": "success",
+      "pipeline_error": null,
+      "n_qa_pairs": 4,
+      "scores": {
+        "raw": {
+          "n": 4,
+          "execution_rate": 0.75,
+          "accuracy": 0.25,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.5,
+              "accuracy": 0.5
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.0
+            }
+          }
+        },
+        "pipeline": {
+          "n": 4,
+          "execution_rate": 1.0,
+          "accuracy": 0.5,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.5
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.5
+            }
+          }
+        }
+      },
+      "qa_pairs": [
+        {
+          "qtype": "lookup",
+          "_ref_dim": "province_and_territory",
+          "_ref_x": "quebec",
+          "_ref_measure": "crime_severity_index",
+          "_filters": {
+            "province_and_territory": "quebec",
+            "crime_type": "violent",
+            "percent_change_2015_to_2016": "-2"
+          },
+          "answer": 64.7,
+          "question": "Find the crime_severity_index value where province_and_territory is 'quebec' and crime_type is 'violent' and percent_change_2015_to_2016 is '-2'.",
+          "results": {
+            "raw": {
+              "slots": {
+                "filters": {
+                  "province and territory": "quebec",
+                  "Unnamed: 2": "-2"
+                },
+                "B": "violent crime severity index"
+              },
+              "executed": false,
+              "result": null,
+              "error": "IndexError: single positional indexer is out-of-bounds",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "province_and_territory": "quebec",
+                  "index_type": "violent crime severity index"
+                },
+                "B": "index_value"
+              },
+              "executed": true,
+              "result": 64.7,
+              "error": null,
+              "correct": true
+            }
+          }
+        },
+        {
+          "qtype": "lookup",
+          "_ref_dim": "province_and_territory",
+          "_ref_x": "prince edward island",
+          "_ref_measure": "percent_change_2015_to_2016",
+          "_filters": {
+            "province_and_territory": "prince edward island",
+            "crime_type": "non-violent",
+            "crime_severity_index": "53.3"
+          },
+          "answer": 1.0,
+          "question": "Find the percent_change_2015_to_2016 value where province_and_territory is 'prince edward island' and crime_type is 'non-violent' and crime_severity_index is '53.3'.",
+          "results": {
+            "raw": {
+              "slots": {
+                "filters": {
+                  "province and territory": "prince edward island",
+                  "non-violent crime severity index": "53.3"
+                },
+                "B": "Unnamed: 7"
+              },
+              "executed": true,
+              "result": 1.0,
+              "error": null,
+              "correct": true
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "province_and_territory": "prince edward island",
+                  "index_type": "non-violent crime severity index"
+                },
+                "B": "index_value"
+              },
+              "executed": true,
+              "result": 53.3,
+              "error": null,
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "province_and_territory",
+          "_ref_x": "nova scotia",
+          "_ref_measure": "crime_severity_index",
+          "answer": 126.8,
+          "question": "What is the total crime_severity_index across all records where province_and_territory is 'nova scotia'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "province and territory",
+                "x": "nova scotia",
+                "B": "total crime severity index"
+              },
+              "executed": true,
+              "result": 61.2,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "province_and_territory",
+                "x": "nova scotia",
+                "B": "index_value"
+              },
+              "executed": true,
+              "result": 188.0,
+              "error": null,
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "crime_type",
+          "_ref_x": "violent",
+          "_ref_measure": "crime_severity_index",
+          "answer": 1800.0,
+          "question": "What is the total crime_severity_index across all records where crime_type is 'violent'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "violent crime severity index",
+                "x": "index",
+                "B": "total crime severity index"
+              },
+              "executed": true,
+              "result": 0.0,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "index_type",
+                "x": "violent crime severity index",
+                "B": "index_value"
+              },
+              "executed": true,
+              "result": 1799.9999999999998,
+              "error": null,
+              "correct": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "table_id": "1250",
+      "pipeline_status": "success",
+      "pipeline_error": null,
+      "n_qa_pairs": 4,
+      "scores": {
+        "raw": {
+          "n": 4,
+          "execution_rate": 0.5,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.0
+            }
+          }
+        },
+        "pipeline": {
+          "n": 4,
+          "execution_rate": 0.75,
+          "accuracy": 0.5,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 1.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 0.5,
+              "accuracy": 0.0
+            }
+          }
+        }
+      },
+      "qa_pairs": [
+        {
+          "qtype": "lookup",
+          "_ref_dim": "census_metropolitan_area",
+          "_ref_x": "moncton",
+          "_ref_measure": "number",
+          "_filters": {
+            "census_metropolitan_area": "moncton",
+            "crime_type": "motor vehicle theft"
+          },
+          "answer": 147.0,
+          "question": "Find the number value where census_metropolitan_area is 'moncton' and crime_type is 'motor vehicle theft'.",
+          "results": {
+            "raw": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "census_metropolitan_area": "moncton",
+                  "crime_type": "motor vehicle theft"
+                },
+                "B": "rate"
+              },
+              "executed": true,
+              "result": 147.0,
+              "error": null,
+              "correct": true
+            }
+          }
+        },
+        {
+          "qtype": "lookup",
+          "_ref_dim": "census_metropolitan_area",
+          "_ref_x": "regina",
+          "_ref_measure": "number",
+          "_filters": {
+            "census_metropolitan_area": "regina",
+            "crime_type": "robbery"
+          },
+          "answer": 118.0,
+          "question": "Find the number value where census_metropolitan_area is 'regina' and crime_type is 'robbery'.",
+          "results": {
+            "raw": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "census_metropolitan_area": "regina",
+                  "crime_type": "robbery"
+                },
+                "B": "rate"
+              },
+              "executed": true,
+              "result": 118.0,
+              "error": null,
+              "correct": true
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "census_metropolitan_area",
+          "_ref_x": "ottawa",
+          "_ref_measure": "number",
+          "answer": 491.0,
+          "question": "What is the total number across all records where census_metropolitan_area is 'ottawa'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "census metropolitan area",
+                "x": "ottawa",
+                "B": "homicide"
+              },
+              "executed": true,
+              "result": 24.0,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "census_metropolitan_area",
+                "x": "ottawa",
+                "B": "rate"
+              },
+              "executed": true,
+              "result": 464.37,
+              "error": null,
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "crime_type",
+          "_ref_x": "sexual assault",
+          "_ref_measure": "number",
+          "answer": 1944.0,
+          "question": "What is the total number across all records where crime_type is 'sexual assault'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "sexual assault",
+                "x": "rate",
+                "B": "sexual assault"
+              },
+              "executed": true,
+              "result": 0.0,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "table_id": "1255",
+      "pipeline_status": "success",
+      "pipeline_error": null,
+      "n_qa_pairs": 4,
+      "scores": {
+        "raw": {
+          "n": 4,
+          "execution_rate": 0.5,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.0
+            }
+          }
+        },
+        "pipeline": {
+          "n": 4,
+          "execution_rate": 0.25,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 0.5,
+              "accuracy": 0.0
+            }
+          }
+        }
+      },
+      "qa_pairs": [
+        {
+          "qtype": "lookup",
+          "_ref_dim": "province_and_territory",
+          "_ref_x": "manitoba",
+          "_ref_measure": "index_value",
+          "_filters": {
+            "province_and_territory": "manitoba",
+            "crime_type": "youth violent crime severity index",
+            "year_range": "2015 to 2016",
+            "percent_change": "0.0"
+          },
+          "answer": 127.5,
+          "question": "Find the index_value value where province_and_territory is 'manitoba' and crime_type is 'youth violent crime severity index' and year_range is '2015 to 2016' and percent_change is '0.0'.",
+          "results": {
+            "raw": {
+              "slots": {
+                "filters": {
+                  "province and territory": "manitoba",
+                  "youth violent crime severity index": "127.5",
+                  "Unnamed: 2": "percent change 2015 to 2016"
+                },
+                "B": "youth violent crime severity index"
+              },
+              "executed": false,
+              "result": null,
+              "error": "IndexError: single positional indexer is out-of-bounds",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "lookup",
+          "_ref_dim": "province_and_territory",
+          "_ref_x": "nunavut",
+          "_ref_measure": "percent_change",
+          "_filters": {
+            "province_and_territory": "nunavut",
+            "crime_type": "youth violent crime severity index",
+            "year_range": "2015 to 2016",
+            "index_value": "191.0"
+          },
+          "answer": -17.0,
+          "question": "Find the percent_change value where province_and_territory is 'nunavut' and crime_type is 'youth violent crime severity index' and year_range is '2015 to 2016' and index_value is '191.0'.",
+          "results": {
+            "raw": {
+              "slots": {
+                "filters": {
+                  "province and territory": "nunavut",
+                  "youth violent crime severity index": "191",
+                  "Unnamed: 2": "percent change 2015 to 2016"
+                },
+                "B": "Unnamed: 5"
+              },
+              "executed": false,
+              "result": null,
+              "error": "IndexError: single positional indexer is out-of-bounds",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "province_and_territory",
+          "_ref_x": "nunavut",
+          "_ref_measure": "index_value",
+          "answer": 856.8,
+          "question": "What is the total index_value across all records where province_and_territory is 'nunavut'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "province and territory",
+                "x": "nunavut",
+                "B": "total youth crime severity index"
+              },
+              "executed": true,
+              "result": 296.3,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "province_and_territory",
+                "x": "nunavut",
+                "B": "severity_index"
+              },
+              "executed": true,
+              "result": 253.3,
+              "error": null,
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "year_range",
+          "_ref_x": "2015 to 2016",
+          "_ref_measure": "index_value",
+          "answer": 4323.9,
+          "question": "What is the total index_value across all records where year_range is '2015 to 2016'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "Unnamed: 2",
+                "x": "percent change 2015 to 2016",
+                "B": "total youth crime severity index"
+              },
+              "executed": true,
+              "result": 0.0,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "table_id": "1261",
+      "pipeline_status": "success",
+      "pipeline_error": null,
+      "n_qa_pairs": 4,
+      "scores": {
+        "raw": {
+          "n": 4,
+          "execution_rate": 0.5,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.0
+            }
+          }
+        },
+        "pipeline": {
+          "n": 4,
+          "execution_rate": 1.0,
+          "accuracy": 1.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 1.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 1.0
+            }
+          }
+        }
+      },
+      "qa_pairs": [
+        {
+          "qtype": "lookup",
+          "_ref_dim": "province_or_territory",
+          "_ref_x": "newfoundland and labrador",
+          "_ref_measure": "year",
+          "_filters": {
+            "province_or_territory": "newfoundland and labrador",
+            "value": "11531"
+          },
+          "answer": 2008.0,
+          "question": "Find the year value where province_or_territory is 'newfoundland and labrador' and value is '11531'.",
+          "results": {
+            "raw": {
+              "slots": {
+                "filters": {
+                  "province or territory": "newfoundland and labrador",
+                  "2008": "11,531"
+                },
+                "B": "2008"
+              },
+              "executed": false,
+              "result": null,
+              "error": "IndexError: single positional indexer is out-of-bounds",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "province_or_territory": "newfoundland and labrador",
+                  "population": "11531"
+                },
+                "B": "year"
+              },
+              "executed": true,
+              "result": 2008.0,
+              "error": null,
+              "correct": true
+            }
+          }
+        },
+        {
+          "qtype": "lookup",
+          "_ref_dim": "province_or_territory",
+          "_ref_x": "new brunswick",
+          "_ref_measure": "value",
+          "_filters": {
+            "province_or_territory": "new brunswick",
+            "year": "2010"
+          },
+          "answer": 11120.0,
+          "question": "Find the value value where province_or_territory is 'new brunswick' and year is '2010'.",
+          "results": {
+            "raw": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "province_or_territory": "new brunswick",
+                  "year": "2010"
+                },
+                "B": "population"
+              },
+              "executed": true,
+              "result": 11120.0,
+              "error": null,
+              "correct": true
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "province_or_territory",
+          "_ref_x": "quebec",
+          "_ref_measure": "year",
+          "answer": 12057.0,
+          "question": "What is the total year across all records where province_or_territory is 'quebec'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "province or territory",
+                "x": "quebec",
+                "B": "2007"
+              },
+              "executed": true,
+              "result": 0.0,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "province_or_territory",
+                "x": "quebec",
+                "B": "year"
+              },
+              "executed": true,
+              "result": 12057.0,
+              "error": null,
+              "correct": true
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "province_or_territory",
+          "_ref_x": "saskatchewan",
+          "_ref_measure": "year",
+          "answer": 12057.0,
+          "question": "What is the total year across all records where province_or_territory is 'saskatchewan'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "province or territory",
+                "x": "saskatchewan",
+                "B": "2007"
+              },
+              "executed": true,
+              "result": 0.0,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "province_or_territory",
+                "x": "saskatchewan",
+                "B": "year"
+              },
+              "executed": true,
+              "result": 12057.0,
+              "error": null,
+              "correct": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "table_id": "1266",
+      "pipeline_status": "success",
+      "pipeline_error": null,
+      "n_qa_pairs": 2,
+      "scores": {
+        "raw": {
+          "n": 2,
+          "execution_rate": 1.0,
+          "accuracy": 1.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 1.0
+            },
+            "aggregation": {
+              "n": 0,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            }
+          }
+        },
+        "pipeline": {
+          "n": 2,
+          "execution_rate": 1.0,
+          "accuracy": 1.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 1.0
+            },
+            "aggregation": {
+              "n": 0,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            }
+          }
+        }
+      },
+      "qa_pairs": [
+        {
+          "qtype": "lookup",
+          "_ref_dim": "section_header",
+          "_ref_x": "lowest rates",
+          "_ref_measure": "low_income_rate",
+          "_filters": {
+            "section_header": "lowest rates",
+            "category": "age 50 plus",
+            "percent_clients": "47.0",
+            "percent_of_cohort": "18.0"
+          },
+          "answer": 2.0,
+          "question": "Find the low_income_rate value where section_header is 'lowest rates' and category is 'age 50 plus' and percent_clients is '47.0' and percent_of_cohort is '18.0'.",
+          "results": {
+            "raw": {
+              "slots": {
+                "filters": {
+                  "Unnamed: 0": "age 50 plus",
+                  "% clients": "47",
+                  "% of cohort": "18"
+                },
+                "B": "low income rate"
+              },
+              "executed": true,
+              "result": 2.0,
+              "error": null,
+              "correct": true
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "section_header": "lowest rates",
+                  "category": "age 50 plus",
+                  "percent_clients": "47.0",
+                  "percent_of_cohort": "18.0"
+                },
+                "B": "low_income_rate"
+              },
+              "executed": true,
+              "result": 2.0,
+              "error": null,
+              "correct": true
+            }
+          }
+        },
+        {
+          "qtype": "lookup",
+          "_ref_dim": "section_header",
+          "_ref_x": "lowest rates",
+          "_ref_measure": "percent_of_cohort",
+          "_filters": {
+            "section_header": "lowest rates",
+            "category": "age 50 plus",
+            "low_income_rate": "2.0",
+            "percent_clients": "47.0"
+          },
+          "answer": 18.0,
+          "question": "Find the percent_of_cohort value where section_header is 'lowest rates' and category is 'age 50 plus' and low_income_rate is '2.0' and percent_clients is '47.0'.",
+          "results": {
+            "raw": {
+              "slots": {
+                "filters": {
+                  "Unnamed: 0": "age 50 plus",
+                  "low income rate": "2",
+                  "% clients": "47.0"
+                },
+                "B": "% of cohort"
+              },
+              "executed": true,
+              "result": 18.0,
+              "error": null,
+              "correct": true
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "section_header": "lowest rates",
+                  "category": "age 50 plus",
+                  "low_income_rate": "2",
+                  "percent_clients": "47"
+                },
+                "B": "percent_of_cohort"
+              },
+              "executed": true,
+              "result": 18.0,
+              "error": null,
+              "correct": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "table_id": "1277",
+      "pipeline_status": "success",
+      "pipeline_error": null,
+      "n_qa_pairs": 2,
+      "scores": {
+        "raw": {
+          "n": 2,
+          "execution_rate": 0.0,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 0,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            }
+          }
+        },
+        "pipeline": {
+          "n": 2,
+          "execution_rate": 1.0,
+          "accuracy": 1.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 1.0
+            },
+            "aggregation": {
+              "n": 0,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            }
+          }
+        }
+      },
+      "qa_pairs": [
+        {
+          "qtype": "lookup",
+          "_ref_dim": "type_of_need",
+          "_ref_x": "any",
+          "_ref_measure": "percentage",
+          "_filters": {
+            "type_of_need": "any",
+            "need_status": "partially met"
+          },
+          "answer": 22.4,
+          "question": "Find the percentage value where type_of_need is 'any' and need_status is 'partially met'.",
+          "results": {
+            "raw": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "type_of_need": "any",
+                  "need_status": "partially met"
+                },
+                "B": "percentage"
+              },
+              "executed": true,
+              "result": 22.4,
+              "error": null,
+              "correct": true
+            }
+          }
+        },
+        {
+          "qtype": "lookup",
+          "_ref_dim": "type_of_need",
+          "_ref_x": "counselling, therapy or help for problems with personal relationships",
+          "_ref_measure": "percentage",
+          "_filters": {
+            "type_of_need": "counselling, therapy or help for problems with personal relationships",
+            "need_status": "partially met"
+          },
+          "answer": 15.9,
+          "question": "Find the percentage value where type_of_need is 'counselling, therapy or help for problems with personal relationships' and need_status is 'partially met'.",
+          "results": {
+            "raw": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "type_of_need": "counselling, therapy or help for problems with personal relationships",
+                  "need_status": "partially met"
+                },
+                "B": "percentage"
+              },
+              "executed": true,
+              "result": 15.9,
+              "error": null,
+              "correct": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "table_id": "1289",
+      "pipeline_status": "success",
+      "pipeline_error": null,
+      "n_qa_pairs": 4,
+      "scores": {
+        "raw": {
+          "n": 4,
+          "execution_rate": 0.5,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.0
+            }
+          }
+        },
+        "pipeline": {
+          "n": 4,
+          "execution_rate": 0.5,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.0
+            }
+          }
+        }
+      },
+      "qa_pairs": [
+        {
+          "qtype": "lookup",
+          "_ref_dim": "caracteristics",
+          "_ref_x": "35 to 44",
+          "_ref_measure": "year",
+          "_filters": {
+            "caracteristics": "35 to 44",
+            "section": "age group",
+            "data_type": "percent",
+            "value": "54.0"
+          },
+          "answer": 2010.0,
+          "question": "Find the year value where caracteristics is '35 to 44' and section is 'age group' and data_type is 'percent' and value is '54.0'.",
+          "results": {
+            "raw": {
+              "slots": {
+                "filters": {
+                  "caracteristics": "35 to 44",
+                  "volunteer rate": "percent"
+                },
+                "B": "Unnamed: 2"
+              },
+              "executed": false,
+              "result": null,
+              "error": "IndexError: single positional indexer is out-of-bounds",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "caracteristics": "35 to 44",
+                  "volunteer rate": "percent"
+                },
+                "B": "Unnamed: 2"
+              },
+              "executed": false,
+              "result": null,
+              "error": "IndexError: single positional indexer is out-of-bounds",
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "lookup",
+          "_ref_dim": "caracteristics",
+          "_ref_x": "post-secondary diploma or certificate",
+          "_ref_measure": "value",
+          "_filters": {
+            "caracteristics": "post-secondary diploma or certificate",
+            "section": "level of education",
+            "year": "2004",
+            "data_type": "percent"
+          },
+          "answer": 46.0,
+          "question": "Find the value value where caracteristics is 'post-secondary diploma or certificate' and section is 'level of education' and year is '2004' and data_type is 'percent'.",
+          "results": {
+            "raw": {
+              "slots": {
+                "filters": {
+                  "caracteristics": "post-secondary diploma or certificate",
+                  "Unnamed: 4": "2004",
+                  "volunteer rate": "percent"
+                },
+                "B": "volunteer rate"
+              },
+              "executed": false,
+              "result": null,
+              "error": "IndexError: single positional indexer is out-of-bounds",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "caracteristics": "post-secondary diploma or certificate",
+                  "Unnamed: 4": "2004",
+                  "volunteer rate": "percent"
+                },
+                "B": "volunteer rate"
+              },
+              "executed": false,
+              "result": null,
+              "error": "IndexError: single positional indexer is out-of-bounds",
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "caracteristics",
+          "_ref_x": "45 to 54",
+          "_ref_measure": "value",
+          "answer": 848.0,
+          "question": "What is the total value across all records where caracteristics is '45 to 54'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "caracteristics",
+                "x": "45 to 54",
+                "B": "volunteer rate"
+              },
+              "executed": true,
+              "result": 45.0,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "caracteristics",
+                "x": "45 to 54",
+                "B": "volunteer rate"
+              },
+              "executed": true,
+              "result": 45.0,
+              "error": null,
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "data_type",
+          "_ref_x": "percent",
+          "_ref_measure": "value",
+          "answer": 5439.0,
+          "question": "What is the total value across all records where data_type is 'percent'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "volunteer rate",
+                "x": "percent",
+                "B": "volunteer rate"
+              },
+              "executed": true,
+              "result": 0.0,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "volunteer rate",
+                "x": "percent",
+                "B": "volunteer rate"
+              },
+              "executed": true,
+              "result": 0.0,
+              "error": null,
+              "correct": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "table_id": "1291",
+      "pipeline_status": "success",
+      "pipeline_error": null,
+      "n_qa_pairs": 4,
+      "scores": {
+        "raw": {
+          "n": 4,
+          "execution_rate": 0.5,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.0
+            }
+          }
+        },
+        "pipeline": {
+          "n": 4,
+          "execution_rate": 1.0,
+          "accuracy": 1.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 1.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 1.0
+            }
+          }
+        }
+      },
+      "qa_pairs": [
+        {
+          "qtype": "lookup",
+          "_ref_dim": "types_of_activities",
+          "_ref_x": "collecting, serving or delivering food or other goods",
+          "_ref_measure": "year",
+          "_filters": {
+            "types_of_activities": "collecting, serving or delivering food or other goods",
+            "percentage_of_volunteers": "28.0"
+          },
+          "answer": 2010.0,
+          "question": "Find the year value where types_of_activities is 'collecting, serving or delivering food or other goods' and percentage_of_volunteers is '28.0'.",
+          "results": {
+            "raw": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "types_of_activities": "collecting, serving or delivering food or other goods",
+                  "percentage": "28"
+                },
+                "B": "year"
+              },
+              "executed": true,
+              "result": 2010.0,
+              "error": null,
+              "correct": true
+            }
+          }
+        },
+        {
+          "qtype": "lookup",
+          "_ref_dim": "types_of_activities",
+          "_ref_x": "driving",
+          "_ref_measure": "percentage_of_volunteers",
+          "_filters": {
+            "types_of_activities": "driving",
+            "year": "2007"
+          },
+          "answer": 20.0,
+          "question": "Find the percentage_of_volunteers value where types_of_activities is 'driving' and year is '2007'.",
+          "results": {
+            "raw": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "types_of_activities": "driving",
+                  "year": "2007"
+                },
+                "B": "percentage"
+              },
+              "executed": true,
+              "result": 20.0,
+              "error": null,
+              "correct": true
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "types_of_activities",
+          "_ref_x": "first-aid, fire-fighting, or search and rescue",
+          "_ref_measure": "year",
+          "answer": 8034.0,
+          "question": "What is the total year across all records where types_of_activities is 'first-aid, fire-fighting, or search and rescue'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "types of activities",
+                "x": "first-aid, fire-fighting, or search and rescue",
+                "B": "2013"
+              },
+              "executed": true,
+              "result": 6.0,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "types_of_activities",
+                "x": "first-aid, fire-fighting, or search and rescue",
+                "B": "year"
+              },
+              "executed": true,
+              "result": 8034.0,
+              "error": null,
+              "correct": true
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "types_of_activities",
+          "_ref_x": "teaching or mentoring",
+          "_ref_measure": "year",
+          "answer": 8034.0,
+          "question": "What is the total year across all records where types_of_activities is 'teaching or mentoring'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "types of activities",
+                "x": "teaching or mentoring",
+                "B": "2013"
+              },
+              "executed": true,
+              "result": 28.0,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "types_of_activities",
+                "x": "teaching or mentoring",
+                "B": "year"
+              },
+              "executed": true,
+              "result": 8034.0,
+              "error": null,
+              "correct": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "table_id": "1292",
+      "pipeline_status": "success",
+      "pipeline_error": null,
+      "n_qa_pairs": 4,
+      "scores": {
+        "raw": {
+          "n": 4,
+          "execution_rate": 0.25,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 0.5,
+              "accuracy": 0.0
+            }
+          }
+        },
+        "pipeline": {
+          "n": 4,
+          "execution_rate": 1.0,
+          "accuracy": 1.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 1.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 1.0
+            }
+          }
+        }
+      },
+      "qa_pairs": [
+        {
+          "qtype": "lookup",
+          "_ref_dim": "types_of_activities",
+          "_ref_x": "sitting on a committee or board",
+          "_ref_measure": "count",
+          "_filters": {
+            "types_of_activities": "sitting on a committee or board",
+            "gender": "men"
+          },
+          "answer": 34.0,
+          "question": "Find the count value where types_of_activities is 'sitting on a committee or board' and gender is 'men'.",
+          "results": {
+            "raw": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "types_of_activities": "sitting on a committee or board",
+                  "gender": "men"
+                },
+                "B": "participation_count"
+              },
+              "executed": true,
+              "result": 34.0,
+              "error": null,
+              "correct": true
+            }
+          }
+        },
+        {
+          "qtype": "lookup",
+          "_ref_dim": "types_of_activities",
+          "_ref_x": "coaching, referring or officiating",
+          "_ref_measure": "count",
+          "_filters": {
+            "types_of_activities": "coaching, referring or officiating",
+            "gender": "women"
+          },
+          "answer": 11.0,
+          "question": "Find the count value where types_of_activities is 'coaching, referring or officiating' and gender is 'women'.",
+          "results": {
+            "raw": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "types_of_activities": "coaching, referring or officiating",
+                  "gender": "women"
+                },
+                "B": "participation_count"
+              },
+              "executed": true,
+              "result": 11.0,
+              "error": null,
+              "correct": true
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "types_of_activities",
+          "_ref_x": "fundraising",
+          "_ref_measure": "count",
+          "answer": 89.0,
+          "question": "What is the total count across all records where types_of_activities is 'fundraising'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "types of activities",
+                "x": "fundraising",
+                "B": "men"
+              },
+              "executed": true,
+              "result": 40.0,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "types_of_activities",
+                "x": "fundraising",
+                "B": "participation_count"
+              },
+              "executed": true,
+              "result": 89.0,
+              "error": null,
+              "correct": true
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "gender",
+          "_ref_x": "women",
+          "_ref_measure": "count",
+          "answer": 338.0,
+          "question": "What is the total count across all records where gender is 'women'?",
+          "results": {
+            "raw": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "gender",
+                "x": "women",
+                "B": "participation_count"
+              },
+              "executed": true,
+              "result": 338.0,
+              "error": null,
+              "correct": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "table_id": "1293",
+      "pipeline_status": "success",
+      "pipeline_error": null,
+      "n_qa_pairs": 4,
+      "scores": {
+        "raw": {
+          "n": 4,
+          "execution_rate": 1.0,
+          "accuracy": 0.25,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.5
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.0
+            }
+          }
+        },
+        "pipeline": {
+          "n": 4,
+          "execution_rate": 1.0,
+          "accuracy": 1.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 1.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 1.0
+            }
+          }
+        }
+      },
+      "qa_pairs": [
+        {
+          "qtype": "lookup",
+          "_ref_dim": "type_of_formal_employer_support",
+          "_ref_x": "approval to change work hours or reduce work activities",
+          "_ref_measure": "year",
+          "_filters": {
+            "type_of_formal_employer_support": "approval to change work hours or reduce work activities",
+            "percentage": "34.0"
+          },
+          "answer": 2013.0,
+          "question": "Find the year value where type_of_formal_employer_support is 'approval to change work hours or reduce work activities' and percentage is '34.0'.",
+          "results": {
+            "raw": {
+              "slots": {
+                "filters": {
+                  "type of formal employer support": "approval to change work hours or reduce work activities"
+                },
+                "B": "2013"
+              },
+              "executed": true,
+              "result": 34.0,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "type_of_formal_employer_support": "approval to change work hours or reduce work activities",
+                  "percentage": "34"
+                },
+                "B": "year"
+              },
+              "executed": true,
+              "result": 2013.0,
+              "error": null,
+              "correct": true
+            }
+          }
+        },
+        {
+          "qtype": "lookup",
+          "_ref_dim": "type_of_formal_employer_support",
+          "_ref_x": "paid time off or time to spend volunteering",
+          "_ref_measure": "percentage",
+          "_filters": {
+            "type_of_formal_employer_support": "paid time off or time to spend volunteering",
+            "year": "2010"
+          },
+          "answer": 20.0,
+          "question": "Find the percentage value where type_of_formal_employer_support is 'paid time off or time to spend volunteering' and year is '2010'.",
+          "results": {
+            "raw": {
+              "slots": {
+                "filters": {
+                  "type of formal employer support": "paid time off or time to spend volunteering",
+                  "2010": "20"
+                },
+                "B": "2010"
+              },
+              "executed": true,
+              "result": 20.0,
+              "error": null,
+              "correct": true
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "type_of_formal_employer_support": "paid time off or time to spend volunteering",
+                  "year": "2010"
+                },
+                "B": "percentage"
+              },
+              "executed": true,
+              "result": 20.0,
+              "error": null,
+              "correct": true
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "type_of_formal_employer_support",
+          "_ref_x": "donated prizes, gift certificates",
+          "_ref_measure": "year",
+          "answer": 4023.0,
+          "question": "What is the total year across all records where type_of_formal_employer_support is 'donated prizes, gift certificates'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "type of formal employer support",
+                "x": "donated prizes, gift certificates",
+                "B": "2013"
+              },
+              "executed": true,
+              "result": 1.0,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "type_of_formal_employer_support",
+                "x": "donated prizes, gift certificates",
+                "B": "year"
+              },
+              "executed": true,
+              "result": 4023.0,
+              "error": null,
+              "correct": true
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "type_of_formal_employer_support",
+          "_ref_x": "donated t-shirts or company goods",
+          "_ref_measure": "year",
+          "answer": 4023.0,
+          "question": "What is the total year across all records where type_of_formal_employer_support is 'donated t-shirts or company goods'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "type of formal employer support",
+                "x": "donated t-shirts or company goods",
+                "B": "2013"
+              },
+              "executed": true,
+              "result": 1.0,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "type_of_formal_employer_support",
+                "x": "donated t-shirts or company goods",
+                "B": "year"
+              },
+              "executed": true,
+              "result": 4023.0,
+              "error": null,
+              "correct": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "table_id": "1294",
+      "pipeline_status": "success",
+      "pipeline_error": null,
+      "n_qa_pairs": 4,
+      "scores": {
+        "raw": {
+          "n": 4,
+          "execution_rate": 0.75,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.5,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.0
+            }
+          }
+        },
+        "pipeline": {
+          "n": 4,
+          "execution_rate": 0.75,
+          "accuracy": 0.25,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.5,
+              "accuracy": 0.5
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.0
+            }
+          }
+        }
+      },
+      "qa_pairs": [
+        {
+          "qtype": "lookup",
+          "_ref_dim": "reason_for_not_volunteering",
+          "_ref_x": "prefer to give money instead",
+          "_ref_measure": "year",
+          "_filters": {
+            "reason_for_not_volunteering": "prefer to give money instead",
+            "percentage": "54"
+          },
+          "answer": 2013.0,
+          "question": "Find the year value where reason_for_not_volunteering is 'prefer to give money instead' and percentage is '54'.",
+          "results": {
+            "raw": {
+              "slots": {
+                "filters": {
+                  "Unnamed: 0": "prefer to give money instead",
+                  "2013": "54"
+                },
+                "B": "2013"
+              },
+              "executed": true,
+              "result": 54.0,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "lookup",
+          "_ref_dim": "reason_for_not_volunteering",
+          "_ref_x": "no interest",
+          "_ref_measure": "percentage",
+          "_filters": {
+            "reason_for_not_volunteering": "no interest",
+            "year": "2007"
+          },
+          "answer": 26.0,
+          "question": "Find the percentage value where reason_for_not_volunteering is 'no interest' and year is '2007'.",
+          "results": {
+            "raw": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "reason": "no interest",
+                  "year": "2007"
+                },
+                "B": "value"
+              },
+              "executed": true,
+              "result": 26.0,
+              "error": null,
+              "correct": true
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "reason_for_not_volunteering",
+          "_ref_x": "financial costs",
+          "_ref_measure": "year",
+          "answer": 8034.0,
+          "question": "What is the total year across all records where reason_for_not_volunteering is 'financial costs'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "Unnamed: 0",
+                "x": "financial costs",
+                "B": "2013"
+              },
+              "executed": true,
+              "result": 18.0,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "reason",
+                "x": "financial costs",
+                "B": "value"
+              },
+              "executed": true,
+              "result": 33.0,
+              "error": null,
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "reason_for_not_volunteering",
+          "_ref_x": "gave enough time already",
+          "_ref_measure": "year",
+          "answer": 8034.0,
+          "question": "What is the total year across all records where reason_for_not_volunteering is 'gave enough time already'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "Unnamed: 0",
+                "x": "gave enough time already",
+                "B": "2013"
+              },
+              "executed": true,
+              "result": 24.0,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "reason",
+                "x": "gave enough time already",
+                "B": "value"
+              },
+              "executed": true,
+              "result": 30.0,
+              "error": null,
+              "correct": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "table_id": "1295",
+      "pipeline_status": "success",
+      "pipeline_error": null,
+      "n_qa_pairs": 4,
+      "scores": {
+        "raw": {
+          "n": 4,
+          "execution_rate": 0.75,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.5,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.0
+            }
+          }
+        },
+        "pipeline": {
+          "n": 4,
+          "execution_rate": 1.0,
+          "accuracy": 1.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 1.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 1.0
+            }
+          }
+        }
+      },
+      "qa_pairs": [
+        {
+          "qtype": "lookup",
+          "_ref_dim": "activity_name",
+          "_ref_x": "paperwork",
+          "_ref_measure": "year",
+          "_filters": {
+            "activity_name": "paperwork",
+            "time_spent": "27"
+          },
+          "answer": 2013.0,
+          "question": "Find the year value where activity_name is 'paperwork' and time_spent is '27'.",
+          "results": {
+            "raw": {
+              "slots": {
+                "filters": {
+                  "Unnamed: 0": "paperwork",
+                  "2013": "27"
+                },
+                "B": "2013"
+              },
+              "executed": true,
+              "result": 27.0,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "activity_type": "paperwork",
+                  "value": "27"
+                },
+                "B": "year"
+              },
+              "executed": true,
+              "result": 2013.0,
+              "error": null,
+              "correct": true
+            }
+          }
+        },
+        {
+          "qtype": "lookup",
+          "_ref_dim": "activity_name",
+          "_ref_x": "paperwork",
+          "_ref_measure": "time_spent",
+          "_filters": {
+            "activity_name": "paperwork",
+            "year": "2007"
+          },
+          "answer": 29.0,
+          "question": "Find the time_spent value where activity_name is 'paperwork' and year is '2007'.",
+          "results": {
+            "raw": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "activity_type": "paperwork",
+                  "year": "2007"
+                },
+                "B": "value"
+              },
+              "executed": true,
+              "result": 29.0,
+              "error": null,
+              "correct": true
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "activity_name",
+          "_ref_x": "shopping, driving to store or appointment",
+          "_ref_measure": "year",
+          "answer": 8034.0,
+          "question": "What is the total year across all records where activity_name is 'shopping, driving to store or appointment'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "Unnamed: 0",
+                "x": "shopping, driving to store or appointment",
+                "B": "2013"
+              },
+              "executed": true,
+              "result": 45.0,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "activity_type",
+                "x": "shopping, driving to store or appointment",
+                "B": "year"
+              },
+              "executed": true,
+              "result": 8034.0,
+              "error": null,
+              "correct": true
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "activity_name",
+          "_ref_x": "teaching, coaching or tutoring",
+          "_ref_measure": "year",
+          "answer": 8034.0,
+          "question": "What is the total year across all records where activity_name is 'teaching, coaching or tutoring'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "Unnamed: 0",
+                "x": "teaching, coaching or tutoring",
+                "B": "2013"
+              },
+              "executed": true,
+              "result": 15.0,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "activity_type",
+                "x": "teaching, coaching or tutoring",
+                "B": "year"
+              },
+              "executed": true,
+              "result": 8034.0,
+              "error": null,
+              "correct": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "table_id": "1297",
+      "pipeline_status": "success",
+      "pipeline_error": null,
+      "n_qa_pairs": 4,
+      "scores": {
+        "raw": {
+          "n": 4,
+          "execution_rate": 0.5,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.0
+            }
+          }
+        },
+        "pipeline": {
+          "n": 4,
+          "execution_rate": 0.5,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.0
+            }
+          }
+        }
+      },
+      "qa_pairs": [
+        {
+          "qtype": "lookup",
+          "_ref_dim": "entry_type",
+          "_ref_x": "short-lived entry",
+          "_ref_measure": "entry_rate",
+          "_filters": {
+            "entry_type": "short-lived entry",
+            "firms": "nan",
+            "entries": "nan",
+            "alu_employment_creation_rate": "0.2",
+            "ilu_employment_creation_rate": "nan",
+            "year_or_measure": "EmploymentCreationRate=ALU",
+            "value": "0.2"
+          },
+          "answer": 2.9,
+          "question": "Find the entry_rate value where entry_type is 'short-lived entry' and firms is 'nan' and entries is 'nan' and alu_employment_creation_rate is '0.2' and ilu_employment_creation_rate is 'nan' and year_or_measure is 'EmploymentCreationRate=ALU' and value is '0.2'.",
+          "results": {
+            "raw": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "lookup",
+          "_ref_dim": "entry_type",
+          "_ref_x": "short-lived entry",
+          "_ref_measure": "value",
+          "_filters": {
+            "entry_type": "short-lived entry",
+            "firms": "nan",
+            "entries": "nan",
+            "entry_rate": "2.9",
+            "alu_employment_creation_rate": "nan",
+            "ilu_employment_creation_rate": "0.4",
+            "year_or_measure": "EmploymentCreationRate=ILU"
+          },
+          "answer": 0.4,
+          "question": "Find the value value where entry_type is 'short-lived entry' and firms is 'nan' and entries is 'nan' and entry_rate is '2.9' and alu_employment_creation_rate is 'nan' and ilu_employment_creation_rate is '0.4' and year_or_measure is 'EmploymentCreationRate=ILU'.",
+          "results": {
+            "raw": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "entry_type",
+          "_ref_x": "one-year entry",
+          "_ref_measure": "value",
+          "answer": 3.8,
+          "question": "What is the total value across all records where entry_type is 'one-year entry'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "entry type",
+                "x": "one-year entry",
+                "B": "entries"
+              },
+              "executed": true,
+              "result": 0.0,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "entry type",
+                "x": "one-year entry",
+                "B": "entries"
+              },
+              "executed": true,
+              "result": 0.0,
+              "error": null,
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "entry_type",
+          "_ref_x": "previously active excluded",
+          "_ref_measure": "value",
+          "answer": 3.4000000000000004,
+          "question": "What is the total value across all records where entry_type is 'previously active excluded'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "entry type",
+                "x": "previously active excluded",
+                "B": "entries"
+              },
+              "executed": true,
+              "result": 0.0,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "entry type",
+                "x": "previously active excluded",
+                "B": "entries"
+              },
+              "executed": true,
+              "result": 0.0,
+              "error": null,
+              "correct": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "table_id": "1311",
+      "pipeline_status": "success",
+      "pipeline_error": null,
+      "n_qa_pairs": 2,
+      "scores": {
+        "raw": {
+          "n": 2,
+          "execution_rate": 0.0,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 0,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            }
+          }
+        },
+        "pipeline": {
+          "n": 2,
+          "execution_rate": 1.0,
+          "accuracy": 1.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 1.0
+            },
+            "aggregation": {
+              "n": 0,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            }
+          }
+        }
+      },
+      "qa_pairs": [
+        {
+          "qtype": "lookup",
+          "_ref_dim": "type_of_offence",
+          "_ref_x": "property offences",
+          "_ref_measure": "percent",
+          "_filters": {
+            "type_of_offence": "property offences",
+            "police_contact_or_criminal_offence": "police contacts for decedents in british columbia"
+          },
+          "answer": 31.0,
+          "question": "Find the percent value where type_of_offence is 'property offences' and police_contact_or_criminal_offence is 'police contacts for decedents in british columbia'.",
+          "results": {
+            "raw": {
+              "slots": {
+                "filters": {
+                  "type of offence": "property offences",
+                  "police contacts for decedents in british columbia": "percent"
+                },
+                "B": "police contacts for decedents in british columbia"
+              },
+              "executed": false,
+              "result": null,
+              "error": "IndexError: single positional indexer is out-of-bounds",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "type_of_offence": "property offences",
+                  "location": "police_contacts_bc"
+                },
+                "B": "police_contacts"
+              },
+              "executed": true,
+              "result": 31.0,
+              "error": null,
+              "correct": true
+            }
+          }
+        },
+        {
+          "qtype": "lookup",
+          "_ref_dim": "type_of_offence",
+          "_ref_x": "administration of justice offences",
+          "_ref_measure": "percent",
+          "_filters": {
+            "type_of_offence": "administration of justice offences",
+            "police_contact_or_criminal_offence": "police contacts for decedents in surrey"
+          },
+          "answer": 17.0,
+          "question": "Find the percent value where type_of_offence is 'administration of justice offences' and police_contact_or_criminal_offence is 'police contacts for decedents in surrey'.",
+          "results": {
+            "raw": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "type_of_offence": "administration of justice offences",
+                  "location": "police_contacts_surrey"
+                },
+                "B": "police_contacts"
+              },
+              "executed": true,
+              "result": 17.0,
+              "error": null,
+              "correct": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "table_id": "1325",
+      "pipeline_status": "success",
+      "pipeline_error": null,
+      "n_qa_pairs": 4,
+      "scores": {
+        "raw": {
+          "n": 4,
+          "execution_rate": 0.25,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 0.5,
+              "accuracy": 0.0
+            }
+          }
+        },
+        "pipeline": {
+          "n": 4,
+          "execution_rate": 0.5,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.0
+            }
+          }
+        }
+      },
+      "qa_pairs": [
+        {
+          "qtype": "lookup",
+          "_ref_dim": "income_range",
+          "_ref_x": "under $5,000",
+          "_ref_measure": "value",
+          "_filters": {
+            "income_range": "under $5,000",
+            "gender": "men",
+            "unit": "dollars"
+          },
+          "answer": 6.4,
+          "question": "Find the value value where income_range is 'under $5,000' and gender is 'men' and unit is 'dollars'.",
+          "results": {
+            "raw": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "lookup",
+          "_ref_dim": "income_range",
+          "_ref_x": "$60,000 to $79,999",
+          "_ref_measure": "value",
+          "_filters": {
+            "income_range": "$60,000 to $79,999",
+            "gender": "men",
+            "unit": "dollars"
+          },
+          "answer": 14.3,
+          "question": "Find the value value where income_range is '$60,000 to $79,999' and gender is 'men' and unit is 'dollars'.",
+          "results": {
+            "raw": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "income_range",
+          "_ref_x": "$5,000 to $9,999",
+          "_ref_measure": "value",
+          "answer": 14.2,
+          "question": "What is the total value across all records where income_range is '$5,000 to $9,999'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "Unnamed: 0",
+                "x": "$5,000 to $9,999",
+                "B": "women"
+              },
+              "executed": true,
+              "result": 8.4,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "income_range",
+                "x": "$5,000 to $9,999",
+                "B": "women_percentage"
+              },
+              "executed": true,
+              "result": 8.4,
+              "error": null,
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "unit",
+          "_ref_x": "dollars",
+          "_ref_measure": "value",
+          "answer": 200.0,
+          "question": "What is the total value across all records where unit is 'dollars'?",
+          "results": {
+            "raw": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "women_percentage",
+                "x": "dollars",
+                "B": "difference"
+              },
+              "executed": true,
+              "result": 0.0,
+              "error": null,
+              "correct": false
+            }
+          }
+        }
+      ]
     }
   ]
 }

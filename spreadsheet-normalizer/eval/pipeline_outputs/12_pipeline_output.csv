@@ -1,7 +1,11 @@
-aboriginal_identity_category,population_count,total_population,percentage_population
-aboriginal identities not included elsewhere,255.0,1.6,22670.0
-first nations,4135.0,26.2,977230.0
-inuit,115.0,0.7,65025.0
-metis,10960.0,69.5,587545.0
-multiple aboriginal identities,300.0,1.9,21310.0
-total aboriginal population,15765.0,100.0,1673785.0
+aboriginal_identity_category,population_type,population_value,population_percentage
+first nations,agricultural,4135.0,"4,135"
+metis,agricultural,10960.0,"10,960"
+inuit,agricultural,115.0,115
+multiple aboriginal identities,agricultural,300.0,300
+aboriginal identities not included elsewhere,agricultural,255.0,255
+first nations,agricultural .1,26.2,26.2
+metis,agricultural .1,69.5,69.5
+inuit,agricultural .1,0.7,0.7
+multiple aboriginal identities,agricultural .1,1.9,1.9
+aboriginal identities not included elsewhere,agricultural .1,1.6,1.6

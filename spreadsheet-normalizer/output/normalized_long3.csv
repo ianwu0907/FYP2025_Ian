@@ -1,340 +1,397 @@
-year,ethnicity,marital_status,sex,percentage
-2011,亞洲人（非華人）,Table 4.1,Table 4.1,23.0
-2011,亞洲人（非華人）,Table 4.1,Table 4.1,35.6
-2011,亞洲人（非華人）,Table 4.1,Table 4.1,73.9
-2011,亞洲人（非華人）,"從未結婚
-Never married","從未結婚
-Never married",56.3
-2011,亞洲人（非華人）,"從未結婚
-Never married","從未結婚
-Never married",3.1
-2011,亞洲人（非華人）,"從未結婚
-Never married","從未結婚
-Never married",8.1
-2011,亞洲人（非華人）,"已婚
-Married","已婚
-Married",100.0
-2011,亞洲人（非華人）,"已婚
-Married","已婚
-Married",100.0
-2011,菲律賓人,Table 4.1,Table 4.1,26.1
-2011,菲律賓人,Table 4.1,Table 4.1,36.4
-2011,菲律賓人,Table 4.1,Table 4.1,68.8
-2011,菲律賓人,"從未結婚
-Never married","從未結婚
-Never married",54.0
-2011,菲律賓人,"從未結婚
-Never married","從未結婚
-Never married",5.1
-2011,菲律賓人,"從未結婚
-Never married","從未結婚
-Never married",9.6
-2011,菲律賓人,"已婚
-Married","已婚
-Married",100.0
-2011,菲律賓人,"已婚
-Married","已婚
-Married",100.0
-2011,印尼人,Table 4.1,Table 4.1,29.2
-2011,印尼人,Table 4.1,Table 4.1,40.4
-2011,印尼人,Table 4.1,Table 4.1,68.2
-2011,印尼人,"從未結婚
-Never married","從未結婚
-Never married",52.6
-2011,印尼人,"從未結婚
-Never married","從未結婚
-Never married",2.6
-2011,印尼人,"從未結婚
-Never married","從未結婚
-Never married",7.0
-2011,印尼人,"已婚
-Married","已婚
-Married",100.0
-2011,印尼人,"已婚
-Married","已婚
-Married",100.0
-2011,南亞裔人士,Table 4.1,Table 4.1,23.7
-2011,南亞裔人士,Table 4.1,Table 4.1,20.2
-2011,南亞裔人士,Table 4.1,Table 4.1,73.6
-2011,南亞裔人士,"從未結婚
-Never married","從未結婚
-Never married",74.6
-2011,南亞裔人士,"從未結婚
-Never married","從未結婚
-Never married",2.7
-2011,南亞裔人士,"從未結婚
-Never married","從未結婚
-Never married",5.2
-2011,南亞裔人士,"已婚
-Married","已婚
-Married",100.0
-2011,南亞裔人士,"已婚
-Married","已婚
-Married",100.0
-2011,印度人,Table 4.1,Table 4.1,22.9
-2011,印度人,Table 4.1,Table 4.1,20.9
-2011,印度人,Table 4.1,Table 4.1,74.4
-2011,印度人,"從未結婚
-Never married","從未結婚
-Never married",73.4
-2011,印度人,"從未結婚
-Never married","從未結婚
-Never married",2.7
-2011,印度人,"從未結婚
-Never married","從未結婚
-Never married",5.7
-2011,印度人,"已婚
-Married","已婚
-Married",100.0
-2011,印度人,"已婚
-Married","已婚
-Married",100.0
-2011,尼泊爾人,Table 4.1,Table 4.1,20.3
-2011,尼泊爾人,Table 4.1,Table 4.1,22.0
-2011,尼泊爾人,Table 4.1,Table 4.1,75.3
-2011,尼泊爾人,"從未結婚
-Never married","從未結婚
-Never married",73.1
-2011,尼泊爾人,"從未結婚
-Never married","從未結婚
-Never married",4.3
-2011,尼泊爾人,"從未結婚
-Never married","從未結婚
-Never married",4.8
-2011,尼泊爾人,"已婚
-Married","已婚
-Married",100.0
-2011,尼泊爾人,"已婚
-Married","已婚
-Married",100.0
-2011,巴基斯坦人,Table 4.1,Table 4.1,26.5
-2011,巴基斯坦人,Table 4.1,Table 4.1,15.8
-2011,巴基斯坦人,Table 4.1,Table 4.1,72.1
-2011,巴基斯坦人,"從未結婚
-Never married","從未結婚
-Never married",81.0
-2011,巴基斯坦人,"從未結婚
-Never married","從未結婚
-Never married",1.4
-2011,巴基斯坦人,"從未結婚
-Never married","從未結婚
-Never married",3.2
-2011,巴基斯坦人,"已婚
-Married","已婚
-Married",100.0
-2011,巴基斯坦人,"已婚
-Married","已婚
-Married",100.0
-2011,其他南亞裔人士[1],Table 4.1,Table 4.1,39.9
-2011,其他南亞裔人士[1],Table 4.1,Table 4.1,20.0
-2011,其他南亞裔人士[1],Table 4.1,Table 4.1,59.7
-2011,其他南亞裔人士[1],"從未結婚
-Never married","從未結婚
-Never married",71.0
-2011,其他南亞裔人士[1],"從未結婚
-Never married","從未結婚
-Never married",0.4
-2011,其他南亞裔人士[1],"從未結婚
-Never married","從未結婚
-Never married",9.0
-2011,其他南亞裔人士[1],"已婚
-Married","已婚
-Married",100.0
-2011,其他南亞裔人士[1],"已婚
-Married","已婚
-Married",100.0
-2011,泰國人,Table 4.1,Table 4.1,25.2
-2011,泰國人,Table 4.1,Table 4.1,13.3
-2011,泰國人,Table 4.1,Table 4.1,73.4
-2011,泰國人,"從未結婚
-Never married","從未結婚
-Never married",71.6
-2011,泰國人,"從未結婚
-Never married","從未結婚
-Never married",1.4
-2011,泰國人,"從未結婚
-Never married","從未結婚
-Never married",15.1
-2011,泰國人,"已婚
-Married","已婚
-Married",100.0
-2011,泰國人,"已婚
-Married","已婚
-Married",100.0
-2011,日本人,Table 4.1,Table 4.1,15.6
-2011,日本人,Table 4.1,Table 4.1,20.1
-2011,日本人,Table 4.1,Table 4.1,81.4
-2011,日本人,"從未結婚
-Never married","從未結婚
-Never married",77.1
-2011,日本人,"從未結婚
-Never married","從未結婚
-Never married",3.0
-2011,日本人,"從未結婚
-Never married","從未結婚
-Never married",2.8
-2011,日本人,"已婚
-Married","已婚
-Married",100.0
-2011,日本人,"已婚
-Married","已婚
-Married",100.0
-2011,韓國人,Table 4.1,Table 4.1,17.5
-2011,韓國人,Table 4.1,Table 4.1,20.5
-2011,韓國人,Table 4.1,Table 4.1,81.7
-2011,韓國人,"從未結婚
-Never married","從未結婚
-Never married",71.4
-2011,韓國人,"從未結婚
-Never married","從未結婚
-Never married",0.8
-2011,韓國人,"從未結婚
-Never married","從未結婚
-Never married",8.1
-2011,韓國人,"已婚
-Married","已婚
-Married",100.0
-2011,韓國人,"已婚
-Married","已婚
-Married",100.0
-2011,其他亞洲人,Table 4.1,Table 4.1,29.5
-2011,其他亞洲人,Table 4.1,Table 4.1,21.1
-2011,其他亞洲人,Table 4.1,Table 4.1,64.2
-2011,其他亞洲人,"從未結婚
-Never married","從未結婚
-Never married",70.4
-2011,其他亞洲人,"從未結婚
-Never married","從未結婚
-Never married",6.3
-2011,其他亞洲人,"從未結婚
-Never married","從未結婚
-Never married",8.5
-2011,其他亞洲人,"已婚
-Married","已婚
-Married",100.0
-2011,其他亞洲人,"已婚
-Married","已婚
-Married",100.0
-2011,白人,Table 4.1,Table 4.1,29.1
-2011,白人,Table 4.1,Table 4.1,27.0
-2011,白人,Table 4.1,Table 4.1,64.8
-2011,白人,"從未結婚
-Never married","從未結婚
-Never married",63.8
-2011,白人,"從未結婚
-Never married","從未結婚
-Never married",6.1
-2011,白人,"從未結婚
-Never married","從未結婚
-Never married",9.2
-2011,白人,"已婚
-Married","已婚
-Married",100.0
-2011,白人,"已婚
-Married","已婚
-Married",100.0
-2011,混血兒,Table 4.1,Table 4.1,53.0
-2011,混血兒,Table 4.1,Table 4.1,48.6
-2011,混血兒,Table 4.1,Table 4.1,42.3
-2011,混血兒,"從未結婚
-Never married","從未結婚
-Never married",38.6
-2011,混血兒,"從未結婚
-Never married","從未結婚
-Never married",4.7
-2011,混血兒,"從未結婚
-Never married","從未結婚
-Never married",12.8
-2011,混血兒,"已婚
-Married","已婚
-Married",100.0
-2011,混血兒,"已婚
-Married","已婚
-Married",100.0
-2011,華人父或母,Table 4.1,Table 4.1,52.0
-2011,華人父或母,Table 4.1,Table 4.1,48.6
-2011,華人父或母,Table 4.1,Table 4.1,43.1
-2011,華人父或母,"從未結婚
-Never married","從未結婚
-Never married",38.1
-2011,華人父或母,"從未結婚
-Never married","從未結婚
-Never married",4.9
-2011,華人父或母,"從未結婚
-Never married","從未結婚
-Never married",13.2
-2011,華人父或母,"已婚
-Married","已婚
-Married",100.0
-2011,華人父或母,"已婚
-Married","已婚
-Married",100.0
-2011,其他混血兒,Table 4.1,Table 4.1,65.1
-2011,其他混血兒,Table 4.1,Table 4.1,48.3
-2011,其他混血兒,Table 4.1,Table 4.1,32.2
-2011,其他混血兒,"從未結婚
-Never married","從未結婚
-Never married",41.4
-2011,其他混血兒,"從未結婚
-Never married","從未結婚
-Never married",2.7
-2011,其他混血兒,"從未結婚
-Never married","從未結婚
-Never married",10.3
-2011,其他混血兒,"已婚
-Married","已婚
-Married",100.0
-2011,其他混血兒,"已婚
-Married","已婚
-Married",100.0
-2011,其他[2],Table 4.1,Table 4.1,31.4
-2011,其他[2],Table 4.1,Table 4.1,30.4
-2011,其他[2],Table 4.1,Table 4.1,64.0
-2011,其他[2],"從未結婚
-Never married","從未結婚
-Never married",69.6
-2011,其他[2],"從未結婚
-Never married","從未結婚
-Never married",4.6
-2011,其他[2],"已婚
-Married","已婚
-Married",100.0
-2011,其他[2],"已婚
-Married","已婚
-Married",100.0
-2011,所有少數族裔人士,Table 4.1,Table 4.1,28.4
-2011,所有少數族裔人士,Table 4.1,Table 4.1,35.5
-2011,所有少數族裔人士,Table 4.1,Table 4.1,67.2
-2011,所有少數族裔人士,"從未結婚
-Never married","從未結婚
-Never married",56.1
-2011,所有少數族裔人士,"從未結婚
-Never married","從未結婚
-Never married",4.4
-2011,所有少數族裔人士,"從未結婚
-Never married","從未結婚
-Never married",8.3
-2011,所有少數族裔人士,"已婚
-Married","已婚
-Married",100.0
-2011,所有少數族裔人士,"已婚
-Married","已婚
-Married",100.0
-2011,全港人口,Table 4.1,Table 4.1,33.5
-2011,全港人口,Table 4.1,Table 4.1,29.9
-2011,全港人口,Table 4.1,Table 4.1,61.2
-2011,全港人口,"從未結婚
-Never married","從未結婚
-Never married",54.8
-2011,全港人口,"從未結婚
-Never married","從未結婚
-Never married",5.3
-2011,全港人口,"從未結婚
-Never married","從未結婚
-Never married",15.3
-2011,全港人口,"已婚
-Married","已婚
-Married",100.0
-2011,全港人口,"已婚
-Married","已婚
-Married",100.0
+year,ethnicity,marital_status,gender,percentage
+2011,,Never married,Male,
+2011,,Never married,Female,
+2011,,Never married,Overall,
+2011,,Married,Male,
+2011,,Married,Female,
+2011,,Married,Overall,
+2011,,Widowed/divorced/separated,Male,
+2011,,Widowed/divorced/separated,Female,
+2011,,Widowed/divorced/separated,Overall,
+2011,,Total,Male,
+2011,,Total,Female,
+2011,,Total,Overall,
+2011,亞洲人（非華人）,Never married,Male,23.0
+2011,亞洲人（非華人）,Never married,Female,35.6
+2011,亞洲人（非華人）,Never married,Overall,34.1
+2011,亞洲人（非華人）,Married,Male,73.9
+2011,亞洲人（非華人）,Married,Female,56.3
+2011,亞洲人（非華人）,Married,Overall,58.4
+2011,亞洲人（非華人）,Widowed/divorced/separated,Male,3.1
+2011,亞洲人（非華人）,Widowed/divorced/separated,Female,8.1
+2011,亞洲人（非華人）,Widowed/divorced/separated,Overall,7.5
+2011,亞洲人（非華人）,Total,Male,100.0
+2011,亞洲人（非華人）,Total,Female,100.0
+2011,亞洲人（非華人）,Total,Overall,100.0
+2011,Asian (other than Chinese),Never married,Male,
+2011,Asian (other than Chinese),Never married,Female,
+2011,Asian (other than Chinese),Never married,Overall,
+2011,Asian (other than Chinese),Married,Male,
+2011,Asian (other than Chinese),Married,Female,
+2011,Asian (other than Chinese),Married,Overall,
+2011,Asian (other than Chinese),Widowed/divorced/separated,Male,
+2011,Asian (other than Chinese),Widowed/divorced/separated,Female,
+2011,Asian (other than Chinese),Widowed/divorced/separated,Overall,
+2011,Asian (other than Chinese),Total,Male,
+2011,Asian (other than Chinese),Total,Female,
+2011,Asian (other than Chinese),Total,Overall,
+2011,菲律賓人,Never married,Male,26.1
+2011,菲律賓人,Never married,Female,36.4
+2011,菲律賓人,Never married,Overall,35.9
+2011,菲律賓人,Married,Male,68.8
+2011,菲律賓人,Married,Female,54.0
+2011,菲律賓人,Married,Overall,54.7
+2011,菲律賓人,Widowed/divorced/separated,Male,5.1
+2011,菲律賓人,Widowed/divorced/separated,Female,9.6
+2011,菲律賓人,Widowed/divorced/separated,Overall,9.4
+2011,菲律賓人,Total,Male,100.0
+2011,菲律賓人,Total,Female,100.0
+2011,菲律賓人,Total,Overall,100.0
+2011,Filipino,Never married,Male,
+2011,Filipino,Never married,Female,
+2011,Filipino,Never married,Overall,
+2011,Filipino,Married,Male,
+2011,Filipino,Married,Female,
+2011,Filipino,Married,Overall,
+2011,Filipino,Widowed/divorced/separated,Male,
+2011,Filipino,Widowed/divorced/separated,Female,
+2011,Filipino,Widowed/divorced/separated,Overall,
+2011,Filipino,Total,Male,
+2011,Filipino,Total,Female,
+2011,Filipino,Total,Overall,
+2011,印尼人,Never married,Male,29.2
+2011,印尼人,Never married,Female,40.4
+2011,印尼人,Never married,Overall,40.4
+2011,印尼人,Married,Male,68.2
+2011,印尼人,Married,Female,52.6
+2011,印尼人,Married,Overall,52.7
+2011,印尼人,Widowed/divorced/separated,Male,2.6
+2011,印尼人,Widowed/divorced/separated,Female,7.0
+2011,印尼人,Widowed/divorced/separated,Overall,6.9
+2011,印尼人,Total,Male,100.0
+2011,印尼人,Total,Female,100.0
+2011,印尼人,Total,Overall,100.0
+2011,Indonesian,Never married,Male,
+2011,Indonesian,Never married,Female,
+2011,Indonesian,Never married,Overall,
+2011,Indonesian,Married,Male,
+2011,Indonesian,Married,Female,
+2011,Indonesian,Married,Overall,
+2011,Indonesian,Widowed/divorced/separated,Male,
+2011,Indonesian,Widowed/divorced/separated,Female,
+2011,Indonesian,Widowed/divorced/separated,Overall,
+2011,Indonesian,Total,Male,
+2011,Indonesian,Total,Female,
+2011,Indonesian,Total,Overall,
+2011,南亞裔人士,Never married,Male,23.7
+2011,南亞裔人士,Never married,Female,20.2
+2011,南亞裔人士,Never married,Overall,22.0
+2011,南亞裔人士,Married,Male,73.6
+2011,南亞裔人士,Married,Female,74.6
+2011,南亞裔人士,Married,Overall,74.1
+2011,南亞裔人士,Widowed/divorced/separated,Male,2.7
+2011,南亞裔人士,Widowed/divorced/separated,Female,5.2
+2011,南亞裔人士,Widowed/divorced/separated,Overall,3.9
+2011,南亞裔人士,Total,Male,100.0
+2011,南亞裔人士,Total,Female,100.0
+2011,南亞裔人士,Total,Overall,100.0
+2011,South Asian,Never married,Male,
+2011,South Asian,Never married,Female,
+2011,South Asian,Never married,Overall,
+2011,South Asian,Married,Male,
+2011,South Asian,Married,Female,
+2011,South Asian,Married,Overall,
+2011,South Asian,Widowed/divorced/separated,Male,
+2011,South Asian,Widowed/divorced/separated,Female,
+2011,South Asian,Widowed/divorced/separated,Overall,
+2011,South Asian,Total,Male,
+2011,South Asian,Total,Female,
+2011,South Asian,Total,Overall,
+2011,印度人,Never married,Male,22.9
+2011,印度人,Never married,Female,20.9
+2011,印度人,Never married,Overall,21.9
+2011,印度人,Married,Male,74.4
+2011,印度人,Married,Female,73.4
+2011,印度人,Married,Overall,73.9
+2011,印度人,Widowed/divorced/separated,Male,2.7
+2011,印度人,Widowed/divorced/separated,Female,5.7
+2011,印度人,Widowed/divorced/separated,Overall,4.2
+2011,印度人,Total,Male,100.0
+2011,印度人,Total,Female,100.0
+2011,印度人,Total,Overall,100.0
+2011,Indian,Never married,Male,
+2011,Indian,Never married,Female,
+2011,Indian,Never married,Overall,
+2011,Indian,Married,Male,
+2011,Indian,Married,Female,
+2011,Indian,Married,Overall,
+2011,Indian,Widowed/divorced/separated,Male,
+2011,Indian,Widowed/divorced/separated,Female,
+2011,Indian,Widowed/divorced/separated,Overall,
+2011,Indian,Total,Male,
+2011,Indian,Total,Female,
+2011,Indian,Total,Overall,
+2011,尼泊爾人,Never married,Male,20.3
+2011,尼泊爾人,Never married,Female,22.0
+2011,尼泊爾人,Never married,Overall,21.1
+2011,尼泊爾人,Married,Male,75.3
+2011,尼泊爾人,Married,Female,73.1
+2011,尼泊爾人,Married,Overall,74.3
+2011,尼泊爾人,Widowed/divorced/separated,Male,4.3
+2011,尼泊爾人,Widowed/divorced/separated,Female,4.8
+2011,尼泊爾人,Widowed/divorced/separated,Overall,4.6
+2011,尼泊爾人,Total,Male,100.0
+2011,尼泊爾人,Total,Female,100.0
+2011,尼泊爾人,Total,Overall,100.0
+2011,Nepalese,Never married,Male,
+2011,Nepalese,Never married,Female,
+2011,Nepalese,Never married,Overall,
+2011,Nepalese,Married,Male,
+2011,Nepalese,Married,Female,
+2011,Nepalese,Married,Overall,
+2011,Nepalese,Widowed/divorced/separated,Male,
+2011,Nepalese,Widowed/divorced/separated,Female,
+2011,Nepalese,Widowed/divorced/separated,Overall,
+2011,Nepalese,Total,Male,
+2011,Nepalese,Total,Female,
+2011,Nepalese,Total,Overall,
+2011,巴基斯坦人,Never married,Male,26.5
+2011,巴基斯坦人,Never married,Female,15.8
+2011,巴基斯坦人,Never married,Overall,22.1
+2011,巴基斯坦人,Married,Male,72.1
+2011,巴基斯坦人,Married,Female,81.0
+2011,巴基斯坦人,Married,Overall,75.7
+2011,巴基斯坦人,Widowed/divorced/separated,Male,1.4
+2011,巴基斯坦人,Widowed/divorced/separated,Female,3.2
+2011,巴基斯坦人,Widowed/divorced/separated,Overall,2.1
+2011,巴基斯坦人,Total,Male,100.0
+2011,巴基斯坦人,Total,Female,100.0
+2011,巴基斯坦人,Total,Overall,100.0
+2011,Pakistani,Never married,Male,
+2011,Pakistani,Never married,Female,
+2011,Pakistani,Never married,Overall,
+2011,Pakistani,Married,Male,
+2011,Pakistani,Married,Female,
+2011,Pakistani,Married,Overall,
+2011,Pakistani,Widowed/divorced/separated,Male,
+2011,Pakistani,Widowed/divorced/separated,Female,
+2011,Pakistani,Widowed/divorced/separated,Overall,
+2011,Pakistani,Total,Male,
+2011,Pakistani,Total,Female,
+2011,Pakistani,Total,Overall,
+2011,其他南亞裔人士[1],Never married,Male,39.9
+2011,其他南亞裔人士[1],Never married,Female,20.0
+2011,其他南亞裔人士[1],Never married,Overall,28.3
+2011,其他南亞裔人士[1],Married,Male,59.7
+2011,其他南亞裔人士[1],Married,Female,71.0
+2011,其他南亞裔人士[1],Married,Overall,66.3
+2011,其他南亞裔人士[1],Widowed/divorced/separated,Male,0.4
+2011,其他南亞裔人士[1],Widowed/divorced/separated,Female,9.0
+2011,其他南亞裔人士[1],Widowed/divorced/separated,Overall,5.4
+2011,其他南亞裔人士[1],Total,Male,100.0
+2011,其他南亞裔人士[1],Total,Female,100.0
+2011,其他南亞裔人士[1],Total,Overall,100.0
+2011,Other South Asian[1],Never married,Male,
+2011,Other South Asian[1],Never married,Female,
+2011,Other South Asian[1],Never married,Overall,
+2011,Other South Asian[1],Married,Male,
+2011,Other South Asian[1],Married,Female,
+2011,Other South Asian[1],Married,Overall,
+2011,Other South Asian[1],Widowed/divorced/separated,Male,
+2011,Other South Asian[1],Widowed/divorced/separated,Female,
+2011,Other South Asian[1],Widowed/divorced/separated,Overall,
+2011,Other South Asian[1],Total,Male,
+2011,Other South Asian[1],Total,Female,
+2011,Other South Asian[1],Total,Overall,
+2011,泰國人,Never married,Male,25.2
+2011,泰國人,Never married,Female,13.3
+2011,泰國人,Never married,Overall,14.4
+2011,泰國人,Married,Male,73.4
+2011,泰國人,Married,Female,71.6
+2011,泰國人,Married,Overall,71.7
+2011,泰國人,Widowed/divorced/separated,Male,1.4
+2011,泰國人,Widowed/divorced/separated,Female,15.1
+2011,泰國人,Widowed/divorced/separated,Overall,13.9
+2011,泰國人,Total,Male,100.0
+2011,泰國人,Total,Female,100.0
+2011,泰國人,Total,Overall,100.0
+2011,Thai,Never married,Male,
+2011,Thai,Never married,Female,
+2011,Thai,Never married,Overall,
+2011,Thai,Married,Male,
+2011,Thai,Married,Female,
+2011,Thai,Married,Overall,
+2011,Thai,Widowed/divorced/separated,Male,
+2011,Thai,Widowed/divorced/separated,Female,
+2011,Thai,Widowed/divorced/separated,Overall,
+2011,Thai,Total,Male,
+2011,Thai,Total,Female,
+2011,Thai,Total,Overall,
+2011,日本人,Never married,Male,15.6
+2011,日本人,Never married,Female,20.1
+2011,日本人,Never married,Overall,17.7
+2011,日本人,Married,Male,81.4
+2011,日本人,Married,Female,77.1
+2011,日本人,Married,Overall,79.4
+2011,日本人,Widowed/divorced/separated,Male,3.0
+2011,日本人,Widowed/divorced/separated,Female,2.8
+2011,日本人,Widowed/divorced/separated,Overall,2.9
+2011,日本人,Total,Male,100.0
+2011,日本人,Total,Female,100.0
+2011,日本人,Total,Overall,100.0
+2011,Japanese,Never married,Male,
+2011,Japanese,Never married,Female,
+2011,Japanese,Never married,Overall,
+2011,Japanese,Married,Male,
+2011,Japanese,Married,Female,
+2011,Japanese,Married,Overall,
+2011,Japanese,Widowed/divorced/separated,Male,
+2011,Japanese,Widowed/divorced/separated,Female,
+2011,Japanese,Widowed/divorced/separated,Overall,
+2011,Japanese,Total,Male,
+2011,Japanese,Total,Female,
+2011,Japanese,Total,Overall,
+2011,韓國人,Never married,Male,17.5
+2011,韓國人,Never married,Female,20.5
+2011,韓國人,Never married,Overall,19.2
+2011,韓國人,Married,Male,81.7
+2011,韓國人,Married,Female,71.4
+2011,韓國人,Married,Overall,75.8
+2011,韓國人,Widowed/divorced/separated,Male,0.8
+2011,韓國人,Widowed/divorced/separated,Female,8.1
+2011,韓國人,Widowed/divorced/separated,Overall,5.0
+2011,韓國人,Total,Male,100.0
+2011,韓國人,Total,Female,100.0
+2011,韓國人,Total,Overall,100.0
+2011,Korean,Never married,Male,
+2011,Korean,Never married,Female,
+2011,Korean,Never married,Overall,
+2011,Korean,Married,Male,
+2011,Korean,Married,Female,
+2011,Korean,Married,Overall,
+2011,Korean,Widowed/divorced/separated,Male,
+2011,Korean,Widowed/divorced/separated,Female,
+2011,Korean,Widowed/divorced/separated,Overall,
+2011,Korean,Total,Male,
+2011,Korean,Total,Female,
+2011,Korean,Total,Overall,
+2011,其他亞洲人,Never married,Male,29.5
+2011,其他亞洲人,Never married,Female,21.1
+2011,其他亞洲人,Never married,Overall,23.9
+2011,其他亞洲人,Married,Male,64.2
+2011,其他亞洲人,Married,Female,70.4
+2011,其他亞洲人,Married,Overall,68.4
+2011,其他亞洲人,Widowed/divorced/separated,Male,6.3
+2011,其他亞洲人,Widowed/divorced/separated,Female,8.5
+2011,其他亞洲人,Widowed/divorced/separated,Overall,7.7
+2011,其他亞洲人,Total,Male,100.0
+2011,其他亞洲人,Total,Female,100.0
+2011,其他亞洲人,Total,Overall,100.0
+2011,Other Asian,Never married,Male,
+2011,Other Asian,Never married,Female,
+2011,Other Asian,Never married,Overall,
+2011,Other Asian,Married,Male,
+2011,Other Asian,Married,Female,
+2011,Other Asian,Married,Overall,
+2011,Other Asian,Widowed/divorced/separated,Male,
+2011,Other Asian,Widowed/divorced/separated,Female,
+2011,Other Asian,Widowed/divorced/separated,Overall,
+2011,Other Asian,Total,Male,
+2011,Other Asian,Total,Female,
+2011,Other Asian,Total,Overall,
+2011,白人,Never married,Male,29.1
+2011,白人,Never married,Female,27.0
+2011,白人,Never married,Overall,28.3
+2011,白人,Married,Male,64.8
+2011,白人,Married,Female,63.8
+2011,白人,Married,Overall,64.5
+2011,白人,Widowed/divorced/separated,Male,6.1
+2011,白人,Widowed/divorced/separated,Female,9.2
+2011,白人,Widowed/divorced/separated,Overall,7.2
+2011,白人,Total,Male,100.0
+2011,白人,Total,Female,100.0
+2011,白人,Total,Overall,100.0
+2011,White,Never married,Male,
+2011,White,Never married,Female,
+2011,White,Never married,Overall,
+2011,White,Married,Male,
+2011,White,Married,Female,
+2011,White,Married,Overall,
+2011,White,Widowed/divorced/separated,Male,
+2011,White,Widowed/divorced/separated,Female,
+2011,White,Widowed/divorced/separated,Overall,
+2011,White,Total,Male,
+2011,White,Total,Female,
+2011,White,Total,Overall,
+2011,混血兒,Never married,Male,53.0
+2011,混血兒,Never married,Female,48.6
+2011,混血兒,Never married,Overall,50.7
+2011,混血兒,Married,Male,42.3
+2011,混血兒,Married,Female,38.6
+2011,混血兒,Married,Overall,40.3
+2011,混血兒,Widowed/divorced/separated,Male,4.7
+2011,混血兒,Widowed/divorced/separated,Female,12.8
+2011,混血兒,Widowed/divorced/separated,Overall,9.1
+2011,混血兒,Total,Male,100.0
+2011,混血兒,Total,Female,100.0
+2011,混血兒,Total,Overall,100.0
+2011,Mixed,Never married,Male,
+2011,Mixed,Never married,Female,
+2011,Mixed,Never married,Overall,
+2011,Mixed,Married,Male,
+2011,Mixed,Married,Female,
+2011,Mixed,Married,Overall,
+2011,Mixed,Widowed/divorced/separated,Male,
+2011,Mixed,Widowed/divorced/separated,Female,
+2011,Mixed,Widowed/divorced/separated,Overall,
+2011,Mixed,Total,Male,
+2011,Mixed,Total,Female,
+2011,Mixed,Total,Overall,
+2011,華人父或母,Never married,Male,52.0
+2011,華人父或母,Never married,Female,48.6
+2011,華人父或母,Never married,Overall,50.3
+2011,華人父或母,Married,Male,43.1
+2011,華人父或母,Married,Female,38.1
+2011,華人父或母,Married,Overall,40.5
+2011,華人父或母,Widowed/divorced/separated,Male,4.9
+2011,華人父或母,Widowed/divorced/separated,Female,13.2
+2011,華人父或母,Widowed/divorced/separated,Overall,9.2
+2011,華人父或母,Total,Male,100.0
+2011,華人父或母,Total,Female,100.0
+2011,華人父或母,Total,Overall,100.0
+2011,With Chinese parent,Never married,Male,
+2011,With Chinese parent,Never married,Female,
+2011,With Chinese parent,Never married,Overall,
+2011,With Chinese parent,Married,Male,
+2011,With Chinese parent,Married,Female,
+2011,With Chinese parent,Married,Overall,
+2011,With Chinese parent,Widowed/divorced/separated,Male,
+2011,With Chinese parent,Widowed/divorced/separated,Female,
+2011,With Chinese parent,Widowed/divorced/separated,Overall,
+2011,With Chinese parent,Total,Male,
+2011,With Chinese parent,Total,Female,
+2011,With Chinese parent,Total,Overall,
+2011,其他混血兒,Never married,Male,65.1
+2011,其他混血兒,Never married,Female,48.3
+2011,其他混血兒,Never married,Overall,54.0
+2011,其他混血兒,Married,Male,32.2
+2011,其他混血兒,Married,Female,41.4
+2011,其他混血兒,Married,Overall,38.3
+2011,其他混血兒,Widowed/divorced/separated,Male,2.7
+2011,其他混血兒,Widowed/divorced/separated,Female,10.3
+2011,其他混血兒,Widowed/divorced/separated,Overall,7.8
+2011,其他混血兒,Total,Male,100.0
+2011,其他混血兒,Total,Female,100.0
+2011,其他混血兒,Total,Overall,100.0
+2011,Other Mixed,Never married,Male,
+2011,Other Mixed,Never married,Female,
+2011,Other Mixed,Never married,Overall,
+2011,Other Mixed,Married,Male,
+2011,Other Mixed,Married,Female,
+2011,Other Mixed,Married,Overall,
+2011,Other Mixed,Widowed/divorced/separated,Male,
+2011,Other Mixed,Widowed/divorced/separated,Female,
+2011,Other Mixed,Widowed/divorced/separated,Overall,
+2011,Other Mixed,Total,Male,
+2011,Other Mixed,Total,Female,
+2011,Other Mixed,Total,Overall,

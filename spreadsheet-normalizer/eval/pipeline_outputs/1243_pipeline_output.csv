@@ -1,4 +1,4 @@
-province_and_territory,crime_severity_type,crime_severity_index
+province_and_territory,index_type,index_value
 newfoundland and labrador,total crime severity index,69.3
 prince edward island,total crime severity index,48.5
 nova scotia,total crime severity index,61.2
@@ -12,7 +12,6 @@ british columbia,total crime severity index,93.6
 yukon,total crime severity index,183.9
 northwest territories,total crime severity index,291.7
 nunavut,total crime severity index,286.4
-canada,total crime severity index,71.0
 newfoundland and labrador,violent crime severity index,72.6
 prince edward island,violent crime severity index,35.1
 nova scotia,violent crime severity index,68.3
@@ -26,7 +25,6 @@ british columbia,violent crime severity index,74.9
 yukon,violent crime severity index,229.1
 northwest territories,violent crime severity index,332.1
 nunavut,violent crime severity index,407.7
-canada,violent crime severity index,75.3
 newfoundland and labrador,non-violent crime severity index,68.0
 prince edward island,non-violent crime severity index,53.3
 nova scotia,non-violent crime severity index,58.5
@@ -40,4 +38,3 @@ british columbia,non-violent crime severity index,100.3
 yukon,non-violent crime severity index,167.0
 northwest territories,non-violent crime severity index,276.4
 nunavut,non-violent crime severity index,241.6
-canada,non-violent crime severity index,69.3
