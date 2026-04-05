@@ -1,397 +1,70 @@
-year,ethnicity,marital_status,gender,percentage
-2011,,Never married,Male,
-2011,,Never married,Female,
-2011,,Never married,Overall,
-2011,,Married,Male,
-2011,,Married,Female,
-2011,,Married,Overall,
-2011,,Widowed/divorced/separated,Male,
-2011,,Widowed/divorced/separated,Female,
-2011,,Widowed/divorced/separated,Overall,
-2011,,Total,Male,
-2011,,Total,Female,
-2011,,Total,Overall,
-2011,亞洲人（非華人）,Never married,Male,23.0
-2011,亞洲人（非華人）,Never married,Female,35.6
-2011,亞洲人（非華人）,Never married,Overall,34.1
-2011,亞洲人（非華人）,Married,Male,73.9
-2011,亞洲人（非華人）,Married,Female,56.3
-2011,亞洲人（非華人）,Married,Overall,58.4
-2011,亞洲人（非華人）,Widowed/divorced/separated,Male,3.1
-2011,亞洲人（非華人）,Widowed/divorced/separated,Female,8.1
-2011,亞洲人（非華人）,Widowed/divorced/separated,Overall,7.5
-2011,亞洲人（非華人）,Total,Male,100.0
-2011,亞洲人（非華人）,Total,Female,100.0
-2011,亞洲人（非華人）,Total,Overall,100.0
-2011,Asian (other than Chinese),Never married,Male,
-2011,Asian (other than Chinese),Never married,Female,
-2011,Asian (other than Chinese),Never married,Overall,
-2011,Asian (other than Chinese),Married,Male,
-2011,Asian (other than Chinese),Married,Female,
-2011,Asian (other than Chinese),Married,Overall,
-2011,Asian (other than Chinese),Widowed/divorced/separated,Male,
-2011,Asian (other than Chinese),Widowed/divorced/separated,Female,
-2011,Asian (other than Chinese),Widowed/divorced/separated,Overall,
-2011,Asian (other than Chinese),Total,Male,
-2011,Asian (other than Chinese),Total,Female,
-2011,Asian (other than Chinese),Total,Overall,
-2011,菲律賓人,Never married,Male,26.1
-2011,菲律賓人,Never married,Female,36.4
-2011,菲律賓人,Never married,Overall,35.9
-2011,菲律賓人,Married,Male,68.8
-2011,菲律賓人,Married,Female,54.0
-2011,菲律賓人,Married,Overall,54.7
-2011,菲律賓人,Widowed/divorced/separated,Male,5.1
-2011,菲律賓人,Widowed/divorced/separated,Female,9.6
-2011,菲律賓人,Widowed/divorced/separated,Overall,9.4
-2011,菲律賓人,Total,Male,100.0
-2011,菲律賓人,Total,Female,100.0
-2011,菲律賓人,Total,Overall,100.0
-2011,Filipino,Never married,Male,
-2011,Filipino,Never married,Female,
-2011,Filipino,Never married,Overall,
-2011,Filipino,Married,Male,
-2011,Filipino,Married,Female,
-2011,Filipino,Married,Overall,
-2011,Filipino,Widowed/divorced/separated,Male,
-2011,Filipino,Widowed/divorced/separated,Female,
-2011,Filipino,Widowed/divorced/separated,Overall,
-2011,Filipino,Total,Male,
-2011,Filipino,Total,Female,
-2011,Filipino,Total,Overall,
-2011,印尼人,Never married,Male,29.2
-2011,印尼人,Never married,Female,40.4
-2011,印尼人,Never married,Overall,40.4
-2011,印尼人,Married,Male,68.2
-2011,印尼人,Married,Female,52.6
-2011,印尼人,Married,Overall,52.7
-2011,印尼人,Widowed/divorced/separated,Male,2.6
-2011,印尼人,Widowed/divorced/separated,Female,7.0
-2011,印尼人,Widowed/divorced/separated,Overall,6.9
-2011,印尼人,Total,Male,100.0
-2011,印尼人,Total,Female,100.0
-2011,印尼人,Total,Overall,100.0
-2011,Indonesian,Never married,Male,
-2011,Indonesian,Never married,Female,
-2011,Indonesian,Never married,Overall,
-2011,Indonesian,Married,Male,
-2011,Indonesian,Married,Female,
-2011,Indonesian,Married,Overall,
-2011,Indonesian,Widowed/divorced/separated,Male,
-2011,Indonesian,Widowed/divorced/separated,Female,
-2011,Indonesian,Widowed/divorced/separated,Overall,
-2011,Indonesian,Total,Male,
-2011,Indonesian,Total,Female,
-2011,Indonesian,Total,Overall,
-2011,南亞裔人士,Never married,Male,23.7
-2011,南亞裔人士,Never married,Female,20.2
-2011,南亞裔人士,Never married,Overall,22.0
-2011,南亞裔人士,Married,Male,73.6
-2011,南亞裔人士,Married,Female,74.6
-2011,南亞裔人士,Married,Overall,74.1
-2011,南亞裔人士,Widowed/divorced/separated,Male,2.7
-2011,南亞裔人士,Widowed/divorced/separated,Female,5.2
-2011,南亞裔人士,Widowed/divorced/separated,Overall,3.9
-2011,南亞裔人士,Total,Male,100.0
-2011,南亞裔人士,Total,Female,100.0
-2011,南亞裔人士,Total,Overall,100.0
-2011,South Asian,Never married,Male,
-2011,South Asian,Never married,Female,
-2011,South Asian,Never married,Overall,
-2011,South Asian,Married,Male,
-2011,South Asian,Married,Female,
-2011,South Asian,Married,Overall,
-2011,South Asian,Widowed/divorced/separated,Male,
-2011,South Asian,Widowed/divorced/separated,Female,
-2011,South Asian,Widowed/divorced/separated,Overall,
-2011,South Asian,Total,Male,
-2011,South Asian,Total,Female,
-2011,South Asian,Total,Overall,
-2011,印度人,Never married,Male,22.9
-2011,印度人,Never married,Female,20.9
-2011,印度人,Never married,Overall,21.9
-2011,印度人,Married,Male,74.4
-2011,印度人,Married,Female,73.4
-2011,印度人,Married,Overall,73.9
-2011,印度人,Widowed/divorced/separated,Male,2.7
-2011,印度人,Widowed/divorced/separated,Female,5.7
-2011,印度人,Widowed/divorced/separated,Overall,4.2
-2011,印度人,Total,Male,100.0
-2011,印度人,Total,Female,100.0
-2011,印度人,Total,Overall,100.0
-2011,Indian,Never married,Male,
-2011,Indian,Never married,Female,
-2011,Indian,Never married,Overall,
-2011,Indian,Married,Male,
-2011,Indian,Married,Female,
-2011,Indian,Married,Overall,
-2011,Indian,Widowed/divorced/separated,Male,
-2011,Indian,Widowed/divorced/separated,Female,
-2011,Indian,Widowed/divorced/separated,Overall,
-2011,Indian,Total,Male,
-2011,Indian,Total,Female,
-2011,Indian,Total,Overall,
-2011,尼泊爾人,Never married,Male,20.3
-2011,尼泊爾人,Never married,Female,22.0
-2011,尼泊爾人,Never married,Overall,21.1
-2011,尼泊爾人,Married,Male,75.3
-2011,尼泊爾人,Married,Female,73.1
-2011,尼泊爾人,Married,Overall,74.3
-2011,尼泊爾人,Widowed/divorced/separated,Male,4.3
-2011,尼泊爾人,Widowed/divorced/separated,Female,4.8
-2011,尼泊爾人,Widowed/divorced/separated,Overall,4.6
-2011,尼泊爾人,Total,Male,100.0
-2011,尼泊爾人,Total,Female,100.0
-2011,尼泊爾人,Total,Overall,100.0
-2011,Nepalese,Never married,Male,
-2011,Nepalese,Never married,Female,
-2011,Nepalese,Never married,Overall,
-2011,Nepalese,Married,Male,
-2011,Nepalese,Married,Female,
-2011,Nepalese,Married,Overall,
-2011,Nepalese,Widowed/divorced/separated,Male,
-2011,Nepalese,Widowed/divorced/separated,Female,
-2011,Nepalese,Widowed/divorced/separated,Overall,
-2011,Nepalese,Total,Male,
-2011,Nepalese,Total,Female,
-2011,Nepalese,Total,Overall,
-2011,巴基斯坦人,Never married,Male,26.5
-2011,巴基斯坦人,Never married,Female,15.8
-2011,巴基斯坦人,Never married,Overall,22.1
-2011,巴基斯坦人,Married,Male,72.1
-2011,巴基斯坦人,Married,Female,81.0
-2011,巴基斯坦人,Married,Overall,75.7
-2011,巴基斯坦人,Widowed/divorced/separated,Male,1.4
-2011,巴基斯坦人,Widowed/divorced/separated,Female,3.2
-2011,巴基斯坦人,Widowed/divorced/separated,Overall,2.1
-2011,巴基斯坦人,Total,Male,100.0
-2011,巴基斯坦人,Total,Female,100.0
-2011,巴基斯坦人,Total,Overall,100.0
-2011,Pakistani,Never married,Male,
-2011,Pakistani,Never married,Female,
-2011,Pakistani,Never married,Overall,
-2011,Pakistani,Married,Male,
-2011,Pakistani,Married,Female,
-2011,Pakistani,Married,Overall,
-2011,Pakistani,Widowed/divorced/separated,Male,
-2011,Pakistani,Widowed/divorced/separated,Female,
-2011,Pakistani,Widowed/divorced/separated,Overall,
-2011,Pakistani,Total,Male,
-2011,Pakistani,Total,Female,
-2011,Pakistani,Total,Overall,
-2011,其他南亞裔人士[1],Never married,Male,39.9
-2011,其他南亞裔人士[1],Never married,Female,20.0
-2011,其他南亞裔人士[1],Never married,Overall,28.3
-2011,其他南亞裔人士[1],Married,Male,59.7
-2011,其他南亞裔人士[1],Married,Female,71.0
-2011,其他南亞裔人士[1],Married,Overall,66.3
-2011,其他南亞裔人士[1],Widowed/divorced/separated,Male,0.4
-2011,其他南亞裔人士[1],Widowed/divorced/separated,Female,9.0
-2011,其他南亞裔人士[1],Widowed/divorced/separated,Overall,5.4
-2011,其他南亞裔人士[1],Total,Male,100.0
-2011,其他南亞裔人士[1],Total,Female,100.0
-2011,其他南亞裔人士[1],Total,Overall,100.0
-2011,Other South Asian[1],Never married,Male,
-2011,Other South Asian[1],Never married,Female,
-2011,Other South Asian[1],Never married,Overall,
-2011,Other South Asian[1],Married,Male,
-2011,Other South Asian[1],Married,Female,
-2011,Other South Asian[1],Married,Overall,
-2011,Other South Asian[1],Widowed/divorced/separated,Male,
-2011,Other South Asian[1],Widowed/divorced/separated,Female,
-2011,Other South Asian[1],Widowed/divorced/separated,Overall,
-2011,Other South Asian[1],Total,Male,
-2011,Other South Asian[1],Total,Female,
-2011,Other South Asian[1],Total,Overall,
-2011,泰國人,Never married,Male,25.2
-2011,泰國人,Never married,Female,13.3
-2011,泰國人,Never married,Overall,14.4
-2011,泰國人,Married,Male,73.4
-2011,泰國人,Married,Female,71.6
-2011,泰國人,Married,Overall,71.7
-2011,泰國人,Widowed/divorced/separated,Male,1.4
-2011,泰國人,Widowed/divorced/separated,Female,15.1
-2011,泰國人,Widowed/divorced/separated,Overall,13.9
-2011,泰國人,Total,Male,100.0
-2011,泰國人,Total,Female,100.0
-2011,泰國人,Total,Overall,100.0
-2011,Thai,Never married,Male,
-2011,Thai,Never married,Female,
-2011,Thai,Never married,Overall,
-2011,Thai,Married,Male,
-2011,Thai,Married,Female,
-2011,Thai,Married,Overall,
-2011,Thai,Widowed/divorced/separated,Male,
-2011,Thai,Widowed/divorced/separated,Female,
-2011,Thai,Widowed/divorced/separated,Overall,
-2011,Thai,Total,Male,
-2011,Thai,Total,Female,
-2011,Thai,Total,Overall,
-2011,日本人,Never married,Male,15.6
-2011,日本人,Never married,Female,20.1
-2011,日本人,Never married,Overall,17.7
-2011,日本人,Married,Male,81.4
-2011,日本人,Married,Female,77.1
-2011,日本人,Married,Overall,79.4
-2011,日本人,Widowed/divorced/separated,Male,3.0
-2011,日本人,Widowed/divorced/separated,Female,2.8
-2011,日本人,Widowed/divorced/separated,Overall,2.9
-2011,日本人,Total,Male,100.0
-2011,日本人,Total,Female,100.0
-2011,日本人,Total,Overall,100.0
-2011,Japanese,Never married,Male,
-2011,Japanese,Never married,Female,
-2011,Japanese,Never married,Overall,
-2011,Japanese,Married,Male,
-2011,Japanese,Married,Female,
-2011,Japanese,Married,Overall,
-2011,Japanese,Widowed/divorced/separated,Male,
-2011,Japanese,Widowed/divorced/separated,Female,
-2011,Japanese,Widowed/divorced/separated,Overall,
-2011,Japanese,Total,Male,
-2011,Japanese,Total,Female,
-2011,Japanese,Total,Overall,
-2011,韓國人,Never married,Male,17.5
-2011,韓國人,Never married,Female,20.5
-2011,韓國人,Never married,Overall,19.2
-2011,韓國人,Married,Male,81.7
-2011,韓國人,Married,Female,71.4
-2011,韓國人,Married,Overall,75.8
-2011,韓國人,Widowed/divorced/separated,Male,0.8
-2011,韓國人,Widowed/divorced/separated,Female,8.1
-2011,韓國人,Widowed/divorced/separated,Overall,5.0
-2011,韓國人,Total,Male,100.0
-2011,韓國人,Total,Female,100.0
-2011,韓國人,Total,Overall,100.0
-2011,Korean,Never married,Male,
-2011,Korean,Never married,Female,
-2011,Korean,Never married,Overall,
-2011,Korean,Married,Male,
-2011,Korean,Married,Female,
-2011,Korean,Married,Overall,
-2011,Korean,Widowed/divorced/separated,Male,
-2011,Korean,Widowed/divorced/separated,Female,
-2011,Korean,Widowed/divorced/separated,Overall,
-2011,Korean,Total,Male,
-2011,Korean,Total,Female,
-2011,Korean,Total,Overall,
-2011,其他亞洲人,Never married,Male,29.5
-2011,其他亞洲人,Never married,Female,21.1
-2011,其他亞洲人,Never married,Overall,23.9
-2011,其他亞洲人,Married,Male,64.2
-2011,其他亞洲人,Married,Female,70.4
-2011,其他亞洲人,Married,Overall,68.4
-2011,其他亞洲人,Widowed/divorced/separated,Male,6.3
-2011,其他亞洲人,Widowed/divorced/separated,Female,8.5
-2011,其他亞洲人,Widowed/divorced/separated,Overall,7.7
-2011,其他亞洲人,Total,Male,100.0
-2011,其他亞洲人,Total,Female,100.0
-2011,其他亞洲人,Total,Overall,100.0
-2011,Other Asian,Never married,Male,
-2011,Other Asian,Never married,Female,
-2011,Other Asian,Never married,Overall,
-2011,Other Asian,Married,Male,
-2011,Other Asian,Married,Female,
-2011,Other Asian,Married,Overall,
-2011,Other Asian,Widowed/divorced/separated,Male,
-2011,Other Asian,Widowed/divorced/separated,Female,
-2011,Other Asian,Widowed/divorced/separated,Overall,
-2011,Other Asian,Total,Male,
-2011,Other Asian,Total,Female,
-2011,Other Asian,Total,Overall,
-2011,白人,Never married,Male,29.1
-2011,白人,Never married,Female,27.0
-2011,白人,Never married,Overall,28.3
-2011,白人,Married,Male,64.8
-2011,白人,Married,Female,63.8
-2011,白人,Married,Overall,64.5
-2011,白人,Widowed/divorced/separated,Male,6.1
-2011,白人,Widowed/divorced/separated,Female,9.2
-2011,白人,Widowed/divorced/separated,Overall,7.2
-2011,白人,Total,Male,100.0
-2011,白人,Total,Female,100.0
-2011,白人,Total,Overall,100.0
-2011,White,Never married,Male,
-2011,White,Never married,Female,
-2011,White,Never married,Overall,
-2011,White,Married,Male,
-2011,White,Married,Female,
-2011,White,Married,Overall,
-2011,White,Widowed/divorced/separated,Male,
-2011,White,Widowed/divorced/separated,Female,
-2011,White,Widowed/divorced/separated,Overall,
-2011,White,Total,Male,
-2011,White,Total,Female,
-2011,White,Total,Overall,
-2011,混血兒,Never married,Male,53.0
-2011,混血兒,Never married,Female,48.6
-2011,混血兒,Never married,Overall,50.7
-2011,混血兒,Married,Male,42.3
-2011,混血兒,Married,Female,38.6
-2011,混血兒,Married,Overall,40.3
-2011,混血兒,Widowed/divorced/separated,Male,4.7
-2011,混血兒,Widowed/divorced/separated,Female,12.8
-2011,混血兒,Widowed/divorced/separated,Overall,9.1
-2011,混血兒,Total,Male,100.0
-2011,混血兒,Total,Female,100.0
-2011,混血兒,Total,Overall,100.0
-2011,Mixed,Never married,Male,
-2011,Mixed,Never married,Female,
-2011,Mixed,Never married,Overall,
-2011,Mixed,Married,Male,
-2011,Mixed,Married,Female,
-2011,Mixed,Married,Overall,
-2011,Mixed,Widowed/divorced/separated,Male,
-2011,Mixed,Widowed/divorced/separated,Female,
-2011,Mixed,Widowed/divorced/separated,Overall,
-2011,Mixed,Total,Male,
-2011,Mixed,Total,Female,
-2011,Mixed,Total,Overall,
-2011,華人父或母,Never married,Male,52.0
-2011,華人父或母,Never married,Female,48.6
-2011,華人父或母,Never married,Overall,50.3
-2011,華人父或母,Married,Male,43.1
-2011,華人父或母,Married,Female,38.1
-2011,華人父或母,Married,Overall,40.5
-2011,華人父或母,Widowed/divorced/separated,Male,4.9
-2011,華人父或母,Widowed/divorced/separated,Female,13.2
-2011,華人父或母,Widowed/divorced/separated,Overall,9.2
-2011,華人父或母,Total,Male,100.0
-2011,華人父或母,Total,Female,100.0
-2011,華人父或母,Total,Overall,100.0
-2011,With Chinese parent,Never married,Male,
-2011,With Chinese parent,Never married,Female,
-2011,With Chinese parent,Never married,Overall,
-2011,With Chinese parent,Married,Male,
-2011,With Chinese parent,Married,Female,
-2011,With Chinese parent,Married,Overall,
-2011,With Chinese parent,Widowed/divorced/separated,Male,
-2011,With Chinese parent,Widowed/divorced/separated,Female,
-2011,With Chinese parent,Widowed/divorced/separated,Overall,
-2011,With Chinese parent,Total,Male,
-2011,With Chinese parent,Total,Female,
-2011,With Chinese parent,Total,Overall,
-2011,其他混血兒,Never married,Male,65.1
-2011,其他混血兒,Never married,Female,48.3
-2011,其他混血兒,Never married,Overall,54.0
-2011,其他混血兒,Married,Male,32.2
-2011,其他混血兒,Married,Female,41.4
-2011,其他混血兒,Married,Overall,38.3
-2011,其他混血兒,Widowed/divorced/separated,Male,2.7
-2011,其他混血兒,Widowed/divorced/separated,Female,10.3
-2011,其他混血兒,Widowed/divorced/separated,Overall,7.8
-2011,其他混血兒,Total,Male,100.0
-2011,其他混血兒,Total,Female,100.0
-2011,其他混血兒,Total,Overall,100.0
-2011,Other Mixed,Never married,Male,
-2011,Other Mixed,Never married,Female,
-2011,Other Mixed,Never married,Overall,
-2011,Other Mixed,Married,Male,
-2011,Other Mixed,Married,Female,
-2011,Other Mixed,Married,Overall,
-2011,Other Mixed,Widowed/divorced/separated,Male,
-2011,Other Mixed,Widowed/divorced/separated,Female,
-2011,Other Mixed,Widowed/divorced/separated,Overall,
-2011,Other Mixed,Total,Male,
-2011,Other Mixed,Total,Female,
-2011,Other Mixed,Total,Overall,
+表4.1,Unnamed: 1,2011年、2016年及2021年按種族、婚姻狀況及性別劃分的15歲及以上少數族裔人士百分比分布,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Unnamed: 8,Unnamed: 9,Unnamed: 10,Unnamed: 11,Unnamed: 12,Unnamed: 13,Unnamed: 14,索引 Index
+Table 4.1,,"Percentage distribution of ethnic minorities aged 15 and over by ethnicity, marital status and sex, 2011, 2016 and 2021",,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,"婚姻狀況
+Marital status",,,,,,,,,,,,
+,,,"從未結婚
+Never married",,,"已婚
+Married",,,"喪偶／離婚／分居
+Widowed/divorced/
+separated",,,"總計
+Total",,,
+"年份  
+Year ","種族  
+Ethnicity",,"男
+Male","女
+Female","合計
+Overall","男
+Male","女
+Female","合計
+Overall","男
+Male","女
+Female","合計
+Overall","男
+Male","女
+Female","合計
+Overall",
+,,,,,,,,,,,,,,,
+2011,,,,,,,,,,,,,,,
+,亞洲人（非華人）,,23,35.6,34.1,73.9,56.3,58.4,3.1,8.1,7.5,100,100,100,
+,Asian (other than Chinese),,,,,,,,,,,,,,
+,菲律賓人,,26.1,36.4,35.9,68.8,54,54.7,5.1,9.6,9.4,100,100,100,
+,Filipino,,,,,,,,,,,,,,
+,印尼人,,29.2,40.4,40.4,68.2,52.6,52.7,2.6,7,6.9,100,100,100,
+,Indonesian,,,,,,,,,,,,,,
+,南亞裔人士,,23.7,20.2,22,73.6,74.6,74.1,2.7,5.2,3.9,100,100,100,
+,South Asian,,,,,,,,,,,,,,
+,印度人,,22.9,20.9,21.9,74.4,73.4,73.9,2.7,5.7,4.2,100,100,100,
+,Indian,,,,,,,,,,,,,,
+,尼泊爾人,,20.3,22,21.1,75.3,73.1,74.3,4.3,4.8,4.6,100,100,100,
+,Nepalese,,,,,,,,,,,,,,
+,巴基斯坦人,,26.5,15.8,22.1,72.1,81,75.7,1.4,3.2,2.1,100,100,100,
+,Pakistani,,,,,,,,,,,,,,
+,其他南亞裔人士[1],,39.9,20,28.3,59.7,71,66.3,0.4,9,5.4,100,100,100,
+,Other South Asian[1],,,,,,,,,,,,,,
+,泰國人,,25.2,13.3,14.4,73.4,71.6,71.7,1.4,15.1,13.9,100,100,100,
+,Thai,,,,,,,,,,,,,,
+,日本人,,15.6,20.1,17.7,81.4,77.1,79.4,3,2.8,2.9,100,100,100,
+,Japanese,,,,,,,,,,,,,,
+,韓國人,,17.5,20.5,19.2,81.7,71.4,75.8,0.8,8.1,5,100,100,100,
+,Korean,,,,,,,,,,,,,,
+,其他亞洲人,,29.5,21.1,23.9,64.2,70.4,68.4,6.3,8.5,7.7,100,100,100,
+,Other Asian,,,,,,,,,,,,,,
+,白人,,29.1,27,28.3,64.8,63.8,64.5,6.1,9.2,7.2,100,100,100,
+,White,,,,,,,,,,,,,,
+,混血兒,,53,48.6,50.7,42.3,38.6,40.3,4.7,12.8,9.1,100,100,100,
+,Mixed,,,,,,,,,,,,,,
+,華人父或母,,52,48.6,50.3,43.1,38.1,40.5,4.9,13.2,9.2,100,100,100,
+,With Chinese parent,,,,,,,,,,,,,,
+,其他混血兒,,65.1,48.3,54,32.2,41.4,38.3,2.7,10.3,7.8,100,100,100,
+,Other Mixed,,,,,,,,,,,,,,
+,其他[2],,31.4,30.4,31.2,64,69.6,65.4,4.6,-,3.4,100,100,100,
+,Others[2],,,,,,,,,,,,,,
+,所有少數族裔人士,,28.4,35.5,34.1,67.2,56.1,58.3,4.4,8.3,7.5,100,100,100,
+,All ethnic minorities,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,撇除外籍家庭傭工後的所有少數族裔人士,,28.7,23.2,26,66.9,68.3,67.6,4.4,8.5,6.4,100,100,100,
+,"All ethnic minorities, excluding foreign domestic helpers",,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,全港人口,,33.5,29.9,31.6,61.2,54.8,57.7,5.3,15.3,10.7,100,100,100,
+,Whole population,,,,,,,,,,,,,,

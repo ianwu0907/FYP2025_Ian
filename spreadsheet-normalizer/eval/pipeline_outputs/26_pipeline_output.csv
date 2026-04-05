@@ -1,13 +1,73 @@
-food_item,total_estimate,lower_ci_total,upper_ci_total,under_reporters_estimate,lower_ci_under_reporters,upper_ci_under_reporters,plausible_reporters_estimate,lower_ci_plausible_reporters,upper_ci_plausible_reporters,over_reporters_estimate,lower_ci_over_reporters,upper_ci_over_reporters
-sugar-sweetened beverages,-71,-78,-64,-30,-39,-21,-70,-78,-62,-86,-114,-57
-meat,-37,-51,-23,-8,-24,9,-10,-28,8,-71,-122,-20
-milk,-34,-40,-27,-12,-19,-4,-26,-33,-18,-44,-68,-20
-"pasta, rice, cereal grains and flours",-25,-37,-13,16,2,30,-4,-18,9,-59,-106,-13
-sugars,-20,-25,-14,-3,-8,2,-11,-17,-5,-34,-57,-12
-pastries,19,10,28,9,-2,20,32,20,45,30,-1,61
-oils,-18,-25,-10,12,5,20,-3,-12,6,-46,-75,-16
-breakfast cereals,-17,-23,-12,3,-5,10,-12,-20,-5,-53,-75,-31
-soups,-13,-18,-8,-3,-9,3,-5,-12,1,-37,-54,-19
-"potatoes, fried, roasted, chips",-10,-17,-4,0,-6,6,-8,-15,0,1,-32,35
-cheese,-10,-17,-2,-4,-11,3,-7,-17,3,49,16,83
-nuts,10,2,17,11,2,19,16,6,26,29,-6,63
+food_item,estimated_value,ci_lower_bound,ci_upper_bound
+sugar-sweetened beverages,-71,-71,-78
+sugar-sweetened beverages,-64,-64,-30
+sugar-sweetened beverages,-39,-39,-21
+sugar-sweetened beverages,-70,-70,-78
+sugar-sweetened beverages,-62,-62,-86
+sugar-sweetened beverages,-114,-114,-57
+meat,-37,-37,-51
+meat,-23,-23,-8
+meat,-24,-24,9
+meat,-10,-10,-28
+meat,8,8,-71
+meat,-122,-122,-20
+milk,-34,-34,-40
+milk,-27,-27,-12
+milk,-19,-19,-4
+milk,-26,-26,-33
+milk,-18,-18,-44
+milk,-68,-68,-20
+"pasta, rice, cereal grains and flours",-25,-25,-37
+"pasta, rice, cereal grains and flours",-13,-13,16
+"pasta, rice, cereal grains and flours",2,2,30
+"pasta, rice, cereal grains and flours",-4,-4,-18
+"pasta, rice, cereal grains and flours",9,9,-59
+"pasta, rice, cereal grains and flours",-106,-106,-13
+sugars,-20,-20,-25
+sugars,-14,-14,-3
+sugars,-8,-8,2
+sugars,-11,-11,-17
+sugars,-5,-5,-34
+sugars,-57,-57,-12
+pastries,19,19,10
+pastries,28,28,9
+pastries,-2,-2,20
+pastries,32,32,20
+pastries,45,45,30
+pastries,-1,-1,61
+oils,-18,-18,-25
+oils,-10,-10,12
+oils,5,5,20
+oils,-3,-3,-12
+oils,6,6,-46
+oils,-75,-75,-16
+breakfast cereals,-17,-17,-23
+breakfast cereals,-12,-12,3
+breakfast cereals,-5,-5,10
+breakfast cereals,-12,-12,-20
+breakfast cereals,-5,-5,-53
+breakfast cereals,-75,-75,-31
+soups,-13,-13,-18
+soups,-8,-8,-3
+soups,-9,-9,3
+soups,-5,-5,-12
+soups,1,1,-37
+soups,-54,-54,-19
+"potatoes, fried, roasted, chips",-10,-10,-17
+"potatoes, fried, roasted, chips",-4,-4,0
+"potatoes, fried, roasted, chips",-6,-6,6
+"potatoes, fried, roasted, chips",-8,-8,-15
+"potatoes, fried, roasted, chips",0,0,1
+"potatoes, fried, roasted, chips",-32,-32,35
+cheese,-10,-10,-17
+cheese,-2,-2,-4
+cheese,-11,-11,3
+cheese,-7,-7,-17
+cheese,3,3,49
+cheese,16,16,83
+nuts,10,10,2
+nuts,17,17,11
+nuts,2,2,19
+nuts,16,16,6
+nuts,26,26,29
+nuts,-6,-6,63

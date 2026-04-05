@@ -1,29 +1,37 @@
-sex,marital_status,agricultural_region,percent
-sex,single,Unnamed: 0,single
-sex,single,agricultural region 1,18.7
-sex,single,Unnamed: 2,24.8
-sex,single,agricultural region 3,26.9
-sex,single,Unnamed: 4,26.1
-sex,single,agricultural region 4,25.6
-sex,single,Unnamed: 6,32.8
-sex,married,Unnamed: 0,married
-sex,married,agricultural region 1,51.3
-sex,married,Unnamed: 2,53.9
-sex,married,agricultural region 3,47.8
-sex,married,Unnamed: 4,56.7
-sex,married,agricultural region 4,54.4
-sex,married,Unnamed: 6,57.8
-sex,common-law,Unnamed: 0,common-law
-sex,common-law,agricultural region 1,17.1
-sex,common-law,Unnamed: 2,10.9
-sex,common-law,agricultural region 3,22.4
-sex,common-law,Unnamed: 4,6.4
-sex,common-law,agricultural region 4,11.8
-sex,common-law,Unnamed: 6,7.8
-sex,"separated, divorced, or widowed",Unnamed: 0,"separated, divorced, or widowed"
-sex,"separated, divorced, or widowed",agricultural region 1,12.8
-sex,"separated, divorced, or widowed",Unnamed: 2,10.6
-sex,"separated, divorced, or widowed",agricultural region 3,0.0
-sex,"separated, divorced, or widowed",Unnamed: 4,10.8
-sex,"separated, divorced, or widowed",agricultural region 4,7.7
-sex,"separated, divorced, or widowed",Unnamed: 6,0.0
+sex_or_marital_status,language,demographic_type,percent
+female,french-language workers,sex,35.3
+female,english-language workers,sex,28.0
+female,french-language workers,sex,41.8
+female,english-language workers,sex,30.6
+female,french-language workers,sex,35.9
+female,english-language workers,sex,26.6
+male,french-language workers,sex,64.7
+male,english-language workers,sex,72.0
+male,french-language workers,sex,58.2
+male,english-language workers,sex,69.4
+male,french-language workers,sex,64.1
+male,english-language workers,sex,73.4
+single,french-language workers,marital status,18.7
+single,english-language workers,marital status,24.8
+single,french-language workers,marital status,26.9
+single,english-language workers,marital status,26.1
+single,french-language workers,marital status,25.6
+single,english-language workers,marital status,32.8
+married,french-language workers,marital status,51.3
+married,english-language workers,marital status,53.9
+married,french-language workers,marital status,47.8
+married,english-language workers,marital status,56.7
+married,french-language workers,marital status,54.4
+married,english-language workers,marital status,57.8
+common-law,french-language workers,marital status,17.1
+common-law,english-language workers,marital status,10.9
+common-law,french-language workers,marital status,22.4
+common-law,english-language workers,marital status,6.4
+common-law,french-language workers,marital status,11.8
+common-law,english-language workers,marital status,7.8
+"separated, divorced, or widowed",french-language workers,marital status,12.8
+"separated, divorced, or widowed",english-language workers,marital status,10.6
+"separated, divorced, or widowed",french-language workers,marital status,0.0
+"separated, divorced, or widowed",english-language workers,marital status,10.8
+"separated, divorced, or widowed",french-language workers,marital status,7.7
+"separated, divorced, or widowed",english-language workers,marital status,0.0

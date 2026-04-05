@@ -1,45 +1,46 @@
-student characteristics,unwanted sexualized behaviours,Unnamed: 2,Unnamed: 3,discriminatory behaviours,Unnamed: 5,Unnamed: 6
-,percent,95% confidence interval,,percent,95% confidence interval,
-,,from,to,,from,to
-age group,,,,,,
-17 to 19,43,37,50,20,15,25
-20 to 22,46,39,52,21,16,26
-23 to 25,f,..,..,f,..,..
-25 years or older,12,8,18,f,..,..
-visible minority status,,,,,,
-visible minority,29,22,38,13,8,20
-not a visible minority,36,33,41,18,15,22
-"first nations, metis, and inuit (indigenous) identity",,,,,,
-indigenous,f,..,..,f,..,..
-not indigenous,36,33,40,18,15,21
-sexual orientation,,,,,,
-heterosexual,33,30,37,15,12,18
-non-heterosexual,62,47,74,50,36,63
-religious affiliation,,,,,,
-religious affiliation,32,27,37,16,12,20
-no religious affiliation,39,34,44,19,15,23
-disablility,,,,,,
-living with a disability,46,38,54,28,22,35
-not living with a disability,32,28,36,14,11,17
-marital status,,,,,,
-single,42,37,46,19,16,23
-married or common law,14,10,20,10,6,17
-"widowed, separated, divorced",f,..,.,f,..,..
-dating status,,,,,,
-not dating,38,33,44,18,14,23
-dating relationship,47,40,55,20,15,27
-dating casually,36,23,50,f,..,..
-number of years at school,,,,,,
-less than one year,41,34,50,20,14,29
-one or two years,40,32,49,15,10,22
-three or four years,40,34,47,19,14,24
-five or more years,22,16,29,15,10,21
-type of student in the past 12 months,,,,,,
-full time,38,34,41,18,15,21
-part time,f,..,..,f,..,..
-both,f,..,..,f,..,..
-living arrangements,,,,,,
-campus housing,42,38,47,19,16,23
-off campus,11,7,18,f,..,..
-with parents or family,f,..,..,f,..,..
-other,f,..,..,f,..,..
+age_group,behavior_type,percent,confidence_interval_from,confidence_interval_to
+37,unwanted sexualized behaviours,20,15,25
+37,discriminatory behaviours,43,37,50
+39,unwanted sexualized behaviours,21,16,26
+39,discriminatory behaviours,46,39,52
+8,discriminatory behaviours,12,8,18
+22,unwanted sexualized behaviours,13,8,20
+22,discriminatory behaviours,29,22,38
+33,unwanted sexualized behaviours,18,15,22
+33,discriminatory behaviours,36,33,41
+33,unwanted sexualized behaviours,18,15,21
+33,discriminatory behaviours,36,33,40
+30,unwanted sexualized behaviours,15,12,18
+30,discriminatory behaviours,33,30,37
+47,unwanted sexualized behaviours,50,36,63
+47,discriminatory behaviours,62,47,74
+27,unwanted sexualized behaviours,16,12,20
+27,discriminatory behaviours,32,27,37
+34,unwanted sexualized behaviours,19,15,23
+34,discriminatory behaviours,39,34,44
+38,unwanted sexualized behaviours,28,22,35
+38,discriminatory behaviours,46,38,54
+28,unwanted sexualized behaviours,14,11,17
+28,discriminatory behaviours,32,28,36
+37,unwanted sexualized behaviours,19,16,23
+37,discriminatory behaviours,42,37,46
+10,unwanted sexualized behaviours,10,6,17
+10,discriminatory behaviours,14,10,20
+33,unwanted sexualized behaviours,18,14,23
+33,discriminatory behaviours,38,33,44
+40,unwanted sexualized behaviours,20,15,27
+40,discriminatory behaviours,47,40,55
+23,discriminatory behaviours,36,23,50
+34,unwanted sexualized behaviours,20,14,29
+34,discriminatory behaviours,41,34,50
+32,unwanted sexualized behaviours,15,10,22
+32,discriminatory behaviours,40,32,49
+34,unwanted sexualized behaviours,19,14,24
+34,discriminatory behaviours,40,34,47
+16,unwanted sexualized behaviours,15,10,21
+16,discriminatory behaviours,22,16,29
+34,unwanted sexualized behaviours,18,15,21
+34,discriminatory behaviours,38,34,41
+38,unwanted sexualized behaviours,19,16,23
+38,discriminatory behaviours,42,38,47
+7,discriminatory behaviours,11,7,18

@@ -6178,6 +6178,2731 @@
           }
         }
       ]
+    },
+    {
+      "table_id": "1331",
+      "pipeline_status": "success",
+      "pipeline_error": null,
+      "n_qa_pairs": 4,
+      "scores": {
+        "raw": {
+          "n": 4,
+          "execution_rate": 0.5,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.0
+            }
+          }
+        },
+        "pipeline": {
+          "n": 4,
+          "execution_rate": 0.5,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.0
+            }
+          }
+        }
+      },
+      "qa_pairs": [
+        {
+          "qtype": "lookup",
+          "_ref_dim": "living_arrangements",
+          "_ref_x": "total population aged 14 and under in private households",
+          "_ref_measure": "value",
+          "_filters": {
+            "living_arrangements": "total population aged 14 and under in private households",
+            "child_category": "inuit children",
+            "measure": "percent"
+          },
+          "answer": 100.0,
+          "question": "Find the value value where living_arrangements is 'total population aged 14 and under in private households' and child_category is 'inuit children' and measure is 'percent'.",
+          "results": {
+            "raw": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "lookup",
+          "_ref_dim": "living_arrangements",
+          "_ref_x": "foster children",
+          "_ref_measure": "value",
+          "_filters": {
+            "living_arrangements": "foster children",
+            "child_category": "inuit children",
+            "measure": "thousand"
+          },
+          "answer": 0.6,
+          "question": "Find the value value where living_arrangements is 'foster children' and child_category is 'inuit children' and measure is 'thousand'.",
+          "results": {
+            "raw": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "living_arrangements",
+          "_ref_x": "stepchildren",
+          "_ref_measure": "value",
+          "answer": 403.3,
+          "question": "What is the total value across all records where living_arrangements is 'stepchildren'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "living arrangements",
+                "x": "stepchildren",
+                "B": "Unnamed: 9"
+              },
+              "executed": true,
+              "result": 299.4,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "living arrangements",
+                "x": "stepchildren",
+                "B": "Unnamed: 9"
+              },
+              "executed": true,
+              "result": 299.4,
+              "error": null,
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "living_arrangements",
+          "_ref_x": "total population aged 14 and under in private households",
+          "_ref_measure": "value",
+          "answer": 1275.5,
+          "question": "What is the total value across all records where living_arrangements is 'total population aged 14 and under in private households'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "living arrangements",
+                "x": "total population aged 14 and under in private households",
+                "B": "Unnamed: 2"
+              },
+              "executed": true,
+              "result": 100.0,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "living arrangements",
+                "x": "total population aged 14 and under in private households",
+                "B": "Unnamed: 2"
+              },
+              "executed": true,
+              "result": 100.0,
+              "error": null,
+              "correct": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "table_id": "1343",
+      "pipeline_status": "success",
+      "pipeline_error": null,
+      "n_qa_pairs": 2,
+      "scores": {
+        "raw": {
+          "n": 2,
+          "execution_rate": 1.0,
+          "accuracy": 1.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 1.0
+            },
+            "aggregation": {
+              "n": 0,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            }
+          }
+        },
+        "pipeline": {
+          "n": 2,
+          "execution_rate": 1.0,
+          "accuracy": 1.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 1.0
+            },
+            "aggregation": {
+              "n": 0,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            }
+          }
+        }
+      },
+      "qa_pairs": [
+        {
+          "qtype": "lookup",
+          "_ref_dim": "census_metropolitan_area",
+          "_ref_x": "saint john",
+          "_ref_measure": "percent_change_in_crime_severity_index",
+          "_filters": {
+            "census_metropolitan_area": "saint john",
+            "violation_type": "decrease in fraud, robbery and violent firearm offences; partially offset by increase in homicide"
+          },
+          "answer": -2.0,
+          "question": "Find the percent_change_in_crime_severity_index value where census_metropolitan_area is 'saint john' and violation_type is 'decrease in fraud, robbery and violent firearm offences; partially offset by increase in homicide'.",
+          "results": {
+            "raw": {
+              "slots": {
+                "filters": {
+                  "census metropolitan area": "saint john",
+                  "violations driving the change in crime severity index": "decrease in fraud, robbery and violent firearm offences; partially offset by increase in homicide"
+                },
+                "B": "percent change in crime severity index from 2018 to 2019"
+              },
+              "executed": true,
+              "result": -2.0,
+              "error": null,
+              "correct": true
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "census_metropolitan_area": "saint john",
+                  "violations_driving_the_change": "decrease in fraud, robbery and violent firearm offences; partially offset by increase in homicide"
+                },
+                "B": "percent_change_in_crime_severity_index"
+              },
+              "executed": true,
+              "result": -2.0,
+              "error": null,
+              "correct": true
+            }
+          }
+        },
+        {
+          "qtype": "lookup",
+          "_ref_dim": "census_metropolitan_area",
+          "_ref_x": "saskatoon",
+          "_ref_measure": "percent_change_in_crime_severity_index",
+          "_filters": {
+            "census_metropolitan_area": "saskatoon",
+            "violation_type": "decrease in fraud, administration of justice violations, breaking and entering, and theft of $5,000 or under (non-shoplifting); offset by increase in homicide and robbery"
+          },
+          "answer": 0.0,
+          "question": "Find the percent_change_in_crime_severity_index value where census_metropolitan_area is 'saskatoon' and violation_type is 'decrease in fraud, administration of justice violations, breaking and entering, and theft of $5,000 or under (non-shoplifting); offset by increase in homicide and robbery'.",
+          "results": {
+            "raw": {
+              "slots": {
+                "filters": {
+                  "census metropolitan area": "saskatoon",
+                  "violations driving the change in crime severity index": "decrease in fraud, administration of justice violations, breaking and entering, and theft of $5,000 or under (non-shoplifting); offset by increase in homicide and robbery"
+                },
+                "B": "percent change in crime severity index from 2018 to 2019"
+              },
+              "executed": true,
+              "result": 0.0,
+              "error": null,
+              "correct": true
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "census_metropolitan_area": "saskatoon",
+                  "violations_driving_the_change": "decrease in fraud, administration of justice violations, breaking and entering, and theft of $5,000 or under (non-shoplifting); offset by increase in homicide and robbery"
+                },
+                "B": "percent_change_in_crime_severity_index"
+              },
+              "executed": true,
+              "result": 0.0,
+              "error": null,
+              "correct": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "table_id": "1375",
+      "pipeline_status": "success",
+      "pipeline_error": null,
+      "n_qa_pairs": 4,
+      "scores": {
+        "raw": {
+          "n": 4,
+          "execution_rate": 0.5,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.0
+            }
+          }
+        },
+        "pipeline": {
+          "n": 4,
+          "execution_rate": 1.0,
+          "accuracy": 1.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 1.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 1.0
+            }
+          }
+        }
+      },
+      "qa_pairs": [
+        {
+          "qtype": "lookup",
+          "_ref_dim": "aboriginal_identity",
+          "_ref_x": "metis",
+          "_ref_measure": "predicted_probability",
+          "_filters": {
+            "aboriginal_identity": "metis",
+            "feeding_history": "only breastfed",
+            "breastfeeding_duration": "breastfeeding duration"
+          },
+          "answer": 0.08,
+          "question": "Find the predicted_probability value where aboriginal_identity is 'metis' and feeding_history is 'only breastfed' and breastfeeding_duration is 'breastfeeding duration'.",
+          "results": {
+            "raw": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "aboriginal_identity": "metis",
+                  "feeding_history": "only breastfed"
+                },
+                "B": "predicted_probability"
+              },
+              "executed": true,
+              "result": 0.08,
+              "error": null,
+              "correct": true
+            }
+          }
+        },
+        {
+          "qtype": "lookup",
+          "_ref_dim": "aboriginal_identity",
+          "_ref_x": "metis",
+          "_ref_measure": "predicted_probability",
+          "_filters": {
+            "aboriginal_identity": "metis",
+            "feeding_history": "breastfed 0 to 6 months",
+            "breastfeeding_duration": "breastfeeding duration"
+          },
+          "answer": 0.12,
+          "question": "Find the predicted_probability value where aboriginal_identity is 'metis' and feeding_history is 'breastfed 0 to 6 months' and breastfeeding_duration is 'breastfeeding duration'.",
+          "results": {
+            "raw": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "aboriginal_identity": "metis",
+                  "feeding_history": "breastfed 0 to 6 months"
+                },
+                "B": "predicted_probability"
+              },
+              "executed": true,
+              "result": 0.12,
+              "error": null,
+              "correct": true
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "feeding_history",
+          "_ref_x": "both breastfed and bottle-fed",
+          "_ref_measure": "predicted_probability",
+          "answer": 0.32,
+          "question": "What is the total predicted_probability across all records where feeding_history is 'both breastfed and bottle-fed'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "Unnamed: 0",
+                "x": "both breastfed and bottle-fed",
+                "B": "aboriginal identity"
+              },
+              "executed": true,
+              "result": 0.11,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "feeding_history",
+                "x": "both breastfed and bottle-fed",
+                "B": "predicted_probability"
+              },
+              "executed": true,
+              "result": 0.31999999999999995,
+              "error": null,
+              "correct": true
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "feeding_history",
+          "_ref_x": "breastfed 0 to 6 months",
+          "_ref_measure": "predicted_probability",
+          "answer": 0.32,
+          "question": "What is the total predicted_probability across all records where feeding_history is 'breastfed 0 to 6 months'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "Unnamed: 0",
+                "x": "breastfed 0 to 6 months",
+                "B": "Unnamed: 2"
+              },
+              "executed": true,
+              "result": 0.12,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "feeding_history",
+                "x": "breastfed 0 to 6 months",
+                "B": "predicted_probability"
+              },
+              "executed": true,
+              "result": 0.31999999999999995,
+              "error": null,
+              "correct": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "table_id": "1377",
+      "pipeline_status": "success",
+      "pipeline_error": null,
+      "n_qa_pairs": 4,
+      "scores": {
+        "raw": {
+          "n": 4,
+          "execution_rate": 0.25,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 0.5,
+              "accuracy": 0.0
+            }
+          }
+        },
+        "pipeline": {
+          "n": 4,
+          "execution_rate": 0.25,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 0.5,
+              "accuracy": 0.0
+            }
+          }
+        }
+      },
+      "qa_pairs": [
+        {
+          "qtype": "lookup",
+          "_ref_dim": "demographic_group",
+          "_ref_x": "metis",
+          "_ref_measure": "total_population",
+          "_filters": {
+            "demographic_group": "metis",
+            "sex": "male",
+            "age_statistic": "nan",
+            "population_value": "3324.0",
+            "mean_age": "nan",
+            "age_range": "nan"
+          },
+          "answer": 6998.0,
+          "question": "Find the total_population value where demographic_group is 'metis' and sex is 'male' and age_statistic is 'nan' and population_value is '3324.0' and mean_age is 'nan' and age_range is 'nan'.",
+          "results": {
+            "raw": {
+              "slots": {
+                "filters": {
+                  "Unnamed: 0": "male",
+                  "metis": "3,324"
+                },
+                "B": "metis"
+              },
+              "executed": false,
+              "result": null,
+              "error": "IndexError: single positional indexer is out-of-bounds",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "Unnamed: 0": "male",
+                  "metis": "3,324"
+                },
+                "B": "metis"
+              },
+              "executed": false,
+              "result": null,
+              "error": "IndexError: single positional indexer is out-of-bounds",
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "lookup",
+          "_ref_dim": "demographic_group",
+          "_ref_x": "metis",
+          "_ref_measure": "population_value",
+          "_filters": {
+            "demographic_group": "metis",
+            "sex": "male",
+            "age_statistic": "nan",
+            "total_population": "6998",
+            "mean_age": "nan",
+            "age_range": "nan"
+          },
+          "answer": 3324.0,
+          "question": "Find the population_value value where demographic_group is 'metis' and sex is 'male' and age_statistic is 'nan' and total_population is '6998' and mean_age is 'nan' and age_range is 'nan'.",
+          "results": {
+            "raw": {
+              "slots": {
+                "filters": {
+                  "Unnamed: 0": "male",
+                  "metis": "6,998"
+                },
+                "B": "metis"
+              },
+              "executed": false,
+              "result": null,
+              "error": "IndexError: single positional indexer is out-of-bounds",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "Unnamed: 0": "male",
+                  "metis": "6,998"
+                },
+                "B": "metis"
+              },
+              "executed": false,
+              "result": null,
+              "error": "IndexError: single positional indexer is out-of-bounds",
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "demographic_group",
+          "_ref_x": "metis",
+          "_ref_measure": "population_value",
+          "answer": 6998.0,
+          "question": "What is the total population_value across all records where demographic_group is 'metis'?",
+          "results": {
+            "raw": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "demographic_group",
+          "_ref_x": "off-reserve first nations",
+          "_ref_measure": "population_value",
+          "answer": 7239.0,
+          "question": "What is the total population_value across all records where demographic_group is 'off-reserve first nations'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "Unnamed: 0",
+                "x": "total",
+                "B": "off-reserve first nations"
+              },
+              "executed": true,
+              "result": 0.0,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "Unnamed: 0",
+                "x": "total",
+                "B": "off-reserve first nations"
+              },
+              "executed": true,
+              "result": 0.0,
+              "error": null,
+              "correct": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "table_id": "1385",
+      "pipeline_status": "success",
+      "pipeline_error": null,
+      "n_qa_pairs": 4,
+      "scores": {
+        "raw": {
+          "n": 4,
+          "execution_rate": 0.5,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.0
+            }
+          }
+        },
+        "pipeline": {
+          "n": 4,
+          "execution_rate": 1.0,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.0
+            }
+          }
+        }
+      },
+      "qa_pairs": [
+        {
+          "qtype": "lookup",
+          "_ref_dim": "category",
+          "_ref_x": "warehouses, refrigerated storage, freight terminals",
+          "_ref_measure": "value",
+          "_filters": {
+            "category": "warehouses, refrigerated storage, freight terminals",
+            "type": "ratio"
+          },
+          "answer": 0.293,
+          "question": "Find the value value where category is 'warehouses, refrigerated storage, freight terminals' and type is 'ratio'.",
+          "results": {
+            "raw": {
+              "slots": {
+                "filters": {
+                  "Unnamed: 0": "warehouses, refrigerated storage, freight terminals",
+                  "resell": "ratio"
+                },
+                "B": "Unnamed: 2"
+              },
+              "executed": false,
+              "result": null,
+              "error": "IndexError: single positional indexer is out-of-bounds",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "category": "warehouses, refrigerated storage, freight terminals",
+                  "ratio_type": "ratio_type"
+                },
+                "B": "value"
+              },
+              "executed": true,
+              "result": 0.297,
+              "error": null,
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "lookup",
+          "_ref_dim": "category",
+          "_ref_x": "buses (all types) and major replacement parts",
+          "_ref_measure": "value",
+          "_filters": {
+            "category": "buses (all types) and major replacement parts",
+            "type": "ratio"
+          },
+          "answer": 0.122,
+          "question": "Find the value value where category is 'buses (all types) and major replacement parts' and type is 'ratio'.",
+          "results": {
+            "raw": {
+              "slots": {
+                "filters": {
+                  "Unnamed: 0": "buses (all types) and major replacement parts",
+                  "resell": "ratio"
+                },
+                "B": "Unnamed: 2"
+              },
+              "executed": false,
+              "result": null,
+              "error": "IndexError: single positional indexer is out-of-bounds",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "category": "buses (all types) and major replacement parts",
+                  "ratio_type": "ratio_type"
+                },
+                "B": "value"
+              },
+              "executed": true,
+              "result": 0.221,
+              "error": null,
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "category",
+          "_ref_x": "motors, generators, transformers, turbines, compressors and pumps of all types",
+          "_ref_measure": "value",
+          "answer": 23.766,
+          "question": "What is the total value across all records where category is 'motors, generators, transformers, turbines, compressors and pumps of all types'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "Unnamed: 0",
+                "x": "motors, generators, transformers, turbines, compressors and pumps of all types",
+                "B": "resell"
+              },
+              "executed": true,
+              "result": 0.466,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "category",
+                "x": "motors, generators, transformers, turbines, compressors and pumps of all types",
+                "B": "value"
+              },
+              "executed": true,
+              "result": 37.486000000000004,
+              "error": null,
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "type",
+          "_ref_x": "ratio",
+          "_ref_measure": "value",
+          "answer": 10.38,
+          "question": "What is the total value across all records where type is 'ratio'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "resell",
+                "x": "ratio",
+                "B": "Unnamed: 2"
+              },
+              "executed": true,
+              "result": 0.0,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "ratio_type",
+                "x": "ratio_type",
+                "B": "value"
+              },
+              "executed": true,
+              "result": 8.216000000000001,
+              "error": null,
+              "correct": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "table_id": "1402",
+      "pipeline_status": "success",
+      "pipeline_error": null,
+      "n_qa_pairs": 4,
+      "scores": {
+        "raw": {
+          "n": 4,
+          "execution_rate": 0.5,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.0
+            }
+          }
+        },
+        "pipeline": {
+          "n": 4,
+          "execution_rate": 0.25,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 0.5,
+              "accuracy": 0.0
+            }
+          }
+        }
+      },
+      "qa_pairs": [
+        {
+          "qtype": "lookup",
+          "_ref_dim": "student_characteristics",
+          "_ref_x": "heterosexual",
+          "_ref_measure": "percent",
+          "_filters": {
+            "student_characteristics": "heterosexual",
+            "age_group": "heterosexual",
+            "behavior_type": "unwanted sexualized behaviours",
+            "confidence_interval_from": "30.0",
+            "confidence_interval_to": "37.0"
+          },
+          "answer": 33.0,
+          "question": "Find the percent value where student_characteristics is 'heterosexual' and age_group is 'heterosexual' and behavior_type is 'unwanted sexualized behaviours' and confidence_interval_from is '30.0' and confidence_interval_to is '37.0'.",
+          "results": {
+            "raw": {
+              "slots": {
+                "filters": {
+                  "student characteristics": "heterosexual",
+                  "unwanted sexualized behaviours": "percent"
+                },
+                "B": "unwanted sexualized behaviours"
+              },
+              "executed": false,
+              "result": null,
+              "error": "IndexError: single positional indexer is out-of-bounds",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "age_group": "37",
+                  "behavior_type": "unwanted sexualized behaviours",
+                  "confidence_interval_from": "30.0",
+                  "confidence_interval_to": "37.0"
+                },
+                "B": "percent"
+              },
+              "executed": false,
+              "result": null,
+              "error": "IndexError: single positional indexer is out-of-bounds",
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "lookup",
+          "_ref_dim": "student_characteristics",
+          "_ref_x": "non-heterosexual",
+          "_ref_measure": "confidence_interval_to",
+          "_filters": {
+            "student_characteristics": "non-heterosexual",
+            "age_group": "non-heterosexual",
+            "behavior_type": "unwanted sexualized behaviours",
+            "percent": "62.0",
+            "confidence_interval_from": "47.0"
+          },
+          "answer": 74.0,
+          "question": "Find the confidence_interval_to value where student_characteristics is 'non-heterosexual' and age_group is 'non-heterosexual' and behavior_type is 'unwanted sexualized behaviours' and percent is '62.0' and confidence_interval_from is '47.0'.",
+          "results": {
+            "raw": {
+              "slots": {
+                "filters": {
+                  "student characteristics": "non-heterosexual",
+                  "unwanted sexualized behaviours": "percent",
+                  "Unnamed: 2": "from",
+                  "Unnamed: 3": "to"
+                },
+                "B": "Unnamed: 2"
+              },
+              "executed": false,
+              "result": null,
+              "error": "IndexError: single positional indexer is out-of-bounds",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "student_characteristics",
+          "_ref_x": "one or two years",
+          "_ref_measure": "confidence_interval_to",
+          "answer": 71.0,
+          "question": "What is the total confidence_interval_to across all records where student_characteristics is 'one or two years'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "student characteristics",
+                "x": "one or two years",
+                "B": "unwanted sexualized behaviours"
+              },
+              "executed": true,
+              "result": 40.0,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "behavior_type",
+          "_ref_x": "unwanted sexualized behaviours",
+          "_ref_measure": "confidence_interval_to",
+          "answer": 980.0,
+          "question": "What is the total confidence_interval_to across all records where behavior_type is 'unwanted sexualized behaviours'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "unwanted sexualized behaviours",
+                "x": "percent",
+                "B": "Unnamed: 2"
+              },
+              "executed": true,
+              "result": 0.0,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "behavior_type",
+                "x": "unwanted sexualized behaviours",
+                "B": "confidence_interval_to"
+              },
+              "executed": true,
+              "result": 520.0,
+              "error": null,
+              "correct": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "table_id": "1404",
+      "pipeline_status": "success",
+      "pipeline_error": null,
+      "n_qa_pairs": 4,
+      "scores": {
+        "raw": {
+          "n": 4,
+          "execution_rate": 0.5,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.0
+            }
+          }
+        },
+        "pipeline": {
+          "n": 4,
+          "execution_rate": 0.75,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.5,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.0
+            }
+          }
+        }
+      },
+      "qa_pairs": [
+        {
+          "qtype": "lookup",
+          "_ref_dim": "category_type",
+          "_ref_x": "age group",
+          "_ref_measure": "statistic",
+          "_filters": {
+            "category_type": "age group",
+            "category_value": "65 or older",
+            "gender": "male"
+          },
+          "answer": 6.8,
+          "question": "Find the statistic value where category_type is 'age group' and category_value is '65 or older' and gender is 'male'.",
+          "results": {
+            "raw": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "age_group": "65 or older",
+                  "immigration_category": "refugee class",
+                  "source_world_region": "south asia"
+                },
+                "B": "male"
+              },
+              "executed": true,
+              "result": 50.599999999999994,
+              "error": null,
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "lookup",
+          "_ref_dim": "category_type",
+          "_ref_x": "source world region",
+          "_ref_measure": "statistic",
+          "_filters": {
+            "category_type": "source world region",
+            "category_value": "united states",
+            "gender": "female"
+          },
+          "answer": 2.6,
+          "question": "Find the statistic value where category_type is 'source world region' and category_value is 'united states' and gender is 'female'.",
+          "results": {
+            "raw": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "category_value",
+          "_ref_x": "caribbean/central and south america",
+          "_ref_measure": "statistic",
+          "answer": 21.1,
+          "question": "What is the total statistic across all records where category_value is 'caribbean/central and south america'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "Unnamed: 0",
+                "x": "caribbean/central and south america",
+                "B": "male"
+              },
+              "executed": true,
+              "result": 10.1,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "immigration_category",
+                "x": "other",
+                "B": "male"
+              },
+              "executed": true,
+              "result": 2305.2,
+              "error": null,
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "category_value",
+          "_ref_x": "dependant",
+          "_ref_measure": "statistic",
+          "answer": 57.2,
+          "question": "What is the total statistic across all records where category_value is 'dependant'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "Unnamed: 0",
+                "x": "dependant",
+                "B": "male"
+              },
+              "executed": true,
+              "result": 23.5,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "age_group",
+                "x": "dependant",
+                "B": "male"
+              },
+              "executed": true,
+              "result": 4732.8,
+              "error": null,
+              "correct": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "table_id": "26",
+      "pipeline_status": "success",
+      "pipeline_error": null,
+      "n_qa_pairs": 4,
+      "scores": {
+        "raw": {
+          "n": 4,
+          "execution_rate": 0.5,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.0
+            }
+          }
+        },
+        "pipeline": {
+          "n": 4,
+          "execution_rate": 1.0,
+          "accuracy": 0.25,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.5
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.0
+            }
+          }
+        }
+      },
+      "qa_pairs": [
+        {
+          "qtype": "lookup",
+          "_ref_dim": "top_sources_of_the_difference",
+          "_ref_x": "meat",
+          "_ref_measure": "value",
+          "_filters": {
+            "top_sources_of_the_difference": "meat",
+            "reporter_type": "total",
+            "measure": "estimate"
+          },
+          "answer": -37.0,
+          "question": "Find the value value where top_sources_of_the_difference is 'meat' and reporter_type is 'total' and measure is 'estimate'.",
+          "results": {
+            "raw": {
+              "slots": {
+                "filters": {
+                  "top sources of the difference": "meat",
+                  "total": "estimate"
+                },
+                "B": "total"
+              },
+              "executed": false,
+              "result": null,
+              "error": "IndexError: single positional indexer is out-of-bounds",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "food_item": "meat"
+                },
+                "B": "estimated_value"
+              },
+              "executed": true,
+              "result": -37.0,
+              "error": null,
+              "correct": true
+            }
+          }
+        },
+        {
+          "qtype": "lookup",
+          "_ref_dim": "top_sources_of_the_difference",
+          "_ref_x": "potatoes, fried, roasted, chips",
+          "_ref_measure": "value",
+          "_filters": {
+            "top_sources_of_the_difference": "potatoes, fried, roasted, chips",
+            "reporter_type": "under-reporters",
+            "measure": "estimate"
+          },
+          "answer": 0.0,
+          "question": "Find the value value where top_sources_of_the_difference is 'potatoes, fried, roasted, chips' and reporter_type is 'under-reporters' and measure is 'estimate'.",
+          "results": {
+            "raw": {
+              "slots": {
+                "filters": {
+                  "top sources of the difference": "potatoes, fried, roasted, chips",
+                  "under-reporters": "estimate"
+                },
+                "B": "total"
+              },
+              "executed": false,
+              "result": null,
+              "error": "IndexError: single positional indexer is out-of-bounds",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "food_item": "potatoes, fried, roasted, chips"
+                },
+                "B": "estimated_value"
+              },
+              "executed": true,
+              "result": -10.0,
+              "error": null,
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "top_sources_of_the_difference",
+          "_ref_x": "pastries",
+          "_ref_measure": "value",
+          "answer": 271.0,
+          "question": "What is the total value across all records where top_sources_of_the_difference is 'pastries'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "top sources of the difference",
+                "x": "pastries",
+                "B": "total"
+              },
+              "executed": true,
+              "result": 19.0,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "food_item",
+                "x": "pastries",
+                "B": "estimated_value"
+              },
+              "executed": true,
+              "result": 121.0,
+              "error": null,
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "top_sources_of_the_difference",
+          "_ref_x": "potatoes, fried, roasted, chips",
+          "_ref_measure": "value",
+          "answer": -50.0,
+          "question": "What is the total value across all records where top_sources_of_the_difference is 'potatoes, fried, roasted, chips'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "top sources of the difference",
+                "x": "potatoes, fried, roasted, chips",
+                "B": "total"
+              },
+              "executed": true,
+              "result": -10.0,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "food_item",
+                "x": "potatoes, fried, roasted, chips",
+                "B": "estimated_value"
+              },
+              "executed": true,
+              "result": -60.0,
+              "error": null,
+              "correct": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "table_id": "51",
+      "pipeline_status": "success",
+      "pipeline_error": null,
+      "n_qa_pairs": 2,
+      "scores": {
+        "raw": {
+          "n": 2,
+          "execution_rate": 0.0,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 0,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            }
+          }
+        },
+        "pipeline": {
+          "n": 2,
+          "execution_rate": 0.5,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.5,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 0,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            }
+          }
+        }
+      },
+      "qa_pairs": [
+        {
+          "qtype": "lookup",
+          "_ref_dim": "sex",
+          "_ref_x": "female",
+          "_ref_measure": "percent",
+          "_filters": {
+            "sex": "female",
+            "marital_status": "female",
+            "agricultural_region": "agricultural region 3",
+            "language_group": "english-language workers"
+          },
+          "answer": 30.6,
+          "question": "Find the percent value where sex is 'female' and marital_status is 'female' and agricultural_region is 'agricultural region 3' and language_group is 'english-language workers'.",
+          "results": {
+            "raw": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "sex_or_marital_status": "female",
+                  "language": "english-language workers",
+                  "demographic_type": "sex"
+                },
+                "B": "percent"
+              },
+              "executed": true,
+              "result": 28.0,
+              "error": null,
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "lookup",
+          "_ref_dim": "sex",
+          "_ref_x": "common-law",
+          "_ref_measure": "percent",
+          "_filters": {
+            "sex": "common-law",
+            "marital_status": "common-law",
+            "agricultural_region": "agricultural region 3",
+            "language_group": "english-language workers"
+          },
+          "answer": 6.4,
+          "question": "Find the percent value where sex is 'common-law' and marital_status is 'common-law' and agricultural_region is 'agricultural region 3' and language_group is 'english-language workers'.",
+          "results": {
+            "raw": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "sex_or_marital_status": "common-law",
+                  "language": "english-language workers",
+                  "demographic_type": "sex"
+                },
+                "B": "percent"
+              },
+              "executed": false,
+              "result": null,
+              "error": "IndexError: single positional indexer is out-of-bounds",
+              "correct": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "table_id": "53",
+      "pipeline_status": "success",
+      "pipeline_error": null,
+      "n_qa_pairs": 2,
+      "scores": {
+        "raw": {
+          "n": 2,
+          "execution_rate": 0.0,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 0,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            }
+          }
+        },
+        "pipeline": {
+          "n": 2,
+          "execution_rate": 0.5,
+          "accuracy": 0.5,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.5,
+              "accuracy": 0.5
+            },
+            "aggregation": {
+              "n": 0,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            }
+          }
+        }
+      },
+      "qa_pairs": [
+        {
+          "qtype": "lookup",
+          "_ref_dim": "place_of_birth",
+          "_ref_x": "born in a different province",
+          "_ref_measure": "percentage",
+          "_filters": {
+            "place_of_birth": "born in a different province",
+            "language": "french-language workers",
+            "agricultural_region": "agricultural region 1",
+            "section": "nan"
+          },
+          "answer": 7.5,
+          "question": "Find the percentage value where place_of_birth is 'born in a different province' and language is 'french-language workers' and agricultural_region is 'agricultural region 1' and section is 'nan'.",
+          "results": {
+            "raw": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "place_of_birth": "born in a different province",
+                  "language": "percent"
+                },
+                "B": "worker_percentage"
+              },
+              "executed": true,
+              "result": 7.5,
+              "error": null,
+              "correct": true
+            }
+          }
+        },
+        {
+          "qtype": "lookup",
+          "_ref_dim": "place_of_birth",
+          "_ref_x": "buddhist, hindu, jewish, muslim and sikh",
+          "_ref_measure": "percentage",
+          "_filters": {
+            "place_of_birth": "buddhist, hindu, jewish, muslim and sikh",
+            "language": "english-language workers",
+            "agricultural_region": "agricultural region 1",
+            "section": "religion"
+          },
+          "answer": 0.0,
+          "question": "Find the percentage value where place_of_birth is 'buddhist, hindu, jewish, muslim and sikh' and language is 'english-language workers' and agricultural_region is 'agricultural region 1' and section is 'religion'.",
+          "results": {
+            "raw": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "place_of_birth": "buddhist, hindu, jewish, muslim and sikh",
+                  "language": "percent",
+                  "religion": "religion"
+                },
+                "B": "worker_percentage"
+              },
+              "executed": false,
+              "result": null,
+              "error": "IndexError: single positional indexer is out-of-bounds",
+              "correct": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "table_id": "54",
+      "pipeline_status": "success",
+      "pipeline_error": null,
+      "n_qa_pairs": 2,
+      "scores": {
+        "raw": {
+          "n": 2,
+          "execution_rate": 0.0,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 0,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            }
+          }
+        },
+        "pipeline": {
+          "n": 2,
+          "execution_rate": 0.5,
+          "accuracy": 0.5,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.5,
+              "accuracy": 0.5
+            },
+            "aggregation": {
+              "n": 0,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            }
+          }
+        }
+      },
+      "qa_pairs": [
+        {
+          "qtype": "lookup",
+          "_ref_dim": "class_of_worker",
+          "_ref_x": "did not work in 2010",
+          "_ref_measure": "percent",
+          "_filters": {
+            "class_of_worker": "did not work in 2010",
+            "agricultural_region": "percent",
+            "language_group": "french-language workers"
+          },
+          "answer": 0.0,
+          "question": "Find the percent value where class_of_worker is 'did not work in 2010' and agricultural_region is 'percent' and language_group is 'french-language workers'.",
+          "results": {
+            "raw": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "class_of_worker": "did not work in 2010",
+                  "agricultural_region": "agricultural region 2",
+                  "language_group": "french"
+                },
+                "B": "percent"
+              },
+              "executed": true,
+              "result": 0.0,
+              "error": null,
+              "correct": true
+            }
+          }
+        },
+        {
+          "qtype": "lookup",
+          "_ref_dim": "class_of_worker",
+          "_ref_x": "self-employed, incorporated",
+          "_ref_measure": "percent",
+          "_filters": {
+            "class_of_worker": "self-employed, incorporated",
+            "agricultural_region": "percent",
+            "language_group": "english-language workers"
+          },
+          "answer": 4.3,
+          "question": "Find the percent value where class_of_worker is 'self-employed, incorporated' and agricultural_region is 'percent' and language_group is 'english-language workers'.",
+          "results": {
+            "raw": {
+              "slots": {
+                "filters": {
+                  "class of worker": "self-employed, incorporated",
+                  "agricultural region 1": "percent",
+                  "Unnamed: 2": "english-language workers"
+                },
+                "B": "Unnamed: 2"
+              },
+              "executed": false,
+              "result": null,
+              "error": "IndexError: single positional indexer is out-of-bounds",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "table_id": "55",
+      "pipeline_status": "success",
+      "pipeline_error": null,
+      "n_qa_pairs": 4,
+      "scores": {
+        "raw": {
+          "n": 4,
+          "execution_rate": 0.5,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.0
+            }
+          }
+        },
+        "pipeline": {
+          "n": 4,
+          "execution_rate": 1.0,
+          "accuracy": 0.75,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.5
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 1.0
+            }
+          }
+        }
+      },
+      "qa_pairs": [
+        {
+          "qtype": "lookup",
+          "_ref_dim": "operating_arrangement",
+          "_ref_x": "non-family corporation",
+          "_ref_measure": "value",
+          "_filters": {
+            "operating_arrangement": "non-family corporation",
+            "agricultural_region": "agricultural region 1",
+            "measure_type": "number"
+          },
+          "answer": 23.0,
+          "question": "Find the value value where operating_arrangement is 'non-family corporation' and agricultural_region is 'agricultural region 1' and measure_type is 'number'.",
+          "results": {
+            "raw": {
+              "slots": {
+                "filters": {
+                  "operating arrangements": "non-family corporation",
+                  "agricultural region 1": "number"
+                },
+                "B": "total new brunswick"
+              },
+              "executed": false,
+              "result": null,
+              "error": "IndexError: single positional indexer is out-of-bounds",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "operating_arrangement": "non-family corporation",
+                  "agricultural_region": "agricultural region 1",
+                  "value_type": "number"
+                },
+                "B": "value"
+              },
+              "executed": true,
+              "result": 23.0,
+              "error": null,
+              "correct": true
+            }
+          }
+        },
+        {
+          "qtype": "lookup",
+          "_ref_dim": "operating_arrangement",
+          "_ref_x": "partnership without written agreement",
+          "_ref_measure": "value",
+          "_filters": {
+            "operating_arrangement": "partnership without written agreement",
+            "agricultural_region": "total new brunswick",
+            "measure_type": "number"
+          },
+          "answer": 335.0,
+          "question": "Find the value value where operating_arrangement is 'partnership without written agreement' and agricultural_region is 'total new brunswick' and measure_type is 'number'.",
+          "results": {
+            "raw": {
+              "slots": {
+                "filters": {
+                  "operating arrangements": "partnership without written agreement",
+                  "agricultural region 1": "number"
+                },
+                "B": "total new brunswick"
+              },
+              "executed": false,
+              "result": null,
+              "error": "IndexError: single positional indexer is out-of-bounds",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "operating_arrangement": "partnership without written agreement",
+                  "agricultural_region": "agricultural region 1",
+                  "value_type": "number"
+                },
+                "B": "value"
+              },
+              "executed": true,
+              "result": 118.0,
+              "error": null,
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "operating_arrangement",
+          "_ref_x": "partnership without written agreement",
+          "_ref_measure": "value",
+          "answer": 605.0,
+          "question": "What is the total value across all records where operating_arrangement is 'partnership without written agreement'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "operating arrangements",
+                "x": "partnership without written agreement",
+                "B": "total new brunswick"
+              },
+              "executed": true,
+              "result": 335.0,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "operating_arrangement",
+                "x": "partnership without written agreement",
+                "B": "value"
+              },
+              "executed": true,
+              "result": 604.7,
+              "error": null,
+              "correct": true
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "operating_arrangement",
+          "_ref_x": "sole proprietorship",
+          "_ref_measure": "value",
+          "answer": 1406.0,
+          "question": "What is the total value across all records where operating_arrangement is 'sole proprietorship'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "operating arrangements",
+                "x": "sole proprietorship",
+                "B": "total new brunswick"
+              },
+              "executed": true,
+              "result": 0.0,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "operating_arrangement",
+                "x": "sole proprietorship",
+                "B": "value"
+              },
+              "executed": true,
+              "result": 1406.6000000000001,
+              "error": null,
+              "correct": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "table_id": "56",
+      "pipeline_status": "success",
+      "pipeline_error": null,
+      "n_qa_pairs": 4,
+      "scores": {
+        "raw": {
+          "n": 4,
+          "execution_rate": 0.5,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.0
+            }
+          }
+        },
+        "pipeline": {
+          "n": 4,
+          "execution_rate": 0.5,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.5,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 0.5,
+              "accuracy": 0.0
+            }
+          }
+        }
+      },
+      "qa_pairs": [
+        {
+          "qtype": "lookup",
+          "_ref_dim": "farm_area_category",
+          "_ref_x": "farms under 130 acres",
+          "_ref_measure": "value",
+          "_filters": {
+            "farm_area_category": "farms under 130 acres",
+            "land_tenure": "nan",
+            "agricultural_region": "total new brunswick",
+            "measure": "number"
+          },
+          "answer": 996.0,
+          "question": "Find the value value where farm_area_category is 'farms under 130 acres' and land_tenure is 'nan' and agricultural_region is 'total new brunswick' and measure is 'number'.",
+          "results": {
+            "raw": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "land_classification": "farms under 130 acres",
+                  "section_header": "land tenure"
+                },
+                "B": "number_farms"
+              },
+              "executed": false,
+              "result": null,
+              "error": "IndexError: single positional indexer is out-of-bounds",
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "lookup",
+          "_ref_dim": "farm_area_category",
+          "_ref_x": "nan",
+          "_ref_measure": "value",
+          "_filters": {
+            "farm_area_category": "nan",
+            "land_tenure": "area crop-shared from others",
+            "agricultural_region": "agricultural region 4",
+            "measure": "number"
+          },
+          "answer": 4.0,
+          "question": "Find the value value where farm_area_category is 'nan' and land_tenure is 'area crop-shared from others' and agricultural_region is 'agricultural region 4' and measure is 'number'.",
+          "results": {
+            "raw": {
+              "slots": {
+                "filters": {
+                  "Unnamed: 0": "area crop-shared from others",
+                  "agricultural region 4": "202"
+                },
+                "B": "total new brunswick"
+              },
+              "executed": false,
+              "result": null,
+              "error": "IndexError: single positional indexer is out-of-bounds",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "land_classification": "area crop-shared from others",
+                  "section_header": "land tenure"
+                },
+                "B": "number_farms"
+              },
+              "executed": true,
+              "result": 13.0,
+              "error": null,
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "land_tenure",
+          "_ref_x": "area owned",
+          "_ref_measure": "value",
+          "answer": 2161.8,
+          "question": "What is the total value across all records where land_tenure is 'area owned'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "Unnamed: 0",
+                "x": "area owned",
+                "B": "total new brunswick"
+              },
+              "executed": true,
+              "result": 0.0,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "land_classification",
+                "x": "area owned",
+                "B": "area_owned"
+              },
+              "executed": true,
+              "result": 579.0,
+              "error": null,
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "measure",
+          "_ref_x": "percent",
+          "_ref_measure": "value",
+          "answer": 987.4,
+          "question": "What is the total value across all records where measure is 'percent'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "Unnamed: 2",
+                "x": "percent",
+                "B": "total new brunswick"
+              },
+              "executed": true,
+              "result": 0.0,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "table_id": "9-snack_shop_monthly_core_data_processing",
+      "pipeline_status": "success",
+      "pipeline_error": null,
+      "n_qa_pairs": 4,
+      "scores": {
+        "raw": {
+          "n": 4,
+          "execution_rate": 1.0,
+          "accuracy": 1.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 1.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 1.0
+            }
+          }
+        },
+        "pipeline": {
+          "n": 4,
+          "execution_rate": 1.0,
+          "accuracy": 1.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 1.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 1.0
+            }
+          }
+        }
+      },
+      "qa_pairs": [
+        {
+          "qtype": "lookup",
+          "_ref_dim": "statistical_date",
+          "_ref_x": "2019-10-01 ~ 2019-10-31",
+          "_ref_measure": "visitors",
+          "_filters": {
+            "statistical_date": "2019-10-01 ~ 2019-10-31",
+            "terminal_type": "Wireless End",
+            "source_details": "Hand-tao Search",
+            "traffic_source": "Free traffic within Taobao",
+            "number_of_buyers_who_placed_orders": "222",
+            "order_conversion_rate": "0.0644",
+            "paid_buyers": "209",
+            "payment_conversion_rate": "0.0606",
+            "payment_amount": "7745.35",
+            "uv_value": "2.25"
+          },
+          "answer": 3448.0,
+          "question": "Find the visitors value where statistical_date is '2019-10-01 ~ 2019-10-31' and terminal_type is 'Wireless End' and source_details is 'Hand-tao Search' and traffic_source is 'Free traffic within Taobao' and number_of_buyers_who_placed_orders is '222' and order_conversion_rate is '0.0644' and paid_buyers is '209' and payment_conversion_rate is '0.0606' and payment_amount is '7745.35' and uv_value is '2.25'.",
+          "results": {
+            "raw": {
+              "slots": {
+                "filters": {
+                  "Statistical Date": "2019-10-01 ~ 2019-10-31",
+                  "Terminal Type": "Wireless End",
+                  "Source Details": "Hand-tao Search",
+                  "Traffic Source": "Free traffic within Taobao",
+                  "Number of buyers who placed orders": "222",
+                  "Order conversion rate": "0.0644",
+                  "Paid Buyers": "209",
+                  "Payment Conversion Rate": "0.0606",
+                  "Payment Amount": "7745.35",
+                  "UV Value": "2.25"
+                },
+                "B": "Visitors"
+              },
+              "executed": true,
+              "result": 3448.0,
+              "error": null,
+              "correct": true
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "Statistical Date": "2019-10-01 ~ 2019-10-31",
+                  "Terminal Type": "Wireless End",
+                  "Source Details": "Hand-tao Search",
+                  "Traffic Source": "Free traffic within Taobao",
+                  "Number of buyers who placed orders": "222",
+                  "Order conversion rate": "0.0644",
+                  "Paid Buyers": "209",
+                  "Payment Conversion Rate": "0.0606",
+                  "Payment Amount": "7745.35",
+                  "UV Value": "2.25"
+                },
+                "B": "Visitors"
+              },
+              "executed": true,
+              "result": 3448.0,
+              "error": null,
+              "correct": true
+            }
+          }
+        },
+        {
+          "qtype": "lookup",
+          "_ref_dim": "statistical_date",
+          "_ref_x": "2019-10-01 ~ 2019-10-31",
+          "_ref_measure": "payment_amount",
+          "_filters": {
+            "statistical_date": "2019-10-01 ~ 2019-10-31",
+            "terminal_type": "Wireless End",
+            "source_details": "Hand-tao Weitao",
+            "traffic_source": "Free traffic within Taobao",
+            "visitors": "143",
+            "number_of_buyers_who_placed_orders": "4",
+            "order_conversion_rate": "0.028",
+            "paid_buyers": "4",
+            "payment_conversion_rate": "0.028",
+            "uv_value": "1.43"
+          },
+          "answer": 204.5,
+          "question": "Find the payment_amount value where statistical_date is '2019-10-01 ~ 2019-10-31' and terminal_type is 'Wireless End' and source_details is 'Hand-tao Weitao' and traffic_source is 'Free traffic within Taobao' and visitors is '143' and number_of_buyers_who_placed_orders is '4' and order_conversion_rate is '0.028' and paid_buyers is '4' and payment_conversion_rate is '0.028' and uv_value is '1.43'.",
+          "results": {
+            "raw": {
+              "slots": {
+                "filters": {
+                  "Statistical Date": "2019-10-01 ~ 2019-10-31",
+                  "Terminal Type": "Wireless End",
+                  "Source Details": "Hand-tao Weitao",
+                  "Traffic Source": "Free traffic within Taobao",
+                  "Visitors": "143",
+                  "Number of buyers who placed orders": "4",
+                  "Order conversion rate": "0.028",
+                  "Paid Buyers": "4",
+                  "Payment Conversion Rate": "0.028",
+                  "UV Value": "1.43"
+                },
+                "B": "Payment Amount"
+              },
+              "executed": true,
+              "result": 204.5,
+              "error": null,
+              "correct": true
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "Statistical Date": "2019-10-01 ~ 2019-10-31",
+                  "Terminal Type": "Wireless End",
+                  "Source Details": "Hand-tao Weitao",
+                  "Traffic Source": "Free traffic within Taobao",
+                  "Visitors": "143",
+                  "Number of buyers who placed orders": "4",
+                  "Order conversion rate": "0.028",
+                  "Paid Buyers": "4",
+                  "Payment Conversion Rate": "0.028",
+                  "UV Value": "1.43"
+                },
+                "B": "Payment Amount"
+              },
+              "executed": true,
+              "result": 204.5,
+              "error": null,
+              "correct": true
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "traffic_source",
+          "_ref_x": "Free traffic within Taobao",
+          "_ref_measure": "visitors",
+          "answer": 6718.0,
+          "question": "What is the total visitors across all records where traffic_source is 'Free traffic within Taobao'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "Traffic Source",
+                "x": "Free traffic within Taobao",
+                "B": "Visitors"
+              },
+              "executed": true,
+              "result": 6718.0,
+              "error": null,
+              "correct": true
+            },
+            "pipeline": {
+              "slots": {
+                "A": "Traffic Source",
+                "x": "Free traffic within Taobao",
+                "B": "Visitors"
+              },
+              "executed": true,
+              "result": 6718.0,
+              "error": null,
+              "correct": true
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "traffic_source",
+          "_ref_x": "Self-access",
+          "_ref_measure": "uv_value",
+          "answer": 20.14,
+          "question": "What is the total uv_value across all records where traffic_source is 'Self-access'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "Traffic Source",
+                "x": "Self-access",
+                "B": "UV Value"
+              },
+              "executed": true,
+              "result": 20.14,
+              "error": null,
+              "correct": true
+            },
+            "pipeline": {
+              "slots": {
+                "A": "Traffic Source",
+                "x": "Self-access",
+                "B": "UV Value"
+              },
+              "executed": true,
+              "result": 20.14,
+              "error": null,
+              "correct": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "table_id": "csv_201-csv_48",
+      "pipeline_status": "success",
+      "pipeline_error": null,
+      "n_qa_pairs": 4,
+      "scores": {
+        "raw": {
+          "n": 4,
+          "execution_rate": 0.5,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.0
+            }
+          }
+        },
+        "pipeline": {
+          "n": 4,
+          "execution_rate": 0.75,
+          "accuracy": 0.25,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.5,
+              "accuracy": 0.5
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.0
+            }
+          }
+        }
+      },
+      "qa_pairs": [
+        {
+          "qtype": "lookup",
+          "_ref_dim": "title",
+          "_ref_x": "\\Butterfly\\\"\"",
+          "_ref_measure": "year",
+          "_filters": {
+            "title": "\\Butterfly\\\"\"",
+            "album": "The Gift of Game",
+            "country": "AUS",
+            "peak_chart_position": "4"
+          },
+          "answer": 2000.0,
+          "question": "Find the year value where title is '\\Butterfly\\\"\"' and album is 'The Gift of Game' and country is 'AUS' and peak_chart_position is '4'.",
+          "results": {
+            "raw": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "lookup",
+          "_ref_dim": "title",
+          "_ref_x": "\\Revolving Door\\\"\"",
+          "_ref_measure": "peak_chart_position",
+          "_filters": {
+            "title": "\\Revolving Door\\\"\"",
+            "year": "2001",
+            "album": "The Gift of Game",
+            "country": "FIN"
+          },
+          "answer": 19.0,
+          "question": "Find the peak_chart_position value where title is '\\Revolving Door\\\"\"' and year is '2001' and album is 'The Gift of Game' and country is 'FIN'.",
+          "results": {
+            "raw": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "title": "\\Revolving Door\\\"\"",
+                  "year": "2001",
+                  "country": "Peak chart positions\nFIN"
+                },
+                "B": "peak_chart_position"
+              },
+              "executed": true,
+              "result": 19.0,
+              "error": null,
+              "correct": true
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "country",
+          "_ref_x": "AUT",
+          "_ref_measure": "year",
+          "answer": 6003.0,
+          "question": "What is the total year across all records where country is 'AUT'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "Peak chart positions\nAUT",
+                "x": "1",
+                "B": "Year"
+              },
+              "executed": true,
+              "result": 2000.0,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "country",
+                "x": "Peak chart positions\nAUT",
+                "B": "year"
+              },
+              "executed": true,
+              "result": 12005.0,
+              "error": null,
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "country",
+          "_ref_x": "FIN",
+          "_ref_measure": "year",
+          "answer": 4001.0,
+          "question": "What is the total year across all records where country is 'FIN'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "Peak chart positions\nFIN",
+                "x": "2",
+                "B": "Year"
+              },
+              "executed": true,
+              "result": 2000.0,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "country",
+                "x": "Peak chart positions\nFIN",
+                "B": "year"
+              },
+              "executed": true,
+              "result": 12005.0,
+              "error": null,
+              "correct": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "table_id": "csv_202-csv_166",
+      "pipeline_status": "success",
+      "pipeline_error": null,
+      "n_qa_pairs": 4,
+      "scores": {
+        "raw": {
+          "n": 4,
+          "execution_rate": 0.5,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.0
+            }
+          }
+        },
+        "pipeline": {
+          "n": 4,
+          "execution_rate": 0.5,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.0
+            }
+          }
+        }
+      },
+      "qa_pairs": [
+        {
+          "qtype": "lookup",
+          "_ref_dim": "census_year",
+          "_ref_x": "Population",
+          "_ref_measure": "year",
+          "_filters": {
+            "census_year": "Population",
+            "section": "Population",
+            "category": "Estimated residents on Census night",
+            "value": "63605.0"
+          },
+          "answer": 2006.0,
+          "question": "Find the year value where census_year is 'Population' and section is 'Population' and category is 'Estimated residents on Census night' and value is '63605.0'.",
+          "results": {
+            "raw": {
+              "slots": {
+                "filters": {
+                  "Census year": "Population",
+                  "Census year.1": "Estimated residents on Census night",
+                  "2006": "63,605"
+                },
+                "B": "Census year"
+              },
+              "executed": false,
+              "result": null,
+              "error": "IndexError: single positional indexer is out-of-bounds",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "Census year": "Population",
+                  "Census year.1": "Estimated residents on Census night",
+                  "2006": "63,605"
+                },
+                "B": "Census year.1"
+              },
+              "executed": false,
+              "result": null,
+              "error": "IndexError: single positional indexer is out-of-bounds",
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "lookup",
+          "_ref_dim": "census_year",
+          "_ref_x": "Population",
+          "_ref_measure": "value",
+          "_filters": {
+            "census_year": "Population",
+            "section": "Population",
+            "category": "% of New South Wales population",
+            "year": "2011"
+          },
+          "answer": 0.97,
+          "question": "Find the value value where census_year is 'Population' and section is 'Population' and category is '% of New South Wales population' and year is '2011'.",
+          "results": {
+            "raw": {
+              "slots": {
+                "filters": {
+                  "Census year": "Population",
+                  "Census year.1": "% of New South Wales population",
+                  "2011": "67,356"
+                },
+                "B": "2011"
+              },
+              "executed": false,
+              "result": null,
+              "error": "IndexError: single positional indexer is out-of-bounds",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "Census year": "Population",
+                  "Census year.1": "% of New South Wales population",
+                  "2011": "67,356"
+                },
+                "B": "2011"
+              },
+              "executed": false,
+              "result": null,
+              "error": "IndexError: single positional indexer is out-of-bounds",
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "category",
+          "_ref_x": "Armenian",
+          "_ref_measure": "year",
+          "answer": 4017.0,
+          "question": "What is the total year across all records where category is 'Armenian'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "Census year.1",
+                "x": "Armenian",
+                "B": "2001"
+              },
+              "executed": true,
+              "result": 0.0,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "Census year.1",
+                "x": "Armenian",
+                "B": "2001"
+              },
+              "executed": true,
+              "result": 0.0,
+              "error": null,
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "aggregation",
+          "_ref_dim": "category",
+          "_ref_x": "No religion",
+          "_ref_measure": "value",
+          "answer": 68.2,
+          "question": "What is the total value across all records where category is 'No religion'?",
+          "results": {
+            "raw": {
+              "slots": {
+                "A": "Census year.1",
+                "x": "No religion",
+                "B": "2001"
+              },
+              "executed": true,
+              "result": 0.0,
+              "error": null,
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "A": "Census year.1",
+                "x": "No religion",
+                "B": "2001"
+              },
+              "executed": true,
+              "result": 0.0,
+              "error": null,
+              "correct": false
+            }
+          }
+        }
+      ]
     }
   ]
 }

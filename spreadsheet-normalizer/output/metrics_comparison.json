@@ -1,45 +1,45 @@
 {
   "data_row_ratio": {
-    "before": 0.8667,
-    "after": 0.9091,
-    "delta": 0.0424,
+    "before": 0.1,
+    "after": 1.0,
+    "delta": 0.9,
     "direction": "✓ improved"
   },
   "substring_containment": {
-    "before": 0.0,
-    "after": 0.0,
-    "delta": 0.0,
+    "before": 0.0011,
+    "after": 0.0056,
+    "delta": 0.0045,
     "direction": "= unchanged"
   },
   "cell_coverage": {
-    "before": 0.9,
-    "after": 0.9545,
-    "delta": 0.0545,
-    "direction": "✓ improved"
+    "before": 1.0,
+    "after": 1.0,
+    "delta": 0.0,
+    "direction": "= unchanged"
   },
   "inter_column_nmi": {
-    "before": 0.976,
-    "after": 0.0,
-    "delta": -0.976,
-    "direction": "✓ improved"
+    "before": 0.0,
+    "after": 0.0045,
+    "delta": 0.0045,
+    "direction": "= unchanged"
   },
   "column_completeness_min": {
-    "before": 0.8667,
-    "after": 0.9091,
-    "delta": 0.0424,
-    "direction": "✓ improved"
+    "before": 1.0,
+    "after": 1.0,
+    "delta": 0.0,
+    "direction": "= unchanged"
   },
   "type_consistency": {
-    "before": 0.8372,
-    "after": 0.9773,
-    "delta": 0.1401,
-    "direction": "✓ improved"
+    "before": 1.0,
+    "after": 1.0,
+    "delta": 0.0,
+    "direction": "= unchanged"
   },
   "column_type_homogeneity": {
-    "before": 0.6133,
-    "after": 0.876,
-    "delta": 0.2627,
-    "direction": "✓ improved"
+    "before": 1.0,
+    "after": 1.0,
+    "delta": 0.0,
+    "direction": "= unchanged"
   },
   "header_uniqueness": {
     "before": 1.0,
@@ -49,18 +49,18 @@
   },
   "groupby_queryability": {
     "before": 1.0,
-    "after": 0.6667,
-    "delta": -0.3333,
-    "direction": "✗ degraded"
+    "after": 1.0,
+    "delta": 0.0,
+    "direction": "= unchanged"
   },
   "row_completeness_uniformity": {
-    "before": 0.7361,
-    "after": 0.8492,
-    "delta": 0.1131,
-    "direction": "✓ improved"
+    "before": 1.0,
+    "after": 1.0,
+    "delta": 0.0,
+    "direction": "= unchanged"
   },
   "_groupby_queryability_mode": {
-    "before": "full",
+    "before": "size_only",
     "after": "full"
   }
 }

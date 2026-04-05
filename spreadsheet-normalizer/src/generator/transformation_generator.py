@@ -683,10 +683,10 @@ DATA (full data region):
 
 === REQUIREMENTS ===
 1. def transform(df): → returns DataFrame
-2. ADD print() AFTER EACH STEP
-3. Use .iloc for column access (positional indices)
-4. Output columns MUST be exactly: {target_cols}
-5. Expected output: ~{est_rows} rows
+2. Use .iloc for column access (positional indices)
+3. Output columns MUST be exactly: {target_cols}
+4. Expected output: ~{est_rows} rows
+5. Add print() after each step
 6. Adapt the code recipes above to THIS specific data
 
 {few_shot}

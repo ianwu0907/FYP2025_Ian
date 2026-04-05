@@ -1,38 +1,36 @@
 {
   "physical": {
     "shape": {
-      "rows": 9,
-      "cols": 11
+      "rows": 10,
+      "cols": 10
     },
     "actual_column_names": [
-      "living arrangements",
-      "aboriginal identity",
-      "Unnamed: 2",
-      "Unnamed: 3",
-      "Unnamed: 4",
-      "Unnamed: 5",
-      "Unnamed: 6",
-      "Unnamed: 7",
-      "Unnamed: 8",
-      "Unnamed: 9",
-      "Unnamed: 10"
+      "Ethnicity",
+      "1880",
+      "1899",
+      "1913",
+      "19301",
+      "1956",
+      "1966",
+      "1977",
+      "1992",
+      "2002"
     ],
-    "header_depth": 2,
-    "data_start_row": 2,
-    "data_end_row": 8,
-    "data_rows": 7,
+    "header_depth": 0,
+    "data_start_row": 0,
+    "data_end_row": 9,
+    "data_rows": 10,
     "column_dtype_profile": {
       "0": "text",
-      "1": "numeric",
-      "2": "numeric",
-      "3": "numeric",
-      "4": "numeric",
-      "5": "numeric",
-      "6": "numeric",
-      "7": "numeric",
-      "8": "numeric",
-      "9": "numeric",
-      "10": "numeric"
+      "1": "text",
+      "2": "text",
+      "3": "text",
+      "4": "text",
+      "5": "text",
+      "6": "text",
+      "7": "text",
+      "8": "text",
+      "9": "text"
     },
     "blank_rows_in_data": [],
     "bilingual_row_candidate": false,
@@ -41,24 +39,18 @@
   },
   "irregularities": [
     {
-      "label": "MULTI_LEVEL_HEADER",
-      "evidence": "Row 0: [1]=\"total aboriginal children\", [3]=\"first nations children\", [5]=\"inuit children\", [7]=\"metis children\", [9]=\"total non-aboriginal children\"",
-      "details": "The header spans two rows with group labels in the first row and their corresponding sub-labels in the second row."
-    },
-    {
-      "label": "AGGREGATE_COLUMNS",
-      "evidence": "Row 2 to Row 8 contain multiple totals including metrics for both Aboriginal and non-Aboriginal children that sum distinct demographics.",
-      "details": "Several columns have overall summary metrics, such as totals and percentages for subcategories."
+      "label": "WIDE_FORMAT",
+      "evidence": "Columns 1 to 9 all represent different values of a single variable (ethnic population counts for various years).",
+      "details": "The column headers are not variable names but rather dimension values corresponding to years."
     },
     {
       "label": "SPARSE_ROW_FILL",
-      "evidence": "The dimension column for \"living arrangements\" only appears filled in some rows and is blank in others, creating blocks with repeated initial values.",
-      "details": "The variable appears once at the beginning of each block and is left blank for subsequent rows in that block."
+      "evidence": "Rows contain ethnic population counts that are filled only for the first row of each block, followed by blanks.",
+      "details": "Each ethnic group has its population values only presented once at the start of the corresponding year column without repeats for blocks."
     }
   ],
   "labels": [
-    "MULTI_LEVEL_HEADER",
-    "AGGREGATE_COLUMNS",
+    "WIDE_FORMAT",
     "SPARSE_ROW_FILL"
   ]
 }

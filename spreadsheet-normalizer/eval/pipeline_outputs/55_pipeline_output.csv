@@ -1,43 +1,48 @@
-operating_arrangements,agricultural_region,count,percent
-sole proprietorship,528,59.4,59.4
-partnership without written agreement,118,13.3,13.3
-partnership with a written agreement,12,1.3,1.3
-family corporation,205,23.1,23.1
-non-family corporation,23,2.6,2.6
-other operating arrangements,3,0.3,0.3
-sole proprietorship,528,388.0,388.0
-partnership without written agreement,118,70.0,70.0
-partnership with a written agreement,12,23.0,23.0
-family corporation,205,89.0,89.0
-non-family corporation,23,22.0,22.0
-other operating arrangements,3,5.0,5.0
-sole proprietorship,528,65.0,65.0
-partnership without written agreement,118,11.7,11.7
-partnership with a written agreement,12,3.9,3.9
-family corporation,205,14.9,14.9
-non-family corporation,23,3.7,3.7
-other operating arrangements,3,0.8,0.8
-sole proprietorship,528,242.0,242.0
-partnership without written agreement,118,35.0,35.0
-partnership with a written agreement,12,4.0,4.0
-family corporation,205,78.0,78.0
-non-family corporation,23,35.0,35.0
-other operating arrangements,3,0.0,0.0
-sole proprietorship,528,61.4,61.4
-partnership without written agreement,118,8.9,8.9
-partnership with a written agreement,12,1.0,1.0
-family corporation,205,19.8,19.8
-non-family corporation,23,8.9,8.9
-other operating arrangements,3,0.0,0.0
-sole proprietorship,528,,
-partnership without written agreement,118,335.0,335.0
-partnership with a written agreement,12,50.0,50.0
-family corporation,205,481.0,481.0
-non-family corporation,23,97.0,97.0
-other operating arrangements,3,9.0,9.0
-sole proprietorship,528,62.8,62.8
-partnership without written agreement,118,12.8,12.8
-partnership with a written agreement,12,1.9,1.9
-family corporation,205,18.4,18.4
-non-family corporation,23,3.7,3.7
-other operating arrangements,3,0.3,0.3
+operating_arrangement,agricultural_region,value_type,value
+sole proprietorship,agricultural region 1,number,528.0
+partnership without written agreement,agricultural region 1,number,118.0
+partnership with a written agreement,agricultural region 1,number,12.0
+family corporation,agricultural region 1,number,205.0
+non-family corporation,agricultural region 1,number,23.0
+other operating arrangements,agricultural region 1,number,3.0
+sole proprietorship,agricultural region 1,number,59.4
+partnership without written agreement,agricultural region 1,number,13.3
+partnership with a written agreement,agricultural region 1,number,1.3
+family corporation,agricultural region 1,number,23.1
+non-family corporation,agricultural region 1,number,2.6
+other operating arrangements,agricultural region 1,number,0.3
+sole proprietorship,agricultural region 2,number,388.0
+partnership without written agreement,agricultural region 2,number,70.0
+partnership with a written agreement,agricultural region 2,number,23.0
+family corporation,agricultural region 2,number,89.0
+non-family corporation,agricultural region 2,number,22.0
+other operating arrangements,agricultural region 2,number,5.0
+sole proprietorship,agricultural region 2,number,65.0
+partnership without written agreement,agricultural region 2,number,11.7
+partnership with a written agreement,agricultural region 2,number,3.9
+family corporation,agricultural region 2,number,14.9
+non-family corporation,agricultural region 2,number,3.7
+other operating arrangements,agricultural region 2,number,0.8
+sole proprietorship,agricultural region 3,number,242.0
+partnership without written agreement,agricultural region 3,number,35.0
+partnership with a written agreement,agricultural region 3,number,4.0
+family corporation,agricultural region 3,number,78.0
+non-family corporation,agricultural region 3,number,35.0
+other operating arrangements,agricultural region 3,number,0.0
+sole proprietorship,agricultural region 3,number,61.4
+partnership without written agreement,agricultural region 3,number,8.9
+partnership with a written agreement,agricultural region 3,number,1.0
+family corporation,agricultural region 3,number,19.8
+non-family corporation,agricultural region 3,number,8.9
+other operating arrangements,agricultural region 3,number,0.0
+partnership without written agreement,agricultural region 4,number,335.0
+partnership with a written agreement,agricultural region 4,number,50.0
+family corporation,agricultural region 4,number,481.0
+non-family corporation,agricultural region 4,number,97.0
+other operating arrangements,agricultural region 4,number,9.0
+sole proprietorship,agricultural region 4,number,62.8
+partnership without written agreement,agricultural region 4,number,12.8
+partnership with a written agreement,agricultural region 4,number,1.9
+family corporation,agricultural region 4,number,18.4
+non-family corporation,agricultural region 4,number,3.7
+other operating arrangements,agricultural region 4,number,0.3

@@ -1,19 +1,8 @@
-demographic_unit,sex,age_type,age
-Unnamed: 0,female,age,age
-Unnamed: 0,female,mean,mean
-Unnamed: 0,female,range,range
-off-reserve first nations,"3,184",range,"3,184"
-off-reserve first nations,"4,055",range,"4,055"
-off-reserve first nations,"4,055","4,055","4,055"
-off-reserve first nations,"4,055",35.6 (15.3,35.6 (15.3
-off-reserve first nations,"4,055",15 to 92,15 to 92
-metis,"3,324",15 to 92,"3,324"
-metis,"3,674",15 to 92,"3,674"
-metis,"3,674","3,674","3,674"
-metis,"3,674",37.0 (16.1,37.0 (16.1
-metis,"3,674",15 to 93,15 to 93
-inuit,"1,321",15 to 93,"1,321"
-inuit,"1,531",15 to 93,"1,531"
-inuit,"1,531","1,531","1,531"
-inuit,"1,531",33.6 (13.7,33.6 (13.7
-inuit,"1,531",15 to 87,15 to 87
+Unnamed: 0,off-reserve first nations,metis,inuit
+total,"7,239","6,998","2,852"
+sex,,,
+male,"3,184","3,324","1,321"
+female,"4,055","3,674","1,531"
+age,,,
+mean,35.6 (15.3,37.0 (16.1,33.6 (13.7
+range,15 to 92,15 to 93,15 to 87
