@@ -1,0 +1,93 @@
+demographic_group,year,percentage
+all voters,1948,50.0
+White,1948,50.0
+Black,1948,50.0
+College educated,1948,22.0
+High School educated,1948,51.0
+Grade School educated,1948,64.0
+Professional & Business,1948,19.0
+White Collar,1948,47.0
+Manual worker,1948,66.0
+Farmer,1948,60.0
+Not union,1948,42.0
+Protestant,1948,43.0
+Catholic,1948,62.0
+East,1948,48.0
+Midwest,1948,50.0
+West,1948,49.0
+South,1948,53.0
+all voters,1952,45.0
+White,1952,43.0
+Black,1952,79.0
+College educated,1952,34.0
+High School educated,1952,45.0
+Grade School educated,1952,52.0
+Professional & Business,1952,36.0
+White Collar,1952,40.0
+Manual worker,1952,55.0
+Farmer,1952,33.0
+Protestant,1952,37.0
+Catholic,1952,56.0
+Independent,1952,35.0
+Democrat,1952,77.0
+East,1952,45.0
+Midwest,1952,42.0
+West,1952,42.0
+South,1952,51.0
+all voters,1956,42.0
+White,1956,41.0
+Black,1956,61.0
+College educated,1956,31.0
+High School educated,1956,42.0
+Grade School educated,1956,50.0
+Professional & Business,1956,32.0
+White Collar,1956,37.0
+Manual worker,1956,50.0
+Farmer,1956,46.0
+Not union,1956,35.0
+Protestant,1956,37.0
+Catholic,1956,51.0
+Independent,1956,30.0
+Democrat,1956,85.0
+East,1956,40.0
+Midwest,1956,41.0
+West,1956,43.0
+South,1956,49.0
+all voters,1960,50.0
+White,1960,49.0
+Black,1960,68.0
+College educated,1960,39.0
+High School educated,1960,52.0
+Grade School educated,1960,55.0
+Professional & Business,1960,42.0
+White Collar,1960,48.0
+Manual worker,1960,60.0
+Farmer,1960,48.0
+Not union,1960,44.0
+Protestant,1960,38.0
+Catholic,1960,78.0
+Independent,1960,43.0
+Democrat,1960,84.0
+East,1960,53.0
+Midwest,1960,48.0
+West,1960,49.0
+South,1960,51.0
+all voters,1964,61.0
+White,1964,59.0
+Black,1964,94.0
+College educated,1964,52.0
+High School educated,1964,62.0
+Grade School educated,1964,66.0
+Professional & Business,1964,54.0
+White Collar,1964,57.0
+Manual worker,1964,71.0
+Farmer,1964,53.0
+Not union,1964,56.0
+Protestant,1964,55.0
+Catholic,1964,76.0
+Independent,1964,56.0
+Democrat,1964,87.0
+East,1964,68.0
+Midwest,1964,61.0
+West,1964,60.0
+South,1964,52.0

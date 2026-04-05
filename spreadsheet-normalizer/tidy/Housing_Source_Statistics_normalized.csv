@@ -1,0 +1,321 @@
+region,housing_source_category,housing_source_subcategory,number_of_households
+Whole Country,Total,,45791305
+Whole Country,Rental Affordable Housing,Public rental housing,1075507
+Whole Country,Rent,Other housing,5605091
+Whole Country,Purchase of new construction,Commercial housing,9554510
+Whole Country,Purchase,Second-hand house,3125007
+Whole Country,Purchase original public housing,Public housing,1831655
+Whole Country,Purchase Affordable Housing,housing/affordable housing with price and area limits,1179957
+Whole Country,Self-built housing,housing/affordable housing with price and area limits,21076481
+Whole Country,Inheritance or,Gift,449641
+Whole Country,Other,Gift,1893456
+Beijing,Total,,772865
+Beijing,Rental Affordable Housing,Public rental housing,39712
+Beijing,Rent,Other housing,234215
+Beijing,Purchase of new construction,Commercial housing,128444
+Beijing,Purchase,Second-hand house,81010
+Beijing,Purchase original public housing,Public housing,90312
+Beijing,Purchase Affordable Housing,housing/affordable housing with price and area limits,45529
+Beijing,Self-built housing,housing/affordable housing with price and area limits,84393
+Beijing,Inheritance or,Gift,7518
+Beijing,Other,Gift,61732
+Tianjin,Total,,448523
+Tianjin,Rental Affordable Housing,Public rental housing,12455
+Tianjin,Rent,Other housing,57968
+Tianjin,Purchase of new construction,Commercial housing,145227
+Tianjin,Purchase,Second-hand house,68380
+Tianjin,Purchase original public housing,Public housing,37267
+Tianjin,Purchase Affordable Housing,housing/affordable housing with price and area limits,17641
+Tianjin,Self-built housing,housing/affordable housing with price and area limits,82677
+Tianjin,Inheritance or,Gift,7168
+Tianjin,Other,Gift,19740
+Hebei,Total,,2416146
+Hebei,Rental Affordable Housing,Public rental housing,25810
+Hebei,Rent,Other housing,112178
+Hebei,Purchase of new construction,Commercial housing,499481
+Hebei,Purchase,Second-hand house,107005
+Hebei,Purchase original public housing,Public housing,84484
+Hebei,Purchase Affordable Housing,housing/affordable housing with price and area limits,27033
+Hebei,Self-built housing,housing/affordable housing with price and area limits,1450063
+Hebei,Inheritance or,Gift,34380
+Hebei,Other,Gift,75712
+Shanxi,Total,,1188728
+Shanxi,Rental Affordable Housing,Public rental housing,17169
+Shanxi,Rent,Other housing,92195
+Shanxi,Purchase of new construction,Commercial housing,266260
+Shanxi,Purchase,Second-hand house,54965
+Shanxi,Purchase original public housing,Public housing,89483
+Shanxi,Purchase Affordable Housing,housing/affordable housing with price and area limits,44437
+Shanxi,Self-built housing,housing/affordable housing with price and area limits,532978
+Shanxi,Inheritance or,Gift,27401
+Shanxi,Other,Gift,63840
+Inner Mongolia,Total,,868558
+Inner Mongolia,Rental Affordable Housing,Public rental housing,16107
+Inner Mongolia,Rent,Other housing,89821
+Inner Mongolia,Purchase of new construction,Commercial housing,251441
+Inner Mongolia,Purchase,Second-hand house,109393
+Inner Mongolia,Purchase original public housing,Public housing,39544
+Inner Mongolia,Purchase Affordable Housing,housing/affordable housing with price and area limits,29698
+Inner Mongolia,Self-built housing,housing/affordable housing with price and area limits,280830
+Inner Mongolia,Inheritance or,Gift,8131
+Inner Mongolia,Other,Gift,43593
+Liaoning,Total,,1628448
+Liaoning,Rental Affordable Housing,Public rental housing,17945
+Liaoning,Rent,Other housing,101463
+Liaoning,Purchase of new construction,Commercial housing,503107
+Liaoning,Purchase,Second-hand house,259007
+Liaoning,Purchase original public housing,Public housing,121344
+Liaoning,Purchase Affordable Housing,housing/affordable housing with price and area limits,33026
+Liaoning,Self-built housing,housing/affordable housing with price and area limits,472821
+Liaoning,Inheritance or,Gift,22271
+Liaoning,Other,Gift,97464
+Jilin,Total,,857737
+Jilin,Rental Affordable Housing,Public rental housing,13372
+Jilin,Rent,Other housing,70488
+Jilin,Purchase of new construction,Commercial housing,272180
+Jilin,Purchase,Second-hand house,149256
+Jilin,Purchase original public housing,Public housing,40981
+Jilin,Purchase Affordable Housing,housing/affordable housing with price and area limits,27853
+Jilin,Self-built housing,housing/affordable housing with price and area limits,262970
+Jilin,Inheritance or,Gift,7156
+Jilin,Other,Gift,13481
+Heilongjiang,Total,,1172755
+Heilongjiang,Rental Affordable Housing,Public rental housing,15286
+Heilongjiang,Rent,Other housing,75296
+Heilongjiang,Purchase of new construction,Commercial housing,372355
+Heilongjiang,Purchase,Second-hand house,212975
+Heilongjiang,Purchase original public housing,Public housing,72516
+Heilongjiang,Purchase Affordable Housing,housing/affordable housing with price and area limits,68515
+Heilongjiang,Self-built housing,housing/affordable housing with price and area limits,302511
+Heilongjiang,Inheritance or,Gift,13762
+Heilongjiang,Other,Gift,39539
+Shanghai,Total,,901732
+Shanghai,Rental Affordable Housing,Public rental housing,33614
+Shanghai,Rent,Other housing,315692
+Shanghai,Purchase of new construction,Commercial housing,220185
+Shanghai,Purchase,Second-hand house,153923
+Shanghai,Purchase original public housing,Public housing,77195
+Shanghai,Purchase Affordable Housing,housing/affordable housing with price and area limits,8352
+Shanghai,Self-built housing,housing/affordable housing with price and area limits,69911
+Shanghai,Inheritance or,Gift,2822
+Shanghai,Other,Gift,20038
+Jiangsu,Total,,2743393
+Jiangsu,Rental Affordable Housing,Public rental housing,46409
+Jiangsu,Rent,Other housing,306149
+Jiangsu,Purchase of new construction,Commercial housing,685553
+Jiangsu,Purchase,Second-hand house,239506
+Jiangsu,Purchase original public housing,Public housing,81078
+Jiangsu,Purchase Affordable Housing,housing/affordable housing with price and area limits,184632
+Jiangsu,Self-built housing,housing/affordable housing with price and area limits,1085126
+Jiangsu,Inheritance or,Gift,17576
+Jiangsu,Other,Gift,97364
+Zhejiang,Total,,2279907
+Zhejiang,Rental Affordable Housing,Public rental housing,98751
+Zhejiang,Rent,Other housing,668355
+Zhejiang,Purchase of new construction,Commercial housing,326908
+Zhejiang,Purchase,Second-hand house,197866
+Zhejiang,Purchase original public housing,Public housing,36859
+Zhejiang,Purchase Affordable Housing,housing/affordable housing with price and area limits,91174
+Zhejiang,Self-built housing,housing/affordable housing with price and area limits,798177
+Zhejiang,Inheritance or,Gift,24098
+Zhejiang,Other,Gift,37719
+Anhui,Total,,2005193
+Anhui,Rental Affordable Housing,Public rental housing,34276
+Anhui,Rent,Other housing,143302
+Anhui,Purchase of new construction,Commercial housing,386009
+Anhui,Purchase,Second-hand house,106445
+Anhui,Purchase original public housing,Public housing,55228
+Anhui,Purchase Affordable Housing,housing/affordable housing with price and area limits,21026
+Anhui,Self-built housing,housing/affordable housing with price and area limits,1126003
+Anhui,Inheritance or,Gift,12573
+Anhui,Other,Gift,120331
+Fujian,Total,,1266971
+Fujian,Rental Affordable Housing,Public rental housing,34555
+Fujian,Rent,Other housing,286603
+Fujian,Purchase of new construction,Commercial housing,220750
+Fujian,Purchase,Second-hand house,74516
+Fujian,Purchase original public housing,Public housing,23390
+Fujian,Purchase Affordable Housing,housing/affordable housing with price and area limits,12734
+Fujian,Self-built housing,housing/affordable housing with price and area limits,569702
+Fujian,Inheritance or,Gift,14440
+Fujian,Other,Gift,30281
+Jiangxi,Total,,1340608
+Jiangxi,Rental Affordable Housing,Public rental housing,38604
+Jiangxi,Rent,Other housing,71505
+Jiangxi,Purchase of new construction,Commercial housing,280286
+Jiangxi,Purchase,Second-hand house,54962
+Jiangxi,Purchase original public housing,Public housing,45629
+Jiangxi,Purchase Affordable Housing,housing/affordable housing with price and area limits,14801
+Jiangxi,Self-built housing,housing/affordable housing with price and area limits,787554
+Jiangxi,Inheritance or,Gift,12647
+Jiangxi,Other,Gift,34620
+Shandong,Total,,3465782
+Shandong,Rental Affordable Housing,Public rental housing,30677
+Shandong,Rent,Other housing,188495
+Shandong,Purchase of new construction,Commercial housing,800795
+Shandong,Purchase,Second-hand house,184144
+Shandong,Purchase original public housing,Public housing,133704
+Shandong,Purchase Affordable Housing,housing/affordable housing with price and area limits,59649
+Shandong,Self-built housing,housing/affordable housing with price and area limits,1857667
+Shandong,Inheritance or,Gift,29815
+Shandong,Other,Gift,180836
+Henan,Total,,2975955
+Henan,Rental Affordable Housing,Public rental housing,38267
+Henan,Rent,Other housing,122444
+Henan,Purchase of new construction,Commercial housing,527559
+Henan,Purchase,Second-hand house,100637
+Henan,Purchase original public housing,Public housing,105535
+Henan,Purchase Affordable Housing,housing/affordable housing with price and area limits,54583
+Henan,Self-built housing,housing/affordable housing with price and area limits,1922142
+Henan,Inheritance or,Gift,16704
+Henan,Other,Gift,88084
+Hubei,Total,,1894974
+Hubei,Rental Affordable Housing,Public rental housing,29924
+Hubei,Rent,Other housing,132184
+Hubei,Purchase of new construction,Commercial housing,419563
+Hubei,Purchase,Second-hand house,98586
+Hubei,Purchase original public housing,Public housing,111054
+Hubei,Purchase Affordable Housing,housing/affordable housing with price and area limits,39798
+Hubei,Self-built housing,housing/affordable housing with price and area limits,948096
+Hubei,Inheritance or,Gift,12932
+Hubei,Other,Gift,102837
+Hunan,Total,,2162386
+Hunan,Rental Affordable Housing,Public rental housing,33528
+Hunan,Rent,Other housing,111603
+Hunan,Purchase of new construction,Commercial housing,389756
+Hunan,Purchase,Second-hand house,58369
+Hunan,Purchase original public housing,Public housing,81596
+Hunan,Purchase Affordable Housing,housing/affordable housing with price and area limits,39194
+Hunan,Self-built housing,housing/affordable housing with price and area limits,1367514
+Hunan,Inheritance or,Gift,24774
+Hunan,Other,Gift,56052
+Guangdong,Total,,3752057
+Guangdong,Rental Affordable Housing,Public rental housing,190996
+Guangdong,Rent,Other housing,1364487
+Guangdong,Purchase of new construction,Commercial housing,571492
+Guangdong,Purchase,Second-hand house,208868
+Guangdong,Purchase original public housing,Public housing,81585
+Guangdong,Purchase Affordable Housing,housing/affordable housing with price and area limits,25167
+Guangdong,Self-built housing,housing/affordable housing with price and area limits,1174820
+Guangdong,Inheritance or,Gift,37488
+Guangdong,Other,Gift,97154
+Guangxi,Total,,1445879
+Guangxi,Rental Affordable Housing,Public rental housing,29285
+Guangxi,Rent,Other housing,125807
+Guangxi,Purchase of new construction,Commercial housing,188834
+Guangxi,Purchase,Second-hand house,35107
+Guangxi,Purchase original public housing,Public housing,50524
+Guangxi,Purchase Affordable Housing,housing/affordable housing with price and area limits,17807
+Guangxi,Self-built housing,housing/affordable housing with price and area limits,950038
+Guangxi,Inheritance or,Gift,9242
+Guangxi,Other,Gift,39235
+Hainan,Total,,264959
+Hainan,Rental Affordable Housing,Public rental housing,6402
+Hainan,Rent,Other housing,41826
+Hainan,Purchase of new construction,Commercial housing,24953
+Hainan,Purchase,Second-hand house,7185
+Hainan,Purchase original public housing,Public housing,15739
+Hainan,Purchase Affordable Housing,housing/affordable housing with price and area limits,8027
+Hainan,Self-built housing,housing/affordable housing with price and area limits,146393
+Hainan,Inheritance or,Gift,2400
+Hainan,Other,Gift,12034
+Chongqing,Total,,1136063
+Chongqing,Rental Affordable Housing,Public rental housing,43604
+Chongqing,Rent,Other housing,97341
+Chongqing,Purchase of new construction,Commercial housing,352022
+Chongqing,Purchase,Second-hand house,110308
+Chongqing,Purchase original public housing,Public housing,26622
+Chongqing,Purchase Affordable Housing,housing/affordable housing with price and area limits,42179
+Chongqing,Self-built housing,housing/affordable housing with price and area limits,409259
+Chongqing,Inheritance or,Gift,10793
+Chongqing,Other,Gift,43935
+Sichuan,Total,,2947695
+Sichuan,Rental Affordable Housing,Public rental housing,47677
+Sichuan,Rent,Other housing,266369
+Sichuan,Purchase of new construction,Commercial housing,667699
+Sichuan,Purchase,Second-hand house,179058
+Sichuan,Purchase original public housing,Public housing,74034
+Sichuan,Purchase Affordable Housing,housing/affordable housing with price and area limits,71731
+Sichuan,Self-built housing,housing/affordable housing with price and area limits,1444691
+Sichuan,Inheritance or,Gift,30578
+Sichuan,Other,Gift,165858
+Guizhou,Total,,1145420
+Guizhou,Rental Affordable Housing,Public rental housing,18417
+Guizhou,Rent,Other housing,99411
+Guizhou,Purchase of new construction,Commercial housing,179193
+Guizhou,Purchase,Second-hand house,30982
+Guizhou,Purchase original public housing,Public housing,25812
+Guizhou,Purchase Affordable Housing,housing/affordable housing with price and area limits,35582
+Guizhou,Self-built housing,housing/affordable housing with price and area limits,690969
+Guizhou,Inheritance or,Gift,13974
+Guizhou,Other,Gift,51080
+Yunnan,Total,,1413050
+Yunnan,Rental Affordable Housing,Public rental housing,52823
+Yunnan,Rent,Other housing,143969
+Yunnan,Purchase of new construction,Commercial housing,151986
+Yunnan,Purchase,Second-hand house,54975
+Yunnan,Purchase original public housing,Public housing,40082
+Yunnan,Purchase Affordable Housing,housing/affordable housing with price and area limits,19498
+Yunnan,Self-built housing,housing/affordable housing with price and area limits,898006
+Yunnan,Inheritance or,Gift,12598
+Yunnan,Other,Gift,39113
+Tibet,Total,,76553
+Tibet,Rental Affordable Housing,Public rental housing,9454
+Tibet,Rent,Other housing,6478
+Tibet,Purchase of new construction,Commercial housing,2412
+Tibet,Purchase,Second-hand house,2307
+Tibet,Purchase original public housing,Public housing,1596
+Tibet,Purchase Affordable Housing,housing/affordable housing with price and area limits,1072
+Tibet,Self-built housing,housing/affordable housing with price and area limits,41510
+Tibet,Inheritance or,Gift,1956
+Tibet,Other,Gift,9768
+Shaanxi,Total,,1275990
+Shaanxi,Rental Affordable Housing,Public rental housing,31702
+Shaanxi,Rent,Other housing,139332
+Shaanxi,Purchase of new construction,Commercial housing,275521
+Shaanxi,Purchase,Second-hand house,36436
+Shaanxi,Purchase original public housing,Public housing,82795
+Shaanxi,Purchase Affordable Housing,housing/affordable housing with price and area limits,41282
+Shaanxi,Self-built housing,housing/affordable housing with price and area limits,598504
+Shaanxi,Inheritance or,Gift,9427
+Shaanxi,Other,Gift,60991
+Gansu,Total,,764771
+Gansu,Rental Affordable Housing,Public rental housing,12159
+Gansu,Rent,Other housing,55463
+Gansu,Purchase of new construction,Commercial housing,148202
+Gansu,Purchase,Second-hand house,36277
+Gansu,Purchase original public housing,Public housing,46418
+Gansu,Purchase Affordable Housing,housing/affordable housing with price and area limits,31492
+Gansu,Self-built housing,housing/affordable housing with price and area limits,403782
+Gansu,Inheritance or,Gift,6044
+Gansu,Other,Gift,24934
+Qinghai,Total,,174934
+Qinghai,Rental Affordable Housing,Public rental housing,8322
+Qinghai,Rent,Other housing,11767
+Qinghai,Purchase of new construction,Commercial housing,42324
+Qinghai,Purchase,Second-hand house,13999
+Qinghai,Purchase original public housing,Public housing,8136
+Qinghai,Purchase Affordable Housing,housing/affordable housing with price and area limits,6422
+Qinghai,Self-built housing,housing/affordable housing with price and area limits,70583
+Qinghai,Inheritance or,Gift,3028
+Qinghai,Other,Gift,10353
+Ningxia,Total,,233945
+Ningxia,Rental Affordable Housing,Public rental housing,10254
+Ningxia,Rent,Other housing,20268
+Ningxia,Purchase of new construction,Commercial housing,70812
+Ningxia,Purchase,Second-hand house,26090
+Ningxia,Purchase original public housing,Public housing,8460
+Ningxia,Purchase Affordable Housing,housing/affordable housing with price and area limits,9559
+Ningxia,Self-built housing,housing/affordable housing with price and area limits,68686
+Ningxia,Inheritance or,Gift,2003
+Ningxia,Other,Gift,17813
+Xinjiang,Total,,769328
+Xinjiang,Rental Affordable Housing,Public rental housing,37951
+Xinjiang,Rent,Other housing,52617
+Xinjiang,Purchase of new construction,Commercial housing,183201
+Xinjiang,Purchase,Second-hand house,72470
+Xinjiang,Purchase original public housing,Public housing,42653
+Xinjiang,Purchase Affordable Housing,housing/affordable housing with price and area limits,50464
+Xinjiang,Self-built housing,housing/affordable housing with price and area limits,178105
+Xinjiang,Inheritance or,Gift,13942
+Xinjiang,Other,Gift,137925

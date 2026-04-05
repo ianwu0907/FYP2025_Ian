@@ -1,52 +1,77 @@
 {
   "physical": {
     "shape": {
-      "rows": 1320,
-      "cols": 8
+      "rows": 49,
+      "cols": 16
     },
     "actual_column_names": [
-      "年份/Year",
-      "有否向警方舉報事件",
-      "Incident Being or Not Reported to Police",
-      "類別",
-      "Category",
-      "項目",
-      "Item",
-      "個案數字/No. of Cases"
+      "表4.1",
+      "Unnamed: 1",
+      "2011年、2016年及2021年按種族、婚姻狀況及性別劃分的15歲及以上少數族裔人士百分比分布",
+      "Unnamed: 3",
+      "Unnamed: 4",
+      "Unnamed: 5",
+      "Unnamed: 6",
+      "Unnamed: 7",
+      "Unnamed: 8",
+      "Unnamed: 9",
+      "Unnamed: 10",
+      "Unnamed: 11",
+      "Unnamed: 12",
+      "Unnamed: 13",
+      "Unnamed: 14",
+      "索引 Index"
     ],
-    "header_depth": 0,
-    "data_start_row": 0,
-    "data_end_row": 1319,
-    "data_rows": 1320,
+    "header_depth": 7,
+    "data_start_row": 7,
+    "data_end_row": 47,
+    "data_rows": 41,
     "column_dtype_profile": {
-      "0": "numeric",
+      "0": "empty",
       "1": "text",
-      "2": "text",
-      "3": "text",
-      "4": "text",
-      "5": "text",
-      "6": "text",
-      "7": "numeric"
+      "2": "empty",
+      "3": "numeric",
+      "4": "numeric",
+      "5": "numeric",
+      "6": "numeric",
+      "7": "numeric",
+      "8": "numeric",
+      "9": "numeric",
+      "10": "numeric",
+      "11": "numeric",
+      "12": "numeric",
+      "13": "numeric",
+      "14": "numeric",
+      "15": "empty"
     },
-    "blank_rows_in_data": [],
+    "blank_rows_in_data": [
+      43,
+      46
+    ],
     "bilingual_row_candidate": false,
     "inline_bilingual_candidate": false,
-    "left_header_cols_num": 1
+    "left_header_cols_num": 3
   },
   "irregularities": [
     {
-      "label": "EMBEDDED_DIMENSION_IN_COLUMN",
-      "evidence": "Column [5] headers contain values such as \"身體虐待 - 男性\", \"精神虐待 - 男性\", and similar cells throughout the sheet.",
-      "details": "The cell values in Column [5] encode both the type of abuse and the gender using \" - \" as a delimiter, thus embedding multiple dimensions in one column."
+      "label": "MULTI_LEVEL_HEADER",
+      "evidence": "Row 2, Row 3, Row 4",
+      "details": "The header spans multiple rows with group labels for marital status and overall categories of ethnicity with sub-labels for gender."
+    },
+    {
+      "label": "AGGREGATE_COLUMNS",
+      "evidence": "Columns 5, 8, 11, 14",
+      "details": "These columns contain overall summaries (e.g., Overall, 合計) that aggregate values from other columns representing Male and Female categories."
     },
     {
       "label": "SPARSE_ROW_FILL",
-      "evidence": "Column [0] (\"年份/Year\") has values only at the beginning of each year block (e.g., 2005, 2006) and mostly empty in between.",
-      "details": "This implies the year values are filled at the start of each new section, and the blank cells indicate continuation of the same year for subsequent rows."
+      "evidence": "Rows 7 to 47, with blanks at Rows 43 and 46",
+      "details": "The column for \"Year\" has values filled at the start of a block and left blank for subsequent rows until a new block starts."
     }
   ],
   "labels": [
-    "EMBEDDED_DIMENSION_IN_COLUMN",
+    "MULTI_LEVEL_HEADER",
+    "AGGREGATE_COLUMNS",
     "SPARSE_ROW_FILL"
   ]
 }

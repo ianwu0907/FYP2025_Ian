@@ -1,0 +1,21 @@
+income_range,gender,value,unit
+"under $5,000",women,8.1,dollars
+"under $5,000",men,6.4,dollars
+"$5,000 to $9,999",women,8.4,dollars
+"$5,000 to $9,999",men,5.8,dollars
+"$10,000 to $19,999",women,15.6,dollars
+"$10,000 to $19,999",men,10.4,dollars
+"$20,000 to $29,999",women,13.6,dollars
+"$20,000 to $29,999",men,9.3,dollars
+"$30,000 to $39,999",women,12.7,dollars
+"$30,000 to $39,999",men,10.2,dollars
+"$40,000 to $49,999",women,11.5,dollars
+"$40,000 to $49,999",men,10.4,dollars
+"$50,000 to $59,999",women,7.8,dollars
+"$50,000 to $59,999",men,9.2,dollars
+"$60,000 to $79,999",women,11.0,dollars
+"$60,000 to $79,999",men,14.3,dollars
+"$80,000 to $99,999",women,6.6,dollars
+"$80,000 to $99,999",men,9.6,dollars
+"$100,000 and over",women,4.8,dollars
+"$100,000 and over",men,14.3,dollars

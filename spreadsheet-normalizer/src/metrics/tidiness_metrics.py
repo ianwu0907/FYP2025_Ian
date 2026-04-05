@@ -12,16 +12,79 @@ References:
 - Column Completeness: Pipino, Lee & Wang (CACM 2002)
 - Inter-Column NMI: standard information-theoretic measure
 - Substring Containment: novel metric for granularity mixing detection
+- Groupby Queryability: novel metric for analytical operability
 """
 
 import logging
 import math
 import pandas as pd
 import numpy as np
-from typing import Dict, List, Any, Optional
+from typing import Dict, List, Any, Optional, Tuple
 from collections import Counter
 
 logger = logging.getLogger(__name__)
+
+
+# ======================================================================
+# Shared helpers
+# ======================================================================
+
+def _detect_dim_cols(df: pd.DataFrame) -> List:
+    """
+    Detect dimension columns: string-dominant and not a unique-key column.
+
+    Cardinality rule: unique values < n_rows (at least one value repeats,
+    OR the column has fewer distinct values than rows). The old 50% threshold
+    was too strict for small tables — a 7-row table with 6 distinct category
+    labels is a valid dimension column.
+    Used by inter_column_nmi and groupby_queryability.
+    """
+    n_rows = len(df)
+    dim_cols = []
+    for col in df.columns:
+        non_empty = df[col].dropna()
+        if len(non_empty) == 0:
+            continue
+        n_str = sum(1 for v in non_empty if isinstance(v, str))
+        if n_str / len(non_empty) > 0.5:
+            # Exclude only pure ID columns where every value is unique
+            if df[col].nunique() < n_rows:
+                dim_cols.append(col)
+    return dim_cols
+
+
+# Column name substrings that indicate ratio/proportion columns.
+# Summing such columns across rows produces meaningless answers,
+# so they are excluded from aggregation but valid for lookup.
+_RATIO_COL_PATTERNS = {"percent", "pct", "rate", "ratio", "proportion", "share", "%"}
+
+
+def _is_ratio_col(col_name: str) -> bool:
+    name = str(col_name).lower()
+    return any(pat in name for pat in _RATIO_COL_PATTERNS)
+
+
+def _detect_measure_cols(df: pd.DataFrame,
+                         exclude_ratio: bool = False) -> List:
+    """
+    Detect measure columns: >50% of non-null values parse as numeric.
+    Handles comma-formatted numbers (e.g. "15,765") by stripping commas
+    before parsing.
+
+    Args:
+        exclude_ratio: If True, columns whose names suggest percentage/ratio
+                       (percent, rate, ratio, etc.) are excluded.
+                       Use True for aggregation (sum), False for lookup.
+    """
+    measure_cols = []
+    for col in df.columns:
+        if exclude_ratio and _is_ratio_col(col):
+            continue
+        series = df[col].dropna().astype(str).str.replace(",", "", regex=False)
+        parsed = pd.to_numeric(series, errors="coerce")
+        if parsed.notna().sum() / max(len(df), 1) >= 0.5:
+            measure_cols.append(col)
+    return measure_cols
 
 
 # ======================================================================
@@ -215,20 +278,13 @@ def inter_column_nmi(df: pd.DataFrame,
     High NMI → columns encode overlapping information (poor separation).
     Low NMI → columns are semantically independent (good).
 
-    If dim_cols not provided, uses all text columns.
+    If dim_cols not provided, uses _detect_dim_cols().
     """
     if df.empty:
         return 0.0
 
     if dim_cols is None:
-        dim_cols = []
-        for col in df.columns:
-            non_empty = df[col].dropna()
-            if len(non_empty) == 0:
-                continue
-            n_str = sum(1 for v in non_empty if isinstance(v, str))
-            if n_str / len(non_empty) > 0.5:
-                dim_cols.append(col)
+        dim_cols = _detect_dim_cols(df)
 
     if len(dim_cols) < 2:
         return 0.0
@@ -272,6 +328,86 @@ def inter_column_nmi(df: pd.DataFrame,
     return round(total / count, 4) if count > 0 else 0.0
 
 
+def groupby_queryability(df: pd.DataFrame) -> Tuple[float, str]:
+    """
+    Measures how many (dim, measure) groupby operations produce a
+    meaningful aggregation — i.e. the result has fewer rows than the
+    input (real grouping occurred) and at least 2 groups.
+
+    Three cases:
+      - No dim cols detected          → 0.0, mode="no_dims"
+        (table has no groupable structure at all)
+      - Dim cols but no measure cols  → size-only probe, mode="size_only"
+        (purely categorical table; groupby().size() is still meaningful)
+      - Both dim and measure cols     → size + sum probes, mode="full"
+
+    Returns:
+        (score, mode) where score ∈ [0.0, 1.0] and mode is a string
+        describing which probe set was used.
+
+    Higher is better.
+    """
+    n_rows = len(df)
+    if n_rows < 2:
+        return 0.0, "no_dims"
+
+    dim_cols = _detect_dim_cols(df)
+    if not dim_cols:
+        return 0.0, "no_dims"
+
+    measure_cols = _detect_measure_cols(df)
+
+    def _meaningful(result) -> bool:
+        """True if groupby produced real aggregation."""
+        return len(result) < n_rows and len(result) >= 2
+
+    if not measure_cols:
+        # Size-only mode: groupby().size() across all dim cols
+        successes = 0
+        for dim in dim_cols:
+            try:
+                result = df.groupby(dim, dropna=False).size()
+                if _meaningful(result):
+                    successes += 1
+            except Exception:
+                pass
+        total = len(dim_cols)
+        score = round(successes / total, 4) if total > 0 else 0.0
+        return score, "size_only"
+
+    # Full mode: both size and sum probes across all (dim, measure) pairs
+    successes = 0
+    total = 0
+    for dim in dim_cols:
+        # size probe
+        total += 1
+        try:
+            result = df.groupby(dim, dropna=False).size()
+            if _meaningful(result):
+                successes += 1
+        except Exception:
+            pass
+
+        # sum probe per measure col
+        for measure in measure_cols:
+            total += 1
+            try:
+                parsed = pd.to_numeric(
+                    df[measure].astype(str).str.replace(",", "", regex=False),
+                    errors="coerce",
+                )
+                temp = df.copy()
+                temp[measure] = parsed
+                result = temp.groupby(dim, dropna=False)[measure].sum()
+                if _meaningful(result):
+                    successes += 1
+            except Exception:
+                pass
+
+    score = round(successes / total, 4) if total > 0 else 0.0
+    return score, "full"
+
+
 # ======================================================================
 # Composite scorer
 # ======================================================================
@@ -291,9 +427,13 @@ def compute_all_metrics(df: pd.DataFrame,
 
     Returns:
         Dict with metric names → values, plus shape info.
+        groupby_queryability_mode is stored separately for logging
+        but not included in compare_metrics scoring.
     """
     if label:
         logger.info(f"Computing tidiness metrics [{label}]...")
+
+    gq_score, gq_mode = groupby_queryability(df)
 
     metrics = {
         "shape": {"rows": df.shape[0], "cols": df.shape[1]},
@@ -306,12 +446,20 @@ def compute_all_metrics(df: pd.DataFrame,
         "type_consistency": type_consistency(df),
         "substring_containment": substring_containment_rate(df, text_cols),
         "inter_column_nmi": inter_column_nmi(df, dim_cols),
+        "groupby_queryability": gq_score,
+        "groupby_queryability_mode": gq_mode,
     }
 
     if label:
         logger.info(f"  Shape: {metrics['shape']}")
         for k, v in metrics.items():
-            if k != "shape":
+            if k == "shape":
+                continue
+            if k == "groupby_queryability":
+                logger.info(f"  {k}: {v}  (mode={metrics['groupby_queryability_mode']})")
+            elif k == "groupby_queryability_mode":
+                continue
+            else:
                 logger.info(f"  {k}: {v}")
 
     return metrics
@@ -324,6 +472,8 @@ def compare_metrics(before: Dict[str, Any],
 
     Returns:
         Dict with each metric's before, after, delta, and direction.
+
+    Note: groupby_queryability_mode is metadata, not scored.
     """
     comparison = {}
 
@@ -332,7 +482,7 @@ def compare_metrics(before: Dict[str, Any],
         "cell_coverage", "row_completeness_uniformity",
         "column_type_homogeneity", "data_row_ratio",
         "column_completeness_min", "header_uniqueness",
-        "type_consistency",
+        "type_consistency", "groupby_queryability",
     }
     # Metrics where lower = better
     lower_is_better = {
@@ -367,6 +517,12 @@ def compare_metrics(before: Dict[str, Any],
             "direction": direction,
         }
 
+    # Attach mode info as metadata (not scored)
+    comparison["_groupby_queryability_mode"] = {
+        "before": before.get("groupby_queryability_mode", "n/a"),
+        "after": after.get("groupby_queryability_mode", "n/a"),
+    }
+
     return comparison
 
 
@@ -378,19 +534,31 @@ def log_comparison(comparison: Dict[str, Any]):
     logger.info("-" * 65)
 
     for metric, data in comparison.items():
+        # Skip metadata entries
+        if metric.startswith("_"):
+            continue
         logger.info(
             f"  {metric:<32} {data['before']:>7.4f} {data['after']:>7.4f} "
             f"{data['delta']:>+7.4f}  {data['direction']}"
         )
 
+    # Log groupby mode metadata
+    mode_info = comparison.get("_groupby_queryability_mode", {})
+    if mode_info:
+        logger.info(
+            f"  groupby_queryability mode:       "
+            f"before={mode_info['before']}, after={mode_info['after']}"
+        )
+
     logger.info("-" * 65)
 
     # Count improvements / degradations
-    n_improved = sum(1 for d in comparison.values()
+    scored = {k: v for k, v in comparison.items() if not k.startswith("_")}
+    n_improved = sum(1 for d in scored.values()
                      if d['direction'].startswith("✓"))
-    n_degraded = sum(1 for d in comparison.values()
+    n_degraded = sum(1 for d in scored.values()
                      if d['direction'].startswith("✗"))
-    n_unchanged = len(comparison) - n_improved - n_degraded
+    n_unchanged = len(scored) - n_improved - n_degraded
 
     logger.info(
         f"  Summary: {n_improved} improved, {n_degraded} degraded, "

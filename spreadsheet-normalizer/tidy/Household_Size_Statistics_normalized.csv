@@ -1,0 +1,641 @@
+region,household_size,measure,value
+Whole Country,One-person household,Number of households,125490007.0
+Whole Country,One-person household,proportion,25.39
+Whole Country,Two-person household,Number of households,146690059.0
+Whole Country,Two-person household,proportion,29.68
+Whole Country,Three-person households,Number of households,103700982.0
+Whole Country,Three-person households,proportion,20.99
+Whole Country,Four-person households,Number of households,65100986.0
+Whole Country,Four-person households,proportion,13.17
+Whole Country,Five-person households,Number of households,30513352.0
+Whole Country,Five-person households,proportion,6.17
+Whole Country,Six-person households,Number of households,15125667.0
+Whole Country,Six-person households,proportion,3.06
+Whole Country,Seven-person households,Number of households,4589308.0
+Whole Country,Seven-person households,proportion,0.93
+Whole Country,Eight-person households,Number of households,1557638.0
+Whole Country,Eight-person households,proportion,0.32
+Whole Country,Nine-person households,Number of households,655060.0
+Whole Country,Nine-person households,proportion,0.13
+Whole Country,Households with 10 or more people,Number of households,734364.0
+Whole Country,Households with 10 or more people,proportion,0.15
+Beijing,One-person household,Number of households,2463325.0
+Beijing,One-person household,proportion,29.93
+Beijing,Two-person household,Number of households,2727924.0
+Beijing,Two-person household,proportion,33.14
+Beijing,Three-person households,Number of households,1787020.0
+Beijing,Three-person households,proportion,21.71
+Beijing,Four-person households,Number of households,736163.0
+Beijing,Four-person households,proportion,8.94
+Beijing,Five-person households,Number of households,362811.0
+Beijing,Five-person households,proportion,4.41
+Beijing,Six-person households,Number of households,122068.0
+Beijing,Six-person households,proportion,1.48
+Beijing,Seven-person households,Number of households,20084.0
+Beijing,Seven-person households,proportion,0.24
+Beijing,Eight-person households,Number of households,6721.0
+Beijing,Eight-person households,proportion,0.08
+Beijing,Nine-person households,Number of households,2426.0
+Beijing,Nine-person households,proportion,0.03
+Beijing,Households with 10 or more people,Number of households,2250.0
+Beijing,Households with 10 or more people,proportion,0.03
+Tianjin,One-person household,Number of households,1167393.0
+Tianjin,One-person household,proportion,23.99
+Tianjin,Two-person household,Number of households,1727332.0
+Tianjin,Two-person household,proportion,35.49
+Tianjin,Three-person households,Number of households,1209181.0
+Tianjin,Three-person households,proportion,24.84
+Tianjin,Four-person households,Number of households,511932.0
+Tianjin,Four-person households,proportion,10.52
+Tianjin,Five-person households,Number of households,167772.0
+Tianjin,Five-person households,proportion,3.45
+Tianjin,Six-person households,Number of households,65668.0
+Tianjin,Six-person households,proportion,1.35
+Tianjin,Seven-person households,Number of households,11920.0
+Tianjin,Seven-person households,proportion,0.24
+Tianjin,Eight-person households,Number of households,3353.0
+Tianjin,Eight-person households,proportion,0.07
+Tianjin,Nine-person households,Number of households,1165.0
+Tianjin,Nine-person households,proportion,0.02
+Tianjin,Households with 10 or more people,Number of households,1400.0
+Tianjin,Households with 10 or more people,proportion,0.03
+Hebei,One-person household,Number of households,5082767.0
+Hebei,One-person household,proportion,19.99
+Hebei,Two-person household,Number of households,7970304.0
+Hebei,Two-person household,proportion,31.34
+Hebei,Three-person households,Number of households,5515397.0
+Hebei,Three-person households,proportion,21.69
+Hebei,Four-person households,Number of households,3942333.0
+Hebei,Four-person households,proportion,15.5
+Hebei,Five-person households,Number of households,1612428.0
+Hebei,Five-person households,proportion,6.34
+Hebei,Six-person households,Number of households,921110.0
+Hebei,Six-person households,proportion,3.62
+Hebei,Seven-person households,Number of households,262348.0
+Hebei,Seven-person households,proportion,1.03
+Hebei,Eight-person households,Number of households,71919.0
+Hebei,Eight-person households,proportion,0.28
+Hebei,Nine-person households,Number of households,25660.0
+Hebei,Nine-person households,proportion,0.1
+Hebei,Households with 10 or more people,Number of households,25343.0
+Hebei,Households with 10 or more people,proportion,0.1
+Shanxi,One-person household,Number of households,3057920.0
+Shanxi,One-person household,proportion,23.99
+Shanxi,Two-person household,Number of households,4052452.0
+Shanxi,Two-person household,proportion,31.79
+Shanxi,Three-person households,Number of households,2966829.0
+Shanxi,Three-person households,proportion,23.28
+Shanxi,Four-person households,Number of households,1766944.0
+Shanxi,Four-person households,proportion,13.86
+Shanxi,Five-person households,Number of households,562979.0
+Shanxi,Five-person households,proportion,4.42
+Shanxi,Six-person households,Number of households,253691.0
+Shanxi,Six-person households,proportion,1.99
+Shanxi,Seven-person households,Number of households,54906.0
+Shanxi,Seven-person households,proportion,0.43
+Shanxi,Eight-person households,Number of households,16458.0
+Shanxi,Eight-person households,proportion,0.13
+Shanxi,Nine-person households,Number of households,6177.0
+Shanxi,Nine-person households,proportion,0.05
+Shanxi,Households with 10 or more people,Number of households,7786.0
+Shanxi,Households with 10 or more people,proportion,0.06
+Inner Mongolia,One-person household,Number of households,2209731.0
+Inner Mongolia,One-person household,proportion,23.3
+Inner Mongolia,Two-person household,Number of households,3565544.0
+Inner Mongolia,Two-person household,proportion,37.6
+Inner Mongolia,Three-person households,Number of households,2389562.0
+Inner Mongolia,Three-person households,proportion,25.2
+Inner Mongolia,Four-person households,Number of households,950775.0
+Inner Mongolia,Four-person households,proportion,10.03
+Inner Mongolia,Five-person households,Number of households,257424.0
+Inner Mongolia,Five-person households,proportion,2.71
+Inner Mongolia,Six-person households,Number of households,91271.0
+Inner Mongolia,Six-person households,proportion,0.96
+Inner Mongolia,Seven-person households,Number of households,14473.0
+Inner Mongolia,Seven-person households,proportion,0.15
+Inner Mongolia,Eight-person households,Number of households,3070.0
+Inner Mongolia,Eight-person households,proportion,0.03
+Inner Mongolia,Nine-person households,Number of households,955.0
+Inner Mongolia,Nine-person households,proportion,0.01
+Inner Mongolia,Households with 10 or more people,Number of households,1152.0
+Inner Mongolia,Households with 10 or more people,proportion,0.01
+Liaoning,One-person household,Number of households,4647274.0
+Liaoning,One-person household,proportion,26.61
+Liaoning,Two-person household,Number of households,6444633.0
+Liaoning,Two-person household,proportion,36.9
+Liaoning,Three-person households,Number of households,4180433.0
+Liaoning,Three-person households,proportion,23.93
+Liaoning,Four-person households,Number of households,1438393.0
+Liaoning,Four-person households,proportion,8.23
+Liaoning,Five-person households,Number of households,535394.0
+Liaoning,Five-person households,proportion,3.07
+Liaoning,Six-person households,Number of households,175193.0
+Liaoning,Six-person households,proportion,1.0
+Liaoning,Seven-person households,Number of households,32067.0
+Liaoning,Seven-person households,proportion,0.18
+Liaoning,Eight-person households,Number of households,7723.0
+Liaoning,Eight-person households,proportion,0.04
+Liaoning,Nine-person households,Number of households,2508.0
+Liaoning,Nine-person households,proportion,0.01
+Liaoning,Households with 10 or more people,Number of households,3493.0
+Liaoning,Households with 10 or more people,proportion,0.02
+Jilin,One-person household,Number of households,2313775.0
+Jilin,One-person household,proportion,24.54
+Jilin,Two-person household,Number of households,3496744.0
+Jilin,Two-person household,proportion,37.09
+Jilin,Three-person households,Number of households,2292234.0
+Jilin,Three-person households,proportion,24.32
+Jilin,Four-person households,Number of households,866072.0
+Jilin,Four-person households,proportion,9.19
+Jilin,Five-person households,Number of households,329271.0
+Jilin,Five-person households,proportion,3.49
+Jilin,Six-person households,Number of households,103878.0
+Jilin,Six-person households,proportion,1.1
+Jilin,Seven-person households,Number of households,18584.0
+Jilin,Seven-person households,proportion,0.2
+Jilin,Eight-person households,Number of households,4171.0
+Jilin,Eight-person households,proportion,0.04
+Jilin,Nine-person households,Number of households,1137.0
+Jilin,Nine-person households,proportion,0.01
+Jilin,Households with 10 or more people,Number of households,956.0
+Jilin,Households with 10 or more people,proportion,0.01
+Heilongjiang,One-person household,Number of households,3806499.0
+Heilongjiang,One-person household,proportion,29.23
+Heilongjiang,Two-person household,Number of households,4721066.0
+Heilongjiang,Two-person household,proportion,36.25
+Heilongjiang,Three-person households,Number of households,2969241.0
+Heilongjiang,Three-person households,proportion,22.8
+Heilongjiang,Four-person households,Number of households,1054009.0
+Heilongjiang,Four-person households,proportion,8.09
+Heilongjiang,Five-person households,Number of households,349169.0
+Heilongjiang,Five-person households,proportion,2.68
+Heilongjiang,Six-person households,Number of households,92959.0
+Heilongjiang,Six-person households,proportion,0.71
+Heilongjiang,Seven-person households,Number of households,19285.0
+Heilongjiang,Seven-person households,proportion,0.15
+Heilongjiang,Eight-person households,Number of households,6154.0
+Heilongjiang,Eight-person households,proportion,0.05
+Heilongjiang,Nine-person households,Number of households,2084.0
+Heilongjiang,Nine-person households,proportion,0.02
+Heilongjiang,Households with 10 or more people,Number of households,4221.0
+Heilongjiang,Households with 10 or more people,proportion,0.03
+Shanghai,One-person household,Number of households,2736214.0
+Shanghai,One-person household,proportion,28.37
+Shanghai,Two-person household,Number of households,3332304.0
+Shanghai,Two-person household,proportion,34.55
+Shanghai,Three-person households,Number of households,2159011.0
+Shanghai,Three-person households,proportion,22.39
+Shanghai,Four-person households,Number of households,815316.0
+Shanghai,Four-person households,proportion,8.45
+Shanghai,Five-person households,Number of households,449473.0
+Shanghai,Five-person households,proportion,4.66
+Shanghai,Six-person households,Number of households,121950.0
+Shanghai,Six-person households,proportion,1.26
+Shanghai,Seven-person households,Number of households,21041.0
+Shanghai,Seven-person households,proportion,0.22
+Shanghai,Eight-person households,Number of households,5870.0
+Shanghai,Eight-person households,proportion,0.06
+Shanghai,Nine-person households,Number of households,1858.0
+Shanghai,Nine-person households,proportion,0.02
+Shanghai,Households with 10 or more people,Number of households,1591.0
+Shanghai,Households with 10 or more people,proportion,0.02
+Jiangsu,One-person household,Number of households,6975663.0
+Jiangsu,One-person household,proportion,23.32
+Jiangsu,Two-person household,Number of households,9635959.0
+Jiangsu,Two-person household,proportion,32.22
+Jiangsu,Three-person households,Number of households,6499826.0
+Jiangsu,Three-person households,proportion,21.73
+Jiangsu,Four-person households,Number of households,3718062.0
+Jiangsu,Four-person households,proportion,12.43
+Jiangsu,Five-person households,Number of households,1957228.0
+Jiangsu,Five-person households,proportion,6.54
+Jiangsu,Six-person households,Number of households,837511.0
+Jiangsu,Six-person households,proportion,2.8
+Jiangsu,Seven-person households,Number of households,191310.0
+Jiangsu,Seven-person households,proportion,0.64
+Jiangsu,Eight-person households,Number of households,54635.0
+Jiangsu,Eight-person households,proportion,0.18
+Jiangsu,Nine-person households,Number of households,19086.0
+Jiangsu,Nine-person households,proportion,0.06
+Jiangsu,Households with 10 or more people,Number of households,21569.0
+Jiangsu,Households with 10 or more people,proportion,0.07
+Zhejiang,One-person household,Number of households,7713848.0
+Zhejiang,One-person household,proportion,30.84
+Zhejiang,Two-person household,Number of households,8098038.0
+Zhejiang,Two-person household,proportion,32.38
+Zhejiang,Three-person households,Number of households,4783169.0
+Zhejiang,Three-person households,proportion,19.13
+Zhejiang,Four-person households,Number of households,2484481.0
+Zhejiang,Four-person households,proportion,9.93
+Zhejiang,Five-person households,Number of households,1203164.0
+Zhejiang,Five-person households,proportion,4.81
+Zhejiang,Six-person households,Number of households,563053.0
+Zhejiang,Six-person households,proportion,2.25
+Zhejiang,Seven-person households,Number of households,110538.0
+Zhejiang,Seven-person households,proportion,0.44
+Zhejiang,Eight-person households,Number of households,30637.0
+Zhejiang,Eight-person households,proportion,0.12
+Zhejiang,Nine-person households,Number of households,11563.0
+Zhejiang,Nine-person households,proportion,0.05
+Zhejiang,Households with 10 or more people,Number of households,10115.0
+Zhejiang,Households with 10 or more people,proportion,0.04
+Anhui,One-person household,Number of households,5183087.0
+Anhui,One-person household,proportion,23.66
+Anhui,Two-person household,Number of households,6790657.0
+Anhui,Two-person household,proportion,30.99
+Anhui,Three-person households,Number of households,4768002.0
+Anhui,Three-person households,proportion,21.76
+Anhui,Four-person households,Number of households,2972819.0
+Anhui,Four-person households,proportion,13.57
+Anhui,Five-person households,Number of households,1290366.0
+Anhui,Five-person households,proportion,5.89
+Anhui,Six-person households,Number of households,643354.0
+Anhui,Six-person households,proportion,2.94
+Anhui,Seven-person households,Number of households,172899.0
+Anhui,Seven-person households,proportion,0.79
+Anhui,Eight-person households,Number of households,52268.0
+Anhui,Eight-person households,proportion,0.24
+Anhui,Nine-person households,Number of households,20103.0
+Anhui,Nine-person households,proportion,0.09
+Anhui,Households with 10 or more people,Number of households,16822.0
+Anhui,Households with 10 or more people,proportion,0.08
+Fujian,One-person household,Number of households,3925247.0
+Fujian,One-person household,proportion,27.31
+Fujian,Two-person household,Number of households,3776762.0
+Fujian,Two-person household,proportion,26.28
+Fujian,Three-person households,Number of households,2794833.0
+Fujian,Three-person households,proportion,19.45
+Fujian,Four-person households,Number of households,2047208.0
+Fujian,Four-person households,proportion,14.25
+Fujian,Five-person households,Number of households,997876.0
+Fujian,Five-person households,proportion,6.94
+Fujian,Six-person households,Number of households,568885.0
+Fujian,Six-person households,proportion,3.96
+Fujian,Seven-person households,Number of households,162312.0
+Fujian,Seven-person households,proportion,1.13
+Fujian,Eight-person households,Number of households,52431.0
+Fujian,Eight-person households,proportion,0.36
+Fujian,Nine-person households,Number of households,24113.0
+Fujian,Nine-person households,proportion,0.17
+Fujian,Households with 10 or more people,Number of households,21411.0
+Fujian,Households with 10 or more people,proportion,0.15
+Jiangxi,One-person household,Number of households,3071115.0
+Jiangxi,One-person household,proportion,21.82
+Jiangxi,Two-person household,Number of households,3564176.0
+Jiangxi,Two-person household,proportion,25.33
+Jiangxi,Three-person households,Number of households,2841228.0
+Jiangxi,Three-person households,proportion,20.19
+Jiangxi,Four-person households,Number of households,2277494.0
+Jiangxi,Four-person households,proportion,16.18
+Jiangxi,Five-person households,Number of households,1199459.0
+Jiangxi,Five-person households,proportion,8.52
+Jiangxi,Six-person households,Number of households,692355.0
+Jiangxi,Six-person households,proportion,4.92
+Jiangxi,Seven-person households,Number of households,259897.0
+Jiangxi,Seven-person households,proportion,1.85
+Jiangxi,Eight-person households,Number of households,87974.0
+Jiangxi,Eight-person households,proportion,0.63
+Jiangxi,Nine-person households,Number of households,37171.0
+Jiangxi,Nine-person households,proportion,0.26
+Jiangxi,Households with 10 or more people,Number of households,41978.0
+Jiangxi,Households with 10 or more people,proportion,0.3
+Shandong,One-person household,Number of households,7056119.0
+Shandong,One-person household,proportion,20.05
+Shandong,Two-person household,Number of households,11230306.0
+Shandong,Two-person household,proportion,31.92
+Shandong,Three-person households,Number of households,7673801.0
+Shandong,Three-person households,proportion,21.81
+Shandong,Four-person households,Number of households,5790216.0
+Shandong,Four-person households,proportion,16.46
+Shandong,Five-person households,Number of households,2035963.0
+Shandong,Five-person households,proportion,5.79
+Shandong,Six-person households,Number of households,1057955.0
+Shandong,Six-person households,proportion,3.01
+Shandong,Seven-person households,Number of households,229065.0
+Shandong,Seven-person households,proportion,0.65
+Shandong,Eight-person households,Number of households,61259.0
+Shandong,Eight-person households,proportion,0.17
+Shandong,Nine-person households,Number of households,22119.0
+Shandong,Nine-person households,proportion,0.06
+Shandong,Households with 10 or more people,Number of households,27438.0
+Shandong,Households with 10 or more people,proportion,0.08
+Henan,One-person household,Number of households,6985186.0
+Henan,One-person household,proportion,21.98
+Henan,Two-person household,Number of households,8496727.0
+Henan,Two-person household,proportion,26.73
+Henan,Three-person households,Number of households,6502612.0
+Henan,Three-person households,proportion,20.46
+Henan,Four-person households,Number of households,5109476.0
+Henan,Four-person households,proportion,16.08
+Henan,Five-person households,Number of households,2550635.0
+Henan,Five-person households,proportion,8.03
+Henan,Six-person households,Number of households,1424419.0
+Henan,Six-person households,proportion,4.48
+Henan,Seven-person households,Number of households,476958.0
+Henan,Seven-person households,proportion,1.5
+Henan,Eight-person households,Number of households,134122.0
+Henan,Eight-person households,proportion,0.42
+Henan,Nine-person households,Number of households,48036.0
+Henan,Nine-person households,proportion,0.15
+Henan,Households with 10 or more people,Number of households,54522.0
+Henan,Households with 10 or more people,proportion,0.17
+Hubei,One-person household,Number of households,4706405.0
+Hubei,One-person household,proportion,23.61
+Hubei,Two-person household,Number of households,5840677.0
+Hubei,Two-person household,proportion,29.3
+Hubei,Three-person households,Number of households,4589950.0
+Hubei,Three-person households,proportion,23.03
+Hubei,Four-person households,Number of households,2625213.0
+Hubei,Four-person households,proportion,13.17
+Hubei,Five-person households,Number of households,1323054.0
+Hubei,Five-person households,proportion,6.64
+Hubei,Six-person households,Number of households,602406.0
+Hubei,Six-person households,proportion,3.02
+Hubei,Seven-person households,Number of households,154397.0
+Hubei,Seven-person households,proportion,0.77
+Hubei,Eight-person households,Number of households,50151.0
+Hubei,Eight-person households,proportion,0.25
+Hubei,Nine-person households,Number of households,20675.0
+Hubei,Nine-person households,proportion,0.1
+Hubei,Households with 10 or more people,Number of households,18117.0
+Hubei,Households with 10 or more people,proportion,0.09
+Hunan,One-person household,Number of households,5796689.0
+Hunan,One-person household,proportion,25.34
+Hunan,Two-person household,Number of households,6332392.0
+Hunan,Two-person household,proportion,27.68
+Hunan,Three-person households,Number of households,4767652.0
+Hunan,Three-person households,proportion,20.84
+Hunan,Four-person households,Number of households,3308914.0
+Hunan,Four-person households,proportion,14.46
+Hunan,Five-person households,Number of households,1570332.0
+Hunan,Five-person households,proportion,6.86
+Hunan,Six-person households,Number of households,744743.0
+Hunan,Six-person households,proportion,3.26
+Hunan,Seven-person households,Number of households,224425.0
+Hunan,Seven-person households,proportion,0.98
+Hunan,Eight-person households,Number of households,72339.0
+Hunan,Eight-person households,proportion,0.32
+Hunan,Nine-person households,Number of households,28622.0
+Hunan,Nine-person households,proportion,0.13
+Hunan,Households with 10 or more people,Number of households,32228.0
+Hunan,Households with 10 or more people,proportion,0.14
+Guangdong,One-person household,Number of households,14109849.0
+Guangdong,One-person household,proportion,33.22
+Guangdong,Two-person household,Number of households,10298011.0
+Guangdong,Two-person household,proportion,24.25
+Guangdong,Three-person households,Number of households,6999483.0
+Guangdong,Three-person households,proportion,16.48
+Guangdong,Four-person households,Number of households,5189548.0
+Guangdong,Four-person households,proportion,12.22
+Guangdong,Five-person households,Number of households,2872342.0
+Guangdong,Five-person households,proportion,6.76
+Guangdong,Six-person households,Number of households,1632082.0
+Guangdong,Six-person households,proportion,3.84
+Guangdong,Seven-person households,Number of households,699877.0
+Guangdong,Seven-person households,proportion,1.65
+Guangdong,Eight-person households,Number of households,313946.0
+Guangdong,Eight-person households,proportion,0.74
+Guangdong,Nine-person households,Number of households,158737.0
+Guangdong,Nine-person households,proportion,0.37
+Guangdong,Households with 10 or more people,Number of households,195303.0
+Guangdong,Households with 10 or more people,proportion,0.46
+Guangxi,One-person household,Number of households,4075139.0
+Guangxi,One-person household,proportion,25.13
+Guangxi,Two-person household,Number of households,3845306.0
+Guangxi,Two-person household,proportion,23.71
+Guangxi,Three-person households,Number of households,3263580.0
+Guangxi,Three-person households,proportion,20.13
+Guangxi,Four-person households,Number of households,2462519.0
+Guangxi,Four-person households,proportion,15.19
+Guangxi,Five-person households,Number of households,1341827.0
+Guangxi,Five-person households,proportion,8.28
+Guangxi,Six-person households,Number of households,702577.0
+Guangxi,Six-person households,proportion,4.33
+Guangxi,Seven-person households,Number of households,289204.0
+Guangxi,Seven-person households,proportion,1.78
+Guangxi,Eight-person households,Number of households,117128.0
+Guangxi,Eight-person households,proportion,0.72
+Guangxi,Nine-person households,Number of households,54923.0
+Guangxi,Nine-person households,proportion,0.34
+Guangxi,Households with 10 or more people,Number of households,62811.0
+Guangxi,Households with 10 or more people,proportion,0.39
+Hainan,One-person household,Number of households,663799.0
+Hainan,One-person household,proportion,22.41
+Hainan,Two-person household,Number of households,648854.0
+Hainan,Two-person household,proportion,21.91
+Hainan,Three-person households,Number of households,589414.0
+Hainan,Three-person households,proportion,19.9
+Hainan,Four-person households,Number of households,521817.0
+Hainan,Four-person households,proportion,17.62
+Hainan,Five-person households,Number of households,260663.0
+Hainan,Five-person households,proportion,8.8
+Hainan,Six-person households,Number of households,144126.0
+Hainan,Six-person households,proportion,4.87
+Hainan,Seven-person households,Number of households,67554.0
+Hainan,Seven-person households,proportion,2.28
+Hainan,Eight-person households,Number of households,30363.0
+Hainan,Eight-person households,proportion,1.03
+Hainan,Nine-person households,Number of households,15807.0
+Hainan,Nine-person households,proportion,0.53
+Hainan,Households with 10 or more people,Number of households,19249.0
+Hainan,Households with 10 or more people,proportion,0.65
+Chongqing,One-person household,Number of households,3526142.0
+Chongqing,One-person household,proportion,29.29
+Chongqing,Two-person household,Number of households,3644792.0
+Chongqing,Two-person household,proportion,30.27
+Chongqing,Three-person households,Number of households,2437753.0
+Chongqing,Three-person households,proportion,20.25
+Chongqing,Four-person households,Number of households,1370388.0
+Chongqing,Four-person households,proportion,11.38
+Chongqing,Five-person households,Number of households,670554.0
+Chongqing,Five-person households,proportion,5.57
+Chongqing,Six-person households,Number of households,293837.0
+Chongqing,Six-person households,proportion,2.44
+Chongqing,Seven-person households,Number of households,64913.0
+Chongqing,Seven-person households,proportion,0.54
+Chongqing,Eight-person households,Number of households,18295.0
+Chongqing,Eight-person households,proportion,0.15
+Chongqing,Nine-person households,Number of households,6151.0
+Chongqing,Nine-person households,proportion,0.05
+Chongqing,Households with 10 or more people,Number of households,7409.0
+Chongqing,Households with 10 or more people,proportion,0.06
+Sichuan,One-person household,Number of households,8836045.0
+Sichuan,One-person household,proportion,28.73
+Sichuan,Two-person household,Number of households,9159406.0
+Sichuan,Two-person household,proportion,29.78
+Sichuan,Three-person households,Number of households,6087228.0
+Sichuan,Three-person households,proportion,19.79
+Sichuan,Four-person households,Number of households,3570933.0
+Sichuan,Four-person households,proportion,11.61
+Sichuan,Five-person households,Number of households,1877152.0
+Sichuan,Five-person households,proportion,6.1
+Sichuan,Six-person households,Number of households,859836.0
+Sichuan,Six-person households,proportion,2.8
+Sichuan,Seven-person households,Number of households,233376.0
+Sichuan,Seven-person households,proportion,0.76
+Sichuan,Eight-person households,Number of households,74507.0
+Sichuan,Eight-person households,proportion,0.24
+Sichuan,Nine-person households,Number of households,27556.0
+Sichuan,Nine-person households,proportion,0.09
+Sichuan,Households with 10 or more people,Number of households,30081.0
+Sichuan,Households with 10 or more people,proportion,0.1
+Guizhou,One-person household,Number of households,3032510.0
+Guizhou,One-person household,proportion,23.88
+Guizhou,Two-person household,Number of households,3313502.0
+Guizhou,Two-person household,proportion,26.1
+Guizhou,Three-person households,Number of households,2580003.0
+Guizhou,Three-person households,proportion,20.32
+Guizhou,Four-person households,Number of households,1942394.0
+Guizhou,Four-person households,proportion,15.3
+Guizhou,Five-person households,Number of households,998508.0
+Guizhou,Five-person households,proportion,7.86
+Guizhou,Six-person households,Number of households,507951.0
+Guizhou,Six-person households,proportion,4.0
+Guizhou,Seven-person households,Number of households,192247.0
+Guizhou,Seven-person households,proportion,1.51
+Guizhou,Eight-person households,Number of households,71429.0
+Guizhou,Eight-person households,proportion,0.56
+Guizhou,Nine-person households,Number of households,29649.0
+Guizhou,Nine-person households,proportion,0.23
+Guizhou,Households with 10 or more people,Number of households,28392.0
+Guizhou,Households with 10 or more people,proportion,0.22
+Yunnan,One-person household,Number of households,3456738.0
+Yunnan,One-person household,proportion,22.82
+Yunnan,Two-person household,Number of households,3743328.0
+Yunnan,Two-person household,proportion,24.71
+Yunnan,Three-person households,Number of households,3161675.0
+Yunnan,Three-person households,proportion,20.87
+Yunnan,Four-person households,Number of households,2366552.0
+Yunnan,Four-person households,proportion,15.62
+Yunnan,Five-person households,Number of households,1310492.0
+Yunnan,Five-person households,proportion,8.65
+Yunnan,Six-person households,Number of households,740959.0
+Yunnan,Six-person households,proportion,4.89
+Yunnan,Seven-person households,Number of households,237507.0
+Yunnan,Seven-person households,proportion,1.57
+Yunnan,Eight-person households,Number of households,78082.0
+Yunnan,Eight-person households,proportion,0.52
+Yunnan,Nine-person households,Number of households,28876.0
+Yunnan,Nine-person households,proportion,0.19
+Yunnan,Households with 10 or more people,Number of households,22622.0
+Yunnan,Households with 10 or more people,proportion,0.15
+Tibet,One-person household,Number of households,336840.0
+Tibet,One-person household,proportion,33.22
+Tibet,Two-person household,Number of households,180079.0
+Tibet,Two-person household,proportion,17.76
+Tibet,Three-person households,Number of households,139821.0
+Tibet,Three-person households,proportion,13.79
+Tibet,Four-person households,Number of households,120796.0
+Tibet,Four-person households,proportion,11.91
+Tibet,Five-person households,Number of households,77418.0
+Tibet,Five-person households,proportion,7.63
+Tibet,Six-person households,Number of households,53322.0
+Tibet,Six-person households,proportion,5.26
+Tibet,Seven-person households,Number of households,36433.0
+Tibet,Seven-person households,proportion,3.59
+Tibet,Eight-person households,Number of households,24565.0
+Tibet,Eight-person households,proportion,2.42
+Tibet,Nine-person households,Number of households,16241.0
+Tibet,Nine-person households,proportion,1.6
+Tibet,Households with 10 or more people,Number of households,28575.0
+Tibet,Households with 10 or more people,proportion,2.82
+Shaanxi,One-person household,Number of households,3863271.0
+Shaanxi,One-person household,proportion,27.18
+Shaanxi,Two-person household,Number of households,4126025.0
+Shaanxi,Two-person household,proportion,29.03
+Shaanxi,Three-person households,Number of households,3047409.0
+Shaanxi,Three-person households,proportion,21.44
+Shaanxi,Four-person households,Number of households,1892842.0
+Shaanxi,Four-person households,proportion,13.32
+Shaanxi,Five-person households,Number of households,799508.0
+Shaanxi,Five-person households,proportion,5.63
+Shaanxi,Six-person households,Number of households,359857.0
+Shaanxi,Six-person households,proportion,2.53
+Shaanxi,Seven-person households,Number of households,77879.0
+Shaanxi,Seven-person households,proportion,0.55
+Shaanxi,Eight-person households,Number of households,21851.0
+Shaanxi,Eight-person households,proportion,0.15
+Shaanxi,Nine-person households,Number of households,8248.0
+Shaanxi,Nine-person households,proportion,0.06
+Shaanxi,Households with 10 or more people,Number of households,14454.0
+Shaanxi,Households with 10 or more people,proportion,0.1
+Gansu,One-person household,Number of households,1909342.0
+Gansu,One-person household,proportion,22.67
+Gansu,Two-person household,Number of households,2390297.0
+Gansu,Two-person household,proportion,28.38
+Gansu,Three-person households,Number of households,1808686.0
+Gansu,Three-person households,proportion,21.47
+Gansu,Four-person households,Number of households,1194718.0
+Gansu,Four-person households,proportion,14.18
+Gansu,Five-person households,Number of households,593173.0
+Gansu,Five-person households,proportion,7.04
+Gansu,Six-person households,Number of households,342791.0
+Gansu,Six-person households,proportion,4.07
+Gansu,Seven-person households,Number of households,115902.0
+Gansu,Seven-person households,proportion,1.38
+Gansu,Eight-person households,Number of households,38647.0
+Gansu,Eight-person households,proportion,0.46
+Gansu,Nine-person households,Number of households,14782.0
+Gansu,Nine-person households,proportion,0.18
+Gansu,Households with 10 or more people,Number of households,14498.0
+Gansu,Households with 10 or more people,proportion,0.17
+Qinghai,One-person household,Number of households,498970.0
+Qinghai,One-person household,proportion,25.38
+Qinghai,Two-person household,Number of households,492672.0
+Qinghai,Two-person household,proportion,25.06
+Qinghai,Three-person households,Number of households,410938.0
+Qinghai,Three-person households,proportion,20.9
+Qinghai,Four-person households,Number of households,275803.0
+Qinghai,Four-person households,proportion,14.03
+Qinghai,Five-person households,Number of households,149242.0
+Qinghai,Five-person households,proportion,7.59
+Qinghai,Six-person households,Number of households,84795.0
+Qinghai,Six-person households,proportion,4.31
+Qinghai,Seven-person households,Number of households,31175.0
+Qinghai,Seven-person households,proportion,1.59
+Qinghai,Eight-person households,Number of households,11818.0
+Qinghai,Eight-person households,proportion,0.6
+Qinghai,Nine-person households,Number of households,5205.0
+Qinghai,Nine-person households,proportion,0.26
+Qinghai,Households with 10 or more people,Number of households,5275.0
+Qinghai,Households with 10 or more people,proportion,0.27
+Ningxia,One-person household,Number of households,537492.0
+Ningxia,One-person household,proportion,21.2
+Ningxia,Two-person household,Number of households,791806.0
+Ningxia,Two-person household,proportion,31.23
+Ningxia,Three-person households,Number of households,593704.0
+Ningxia,Three-person households,proportion,23.42
+Ningxia,Four-person households,Number of households,384377.0
+Ningxia,Four-person households,proportion,15.16
+Ningxia,Five-person households,Number of households,139732.0
+Ningxia,Five-person households,proportion,5.51
+Ningxia,Six-person households,Number of households,59356.0
+Ningxia,Six-person households,proportion,2.34
+Ningxia,Seven-person households,Number of households,19521.0
+Ningxia,Seven-person households,proportion,0.77
+Ningxia,Eight-person households,Number of households,6011.0
+Ningxia,Eight-person households,proportion,0.24
+Ningxia,Nine-person households,Number of households,1818.0
+Ningxia,Nine-person households,proportion,0.07
+Ningxia,Households with 10 or more people,Number of households,1257.0
+Ningxia,Households with 10 or more people,proportion,0.05
+Xinjiang,One-person household,Number of households,1745613.0
+Xinjiang,One-person household,proportion,20.9
+Xinjiang,Two-person household,Number of households,2251984.0
+Xinjiang,Two-person household,proportion,26.96
+Xinjiang,Three-person households,Number of households,1891307.0
+Xinjiang,Three-person households,proportion,22.65
+Xinjiang,Four-person households,Number of households,1392479.0
+Xinjiang,Four-person households,proportion,16.67
+Xinjiang,Five-person households,Number of households,667943.0
+Xinjiang,Five-person households,proportion,8.0
+Xinjiang,Six-person households,Number of households,261709.0
+Xinjiang,Six-person households,proportion,3.13
+Xinjiang,Seven-person households,Number of households,87211.0
+Xinjiang,Seven-person households,proportion,1.04
+Xinjiang,Eight-person households,Number of households,29741.0
+Xinjiang,Eight-person households,proportion,0.36
+Xinjiang,Nine-person households,Number of households,11609.0
+Xinjiang,Nine-person households,proportion,0.14
+Xinjiang,Households with 10 or more people,Number of households,12046.0
+Xinjiang,Households with 10 or more people,proportion,0.14

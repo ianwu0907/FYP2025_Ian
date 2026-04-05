@@ -1,0 +1,118 @@
+province_territory,age_group,number,percent
+canada,tumours_cohort,6070.0,
+newfoundland and labrador,tumours_cohort,125.0,
+prince edward island,tumours_cohort,10.0,
+nova scotia,tumours_cohort,140.0,
+new brunswick,tumours_cohort,140.0,
+ontario,tumours_cohort,4095.0,
+manitoba,tumours_cohort,185.0,
+saskatchewan,tumours_cohort,135.0,
+alberta,tumours_cohort,720.0,
+british columbia,tumours_cohort,505.0,
+yukon,tumours_cohort,,
+northwest territories,tumours_cohort,,
+nunavut,tumours_cohort,,
+canada,tumours_with_intervention,5745.0,
+newfoundland and labrador,tumours_with_intervention,125.0,
+prince edward island,tumours_with_intervention,10.0,
+nova scotia,tumours_with_intervention,135.0,
+new brunswick,tumours_with_intervention,145.0,
+ontario,tumours_with_intervention,3855.0,
+manitoba,tumours_with_intervention,170.0,
+saskatchewan,tumours_with_intervention,135.0,
+alberta,tumours_with_intervention,695.0,
+british columbia,tumours_with_intervention,470.0,
+yukon,tumours_with_intervention,,
+northwest territories,tumours_with_intervention,,
+nunavut,tumours_with_intervention,,
+canada,tumours_with_intervention,,94.7
+newfoundland and labrador,tumours_with_intervention,,100.0
+prince edward island,tumours_with_intervention,,100.0
+nova scotia,tumours_with_intervention,,96.4
+new brunswick,tumours_with_intervention,,100.0
+ontario,tumours_with_intervention,,94.1
+manitoba,tumours_with_intervention,,90.9
+saskatchewan,tumours_with_intervention,,98.5
+alberta,tumours_with_intervention,,96.7
+british columbia,tumours_with_intervention,,93.5
+yukon,tumours_with_intervention,,0.0
+northwest territories,tumours_with_intervention,,0.0
+nunavut,tumours_with_intervention,,0.0
+canada,tumours_cohort,5120.0,
+newfoundland and labrador,tumours_cohort,145.0,
+prince edward island,tumours_cohort,15.0,
+nova scotia,tumours_cohort,160.0,
+new brunswick,tumours_cohort,215.0,
+ontario,tumours_cohort,3380.0,
+manitoba,tumours_cohort,145.0,
+saskatchewan,tumours_cohort,105.0,
+alberta,tumours_cohort,495.0,
+british columbia,tumours_cohort,450.0,
+yukon,tumours_cohort,,
+northwest territories,tumours_cohort,,
+nunavut,tumours_cohort,,
+canada,tumours_with_intervention,4775.0,
+newfoundland and labrador,tumours_with_intervention,145.0,
+prince edward island,tumours_with_intervention,10.0,
+nova scotia,tumours_with_intervention,160.0,
+new brunswick,tumours_with_intervention,215.0,
+ontario,tumours_with_intervention,3115.0,
+manitoba,tumours_with_intervention,140.0,
+saskatchewan,tumours_with_intervention,100.0,
+alberta,tumours_with_intervention,470.0,
+british columbia,tumours_with_intervention,420.0,
+yukon,tumours_with_intervention,,
+northwest territories,tumours_with_intervention,,
+nunavut,tumours_with_intervention,,
+canada,tumours_with_intervention,,93.3
+newfoundland and labrador,tumours_with_intervention,,98.6
+prince edward island,tumours_with_intervention,,80.0
+nova scotia,tumours_with_intervention,,98.8
+new brunswick,tumours_with_intervention,,98.6
+ontario,tumours_with_intervention,,92.2
+manitoba,tumours_with_intervention,,94.6
+saskatchewan,tumours_with_intervention,,96.2
+alberta,tumours_with_intervention,,94.5
+british columbia,tumours_with_intervention,,92.9
+yukon,tumours_with_intervention,,100.0
+northwest territories,tumours_with_intervention,,100.0
+nunavut,tumours_with_intervention,,100.0
+canada,tumours_cohort,1360.0,
+newfoundland and labrador,tumours_cohort,45.0,
+prince edward island,tumours_cohort,5.0,
+nova scotia,tumours_cohort,55.0,
+new brunswick,tumours_cohort,50.0,
+ontario,tumours_cohort,830.0,
+manitoba,tumours_cohort,45.0,
+saskatchewan,tumours_cohort,35.0,
+alberta,tumours_cohort,125.0,
+british columbia,tumours_cohort,165.0,
+yukon,tumours_cohort,,
+northwest territories,tumours_cohort,0.0,
+nunavut,tumours_cohort,,
+canada,tumours_with_intervention,1170.0,
+newfoundland and labrador,tumours_with_intervention,40.0,
+prince edward island,tumours_with_intervention,5.0,
+nova scotia,tumours_with_intervention,50.0,
+new brunswick,tumours_with_intervention,45.0,
+ontario,tumours_with_intervention,715.0,
+manitoba,tumours_with_intervention,40.0,
+saskatchewan,tumours_with_intervention,30.0,
+alberta,tumours_with_intervention,105.0,
+british columbia,tumours_with_intervention,140.0,
+yukon,tumours_with_intervention,,
+northwest territories,tumours_with_intervention,0.0,
+nunavut,tumours_with_intervention,,
+canada,tumours_with_intervention,,86.1
+newfoundland and labrador,tumours_with_intervention,,93.3
+prince edward island,tumours_with_intervention,,100.0
+nova scotia,tumours_with_intervention,,92.9
+new brunswick,tumours_with_intervention,,81.1
+ontario,tumours_with_intervention,,86.5
+manitoba,tumours_with_intervention,,84.4
+saskatchewan,tumours_with_intervention,,80.0
+alberta,tumours_with_intervention,,85.5
+british columbia,tumours_with_intervention,,83.1
+yukon,tumours_with_intervention,,100.0
+northwest territories,tumours_with_intervention,,0.0
+nunavut,tumours_with_intervention,,0.0

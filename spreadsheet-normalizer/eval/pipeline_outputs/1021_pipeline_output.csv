@@ -1,0 +1,11 @@
+behaviour_type,day_type,beta,p_value
+screen time,weekday,0.079,0.0309
+screen time,weekend,0.17,0.0003
+sedentary time,weekday,0.079,0.0309
+sedentary time,weekend,0.17,0.0003
+total,weekday,0.079,0.0309
+total,weekend,0.17,0.0003
+weekday,weekday,0.079,0.0309
+weekday,weekend,0.17,0.0003
+weekend,weekday,0.079,0.0309
+weekend,weekend,0.17,0.0003

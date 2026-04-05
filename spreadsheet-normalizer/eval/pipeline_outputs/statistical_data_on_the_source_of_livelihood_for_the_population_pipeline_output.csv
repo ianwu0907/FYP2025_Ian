@@ -1,0 +1,1329 @@
+age_group,income_type,population
+,Male,
+Age,Male,
+Age,Male,Male
+Age,Male,
+Under 45 years old,Male,28769662
+Under 45 years old,Male,
+45-49 years old,Male,5774455
+45,Male,1029558
+46,Male,1123949
+47,Male,1176498
+48,Male,1202544
+49,Male,1241906
+49,Male,
+50-54 years old,Male,6019802
+50,Male,1298030
+51,Male,1216599
+52,Male,1298846
+53,Male,1034436
+54,Male,1171891
+54,Male,
+55-59 years old,Male,4986030
+55,Male,1144496
+56,Male,1111081
+57,Male,1290317
+58,Male,935259
+59,Male,504877
+59,Male,
+60-64 years old,Male,3611534
+60,Male,630443
+61,Male,601597
+62,Male,765643
+63,Male,853241
+64,Male,760610
+64,Male,
+65-69 years old,Male,3557071
+65,Male,794038
+66,Male,784337
+67,Male,701663
+68,Male,695588
+69,Male,581445
+70-74 years old,Male,2341892
+70,Male,552550
+71,Male,537267
+72,Male,450625
+73,Male,425034
+74,Male,376416
+74,Male,
+75-79 years old,Male,1409194
+75,Male,328485
+76,Male,312625
+77,Male,271017
+78,Male,252314
+79,Male,244753
+79,Male,
+80-84 years old,Male,856619
+80,Male,214196
+81,Male,175529
+82,Male,179490
+83,Male,153187
+84,Male,134217
+84,Male,
+85-89 years old,Male,398907
+85,Male,111113
+86,Male,93574
+87,Male,84218
+88,Male,61448
+89,Male,48554
+89,Male,
+90-94 years old,Male,115437
+90,Male,41051
+91,Male,27037
+92,Male,21980
+93,Male,15095
+94,Male,10274
+94,Male,
+95-99 years old,Male,19576
+95,Male,7523
+96,Male,5063
+97,Male,3306
+98,Male,2148
+99,Male,1536
+99,Male,
+100 years and above,Male,1778
+,Female,
+Age,Female,
+Age,Female,Female
+Age,Female,
+Under 45 years old,Female,26776206
+Under 45 years old,Female,
+45-49 years old,Female,5511824
+45,Female,977154
+46,Female,1073545
+47,Female,1121552
+48,Female,1152292
+49,Female,1187281
+49,Female,
+50-54 years old,Female,5906378
+50,Female,1266799
+51,Female,1188360
+52,Female,1276675
+53,Female,1025010
+54,Female,1149534
+54,Female,
+55-59 years old,Female,4994132
+55,Female,1131681
+56,Female,1112306
+57,Female,1277233
+58,Female,943836
+59,Female,529076
+59,Female,
+60-64 years old,Female,3600797
+60,Female,635292
+61,Female,589893
+62,Female,753465
+63,Female,843128
+64,Female,779019
+64,Female,
+65-69 years old,Female,3703942
+65,Female,807569
+66,Female,812955
+67,Female,734940
+68,Female,729689
+69,Female,618789
+70-74 years old,Female,2471755
+70,Female,580091
+71,Female,554238
+72,Female,476409
+73,Female,449783
+74,Female,411234
+74,Female,
+75-79 years old,Female,1571314
+75,Female,362263
+76,Female,339876
+77,Female,303470
+78,Female,285377
+79,Female,280328
+79,Female,
+80-84 years old,Female,1041131
+80,Female,248148
+81,Female,211898
+82,Female,215605
+83,Female,190288
+84,Female,175192
+84,Female,
+85-89 years old,Female,574911
+85,Female,153627
+86,Female,133745
+87,Female,120714
+88,Female,92834
+89,Female,73991
+89,Female,
+90-94 years old,Female,197409
+90,Female,65023
+91,Female,45849
+92,Female,38954
+93,Female,27641
+94,Female,19942
+94,Female,
+95-99 years old,Female,44050
+95,Female,15926
+96,Female,11426
+97,Female,7661
+98,Female,5145
+99,Female,3892
+99,Female,
+100 years and above,Female,5784
+,Male,
+Age,Male,
+Age,Male,Male
+Age,Male,
+Under 45 years old,Male,21753109
+Under 45 years old,Male,
+45-49 years old,Male,5199419
+45,Male,935842
+46,Male,1017936
+47,Male,1060223
+48,Male,1078545
+49,Male,1106873
+49,Male,
+50-54 years old,Male,5139904
+50,Male,1142744
+51,Male,1052369
+52,Male,1108834
+53,Male,869962
+54,Male,965995
+54,Male,
+55-59 years old,Male,3714747
+55,Male,906162
+56,Male,849069
+57,Male,954315
+58,Male,672021
+59,Male,333180
+59,Male,
+60-64 years old,Male,1579435
+60,Male,307806
+61,Male,271939
+62,Male,331517
+63,Male,362706
+64,Male,305467
+64,Male,
+65-69 years old,Male,1217850
+65,Male,302943
+66,Male,281151
+67,Male,239456
+68,Male,223966
+69,Male,170334
+70-74 years old,Male,511131
+70,Male,142394
+71,Male,124934
+72,Male,95970
+73,Male,82127
+74,Male,65706
+74,Male,
+75-79 years old,Male,177297
+75,Male,52193
+76,Male,43762
+77,Male,33086
+78,Male,26562
+79,Male,21694
+79,Male,
+80-84 years old,Male,45071
+80,Male,15190
+81,Male,9742
+82,Male,8741
+83,Male,6411
+84,Male,4987
+84,Male,
+85-89 years old,Male,11202
+85,Male,3828
+86,Male,2794
+87,Male,2175
+88,Male,1404
+89,Male,1001
+89,Male,
+90-94 years old,Male,1737
+90,Male,707
+91,Male,390
+92,Male,289
+93,Male,202
+94,Male,149
+94,Male,
+95-99 years old,Male,263
+95,Male,95
+96,Male,72
+97,Male,33
+98,Male,37
+99,Male,26
+99,Male,
+100 years and above,Male,20
+,Female,
+Age,Female,
+Age,Female,Female
+Age,Female,
+Under 45 years old,Female,15922572
+Under 45 years old,Female,
+45-49 years old,Female,3865282
+45,Female,711338
+46,Female,772867
+47,Female,793837
+48,Female,796269
+49,Female,790971
+49,Female,
+50-54 years old,Female,3116908
+50,Female,745227
+51,Female,649263
+52,Female,667753
+53,Female,513175
+54,Female,541490
+54,Female,
+55-59 years old,Female,1853750
+55,Female,473459
+56,Female,427996
+57,Female,456521
+58,Female,327716
+59,Female,168058
+59,Female,
+60-64 years old,Female,902229
+60,Female,176826
+61,Female,151226
+62,Female,187550
+63,Female,204307
+64,Female,182320
+64,Female,
+65-69 years old,Female,731275
+65,Female,179688
+66,Female,168320
+67,Female,145235
+68,Female,134791
+69,Female,103241
+70-74 years old,Female,292658
+70,Female,84801
+71,Female,70323
+72,Female,54762
+73,Female,45536
+74,Female,37236
+74,Female,
+75-79 years old,Female,98063
+75,Female,28919
+76,Female,23652
+77,Female,18359
+78,Female,14756
+79,Female,12377
+79,Female,
+80-84 years old,Female,27534
+80,Female,8935
+81,Female,5802
+82,Female,5202
+83,Female,4161
+84,Female,3434
+84,Female,
+85-89 years old,Female,9144
+85,Female,2772
+86,Female,2235
+87,Female,1843
+88,Female,1315
+89,Female,979
+89,Female,
+90-94 years old,Female,2001
+90,Female,775
+91,Female,449
+92,Female,364
+93,Female,234
+94,Female,179
+94,Female,
+95-99 years old,Female,394
+95,Female,154
+96,Female,84
+97,Female,65
+98,Female,43
+99,Female,48
+99,Female,
+100 years and above,Female,51
+,Male,
+Age,Male,
+Age,Male,Male
+Age,Male,
+Under 45 years old,Male,1446
+Under 45 years old,Male,
+45-49 years old,Male,3808
+45,Male,375
+46,Male,471
+47,Male,709
+48,Male,942
+49,Male,1311
+49,Male,
+50-54 years old,Male,96859
+50,Male,9207
+51,Male,15077
+52,Male,20652
+53,Male,20162
+54,Male,31761
+54,Male,
+55-59 years old,Male,383063
+55,Male,55978
+56,Male,73740
+57,Male,102707
+58,Male,81886
+59,Male,68752
+59,Male,
+60-64 years old,Male,1226566
+60,Male,206017
+61,Male,206488
+62,Male,264568
+63,Male,287165
+64,Male,262328
+64,Male,
+65-69 years old,Male,1247666
+65,Male,274340
+66,Male,278079
+67,Male,243519
+68,Male,242441
+69,Male,209287
+70-74 years old,Male,879821
+70,Male,206607
+71,Male,197991
+72,Male,167387
+73,Male,161799
+74,Male,146037
+74,Male,
+75-79 years old,Male,553163
+75,Male,125596
+76,Male,119719
+77,Male,105721
+78,Male,102089
+79,Male,100038
+79,Male,
+80-84 years old,Male,369848
+80,Male,91862
+81,Male,75541
+82,Male,76774
+83,Male,66738
+84,Male,58933
+84,Male,
+85-89 years old,Male,178881
+85,Male,48831
+86,Male,41481
+87,Male,37938
+88,Male,27960
+89,Male,22671
+89,Male,
+90-94 years old,Male,53956
+90,Male,19484
+91,Male,12666
+92,Male,10122
+93,Male,6880
+94,Male,4804
+94,Male,
+95-99 years old,Male,8638
+95,Male,3374
+96,Male,2242
+97,Male,1466
+98,Male,906
+99,Male,650
+99,Male,
+100 years and above,Male,705
+,Female,
+Age,Female,
+Age,Female,Female
+Age,Female,
+Under 45 years old,Female,1539
+Under 45 years old,Female,
+45-49 years old,Female,69269
+45,Female,4556
+46,Female,7290
+47,Female,10836
+48,Female,15779
+49,Female,30808
+49,Female,
+50-54 years old,Female,822631
+50,Female,136508
+51,Female,163925
+52,Female,184715
+53,Female,148783
+54,Female,188700
+54,Female,
+55-59 years old,Female,1297577
+55,Female,250245
+56,Female,280370
+57,Female,353210
+58,Female,251884
+59,Female,161868
+59,Female,
+60-64 years old,Female,1242539
+60,Female,223195
+61,Female,209067
+62,Female,263422
+63,Female,285977
+64,Female,260878
+64,Female,
+65-69 years old,Female,1206790
+65,Female,267103
+66,Female,271865
+67,Female,237020
+68,Female,231993
+69,Female,198809
+70-74 years old,Female,790968
+70,Female,187851
+71,Female,177744
+72,Female,151795
+73,Female,143466
+74,Female,130112
+74,Female,
+75-79 years old,Female,504404
+75,Female,112809
+76,Female,107781
+77,Female,97228
+78,Female,94491
+79,Female,92095
+79,Female,
+80-84 years old,Female,346717
+80,Female,83344
+81,Female,72636
+82,Female,72350
+83,Female,61532
+84,Female,56855
+84,Female,
+85-89 years old,Female,174073
+85,Female,48993
+86,Female,41382
+87,Female,36185
+88,Female,27056
+89,Female,20457
+89,Female,
+90-94 years old,Female,52799
+90,Female,17782
+91,Female,12698
+92,Female,10214
+93,Female,7041
+94,Female,5064
+94,Female,
+95-99 years old,Female,10253
+95,Female,3894
+96,Female,2707
+97,Female,1739
+98,Female,1104
+99,Female,809
+99,Female,
+100 years and above,Female,1096
+,Male,
+Age,Male,
+Age,Male,Male
+Age,Male,
+Under 45 years old,Male,145913
+Under 45 years old,Male,
+45-49 years old,Male,68701
+45,Male,10976
+46,Male,12634
+47,Male,13943
+48,Male,14981
+49,Male,16167
+49,Male,
+50-54 years old,Male,87755
+50,Male,17203
+51,Male,17262
+52,Male,18854
+53,Male,15784
+54,Male,18652
+54,Male,
+55-59 years old,Male,88028
+55,Male,18914
+56,Male,19061
+57,Male,22912
+58,Male,17027
+59,Male,10114
+59,Male,
+60-64 years old,Male,108954
+60,Male,14551
+61,Male,16102
+62,Male,23435
+63,Male,28226
+64,Male,26640
+64,Male,
+65-69 years old,Male,155246
+65,Male,30345
+66,Male,32047
+67,Male,31550
+68,Male,32709
+69,Male,28595
+70-74 years old,Male,136416
+70,Male,28895
+71,Male,30358
+72,Male,26719
+73,Male,26346
+74,Male,24098
+74,Male,
+75-79 years old,Male,96356
+75,Male,21701
+76,Male,21500
+77,Male,18676
+78,Male,17277
+79,Male,17202
+79,Male,
+80-84 years old,Male,58840
+80,Male,14891
+81,Male,12372
+82,Male,12425
+83,Male,10267
+84,Male,8885
+84,Male,
+85-89 years old,Male,25626
+85,Male,7502
+86,Male,6055
+87,Male,5295
+88,Male,3857
+89,Male,2917
+89,Male,
+90-94 years old,Male,6773
+90,Male,2458
+91,Male,1606
+92,Male,1285
+93,Male,842
+94,Male,582
+94,Male,
+95-99 years old,Male,1210
+95,Male,483
+96,Male,277
+97,Male,225
+98,Male,135
+99,Male,90
+99,Male,
+100 years and above,Male,136
+,Female,
+Age,Female,
+Age,Female,Female
+Age,Female,
+Under 45 years old,Female,107832
+Under 45 years old,Female,
+45-49 years old,Female,45858
+45,Female,7566
+46,Female,8579
+47,Female,9389
+48,Female,9848
+49,Female,10476
+49,Female,
+50-54 years old,Female,53796
+50,Female,10653
+51,Female,10284
+52,Female,11355
+53,Female,9923
+54,Female,11581
+54,Female,
+55-59 years old,Female,58955
+55,Female,11862
+56,Female,12469
+57,Female,14461
+58,Female,12397
+59,Female,7766
+59,Female,
+60-64 years old,Female,79297
+60,Female,11239
+61,Female,11965
+62,Female,16204
+63,Female,19795
+64,Female,20094
+64,Female,
+65-69 years old,Female,123001
+65,Female,23079
+66,Female,24854
+67,Female,24803
+68,Female,26584
+69,Female,23681
+70-74 years old,Female,113579
+70,Female,24290
+71,Female,24573
+72,Female,22162
+73,Female,21953
+74,Female,20601
+74,Female,
+75-79 years old,Female,83389
+75,Female,18978
+76,Female,17779
+77,Female,16269
+78,Female,15212
+79,Female,15151
+79,Female,
+80-84 years old,Female,57550
+80,Female,13706
+81,Female,11584
+82,Female,11903
+83,Female,10665
+84,Female,9692
+84,Female,
+85-89 years old,Female,33156
+85,Female,8522
+86,Female,7696
+87,Female,7116
+88,Female,5369
+89,Female,4453
+89,Female,
+90-94 years old,Female,12314
+90,Female,3947
+91,Female,2839
+92,Female,2404
+93,Female,1786
+94,Female,1338
+94,Female,
+95-99 years old,Female,3077
+95,Female,1066
+96,Female,802
+97,Female,563
+98,Female,377
+99,Female,269
+99,Female,
+100 years and above,Female,555
+,Male,
+Age,Male,
+Age,Male,Male
+Age,Male,
+Under 45 years old,Male,10722
+Under 45 years old,Male,
+45-49 years old,Male,4501
+45,Male,727
+46,Male,816
+47,Male,886
+48,Male,966
+49,Male,1106
+49,Male,
+50-54 years old,Male,5390
+50,Male,1101
+51,Male,1101
+52,Male,1208
+53,Male,926
+54,Male,1054
+54,Male,
+55-59 years old,Male,3190
+55,Male,1132
+56,Male,446
+57,Male,643
+58,Male,563
+59,Male,406
+59,Male,
+60-64 years old,Male,159
+60,Male,29
+61,Male,24
+62,Male,27
+63,Male,43
+64,Male,36
+64,Male,
+65-69 years old,Male,205
+65,Male,51
+66,Male,44
+67,Male,39
+68,Male,37
+69,Male,34
+70-74 years old,Male,162
+70,Male,40
+71,Male,49
+72,Male,25
+73,Male,28
+74,Male,20
+74,Male,
+75-79 years old,Male,90
+75,Male,25
+76,Male,20
+77,Male,19
+78,Male,13
+79,Male,13
+79,Male,
+80-84 years old,Male,49
+80,Male,13
+81,Male,11
+82,Male,7
+83,Male,13
+84,Male,5
+84,Male,
+85-89 years old,Male,17
+85,Male,3
+86,Male,5
+87,Male,3
+88,Male,3
+89,Male,3
+89,Male,
+90-94 years old,Male,2
+90,Male,1
+91,Male,1
+92,Male,0
+93,Male,0
+94,Male,0
+94,Male,
+95-99 years old,Male,2
+95,Male,0
+96,Male,2
+97,Male,0
+98,Male,0
+99,Male,0
+99,Male,
+100 years and above,Male,0
+,Female,
+Age,Female,
+Age,Female,Female
+Age,Female,
+Under 45 years old,Female,10162
+Under 45 years old,Female,
+45-49 years old,Female,5557
+45,Female,783
+46,Female,841
+47,Female,1085
+48,Female,1325
+49,Female,1523
+49,Female,
+50-54 years old,Female,841
+50,Female,572
+51,Female,77
+52,Female,67
+53,Female,53
+54,Female,72
+54,Female,
+55-59 years old,Female,165
+55,Female,31
+56,Female,36
+57,Female,53
+58,Female,29
+59,Female,16
+59,Female,
+60-64 years old,Female,165
+60,Female,26
+61,Female,31
+62,Female,38
+63,Female,32
+64,Female,38
+64,Female,
+65-69 years old,Female,237
+65,Female,45
+66,Female,48
+67,Female,43
+68,Female,64
+69,Female,37
+70-74 years old,Female,164
+70,Female,36
+71,Female,27
+72,Female,40
+73,Female,35
+74,Female,26
+74,Female,
+75-79 years old,Female,84
+75,Female,22
+76,Female,17
+77,Female,14
+78,Female,15
+79,Female,16
+79,Female,
+80-84 years old,Female,47
+80,Female,10
+81,Female,8
+82,Female,10
+83,Female,9
+84,Female,10
+84,Female,
+85-89 years old,Female,24
+85,Female,7
+86,Female,4
+87,Female,5
+88,Female,5
+89,Female,3
+89,Female,
+90-94 years old,Female,11
+90,Female,3
+91,Female,4
+92,Female,3
+93,Female,0
+94,Female,1
+94,Female,
+95-99 years old,Female,2
+95,Female,1
+96,Female,0
+97,Female,0
+98,Female,0
+99,Female,1
+99,Female,
+100 years and above,Female,0
+,Male,
+Age,Male,
+Age,Male,Male
+Age,Male,
+Under 45 years old,Male,163621
+Under 45 years old,Male,
+45-49 years old,Male,56353
+45,Male,9497
+46,Male,10631
+47,Male,11459
+48,Male,12101
+49,Male,12665
+49,Male,
+50-54 years old,Male,66490
+50,Male,13624
+51,Male,13209
+52,Male,14405
+53,Male,11744
+54,Male,13508
+54,Male,
+55-59 years old,Male,61606
+55,Male,13684
+56,Male,13373
+57,Male,15877
+58,Male,12170
+59,Male,6502
+59,Male,
+60-64 years old,Male,36746
+60,Male,6778
+61,Male,6086
+62,Male,7389
+63,Male,8603
+64,Male,7890
+64,Male,
+65-69 years old,Male,38914
+65,Male,8475
+66,Male,8412
+67,Male,7806
+68,Male,7688
+69,Male,6533
+70-74 years old,Male,24362
+70,Male,6099
+71,Male,5730
+72,Male,4580
+73,Male,4295
+74,Male,3658
+74,Male,
+75-79 years old,Male,12063
+75,Male,3077
+76,Male,2782
+77,Male,2309
+78,Male,1991
+79,Male,1904
+79,Male,
+80-84 years old,Male,5128
+80,Male,1478
+81,Male,1107
+82,Male,1065
+83,Male,805
+84,Male,673
+84,Male,
+85-89 years old,Male,1778
+85,Male,549
+86,Male,488
+87,Male,355
+88,Male,217
+89,Male,169
+89,Male,
+90-94 years old,Male,414
+90,Male,154
+91,Male,97
+92,Male,78
+93,Male,55
+94,Male,30
+94,Male,
+95-99 years old,Male,57
+95,Male,25
+96,Male,12
+97,Male,8
+98,Male,8
+99,Male,4
+99,Male,
+100 years and above,Male,6
+,Female,
+Age,Female,
+Age,Female,Female
+Age,Female,
+Under 45 years old,Female,154026
+Under 45 years old,Female,
+45-49 years old,Female,53210
+45,Female,9046
+46,Female,10017
+47,Female,10673
+48,Female,11465
+49,Female,12009
+49,Female,
+50-54 years old,Female,54923
+50,Female,11776
+51,Female,10886
+52,Female,11829
+53,Female,9552
+54,Female,10880
+54,Female,
+55-59 years old,Female,45641
+55,Female,10216
+56,Female,10059
+57,Female,11406
+58,Female,8739
+59,Female,5221
+59,Female,
+60-64 years old,Female,33187
+60,Female,6076
+61,Female,5568
+62,Female,6630
+63,Female,7619
+64,Female,7294
+64,Female,
+65-69 years old,Female,35618
+65,Female,7862
+66,Female,7778
+67,Female,7122
+68,Female,7063
+69,Female,5793
+70-74 years old,Female,20856
+70,Female,5389
+71,Female,4864
+72,Female,4040
+73,Female,3557
+74,Female,3006
+74,Female,
+75-79 years old,Female,9579
+75,Female,2459
+76,Female,2191
+77,Female,1868
+78,Female,1570
+79,Female,1491
+79,Female,
+80-84 years old,Female,4485
+80,Female,1216
+81,Female,931
+82,Female,928
+83,Female,774
+84,Female,636
+84,Female,
+85-89 years old,Female,1843
+85,Female,543
+86,Female,451
+87,Female,358
+88,Female,274
+89,Female,217
+89,Female,
+90-94 years old,Female,536
+90,Female,175
+91,Female,116
+92,Female,118
+93,Female,83
+94,Female,44
+94,Female,
+95-99 years old,Female,112
+95,Female,42
+96,Female,30
+97,Female,18
+98,Female,15
+99,Female,7
+99,Female,
+100 years and above,Female,14
+,Male,
+Age,Male,
+Age,Male,Male
+Age,Male,
+Under 45 years old,Male,5362440
+Under 45 years old,Male,
+45-49 years old,Male,173864
+45,Male,26305
+46,Male,30401
+47,Male,34637
+48,Male,38273
+49,Male,44248
+49,Male,
+50-54 years old,Male,318487
+50,Male,51109
+51,Male,56916
+52,Male,68638
+53,Male,62142
+54,Male,79682
+54,Male,
+55-59 years old,Male,459600
+55,Male,87781
+56,Male,94381
+57,Male,122108
+58,Male,98368
+59,Male,56962
+59,Male,
+60-64 years old,Male,477157
+60,Male,64808
+61,Male,71213
+62,Male,100459
+63,Male,122697
+64,Male,117980
+64,Male,
+65-69 years old,Male,698216
+65,Male,134936
+66,Male,141942
+67,Male,139538
+68,Male,148772
+69,Male,133028
+70-74 years old,Male,652705
+70,Male,136544
+71,Male,146444
+72,Male,129206
+73,Male,125519
+74,Male,114992
+74,Male,
+75-79 years old,Male,488375
+75,Male,106217
+76,Male,106375
+77,Male,95563
+78,Male,89996
+79,Male,90224
+79,Male,
+80-84 years old,Male,333205
+80,Male,79208
+81,Male,67524
+82,Male,71224
+83,Male,61240
+84,Male,54009
+84,Male,
+85-89 years old,Male,161962
+85,Male,44795
+86,Male,38218
+87,Male,34371
+88,Male,25109
+89,Male,19469
+89,Male,
+90-94 years old,Male,47061
+90,Male,16321
+91,Male,11026
+92,Male,9132
+93,Male,6379
+94,Male,4203
+94,Male,
+95-99 years old,Male,8364
+95,Male,3173
+96,Male,2182
+97,Male,1390
+98,Male,949
+99,Male,670
+99,Male,
+100 years and above,Male,799
+,Female,
+Age,Female,
+Age,Female,Female
+Age,Female,
+Under 45 years old,Female,9140971
+Under 45 years old,Female,
+45-49 years old,Female,1164808
+45,Female,191233
+46,Female,215292
+47,Female,232819
+48,Female,252062
+49,Female,273402
+49,Female,
+50-54 years old,Female,1524105
+50,Female,291862
+51,Female,288236
+52,Female,328959
+53,Female,284434
+54,Female,330614
+54,Female,
+55-59 years old,Female,1460807
+55,Female,322361
+56,Female,319866
+57,Female,371885
+58,Female,289664
+59,Female,157031
+59,Female,
+60-64 years old,Female,1148322
+60,Female,184096
+61,Female,180572
+62,Female,239221
+63,Female,279603
+64,Female,264830
+64,Female,
+65-69 years old,Female,1393971
+65,Female,284537
+66,Female,294028
+67,Female,278149
+68,Female,286658
+69,Female,250599
+70-74 years old,Female,1108309
+70,Female,243727
+71,Female,244191
+72,Female,215602
+73,Female,208825
+74,Female,195964
+74,Female,
+75-79 years old,Female,787567
+75,Female,178037
+76,Female,169133
+77,Female,152812
+78,Female,143528
+79,Female,144057
+79,Female,
+80-84 years old,Female,550961
+80,Female,127655
+81,Female,109963
+82,Female,114241
+83,Female,103446
+84,Female,95656
+84,Female,
+85-89 years old,Female,327330
+85,Female,84918
+86,Female,75172
+87,Female,69141
+88,Female,54032
+89,Female,44067
+89,Female,
+90-94 years old,Female,119593
+90,Female,38950
+91,Female,27420
+92,Female,23899
+93,Female,17042
+94,Female,12282
+94,Female,
+95-99 years old,Female,27699
+95,Female,9913
+96,Female,7130
+97,Female,4860
+98,Female,3279
+99,Female,2517
+99,Female,
+100 years and above,Female,3716
+,Male,
+Age,Male,
+Age,Male,Male
+Age,Male,
+Under 45 years old,Male,1332411
+Under 45 years old,Male,
+45-49 years old,Male,267809
+45,Male,45836
+46,Male,51060
+47,Male,54641
+48,Male,56736
+49,Male,59536
+49,Male,
+50-54 years old,Male,304917
+50,Male,63042
+51,Male,60665
+52,Male,66255
+53,Male,53716
+54,Male,61239
+54,Male,
+55-59 years old,Male,275796
+55,Male,60845
+56,Male,61011
+57,Male,71755
+58,Male,53224
+59,Male,28961
+59,Male,
+60-64 years old,Male,182517
+60,Male,30454
+61,Male,29745
+62,Male,38248
+63,Male,43801
+64,Male,40269
+64,Male,
+65-69 years old,Male,198974
+65,Male,42948
+66,Male,42662
+67,Male,39755
+68,Male,39975
+69,Male,33634
+70-74 years old,Male,137295
+70,Male,31971
+71,Male,31761
+72,Male,26738
+73,Male,24920
+74,Male,21905
+74,Male,
+75-79 years old,Male,81850
+75,Male,19676
+76,Male,18467
+77,Male,15643
+78,Male,14386
+79,Male,13678
+79,Male,
+80-84 years old,Male,44478
+80,Male,11554
+81,Male,9232
+82,Male,9254
+83,Male,7713
+84,Male,6725
+84,Male,
+85-89 years old,Male,19441
+85,Male,5605
+86,Male,4533
+87,Male,4081
+88,Male,2898
+89,Male,2324
+89,Male,
+90-94 years old,Male,5494
+90,Male,1926
+91,Male,1251
+92,Male,1074
+93,Male,737
+94,Male,506
+94,Male,
+95-99 years old,Male,1042
+95,Male,373
+96,Male,276
+97,Male,184
+98,Male,113
+99,Male,96
+99,Male,
+100 years and above,Male,112
+,Female,
+Age,Female,
+Age,Female,Female
+Age,Female,
+Under 45 years old,Female,1439104
+Under 45 years old,Female,
+45-49 years old,Female,307840
+45,Female,52632
+46,Female,58659
+47,Female,62913
+48,Female,65544
+49,Female,68092
+49,Female,
+50-54 years old,Female,333174
+50,Female,70201
+51,Female,65689
+52,Female,71997
+53,Female,59090
+54,Female,66197
+54,Female,
+55-59 years old,Female,277237
+55,Female,63507
+56,Female,61510
+57,Female,69697
+58,Female,53407
+59,Female,29116
+59,Female,
+60-64 years old,Female,195058
+60,Female,33834
+61,Female,31464
+62,Female,40400
+63,Female,45795
+64,Female,43565
+64,Female,
+65-69 years old,Female,213050
+65,Female,45255
+66,Female,46062
+67,Female,42568
+68,Female,42536
+69,Female,36629
+70-74 years old,Female,145221
+70,Female,33997
+71,Female,32516
+72,Female,28008
+73,Female,26411
+74,Female,24289
+74,Female,
+75-79 years old,Female,88228
+75,Female,21039
+76,Female,19323
+77,Female,16920
+78,Female,15805
+79,Female,15141
+79,Female,
+80-84 years old,Female,53837
+80,Female,13282
+81,Female,10974
+82,Female,10971
+83,Female,9701
+84,Female,8909
+84,Female,
+85-89 years old,Female,29341
+85,Female,7872
+86,Female,6805
+87,Female,6066
+88,Female,4783
+89,Female,3815
+89,Female,
+90-94 years old,Female,10155
+90,Female,3391
+91,Female,2323
+92,Female,1952
+93,Female,1455
+94,Female,1034
+94,Female,
+95-99 years old,Female,2513
+95,Female,856
+96,Female,673
+97,Female,416
+98,Female,327
+99,Female,241
+99,Female,
+100 years and above,Female,352

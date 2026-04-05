@@ -1,0 +1,43 @@
+province_and_territory,crime_type,severity_index,percent_change
+newfoundland and labrador,total youth crime severity index,59.3,-2
+prince edward island,total youth crime severity index,30.7,-6
+nova scotia,total youth crime severity index,77.5,0
+new brunswick,total youth crime severity index,55.7,-12
+quebec,total youth crime severity index,56.4,-18
+ontario,total youth crime severity index,52.7,-9
+manitoba,total youth crime severity index,113.1,8
+saskatchewan,total youth crime severity index,170.2,25
+alberta,total youth crime severity index,57.0,-2
+british columbia,total youth crime severity index,35.7,-3
+yukon,total youth crime severity index,191.9,-5
+northwest territories,total youth crime severity index,266.8,-2
+nunavut,total youth crime severity index,296.3,4
+canada,total youth crime severity index,60.1,16
+newfoundland and labrador,youth violent crime severity index,47.9,-8
+prince edward island,youth violent crime severity index,25.2,4
+nova scotia,youth violent crime severity index,84.4,14
+new brunswick,youth violent crime severity index,49.0,-5
+quebec,youth violent crime severity index,75.0,-5
+ontario,youth violent crime severity index,69.1,0
+manitoba,youth violent crime severity index,127.5,-10
+saskatchewan,youth violent crime severity index,160.0,-9
+alberta,youth violent crime severity index,61.1,-8
+british columbia,youth violent crime severity index,37.2,-10
+yukon,youth violent crime severity index,184.1,-15
+northwest territories,youth violent crime severity index,149.0,-16
+nunavut,youth violent crime severity index,191.0,-13
+canada,youth violent crime severity index,70.9,-9
+newfoundland and labrador,youth non-violent crime severity index,67.0,-8
+prince edward island,youth non-violent crime severity index,34.5,-10
+nova scotia,youth non-violent crime severity index,72.3,-28
+new brunswick,youth non-violent crime severity index,60.1,15
+quebec,youth non-violent crime severity index,43.0,-42
+ontario,youth non-violent crime severity index,40.9,-10
+manitoba,youth non-violent crime severity index,102.3,-28
+saskatchewan,youth non-violent crime severity index,176.7,-3
+alberta,youth non-violent crime severity index,53.8,-10
+british columbia,youth non-violent crime severity index,34.5,-17
+yukon,youth non-violent crime severity index,196.5,-8
+northwest territories,youth non-violent crime severity index,349.0,-2
+nunavut,youth non-violent crime severity index,369.5,5
+canada,youth non-violent crime severity index,52.2,-8

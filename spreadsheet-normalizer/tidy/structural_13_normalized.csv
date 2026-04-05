@@ -1,0 +1,17 @@
+type_of_perpetrator,section_header,male_victims_percent,female_victims_percent,total_victims_percent
+canadian armed forces member(s),,91.0,97.0,94.0
+lone,number of perpetrators,77.0,90.0,83.0
+two or more,two or more,,,9.2
+"varied - sometimes one perpetrator, other times multiple perpetrators","varied - sometimes one perpetrator, other times multiple perpetrators",,,9.8
+always men,sex of perpetrator,56.0,96.0,76.0
+always women,sex of perpetrator,28.0,,14.0
+combination of men and women,combination of men and women,,,10.0
+supervisor or higher rank,relationship to victim,36.0,51.0,44.0
+peer,relationship to victim,65.0,46.0,54.0
+subordinate - either in or outside chain of command,relationship to victim,17.0,14.0,16.0
+stranger,stranger,,,9.1
+other,other,,,6.1
+junior non-commissioned member,rank of perpetrator,76.0,72.0,74.0
+senior non-commissioned member,rank of perpetrator,20.0,26.0,24.0
+junior officer,rank of perpetrator,17.0,,12.0
+senior officer,senior officer,,,4.8

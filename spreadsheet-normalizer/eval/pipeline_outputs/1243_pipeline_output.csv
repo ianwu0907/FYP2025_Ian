@@ -1,0 +1,43 @@
+province_and_territory,crime_severity_type,crime_severity_index
+newfoundland and labrador,total crime severity index,69.3
+prince edward island,total crime severity index,48.5
+nova scotia,total crime severity index,61.2
+new brunswick,total crime severity index,61.7
+quebec,total crime severity index,54.7
+ontario,total crime severity index,52.7
+manitoba,total crime severity index,114.4
+saskatchewan,total crime severity index,148.8
+alberta,total crime severity index,102.5
+british columbia,total crime severity index,93.6
+yukon,total crime severity index,183.9
+northwest territories,total crime severity index,291.7
+nunavut,total crime severity index,286.4
+canada,total crime severity index,71.0
+newfoundland and labrador,violent crime severity index,72.6
+prince edward island,violent crime severity index,35.1
+nova scotia,violent crime severity index,68.3
+new brunswick,violent crime severity index,63.2
+quebec,violent crime severity index,64.7
+ontario,violent crime severity index,63.6
+manitoba,violent crime severity index,152.7
+saskatchewan,violent crime severity index,146.1
+alberta,violent crime severity index,89.9
+british columbia,violent crime severity index,74.9
+yukon,violent crime severity index,229.1
+northwest territories,violent crime severity index,332.1
+nunavut,violent crime severity index,407.7
+canada,violent crime severity index,75.3
+newfoundland and labrador,non-violent crime severity index,68.0
+prince edward island,non-violent crime severity index,53.3
+nova scotia,non-violent crime severity index,58.5
+new brunswick,non-violent crime severity index,61.0
+quebec,non-violent crime severity index,51.0
+ontario,non-violent crime severity index,48.6
+manitoba,non-violent crime severity index,100.3
+saskatchewan,non-violent crime severity index,149.5
+alberta,non-violent crime severity index,106.9
+british columbia,non-violent crime severity index,100.3
+yukon,non-violent crime severity index,167.0
+northwest territories,non-violent crime severity index,276.4
+nunavut,non-violent crime severity index,241.6
+canada,non-violent crime severity index,69.3

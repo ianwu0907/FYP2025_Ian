@@ -1,0 +1,301 @@
+type_of_reason,section,region,frequency
+emotional abuse,abuse:,"2,933",
+emotional abuse,abuse:,66,66.0
+emotional abuse,abuse:,77,77.0
+emotional abuse,abuse:,67,67.0
+emotional abuse,abuse:,56,56.0
+emotional abuse,abuse:,80,80.0
+emotional abuse,abuse:,68,68.0
+emotional abuse,abuse:,65,65.0
+emotional abuse,abuse:,67,67.0
+emotional abuse,abuse:,60,60.0
+emotional abuse,abuse:,67,67.0
+emotional abuse,abuse:,65,65.0
+emotional abuse,abuse:,85,85.0
+emotional abuse,abuse:,89,89.0
+emotional abuse,abuse:,89,89.0
+physical abuse,abuse:,"2,933",
+physical abuse,abuse:,66,50.0
+physical abuse,abuse:,77,45.0
+physical abuse,abuse:,67,27.0
+physical abuse,abuse:,56,48.0
+physical abuse,abuse:,80,47.0
+physical abuse,abuse:,68,47.0
+physical abuse,abuse:,65,46.0
+physical abuse,abuse:,67,65.0
+physical abuse,abuse:,60,53.0
+physical abuse,abuse:,67,59.0
+physical abuse,abuse:,65,51.0
+physical abuse,abuse:,85,62.0
+physical abuse,abuse:,89,59.0
+physical abuse,abuse:,89,53.0
+financial abuse,abuse:,"2,933",
+financial abuse,abuse:,66,38.0
+financial abuse,abuse:,77,32.0
+financial abuse,abuse:,67,27.0
+financial abuse,abuse:,56,36.0
+financial abuse,abuse:,80,42.0
+financial abuse,abuse:,68,36.0
+financial abuse,abuse:,65,37.0
+financial abuse,abuse:,67,42.0
+financial abuse,abuse:,60,20.0
+financial abuse,abuse:,67,44.0
+financial abuse,abuse:,65,43.0
+financial abuse,abuse:,85,23.0
+financial abuse,abuse:,89,41.0
+financial abuse,abuse:,89,42.0
+threats,abuse:,"2,933",
+threats,abuse:,66,36.0
+threats,abuse:,77,40.0
+threats,abuse:,67,33.0
+threats,abuse:,56,40.0
+threats,abuse:,80,51.0
+threats,abuse:,68,35.0
+threats,abuse:,65,33.0
+threats,abuse:,67,37.0
+threats,abuse:,60,34.0
+threats,abuse:,67,33.0
+threats,abuse:,65,43.0
+threats,abuse:,85,31.0
+threats,abuse:,89,44.0
+threats,abuse:,89,68.0
+harassment,abuse:,"2,933",
+harassment,abuse:,66,27.0
+harassment,abuse:,77,38.0
+harassment,abuse:,67,40.0
+harassment,abuse:,56,31.0
+harassment,abuse:,80,33.0
+harassment,abuse:,68,28.0
+harassment,abuse:,65,24.0
+harassment,abuse:,67,26.0
+harassment,abuse:,60,21.0
+harassment,abuse:,67,27.0
+harassment,abuse:,65,30.0
+harassment,abuse:,85,31.0
+harassment,abuse:,89,19.0
+harassment,abuse:,89,63.0
+sexual abuse,abuse:,"2,933",925.0
+sexual abuse,abuse:,66,21.0
+sexual abuse,abuse:,77,15.0
+sexual abuse,abuse:,67,27.0
+sexual abuse,abuse:,56,17.0
+sexual abuse,abuse:,80,22.0
+sexual abuse,abuse:,68,23.0
+sexual abuse,abuse:,65,18.0
+sexual abuse,abuse:,67,28.0
+sexual abuse,abuse:,60,21.0
+sexual abuse,abuse:,67,26.0
+sexual abuse,abuse:,65,22.0
+sexual abuse,abuse:,85,
+sexual abuse,abuse:,89,19.0
+sexual abuse,abuse:,89,21.0
+human trafficking,abuse:,"2,933",67.0
+human trafficking,abuse:,66,2.0
+human trafficking,abuse:,77,
+human trafficking,abuse:,67,
+human trafficking,abuse:,56,
+human trafficking,abuse:,80,5.0
+human trafficking,abuse:,68,2.0
+human trafficking,abuse:,65,1.0
+human trafficking,abuse:,67,
+human trafficking,abuse:,60,4.0
+human trafficking,abuse:,67,2.0
+human trafficking,abuse:,65,2.0
+human trafficking,abuse:,85,
+human trafficking,abuse:,89,
+human trafficking,abuse:,89,
+other abuse,abuse:,"2,933",523.0
+other abuse,abuse:,66,12.0
+other abuse,abuse:,77,
+other abuse,abuse:,67,
+other abuse,abuse:,56,
+other abuse,abuse:,80,
+other abuse,abuse:,68,19.0
+other abuse,abuse:,65,13.0
+other abuse,abuse:,67,
+other abuse,abuse:,60,3.0
+other abuse,abuse:,67,18.0
+other abuse,abuse:,65,4.0
+other abuse,abuse:,85,
+other abuse,abuse:,89,19.0
+other abuse,abuse:,89,
+witnessing abuse of mother,protecting children from:,"2,933",
+witnessing abuse of mother,protecting children from:,66,26.0
+witnessing abuse of mother,protecting children from:,77,18.0
+witnessing abuse of mother,protecting children from:,67,27.0
+witnessing abuse of mother,protecting children from:,56,30.0
+witnessing abuse of mother,protecting children from:,80,20.0
+witnessing abuse of mother,protecting children from:,68,23.0
+witnessing abuse of mother,protecting children from:,65,25.0
+witnessing abuse of mother,protecting children from:,67,31.0
+witnessing abuse of mother,protecting children from:,60,25.0
+witnessing abuse of mother,protecting children from:,67,36.0
+witnessing abuse of mother,protecting children from:,65,27.0
+witnessing abuse of mother,protecting children from:,85,
+witnessing abuse of mother,protecting children from:,89,52.0
+witnessing abuse of mother,protecting children from:,89,
+psychological abuse,protecting children from:,"2,933",784.0
+psychological abuse,protecting children from:,66,18.0
+psychological abuse,protecting children from:,77,17.0
+psychological abuse,protecting children from:,67,
+psychological abuse,protecting children from:,56,21.0
+psychological abuse,protecting children from:,80,18.0
+psychological abuse,protecting children from:,68,17.0
+psychological abuse,protecting children from:,65,16.0
+psychological abuse,protecting children from:,67,20.0
+psychological abuse,protecting children from:,60,19.0
+psychological abuse,protecting children from:,67,23.0
+psychological abuse,protecting children from:,65,18.0
+psychological abuse,protecting children from:,85,
+psychological abuse,protecting children from:,89,
+psychological abuse,protecting children from:,89,
+physical abuse,protecting children from:,"2,933",428.0
+physical abuse,protecting children from:,66,10.0
+physical abuse,protecting children from:,77,11.0
+physical abuse,protecting children from:,67,
+physical abuse,protecting children from:,56,10.0
+physical abuse,protecting children from:,80,10.0
+physical abuse,protecting children from:,68,11.0
+physical abuse,protecting children from:,65,8.0
+physical abuse,protecting children from:,67,19.0
+physical abuse,protecting children from:,60,11.0
+physical abuse,protecting children from:,67,11.0
+physical abuse,protecting children from:,65,12.0
+physical abuse,protecting children from:,85,
+physical abuse,protecting children from:,89,
+physical abuse,protecting children from:,89,
+threats,protecting children from:,"2,933",348.0
+threats,protecting children from:,66,8.0
+threats,protecting children from:,77,5.0
+threats,protecting children from:,67,
+threats,protecting children from:,56,6.0
+threats,protecting children from:,80,8.0
+threats,protecting children from:,68,9.0
+threats,protecting children from:,65,7.0
+threats,protecting children from:,67,7.0
+threats,protecting children from:,60,5.0
+threats,protecting children from:,67,6.0
+threats,protecting children from:,65,10.0
+threats,protecting children from:,85,
+threats,protecting children from:,89,
+threats,protecting children from:,89,
+neglect,protecting children from:,"2,933",267.0
+neglect,protecting children from:,66,6.0
+neglect,protecting children from:,77,6.0
+neglect,protecting children from:,67,
+neglect,protecting children from:,56,
+neglect,protecting children from:,80,10.0
+neglect,protecting children from:,68,4.0
+neglect,protecting children from:,65,5.0
+neglect,protecting children from:,67,7.0
+neglect,protecting children from:,60,3.0
+neglect,protecting children from:,67,14.0
+neglect,protecting children from:,65,8.0
+neglect,protecting children from:,85,
+neglect,protecting children from:,89,
+neglect,protecting children from:,89,
+sexual abuse,protecting children from:,"2,933",72.0
+sexual abuse,protecting children from:,66,2.0
+sexual abuse,protecting children from:,77,
+sexual abuse,protecting children from:,67,
+sexual abuse,protecting children from:,56,
+sexual abuse,protecting children from:,80,4.0
+sexual abuse,protecting children from:,68,1.0
+sexual abuse,protecting children from:,65,1.0
+sexual abuse,protecting children from:,67,
+sexual abuse,protecting children from:,60,2.0
+sexual abuse,protecting children from:,67,2.0
+sexual abuse,protecting children from:,65,2.0
+sexual abuse,protecting children from:,85,
+sexual abuse,protecting children from:,89,
+sexual abuse,protecting children from:,89,
+unable to find affordable housing,housing:,"2,933",
+unable to find affordable housing,housing:,66,30.0
+unable to find affordable housing,housing:,77,25.0
+unable to find affordable housing,housing:,67,67.0
+unable to find affordable housing,housing:,56,23.0
+unable to find affordable housing,housing:,80,21.0
+unable to find affordable housing,housing:,68,23.0
+unable to find affordable housing,housing:,65,31.0
+unable to find affordable housing,housing:,67,19.0
+unable to find affordable housing,housing:,60,25.0
+unable to find affordable housing,housing:,67,35.0
+unable to find affordable housing,housing:,65,35.0
+unable to find affordable housing,housing:,85,
+unable to find affordable housing,housing:,89,37.0
+unable to find affordable housing,housing:,89,47.0
+short-term housing problem,housing:,"2,933",767.0
+short-term housing problem,housing:,66,17.0
+short-term housing problem,housing:,77,15.0
+short-term housing problem,housing:,67,
+short-term housing problem,housing:,56,11.0
+short-term housing problem,housing:,80,5.0
+short-term housing problem,housing:,68,10.0
+short-term housing problem,housing:,65,25.0
+short-term housing problem,housing:,67,9.0
+short-term housing problem,housing:,60,16.0
+short-term housing problem,housing:,67,15.0
+short-term housing problem,housing:,65,16.0
+short-term housing problem,housing:,85,
+short-term housing problem,housing:,89,19.0
+short-term housing problem,housing:,89,
+housing emergency,housing:,"2,933",428.0
+housing emergency,housing:,66,10.0
+housing emergency,housing:,77,11.0
+housing emergency,housing:,67,
+housing emergency,housing:,56,14.0
+housing emergency,housing:,80,
+housing emergency,housing:,68,6.0
+housing emergency,housing:,65,12.0
+housing emergency,housing:,67,4.0
+housing emergency,housing:,60,10.0
+housing emergency,housing:,67,9.0
+housing emergency,housing:,65,9.0
+housing emergency,housing:,85,
+housing emergency,housing:,89,15.0
+housing emergency,housing:,89,37.0
+mental health,housing:,"2,933",
+mental health,housing:,66,25.0
+mental health,housing:,77,43.0
+mental health,housing:,67,
+mental health,housing:,56,27.0
+mental health,housing:,80,39.0
+mental health,housing:,68,30.0
+mental health,housing:,65,23.0
+mental health,housing:,67,19.0
+mental health,housing:,60,18.0
+mental health,housing:,67,27.0
+mental health,housing:,65,21.0
+mental health,housing:,85,
+mental health,housing:,89,15.0
+mental health,housing:,89,16.0
+drug/alcohol addiction,housing:,"2,933",862.0
+drug/alcohol addiction,housing:,66,19.0
+drug/alcohol addiction,housing:,77,20.0
+drug/alcohol addiction,housing:,67,20.0
+drug/alcohol addiction,housing:,56,20.0
+drug/alcohol addiction,housing:,80,28.0
+drug/alcohol addiction,housing:,68,14.0
+drug/alcohol addiction,housing:,65,16.0
+drug/alcohol addiction,housing:,67,32.0
+drug/alcohol addiction,housing:,60,26.0
+drug/alcohol addiction,housing:,67,29.0
+drug/alcohol addiction,housing:,65,25.0
+drug/alcohol addiction,housing:,85,31.0
+drug/alcohol addiction,housing:,89,
+drug/alcohol addiction,housing:,89,42.0
+other,housing:,"2,933",482.0
+other,housing:,66,11.0
+other,housing:,77,
+other,housing:,67,
+other,housing:,56,4.0
+other,housing:,80,12.0
+other,housing:,68,7.0
+other,housing:,65,12.0
+other,housing:,67,3.0
+other,housing:,60,7.0
+other,housing:,67,10.0
+other,housing:,65,18.0
+other,housing:,85,
+other,housing:,89,
+other,housing:,89,

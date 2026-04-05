@@ -1,0 +1,13 @@
+service_use_type,perceived_health_care_need,percentage,confidence_interval_from,confidence_interval_to
+in past 12 months:,not met,,,
+in past 12 months:,not met,,,
+received help,not met,67.1,82.3,66.5
+received help,not met,70.6,21.0,17.4
+formal consultation,not met,55.8,73.0,59.2
+formal consultation,not met,63.4,16.2,12.8
+informal consultation,not met,70.5,84.3,64.4
+informal consultation,not met,68.3,31.2,26.9
+all needs met,met,35.4,53.7,42.2
+all needs met,met,46.7,14.9,11.9
+partially met or not met,not met,31.2,48.1,32.1
+partially met or not met,not met,36.3,9.6,7.3

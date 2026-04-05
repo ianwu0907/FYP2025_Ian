@@ -1,0 +1,45 @@
+category_type,category_value,gender,statistic
+age group,0 to 24,male,22.5
+age group,25 to 44,male,41.7
+age group,45 to 64,male,29.0
+age group,65 or older,male,6.8
+immigration category,principal applicant,male,26.2
+immigration category,dependant,male,23.5
+immigration category,family class,male,28.9
+immigration category,refugee class,male,16.4
+immigration category,other,male,5.0
+landing year,1980 to 1989,male,23.2
+landing year,1990 to 1999,male,44.1
+landing year,2000 to 2006,male,32.7
+source world region,united states,male,2.1
+source world region,caribbean/central and south america,male,10.1
+source world region,western europe,male,8.1
+source world region,eastern europe,male,12.6
+source world region,sub-saharan africa,male,4.8
+source world region,north africa/middle east/west asia,male,9.4
+source world region,south asia,male,19.3
+source world region,south east asia,male,11.9
+source world region,east asia,male,20.7
+source world region,oceania,male,0.7
+age group,0 to 24,female,19.8
+age group,25 to 44,female,44.4
+age group,45 to 64,female,27.2
+age group,65 or older,female,8.6
+immigration category,principal applicant,female,12.2
+immigration category,dependant,female,33.7
+immigration category,family class,female,37.4
+immigration category,refugee class,female,12.7
+immigration category,other,female,4.0
+landing year,1980 to 1989,female,22.3
+landing year,1990 to 1999,female,44.9
+landing year,2000 to 2006,female,32.8
+source world region,united states,female,2.6
+source world region,caribbean/central and south america,female,11.0
+source world region,western europe,female,7.3
+source world region,eastern europe,female,12.6
+source world region,sub-saharan africa,female,4.6
+source world region,north africa/middle east/west asia,female,7.7
+source world region,south asia,female,17.6
+source world region,south east asia,female,14.1
+source world region,east asia,female,21.8
+source world region,oceania,female,0.7

@@ -1,0 +1,87 @@
+category,type,value
+all buildings,ratio,0.393
+all buildings,age,15.4
+all buildings,age,13.8
+plants for manufacturing,ratio,0.334
+plants for manufacturing,age,19.4
+plants for manufacturing,age,21.0
+"warehouses, refrigerated storage, freight terminals",ratio,0.293
+"warehouses, refrigerated storage, freight terminals",age,18.8
+"warehouses, refrigerated storage, freight terminals",age,17.3
+"maintenance garages, workshops, equipment storage facilities",ratio,0.426
+"maintenance garages, workshops, equipment storage facilities",age,17.5
+"maintenance garages, workshops, equipment storage facilities",age,20.5
+office buildings,ratio,0.476
+office buildings,age,15.7
+office buildings,age,11.3
+"shopping centres, plazas, malls, stores",ratio,0.435
+"shopping centres, plazas, malls, stores",age,8.0
+"shopping centres, plazas, malls, stores",age,9.3
+other industrial and commercial,ratio,0.358
+other industrial and commercial,age,13.9
+other industrial and commercial,age,13.3
+"telephone and cablevision lines, underground and marine cables",ratio,0.132
+"telephone and cablevision lines, underground and marine cables",age,11.1
+"telephone and cablevision lines, underground and marine cables",age,16.8
+"communication towers, antennae, earth stations",ratio,0.508
+"communication towers, antennae, earth stations",age,12.5
+"communication towers, antennae, earth stations",age,23.6
+all machinery and equipment,ratio,0.32
+all machinery and equipment,age,8.0
+all machinery and equipment,age,8.5
+"office furniture, furnishing",ratio,0.314
+"office furniture, furnishing",age,6.6
+"office furniture, furnishing",age,8.4
+"computers, associated hardware and word processors",ratio,0.249
+"computers, associated hardware and word processors",age,4.3
+"computers, associated hardware and word processors",age,4.8
+"non-office furniture, furnishings and fixtures",ratio,0.519
+"non-office furniture, furnishings and fixtures",age,6.9
+"non-office furniture, furnishings and fixtures",age,8.1
+"scientific, professional and medical devices",ratio,0.373
+"scientific, professional and medical devices",age,9.0
+"scientific, professional and medical devices",age,11.4
+"heating, electrical, plumbing, air conditioning and refrigeration equipment",ratio,0.655
+"heating, electrical, plumbing, air conditioning and refrigeration equipment",age,9.1
+"heating, electrical, plumbing, air conditioning and refrigeration equipment",age,11.0
+pollution abatement and control equipment,ratio,0.293
+pollution abatement and control equipment,age,11.3
+pollution abatement and control equipment,age,11.5
+"motors, generators, transformers, turbines, compressors and pumps of all types",ratio,0.466
+"motors, generators, transformers, turbines, compressors and pumps of all types",age,9.3
+"motors, generators, transformers, turbines, compressors and pumps of all types",age,14.0
+heavy construction equipment,ratio,0.365
+heavy construction equipment,age,6.9
+heavy construction equipment,age,10.7
+tractors and other field equipment,ratio,0.288
+tractors and other field equipment,age,8.8
+tractors and other field equipment,age,13.3
+capitalized tooling and other tools,ratio,0.294
+capitalized tooling and other tools,age,7.1
+capitalized tooling and other tools,age,8.5
+drilling and blasting equipment,ratio,0.561
+drilling and blasting equipment,age,6.9
+automobiles and major replacement parts,ratio,0.314
+automobiles and major replacement parts,age,5.5
+automobiles and major replacement parts,age,6.4
+buses (all types) and major replacement parts,ratio,0.122
+buses (all types) and major replacement parts,age,14.8
+buses (all types) and major replacement parts,age,22.2
+"trucks, vans, truck tractors, truck trailers and major replacement parts",ratio,0.295
+"trucks, vans, truck tractors, truck trailers and major replacement parts",age,7.7
+"trucks, vans, truck tractors, truck trailers and major replacement parts",age,8.8
+other transportation equipment,ratio,0.314
+other transportation equipment,age,9.4
+other transportation equipment,age,11.2
+computer-assisted processing machinery and equipment,ratio,0.322
+computer-assisted processing machinery and equipment,age,10.3
+computer-assisted processing machinery and equipment,age,12.0
+non-computer-assisted processing machinery and equipment,ratio,0.292
+non-computer-assisted processing machinery and equipment,age,9.5
+non-computer-assisted processing machinery and equipment,age,12.0
+communication and related equipment,ratio,0.283
+communication and related equipment,age,7.3
+communication and related equipment,age,7.5
+safety and security equipment and other machinery and equipment,ratio,0.386
+safety and security equipment and other machinery and equipment,age,8.8
+safety and security equipment and other machinery and equipment,age,10.6

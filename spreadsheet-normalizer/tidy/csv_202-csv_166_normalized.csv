@@ -1,0 +1,99 @@
+census_year,section,category,year,value
+Population,Population,Estimated residents on Census night,2001,58319.0
+Population,Population,% of Australian population,2001,0.31
+Population,"Language,
+top responses
+(other than English)",Cantonese,2001,6.7
+Population,"Language,
+top responses
+(other than English)",Mandarin,2001,3.6
+Population,"Language,
+top responses
+(other than English)",Korean,2001,1.7
+Population,"Language,
+top responses
+(other than English)",Japanese,2001,2.4
+Population,"Religious affiliation,
+top responses",No religion,2001,18.6
+Population,"Religious affiliation,
+top responses",Catholic,2001,26.1
+Population,"Religious affiliation,
+top responses",Anglican,2001,19.5
+Population,"Religious affiliation,
+top responses",Buddhism,2001,3.7
+Population,Population,Estimated residents on Census night,2006,63605.0
+Population,Population,LGA rank in terms of size within New South Wales,2006,19.0
+Population,Population,% of Australian population,2006,0.32
+Population,"Language,
+top responses
+(other than English)",Cantonese,2006,7.6
+Population,"Language,
+top responses
+(other than English)",Mandarin,2006,5.5
+Population,"Language,
+top responses
+(other than English)",Korean,2006,2.7
+Population,"Language,
+top responses
+(other than English)",Japanese,2006,2.4
+Population,"Language,
+top responses
+(other than English)",Armenian,2006,1.4
+Population,"Religious affiliation,
+top responses",No religion,2006,22.0
+Population,"Religious affiliation,
+top responses",Catholic,2006,25.5
+Population,"Religious affiliation,
+top responses",Anglican,2006,17.6
+Population,"Religious affiliation,
+top responses",Buddhism,2006,4.4
+Population,Personal income,Median weekly personal income,2006,728.0
+Population,Personal income,% of Australian median income,2006,156.2
+Population,Family income,Median weekly family income,2006,1667.0
+Population,Family income,% of Australian median income,2006,162.3
+Population,Household income,Median weekly household income,2006,2066.0
+Population,Household income,% of Australian median income,2006,176.4
+Population,Population,Estimated residents on Census night,2011,67356.0
+Population,Population,% of New South Wales population,2011,0.97
+Population,Population,% of Australian population,2011,0.31
+Population,"Ancestry,
+top responses",English,2011,20.5
+Population,"Ancestry,
+top responses",Australian,2011,18.3
+Population,"Ancestry,
+top responses",Chinese,2011,14.5
+Population,"Ancestry,
+top responses",Irish,2011,7.4
+Population,"Ancestry,
+top responses",Scottish,2011,5.6
+Population,"Language,
+top responses
+(other than English)",Cantonese,2011,7.5
+Population,"Language,
+top responses
+(other than English)",Mandarin,2011,7.2
+Population,"Language,
+top responses
+(other than English)",Korean,2011,3.6
+Population,"Language,
+top responses
+(other than English)",Japanese,2011,2.3
+Population,"Language,
+top responses
+(other than English)",Armenian,2011,1.3
+Population,"Religious affiliation,
+top responses",No religion,2011,27.6
+Population,"Religious affiliation,
+top responses",Catholic,2011,25.0
+Population,"Religious affiliation,
+top responses",Anglican,2011,15.6
+Population,"Religious affiliation,
+top responses",Buddhism,2011,4.6
+Population,"Religious affiliation,
+top responses",Presbyterian and Reformed,2011,3.1
+Population,Personal income,Median weekly personal income,2011,858.0
+Population,Personal income,% of Australian median income,2011,148.7
+Population,Family income,Median weekly family income,2011,2479.0
+Population,Family income,% of Australian median income,2011,167.4
+Population,Household income,Median weekly household income,2011,1996.0
+Population,Household income,% of Australian median income,2011,161.8

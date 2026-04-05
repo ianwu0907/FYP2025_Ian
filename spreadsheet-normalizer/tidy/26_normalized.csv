@@ -1,0 +1,145 @@
+top_sources_of_the_difference,reporter_type,measure,value
+sugar-sweetened beverages,total,estimate,-71
+sugar-sweetened beverages,total,from,-78
+sugar-sweetened beverages,total,to,-64
+sugar-sweetened beverages,under-reporters,estimate,-30
+sugar-sweetened beverages,under-reporters,from,-39
+sugar-sweetened beverages,under-reporters,to,-21
+sugar-sweetened beverages,plausible reporters,estimate,-70
+sugar-sweetened beverages,plausible reporters,from,-78
+sugar-sweetened beverages,plausible reporters,to,-62
+sugar-sweetened beverages,over-reporters,estimate,-86
+sugar-sweetened beverages,over-reporters,from,-114
+sugar-sweetened beverages,over-reporters,to,-57
+meat,total,estimate,-37
+meat,total,from,-51
+meat,total,to,-23
+meat,under-reporters,estimate,-8
+meat,under-reporters,from,-24
+meat,under-reporters,to,9
+meat,plausible reporters,estimate,-10
+meat,plausible reporters,from,-28
+meat,plausible reporters,to,8
+meat,over-reporters,estimate,-71
+meat,over-reporters,from,-122
+meat,over-reporters,to,-20
+milk,total,estimate,-34
+milk,total,from,-40
+milk,total,to,-27
+milk,under-reporters,estimate,-12
+milk,under-reporters,from,-19
+milk,under-reporters,to,-4
+milk,plausible reporters,estimate,-26
+milk,plausible reporters,from,-33
+milk,plausible reporters,to,-18
+milk,over-reporters,estimate,-44
+milk,over-reporters,from,-68
+milk,over-reporters,to,-20
+"pasta, rice, cereal grains and flours",total,estimate,-25
+"pasta, rice, cereal grains and flours",total,from,-37
+"pasta, rice, cereal grains and flours",total,to,-13
+"pasta, rice, cereal grains and flours",under-reporters,estimate,16
+"pasta, rice, cereal grains and flours",under-reporters,from,2
+"pasta, rice, cereal grains and flours",under-reporters,to,30
+"pasta, rice, cereal grains and flours",plausible reporters,estimate,-4
+"pasta, rice, cereal grains and flours",plausible reporters,from,-18
+"pasta, rice, cereal grains and flours",plausible reporters,to,9
+"pasta, rice, cereal grains and flours",over-reporters,estimate,-59
+"pasta, rice, cereal grains and flours",over-reporters,from,-106
+"pasta, rice, cereal grains and flours",over-reporters,to,-13
+sugars,total,estimate,-20
+sugars,total,from,-25
+sugars,total,to,-14
+sugars,under-reporters,estimate,-3
+sugars,under-reporters,from,-8
+sugars,under-reporters,to,2
+sugars,plausible reporters,estimate,-11
+sugars,plausible reporters,from,-17
+sugars,plausible reporters,to,-5
+sugars,over-reporters,estimate,-34
+sugars,over-reporters,from,-57
+sugars,over-reporters,to,-12
+pastries,total,estimate,19
+pastries,total,from,10
+pastries,total,to,28
+pastries,under-reporters,estimate,9
+pastries,under-reporters,from,-2
+pastries,under-reporters,to,20
+pastries,plausible reporters,estimate,32
+pastries,plausible reporters,from,20
+pastries,plausible reporters,to,45
+pastries,over-reporters,estimate,30
+pastries,over-reporters,from,-1
+pastries,over-reporters,to,61
+oils,total,estimate,-18
+oils,total,from,-25
+oils,total,to,-10
+oils,under-reporters,estimate,12
+oils,under-reporters,from,5
+oils,under-reporters,to,20
+oils,plausible reporters,estimate,-3
+oils,plausible reporters,from,-12
+oils,plausible reporters,to,6
+oils,over-reporters,estimate,-46
+oils,over-reporters,from,-75
+oils,over-reporters,to,-16
+breakfast cereals,total,estimate,-17
+breakfast cereals,total,from,-23
+breakfast cereals,total,to,-12
+breakfast cereals,under-reporters,estimate,3
+breakfast cereals,under-reporters,from,-5
+breakfast cereals,under-reporters,to,10
+breakfast cereals,plausible reporters,estimate,-12
+breakfast cereals,plausible reporters,from,-20
+breakfast cereals,plausible reporters,to,-5
+breakfast cereals,over-reporters,estimate,-53
+breakfast cereals,over-reporters,from,-75
+breakfast cereals,over-reporters,to,-31
+soups,total,estimate,-13
+soups,total,from,-18
+soups,total,to,-8
+soups,under-reporters,estimate,-3
+soups,under-reporters,from,-9
+soups,under-reporters,to,3
+soups,plausible reporters,estimate,-5
+soups,plausible reporters,from,-12
+soups,plausible reporters,to,1
+soups,over-reporters,estimate,-37
+soups,over-reporters,from,-54
+soups,over-reporters,to,-19
+"potatoes, fried, roasted, chips",total,estimate,-10
+"potatoes, fried, roasted, chips",total,from,-17
+"potatoes, fried, roasted, chips",total,to,-4
+"potatoes, fried, roasted, chips",under-reporters,estimate,0
+"potatoes, fried, roasted, chips",under-reporters,from,-6
+"potatoes, fried, roasted, chips",under-reporters,to,6
+"potatoes, fried, roasted, chips",plausible reporters,estimate,-8
+"potatoes, fried, roasted, chips",plausible reporters,from,-15
+"potatoes, fried, roasted, chips",plausible reporters,to,0
+"potatoes, fried, roasted, chips",over-reporters,estimate,1
+"potatoes, fried, roasted, chips",over-reporters,from,-32
+"potatoes, fried, roasted, chips",over-reporters,to,35
+cheese,total,estimate,-10
+cheese,total,from,-17
+cheese,total,to,-2
+cheese,under-reporters,estimate,-4
+cheese,under-reporters,from,-11
+cheese,under-reporters,to,3
+cheese,plausible reporters,estimate,-7
+cheese,plausible reporters,from,-17
+cheese,plausible reporters,to,3
+cheese,over-reporters,estimate,49
+cheese,over-reporters,from,16
+cheese,over-reporters,to,83
+nuts,total,estimate,10
+nuts,total,from,2
+nuts,total,to,17
+nuts,under-reporters,estimate,11
+nuts,under-reporters,from,2
+nuts,under-reporters,to,19
+nuts,plausible reporters,estimate,16
+nuts,plausible reporters,from,6
+nuts,plausible reporters,to,26
+nuts,over-reporters,estimate,29
+nuts,over-reporters,from,-6
+nuts,over-reporters,to,63

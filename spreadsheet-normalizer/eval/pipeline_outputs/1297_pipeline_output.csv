@@ -1,0 +1,28 @@
+entry_type,year,employment_type,value
+one-year entry,2011.0,alu,1.5
+one-year entry,2011.0,ilu,2.3
+one-year entry,2012.0,alu,2.3
+two-year entry,2011.0,alu,1.3
+two-year entry,2011.0,ilu,1.9
+two-year entry,2012.0,alu,1.9
+short-lived entry,2011.0,alu,0.2
+short-lived entry,2011.0,ilu,0.4
+short-lived entry,2012.0,alu,0.4
+short-lived entry,2014.0,ilu,0.0
+previously active excluded,2011.0,alu,1.3
+previously active excluded,2011.0,ilu,2.1
+previously active excluded,2012.0,alu,2.1
+ever previously active excluded,2011.0,alu,1.2
+ever previously active excluded,2011.0,ilu,1.9
+ever previously active excluded,2012.0,alu,1.9
+one year with no pre-existing up,2011.0,alu,1.2
+one year with no pre-existing up,2011.0,ilu,1.9
+one year with no pre-existing up,2012.0,alu,1.9
+previously active excluded with no up,2011.0,alu,1.2
+previously active excluded with no up,2011.0,ilu,1.9
+previously active excluded with no up,2012.0,alu,1.9
+ever previously active excluded with no up,2011.0,alu,1.2
+ever previously active excluded with no up,2011.0,ilu,1.9
+ever previously active excluded with no up,2012.0,alu,1.9
+short-lived entry,,br,0.0
+short-lived entry,,pd7,0.0

@@ -1,0 +1,29 @@
+sex,marital_status,agricultural_region,percent
+sex,single,Unnamed: 0,single
+sex,single,agricultural region 1,18.7
+sex,single,Unnamed: 2,24.8
+sex,single,agricultural region 3,26.9
+sex,single,Unnamed: 4,26.1
+sex,single,agricultural region 4,25.6
+sex,single,Unnamed: 6,32.8
+sex,married,Unnamed: 0,married
+sex,married,agricultural region 1,51.3
+sex,married,Unnamed: 2,53.9
+sex,married,agricultural region 3,47.8
+sex,married,Unnamed: 4,56.7
+sex,married,agricultural region 4,54.4
+sex,married,Unnamed: 6,57.8
+sex,common-law,Unnamed: 0,common-law
+sex,common-law,agricultural region 1,17.1
+sex,common-law,Unnamed: 2,10.9
+sex,common-law,agricultural region 3,22.4
+sex,common-law,Unnamed: 4,6.4
+sex,common-law,agricultural region 4,11.8
+sex,common-law,Unnamed: 6,7.8
+sex,"separated, divorced, or widowed",Unnamed: 0,"separated, divorced, or widowed"
+sex,"separated, divorced, or widowed",agricultural region 1,12.8
+sex,"separated, divorced, or widowed",Unnamed: 2,10.6
+sex,"separated, divorced, or widowed",agricultural region 3,0.0
+sex,"separated, divorced, or widowed",Unnamed: 4,10.8
+sex,"separated, divorced, or widowed",agricultural region 4,7.7
+sex,"separated, divorced, or widowed",Unnamed: 6,0.0

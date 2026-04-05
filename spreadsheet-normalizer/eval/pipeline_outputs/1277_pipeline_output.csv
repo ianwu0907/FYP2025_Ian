@@ -1,0 +1,15 @@
+type_of_need,need_status,percentage
+any,unmet,21.4
+any,partially met,22.4
+any,fully met,56.2
+"information about problems, treatments or available services",unmet,20.8
+"information about problems, treatments or available services",partially met,8.0
+"information about problems, treatments or available services",fully met,71.2
+medication,unmet,9.1
+medication,partially met,5.5
+medication,fully met,85.4
+"counselling, therapy or help for problems with personal relationships",unmet,34.1
+"counselling, therapy or help for problems with personal relationships",partially met,15.9
+"counselling, therapy or help for problems with personal relationships",fully met,50.0
+other,partially met,15.0
+other,fully met,85.0

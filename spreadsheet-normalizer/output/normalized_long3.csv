@@ -1,738 +1,340 @@
 year,ethnicity,marital_status,sex,percentage
+2011,亞洲人（非華人）,Table 4.1,Table 4.1,23.0
+2011,亞洲人（非華人）,Table 4.1,Table 4.1,35.6
+2011,亞洲人（非華人）,Table 4.1,Table 4.1,73.9
 2011,亞洲人（非華人）,"從未結婚
-Never married","男
-Male",23.0
+Never married","從未結婚
+Never married",56.3
 2011,亞洲人（非華人）,"從未結婚
-Never married","女
-Female",35.6
+Never married","從未結婚
+Never married",3.1
 2011,亞洲人（非華人）,"從未結婚
-Never married","合計
-Overall",34.1
+Never married","從未結婚
+Never married",8.1
 2011,亞洲人（非華人）,"已婚
-Married","男
-Male",73.9
+Married","已婚
+Married",100.0
 2011,亞洲人（非華人）,"已婚
-Married","女
-Female",56.3
-2011,亞洲人（非華人）,"已婚
-Married","合計
-Overall",58.4
-2011,亞洲人（非華人）,"喪偶／離婚／分居
-Widowed/divorced/
-separated","男
-Male",3.1
-2011,亞洲人（非華人）,"喪偶／離婚／分居
-Widowed/divorced/
-separated","女
-Female",8.1
-2011,亞洲人（非華人）,"喪偶／離婚／分居
-Widowed/divorced/
-separated","合計
-Overall",7.5
-2011,亞洲人（非華人）,"總計
-Total","男
-Male",100.0
-2011,亞洲人（非華人）,"總計
-Total","女
-Female",100.0
-2011,亞洲人（非華人）,"總計
-Total","合計
-Overall",100.0
+Married","已婚
+Married",100.0
+2011,菲律賓人,Table 4.1,Table 4.1,26.1
+2011,菲律賓人,Table 4.1,Table 4.1,36.4
+2011,菲律賓人,Table 4.1,Table 4.1,68.8
 2011,菲律賓人,"從未結婚
-Never married","男
-Male",26.1
+Never married","從未結婚
+Never married",54.0
 2011,菲律賓人,"從未結婚
-Never married","女
-Female",36.4
+Never married","從未結婚
+Never married",5.1
 2011,菲律賓人,"從未結婚
-Never married","合計
-Overall",35.9
+Never married","從未結婚
+Never married",9.6
 2011,菲律賓人,"已婚
-Married","男
-Male",68.8
+Married","已婚
+Married",100.0
 2011,菲律賓人,"已婚
-Married","女
-Female",54.0
-2011,菲律賓人,"已婚
-Married","合計
-Overall",54.7
-2011,菲律賓人,"喪偶／離婚／分居
-Widowed/divorced/
-separated","男
-Male",5.1
-2011,菲律賓人,"喪偶／離婚／分居
-Widowed/divorced/
-separated","女
-Female",9.6
-2011,菲律賓人,"喪偶／離婚／分居
-Widowed/divorced/
-separated","合計
-Overall",9.4
-2011,菲律賓人,"總計
-Total","男
-Male",100.0
-2011,菲律賓人,"總計
-Total","女
-Female",100.0
-2011,菲律賓人,"總計
-Total","合計
-Overall",100.0
+Married","已婚
+Married",100.0
+2011,印尼人,Table 4.1,Table 4.1,29.2
+2011,印尼人,Table 4.1,Table 4.1,40.4
+2011,印尼人,Table 4.1,Table 4.1,68.2
 2011,印尼人,"從未結婚
-Never married","男
-Male",29.2
+Never married","從未結婚
+Never married",52.6
 2011,印尼人,"從未結婚
-Never married","女
-Female",40.4
+Never married","從未結婚
+Never married",2.6
 2011,印尼人,"從未結婚
-Never married","合計
-Overall",40.4
+Never married","從未結婚
+Never married",7.0
 2011,印尼人,"已婚
-Married","男
-Male",68.2
+Married","已婚
+Married",100.0
 2011,印尼人,"已婚
-Married","女
-Female",52.6
-2011,印尼人,"已婚
-Married","合計
-Overall",52.7
-2011,印尼人,"喪偶／離婚／分居
-Widowed/divorced/
-separated","男
-Male",2.6
-2011,印尼人,"喪偶／離婚／分居
-Widowed/divorced/
-separated","女
-Female",7.0
-2011,印尼人,"喪偶／離婚／分居
-Widowed/divorced/
-separated","合計
-Overall",6.9
-2011,印尼人,"總計
-Total","男
-Male",100.0
-2011,印尼人,"總計
-Total","女
-Female",100.0
-2011,印尼人,"總計
-Total","合計
-Overall",100.0
+Married","已婚
+Married",100.0
+2011,南亞裔人士,Table 4.1,Table 4.1,23.7
+2011,南亞裔人士,Table 4.1,Table 4.1,20.2
+2011,南亞裔人士,Table 4.1,Table 4.1,73.6
 2011,南亞裔人士,"從未結婚
-Never married","男
-Male",23.7
+Never married","從未結婚
+Never married",74.6
 2011,南亞裔人士,"從未結婚
-Never married","女
-Female",20.2
+Never married","從未結婚
+Never married",2.7
 2011,南亞裔人士,"從未結婚
-Never married","合計
-Overall",22.0
+Never married","從未結婚
+Never married",5.2
 2011,南亞裔人士,"已婚
-Married","男
-Male",73.6
+Married","已婚
+Married",100.0
 2011,南亞裔人士,"已婚
-Married","女
-Female",74.6
-2011,南亞裔人士,"已婚
-Married","合計
-Overall",74.1
-2011,南亞裔人士,"喪偶／離婚／分居
-Widowed/divorced/
-separated","男
-Male",2.7
-2011,南亞裔人士,"喪偶／離婚／分居
-Widowed/divorced/
-separated","女
-Female",5.2
-2011,南亞裔人士,"喪偶／離婚／分居
-Widowed/divorced/
-separated","合計
-Overall",3.9
-2011,南亞裔人士,"總計
-Total","男
-Male",100.0
-2011,南亞裔人士,"總計
-Total","女
-Female",100.0
-2011,南亞裔人士,"總計
-Total","合計
-Overall",100.0
+Married","已婚
+Married",100.0
+2011,印度人,Table 4.1,Table 4.1,22.9
+2011,印度人,Table 4.1,Table 4.1,20.9
+2011,印度人,Table 4.1,Table 4.1,74.4
 2011,印度人,"從未結婚
-Never married","男
-Male",22.9
+Never married","從未結婚
+Never married",73.4
 2011,印度人,"從未結婚
-Never married","女
-Female",20.9
+Never married","從未結婚
+Never married",2.7
 2011,印度人,"從未結婚
-Never married","合計
-Overall",21.9
+Never married","從未結婚
+Never married",5.7
 2011,印度人,"已婚
-Married","男
-Male",74.4
+Married","已婚
+Married",100.0
 2011,印度人,"已婚
-Married","女
-Female",73.4
-2011,印度人,"已婚
-Married","合計
-Overall",73.9
-2011,印度人,"喪偶／離婚／分居
-Widowed/divorced/
-separated","男
-Male",2.7
-2011,印度人,"喪偶／離婚／分居
-Widowed/divorced/
-separated","女
-Female",5.7
-2011,印度人,"喪偶／離婚／分居
-Widowed/divorced/
-separated","合計
-Overall",4.2
-2011,印度人,"總計
-Total","男
-Male",100.0
-2011,印度人,"總計
-Total","女
-Female",100.0
-2011,印度人,"總計
-Total","合計
-Overall",100.0
+Married","已婚
+Married",100.0
+2011,尼泊爾人,Table 4.1,Table 4.1,20.3
+2011,尼泊爾人,Table 4.1,Table 4.1,22.0
+2011,尼泊爾人,Table 4.1,Table 4.1,75.3
 2011,尼泊爾人,"從未結婚
-Never married","男
-Male",20.3
+Never married","從未結婚
+Never married",73.1
 2011,尼泊爾人,"從未結婚
-Never married","女
-Female",22.0
+Never married","從未結婚
+Never married",4.3
 2011,尼泊爾人,"從未結婚
-Never married","合計
-Overall",21.1
+Never married","從未結婚
+Never married",4.8
 2011,尼泊爾人,"已婚
-Married","男
-Male",75.3
+Married","已婚
+Married",100.0
 2011,尼泊爾人,"已婚
-Married","女
-Female",73.1
-2011,尼泊爾人,"已婚
-Married","合計
-Overall",74.3
-2011,尼泊爾人,"喪偶／離婚／分居
-Widowed/divorced/
-separated","男
-Male",4.3
-2011,尼泊爾人,"喪偶／離婚／分居
-Widowed/divorced/
-separated","女
-Female",4.8
-2011,尼泊爾人,"喪偶／離婚／分居
-Widowed/divorced/
-separated","合計
-Overall",4.6
-2011,尼泊爾人,"總計
-Total","男
-Male",100.0
-2011,尼泊爾人,"總計
-Total","女
-Female",100.0
-2011,尼泊爾人,"總計
-Total","合計
-Overall",100.0
+Married","已婚
+Married",100.0
+2011,巴基斯坦人,Table 4.1,Table 4.1,26.5
+2011,巴基斯坦人,Table 4.1,Table 4.1,15.8
+2011,巴基斯坦人,Table 4.1,Table 4.1,72.1
 2011,巴基斯坦人,"從未結婚
-Never married","男
-Male",26.5
+Never married","從未結婚
+Never married",81.0
 2011,巴基斯坦人,"從未結婚
-Never married","女
-Female",15.8
+Never married","從未結婚
+Never married",1.4
 2011,巴基斯坦人,"從未結婚
-Never married","合計
-Overall",22.1
+Never married","從未結婚
+Never married",3.2
 2011,巴基斯坦人,"已婚
-Married","男
-Male",72.1
+Married","已婚
+Married",100.0
 2011,巴基斯坦人,"已婚
-Married","女
-Female",81.0
-2011,巴基斯坦人,"已婚
-Married","合計
-Overall",75.7
-2011,巴基斯坦人,"喪偶／離婚／分居
-Widowed/divorced/
-separated","男
-Male",1.4
-2011,巴基斯坦人,"喪偶／離婚／分居
-Widowed/divorced/
-separated","女
-Female",3.2
-2011,巴基斯坦人,"喪偶／離婚／分居
-Widowed/divorced/
-separated","合計
-Overall",2.1
-2011,巴基斯坦人,"總計
-Total","男
-Male",100.0
-2011,巴基斯坦人,"總計
-Total","女
-Female",100.0
-2011,巴基斯坦人,"總計
-Total","合計
-Overall",100.0
+Married","已婚
+Married",100.0
+2011,其他南亞裔人士[1],Table 4.1,Table 4.1,39.9
+2011,其他南亞裔人士[1],Table 4.1,Table 4.1,20.0
+2011,其他南亞裔人士[1],Table 4.1,Table 4.1,59.7
 2011,其他南亞裔人士[1],"從未結婚
-Never married","男
-Male",39.9
+Never married","從未結婚
+Never married",71.0
 2011,其他南亞裔人士[1],"從未結婚
-Never married","女
-Female",20.0
+Never married","從未結婚
+Never married",0.4
 2011,其他南亞裔人士[1],"從未結婚
-Never married","合計
-Overall",28.3
+Never married","從未結婚
+Never married",9.0
 2011,其他南亞裔人士[1],"已婚
-Married","男
-Male",59.7
+Married","已婚
+Married",100.0
 2011,其他南亞裔人士[1],"已婚
-Married","女
-Female",71.0
-2011,其他南亞裔人士[1],"已婚
-Married","合計
-Overall",66.3
-2011,其他南亞裔人士[1],"喪偶／離婚／分居
-Widowed/divorced/
-separated","男
-Male",0.4
-2011,其他南亞裔人士[1],"喪偶／離婚／分居
-Widowed/divorced/
-separated","女
-Female",9.0
-2011,其他南亞裔人士[1],"喪偶／離婚／分居
-Widowed/divorced/
-separated","合計
-Overall",5.4
-2011,其他南亞裔人士[1],"總計
-Total","男
-Male",100.0
-2011,其他南亞裔人士[1],"總計
-Total","女
-Female",100.0
-2011,其他南亞裔人士[1],"總計
-Total","合計
-Overall",100.0
+Married","已婚
+Married",100.0
+2011,泰國人,Table 4.1,Table 4.1,25.2
+2011,泰國人,Table 4.1,Table 4.1,13.3
+2011,泰國人,Table 4.1,Table 4.1,73.4
 2011,泰國人,"從未結婚
-Never married","男
-Male",25.2
+Never married","從未結婚
+Never married",71.6
 2011,泰國人,"從未結婚
-Never married","女
-Female",13.3
+Never married","從未結婚
+Never married",1.4
 2011,泰國人,"從未結婚
-Never married","合計
-Overall",14.4
+Never married","從未結婚
+Never married",15.1
 2011,泰國人,"已婚
-Married","男
-Male",73.4
+Married","已婚
+Married",100.0
 2011,泰國人,"已婚
-Married","女
-Female",71.6
-2011,泰國人,"已婚
-Married","合計
-Overall",71.7
-2011,泰國人,"喪偶／離婚／分居
-Widowed/divorced/
-separated","男
-Male",1.4
-2011,泰國人,"喪偶／離婚／分居
-Widowed/divorced/
-separated","女
-Female",15.1
-2011,泰國人,"喪偶／離婚／分居
-Widowed/divorced/
-separated","合計
-Overall",13.9
-2011,泰國人,"總計
-Total","男
-Male",100.0
-2011,泰國人,"總計
-Total","女
-Female",100.0
-2011,泰國人,"總計
-Total","合計
-Overall",100.0
+Married","已婚
+Married",100.0
+2011,日本人,Table 4.1,Table 4.1,15.6
+2011,日本人,Table 4.1,Table 4.1,20.1
+2011,日本人,Table 4.1,Table 4.1,81.4
 2011,日本人,"從未結婚
-Never married","男
-Male",15.6
+Never married","從未結婚
+Never married",77.1
 2011,日本人,"從未結婚
-Never married","女
-Female",20.1
+Never married","從未結婚
+Never married",3.0
 2011,日本人,"從未結婚
-Never married","合計
-Overall",17.7
+Never married","從未結婚
+Never married",2.8
 2011,日本人,"已婚
-Married","男
-Male",81.4
+Married","已婚
+Married",100.0
 2011,日本人,"已婚
-Married","女
-Female",77.1
-2011,日本人,"已婚
-Married","合計
-Overall",79.4
-2011,日本人,"喪偶／離婚／分居
-Widowed/divorced/
-separated","男
-Male",3.0
-2011,日本人,"喪偶／離婚／分居
-Widowed/divorced/
-separated","女
-Female",2.8
-2011,日本人,"喪偶／離婚／分居
-Widowed/divorced/
-separated","合計
-Overall",2.9
-2011,日本人,"總計
-Total","男
-Male",100.0
-2011,日本人,"總計
-Total","女
-Female",100.0
-2011,日本人,"總計
-Total","合計
-Overall",100.0
+Married","已婚
+Married",100.0
+2011,韓國人,Table 4.1,Table 4.1,17.5
+2011,韓國人,Table 4.1,Table 4.1,20.5
+2011,韓國人,Table 4.1,Table 4.1,81.7
 2011,韓國人,"從未結婚
-Never married","男
-Male",17.5
+Never married","從未結婚
+Never married",71.4
 2011,韓國人,"從未結婚
-Never married","女
-Female",20.5
+Never married","從未結婚
+Never married",0.8
 2011,韓國人,"從未結婚
-Never married","合計
-Overall",19.2
+Never married","從未結婚
+Never married",8.1
 2011,韓國人,"已婚
-Married","男
-Male",81.7
+Married","已婚
+Married",100.0
 2011,韓國人,"已婚
-Married","女
-Female",71.4
-2011,韓國人,"已婚
-Married","合計
-Overall",75.8
-2011,韓國人,"喪偶／離婚／分居
-Widowed/divorced/
-separated","男
-Male",0.8
-2011,韓國人,"喪偶／離婚／分居
-Widowed/divorced/
-separated","女
-Female",8.1
-2011,韓國人,"喪偶／離婚／分居
-Widowed/divorced/
-separated","合計
-Overall",5.0
-2011,韓國人,"總計
-Total","男
-Male",100.0
-2011,韓國人,"總計
-Total","女
-Female",100.0
-2011,韓國人,"總計
-Total","合計
-Overall",100.0
+Married","已婚
+Married",100.0
+2011,其他亞洲人,Table 4.1,Table 4.1,29.5
+2011,其他亞洲人,Table 4.1,Table 4.1,21.1
+2011,其他亞洲人,Table 4.1,Table 4.1,64.2
 2011,其他亞洲人,"從未結婚
-Never married","男
-Male",29.5
+Never married","從未結婚
+Never married",70.4
 2011,其他亞洲人,"從未結婚
-Never married","女
-Female",21.1
+Never married","從未結婚
+Never married",6.3
 2011,其他亞洲人,"從未結婚
-Never married","合計
-Overall",23.9
+Never married","從未結婚
+Never married",8.5
 2011,其他亞洲人,"已婚
-Married","男
-Male",64.2
+Married","已婚
+Married",100.0
 2011,其他亞洲人,"已婚
-Married","女
-Female",70.4
-2011,其他亞洲人,"已婚
-Married","合計
-Overall",68.4
-2011,其他亞洲人,"喪偶／離婚／分居
-Widowed/divorced/
-separated","男
-Male",6.3
-2011,其他亞洲人,"喪偶／離婚／分居
-Widowed/divorced/
-separated","女
-Female",8.5
-2011,其他亞洲人,"喪偶／離婚／分居
-Widowed/divorced/
-separated","合計
-Overall",7.7
-2011,其他亞洲人,"總計
-Total","男
-Male",100.0
-2011,其他亞洲人,"總計
-Total","女
-Female",100.0
-2011,其他亞洲人,"總計
-Total","合計
-Overall",100.0
+Married","已婚
+Married",100.0
+2011,白人,Table 4.1,Table 4.1,29.1
+2011,白人,Table 4.1,Table 4.1,27.0
+2011,白人,Table 4.1,Table 4.1,64.8
 2011,白人,"從未結婚
-Never married","男
-Male",29.1
+Never married","從未結婚
+Never married",63.8
 2011,白人,"從未結婚
-Never married","女
-Female",27.0
+Never married","從未結婚
+Never married",6.1
 2011,白人,"從未結婚
-Never married","合計
-Overall",28.3
+Never married","從未結婚
+Never married",9.2
 2011,白人,"已婚
-Married","男
-Male",64.8
+Married","已婚
+Married",100.0
 2011,白人,"已婚
-Married","女
-Female",63.8
-2011,白人,"已婚
-Married","合計
-Overall",64.5
-2011,白人,"喪偶／離婚／分居
-Widowed/divorced/
-separated","男
-Male",6.1
-2011,白人,"喪偶／離婚／分居
-Widowed/divorced/
-separated","女
-Female",9.2
-2011,白人,"喪偶／離婚／分居
-Widowed/divorced/
-separated","合計
-Overall",7.2
-2011,白人,"總計
-Total","男
-Male",100.0
-2011,白人,"總計
-Total","女
-Female",100.0
-2011,白人,"總計
-Total","合計
-Overall",100.0
+Married","已婚
+Married",100.0
+2011,混血兒,Table 4.1,Table 4.1,53.0
+2011,混血兒,Table 4.1,Table 4.1,48.6
+2011,混血兒,Table 4.1,Table 4.1,42.3
 2011,混血兒,"從未結婚
-Never married","男
-Male",53.0
+Never married","從未結婚
+Never married",38.6
 2011,混血兒,"從未結婚
-Never married","女
-Female",48.6
+Never married","從未結婚
+Never married",4.7
 2011,混血兒,"從未結婚
-Never married","合計
-Overall",50.7
+Never married","從未結婚
+Never married",12.8
 2011,混血兒,"已婚
-Married","男
-Male",42.3
+Married","已婚
+Married",100.0
 2011,混血兒,"已婚
-Married","女
-Female",38.6
-2011,混血兒,"已婚
-Married","合計
-Overall",40.3
-2011,混血兒,"喪偶／離婚／分居
-Widowed/divorced/
-separated","男
-Male",4.7
-2011,混血兒,"喪偶／離婚／分居
-Widowed/divorced/
-separated","女
-Female",12.8
-2011,混血兒,"喪偶／離婚／分居
-Widowed/divorced/
-separated","合計
-Overall",9.1
-2011,混血兒,"總計
-Total","男
-Male",100.0
-2011,混血兒,"總計
-Total","女
-Female",100.0
-2011,混血兒,"總計
-Total","合計
-Overall",100.0
+Married","已婚
+Married",100.0
+2011,華人父或母,Table 4.1,Table 4.1,52.0
+2011,華人父或母,Table 4.1,Table 4.1,48.6
+2011,華人父或母,Table 4.1,Table 4.1,43.1
 2011,華人父或母,"從未結婚
-Never married","男
-Male",52.0
+Never married","從未結婚
+Never married",38.1
 2011,華人父或母,"從未結婚
-Never married","女
-Female",48.6
+Never married","從未結婚
+Never married",4.9
 2011,華人父或母,"從未結婚
-Never married","合計
-Overall",50.3
+Never married","從未結婚
+Never married",13.2
 2011,華人父或母,"已婚
-Married","男
-Male",43.1
+Married","已婚
+Married",100.0
 2011,華人父或母,"已婚
-Married","女
-Female",38.1
-2011,華人父或母,"已婚
-Married","合計
-Overall",40.5
-2011,華人父或母,"喪偶／離婚／分居
-Widowed/divorced/
-separated","男
-Male",4.9
-2011,華人父或母,"喪偶／離婚／分居
-Widowed/divorced/
-separated","女
-Female",13.2
-2011,華人父或母,"喪偶／離婚／分居
-Widowed/divorced/
-separated","合計
-Overall",9.2
-2011,華人父或母,"總計
-Total","男
-Male",100.0
-2011,華人父或母,"總計
-Total","女
-Female",100.0
-2011,華人父或母,"總計
-Total","合計
-Overall",100.0
+Married","已婚
+Married",100.0
+2011,其他混血兒,Table 4.1,Table 4.1,65.1
+2011,其他混血兒,Table 4.1,Table 4.1,48.3
+2011,其他混血兒,Table 4.1,Table 4.1,32.2
 2011,其他混血兒,"從未結婚
-Never married","男
-Male",65.1
+Never married","從未結婚
+Never married",41.4
 2011,其他混血兒,"從未結婚
-Never married","女
-Female",48.3
+Never married","從未結婚
+Never married",2.7
 2011,其他混血兒,"從未結婚
-Never married","合計
-Overall",54.0
+Never married","從未結婚
+Never married",10.3
 2011,其他混血兒,"已婚
-Married","男
-Male",32.2
+Married","已婚
+Married",100.0
 2011,其他混血兒,"已婚
-Married","女
-Female",41.4
-2011,其他混血兒,"已婚
-Married","合計
-Overall",38.3
-2011,其他混血兒,"喪偶／離婚／分居
-Widowed/divorced/
-separated","男
-Male",2.7
-2011,其他混血兒,"喪偶／離婚／分居
-Widowed/divorced/
-separated","女
-Female",10.3
-2011,其他混血兒,"喪偶／離婚／分居
-Widowed/divorced/
-separated","合計
-Overall",7.8
-2011,其他混血兒,"總計
-Total","男
-Male",100.0
-2011,其他混血兒,"總計
-Total","女
-Female",100.0
-2011,其他混血兒,"總計
-Total","合計
-Overall",100.0
+Married","已婚
+Married",100.0
+2011,其他[2],Table 4.1,Table 4.1,31.4
+2011,其他[2],Table 4.1,Table 4.1,30.4
+2011,其他[2],Table 4.1,Table 4.1,64.0
 2011,其他[2],"從未結婚
-Never married","男
-Male",31.4
+Never married","從未結婚
+Never married",69.6
 2011,其他[2],"從未結婚
-Never married","女
-Female",30.4
-2011,其他[2],"從未結婚
-Never married","合計
-Overall",31.2
+Never married","從未結婚
+Never married",4.6
 2011,其他[2],"已婚
-Married","男
-Male",64.0
+Married","已婚
+Married",100.0
 2011,其他[2],"已婚
-Married","女
-Female",69.6
-2011,其他[2],"已婚
-Married","合計
-Overall",65.4
-2011,其他[2],"喪偶／離婚／分居
-Widowed/divorced/
-separated","男
-Male",4.6
-2011,其他[2],"喪偶／離婚／分居
-Widowed/divorced/
-separated","合計
-Overall",3.4
-2011,其他[2],"總計
-Total","男
-Male",100.0
-2011,其他[2],"總計
-Total","女
-Female",100.0
-2011,其他[2],"總計
-Total","合計
-Overall",100.0
+Married","已婚
+Married",100.0
+2011,所有少數族裔人士,Table 4.1,Table 4.1,28.4
+2011,所有少數族裔人士,Table 4.1,Table 4.1,35.5
+2011,所有少數族裔人士,Table 4.1,Table 4.1,67.2
 2011,所有少數族裔人士,"從未結婚
-Never married","男
-Male",28.4
+Never married","從未結婚
+Never married",56.1
 2011,所有少數族裔人士,"從未結婚
-Never married","女
-Female",35.5
+Never married","從未結婚
+Never married",4.4
 2011,所有少數族裔人士,"從未結婚
-Never married","合計
-Overall",34.1
+Never married","從未結婚
+Never married",8.3
 2011,所有少數族裔人士,"已婚
-Married","男
-Male",67.2
+Married","已婚
+Married",100.0
 2011,所有少數族裔人士,"已婚
-Married","女
-Female",56.1
-2011,所有少數族裔人士,"已婚
-Married","合計
-Overall",58.3
-2011,所有少數族裔人士,"喪偶／離婚／分居
-Widowed/divorced/
-separated","男
-Male",4.4
-2011,所有少數族裔人士,"喪偶／離婚／分居
-Widowed/divorced/
-separated","女
-Female",8.3
-2011,所有少數族裔人士,"喪偶／離婚／分居
-Widowed/divorced/
-separated","合計
-Overall",7.5
-2011,所有少數族裔人士,"總計
-Total","男
-Male",100.0
-2011,所有少數族裔人士,"總計
-Total","女
-Female",100.0
-2011,所有少數族裔人士,"總計
-Total","合計
-Overall",100.0
-2011,撇除外籍家庭傭工後的所有少數族裔人士,"從未結婚
-Never married","男
-Male",28.7
-2011,撇除外籍家庭傭工後的所有少數族裔人士,"從未結婚
-Never married","女
-Female",23.2
-2011,撇除外籍家庭傭工後的所有少數族裔人士,"從未結婚
-Never married","合計
-Overall",26.0
-2011,撇除外籍家庭傭工後的所有少數族裔人士,"已婚
-Married","男
-Male",66.9
-2011,撇除外籍家庭傭工後的所有少數族裔人士,"已婚
-Married","女
-Female",68.3
-2011,撇除外籍家庭傭工後的所有少數族裔人士,"已婚
-Married","合計
-Overall",67.6
-2011,撇除外籍家庭傭工後的所有少數族裔人士,"喪偶／離婚／分居
-Widowed/divorced/
-separated","男
-Male",4.4
-2011,撇除外籍家庭傭工後的所有少數族裔人士,"喪偶／離婚／分居
-Widowed/divorced/
-separated","女
-Female",8.5
-2011,撇除外籍家庭傭工後的所有少數族裔人士,"喪偶／離婚／分居
-Widowed/divorced/
-separated","合計
-Overall",6.4
-2011,撇除外籍家庭傭工後的所有少數族裔人士,"總計
-Total","男
-Male",100.0
-2011,撇除外籍家庭傭工後的所有少數族裔人士,"總計
-Total","女
-Female",100.0
-2011,撇除外籍家庭傭工後的所有少數族裔人士,"總計
-Total","合計
-Overall",100.0
+Married","已婚
+Married",100.0
+2011,全港人口,Table 4.1,Table 4.1,33.5
+2011,全港人口,Table 4.1,Table 4.1,29.9
+2011,全港人口,Table 4.1,Table 4.1,61.2
+2011,全港人口,"從未結婚
+Never married","從未結婚
+Never married",54.8
+2011,全港人口,"從未結婚
+Never married","從未結婚
+Never married",5.3
+2011,全港人口,"從未結婚
+Never married","從未結婚
+Never married",15.3
+2011,全港人口,"已婚
+Married","已婚
+Married",100.0
+2011,全港人口,"已婚
+Married","已婚
+Married",100.0

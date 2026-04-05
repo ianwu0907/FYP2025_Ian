@@ -1,0 +1,121 @@
+year,age_group,gender,population_category,inclusion_status,school_attendance_rate
+2011,3 – 5[2],Male,Ethnic minorities,Including,86.9
+2011,3 – 5[2],Female,Ethnic minorities,Including,86.9
+2011,3 – 5[2],Overall,Ethnic minorities,Including,86.9
+2011,3 – 5[2],Male,Whole population,Including,91.0
+2011,3 – 5[2],Female,Whole population,Including,91.6
+2011,3 – 5[2],Overall,Whole population,Including,91.3
+2011,6 – 11,Male,Ethnic minorities,Including,100.0
+2011,6 – 11,Female,Ethnic minorities,Including,100.0
+2011,6 – 11,Overall,Ethnic minorities,Including,100.0
+2011,6 – 11,Male,Whole population,Including,100.0
+2011,6 – 11,Female,Whole population,Including,100.0
+2011,6 – 11,Overall,Whole population,Including,100.0
+2011,12 – 17,Male,Ethnic minorities,Including,96.4
+2011,12 – 17,Female,Ethnic minorities,Including,96.1
+2011,12 – 17,Overall,Ethnic minorities,Including,96.3
+2011,12 – 17,Male,Whole population,Including,96.6
+2011,12 – 17,Female,Whole population,Including,97.7
+2011,12 – 17,Overall,Whole population,Including,97.1
+2011,18 – 24,Male,Ethnic minorities,Including,38.5
+2011,18 – 24,Female,Ethnic minorities,Including,11.7
+2011,18 – 24,Overall,Ethnic minorities,Including,17.8
+2011,18 – 24,Male,Whole population,Including,48.9
+2011,18 – 24,Female,Whole population,Including,49.3
+2011,18 – 24,Overall,Whole population,Including,49.1
+2011,25+,Male,Ethnic minorities,Including,0.7
+2011,25+,Female,Ethnic minorities,Including,0.2
+2011,25+,Overall,Ethnic minorities,Including,0.3
+2011,25+,Male,Whole population,Including,0.5
+2011,25+,Female,Whole population,Including,0.5
+2011,25+,Overall,Whole population,Including,0.5
+2011,3 – 5[2],Male,Ethnic minorities,Excluding,86.9
+2011,3 – 5[2],Female,Ethnic minorities,Excluding,86.9
+2011,3 – 5[2],Overall,Ethnic minorities,Excluding,86.9
+2011,3 – 5[2],Male,Whole population,Excluding,91.0
+2011,3 – 5[2],Female,Whole population,Excluding,91.6
+2011,3 – 5[2],Overall,Whole population,Excluding,91.3
+2011,6 – 11,Male,Ethnic minorities,Excluding,100.0
+2011,6 – 11,Female,Ethnic minorities,Excluding,100.0
+2011,6 – 11,Overall,Ethnic minorities,Excluding,100.0
+2011,6 – 11,Male,Whole population,Excluding,100.0
+2011,6 – 11,Female,Whole population,Excluding,100.0
+2011,6 – 11,Overall,Whole population,Excluding,100.0
+2011,12 – 17,Male,Ethnic minorities,Excluding,96.4
+2011,12 – 17,Female,Ethnic minorities,Excluding,96.8
+2011,12 – 17,Overall,Ethnic minorities,Excluding,96.6
+2011,12 – 17,Male,Whole population,Excluding,96.6
+2011,12 – 17,Female,Whole population,Excluding,97.7
+2011,12 – 17,Overall,Whole population,Excluding,97.1
+2011,18 – 24,Male,Ethnic minorities,Excluding,38.9
+2011,18 – 24,Female,Ethnic minorities,Excluding,38.0
+2011,18 – 24,Overall,Ethnic minorities,Excluding,38.4
+2011,18 – 24,Male,Whole population,Excluding,49.0
+2011,18 – 24,Female,Whole population,Excluding,51.7
+2011,18 – 24,Overall,Whole population,Excluding,50.3
+2011,25+,Male,Ethnic minorities,Excluding,0.7
+2011,25+,Female,Ethnic minorities,Excluding,0.9
+2011,25+,Overall,Ethnic minorities,Excluding,0.8
+2011,25+,Male,Whole population,Excluding,0.5
+2011,25+,Female,Whole population,Excluding,0.5
+2011,25+,Overall,Whole population,Excluding,0.5
+2016,3 – 5[2],Male,Ethnic minorities,Including,90.0
+2016,3 – 5[2],Female,Ethnic minorities,Including,91.4
+2016,3 – 5[2],Overall,Ethnic minorities,Including,90.7
+2016,3 – 5[2],Male,Whole population,Including,92.7
+2016,3 – 5[2],Female,Whole population,Including,92.3
+2016,3 – 5[2],Overall,Whole population,Including,92.5
+2016,6 – 11,Male,Ethnic minorities,Including,100.0
+2016,6 – 11,Female,Ethnic minorities,Including,100.0
+2016,6 – 11,Overall,Ethnic minorities,Including,100.0
+2016,6 – 11,Male,Whole population,Including,100.0
+2016,6 – 11,Female,Whole population,Including,100.0
+2016,6 – 11,Overall,Whole population,Including,100.0
+2016,12 – 17,Male,Ethnic minorities,Including,95.8
+2016,12 – 17,Female,Ethnic minorities,Including,96.5
+2016,12 – 17,Overall,Ethnic minorities,Including,96.2
+2016,12 – 17,Male,Whole population,Including,97.6
+2016,12 – 17,Female,Whole population,Including,98.0
+2016,12 – 17,Overall,Whole population,Including,97.8
+2016,18 – 24,Male,Ethnic minorities,Including,41.3
+2016,18 – 24,Female,Ethnic minorities,Including,22.4
+2016,18 – 24,Overall,Ethnic minorities,Including,29.2
+2016,18 – 24,Male,Whole population,Including,50.8
+2016,18 – 24,Female,Whole population,Including,52.7
+2016,18 – 24,Overall,Whole population,Including,51.8
+2016,25+,Male,Ethnic minorities,Including,1.0
+2016,25+,Female,Ethnic minorities,Including,0.2
+2016,25+,Overall,Ethnic minorities,Including,0.4
+2016,25+,Male,Whole population,Including,0.6
+2016,25+,Female,Whole population,Including,0.6
+2016,25+,Overall,Whole population,Including,0.6
+2016,3 – 5[2],Male,Ethnic minorities,Excluding,90.0
+2016,3 – 5[2],Female,Ethnic minorities,Excluding,91.4
+2016,3 – 5[2],Overall,Ethnic minorities,Excluding,90.7
+2016,3 – 5[2],Male,Whole population,Excluding,92.7
+2016,3 – 5[2],Female,Whole population,Excluding,92.3
+2016,3 – 5[2],Overall,Whole population,Excluding,92.5
+2016,6 – 11,Male,Ethnic minorities,Excluding,100.0
+2016,6 – 11,Female,Ethnic minorities,Excluding,100.0
+2016,6 – 11,Overall,Ethnic minorities,Excluding,100.0
+2016,6 – 11,Male,Whole population,Excluding,100.0
+2016,6 – 11,Female,Whole population,Excluding,100.0
+2016,6 – 11,Overall,Whole population,Excluding,100.0
+2016,12 – 17,Male,Ethnic minorities,Excluding,95.8
+2016,12 – 17,Female,Ethnic minorities,Excluding,96.5
+2016,12 – 17,Overall,Ethnic minorities,Excluding,96.2
+2016,12 – 17,Male,Whole population,Excluding,97.6
+2016,12 – 17,Female,Whole population,Excluding,98.0
+2016,12 – 17,Overall,Whole population,Excluding,97.8
+2016,18 – 24,Male,Ethnic minorities,Excluding,41.9
+2016,18 – 24,Female,Ethnic minorities,Excluding,44.8
+2016,18 – 24,Overall,Ethnic minorities,Excluding,43.3
+2016,18 – 24,Male,Whole population,Excluding,50.8
+2016,18 – 24,Female,Whole population,Excluding,54.4
+2016,18 – 24,Overall,Whole population,Excluding,52.6
+2016,25+,Male,Ethnic minorities,Excluding,1.0
+2016,25+,Female,Ethnic minorities,Excluding,1.0
+2016,25+,Overall,Ethnic minorities,Excluding,1.0
+2016,25+,Male,Whole population,Excluding,0.6
+2016,25+,Female,Whole population,Excluding,0.6
+2016,25+,Overall,Whole population,Excluding,0.6

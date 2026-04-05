@@ -1,0 +1,4312 @@
+[
+  {
+    "table_id": "1001",
+    "raw_file": "raw/1001.xlsx",
+    "tidy_file": "tidy/1001_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "country_of_birth",
+        "_ref_x": "somalia",
+        "_ref_measure": "percent",
+        "_filters": {
+          "country_of_birth": "somalia",
+          "gender": "men",
+          "immigrant_type": "principal applicants"
+        },
+        "answer": 3.4,
+        "question": "Find the percent value where country_of_birth is 'somalia' and gender is 'men' and immigrant_type is 'principal applicants'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "country_of_birth",
+        "_ref_x": "cote d'ivoire",
+        "_ref_measure": "percent",
+        "_filters": {
+          "country_of_birth": "cote d'ivoire",
+          "gender": "men",
+          "immigrant_type": "principal applicants"
+        },
+        "answer": 72.2,
+        "question": "Find the percent value where country_of_birth is 'cote d'ivoire' and gender is 'men' and immigrant_type is 'principal applicants'."
+      }
+    ]
+  },
+  {
+    "table_id": "1003",
+    "raw_file": "raw/1003.xlsx",
+    "tidy_file": "tidy/1003_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "region_or_country_of_birth",
+        "_ref_x": "other regions",
+        "_ref_measure": "percent",
+        "_filters": {
+          "region_or_country_of_birth": "other regions",
+          "section": "nan",
+          "education_level": "non-university or university postsecondary diploma",
+          "gender": "men"
+        },
+        "answer": 65.5,
+        "question": "Find the percent value where region_or_country_of_birth is 'other regions' and section is 'nan' and education_level is 'non-university or university postsecondary diploma' and gender is 'men'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "region_or_country_of_birth",
+        "_ref_x": "democratic republic of the congo",
+        "_ref_measure": "percent",
+        "_filters": {
+          "region_or_country_of_birth": "democratic republic of the congo",
+          "section": "country of birth",
+          "education_level": "university degree only",
+          "gender": "women"
+        },
+        "answer": 22.0,
+        "question": "Find the percent value where region_or_country_of_birth is 'democratic republic of the congo' and section is 'country of birth' and education_level is 'university degree only' and gender is 'women'."
+      }
+    ]
+  },
+  {
+    "table_id": "1007",
+    "raw_file": "raw/1007.xlsx",
+    "tidy_file": "tidy/1007_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "sector",
+        "_ref_x": "mining, quarrying, and oil and gas extraction",
+        "_ref_measure": "percent",
+        "_filters": {
+          "sector": "mining, quarrying, and oil and gas extraction",
+          "worker_type": "other female workers",
+          "generation": "second generation"
+        },
+        "answer": 0.6,
+        "question": "Find the percent value where sector is 'mining, quarrying, and oil and gas extraction' and worker_type is 'other female workers' and generation is 'second generation'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "sector",
+        "_ref_x": "health care and social assistance",
+        "_ref_measure": "percent",
+        "_filters": {
+          "sector": "health care and social assistance",
+          "worker_type": "other female workers",
+          "generation": "second generation"
+        },
+        "answer": 19.1,
+        "question": "Find the percent value where sector is 'health care and social assistance' and worker_type is 'other female workers' and generation is 'second generation'."
+      }
+    ]
+  },
+  {
+    "table_id": "1011",
+    "raw_file": "raw/1011.xlsx",
+    "tidy_file": "tidy/1011_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "immigrant_families",
+        "_ref_x": "immigrant families",
+        "_ref_measure": "low_income_rate",
+        "_filters": {
+          "immigrant_families": "immigrant families",
+          "section_header": "country of birth:",
+          "group_name": "haiti"
+        },
+        "answer": 17.5,
+        "question": "Find the low_income_rate value where immigrant_families is 'immigrant families' and section_header is 'country of birth:' and group_name is 'haiti'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "immigrant_families",
+        "_ref_x": "second- and third- generation-or-more families",
+        "_ref_measure": "low_income_rate",
+        "_filters": {
+          "immigrant_families": "second- and third- generation-or-more families",
+          "section_header": "country of ancestry:",
+          "group_name": "trinidad and tobago"
+        },
+        "answer": 21.6,
+        "question": "Find the low_income_rate value where immigrant_families is 'second- and third- generation-or-more families' and section_header is 'country of ancestry:' and group_name is 'trinidad and tobago'."
+      }
+    ]
+  },
+  {
+    "table_id": "1021",
+    "raw_file": "raw/1021.xlsx",
+    "tidy_file": "tidy/1021_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "behaviour_type",
+        "_ref_x": "sedentary time",
+        "_ref_measure": "beta",
+        "_filters": {
+          "behaviour_type": "sedentary time",
+          "specific_behaviour": "total",
+          "p_value": "0.0016"
+        },
+        "answer": 0.124,
+        "question": "Find the beta value where behaviour_type is 'sedentary time' and specific_behaviour is 'total' and p_value is '0.0016'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "behaviour_type",
+        "_ref_x": "lpa",
+        "_ref_measure": "p_value",
+        "_filters": {
+          "behaviour_type": "lpa",
+          "specific_behaviour": "weekday",
+          "beta": "0.067"
+        },
+        "answer": 0.003,
+        "question": "Find the p_value value where behaviour_type is 'lpa' and specific_behaviour is 'weekday' and beta is '0.067'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "behaviour_type",
+        "_ref_x": "mvpa",
+        "_ref_measure": "p_value",
+        "answer": 0.0636,
+        "question": "What is the total p_value across all records where behaviour_type is 'mvpa'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "behaviour_type",
+        "_ref_x": "sedentary time",
+        "_ref_measure": "p_value",
+        "answer": 0.0328,
+        "question": "What is the total p_value across all records where behaviour_type is 'sedentary time'?"
+      }
+    ]
+  },
+  {
+    "table_id": "1054",
+    "raw_file": "raw/1054.xlsx",
+    "tidy_file": "tidy/1054_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "sexual_orientation",
+        "_ref_x": "gay or lesbian",
+        "_ref_measure": "number",
+        "_filters": {
+          "sexual_orientation": "gay or lesbian",
+          "gender": "female gender",
+          "behavior_type": "experienced unwanted behaviours online in the past 12 months",
+          "percent": "21.0",
+          "confidence_interval_from": "13.9",
+          "confidence_interval_to": "30.3"
+        },
+        "answer": 35.0,
+        "question": "Find the number value where sexual_orientation is 'gay or lesbian' and gender is 'female gender' and behavior_type is 'experienced unwanted behaviours online in the past 12 months' and percent is '21.0' and confidence_interval_from is '13.9' and confidence_interval_to is '30.3'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "sexual_orientation",
+        "_ref_x": "heterosexual",
+        "_ref_measure": "confidence_interval_to",
+        "_filters": {
+          "sexual_orientation": "heterosexual",
+          "gender": "female gender",
+          "behavior_type": "experienced unwanted behaviours in public in the past 12 months",
+          "number": "nan",
+          "percent": "30.5",
+          "confidence_interval_from": "29.5"
+        },
+        "answer": 31.6,
+        "question": "Find the confidence_interval_to value where sexual_orientation is 'heterosexual' and gender is 'female gender' and behavior_type is 'experienced unwanted behaviours in public in the past 12 months' and number is 'nan' and percent is '30.5' and confidence_interval_from is '29.5'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "gender",
+        "_ref_x": "female gender",
+        "_ref_measure": "number",
+        "answer": 581.0,
+        "question": "What is the total number across all records where gender is 'female gender'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "behavior_type",
+        "_ref_x": "experienced unwanted behaviours online in the past 12 months",
+        "_ref_measure": "confidence_interval_to",
+        "answer": 207.7,
+        "question": "What is the total confidence_interval_to across all records where behavior_type is 'experienced unwanted behaviours online in the past 12 months'?"
+      }
+    ]
+  },
+  {
+    "table_id": "1056",
+    "raw_file": "raw/1056.xlsx",
+    "tidy_file": "tidy/1056_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "sexual_orientation",
+        "_ref_x": "bisexual",
+        "_ref_measure": "value",
+        "_filters": {
+          "self_rated_mental_health": "positive",
+          "sexual_orientation": "bisexual",
+          "measure": "95% confidence interval from"
+        },
+        "answer": 52.4,
+        "question": "Find the value value where self_rated_mental_health is 'positive' and sexual_orientation is 'bisexual' and measure is '95% confidence interval from'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "sexual_orientation",
+        "_ref_x": "sexual orientation n.e.c",
+        "_ref_measure": "value",
+        "_filters": {
+          "self_rated_mental_health": "mood disorder",
+          "sexual_orientation": "sexual orientation n.e.c",
+          "measure": "percent"
+        },
+        "answer": 31.1,
+        "question": "Find the value value where self_rated_mental_health is 'mood disorder' and sexual_orientation is 'sexual orientation n.e.c' and measure is 'percent'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "self_rated_mental_health",
+        "_ref_x": "positive",
+        "_ref_measure": "value",
+        "answer": 1049.3,
+        "question": "What is the total value across all records where self_rated_mental_health is 'positive'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "sexual_orientation",
+        "_ref_x": "bisexual",
+        "_ref_measure": "value",
+        "answer": 824.9,
+        "question": "What is the total value across all records where sexual_orientation is 'bisexual'?"
+      }
+    ]
+  },
+  {
+    "table_id": "1059",
+    "raw_file": "raw/1059.xlsx",
+    "tidy_file": "tidy/1059_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "type_of_behaviour",
+        "_ref_x": "indecent exposure",
+        "_ref_measure": "value",
+        "_filters": {
+          "type_of_behaviour": "indecent exposure",
+          "gender": "cisgender",
+          "measure": "percent"
+        },
+        "answer": 3.8,
+        "question": "Find the value value where type_of_behaviour is 'indecent exposure' and gender is 'cisgender' and measure is 'percent'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "type_of_behaviour",
+        "_ref_x": "changed username or blocked others because of harassment",
+        "_ref_measure": "value",
+        "_filters": {
+          "type_of_behaviour": "changed username or blocked others because of harassment",
+          "gender": "cisgender",
+          "measure": "percent"
+        },
+        "answer": 13.5,
+        "question": "Find the value value where type_of_behaviour is 'changed username or blocked others because of harassment' and gender is 'cisgender' and measure is 'percent'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "type_of_behaviour",
+        "_ref_x": "shut down or deleted an account because of harassment",
+        "_ref_measure": "value",
+        "answer": 10.3,
+        "question": "What is the total value across all records where type_of_behaviour is 'shut down or deleted an account because of harassment'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "type_of_behaviour",
+        "_ref_x": "threatening or aggressive emails or messages directed at you personally",
+        "_ref_measure": "value",
+        "answer": 118.1,
+        "question": "What is the total value across all records where type_of_behaviour is 'threatening or aggressive emails or messages directed at you personally'?"
+      }
+    ]
+  },
+  {
+    "table_id": "1061",
+    "raw_file": "raw/1061.xlsx",
+    "tidy_file": "tidy/1061_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "gender_group",
+        "_ref_x": "transgender",
+        "_ref_measure": "value",
+        "_filters": {
+          "self_rated_mental_health": "positive",
+          "gender_group": "transgender",
+          "statistic_type": "percent"
+        },
+        "answer": 34.1,
+        "question": "Find the value value where self_rated_mental_health is 'positive' and gender_group is 'transgender' and statistic_type is 'percent'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "gender_group",
+        "_ref_x": "transgender",
+        "_ref_measure": "value",
+        "_filters": {
+          "self_rated_mental_health": "mood disorder",
+          "gender_group": "transgender",
+          "statistic_type": "percent"
+        },
+        "answer": 39.9,
+        "question": "Find the value value where self_rated_mental_health is 'mood disorder' and gender_group is 'transgender' and statistic_type is 'percent'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "self_rated_mental_health",
+        "_ref_x": "negative",
+        "_ref_measure": "value",
+        "answer": 226.70000000000002,
+        "question": "What is the total value across all records where self_rated_mental_health is 'negative'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "statistic_type",
+        "_ref_x": "to",
+        "_ref_measure": "value",
+        "answer": 577.1,
+        "question": "What is the total value across all records where statistic_type is 'to'?"
+      }
+    ]
+  },
+  {
+    "table_id": "1065",
+    "raw_file": "raw/1065.xlsx",
+    "tidy_file": "tidy/1065_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "type_of_reason",
+        "_ref_x": "financial abuse",
+        "_ref_measure": "region",
+        "_filters": {
+          "type_of_reason": "financial abuse",
+          "section": "abuse:",
+          "frequency": "23.0"
+        },
+        "answer": 85.0,
+        "question": "Find the region value where type_of_reason is 'financial abuse' and section is 'abuse:' and frequency is '23.0'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "type_of_reason",
+        "_ref_x": "physical abuse",
+        "_ref_measure": "frequency",
+        "_filters": {
+          "type_of_reason": "physical abuse",
+          "section": "protecting children from:",
+          "region": "77"
+        },
+        "answer": 11.0,
+        "question": "Find the frequency value where type_of_reason is 'physical abuse' and section is 'protecting children from:' and region is '77'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "type_of_reason",
+        "_ref_x": "other abuse",
+        "_ref_measure": "frequency",
+        "answer": 611.0,
+        "question": "What is the total frequency across all records where type_of_reason is 'other abuse'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "region",
+        "_ref_x": "89",
+        "_ref_measure": "frequency",
+        "answer": 906.0,
+        "question": "What is the total frequency across all records where region is '89'?"
+      }
+    ]
+  },
+  {
+    "table_id": "1072",
+    "raw_file": "raw/1072.xlsx",
+    "tidy_file": "tidy/1072_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "source_of_assistance",
+        "_ref_x": "family in same household",
+        "_ref_measure": "value",
+        "_filters": {
+          "source_of_assistance": "family in same household",
+          "user_type": "wheeled mobility device users",
+          "measure": "95% confidence interval to"
+        },
+        "answer": 67.3,
+        "question": "Find the value value where source_of_assistance is 'family in same household' and user_type is 'wheeled mobility device users' and measure is '95% confidence interval to'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "source_of_assistance",
+        "_ref_x": "paid organizations/individuals",
+        "_ref_measure": "value",
+        "_filters": {
+          "source_of_assistance": "paid organizations/individuals",
+          "user_type": "non-users of wheeled mobility device",
+          "measure": "95% confidence interval to"
+        },
+        "answer": 20.7,
+        "question": "Find the value value where source_of_assistance is 'paid organizations/individuals' and user_type is 'non-users of wheeled mobility device' and measure is '95% confidence interval to'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "source_of_assistance",
+        "_ref_x": "paid organizations/individuals",
+        "_ref_measure": "value",
+        "answer": 142.0,
+        "question": "What is the total value across all records where source_of_assistance is 'paid organizations/individuals'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "source_of_assistance",
+        "_ref_x": "unpaid organizations/individuals",
+        "_ref_measure": "value",
+        "answer": 139.3,
+        "question": "What is the total value across all records where source_of_assistance is 'unpaid organizations/individuals'?"
+      }
+    ]
+  },
+  {
+    "table_id": "1090",
+    "raw_file": "raw/1090.xlsx",
+    "tidy_file": "tidy/1090_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "country",
+        "_ref_x": "united states",
+        "_ref_measure": "year",
+        "_filters": {
+          "country": "united states",
+          "age_group": "aged 25 to 44",
+          "education_level": "all",
+          "percent": "77.0"
+        },
+        "answer": 1997.0,
+        "question": "Find the year value where country is 'united states' and age_group is 'aged 25 to 44' and education_level is 'all' and percent is '77.0'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "country",
+        "_ref_x": "canada",
+        "_ref_measure": "percent",
+        "_filters": {
+          "country": "canada",
+          "age_group": "aged 25 to 44",
+          "year": "2000",
+          "education_level": "college, trade or other postsecondary"
+        },
+        "answer": 82.5,
+        "question": "Find the percent value where country is 'canada' and age_group is 'aged 25 to 44' and year is '2000' and education_level is 'college, trade or other postsecondary'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "age_group",
+        "_ref_x": "aged 25 to 54",
+        "_ref_measure": "year",
+        "answer": 64152.0,
+        "question": "What is the total year across all records where age_group is 'aged 25 to 54'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "education_level",
+        "_ref_x": "university degree",
+        "_ref_measure": "year",
+        "answer": 48114.0,
+        "question": "What is the total year across all records where education_level is 'university degree'?"
+      }
+    ]
+  },
+  {
+    "table_id": "1110",
+    "raw_file": "raw/1110.xlsx",
+    "tidy_file": "tidy/1110_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "province_territory",
+        "_ref_x": "nova scotia",
+        "_ref_measure": "value",
+        "_filters": {
+          "province_territory": "nova scotia",
+          "measurement_type": "average"
+        },
+        "answer": -17.9,
+        "question": "Find the value value where province_territory is 'nova scotia' and measurement_type is 'average'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "province_territory",
+        "_ref_x": "manitoba",
+        "_ref_measure": "value",
+        "_filters": {
+          "province_territory": "manitoba",
+          "measurement_type": "standard deviation"
+        },
+        "answer": 4.0,
+        "question": "Find the value value where province_territory is 'manitoba' and measurement_type is 'standard deviation'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "province_territory",
+        "_ref_x": "northwest territories",
+        "_ref_measure": "value",
+        "answer": -4.5,
+        "question": "What is the total value across all records where province_territory is 'northwest territories'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "province_territory",
+        "_ref_x": "nova scotia",
+        "_ref_measure": "value",
+        "answer": 10.3,
+        "question": "What is the total value across all records where province_territory is 'nova scotia'?"
+      }
+    ]
+  },
+  {
+    "table_id": "1117",
+    "raw_file": "raw/1117.xlsx",
+    "tidy_file": "tidy/1117_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "region",
+        "_ref_x": "canada",
+        "_ref_measure": "value",
+        "_filters": {
+          "region": "canada",
+          "age_group": "70 years and older",
+          "cohort_type": "linked cctlp tumour cohort",
+          "metric": "percent"
+        },
+        "answer": 11.1,
+        "question": "Find the value value where region is 'canada' and age_group is '70 years and older' and cohort_type is 'linked cctlp tumour cohort' and metric is 'percent'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "region",
+        "_ref_x": "alberta",
+        "_ref_measure": "value",
+        "_filters": {
+          "region": "alberta",
+          "age_group": "70 years and older",
+          "cohort_type": "linked cctlp tumour cohort",
+          "metric": "percent"
+        },
+        "answer": 14.2,
+        "question": "Find the value value where region is 'alberta' and age_group is '70 years and older' and cohort_type is 'linked cctlp tumour cohort' and metric is 'percent'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "region",
+        "_ref_x": "nunavut",
+        "_ref_measure": "value",
+        "answer": 0.0,
+        "question": "What is the total value across all records where region is 'nunavut'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "metric",
+        "_ref_x": "percent",
+        "_ref_measure": "value",
+        "answer": 1123.9,
+        "question": "What is the total value across all records where metric is 'percent'?"
+      }
+    ]
+  },
+  {
+    "table_id": "1118",
+    "raw_file": "raw/1118.xlsx",
+    "tidy_file": "tidy/1118_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "linked_cctlp_tumour_cohort",
+        "_ref_x": "prince edward island",
+        "_ref_measure": "value",
+        "_filters": {
+          "linked_cctlp_tumour_cohort": "prince edward island",
+          "measure": "linked cctlp tumour cohort"
+        },
+        "answer": 360.0,
+        "question": "Find the value value where linked_cctlp_tumour_cohort is 'prince edward island' and measure is 'linked cctlp tumour cohort'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "linked_cctlp_tumour_cohort",
+        "_ref_x": "nova scotia",
+        "_ref_measure": "value",
+        "_filters": {
+          "linked_cctlp_tumour_cohort": "nova scotia",
+          "measure": "Unnamed: 3"
+        },
+        "answer": 20.0,
+        "question": "Find the value value where linked_cctlp_tumour_cohort is 'nova scotia' and measure is 'Unnamed: 3'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "linked_cctlp_tumour_cohort",
+        "_ref_x": "newfoundland and labrador",
+        "_ref_measure": "value",
+        "answer": 1455.6,
+        "question": "What is the total value across all records where linked_cctlp_tumour_cohort is 'newfoundland and labrador'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "linked_cctlp_tumour_cohort",
+        "_ref_x": "nova scotia",
+        "_ref_measure": "value",
+        "answer": 3235.0,
+        "question": "What is the total value across all records where linked_cctlp_tumour_cohort is 'nova scotia'?"
+      }
+    ]
+  },
+  {
+    "table_id": "1123",
+    "raw_file": "raw/1123.xlsx",
+    "tidy_file": "tidy/1123_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "region",
+        "_ref_x": "newfoundland and labrador",
+        "_ref_measure": "value",
+        "_filters": {
+          "region": "newfoundland and labrador",
+          "cohort": "tumours with one or more surgical intervention",
+          "metric": "number",
+          "age_range": "50 to 69 years"
+        },
+        "answer": 145.0,
+        "question": "Find the value value where region is 'newfoundland and labrador' and cohort is 'tumours with one or more surgical intervention' and metric is 'number' and age_range is '50 to 69 years'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "region",
+        "_ref_x": "saskatchewan",
+        "_ref_measure": "value",
+        "_filters": {
+          "region": "saskatchewan",
+          "cohort": "tumours with one or more surgical intervention",
+          "metric": "percent",
+          "age_range": "70 years and older"
+        },
+        "answer": 80.0,
+        "question": "Find the value value where region is 'saskatchewan' and cohort is 'tumours with one or more surgical intervention' and metric is 'percent' and age_range is '70 years and older'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "region",
+        "_ref_x": "ontario",
+        "_ref_measure": "value",
+        "answer": 1817.0,
+        "question": "What is the total value across all records where region is 'ontario'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "age_range",
+        "_ref_x": "70 years and older",
+        "_ref_measure": "value",
+        "answer": 3397.0,
+        "question": "What is the total value across all records where age_range is '70 years and older'?"
+      }
+    ]
+  },
+  {
+    "table_id": "1153",
+    "raw_file": "raw/1153.xlsx",
+    "tidy_file": "tidy/1153_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "demographic_category",
+        "_ref_x": "15 to 24 years",
+        "_ref_measure": "year",
+        "_filters": {
+          "demographic_category": "15 to 24 years",
+          "activity_type": "people who saw their friends a few times or more a week",
+          "percentage": "73.0"
+        },
+        "answer": 2013.0,
+        "question": "Find the year value where demographic_category is '15 to 24 years' and activity_type is 'people who saw their friends a few times or more a week' and percentage is '73.0'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "demographic_category",
+        "_ref_x": "prince edward island",
+        "_ref_measure": "percentage",
+        "_filters": {
+          "demographic_category": "prince edward island",
+          "year": "2008",
+          "activity_type": "people who saw their friends a few times or more a week"
+        },
+        "answer": 60.0,
+        "question": "Find the percentage value where demographic_category is 'prince edward island' and year is '2008' and activity_type is 'people who saw their friends a few times or more a week'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "demographic_category",
+        "_ref_x": "manitoba",
+        "_ref_measure": "year",
+        "answer": 12048.0,
+        "question": "What is the total year across all records where demographic_category is 'manitoba'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "activity_type",
+        "_ref_x": "people who saw their friends a few times or more a week",
+        "_ref_measure": "year",
+        "answer": 120480.0,
+        "question": "What is the total year across all records where activity_type is 'people who saw their friends a few times or more a week'?"
+      }
+    ]
+  },
+  {
+    "table_id": "1188",
+    "raw_file": "raw/1188.xlsx",
+    "tidy_file": "tidy/1188_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "flow",
+        "_ref_x": "actual employer social contributions",
+        "_ref_measure": "amount",
+        "_filters": {
+          "flow": "actual employer social contributions",
+          "sector": "non-financial corporations sector"
+        },
+        "answer": -25.0,
+        "question": "Find the amount value where flow is 'actual employer social contributions' and sector is 'non-financial corporations sector'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "flow",
+        "_ref_x": "change in pension entitlements",
+        "_ref_measure": "amount",
+        "_filters": {
+          "flow": "change in pension entitlements",
+          "sector": "household sector"
+        },
+        "answer": 55.0,
+        "question": "Find the amount value where flow is 'change in pension entitlements' and sector is 'household sector'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "flow",
+        "_ref_x": "imputed employer social contributions",
+        "_ref_measure": "amount",
+        "answer": 0.0,
+        "question": "What is the total amount across all records where flow is 'imputed employer social contributions'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "sector",
+        "_ref_x": "non-financial corporations sector",
+        "_ref_measure": "amount",
+        "answer": -50.0,
+        "question": "What is the total amount across all records where sector is 'non-financial corporations sector'?"
+      }
+    ]
+  },
+  {
+    "table_id": "1191",
+    "raw_file": "raw/1191.xlsx",
+    "tidy_file": "tidy/1191_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "province_or_territory",
+        "_ref_x": "new brunswick",
+        "_ref_measure": "value",
+        "_filters": {
+          "province_or_territory": "new brunswick",
+          "estimate_type": "revised estimate"
+        },
+        "answer": 2.03,
+        "question": "Find the value value where province_or_territory is 'new brunswick' and estimate_type is 'revised estimate'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "province_or_territory",
+        "_ref_x": "quebec",
+        "_ref_measure": "value",
+        "_filters": {
+          "province_or_territory": "quebec",
+          "estimate_type": "average absolute revision"
+        },
+        "answer": 0.19,
+        "question": "Find the value value where province_or_territory is 'quebec' and estimate_type is 'average absolute revision'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "province_or_territory",
+        "_ref_x": "nova scotia",
+        "_ref_measure": "value",
+        "answer": 4.15,
+        "question": "What is the total value across all records where province_or_territory is 'nova scotia'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "estimate_type",
+        "_ref_x": "revised estimate",
+        "_ref_measure": "value",
+        "answer": 34.629999999999995,
+        "question": "What is the total value across all records where estimate_type is 'revised estimate'?"
+      }
+    ]
+  },
+  {
+    "table_id": "12",
+    "raw_file": "raw/12.xlsx",
+    "tidy_file": "tidy/12_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "aboriginal_identity_categories",
+        "_ref_x": "aboriginal identities not included elsewhere",
+        "_ref_measure": "number",
+        "_filters": {
+          "aboriginal_identity_categories": "aboriginal identities not included elsewhere",
+          "population_type": "number",
+          "percent": "nan"
+        },
+        "answer": 255.0,
+        "question": "Find the number value where aboriginal_identity_categories is 'aboriginal identities not included elsewhere' and population_type is 'number' and percent is 'nan'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "aboriginal_identity_categories",
+        "_ref_x": "inuit",
+        "_ref_measure": "percent",
+        "_filters": {
+          "aboriginal_identity_categories": "inuit",
+          "population_type": "percent",
+          "number": "nan"
+        },
+        "answer": 0.7,
+        "question": "Find the percent value where aboriginal_identity_categories is 'inuit' and population_type is 'percent' and number is 'nan'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "population_type",
+        "_ref_x": "number",
+        "_ref_measure": "number",
+        "answer": 15765.0,
+        "question": "What is the total number across all records where population_type is 'number'?"
+      }
+    ]
+  },
+  {
+    "table_id": "1214",
+    "raw_file": "raw/1214.xlsx",
+    "tidy_file": "tidy/1214_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "service_use_and_perceived_health_care_needs",
+        "_ref_x": "formal consultation",
+        "_ref_measure": "percentage",
+        "_filters": {
+          "service_use_and_perceived_health_care_needs": "formal consultation",
+          "disorder_category": "mood/anxiety disorder only",
+          "section": "in past 12 months:",
+          "confidence_interval_from": "54.9",
+          "confidence_interval_to": "63.4"
+        },
+        "answer": 59.2,
+        "question": "Find the percentage value where service_use_and_perceived_health_care_needs is 'formal consultation' and disorder_category is 'mood/anxiety disorder only' and section is 'in past 12 months:' and confidence_interval_from is '54.9' and confidence_interval_to is '63.4'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "service_use_and_perceived_health_care_needs",
+        "_ref_x": "formal consultation",
+        "_ref_measure": "confidence_interval_to",
+        "_filters": {
+          "service_use_and_perceived_health_care_needs": "formal consultation",
+          "disorder_category": "substance use disorder only",
+          "section": "in past 12 months:",
+          "percentage": "16.2",
+          "confidence_interval_from": "12.8"
+        },
+        "answer": 20.2,
+        "question": "Find the confidence_interval_to value where service_use_and_perceived_health_care_needs is 'formal consultation' and disorder_category is 'substance use disorder only' and section is 'in past 12 months:' and percentage is '16.2' and confidence_interval_from is '12.8'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "service_use_and_perceived_health_care_needs",
+        "_ref_x": "none",
+        "_ref_measure": "confidence_interval_to",
+        "answer": 125.60000000000001,
+        "question": "What is the total confidence_interval_to across all records where service_use_and_perceived_health_care_needs is 'none'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "section",
+        "_ref_x": "perceived health care needs",
+        "_ref_measure": "confidence_interval_to",
+        "answer": 341.6,
+        "question": "What is the total confidence_interval_to across all records where section is 'perceived health care needs'?"
+      }
+    ]
+  },
+  {
+    "table_id": "1241",
+    "raw_file": "raw/1241.xlsx",
+    "tidy_file": "tidy/1241_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "crime_type",
+        "_ref_x": "total",
+        "_ref_measure": "year",
+        "_filters": {
+          "crime_type": "total",
+          "metric": "index",
+          "value": "90.6"
+        },
+        "answer": 2008.0,
+        "question": "Find the year value where crime_type is 'total' and metric is 'index' and value is '90.6'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "crime_type",
+        "_ref_x": "non-violent",
+        "_ref_measure": "value",
+        "_filters": {
+          "year": "2012",
+          "crime_type": "non-violent",
+          "metric": "index"
+        },
+        "answer": 72.9,
+        "question": "Find the value value where year is '2012' and crime_type is 'non-violent' and metric is 'index'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "crime_type",
+        "_ref_x": "non-violent",
+        "_ref_measure": "value",
+        "answer": 828.9,
+        "question": "What is the total value across all records where crime_type is 'non-violent'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "crime_type",
+        "_ref_x": "total",
+        "_ref_measure": "value",
+        "answer": 851.2,
+        "question": "What is the total value across all records where crime_type is 'total'?"
+      }
+    ]
+  },
+  {
+    "table_id": "1243",
+    "raw_file": "raw/1243.xlsx",
+    "tidy_file": "tidy/1243_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "province_and_territory",
+        "_ref_x": "quebec",
+        "_ref_measure": "crime_severity_index",
+        "_filters": {
+          "province_and_territory": "quebec",
+          "crime_type": "violent",
+          "percent_change_2015_to_2016": "-2"
+        },
+        "answer": 64.7,
+        "question": "Find the crime_severity_index value where province_and_territory is 'quebec' and crime_type is 'violent' and percent_change_2015_to_2016 is '-2'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "province_and_territory",
+        "_ref_x": "prince edward island",
+        "_ref_measure": "percent_change_2015_to_2016",
+        "_filters": {
+          "province_and_territory": "prince edward island",
+          "crime_type": "non-violent",
+          "crime_severity_index": "53.3"
+        },
+        "answer": 1.0,
+        "question": "Find the percent_change_2015_to_2016 value where province_and_territory is 'prince edward island' and crime_type is 'non-violent' and crime_severity_index is '53.3'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "province_and_territory",
+        "_ref_x": "nova scotia",
+        "_ref_measure": "crime_severity_index",
+        "answer": 126.8,
+        "question": "What is the total crime_severity_index across all records where province_and_territory is 'nova scotia'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "crime_type",
+        "_ref_x": "violent",
+        "_ref_measure": "crime_severity_index",
+        "answer": 1800.0,
+        "question": "What is the total crime_severity_index across all records where crime_type is 'violent'?"
+      }
+    ]
+  },
+  {
+    "table_id": "1250",
+    "raw_file": "raw/1250.xlsx",
+    "tidy_file": "tidy/1250_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "census_metropolitan_area",
+        "_ref_x": "moncton",
+        "_ref_measure": "number",
+        "_filters": {
+          "census_metropolitan_area": "moncton",
+          "crime_type": "motor vehicle theft"
+        },
+        "answer": 147.0,
+        "question": "Find the number value where census_metropolitan_area is 'moncton' and crime_type is 'motor vehicle theft'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "census_metropolitan_area",
+        "_ref_x": "regina",
+        "_ref_measure": "number",
+        "_filters": {
+          "census_metropolitan_area": "regina",
+          "crime_type": "robbery"
+        },
+        "answer": 118.0,
+        "question": "Find the number value where census_metropolitan_area is 'regina' and crime_type is 'robbery'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "census_metropolitan_area",
+        "_ref_x": "ottawa",
+        "_ref_measure": "number",
+        "answer": 491.0,
+        "question": "What is the total number across all records where census_metropolitan_area is 'ottawa'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "crime_type",
+        "_ref_x": "sexual assault",
+        "_ref_measure": "number",
+        "answer": 1944.0,
+        "question": "What is the total number across all records where crime_type is 'sexual assault'?"
+      }
+    ]
+  },
+  {
+    "table_id": "1255",
+    "raw_file": "raw/1255.xlsx",
+    "tidy_file": "tidy/1255_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "province_and_territory",
+        "_ref_x": "manitoba",
+        "_ref_measure": "index_value",
+        "_filters": {
+          "province_and_territory": "manitoba",
+          "crime_type": "youth violent crime severity index",
+          "year_range": "2015 to 2016",
+          "percent_change": "0.0"
+        },
+        "answer": 127.5,
+        "question": "Find the index_value value where province_and_territory is 'manitoba' and crime_type is 'youth violent crime severity index' and year_range is '2015 to 2016' and percent_change is '0.0'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "province_and_territory",
+        "_ref_x": "nunavut",
+        "_ref_measure": "percent_change",
+        "_filters": {
+          "province_and_territory": "nunavut",
+          "crime_type": "youth violent crime severity index",
+          "year_range": "2015 to 2016",
+          "index_value": "191.0"
+        },
+        "answer": -17.0,
+        "question": "Find the percent_change value where province_and_territory is 'nunavut' and crime_type is 'youth violent crime severity index' and year_range is '2015 to 2016' and index_value is '191.0'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "province_and_territory",
+        "_ref_x": "nunavut",
+        "_ref_measure": "index_value",
+        "answer": 856.8,
+        "question": "What is the total index_value across all records where province_and_territory is 'nunavut'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "year_range",
+        "_ref_x": "2015 to 2016",
+        "_ref_measure": "index_value",
+        "answer": 4323.9,
+        "question": "What is the total index_value across all records where year_range is '2015 to 2016'?"
+      }
+    ]
+  },
+  {
+    "table_id": "1261",
+    "raw_file": "raw/1261.xlsx",
+    "tidy_file": "tidy/1261_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "province_or_territory",
+        "_ref_x": "newfoundland and labrador",
+        "_ref_measure": "year",
+        "_filters": {
+          "province_or_territory": "newfoundland and labrador",
+          "value": "11531"
+        },
+        "answer": 2008.0,
+        "question": "Find the year value where province_or_territory is 'newfoundland and labrador' and value is '11531'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "province_or_territory",
+        "_ref_x": "new brunswick",
+        "_ref_measure": "value",
+        "_filters": {
+          "province_or_territory": "new brunswick",
+          "year": "2010"
+        },
+        "answer": 11120.0,
+        "question": "Find the value value where province_or_territory is 'new brunswick' and year is '2010'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "province_or_territory",
+        "_ref_x": "quebec",
+        "_ref_measure": "year",
+        "answer": 12057.0,
+        "question": "What is the total year across all records where province_or_territory is 'quebec'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "province_or_territory",
+        "_ref_x": "saskatchewan",
+        "_ref_measure": "year",
+        "answer": 12057.0,
+        "question": "What is the total year across all records where province_or_territory is 'saskatchewan'?"
+      }
+    ]
+  },
+  {
+    "table_id": "1266",
+    "raw_file": "raw/1266.xlsx",
+    "tidy_file": "tidy/1266_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "section_header",
+        "_ref_x": "lowest rates",
+        "_ref_measure": "low_income_rate",
+        "_filters": {
+          "section_header": "lowest rates",
+          "category": "age 50 plus",
+          "percent_clients": "47.0",
+          "percent_of_cohort": "18.0"
+        },
+        "answer": 2.0,
+        "question": "Find the low_income_rate value where section_header is 'lowest rates' and category is 'age 50 plus' and percent_clients is '47.0' and percent_of_cohort is '18.0'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "section_header",
+        "_ref_x": "lowest rates",
+        "_ref_measure": "percent_of_cohort",
+        "_filters": {
+          "section_header": "lowest rates",
+          "category": "age 50 plus",
+          "low_income_rate": "2.0",
+          "percent_clients": "47.0"
+        },
+        "answer": 18.0,
+        "question": "Find the percent_of_cohort value where section_header is 'lowest rates' and category is 'age 50 plus' and low_income_rate is '2.0' and percent_clients is '47.0'."
+      }
+    ]
+  },
+  {
+    "table_id": "1277",
+    "raw_file": "raw/1277.xlsx",
+    "tidy_file": "tidy/1277_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "type_of_need",
+        "_ref_x": "any",
+        "_ref_measure": "percentage",
+        "_filters": {
+          "type_of_need": "any",
+          "need_status": "partially met"
+        },
+        "answer": 22.4,
+        "question": "Find the percentage value where type_of_need is 'any' and need_status is 'partially met'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "type_of_need",
+        "_ref_x": "counselling, therapy or help for problems with personal relationships",
+        "_ref_measure": "percentage",
+        "_filters": {
+          "type_of_need": "counselling, therapy or help for problems with personal relationships",
+          "need_status": "partially met"
+        },
+        "answer": 15.9,
+        "question": "Find the percentage value where type_of_need is 'counselling, therapy or help for problems with personal relationships' and need_status is 'partially met'."
+      }
+    ]
+  },
+  {
+    "table_id": "1289",
+    "raw_file": "raw/1289.xlsx",
+    "tidy_file": "tidy/1289_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "caracteristics",
+        "_ref_x": "35 to 44",
+        "_ref_measure": "year",
+        "_filters": {
+          "caracteristics": "35 to 44",
+          "section": "age group",
+          "data_type": "percent",
+          "value": "54.0"
+        },
+        "answer": 2010.0,
+        "question": "Find the year value where caracteristics is '35 to 44' and section is 'age group' and data_type is 'percent' and value is '54.0'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "caracteristics",
+        "_ref_x": "post-secondary diploma or certificate",
+        "_ref_measure": "value",
+        "_filters": {
+          "caracteristics": "post-secondary diploma or certificate",
+          "section": "level of education",
+          "year": "2004",
+          "data_type": "percent"
+        },
+        "answer": 46.0,
+        "question": "Find the value value where caracteristics is 'post-secondary diploma or certificate' and section is 'level of education' and year is '2004' and data_type is 'percent'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "caracteristics",
+        "_ref_x": "45 to 54",
+        "_ref_measure": "value",
+        "answer": 848.0,
+        "question": "What is the total value across all records where caracteristics is '45 to 54'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "data_type",
+        "_ref_x": "percent",
+        "_ref_measure": "value",
+        "answer": 5439.0,
+        "question": "What is the total value across all records where data_type is 'percent'?"
+      }
+    ]
+  },
+  {
+    "table_id": "1291",
+    "raw_file": "raw/1291.xlsx",
+    "tidy_file": "tidy/1291_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "types_of_activities",
+        "_ref_x": "collecting, serving or delivering food or other goods",
+        "_ref_measure": "year",
+        "_filters": {
+          "types_of_activities": "collecting, serving or delivering food or other goods",
+          "percentage_of_volunteers": "28.0"
+        },
+        "answer": 2010.0,
+        "question": "Find the year value where types_of_activities is 'collecting, serving or delivering food or other goods' and percentage_of_volunteers is '28.0'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "types_of_activities",
+        "_ref_x": "driving",
+        "_ref_measure": "percentage_of_volunteers",
+        "_filters": {
+          "types_of_activities": "driving",
+          "year": "2007"
+        },
+        "answer": 20.0,
+        "question": "Find the percentage_of_volunteers value where types_of_activities is 'driving' and year is '2007'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "types_of_activities",
+        "_ref_x": "first-aid, fire-fighting, or search and rescue",
+        "_ref_measure": "year",
+        "answer": 8034.0,
+        "question": "What is the total year across all records where types_of_activities is 'first-aid, fire-fighting, or search and rescue'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "types_of_activities",
+        "_ref_x": "teaching or mentoring",
+        "_ref_measure": "year",
+        "answer": 8034.0,
+        "question": "What is the total year across all records where types_of_activities is 'teaching or mentoring'?"
+      }
+    ]
+  },
+  {
+    "table_id": "1292",
+    "raw_file": "raw/1292.xlsx",
+    "tidy_file": "tidy/1292_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "types_of_activities",
+        "_ref_x": "sitting on a committee or board",
+        "_ref_measure": "count",
+        "_filters": {
+          "types_of_activities": "sitting on a committee or board",
+          "gender": "men"
+        },
+        "answer": 34.0,
+        "question": "Find the count value where types_of_activities is 'sitting on a committee or board' and gender is 'men'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "types_of_activities",
+        "_ref_x": "coaching, referring or officiating",
+        "_ref_measure": "count",
+        "_filters": {
+          "types_of_activities": "coaching, referring or officiating",
+          "gender": "women"
+        },
+        "answer": 11.0,
+        "question": "Find the count value where types_of_activities is 'coaching, referring or officiating' and gender is 'women'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "types_of_activities",
+        "_ref_x": "fundraising",
+        "_ref_measure": "count",
+        "answer": 89.0,
+        "question": "What is the total count across all records where types_of_activities is 'fundraising'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "gender",
+        "_ref_x": "women",
+        "_ref_measure": "count",
+        "answer": 338.0,
+        "question": "What is the total count across all records where gender is 'women'?"
+      }
+    ]
+  },
+  {
+    "table_id": "1293",
+    "raw_file": "raw/1293.xlsx",
+    "tidy_file": "tidy/1293_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "type_of_formal_employer_support",
+        "_ref_x": "approval to change work hours or reduce work activities",
+        "_ref_measure": "year",
+        "_filters": {
+          "type_of_formal_employer_support": "approval to change work hours or reduce work activities",
+          "percentage": "34.0"
+        },
+        "answer": 2013.0,
+        "question": "Find the year value where type_of_formal_employer_support is 'approval to change work hours or reduce work activities' and percentage is '34.0'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "type_of_formal_employer_support",
+        "_ref_x": "paid time off or time to spend volunteering",
+        "_ref_measure": "percentage",
+        "_filters": {
+          "type_of_formal_employer_support": "paid time off or time to spend volunteering",
+          "year": "2010"
+        },
+        "answer": 20.0,
+        "question": "Find the percentage value where type_of_formal_employer_support is 'paid time off or time to spend volunteering' and year is '2010'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "type_of_formal_employer_support",
+        "_ref_x": "donated prizes, gift certificates",
+        "_ref_measure": "year",
+        "answer": 4023.0,
+        "question": "What is the total year across all records where type_of_formal_employer_support is 'donated prizes, gift certificates'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "type_of_formal_employer_support",
+        "_ref_x": "donated t-shirts or company goods",
+        "_ref_measure": "year",
+        "answer": 4023.0,
+        "question": "What is the total year across all records where type_of_formal_employer_support is 'donated t-shirts or company goods'?"
+      }
+    ]
+  },
+  {
+    "table_id": "1294",
+    "raw_file": "raw/1294.xlsx",
+    "tidy_file": "tidy/1294_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "reason_for_not_volunteering",
+        "_ref_x": "prefer to give money instead",
+        "_ref_measure": "year",
+        "_filters": {
+          "reason_for_not_volunteering": "prefer to give money instead",
+          "percentage": "54"
+        },
+        "answer": 2013.0,
+        "question": "Find the year value where reason_for_not_volunteering is 'prefer to give money instead' and percentage is '54'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "reason_for_not_volunteering",
+        "_ref_x": "no interest",
+        "_ref_measure": "percentage",
+        "_filters": {
+          "reason_for_not_volunteering": "no interest",
+          "year": "2007"
+        },
+        "answer": 26.0,
+        "question": "Find the percentage value where reason_for_not_volunteering is 'no interest' and year is '2007'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "reason_for_not_volunteering",
+        "_ref_x": "financial costs",
+        "_ref_measure": "year",
+        "answer": 8034.0,
+        "question": "What is the total year across all records where reason_for_not_volunteering is 'financial costs'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "reason_for_not_volunteering",
+        "_ref_x": "gave enough time already",
+        "_ref_measure": "year",
+        "answer": 8034.0,
+        "question": "What is the total year across all records where reason_for_not_volunteering is 'gave enough time already'?"
+      }
+    ]
+  },
+  {
+    "table_id": "1295",
+    "raw_file": "raw/1295.xlsx",
+    "tidy_file": "tidy/1295_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "activity_name",
+        "_ref_x": "paperwork",
+        "_ref_measure": "year",
+        "_filters": {
+          "activity_name": "paperwork",
+          "time_spent": "27"
+        },
+        "answer": 2013.0,
+        "question": "Find the year value where activity_name is 'paperwork' and time_spent is '27'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "activity_name",
+        "_ref_x": "paperwork",
+        "_ref_measure": "time_spent",
+        "_filters": {
+          "activity_name": "paperwork",
+          "year": "2007"
+        },
+        "answer": 29.0,
+        "question": "Find the time_spent value where activity_name is 'paperwork' and year is '2007'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "activity_name",
+        "_ref_x": "shopping, driving to store or appointment",
+        "_ref_measure": "year",
+        "answer": 8034.0,
+        "question": "What is the total year across all records where activity_name is 'shopping, driving to store or appointment'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "activity_name",
+        "_ref_x": "teaching, coaching or tutoring",
+        "_ref_measure": "year",
+        "answer": 8034.0,
+        "question": "What is the total year across all records where activity_name is 'teaching, coaching or tutoring'?"
+      }
+    ]
+  },
+  {
+    "table_id": "1297",
+    "raw_file": "raw/1297.xlsx",
+    "tidy_file": "tidy/1297_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "entry_type",
+        "_ref_x": "short-lived entry",
+        "_ref_measure": "entry_rate",
+        "_filters": {
+          "entry_type": "short-lived entry",
+          "firms": "nan",
+          "entries": "nan",
+          "alu_employment_creation_rate": "0.2",
+          "ilu_employment_creation_rate": "nan",
+          "year_or_measure": "EmploymentCreationRate=ALU",
+          "value": "0.2"
+        },
+        "answer": 2.9,
+        "question": "Find the entry_rate value where entry_type is 'short-lived entry' and firms is 'nan' and entries is 'nan' and alu_employment_creation_rate is '0.2' and ilu_employment_creation_rate is 'nan' and year_or_measure is 'EmploymentCreationRate=ALU' and value is '0.2'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "entry_type",
+        "_ref_x": "short-lived entry",
+        "_ref_measure": "value",
+        "_filters": {
+          "entry_type": "short-lived entry",
+          "firms": "nan",
+          "entries": "nan",
+          "entry_rate": "2.9",
+          "alu_employment_creation_rate": "nan",
+          "ilu_employment_creation_rate": "0.4",
+          "year_or_measure": "EmploymentCreationRate=ILU"
+        },
+        "answer": 0.4,
+        "question": "Find the value value where entry_type is 'short-lived entry' and firms is 'nan' and entries is 'nan' and entry_rate is '2.9' and alu_employment_creation_rate is 'nan' and ilu_employment_creation_rate is '0.4' and year_or_measure is 'EmploymentCreationRate=ILU'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "entry_type",
+        "_ref_x": "one-year entry",
+        "_ref_measure": "value",
+        "answer": 3.8,
+        "question": "What is the total value across all records where entry_type is 'one-year entry'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "entry_type",
+        "_ref_x": "previously active excluded",
+        "_ref_measure": "value",
+        "answer": 3.4000000000000004,
+        "question": "What is the total value across all records where entry_type is 'previously active excluded'?"
+      }
+    ]
+  },
+  {
+    "table_id": "1311",
+    "raw_file": "raw/1311.xlsx",
+    "tidy_file": "tidy/1311_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "type_of_offence",
+        "_ref_x": "property offences",
+        "_ref_measure": "percent",
+        "_filters": {
+          "type_of_offence": "property offences",
+          "police_contact_or_criminal_offence": "police contacts for decedents in british columbia"
+        },
+        "answer": 31.0,
+        "question": "Find the percent value where type_of_offence is 'property offences' and police_contact_or_criminal_offence is 'police contacts for decedents in british columbia'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "type_of_offence",
+        "_ref_x": "administration of justice offences",
+        "_ref_measure": "percent",
+        "_filters": {
+          "type_of_offence": "administration of justice offences",
+          "police_contact_or_criminal_offence": "police contacts for decedents in surrey"
+        },
+        "answer": 17.0,
+        "question": "Find the percent value where type_of_offence is 'administration of justice offences' and police_contact_or_criminal_offence is 'police contacts for decedents in surrey'."
+      }
+    ]
+  },
+  {
+    "table_id": "1325",
+    "raw_file": "raw/1325.xlsx",
+    "tidy_file": "tidy/1325_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "income_range",
+        "_ref_x": "under $5,000",
+        "_ref_measure": "value",
+        "_filters": {
+          "income_range": "under $5,000",
+          "gender": "men",
+          "unit": "dollars"
+        },
+        "answer": 6.4,
+        "question": "Find the value value where income_range is 'under $5,000' and gender is 'men' and unit is 'dollars'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "income_range",
+        "_ref_x": "$60,000 to $79,999",
+        "_ref_measure": "value",
+        "_filters": {
+          "income_range": "$60,000 to $79,999",
+          "gender": "men",
+          "unit": "dollars"
+        },
+        "answer": 14.3,
+        "question": "Find the value value where income_range is '$60,000 to $79,999' and gender is 'men' and unit is 'dollars'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "income_range",
+        "_ref_x": "$5,000 to $9,999",
+        "_ref_measure": "value",
+        "answer": 14.2,
+        "question": "What is the total value across all records where income_range is '$5,000 to $9,999'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "unit",
+        "_ref_x": "dollars",
+        "_ref_measure": "value",
+        "answer": 200.0,
+        "question": "What is the total value across all records where unit is 'dollars'?"
+      }
+    ]
+  },
+  {
+    "table_id": "1331",
+    "raw_file": "raw/1331.xlsx",
+    "tidy_file": "tidy/1331_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "living_arrangements",
+        "_ref_x": "total population aged 14 and under in private households",
+        "_ref_measure": "value",
+        "_filters": {
+          "living_arrangements": "total population aged 14 and under in private households",
+          "child_category": "inuit children",
+          "measure": "percent"
+        },
+        "answer": 100.0,
+        "question": "Find the value value where living_arrangements is 'total population aged 14 and under in private households' and child_category is 'inuit children' and measure is 'percent'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "living_arrangements",
+        "_ref_x": "foster children",
+        "_ref_measure": "value",
+        "_filters": {
+          "living_arrangements": "foster children",
+          "child_category": "inuit children",
+          "measure": "thousand"
+        },
+        "answer": 0.6,
+        "question": "Find the value value where living_arrangements is 'foster children' and child_category is 'inuit children' and measure is 'thousand'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "living_arrangements",
+        "_ref_x": "stepchildren",
+        "_ref_measure": "value",
+        "answer": 403.3,
+        "question": "What is the total value across all records where living_arrangements is 'stepchildren'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "living_arrangements",
+        "_ref_x": "total population aged 14 and under in private households",
+        "_ref_measure": "value",
+        "answer": 1275.5,
+        "question": "What is the total value across all records where living_arrangements is 'total population aged 14 and under in private households'?"
+      }
+    ]
+  },
+  {
+    "table_id": "1343",
+    "raw_file": "raw/1343.xlsx",
+    "tidy_file": "tidy/1343_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "census_metropolitan_area",
+        "_ref_x": "saint john",
+        "_ref_measure": "percent_change_in_crime_severity_index",
+        "_filters": {
+          "census_metropolitan_area": "saint john",
+          "violation_type": "decrease in fraud, robbery and violent firearm offences; partially offset by increase in homicide"
+        },
+        "answer": -2.0,
+        "question": "Find the percent_change_in_crime_severity_index value where census_metropolitan_area is 'saint john' and violation_type is 'decrease in fraud, robbery and violent firearm offences; partially offset by increase in homicide'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "census_metropolitan_area",
+        "_ref_x": "saskatoon",
+        "_ref_measure": "percent_change_in_crime_severity_index",
+        "_filters": {
+          "census_metropolitan_area": "saskatoon",
+          "violation_type": "decrease in fraud, administration of justice violations, breaking and entering, and theft of $5,000 or under (non-shoplifting); offset by increase in homicide and robbery"
+        },
+        "answer": 0.0,
+        "question": "Find the percent_change_in_crime_severity_index value where census_metropolitan_area is 'saskatoon' and violation_type is 'decrease in fraud, administration of justice violations, breaking and entering, and theft of $5,000 or under (non-shoplifting); offset by increase in homicide and robbery'."
+      }
+    ]
+  },
+  {
+    "table_id": "1375",
+    "raw_file": "raw/1375.xlsx",
+    "tidy_file": "tidy/1375_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "aboriginal_identity",
+        "_ref_x": "metis",
+        "_ref_measure": "predicted_probability",
+        "_filters": {
+          "aboriginal_identity": "metis",
+          "feeding_history": "only breastfed",
+          "breastfeeding_duration": "breastfeeding duration"
+        },
+        "answer": 0.08,
+        "question": "Find the predicted_probability value where aboriginal_identity is 'metis' and feeding_history is 'only breastfed' and breastfeeding_duration is 'breastfeeding duration'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "aboriginal_identity",
+        "_ref_x": "metis",
+        "_ref_measure": "predicted_probability",
+        "_filters": {
+          "aboriginal_identity": "metis",
+          "feeding_history": "breastfed 0 to 6 months",
+          "breastfeeding_duration": "breastfeeding duration"
+        },
+        "answer": 0.12,
+        "question": "Find the predicted_probability value where aboriginal_identity is 'metis' and feeding_history is 'breastfed 0 to 6 months' and breastfeeding_duration is 'breastfeeding duration'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "feeding_history",
+        "_ref_x": "both breastfed and bottle-fed",
+        "_ref_measure": "predicted_probability",
+        "answer": 0.32,
+        "question": "What is the total predicted_probability across all records where feeding_history is 'both breastfed and bottle-fed'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "feeding_history",
+        "_ref_x": "breastfed 0 to 6 months",
+        "_ref_measure": "predicted_probability",
+        "answer": 0.32,
+        "question": "What is the total predicted_probability across all records where feeding_history is 'breastfed 0 to 6 months'?"
+      }
+    ]
+  },
+  {
+    "table_id": "1377",
+    "raw_file": "raw/1377.xlsx",
+    "tidy_file": "tidy/1377_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "demographic_group",
+        "_ref_x": "metis",
+        "_ref_measure": "total_population",
+        "_filters": {
+          "demographic_group": "metis",
+          "sex": "male",
+          "age_statistic": "nan",
+          "population_value": "3324.0",
+          "mean_age": "nan",
+          "age_range": "nan"
+        },
+        "answer": 6998.0,
+        "question": "Find the total_population value where demographic_group is 'metis' and sex is 'male' and age_statistic is 'nan' and population_value is '3324.0' and mean_age is 'nan' and age_range is 'nan'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "demographic_group",
+        "_ref_x": "metis",
+        "_ref_measure": "population_value",
+        "_filters": {
+          "demographic_group": "metis",
+          "sex": "male",
+          "age_statistic": "nan",
+          "total_population": "6998",
+          "mean_age": "nan",
+          "age_range": "nan"
+        },
+        "answer": 3324.0,
+        "question": "Find the population_value value where demographic_group is 'metis' and sex is 'male' and age_statistic is 'nan' and total_population is '6998' and mean_age is 'nan' and age_range is 'nan'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "demographic_group",
+        "_ref_x": "metis",
+        "_ref_measure": "population_value",
+        "answer": 6998.0,
+        "question": "What is the total population_value across all records where demographic_group is 'metis'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "demographic_group",
+        "_ref_x": "off-reserve first nations",
+        "_ref_measure": "population_value",
+        "answer": 7239.0,
+        "question": "What is the total population_value across all records where demographic_group is 'off-reserve first nations'?"
+      }
+    ]
+  },
+  {
+    "table_id": "1385",
+    "raw_file": "raw/1385.xlsx",
+    "tidy_file": "tidy/1385_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "category",
+        "_ref_x": "warehouses, refrigerated storage, freight terminals",
+        "_ref_measure": "value",
+        "_filters": {
+          "category": "warehouses, refrigerated storage, freight terminals",
+          "type": "ratio"
+        },
+        "answer": 0.293,
+        "question": "Find the value value where category is 'warehouses, refrigerated storage, freight terminals' and type is 'ratio'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "category",
+        "_ref_x": "buses (all types) and major replacement parts",
+        "_ref_measure": "value",
+        "_filters": {
+          "category": "buses (all types) and major replacement parts",
+          "type": "ratio"
+        },
+        "answer": 0.122,
+        "question": "Find the value value where category is 'buses (all types) and major replacement parts' and type is 'ratio'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "category",
+        "_ref_x": "motors, generators, transformers, turbines, compressors and pumps of all types",
+        "_ref_measure": "value",
+        "answer": 23.766,
+        "question": "What is the total value across all records where category is 'motors, generators, transformers, turbines, compressors and pumps of all types'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "type",
+        "_ref_x": "ratio",
+        "_ref_measure": "value",
+        "answer": 10.38,
+        "question": "What is the total value across all records where type is 'ratio'?"
+      }
+    ]
+  },
+  {
+    "table_id": "1402",
+    "raw_file": "raw/1402.xlsx",
+    "tidy_file": "tidy/1402_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "student_characteristics",
+        "_ref_x": "heterosexual",
+        "_ref_measure": "percent",
+        "_filters": {
+          "student_characteristics": "heterosexual",
+          "age_group": "heterosexual",
+          "behavior_type": "unwanted sexualized behaviours",
+          "confidence_interval_from": "30.0",
+          "confidence_interval_to": "37.0"
+        },
+        "answer": 33.0,
+        "question": "Find the percent value where student_characteristics is 'heterosexual' and age_group is 'heterosexual' and behavior_type is 'unwanted sexualized behaviours' and confidence_interval_from is '30.0' and confidence_interval_to is '37.0'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "student_characteristics",
+        "_ref_x": "non-heterosexual",
+        "_ref_measure": "confidence_interval_to",
+        "_filters": {
+          "student_characteristics": "non-heterosexual",
+          "age_group": "non-heterosexual",
+          "behavior_type": "unwanted sexualized behaviours",
+          "percent": "62.0",
+          "confidence_interval_from": "47.0"
+        },
+        "answer": 74.0,
+        "question": "Find the confidence_interval_to value where student_characteristics is 'non-heterosexual' and age_group is 'non-heterosexual' and behavior_type is 'unwanted sexualized behaviours' and percent is '62.0' and confidence_interval_from is '47.0'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "student_characteristics",
+        "_ref_x": "one or two years",
+        "_ref_measure": "confidence_interval_to",
+        "answer": 71.0,
+        "question": "What is the total confidence_interval_to across all records where student_characteristics is 'one or two years'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "behavior_type",
+        "_ref_x": "unwanted sexualized behaviours",
+        "_ref_measure": "confidence_interval_to",
+        "answer": 980.0,
+        "question": "What is the total confidence_interval_to across all records where behavior_type is 'unwanted sexualized behaviours'?"
+      }
+    ]
+  },
+  {
+    "table_id": "1404",
+    "raw_file": "raw/1404.xlsx",
+    "tidy_file": "tidy/1404_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "category_type",
+        "_ref_x": "age group",
+        "_ref_measure": "statistic",
+        "_filters": {
+          "category_type": "age group",
+          "category_value": "65 or older",
+          "gender": "male"
+        },
+        "answer": 6.8,
+        "question": "Find the statistic value where category_type is 'age group' and category_value is '65 or older' and gender is 'male'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "category_type",
+        "_ref_x": "source world region",
+        "_ref_measure": "statistic",
+        "_filters": {
+          "category_type": "source world region",
+          "category_value": "united states",
+          "gender": "female"
+        },
+        "answer": 2.6,
+        "question": "Find the statistic value where category_type is 'source world region' and category_value is 'united states' and gender is 'female'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "category_value",
+        "_ref_x": "caribbean/central and south america",
+        "_ref_measure": "statistic",
+        "answer": 21.1,
+        "question": "What is the total statistic across all records where category_value is 'caribbean/central and south america'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "category_value",
+        "_ref_x": "dependant",
+        "_ref_measure": "statistic",
+        "answer": 57.2,
+        "question": "What is the total statistic across all records where category_value is 'dependant'?"
+      }
+    ]
+  },
+  {
+    "table_id": "26",
+    "raw_file": "raw/26.xlsx",
+    "tidy_file": "tidy/26_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "top_sources_of_the_difference",
+        "_ref_x": "meat",
+        "_ref_measure": "value",
+        "_filters": {
+          "top_sources_of_the_difference": "meat",
+          "reporter_type": "total",
+          "measure": "estimate"
+        },
+        "answer": -37.0,
+        "question": "Find the value value where top_sources_of_the_difference is 'meat' and reporter_type is 'total' and measure is 'estimate'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "top_sources_of_the_difference",
+        "_ref_x": "potatoes, fried, roasted, chips",
+        "_ref_measure": "value",
+        "_filters": {
+          "top_sources_of_the_difference": "potatoes, fried, roasted, chips",
+          "reporter_type": "under-reporters",
+          "measure": "estimate"
+        },
+        "answer": 0.0,
+        "question": "Find the value value where top_sources_of_the_difference is 'potatoes, fried, roasted, chips' and reporter_type is 'under-reporters' and measure is 'estimate'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "top_sources_of_the_difference",
+        "_ref_x": "pastries",
+        "_ref_measure": "value",
+        "answer": 271.0,
+        "question": "What is the total value across all records where top_sources_of_the_difference is 'pastries'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "top_sources_of_the_difference",
+        "_ref_x": "potatoes, fried, roasted, chips",
+        "_ref_measure": "value",
+        "answer": -50.0,
+        "question": "What is the total value across all records where top_sources_of_the_difference is 'potatoes, fried, roasted, chips'?"
+      }
+    ]
+  },
+  {
+    "table_id": "51",
+    "raw_file": "raw/51.xlsx",
+    "tidy_file": "tidy/51_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "sex",
+        "_ref_x": "female",
+        "_ref_measure": "percent",
+        "_filters": {
+          "sex": "female",
+          "marital_status": "female",
+          "agricultural_region": "agricultural region 3",
+          "language_group": "english-language workers"
+        },
+        "answer": 30.6,
+        "question": "Find the percent value where sex is 'female' and marital_status is 'female' and agricultural_region is 'agricultural region 3' and language_group is 'english-language workers'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "sex",
+        "_ref_x": "common-law",
+        "_ref_measure": "percent",
+        "_filters": {
+          "sex": "common-law",
+          "marital_status": "common-law",
+          "agricultural_region": "agricultural region 3",
+          "language_group": "english-language workers"
+        },
+        "answer": 6.4,
+        "question": "Find the percent value where sex is 'common-law' and marital_status is 'common-law' and agricultural_region is 'agricultural region 3' and language_group is 'english-language workers'."
+      }
+    ]
+  },
+  {
+    "table_id": "53",
+    "raw_file": "raw/53.xlsx",
+    "tidy_file": "tidy/53_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "place_of_birth",
+        "_ref_x": "born in a different province",
+        "_ref_measure": "percentage",
+        "_filters": {
+          "place_of_birth": "born in a different province",
+          "language": "french-language workers",
+          "agricultural_region": "agricultural region 1",
+          "section": "nan"
+        },
+        "answer": 7.5,
+        "question": "Find the percentage value where place_of_birth is 'born in a different province' and language is 'french-language workers' and agricultural_region is 'agricultural region 1' and section is 'nan'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "place_of_birth",
+        "_ref_x": "buddhist, hindu, jewish, muslim and sikh",
+        "_ref_measure": "percentage",
+        "_filters": {
+          "place_of_birth": "buddhist, hindu, jewish, muslim and sikh",
+          "language": "english-language workers",
+          "agricultural_region": "agricultural region 1",
+          "section": "religion"
+        },
+        "answer": 0.0,
+        "question": "Find the percentage value where place_of_birth is 'buddhist, hindu, jewish, muslim and sikh' and language is 'english-language workers' and agricultural_region is 'agricultural region 1' and section is 'religion'."
+      }
+    ]
+  },
+  {
+    "table_id": "54",
+    "raw_file": "raw/54.xlsx",
+    "tidy_file": "tidy/54_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "class_of_worker",
+        "_ref_x": "did not work in 2010",
+        "_ref_measure": "percent",
+        "_filters": {
+          "class_of_worker": "did not work in 2010",
+          "agricultural_region": "percent",
+          "language_group": "french-language workers"
+        },
+        "answer": 0.0,
+        "question": "Find the percent value where class_of_worker is 'did not work in 2010' and agricultural_region is 'percent' and language_group is 'french-language workers'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "class_of_worker",
+        "_ref_x": "self-employed, incorporated",
+        "_ref_measure": "percent",
+        "_filters": {
+          "class_of_worker": "self-employed, incorporated",
+          "agricultural_region": "percent",
+          "language_group": "english-language workers"
+        },
+        "answer": 4.3,
+        "question": "Find the percent value where class_of_worker is 'self-employed, incorporated' and agricultural_region is 'percent' and language_group is 'english-language workers'."
+      }
+    ]
+  },
+  {
+    "table_id": "55",
+    "raw_file": "raw/55.xlsx",
+    "tidy_file": "tidy/55_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "operating_arrangement",
+        "_ref_x": "non-family corporation",
+        "_ref_measure": "value",
+        "_filters": {
+          "operating_arrangement": "non-family corporation",
+          "agricultural_region": "agricultural region 1",
+          "measure_type": "number"
+        },
+        "answer": 23.0,
+        "question": "Find the value value where operating_arrangement is 'non-family corporation' and agricultural_region is 'agricultural region 1' and measure_type is 'number'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "operating_arrangement",
+        "_ref_x": "partnership without written agreement",
+        "_ref_measure": "value",
+        "_filters": {
+          "operating_arrangement": "partnership without written agreement",
+          "agricultural_region": "total new brunswick",
+          "measure_type": "number"
+        },
+        "answer": 335.0,
+        "question": "Find the value value where operating_arrangement is 'partnership without written agreement' and agricultural_region is 'total new brunswick' and measure_type is 'number'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "operating_arrangement",
+        "_ref_x": "partnership without written agreement",
+        "_ref_measure": "value",
+        "answer": 605.0,
+        "question": "What is the total value across all records where operating_arrangement is 'partnership without written agreement'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "operating_arrangement",
+        "_ref_x": "sole proprietorship",
+        "_ref_measure": "value",
+        "answer": 1406.0,
+        "question": "What is the total value across all records where operating_arrangement is 'sole proprietorship'?"
+      }
+    ]
+  },
+  {
+    "table_id": "56",
+    "raw_file": "raw/56.xlsx",
+    "tidy_file": "tidy/56_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "farm_area_category",
+        "_ref_x": "farms under 130 acres",
+        "_ref_measure": "value",
+        "_filters": {
+          "farm_area_category": "farms under 130 acres",
+          "land_tenure": "nan",
+          "agricultural_region": "total new brunswick",
+          "measure": "number"
+        },
+        "answer": 996.0,
+        "question": "Find the value value where farm_area_category is 'farms under 130 acres' and land_tenure is 'nan' and agricultural_region is 'total new brunswick' and measure is 'number'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "farm_area_category",
+        "_ref_x": "nan",
+        "_ref_measure": "value",
+        "_filters": {
+          "farm_area_category": "nan",
+          "land_tenure": "area crop-shared from others",
+          "agricultural_region": "agricultural region 4",
+          "measure": "number"
+        },
+        "answer": 4.0,
+        "question": "Find the value value where farm_area_category is 'nan' and land_tenure is 'area crop-shared from others' and agricultural_region is 'agricultural region 4' and measure is 'number'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "land_tenure",
+        "_ref_x": "area owned",
+        "_ref_measure": "value",
+        "answer": 2161.8,
+        "question": "What is the total value across all records where land_tenure is 'area owned'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "measure",
+        "_ref_x": "percent",
+        "_ref_measure": "value",
+        "answer": 987.4,
+        "question": "What is the total value across all records where measure is 'percent'?"
+      }
+    ]
+  },
+  {
+    "table_id": "9-snack_shop_monthly_core_data_processing",
+    "raw_file": "raw/9-Snack_Shop_Monthly_Core_Data_Processing.xlsx",
+    "tidy_file": "tidy/9-Snack_Shop_Monthly_Core_Data_Processing_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "statistical_date",
+        "_ref_x": "2019-10-01 ~ 2019-10-31",
+        "_ref_measure": "visitors",
+        "_filters": {
+          "statistical_date": "2019-10-01 ~ 2019-10-31",
+          "terminal_type": "Wireless End",
+          "source_details": "Hand-tao Search",
+          "traffic_source": "Free traffic within Taobao",
+          "number_of_buyers_who_placed_orders": "222",
+          "order_conversion_rate": "0.0644",
+          "paid_buyers": "209",
+          "payment_conversion_rate": "0.0606",
+          "payment_amount": "7745.35",
+          "uv_value": "2.25"
+        },
+        "answer": 3448.0,
+        "question": "Find the visitors value where statistical_date is '2019-10-01 ~ 2019-10-31' and terminal_type is 'Wireless End' and source_details is 'Hand-tao Search' and traffic_source is 'Free traffic within Taobao' and number_of_buyers_who_placed_orders is '222' and order_conversion_rate is '0.0644' and paid_buyers is '209' and payment_conversion_rate is '0.0606' and payment_amount is '7745.35' and uv_value is '2.25'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "statistical_date",
+        "_ref_x": "2019-10-01 ~ 2019-10-31",
+        "_ref_measure": "payment_amount",
+        "_filters": {
+          "statistical_date": "2019-10-01 ~ 2019-10-31",
+          "terminal_type": "Wireless End",
+          "source_details": "Hand-tao Weitao",
+          "traffic_source": "Free traffic within Taobao",
+          "visitors": "143",
+          "number_of_buyers_who_placed_orders": "4",
+          "order_conversion_rate": "0.028",
+          "paid_buyers": "4",
+          "payment_conversion_rate": "0.028",
+          "uv_value": "1.43"
+        },
+        "answer": 204.5,
+        "question": "Find the payment_amount value where statistical_date is '2019-10-01 ~ 2019-10-31' and terminal_type is 'Wireless End' and source_details is 'Hand-tao Weitao' and traffic_source is 'Free traffic within Taobao' and visitors is '143' and number_of_buyers_who_placed_orders is '4' and order_conversion_rate is '0.028' and paid_buyers is '4' and payment_conversion_rate is '0.028' and uv_value is '1.43'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "traffic_source",
+        "_ref_x": "Free traffic within Taobao",
+        "_ref_measure": "visitors",
+        "answer": 6718.0,
+        "question": "What is the total visitors across all records where traffic_source is 'Free traffic within Taobao'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "traffic_source",
+        "_ref_x": "Self-access",
+        "_ref_measure": "uv_value",
+        "answer": 20.14,
+        "question": "What is the total uv_value across all records where traffic_source is 'Self-access'?"
+      }
+    ]
+  },
+  {
+    "table_id": "csv_201-csv_48",
+    "raw_file": "raw/csv_201-csv_48.xlsx",
+    "tidy_file": "tidy/csv_201-csv_48_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "title",
+        "_ref_x": "\\Butterfly\\\"\"",
+        "_ref_measure": "year",
+        "_filters": {
+          "title": "\\Butterfly\\\"\"",
+          "album": "The Gift of Game",
+          "country": "AUS",
+          "peak_chart_position": "4"
+        },
+        "answer": 2000.0,
+        "question": "Find the year value where title is '\\Butterfly\\\"\"' and album is 'The Gift of Game' and country is 'AUS' and peak_chart_position is '4'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "title",
+        "_ref_x": "\\Revolving Door\\\"\"",
+        "_ref_measure": "peak_chart_position",
+        "_filters": {
+          "title": "\\Revolving Door\\\"\"",
+          "year": "2001",
+          "album": "The Gift of Game",
+          "country": "FIN"
+        },
+        "answer": 19.0,
+        "question": "Find the peak_chart_position value where title is '\\Revolving Door\\\"\"' and year is '2001' and album is 'The Gift of Game' and country is 'FIN'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "country",
+        "_ref_x": "AUT",
+        "_ref_measure": "year",
+        "answer": 6003.0,
+        "question": "What is the total year across all records where country is 'AUT'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "country",
+        "_ref_x": "FIN",
+        "_ref_measure": "year",
+        "answer": 4001.0,
+        "question": "What is the total year across all records where country is 'FIN'?"
+      }
+    ]
+  },
+  {
+    "table_id": "csv_202-csv_166",
+    "raw_file": "raw/csv_202-csv_166.xlsx",
+    "tidy_file": "tidy/csv_202-csv_166_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "census_year",
+        "_ref_x": "Population",
+        "_ref_measure": "year",
+        "_filters": {
+          "census_year": "Population",
+          "section": "Population",
+          "category": "Estimated residents on Census night",
+          "value": "63605.0"
+        },
+        "answer": 2006.0,
+        "question": "Find the year value where census_year is 'Population' and section is 'Population' and category is 'Estimated residents on Census night' and value is '63605.0'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "census_year",
+        "_ref_x": "Population",
+        "_ref_measure": "value",
+        "_filters": {
+          "census_year": "Population",
+          "section": "Population",
+          "category": "% of New South Wales population",
+          "year": "2011"
+        },
+        "answer": 0.97,
+        "question": "Find the value value where census_year is 'Population' and section is 'Population' and category is '% of New South Wales population' and year is '2011'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "category",
+        "_ref_x": "Armenian",
+        "_ref_measure": "year",
+        "answer": 4017.0,
+        "question": "What is the total year across all records where category is 'Armenian'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "category",
+        "_ref_x": "No religion",
+        "_ref_measure": "value",
+        "answer": 68.2,
+        "question": "What is the total value across all records where category is 'No religion'?"
+      }
+    ]
+  },
+  {
+    "table_id": "csv_202-csv_196",
+    "raw_file": "raw/csv_202-csv_196.xlsx",
+    "tidy_file": "tidy/csv_202-csv_196_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "ethnicity",
+        "_ref_x": "Romanian",
+        "_ref_measure": "year",
+        "_filters": {
+          "ethnicity": "Romanian",
+          "ethnicity_after_1956": "nan",
+          "population": "784934"
+        },
+        "answer": 1977.0,
+        "question": "Find the year value where ethnicity is 'Romanian' and ethnicity_after_1956 is 'nan' and population is '784934'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "ethnicity",
+        "_ref_x": "Russian-Lipovan",
+        "_ref_measure": "population",
+        "_filters": {
+          "ethnicity": "Russian-Lipovan",
+          "ethnicity_after_1956": "nan",
+          "year": "1956"
+        },
+        "answer": 29944.0,
+        "question": "Find the population value where ethnicity is 'Russian-Lipovan' and ethnicity_after_1956 is 'nan' and year is '1956'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "ethnicity",
+        "_ref_x": "Turkish",
+        "_ref_measure": "year",
+        "answer": 17515.0,
+        "question": "What is the total year across all records where ethnicity is 'Turkish'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "ethnicity_after_1956",
+        "_ref_x": "(Ukrainian from 1956)",
+        "_ref_measure": "population",
+        "answer": 70411.0,
+        "question": "What is the total population across all records where ethnicity_after_1956 is '(Ukrainian from 1956)'?"
+      }
+    ]
+  },
+  {
+    "table_id": "csv_202-csv_294",
+    "raw_file": "raw/csv_202-csv_294.xlsx",
+    "tidy_file": "tidy/csv_202-csv_294_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "entrant",
+        "_ref_x": "Mild Seven Benetton",
+        "_ref_measure": "year",
+        "_filters": {
+          "entrant": "Mild Seven Benetton",
+          "chassis": "Benetton B199",
+          "engine": "FB01 V10",
+          "tyres": "B",
+          "driver": "Alexander Wurz",
+          "race_location": "4",
+          "race_result": "6",
+          "points": "16",
+          "wcc_position": "6th"
+        },
+        "answer": 1999.0,
+        "question": "Find the year value where entrant is 'Mild Seven Benetton' and chassis is 'Benetton B199' and engine is 'FB01 V10' and tyres is 'B' and driver is 'Alexander Wurz' and race_location is '4' and race_result is '6' and points is '16' and wcc_position is '6th'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "entrant",
+        "_ref_x": "Mild Seven Benetton",
+        "_ref_measure": "points",
+        "_filters": {
+          "year": "1998",
+          "entrant": "Mild Seven Benetton",
+          "chassis": "Benetton B198",
+          "engine": "GC37-01 V10",
+          "tyres": "B",
+          "driver": "Giancarlo Fisichella",
+          "race_location": "8",
+          "race_result": "9",
+          "wcc_position": "5th"
+        },
+        "answer": 33.0,
+        "question": "Find the points value where year is '1998' and entrant is 'Mild Seven Benetton' and chassis is 'Benetton B198' and engine is 'GC37-01 V10' and tyres is 'B' and driver is 'Giancarlo Fisichella' and race_location is '8' and race_result is '9' and wcc_position is '5th'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "race_result",
+        "_ref_x": "JPN",
+        "_ref_measure": "year",
+        "answer": 5997.0,
+        "question": "What is the total year across all records where race_result is 'JPN'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "wcc_position",
+        "_ref_x": "6th",
+        "_ref_measure": "points",
+        "answer": 768.0,
+        "question": "What is the total points across all records where wcc_position is '6th'?"
+      }
+    ]
+  },
+  {
+    "table_id": "csv_202-csv_44",
+    "raw_file": "raw/csv_202-csv_44.xlsx",
+    "tidy_file": "tidy/csv_202-csv_44_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "region",
+        "_ref_x": "Europe",
+        "_ref_measure": "year",
+        "_filters": {
+          "region": "Europe",
+          "population": "634026000"
+        },
+        "answer": 1965.0,
+        "question": "Find the year value where region is 'Europe' and population is '634026000'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "region",
+        "_ref_x": "Latin America",
+        "_ref_measure": "year",
+        "_filters": {
+          "region": "Latin America",
+          "population": "34404000"
+        },
+        "answer": 1970.0,
+        "question": "Find the year value where region is 'Latin America' and population is '34404000'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "region",
+        "_ref_x": "Oceania",
+        "_ref_measure": "year",
+        "answer": 9825.0,
+        "question": "What is the total year across all records where region is 'Oceania'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "region",
+        "_ref_x": "World",
+        "_ref_measure": "year",
+        "answer": 9825.0,
+        "question": "What is the total year across all records where region is 'World'?"
+      }
+    ]
+  },
+  {
+    "table_id": "csv_203-csv_171",
+    "raw_file": "raw/csv_203-csv_171.xlsx",
+    "tidy_file": "tidy/csv_203-csv_171_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "team_name",
+        "_ref_x": "Atlético Chiriquí",
+        "_ref_measure": "place_position",
+        "_filters": {
+          "team_name": "Atlético Chiriquí",
+          "games_played": "13",
+          "games_won": "4",
+          "games_drawn": "3",
+          "games_lost": "6",
+          "goals_scored": "14",
+          "goals_conceded": "22",
+          "goal_difference": "-8",
+          "points": "15"
+        },
+        "answer": 8.0,
+        "question": "Find the place_position value where team_name is 'Atlético Chiriquí' and games_played is '13' and games_won is '4' and games_drawn is '3' and games_lost is '6' and goals_scored is '14' and goals_conceded is '22' and goal_difference is '-8' and points is '15'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "team_name",
+        "_ref_x": "Alianza",
+        "_ref_measure": "goals_conceded",
+        "_filters": {
+          "place_position": "10",
+          "team_name": "Alianza",
+          "games_played": "13",
+          "games_won": "3",
+          "games_drawn": "1",
+          "games_lost": "9",
+          "goals_scored": "25",
+          "goal_difference": "-2",
+          "points": "10"
+        },
+        "answer": 27.0,
+        "question": "Find the goals_conceded value where place_position is '10' and team_name is 'Alianza' and games_played is '13' and games_won is '3' and games_drawn is '1' and games_lost is '9' and goals_scored is '25' and goal_difference is '-2' and points is '10'."
+      }
+    ]
+  },
+  {
+    "table_id": "csv_203-csv_471",
+    "raw_file": "raw/csv_203-csv_471.xlsx",
+    "tidy_file": "tidy/csv_203-csv_471_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "date",
+        "_ref_x": "June 17",
+        "_ref_measure": "game_id",
+        "_filters": {
+          "date": "June 17",
+          "opponent": "North Carolina",
+          "score": "5-3",
+          "site_stadium": "Rosenblatt Stadium",
+          "win": "Breckley (3-2)",
+          "loss": "Warren (9-2)",
+          "save": "Burke (13)",
+          "attendance": "23314",
+          "overall_record": "44-29",
+          "ncaat_record": "7-2"
+        },
+        "answer": 73.0,
+        "question": "Find the game_id value where date is 'June 17' and opponent is 'North Carolina' and score is '5-3' and site_stadium is 'Rosenblatt Stadium' and win is 'Breckley (3-2)' and loss is 'Warren (9-2)' and save is 'Burke (13)' and attendance is '23314' and overall_record is '44-29' and ncaat_record is '7-2'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "date",
+        "_ref_x": "June 22",
+        "_ref_measure": "attendance",
+        "_filters": {
+          "game_id": "75",
+          "date": "June 22",
+          "opponent": "North Carolina",
+          "score": "6-1",
+          "site_stadium": "Rosenblatt Stadium",
+          "win": "Allison (4-5)",
+          "loss": "Moran (1-2)",
+          "save": "none",
+          "overall_record": "45-30",
+          "ncaat_record": "8-3"
+        },
+        "answer": 15125.0,
+        "question": "Find the attendance value where game_id is '75' and date is 'June 22' and opponent is 'North Carolina' and score is '6-1' and site_stadium is 'Rosenblatt Stadium' and win is 'Allison (4-5)' and loss is 'Moran (1-2)' and save is 'none' and overall_record is '45-30' and ncaat_record is '8-3'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "opponent",
+        "_ref_x": "North Carolina",
+        "_ref_measure": "attendance",
+        "answer": 57050.0,
+        "question": "What is the total attendance across all records where opponent is 'North Carolina'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "score",
+        "_ref_x": "6-1",
+        "_ref_measure": "game_id",
+        "answer": 153.0,
+        "question": "What is the total game_id across all records where score is '6-1'?"
+      }
+    ]
+  },
+  {
+    "table_id": "csv_203-csv_623",
+    "raw_file": "raw/csv_203-csv_623.xlsx",
+    "tidy_file": "tidy/csv_203-csv_623_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "award_category",
+        "_ref_x": "Outstanding Pop Artist/Group",
+        "_ref_measure": "year",
+        "_filters": {
+          "award_category": "Outstanding Pop Artist/Group",
+          "winner": "Liz Larin"
+        },
+        "answer": 2004.0,
+        "question": "Find the year value where award_category is 'Outstanding Pop Artist/Group' and winner is 'Liz Larin'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "award_category",
+        "_ref_x": "Outstanding Rock/Pop Recording",
+        "_ref_measure": "year",
+        "_filters": {
+          "award_category": "Outstanding Rock/Pop Recording",
+          "winner": "Carolyn Striho Honesty"
+        },
+        "answer": 2010.0,
+        "question": "Find the year value where award_category is 'Outstanding Rock/Pop Recording' and winner is 'Carolyn Striho Honesty'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "award_category",
+        "_ref_x": "Outstanding Rock/Pop Songwriter",
+        "_ref_measure": "year",
+        "answer": 12045.0,
+        "question": "What is the total year across all records where award_category is 'Outstanding Rock/Pop Songwriter'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "winner",
+        "_ref_x": "Vinnie Dombroski",
+        "_ref_measure": "year",
+        "answer": 6028.0,
+        "question": "What is the total year across all records where winner is 'Vinnie Dombroski'?"
+      }
+    ]
+  },
+  {
+    "table_id": "csv_203-csv_854",
+    "raw_file": "raw/csv_203-csv_854.xlsx",
+    "tidy_file": "tidy/csv_203-csv_854_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "driver",
+        "_ref_x": "Max Twigg",
+        "_ref_measure": "position",
+        "_filters": {
+          "driver": "Max Twigg",
+          "car_number": "18",
+          "car_model": "Porsche 996 GT3",
+          "secondary_car_model": "nan",
+          "entrant": "Twigg Waste Management\nLuxton Plan",
+          "race_round": "3",
+          "points": "51.0"
+        },
+        "answer": 8.0,
+        "question": "Find the position value where driver is 'Max Twigg' and car_number is '18' and car_model is 'Porsche 996 GT3' and secondary_car_model is 'nan' and entrant is 'Twigg Waste Management\nLuxton Plan' and race_round is '3' and points is '51.0'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "driver",
+        "_ref_x": "James Koundouris",
+        "_ref_measure": "points",
+        "_filters": {
+          "position": "3",
+          "driver": "James Koundouris",
+          "car_number": "69",
+          "car_model": "Porsche 996 GT3 Cup",
+          "secondary_car_model": "Car",
+          "entrant": "Dare Shots\nSupabarn Supermarkets",
+          "race_round": "1"
+        },
+        "answer": 76.0,
+        "question": "Find the points value where position is '3' and driver is 'James Koundouris' and car_number is '69' and car_model is 'Porsche 996 GT3 Cup' and secondary_car_model is 'Car' and entrant is 'Dare Shots\nSupabarn Supermarkets' and race_round is '1'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "car_model",
+        "_ref_x": "Porsche 996 GT3 Cup",
+        "_ref_measure": "car_number",
+        "answer": 2410.0,
+        "question": "What is the total car_number across all records where car_model is 'Porsche 996 GT3 Cup'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "car_model",
+        "_ref_x": "Porsche 996 GT3",
+        "_ref_measure": "car_number",
+        "answer": 1273.0,
+        "question": "What is the total car_number across all records where car_model is 'Porsche 996 GT3'?"
+      }
+    ]
+  },
+  {
+    "table_id": "csv_203-csv_865",
+    "raw_file": "raw/csv_203-csv_865.xlsx",
+    "tidy_file": "tidy/csv_203-csv_865_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "athlete",
+        "_ref_x": "Margitta Helmbold",
+        "_ref_measure": "place",
+        "_filters": {
+          "athlete": "Margitta Helmbold",
+          "nation": "Germany",
+          "best_mark": "16.91",
+          "throw_number": "2",
+          "throw_distance": "15.87"
+        },
+        "answer": 5.0,
+        "question": "Find the place value where athlete is 'Margitta Helmbold' and nation is 'Germany' and best_mark is '16.91' and throw_number is '2' and throw_distance is '15.87'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "athlete",
+        "_ref_x": "Margitta Helmbold",
+        "_ref_measure": "throw_distance",
+        "_filters": {
+          "place": "5",
+          "athlete": "Margitta Helmbold",
+          "nation": "Germany",
+          "best_mark": "16.91",
+          "throw_number": "1"
+        },
+        "answer": 16.67,
+        "question": "Find the throw_distance value where place is '5' and athlete is 'Margitta Helmbold' and nation is 'Germany' and best_mark is '16.91' and throw_number is '1'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "athlete",
+        "_ref_x": "Valerie Young",
+        "_ref_measure": "throw_number",
+        "answer": 21.0,
+        "question": "What is the total throw_number across all records where athlete is 'Valerie Young'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "nation",
+        "_ref_x": "United States",
+        "_ref_measure": "throw_distance",
+        "answer": 42.480000000000004,
+        "question": "What is the total throw_distance across all records where nation is 'United States'?"
+      }
+    ]
+  },
+  {
+    "table_id": "csv_204-csv_363",
+    "raw_file": "raw/csv_204-csv_363.xlsx",
+    "tidy_file": "tidy/csv_204-csv_363_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "result",
+        "_ref_x": "Win",
+        "_ref_measure": "round",
+        "_filters": {
+          "result": "Win",
+          "record": "5–1",
+          "opponent": "Shane Carwin",
+          "method": "Submission (arm triangle choke)",
+          "event": "UFC 116",
+          "date": "July 3, 2010",
+          "time": "2:19",
+          "location": "Las Vegas, United States",
+          "notes": "Defended UFC Heavyweight Championship. Unified UFC Interim Heavyweight Championship; Submission of the Night"
+        },
+        "answer": 2.0,
+        "question": "Find the round value where result is 'Win' and record is '5–1' and opponent is 'Shane Carwin' and method is 'Submission (arm triangle choke)' and event is 'UFC 116' and date is 'July 3, 2010' and time is '2:19' and location is 'Las Vegas, United States' and notes is 'Defended UFC Heavyweight Championship. Unified UFC Interim Heavyweight Championship; Submission of the Night'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "result",
+        "_ref_x": "Win",
+        "_ref_measure": "round",
+        "_filters": {
+          "result": "Win",
+          "record": "2–1",
+          "opponent": "Heath Herring",
+          "method": "Decision (unanimous)",
+          "event": "UFC 87",
+          "date": "August 9, 2008",
+          "time": "5:00",
+          "location": "Minneapolis, Minnesota, United States",
+          "notes": "nan"
+        },
+        "answer": 3.0,
+        "question": "Find the round value where result is 'Win' and record is '2–1' and opponent is 'Heath Herring' and method is 'Decision (unanimous)' and event is 'UFC 87' and date is 'August 9, 2008' and time is '5:00' and location is 'Minneapolis, Minnesota, United States' and notes is 'nan'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "result",
+        "_ref_x": "Win",
+        "_ref_measure": "round",
+        "answer": 10.0,
+        "question": "What is the total round across all records where result is 'Win'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "method",
+        "_ref_x": "TKO (punches)",
+        "_ref_measure": "round",
+        "answer": 4.0,
+        "question": "What is the total round across all records where method is 'TKO (punches)'?"
+      }
+    ]
+  },
+  {
+    "table_id": "csv_204-csv_581",
+    "raw_file": "raw/csv_204-csv_581.xlsx",
+    "tidy_file": "tidy/csv_204-csv_581_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "demographic_group",
+        "_ref_x": "White",
+        "_ref_measure": "year",
+        "_filters": {
+          "demographic_group": "White",
+          "percentage": "43.0"
+        },
+        "answer": 1952.0,
+        "question": "Find the year value where demographic_group is 'White' and percentage is '43.0'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "demographic_group",
+        "_ref_x": "West",
+        "_ref_measure": "percentage",
+        "_filters": {
+          "demographic_group": "West",
+          "year": "1956"
+        },
+        "answer": 43.0,
+        "question": "Find the percentage value where demographic_group is 'West' and year is '1956'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "demographic_group",
+        "_ref_x": "Independent",
+        "_ref_measure": "year",
+        "answer": 7832.0,
+        "question": "What is the total year across all records where demographic_group is 'Independent'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "demographic_group",
+        "_ref_x": "White Collar",
+        "_ref_measure": "year",
+        "answer": 9780.0,
+        "question": "What is the total year across all records where demographic_group is 'White Collar'?"
+      }
+    ]
+  },
+  {
+    "table_id": "csv_204-csv_762",
+    "raw_file": "raw/csv_204-csv_762.xlsx",
+    "tidy_file": "tidy/csv_204-csv_762_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "energy_source",
+        "_ref_x": "Thermal",
+        "_ref_measure": "year",
+        "_filters": {
+          "energy_source": "Thermal",
+          "value": "835"
+        },
+        "answer": 2001.0,
+        "question": "Find the year value where energy_source is 'Thermal' and value is '835'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "energy_source",
+        "_ref_x": "Thermal",
+        "_ref_measure": "year",
+        "_filters": {
+          "energy_source": "Thermal",
+          "value": "4995"
+        },
+        "answer": 2010.0,
+        "question": "Find the year value where energy_source is 'Thermal' and value is '4995'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "energy_source",
+        "_ref_x": "Thermal",
+        "_ref_measure": "year",
+        "answer": 52156.0,
+        "question": "What is the total year across all records where energy_source is 'Thermal'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "energy_source",
+        "_ref_x": "Thermal",
+        "_ref_measure": "value",
+        "answer": 83039.0,
+        "question": "What is the total value across all records where energy_source is 'Thermal'?"
+      }
+    ]
+  },
+  {
+    "table_id": "csv_204-csv_907",
+    "raw_file": "raw/csv_204-csv_907.xlsx",
+    "tidy_file": "tidy/csv_204-csv_907_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "lift_name",
+        "_ref_x": "Magic Mile Express",
+        "_ref_measure": "top_elevation_ft",
+        "_filters": {
+          "lift_name": "Magic Mile Express",
+          "basin": "Poma",
+          "lift_type": "detach quad",
+          "bottom_elevation_ft": "5915",
+          "vertical_rise_ft": "1075",
+          "length_ft": "5359",
+          "slope_percent": "20",
+          "capacity_rides_per_hr": "1600",
+          "speed_ft_min": "950",
+          "lift_manufacturer": "Poma",
+          "year_installed": "1992"
+        },
+        "answer": 6990.0,
+        "question": "Find the top_elevation_ft value where lift_name is 'Magic Mile Express' and basin is 'Poma' and lift_type is 'detach quad' and bottom_elevation_ft is '5915' and vertical_rise_ft is '1075' and length_ft is '5359' and slope_percent is '20' and capacity_rides_per_hr is '1600' and speed_ft_min is '950' and lift_manufacturer is 'Poma' and year_installed is '1992'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "lift_name",
+        "_ref_x": "Molly's Express",
+        "_ref_measure": "speed_ft_min",
+        "_filters": {
+          "lift_name": "Molly's Express",
+          "basin": "Doppelmayr",
+          "lift_type": "detach quad",
+          "top_elevation_ft": "5835",
+          "bottom_elevation_ft": "4990",
+          "vertical_rise_ft": "845",
+          "length_ft": "5244",
+          "slope_percent": "16",
+          "capacity_rides_per_hr": "1200",
+          "lift_manufacturer": "Doppelmayr",
+          "year_installed": "2000"
+        },
+        "answer": 1000.0,
+        "question": "Find the speed_ft_min value where lift_name is 'Molly's Express' and basin is 'Doppelmayr' and lift_type is 'detach quad' and top_elevation_ft is '5835' and bottom_elevation_ft is '4990' and vertical_rise_ft is '845' and length_ft is '5244' and slope_percent is '16' and capacity_rides_per_hr is '1200' and lift_manufacturer is 'Doppelmayr' and year_installed is '2000'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "lift_type",
+        "_ref_x": "detach quad",
+        "_ref_measure": "top_elevation_ft",
+        "answer": 33560.0,
+        "question": "What is the total top_elevation_ft across all records where lift_type is 'detach quad'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "lift_type",
+        "_ref_x": "detach quad",
+        "_ref_measure": "bottom_elevation_ft",
+        "answer": 28155.0,
+        "question": "What is the total bottom_elevation_ft across all records where lift_type is 'detach quad'?"
+      }
+    ]
+  },
+  {
+    "table_id": "demographic_statistics_1",
+    "raw_file": "raw/Demographic_Statistics_1.xlsx",
+    "tidy_file": "tidy/Demographic_Statistics_1_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "major_occupational_category",
+        "_ref_x": "Party and government organs, mass organizations, and  \nsocial organizations, enterprise and public institution leaders",
+        "_ref_measure": "count",
+        "_filters": {
+          "major_occupational_category": "Party and government organs, mass organizations, and  \nsocial organizations, enterprise and public institution leaders",
+          "marital_status": "Divorced",
+          "sex": "Male"
+        },
+        "answer": 22631.0,
+        "question": "Find the count value where major_occupational_category is 'Party and government organs, mass organizations, and  \nsocial organizations, enterprise and public institution leaders' and marital_status is 'Divorced' and sex is 'Male'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "major_occupational_category",
+        "_ref_x": "Production, Manufacturing, and Related Personnel",
+        "_ref_measure": "count",
+        "_filters": {
+          "major_occupational_category": "Production, Manufacturing, and Related Personnel",
+          "marital_status": "With Spouse",
+          "sex": "Female"
+        },
+        "answer": 4239575.0,
+        "question": "Find the count value where major_occupational_category is 'Production, Manufacturing, and Related Personnel' and marital_status is 'With Spouse' and sex is 'Female'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "major_occupational_category",
+        "_ref_x": "Professional and Technical Personnel",
+        "_ref_measure": "count",
+        "answer": 6844562.0,
+        "question": "What is the total count across all records where major_occupational_category is 'Professional and Technical Personnel'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "sex",
+        "_ref_x": "Male",
+        "_ref_measure": "count",
+        "answer": 38906261.0,
+        "question": "What is the total count across all records where sex is 'Male'?"
+      }
+    ]
+  },
+  {
+    "table_id": "double_counting_7",
+    "raw_file": "raw/double_counting_7.xlsx",
+    "tidy_file": "tidy/double_counting_7_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "agency",
+        "_ref_x": "department of transportation",
+        "_ref_measure": "year",
+        "_filters": {
+          "agency": "department of transportation",
+          "budget_amount": "904"
+        },
+        "answer": 2017.0,
+        "question": "Find the year value where agency is 'department of transportation' and budget_amount is '904'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "agency",
+        "_ref_x": "patient-centered outcomes research trust fund",
+        "_ref_measure": "budget_amount",
+        "_filters": {
+          "agency": "patient-centered outcomes research trust fund",
+          "year": "2018"
+        },
+        "answer": 501.0,
+        "question": "Find the budget_amount value where agency is 'patient-centered outcomes research trust fund' and year is '2018'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "agency",
+        "_ref_x": "other",
+        "_ref_measure": "year",
+        "answer": 6054.0,
+        "question": "What is the total year across all records where agency is 'other'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "agency",
+        "_ref_x": "smithsonian institution",
+        "_ref_measure": "budget_amount",
+        "answer": 764.0,
+        "question": "What is the total budget_amount across all records where agency is 'smithsonian institution'?"
+      }
+    ]
+  },
+  {
+    "table_id": "employment_population_statistics_table_2",
+    "raw_file": "raw/Employment_Population_Statistics_Table_2.xlsx",
+    "tidy_file": "tidy/Employment_Population_Statistics_Table_2_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "age_group",
+        "_ref_x": "30-34 years old",
+        "_ref_measure": "count",
+        "_filters": {
+          "age_group": "30-34 years old",
+          "gender": "nan",
+          "education_level": "Junior high school"
+        },
+        "answer": 3900037.0,
+        "question": "Find the count value where age_group is '30-34 years old' and gender is 'nan' and education_level is 'Junior high school'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "age_group",
+        "_ref_x": "35-39 years old",
+        "_ref_measure": "count",
+        "_filters": {
+          "age_group": "35-39 years old",
+          "gender": "Female",
+          "education_level": "never attended school"
+        },
+        "answer": 16728.0,
+        "question": "Find the count value where age_group is '35-39 years old' and gender is 'Female' and education_level is 'never attended school'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "age_group",
+        "_ref_x": "65-69 years old",
+        "_ref_measure": "count",
+        "answer": 7980680.0,
+        "question": "What is the total count across all records where age_group is '65-69 years old'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "education_level",
+        "_ref_x": "never attended school",
+        "_ref_measure": "count",
+        "answer": 1715212.0,
+        "question": "What is the total count across all records where education_level is 'never attended school'?"
+      }
+    ]
+  },
+  {
+    "table_id": "global_per_capita_gni_data",
+    "raw_file": "raw/Global_Per_Capita_GNI_Data.xlsx",
+    "tidy_file": "tidy/Global_Per_Capita_GNI_Data_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "countries_and_regions",
+        "_ref_x": "Bulgaria",
+        "_ref_measure": "year",
+        "_filters": {
+          "countries_and_regions": "Bulgaria",
+          "country_or_area": "Bulgaria",
+          "gni_per_capita": "1620.0"
+        },
+        "answer": 2011.0,
+        "question": "Find the year value where countries_and_regions is 'Bulgaria' and country_or_area is 'Bulgaria' and gni_per_capita is '1620.0'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "countries_and_regions",
+        "_ref_x": "Ethiopia",
+        "_ref_measure": "gni_per_capita",
+        "_filters": {
+          "countries_and_regions": "Ethiopia",
+          "country_or_area": "Ethiopia",
+          "year": "2013"
+        },
+        "answer": 350.0,
+        "question": "Find the gni_per_capita value where countries_and_regions is 'Ethiopia' and country_or_area is 'Ethiopia' and year is '2013'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "countries_and_regions",
+        "_ref_x": "Saint Lucia",
+        "_ref_measure": "gni_per_capita",
+        "answer": 30620.0,
+        "question": "What is the total gni_per_capita across all records where countries_and_regions is 'Saint Lucia'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "countries_and_regions",
+        "_ref_x": "Romania",
+        "_ref_measure": "gni_per_capita",
+        "answer": 31400.0,
+        "question": "What is the total gni_per_capita across all records where countries_and_regions is 'Romania'?"
+      }
+    ]
+  },
+  {
+    "table_id": "household_size_statistics",
+    "raw_file": "raw/Household_Size_Statistics.xlsx",
+    "tidy_file": "tidy/Household_Size_Statistics_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "region",
+        "_ref_x": "Tianjin",
+        "_ref_measure": "value",
+        "_filters": {
+          "region": "Tianjin",
+          "household_size": "Nine-person households",
+          "measure": "proportion"
+        },
+        "answer": 0.02,
+        "question": "Find the value value where region is 'Tianjin' and household_size is 'Nine-person households' and measure is 'proportion'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "region",
+        "_ref_x": "Guizhou",
+        "_ref_measure": "value",
+        "_filters": {
+          "region": "Guizhou",
+          "household_size": "Eight-person households",
+          "measure": "proportion"
+        },
+        "answer": 0.56,
+        "question": "Find the value value where region is 'Guizhou' and household_size is 'Eight-person households' and measure is 'proportion'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "region",
+        "_ref_x": "Liaoning",
+        "_ref_measure": "value",
+        "answer": 17467210.99,
+        "question": "What is the total value across all records where region is 'Liaoning'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "region",
+        "_ref_x": "Ningxia",
+        "_ref_measure": "value",
+        "answer": 2535173.9899999998,
+        "question": "What is the total value across all records where region is 'Ningxia'?"
+      }
+    ]
+  },
+  {
+    "table_id": "housing_source_statistics",
+    "raw_file": "raw/Housing_Source_Statistics.xlsx",
+    "tidy_file": "tidy/Housing_Source_Statistics_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "region",
+        "_ref_x": "Tianjin",
+        "_ref_measure": "number_of_households",
+        "_filters": {
+          "region": "Tianjin",
+          "housing_source_category": "Inheritance or",
+          "housing_source_subcategory": "Gift"
+        },
+        "answer": 7168.0,
+        "question": "Find the number_of_households value where region is 'Tianjin' and housing_source_category is 'Inheritance or' and housing_source_subcategory is 'Gift'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "region",
+        "_ref_x": "Guizhou",
+        "_ref_measure": "number_of_households",
+        "_filters": {
+          "region": "Guizhou",
+          "housing_source_category": "Self-built housing",
+          "housing_source_subcategory": "housing/affordable housing with price and area limits"
+        },
+        "answer": 690969.0,
+        "question": "Find the number_of_households value where region is 'Guizhou' and housing_source_category is 'Self-built housing' and housing_source_subcategory is 'housing/affordable housing with price and area limits'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "region",
+        "_ref_x": "Shaanxi",
+        "_ref_measure": "number_of_households",
+        "answer": 2551980.0,
+        "question": "What is the total number_of_households across all records where region is 'Shaanxi'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "housing_source_subcategory",
+        "_ref_x": "housing/affordable housing with price and area limits",
+        "_ref_measure": "number_of_households",
+        "answer": 44512876.0,
+        "question": "What is the total number_of_households across all records where housing_source_subcategory is 'housing/affordable housing with price and area limits'?"
+      }
+    ]
+  },
+  {
+    "table_id": "list_of_materials_at_charging_station",
+    "raw_file": "raw/List_of_Materials_at_Charging_Station.xlsx",
+    "tidy_file": "tidy/List_of_Materials_at_Charging_Station_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "item",
+        "_ref_x": "1250kVA Prefabricated Cabin",
+        "_ref_measure": "specification",
+        "_filters": {
+          "item": "1250kVA Prefabricated Cabin",
+          "name": "Prefabricated cabin",
+          "unit": "Newly built prefabricated cabin",
+          "quantity": "650000.0",
+          "unit_price": "nan",
+          "total_price": "nan",
+          "tax_status": "nan",
+          "section": "(Other items please insert above this row...)"
+        },
+        "answer": 1.0,
+        "question": "Find the specification value where item is '1250kVA Prefabricated Cabin' and name is 'Prefabricated cabin' and unit is 'Newly built prefabricated cabin' and quantity is '650000.0' and unit_price is 'nan' and total_price is 'nan' and tax_status is 'nan' and section is '(Other items please insert above this row...)'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "item",
+        "_ref_x": "PVC50",
+        "_ref_measure": "quantity",
+        "_filters": {
+          "item": "PVC50",
+          "name": "nan",
+          "unit": "cable protection pipe",
+          "specification": "35.0",
+          "unit_price": "nan",
+          "total_price": "nan",
+          "tax_status": "nan",
+          "section": "(Other items please insert above this row...)"
+        },
+        "answer": 11.0,
+        "question": "Find the quantity value where item is 'PVC50' and name is 'nan' and unit is 'cable protection pipe' and specification is '35.0' and unit_price is 'nan' and total_price is 'nan' and tax_status is 'nan' and section is '(Other items please insert above this row...)'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "item",
+        "_ref_x": "ZC-YJV22-3x300+2x150",
+        "_ref_measure": "quantity",
+        "answer": 1298.0,
+        "question": "What is the total quantity across all records where item is 'ZC-YJV22-3x300+2x150'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "section",
+        "_ref_x": "(Other items please insert above this row...)",
+        "_ref_measure": "quantity",
+        "answer": 744786.23,
+        "question": "What is the total quantity across all records where section is '(Other items please insert above this row...)'?"
+      }
+    ]
+  },
+  {
+    "table_id": "long1",
+    "raw_file": "raw/long1.xlsx",
+    "tidy_file": "tidy/long1_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "ethnicity",
+        "_ref_x": "菲律賓人",
+        "_ref_measure": "year",
+        "_filters": {
+          "ethnicity": "菲律賓人",
+          "count": "184081.0",
+          "percentage": "31.5"
+        },
+        "answer": 2016.0,
+        "question": "Find the year value where ethnicity is '菲律賓人' and count is '184081.0' and percentage is '31.5'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "ethnicity",
+        "_ref_x": "混血兒",
+        "_ref_measure": "year",
+        "_filters": {
+          "ethnicity": "混血兒",
+          "count": "66732.0",
+          "percentage": "10.8"
+        },
+        "answer": 2021.0,
+        "question": "Find the year value where ethnicity is '混血兒' and count is '66732.0' and percentage is '10.8'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "ethnicity",
+        "_ref_x": "White",
+        "_ref_measure": "year",
+        "answer": 6048.0,
+        "question": "What is the total year across all records where ethnicity is 'White'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "ethnicity",
+        "_ref_x": "韓國人",
+        "_ref_measure": "year",
+        "answer": 6048.0,
+        "question": "What is the total year across all records where ethnicity is '韓國人'?"
+      }
+    ]
+  },
+  {
+    "table_id": "long2",
+    "raw_file": "raw/long2.xlsx",
+    "tidy_file": "tidy/long2_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "ethnicity",
+        "_ref_x": "Indonesian",
+        "_ref_measure": "year",
+        "_filters": {
+          "ethnicity": "Indonesian",
+          "age_group": "Unnamed: 9",
+          "count": "0.2",
+          "median_age": "nan"
+        },
+        "answer": 2011.0,
+        "question": "Find the year value where ethnicity is 'Indonesian' and age_group is 'Unnamed: 9' and count is '0.2' and median_age is 'nan'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "ethnicity",
+        "_ref_x": "韓國人",
+        "_ref_measure": "count",
+        "_filters": {
+          "year": "2011.0",
+          "ethnicity": "韓國人",
+          "age_group": "Unnamed: 6",
+          "median_age": "38.0"
+        },
+        "answer": 1552.0,
+        "question": "Find the count value where year is '2011.0' and ethnicity is '韓國人' and age_group is 'Unnamed: 6' and median_age is '38.0'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "ethnicity",
+        "_ref_x": "Asian (other than Chinese)",
+        "_ref_measure": "count",
+        "answer": 200.0,
+        "question": "What is the total count across all records where ethnicity is 'Asian (other than Chinese)'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "age_group",
+        "_ref_x": "Unnamed: 9",
+        "_ref_measure": "count",
+        "answer": 970618.8,
+        "question": "What is the total count across all records where age_group is 'Unnamed: 9'?"
+      }
+    ]
+  },
+  {
+    "table_id": "long3",
+    "raw_file": "raw/long3.xlsx",
+    "tidy_file": "tidy/long3_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "ethnicity",
+        "_ref_x": "南亞裔人士",
+        "_ref_measure": "year",
+        "_filters": {
+          "ethnicity": "南亞裔人士",
+          "marital_status": "已婚\nMarried",
+          "sex": "女\nFemale",
+          "percentage": "74.6"
+        },
+        "answer": 2011.0,
+        "question": "Find the year value where ethnicity is '南亞裔人士' and marital_status is '已婚\nMarried' and sex is '女\nFemale' and percentage is '74.6'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "ethnicity",
+        "_ref_x": "韓國人",
+        "_ref_measure": "percentage",
+        "_filters": {
+          "year": "2011",
+          "ethnicity": "韓國人",
+          "marital_status": "已婚\nMarried",
+          "sex": "女\nFemale"
+        },
+        "answer": 71.4,
+        "question": "Find the percentage value where year is '2011' and ethnicity is '韓國人' and marital_status is '已婚\nMarried' and sex is '女\nFemale'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "ethnicity",
+        "_ref_x": "所有少數族裔人士",
+        "_ref_measure": "year",
+        "answer": 24132.0,
+        "question": "What is the total year across all records where ethnicity is '所有少數族裔人士'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "ethnicity",
+        "_ref_x": "撇除外籍家庭傭工後的所有少數族裔人士",
+        "_ref_measure": "year",
+        "answer": 24132.0,
+        "question": "What is the total year across all records where ethnicity is '撇除外籍家庭傭工後的所有少數族裔人士'?"
+      }
+    ]
+  },
+  {
+    "table_id": "maternal_fertility_data_table_1",
+    "raw_file": "raw/Maternal_Fertility_Data_Table_1.xlsx",
+    "tidy_file": "tidy/Maternal_Fertility_Data_Table_1_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "major_occupational_categories",
+        "_ref_x": "Professional and Technical Personnel",
+        "_ref_measure": "live_births",
+        "_filters": {
+          "major_occupational_categories": "Professional and Technical Personnel",
+          "age_group": "15-64 years old",
+          "number_of_women": "1689734"
+        },
+        "answer": 1.0,
+        "question": "Find the live_births value where major_occupational_categories is 'Professional and Technical Personnel' and age_group is '15-64 years old' and number_of_women is '1689734'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "major_occupational_categories",
+        "_ref_x": "Farm, Forestry, Animal Husbandry, and Fishery Production and Support Staff",
+        "_ref_measure": "number_of_women",
+        "_filters": {
+          "major_occupational_categories": "Farm, Forestry, Animal Husbandry, and Fishery Production and Support Staff",
+          "age_group": "15-64 years old",
+          "live_births": "0"
+        },
+        "answer": 306014.0,
+        "question": "Find the number_of_women value where major_occupational_categories is 'Farm, Forestry, Animal Husbandry, and Fishery Production and Support Staff' and age_group is '15-64 years old' and live_births is '0'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "major_occupational_categories",
+        "_ref_x": "Production, manufacturing, and related personnel",
+        "_ref_measure": "number_of_women",
+        "answer": 4807673.0,
+        "question": "What is the total number_of_women across all records where major_occupational_categories is 'Production, manufacturing, and related personnel'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "live_births",
+        "_ref_x": "5 and above",
+        "_ref_measure": "number_of_women",
+        "answer": 123716.0,
+        "question": "What is the total number_of_women across all records where live_births is '5 and above'?"
+      }
+    ]
+  },
+  {
+    "table_id": "medical_sales_data",
+    "raw_file": "raw/Medical_Sales_Data.xlsx",
+    "tidy_file": "tidy/Medical_Sales_Data_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "customer_name",
+        "_ref_x": "Jiangsu Yuankang Trading Co., Ltd.",
+        "_ref_measure": "customer_code",
+        "_filters": {
+          "customer_name": "Jiangsu Yuankang Trading Co., Ltd.",
+          "total_price_including_tax": "6840.0",
+          "quantity": "120",
+          "date": "2019-11-12 00:00:00.000000",
+          "terminal_hospital_name": "Taizhou City Traditional Chinese Medicine Hospital",
+          "product_name": "Hollow Fiber Dialyzer",
+          "specification_model": "HF14",
+          "unit_price": "57.0",
+          "sap_invoice_number": "90214617",
+          "hospital": "Taizhou City Traditional Chinese Medicine Hospital"
+        },
+        "answer": 200320.0,
+        "question": "Find the customer_code value where customer_name is 'Jiangsu Yuankang Trading Co., Ltd.' and total_price_including_tax is '6840.0' and quantity is '120' and date is '2019-11-12 00:00:00.000000' and terminal_hospital_name is 'Taizhou City Traditional Chinese Medicine Hospital' and product_name is 'Hollow Fiber Dialyzer' and specification_model is 'HF14' and unit_price is '57.0' and sap_invoice_number is '90214617' and hospital is 'Taizhou City Traditional Chinese Medicine Hospital'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "customer_name",
+        "_ref_x": "Linyi Koraida Medical Device Co., Ltd.",
+        "_ref_measure": "unit_price",
+        "_filters": {
+          "customer_code": "200034",
+          "customer_name": "Linyi Koraida Medical Device Co., Ltd.",
+          "total_price_including_tax": "36000.0",
+          "quantity": "480",
+          "date": "2019-11-08 00:00:00.000000",
+          "terminal_hospital_name": "Lanling County People's Hospital",
+          "product_name": "Hollow Fiber Dialyzer",
+          "specification_model": "HF15",
+          "sap_invoice_number": "90214129",
+          "hospital": "Lanling County People's Hospital"
+        },
+        "answer": 75.0,
+        "question": "Find the unit_price value where customer_code is '200034' and customer_name is 'Linyi Koraida Medical Device Co., Ltd.' and total_price_including_tax is '36000.0' and quantity is '480' and date is '2019-11-08 00:00:00.000000' and terminal_hospital_name is 'Lanling County People's Hospital' and product_name is 'Hollow Fiber Dialyzer' and specification_model is 'HF15' and sap_invoice_number is '90214129' and hospital is 'Lanling County People's Hospital'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "terminal_hospital_name",
+        "_ref_x": "Zhangye Second People's Hospital",
+        "_ref_measure": "unit_price",
+        "answer": 158.5,
+        "question": "What is the total unit_price across all records where terminal_hospital_name is 'Zhangye Second People's Hospital'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "hospital",
+        "_ref_x": "Lingnan County Traditional Chinese Medicine Hospital",
+        "_ref_measure": "sap_invoice_number",
+        "answer": 180720700.0,
+        "question": "What is the total sap_invoice_number across all records where hospital is 'Lingnan County Traditional Chinese Medicine Hospital'?"
+      }
+    ]
+  },
+  {
+    "table_id": "shandong_legal_entity_unit_statistics_1",
+    "raw_file": "raw/Shandong_Legal_Entity_Unit_Statistics_1.xlsx",
+    "tidy_file": "tidy/Shandong_Legal_Entity_Unit_Statistics_1_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "organization_status",
+        "_ref_x": "Public Institution",
+        "_ref_measure": "year",
+        "_filters": {
+          "organization_status": "Public Institution",
+          "organization_category": "Institutions",
+          "number_of_units": "39744"
+        },
+        "answer": 2021.0,
+        "question": "Find the year value where organization_status is 'Public Institution' and organization_category is 'Institutions' and number_of_units is '39744'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "organization_status",
+        "_ref_x": "Foundation",
+        "_ref_measure": "number_of_units",
+        "_filters": {
+          "organization_status": "Foundation",
+          "organization_category": "Foundation",
+          "year": "2018"
+        },
+        "answer": 116.0,
+        "question": "Find the number_of_units value where organization_status is 'Foundation' and organization_category is 'Foundation' and year is '2018'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "organization_status",
+        "_ref_x": "Resident Committee",
+        "_ref_measure": "number_of_units",
+        "answer": 57901.0,
+        "question": "What is the total number_of_units across all records where organization_status is 'Resident Committee'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "organization_category",
+        "_ref_x": "Village Committee",
+        "_ref_measure": "number_of_units",
+        "answer": 572629.0,
+        "question": "What is the total number_of_units across all records where organization_category is 'Village Committee'?"
+      }
+    ]
+  },
+  {
+    "table_id": "statistical_data_on_the_source_of_livelihood_for_the_population",
+    "raw_file": "raw/Statistical_Data_on_the_Source_of_Livelihood_for_the_Population.xlsx",
+    "tidy_file": "tidy/Statistical_Data_on_the_Source_of_Livelihood_for_the_Population_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "sex",
+        "_ref_x": "Total",
+        "_ref_measure": "age_group",
+        "_filters": {
+          "sex": "Total",
+          "main_source_of_livelihood": "Population aged 15 and above",
+          "value": "2223387"
+        },
+        "answer": 56.0,
+        "question": "Find the age_group value where sex is 'Total' and main_source_of_livelihood is 'Population aged 15 and above' and value is '2223387'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "age_group",
+        "_ref_x": "77",
+        "_ref_measure": "value",
+        "_filters": {
+          "age_group": "77",
+          "sex": "Female",
+          "main_source_of_livelihood": "Property income"
+        },
+        "answer": 1868.0,
+        "question": "Find the value value where age_group is '77' and sex is 'Female' and main_source_of_livelihood is 'Property income'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "age_group",
+        "_ref_x": "50-54 years old",
+        "_ref_measure": "value",
+        "answer": 35778540.0,
+        "question": "What is the total value across all records where age_group is '50-54 years old'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "main_source_of_livelihood",
+        "_ref_x": "Unemployment Insurance Benefits",
+        "_ref_measure": "value",
+        "answer": 104960.0,
+        "question": "What is the total value across all records where main_source_of_livelihood is 'Unemployment Insurance Benefits'?"
+      }
+    ]
+  },
+  {
+    "table_id": "structural_13",
+    "raw_file": "raw/structural_13.xlsx",
+    "tidy_file": "tidy/structural_13_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "type_of_perpetrator",
+        "_ref_x": "always men",
+        "_ref_measure": "male_victims_percent",
+        "_filters": {
+          "type_of_perpetrator": "always men",
+          "section_header": "sex of perpetrator",
+          "female_victims_percent": "96.0",
+          "total_victims_percent": "76.0"
+        },
+        "answer": 56.0,
+        "question": "Find the male_victims_percent value where type_of_perpetrator is 'always men' and section_header is 'sex of perpetrator' and female_victims_percent is '96.0' and total_victims_percent is '76.0'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "type_of_perpetrator",
+        "_ref_x": "peer",
+        "_ref_measure": "total_victims_percent",
+        "_filters": {
+          "type_of_perpetrator": "peer",
+          "section_header": "relationship to victim",
+          "male_victims_percent": "65.0",
+          "female_victims_percent": "46.0"
+        },
+        "answer": 54.0,
+        "question": "Find the total_victims_percent value where type_of_perpetrator is 'peer' and section_header is 'relationship to victim' and male_victims_percent is '65.0' and female_victims_percent is '46.0'."
+      }
+    ]
+  },
+  {
+    "table_id": "structural_17",
+    "raw_file": "raw/structural_17.xlsx",
+    "tidy_file": "tidy/structural_17_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "selected_characteristics_of_persons_responsible",
+        "_ref_x": "foreign military member(s)",
+        "_ref_measure": "percent",
+        "_filters": {
+          "selected_characteristics_of_persons_responsible": "foreign military member(s)",
+          "behavior_type": "inappropriate sexual comments"
+        },
+        "answer": 3.7,
+        "question": "Find the percent value where selected_characteristics_of_persons_responsible is 'foreign military member(s)' and behavior_type is 'inappropriate sexual comments'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "selected_characteristics_of_persons_responsible",
+        "_ref_x": "junior non-commissioned member",
+        "_ref_measure": "percent",
+        "_filters": {
+          "selected_characteristics_of_persons_responsible": "junior non-commissioned member",
+          "behavior_type": "displaying, showing, or sending sexually explicit messages or materials"
+        },
+        "answer": 91.0,
+        "question": "Find the percent value where selected_characteristics_of_persons_responsible is 'junior non-commissioned member' and behavior_type is 'displaying, showing, or sending sexually explicit messages or materials'."
+      }
+    ]
+  },
+  {
+    "table_id": "structural_19",
+    "raw_file": "raw/structural_19.xlsx",
+    "tidy_file": "tidy/structural_19_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "sex_ethnicity_race_and_citizenship",
+        "_ref_x": "american indian or alaska native",
+        "_ref_measure": "total",
+        "_filters": {
+          "sex_ethnicity_race_and_citizenship": "american indian or alaska native",
+          "labor_force_status": "in labor force",
+          "sub_labor_force_status": "part time",
+          "percentage_in_labor_force": "88.2",
+          "percentage_working_for_pay": "88.2",
+          "percentage_full_time": "76.5",
+          "percentage_part_time": "11.8"
+        },
+        "answer": 1700.0,
+        "question": "Find the total value where sex_ethnicity_race_and_citizenship is 'american indian or alaska native' and labor_force_status is 'in labor force' and sub_labor_force_status is 'part time' and percentage_in_labor_force is '88.2' and percentage_working_for_pay is '88.2' and percentage_full_time is '76.5' and percentage_part_time is '11.8'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "sex_ethnicity_race_and_citizenship",
+        "_ref_x": "u.s. citizen or permanent resident",
+        "_ref_measure": "percentage_full_time",
+        "_filters": {
+          "sex_ethnicity_race_and_citizenship": "u.s. citizen or permanent resident",
+          "labor_force_status": "in labor force",
+          "sub_labor_force_status": "all working",
+          "total": "775300.0",
+          "percentage_in_labor_force": "87.7",
+          "percentage_working_for_pay": "85.6",
+          "percentage_part_time": "10.2"
+        },
+        "answer": 75.4,
+        "question": "Find the percentage_full_time value where sex_ethnicity_race_and_citizenship is 'u.s. citizen or permanent resident' and labor_force_status is 'in labor force' and sub_labor_force_status is 'all working' and total is '775300.0' and percentage_in_labor_force is '87.7' and percentage_working_for_pay is '85.6' and percentage_part_time is '10.2'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "sex_ethnicity_race_and_citizenship",
+        "_ref_x": "native hawaiian or other pacific islander",
+        "_ref_measure": "total",
+        "answer": 4500.0,
+        "question": "What is the total total across all records where sex_ethnicity_race_and_citizenship is 'native hawaiian or other pacific islander'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "sub_labor_force_status",
+        "_ref_x": "part time",
+        "_ref_measure": "total",
+        "answer": 8003200.0,
+        "question": "What is the total total across all records where sub_labor_force_status is 'part time'?"
+      }
+    ]
+  },
+  {
+    "table_id": "structural_24",
+    "raw_file": "raw/structural_24.xlsx",
+    "tidy_file": "tidy/structural_24_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "sex",
+        "_ref_x": "female",
+        "_ref_measure": "percent",
+        "_filters": {
+          "sex": "female",
+          "language_workers": "english-language workers",
+          "marital_status": "nan",
+          "agricultural_region": "agricultural region 3"
+        },
+        "answer": 30.6,
+        "question": "Find the percent value where sex is 'female' and language_workers is 'english-language workers' and marital_status is 'nan' and agricultural_region is 'agricultural region 3'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "sex",
+        "_ref_x": "nan",
+        "_ref_measure": "percent",
+        "_filters": {
+          "sex": "nan",
+          "language_workers": "english-language workers",
+          "marital_status": "common-law",
+          "agricultural_region": "agricultural region 3"
+        },
+        "answer": 6.4,
+        "question": "Find the percent value where sex is 'nan' and language_workers is 'english-language workers' and marital_status is 'common-law' and agricultural_region is 'agricultural region 3'."
+      }
+    ]
+  },
+  {
+    "table_id": "structural_25",
+    "raw_file": "raw/structural_25.xlsx",
+    "tidy_file": "tidy/structural_25_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "sub_field",
+        "_ref_x": "computer and information sciences",
+        "_ref_measure": "all_employed",
+        "_filters": {
+          "field_of_doctorate": "computer and information sciences",
+          "sub_field": "computer and information sciences",
+          "employment_sector": "private non-profit",
+          "sector_employment_count": "700"
+        },
+        "answer": 19000.0,
+        "question": "Find the all_employed value where field_of_doctorate is 'computer and information sciences' and sub_field is 'computer and information sciences' and employment_sector is 'private non-profit' and sector_employment_count is '700'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "sub_field",
+        "_ref_x": "psychology",
+        "_ref_measure": "sector_employment_count",
+        "_filters": {
+          "field_of_doctorate": "psychology",
+          "sub_field": "psychology",
+          "all_employed": "102400.0",
+          "employment_sector": "private non-profit"
+        },
+        "answer": 9800.0,
+        "question": "Find the sector_employment_count value where field_of_doctorate is 'psychology' and sub_field is 'psychology' and all_employed is '102400.0' and employment_sector is 'private non-profit'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "sub_field",
+        "_ref_x": "health",
+        "_ref_measure": "all_employed",
+        "answer": 218400.0,
+        "question": "What is the total all_employed across all records where sub_field is 'health'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "employment_sector",
+        "_ref_x": "state or local government",
+        "_ref_measure": "sector_employment_count",
+        "answer": 17400.0,
+        "question": "What is the total sector_employment_count across all records where employment_sector is 'state or local government'?"
+      }
+    ]
+  },
+  {
+    "table_id": "structural_26",
+    "raw_file": "raw/structural_26.xlsx",
+    "tidy_file": "tidy/structural_26_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "athlete",
+        "_ref_x": "dorcus inzikuru",
+        "_ref_measure": "rank",
+        "_filters": {
+          "athlete": "dorcus inzikuru",
+          "event": "3000 m steeplechase",
+          "stage": "heat",
+          "result": "9:35.29"
+        },
+        "answer": 7.0,
+        "question": "Find the rank value where athlete is 'dorcus inzikuru' and event is '3000 m steeplechase' and stage is 'heat' and result is '9:35.29'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "athlete",
+        "_ref_x": "jane suuto",
+        "_ref_measure": "rank",
+        "_filters": {
+          "athlete": "jane suuto",
+          "event": "marathon",
+          "stage": "final",
+          "result": "2:44:46"
+        },
+        "answer": 93.0,
+        "question": "Find the rank value where athlete is 'jane suuto' and event is 'marathon' and stage is 'final' and result is '2:44:46'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "stage",
+        "_ref_x": "heat",
+        "_ref_measure": "rank",
+        "answer": 18.0,
+        "question": "What is the total rank across all records where stage is 'heat'?"
+      }
+    ]
+  },
+  {
+    "table_id": "structural_3",
+    "raw_file": "raw/structural_3.xlsx",
+    "tidy_file": "tidy/structural_3_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "age_group",
+        "_ref_x": "25+",
+        "_ref_measure": "year",
+        "_filters": {
+          "age_group": "25+",
+          "gender": "Overall",
+          "population_category": "Ethnic minorities",
+          "inclusion_status": "Including",
+          "school_attendance_rate": "0.3"
+        },
+        "answer": 2011.0,
+        "question": "Find the year value where age_group is '25+' and gender is 'Overall' and population_category is 'Ethnic minorities' and inclusion_status is 'Including' and school_attendance_rate is '0.3'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "age_group",
+        "_ref_x": "6 – 11",
+        "_ref_measure": "school_attendance_rate",
+        "_filters": {
+          "year": "2016",
+          "age_group": "6 – 11",
+          "gender": "Overall",
+          "population_category": "Whole population",
+          "inclusion_status": "Including"
+        },
+        "answer": 100.0,
+        "question": "Find the school_attendance_rate value where year is '2016' and age_group is '6 – 11' and gender is 'Overall' and population_category is 'Whole population' and inclusion_status is 'Including'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "age_group",
+        "_ref_x": "6 – 11",
+        "_ref_measure": "year",
+        "answer": 48324.0,
+        "question": "What is the total year across all records where age_group is '6 – 11'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "gender",
+        "_ref_x": "Female",
+        "_ref_measure": "year",
+        "answer": 80540.0,
+        "question": "What is the total year across all records where gender is 'Female'?"
+      }
+    ]
+  },
+  {
+    "table_id": "structural_6",
+    "raw_file": "raw/structural_6.xlsx",
+    "tidy_file": "tidy/structural_6_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "team",
+        "_ref_x": "1. fc nurnberg",
+        "_ref_measure": "count",
+        "_filters": {
+          "team": "1. fc nurnberg",
+          "from_date": "25 june 2016",
+          "to_date": "7 march 2017",
+          "game_outcome": "g",
+          "win_percentage": "10.0"
+        },
+        "answer": 25.0,
+        "question": "Find the count value where team is '1. fc nurnberg' and from_date is '25 june 2016' and to_date is '7 march 2017' and game_outcome is 'g' and win_percentage is '10.0'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "team",
+        "_ref_x": "karlsruher sc",
+        "_ref_measure": "win_percentage",
+        "_filters": {
+          "team": "karlsruher sc",
+          "from_date": "29 august 2017",
+          "to_date": "present",
+          "game_outcome": "d",
+          "count": "15.0"
+        },
+        "answer": 25.0,
+        "question": "Find the win_percentage value where team is 'karlsruher sc' and from_date is '29 august 2017' and to_date is 'present' and game_outcome is 'd' and count is '15.0'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "from_date",
+        "_ref_x": "25 june 2016",
+        "_ref_measure": "count",
+        "answer": 82.0,
+        "question": "What is the total count across all records where from_date is '25 june 2016'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "game_outcome",
+        "_ref_x": "win %",
+        "_ref_measure": "count",
+        "answer": 227.3,
+        "question": "What is the total count across all records where game_outcome is 'win %'?"
+      }
+    ]
+  },
+  {
+    "table_id": "structural_7",
+    "raw_file": "raw/structural_7.xlsx",
+    "tidy_file": "tidy/structural_7_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "team",
+        "_ref_x": "tampa bay buccaneers",
+        "_ref_measure": "season",
+        "_filters": {
+          "team": "tampa bay buccaneers",
+          "games_played": "16",
+          "statistic_type": "Unnamed: 6",
+          "statistic_value": "4.5"
+        },
+        "answer": 2017.0,
+        "question": "Find the season value where team is 'tampa bay buccaneers' and games_played is '16' and statistic_type is 'Unnamed: 6' and statistic_value is '4.5'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "team",
+        "_ref_x": "tampa bay buccaneers",
+        "_ref_measure": "statistic_value",
+        "_filters": {
+          "season": "2015",
+          "team": "tampa bay buccaneers",
+          "games_played": "16",
+          "statistic_type": "Unnamed: 7"
+        },
+        "answer": 59.0,
+        "question": "Find the statistic_value value where season is '2015' and team is 'tampa bay buccaneers' and games_played is '16' and statistic_type is 'Unnamed: 7'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "statistic_type",
+        "_ref_x": "Unnamed: 11",
+        "_ref_measure": "games_played",
+        "answer": 47.0,
+        "question": "What is the total games_played across all records where statistic_type is 'Unnamed: 11'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "statistic_type",
+        "_ref_x": "Unnamed: 12",
+        "_ref_measure": "games_played",
+        "answer": 47.0,
+        "question": "What is the total games_played across all records where statistic_type is 'Unnamed: 12'?"
+      }
+    ]
+  },
+  {
+    "table_id": "structural_8",
+    "raw_file": "raw/structural_8.xlsx",
+    "tidy_file": "tidy/structural_8_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "granular_shock",
+        "_ref_x": "granular shock",
+        "_ref_measure": "value",
+        "_filters": {
+          "granular_shock": "granular shock",
+          "granular_shock_variant": "granular shock 1",
+          "statistical_measure": "number of observations"
+        },
+        "answer": 946.0,
+        "question": "Find the value value where granular_shock is 'granular shock' and granular_shock_variant is 'granular shock 1' and statistical_measure is 'number of observations'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "granular_shock",
+        "_ref_x": "granular shock",
+        "_ref_measure": "value",
+        "_filters": {
+          "granular_shock": "granular shock",
+          "granular_shock_variant": "granular shock 2",
+          "statistical_measure": "r-squared"
+        },
+        "answer": 0.37,
+        "question": "Find the value value where granular_shock is 'granular shock' and granular_shock_variant is 'granular shock 2' and statistical_measure is 'r-squared'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "granular_shock_variant",
+        "_ref_x": "granular shock 3",
+        "_ref_measure": "value",
+        "answer": 947.206,
+        "question": "What is the total value across all records where granular_shock_variant is 'granular shock 3'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "statistical_measure",
+        "_ref_x": "standard error",
+        "_ref_measure": "value",
+        "answer": 0.5509999999999999,
+        "question": "What is the total value across all records where statistical_measure is 'standard error'?"
+      }
+    ]
+  },
+  {
+    "table_id": "total_investment_in_shandong",
+    "raw_file": "raw/Total_Investment_in_Shandong.xlsx",
+    "tidy_file": "tidy/Total_Investment_in_Shandong_normalized.csv",
+    "qa_pairs": [
+      {
+        "qtype": "lookup",
+        "_ref_dim": "economy_type",
+        "_ref_x": "Urban",
+        "_ref_measure": "year",
+        "_filters": {
+          "economy_type": "Urban",
+          "area": "Urban",
+          "investment_amount": "18.63"
+        },
+        "answer": 1990.0,
+        "question": "Find the year value where economy_type is 'Urban' and area is 'Urban' and investment_amount is '18.63'."
+      },
+      {
+        "qtype": "lookup",
+        "_ref_dim": "economy_type",
+        "_ref_x": "Rural",
+        "_ref_measure": "investment_amount",
+        "_filters": {
+          "year": "1981.0",
+          "economy_type": "Rural",
+          "area": "Rural"
+        },
+        "answer": 17.28,
+        "question": "Find the investment_amount value where year is '1981.0' and economy_type is 'Rural' and area is 'Rural'."
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "economy_type",
+        "_ref_x": "Urban",
+        "_ref_measure": "investment_amount",
+        "answer": 8879.0816,
+        "question": "What is the total investment_amount across all records where economy_type is 'Urban'?"
+      },
+      {
+        "qtype": "aggregation",
+        "_ref_dim": "area",
+        "_ref_x": "Urban",
+        "_ref_measure": "investment_amount",
+        "answer": 8879.0816,
+        "question": "What is the total investment_amount across all records where area is 'Urban'?"
+      }
+    ]
+  }
+]

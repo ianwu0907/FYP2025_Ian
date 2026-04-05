@@ -1,0 +1,37 @@
+sex,marital_status,agricultural_region,language_group,percent
+female,female,agricultural region 1,french-language workers,35.3
+female,female,agricultural region 1,english-language workers,28.0
+female,female,agricultural region 3,french-language workers,41.8
+female,female,agricultural region 3,english-language workers,30.6
+female,female,agricultural region 4,french-language workers,35.9
+female,female,agricultural region 4,english-language workers,26.6
+male,male,agricultural region 1,french-language workers,64.7
+male,male,agricultural region 1,english-language workers,72.0
+male,male,agricultural region 3,french-language workers,58.2
+male,male,agricultural region 3,english-language workers,69.4
+male,male,agricultural region 4,french-language workers,64.1
+male,male,agricultural region 4,english-language workers,73.4
+single,single,agricultural region 1,french-language workers,18.7
+single,single,agricultural region 1,english-language workers,24.8
+single,single,agricultural region 3,french-language workers,26.9
+single,single,agricultural region 3,english-language workers,26.1
+single,single,agricultural region 4,french-language workers,25.6
+single,single,agricultural region 4,english-language workers,32.8
+married,married,agricultural region 1,french-language workers,51.3
+married,married,agricultural region 1,english-language workers,53.9
+married,married,agricultural region 3,french-language workers,47.8
+married,married,agricultural region 3,english-language workers,56.7
+married,married,agricultural region 4,french-language workers,54.4
+married,married,agricultural region 4,english-language workers,57.8
+common-law,common-law,agricultural region 1,french-language workers,17.1
+common-law,common-law,agricultural region 1,english-language workers,10.9
+common-law,common-law,agricultural region 3,french-language workers,22.4
+common-law,common-law,agricultural region 3,english-language workers,6.4
+common-law,common-law,agricultural region 4,french-language workers,11.8
+common-law,common-law,agricultural region 4,english-language workers,7.8
+"separated, divorced, or widowed","separated, divorced, or widowed",agricultural region 1,french-language workers,12.8
+"separated, divorced, or widowed","separated, divorced, or widowed",agricultural region 1,english-language workers,10.6
+"separated, divorced, or widowed","separated, divorced, or widowed",agricultural region 3,french-language workers,0.0
+"separated, divorced, or widowed","separated, divorced, or widowed",agricultural region 3,english-language workers,10.8
+"separated, divorced, or widowed","separated, divorced, or widowed",agricultural region 4,french-language workers,7.7
+"separated, divorced, or widowed","separated, divorced, or widowed",agricultural region 4,english-language workers,0.0

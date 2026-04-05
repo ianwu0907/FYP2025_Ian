@@ -1,0 +1,25 @@
+section_header,category,male_percentage,female_percentage
+,total number,"1,242,600","1,352,000"
+,mean age,38.6,39.4
+,,% distribution,39.4
+age group,25 to 44,41.7,44.4
+age group,45 to 64,29.0,27.2
+age group,65 or older,6.8,8.6
+economic class,principal applicant,26.2,12.2
+economic class,dependant,23.5,33.7
+economic class,family class,28.9,37.4
+economic class,refugee class,16.4,12.7
+economic class,other,5.0,4.0
+landing year,1980 to 1989,23.2,22.3
+landing year,1990 to 1999,44.1,44.9
+landing year,2000 to 2006,32.7,32.8
+source world region,united states,2.1,2.6
+source world region,caribbean/central and south america,10.1,11.0
+source world region,western europe,8.1,7.3
+source world region,eastern europe,12.6,12.6
+source world region,sub-saharan africa,4.8,4.6
+source world region,north africa/middle east/west asia,9.4,7.7
+source world region,south asia,19.3,17.6
+source world region,south east asia,11.9,14.1
+source world region,east asia,20.7,21.8
+source world region,oceania,0.7,0.7

@@ -390,12 +390,23 @@ class TransformationGenerator:
                         )
 
                     else:
-                        logger.error("Max retries reached")
+                        logger.error(
+                            "Max retries reached. All transformation attempts produced "
+                            "invalid output. Returning the original raw DataFrame as "
+                            "a safe fallback — no data is lost."
+                        )
                         return {
                             "normalized_df": result_df,
                             "transformation_code": code,
                             "transformation_strategy": {"approach": "code_recipe_guided"},
-                            "validation_result": validation,
+                            "validation_result": {
+                                **validation,
+                                "fallback_to_raw": True,
+                                "fallback_reason": (
+                                    "All transformation attempts failed validation. "
+                                    "Raw input returned to prevent data loss."
+                                ),
+                            },
                             "attempts": attempt + 1,
                         }
 
@@ -740,7 +751,7 @@ def transform(df):
     def _few_shot_loop() -> str:
         return """\
 === FEW-SHOT EXAMPLE ===
-⚠️  WARNING: The values below (row indices, column indices, year strings, column names)
+WARNING: The values below (row indices, column indices, year strings, column names)
 are SPECIFIC TO THIS EXAMPLE spreadsheet. For YOUR spreadsheet, derive
 all such values from the HEADERS, PHYSICAL FEATURES, and SOURCE DATA above.
 Do NOT copy any number or string literal from this example into your code.

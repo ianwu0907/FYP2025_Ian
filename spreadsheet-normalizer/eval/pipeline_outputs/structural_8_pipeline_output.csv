@@ -1,0 +1,22 @@
+granular_shock,measurement_type,measurement_value
+,1,
+coefficient,1,0.57
+standard error,1,0.216
+coefficient,1,-0.035
+standard error,1,0.014
+number of observations,1,946.0
+r-squared,1,0.13
+,2,
+coefficient,2,0.768
+standard error,2,0.149
+coefficient,2,-0.086
+standard error,2,0.012
+number of observations,2,946.0
+r-squared,2,0.37
+,3,
+coefficient,3,0.764
+standard error,3,0.149
+coefficient,3,-0.078
+standard error,3,0.011
+number of observations,3,946.0
+r-squared,3,0.36

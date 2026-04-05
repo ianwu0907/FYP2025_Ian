@@ -1,0 +1,73 @@
+place_of_birth,language,agricultural_region,section,percentage
+born in the province of residence,french-language workers,agricultural region 1,,86.1
+born in the province of residence,english-language workers,agricultural region 1,,84.6
+born in the province of residence,french-language workers,agricultural region 3,,82.1
+born in the province of residence,english-language workers,agricultural region 3,,78.3
+born in the province of residence,french-language workers,agricultural region 4,,92.8
+born in the province of residence,english-language workers,agricultural region 4,,76.6
+born in a different province,french-language workers,agricultural region 1,,7.5
+born in a different province,english-language workers,agricultural region 1,,8.0
+born in a different province,french-language workers,agricultural region 3,,14.9
+born in a different province,english-language workers,agricultural region 3,,17.8
+born in a different province,french-language workers,agricultural region 4,,7.2
+born in a different province,english-language workers,agricultural region 4,,23.4
+born outside of canada,french-language workers,agricultural region 1,,6.4
+born outside of canada,english-language workers,agricultural region 1,,7.2
+born outside of canada,french-language workers,agricultural region 3,,0.0
+born outside of canada,english-language workers,agricultural region 3,,3.8
+born outside of canada,french-language workers,agricultural region 4,,0.0
+born outside of canada,english-language workers,agricultural region 4,,0.0
+anglican,french-language workers,agricultural region 1,religion,0.0
+anglican,english-language workers,agricultural region 1,religion,8.3
+anglican,french-language workers,agricultural region 3,religion,0.0
+anglican,english-language workers,agricultural region 3,religion,12.7
+anglican,french-language workers,agricultural region 4,religion,0.0
+anglican,english-language workers,agricultural region 4,religion,0.0
+catholic,french-language workers,agricultural region 1,religion,93.6
+catholic,english-language workers,agricultural region 1,religion,15.0
+catholic,french-language workers,agricultural region 3,religion,92.5
+catholic,english-language workers,agricultural region 3,religion,19.1
+catholic,french-language workers,agricultural region 4,religion,96.4
+catholic,english-language workers,agricultural region 4,religion,59.4
+pentecostal,french-language workers,agricultural region 1,religion,2.7
+pentecostal,english-language workers,agricultural region 1,religion,7.8
+pentecostal,french-language workers,agricultural region 3,religion,0.0
+pentecostal,english-language workers,agricultural region 3,religion,0.0
+pentecostal,french-language workers,agricultural region 4,religion,0.0
+pentecostal,english-language workers,agricultural region 4,religion,0.0
+presbyterian,french-language workers,agricultural region 1,religion,0.0
+presbyterian,english-language workers,agricultural region 1,religion,0.0
+presbyterian,french-language workers,agricultural region 3,religion,0.0
+presbyterian,english-language workers,agricultural region 3,religion,0.0
+presbyterian,french-language workers,agricultural region 4,religion,0.0
+presbyterian,english-language workers,agricultural region 4,religion,0.0
+united church,french-language workers,agricultural region 1,religion,0.0
+united church,english-language workers,agricultural region 1,religion,11.5
+united church,french-language workers,agricultural region 3,religion,0.0
+united church,english-language workers,agricultural region 3,religion,25.5
+united church,french-language workers,agricultural region 4,religion,0.0
+united church,english-language workers,agricultural region 4,religion,21.9
+other christian,french-language workers,agricultural region 1,religion,0.0
+other christian,english-language workers,agricultural region 1,religion,37.4
+other christian,french-language workers,agricultural region 3,religion,0.0
+other christian,english-language workers,agricultural region 3,religion,25.5
+other christian,french-language workers,agricultural region 4,religion,0.0
+other christian,english-language workers,agricultural region 4,religion,0.0
+"buddhist, hindu, jewish, muslim and sikh",french-language workers,agricultural region 1,religion,0.0
+"buddhist, hindu, jewish, muslim and sikh",english-language workers,agricultural region 1,religion,0.0
+"buddhist, hindu, jewish, muslim and sikh",french-language workers,agricultural region 3,religion,0.0
+"buddhist, hindu, jewish, muslim and sikh",english-language workers,agricultural region 3,religion,0.0
+"buddhist, hindu, jewish, muslim and sikh",french-language workers,agricultural region 4,religion,0.0
+"buddhist, hindu, jewish, muslim and sikh",english-language workers,agricultural region 4,religion,0.0
+other religions,french-language workers,agricultural region 1,religion,0.0
+other religions,english-language workers,agricultural region 1,religion,0.0
+other religions,french-language workers,agricultural region 3,religion,0.0
+other religions,english-language workers,agricultural region 3,religion,0.0
+other religions,french-language workers,agricultural region 4,religion,0.0
+other religions,english-language workers,agricultural region 4,religion,0.0
+no religious affiliation,french-language workers,agricultural region 1,religion,3.7
+no religious affiliation,english-language workers,agricultural region 1,religion,18.3
+no religious affiliation,french-language workers,agricultural region 3,religion,0.0
+no religious affiliation,english-language workers,agricultural region 3,religion,15.9
+no religious affiliation,french-language workers,agricultural region 4,religion,0.0
+no religious affiliation,english-language workers,agricultural region 4,religion,7.8

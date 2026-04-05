@@ -347,43 +347,118 @@ class PhysicalFeatureExtractor:
             "left_header_cols_num": left_dim_count,
         }
 
-    def _find_data_start(self, df: pd.DataFrame) -> tuple:
-        """Find where data begins. Returns (header_depth, data_start_row).
-
-        Two structural conditions identify a data row:
-
-        1. NOT all-numeric: if every non-empty cell is numeric the row has
-           no text dimension labels → it is a header row (e.g. a year-header
-           row [None, 2010, 2011, 2012]).  A real data row always has at
-           least one text label alongside its numeric values.
-
-        2. At least two numeric values: rows with 0-1 numerics are title /
-           metadata / pure-label rows and cannot be data rows.
-
-        The old ``ratio >= min_numeric_ratio`` check has been removed.
-        It was intended to filter out sparse rows but it also penalises wide
-        tables where most columns are text dimension labels (e.g. 6 text cols
-        + 2 numeric cols → ratio = 0.25 < 0.30 for every data row).  For
-        such tables the ratio check caused _find_data_start to skip ALL data
-        rows and fall back to row 1, misclassifying the first true data row
-        as a column-header row.  The two conditions above are sufficient:
-        the is_all_numeric_row gate handles the year-header case that the
-        ratio check was originally designed to address.
+    def _find_data_start(self, df: pd.DataFrame) -> Tuple[int, int]:
         """
-        for i in range(len(df)):
-            row = df.iloc[i]
-            non_empty = row.dropna()
-            non_empty = non_empty[non_empty.astype(str).str.strip() != ""]
-            if len(non_empty) == 0:
-                continue
-            numeric_count = sum(1 for v in non_empty if self._is_numeric(v))
+        Deterministically locate the physical boundary between headers and data
+        using structural signatures (Unnamed checks, density jump, type alignment).
+        This strictly avoids LLM semantic guesswork or rigid column counts.
 
-            # Gate 1: all-numeric rows have no text labels → header, not data.
-            is_all_numeric_row = (numeric_count == len(non_empty))
-            # Gate 2: at least two numeric values (rules out title/label rows).
-            if not is_all_numeric_row and numeric_count >= 2:
-                return i, i  # header_depth = rows before this
-        return 1, 1
+        Returns:
+            header_depth (int): The number of rows belonging to the header.
+            data_start_row (int): The index of the first row of actual data.
+        """
+        if df.empty:
+            return 0, 0
+
+        n_rows, n_cols = df.shape
+
+        # =====================================================================
+        # STEP 1: Fast-path (Pre-check)
+        # =====================================================================
+        # If pandas successfully parsed headers (no 'Unnamed' columns),
+        # we completely trust the underlying engine. The real data starts at 0.
+        named_cols = sum(1 for c in df.columns if not str(c).startswith("Unnamed"))
+        if named_cols == n_cols and n_cols > 0:
+            return 0, 0
+
+        # =====================================================================
+        # STEP 2: Transition-path (Search for structural jump)
+        # =====================================================================
+        # Pandas failed (Unnamed exists). The real header is likely buried inside `df`.
+        # We look for the "Data Signature": a dense row that aligns with the
+        # dominant data types of the bottom region of the table.
+
+        row_fill_counts = df.notna().sum(axis=1)
+        max_fill = row_fill_counts.max()
+
+        if max_fill == 0:
+            return 0, 0
+
+        # 2a. Determine dominant type per column (using bottom half to avoid top-level noise)
+        eval_start = min(5, n_rows // 2) if n_rows > 10 else 0
+        eval_df = df.iloc[eval_start:]
+        dom_types = {}
+
+        for col in df.columns:
+            non_empty = eval_df[col].dropna()
+            if len(non_empty) == 0:
+                dom_types[col] = 'empty'
+                continue
+            # Strip commas for numbers like "15,765"
+            cleaned = non_empty.astype(str).str.replace(",", "", regex=False)
+            num_mask = pd.to_numeric(cleaned, errors='coerce').notna()
+            # If >50% parses as numeric, the column is numeric
+            dom_types[col] = 'numeric' if num_mask.mean() > 0.5 else 'text'
+
+        # 2b. Scan downwards to find the structural transition
+        for i in range(n_rows):
+            row = df.iloc[i]
+
+            # Condition A: Density - must be part of the main table block (>= 80% of max fill)
+            if row_fill_counts.iloc[i] < max_fill * 0.8:
+                continue
+
+            # Condition B: Type Alignment - does it match the expected data types?
+            match_count = 0
+            valid_cols = 0
+            is_pure_string_row = True
+
+            for col in df.columns:
+                val = row[col]
+                if pd.isna(val) or dom_types[col] == 'empty':
+                    continue
+
+                valid_cols += 1
+                cleaned_val = str(val).strip().replace(",", "")
+                is_num = pd.to_numeric(pd.Series([cleaned_val]), errors='coerce').notna().iloc[0]
+
+                if is_num:
+                    is_pure_string_row = False
+
+                if dom_types[col] == 'numeric' and is_num:
+                    match_count += 1
+                elif dom_types[col] == 'text' and not is_num:
+                    match_count += 1
+
+            # --- Crucial Header Interception ---
+            # If the row is 100% strings, it is highly likely the buried Header row.
+            if is_pure_string_row:
+                if 'numeric' in dom_types.values():
+                    # Table has numeric columns, so a pure string row MUST be a header. Skip it.
+                    continue
+                else:
+                    # Edge Case: The entire table is pure text.
+                    # The first dense string row is the header, data starts at the next dense row.
+                    if i + 1 < n_rows and row_fill_counts.iloc[i+1] >= max_fill * 0.8:
+                        return i + 1, i + 1
+                    return i, i
+
+            alignment_rate = match_count / valid_cols if valid_cols > 0 else 0
+
+            # If we hit a dense row that aligns with the table's dominant types (>70% match),
+            # this is unambiguously the start of the data.
+            if alignment_rate >= 0.7:
+                return i, i
+
+        # =====================================================================
+        # STEP 3: Fallback (Desperation mode)
+        # =====================================================================
+        # If no clear jump is found, fallback to the first row that has any data.
+        for i in range(n_rows):
+            if row_fill_counts.iloc[i] > 0:
+                return i, i
+
+        return 0, 0
 
     def _find_data_end(self, df: pd.DataFrame, start: int) -> int:
         if start >= len(df):

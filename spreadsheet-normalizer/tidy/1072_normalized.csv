@@ -1,0 +1,31 @@
+source_of_assistance,user_type,measure,value
+family in same household,wheeled mobility device users,%,65.3
+family in same household,wheeled mobility device users,95% confidence interval from,63.3
+family in same household,wheeled mobility device users,95% confidence interval to,67.3
+family in same household,non-users of wheeled mobility device,%,65.6
+family in same household,non-users of wheeled mobility device,95% confidence interval from,64.6
+family in same household,non-users of wheeled mobility device,95% confidence interval to,66.0
+family not in same household,wheeled mobility device users,%,44.4
+family not in same household,wheeled mobility device users,95% confidence interval from,42.5
+family not in same household,wheeled mobility device users,95% confidence interval to,46.3
+family not in same household,non-users of wheeled mobility device,%,40.4
+family not in same household,non-users of wheeled mobility device,95% confidence interval from,39.6
+family not in same household,non-users of wheeled mobility device,95% confidence interval to,40.8
+friends/neighbours,wheeled mobility device users,%,30.4
+friends/neighbours,wheeled mobility device users,95% confidence interval from,28.8
+friends/neighbours,wheeled mobility device users,95% confidence interval to,32.1
+friends/neighbours,non-users of wheeled mobility device,%,25.6
+friends/neighbours,non-users of wheeled mobility device,95% confidence interval from,25.0
+friends/neighbours,non-users of wheeled mobility device,95% confidence interval to,25.9
+paid organizations/individuals,wheeled mobility device users,%,27.0
+paid organizations/individuals,wheeled mobility device users,95% confidence interval from,25.8
+paid organizations/individuals,wheeled mobility device users,95% confidence interval to,28.2
+paid organizations/individuals,non-users of wheeled mobility device,%,20.4
+paid organizations/individuals,non-users of wheeled mobility device,95% confidence interval from,19.9
+paid organizations/individuals,non-users of wheeled mobility device,95% confidence interval to,20.7
+unpaid organizations/individuals,wheeled mobility device users,%,35.4
+unpaid organizations/individuals,wheeled mobility device users,95% confidence interval from,33.5
+unpaid organizations/individuals,wheeled mobility device users,95% confidence interval to,37.4
+unpaid organizations/individuals,non-users of wheeled mobility device,%,11.0
+unpaid organizations/individuals,non-users of wheeled mobility device,95% confidence interval from,10.5
+unpaid organizations/individuals,non-users of wheeled mobility device,95% confidence interval to,11.5

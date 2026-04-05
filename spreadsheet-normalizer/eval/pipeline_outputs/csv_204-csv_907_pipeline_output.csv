@@ -1,0 +1,120 @@
+lift_name,type,year_installed,specification,value
+Bruno,fixed double,1987,"Top
+elevation
+(ft)",5885.0
+Molly's Express,detach quad,2000,"Top
+elevation
+(ft)",5835.0
+Pucci,fixed triple,1987,"Top
+elevation
+(ft)",5920.0
+Stormin' Norman,detach quad,2000,"Top
+elevation
+(ft)",6245.0
+Magic Mile Express,detach quad,1992,"Top
+elevation
+(ft)",6990.0
+Palmer Express,detach quad,1996,"Top
+elevation
+(ft)",8470.0
+Jeff Flood Express (Still Creek Basin),detach quad,2007,"Top
+elevation
+(ft)",6020.0
+Bruno,fixed double,1987,"Bottom
+elevation",5840.0
+Molly's Express,detach quad,2000,"Bottom
+elevation",4990.0
+Pucci,fixed triple,1987,"Bottom
+elevation",5350.0
+Stormin' Norman,detach quad,2000,"Bottom
+elevation",5460.0
+Magic Mile Express,detach quad,1992,"Bottom
+elevation",5915.0
+Palmer Express,detach quad,1996,"Bottom
+elevation",6940.0
+Jeff Flood Express (Still Creek Basin),detach quad,2007,"Bottom
+elevation",4850.0
+Bruno,fixed double,1987,"Vertical
+rise",45.0
+Molly's Express,detach quad,2000,"Vertical
+rise",845.0
+Pucci,fixed triple,1987,"Vertical
+rise",570.0
+Stormin' Norman,detach quad,2000,"Vertical
+rise",785.0
+Magic Mile Express,detach quad,1992,"Vertical
+rise",1075.0
+Palmer Express,detach quad,1996,"Vertical
+rise",1530.0
+Jeff Flood Express (Still Creek Basin),detach quad,2007,"Vertical
+rise",1170.0
+Bruno,fixed double,1987,"Length
+(ft)",368.0
+Molly's Express,detach quad,2000,"Length
+(ft)",5244.0
+Pucci,fixed triple,1987,"Length
+(ft)",3398.0
+Stormin' Norman,detach quad,2000,"Length
+(ft)",4396.0
+Magic Mile Express,detach quad,1992,"Length
+(ft)",5359.0
+Palmer Express,detach quad,1996,"Length
+(ft)",5468.0
+Jeff Flood Express (Still Creek Basin),detach quad,2007,"Length
+(ft)",6506.0
+Bruno,fixed double,1987,"Slope
+(%)",
+Molly's Express,detach quad,2000,"Slope
+(%)",
+Pucci,fixed triple,1987,"Slope
+(%)",
+Stormin' Norman,detach quad,2000,"Slope
+(%)",
+Magic Mile Express,detach quad,1992,"Slope
+(%)",
+Palmer Express,detach quad,1996,"Slope
+(%)",
+Jeff Flood Express (Still Creek Basin),detach quad,2007,"Slope
+(%)",
+Bruno,fixed double,1987,"Capacity
+(rides/hr)",630.0
+Molly's Express,detach quad,2000,"Capacity
+(rides/hr)",1200.0
+Pucci,fixed triple,1987,"Capacity
+(rides/hr)",1330.0
+Stormin' Norman,detach quad,2000,"Capacity
+(rides/hr)",1500.0
+Magic Mile Express,detach quad,1992,"Capacity
+(rides/hr)",1600.0
+Palmer Express,detach quad,1996,"Capacity
+(rides/hr)",1800.0
+Jeff Flood Express (Still Creek Basin),detach quad,2007,"Capacity
+(rides/hr)",1800.0
+Bruno,fixed double,1987,"Speed
+(ft/min)",
+Molly's Express,detach quad,2000,"Speed
+(ft/min)",
+Pucci,fixed triple,1987,"Speed
+(ft/min)",
+Stormin' Norman,detach quad,2000,"Speed
+(ft/min)",
+Magic Mile Express,detach quad,1992,"Speed
+(ft/min)",
+Palmer Express,detach quad,1996,"Speed
+(ft/min)",
+Jeff Flood Express (Still Creek Basin),detach quad,2007,"Speed
+(ft/min)",
+Bruno,fixed double,1987,"Lift
+Manufacturer",
+Molly's Express,detach quad,2000,"Lift
+Manufacturer",
+Pucci,fixed triple,1987,"Lift
+Manufacturer",
+Stormin' Norman,detach quad,2000,"Lift
+Manufacturer",
+Magic Mile Express,detach quad,1992,"Lift
+Manufacturer",
+Palmer Express,detach quad,1996,"Lift
+Manufacturer",
+Jeff Flood Express (Still Creek Basin),detach quad,2007,"Lift
+Manufacturer",
