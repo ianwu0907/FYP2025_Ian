@@ -1,41 +1,137 @@
-country of birth,economic immigrants,Unnamed: 2,Unnamed: 3,family-sponsored immigrants,refugees,other immigrants,total
-,principal applicants,secondary applicants,total,,,,
-,percent,,,,,,
-women,,,,,,,
-ethiopia,3.0,3.6,6.6,34.9,58.0,0.5,100.0
-somalia,1.0,1.1,2.1,21.3,75.1,1.5,100.0
-eritrea,1.1,2.0,3.1,23.9,72.9,0.1,100.0
-sudan,4.2,6.3,10.6,23.9,65.0,0.6,100.0
-south sudan,0.0,0.4,0.4,14.5,85.1,0.0,100.0
-burundi,3.9,9.5,13.4,16.8,64.6,5.2,100.0
-kenya,33.0,22.6,55.6,23.8,18.1,2.5,100.0
-zimbabwe,8.5,9.0,17.5,12.8,59.0,10.7,100.0
-rwanda,6.4,7.4,13.8,16.1,67.4,2.7,100.0
-democratic republic of the congo,6.1,4.4,10.5,16.1,67.9,5.5,100.0
-cameroon,37.0,30.5,67.4,22.8,9.1,0.7,100.0
-nigeria,21.3,40.7,62.1,19.0,17.1,1.9,100.0
-ghana,12.1,14.8,26.9,52.0,18.5,2.7,100.0
-cote d'ivoire,29.9,33.2,63.0,28.7,7.5,0.8,100.0
-senegal,35.3,20.7,56.0,36.7,6.5,0.9,100.0
-guinea,15.5,15.8,31.3,34.1,32.0,2.7,100.0
-other countries,21.7,18.2,39.9,24.3,33.7,2.1,100.0
-total,15.3,17.3,32.6,25.3,39.9,2.2,100.0
-men,,,,,,,
-ethiopia,6.7,0.5,7.2,19.7,72.8,0.4,100.0
-somalia,3.4,0.1,3.5,11.9,83.6,1.0,100.0
-eritrea,1.8,0.1,1.9,8.8,89.2,0.0,100.0
-sudan,6.3,1.2,7.6,4.3,88.1,0.0,100.0
-south sudan,1.7,0.0,1.7,3.5,94.8,0.0,100.0
-burundi,15.2,1.3,16.5,8.2,70.0,5.4,100.0
-kenya,45.0,9.5,54.6,22.2,18.9,4.4,100.0
-zimbabwe,15.4,3.7,19.1,11.1,60.3,9.5,100.0
-rwanda,12.8,1.4,14.2,9.9,71.6,4.4,100.0
-democratic republic of the congo,12.3,1.8,14.1,10.2,69.6,6.1,100.0
-cameroon,71.4,9.5,81.0,11.2,7.5,0.3,100.0
-nigeria,51.2,12.0,63.3,21.2,13.5,2.0,100.0
-ghana,28.5,4.2,32.7,42.1,21.8,3.3,100.0
-cote d'ivoire,72.2,8.2,80.4,12.5,6.3,0.9,100.0
-senegal,67.5,6.2,73.7,21.2,4.9,0.2,100.0
-guinea,50.5,2.7,53.2,21.4,22.6,2.8,100.0
-other countries,45.2,5.5,50.7,17.1,30.0,2.1,100.0
-total,33.9,5.1,39.0,17.2,41.7,2.1,100.0
+country_of_birth,gender,immigrant_category,percentage
+ethiopia,women,economic immigrants,3.0
+ethiopia,women,family-sponsored immigrants,34.9
+ethiopia,women,refugees,58.0
+ethiopia,women,other immigrants,0.5
+somalia,women,economic immigrants,1.0
+somalia,women,family-sponsored immigrants,21.3
+somalia,women,refugees,75.1
+somalia,women,other immigrants,1.5
+eritrea,women,economic immigrants,1.1
+eritrea,women,family-sponsored immigrants,23.9
+eritrea,women,refugees,72.9
+eritrea,women,other immigrants,0.1
+sudan,women,economic immigrants,4.2
+sudan,women,family-sponsored immigrants,23.9
+sudan,women,refugees,65.0
+sudan,women,other immigrants,0.6
+south sudan,women,economic immigrants,0.0
+south sudan,women,family-sponsored immigrants,14.5
+south sudan,women,refugees,85.1
+south sudan,women,other immigrants,0.0
+burundi,women,economic immigrants,3.9
+burundi,women,family-sponsored immigrants,16.8
+burundi,women,refugees,64.6
+burundi,women,other immigrants,5.2
+kenya,women,economic immigrants,33.0
+kenya,women,family-sponsored immigrants,23.8
+kenya,women,refugees,18.1
+kenya,women,other immigrants,2.5
+zimbabwe,women,economic immigrants,8.5
+zimbabwe,women,family-sponsored immigrants,12.8
+zimbabwe,women,refugees,59.0
+zimbabwe,women,other immigrants,10.7
+rwanda,women,economic immigrants,6.4
+rwanda,women,family-sponsored immigrants,16.1
+rwanda,women,refugees,67.4
+rwanda,women,other immigrants,2.7
+democratic republic of the congo,women,economic immigrants,6.1
+democratic republic of the congo,women,family-sponsored immigrants,16.1
+democratic republic of the congo,women,refugees,67.9
+democratic republic of the congo,women,other immigrants,5.5
+cameroon,women,economic immigrants,37.0
+cameroon,women,family-sponsored immigrants,22.8
+cameroon,women,refugees,9.1
+cameroon,women,other immigrants,0.7
+nigeria,women,economic immigrants,21.3
+nigeria,women,family-sponsored immigrants,19.0
+nigeria,women,refugees,17.1
+nigeria,women,other immigrants,1.9
+ghana,women,economic immigrants,12.1
+ghana,women,family-sponsored immigrants,52.0
+ghana,women,refugees,18.5
+ghana,women,other immigrants,2.7
+cote d'ivoire,women,economic immigrants,29.9
+cote d'ivoire,women,family-sponsored immigrants,28.7
+cote d'ivoire,women,refugees,7.5
+cote d'ivoire,women,other immigrants,0.8
+senegal,women,economic immigrants,35.3
+senegal,women,family-sponsored immigrants,36.7
+senegal,women,refugees,6.5
+senegal,women,other immigrants,0.9
+guinea,women,economic immigrants,15.5
+guinea,women,family-sponsored immigrants,34.1
+guinea,women,refugees,32.0
+guinea,women,other immigrants,2.7
+other countries,women,economic immigrants,21.7
+other countries,women,family-sponsored immigrants,24.3
+other countries,women,refugees,33.7
+other countries,women,other immigrants,2.1
+ethiopia,men,economic immigrants,6.7
+ethiopia,men,family-sponsored immigrants,19.7
+ethiopia,men,refugees,72.8
+ethiopia,men,other immigrants,0.4
+somalia,men,economic immigrants,3.4
+somalia,men,family-sponsored immigrants,11.9
+somalia,men,refugees,83.6
+somalia,men,other immigrants,1.0
+eritrea,men,economic immigrants,1.8
+eritrea,men,family-sponsored immigrants,8.8
+eritrea,men,refugees,89.2
+eritrea,men,other immigrants,0.0
+sudan,men,economic immigrants,6.3
+sudan,men,family-sponsored immigrants,4.3
+sudan,men,refugees,88.1
+sudan,men,other immigrants,0.0
+south sudan,men,economic immigrants,1.7
+south sudan,men,family-sponsored immigrants,3.5
+south sudan,men,refugees,94.8
+south sudan,men,other immigrants,0.0
+burundi,men,economic immigrants,15.2
+burundi,men,family-sponsored immigrants,8.2
+burundi,men,refugees,70.0
+burundi,men,other immigrants,5.4
+kenya,men,economic immigrants,45.0
+kenya,men,family-sponsored immigrants,22.2
+kenya,men,refugees,18.9
+kenya,men,other immigrants,4.4
+zimbabwe,men,economic immigrants,15.4
+zimbabwe,men,family-sponsored immigrants,11.1
+zimbabwe,men,refugees,60.3
+zimbabwe,men,other immigrants,9.5
+rwanda,men,economic immigrants,12.8
+rwanda,men,family-sponsored immigrants,9.9
+rwanda,men,refugees,71.6
+rwanda,men,other immigrants,4.4
+democratic republic of the congo,men,economic immigrants,12.3
+democratic republic of the congo,men,family-sponsored immigrants,10.2
+democratic republic of the congo,men,refugees,69.6
+democratic republic of the congo,men,other immigrants,6.1
+cameroon,men,economic immigrants,71.4
+cameroon,men,family-sponsored immigrants,11.2
+cameroon,men,refugees,7.5
+cameroon,men,other immigrants,0.3
+nigeria,men,economic immigrants,51.2
+nigeria,men,family-sponsored immigrants,21.2
+nigeria,men,refugees,13.5
+nigeria,men,other immigrants,2.0
+ghana,men,economic immigrants,28.5
+ghana,men,family-sponsored immigrants,42.1
+ghana,men,refugees,21.8
+ghana,men,other immigrants,3.3
+cote d'ivoire,men,economic immigrants,72.2
+cote d'ivoire,men,family-sponsored immigrants,12.5
+cote d'ivoire,men,refugees,6.3
+cote d'ivoire,men,other immigrants,0.9
+senegal,men,economic immigrants,67.5
+senegal,men,family-sponsored immigrants,21.2
+senegal,men,refugees,4.9
+senegal,men,other immigrants,0.2
+guinea,men,economic immigrants,50.5
+guinea,men,family-sponsored immigrants,21.4
+guinea,men,refugees,22.6
+guinea,men,other immigrants,2.8
+other countries,men,economic immigrants,45.2
+other countries,men,family-sponsored immigrants,17.1
+other countries,men,refugees,30.0
+other countries,men,other immigrants,2.1

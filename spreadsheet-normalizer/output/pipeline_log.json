@@ -1,49 +1,43 @@
 {
-  "input_file": "raw/1021.xlsx",
-  "start_time": "2026-04-06 17:15:35",
+  "input_file": "raw\\1007.xlsx",
+  "start_time": "2026-04-06 19:42:11",
   "stages": {
     "encoding": {
       "status": "success",
       "shape": [
-        13,
-        3
+        22,
+        9
       ],
-      "compression_ratio": 0.6225026288117771
+      "compression_ratio": 1.7259259259259259
     },
     "detection": {
       "status": "success",
-      "irregularities": [
-        "IMPLICIT_AGGREGATION_ROWS",
-        "SPARSE_ROW_FILL"
-      ],
-      "num_irregularities": 2
+      "irregularities": [],
+      "num_irregularities": 0
     },
     "schema_estimation": {
       "status": "success",
-      "observation_unit": "A single measurement of behaviour (screen time, sedentary time, lpa, or mvpa) for either weekday or weekend.",
-      "num_target_columns": 3,
-      "expected_rows": 8
+      "observation_unit": "One percentage value for a specific industry sector, worker group, and generational status combination",
+      "num_target_columns": 4,
+      "expected_rows": 160
     },
     "transformation": {
       "status": "success",
       "output_shape": [
-        4,
-        3
+        126,
+        4
       ],
       "validation": {
         "is_valid": true,
         "errors": [],
-        "warnings": [
-          "Column 'beta' is 75% null",
-          "Column 'p_value' is 75% null"
-        ],
+        "warnings": [],
         "actual_shape": [
-          4,
-          3
+          126,
+          4
         ],
         "expected_shape": [
-          8,
-          3
+          160,
+          4
         ]
       },
       "attempts": 1
@@ -51,68 +45,62 @@
   },
   "metrics_before": {
     "shape": {
-      "rows": 13,
-      "cols": 3
+      "rows": 22,
+      "cols": 9
     },
-    "cell_coverage": 0.8462,
-    "row_completeness_uniformity": 0.7076,
-    "column_type_homogeneity": 0.7633,
-    "data_row_ratio": 0.7692,
-    "column_completeness_min": 0.7692,
+    "cell_coverage": 0.9545,
+    "row_completeness_uniformity": 0.8101,
+    "column_type_homogeneity": 0.8315,
+    "data_row_ratio": 0.9091,
+    "column_completeness_min": 0.9091,
     "header_uniqueness": 1.0,
-    "type_consistency": 1.0,
-    "substring_containment": 0.0,
-    "inter_column_nmi": 0.0,
-    "groupby_queryability": 1.0,
+    "type_consistency": 0.9529,
+    "substring_containment": 0.0012,
+    "inter_column_nmi": 0.9732,
+    "groupby_queryability": 0.8025,
     "groupby_queryability_mode": "full"
   },
   "metrics_after": {
     "shape": {
-      "rows": 4,
-      "cols": 3
+      "rows": 126,
+      "cols": 4
     },
-    "cell_coverage": 0.5,
-    "row_completeness_uniformity": 0.6667,
-    "column_type_homogeneity": 0.75,
-    "data_row_ratio": 0.25,
-    "column_completeness_min": 0.25,
+    "cell_coverage": 0.9663,
+    "row_completeness_uniformity": 0.8889,
+    "column_type_homogeneity": 0.9127,
+    "data_row_ratio": 0.9048,
+    "column_completeness_min": 0.9048,
     "header_uniqueness": 1.0,
-    "type_consistency": 1.0,
-    "substring_containment": 0.0,
+    "type_consistency": 0.9855,
+    "substring_containment": 0.0003,
     "inter_column_nmi": 0.0,
-    "groupby_queryability": 0.0,
-    "groupby_queryability_mode": "no_dims"
+    "groupby_queryability": 1.0,
+    "groupby_queryability_mode": "full"
   },
   "metrics_comparison": {
-    "column_type_homogeneity": {
-      "before": 0.7633,
-      "after": 0.75,
-      "delta": -0.0133,
-      "direction": "✗ degraded"
-    },
-    "column_completeness_min": {
-      "before": 0.7692,
-      "after": 0.25,
-      "delta": -0.5192,
-      "direction": "✗ degraded"
-    },
     "groupby_queryability": {
-      "before": 1.0,
-      "after": 0.0,
-      "delta": -1.0,
-      "direction": "✗ degraded"
+      "before": 0.8025,
+      "after": 1.0,
+      "delta": 0.1975,
+      "direction": "✓ improved"
+    },
+    "column_type_homogeneity": {
+      "before": 0.8315,
+      "after": 0.9127,
+      "delta": 0.0812,
+      "direction": "✓ improved"
+    },
+    "type_consistency": {
+      "before": 0.9529,
+      "after": 0.9855,
+      "delta": 0.0326,
+      "direction": "✓ improved"
     },
     "cell_coverage": {
-      "before": 0.8462,
-      "after": 0.5,
-      "delta": -0.3462,
-      "direction": "✗ degraded"
-    },
-    "row_completeness_uniformity": {
-      "before": 0.7076,
-      "after": 0.6667,
-      "delta": -0.0409,
-      "direction": "✗ degraded"
+      "before": 0.9545,
+      "after": 0.9663,
+      "delta": 0.0118,
+      "direction": "✓ improved"
     },
     "header_uniqueness": {
       "before": 1.0,
@@ -120,37 +108,43 @@
       "delta": 0.0,
       "direction": "= unchanged"
     },
-    "inter_column_nmi": {
-      "before": 0.0,
-      "after": 0.0,
-      "delta": 0.0,
-      "direction": "= unchanged"
+    "row_completeness_uniformity": {
+      "before": 0.8101,
+      "after": 0.8889,
+      "delta": 0.0788,
+      "direction": "✓ improved"
     },
-    "type_consistency": {
-      "before": 1.0,
-      "after": 1.0,
-      "delta": 0.0,
+    "column_completeness_min": {
+      "before": 0.9091,
+      "after": 0.9048,
+      "delta": -0.0043,
       "direction": "= unchanged"
     },
     "data_row_ratio": {
-      "before": 0.7692,
-      "after": 0.25,
-      "delta": -0.5192,
-      "direction": "✗ degraded"
+      "before": 0.9091,
+      "after": 0.9048,
+      "delta": -0.0043,
+      "direction": "= unchanged"
     },
     "substring_containment": {
-      "before": 0.0,
-      "after": 0.0,
-      "delta": 0.0,
+      "before": 0.0012,
+      "after": 0.0003,
+      "delta": -0.0009,
       "direction": "= unchanged"
+    },
+    "inter_column_nmi": {
+      "before": 0.9732,
+      "after": 0.0,
+      "delta": -0.9732,
+      "direction": "✓ improved"
     },
     "_groupby_queryability_mode": {
       "before": "full",
-      "after": "no_dims"
+      "after": "full"
     }
   },
-  "output_file": "eval/pipeline_outputs/1021_pipeline_output.csv",
-  "end_time": "2026-04-06 17:15:49",
-  "elapsed_seconds": 14.35,
+  "output_file": "eval\\pipeline_outputs\\1007_pipeline_output.csv",
+  "end_time": "2026-04-06 19:46:26",
+  "elapsed_seconds": 254.67,
   "status": "success"
 }

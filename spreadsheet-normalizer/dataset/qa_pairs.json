@@ -1,8 +1,8 @@
 [
   {
     "table_id": "1001",
-    "raw_file": "raw/1001.xlsx",
-    "tidy_file": "tidy/1001_normalized.csv",
+    "raw_file": "raw\\1001.xlsx",
+    "tidy_file": "tidy\\1001_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -34,8 +34,8 @@
   },
   {
     "table_id": "1003",
-    "raw_file": "raw/1003.xlsx",
-    "tidy_file": "tidy/1003_normalized.csv",
+    "raw_file": "raw\\1003.xlsx",
+    "tidy_file": "tidy\\1003_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -69,8 +69,8 @@
   },
   {
     "table_id": "1007",
-    "raw_file": "raw/1007.xlsx",
-    "tidy_file": "tidy/1007_normalized.csv",
+    "raw_file": "raw\\1007.xlsx",
+    "tidy_file": "tidy\\1007_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -102,8 +102,8 @@
   },
   {
     "table_id": "1011",
-    "raw_file": "raw/1011.xlsx",
-    "tidy_file": "tidy/1011_normalized.csv",
+    "raw_file": "raw\\1011.xlsx",
+    "tidy_file": "tidy\\1011_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -135,8 +135,8 @@
   },
   {
     "table_id": "1021",
-    "raw_file": "raw/1021.xlsx",
-    "tidy_file": "tidy/1021_normalized.csv",
+    "raw_file": "raw\\1021.xlsx",
+    "tidy_file": "tidy\\1021_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -184,8 +184,8 @@
   },
   {
     "table_id": "1054",
-    "raw_file": "raw/1054.xlsx",
-    "tidy_file": "tidy/1054_normalized.csv",
+    "raw_file": "raw\\1054.xlsx",
+    "tidy_file": "tidy\\1054_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -239,8 +239,8 @@
   },
   {
     "table_id": "1056",
-    "raw_file": "raw/1056.xlsx",
-    "tidy_file": "tidy/1056_normalized.csv",
+    "raw_file": "raw\\1056.xlsx",
+    "tidy_file": "tidy\\1056_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -288,8 +288,8 @@
   },
   {
     "table_id": "1059",
-    "raw_file": "raw/1059.xlsx",
-    "tidy_file": "tidy/1059_normalized.csv",
+    "raw_file": "raw\\1059.xlsx",
+    "tidy_file": "tidy\\1059_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -337,8 +337,8 @@
   },
   {
     "table_id": "1061",
-    "raw_file": "raw/1061.xlsx",
-    "tidy_file": "tidy/1061_normalized.csv",
+    "raw_file": "raw\\1061.xlsx",
+    "tidy_file": "tidy\\1061_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -386,8 +386,8 @@
   },
   {
     "table_id": "1065",
-    "raw_file": "raw/1065.xlsx",
-    "tidy_file": "tidy/1065_normalized.csv",
+    "raw_file": "raw\\1065.xlsx",
+    "tidy_file": "tidy\\1065_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -435,8 +435,8 @@
   },
   {
     "table_id": "1072",
-    "raw_file": "raw/1072.xlsx",
-    "tidy_file": "tidy/1072_normalized.csv",
+    "raw_file": "raw\\1072.xlsx",
+    "tidy_file": "tidy\\1072_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -484,8 +484,8 @@
   },
   {
     "table_id": "1090",
-    "raw_file": "raw/1090.xlsx",
-    "tidy_file": "tidy/1090_normalized.csv",
+    "raw_file": "raw\\1090.xlsx",
+    "tidy_file": "tidy\\1090_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -535,8 +535,8 @@
   },
   {
     "table_id": "1110",
-    "raw_file": "raw/1110.xlsx",
-    "tidy_file": "tidy/1110_normalized.csv",
+    "raw_file": "raw\\1110.xlsx",
+    "tidy_file": "tidy\\1110_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -582,8 +582,8 @@
   },
   {
     "table_id": "1117",
-    "raw_file": "raw/1117.xlsx",
-    "tidy_file": "tidy/1117_normalized.csv",
+    "raw_file": "raw\\1117.xlsx",
+    "tidy_file": "tidy\\1117_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -633,8 +633,8 @@
   },
   {
     "table_id": "1118",
-    "raw_file": "raw/1118.xlsx",
-    "tidy_file": "tidy/1118_normalized.csv",
+    "raw_file": "raw\\1118.xlsx",
+    "tidy_file": "tidy\\1118_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -680,8 +680,8 @@
   },
   {
     "table_id": "1123",
-    "raw_file": "raw/1123.xlsx",
-    "tidy_file": "tidy/1123_normalized.csv",
+    "raw_file": "raw\\1123.xlsx",
+    "tidy_file": "tidy\\1123_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -731,8 +731,8 @@
   },
   {
     "table_id": "1153",
-    "raw_file": "raw/1153.xlsx",
-    "tidy_file": "tidy/1153_normalized.csv",
+    "raw_file": "raw\\1153.xlsx",
+    "tidy_file": "tidy\\1153_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -780,8 +780,8 @@
   },
   {
     "table_id": "1188",
-    "raw_file": "raw/1188.xlsx",
-    "tidy_file": "tidy/1188_normalized.csv",
+    "raw_file": "raw\\1188.xlsx",
+    "tidy_file": "tidy\\1188_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -827,8 +827,8 @@
   },
   {
     "table_id": "1191",
-    "raw_file": "raw/1191.xlsx",
-    "tidy_file": "tidy/1191_normalized.csv",
+    "raw_file": "raw\\1191.xlsx",
+    "tidy_file": "tidy\\1191_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -874,8 +874,8 @@
   },
   {
     "table_id": "12",
-    "raw_file": "raw/12.xlsx",
-    "tidy_file": "tidy/12_normalized.csv",
+    "raw_file": "raw\\12.xlsx",
+    "tidy_file": "tidy\\12_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -915,8 +915,8 @@
   },
   {
     "table_id": "1214",
-    "raw_file": "raw/1214.xlsx",
-    "tidy_file": "tidy/1214_normalized.csv",
+    "raw_file": "raw\\1214.xlsx",
+    "tidy_file": "tidy\\1214_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -968,8 +968,8 @@
   },
   {
     "table_id": "1241",
-    "raw_file": "raw/1241.xlsx",
-    "tidy_file": "tidy/1241_normalized.csv",
+    "raw_file": "raw\\1241.xlsx",
+    "tidy_file": "tidy\\1241_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -1017,8 +1017,8 @@
   },
   {
     "table_id": "1243",
-    "raw_file": "raw/1243.xlsx",
-    "tidy_file": "tidy/1243_normalized.csv",
+    "raw_file": "raw\\1243.xlsx",
+    "tidy_file": "tidy\\1243_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -1066,8 +1066,8 @@
   },
   {
     "table_id": "1250",
-    "raw_file": "raw/1250.xlsx",
-    "tidy_file": "tidy/1250_normalized.csv",
+    "raw_file": "raw\\1250.xlsx",
+    "tidy_file": "tidy\\1250_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -1113,8 +1113,8 @@
   },
   {
     "table_id": "1255",
-    "raw_file": "raw/1255.xlsx",
-    "tidy_file": "tidy/1255_normalized.csv",
+    "raw_file": "raw\\1255.xlsx",
+    "tidy_file": "tidy\\1255_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -1164,8 +1164,8 @@
   },
   {
     "table_id": "1261",
-    "raw_file": "raw/1261.xlsx",
-    "tidy_file": "tidy/1261_normalized.csv",
+    "raw_file": "raw\\1261.xlsx",
+    "tidy_file": "tidy\\1261_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -1211,8 +1211,8 @@
   },
   {
     "table_id": "1266",
-    "raw_file": "raw/1266.xlsx",
-    "tidy_file": "tidy/1266_normalized.csv",
+    "raw_file": "raw\\1266.xlsx",
+    "tidy_file": "tidy\\1266_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -1246,8 +1246,8 @@
   },
   {
     "table_id": "1277",
-    "raw_file": "raw/1277.xlsx",
-    "tidy_file": "tidy/1277_normalized.csv",
+    "raw_file": "raw\\1277.xlsx",
+    "tidy_file": "tidy\\1277_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -1277,8 +1277,8 @@
   },
   {
     "table_id": "1289",
-    "raw_file": "raw/1289.xlsx",
-    "tidy_file": "tidy/1289_normalized.csv",
+    "raw_file": "raw\\1289.xlsx",
+    "tidy_file": "tidy\\1289_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -1328,8 +1328,8 @@
   },
   {
     "table_id": "1291",
-    "raw_file": "raw/1291.xlsx",
-    "tidy_file": "tidy/1291_normalized.csv",
+    "raw_file": "raw\\1291.xlsx",
+    "tidy_file": "tidy\\1291_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -1375,8 +1375,8 @@
   },
   {
     "table_id": "1292",
-    "raw_file": "raw/1292.xlsx",
-    "tidy_file": "tidy/1292_normalized.csv",
+    "raw_file": "raw\\1292.xlsx",
+    "tidy_file": "tidy\\1292_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -1422,8 +1422,8 @@
   },
   {
     "table_id": "1293",
-    "raw_file": "raw/1293.xlsx",
-    "tidy_file": "tidy/1293_normalized.csv",
+    "raw_file": "raw\\1293.xlsx",
+    "tidy_file": "tidy\\1293_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -1469,8 +1469,8 @@
   },
   {
     "table_id": "1294",
-    "raw_file": "raw/1294.xlsx",
-    "tidy_file": "tidy/1294_normalized.csv",
+    "raw_file": "raw\\1294.xlsx",
+    "tidy_file": "tidy\\1294_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -1516,8 +1516,8 @@
   },
   {
     "table_id": "1295",
-    "raw_file": "raw/1295.xlsx",
-    "tidy_file": "tidy/1295_normalized.csv",
+    "raw_file": "raw\\1295.xlsx",
+    "tidy_file": "tidy\\1295_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -1563,8 +1563,8 @@
   },
   {
     "table_id": "1297",
-    "raw_file": "raw/1297.xlsx",
-    "tidy_file": "tidy/1297_normalized.csv",
+    "raw_file": "raw\\1297.xlsx",
+    "tidy_file": "tidy\\1297_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -1620,8 +1620,8 @@
   },
   {
     "table_id": "1311",
-    "raw_file": "raw/1311.xlsx",
-    "tidy_file": "tidy/1311_normalized.csv",
+    "raw_file": "raw\\1311.xlsx",
+    "tidy_file": "tidy\\1311_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -1651,8 +1651,8 @@
   },
   {
     "table_id": "1325",
-    "raw_file": "raw/1325.xlsx",
-    "tidy_file": "tidy/1325_normalized.csv",
+    "raw_file": "raw\\1325.xlsx",
+    "tidy_file": "tidy\\1325_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -1700,8 +1700,8 @@
   },
   {
     "table_id": "1331",
-    "raw_file": "raw/1331.xlsx",
-    "tidy_file": "tidy/1331_normalized.csv",
+    "raw_file": "raw\\1331.xlsx",
+    "tidy_file": "tidy\\1331_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -1749,8 +1749,8 @@
   },
   {
     "table_id": "1343",
-    "raw_file": "raw/1343.xlsx",
-    "tidy_file": "tidy/1343_normalized.csv",
+    "raw_file": "raw\\1343.xlsx",
+    "tidy_file": "tidy\\1343_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -1780,8 +1780,8 @@
   },
   {
     "table_id": "1375",
-    "raw_file": "raw/1375.xlsx",
-    "tidy_file": "tidy/1375_normalized.csv",
+    "raw_file": "raw\\1375.xlsx",
+    "tidy_file": "tidy\\1375_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -1829,8 +1829,8 @@
   },
   {
     "table_id": "1377",
-    "raw_file": "raw/1377.xlsx",
-    "tidy_file": "tidy/1377_normalized.csv",
+    "raw_file": "raw\\1377.xlsx",
+    "tidy_file": "tidy\\1377_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -1884,8 +1884,8 @@
   },
   {
     "table_id": "1385",
-    "raw_file": "raw/1385.xlsx",
-    "tidy_file": "tidy/1385_normalized.csv",
+    "raw_file": "raw\\1385.xlsx",
+    "tidy_file": "tidy\\1385_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -1931,8 +1931,8 @@
   },
   {
     "table_id": "1402",
-    "raw_file": "raw/1402.xlsx",
-    "tidy_file": "tidy/1402_normalized.csv",
+    "raw_file": "raw\\1402.xlsx",
+    "tidy_file": "tidy\\1402_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -1984,8 +1984,8 @@
   },
   {
     "table_id": "1404",
-    "raw_file": "raw/1404.xlsx",
-    "tidy_file": "tidy/1404_normalized.csv",
+    "raw_file": "raw\\1404.xlsx",
+    "tidy_file": "tidy\\1404_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -2033,8 +2033,8 @@
   },
   {
     "table_id": "26",
-    "raw_file": "raw/26.xlsx",
-    "tidy_file": "tidy/26_normalized.csv",
+    "raw_file": "raw\\26.xlsx",
+    "tidy_file": "tidy\\26_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -2082,8 +2082,8 @@
   },
   {
     "table_id": "51",
-    "raw_file": "raw/51.xlsx",
-    "tidy_file": "tidy/51_normalized.csv",
+    "raw_file": "raw\\51.xlsx",
+    "tidy_file": "tidy\\51_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -2117,8 +2117,8 @@
   },
   {
     "table_id": "53",
-    "raw_file": "raw/53.xlsx",
-    "tidy_file": "tidy/53_normalized.csv",
+    "raw_file": "raw\\53.xlsx",
+    "tidy_file": "tidy\\53_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -2152,8 +2152,8 @@
   },
   {
     "table_id": "54",
-    "raw_file": "raw/54.xlsx",
-    "tidy_file": "tidy/54_normalized.csv",
+    "raw_file": "raw\\54.xlsx",
+    "tidy_file": "tidy\\54_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -2185,8 +2185,8 @@
   },
   {
     "table_id": "55",
-    "raw_file": "raw/55.xlsx",
-    "tidy_file": "tidy/55_normalized.csv",
+    "raw_file": "raw\\55.xlsx",
+    "tidy_file": "tidy\\55_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -2234,8 +2234,8 @@
   },
   {
     "table_id": "56",
-    "raw_file": "raw/56.xlsx",
-    "tidy_file": "tidy/56_normalized.csv",
+    "raw_file": "raw\\56.xlsx",
+    "tidy_file": "tidy\\56_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -2285,8 +2285,8 @@
   },
   {
     "table_id": "9-snack_shop_monthly_core_data_processing",
-    "raw_file": "raw/9-Snack_Shop_Monthly_Core_Data_Processing.xlsx",
-    "tidy_file": "tidy/9-Snack_Shop_Monthly_Core_Data_Processing_normalized.csv",
+    "raw_file": "raw\\9-Snack_Shop_Monthly_Core_Data_Processing.xlsx",
+    "tidy_file": "tidy\\9-Snack_Shop_Monthly_Core_Data_Processing_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -2348,8 +2348,8 @@
   },
   {
     "table_id": "csv_201-csv_48",
-    "raw_file": "raw/csv_201-csv_48.xlsx",
-    "tidy_file": "tidy/csv_201-csv_48_normalized.csv",
+    "raw_file": "raw\\csv_201-csv_48.xlsx",
+    "tidy_file": "tidy\\csv_201-csv_48_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -2399,8 +2399,8 @@
   },
   {
     "table_id": "csv_202-csv_166",
-    "raw_file": "raw/csv_202-csv_166.xlsx",
-    "tidy_file": "tidy/csv_202-csv_166_normalized.csv",
+    "raw_file": "raw\\csv_202-csv_166.xlsx",
+    "tidy_file": "tidy\\csv_202-csv_166_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -2450,8 +2450,8 @@
   },
   {
     "table_id": "csv_202-csv_196",
-    "raw_file": "raw/csv_202-csv_196.xlsx",
-    "tidy_file": "tidy/csv_202-csv_196_normalized.csv",
+    "raw_file": "raw\\csv_202-csv_196.xlsx",
+    "tidy_file": "tidy\\csv_202-csv_196_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -2499,8 +2499,8 @@
   },
   {
     "table_id": "csv_202-csv_294",
-    "raw_file": "raw/csv_202-csv_294.xlsx",
-    "tidy_file": "tidy/csv_202-csv_294_normalized.csv",
+    "raw_file": "raw\\csv_202-csv_294.xlsx",
+    "tidy_file": "tidy\\csv_202-csv_294_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -2560,8 +2560,8 @@
   },
   {
     "table_id": "csv_202-csv_44",
-    "raw_file": "raw/csv_202-csv_44.xlsx",
-    "tidy_file": "tidy/csv_202-csv_44_normalized.csv",
+    "raw_file": "raw\\csv_202-csv_44.xlsx",
+    "tidy_file": "tidy\\csv_202-csv_44_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -2607,8 +2607,8 @@
   },
   {
     "table_id": "csv_203-csv_171",
-    "raw_file": "raw/csv_203-csv_171.xlsx",
-    "tidy_file": "tidy/csv_203-csv_171_normalized.csv",
+    "raw_file": "raw\\csv_203-csv_171.xlsx",
+    "tidy_file": "tidy\\csv_203-csv_171_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -2652,8 +2652,8 @@
   },
   {
     "table_id": "csv_203-csv_471",
-    "raw_file": "raw/csv_203-csv_471.xlsx",
-    "tidy_file": "tidy/csv_203-csv_471_normalized.csv",
+    "raw_file": "raw\\csv_203-csv_471.xlsx",
+    "tidy_file": "tidy\\csv_203-csv_471_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -2715,8 +2715,8 @@
   },
   {
     "table_id": "csv_203-csv_623",
-    "raw_file": "raw/csv_203-csv_623.xlsx",
-    "tidy_file": "tidy/csv_203-csv_623_normalized.csv",
+    "raw_file": "raw\\csv_203-csv_623.xlsx",
+    "tidy_file": "tidy\\csv_203-csv_623_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -2762,8 +2762,8 @@
   },
   {
     "table_id": "csv_203-csv_854",
-    "raw_file": "raw/csv_203-csv_854.xlsx",
-    "tidy_file": "tidy/csv_203-csv_854_normalized.csv",
+    "raw_file": "raw\\csv_203-csv_854.xlsx",
+    "tidy_file": "tidy\\csv_203-csv_854_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -2775,12 +2775,12 @@
           "car_number": "18",
           "car_model": "Porsche 996 GT3",
           "secondary_car_model": "nan",
-          "entrant": "Twigg Waste Management\nLuxton Plan",
+          "entrant": "Twigg Waste Management\r\nLuxton Plan",
           "race_round": "3",
           "points": "51.0"
         },
         "answer": 8.0,
-        "question": "Find the position value where driver is 'Max Twigg' and car_number is '18' and car_model is 'Porsche 996 GT3' and secondary_car_model is 'nan' and entrant is 'Twigg Waste Management\nLuxton Plan' and race_round is '3' and points is '51.0'."
+        "question": "Find the position value where driver is 'Max Twigg' and car_number is '18' and car_model is 'Porsche 996 GT3' and secondary_car_model is 'nan' and entrant is 'Twigg Waste Management\r\nLuxton Plan' and race_round is '3' and points is '51.0'."
       },
       {
         "qtype": "lookup",
@@ -2793,11 +2793,11 @@
           "car_number": "69",
           "car_model": "Porsche 996 GT3 Cup",
           "secondary_car_model": "Car",
-          "entrant": "Dare Shots\nSupabarn Supermarkets",
+          "entrant": "Dare Shots\r\nSupabarn Supermarkets",
           "race_round": "1"
         },
         "answer": 76.0,
-        "question": "Find the points value where position is '3' and driver is 'James Koundouris' and car_number is '69' and car_model is 'Porsche 996 GT3 Cup' and secondary_car_model is 'Car' and entrant is 'Dare Shots\nSupabarn Supermarkets' and race_round is '1'."
+        "question": "Find the points value where position is '3' and driver is 'James Koundouris' and car_number is '69' and car_model is 'Porsche 996 GT3 Cup' and secondary_car_model is 'Car' and entrant is 'Dare Shots\r\nSupabarn Supermarkets' and race_round is '1'."
       },
       {
         "qtype": "aggregation",
@@ -2819,8 +2819,8 @@
   },
   {
     "table_id": "csv_203-csv_865",
-    "raw_file": "raw/csv_203-csv_865.xlsx",
-    "tidy_file": "tidy/csv_203-csv_865_normalized.csv",
+    "raw_file": "raw\\csv_203-csv_865.xlsx",
+    "tidy_file": "tidy\\csv_203-csv_865_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -2872,8 +2872,8 @@
   },
   {
     "table_id": "csv_204-csv_363",
-    "raw_file": "raw/csv_204-csv_363.xlsx",
-    "tidy_file": "tidy/csv_204-csv_363_normalized.csv",
+    "raw_file": "raw\\csv_204-csv_363.xlsx",
+    "tidy_file": "tidy\\csv_204-csv_363_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -2933,8 +2933,8 @@
   },
   {
     "table_id": "csv_204-csv_581",
-    "raw_file": "raw/csv_204-csv_581.xlsx",
-    "tidy_file": "tidy/csv_204-csv_581_normalized.csv",
+    "raw_file": "raw\\csv_204-csv_581.xlsx",
+    "tidy_file": "tidy\\csv_204-csv_581_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -2980,8 +2980,8 @@
   },
   {
     "table_id": "csv_204-csv_762",
-    "raw_file": "raw/csv_204-csv_762.xlsx",
-    "tidy_file": "tidy/csv_204-csv_762_normalized.csv",
+    "raw_file": "raw\\csv_204-csv_762.xlsx",
+    "tidy_file": "tidy\\csv_204-csv_762_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -3027,8 +3027,8 @@
   },
   {
     "table_id": "csv_204-csv_907",
-    "raw_file": "raw/csv_204-csv_907.xlsx",
-    "tidy_file": "tidy/csv_204-csv_907_normalized.csv",
+    "raw_file": "raw\\csv_204-csv_907.xlsx",
+    "tidy_file": "tidy\\csv_204-csv_907_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -3092,21 +3092,21 @@
   },
   {
     "table_id": "demographic_statistics_1",
-    "raw_file": "raw/Demographic_Statistics_1.xlsx",
-    "tidy_file": "tidy/Demographic_Statistics_1_normalized.csv",
+    "raw_file": "raw\\Demographic_Statistics_1.xlsx",
+    "tidy_file": "tidy\\Demographic_Statistics_1_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
         "_ref_dim": "major_occupational_category",
-        "_ref_x": "Party and government organs, mass organizations, and  \nsocial organizations, enterprise and public institution leaders",
+        "_ref_x": "Party and government organs, mass organizations, and  \r\nsocial organizations, enterprise and public institution leaders",
         "_ref_measure": "count",
         "_filters": {
-          "major_occupational_category": "Party and government organs, mass organizations, and  \nsocial organizations, enterprise and public institution leaders",
+          "major_occupational_category": "Party and government organs, mass organizations, and  \r\nsocial organizations, enterprise and public institution leaders",
           "marital_status": "Divorced",
           "sex": "Male"
         },
         "answer": 22631.0,
-        "question": "Find the count value where major_occupational_category is 'Party and government organs, mass organizations, and  \nsocial organizations, enterprise and public institution leaders' and marital_status is 'Divorced' and sex is 'Male'."
+        "question": "Find the count value where major_occupational_category is 'Party and government organs, mass organizations, and  \r\nsocial organizations, enterprise and public institution leaders' and marital_status is 'Divorced' and sex is 'Male'."
       },
       {
         "qtype": "lookup",
@@ -3141,8 +3141,8 @@
   },
   {
     "table_id": "double_counting_7",
-    "raw_file": "raw/double_counting_7.xlsx",
-    "tidy_file": "tidy/double_counting_7_normalized.csv",
+    "raw_file": "raw\\double_counting_7.xlsx",
+    "tidy_file": "tidy\\double_counting_7_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -3188,8 +3188,8 @@
   },
   {
     "table_id": "employment_population_statistics_table_2",
-    "raw_file": "raw/Employment_Population_Statistics_Table_2.xlsx",
-    "tidy_file": "tidy/Employment_Population_Statistics_Table_2_normalized.csv",
+    "raw_file": "raw\\Employment_Population_Statistics_Table_2.xlsx",
+    "tidy_file": "tidy\\Employment_Population_Statistics_Table_2_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -3237,8 +3237,8 @@
   },
   {
     "table_id": "global_per_capita_gni_data",
-    "raw_file": "raw/Global_Per_Capita_GNI_Data.xlsx",
-    "tidy_file": "tidy/Global_Per_Capita_GNI_Data_normalized.csv",
+    "raw_file": "raw\\Global_Per_Capita_GNI_Data.xlsx",
+    "tidy_file": "tidy\\Global_Per_Capita_GNI_Data_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -3286,8 +3286,8 @@
   },
   {
     "table_id": "household_size_statistics",
-    "raw_file": "raw/Household_Size_Statistics.xlsx",
-    "tidy_file": "tidy/Household_Size_Statistics_normalized.csv",
+    "raw_file": "raw\\Household_Size_Statistics.xlsx",
+    "tidy_file": "tidy\\Household_Size_Statistics_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -3335,8 +3335,8 @@
   },
   {
     "table_id": "housing_source_statistics",
-    "raw_file": "raw/Housing_Source_Statistics.xlsx",
-    "tidy_file": "tidy/Housing_Source_Statistics_normalized.csv",
+    "raw_file": "raw\\Housing_Source_Statistics.xlsx",
+    "tidy_file": "tidy\\Housing_Source_Statistics_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -3384,8 +3384,8 @@
   },
   {
     "table_id": "list_of_materials_at_charging_station",
-    "raw_file": "raw/List_of_Materials_at_Charging_Station.xlsx",
-    "tidy_file": "tidy/List_of_Materials_at_Charging_Station_normalized.csv",
+    "raw_file": "raw\\List_of_Materials_at_Charging_Station.xlsx",
+    "tidy_file": "tidy\\List_of_Materials_at_Charging_Station_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -3443,8 +3443,8 @@
   },
   {
     "table_id": "long1",
-    "raw_file": "raw/long1.xlsx",
-    "tidy_file": "tidy/long1_normalized.csv",
+    "raw_file": "raw\\long1.xlsx",
+    "tidy_file": "tidy\\long1_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -3492,8 +3492,8 @@
   },
   {
     "table_id": "long2",
-    "raw_file": "raw/long2.xlsx",
-    "tidy_file": "tidy/long2_normalized.csv",
+    "raw_file": "raw\\long2.xlsx",
+    "tidy_file": "tidy\\long2_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -3543,8 +3543,8 @@
   },
   {
     "table_id": "long3",
-    "raw_file": "raw/long3.xlsx",
-    "tidy_file": "tidy/long3_normalized.csv",
+    "raw_file": "raw\\long3.xlsx",
+    "tidy_file": "tidy\\long3_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -3553,12 +3553,12 @@
         "_ref_measure": "year",
         "_filters": {
           "ethnicity": "南亞裔人士",
-          "marital_status": "已婚\nMarried",
-          "sex": "女\nFemale",
+          "marital_status": "已婚\r\nMarried",
+          "sex": "女\r\nFemale",
           "percentage": "74.6"
         },
         "answer": 2011.0,
-        "question": "Find the year value where ethnicity is '南亞裔人士' and marital_status is '已婚\nMarried' and sex is '女\nFemale' and percentage is '74.6'."
+        "question": "Find the year value where ethnicity is '南亞裔人士' and marital_status is '已婚\r\nMarried' and sex is '女\r\nFemale' and percentage is '74.6'."
       },
       {
         "qtype": "lookup",
@@ -3568,11 +3568,11 @@
         "_filters": {
           "year": "2011",
           "ethnicity": "韓國人",
-          "marital_status": "已婚\nMarried",
-          "sex": "女\nFemale"
+          "marital_status": "已婚\r\nMarried",
+          "sex": "女\r\nFemale"
         },
         "answer": 71.4,
-        "question": "Find the percentage value where year is '2011' and ethnicity is '韓國人' and marital_status is '已婚\nMarried' and sex is '女\nFemale'."
+        "question": "Find the percentage value where year is '2011' and ethnicity is '韓國人' and marital_status is '已婚\r\nMarried' and sex is '女\r\nFemale'."
       },
       {
         "qtype": "aggregation",
@@ -3594,8 +3594,8 @@
   },
   {
     "table_id": "maternal_fertility_data_table_1",
-    "raw_file": "raw/Maternal_Fertility_Data_Table_1.xlsx",
-    "tidy_file": "tidy/Maternal_Fertility_Data_Table_1_normalized.csv",
+    "raw_file": "raw\\Maternal_Fertility_Data_Table_1.xlsx",
+    "tidy_file": "tidy\\Maternal_Fertility_Data_Table_1_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -3643,8 +3643,8 @@
   },
   {
     "table_id": "medical_sales_data",
-    "raw_file": "raw/Medical_Sales_Data.xlsx",
-    "tidy_file": "tidy/Medical_Sales_Data_normalized.csv",
+    "raw_file": "raw\\Medical_Sales_Data.xlsx",
+    "tidy_file": "tidy\\Medical_Sales_Data_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -3706,8 +3706,8 @@
   },
   {
     "table_id": "shandong_legal_entity_unit_statistics_1",
-    "raw_file": "raw/Shandong_Legal_Entity_Unit_Statistics_1.xlsx",
-    "tidy_file": "tidy/Shandong_Legal_Entity_Unit_Statistics_1_normalized.csv",
+    "raw_file": "raw\\Shandong_Legal_Entity_Unit_Statistics_1.xlsx",
+    "tidy_file": "tidy\\Shandong_Legal_Entity_Unit_Statistics_1_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -3755,8 +3755,8 @@
   },
   {
     "table_id": "statistical_data_on_the_source_of_livelihood_for_the_population",
-    "raw_file": "raw/Statistical_Data_on_the_Source_of_Livelihood_for_the_Population.xlsx",
-    "tidy_file": "tidy/Statistical_Data_on_the_Source_of_Livelihood_for_the_Population_normalized.csv",
+    "raw_file": "raw\\Statistical_Data_on_the_Source_of_Livelihood_for_the_Population.xlsx",
+    "tidy_file": "tidy\\Statistical_Data_on_the_Source_of_Livelihood_for_the_Population_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -3804,8 +3804,8 @@
   },
   {
     "table_id": "structural_13",
-    "raw_file": "raw/structural_13.xlsx",
-    "tidy_file": "tidy/structural_13_normalized.csv",
+    "raw_file": "raw\\structural_13.xlsx",
+    "tidy_file": "tidy\\structural_13_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -3839,8 +3839,8 @@
   },
   {
     "table_id": "structural_17",
-    "raw_file": "raw/structural_17.xlsx",
-    "tidy_file": "tidy/structural_17_normalized.csv",
+    "raw_file": "raw\\structural_17.xlsx",
+    "tidy_file": "tidy\\structural_17_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -3870,8 +3870,8 @@
   },
   {
     "table_id": "structural_19",
-    "raw_file": "raw/structural_19.xlsx",
-    "tidy_file": "tidy/structural_19_normalized.csv",
+    "raw_file": "raw\\structural_19.xlsx",
+    "tidy_file": "tidy\\structural_19_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -3927,8 +3927,8 @@
   },
   {
     "table_id": "structural_24",
-    "raw_file": "raw/structural_24.xlsx",
-    "tidy_file": "tidy/structural_24_normalized.csv",
+    "raw_file": "raw\\structural_24.xlsx",
+    "tidy_file": "tidy\\structural_24_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -3962,8 +3962,8 @@
   },
   {
     "table_id": "structural_25",
-    "raw_file": "raw/structural_25.xlsx",
-    "tidy_file": "tidy/structural_25_normalized.csv",
+    "raw_file": "raw\\structural_25.xlsx",
+    "tidy_file": "tidy\\structural_25_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -4013,8 +4013,8 @@
   },
   {
     "table_id": "structural_26",
-    "raw_file": "raw/structural_26.xlsx",
-    "tidy_file": "tidy/structural_26_normalized.csv",
+    "raw_file": "raw\\structural_26.xlsx",
+    "tidy_file": "tidy\\structural_26_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -4056,8 +4056,8 @@
   },
   {
     "table_id": "structural_3",
-    "raw_file": "raw/structural_3.xlsx",
-    "tidy_file": "tidy/structural_3_normalized.csv",
+    "raw_file": "raw\\structural_3.xlsx",
+    "tidy_file": "tidy\\structural_3_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -4109,8 +4109,8 @@
   },
   {
     "table_id": "structural_6",
-    "raw_file": "raw/structural_6.xlsx",
-    "tidy_file": "tidy/structural_6_normalized.csv",
+    "raw_file": "raw\\structural_6.xlsx",
+    "tidy_file": "tidy\\structural_6_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -4162,8 +4162,8 @@
   },
   {
     "table_id": "structural_7",
-    "raw_file": "raw/structural_7.xlsx",
-    "tidy_file": "tidy/structural_7_normalized.csv",
+    "raw_file": "raw\\structural_7.xlsx",
+    "tidy_file": "tidy\\structural_7_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -4213,8 +4213,8 @@
   },
   {
     "table_id": "structural_8",
-    "raw_file": "raw/structural_8.xlsx",
-    "tidy_file": "tidy/structural_8_normalized.csv",
+    "raw_file": "raw\\structural_8.xlsx",
+    "tidy_file": "tidy\\structural_8_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",
@@ -4262,8 +4262,8 @@
   },
   {
     "table_id": "total_investment_in_shandong",
-    "raw_file": "raw/Total_Investment_in_Shandong.xlsx",
-    "tidy_file": "tidy/Total_Investment_in_Shandong_normalized.csv",
+    "raw_file": "raw\\Total_Investment_in_Shandong.xlsx",
+    "tidy_file": "tidy\\Total_Investment_in_Shandong_normalized.csv",
     "qa_pairs": [
       {
         "qtype": "lookup",

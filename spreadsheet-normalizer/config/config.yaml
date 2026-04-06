@@ -48,7 +48,7 @@ logging:
   output_dir: output
 
 evaluation:
-  model: gpt-4o-mini
+  model: MiniMax-M2.7
   preview_rows: 15
   max_distinct: 20
   pipeline_output_dir: eval/pipeline_outputs

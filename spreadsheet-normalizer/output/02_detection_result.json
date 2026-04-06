@@ -1,42 +1,40 @@
 {
   "physical": {
     "shape": {
-      "rows": 13,
-      "cols": 3
+      "rows": 22,
+      "cols": 9
     },
     "actual_column_names": [
-      "behaviour",
-      "beta",
-      "p-value"
+      "sector",
+      "black female workers",
+      "Unnamed: 2",
+      "Unnamed: 3",
+      "Unnamed: 4",
+      "other female workers",
+      "Unnamed: 6",
+      "Unnamed: 7",
+      "Unnamed: 8"
     ],
-    "header_depth": 0,
-    "data_start_row": 0,
-    "data_end_row": 12,
-    "data_rows": 13,
+    "header_depth": 2,
+    "data_start_row": 2,
+    "data_end_row": 21,
+    "data_rows": 20,
     "column_dtype_profile": {
       "0": "text",
       "1": "numeric",
-      "2": "numeric"
+      "2": "numeric",
+      "3": "numeric",
+      "4": "numeric",
+      "5": "numeric",
+      "6": "numeric",
+      "7": "numeric",
+      "8": "numeric"
     },
     "blank_rows_in_data": [],
     "bilingual_row_candidate": false,
     "inline_bilingual_candidate": false,
     "left_header_cols_num": 1
   },
-  "irregularities": [
-    {
-      "label": "IMPLICIT_AGGREGATION_ROWS",
-      "evidence": "Row 2: [0]=\"total\", Row 6: [0]=\"total\", Row 10: [0]=\"total\"",
-      "details": "The \"total\" rows represent overall values that could be calculated from the corresponding \"weekday\" and \"weekend\" rows above them."
-    },
-    {
-      "label": "SPARSE_ROW_FILL",
-      "evidence": "Column 0 has values filled at block starts for \"screen time\", \"sedentary time\", \"lpa\", and \"mvpa\", with blanks in between for subcategories.",
-      "details": "The dimension column does not have values filled for every data observation, only at the start of each category block."
-    }
-  ],
-  "labels": [
-    "IMPLICIT_AGGREGATION_ROWS",
-    "SPARSE_ROW_FILL"
-  ]
+  "irregularities": [],
+  "labels": []
 }

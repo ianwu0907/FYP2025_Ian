@@ -1,33 +1,27 @@
 {
-  "column_type_homogeneity": {
-    "before": 0.7633,
-    "after": 0.75,
-    "delta": -0.0133,
-    "direction": "✗ degraded"
-  },
-  "column_completeness_min": {
-    "before": 0.7692,
-    "after": 0.25,
-    "delta": -0.5192,
-    "direction": "✗ degraded"
-  },
   "groupby_queryability": {
-    "before": 1.0,
-    "after": 0.0,
-    "delta": -1.0,
-    "direction": "✗ degraded"
+    "before": 0.8025,
+    "after": 1.0,
+    "delta": 0.1975,
+    "direction": "✓ improved"
+  },
+  "column_type_homogeneity": {
+    "before": 0.8315,
+    "after": 0.9127,
+    "delta": 0.0812,
+    "direction": "✓ improved"
+  },
+  "type_consistency": {
+    "before": 0.9529,
+    "after": 0.9855,
+    "delta": 0.0326,
+    "direction": "✓ improved"
   },
   "cell_coverage": {
-    "before": 0.8462,
-    "after": 0.5,
-    "delta": -0.3462,
-    "direction": "✗ degraded"
-  },
-  "row_completeness_uniformity": {
-    "before": 0.7076,
-    "after": 0.6667,
-    "delta": -0.0409,
-    "direction": "✗ degraded"
+    "before": 0.9545,
+    "after": 0.9663,
+    "delta": 0.0118,
+    "direction": "✓ improved"
   },
   "header_uniqueness": {
     "before": 1.0,
@@ -35,32 +29,38 @@
     "delta": 0.0,
     "direction": "= unchanged"
   },
-  "inter_column_nmi": {
-    "before": 0.0,
-    "after": 0.0,
-    "delta": 0.0,
-    "direction": "= unchanged"
+  "row_completeness_uniformity": {
+    "before": 0.8101,
+    "after": 0.8889,
+    "delta": 0.0788,
+    "direction": "✓ improved"
   },
-  "type_consistency": {
-    "before": 1.0,
-    "after": 1.0,
-    "delta": 0.0,
+  "column_completeness_min": {
+    "before": 0.9091,
+    "after": 0.9048,
+    "delta": -0.0043,
     "direction": "= unchanged"
   },
   "data_row_ratio": {
-    "before": 0.7692,
-    "after": 0.25,
-    "delta": -0.5192,
-    "direction": "✗ degraded"
+    "before": 0.9091,
+    "after": 0.9048,
+    "delta": -0.0043,
+    "direction": "= unchanged"
   },
   "substring_containment": {
-    "before": 0.0,
-    "after": 0.0,
-    "delta": 0.0,
+    "before": 0.0012,
+    "after": 0.0003,
+    "delta": -0.0009,
     "direction": "= unchanged"
+  },
+  "inter_column_nmi": {
+    "before": 0.9732,
+    "after": 0.0,
+    "delta": -0.9732,
+    "direction": "✓ improved"
   },
   "_groupby_queryability_mode": {
     "before": "full",
-    "after": "no_dims"
+    "after": "full"
   }
 }

@@ -1,127 +1,127 @@
-sector,generation,percentage
-,black female workers,
-,black female workers,
-"agriculture, forestry, fishing and hunting",black female workers,0.2
-"mining, quarrying, and oil and gas extraction",black female workers,0.3
-utilities,black female workers,0.2
-construction,black female workers,0.7
-manufacturing,black female workers,5.4
-wholesale trade,black female workers,2.0
-retail trade,black female workers,7.5
-transportation and warehousing,black female workers,2.7
-information and cultural industries,black female workers,1.6
-finance and insurance,black female workers,5.8
-real estate and rental and leasing,black female workers,1.1
-"professional, scientific and technical services",black female workers,4.6
-"administrative and support, waste management and remediation services",black female workers,7.9
-educational services,black female workers,6.9
-health care and social assistance,black female workers,36.6
-"arts, entertainment and recreation",black female workers,0.9
-accommodation and food services,black female workers,5.5
-other services,black female workers,4.2
-public administration,black female workers,5.9
-,Unnamed: 2,
-,Unnamed: 2,
-"agriculture, forestry, fishing and hunting",Unnamed: 2,0.1
-"mining, quarrying, and oil and gas extraction",Unnamed: 2,0.2
-utilities,Unnamed: 2,0.3
-construction,Unnamed: 2,1.0
-manufacturing,Unnamed: 2,2.8
-wholesale trade,Unnamed: 2,2.5
-retail trade,Unnamed: 2,9.7
-transportation and warehousing,Unnamed: 2,3.3
-information and cultural industries,Unnamed: 2,3.8
-finance and insurance,Unnamed: 2,7.9
-real estate and rental and leasing,Unnamed: 2,1.6
-"professional, scientific and technical services",Unnamed: 2,8.4
-"administrative and support, waste management and remediation services",Unnamed: 2,5.6
-educational services,Unnamed: 2,9.8
-health care and social assistance,Unnamed: 2,24.0
-"arts, entertainment and recreation",Unnamed: 2,2.1
-accommodation and food services,Unnamed: 2,4.6
-other services,Unnamed: 2,4.1
-public administration,Unnamed: 2,8.2
-,Unnamed: 3,
-,Unnamed: 3,
-"agriculture, forestry, fishing and hunting",Unnamed: 3,0.5
-"mining, quarrying, and oil and gas extraction",Unnamed: 3,0.4
-utilities,Unnamed: 3,0.1
-construction,Unnamed: 3,1.3
-manufacturing,Unnamed: 3,4.0
-wholesale trade,Unnamed: 3,2.0
-retail trade,Unnamed: 3,11.9
-transportation and warehousing,Unnamed: 3,3.3
-information and cultural industries,Unnamed: 3,2.6
-finance and insurance,Unnamed: 3,4.4
-real estate and rental and leasing,Unnamed: 3,1.4
-"professional, scientific and technical services",Unnamed: 3,4.7
-"administrative and support, waste management and remediation services",Unnamed: 3,6.5
-educational services,Unnamed: 3,8.5
-health care and social assistance,Unnamed: 3,23.5
-"arts, entertainment and recreation",Unnamed: 3,2.4
-accommodation and food services,Unnamed: 3,9.5
-other services,Unnamed: 3,5.1
-public administration,Unnamed: 3,8.0
-,other female workers,
-,other female workers,
-"agriculture, forestry, fishing and hunting",other female workers,1.0
-"mining, quarrying, and oil and gas extraction",other female workers,0.5
-utilities,other female workers,0.3
-construction,other female workers,1.7
-manufacturing,other female workers,7.9
-wholesale trade,other female workers,3.3
-retail trade,other female workers,11.1
-transportation and warehousing,other female workers,2.8
-information and cultural industries,other female workers,1.9
-finance and insurance,other female workers,6.9
-real estate and rental and leasing,other female workers,2.2
-"professional, scientific and technical services",other female workers,8.7
-"administrative and support, waste management and remediation services",other female workers,5.1
-educational services,other female workers,8.1
-health care and social assistance,other female workers,19.0
-"arts, entertainment and recreation",other female workers,1.3
-accommodation and food services,other female workers,8.7
-other services,other female workers,5.8
-public administration,other female workers,3.7
-,Unnamed: 6,
-,Unnamed: 6,
-"agriculture, forestry, fishing and hunting",Unnamed: 6,1.0
-"mining, quarrying, and oil and gas extraction",Unnamed: 6,0.6
-utilities,Unnamed: 6,0.5
-construction,Unnamed: 6,2.2
-manufacturing,Unnamed: 6,4.1
-wholesale trade,Unnamed: 6,3.0
-retail trade,Unnamed: 6,9.7
-transportation and warehousing,Unnamed: 6,2.8
-information and cultural industries,Unnamed: 6,2.7
-finance and insurance,Unnamed: 6,7.1
-real estate and rental and leasing,Unnamed: 6,2.1
-"professional, scientific and technical services",Unnamed: 6,9.2
-"administrative and support, waste management and remediation services",Unnamed: 6,3.5
-educational services,Unnamed: 6,14.2
-health care and social assistance,Unnamed: 6,19.1
-"arts, entertainment and recreation",Unnamed: 6,2.1
-accommodation and food services,Unnamed: 6,4.4
-other services,Unnamed: 6,4.4
-public administration,Unnamed: 6,7.2
-,Unnamed: 7,
-,Unnamed: 7,
-"agriculture, forestry, fishing and hunting",Unnamed: 7,1.5
-"mining, quarrying, and oil and gas extraction",Unnamed: 7,0.8
-utilities,Unnamed: 7,0.5
-construction,Unnamed: 7,2.3
-manufacturing,Unnamed: 7,4.9
-wholesale trade,Unnamed: 7,2.4
-retail trade,Unnamed: 7,10.8
-transportation and warehousing,Unnamed: 7,2.7
-information and cultural industries,Unnamed: 7,2.0
-finance and insurance,Unnamed: 7,5.2
-real estate and rental and leasing,Unnamed: 7,1.4
-"professional, scientific and technical services",Unnamed: 7,6.7
-"administrative and support, waste management and remediation services",Unnamed: 7,3.5
-educational services,Unnamed: 7,12.3
-health care and social assistance,Unnamed: 7,22.7
-"arts, entertainment and recreation",Unnamed: 7,1.9
-accommodation and food services,Unnamed: 7,5.6
-other services,Unnamed: 7,4.9
-public administration,Unnamed: 7,8.0
+sector,worker_group,generation_status,percentage
+,black_female_workers,immigrant,immigrant
+,black_female_workers,second_generation,second generation
+,black_female_workers,third_generation_or_more,third generation or more
+,other_female_workers,immigrant,immigrant
+,other_female_workers,second_generation,second generation
+,other_female_workers,third_generation_or_more,third generation or more
+,black_female_workers,immigrant,percent
+,black_female_workers,second_generation,
+,black_female_workers,third_generation_or_more,
+,other_female_workers,immigrant,
+,other_female_workers,second_generation,
+,other_female_workers,third_generation_or_more,
+"agriculture, forestry, fishing and hunting",black_female_workers,immigrant,0.2
+"agriculture, forestry, fishing and hunting",black_female_workers,second_generation,0.1
+"agriculture, forestry, fishing and hunting",black_female_workers,third_generation_or_more,0.5
+"agriculture, forestry, fishing and hunting",other_female_workers,immigrant,1.0
+"agriculture, forestry, fishing and hunting",other_female_workers,second_generation,1.0
+"agriculture, forestry, fishing and hunting",other_female_workers,third_generation_or_more,1.5
+"mining, quarrying, and oil and gas extraction",black_female_workers,immigrant,0.3
+"mining, quarrying, and oil and gas extraction",black_female_workers,second_generation,0.2
+"mining, quarrying, and oil and gas extraction",black_female_workers,third_generation_or_more,0.4
+"mining, quarrying, and oil and gas extraction",other_female_workers,immigrant,0.5
+"mining, quarrying, and oil and gas extraction",other_female_workers,second_generation,0.6
+"mining, quarrying, and oil and gas extraction",other_female_workers,third_generation_or_more,0.8
+utilities,black_female_workers,immigrant,0.2
+utilities,black_female_workers,second_generation,0.3
+utilities,black_female_workers,third_generation_or_more,0.1
+utilities,other_female_workers,immigrant,0.3
+utilities,other_female_workers,second_generation,0.5
+utilities,other_female_workers,third_generation_or_more,0.5
+construction,black_female_workers,immigrant,0.7
+construction,black_female_workers,second_generation,1.0
+construction,black_female_workers,third_generation_or_more,1.3
+construction,other_female_workers,immigrant,1.7
+construction,other_female_workers,second_generation,2.2
+construction,other_female_workers,third_generation_or_more,2.3
+manufacturing,black_female_workers,immigrant,5.4
+manufacturing,black_female_workers,second_generation,2.8
+manufacturing,black_female_workers,third_generation_or_more,4.0
+manufacturing,other_female_workers,immigrant,7.9
+manufacturing,other_female_workers,second_generation,4.1
+manufacturing,other_female_workers,third_generation_or_more,4.9
+wholesale trade,black_female_workers,immigrant,2.0
+wholesale trade,black_female_workers,second_generation,2.5
+wholesale trade,black_female_workers,third_generation_or_more,2.0
+wholesale trade,other_female_workers,immigrant,3.3
+wholesale trade,other_female_workers,second_generation,3.0
+wholesale trade,other_female_workers,third_generation_or_more,2.4
+retail trade,black_female_workers,immigrant,7.5
+retail trade,black_female_workers,second_generation,9.7
+retail trade,black_female_workers,third_generation_or_more,11.9
+retail trade,other_female_workers,immigrant,11.1
+retail trade,other_female_workers,second_generation,9.7
+retail trade,other_female_workers,third_generation_or_more,10.8
+transportation and warehousing,black_female_workers,immigrant,2.7
+transportation and warehousing,black_female_workers,second_generation,3.3
+transportation and warehousing,black_female_workers,third_generation_or_more,3.3
+transportation and warehousing,other_female_workers,immigrant,2.8
+transportation and warehousing,other_female_workers,second_generation,2.8
+transportation and warehousing,other_female_workers,third_generation_or_more,2.7
+information and cultural industries,black_female_workers,immigrant,1.6
+information and cultural industries,black_female_workers,second_generation,3.8
+information and cultural industries,black_female_workers,third_generation_or_more,2.6
+information and cultural industries,other_female_workers,immigrant,1.9
+information and cultural industries,other_female_workers,second_generation,2.7
+information and cultural industries,other_female_workers,third_generation_or_more,2.0
+finance and insurance,black_female_workers,immigrant,5.8
+finance and insurance,black_female_workers,second_generation,7.9
+finance and insurance,black_female_workers,third_generation_or_more,4.4
+finance and insurance,other_female_workers,immigrant,6.9
+finance and insurance,other_female_workers,second_generation,7.1
+finance and insurance,other_female_workers,third_generation_or_more,5.2
+real estate and rental and leasing,black_female_workers,immigrant,1.1
+real estate and rental and leasing,black_female_workers,second_generation,1.6
+real estate and rental and leasing,black_female_workers,third_generation_or_more,1.4
+real estate and rental and leasing,other_female_workers,immigrant,2.2
+real estate and rental and leasing,other_female_workers,second_generation,2.1
+real estate and rental and leasing,other_female_workers,third_generation_or_more,1.4
+"professional, scientific and technical services",black_female_workers,immigrant,4.6
+"professional, scientific and technical services",black_female_workers,second_generation,8.4
+"professional, scientific and technical services",black_female_workers,third_generation_or_more,4.7
+"professional, scientific and technical services",other_female_workers,immigrant,8.7
+"professional, scientific and technical services",other_female_workers,second_generation,9.2
+"professional, scientific and technical services",other_female_workers,third_generation_or_more,6.7
+"administrative and support, waste management and remediation services",black_female_workers,immigrant,7.9
+"administrative and support, waste management and remediation services",black_female_workers,second_generation,5.6
+"administrative and support, waste management and remediation services",black_female_workers,third_generation_or_more,6.5
+"administrative and support, waste management and remediation services",other_female_workers,immigrant,5.1
+"administrative and support, waste management and remediation services",other_female_workers,second_generation,3.5
+"administrative and support, waste management and remediation services",other_female_workers,third_generation_or_more,3.5
+educational services,black_female_workers,immigrant,6.9
+educational services,black_female_workers,second_generation,9.8
+educational services,black_female_workers,third_generation_or_more,8.5
+educational services,other_female_workers,immigrant,8.1
+educational services,other_female_workers,second_generation,14.2
+educational services,other_female_workers,third_generation_or_more,12.3
+health care and social assistance,black_female_workers,immigrant,36.6
+health care and social assistance,black_female_workers,second_generation,24.0
+health care and social assistance,black_female_workers,third_generation_or_more,23.5
+health care and social assistance,other_female_workers,immigrant,19.0
+health care and social assistance,other_female_workers,second_generation,19.1
+health care and social assistance,other_female_workers,third_generation_or_more,22.7
+"arts, entertainment and recreation",black_female_workers,immigrant,0.9
+"arts, entertainment and recreation",black_female_workers,second_generation,2.1
+"arts, entertainment and recreation",black_female_workers,third_generation_or_more,2.4
+"arts, entertainment and recreation",other_female_workers,immigrant,1.3
+"arts, entertainment and recreation",other_female_workers,second_generation,2.1
+"arts, entertainment and recreation",other_female_workers,third_generation_or_more,1.9
+accommodation and food services,black_female_workers,immigrant,5.5
+accommodation and food services,black_female_workers,second_generation,4.6
+accommodation and food services,black_female_workers,third_generation_or_more,9.5
+accommodation and food services,other_female_workers,immigrant,8.7
+accommodation and food services,other_female_workers,second_generation,4.4
+accommodation and food services,other_female_workers,third_generation_or_more,5.6
+other services,black_female_workers,immigrant,4.2
+other services,black_female_workers,second_generation,4.1
+other services,black_female_workers,third_generation_or_more,5.1
+other services,other_female_workers,immigrant,5.8
+other services,other_female_workers,second_generation,4.4
+other services,other_female_workers,third_generation_or_more,4.9
+public administration,black_female_workers,immigrant,5.9
+public administration,black_female_workers,second_generation,8.2
+public administration,black_female_workers,third_generation_or_more,8.0
+public administration,other_female_workers,immigrant,3.7
+public administration,other_female_workers,second_generation,7.2
+public administration,other_female_workers,third_generation_or_more,8.0
