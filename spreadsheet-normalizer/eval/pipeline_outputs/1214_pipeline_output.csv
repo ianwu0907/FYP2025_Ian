@@ -1,25 +1,11 @@
-service_use,concurrent_disorder,condition,confidence_interval_type,confidence_interval_value
-none,12.0,1,from,7.2
-none,12.0,1,to,19.3
-none,12.0,1,from,23.6
-none,12.0,1,to,20.2
-none,12.0,1,from,27.4
-none,12.0,1,to,74.9
-none,12.0,1,from,70.5
-none,12.0,1,to,78.9
-all needs met,44.4,2,from,35.4
-all needs met,44.4,2,to,53.7
-all needs met,44.4,2,from,42.2
-all needs met,44.4,2,to,37.9
-all needs met,44.4,2,from,46.7
-all needs met,44.4,2,to,14.9
-all needs met,44.4,2,from,11.9
-all needs met,44.4,2,to,18.5
-partially met or not met,39.3,3,from,31.2
-partially met or not met,39.3,3,to,48.1
-partially met or not met,39.3,3,from,32.1
-partially met or not met,39.3,3,to,28.2
-partially met or not met,39.3,3,from,36.3
-partially met or not met,39.3,3,to,9.6
-partially met or not met,39.3,3,from,7.3
-partially met or not met,39.3,3,to,12.7
+service use and perceived health care needs,concurrent disorders,Unnamed: 2,Unnamed: 3,mood/anxiety disorder only,Unnamed: 5,Unnamed: 6,substance use disorder only,Unnamed: 8,Unnamed: 9
+,%,95% confidence interval,,%,95% confidence interval,,%,95% confidence interval,
+,,from,to,,from,to,,from,to
+in past 12 months:,,,,,,,,,
+received help,75.5,67.1,82.3,66.5,62.3,70.6,21.0,17.4,25.2
+formal consultation,64.9,55.8,73.0,59.2,54.9,63.4,16.2,12.8,20.2
+informal consultation,78.2,70.5,84.3,64.4,60.2,68.3,31.2,26.9,35.9
+perceived health care needs,,,,,,,,,
+none,12.0,7.2,19.3,23.6,20.2,27.4,74.9,70.5,78.9
+all needs met,44.4,35.4,53.7,42.2,37.9,46.7,14.9,11.9,18.5
+partially met or not met,39.3,31.2,48.1,32.1,28.2,36.3,9.6,7.3,12.7

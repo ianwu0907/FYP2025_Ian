@@ -1,7 +1,4 @@
-self_rated_mental_health,group,percent,ci_from,ci_to,percent_trans,ci_from_trans,ci_to_trans
-positive,other,34.1,88.1,87.6,17.0,88.6,54.9
-negative,other,65.4,11.3,10.8,44.6,11.9,82.7
-ever seriously contemplated suicide,other,44.8,15.6,15.1,25.7,16.2,65.2
-diagnosed mood or anxiety disorder,other,61.1,17.1,16.6,40.6,17.7,79.1
-mood disorder,other,39.9,10.2,9.7,21.5,10.7,60.6
-anxiety disorder,other,57.0,13.1,12.6,36.5,13.7,75.8
+self_rated_mental_health,group,percent,confidence_interval_from,confidence_interval_to
+diagnosed mood or anxiety disorder,transgender,17.1,40.6,79.1
+mood disorder,transgender,10.2,21.5,60.6
+anxiety disorder,transgender,13.1,36.5,75.8

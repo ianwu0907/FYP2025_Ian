@@ -1,41 +1,19 @@
-caracteristics,volunteer rate,Unnamed: 2,Unnamed: 3,Unnamed: 4,average number of hours,Unnamed: 6,Unnamed: 7,Unnamed: 8
-,2013,2010.0,2007.0,2004.0,2013,2010.0,2007.0,2004.0
-,percent,,,,mean number of hours,,,
-total,44,47.0,46.0,45.0,154,156.0,166.0,168.0
-sex,,,,,,,,
-men,42,46.0,45.0,44.0,164,153.0,168.0,168.0
-women,45,48.0,47.0,47.0,145,158.0,164.0,168.0
-age group,,,,,,,,
-15 to 19,66,66.0,65.0,65.0,110,115.0,116.0,127.0
-20 to 24,42,48.0,47.0,43.0,147,159.0,182.0,161.0
-25 to 34,42,46.0,40.0,42.0,126,109.0,133.0,137.0
-35 to 44,48,54.0,52.0,51.0,122,136.0,158.0,152.0
-45 to 54,45,45.0,48.0,47.0,150,168.0,169.0,176.0
-55 to 64,41,41.0,40.0,42.0,203,201.0,206.0,202.0
-65 to 74,38,40.0,40.0,39.0,231,236.0,216.0,250.0
-75 years and older,27,31.0,29.0,23.0,196,198.0,222.0,234.0
-marital status,,,,,,,,
-married or common-law,44,47.0,47.0,46.0,156,160.0,168.0,172.0
-"single, never married",47,51.0,48.0,48.0,139,134.0,153.0,148.0
-separated or divorced,37,42.0,39.0,43.0,167,183.0,197.0,199.0
-widowed,27,32.0,31.0,28.0,228,204.0,179.0,201.0
-level of education,,,,,,,,
-less than high school,39,37.0,39.0,37.0,159,148.0,136.0,140.0
-high school diploma,37,47.0,44.0,45.0,142,171.0,152.0,163.0
-post-secondary diploma or certificate,42,45.0,47.0,46.0,142,140.0,168.0,172.0
-university degree,55,58.0,57.0,59.0,170,160.0,187.0,180.0
-labour force participation,,,,,,,,
-employed,46,50.0,50.0,50.0,133,139.0,150.0,152.0
-unemployed,45,34.0,38.0,42.0,182,132.0,205.0,236.0
-not in the labour force,38,44.0,44.0,43.0,191,189.0,190.0,199.0
-presence of children in the household,,,,,,,,
-no child,38,41.0,39.0,40.0,169,175.0,184.0,191.0
-pre-school aged children only,37,45.0,41.0,43.0,122,87.0,110.0,126.0
-both pre-school and school-aged children,52,56.0,54.0,53.0,121,122.0,147.0,141.0
-school-aged children only,59,59.0,62.0,59.0,139,146.0,153.0,142.0
-religious attendance,,,,,,,,
-weekly,59,65.0,66.0,62.0,215,202.0,232.0,230.0
-other,40,44.0,43.0,43.0,133,141.0,142.0,147.0
-birthplace,,,,,,,,
-canada,45,49.0,47.0,46.0,150,155.0,165.0,167.0
-outside canada,38,40.0,40.0,40.0,162,158.0,168.0,172.0
+characteristic,sex,age_group,marital_status,level_of_education,labour_force_participation,presence_of_children,religious_attendance,volunteer_rate,average_number_of_hours
+45 to 54,men,15 to 19,,women,20 to 24,25 to 34,35 to 44,45.0,150.0
+55 to 64,men,15 to 19,,women,20 to 24,25 to 34,35 to 44,41.0,203.0
+65 to 74,men,15 to 19,,women,20 to 24,25 to 34,35 to 44,38.0,231.0
+75 years and older,men,15 to 19,,women,20 to 24,25 to 34,35 to 44,27.0,196.0
+"single, never married",men,15 to 19,married or common-law,women,20 to 24,25 to 34,35 to 44,47.0,139.0
+separated or divorced,men,15 to 19,married or common-law,women,20 to 24,25 to 34,35 to 44,37.0,167.0
+widowed,men,15 to 19,married or common-law,women,20 to 24,25 to 34,35 to 44,27.0,228.0
+high school diploma,men,15 to 19,married or common-law,less than high school,20 to 24,25 to 34,35 to 44,37.0,142.0
+post-secondary diploma or certificate,men,15 to 19,married or common-law,less than high school,20 to 24,25 to 34,35 to 44,42.0,142.0
+university degree,men,15 to 19,married or common-law,less than high school,20 to 24,25 to 34,35 to 44,55.0,170.0
+unemployed,men,15 to 19,married or common-law,less than high school,employed,25 to 34,35 to 44,45.0,182.0
+not in the labour force,men,15 to 19,married or common-law,less than high school,employed,25 to 34,35 to 44,38.0,191.0
+pre-school aged children only,men,15 to 19,married or common-law,less than high school,employed,no child,35 to 44,37.0,122.0
+both pre-school and school-aged children,men,15 to 19,married or common-law,less than high school,employed,no child,35 to 44,52.0,121.0
+school-aged children only,men,15 to 19,married or common-law,less than high school,employed,no child,35 to 44,59.0,139.0
+other,men,15 to 19,married or common-law,less than high school,employed,no child,weekly,40.0,133.0
+canada,men,15 to 19,married or common-law,less than high school,employed,no child,weekly,45.0,150.0
+outside canada,men,15 to 19,married or common-law,less than high school,employed,no child,weekly,38.0,162.0

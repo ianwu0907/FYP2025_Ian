@@ -1,10 +1,9 @@
-major_occupational_categories,women_aged_15_64,live_births_0,live_births_1,live_births_2,live_births_3,live_births_4,live_births_5_and_above,average_live_births
-,,,,,,,,
+major_occupational_category,age_group,number_of_women,live_births_0,live_births_1,live_births_2,live_births_3,live_births_4,live_births_5_and_above
 "Party and government organs, mass organizations, and
-social organizations, enterprise and public institution leaders",376767.0,56173.0,175995.0,124393.0,16965.0,2628.0,613.0,1.3
-Professional and Technical Personnel,3768659.0,1222151.0,1689734.0,792275.0,54838.0,8136.0,1525.0,0.92
-Office clerks and related personnel,1763530.0,480535.0,865320.0,383186.0,28942.0,4529.0,1018.0,0.99
-Social production service and daily service personnel,9474681.0,1915946.0,3604474.0,3279919.0,549303.0,98898.0,26141.0,1.3
-"Farm, Forestry, Animal Husbandry, and Fishery Production and Support Staff",5259471.0,306014.0,1233845.0,2672220.0,774215.0,199104.0,74073.0,1.91
-"Production, manufacturing, and related personnel",4807673.0,624894.0,1542944.0,2129863.0,414245.0,75528.0,20199.0,1.55
-Other occupational categories that are difficult to classify,62516.0,26261.0,16798.0,15862.0,2876.0,572.0,147.0,0.96
+social organizations, enterprise and public institution leaders",15-64 years old,376767,56173,175995,124393,16965,2628,613
+Professional and Technical Personnel,15-64 years old,3768659,1222151,1689734,792275,54838,8136,1525
+Office clerks and related personnel,15-64 years old,1763530,480535,865320,383186,28942,4529,1018
+Social production service and daily service personnel,15-64 years old,9474681,1915946,3604474,3279919,549303,98898,26141
+"Farm, Forestry, Animal Husbandry, and Fishery Production and Support Staff",15-64 years old,5259471,306014,1233845,2672220,774215,199104,74073
+"Production, manufacturing, and related personnel",15-64 years old,4807673,624894,1542944,2129863,414245,75528,20199
+Other occupational categories that are difficult to classify,15-64 years old,62516,26261,16798,15862,2876,572,147

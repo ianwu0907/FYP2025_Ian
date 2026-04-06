@@ -1,32 +1,38 @@
 {
-  "column_type_homogeneity": {
-    "before": 0.7633,
-    "after": 0.75,
-    "delta": -0.0133,
-    "direction": "✗ degraded"
+  "type_consistency": {
+    "before": 0.8469,
+    "after": 1.0,
+    "delta": 0.1531,
+    "direction": "✓ improved"
   },
-  "column_completeness_min": {
-    "before": 0.7692,
-    "after": 0.25,
-    "delta": -0.5192,
-    "direction": "✗ degraded"
-  },
-  "groupby_queryability": {
-    "before": 1.0,
+  "inter_column_nmi": {
+    "before": 0.9543,
     "after": 0.0,
-    "delta": -1.0,
-    "direction": "✗ degraded"
-  },
-  "cell_coverage": {
-    "before": 0.8462,
-    "after": 0.5,
-    "delta": -0.3462,
-    "direction": "✗ degraded"
+    "delta": -0.9543,
+    "direction": "✓ improved"
   },
   "row_completeness_uniformity": {
-    "before": 0.7076,
-    "after": 0.6667,
-    "delta": -0.0409,
+    "before": 0.6887,
+    "after": 1.0,
+    "delta": 0.3113,
+    "direction": "✓ improved"
+  },
+  "column_type_homogeneity": {
+    "before": 0.5273,
+    "after": 1.0,
+    "delta": 0.4727,
+    "direction": "✓ improved"
+  },
+  "groupby_queryability": {
+    "before": 0.7551,
+    "after": 0.0,
+    "delta": -0.7551,
+    "direction": "✗ degraded"
+  },
+  "substring_containment": {
+    "before": 0.0034,
+    "after": 0.0556,
+    "delta": 0.0522,
     "direction": "✗ degraded"
   },
   "header_uniqueness": {
@@ -35,32 +41,26 @@
     "delta": 0.0,
     "direction": "= unchanged"
   },
-  "inter_column_nmi": {
-    "before": 0.0,
-    "after": 0.0,
-    "delta": 0.0,
-    "direction": "= unchanged"
-  },
-  "type_consistency": {
-    "before": 1.0,
+  "column_completeness_min": {
+    "before": 0.7778,
     "after": 1.0,
-    "delta": 0.0,
-    "direction": "= unchanged"
+    "delta": 0.2222,
+    "direction": "✓ improved"
+  },
+  "cell_coverage": {
+    "before": 0.8095,
+    "after": 1.0,
+    "delta": 0.1905,
+    "direction": "✓ improved"
   },
   "data_row_ratio": {
-    "before": 0.7692,
-    "after": 0.25,
-    "delta": -0.5192,
-    "direction": "✗ degraded"
-  },
-  "substring_containment": {
-    "before": 0.0,
-    "after": 0.0,
-    "delta": 0.0,
-    "direction": "= unchanged"
+    "before": 0.6667,
+    "after": 1.0,
+    "delta": 0.3333,
+    "direction": "✓ improved"
   },
   "_groupby_queryability_mode": {
     "before": "full",
-    "after": "no_dims"
+    "after": "full"
   }
 }

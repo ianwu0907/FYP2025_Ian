@@ -1,117 +1,122 @@
 {
-  "input_file": "raw/1021.xlsx",
-  "start_time": "2026-04-06 17:15:35",
+  "input_file": "raw/1061.xlsx",
+  "start_time": "2026-04-06 20:04:03",
   "stages": {
     "encoding": {
       "status": "success",
       "shape": [
-        13,
-        3
+        9,
+        7
       ],
-      "compression_ratio": 0.6225026288117771
+      "compression_ratio": 0.6324029952348537
     },
     "detection": {
       "status": "success",
       "irregularities": [
-        "IMPLICIT_AGGREGATION_ROWS",
-        "SPARSE_ROW_FILL"
+        "MULTI_LEVEL_HEADER",
+        "NESTED_COLUMN_GROUPS",
+        "AGGREGATE_COLUMNS",
+        "METADATA_ROWS"
       ],
-      "num_irregularities": 2
+      "num_irregularities": 4
     },
     "schema_estimation": {
       "status": "success",
-      "observation_unit": "A single measurement of behaviour (screen time, sedentary time, lpa, or mvpa) for either weekday or weekend.",
-      "num_target_columns": 3,
-      "expected_rows": 8
+      "observation_unit": "One row in the tidy output represents an observation of self-rated mental health status for a specific category (e.g., positive responses, negative responses, specific mental health conditions).",
+      "num_target_columns": 5,
+      "expected_rows": 12
     },
     "transformation": {
       "status": "success",
       "output_shape": [
-        4,
-        3
+        3,
+        5
       ],
       "validation": {
         "is_valid": true,
         "errors": [],
-        "warnings": [
-          "Column 'beta' is 75% null",
-          "Column 'p_value' is 75% null"
-        ],
+        "warnings": [],
         "actual_shape": [
-          4,
-          3
+          3,
+          5
         ],
         "expected_shape": [
-          8,
-          3
+          12,
+          5
         ]
       },
-      "attempts": 1
+      "attempts": 2
     }
   },
   "metrics_before": {
     "shape": {
-      "rows": 13,
-      "cols": 3
+      "rows": 9,
+      "cols": 7
     },
-    "cell_coverage": 0.8462,
-    "row_completeness_uniformity": 0.7076,
-    "column_type_homogeneity": 0.7633,
-    "data_row_ratio": 0.7692,
-    "column_completeness_min": 0.7692,
+    "cell_coverage": 0.8095,
+    "row_completeness_uniformity": 0.6887,
+    "column_type_homogeneity": 0.5273,
+    "data_row_ratio": 0.6667,
+    "column_completeness_min": 0.7778,
     "header_uniqueness": 1.0,
-    "type_consistency": 1.0,
-    "substring_containment": 0.0,
-    "inter_column_nmi": 0.0,
-    "groupby_queryability": 1.0,
+    "type_consistency": 0.8469,
+    "substring_containment": 0.0034,
+    "inter_column_nmi": 0.9543,
+    "groupby_queryability": 0.7551,
     "groupby_queryability_mode": "full"
   },
   "metrics_after": {
     "shape": {
-      "rows": 4,
-      "cols": 3
+      "rows": 3,
+      "cols": 5
     },
-    "cell_coverage": 0.5,
-    "row_completeness_uniformity": 0.6667,
-    "column_type_homogeneity": 0.75,
-    "data_row_ratio": 0.25,
-    "column_completeness_min": 0.25,
+    "cell_coverage": 1.0,
+    "row_completeness_uniformity": 1.0,
+    "column_type_homogeneity": 1.0,
+    "data_row_ratio": 1.0,
+    "column_completeness_min": 1.0,
     "header_uniqueness": 1.0,
     "type_consistency": 1.0,
-    "substring_containment": 0.0,
+    "substring_containment": 0.0556,
     "inter_column_nmi": 0.0,
     "groupby_queryability": 0.0,
-    "groupby_queryability_mode": "no_dims"
+    "groupby_queryability_mode": "full"
   },
   "metrics_comparison": {
-    "column_type_homogeneity": {
-      "before": 0.7633,
-      "after": 0.75,
-      "delta": -0.0133,
-      "direction": "✗ degraded"
+    "type_consistency": {
+      "before": 0.8469,
+      "after": 1.0,
+      "delta": 0.1531,
+      "direction": "✓ improved"
     },
-    "column_completeness_min": {
-      "before": 0.7692,
-      "after": 0.25,
-      "delta": -0.5192,
-      "direction": "✗ degraded"
-    },
-    "groupby_queryability": {
-      "before": 1.0,
+    "inter_column_nmi": {
+      "before": 0.9543,
       "after": 0.0,
-      "delta": -1.0,
-      "direction": "✗ degraded"
-    },
-    "cell_coverage": {
-      "before": 0.8462,
-      "after": 0.5,
-      "delta": -0.3462,
-      "direction": "✗ degraded"
+      "delta": -0.9543,
+      "direction": "✓ improved"
     },
     "row_completeness_uniformity": {
-      "before": 0.7076,
-      "after": 0.6667,
-      "delta": -0.0409,
+      "before": 0.6887,
+      "after": 1.0,
+      "delta": 0.3113,
+      "direction": "✓ improved"
+    },
+    "column_type_homogeneity": {
+      "before": 0.5273,
+      "after": 1.0,
+      "delta": 0.4727,
+      "direction": "✓ improved"
+    },
+    "groupby_queryability": {
+      "before": 0.7551,
+      "after": 0.0,
+      "delta": -0.7551,
+      "direction": "✗ degraded"
+    },
+    "substring_containment": {
+      "before": 0.0034,
+      "after": 0.0556,
+      "delta": 0.0522,
       "direction": "✗ degraded"
     },
     "header_uniqueness": {
@@ -120,37 +125,31 @@
       "delta": 0.0,
       "direction": "= unchanged"
     },
-    "inter_column_nmi": {
-      "before": 0.0,
-      "after": 0.0,
-      "delta": 0.0,
-      "direction": "= unchanged"
-    },
-    "type_consistency": {
-      "before": 1.0,
+    "column_completeness_min": {
+      "before": 0.7778,
       "after": 1.0,
-      "delta": 0.0,
-      "direction": "= unchanged"
+      "delta": 0.2222,
+      "direction": "✓ improved"
+    },
+    "cell_coverage": {
+      "before": 0.8095,
+      "after": 1.0,
+      "delta": 0.1905,
+      "direction": "✓ improved"
     },
     "data_row_ratio": {
-      "before": 0.7692,
-      "after": 0.25,
-      "delta": -0.5192,
-      "direction": "✗ degraded"
-    },
-    "substring_containment": {
-      "before": 0.0,
-      "after": 0.0,
-      "delta": 0.0,
-      "direction": "= unchanged"
+      "before": 0.6667,
+      "after": 1.0,
+      "delta": 0.3333,
+      "direction": "✓ improved"
     },
     "_groupby_queryability_mode": {
       "before": "full",
-      "after": "no_dims"
+      "after": "full"
     }
   },
-  "output_file": "eval/pipeline_outputs/1021_pipeline_output.csv",
-  "end_time": "2026-04-06 17:15:49",
-  "elapsed_seconds": 14.35,
+  "output_file": "eval/pipeline_outputs/1061_pipeline_output.csv",
+  "end_time": "2026-04-06 20:04:49",
+  "elapsed_seconds": 46.72,
   "status": "success"
 }

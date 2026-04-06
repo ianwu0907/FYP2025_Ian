@@ -169,7 +169,7 @@
         "_ref_dim": "behaviour_type",
         "_ref_x": "mvpa",
         "_ref_measure": "p_value",
-        "answer": 0.0636,
+        "answer": 0.0566,
         "question": "What is the total p_value across all records where behaviour_type is 'mvpa'?"
       },
       {

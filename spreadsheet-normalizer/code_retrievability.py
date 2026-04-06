@@ -407,32 +407,24 @@ You are a data analyst. You will be given:
   1. A question describing a data retrieval intent using concept labels
      that may not match the actual column names in the table.
   2. The table's column names, a data preview, and per-column distinct values.
-  3. A query template with slots to fill. The template type is either:
-     - LOOKUP: slots are "filters" (a dict) and "B" (measure column).
-     - AGGREGATION: slots are "A" (dim column), "x" (filter value), "B" (measure column).
+  3. A query template to fill. Both LOOKUP and AGGREGATION templates now use
+     the exact same slot structure: "filters" (a dict) and "B" (measure column).
 
-For LOOKUP templates:
+Slot filling rules:
   - "filters": a JSON object mapping each dimension column name to its filter
-    value. Include ALL dimension columns needed to uniquely identify a single
-    row. Every key must be EXACTLY a column name; every value must be EXACTLY
-    a string from that column's distinct values list.
-  - "B": EXACTLY one column name — the measure to retrieve.
-
-For AGGREGATION templates:
-  - "A": EXACTLY one column name — the dimension to filter on.
-  - "x": EXACTLY one value from column A's distinct values list.
-  - "B": EXACTLY one column name — the measure to sum.
+    value. Include ALL dimension columns needed to isolate the target data
+    (for LOOKUP, this uniquely identifies a single row; for AGGREGATION, this
+    defines the group to sum). Every key must be EXACTLY a column name; every
+    value must be EXACTLY a string from that column's distinct values list.
+  - "B": EXACTLY one column name — the measure to retrieve or sum.
 
 General rules:
   - Use BOTH column names AND distinct values to infer semantic meaning.
   - All column names and values must be copied exactly from what is shown.
   - Output ONLY a valid JSON object. No explanation, no markdown fences.
 
-LOOKUP example output:
-{"filters": {"country_of_birth": "cameroon", "gender": "female"}, "B": "percent"}
-
-AGGREGATION example output:
-{"A": "country_of_birth", "x": "cameroon", "B": "count"}
+Example output (for BOTH Lookup and Aggregation):
+{"filters": {"country_of_birth": "cameroon", "gender": "female"}, "B": "count"}
 """).strip()
 
 
@@ -545,54 +537,33 @@ def fill_slots_via_llm(
 
         col_strs = [str(c) for c in df.columns]
 
-        if qtype == "lookup":
-            filters = slots.get("filters")
-            if not isinstance(filters, dict) or not filters:
-                logger.warning(f"fill_slots_via_llm: filters must be a non-empty dict, got: {filters}")
-                return None
-            for col, val in list(filters.items()):
-                if col not in col_strs:
-                    logger.warning(f"fill_slots_via_llm: filters key '{col}' is not a column.")
-                    return None
-                # Fix 4: strip val before comparing (LLM may include whitespace).
-                # Fix 5: normalise float-int ("2020.0" == "2020").
-                actual_vals = [_norm_str(v) for v in
-                               df[col].dropna().astype(str).str.strip().unique()]
-                val_norm = _norm_str(str(val).strip())
-                if val_norm not in actual_vals:
-                    logger.warning(
-                        f"fill_slots_via_llm: filters['{col}']='{val}' not in column. "
-                        f"Available: {actual_vals[:10]}"
-                    )
-                    return None
-            b = slots.get("B")
-            if b not in col_strs:
-                logger.warning(f"fill_slots_via_llm: B='{b}' is not a column.")
-                return None
-            return {"filters": {k: str(v) for k, v in filters.items()}, "B": str(b)}
+        filters = slots.get("filters")
+        if not isinstance(filters, dict) or not filters:
+            logger.warning(f"fill_slots_via_llm: filters must be a non-empty dict, got: {filters}")
+            return None
 
-        else:  # aggregation
-            slots = {k: str(slots[k]) for k in required}
-            if slots["A"] not in col_strs:
-                logger.warning(f"fill_slots_via_llm: A='{slots['A']}' is not a column.")
+        for col, val in list(filters.items()):
+            if col not in col_strs:
+                logger.warning(f"fill_slots_via_llm: filters key '{col}' is not a column.")
                 return None
-            # Fix 4: strip x before comparing.
-            # Fix 5: normalise float-int strings.
+            # Fix 4: strip val before comparing (LLM may include whitespace).
+            # Fix 5: normalise float-int ("2020.0" == "2020").
             actual_vals = [_norm_str(v) for v in
-                           df[slots["A"]].dropna().astype(str).str.strip().unique()]
-            x_norm = _norm_str(str(slots["x"]).strip())
-            if x_norm not in actual_vals:
-                _x_val, _a_col = slots["x"], slots["A"]
+                           df[col].dropna().astype(str).str.strip().unique()]
+            val_norm = _norm_str(str(val).strip())
+            if val_norm not in actual_vals:
                 logger.warning(
-                    f"fill_slots_via_llm: x='{_x_val}' not in column '{_a_col}'. "
+                    f"fill_slots_via_llm: filters['{col}']='{val}' not in column. "
                     f"Available: {actual_vals[:10]}"
                 )
                 return None
-            if slots["B"] not in col_strs:
-                _b_col = slots["B"]
-                logger.warning(f"fill_slots_via_llm: B='{_b_col}' is not a column.")
-                return None
-            return slots
+
+        b = slots.get("B")
+        if b not in col_strs:
+            logger.warning(f"fill_slots_via_llm: B='{b}' is not a column.")
+            return None
+
+        return {"filters": {k: str(v) for k, v in filters.items()}, "B": str(b)}
 
     except (json.JSONDecodeError, KeyError, Exception) as e:
         logger.warning(f"fill_slots_via_llm failed: {type(e).__name__}: {e}")
@@ -620,13 +591,8 @@ def execute_template(
     code = TEMPLATES[qtype]["code"]
     local_vars: Dict[str, Any] = {"df": df.copy(), "pd": pd, "_norm_str": _norm_str}
 
-    if qtype == "lookup":
-        local_vars["filters_dict"] = slots.get("filters", {})
-        local_vars["B_col"]        = slots["B"]
-    else:
-        local_vars["A_col"]  = slots["A"]
-        local_vars["x_val"]  = slots["x"]
-        local_vars["B_col"]  = slots["B"]
+    local_vars["filters_dict"] = slots.get("filters", {})
+    local_vars["B_col"]        = slots["B"]
 
     try:
         exec(code, {}, local_vars)  # noqa: S102

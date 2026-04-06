@@ -1,5 +1,14 @@
-athlete,event,heat,Unnamed: 3,semifinal,Unnamed: 5,final,Unnamed: 7
-,,result,rank,result,rank,result,rank
-janet achola,1500 m,4:11.64,11,did not advance,,,
-dorcus inzikuru,3000 m steeplechase,9:35.29,7,,,did not advance,
-jane suuto,marathon,,,,,2:44:46,93
+athlete,event,round,result,rank
+janet achola,1500 m,Unnamed: 3,9:35.29,11
+dorcus inzikuru,3000 m steeplechase,Unnamed: 3,9:35.29,7
+jane suuto,marathon,Unnamed: 3,9:35.29,7
+jane suuto,marathon,semifinal,did not advance,7
+janet achola,1500 m,Unnamed: 5,did not advance,7
+dorcus inzikuru,3000 m steeplechase,Unnamed: 5,did not advance,7
+jane suuto,marathon,Unnamed: 5,did not advance,7
+janet achola,1500 m,final,did not advance,7
+dorcus inzikuru,3000 m steeplechase,final,did not advance,7
+jane suuto,marathon,final,2:44:46,7
+janet achola,1500 m,Unnamed: 7,2:44:46,7
+dorcus inzikuru,3000 m steeplechase,Unnamed: 7,2:44:46,7
+jane suuto,marathon,Unnamed: 7,2:44:46,93
