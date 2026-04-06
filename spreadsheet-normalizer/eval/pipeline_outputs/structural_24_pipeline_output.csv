@@ -1,11 +1,37 @@
-Unnamed: 0,agricultural region 1,Unnamed: 2,agricultural region 3,Unnamed: 4,agricultural region 4,Unnamed: 6
-,french-language workers,english-language workers,french-language workers,english-language workers,french-language workers,english-language workers
-,percent,,,,,
-sex,,,,,,
-female,35.3,28.0,41.8,30.6,35.9,26.6
-male,64.7,72.0,58.2,69.4,64.1,73.4
-marital status,,,,,,
-single,18.7,24.8,26.9,26.1,25.6,32.8
-married,51.3,53.9,47.8,56.7,54.4,57.8
-common-law,17.1,10.9,22.4,6.4,11.8,7.8
-"separated, divorced, or widowed",12.8,10.6,0.0,10.8,7.7,0.0
+sex,marital_status,agricultural_region,percent
+female,,french-language workers_percent,35.3
+male,,french-language workers_percent,64.7
+single,marital status,french-language workers_percent,18.7
+married,marital status,french-language workers_percent,51.3
+common-law,marital status,french-language workers_percent,17.1
+"separated, divorced, or widowed",marital status,french-language workers_percent,12.8
+female,,english-language workers_percent,28.0
+male,,english-language workers_percent,72.0
+single,marital status,english-language workers_percent,24.8
+married,marital status,english-language workers_percent,53.9
+common-law,marital status,english-language workers_percent,10.9
+"separated, divorced, or widowed",marital status,english-language workers_percent,10.6
+female,,french-language workers_percent,41.8
+male,,french-language workers_percent,58.2
+single,marital status,french-language workers_percent,26.9
+married,marital status,french-language workers_percent,47.8
+common-law,marital status,french-language workers_percent,22.4
+"separated, divorced, or widowed",marital status,french-language workers_percent,0.0
+female,,english-language workers_percent,30.6
+male,,english-language workers_percent,69.4
+single,marital status,english-language workers_percent,26.1
+married,marital status,english-language workers_percent,56.7
+common-law,marital status,english-language workers_percent,6.4
+"separated, divorced, or widowed",marital status,english-language workers_percent,10.8
+female,,french-language workers_percent,35.9
+male,,french-language workers_percent,64.1
+single,marital status,french-language workers_percent,25.6
+married,marital status,french-language workers_percent,54.4
+common-law,marital status,french-language workers_percent,11.8
+"separated, divorced, or widowed",marital status,french-language workers_percent,7.7
+female,,english-language workers_percent,26.6
+male,,english-language workers_percent,73.4
+single,marital status,english-language workers_percent,32.8
+married,marital status,english-language workers_percent,57.8
+common-law,marital status,english-language workers_percent,7.8
+"separated, divorced, or widowed",marital status,english-language workers_percent,0.0

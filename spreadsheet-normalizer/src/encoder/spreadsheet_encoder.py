@@ -954,7 +954,7 @@ def spreadsheet_llm_encode_with_helpers(
                     "region_index": reg_idx,
                     "encoding": sheet_encoding,
                     "metrics": {
-                        "original_tokens": original_tokens,  # ✅ Use pre-calculated value
+                        "original_tokens": original_tokens,
                         "after_anchor_tokens": anchor_tokens,
                         "after_inverted_index_tokens": index_tokens,
                         "after_merged_index_tokens": merged_tokens,
@@ -1058,7 +1058,7 @@ class SpreadsheetEncoder:
         self._temp_xlsx: Optional[str] = None
 
         logger.info(
-            "Initialized SpreadsheetEncoder (Connected Components) k=%s detect_subtables=%s data_only=%s",
+            "Initialized MetadataCollector (Connected Components) k=%s detect_subtables=%s data_only=%s",
             self.k,
             self.detect_subtables,
             self.data_only,

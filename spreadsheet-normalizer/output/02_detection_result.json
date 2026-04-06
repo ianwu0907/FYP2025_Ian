@@ -1,56 +1,66 @@
 {
   "physical": {
     "shape": {
-      "rows": 10,
+      "rows": 56,
       "cols": 10
     },
     "actual_column_names": [
-      "Ethnicity",
-      "1880",
-      "1899",
-      "1913",
-      "19301",
-      "1956",
-      "1966",
-      "1977",
-      "1992",
-      "2002"
+      "表3.1            ",
+      "Unnamed: 1",
+      "2011年、2016年及2021年按種族劃分的少數族裔人士數目",
+      "Unnamed: 3",
+      "Unnamed: 4",
+      "Unnamed: 5",
+      "Unnamed: 6",
+      "Unnamed: 7",
+      "Unnamed: 8",
+      "索引 Index"
     ],
-    "header_depth": 0,
-    "data_start_row": 0,
-    "data_end_row": 9,
-    "data_rows": 10,
+    "header_depth": 5,
+    "data_start_row": 5,
+    "data_end_row": 55,
+    "data_rows": 51,
     "column_dtype_profile": {
       "0": "text",
       "1": "text",
-      "2": "text",
-      "3": "text",
-      "4": "text",
-      "5": "text",
-      "6": "text",
-      "7": "text",
-      "8": "text",
-      "9": "text"
+      "2": "empty",
+      "3": "numeric",
+      "4": "numeric",
+      "5": "numeric",
+      "6": "numeric",
+      "7": "numeric",
+      "8": "numeric",
+      "9": "empty"
     },
-    "blank_rows_in_data": [],
+    "blank_rows_in_data": [
+      41,
+      44,
+      47
+    ],
     "bilingual_row_candidate": false,
     "inline_bilingual_candidate": false,
-    "left_header_cols_num": 1
+    "left_header_cols_num": 3
   },
   "irregularities": [
     {
-      "label": "WIDE_FORMAT",
-      "evidence": "Columns 1 to 9 all represent different values of a single variable (ethnic population counts for various years).",
-      "details": "The column headers are not variable names but rather dimension values corresponding to years."
+      "label": "MULTI_LEVEL_HEADER",
+      "evidence": "Row 2 ([3]=\"2011\", [5]=\"2016\", [7]=\"2021\") and Row 3 ([0]=\"種族\\nEthnicity\", [3]=\"數目\\nNumber\", [4]=\"百分比\\n%\", [5]=\"數目\\nNumber\", [6]=\"百分比\\n%\", [7]=\"數目\\nNumber\", [8]=\"百分比\\n%\")",
+      "details": "The header at row 2 lists years as top-level categories while row 3 contains sub-categories related to ethnicity and numeric values, forming a multi-level hierarchy."
     },
     {
-      "label": "SPARSE_ROW_FILL",
-      "evidence": "Rows contain ethnic population counts that are filled only for the first row of each block, followed by blanks.",
-      "details": "Each ethnic group has its population values only presented once at the start of the corresponding year column without repeats for blocks."
+      "label": "AGGREGATE_COLUMNS",
+      "evidence": "Row 39 ([3]=\"451183\", [4]=\"100\", [5]=\"584383\", [6]=\"100\", [7]=\"619568\", [8]=\"100\") and Row 40 ([3]=\"0.064\", [5]=\"0.08\", [7]=\"0.084\")",
+      "details": "The totals in row 39 aggregate the other ethnic categories, and row 40 presents derived percentage values based on the counts in row 39, indicating the presence of overall summary columns."
+    },
+    {
+      "label": "METADATA_ROWS",
+      "evidence": "Rows 48 to 55 contain annotations, notes, and citations that do not follow the data structure.",
+      "details": "These rows serve as notes and references, and don't contribute to the data analysis, qualifying them as metadata."
     }
   ],
   "labels": [
-    "WIDE_FORMAT",
-    "SPARSE_ROW_FILL"
+    "MULTI_LEVEL_HEADER",
+    "AGGREGATE_COLUMNS",
+    "METADATA_ROWS"
   ]
 }

@@ -1,1329 +1,1976 @@
-age_group,income_type,population
-,Male,
-Age,Male,
-Age,Male,Male
-Age,Male,
-Under 45 years old,Male,28769662
-Under 45 years old,Male,
-45-49 years old,Male,5774455
-45,Male,1029558
-46,Male,1123949
-47,Male,1176498
-48,Male,1202544
-49,Male,1241906
-49,Male,
-50-54 years old,Male,6019802
-50,Male,1298030
-51,Male,1216599
-52,Male,1298846
-53,Male,1034436
-54,Male,1171891
-54,Male,
-55-59 years old,Male,4986030
-55,Male,1144496
-56,Male,1111081
-57,Male,1290317
-58,Male,935259
-59,Male,504877
-59,Male,
-60-64 years old,Male,3611534
-60,Male,630443
-61,Male,601597
-62,Male,765643
-63,Male,853241
-64,Male,760610
-64,Male,
-65-69 years old,Male,3557071
-65,Male,794038
-66,Male,784337
-67,Male,701663
-68,Male,695588
-69,Male,581445
-70-74 years old,Male,2341892
-70,Male,552550
-71,Male,537267
-72,Male,450625
-73,Male,425034
-74,Male,376416
-74,Male,
-75-79 years old,Male,1409194
-75,Male,328485
-76,Male,312625
-77,Male,271017
-78,Male,252314
-79,Male,244753
-79,Male,
-80-84 years old,Male,856619
-80,Male,214196
-81,Male,175529
-82,Male,179490
-83,Male,153187
-84,Male,134217
-84,Male,
-85-89 years old,Male,398907
-85,Male,111113
-86,Male,93574
-87,Male,84218
-88,Male,61448
-89,Male,48554
-89,Male,
-90-94 years old,Male,115437
-90,Male,41051
-91,Male,27037
-92,Male,21980
-93,Male,15095
-94,Male,10274
-94,Male,
-95-99 years old,Male,19576
-95,Male,7523
-96,Male,5063
-97,Male,3306
-98,Male,2148
-99,Male,1536
-99,Male,
-100 years and above,Male,1778
-,Female,
-Age,Female,
-Age,Female,Female
-Age,Female,
-Under 45 years old,Female,26776206
-Under 45 years old,Female,
-45-49 years old,Female,5511824
-45,Female,977154
-46,Female,1073545
-47,Female,1121552
-48,Female,1152292
-49,Female,1187281
-49,Female,
-50-54 years old,Female,5906378
-50,Female,1266799
-51,Female,1188360
-52,Female,1276675
-53,Female,1025010
-54,Female,1149534
-54,Female,
-55-59 years old,Female,4994132
-55,Female,1131681
-56,Female,1112306
-57,Female,1277233
-58,Female,943836
-59,Female,529076
-59,Female,
-60-64 years old,Female,3600797
-60,Female,635292
-61,Female,589893
-62,Female,753465
-63,Female,843128
-64,Female,779019
-64,Female,
-65-69 years old,Female,3703942
-65,Female,807569
-66,Female,812955
-67,Female,734940
-68,Female,729689
-69,Female,618789
-70-74 years old,Female,2471755
-70,Female,580091
-71,Female,554238
-72,Female,476409
-73,Female,449783
-74,Female,411234
-74,Female,
-75-79 years old,Female,1571314
-75,Female,362263
-76,Female,339876
-77,Female,303470
-78,Female,285377
-79,Female,280328
-79,Female,
-80-84 years old,Female,1041131
-80,Female,248148
-81,Female,211898
-82,Female,215605
-83,Female,190288
-84,Female,175192
-84,Female,
-85-89 years old,Female,574911
-85,Female,153627
-86,Female,133745
-87,Female,120714
-88,Female,92834
-89,Female,73991
-89,Female,
-90-94 years old,Female,197409
-90,Female,65023
-91,Female,45849
-92,Female,38954
-93,Female,27641
-94,Female,19942
-94,Female,
-95-99 years old,Female,44050
-95,Female,15926
-96,Female,11426
-97,Female,7661
-98,Female,5145
-99,Female,3892
-99,Female,
-100 years and above,Female,5784
-,Male,
-Age,Male,
-Age,Male,Male
-Age,Male,
-Under 45 years old,Male,21753109
-Under 45 years old,Male,
-45-49 years old,Male,5199419
-45,Male,935842
-46,Male,1017936
-47,Male,1060223
-48,Male,1078545
-49,Male,1106873
-49,Male,
-50-54 years old,Male,5139904
-50,Male,1142744
-51,Male,1052369
-52,Male,1108834
-53,Male,869962
-54,Male,965995
-54,Male,
-55-59 years old,Male,3714747
-55,Male,906162
-56,Male,849069
-57,Male,954315
-58,Male,672021
-59,Male,333180
-59,Male,
-60-64 years old,Male,1579435
-60,Male,307806
-61,Male,271939
-62,Male,331517
-63,Male,362706
-64,Male,305467
-64,Male,
-65-69 years old,Male,1217850
-65,Male,302943
-66,Male,281151
-67,Male,239456
-68,Male,223966
-69,Male,170334
-70-74 years old,Male,511131
-70,Male,142394
-71,Male,124934
-72,Male,95970
-73,Male,82127
-74,Male,65706
-74,Male,
-75-79 years old,Male,177297
-75,Male,52193
-76,Male,43762
-77,Male,33086
-78,Male,26562
-79,Male,21694
-79,Male,
-80-84 years old,Male,45071
-80,Male,15190
-81,Male,9742
-82,Male,8741
-83,Male,6411
-84,Male,4987
-84,Male,
-85-89 years old,Male,11202
-85,Male,3828
-86,Male,2794
-87,Male,2175
-88,Male,1404
-89,Male,1001
-89,Male,
-90-94 years old,Male,1737
-90,Male,707
-91,Male,390
-92,Male,289
-93,Male,202
-94,Male,149
-94,Male,
-95-99 years old,Male,263
-95,Male,95
-96,Male,72
-97,Male,33
-98,Male,37
-99,Male,26
-99,Male,
-100 years and above,Male,20
-,Female,
-Age,Female,
-Age,Female,Female
-Age,Female,
-Under 45 years old,Female,15922572
-Under 45 years old,Female,
-45-49 years old,Female,3865282
-45,Female,711338
-46,Female,772867
-47,Female,793837
-48,Female,796269
-49,Female,790971
-49,Female,
-50-54 years old,Female,3116908
-50,Female,745227
-51,Female,649263
-52,Female,667753
-53,Female,513175
-54,Female,541490
-54,Female,
-55-59 years old,Female,1853750
-55,Female,473459
-56,Female,427996
-57,Female,456521
-58,Female,327716
-59,Female,168058
-59,Female,
-60-64 years old,Female,902229
-60,Female,176826
-61,Female,151226
-62,Female,187550
-63,Female,204307
-64,Female,182320
-64,Female,
-65-69 years old,Female,731275
-65,Female,179688
-66,Female,168320
-67,Female,145235
-68,Female,134791
-69,Female,103241
-70-74 years old,Female,292658
-70,Female,84801
-71,Female,70323
-72,Female,54762
-73,Female,45536
-74,Female,37236
-74,Female,
-75-79 years old,Female,98063
-75,Female,28919
-76,Female,23652
-77,Female,18359
-78,Female,14756
-79,Female,12377
-79,Female,
-80-84 years old,Female,27534
-80,Female,8935
-81,Female,5802
-82,Female,5202
-83,Female,4161
-84,Female,3434
-84,Female,
-85-89 years old,Female,9144
-85,Female,2772
-86,Female,2235
-87,Female,1843
-88,Female,1315
-89,Female,979
-89,Female,
-90-94 years old,Female,2001
-90,Female,775
-91,Female,449
-92,Female,364
-93,Female,234
-94,Female,179
-94,Female,
-95-99 years old,Female,394
-95,Female,154
-96,Female,84
-97,Female,65
-98,Female,43
-99,Female,48
-99,Female,
-100 years and above,Female,51
-,Male,
-Age,Male,
-Age,Male,Male
-Age,Male,
-Under 45 years old,Male,1446
-Under 45 years old,Male,
-45-49 years old,Male,3808
-45,Male,375
-46,Male,471
-47,Male,709
-48,Male,942
-49,Male,1311
-49,Male,
-50-54 years old,Male,96859
-50,Male,9207
-51,Male,15077
-52,Male,20652
-53,Male,20162
-54,Male,31761
-54,Male,
-55-59 years old,Male,383063
-55,Male,55978
-56,Male,73740
-57,Male,102707
-58,Male,81886
-59,Male,68752
-59,Male,
-60-64 years old,Male,1226566
-60,Male,206017
-61,Male,206488
-62,Male,264568
-63,Male,287165
-64,Male,262328
-64,Male,
-65-69 years old,Male,1247666
-65,Male,274340
-66,Male,278079
-67,Male,243519
-68,Male,242441
-69,Male,209287
-70-74 years old,Male,879821
-70,Male,206607
-71,Male,197991
-72,Male,167387
-73,Male,161799
-74,Male,146037
-74,Male,
-75-79 years old,Male,553163
-75,Male,125596
-76,Male,119719
-77,Male,105721
-78,Male,102089
-79,Male,100038
-79,Male,
-80-84 years old,Male,369848
-80,Male,91862
-81,Male,75541
-82,Male,76774
-83,Male,66738
-84,Male,58933
-84,Male,
-85-89 years old,Male,178881
-85,Male,48831
-86,Male,41481
-87,Male,37938
-88,Male,27960
-89,Male,22671
-89,Male,
-90-94 years old,Male,53956
-90,Male,19484
-91,Male,12666
-92,Male,10122
-93,Male,6880
-94,Male,4804
-94,Male,
-95-99 years old,Male,8638
-95,Male,3374
-96,Male,2242
-97,Male,1466
-98,Male,906
-99,Male,650
-99,Male,
-100 years and above,Male,705
-,Female,
-Age,Female,
-Age,Female,Female
-Age,Female,
-Under 45 years old,Female,1539
-Under 45 years old,Female,
-45-49 years old,Female,69269
-45,Female,4556
-46,Female,7290
-47,Female,10836
-48,Female,15779
-49,Female,30808
-49,Female,
-50-54 years old,Female,822631
-50,Female,136508
-51,Female,163925
-52,Female,184715
-53,Female,148783
-54,Female,188700
-54,Female,
-55-59 years old,Female,1297577
-55,Female,250245
-56,Female,280370
-57,Female,353210
-58,Female,251884
-59,Female,161868
-59,Female,
-60-64 years old,Female,1242539
-60,Female,223195
-61,Female,209067
-62,Female,263422
-63,Female,285977
-64,Female,260878
-64,Female,
-65-69 years old,Female,1206790
-65,Female,267103
-66,Female,271865
-67,Female,237020
-68,Female,231993
-69,Female,198809
-70-74 years old,Female,790968
-70,Female,187851
-71,Female,177744
-72,Female,151795
-73,Female,143466
-74,Female,130112
-74,Female,
-75-79 years old,Female,504404
-75,Female,112809
-76,Female,107781
-77,Female,97228
-78,Female,94491
-79,Female,92095
-79,Female,
-80-84 years old,Female,346717
-80,Female,83344
-81,Female,72636
-82,Female,72350
-83,Female,61532
-84,Female,56855
-84,Female,
-85-89 years old,Female,174073
-85,Female,48993
-86,Female,41382
-87,Female,36185
-88,Female,27056
-89,Female,20457
-89,Female,
-90-94 years old,Female,52799
-90,Female,17782
-91,Female,12698
-92,Female,10214
-93,Female,7041
-94,Female,5064
-94,Female,
-95-99 years old,Female,10253
-95,Female,3894
-96,Female,2707
-97,Female,1739
-98,Female,1104
-99,Female,809
-99,Female,
-100 years and above,Female,1096
-,Male,
-Age,Male,
-Age,Male,Male
-Age,Male,
-Under 45 years old,Male,145913
-Under 45 years old,Male,
-45-49 years old,Male,68701
-45,Male,10976
-46,Male,12634
-47,Male,13943
-48,Male,14981
-49,Male,16167
-49,Male,
-50-54 years old,Male,87755
-50,Male,17203
-51,Male,17262
-52,Male,18854
-53,Male,15784
-54,Male,18652
-54,Male,
-55-59 years old,Male,88028
-55,Male,18914
-56,Male,19061
-57,Male,22912
-58,Male,17027
-59,Male,10114
-59,Male,
-60-64 years old,Male,108954
-60,Male,14551
-61,Male,16102
-62,Male,23435
-63,Male,28226
-64,Male,26640
-64,Male,
-65-69 years old,Male,155246
-65,Male,30345
-66,Male,32047
-67,Male,31550
-68,Male,32709
-69,Male,28595
-70-74 years old,Male,136416
-70,Male,28895
-71,Male,30358
-72,Male,26719
-73,Male,26346
-74,Male,24098
-74,Male,
-75-79 years old,Male,96356
-75,Male,21701
-76,Male,21500
-77,Male,18676
-78,Male,17277
-79,Male,17202
-79,Male,
-80-84 years old,Male,58840
-80,Male,14891
-81,Male,12372
-82,Male,12425
-83,Male,10267
-84,Male,8885
-84,Male,
-85-89 years old,Male,25626
-85,Male,7502
-86,Male,6055
-87,Male,5295
-88,Male,3857
-89,Male,2917
-89,Male,
-90-94 years old,Male,6773
-90,Male,2458
-91,Male,1606
-92,Male,1285
-93,Male,842
-94,Male,582
-94,Male,
-95-99 years old,Male,1210
-95,Male,483
-96,Male,277
-97,Male,225
-98,Male,135
-99,Male,90
-99,Male,
-100 years and above,Male,136
-,Female,
-Age,Female,
-Age,Female,Female
-Age,Female,
-Under 45 years old,Female,107832
-Under 45 years old,Female,
-45-49 years old,Female,45858
-45,Female,7566
-46,Female,8579
-47,Female,9389
-48,Female,9848
-49,Female,10476
-49,Female,
-50-54 years old,Female,53796
-50,Female,10653
-51,Female,10284
-52,Female,11355
-53,Female,9923
-54,Female,11581
-54,Female,
-55-59 years old,Female,58955
-55,Female,11862
-56,Female,12469
-57,Female,14461
-58,Female,12397
-59,Female,7766
-59,Female,
-60-64 years old,Female,79297
-60,Female,11239
-61,Female,11965
-62,Female,16204
-63,Female,19795
-64,Female,20094
-64,Female,
-65-69 years old,Female,123001
-65,Female,23079
-66,Female,24854
-67,Female,24803
-68,Female,26584
-69,Female,23681
-70-74 years old,Female,113579
-70,Female,24290
-71,Female,24573
-72,Female,22162
-73,Female,21953
-74,Female,20601
-74,Female,
-75-79 years old,Female,83389
-75,Female,18978
-76,Female,17779
-77,Female,16269
-78,Female,15212
-79,Female,15151
-79,Female,
-80-84 years old,Female,57550
-80,Female,13706
-81,Female,11584
-82,Female,11903
-83,Female,10665
-84,Female,9692
-84,Female,
-85-89 years old,Female,33156
-85,Female,8522
-86,Female,7696
-87,Female,7116
-88,Female,5369
-89,Female,4453
-89,Female,
-90-94 years old,Female,12314
-90,Female,3947
-91,Female,2839
-92,Female,2404
-93,Female,1786
-94,Female,1338
-94,Female,
-95-99 years old,Female,3077
-95,Female,1066
-96,Female,802
-97,Female,563
-98,Female,377
-99,Female,269
-99,Female,
-100 years and above,Female,555
-,Male,
-Age,Male,
-Age,Male,Male
-Age,Male,
-Under 45 years old,Male,10722
-Under 45 years old,Male,
-45-49 years old,Male,4501
-45,Male,727
-46,Male,816
-47,Male,886
-48,Male,966
-49,Male,1106
-49,Male,
-50-54 years old,Male,5390
-50,Male,1101
-51,Male,1101
-52,Male,1208
-53,Male,926
-54,Male,1054
-54,Male,
-55-59 years old,Male,3190
-55,Male,1132
-56,Male,446
-57,Male,643
-58,Male,563
-59,Male,406
-59,Male,
-60-64 years old,Male,159
-60,Male,29
-61,Male,24
-62,Male,27
-63,Male,43
-64,Male,36
-64,Male,
-65-69 years old,Male,205
-65,Male,51
-66,Male,44
-67,Male,39
-68,Male,37
-69,Male,34
-70-74 years old,Male,162
-70,Male,40
-71,Male,49
-72,Male,25
-73,Male,28
-74,Male,20
-74,Male,
-75-79 years old,Male,90
-75,Male,25
-76,Male,20
-77,Male,19
-78,Male,13
-79,Male,13
-79,Male,
-80-84 years old,Male,49
-80,Male,13
-81,Male,11
-82,Male,7
-83,Male,13
-84,Male,5
-84,Male,
-85-89 years old,Male,17
-85,Male,3
-86,Male,5
-87,Male,3
-88,Male,3
-89,Male,3
-89,Male,
-90-94 years old,Male,2
-90,Male,1
-91,Male,1
-92,Male,0
-93,Male,0
-94,Male,0
-94,Male,
-95-99 years old,Male,2
-95,Male,0
-96,Male,2
-97,Male,0
-98,Male,0
-99,Male,0
-99,Male,
-100 years and above,Male,0
-,Female,
-Age,Female,
-Age,Female,Female
-Age,Female,
-Under 45 years old,Female,10162
-Under 45 years old,Female,
-45-49 years old,Female,5557
-45,Female,783
-46,Female,841
-47,Female,1085
-48,Female,1325
-49,Female,1523
-49,Female,
-50-54 years old,Female,841
-50,Female,572
-51,Female,77
-52,Female,67
-53,Female,53
-54,Female,72
-54,Female,
-55-59 years old,Female,165
-55,Female,31
-56,Female,36
-57,Female,53
-58,Female,29
-59,Female,16
-59,Female,
-60-64 years old,Female,165
-60,Female,26
-61,Female,31
-62,Female,38
-63,Female,32
-64,Female,38
-64,Female,
-65-69 years old,Female,237
-65,Female,45
-66,Female,48
-67,Female,43
-68,Female,64
-69,Female,37
-70-74 years old,Female,164
-70,Female,36
-71,Female,27
-72,Female,40
-73,Female,35
-74,Female,26
-74,Female,
-75-79 years old,Female,84
-75,Female,22
-76,Female,17
-77,Female,14
-78,Female,15
-79,Female,16
-79,Female,
-80-84 years old,Female,47
-80,Female,10
-81,Female,8
-82,Female,10
-83,Female,9
-84,Female,10
-84,Female,
-85-89 years old,Female,24
-85,Female,7
-86,Female,4
-87,Female,5
-88,Female,5
-89,Female,3
-89,Female,
-90-94 years old,Female,11
-90,Female,3
-91,Female,4
-92,Female,3
-93,Female,0
-94,Female,1
-94,Female,
-95-99 years old,Female,2
-95,Female,1
-96,Female,0
-97,Female,0
-98,Female,0
-99,Female,1
-99,Female,
-100 years and above,Female,0
-,Male,
-Age,Male,
-Age,Male,Male
-Age,Male,
-Under 45 years old,Male,163621
-Under 45 years old,Male,
-45-49 years old,Male,56353
-45,Male,9497
-46,Male,10631
-47,Male,11459
-48,Male,12101
-49,Male,12665
-49,Male,
-50-54 years old,Male,66490
-50,Male,13624
-51,Male,13209
-52,Male,14405
-53,Male,11744
-54,Male,13508
-54,Male,
-55-59 years old,Male,61606
-55,Male,13684
-56,Male,13373
-57,Male,15877
-58,Male,12170
-59,Male,6502
-59,Male,
-60-64 years old,Male,36746
-60,Male,6778
-61,Male,6086
-62,Male,7389
-63,Male,8603
-64,Male,7890
-64,Male,
-65-69 years old,Male,38914
-65,Male,8475
-66,Male,8412
-67,Male,7806
-68,Male,7688
-69,Male,6533
-70-74 years old,Male,24362
-70,Male,6099
-71,Male,5730
-72,Male,4580
-73,Male,4295
-74,Male,3658
-74,Male,
-75-79 years old,Male,12063
-75,Male,3077
-76,Male,2782
-77,Male,2309
-78,Male,1991
-79,Male,1904
-79,Male,
-80-84 years old,Male,5128
-80,Male,1478
-81,Male,1107
-82,Male,1065
-83,Male,805
-84,Male,673
-84,Male,
-85-89 years old,Male,1778
-85,Male,549
-86,Male,488
-87,Male,355
-88,Male,217
-89,Male,169
-89,Male,
-90-94 years old,Male,414
-90,Male,154
-91,Male,97
-92,Male,78
-93,Male,55
-94,Male,30
-94,Male,
-95-99 years old,Male,57
-95,Male,25
-96,Male,12
-97,Male,8
-98,Male,8
-99,Male,4
-99,Male,
-100 years and above,Male,6
-,Female,
-Age,Female,
-Age,Female,Female
-Age,Female,
-Under 45 years old,Female,154026
-Under 45 years old,Female,
-45-49 years old,Female,53210
-45,Female,9046
-46,Female,10017
-47,Female,10673
-48,Female,11465
-49,Female,12009
-49,Female,
-50-54 years old,Female,54923
-50,Female,11776
-51,Female,10886
-52,Female,11829
-53,Female,9552
-54,Female,10880
-54,Female,
-55-59 years old,Female,45641
-55,Female,10216
-56,Female,10059
-57,Female,11406
-58,Female,8739
-59,Female,5221
-59,Female,
-60-64 years old,Female,33187
-60,Female,6076
-61,Female,5568
-62,Female,6630
-63,Female,7619
-64,Female,7294
-64,Female,
-65-69 years old,Female,35618
-65,Female,7862
-66,Female,7778
-67,Female,7122
-68,Female,7063
-69,Female,5793
-70-74 years old,Female,20856
-70,Female,5389
-71,Female,4864
-72,Female,4040
-73,Female,3557
-74,Female,3006
-74,Female,
-75-79 years old,Female,9579
-75,Female,2459
-76,Female,2191
-77,Female,1868
-78,Female,1570
-79,Female,1491
-79,Female,
-80-84 years old,Female,4485
-80,Female,1216
-81,Female,931
-82,Female,928
-83,Female,774
-84,Female,636
-84,Female,
-85-89 years old,Female,1843
-85,Female,543
-86,Female,451
-87,Female,358
-88,Female,274
-89,Female,217
-89,Female,
-90-94 years old,Female,536
-90,Female,175
-91,Female,116
-92,Female,118
-93,Female,83
-94,Female,44
-94,Female,
-95-99 years old,Female,112
-95,Female,42
-96,Female,30
-97,Female,18
-98,Female,15
-99,Female,7
-99,Female,
-100 years and above,Female,14
-,Male,
-Age,Male,
-Age,Male,Male
-Age,Male,
-Under 45 years old,Male,5362440
-Under 45 years old,Male,
-45-49 years old,Male,173864
-45,Male,26305
-46,Male,30401
-47,Male,34637
-48,Male,38273
-49,Male,44248
-49,Male,
-50-54 years old,Male,318487
-50,Male,51109
-51,Male,56916
-52,Male,68638
-53,Male,62142
-54,Male,79682
-54,Male,
-55-59 years old,Male,459600
-55,Male,87781
-56,Male,94381
-57,Male,122108
-58,Male,98368
-59,Male,56962
-59,Male,
-60-64 years old,Male,477157
-60,Male,64808
-61,Male,71213
-62,Male,100459
-63,Male,122697
-64,Male,117980
-64,Male,
-65-69 years old,Male,698216
-65,Male,134936
-66,Male,141942
-67,Male,139538
-68,Male,148772
-69,Male,133028
-70-74 years old,Male,652705
-70,Male,136544
-71,Male,146444
-72,Male,129206
-73,Male,125519
-74,Male,114992
-74,Male,
-75-79 years old,Male,488375
-75,Male,106217
-76,Male,106375
-77,Male,95563
-78,Male,89996
-79,Male,90224
-79,Male,
-80-84 years old,Male,333205
-80,Male,79208
-81,Male,67524
-82,Male,71224
-83,Male,61240
-84,Male,54009
-84,Male,
-85-89 years old,Male,161962
-85,Male,44795
-86,Male,38218
-87,Male,34371
-88,Male,25109
-89,Male,19469
-89,Male,
-90-94 years old,Male,47061
-90,Male,16321
-91,Male,11026
-92,Male,9132
-93,Male,6379
-94,Male,4203
-94,Male,
-95-99 years old,Male,8364
-95,Male,3173
-96,Male,2182
-97,Male,1390
-98,Male,949
-99,Male,670
-99,Male,
-100 years and above,Male,799
-,Female,
-Age,Female,
-Age,Female,Female
-Age,Female,
-Under 45 years old,Female,9140971
-Under 45 years old,Female,
-45-49 years old,Female,1164808
-45,Female,191233
-46,Female,215292
-47,Female,232819
-48,Female,252062
-49,Female,273402
-49,Female,
-50-54 years old,Female,1524105
-50,Female,291862
-51,Female,288236
-52,Female,328959
-53,Female,284434
-54,Female,330614
-54,Female,
-55-59 years old,Female,1460807
-55,Female,322361
-56,Female,319866
-57,Female,371885
-58,Female,289664
-59,Female,157031
-59,Female,
-60-64 years old,Female,1148322
-60,Female,184096
-61,Female,180572
-62,Female,239221
-63,Female,279603
-64,Female,264830
-64,Female,
-65-69 years old,Female,1393971
-65,Female,284537
-66,Female,294028
-67,Female,278149
-68,Female,286658
-69,Female,250599
-70-74 years old,Female,1108309
-70,Female,243727
-71,Female,244191
-72,Female,215602
-73,Female,208825
-74,Female,195964
-74,Female,
-75-79 years old,Female,787567
-75,Female,178037
-76,Female,169133
-77,Female,152812
-78,Female,143528
-79,Female,144057
-79,Female,
-80-84 years old,Female,550961
-80,Female,127655
-81,Female,109963
-82,Female,114241
-83,Female,103446
-84,Female,95656
-84,Female,
-85-89 years old,Female,327330
-85,Female,84918
-86,Female,75172
-87,Female,69141
-88,Female,54032
-89,Female,44067
-89,Female,
-90-94 years old,Female,119593
-90,Female,38950
-91,Female,27420
-92,Female,23899
-93,Female,17042
-94,Female,12282
-94,Female,
-95-99 years old,Female,27699
-95,Female,9913
-96,Female,7130
-97,Female,4860
-98,Female,3279
-99,Female,2517
-99,Female,
-100 years and above,Female,3716
-,Male,
-Age,Male,
-Age,Male,Male
-Age,Male,
-Under 45 years old,Male,1332411
-Under 45 years old,Male,
-45-49 years old,Male,267809
-45,Male,45836
-46,Male,51060
-47,Male,54641
-48,Male,56736
-49,Male,59536
-49,Male,
-50-54 years old,Male,304917
-50,Male,63042
-51,Male,60665
-52,Male,66255
-53,Male,53716
-54,Male,61239
-54,Male,
-55-59 years old,Male,275796
-55,Male,60845
-56,Male,61011
-57,Male,71755
-58,Male,53224
-59,Male,28961
-59,Male,
-60-64 years old,Male,182517
-60,Male,30454
-61,Male,29745
-62,Male,38248
-63,Male,43801
-64,Male,40269
-64,Male,
-65-69 years old,Male,198974
-65,Male,42948
-66,Male,42662
-67,Male,39755
-68,Male,39975
-69,Male,33634
-70-74 years old,Male,137295
-70,Male,31971
-71,Male,31761
-72,Male,26738
-73,Male,24920
-74,Male,21905
-74,Male,
-75-79 years old,Male,81850
-75,Male,19676
-76,Male,18467
-77,Male,15643
-78,Male,14386
-79,Male,13678
-79,Male,
-80-84 years old,Male,44478
-80,Male,11554
-81,Male,9232
-82,Male,9254
-83,Male,7713
-84,Male,6725
-84,Male,
-85-89 years old,Male,19441
-85,Male,5605
-86,Male,4533
-87,Male,4081
-88,Male,2898
-89,Male,2324
-89,Male,
-90-94 years old,Male,5494
-90,Male,1926
-91,Male,1251
-92,Male,1074
-93,Male,737
-94,Male,506
-94,Male,
-95-99 years old,Male,1042
-95,Male,373
-96,Male,276
-97,Male,184
-98,Male,113
-99,Male,96
-99,Male,
-100 years and above,Male,112
-,Female,
-Age,Female,
-Age,Female,Female
-Age,Female,
-Under 45 years old,Female,1439104
-Under 45 years old,Female,
-45-49 years old,Female,307840
-45,Female,52632
-46,Female,58659
-47,Female,62913
-48,Female,65544
-49,Female,68092
-49,Female,
-50-54 years old,Female,333174
-50,Female,70201
-51,Female,65689
-52,Female,71997
-53,Female,59090
-54,Female,66197
-54,Female,
-55-59 years old,Female,277237
-55,Female,63507
-56,Female,61510
-57,Female,69697
-58,Female,53407
-59,Female,29116
-59,Female,
-60-64 years old,Female,195058
-60,Female,33834
-61,Female,31464
-62,Female,40400
-63,Female,45795
-64,Female,43565
-64,Female,
-65-69 years old,Female,213050
-65,Female,45255
-66,Female,46062
-67,Female,42568
-68,Female,42536
-69,Female,36629
-70-74 years old,Female,145221
-70,Female,33997
-71,Female,32516
-72,Female,28008
-73,Female,26411
-74,Female,24289
-74,Female,
-75-79 years old,Female,88228
-75,Female,21039
-76,Female,19323
-77,Female,16920
-78,Female,15805
-79,Female,15141
-79,Female,
-80-84 years old,Female,53837
-80,Female,13282
-81,Female,10974
-82,Female,10971
-83,Female,9701
-84,Female,8909
-84,Female,
-85-89 years old,Female,29341
-85,Female,7872
-86,Female,6805
-87,Female,6066
-88,Female,4783
-89,Female,3815
-89,Female,
-90-94 years old,Female,10155
-90,Female,3391
-91,Female,2323
-92,Female,1952
-93,Female,1455
-94,Female,1034
-94,Female,
-95-99 years old,Female,2513
-95,Female,856
-96,Female,673
-97,Female,416
-98,Female,327
-99,Female,241
-99,Female,
-100 years and above,Female,352
+age_group,gender,income_source,population_count
+,nan,Age,
+,Total,Population aged 15 and above,
+,Male,Population aged 15 and above,
+,Female,Population aged 15 and above,
+,Subtotal,Labor income,
+,Male,Labor income,
+,Female,Labor income,
+,Subtotal,Pension / Retirement Allowance,
+,Male,Pension / Retirement Allowance,
+,Female,Pension / Retirement Allowance,
+,Subtotal,Minimum living allowance,
+,Male,Minimum living allowance,
+,Female,Minimum living allowance,
+,Subtotal,Unemployment Insurance Benefits,
+,Male,Unemployment Insurance Benefits,
+,Female,Unemployment Insurance Benefits,
+,Subtotal,Property income,
+,Male,Property income,
+,Female,Property income,
+,Subtotal,Family support from other members,
+,Male,Family support from other members,
+,Female,Family support from other members,
+,Subtotal,Other,
+,Male,Other,
+,Female,Other,
+,nan,Age,
+,Total,Population aged 15 and above,
+,Male,Population aged 15 and above,
+,Female,Population aged 15 and above,
+,Subtotal,Labor income,
+,Male,Labor income,
+,Female,Labor income,
+,Subtotal,Pension / Retirement Allowance,
+,Male,Pension / Retirement Allowance,
+,Female,Pension / Retirement Allowance,
+,Subtotal,Minimum living allowance,
+,Male,Minimum living allowance,
+,Female,Minimum living allowance,
+,Subtotal,Unemployment Insurance Benefits,
+,Male,Unemployment Insurance Benefits,
+,Female,Unemployment Insurance Benefits,
+,Subtotal,Property income,
+,Male,Property income,
+,Female,Property income,
+,Subtotal,Family support from other members,
+,Male,Family support from other members,
+,Female,Family support from other members,
+,Subtotal,Other,
+,Male,Other,
+,Female,Other,
+45-49 years old,nan,Age,45-49 years old
+45-49 years old,Total,Population aged 15 and above,11286279
+45-49 years old,Male,Population aged 15 and above,5774455
+45-49 years old,Female,Population aged 15 and above,5511824
+45-49 years old,Subtotal,Labor income,9064701
+45-49 years old,Male,Labor income,5199419
+45-49 years old,Female,Labor income,3865282
+45-49 years old,Subtotal,Pension / Retirement Allowance,73077
+45-49 years old,Male,Pension / Retirement Allowance,3808
+45-49 years old,Female,Pension / Retirement Allowance,69269
+45-49 years old,Subtotal,Minimum living allowance,114559
+45-49 years old,Male,Minimum living allowance,68701
+45-49 years old,Female,Minimum living allowance,45858
+45-49 years old,Subtotal,Unemployment Insurance Benefits,10058
+45-49 years old,Male,Unemployment Insurance Benefits,4501
+45-49 years old,Female,Unemployment Insurance Benefits,5557
+45-49 years old,Subtotal,Property income,109563
+45-49 years old,Male,Property income,56353
+45-49 years old,Female,Property income,53210
+45-49 years old,Subtotal,Family support from other members,1338672
+45-49 years old,Male,Family support from other members,173864
+45-49 years old,Female,Family support from other members,1164808
+45-49 years old,Subtotal,Other,575649
+45-49 years old,Male,Other,267809
+45-49 years old,Female,Other,307840
+45,nan,Age,45
+45,Total,Population aged 15 and above,2006712
+45,Male,Population aged 15 and above,1029558
+45,Female,Population aged 15 and above,977154
+45,Subtotal,Labor income,1647180
+45,Male,Labor income,935842
+45,Female,Labor income,711338
+45,Subtotal,Pension / Retirement Allowance,4931
+45,Male,Pension / Retirement Allowance,375
+45,Female,Pension / Retirement Allowance,4556
+45,Subtotal,Minimum living allowance,18542
+45,Male,Minimum living allowance,10976
+45,Female,Minimum living allowance,7566
+45,Subtotal,Unemployment Insurance Benefits,1510
+45,Male,Unemployment Insurance Benefits,727
+45,Female,Unemployment Insurance Benefits,783
+45,Subtotal,Property income,18543
+45,Male,Property income,9497
+45,Female,Property income,9046
+45,Subtotal,Family support from other members,217538
+45,Male,Family support from other members,26305
+45,Female,Family support from other members,191233
+45,Subtotal,Other,98468
+45,Male,Other,45836
+45,Female,Other,52632
+46,nan,Age,46
+46,Total,Population aged 15 and above,2197494
+46,Male,Population aged 15 and above,1123949
+46,Female,Population aged 15 and above,1073545
+46,Subtotal,Labor income,1790803
+46,Male,Labor income,1017936
+46,Female,Labor income,772867
+46,Subtotal,Pension / Retirement Allowance,7761
+46,Male,Pension / Retirement Allowance,471
+46,Female,Pension / Retirement Allowance,7290
+46,Subtotal,Minimum living allowance,21213
+46,Male,Minimum living allowance,12634
+46,Female,Minimum living allowance,8579
+46,Subtotal,Unemployment Insurance Benefits,1657
+46,Male,Unemployment Insurance Benefits,816
+46,Female,Unemployment Insurance Benefits,841
+46,Subtotal,Property income,20648
+46,Male,Property income,10631
+46,Female,Property income,10017
+46,Subtotal,Family support from other members,245693
+46,Male,Family support from other members,30401
+46,Female,Family support from other members,215292
+46,Subtotal,Other,109719
+46,Male,Other,51060
+46,Female,Other,58659
+47,nan,Age,47
+47,Total,Population aged 15 and above,2298050
+47,Male,Population aged 15 and above,1176498
+47,Female,Population aged 15 and above,1121552
+47,Subtotal,Labor income,1854060
+47,Male,Labor income,1060223
+47,Female,Labor income,793837
+47,Subtotal,Pension / Retirement Allowance,11545
+47,Male,Pension / Retirement Allowance,709
+47,Female,Pension / Retirement Allowance,10836
+47,Subtotal,Minimum living allowance,23332
+47,Male,Minimum living allowance,13943
+47,Female,Minimum living allowance,9389
+47,Subtotal,Unemployment Insurance Benefits,1971
+47,Male,Unemployment Insurance Benefits,886
+47,Female,Unemployment Insurance Benefits,1085
+47,Subtotal,Property income,22132
+47,Male,Property income,11459
+47,Female,Property income,10673
+47,Subtotal,Family support from other members,267456
+47,Male,Family support from other members,34637
+47,Female,Family support from other members,232819
+47,Subtotal,Other,117554
+47,Male,Other,54641
+47,Female,Other,62913
+48,nan,Age,48
+48,Total,Population aged 15 and above,2354836
+48,Male,Population aged 15 and above,1202544
+48,Female,Population aged 15 and above,1152292
+48,Subtotal,Labor income,1874814
+48,Male,Labor income,1078545
+48,Female,Labor income,796269
+48,Subtotal,Pension / Retirement Allowance,16721
+48,Male,Pension / Retirement Allowance,942
+48,Female,Pension / Retirement Allowance,15779
+48,Subtotal,Minimum living allowance,24829
+48,Male,Minimum living allowance,14981
+48,Female,Minimum living allowance,9848
+48,Subtotal,Unemployment Insurance Benefits,2291
+48,Male,Unemployment Insurance Benefits,966
+48,Female,Unemployment Insurance Benefits,1325
+48,Subtotal,Property income,23566
+48,Male,Property income,12101
+48,Female,Property income,11465
+48,Subtotal,Family support from other members,290335
+48,Male,Family support from other members,38273
+48,Female,Family support from other members,252062
+48,Subtotal,Other,122280
+48,Male,Other,56736
+48,Female,Other,65544
+49,nan,Age,49
+49,Total,Population aged 15 and above,2429187
+49,Male,Population aged 15 and above,1241906
+49,Female,Population aged 15 and above,1187281
+49,Subtotal,Labor income,1897844
+49,Male,Labor income,1106873
+49,Female,Labor income,790971
+49,Subtotal,Pension / Retirement Allowance,32119
+49,Male,Pension / Retirement Allowance,1311
+49,Female,Pension / Retirement Allowance,30808
+49,Subtotal,Minimum living allowance,26643
+49,Male,Minimum living allowance,16167
+49,Female,Minimum living allowance,10476
+49,Subtotal,Unemployment Insurance Benefits,2629
+49,Male,Unemployment Insurance Benefits,1106
+49,Female,Unemployment Insurance Benefits,1523
+49,Subtotal,Property income,24674
+49,Male,Property income,12665
+49,Female,Property income,12009
+49,Subtotal,Family support from other members,317650
+49,Male,Family support from other members,44248
+49,Female,Family support from other members,273402
+49,Subtotal,Other,127628
+49,Male,Other,59536
+49,Female,Other,68092
+,nan,Age,
+,Total,Population aged 15 and above,
+,Male,Population aged 15 and above,
+,Female,Population aged 15 and above,
+,Subtotal,Labor income,
+,Male,Labor income,
+,Female,Labor income,
+,Subtotal,Pension / Retirement Allowance,
+,Male,Pension / Retirement Allowance,
+,Female,Pension / Retirement Allowance,
+,Subtotal,Minimum living allowance,
+,Male,Minimum living allowance,
+,Female,Minimum living allowance,
+,Subtotal,Unemployment Insurance Benefits,
+,Male,Unemployment Insurance Benefits,
+,Female,Unemployment Insurance Benefits,
+,Subtotal,Property income,
+,Male,Property income,
+,Female,Property income,
+,Subtotal,Family support from other members,
+,Male,Family support from other members,
+,Female,Family support from other members,
+,Subtotal,Other,
+,Male,Other,
+,Female,Other,
+50-54 years old,nan,Age,50-54 years old
+50-54 years old,Total,Population aged 15 and above,11926180
+50-54 years old,Male,Population aged 15 and above,6019802
+50-54 years old,Female,Population aged 15 and above,5906378
+50-54 years old,Subtotal,Labor income,8256812
+50-54 years old,Male,Labor income,5139904
+50-54 years old,Female,Labor income,3116908
+50-54 years old,Subtotal,Pension / Retirement Allowance,919490
+50-54 years old,Male,Pension / Retirement Allowance,96859
+50-54 years old,Female,Pension / Retirement Allowance,822631
+50-54 years old,Subtotal,Minimum living allowance,141551
+50-54 years old,Male,Minimum living allowance,87755
+50-54 years old,Female,Minimum living allowance,53796
+50-54 years old,Subtotal,Unemployment Insurance Benefits,6231
+50-54 years old,Male,Unemployment Insurance Benefits,5390
+50-54 years old,Female,Unemployment Insurance Benefits,841
+50-54 years old,Subtotal,Property income,121413
+50-54 years old,Male,Property income,66490
+50-54 years old,Female,Property income,54923
+50-54 years old,Subtotal,Family support from other members,1842592
+50-54 years old,Male,Family support from other members,318487
+50-54 years old,Female,Family support from other members,1524105
+50-54 years old,Subtotal,Other,638091
+50-54 years old,Male,Other,304917
+50-54 years old,Female,Other,333174
+50,nan,Age,50
+50,Total,Population aged 15 and above,2564829
+50,Male,Population aged 15 and above,1298030
+50,Female,Population aged 15 and above,1266799
+50,Subtotal,Labor income,1887971
+50,Male,Labor income,1142744
+50,Female,Labor income,745227
+50,Subtotal,Pension / Retirement Allowance,145715
+50,Male,Pension / Retirement Allowance,9207
+50,Female,Pension / Retirement Allowance,136508
+50,Subtotal,Minimum living allowance,27856
+50,Male,Minimum living allowance,17203
+50,Female,Minimum living allowance,10653
+50,Subtotal,Unemployment Insurance Benefits,1673
+50,Male,Unemployment Insurance Benefits,1101
+50,Female,Unemployment Insurance Benefits,572
+50,Subtotal,Property income,25400
+50,Male,Property income,13624
+50,Female,Property income,11776
+50,Subtotal,Family support from other members,342971
+50,Male,Family support from other members,51109
+50,Female,Family support from other members,291862
+50,Subtotal,Other,133243
+50,Male,Other,63042
+50,Female,Other,70201
+51,nan,Age,51
+51,Total,Population aged 15 and above,2404959
+51,Male,Population aged 15 and above,1216599
+51,Female,Population aged 15 and above,1188360
+51,Subtotal,Labor income,1701632
+51,Male,Labor income,1052369
+51,Female,Labor income,649263
+51,Subtotal,Pension / Retirement Allowance,179002
+51,Male,Pension / Retirement Allowance,15077
+51,Female,Pension / Retirement Allowance,163925
+51,Subtotal,Minimum living allowance,27546
+51,Male,Minimum living allowance,17262
+51,Female,Minimum living allowance,10284
+51,Subtotal,Unemployment Insurance Benefits,1178
+51,Male,Unemployment Insurance Benefits,1101
+51,Female,Unemployment Insurance Benefits,77
+51,Subtotal,Property income,24095
+51,Male,Property income,13209
+51,Female,Property income,10886
+51,Subtotal,Family support from other members,345152
+51,Male,Family support from other members,56916
+51,Female,Family support from other members,288236
+51,Subtotal,Other,126354
+51,Male,Other,60665
+51,Female,Other,65689
+52,nan,Age,52
+52,Total,Population aged 15 and above,2575521
+52,Male,Population aged 15 and above,1298846
+52,Female,Population aged 15 and above,1276675
+52,Subtotal,Labor income,1776587
+52,Male,Labor income,1108834
+52,Female,Labor income,667753
+52,Subtotal,Pension / Retirement Allowance,205367
+52,Male,Pension / Retirement Allowance,20652
+52,Female,Pension / Retirement Allowance,184715
+52,Subtotal,Minimum living allowance,30209
+52,Male,Minimum living allowance,18854
+52,Female,Minimum living allowance,11355
+52,Subtotal,Unemployment Insurance Benefits,1275
+52,Male,Unemployment Insurance Benefits,1208
+52,Female,Unemployment Insurance Benefits,67
+52,Subtotal,Property income,26234
+52,Male,Property income,14405
+52,Female,Property income,11829
+52,Subtotal,Family support from other members,397597
+52,Male,Family support from other members,68638
+52,Female,Family support from other members,328959
+52,Subtotal,Other,138252
+52,Male,Other,66255
+52,Female,Other,71997
+53,nan,Age,53
+53,Total,Population aged 15 and above,2059446
+53,Male,Population aged 15 and above,1034436
+53,Female,Population aged 15 and above,1025010
+53,Subtotal,Labor income,1383137
+53,Male,Labor income,869962
+53,Female,Labor income,513175
+53,Subtotal,Pension / Retirement Allowance,168945
+53,Male,Pension / Retirement Allowance,20162
+53,Female,Pension / Retirement Allowance,148783
+53,Subtotal,Minimum living allowance,25707
+53,Male,Minimum living allowance,15784
+53,Female,Minimum living allowance,9923
+53,Subtotal,Unemployment Insurance Benefits,979
+53,Male,Unemployment Insurance Benefits,926
+53,Female,Unemployment Insurance Benefits,53
+53,Subtotal,Property income,21296
+53,Male,Property income,11744
+53,Female,Property income,9552
+53,Subtotal,Family support from other members,346576
+53,Male,Family support from other members,62142
+53,Female,Family support from other members,284434
+53,Subtotal,Other,112806
+53,Male,Other,53716
+53,Female,Other,59090
+54,nan,Age,54
+54,Total,Population aged 15 and above,2321425
+54,Male,Population aged 15 and above,1171891
+54,Female,Population aged 15 and above,1149534
+54,Subtotal,Labor income,1507485
+54,Male,Labor income,965995
+54,Female,Labor income,541490
+54,Subtotal,Pension / Retirement Allowance,220461
+54,Male,Pension / Retirement Allowance,31761
+54,Female,Pension / Retirement Allowance,188700
+54,Subtotal,Minimum living allowance,30233
+54,Male,Minimum living allowance,18652
+54,Female,Minimum living allowance,11581
+54,Subtotal,Unemployment Insurance Benefits,1126
+54,Male,Unemployment Insurance Benefits,1054
+54,Female,Unemployment Insurance Benefits,72
+54,Subtotal,Property income,24388
+54,Male,Property income,13508
+54,Female,Property income,10880
+54,Subtotal,Family support from other members,410296
+54,Male,Family support from other members,79682
+54,Female,Family support from other members,330614
+54,Subtotal,Other,127436
+54,Male,Other,61239
+54,Female,Other,66197
+,nan,Age,
+,Total,Population aged 15 and above,
+,Male,Population aged 15 and above,
+,Female,Population aged 15 and above,
+,Subtotal,Labor income,
+,Male,Labor income,
+,Female,Labor income,
+,Subtotal,Pension / Retirement Allowance,
+,Male,Pension / Retirement Allowance,
+,Female,Pension / Retirement Allowance,
+,Subtotal,Minimum living allowance,
+,Male,Minimum living allowance,
+,Female,Minimum living allowance,
+,Subtotal,Unemployment Insurance Benefits,
+,Male,Unemployment Insurance Benefits,
+,Female,Unemployment Insurance Benefits,
+,Subtotal,Property income,
+,Male,Property income,
+,Female,Property income,
+,Subtotal,Family support from other members,
+,Male,Family support from other members,
+,Female,Family support from other members,
+,Subtotal,Other,
+,Male,Other,
+,Female,Other,
+55-59 years old,nan,Age,55-59 years old
+55-59 years old,Total,Population aged 15 and above,9980162
+55-59 years old,Male,Population aged 15 and above,4986030
+55-59 years old,Female,Population aged 15 and above,4994132
+55-59 years old,Subtotal,Labor income,5568497
+55-59 years old,Male,Labor income,3714747
+55-59 years old,Female,Labor income,1853750
+55-59 years old,Subtotal,Pension / Retirement Allowance,1680640
+55-59 years old,Male,Pension / Retirement Allowance,383063
+55-59 years old,Female,Pension / Retirement Allowance,1297577
+55-59 years old,Subtotal,Minimum living allowance,146983
+55-59 years old,Male,Minimum living allowance,88028
+55-59 years old,Female,Minimum living allowance,58955
+55-59 years old,Subtotal,Unemployment Insurance Benefits,3355
+55-59 years old,Male,Unemployment Insurance Benefits,3190
+55-59 years old,Female,Unemployment Insurance Benefits,165
+55-59 years old,Subtotal,Property income,107247
+55-59 years old,Male,Property income,61606
+55-59 years old,Female,Property income,45641
+55-59 years old,Subtotal,Family support from other members,1920407
+55-59 years old,Male,Family support from other members,459600
+55-59 years old,Female,Family support from other members,1460807
+55-59 years old,Subtotal,Other,553033
+55-59 years old,Male,Other,275796
+55-59 years old,Female,Other,277237
+55,nan,Age,55
+55,Total,Population aged 15 and above,2276177
+55,Male,Population aged 15 and above,1144496
+55,Female,Population aged 15 and above,1131681
+55,Subtotal,Labor income,1379621
+55,Male,Labor income,906162
+55,Female,Labor income,473459
+55,Subtotal,Pension / Retirement Allowance,306223
+55,Male,Pension / Retirement Allowance,55978
+55,Female,Pension / Retirement Allowance,250245
+55,Subtotal,Minimum living allowance,30776
+55,Male,Minimum living allowance,18914
+55,Female,Minimum living allowance,11862
+55,Subtotal,Unemployment Insurance Benefits,1163
+55,Male,Unemployment Insurance Benefits,1132
+55,Female,Unemployment Insurance Benefits,31
+55,Subtotal,Property income,23900
+55,Male,Property income,13684
+55,Female,Property income,10216
+55,Subtotal,Family support from other members,410142
+55,Male,Family support from other members,87781
+55,Female,Family support from other members,322361
+55,Subtotal,Other,124352
+55,Male,Other,60845
+55,Female,Other,63507
+56,nan,Age,56
+56,Total,Population aged 15 and above,2223387
+56,Male,Population aged 15 and above,1111081
+56,Female,Population aged 15 and above,1112306
+56,Subtotal,Labor income,1277065
+56,Male,Labor income,849069
+56,Female,Labor income,427996
+56,Subtotal,Pension / Retirement Allowance,354110
+56,Male,Pension / Retirement Allowance,73740
+56,Female,Pension / Retirement Allowance,280370
+56,Subtotal,Minimum living allowance,31530
+56,Male,Minimum living allowance,19061
+56,Female,Minimum living allowance,12469
+56,Subtotal,Unemployment Insurance Benefits,482
+56,Male,Unemployment Insurance Benefits,446
+56,Female,Unemployment Insurance Benefits,36
+56,Subtotal,Property income,23432
+56,Male,Property income,13373
+56,Female,Property income,10059
+56,Subtotal,Family support from other members,414247
+56,Male,Family support from other members,94381
+56,Female,Family support from other members,319866
+56,Subtotal,Other,122521
+56,Male,Other,61011
+56,Female,Other,61510
+57,nan,Age,57
+57,Total,Population aged 15 and above,2567550
+57,Male,Population aged 15 and above,1290317
+57,Female,Population aged 15 and above,1277233
+57,Subtotal,Labor income,1410836
+57,Male,Labor income,954315
+57,Female,Labor income,456521
+57,Subtotal,Pension / Retirement Allowance,455917
+57,Male,Pension / Retirement Allowance,102707
+57,Female,Pension / Retirement Allowance,353210
+57,Subtotal,Minimum living allowance,37373
+57,Male,Minimum living allowance,22912
+57,Female,Minimum living allowance,14461
+57,Subtotal,Unemployment Insurance Benefits,696
+57,Male,Unemployment Insurance Benefits,643
+57,Female,Unemployment Insurance Benefits,53
+57,Subtotal,Property income,27283
+57,Male,Property income,15877
+57,Female,Property income,11406
+57,Subtotal,Family support from other members,493993
+57,Male,Family support from other members,122108
+57,Female,Family support from other members,371885
+57,Subtotal,Other,141452
+57,Male,Other,71755
+57,Female,Other,69697
+58,nan,Age,58
+58,Total,Population aged 15 and above,1879095
+58,Male,Population aged 15 and above,935259
+58,Female,Population aged 15 and above,943836
+58,Subtotal,Labor income,999737
+58,Male,Labor income,672021
+58,Female,Labor income,327716
+58,Subtotal,Pension / Retirement Allowance,333770
+58,Male,Pension / Retirement Allowance,81886
+58,Female,Pension / Retirement Allowance,251884
+58,Subtotal,Minimum living allowance,29424
+58,Male,Minimum living allowance,17027
+58,Female,Minimum living allowance,12397
+58,Subtotal,Unemployment Insurance Benefits,592
+58,Male,Unemployment Insurance Benefits,563
+58,Female,Unemployment Insurance Benefits,29
+58,Subtotal,Property income,20909
+58,Male,Property income,12170
+58,Female,Property income,8739
+58,Subtotal,Family support from other members,388032
+58,Male,Family support from other members,98368
+58,Female,Family support from other members,289664
+58,Subtotal,Other,106631
+58,Male,Other,53224
+58,Female,Other,53407
+59,nan,Age,59
+59,Total,Population aged 15 and above,1033953
+59,Male,Population aged 15 and above,504877
+59,Female,Population aged 15 and above,529076
+59,Subtotal,Labor income,501238
+59,Male,Labor income,333180
+59,Female,Labor income,168058
+59,Subtotal,Pension / Retirement Allowance,230620
+59,Male,Pension / Retirement Allowance,68752
+59,Female,Pension / Retirement Allowance,161868
+59,Subtotal,Minimum living allowance,17880
+59,Male,Minimum living allowance,10114
+59,Female,Minimum living allowance,7766
+59,Subtotal,Unemployment Insurance Benefits,422
+59,Male,Unemployment Insurance Benefits,406
+59,Female,Unemployment Insurance Benefits,16
+59,Subtotal,Property income,11723
+59,Male,Property income,6502
+59,Female,Property income,5221
+59,Subtotal,Family support from other members,213993
+59,Male,Family support from other members,56962
+59,Female,Family support from other members,157031
+59,Subtotal,Other,58077
+59,Male,Other,28961
+59,Female,Other,29116
+,nan,Age,
+,Total,Population aged 15 and above,
+,Male,Population aged 15 and above,
+,Female,Population aged 15 and above,
+,Subtotal,Labor income,
+,Male,Labor income,
+,Female,Labor income,
+,Subtotal,Pension / Retirement Allowance,
+,Male,Pension / Retirement Allowance,
+,Female,Pension / Retirement Allowance,
+,Subtotal,Minimum living allowance,
+,Male,Minimum living allowance,
+,Female,Minimum living allowance,
+,Subtotal,Unemployment Insurance Benefits,
+,Male,Unemployment Insurance Benefits,
+,Female,Unemployment Insurance Benefits,
+,Subtotal,Property income,
+,Male,Property income,
+,Female,Property income,
+,Subtotal,Family support from other members,
+,Male,Family support from other members,
+,Female,Family support from other members,
+,Subtotal,Other,
+,Male,Other,
+,Female,Other,
+60-64 years old,nan,Age,60-64 years old
+60-64 years old,Total,Population aged 15 and above,7212331
+60-64 years old,Male,Population aged 15 and above,3611534
+60-64 years old,Female,Population aged 15 and above,3600797
+60-64 years old,Subtotal,Labor income,2481664
+60-64 years old,Male,Labor income,1579435
+60-64 years old,Female,Labor income,902229
+60-64 years old,Subtotal,Pension / Retirement Allowance,2469105
+60-64 years old,Male,Pension / Retirement Allowance,1226566
+60-64 years old,Female,Pension / Retirement Allowance,1242539
+60-64 years old,Subtotal,Minimum living allowance,188251
+60-64 years old,Male,Minimum living allowance,108954
+60-64 years old,Female,Minimum living allowance,79297
+60-64 years old,Subtotal,Unemployment Insurance Benefits,324
+60-64 years old,Male,Unemployment Insurance Benefits,159
+60-64 years old,Female,Unemployment Insurance Benefits,165
+60-64 years old,Subtotal,Property income,69933
+60-64 years old,Male,Property income,36746
+60-64 years old,Female,Property income,33187
+60-64 years old,Subtotal,Family support from other members,1625479
+60-64 years old,Male,Family support from other members,477157
+60-64 years old,Female,Family support from other members,1148322
+60-64 years old,Subtotal,Other,377575
+60-64 years old,Male,Other,182517
+60-64 years old,Female,Other,195058
+60,nan,Age,60
+60,Total,Population aged 15 and above,1265735
+60,Male,Population aged 15 and above,630443
+60,Female,Population aged 15 and above,635292
+60,Subtotal,Labor income,484632
+60,Male,Labor income,307806
+60,Female,Labor income,176826
+60,Subtotal,Pension / Retirement Allowance,429212
+60,Male,Pension / Retirement Allowance,206017
+60,Female,Pension / Retirement Allowance,223195
+60,Subtotal,Minimum living allowance,25790
+60,Male,Minimum living allowance,14551
+60,Female,Minimum living allowance,11239
+60,Subtotal,Unemployment Insurance Benefits,55
+60,Male,Unemployment Insurance Benefits,29
+60,Female,Unemployment Insurance Benefits,26
+60,Subtotal,Property income,12854
+60,Male,Property income,6778
+60,Female,Property income,6076
+60,Subtotal,Family support from other members,248904
+60,Male,Family support from other members,64808
+60,Female,Family support from other members,184096
+60,Subtotal,Other,64288
+60,Male,Other,30454
+60,Female,Other,33834
+61,nan,Age,61
+61,Total,Population aged 15 and above,1191490
+61,Male,Population aged 15 and above,601597
+61,Female,Population aged 15 and above,589893
+61,Subtotal,Labor income,423165
+61,Male,Labor income,271939
+61,Female,Labor income,151226
+61,Subtotal,Pension / Retirement Allowance,415555
+61,Male,Pension / Retirement Allowance,206488
+61,Female,Pension / Retirement Allowance,209067
+61,Subtotal,Minimum living allowance,28067
+61,Male,Minimum living allowance,16102
+61,Female,Minimum living allowance,11965
+61,Subtotal,Unemployment Insurance Benefits,55
+61,Male,Unemployment Insurance Benefits,24
+61,Female,Unemployment Insurance Benefits,31
+61,Subtotal,Property income,11654
+61,Male,Property income,6086
+61,Female,Property income,5568
+61,Subtotal,Family support from other members,251785
+61,Male,Family support from other members,71213
+61,Female,Family support from other members,180572
+61,Subtotal,Other,61209
+61,Male,Other,29745
+61,Female,Other,31464
+62,nan,Age,62
+62,Total,Population aged 15 and above,1519108
+62,Male,Population aged 15 and above,765643
+62,Female,Population aged 15 and above,753465
+62,Subtotal,Labor income,519067
+62,Male,Labor income,331517
+62,Female,Labor income,187550
+62,Subtotal,Pension / Retirement Allowance,527990
+62,Male,Pension / Retirement Allowance,264568
+62,Female,Pension / Retirement Allowance,263422
+62,Subtotal,Minimum living allowance,39639
+62,Male,Minimum living allowance,23435
+62,Female,Minimum living allowance,16204
+62,Subtotal,Unemployment Insurance Benefits,65
+62,Male,Unemployment Insurance Benefits,27
+62,Female,Unemployment Insurance Benefits,38
+62,Subtotal,Property income,14019
+62,Male,Property income,7389
+62,Female,Property income,6630
+62,Subtotal,Family support from other members,339680
+62,Male,Family support from other members,100459
+62,Female,Family support from other members,239221
+62,Subtotal,Other,78648
+62,Male,Other,38248
+62,Female,Other,40400
+63,nan,Age,63
+63,Total,Population aged 15 and above,1696369
+63,Male,Population aged 15 and above,853241
+63,Female,Population aged 15 and above,843128
+63,Subtotal,Labor income,567013
+63,Male,Labor income,362706
+63,Female,Labor income,204307
+63,Subtotal,Pension / Retirement Allowance,573142
+63,Male,Pension / Retirement Allowance,287165
+63,Female,Pension / Retirement Allowance,285977
+63,Subtotal,Minimum living allowance,48021
+63,Male,Minimum living allowance,28226
+63,Female,Minimum living allowance,19795
+63,Subtotal,Unemployment Insurance Benefits,75
+63,Male,Unemployment Insurance Benefits,43
+63,Female,Unemployment Insurance Benefits,32
+63,Subtotal,Property income,16222
+63,Male,Property income,8603
+63,Female,Property income,7619
+63,Subtotal,Family support from other members,402300
+63,Male,Family support from other members,122697
+63,Female,Family support from other members,279603
+63,Subtotal,Other,89596
+63,Male,Other,43801
+63,Female,Other,45795
+64,nan,Age,64
+64,Total,Population aged 15 and above,1539629
+64,Male,Population aged 15 and above,760610
+64,Female,Population aged 15 and above,779019
+64,Subtotal,Labor income,487787
+64,Male,Labor income,305467
+64,Female,Labor income,182320
+64,Subtotal,Pension / Retirement Allowance,523206
+64,Male,Pension / Retirement Allowance,262328
+64,Female,Pension / Retirement Allowance,260878
+64,Subtotal,Minimum living allowance,46734
+64,Male,Minimum living allowance,26640
+64,Female,Minimum living allowance,20094
+64,Subtotal,Unemployment Insurance Benefits,74
+64,Male,Unemployment Insurance Benefits,36
+64,Female,Unemployment Insurance Benefits,38
+64,Subtotal,Property income,15184
+64,Male,Property income,7890
+64,Female,Property income,7294
+64,Subtotal,Family support from other members,382810
+64,Male,Family support from other members,117980
+64,Female,Family support from other members,264830
+64,Subtotal,Other,83834
+64,Male,Other,40269
+64,Female,Other,43565
+,nan,Age,
+,Total,Population aged 15 and above,
+,Male,Population aged 15 and above,
+,Female,Population aged 15 and above,
+,Subtotal,Labor income,
+,Male,Labor income,
+,Female,Labor income,
+,Subtotal,Pension / Retirement Allowance,
+,Male,Pension / Retirement Allowance,
+,Female,Pension / Retirement Allowance,
+,Subtotal,Minimum living allowance,
+,Male,Minimum living allowance,
+,Female,Minimum living allowance,
+,Subtotal,Unemployment Insurance Benefits,
+,Male,Unemployment Insurance Benefits,
+,Female,Unemployment Insurance Benefits,
+,Subtotal,Property income,
+,Male,Property income,
+,Female,Property income,
+,Subtotal,Family support from other members,
+,Male,Family support from other members,
+,Female,Family support from other members,
+,Subtotal,Other,
+,Male,Other,
+,Female,Other,
+65-69 years old,nan,Age,65-69 years old
+65-69 years old,Total,Population aged 15 and above,7261013
+65-69 years old,Male,Population aged 15 and above,3557071
+65-69 years old,Female,Population aged 15 and above,3703942
+65-69 years old,Subtotal,Labor income,1949125
+65-69 years old,Male,Labor income,1217850
+65-69 years old,Female,Labor income,731275
+65-69 years old,Subtotal,Pension / Retirement Allowance,2454456
+65-69 years old,Male,Pension / Retirement Allowance,1247666
+65-69 years old,Female,Pension / Retirement Allowance,1206790
+65-69 years old,Subtotal,Minimum living allowance,278247
+65-69 years old,Male,Minimum living allowance,155246
+65-69 years old,Female,Minimum living allowance,123001
+65-69 years old,Subtotal,Unemployment Insurance Benefits,442
+65-69 years old,Male,Unemployment Insurance Benefits,205
+65-69 years old,Female,Unemployment Insurance Benefits,237
+65-69 years old,Subtotal,Property income,74532
+65-69 years old,Male,Property income,38914
+65-69 years old,Female,Property income,35618
+65-69 years old,Subtotal,Family support from other members,2092187
+65-69 years old,Male,Family support from other members,698216
+65-69 years old,Female,Family support from other members,1393971
+65-69 years old,Subtotal,Other,412024
+65-69 years old,Male,Other,198974
+65-69 years old,Female,Other,213050
+65,nan,Age,65
+65,Total,Population aged 15 and above,1601607
+65,Male,Population aged 15 and above,794038
+65,Female,Population aged 15 and above,807569
+65,Subtotal,Labor income,482631
+65,Male,Labor income,302943
+65,Female,Labor income,179688
+65,Subtotal,Pension / Retirement Allowance,541443
+65,Male,Pension / Retirement Allowance,274340
+65,Female,Pension / Retirement Allowance,267103
+65,Subtotal,Minimum living allowance,53424
+65,Male,Minimum living allowance,30345
+65,Female,Minimum living allowance,23079
+65,Subtotal,Unemployment Insurance Benefits,96
+65,Male,Unemployment Insurance Benefits,51
+65,Female,Unemployment Insurance Benefits,45
+65,Subtotal,Property income,16337
+65,Male,Property income,8475
+65,Female,Property income,7862
+65,Subtotal,Family support from other members,419473
+65,Male,Family support from other members,134936
+65,Female,Family support from other members,284537
+65,Subtotal,Other,88203
+65,Male,Other,42948
+65,Female,Other,45255
+66,nan,Age,66
+66,Total,Population aged 15 and above,1597292
+66,Male,Population aged 15 and above,784337
+66,Female,Population aged 15 and above,812955
+66,Subtotal,Labor income,449471
+66,Male,Labor income,281151
+66,Female,Labor income,168320
+66,Subtotal,Pension / Retirement Allowance,549944
+66,Male,Pension / Retirement Allowance,278079
+66,Female,Pension / Retirement Allowance,271865
+66,Subtotal,Minimum living allowance,56901
+66,Male,Minimum living allowance,32047
+66,Female,Minimum living allowance,24854
+66,Subtotal,Unemployment Insurance Benefits,92
+66,Male,Unemployment Insurance Benefits,44
+66,Female,Unemployment Insurance Benefits,48
+66,Subtotal,Property income,16190
+66,Male,Property income,8412
+66,Female,Property income,7778
+66,Subtotal,Family support from other members,435970
+66,Male,Family support from other members,141942
+66,Female,Family support from other members,294028
+66,Subtotal,Other,88724
+66,Male,Other,42662
+66,Female,Other,46062
+67,nan,Age,67
+67,Total,Population aged 15 and above,1436603
+67,Male,Population aged 15 and above,701663
+67,Female,Population aged 15 and above,734940
+67,Subtotal,Labor income,384691
+67,Male,Labor income,239456
+67,Female,Labor income,145235
+67,Subtotal,Pension / Retirement Allowance,480539
+67,Male,Pension / Retirement Allowance,243519
+67,Female,Pension / Retirement Allowance,237020
+67,Subtotal,Minimum living allowance,56353
+67,Male,Minimum living allowance,31550
+67,Female,Minimum living allowance,24803
+67,Subtotal,Unemployment Insurance Benefits,82
+67,Male,Unemployment Insurance Benefits,39
+67,Female,Unemployment Insurance Benefits,43
+67,Subtotal,Property income,14928
+67,Male,Property income,7806
+67,Female,Property income,7122
+67,Subtotal,Family support from other members,417687
+67,Male,Family support from other members,139538
+67,Female,Family support from other members,278149
+67,Subtotal,Other,82323
+67,Male,Other,39755
+67,Female,Other,42568
+68,nan,Age,68
+68,Total,Population aged 15 and above,1425277
+68,Male,Population aged 15 and above,695588
+68,Female,Population aged 15 and above,729689
+68,Subtotal,Labor income,358757
+68,Male,Labor income,223966
+68,Female,Labor income,134791
+68,Subtotal,Pension / Retirement Allowance,474434
+68,Male,Pension / Retirement Allowance,242441
+68,Female,Pension / Retirement Allowance,231993
+68,Subtotal,Minimum living allowance,59293
+68,Male,Minimum living allowance,32709
+68,Female,Minimum living allowance,26584
+68,Subtotal,Unemployment Insurance Benefits,101
+68,Male,Unemployment Insurance Benefits,37
+68,Female,Unemployment Insurance Benefits,64
+68,Subtotal,Property income,14751
+68,Male,Property income,7688
+68,Female,Property income,7063
+68,Subtotal,Family support from other members,435430
+68,Male,Family support from other members,148772
+68,Female,Family support from other members,286658
+68,Subtotal,Other,82511
+68,Male,Other,39975
+68,Female,Other,42536
+69,nan,Age,69
+69,Total,Population aged 15 and above,1200234
+69,Male,Population aged 15 and above,581445
+69,Female,Population aged 15 and above,618789
+69,Subtotal,Labor income,273575
+69,Male,Labor income,170334
+69,Female,Labor income,103241
+69,Subtotal,Pension / Retirement Allowance,408096
+69,Male,Pension / Retirement Allowance,209287
+69,Female,Pension / Retirement Allowance,198809
+69,Subtotal,Minimum living allowance,52276
+69,Male,Minimum living allowance,28595
+69,Female,Minimum living allowance,23681
+69,Subtotal,Unemployment Insurance Benefits,71
+69,Male,Unemployment Insurance Benefits,34
+69,Female,Unemployment Insurance Benefits,37
+69,Subtotal,Property income,12326
+69,Male,Property income,6533
+69,Female,Property income,5793
+69,Subtotal,Family support from other members,383627
+69,Male,Family support from other members,133028
+69,Female,Family support from other members,250599
+69,Subtotal,Other,70263
+69,Male,Other,33634
+69,Female,Other,36629
+70-74 years old,nan,Age,70-74 years old
+70-74 years old,Total,Population aged 15 and above,4813647
+70-74 years old,Male,Population aged 15 and above,2341892
+70-74 years old,Female,Population aged 15 and above,2471755
+70-74 years old,Subtotal,Labor income,803789
+70-74 years old,Male,Labor income,511131
+70-74 years old,Female,Labor income,292658
+70-74 years old,Subtotal,Pension / Retirement Allowance,1670789
+70-74 years old,Male,Pension / Retirement Allowance,879821
+70-74 years old,Female,Pension / Retirement Allowance,790968
+70-74 years old,Subtotal,Minimum living allowance,249995
+70-74 years old,Male,Minimum living allowance,136416
+70-74 years old,Female,Minimum living allowance,113579
+70-74 years old,Subtotal,Unemployment Insurance Benefits,326
+70-74 years old,Male,Unemployment Insurance Benefits,162
+70-74 years old,Female,Unemployment Insurance Benefits,164
+70-74 years old,Subtotal,Property income,45218
+70-74 years old,Male,Property income,24362
+70-74 years old,Female,Property income,20856
+70-74 years old,Subtotal,Family support from other members,1761014
+70-74 years old,Male,Family support from other members,652705
+70-74 years old,Female,Family support from other members,1108309
+70-74 years old,Subtotal,Other,282516
+70-74 years old,Male,Other,137295
+70-74 years old,Female,Other,145221
+70,nan,Age,70
+70,Total,Population aged 15 and above,1132641
+70,Male,Population aged 15 and above,552550
+70,Female,Population aged 15 and above,580091
+70,Subtotal,Labor income,227195
+70,Male,Labor income,142394
+70,Female,Labor income,84801
+70,Subtotal,Pension / Retirement Allowance,394458
+70,Male,Pension / Retirement Allowance,206607
+70,Female,Pension / Retirement Allowance,187851
+70,Subtotal,Minimum living allowance,53185
+70,Male,Minimum living allowance,28895
+70,Female,Minimum living allowance,24290
+70,Subtotal,Unemployment Insurance Benefits,76
+70,Male,Unemployment Insurance Benefits,40
+70,Female,Unemployment Insurance Benefits,36
+70,Subtotal,Property income,11488
+70,Male,Property income,6099
+70,Female,Property income,5389
+70,Subtotal,Family support from other members,380271
+70,Male,Family support from other members,136544
+70,Female,Family support from other members,243727
+70,Subtotal,Other,65968
+70,Male,Other,31971
+70,Female,Other,33997
+71,nan,Age,71
+71,Total,Population aged 15 and above,1091505
+71,Male,Population aged 15 and above,537267
+71,Female,Population aged 15 and above,554238
+71,Subtotal,Labor income,195257
+71,Male,Labor income,124934
+71,Female,Labor income,70323
+71,Subtotal,Pension / Retirement Allowance,375735
+71,Male,Pension / Retirement Allowance,197991
+71,Female,Pension / Retirement Allowance,177744
+71,Subtotal,Minimum living allowance,54931
+71,Male,Minimum living allowance,30358
+71,Female,Minimum living allowance,24573
+71,Subtotal,Unemployment Insurance Benefits,76
+71,Male,Unemployment Insurance Benefits,49
+71,Female,Unemployment Insurance Benefits,27
+71,Subtotal,Property income,10594
+71,Male,Property income,5730
+71,Female,Property income,4864
+71,Subtotal,Family support from other members,390635
+71,Male,Family support from other members,146444
+71,Female,Family support from other members,244191
+71,Subtotal,Other,64277
+71,Male,Other,31761
+71,Female,Other,32516
+72,nan,Age,72
+72,Total,Population aged 15 and above,927034
+72,Male,Population aged 15 and above,450625
+72,Female,Population aged 15 and above,476409
+72,Subtotal,Labor income,150732
+72,Male,Labor income,95970
+72,Female,Labor income,54762
+72,Subtotal,Pension / Retirement Allowance,319182
+72,Male,Pension / Retirement Allowance,167387
+72,Female,Pension / Retirement Allowance,151795
+72,Subtotal,Minimum living allowance,48881
+72,Male,Minimum living allowance,26719
+72,Female,Minimum living allowance,22162
+72,Subtotal,Unemployment Insurance Benefits,65
+72,Male,Unemployment Insurance Benefits,25
+72,Female,Unemployment Insurance Benefits,40
+72,Subtotal,Property income,8620
+72,Male,Property income,4580
+72,Female,Property income,4040
+72,Subtotal,Family support from other members,344808
+72,Male,Family support from other members,129206
+72,Female,Family support from other members,215602
+72,Subtotal,Other,54746
+72,Male,Other,26738
+72,Female,Other,28008
+73,nan,Age,73
+73,Total,Population aged 15 and above,874817
+73,Male,Population aged 15 and above,425034
+73,Female,Population aged 15 and above,449783
+73,Subtotal,Labor income,127663
+73,Male,Labor income,82127
+73,Female,Labor income,45536
+73,Subtotal,Pension / Retirement Allowance,305265
+73,Male,Pension / Retirement Allowance,161799
+73,Female,Pension / Retirement Allowance,143466
+73,Subtotal,Minimum living allowance,48299
+73,Male,Minimum living allowance,26346
+73,Female,Minimum living allowance,21953
+73,Subtotal,Unemployment Insurance Benefits,63
+73,Male,Unemployment Insurance Benefits,28
+73,Female,Unemployment Insurance Benefits,35
+73,Subtotal,Property income,7852
+73,Male,Property income,4295
+73,Female,Property income,3557
+73,Subtotal,Family support from other members,334344
+73,Male,Family support from other members,125519
+73,Female,Family support from other members,208825
+73,Subtotal,Other,51331
+73,Male,Other,24920
+73,Female,Other,26411
+74,nan,Age,74
+74,Total,Population aged 15 and above,787650
+74,Male,Population aged 15 and above,376416
+74,Female,Population aged 15 and above,411234
+74,Subtotal,Labor income,102942
+74,Male,Labor income,65706
+74,Female,Labor income,37236
+74,Subtotal,Pension / Retirement Allowance,276149
+74,Male,Pension / Retirement Allowance,146037
+74,Female,Pension / Retirement Allowance,130112
+74,Subtotal,Minimum living allowance,44699
+74,Male,Minimum living allowance,24098
+74,Female,Minimum living allowance,20601
+74,Subtotal,Unemployment Insurance Benefits,46
+74,Male,Unemployment Insurance Benefits,20
+74,Female,Unemployment Insurance Benefits,26
+74,Subtotal,Property income,6664
+74,Male,Property income,3658
+74,Female,Property income,3006
+74,Subtotal,Family support from other members,310956
+74,Male,Family support from other members,114992
+74,Female,Family support from other members,195964
+74,Subtotal,Other,46194
+74,Male,Other,21905
+74,Female,Other,24289
+,nan,Age,
+,Total,Population aged 15 and above,
+,Male,Population aged 15 and above,
+,Female,Population aged 15 and above,
+,Subtotal,Labor income,
+,Male,Labor income,
+,Female,Labor income,
+,Subtotal,Pension / Retirement Allowance,
+,Male,Pension / Retirement Allowance,
+,Female,Pension / Retirement Allowance,
+,Subtotal,Minimum living allowance,
+,Male,Minimum living allowance,
+,Female,Minimum living allowance,
+,Subtotal,Unemployment Insurance Benefits,
+,Male,Unemployment Insurance Benefits,
+,Female,Unemployment Insurance Benefits,
+,Subtotal,Property income,
+,Male,Property income,
+,Female,Property income,
+,Subtotal,Family support from other members,
+,Male,Family support from other members,
+,Female,Family support from other members,
+,Subtotal,Other,
+,Male,Other,
+,Female,Other,
+75-79 years old,nan,Age,75-79 years old
+75-79 years old,Total,Population aged 15 and above,2980508
+75-79 years old,Male,Population aged 15 and above,1409194
+75-79 years old,Female,Population aged 15 and above,1571314
+75-79 years old,Subtotal,Labor income,275360
+75-79 years old,Male,Labor income,177297
+75-79 years old,Female,Labor income,98063
+75-79 years old,Subtotal,Pension / Retirement Allowance,1057567
+75-79 years old,Male,Pension / Retirement Allowance,553163
+75-79 years old,Female,Pension / Retirement Allowance,504404
+75-79 years old,Subtotal,Minimum living allowance,179745
+75-79 years old,Male,Minimum living allowance,96356
+75-79 years old,Female,Minimum living allowance,83389
+75-79 years old,Subtotal,Unemployment Insurance Benefits,174
+75-79 years old,Male,Unemployment Insurance Benefits,90
+75-79 years old,Female,Unemployment Insurance Benefits,84
+75-79 years old,Subtotal,Property income,21642
+75-79 years old,Male,Property income,12063
+75-79 years old,Female,Property income,9579
+75-79 years old,Subtotal,Family support from other members,1275942
+75-79 years old,Male,Family support from other members,488375
+75-79 years old,Female,Family support from other members,787567
+75-79 years old,Subtotal,Other,170078
+75-79 years old,Male,Other,81850
+75-79 years old,Female,Other,88228
+75,nan,Age,75
+75,Total,Population aged 15 and above,690748
+75,Male,Population aged 15 and above,328485
+75,Female,Population aged 15 and above,362263
+75,Subtotal,Labor income,81112
+75,Male,Labor income,52193
+75,Female,Labor income,28919
+75,Subtotal,Pension / Retirement Allowance,238405
+75,Male,Pension / Retirement Allowance,125596
+75,Female,Pension / Retirement Allowance,112809
+75,Subtotal,Minimum living allowance,40679
+75,Male,Minimum living allowance,21701
+75,Female,Minimum living allowance,18978
+75,Subtotal,Unemployment Insurance Benefits,47
+75,Male,Unemployment Insurance Benefits,25
+75,Female,Unemployment Insurance Benefits,22
+75,Subtotal,Property income,5536
+75,Male,Property income,3077
+75,Female,Property income,2459
+75,Subtotal,Family support from other members,284254
+75,Male,Family support from other members,106217
+75,Female,Family support from other members,178037
+75,Subtotal,Other,40715
+75,Male,Other,19676
+75,Female,Other,21039
+76,nan,Age,76
+76,Total,Population aged 15 and above,652501
+76,Male,Population aged 15 and above,312625
+76,Female,Population aged 15 and above,339876
+76,Subtotal,Labor income,67414
+76,Male,Labor income,43762
+76,Female,Labor income,23652
+76,Subtotal,Pension / Retirement Allowance,227500
+76,Male,Pension / Retirement Allowance,119719
+76,Female,Pension / Retirement Allowance,107781
+76,Subtotal,Minimum living allowance,39279
+76,Male,Minimum living allowance,21500
+76,Female,Minimum living allowance,17779
+76,Subtotal,Unemployment Insurance Benefits,37
+76,Male,Unemployment Insurance Benefits,20
+76,Female,Unemployment Insurance Benefits,17
+76,Subtotal,Property income,4973
+76,Male,Property income,2782
+76,Female,Property income,2191
+76,Subtotal,Family support from other members,275508
+76,Male,Family support from other members,106375
+76,Female,Family support from other members,169133
+76,Subtotal,Other,37790
+76,Male,Other,18467
+76,Female,Other,19323
+77,nan,Age,77
+77,Total,Population aged 15 and above,574487
+77,Male,Population aged 15 and above,271017
+77,Female,Population aged 15 and above,303470
+77,Subtotal,Labor income,51445
+77,Male,Labor income,33086
+77,Female,Labor income,18359
+77,Subtotal,Pension / Retirement Allowance,202949
+77,Male,Pension / Retirement Allowance,105721
+77,Female,Pension / Retirement Allowance,97228
+77,Subtotal,Minimum living allowance,34945
+77,Male,Minimum living allowance,18676
+77,Female,Minimum living allowance,16269
+77,Subtotal,Unemployment Insurance Benefits,33
+77,Male,Unemployment Insurance Benefits,19
+77,Female,Unemployment Insurance Benefits,14
+77,Subtotal,Property income,4177
+77,Male,Property income,2309
+77,Female,Property income,1868
+77,Subtotal,Family support from other members,248375
+77,Male,Family support from other members,95563
+77,Female,Family support from other members,152812
+77,Subtotal,Other,32563
+77,Male,Other,15643
+77,Female,Other,16920
+78,nan,Age,78
+78,Total,Population aged 15 and above,537691
+78,Male,Population aged 15 and above,252314
+78,Female,Population aged 15 and above,285377
+78,Subtotal,Labor income,41318
+78,Male,Labor income,26562
+78,Female,Labor income,14756
+78,Subtotal,Pension / Retirement Allowance,196580
+78,Male,Pension / Retirement Allowance,102089
+78,Female,Pension / Retirement Allowance,94491
+78,Subtotal,Minimum living allowance,32489
+78,Male,Minimum living allowance,17277
+78,Female,Minimum living allowance,15212
+78,Subtotal,Unemployment Insurance Benefits,28
+78,Male,Unemployment Insurance Benefits,13
+78,Female,Unemployment Insurance Benefits,15
+78,Subtotal,Property income,3561
+78,Male,Property income,1991
+78,Female,Property income,1570
+78,Subtotal,Family support from other members,233524
+78,Male,Family support from other members,89996
+78,Female,Family support from other members,143528
+78,Subtotal,Other,30191
+78,Male,Other,14386
+78,Female,Other,15805
+79,nan,Age,79
+79,Total,Population aged 15 and above,525081
+79,Male,Population aged 15 and above,244753
+79,Female,Population aged 15 and above,280328
+79,Subtotal,Labor income,34071
+79,Male,Labor income,21694
+79,Female,Labor income,12377
+79,Subtotal,Pension / Retirement Allowance,192133
+79,Male,Pension / Retirement Allowance,100038
+79,Female,Pension / Retirement Allowance,92095
+79,Subtotal,Minimum living allowance,32353
+79,Male,Minimum living allowance,17202
+79,Female,Minimum living allowance,15151
+79,Subtotal,Unemployment Insurance Benefits,29
+79,Male,Unemployment Insurance Benefits,13
+79,Female,Unemployment Insurance Benefits,16
+79,Subtotal,Property income,3395
+79,Male,Property income,1904
+79,Female,Property income,1491
+79,Subtotal,Family support from other members,234281
+79,Male,Family support from other members,90224
+79,Female,Family support from other members,144057
+79,Subtotal,Other,28819
+79,Male,Other,13678
+79,Female,Other,15141
+,nan,Age,
+,Total,Population aged 15 and above,
+,Male,Population aged 15 and above,
+,Female,Population aged 15 and above,
+,Subtotal,Labor income,
+,Male,Labor income,
+,Female,Labor income,
+,Subtotal,Pension / Retirement Allowance,
+,Male,Pension / Retirement Allowance,
+,Female,Pension / Retirement Allowance,
+,Subtotal,Minimum living allowance,
+,Male,Minimum living allowance,
+,Female,Minimum living allowance,
+,Subtotal,Unemployment Insurance Benefits,
+,Male,Unemployment Insurance Benefits,
+,Female,Unemployment Insurance Benefits,
+,Subtotal,Property income,
+,Male,Property income,
+,Female,Property income,
+,Subtotal,Family support from other members,
+,Male,Family support from other members,
+,Female,Family support from other members,
+,Subtotal,Other,
+,Male,Other,
+,Female,Other,
+80-84 years old,nan,Age,80-84 years old
+80-84 years old,Total,Population aged 15 and above,1897750
+80-84 years old,Male,Population aged 15 and above,856619
+80-84 years old,Female,Population aged 15 and above,1041131
+80-84 years old,Subtotal,Labor income,72605
+80-84 years old,Male,Labor income,45071
+80-84 years old,Female,Labor income,27534
+80-84 years old,Subtotal,Pension / Retirement Allowance,716565
+80-84 years old,Male,Pension / Retirement Allowance,369848
+80-84 years old,Female,Pension / Retirement Allowance,346717
+80-84 years old,Subtotal,Minimum living allowance,116390
+80-84 years old,Male,Minimum living allowance,58840
+80-84 years old,Female,Minimum living allowance,57550
+80-84 years old,Subtotal,Unemployment Insurance Benefits,96
+80-84 years old,Male,Unemployment Insurance Benefits,49
+80-84 years old,Female,Unemployment Insurance Benefits,47
+80-84 years old,Subtotal,Property income,9613
+80-84 years old,Male,Property income,5128
+80-84 years old,Female,Property income,4485
+80-84 years old,Subtotal,Family support from other members,884166
+80-84 years old,Male,Family support from other members,333205
+80-84 years old,Female,Family support from other members,550961
+80-84 years old,Subtotal,Other,98315
+80-84 years old,Male,Other,44478
+80-84 years old,Female,Other,53837
+80,nan,Age,80
+80,Total,Population aged 15 and above,462344
+80,Male,Population aged 15 and above,214196
+80,Female,Population aged 15 and above,248148
+80,Subtotal,Labor income,24125
+80,Male,Labor income,15190
+80,Female,Labor income,8935
+80,Subtotal,Pension / Retirement Allowance,175206
+80,Male,Pension / Retirement Allowance,91862
+80,Female,Pension / Retirement Allowance,83344
+80,Subtotal,Minimum living allowance,28597
+80,Male,Minimum living allowance,14891
+80,Female,Minimum living allowance,13706
+80,Subtotal,Unemployment Insurance Benefits,23
+80,Male,Unemployment Insurance Benefits,13
+80,Female,Unemployment Insurance Benefits,10
+80,Subtotal,Property income,2694
+80,Male,Property income,1478
+80,Female,Property income,1216
+80,Subtotal,Family support from other members,206863
+80,Male,Family support from other members,79208
+80,Female,Family support from other members,127655
+80,Subtotal,Other,24836
+80,Male,Other,11554
+80,Female,Other,13282
+81,nan,Age,81
+81,Total,Population aged 15 and above,387427
+81,Male,Population aged 15 and above,175529
+81,Female,Population aged 15 and above,211898
+81,Subtotal,Labor income,15544
+81,Male,Labor income,9742
+81,Female,Labor income,5802
+81,Subtotal,Pension / Retirement Allowance,148177
+81,Male,Pension / Retirement Allowance,75541
+81,Female,Pension / Retirement Allowance,72636
+81,Subtotal,Minimum living allowance,23956
+81,Male,Minimum living allowance,12372
+81,Female,Minimum living allowance,11584
+81,Subtotal,Unemployment Insurance Benefits,19
+81,Male,Unemployment Insurance Benefits,11
+81,Female,Unemployment Insurance Benefits,8
+81,Subtotal,Property income,2038
+81,Male,Property income,1107
+81,Female,Property income,931
+81,Subtotal,Family support from other members,177487
+81,Male,Family support from other members,67524
+81,Female,Family support from other members,109963
+81,Subtotal,Other,20206
+81,Male,Other,9232
+81,Female,Other,10974
+82,nan,Age,82
+82,Total,Population aged 15 and above,395095
+82,Male,Population aged 15 and above,179490
+82,Female,Population aged 15 and above,215605
+82,Subtotal,Labor income,13943
+82,Male,Labor income,8741
+82,Female,Labor income,5202
+82,Subtotal,Pension / Retirement Allowance,149124
+82,Male,Pension / Retirement Allowance,76774
+82,Female,Pension / Retirement Allowance,72350
+82,Subtotal,Minimum living allowance,24328
+82,Male,Minimum living allowance,12425
+82,Female,Minimum living allowance,11903
+82,Subtotal,Unemployment Insurance Benefits,17
+82,Male,Unemployment Insurance Benefits,7
+82,Female,Unemployment Insurance Benefits,10
+82,Subtotal,Property income,1993
+82,Male,Property income,1065
+82,Female,Property income,928
+82,Subtotal,Family support from other members,185465
+82,Male,Family support from other members,71224
+82,Female,Family support from other members,114241
+82,Subtotal,Other,20225
+82,Male,Other,9254
+82,Female,Other,10971
+83,nan,Age,83
+83,Total,Population aged 15 and above,343475
+83,Male,Population aged 15 and above,153187
+83,Female,Population aged 15 and above,190288
+83,Subtotal,Labor income,10572
+83,Male,Labor income,6411
+83,Female,Labor income,4161
+83,Subtotal,Pension / Retirement Allowance,128270
+83,Male,Pension / Retirement Allowance,66738
+83,Female,Pension / Retirement Allowance,61532
+83,Subtotal,Minimum living allowance,20932
+83,Male,Minimum living allowance,10267
+83,Female,Minimum living allowance,10665
+83,Subtotal,Unemployment Insurance Benefits,22
+83,Male,Unemployment Insurance Benefits,13
+83,Female,Unemployment Insurance Benefits,9
+83,Subtotal,Property income,1579
+83,Male,Property income,805
+83,Female,Property income,774
+83,Subtotal,Family support from other members,164686
+83,Male,Family support from other members,61240
+83,Female,Family support from other members,103446
+83,Subtotal,Other,17414
+83,Male,Other,7713
+83,Female,Other,9701
+84,nan,Age,84
+84,Total,Population aged 15 and above,309409
+84,Male,Population aged 15 and above,134217
+84,Female,Population aged 15 and above,175192
+84,Subtotal,Labor income,8421
+84,Male,Labor income,4987
+84,Female,Labor income,3434
+84,Subtotal,Pension / Retirement Allowance,115788
+84,Male,Pension / Retirement Allowance,58933
+84,Female,Pension / Retirement Allowance,56855
+84,Subtotal,Minimum living allowance,18577
+84,Male,Minimum living allowance,8885
+84,Female,Minimum living allowance,9692
+84,Subtotal,Unemployment Insurance Benefits,15
+84,Male,Unemployment Insurance Benefits,5
+84,Female,Unemployment Insurance Benefits,10
+84,Subtotal,Property income,1309
+84,Male,Property income,673
+84,Female,Property income,636
+84,Subtotal,Family support from other members,149665
+84,Male,Family support from other members,54009
+84,Female,Family support from other members,95656
+84,Subtotal,Other,15634
+84,Male,Other,6725
+84,Female,Other,8909
+,nan,Age,
+,Total,Population aged 15 and above,
+,Male,Population aged 15 and above,
+,Female,Population aged 15 and above,
+,Subtotal,Labor income,
+,Male,Labor income,
+,Female,Labor income,
+,Subtotal,Pension / Retirement Allowance,
+,Male,Pension / Retirement Allowance,
+,Female,Pension / Retirement Allowance,
+,Subtotal,Minimum living allowance,
+,Male,Minimum living allowance,
+,Female,Minimum living allowance,
+,Subtotal,Unemployment Insurance Benefits,
+,Male,Unemployment Insurance Benefits,
+,Female,Unemployment Insurance Benefits,
+,Subtotal,Property income,
+,Male,Property income,
+,Female,Property income,
+,Subtotal,Family support from other members,
+,Male,Family support from other members,
+,Female,Family support from other members,
+,Subtotal,Other,
+,Male,Other,
+,Female,Other,
+85-89 years old,nan,Age,85-89 years old
+85-89 years old,Total,Population aged 15 and above,973818
+85-89 years old,Male,Population aged 15 and above,398907
+85-89 years old,Female,Population aged 15 and above,574911
+85-89 years old,Subtotal,Labor income,20346
+85-89 years old,Male,Labor income,11202
+85-89 years old,Female,Labor income,9144
+85-89 years old,Subtotal,Pension / Retirement Allowance,352954
+85-89 years old,Male,Pension / Retirement Allowance,178881
+85-89 years old,Female,Pension / Retirement Allowance,174073
+85-89 years old,Subtotal,Minimum living allowance,58782
+85-89 years old,Male,Minimum living allowance,25626
+85-89 years old,Female,Minimum living allowance,33156
+85-89 years old,Subtotal,Unemployment Insurance Benefits,41
+85-89 years old,Male,Unemployment Insurance Benefits,17
+85-89 years old,Female,Unemployment Insurance Benefits,24
+85-89 years old,Subtotal,Property income,3621
+85-89 years old,Male,Property income,1778
+85-89 years old,Female,Property income,1843
+85-89 years old,Subtotal,Family support from other members,489292
+85-89 years old,Male,Family support from other members,161962
+85-89 years old,Female,Family support from other members,327330
+85-89 years old,Subtotal,Other,48782
+85-89 years old,Male,Other,19441
+85-89 years old,Female,Other,29341
+85,nan,Age,85
+85,Total,Population aged 15 and above,264740
+85,Male,Population aged 15 and above,111113
+85,Female,Population aged 15 and above,153627
+85,Subtotal,Labor income,6600
+85,Male,Labor income,3828
+85,Female,Labor income,2772
+85,Subtotal,Pension / Retirement Allowance,97824
+85,Male,Pension / Retirement Allowance,48831
+85,Female,Pension / Retirement Allowance,48993
+85,Subtotal,Minimum living allowance,16024
+85,Male,Minimum living allowance,7502
+85,Female,Minimum living allowance,8522
+85,Subtotal,Unemployment Insurance Benefits,10
+85,Male,Unemployment Insurance Benefits,3
+85,Female,Unemployment Insurance Benefits,7
+85,Subtotal,Property income,1092
+85,Male,Property income,549
+85,Female,Property income,543
+85,Subtotal,Family support from other members,129713
+85,Male,Family support from other members,44795
+85,Female,Family support from other members,84918
+85,Subtotal,Other,13477
+85,Male,Other,5605
+85,Female,Other,7872
+86,nan,Age,86
+86,Total,Population aged 15 and above,227319
+86,Male,Population aged 15 and above,93574
+86,Female,Population aged 15 and above,133745
+86,Subtotal,Labor income,5029
+86,Male,Labor income,2794
+86,Female,Labor income,2235
+86,Subtotal,Pension / Retirement Allowance,82863
+86,Male,Pension / Retirement Allowance,41481
+86,Female,Pension / Retirement Allowance,41382
+86,Subtotal,Minimum living allowance,13751
+86,Male,Minimum living allowance,6055
+86,Female,Minimum living allowance,7696
+86,Subtotal,Unemployment Insurance Benefits,9
+86,Male,Unemployment Insurance Benefits,5
+86,Female,Unemployment Insurance Benefits,4
+86,Subtotal,Property income,939
+86,Male,Property income,488
+86,Female,Property income,451
+86,Subtotal,Family support from other members,113390
+86,Male,Family support from other members,38218
+86,Female,Family support from other members,75172
+86,Subtotal,Other,11338
+86,Male,Other,4533
+86,Female,Other,6805
+87,nan,Age,87
+87,Total,Population aged 15 and above,204932
+87,Male,Population aged 15 and above,84218
+87,Female,Population aged 15 and above,120714
+87,Subtotal,Labor income,4018
+87,Male,Labor income,2175
+87,Female,Labor income,1843
+87,Subtotal,Pension / Retirement Allowance,74123
+87,Male,Pension / Retirement Allowance,37938
+87,Female,Pension / Retirement Allowance,36185
+87,Subtotal,Minimum living allowance,12411
+87,Male,Minimum living allowance,5295
+87,Female,Minimum living allowance,7116
+87,Subtotal,Unemployment Insurance Benefits,8
+87,Male,Unemployment Insurance Benefits,3
+87,Female,Unemployment Insurance Benefits,5
+87,Subtotal,Property income,713
+87,Male,Property income,355
+87,Female,Property income,358
+87,Subtotal,Family support from other members,103512
+87,Male,Family support from other members,34371
+87,Female,Family support from other members,69141
+87,Subtotal,Other,10147
+87,Male,Other,4081
+87,Female,Other,6066
+88,nan,Age,88
+88,Total,Population aged 15 and above,154282
+88,Male,Population aged 15 and above,61448
+88,Female,Population aged 15 and above,92834
+88,Subtotal,Labor income,2719
+88,Male,Labor income,1404
+88,Female,Labor income,1315
+88,Subtotal,Pension / Retirement Allowance,55016
+88,Male,Pension / Retirement Allowance,27960
+88,Female,Pension / Retirement Allowance,27056
+88,Subtotal,Minimum living allowance,9226
+88,Male,Minimum living allowance,3857
+88,Female,Minimum living allowance,5369
+88,Subtotal,Unemployment Insurance Benefits,8
+88,Male,Unemployment Insurance Benefits,3
+88,Female,Unemployment Insurance Benefits,5
+88,Subtotal,Property income,491
+88,Male,Property income,217
+88,Female,Property income,274
+88,Subtotal,Family support from other members,79141
+88,Male,Family support from other members,25109
+88,Female,Family support from other members,54032
+88,Subtotal,Other,7681
+88,Male,Other,2898
+88,Female,Other,4783
+89,nan,Age,89
+89,Total,Population aged 15 and above,122545
+89,Male,Population aged 15 and above,48554
+89,Female,Population aged 15 and above,73991
+89,Subtotal,Labor income,1980
+89,Male,Labor income,1001
+89,Female,Labor income,979
+89,Subtotal,Pension / Retirement Allowance,43128
+89,Male,Pension / Retirement Allowance,22671
+89,Female,Pension / Retirement Allowance,20457
+89,Subtotal,Minimum living allowance,7370
+89,Male,Minimum living allowance,2917
+89,Female,Minimum living allowance,4453
+89,Subtotal,Unemployment Insurance Benefits,6
+89,Male,Unemployment Insurance Benefits,3
+89,Female,Unemployment Insurance Benefits,3
+89,Subtotal,Property income,386
+89,Male,Property income,169
+89,Female,Property income,217
+89,Subtotal,Family support from other members,63536
+89,Male,Family support from other members,19469
+89,Female,Family support from other members,44067
+89,Subtotal,Other,6139
+89,Male,Other,2324
+89,Female,Other,3815
+,nan,Age,
+,Total,Population aged 15 and above,
+,Male,Population aged 15 and above,
+,Female,Population aged 15 and above,
+,Subtotal,Labor income,
+,Male,Labor income,
+,Female,Labor income,
+,Subtotal,Pension / Retirement Allowance,
+,Male,Pension / Retirement Allowance,
+,Female,Pension / Retirement Allowance,
+,Subtotal,Minimum living allowance,
+,Male,Minimum living allowance,
+,Female,Minimum living allowance,
+,Subtotal,Unemployment Insurance Benefits,
+,Male,Unemployment Insurance Benefits,
+,Female,Unemployment Insurance Benefits,
+,Subtotal,Property income,
+,Male,Property income,
+,Female,Property income,
+,Subtotal,Family support from other members,
+,Male,Family support from other members,
+,Female,Family support from other members,
+,Subtotal,Other,
+,Male,Other,
+,Female,Other,
+90-94 years old,nan,Age,90-94 years old
+90-94 years old,Total,Population aged 15 and above,312846
+90-94 years old,Male,Population aged 15 and above,115437
+90-94 years old,Female,Population aged 15 and above,197409
+90-94 years old,Subtotal,Labor income,3738
+90-94 years old,Male,Labor income,1737
+90-94 years old,Female,Labor income,2001
+90-94 years old,Subtotal,Pension / Retirement Allowance,106755
+90-94 years old,Male,Pension / Retirement Allowance,53956
+90-94 years old,Female,Pension / Retirement Allowance,52799
+90-94 years old,Subtotal,Minimum living allowance,19087
+90-94 years old,Male,Minimum living allowance,6773
+90-94 years old,Female,Minimum living allowance,12314
+90-94 years old,Subtotal,Unemployment Insurance Benefits,13
+90-94 years old,Male,Unemployment Insurance Benefits,2
+90-94 years old,Female,Unemployment Insurance Benefits,11
+90-94 years old,Subtotal,Property income,950
+90-94 years old,Male,Property income,414
+90-94 years old,Female,Property income,536
+90-94 years old,Subtotal,Family support from other members,166654
+90-94 years old,Male,Family support from other members,47061
+90-94 years old,Female,Family support from other members,119593
+90-94 years old,Subtotal,Other,15649
+90-94 years old,Male,Other,5494
+90-94 years old,Female,Other,10155
+90,nan,Age,90
+90,Total,Population aged 15 and above,106074
+90,Male,Population aged 15 and above,41051
+90,Female,Population aged 15 and above,65023
+90,Subtotal,Labor income,1482
+90,Male,Labor income,707
+90,Female,Labor income,775
+90,Subtotal,Pension / Retirement Allowance,37266
+90,Male,Pension / Retirement Allowance,19484
+90,Female,Pension / Retirement Allowance,17782
+90,Subtotal,Minimum living allowance,6405
+90,Male,Minimum living allowance,2458
+90,Female,Minimum living allowance,3947
+90,Subtotal,Unemployment Insurance Benefits,4
+90,Male,Unemployment Insurance Benefits,1
+90,Female,Unemployment Insurance Benefits,3
+90,Subtotal,Property income,329
+90,Male,Property income,154
+90,Female,Property income,175
+90,Subtotal,Family support from other members,55271
+90,Male,Family support from other members,16321
+90,Female,Family support from other members,38950
+90,Subtotal,Other,5317
+90,Male,Other,1926
+90,Female,Other,3391
+91,nan,Age,91
+91,Total,Population aged 15 and above,72886
+91,Male,Population aged 15 and above,27037
+91,Female,Population aged 15 and above,45849
+91,Subtotal,Labor income,839
+91,Male,Labor income,390
+91,Female,Labor income,449
+91,Subtotal,Pension / Retirement Allowance,25364
+91,Male,Pension / Retirement Allowance,12666
+91,Female,Pension / Retirement Allowance,12698
+91,Subtotal,Minimum living allowance,4445
+91,Male,Minimum living allowance,1606
+91,Female,Minimum living allowance,2839
+91,Subtotal,Unemployment Insurance Benefits,5
+91,Male,Unemployment Insurance Benefits,1
+91,Female,Unemployment Insurance Benefits,4
+91,Subtotal,Property income,213
+91,Male,Property income,97
+91,Female,Property income,116
+91,Subtotal,Family support from other members,38446
+91,Male,Family support from other members,11026
+91,Female,Family support from other members,27420
+91,Subtotal,Other,3574
+91,Male,Other,1251
+91,Female,Other,2323
+92,nan,Age,92
+92,Total,Population aged 15 and above,60934
+92,Male,Population aged 15 and above,21980
+92,Female,Population aged 15 and above,38954
+92,Subtotal,Labor income,653
+92,Male,Labor income,289
+92,Female,Labor income,364
+92,Subtotal,Pension / Retirement Allowance,20336
+92,Male,Pension / Retirement Allowance,10122
+92,Female,Pension / Retirement Allowance,10214
+92,Subtotal,Minimum living allowance,3689
+92,Male,Minimum living allowance,1285
+92,Female,Minimum living allowance,2404
+92,Subtotal,Unemployment Insurance Benefits,3
+92,Male,Unemployment Insurance Benefits,0
+92,Female,Unemployment Insurance Benefits,3
+92,Subtotal,Property income,196
+92,Male,Property income,78
+92,Female,Property income,118
+92,Subtotal,Family support from other members,33031
+92,Male,Family support from other members,9132
+92,Female,Family support from other members,23899
+92,Subtotal,Other,3026
+92,Male,Other,1074
+92,Female,Other,1952
+93,nan,Age,93
+93,Total,Population aged 15 and above,42736
+93,Male,Population aged 15 and above,15095
+93,Female,Population aged 15 and above,27641
+93,Subtotal,Labor income,436
+93,Male,Labor income,202
+93,Female,Labor income,234
+93,Subtotal,Pension / Retirement Allowance,13921
+93,Male,Pension / Retirement Allowance,6880
+93,Female,Pension / Retirement Allowance,7041
+93,Subtotal,Minimum living allowance,2628
+93,Male,Minimum living allowance,842
+93,Female,Minimum living allowance,1786
+93,Subtotal,Unemployment Insurance Benefits,0
+93,Male,Unemployment Insurance Benefits,0
+93,Female,Unemployment Insurance Benefits,0
+93,Subtotal,Property income,138
+93,Male,Property income,55
+93,Female,Property income,83
+93,Subtotal,Family support from other members,23421
+93,Male,Family support from other members,6379
+93,Female,Family support from other members,17042
+93,Subtotal,Other,2192
+93,Male,Other,737
+93,Female,Other,1455
+94,nan,Age,94
+94,Total,Population aged 15 and above,30216
+94,Male,Population aged 15 and above,10274
+94,Female,Population aged 15 and above,19942
+94,Subtotal,Labor income,328
+94,Male,Labor income,149
+94,Female,Labor income,179
+94,Subtotal,Pension / Retirement Allowance,9868
+94,Male,Pension / Retirement Allowance,4804
+94,Female,Pension / Retirement Allowance,5064
+94,Subtotal,Minimum living allowance,1920
+94,Male,Minimum living allowance,582
+94,Female,Minimum living allowance,1338
+94,Subtotal,Unemployment Insurance Benefits,1
+94,Male,Unemployment Insurance Benefits,0
+94,Female,Unemployment Insurance Benefits,1
+94,Subtotal,Property income,74
+94,Male,Property income,30
+94,Female,Property income,44
+94,Subtotal,Family support from other members,16485
+94,Male,Family support from other members,4203
+94,Female,Family support from other members,12282
+94,Subtotal,Other,1540
+94,Male,Other,506
+94,Female,Other,1034
+,nan,Age,
+,Total,Population aged 15 and above,
+,Male,Population aged 15 and above,
+,Female,Population aged 15 and above,
+,Subtotal,Labor income,
+,Male,Labor income,
+,Female,Labor income,
+,Subtotal,Pension / Retirement Allowance,
+,Male,Pension / Retirement Allowance,
+,Female,Pension / Retirement Allowance,
+,Subtotal,Minimum living allowance,
+,Male,Minimum living allowance,
+,Female,Minimum living allowance,
+,Subtotal,Unemployment Insurance Benefits,
+,Male,Unemployment Insurance Benefits,
+,Female,Unemployment Insurance Benefits,
+,Subtotal,Property income,
+,Male,Property income,
+,Female,Property income,
+,Subtotal,Family support from other members,
+,Male,Family support from other members,
+,Female,Family support from other members,
+,Subtotal,Other,
+,Male,Other,
+,Female,Other,
+95-99 years old,nan,Age,95-99 years old
+95-99 years old,Total,Population aged 15 and above,63626
+95-99 years old,Male,Population aged 15 and above,19576
+95-99 years old,Female,Population aged 15 and above,44050
+95-99 years old,Subtotal,Labor income,657
+95-99 years old,Male,Labor income,263
+95-99 years old,Female,Labor income,394
+95-99 years old,Subtotal,Pension / Retirement Allowance,18891
+95-99 years old,Male,Pension / Retirement Allowance,8638
+95-99 years old,Female,Pension / Retirement Allowance,10253
+95-99 years old,Subtotal,Minimum living allowance,4287
+95-99 years old,Male,Minimum living allowance,1210
+95-99 years old,Female,Minimum living allowance,3077
+95-99 years old,Subtotal,Unemployment Insurance Benefits,4
+95-99 years old,Male,Unemployment Insurance Benefits,2
+95-99 years old,Female,Unemployment Insurance Benefits,2
+95-99 years old,Subtotal,Property income,169
+95-99 years old,Male,Property income,57
+95-99 years old,Female,Property income,112
+95-99 years old,Subtotal,Family support from other members,36063
+95-99 years old,Male,Family support from other members,8364
+95-99 years old,Female,Family support from other members,27699
+95-99 years old,Subtotal,Other,3555
+95-99 years old,Male,Other,1042
+95-99 years old,Female,Other,2513
+95,nan,Age,95
+95,Total,Population aged 15 and above,23449
+95,Male,Population aged 15 and above,7523
+95,Female,Population aged 15 and above,15926
+95,Subtotal,Labor income,249
+95,Male,Labor income,95
+95,Female,Labor income,154
+95,Subtotal,Pension / Retirement Allowance,7268
+95,Male,Pension / Retirement Allowance,3374
+95,Female,Pension / Retirement Allowance,3894
+95,Subtotal,Minimum living allowance,1549
+95,Male,Minimum living allowance,483
+95,Female,Minimum living allowance,1066
+95,Subtotal,Unemployment Insurance Benefits,1
+95,Male,Unemployment Insurance Benefits,0
+95,Female,Unemployment Insurance Benefits,1
+95,Subtotal,Property income,67
+95,Male,Property income,25
+95,Female,Property income,42
+95,Subtotal,Family support from other members,13086
+95,Male,Family support from other members,3173
+95,Female,Family support from other members,9913
+95,Subtotal,Other,1229
+95,Male,Other,373
+95,Female,Other,856
+96,nan,Age,96
+96,Total,Population aged 15 and above,16489
+96,Male,Population aged 15 and above,5063
+96,Female,Population aged 15 and above,11426
+96,Subtotal,Labor income,156
+96,Male,Labor income,72
+96,Female,Labor income,84
+96,Subtotal,Pension / Retirement Allowance,4949
+96,Male,Pension / Retirement Allowance,2242
+96,Female,Pension / Retirement Allowance,2707
+96,Subtotal,Minimum living allowance,1079
+96,Male,Minimum living allowance,277
+96,Female,Minimum living allowance,802
+96,Subtotal,Unemployment Insurance Benefits,2
+96,Male,Unemployment Insurance Benefits,2
+96,Female,Unemployment Insurance Benefits,0
+96,Subtotal,Property income,42
+96,Male,Property income,12
+96,Female,Property income,30
+96,Subtotal,Family support from other members,9312
+96,Male,Family support from other members,2182
+96,Female,Family support from other members,7130
+96,Subtotal,Other,949
+96,Male,Other,276
+96,Female,Other,673
+97,nan,Age,97
+97,Total,Population aged 15 and above,10967
+97,Male,Population aged 15 and above,3306
+97,Female,Population aged 15 and above,7661
+97,Subtotal,Labor income,98
+97,Male,Labor income,33
+97,Female,Labor income,65
+97,Subtotal,Pension / Retirement Allowance,3205
+97,Male,Pension / Retirement Allowance,1466
+97,Female,Pension / Retirement Allowance,1739
+97,Subtotal,Minimum living allowance,788
+97,Male,Minimum living allowance,225
+97,Female,Minimum living allowance,563
+97,Subtotal,Unemployment Insurance Benefits,0
+97,Male,Unemployment Insurance Benefits,0
+97,Female,Unemployment Insurance Benefits,0
+97,Subtotal,Property income,26
+97,Male,Property income,8
+97,Female,Property income,18
+97,Subtotal,Family support from other members,6250
+97,Male,Family support from other members,1390
+97,Female,Family support from other members,4860
+97,Subtotal,Other,600
+97,Male,Other,184
+97,Female,Other,416
+98,nan,Age,98
+98,Total,Population aged 15 and above,7293
+98,Male,Population aged 15 and above,2148
+98,Female,Population aged 15 and above,5145
+98,Subtotal,Labor income,80
+98,Male,Labor income,37
+98,Female,Labor income,43
+98,Subtotal,Pension / Retirement Allowance,2010
+98,Male,Pension / Retirement Allowance,906
+98,Female,Pension / Retirement Allowance,1104
+98,Subtotal,Minimum living allowance,512
+98,Male,Minimum living allowance,135
+98,Female,Minimum living allowance,377
+98,Subtotal,Unemployment Insurance Benefits,0
+98,Male,Unemployment Insurance Benefits,0
+98,Female,Unemployment Insurance Benefits,0
+98,Subtotal,Property income,23
+98,Male,Property income,8
+98,Female,Property income,15
+98,Subtotal,Family support from other members,4228
+98,Male,Family support from other members,949
+98,Female,Family support from other members,3279
+98,Subtotal,Other,440
+98,Male,Other,113
+98,Female,Other,327
+99,nan,Age,99
+99,Total,Population aged 15 and above,5428
+99,Male,Population aged 15 and above,1536
+99,Female,Population aged 15 and above,3892
+99,Subtotal,Labor income,74
+99,Male,Labor income,26
+99,Female,Labor income,48
+99,Subtotal,Pension / Retirement Allowance,1459
+99,Male,Pension / Retirement Allowance,650
+99,Female,Pension / Retirement Allowance,809
+99,Subtotal,Minimum living allowance,359
+99,Male,Minimum living allowance,90
+99,Female,Minimum living allowance,269
+99,Subtotal,Unemployment Insurance Benefits,1
+99,Male,Unemployment Insurance Benefits,0
+99,Female,Unemployment Insurance Benefits,1
+99,Subtotal,Property income,11
+99,Male,Property income,4
+99,Female,Property income,7
+99,Subtotal,Family support from other members,3187
+99,Male,Family support from other members,670
+99,Female,Family support from other members,2517
+99,Subtotal,Other,337
+99,Male,Other,96
+99,Female,Other,241
+,nan,Age,
+,Total,Population aged 15 and above,
+,Male,Population aged 15 and above,
+,Female,Population aged 15 and above,
+,Subtotal,Labor income,
+,Male,Labor income,
+,Female,Labor income,
+,Subtotal,Pension / Retirement Allowance,
+,Male,Pension / Retirement Allowance,
+,Female,Pension / Retirement Allowance,
+,Subtotal,Minimum living allowance,
+,Male,Minimum living allowance,
+,Female,Minimum living allowance,
+,Subtotal,Unemployment Insurance Benefits,
+,Male,Unemployment Insurance Benefits,
+,Female,Unemployment Insurance Benefits,
+,Subtotal,Property income,
+,Male,Property income,
+,Female,Property income,
+,Subtotal,Family support from other members,
+,Male,Family support from other members,
+,Female,Family support from other members,
+,Subtotal,Other,
+,Male,Other,
+,Female,Other,
+100 years and above,nan,Age,100 years and above
+100 years and above,Total,Population aged 15 and above,7562
+100 years and above,Male,Population aged 15 and above,1778
+100 years and above,Female,Population aged 15 and above,5784
+100 years and above,Subtotal,Labor income,71
+100 years and above,Male,Labor income,20
+100 years and above,Female,Labor income,51
+100 years and above,Subtotal,Pension / Retirement Allowance,1801
+100 years and above,Male,Pension / Retirement Allowance,705
+100 years and above,Female,Pension / Retirement Allowance,1096
+100 years and above,Subtotal,Minimum living allowance,691
+100 years and above,Male,Minimum living allowance,136
+100 years and above,Female,Minimum living allowance,555
+100 years and above,Subtotal,Unemployment Insurance Benefits,0
+100 years and above,Male,Unemployment Insurance Benefits,0
+100 years and above,Female,Unemployment Insurance Benefits,0
+100 years and above,Subtotal,Property income,20
+100 years and above,Male,Property income,6
+100 years and above,Female,Property income,14
+100 years and above,Subtotal,Family support from other members,4515
+100 years and above,Male,Family support from other members,799
+100 years and above,Female,Family support from other members,3716
+100 years and above,Subtotal,Other,464
+100 years and above,Male,Other,112
+100 years and above,Female,Other,352

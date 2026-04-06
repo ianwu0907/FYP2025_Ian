@@ -1,191 +1,210 @@
-type_of_person_responsible,behavior_type,percent
-canadian armed forces member(s),sexual_jokes_percent,97.0
-foreign military member(s),sexual_jokes_percent,4.6
-department of national defence civilian(s) or contractor(s),sexual_jokes_percent,14.0
-other,sexual_jokes_percent,12.0
-lone,sexual_jokes_percent,18.0
-two or more,sexual_jokes_percent,29.0
-"varied - sometimes one person, other times multiple people",sexual_jokes_percent,39.0
-always men,sexual_jokes_percent,42.0
-always women,sexual_jokes_percent,3.4
-combination of men and women,sexual_jokes_percent,54.0
-supervisor or higher rank,sexual_jokes_percent,52.0
-peer,sexual_jokes_percent,80.0
-subordinate - either in or outside chain of command,sexual_jokes_percent,30.0
-other,sexual_jokes_percent,14.0
-junior non-commissioned member,sexual_jokes_percent,84.0
-senior non-commissioned member,sexual_jokes_percent,49.0
-junior officer,sexual_jokes_percent,29.0
-senior officer,sexual_jokes_percent,13.0
-other,sexual_jokes_percent,5.4
-canadian armed forces member(s),unwanted_sexual_attention_percent,95.0
-foreign military member(s),unwanted_sexual_attention_percent,5.2
-department of national defence civilian(s) or contractor(s),unwanted_sexual_attention_percent,9.8
-other,unwanted_sexual_attention_percent,5.7
-lone,unwanted_sexual_attention_percent,47.0
-two or more,unwanted_sexual_attention_percent,25.0
-"varied - sometimes one person, other times multiple people",unwanted_sexual_attention_percent,22.0
-always men,unwanted_sexual_attention_percent,75.0
-always women,unwanted_sexual_attention_percent,9.6
-combination of men and women,unwanted_sexual_attention_percent,16.0
-supervisor or higher rank,unwanted_sexual_attention_percent,50.0
-peer,unwanted_sexual_attention_percent,56.0
-subordinate - either in or outside chain of command,unwanted_sexual_attention_percent,20.0
-other,unwanted_sexual_attention_percent,10.0
-junior non-commissioned member,unwanted_sexual_attention_percent,73.0
-senior non-commissioned member,unwanted_sexual_attention_percent,39.0
-junior officer,unwanted_sexual_attention_percent,20.0
-senior officer,unwanted_sexual_attention_percent,11.0
-other,unwanted_sexual_attention_percent,
-canadian armed forces member(s),inappropriate_sexual_comments_percent,94.0
-foreign military member(s),inappropriate_sexual_comments_percent,3.7
-department of national defence civilian(s) or contractor(s),inappropriate_sexual_comments_percent,9.2
-other,inappropriate_sexual_comments_percent,6.9
-lone,inappropriate_sexual_comments_percent,36.0
-two or more,inappropriate_sexual_comments_percent,28.0
-"varied - sometimes one person, other times multiple people",inappropriate_sexual_comments_percent,26.0
-always men,inappropriate_sexual_comments_percent,62.0
-always women,inappropriate_sexual_comments_percent,6.0
-combination of men and women,inappropriate_sexual_comments_percent,29.0
-supervisor or higher rank,inappropriate_sexual_comments_percent,48.0
-peer,inappropriate_sexual_comments_percent,67.0
-subordinate - either in or outside chain of command,inappropriate_sexual_comments_percent,22.0
-other,inappropriate_sexual_comments_percent,8.9
-junior non-commissioned member,inappropriate_sexual_comments_percent,79.0
-senior non-commissioned member,inappropriate_sexual_comments_percent,39.0
-junior officer,inappropriate_sexual_comments_percent,20.0
-senior officer,inappropriate_sexual_comments_percent,7.3
-other,inappropriate_sexual_comments_percent,4.5
-canadian armed forces member(s),inappropriate_discussion_about_sex_life_percent,96.0
-foreign military member(s),inappropriate_discussion_about_sex_life_percent,3.2
-department of national defence civilian(s) or contractor(s),inappropriate_discussion_about_sex_life_percent,10.0
-other,inappropriate_discussion_about_sex_life_percent,8.2
-lone,inappropriate_discussion_about_sex_life_percent,23.0
-two or more,inappropriate_discussion_about_sex_life_percent,38.0
-"varied - sometimes one person, other times multiple people",inappropriate_discussion_about_sex_life_percent,29.0
-always men,inappropriate_discussion_about_sex_life_percent,50.0
-always women,inappropriate_discussion_about_sex_life_percent,4.1
-combination of men and women,inappropriate_discussion_about_sex_life_percent,44.0
-supervisor or higher rank,inappropriate_discussion_about_sex_life_percent,50.0
-peer,inappropriate_discussion_about_sex_life_percent,76.0
-subordinate - either in or outside chain of command,inappropriate_discussion_about_sex_life_percent,28.0
-other,inappropriate_discussion_about_sex_life_percent,9.5
-junior non-commissioned member,inappropriate_discussion_about_sex_life_percent,83.0
-senior non-commissioned member,inappropriate_discussion_about_sex_life_percent,39.0
-junior officer,inappropriate_discussion_about_sex_life_percent,25.0
-senior officer,inappropriate_discussion_about_sex_life_percent,11.0
-other,inappropriate_discussion_about_sex_life_percent,4.3
-canadian armed forces member(s),displaying_showing_or_sending_sexually_percent,97.0
-foreign military member(s),displaying_showing_or_sending_sexually_percent,
-department of national defence civilian(s) or contractor(s),displaying_showing_or_sending_sexually_percent,7.9
-other,displaying_showing_or_sending_sexually_percent,9.1
-lone,displaying_showing_or_sending_sexually_percent,34.0
-two or more,displaying_showing_or_sending_sexually_percent,34.0
-"varied - sometimes one person, other times multiple people",displaying_showing_or_sending_sexually_percent,24.0
-always men,displaying_showing_or_sending_sexually_percent,63.0
-always women,displaying_showing_or_sending_sexually_percent,
-combination of men and women,displaying_showing_or_sending_sexually_percent,32.0
-supervisor or higher rank,displaying_showing_or_sending_sexually_percent,39.0
-peer,displaying_showing_or_sending_sexually_percent,73.0
-subordinate - either in or outside chain of command,displaying_showing_or_sending_sexually_percent,25.0
-other,displaying_showing_or_sending_sexually_percent,8.4
-junior non-commissioned member,displaying_showing_or_sending_sexually_percent,91.0
-senior non-commissioned member,displaying_showing_or_sending_sexually_percent,32.0
-junior officer,displaying_showing_or_sending_sexually_percent,17.0
-senior officer,displaying_showing_or_sending_sexually_percent,7.1
-other,displaying_showing_or_sending_sexually_percent,
-canadian armed forces member(s),taking_or_posting_inappropriate_or_sexual_percent,91.0
-foreign military member(s),taking_or_posting_inappropriate_or_sexual_percent,
-department of national defence civilian(s) or contractor(s),taking_or_posting_inappropriate_or_sexual_percent,
-other,taking_or_posting_inappropriate_or_sexual_percent,
-lone,taking_or_posting_inappropriate_or_sexual_percent,
-two or more,taking_or_posting_inappropriate_or_sexual_percent,
-"varied - sometimes one person, other times multiple people",taking_or_posting_inappropriate_or_sexual_percent,
-always men,taking_or_posting_inappropriate_or_sexual_percent,
-always women,taking_or_posting_inappropriate_or_sexual_percent,
-combination of men and women,taking_or_posting_inappropriate_or_sexual_percent,
-supervisor or higher rank,taking_or_posting_inappropriate_or_sexual_percent,
-peer,taking_or_posting_inappropriate_or_sexual_percent,
-subordinate - either in or outside chain of command,taking_or_posting_inappropriate_or_sexual_percent,
-other,taking_or_posting_inappropriate_or_sexual_percent,
-junior non-commissioned member,taking_or_posting_inappropriate_or_sexual_percent,
-senior non-commissioned member,taking_or_posting_inappropriate_or_sexual_percent,
-junior officer,taking_or_posting_inappropriate_or_sexual_percent,
-senior officer,taking_or_posting_inappropriate_or_sexual_percent,
-other,taking_or_posting_inappropriate_or_sexual_percent,
-canadian armed forces member(s),indecent_exposure_or_inappropriate_display_percent,94.0
-foreign military member(s),indecent_exposure_or_inappropriate_display_percent,
-department of national defence civilian(s) or contractor(s),indecent_exposure_or_inappropriate_display_percent,
-other,indecent_exposure_or_inappropriate_display_percent,
-lone,indecent_exposure_or_inappropriate_display_percent,56.0
-two or more,indecent_exposure_or_inappropriate_display_percent,23.0
-"varied - sometimes one person, other times multiple people",indecent_exposure_or_inappropriate_display_percent,17.0
-always men,indecent_exposure_or_inappropriate_display_percent,73.0
-always women,indecent_exposure_or_inappropriate_display_percent,
-combination of men and women,indecent_exposure_or_inappropriate_display_percent,22.0
-supervisor or higher rank,indecent_exposure_or_inappropriate_display_percent,19.0
-peer,indecent_exposure_or_inappropriate_display_percent,71.0
-subordinate - either in or outside chain of command,indecent_exposure_or_inappropriate_display_percent,25.0
-other,indecent_exposure_or_inappropriate_display_percent,
-junior non-commissioned member,indecent_exposure_or_inappropriate_display_percent,93.0
-senior non-commissioned member,indecent_exposure_or_inappropriate_display_percent,12.0
-junior officer,indecent_exposure_or_inappropriate_display_percent,11.0
-senior officer,indecent_exposure_or_inappropriate_display_percent,
-other,indecent_exposure_or_inappropriate_display_percent,
-canadian armed forces member(s),repeated_pressure_from_the_same_person_percent,95.0
-foreign military member(s),repeated_pressure_from_the_same_person_percent,
-department of national defence civilian(s) or contractor(s),repeated_pressure_from_the_same_person_percent,7.8
-other,repeated_pressure_from_the_same_person_percent,
-lone,repeated_pressure_from_the_same_person_percent,67.0
-two or more,repeated_pressure_from_the_same_person_percent,17.0
-"varied - sometimes one person, other times multiple people",repeated_pressure_from_the_same_person_percent,11.0
-always men,repeated_pressure_from_the_same_person_percent,80.0
-always women,repeated_pressure_from_the_same_person_percent,9.0
-combination of men and women,repeated_pressure_from_the_same_person_percent,10.0
-supervisor or higher rank,repeated_pressure_from_the_same_person_percent,49.0
-peer,repeated_pressure_from_the_same_person_percent,51.0
-subordinate - either in or outside chain of command,repeated_pressure_from_the_same_person_percent,17.0
-other,repeated_pressure_from_the_same_person_percent,9.4
-junior non-commissioned member,repeated_pressure_from_the_same_person_percent,77.0
-senior non-commissioned member,repeated_pressure_from_the_same_person_percent,24.0
-junior officer,repeated_pressure_from_the_same_person_percent,18.0
-senior officer,repeated_pressure_from_the_same_person_percent,6.3
-other,repeated_pressure_from_the_same_person_percent,
-canadian armed forces member(s),unwelcome_physical_contact_or_getting_to_percent,94.0
-foreign military member(s),unwelcome_physical_contact_or_getting_to_percent,
-department of national defence civilian(s) or contractor(s),unwelcome_physical_contact_or_getting_to_percent,5.7
-other,unwelcome_physical_contact_or_getting_to_percent,3.4
-lone,unwelcome_physical_contact_or_getting_to_percent,69.0
-two or more,unwelcome_physical_contact_or_getting_to_percent,17.0
-"varied - sometimes one person, other times multiple people",unwelcome_physical_contact_or_getting_to_percent,8.2
-always men,unwelcome_physical_contact_or_getting_to_percent,74.0
-always women,unwelcome_physical_contact_or_getting_to_percent,13.0
-combination of men and women,unwelcome_physical_contact_or_getting_to_percent,12.0
-supervisor or higher rank,unwelcome_physical_contact_or_getting_to_percent,48.0
-peer,unwelcome_physical_contact_or_getting_to_percent,56.0
-subordinate - either in or outside chain of command,unwelcome_physical_contact_or_getting_to_percent,17.0
-other,unwelcome_physical_contact_or_getting_to_percent,5.7
-junior non-commissioned member,unwelcome_physical_contact_or_getting_to_percent,69.0
-senior non-commissioned member,unwelcome_physical_contact_or_getting_to_percent,26.0
-junior officer,unwelcome_physical_contact_or_getting_to_percent,14.0
-senior officer,unwelcome_physical_contact_or_getting_to_percent,9.3
-other,unwelcome_physical_contact_or_getting_to_percent,
-canadian armed forces member(s),offering_workplace_benefits_for_engaging_percent,
-foreign military member(s),offering_workplace_benefits_for_engaging_percent,
-department of national defence civilian(s) or contractor(s),offering_workplace_benefits_for_engaging_percent,
-other,offering_workplace_benefits_for_engaging_percent,
-lone,offering_workplace_benefits_for_engaging_percent,
-two or more,offering_workplace_benefits_for_engaging_percent,
-"varied - sometimes one person, other times multiple people",offering_workplace_benefits_for_engaging_percent,
-always men,offering_workplace_benefits_for_engaging_percent,
-always women,offering_workplace_benefits_for_engaging_percent,
-combination of men and women,offering_workplace_benefits_for_engaging_percent,
-supervisor or higher rank,offering_workplace_benefits_for_engaging_percent,
-peer,offering_workplace_benefits_for_engaging_percent,
-subordinate - either in or outside chain of command,offering_workplace_benefits_for_engaging_percent,
-other,offering_workplace_benefits_for_engaging_percent,
-junior non-commissioned member,offering_workplace_benefits_for_engaging_percent,57.0
-senior non-commissioned member,offering_workplace_benefits_for_engaging_percent,59.0
-junior officer,offering_workplace_benefits_for_engaging_percent,
-senior officer,offering_workplace_benefits_for_engaging_percent,
-other,offering_workplace_benefits_for_engaging_percent,
+type_of_person_responsible,section,types_of_behaviour,percent
+canadian armed forces member(s),type of person responsible,percent,97.0
+canadian armed forces member(s),type of person responsible,sexual jokes > percent,95.0
+canadian armed forces member(s),type of person responsible,unwanted sexual attention > percent,94.0
+canadian armed forces member(s),type of person responsible,inappropriate sexual comments > percent,96.0
+canadian armed forces member(s),type of person responsible,inappropriate discussion about sex life > percent,97.0
+canadian armed forces member(s),type of person responsible,"displaying, showing, or sending sexually > percent",91.0
+canadian armed forces member(s),type of person responsible,taking or posting inappropriate or sexual > percent,94.0
+canadian armed forces member(s),type of person responsible,indecent exposure or inappropriate display > percent,95.0
+canadian armed forces member(s),type of person responsible,repeated pressure from the same person for > percent,94.0
+canadian armed forces member(s),type of person responsible,unwelcome physical contact or getting to > percent,
+canadian armed forces member(s),type of person responsible,offering workplace benefits for engaging > percent,
+foreign military member(s),type of person responsible,percent,4.6
+foreign military member(s),type of person responsible,sexual jokes > percent,5.2
+foreign military member(s),type of person responsible,unwanted sexual attention > percent,3.7
+foreign military member(s),type of person responsible,inappropriate sexual comments > percent,3.2
+foreign military member(s),type of person responsible,inappropriate discussion about sex life > percent,
+foreign military member(s),type of person responsible,"displaying, showing, or sending sexually > percent",
+foreign military member(s),type of person responsible,taking or posting inappropriate or sexual > percent,
+foreign military member(s),type of person responsible,indecent exposure or inappropriate display > percent,
+foreign military member(s),type of person responsible,repeated pressure from the same person for > percent,
+foreign military member(s),type of person responsible,unwelcome physical contact or getting to > percent,
+foreign military member(s),type of person responsible,offering workplace benefits for engaging > percent,
+department of national defence civilian(s) or contractor(s),type of person responsible,percent,14.0
+department of national defence civilian(s) or contractor(s),type of person responsible,sexual jokes > percent,9.8
+department of national defence civilian(s) or contractor(s),type of person responsible,unwanted sexual attention > percent,9.2
+department of national defence civilian(s) or contractor(s),type of person responsible,inappropriate sexual comments > percent,10.0
+department of national defence civilian(s) or contractor(s),type of person responsible,inappropriate discussion about sex life > percent,7.9
+department of national defence civilian(s) or contractor(s),type of person responsible,"displaying, showing, or sending sexually > percent",
+department of national defence civilian(s) or contractor(s),type of person responsible,taking or posting inappropriate or sexual > percent,
+department of national defence civilian(s) or contractor(s),type of person responsible,indecent exposure or inappropriate display > percent,7.8
+department of national defence civilian(s) or contractor(s),type of person responsible,repeated pressure from the same person for > percent,5.7
+department of national defence civilian(s) or contractor(s),type of person responsible,unwelcome physical contact or getting to > percent,
+department of national defence civilian(s) or contractor(s),type of person responsible,offering workplace benefits for engaging > percent,
+other,type of person responsible,percent,12.0
+other,type of person responsible,sexual jokes > percent,5.7
+other,type of person responsible,unwanted sexual attention > percent,6.9
+other,type of person responsible,inappropriate sexual comments > percent,8.2
+other,type of person responsible,inappropriate discussion about sex life > percent,9.1
+other,type of person responsible,"displaying, showing, or sending sexually > percent",
+other,type of person responsible,taking or posting inappropriate or sexual > percent,
+other,type of person responsible,indecent exposure or inappropriate display > percent,
+other,type of person responsible,repeated pressure from the same person for > percent,3.4
+other,type of person responsible,unwelcome physical contact or getting to > percent,
+other,type of person responsible,offering workplace benefits for engaging > percent,
+lone,number of persons responsible,percent,18.0
+lone,number of persons responsible,sexual jokes > percent,47.0
+lone,number of persons responsible,unwanted sexual attention > percent,36.0
+lone,number of persons responsible,inappropriate sexual comments > percent,23.0
+lone,number of persons responsible,inappropriate discussion about sex life > percent,34.0
+lone,number of persons responsible,"displaying, showing, or sending sexually > percent",
+lone,number of persons responsible,taking or posting inappropriate or sexual > percent,56.0
+lone,number of persons responsible,indecent exposure or inappropriate display > percent,67.0
+lone,number of persons responsible,repeated pressure from the same person for > percent,69.0
+lone,number of persons responsible,unwelcome physical contact or getting to > percent,
+lone,number of persons responsible,offering workplace benefits for engaging > percent,
+two or more,number of persons responsible,percent,29.0
+two or more,number of persons responsible,sexual jokes > percent,25.0
+two or more,number of persons responsible,unwanted sexual attention > percent,28.0
+two or more,number of persons responsible,inappropriate sexual comments > percent,38.0
+two or more,number of persons responsible,inappropriate discussion about sex life > percent,34.0
+two or more,number of persons responsible,"displaying, showing, or sending sexually > percent",
+two or more,number of persons responsible,taking or posting inappropriate or sexual > percent,23.0
+two or more,number of persons responsible,indecent exposure or inappropriate display > percent,17.0
+two or more,number of persons responsible,repeated pressure from the same person for > percent,17.0
+two or more,number of persons responsible,unwelcome physical contact or getting to > percent,
+two or more,number of persons responsible,offering workplace benefits for engaging > percent,
+"varied - sometimes one person, other times multiple people",number of persons responsible,percent,39.0
+"varied - sometimes one person, other times multiple people",number of persons responsible,sexual jokes > percent,22.0
+"varied - sometimes one person, other times multiple people",number of persons responsible,unwanted sexual attention > percent,26.0
+"varied - sometimes one person, other times multiple people",number of persons responsible,inappropriate sexual comments > percent,29.0
+"varied - sometimes one person, other times multiple people",number of persons responsible,inappropriate discussion about sex life > percent,24.0
+"varied - sometimes one person, other times multiple people",number of persons responsible,"displaying, showing, or sending sexually > percent",
+"varied - sometimes one person, other times multiple people",number of persons responsible,taking or posting inappropriate or sexual > percent,17.0
+"varied - sometimes one person, other times multiple people",number of persons responsible,indecent exposure or inappropriate display > percent,11.0
+"varied - sometimes one person, other times multiple people",number of persons responsible,repeated pressure from the same person for > percent,8.2
+"varied - sometimes one person, other times multiple people",number of persons responsible,unwelcome physical contact or getting to > percent,
+"varied - sometimes one person, other times multiple people",number of persons responsible,offering workplace benefits for engaging > percent,
+always men,sex of person responsible,percent,42.0
+always men,sex of person responsible,sexual jokes > percent,75.0
+always men,sex of person responsible,unwanted sexual attention > percent,62.0
+always men,sex of person responsible,inappropriate sexual comments > percent,50.0
+always men,sex of person responsible,inappropriate discussion about sex life > percent,63.0
+always men,sex of person responsible,"displaying, showing, or sending sexually > percent",
+always men,sex of person responsible,taking or posting inappropriate or sexual > percent,73.0
+always men,sex of person responsible,indecent exposure or inappropriate display > percent,80.0
+always men,sex of person responsible,repeated pressure from the same person for > percent,74.0
+always men,sex of person responsible,unwelcome physical contact or getting to > percent,
+always men,sex of person responsible,offering workplace benefits for engaging > percent,
+always women,sex of person responsible,percent,3.4
+always women,sex of person responsible,sexual jokes > percent,9.6
+always women,sex of person responsible,unwanted sexual attention > percent,6.0
+always women,sex of person responsible,inappropriate sexual comments > percent,4.1
+always women,sex of person responsible,inappropriate discussion about sex life > percent,
+always women,sex of person responsible,"displaying, showing, or sending sexually > percent",
+always women,sex of person responsible,taking or posting inappropriate or sexual > percent,
+always women,sex of person responsible,indecent exposure or inappropriate display > percent,9.0
+always women,sex of person responsible,repeated pressure from the same person for > percent,13.0
+always women,sex of person responsible,unwelcome physical contact or getting to > percent,
+always women,sex of person responsible,offering workplace benefits for engaging > percent,
+combination of men and women,sex of person responsible,percent,54.0
+combination of men and women,sex of person responsible,sexual jokes > percent,16.0
+combination of men and women,sex of person responsible,unwanted sexual attention > percent,29.0
+combination of men and women,sex of person responsible,inappropriate sexual comments > percent,44.0
+combination of men and women,sex of person responsible,inappropriate discussion about sex life > percent,32.0
+combination of men and women,sex of person responsible,"displaying, showing, or sending sexually > percent",
+combination of men and women,sex of person responsible,taking or posting inappropriate or sexual > percent,22.0
+combination of men and women,sex of person responsible,indecent exposure or inappropriate display > percent,10.0
+combination of men and women,sex of person responsible,repeated pressure from the same person for > percent,12.0
+combination of men and women,sex of person responsible,unwelcome physical contact or getting to > percent,
+combination of men and women,sex of person responsible,offering workplace benefits for engaging > percent,
+supervisor or higher rank,relationship to targeted member,percent,52.0
+supervisor or higher rank,relationship to targeted member,sexual jokes > percent,50.0
+supervisor or higher rank,relationship to targeted member,unwanted sexual attention > percent,48.0
+supervisor or higher rank,relationship to targeted member,inappropriate sexual comments > percent,50.0
+supervisor or higher rank,relationship to targeted member,inappropriate discussion about sex life > percent,39.0
+supervisor or higher rank,relationship to targeted member,"displaying, showing, or sending sexually > percent",
+supervisor or higher rank,relationship to targeted member,taking or posting inappropriate or sexual > percent,19.0
+supervisor or higher rank,relationship to targeted member,indecent exposure or inappropriate display > percent,49.0
+supervisor or higher rank,relationship to targeted member,repeated pressure from the same person for > percent,48.0
+supervisor or higher rank,relationship to targeted member,unwelcome physical contact or getting to > percent,
+supervisor or higher rank,relationship to targeted member,offering workplace benefits for engaging > percent,
+peer,relationship to targeted member,percent,80.0
+peer,relationship to targeted member,sexual jokes > percent,56.0
+peer,relationship to targeted member,unwanted sexual attention > percent,67.0
+peer,relationship to targeted member,inappropriate sexual comments > percent,76.0
+peer,relationship to targeted member,inappropriate discussion about sex life > percent,73.0
+peer,relationship to targeted member,"displaying, showing, or sending sexually > percent",
+peer,relationship to targeted member,taking or posting inappropriate or sexual > percent,71.0
+peer,relationship to targeted member,indecent exposure or inappropriate display > percent,51.0
+peer,relationship to targeted member,repeated pressure from the same person for > percent,56.0
+peer,relationship to targeted member,unwelcome physical contact or getting to > percent,
+peer,relationship to targeted member,offering workplace benefits for engaging > percent,
+subordinate - either in or outside chain of command,relationship to targeted member,percent,30.0
+subordinate - either in or outside chain of command,relationship to targeted member,sexual jokes > percent,20.0
+subordinate - either in or outside chain of command,relationship to targeted member,unwanted sexual attention > percent,22.0
+subordinate - either in or outside chain of command,relationship to targeted member,inappropriate sexual comments > percent,28.0
+subordinate - either in or outside chain of command,relationship to targeted member,inappropriate discussion about sex life > percent,25.0
+subordinate - either in or outside chain of command,relationship to targeted member,"displaying, showing, or sending sexually > percent",
+subordinate - either in or outside chain of command,relationship to targeted member,taking or posting inappropriate or sexual > percent,25.0
+subordinate - either in or outside chain of command,relationship to targeted member,indecent exposure or inappropriate display > percent,17.0
+subordinate - either in or outside chain of command,relationship to targeted member,repeated pressure from the same person for > percent,17.0
+subordinate - either in or outside chain of command,relationship to targeted member,unwelcome physical contact or getting to > percent,
+subordinate - either in or outside chain of command,relationship to targeted member,offering workplace benefits for engaging > percent,
+other,relationship to targeted member,percent,14.0
+other,relationship to targeted member,sexual jokes > percent,10.0
+other,relationship to targeted member,unwanted sexual attention > percent,8.9
+other,relationship to targeted member,inappropriate sexual comments > percent,9.5
+other,relationship to targeted member,inappropriate discussion about sex life > percent,8.4
+other,relationship to targeted member,"displaying, showing, or sending sexually > percent",
+other,relationship to targeted member,taking or posting inappropriate or sexual > percent,
+other,relationship to targeted member,indecent exposure or inappropriate display > percent,9.4
+other,relationship to targeted member,repeated pressure from the same person for > percent,5.7
+other,relationship to targeted member,unwelcome physical contact or getting to > percent,
+other,relationship to targeted member,offering workplace benefits for engaging > percent,
+junior non-commissioned member,rank of person responsible,percent,84.0
+junior non-commissioned member,rank of person responsible,sexual jokes > percent,73.0
+junior non-commissioned member,rank of person responsible,unwanted sexual attention > percent,79.0
+junior non-commissioned member,rank of person responsible,inappropriate sexual comments > percent,83.0
+junior non-commissioned member,rank of person responsible,inappropriate discussion about sex life > percent,91.0
+junior non-commissioned member,rank of person responsible,"displaying, showing, or sending sexually > percent",
+junior non-commissioned member,rank of person responsible,taking or posting inappropriate or sexual > percent,93.0
+junior non-commissioned member,rank of person responsible,indecent exposure or inappropriate display > percent,77.0
+junior non-commissioned member,rank of person responsible,repeated pressure from the same person for > percent,69.0
+junior non-commissioned member,rank of person responsible,unwelcome physical contact or getting to > percent,57.0
+junior non-commissioned member,rank of person responsible,offering workplace benefits for engaging > percent,
+senior non-commissioned member,rank of person responsible,percent,49.0
+senior non-commissioned member,rank of person responsible,sexual jokes > percent,39.0
+senior non-commissioned member,rank of person responsible,unwanted sexual attention > percent,39.0
+senior non-commissioned member,rank of person responsible,inappropriate sexual comments > percent,39.0
+senior non-commissioned member,rank of person responsible,inappropriate discussion about sex life > percent,32.0
+senior non-commissioned member,rank of person responsible,"displaying, showing, or sending sexually > percent",
+senior non-commissioned member,rank of person responsible,taking or posting inappropriate or sexual > percent,12.0
+senior non-commissioned member,rank of person responsible,indecent exposure or inappropriate display > percent,24.0
+senior non-commissioned member,rank of person responsible,repeated pressure from the same person for > percent,26.0
+senior non-commissioned member,rank of person responsible,unwelcome physical contact or getting to > percent,59.0
+senior non-commissioned member,rank of person responsible,offering workplace benefits for engaging > percent,
+junior officer,rank of person responsible,percent,29.0
+junior officer,rank of person responsible,sexual jokes > percent,20.0
+junior officer,rank of person responsible,unwanted sexual attention > percent,20.0
+junior officer,rank of person responsible,inappropriate sexual comments > percent,25.0
+junior officer,rank of person responsible,inappropriate discussion about sex life > percent,17.0
+junior officer,rank of person responsible,"displaying, showing, or sending sexually > percent",
+junior officer,rank of person responsible,taking or posting inappropriate or sexual > percent,11.0
+junior officer,rank of person responsible,indecent exposure or inappropriate display > percent,18.0
+junior officer,rank of person responsible,repeated pressure from the same person for > percent,14.0
+junior officer,rank of person responsible,unwelcome physical contact or getting to > percent,
+junior officer,rank of person responsible,offering workplace benefits for engaging > percent,
+senior officer,rank of person responsible,percent,13.0
+senior officer,rank of person responsible,sexual jokes > percent,11.0
+senior officer,rank of person responsible,unwanted sexual attention > percent,7.3
+senior officer,rank of person responsible,inappropriate sexual comments > percent,11.0
+senior officer,rank of person responsible,inappropriate discussion about sex life > percent,7.1
+senior officer,rank of person responsible,"displaying, showing, or sending sexually > percent",
+senior officer,rank of person responsible,taking or posting inappropriate or sexual > percent,
+senior officer,rank of person responsible,indecent exposure or inappropriate display > percent,6.3
+senior officer,rank of person responsible,repeated pressure from the same person for > percent,9.3
+senior officer,rank of person responsible,unwelcome physical contact or getting to > percent,
+senior officer,rank of person responsible,offering workplace benefits for engaging > percent,
+other,rank of person responsible,percent,5.4
+other,rank of person responsible,sexual jokes > percent,
+other,rank of person responsible,unwanted sexual attention > percent,4.5
+other,rank of person responsible,inappropriate sexual comments > percent,4.3
+other,rank of person responsible,inappropriate discussion about sex life > percent,
+other,rank of person responsible,"displaying, showing, or sending sexually > percent",
+other,rank of person responsible,taking or posting inappropriate or sexual > percent,
+other,rank of person responsible,indecent exposure or inappropriate display > percent,
+other,rank of person responsible,repeated pressure from the same person for > percent,
+other,rank of person responsible,unwelcome physical contact or getting to > percent,
+other,rank of person responsible,offering workplace benefits for engaging > percent,

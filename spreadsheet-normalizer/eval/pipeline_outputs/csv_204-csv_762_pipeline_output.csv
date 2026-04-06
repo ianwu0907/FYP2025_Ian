@@ -1,4 +1,4 @@
-source_type,year,value
+energy_type,year,production_value
 Hydro power,2000,1150
 Thermal,2000,685
 Other renewables,2000,3

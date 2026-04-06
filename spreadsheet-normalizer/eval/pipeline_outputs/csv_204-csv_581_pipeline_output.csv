@@ -1,4 +1,4 @@
-demographic_group,year,percentage
+demographic_group,year,voter_count
 all voters,1948,50.0
 White,1948,50.0
 Black,1948,50.0
@@ -9,7 +9,6 @@ Professional & Business,1948,19.0
 White Collar,1948,47.0
 Manual worker,1948,66.0
 Farmer,1948,60.0
-Not union,1948,42.0
 Protestant,1948,43.0
 Catholic,1948,62.0
 East,1948,48.0
@@ -28,6 +27,7 @@ Manual worker,1952,55.0
 Farmer,1952,33.0
 Protestant,1952,37.0
 Catholic,1952,56.0
+Republican,1952,8.0
 Independent,1952,35.0
 Democrat,1952,77.0
 East,1952,45.0
@@ -44,9 +44,9 @@ Professional & Business,1956,32.0
 White Collar,1956,37.0
 Manual worker,1956,50.0
 Farmer,1956,46.0
-Not union,1956,35.0
 Protestant,1956,37.0
 Catholic,1956,51.0
+Republican,1956,4.0
 Independent,1956,30.0
 Democrat,1956,85.0
 East,1956,40.0
@@ -63,9 +63,9 @@ Professional & Business,1960,42.0
 White Collar,1960,48.0
 Manual worker,1960,60.0
 Farmer,1960,48.0
-Not union,1960,44.0
 Protestant,1960,38.0
 Catholic,1960,78.0
+Republican,1960,5.0
 Independent,1960,43.0
 Democrat,1960,84.0
 East,1960,53.0
@@ -82,9 +82,9 @@ Professional & Business,1964,54.0
 White Collar,1964,57.0
 Manual worker,1964,71.0
 Farmer,1964,53.0
-Not union,1964,56.0
 Protestant,1964,55.0
 Catholic,1964,76.0
+Republican,1964,20.0
 Independent,1964,56.0
 Democrat,1964,87.0
 East,1964,68.0
