@@ -1,5 +1,4 @@
-region_of_birth_or_ancestry,country,low_income_rate
-region of birth:,caribbean and latin america,24.3
+immigrant_family_type,region_or_country,low_income_rate
 region of birth:,africa,29.5
 region of birth:,country of birth:,..
 region of birth:,jamaica,25.1
@@ -28,18 +27,33 @@ region of birth:,ghana,28.4
 region of birth:,cote d'ivoire,13.2
 region of birth:,senegal,10.9
 region of birth:,guinea,21.0
-region of ancestry:,caribbean and latin america,25.0
-region of ancestry:,africa,27.0
-region of ancestry:,country of ancestry:,..
-region of ancestry:,jamaica,28.6
-region of ancestry:,haiti,15.2
-region of ancestry:,trinidad and tobago,21.6
-region of ancestry:,barbados,18.3
-region of ancestry:,guyana,28.2
-region of ancestry:,saint vincent and the grenadines,22.2
-region of ancestry:,grenada,24.0
-region of ancestry:,ghana,33.1
-region of ancestry:,nigeria,18.9
-region of ancestry:,united states,35.2
-region of ancestry:,united kingdom,32.1
-region of ancestry:,canada,26.7
+region of birth:,region of ancestry:,..
+caribbean and latin america,country of birth:,..
+caribbean and latin america,jamaica,25.1
+caribbean and latin america,haiti,17.5
+caribbean and latin america,trinidad and tobago,24.5
+caribbean and latin america,guyana,25.0
+caribbean and latin america,barbados,27.7
+caribbean and latin america,saint vincent and the grenadines,48.6
+caribbean and latin america,grenada,33.7
+caribbean and latin america,saint lucia,41.4
+caribbean and latin america,united kingdom,14.8
+caribbean and latin america,united states,22.4
+caribbean and latin america,ethiopia,35.5
+caribbean and latin america,somalia,47.5
+caribbean and latin america,eritrea,34.1
+caribbean and latin america,sudan,53.1
+caribbean and latin america,south sudan,46.1
+caribbean and latin america,burundi,25.3
+caribbean and latin america,kenya,22.6
+caribbean and latin america,zimbabwe,18.7
+caribbean and latin america,rwanda,17.5
+caribbean and latin america,democratic republic of the congo,27.4
+caribbean and latin america,cameroon,13.3
+caribbean and latin america,nigeria,22.3
+caribbean and latin america,ghana,28.4
+caribbean and latin america,cote d'ivoire,13.2
+caribbean and latin america,senegal,10.9
+caribbean and latin america,guinea,21.0
+caribbean and latin america,region of ancestry:,..
+caribbean and latin america,caribbean and latin america,25.0

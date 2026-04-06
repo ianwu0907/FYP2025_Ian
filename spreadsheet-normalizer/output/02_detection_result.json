@@ -1,26 +1,32 @@
 {
   "physical": {
     "shape": {
-      "rows": 32,
-      "cols": 5
+      "rows": 59,
+      "cols": 8
     },
     "actual_column_names": [
-      "region or country of birth",
-      "women",
+      "Total Investments in Fixed Assets from 1978 to 2017 in Shandong Province",
+      "Unnamed: 1",
       "Unnamed: 2",
-      "men",
-      "Unnamed: 4"
+      "Unnamed: 3",
+      "Unnamed: 4",
+      "Unnamed: 5",
+      "Unnamed: 6",
+      "Unnamed: 7"
     ],
-    "header_depth": 2,
-    "data_start_row": 2,
-    "data_end_row": 31,
-    "data_rows": 30,
+    "header_depth": 10,
+    "data_start_row": 10,
+    "data_end_row": 49,
+    "data_rows": 40,
     "column_dtype_profile": {
-      "0": "text",
+      "0": "numeric",
       "1": "numeric",
       "2": "numeric",
       "3": "numeric",
-      "4": "numeric"
+      "4": "numeric",
+      "5": "numeric",
+      "6": "numeric",
+      "7": "numeric"
     },
     "blank_rows_in_data": [],
     "bilingual_row_candidate": false,
@@ -30,29 +36,23 @@
   "irregularities": [
     {
       "label": "MULTI_LEVEL_HEADER",
-      "evidence": "Row 0 contains headers that span multiple columns, including both \"university degree only\" and \"non-university or university postsecondary diploma.\"",
-      "details": "The headers are structured hierarchically with Row 0 as the top-level header and Row 1 providing specific labels for values, indicating a multi-level structure."
+      "evidence": "Row 3 and Row 4 headers, where Row 3 has \"Year\" and \"Total Investment in Fixed Assets\", while Row 4 has sub-labels under those categories.",
+      "details": "The headers are structured in multiple levels, indicating a hierarchy where the first row has broad categories and the second row has sub-categories for different types of investments."
     },
     {
-      "label": "EMBEDDED_DIMENSION_IN_COLUMN",
-      "evidence": "The column headers in Row 0 contain multiple dimensions encoded using a delimiter \" or \".",
-      "details": "The headers can be interpreted as including both an educational attainment type and the category of degree, e.g., \"non-university or university postsecondary diploma\"."
+      "label": "WIDE_FORMAT",
+      "evidence": "Columns 1 to 6 contain values of the same nature (Total Investment in various sectors) spread across multiple headers.",
+      "details": "The column headers represent detailed breakdowns (e.g., State-owned Units, Individual Economy) of the same variable (Total Investment), indicating a wide format structure as the column headers could be consolidated into a single column without loss of information."
     },
     {
-      "label": "IMPLICIT_AGGREGATION_ROWS",
-      "evidence": "Row 5 contains the label \"country of birth,\" which may aggregate the more specific country rows beneath it.",
-      "details": "This implies that the data from Row 6 to Row 31 are child-level data under the country grouping defined in Row 5."
-    },
-    {
-      "label": "METADATA_ROWS",
-      "evidence": "Row 5 appears to be a non-data row that acts as a section header while not containing any numeric data.",
-      "details": "It interrupts the flow of regular data rows (which contain numeric values), designating a transition in the grouping of the subsequent data rows."
+      "label": "AGGREGATE_COLUMNS",
+      "evidence": "The data in Row 3 indicates that totals may be aggregating sub-categories from Row 4 and beyond (e.g., Total Investment may aggregate State-owned Economy and others).",
+      "details": "Columns serve as aggregations (like totals) across various categories (state-owned, collective-owned, etc.) hence they function as summary columns for the data in subsequent rows."
     }
   ],
   "labels": [
     "MULTI_LEVEL_HEADER",
-    "EMBEDDED_DIMENSION_IN_COLUMN",
-    "IMPLICIT_AGGREGATION_ROWS",
-    "METADATA_ROWS"
+    "WIDE_FORMAT",
+    "AGGREGATE_COLUMNS"
   ]
 }

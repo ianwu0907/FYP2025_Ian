@@ -1,25 +1,169 @@
-statistical_date,terminal_type,source,traffic_source,visitors,number_of_buyers,order_conversion_rate,paid_buyers,payment_conversion_rate,payment_amount,uv_value
-2019-10-01 ~ 2019-10-31,Wireless End,Direct Train,Paid Traffic,799,26,0.0325,22,0.0275,827.55,1.04
-2019-10-01 ~ 2019-10-31,Wireless End,Direct Access,Self-access,1,0,0.0,0,0.0,0.0,0.0
-2019-10-01 ~ 2019-10-31,Wireless End,Alipay Mini Program - Daily Must Grab,Free traffic within Taobao,18,3,0.1667,3,0.1667,61.68,3.43
-2019-10-01 ~ 2019-10-31,Wireless End,My Taobao,Self-access,715,187,0.2615,174,0.2434,7036.09,9.84
-2019-10-01 ~ 2019-10-31,Wireless End,Free traffic within Taobao (others),Free traffic within Taobao,705,76,0.1078,72,0.1021,2951.97,4.19
-2019-10-01 ~ 2019-10-31,Wireless End,Taobao Guest,Paid Traffic,458,49,0.107,49,0.107,1603.46,3.5
-2019-10-01 ~ 2019-10-31,Wireless End,Hand Taobao Find Similar,Free traffic within Taobao,62,9,0.1452,8,0.129,393.05,6.34
-2019-10-01 ~ 2019-10-31,Wireless End,Hand-tao Message Center,Free traffic within Taobao,9,0,0.0,0,0.0,0.0,0.0
-2019-10-01 ~ 2019-10-31,Wireless End,My Taobao Evaluation,Free traffic within Taobao,9,0,0.0,0,0.0,0.0,0.0
-2019-10-01 ~ 2019-10-31,Wireless End,Hand-to-Hand Q&A,Free traffic within Taobao,17,5,0.2941,5,0.2941,150.3,8.84
-2019-10-01 ~ 2019-10-31,Wireless End,Hand-tao Weitao,Free traffic within Taobao,143,4,0.028,4,0.028,204.5,1.43
-2019-10-01 ~ 2019-10-31,Wireless End,Handy Taobao Wangxin,Free traffic within Taobao,38,17,0.4474,17,0.4474,759.27,19.98
-2019-10-01 ~ 2019-10-31,Wireless End,Hand-tao Tao Gold Coins,Free traffic within Taobao,210,1,0.0048,1,0.0048,24.5,0.12
-2019-10-01 ~ 2019-10-31,Wireless End,Hand-to-hand Taobao Live,Free traffic within Taobao,1,0,0.0,0,0.0,0.0,0.0
-2019-10-01 ~ 2019-10-31,Wireless End,Hand-tao Search,Free traffic within Taobao,3448,222,0.0644,209,0.0606,7745.35,2.25
-2019-10-01 ~ 2019-10-31,Wireless End,Hand-tao Homepage,Free traffic within Taobao,1298,7,0.0054,6,0.0046,154.82,0.12
-2019-10-01 ~ 2019-10-31,Wireless End,Hand Taobao Scan,Free traffic within Taobao,5,0,0.0,0,0.0,0.0,0.0
-2019-10-01 ~ 2019-10-31,Wireless End,Hand-tao Other Stores' Product Details,Free traffic within Taobao,420,46,0.1095,45,0.1071,1629.96,3.88
-2019-10-01 ~ 2019-10-31,Wireless End,Hand Taobao Other Stores,Free traffic within Taobao,2,1,0.5,1,0.5,39.8,19.9
-2019-10-01 ~ 2019-10-31,Wireless End,Hand-taobao Pailitao,Free traffic within Taobao,291,17,0.0584,17,0.0584,609.34,2.09
-2019-10-01 ~ 2019-10-31,Wireless End,Hand Taobao Aggregation,Free traffic within Taobao,40,0,0.0,0,0.0,0.0,0.0
-2019-10-01 ~ 2019-10-31,Wireless End,Hand Cat Product Details,Free traffic within Taobao,1,0,0.0,0,0.0,0.0,0.0
-2019-10-01 ~ 2019-10-31,Wireless End,Other Taobao Stores,Free traffic within Taobao,1,0,0.0,0,0.0,0.0,0.0
-2019-10-01 ~ 2019-10-31,Wireless End,Shopping Cart,Self-access,615,175,0.2846,167,0.2715,6334.33,10.3
+statistical_date,terminal_type,source_details,traffic_source,metric,value
+2019-10-01 ~ 2019-10-31,Wireless End,Direct Train,Paid Traffic,Visitors,799.0
+2019-10-01 ~ 2019-10-31,Wireless End,Direct Access,Self-access,Visitors,1.0
+2019-10-01 ~ 2019-10-31,Wireless End,Alipay Mini Program - Daily Must Grab,Free traffic within Taobao,Visitors,18.0
+2019-10-01 ~ 2019-10-31,Wireless End,My Taobao,Self-access,Visitors,715.0
+2019-10-01 ~ 2019-10-31,Wireless End,Free traffic within Taobao (others),Free traffic within Taobao,Visitors,705.0
+2019-10-01 ~ 2019-10-31,Wireless End,Taobao Guest,Paid Traffic,Visitors,458.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand Taobao Find Similar,Free traffic within Taobao,Visitors,62.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-tao Message Center,Free traffic within Taobao,Visitors,9.0
+2019-10-01 ~ 2019-10-31,Wireless End,My Taobao Evaluation,Free traffic within Taobao,Visitors,9.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-to-Hand Q&A,Free traffic within Taobao,Visitors,17.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-tao Weitao,Free traffic within Taobao,Visitors,143.0
+2019-10-01 ~ 2019-10-31,Wireless End,Handy Taobao Wangxin,Free traffic within Taobao,Visitors,38.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-tao Tao Gold Coins,Free traffic within Taobao,Visitors,210.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-to-hand Taobao Live,Free traffic within Taobao,Visitors,1.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-tao Search,Free traffic within Taobao,Visitors,3448.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-tao Homepage,Free traffic within Taobao,Visitors,1298.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand Taobao Scan,Free traffic within Taobao,Visitors,5.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-tao Other Stores' Product Details,Free traffic within Taobao,Visitors,420.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand Taobao Other Stores,Free traffic within Taobao,Visitors,2.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-taobao Pailitao,Free traffic within Taobao,Visitors,291.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand Taobao Aggregation,Free traffic within Taobao,Visitors,40.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand Cat Product Details,Free traffic within Taobao,Visitors,1.0
+2019-10-01 ~ 2019-10-31,Wireless End,Other Taobao Stores,Free traffic within Taobao,Visitors,1.0
+2019-10-01 ~ 2019-10-31,Wireless End,Shopping Cart,Self-access,Visitors,615.0
+2019-10-01 ~ 2019-10-31,Wireless End,Direct Train,Paid Traffic,Number of buyers who placed orders,26.0
+2019-10-01 ~ 2019-10-31,Wireless End,Direct Access,Self-access,Number of buyers who placed orders,0.0
+2019-10-01 ~ 2019-10-31,Wireless End,Alipay Mini Program - Daily Must Grab,Free traffic within Taobao,Number of buyers who placed orders,3.0
+2019-10-01 ~ 2019-10-31,Wireless End,My Taobao,Self-access,Number of buyers who placed orders,187.0
+2019-10-01 ~ 2019-10-31,Wireless End,Free traffic within Taobao (others),Free traffic within Taobao,Number of buyers who placed orders,76.0
+2019-10-01 ~ 2019-10-31,Wireless End,Taobao Guest,Paid Traffic,Number of buyers who placed orders,49.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand Taobao Find Similar,Free traffic within Taobao,Number of buyers who placed orders,9.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-tao Message Center,Free traffic within Taobao,Number of buyers who placed orders,0.0
+2019-10-01 ~ 2019-10-31,Wireless End,My Taobao Evaluation,Free traffic within Taobao,Number of buyers who placed orders,0.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-to-Hand Q&A,Free traffic within Taobao,Number of buyers who placed orders,5.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-tao Weitao,Free traffic within Taobao,Number of buyers who placed orders,4.0
+2019-10-01 ~ 2019-10-31,Wireless End,Handy Taobao Wangxin,Free traffic within Taobao,Number of buyers who placed orders,17.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-tao Tao Gold Coins,Free traffic within Taobao,Number of buyers who placed orders,1.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-to-hand Taobao Live,Free traffic within Taobao,Number of buyers who placed orders,0.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-tao Search,Free traffic within Taobao,Number of buyers who placed orders,222.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-tao Homepage,Free traffic within Taobao,Number of buyers who placed orders,7.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand Taobao Scan,Free traffic within Taobao,Number of buyers who placed orders,0.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-tao Other Stores' Product Details,Free traffic within Taobao,Number of buyers who placed orders,46.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand Taobao Other Stores,Free traffic within Taobao,Number of buyers who placed orders,1.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-taobao Pailitao,Free traffic within Taobao,Number of buyers who placed orders,17.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand Taobao Aggregation,Free traffic within Taobao,Number of buyers who placed orders,0.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand Cat Product Details,Free traffic within Taobao,Number of buyers who placed orders,0.0
+2019-10-01 ~ 2019-10-31,Wireless End,Other Taobao Stores,Free traffic within Taobao,Number of buyers who placed orders,0.0
+2019-10-01 ~ 2019-10-31,Wireless End,Shopping Cart,Self-access,Number of buyers who placed orders,175.0
+2019-10-01 ~ 2019-10-31,Wireless End,Direct Train,Paid Traffic,Order conversion rate,0.0325
+2019-10-01 ~ 2019-10-31,Wireless End,Direct Access,Self-access,Order conversion rate,0.0
+2019-10-01 ~ 2019-10-31,Wireless End,Alipay Mini Program - Daily Must Grab,Free traffic within Taobao,Order conversion rate,0.1667
+2019-10-01 ~ 2019-10-31,Wireless End,My Taobao,Self-access,Order conversion rate,0.2615
+2019-10-01 ~ 2019-10-31,Wireless End,Free traffic within Taobao (others),Free traffic within Taobao,Order conversion rate,0.1078
+2019-10-01 ~ 2019-10-31,Wireless End,Taobao Guest,Paid Traffic,Order conversion rate,0.107
+2019-10-01 ~ 2019-10-31,Wireless End,Hand Taobao Find Similar,Free traffic within Taobao,Order conversion rate,0.1452
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-tao Message Center,Free traffic within Taobao,Order conversion rate,0.0
+2019-10-01 ~ 2019-10-31,Wireless End,My Taobao Evaluation,Free traffic within Taobao,Order conversion rate,0.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-to-Hand Q&A,Free traffic within Taobao,Order conversion rate,0.2941
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-tao Weitao,Free traffic within Taobao,Order conversion rate,0.028
+2019-10-01 ~ 2019-10-31,Wireless End,Handy Taobao Wangxin,Free traffic within Taobao,Order conversion rate,0.4474
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-tao Tao Gold Coins,Free traffic within Taobao,Order conversion rate,0.0048
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-to-hand Taobao Live,Free traffic within Taobao,Order conversion rate,0.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-tao Search,Free traffic within Taobao,Order conversion rate,0.0644
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-tao Homepage,Free traffic within Taobao,Order conversion rate,0.0054
+2019-10-01 ~ 2019-10-31,Wireless End,Hand Taobao Scan,Free traffic within Taobao,Order conversion rate,0.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-tao Other Stores' Product Details,Free traffic within Taobao,Order conversion rate,0.1095
+2019-10-01 ~ 2019-10-31,Wireless End,Hand Taobao Other Stores,Free traffic within Taobao,Order conversion rate,0.5
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-taobao Pailitao,Free traffic within Taobao,Order conversion rate,0.0584
+2019-10-01 ~ 2019-10-31,Wireless End,Hand Taobao Aggregation,Free traffic within Taobao,Order conversion rate,0.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand Cat Product Details,Free traffic within Taobao,Order conversion rate,0.0
+2019-10-01 ~ 2019-10-31,Wireless End,Other Taobao Stores,Free traffic within Taobao,Order conversion rate,0.0
+2019-10-01 ~ 2019-10-31,Wireless End,Shopping Cart,Self-access,Order conversion rate,0.2846
+2019-10-01 ~ 2019-10-31,Wireless End,Direct Train,Paid Traffic,Paid Buyers,22.0
+2019-10-01 ~ 2019-10-31,Wireless End,Direct Access,Self-access,Paid Buyers,0.0
+2019-10-01 ~ 2019-10-31,Wireless End,Alipay Mini Program - Daily Must Grab,Free traffic within Taobao,Paid Buyers,3.0
+2019-10-01 ~ 2019-10-31,Wireless End,My Taobao,Self-access,Paid Buyers,174.0
+2019-10-01 ~ 2019-10-31,Wireless End,Free traffic within Taobao (others),Free traffic within Taobao,Paid Buyers,72.0
+2019-10-01 ~ 2019-10-31,Wireless End,Taobao Guest,Paid Traffic,Paid Buyers,49.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand Taobao Find Similar,Free traffic within Taobao,Paid Buyers,8.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-tao Message Center,Free traffic within Taobao,Paid Buyers,0.0
+2019-10-01 ~ 2019-10-31,Wireless End,My Taobao Evaluation,Free traffic within Taobao,Paid Buyers,0.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-to-Hand Q&A,Free traffic within Taobao,Paid Buyers,5.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-tao Weitao,Free traffic within Taobao,Paid Buyers,4.0
+2019-10-01 ~ 2019-10-31,Wireless End,Handy Taobao Wangxin,Free traffic within Taobao,Paid Buyers,17.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-tao Tao Gold Coins,Free traffic within Taobao,Paid Buyers,1.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-to-hand Taobao Live,Free traffic within Taobao,Paid Buyers,0.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-tao Search,Free traffic within Taobao,Paid Buyers,209.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-tao Homepage,Free traffic within Taobao,Paid Buyers,6.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand Taobao Scan,Free traffic within Taobao,Paid Buyers,0.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-tao Other Stores' Product Details,Free traffic within Taobao,Paid Buyers,45.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand Taobao Other Stores,Free traffic within Taobao,Paid Buyers,1.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-taobao Pailitao,Free traffic within Taobao,Paid Buyers,17.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand Taobao Aggregation,Free traffic within Taobao,Paid Buyers,0.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand Cat Product Details,Free traffic within Taobao,Paid Buyers,0.0
+2019-10-01 ~ 2019-10-31,Wireless End,Other Taobao Stores,Free traffic within Taobao,Paid Buyers,0.0
+2019-10-01 ~ 2019-10-31,Wireless End,Shopping Cart,Self-access,Paid Buyers,167.0
+2019-10-01 ~ 2019-10-31,Wireless End,Direct Train,Paid Traffic,Payment Conversion Rate,0.0275
+2019-10-01 ~ 2019-10-31,Wireless End,Direct Access,Self-access,Payment Conversion Rate,0.0
+2019-10-01 ~ 2019-10-31,Wireless End,Alipay Mini Program - Daily Must Grab,Free traffic within Taobao,Payment Conversion Rate,0.1667
+2019-10-01 ~ 2019-10-31,Wireless End,My Taobao,Self-access,Payment Conversion Rate,0.2434
+2019-10-01 ~ 2019-10-31,Wireless End,Free traffic within Taobao (others),Free traffic within Taobao,Payment Conversion Rate,0.1021
+2019-10-01 ~ 2019-10-31,Wireless End,Taobao Guest,Paid Traffic,Payment Conversion Rate,0.107
+2019-10-01 ~ 2019-10-31,Wireless End,Hand Taobao Find Similar,Free traffic within Taobao,Payment Conversion Rate,0.129
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-tao Message Center,Free traffic within Taobao,Payment Conversion Rate,0.0
+2019-10-01 ~ 2019-10-31,Wireless End,My Taobao Evaluation,Free traffic within Taobao,Payment Conversion Rate,0.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-to-Hand Q&A,Free traffic within Taobao,Payment Conversion Rate,0.2941
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-tao Weitao,Free traffic within Taobao,Payment Conversion Rate,0.028
+2019-10-01 ~ 2019-10-31,Wireless End,Handy Taobao Wangxin,Free traffic within Taobao,Payment Conversion Rate,0.4474
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-tao Tao Gold Coins,Free traffic within Taobao,Payment Conversion Rate,0.0048
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-to-hand Taobao Live,Free traffic within Taobao,Payment Conversion Rate,0.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-tao Search,Free traffic within Taobao,Payment Conversion Rate,0.0606
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-tao Homepage,Free traffic within Taobao,Payment Conversion Rate,0.0046
+2019-10-01 ~ 2019-10-31,Wireless End,Hand Taobao Scan,Free traffic within Taobao,Payment Conversion Rate,0.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-tao Other Stores' Product Details,Free traffic within Taobao,Payment Conversion Rate,0.1071
+2019-10-01 ~ 2019-10-31,Wireless End,Hand Taobao Other Stores,Free traffic within Taobao,Payment Conversion Rate,0.5
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-taobao Pailitao,Free traffic within Taobao,Payment Conversion Rate,0.0584
+2019-10-01 ~ 2019-10-31,Wireless End,Hand Taobao Aggregation,Free traffic within Taobao,Payment Conversion Rate,0.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand Cat Product Details,Free traffic within Taobao,Payment Conversion Rate,0.0
+2019-10-01 ~ 2019-10-31,Wireless End,Other Taobao Stores,Free traffic within Taobao,Payment Conversion Rate,0.0
+2019-10-01 ~ 2019-10-31,Wireless End,Shopping Cart,Self-access,Payment Conversion Rate,0.2715
+2019-10-01 ~ 2019-10-31,Wireless End,Direct Train,Paid Traffic,Payment Amount,827.55
+2019-10-01 ~ 2019-10-31,Wireless End,Direct Access,Self-access,Payment Amount,0.0
+2019-10-01 ~ 2019-10-31,Wireless End,Alipay Mini Program - Daily Must Grab,Free traffic within Taobao,Payment Amount,61.68
+2019-10-01 ~ 2019-10-31,Wireless End,My Taobao,Self-access,Payment Amount,7036.09
+2019-10-01 ~ 2019-10-31,Wireless End,Free traffic within Taobao (others),Free traffic within Taobao,Payment Amount,2951.97
+2019-10-01 ~ 2019-10-31,Wireless End,Taobao Guest,Paid Traffic,Payment Amount,1603.46
+2019-10-01 ~ 2019-10-31,Wireless End,Hand Taobao Find Similar,Free traffic within Taobao,Payment Amount,393.05
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-tao Message Center,Free traffic within Taobao,Payment Amount,0.0
+2019-10-01 ~ 2019-10-31,Wireless End,My Taobao Evaluation,Free traffic within Taobao,Payment Amount,0.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-to-Hand Q&A,Free traffic within Taobao,Payment Amount,150.3
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-tao Weitao,Free traffic within Taobao,Payment Amount,204.5
+2019-10-01 ~ 2019-10-31,Wireless End,Handy Taobao Wangxin,Free traffic within Taobao,Payment Amount,759.27
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-tao Tao Gold Coins,Free traffic within Taobao,Payment Amount,24.5
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-to-hand Taobao Live,Free traffic within Taobao,Payment Amount,0.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-tao Search,Free traffic within Taobao,Payment Amount,7745.35
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-tao Homepage,Free traffic within Taobao,Payment Amount,154.82
+2019-10-01 ~ 2019-10-31,Wireless End,Hand Taobao Scan,Free traffic within Taobao,Payment Amount,0.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-tao Other Stores' Product Details,Free traffic within Taobao,Payment Amount,1629.96
+2019-10-01 ~ 2019-10-31,Wireless End,Hand Taobao Other Stores,Free traffic within Taobao,Payment Amount,39.8
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-taobao Pailitao,Free traffic within Taobao,Payment Amount,609.34
+2019-10-01 ~ 2019-10-31,Wireless End,Hand Taobao Aggregation,Free traffic within Taobao,Payment Amount,0.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand Cat Product Details,Free traffic within Taobao,Payment Amount,0.0
+2019-10-01 ~ 2019-10-31,Wireless End,Other Taobao Stores,Free traffic within Taobao,Payment Amount,0.0
+2019-10-01 ~ 2019-10-31,Wireless End,Shopping Cart,Self-access,Payment Amount,6334.33
+2019-10-01 ~ 2019-10-31,Wireless End,Direct Train,Paid Traffic,UV Value,1.04
+2019-10-01 ~ 2019-10-31,Wireless End,Direct Access,Self-access,UV Value,0.0
+2019-10-01 ~ 2019-10-31,Wireless End,Alipay Mini Program - Daily Must Grab,Free traffic within Taobao,UV Value,3.43
+2019-10-01 ~ 2019-10-31,Wireless End,My Taobao,Self-access,UV Value,9.84
+2019-10-01 ~ 2019-10-31,Wireless End,Free traffic within Taobao (others),Free traffic within Taobao,UV Value,4.19
+2019-10-01 ~ 2019-10-31,Wireless End,Taobao Guest,Paid Traffic,UV Value,3.5
+2019-10-01 ~ 2019-10-31,Wireless End,Hand Taobao Find Similar,Free traffic within Taobao,UV Value,6.34
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-tao Message Center,Free traffic within Taobao,UV Value,0.0
+2019-10-01 ~ 2019-10-31,Wireless End,My Taobao Evaluation,Free traffic within Taobao,UV Value,0.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-to-Hand Q&A,Free traffic within Taobao,UV Value,8.84
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-tao Weitao,Free traffic within Taobao,UV Value,1.43
+2019-10-01 ~ 2019-10-31,Wireless End,Handy Taobao Wangxin,Free traffic within Taobao,UV Value,19.98
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-tao Tao Gold Coins,Free traffic within Taobao,UV Value,0.12
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-to-hand Taobao Live,Free traffic within Taobao,UV Value,0.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-tao Search,Free traffic within Taobao,UV Value,2.25
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-tao Homepage,Free traffic within Taobao,UV Value,0.12
+2019-10-01 ~ 2019-10-31,Wireless End,Hand Taobao Scan,Free traffic within Taobao,UV Value,0.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-tao Other Stores' Product Details,Free traffic within Taobao,UV Value,3.88
+2019-10-01 ~ 2019-10-31,Wireless End,Hand Taobao Other Stores,Free traffic within Taobao,UV Value,19.9
+2019-10-01 ~ 2019-10-31,Wireless End,Hand-taobao Pailitao,Free traffic within Taobao,UV Value,2.09
+2019-10-01 ~ 2019-10-31,Wireless End,Hand Taobao Aggregation,Free traffic within Taobao,UV Value,0.0
+2019-10-01 ~ 2019-10-31,Wireless End,Hand Cat Product Details,Free traffic within Taobao,UV Value,0.0
+2019-10-01 ~ 2019-10-31,Wireless End,Other Taobao Stores,Free traffic within Taobao,UV Value,0.0
+2019-10-01 ~ 2019-10-31,Wireless End,Shopping Cart,Self-access,UV Value,10.3

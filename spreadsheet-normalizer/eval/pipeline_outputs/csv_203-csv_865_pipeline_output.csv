@@ -1,59 +1,58 @@
-place,athlete,nation,throw_number,throw_distance
-2,Renate Culmberger,Germany,1,17.41
-2,Renate Culmberger,Germany,2,17.1
-2,Renate Culmberger,Germany,3,16.38
-2,Renate Culmberger,Germany,4,17.61
-2,Renate Culmberger,Germany,5,17.0
-2,Renate Culmberger,Germany,6,17.01
-3,Galina Zybina,Soviet Union,1,17.38
-3,Galina Zybina,Soviet Union,2,17.25
-3,Galina Zybina,Soviet Union,3,17.45
-3,Galina Zybina,Soviet Union,4,17.42
-3,Galina Zybina,Soviet Union,5,16.65
-3,Galina Zybina,Soviet Union,6,17.36
-4,Valerie Young,New Zealand,1,17.08
-4,Valerie Young,New Zealand,2,15.84
-4,Valerie Young,New Zealand,3,16.81
-4,Valerie Young,New Zealand,4,17.26
-4,Valerie Young,New Zealand,5,17.24
-4,Valerie Young,New Zealand,6,17.23
-5,Margitta Helmbold,Germany,1,16.67
-5,Margitta Helmbold,Germany,2,15.87
-5,Margitta Helmbold,Germany,4,16.6
-5,Margitta Helmbold,Germany,5,16.91
-5,Margitta Helmbold,Germany,6,16.34
-6,Irina Press,Soviet Union,2,16.5
-6,Irina Press,Soviet Union,4,15.81
-6,Irina Press,Soviet Union,5,15.78
-6,Irina Press,Soviet Union,6,16.71
-7,Nancy McCredie,Canada,1,15.89
-7,Nancy McCredie,Canada,2,15.13
-7,Nancy McCredie,Canada,3,15.27
-7,Nancy McCredie,Canada,4,15.81
-7,Nancy McCredie,Canada,5,15.78
-7,Nancy McCredie,Canada,6,16.71
-8,Ana Salagean,Romania,1,15.79
-8,Ana Salagean,Romania,2,15.83
-8,Ana Salagean,Romania,3,15.7
-8,Ana Salagean,Romania,4,15.81
-8,Ana Salagean,Romania,5,15.78
-8,Ana Salagean,Romania,6,16.71
-9,Johanna Hubner,Germany,1,15.77
-9,Johanna Hubner,Germany,4,15.81
-9,Johanna Hubner,Germany,5,15.78
-9,Johanna Hubner,Germany,6,16.71
-10,Ivanka Khristova,Bulgaria,1,15.69
-10,Ivanka Khristova,Bulgaria,3,15.35
-10,Ivanka Khristova,Bulgaria,4,15.81
-10,Ivanka Khristova,Bulgaria,5,15.78
-10,Ivanka Khristova,Bulgaria,6,16.71
-11,Judit Bognar,Hungary,1,15.65
-11,Judit Bognar,Hungary,4,15.81
-11,Judit Bognar,Hungary,5,15.78
-11,Judit Bognar,Hungary,6,16.71
-12,Earlene Brown,United States,1,14.25
-12,Earlene Brown,United States,2,13.43
-12,Earlene Brown,United States,3,14.8
-12,Earlene Brown,United States,4,15.81
-12,Earlene Brown,United States,5,15.78
-12,Earlene Brown,United States,6,16.71
+place,athlete,nation,best_mark,throw_number,throw_value
+1,Tamara Press,Soviet Union,18.14 metres OR,1,
+1,Tamara Press,Soviet Union,18.14 metres OR,2,
+1,Tamara Press,Soviet Union,18.14 metres OR,3,
+1,Tamara Press,Soviet Union,18.14 metres OR,4,16.49
+1,Tamara Press,Soviet Union,18.14 metres OR,6,18.14
+2,Renate Culmberger,Germany,17.61 metres,1,
+2,Renate Culmberger,Germany,17.61 metres,2,
+2,Renate Culmberger,Germany,17.61 metres,3,
+2,Renate Culmberger,Germany,17.61 metres,4,17.61
+2,Renate Culmberger,Germany,17.61 metres,5,
+2,Renate Culmberger,Germany,17.61 metres,6,17.01
+3,Galina Zybina,Soviet Union,17.45 metres,1,
+3,Galina Zybina,Soviet Union,17.45 metres,2,
+3,Galina Zybina,Soviet Union,17.45 metres,3,
+3,Galina Zybina,Soviet Union,17.45 metres,4,17.42
+3,Galina Zybina,Soviet Union,17.45 metres,5,
+3,Galina Zybina,Soviet Union,17.45 metres,6,17.36
+4,Valerie Young,New Zealand,17.26 metres,1,
+4,Valerie Young,New Zealand,17.26 metres,2,
+4,Valerie Young,New Zealand,17.26 metres,3,
+4,Valerie Young,New Zealand,17.26 metres,4,17.26
+4,Valerie Young,New Zealand,17.26 metres,5,
+4,Valerie Young,New Zealand,17.26 metres,6,17.23
+5,Margitta Helmbold,Germany,16.91 metres,1,
+5,Margitta Helmbold,Germany,16.91 metres,2,
+5,Margitta Helmbold,Germany,16.91 metres,4,16.6
+5,Margitta Helmbold,Germany,16.91 metres,5,
+5,Margitta Helmbold,Germany,16.91 metres,6,16.34
+6,Irina Press,Soviet Union,16.71 metres,2,
+6,Irina Press,Soviet Union,16.71 metres,4,15.81
+6,Irina Press,Soviet Union,16.71 metres,5,
+6,Irina Press,Soviet Union,16.71 metres,6,16.71
+7,Nancy McCredie,Canada,15.89 metres,1,
+7,Nancy McCredie,Canada,15.89 metres,2,
+7,Nancy McCredie,Canada,15.89 metres,3,
+7,Nancy McCredie,Canada,15.89 metres,4,
+7,Nancy McCredie,Canada,15.89 metres,6,
+8,Ana Salagean,Romania,15.83 metres,1,
+8,Ana Salagean,Romania,15.83 metres,2,
+8,Ana Salagean,Romania,15.83 metres,3,
+8,Ana Salagean,Romania,15.83 metres,4,
+8,Ana Salagean,Romania,15.83 metres,6,
+9,Johanna Hubner,Germany,15.77 metres,1,
+9,Johanna Hubner,Germany,15.77 metres,4,
+9,Johanna Hubner,Germany,15.77 metres,6,
+10,Ivanka Khristova,Bulgaria,15.69 metres,1,
+10,Ivanka Khristova,Bulgaria,15.69 metres,3,
+10,Ivanka Khristova,Bulgaria,15.69 metres,4,
+10,Ivanka Khristova,Bulgaria,15.69 metres,6,
+11,Judit Bognar,Hungary,15.65 metres,1,
+11,Judit Bognar,Hungary,15.65 metres,4,
+11,Judit Bognar,Hungary,15.65 metres,6,
+12,Earlene Brown,United States,14.80 metres,1,
+12,Earlene Brown,United States,14.80 metres,2,
+12,Earlene Brown,United States,14.80 metres,3,
+12,Earlene Brown,United States,14.80 metres,4,
+12,Earlene Brown,United States,14.80 metres,6,

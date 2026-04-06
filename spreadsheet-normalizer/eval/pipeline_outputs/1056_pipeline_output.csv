@@ -1,31 +1,49 @@
-self_rated_mental_health,percentage,confidence_interval_from,confidence_interval_to
-positive,88.9,88.3,89.4
-negative,10.7,10.2,11.2
-ever seriously contemplated suicide,14.9,14.3,15.5
-diagnosed mood or anxiety disorder,16.4,15.8,17.0
-mood disorder,9.5,9.1,10.0
-anxiety disorder,12.5,12.0,13.1
-positive,80.3,75.5,84.4
-negative,19.7,15.6,24.4
-ever seriously contemplated suicide,29.9,25.1,35.1
-diagnosed mood or anxiety disorder,29.6,24.7,35.0
-mood disorder,20.6,16.4,25.4
-anxiety disorder,23.4,18.8,28.8
-positive,58.9,52.4,65.2
-negative,40.9,34.7,47.4
-ever seriously contemplated suicide,46.3,39.8,52.8
-diagnosed mood or anxiety disorder,50.8,44.4,57.2
-mood disorder,36.2,30.0,42.9
-anxiety disorder,41.6,35.5,47.9
-positive,54.6,37.4,70.9
-negative,45.4,29.1,62.6
-ever seriously contemplated suicide,58.7,42.1,73.5
-diagnosed mood or anxiety disorder,40.9,25.8,58.0
-mood disorder,31.1,18.0,48.1
-anxiety disorder,30.4,18.5,45.8
-positive,67.8,63.6,71.7
-negative,32.1,28.2,36.3
-ever seriously contemplated suicide,40.1,36.1,44.3
-diagnosed mood or anxiety disorder,41.1,36.9,45.3
-mood disorder,29.1,25.3,33.3
-anxiety disorder,33.1,29.2,37.2
+indicator,sexual_orientation,statistic_type,confidence_interval,percentage
+positive,heterosexual,percentage,,88.9
+positive,heterosexual,95% confidence interval,88.3,
+positive,gay or lesbian,percentage,,75.5
+positive,gay or lesbian,95% confidence interval,84.4,
+positive,bisexual,percentage,,65.2
+positive,bisexual,95% confidence interval,54.6,
+positive,sexual orientation n.e.c,percentage,,63.6
+positive,sexual orientation n.e.c,95% confidence interval,71.7,
+negative,heterosexual,percentage,,10.7
+negative,heterosexual,95% confidence interval,10.2,
+negative,gay or lesbian,percentage,,15.6
+negative,gay or lesbian,95% confidence interval,24.4,
+negative,bisexual,percentage,,47.4
+negative,bisexual,95% confidence interval,45.4,
+negative,sexual orientation n.e.c,percentage,,28.2
+negative,sexual orientation n.e.c,95% confidence interval,36.3,
+ever seriously contemplated suicide,heterosexual,percentage,,14.9
+ever seriously contemplated suicide,heterosexual,95% confidence interval,14.3,
+ever seriously contemplated suicide,gay or lesbian,percentage,,25.1
+ever seriously contemplated suicide,gay or lesbian,95% confidence interval,35.1,
+ever seriously contemplated suicide,bisexual,percentage,,52.8
+ever seriously contemplated suicide,bisexual,95% confidence interval,58.7,
+ever seriously contemplated suicide,sexual orientation n.e.c,percentage,,36.1
+ever seriously contemplated suicide,sexual orientation n.e.c,95% confidence interval,44.3,
+diagnosed mood or anxiety disorder,heterosexual,percentage,,16.4
+diagnosed mood or anxiety disorder,heterosexual,95% confidence interval,15.8,
+diagnosed mood or anxiety disorder,gay or lesbian,percentage,,24.7
+diagnosed mood or anxiety disorder,gay or lesbian,95% confidence interval,35.0,
+diagnosed mood or anxiety disorder,bisexual,percentage,,57.2
+diagnosed mood or anxiety disorder,bisexual,95% confidence interval,40.9,
+diagnosed mood or anxiety disorder,sexual orientation n.e.c,percentage,,36.9
+diagnosed mood or anxiety disorder,sexual orientation n.e.c,95% confidence interval,45.3,
+mood disorder,heterosexual,percentage,,9.5
+mood disorder,heterosexual,95% confidence interval,9.1,
+mood disorder,gay or lesbian,percentage,,16.4
+mood disorder,gay or lesbian,95% confidence interval,25.4,
+mood disorder,bisexual,percentage,,42.9
+mood disorder,bisexual,95% confidence interval,31.1,
+mood disorder,sexual orientation n.e.c,percentage,,25.3
+mood disorder,sexual orientation n.e.c,95% confidence interval,33.3,
+anxiety disorder,heterosexual,percentage,,12.5
+anxiety disorder,heterosexual,95% confidence interval,12.0,
+anxiety disorder,gay or lesbian,percentage,,18.8
+anxiety disorder,gay or lesbian,95% confidence interval,28.8,
+anxiety disorder,bisexual,percentage,,47.9
+anxiety disorder,bisexual,95% confidence interval,30.4,
+anxiety disorder,sexual orientation n.e.c,percentage,,29.2
+anxiety disorder,sexual orientation n.e.c,95% confidence interval,37.2,

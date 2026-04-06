@@ -1,33 +1,289 @@
-region,total,public_rental_housing,other_housing,commercial_housing,second_hand_house,public_housing,housing_affordable_with_price_limits,gift
-Whole Country,45791305,1075507,5605091,9554510,3125007,1831655,1179957,449641
-Beijing,772865,39712,234215,128444,81010,90312,45529,7518
-Tianjin,448523,12455,57968,145227,68380,37267,17641,7168
-Hebei,2416146,25810,112178,499481,107005,84484,27033,34380
-Shanxi,1188728,17169,92195,266260,54965,89483,44437,27401
-Inner Mongolia,868558,16107,89821,251441,109393,39544,29698,8131
-Liaoning,1628448,17945,101463,503107,259007,121344,33026,22271
-Jilin,857737,13372,70488,272180,149256,40981,27853,7156
-Heilongjiang,1172755,15286,75296,372355,212975,72516,68515,13762
-Shanghai,901732,33614,315692,220185,153923,77195,8352,2822
-Jiangsu,2743393,46409,306149,685553,239506,81078,184632,17576
-Zhejiang,2279907,98751,668355,326908,197866,36859,91174,24098
-Anhui,2005193,34276,143302,386009,106445,55228,21026,12573
-Fujian,1266971,34555,286603,220750,74516,23390,12734,14440
-Jiangxi,1340608,38604,71505,280286,54962,45629,14801,12647
-Shandong,3465782,30677,188495,800795,184144,133704,59649,29815
-Henan,2975955,38267,122444,527559,100637,105535,54583,16704
-Hubei,1894974,29924,132184,419563,98586,111054,39798,12932
-Hunan,2162386,33528,111603,389756,58369,81596,39194,24774
-Guangdong,3752057,190996,1364487,571492,208868,81585,25167,37488
-Guangxi,1445879,29285,125807,188834,35107,50524,17807,9242
-Hainan,264959,6402,41826,24953,7185,15739,8027,2400
-Chongqing,1136063,43604,97341,352022,110308,26622,42179,10793
-Sichuan,2947695,47677,266369,667699,179058,74034,71731,30578
-Guizhou,1145420,18417,99411,179193,30982,25812,35582,13974
-Yunnan,1413050,52823,143969,151986,54975,40082,19498,12598
-Tibet,76553,9454,6478,2412,2307,1596,1072,1956
-Shaanxi,1275990,31702,139332,275521,36436,82795,41282,9427
-Gansu,764771,12159,55463,148202,36277,46418,31492,6044
-Qinghai,174934,8322,11767,42324,13999,8136,6422,3028
-Ningxia,233945,10254,20268,70812,26090,8460,9559,2003
-Xinjiang,769328,37951,52617,183201,72470,42653,50464,13942
+region,housing_source,households_count
+Whole Country,Unnamed: 2,1075507
+Beijing,Unnamed: 2,39712
+Tianjin,Unnamed: 2,12455
+Hebei,Unnamed: 2,25810
+Shanxi,Unnamed: 2,17169
+Inner Mongolia,Unnamed: 2,16107
+Liaoning,Unnamed: 2,17945
+Jilin,Unnamed: 2,13372
+Heilongjiang,Unnamed: 2,15286
+Shanghai,Unnamed: 2,33614
+Jiangsu,Unnamed: 2,46409
+Zhejiang,Unnamed: 2,98751
+Anhui,Unnamed: 2,34276
+Fujian,Unnamed: 2,34555
+Jiangxi,Unnamed: 2,38604
+Shandong,Unnamed: 2,30677
+Henan,Unnamed: 2,38267
+Hubei,Unnamed: 2,29924
+Hunan,Unnamed: 2,33528
+Guangdong,Unnamed: 2,190996
+Guangxi,Unnamed: 2,29285
+Hainan,Unnamed: 2,6402
+Chongqing,Unnamed: 2,43604
+Sichuan,Unnamed: 2,47677
+Guizhou,Unnamed: 2,18417
+Yunnan,Unnamed: 2,52823
+Tibet,Unnamed: 2,9454
+Shaanxi,Unnamed: 2,31702
+Gansu,Unnamed: 2,12159
+Qinghai,Unnamed: 2,8322
+Ningxia,Unnamed: 2,10254
+Xinjiang,Unnamed: 2,37951
+Whole Country,Unnamed: 3,5605091
+Beijing,Unnamed: 3,234215
+Tianjin,Unnamed: 3,57968
+Hebei,Unnamed: 3,112178
+Shanxi,Unnamed: 3,92195
+Inner Mongolia,Unnamed: 3,89821
+Liaoning,Unnamed: 3,101463
+Jilin,Unnamed: 3,70488
+Heilongjiang,Unnamed: 3,75296
+Shanghai,Unnamed: 3,315692
+Jiangsu,Unnamed: 3,306149
+Zhejiang,Unnamed: 3,668355
+Anhui,Unnamed: 3,143302
+Fujian,Unnamed: 3,286603
+Jiangxi,Unnamed: 3,71505
+Shandong,Unnamed: 3,188495
+Henan,Unnamed: 3,122444
+Hubei,Unnamed: 3,132184
+Hunan,Unnamed: 3,111603
+Guangdong,Unnamed: 3,1364487
+Guangxi,Unnamed: 3,125807
+Hainan,Unnamed: 3,41826
+Chongqing,Unnamed: 3,97341
+Sichuan,Unnamed: 3,266369
+Guizhou,Unnamed: 3,99411
+Yunnan,Unnamed: 3,143969
+Tibet,Unnamed: 3,6478
+Shaanxi,Unnamed: 3,139332
+Gansu,Unnamed: 3,55463
+Qinghai,Unnamed: 3,11767
+Ningxia,Unnamed: 3,20268
+Xinjiang,Unnamed: 3,52617
+Whole Country,Unnamed: 4,9554510
+Beijing,Unnamed: 4,128444
+Tianjin,Unnamed: 4,145227
+Hebei,Unnamed: 4,499481
+Shanxi,Unnamed: 4,266260
+Inner Mongolia,Unnamed: 4,251441
+Liaoning,Unnamed: 4,503107
+Jilin,Unnamed: 4,272180
+Heilongjiang,Unnamed: 4,372355
+Shanghai,Unnamed: 4,220185
+Jiangsu,Unnamed: 4,685553
+Zhejiang,Unnamed: 4,326908
+Anhui,Unnamed: 4,386009
+Fujian,Unnamed: 4,220750
+Jiangxi,Unnamed: 4,280286
+Shandong,Unnamed: 4,800795
+Henan,Unnamed: 4,527559
+Hubei,Unnamed: 4,419563
+Hunan,Unnamed: 4,389756
+Guangdong,Unnamed: 4,571492
+Guangxi,Unnamed: 4,188834
+Hainan,Unnamed: 4,24953
+Chongqing,Unnamed: 4,352022
+Sichuan,Unnamed: 4,667699
+Guizhou,Unnamed: 4,179193
+Yunnan,Unnamed: 4,151986
+Tibet,Unnamed: 4,2412
+Shaanxi,Unnamed: 4,275521
+Gansu,Unnamed: 4,148202
+Qinghai,Unnamed: 4,42324
+Ningxia,Unnamed: 4,70812
+Xinjiang,Unnamed: 4,183201
+Whole Country,Unnamed: 5,3125007
+Beijing,Unnamed: 5,81010
+Tianjin,Unnamed: 5,68380
+Hebei,Unnamed: 5,107005
+Shanxi,Unnamed: 5,54965
+Inner Mongolia,Unnamed: 5,109393
+Liaoning,Unnamed: 5,259007
+Jilin,Unnamed: 5,149256
+Heilongjiang,Unnamed: 5,212975
+Shanghai,Unnamed: 5,153923
+Jiangsu,Unnamed: 5,239506
+Zhejiang,Unnamed: 5,197866
+Anhui,Unnamed: 5,106445
+Fujian,Unnamed: 5,74516
+Jiangxi,Unnamed: 5,54962
+Shandong,Unnamed: 5,184144
+Henan,Unnamed: 5,100637
+Hubei,Unnamed: 5,98586
+Hunan,Unnamed: 5,58369
+Guangdong,Unnamed: 5,208868
+Guangxi,Unnamed: 5,35107
+Hainan,Unnamed: 5,7185
+Chongqing,Unnamed: 5,110308
+Sichuan,Unnamed: 5,179058
+Guizhou,Unnamed: 5,30982
+Yunnan,Unnamed: 5,54975
+Tibet,Unnamed: 5,2307
+Shaanxi,Unnamed: 5,36436
+Gansu,Unnamed: 5,36277
+Qinghai,Unnamed: 5,13999
+Ningxia,Unnamed: 5,26090
+Xinjiang,Unnamed: 5,72470
+Whole Country,Unnamed: 6,1831655
+Beijing,Unnamed: 6,90312
+Tianjin,Unnamed: 6,37267
+Hebei,Unnamed: 6,84484
+Shanxi,Unnamed: 6,89483
+Inner Mongolia,Unnamed: 6,39544
+Liaoning,Unnamed: 6,121344
+Jilin,Unnamed: 6,40981
+Heilongjiang,Unnamed: 6,72516
+Shanghai,Unnamed: 6,77195
+Jiangsu,Unnamed: 6,81078
+Zhejiang,Unnamed: 6,36859
+Anhui,Unnamed: 6,55228
+Fujian,Unnamed: 6,23390
+Jiangxi,Unnamed: 6,45629
+Shandong,Unnamed: 6,133704
+Henan,Unnamed: 6,105535
+Hubei,Unnamed: 6,111054
+Hunan,Unnamed: 6,81596
+Guangdong,Unnamed: 6,81585
+Guangxi,Unnamed: 6,50524
+Hainan,Unnamed: 6,15739
+Chongqing,Unnamed: 6,26622
+Sichuan,Unnamed: 6,74034
+Guizhou,Unnamed: 6,25812
+Yunnan,Unnamed: 6,40082
+Tibet,Unnamed: 6,1596
+Shaanxi,Unnamed: 6,82795
+Gansu,Unnamed: 6,46418
+Qinghai,Unnamed: 6,8136
+Ningxia,Unnamed: 6,8460
+Xinjiang,Unnamed: 6,42653
+Whole Country,Unnamed: 7,1179957
+Beijing,Unnamed: 7,45529
+Tianjin,Unnamed: 7,17641
+Hebei,Unnamed: 7,27033
+Shanxi,Unnamed: 7,44437
+Inner Mongolia,Unnamed: 7,29698
+Liaoning,Unnamed: 7,33026
+Jilin,Unnamed: 7,27853
+Heilongjiang,Unnamed: 7,68515
+Shanghai,Unnamed: 7,8352
+Jiangsu,Unnamed: 7,184632
+Zhejiang,Unnamed: 7,91174
+Anhui,Unnamed: 7,21026
+Fujian,Unnamed: 7,12734
+Jiangxi,Unnamed: 7,14801
+Shandong,Unnamed: 7,59649
+Henan,Unnamed: 7,54583
+Hubei,Unnamed: 7,39798
+Hunan,Unnamed: 7,39194
+Guangdong,Unnamed: 7,25167
+Guangxi,Unnamed: 7,17807
+Hainan,Unnamed: 7,8027
+Chongqing,Unnamed: 7,42179
+Sichuan,Unnamed: 7,71731
+Guizhou,Unnamed: 7,35582
+Yunnan,Unnamed: 7,19498
+Tibet,Unnamed: 7,1072
+Shaanxi,Unnamed: 7,41282
+Gansu,Unnamed: 7,31492
+Qinghai,Unnamed: 7,6422
+Ningxia,Unnamed: 7,9559
+Xinjiang,Unnamed: 7,50464
+Whole Country,Unnamed: 8,21076481
+Beijing,Unnamed: 8,84393
+Tianjin,Unnamed: 8,82677
+Hebei,Unnamed: 8,1450063
+Shanxi,Unnamed: 8,532978
+Inner Mongolia,Unnamed: 8,280830
+Liaoning,Unnamed: 8,472821
+Jilin,Unnamed: 8,262970
+Heilongjiang,Unnamed: 8,302511
+Shanghai,Unnamed: 8,69911
+Jiangsu,Unnamed: 8,1085126
+Zhejiang,Unnamed: 8,798177
+Anhui,Unnamed: 8,1126003
+Fujian,Unnamed: 8,569702
+Jiangxi,Unnamed: 8,787554
+Shandong,Unnamed: 8,1857667
+Henan,Unnamed: 8,1922142
+Hubei,Unnamed: 8,948096
+Hunan,Unnamed: 8,1367514
+Guangdong,Unnamed: 8,1174820
+Guangxi,Unnamed: 8,950038
+Hainan,Unnamed: 8,146393
+Chongqing,Unnamed: 8,409259
+Sichuan,Unnamed: 8,1444691
+Guizhou,Unnamed: 8,690969
+Yunnan,Unnamed: 8,898006
+Tibet,Unnamed: 8,41510
+Shaanxi,Unnamed: 8,598504
+Gansu,Unnamed: 8,403782
+Qinghai,Unnamed: 8,70583
+Ningxia,Unnamed: 8,68686
+Xinjiang,Unnamed: 8,178105
+Whole Country,Unnamed: 9,449641
+Beijing,Unnamed: 9,7518
+Tianjin,Unnamed: 9,7168
+Hebei,Unnamed: 9,34380
+Shanxi,Unnamed: 9,27401
+Inner Mongolia,Unnamed: 9,8131
+Liaoning,Unnamed: 9,22271
+Jilin,Unnamed: 9,7156
+Heilongjiang,Unnamed: 9,13762
+Shanghai,Unnamed: 9,2822
+Jiangsu,Unnamed: 9,17576
+Zhejiang,Unnamed: 9,24098
+Anhui,Unnamed: 9,12573
+Fujian,Unnamed: 9,14440
+Jiangxi,Unnamed: 9,12647
+Shandong,Unnamed: 9,29815
+Henan,Unnamed: 9,16704
+Hubei,Unnamed: 9,12932
+Hunan,Unnamed: 9,24774
+Guangdong,Unnamed: 9,37488
+Guangxi,Unnamed: 9,9242
+Hainan,Unnamed: 9,2400
+Chongqing,Unnamed: 9,10793
+Sichuan,Unnamed: 9,30578
+Guizhou,Unnamed: 9,13974
+Yunnan,Unnamed: 9,12598
+Tibet,Unnamed: 9,1956
+Shaanxi,Unnamed: 9,9427
+Gansu,Unnamed: 9,6044
+Qinghai,Unnamed: 9,3028
+Ningxia,Unnamed: 9,2003
+Xinjiang,Unnamed: 9,13942
+Whole Country,Unnamed: 10,1893456
+Beijing,Unnamed: 10,61732
+Tianjin,Unnamed: 10,19740
+Hebei,Unnamed: 10,75712
+Shanxi,Unnamed: 10,63840
+Inner Mongolia,Unnamed: 10,43593
+Liaoning,Unnamed: 10,97464
+Jilin,Unnamed: 10,13481
+Heilongjiang,Unnamed: 10,39539
+Shanghai,Unnamed: 10,20038
+Jiangsu,Unnamed: 10,97364
+Zhejiang,Unnamed: 10,37719
+Anhui,Unnamed: 10,120331
+Fujian,Unnamed: 10,30281
+Jiangxi,Unnamed: 10,34620
+Shandong,Unnamed: 10,180836
+Henan,Unnamed: 10,88084
+Hubei,Unnamed: 10,102837
+Hunan,Unnamed: 10,56052
+Guangdong,Unnamed: 10,97154
+Guangxi,Unnamed: 10,39235
+Hainan,Unnamed: 10,12034
+Chongqing,Unnamed: 10,43935
+Sichuan,Unnamed: 10,165858
+Guizhou,Unnamed: 10,51080
+Yunnan,Unnamed: 10,39113
+Tibet,Unnamed: 10,9768
+Shaanxi,Unnamed: 10,60991
+Gansu,Unnamed: 10,24934
+Qinghai,Unnamed: 10,10353
+Ningxia,Unnamed: 10,17813
+Xinjiang,Unnamed: 10,137925

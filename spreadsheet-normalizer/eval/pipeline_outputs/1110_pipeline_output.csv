@@ -1,53 +1,13 @@
-province_territory,statistical_measure,value
-newfoundland and labrador,average,0.2
-prince edward island,average,2.4
-nova scotia,average,-17.9
-new brunswiick,average,-11.0
-quebec,average,-14.6
-ontario,average,-20.0
-manitoba,average,-0.3
-saskatchewan,average,-21.1
-alberta,average,-51.0
-british columbia,average,-8.2
-yukon,average,-6.1
-northwest territories,average,-9.6
-nunavut,average,8.8
-newfoundland and labrador,standard deviation,6.2
-prince edward island,standard deviation,0.6
-nova scotia,standard deviation,28.2
-new brunswiick,standard deviation,11.2
-quebec,standard deviation,9.9
-ontario,standard deviation,12.8
-manitoba,standard deviation,4.0
-saskatchewan,standard deviation,17.3
-alberta,standard deviation,16.2
-british columbia,standard deviation,7.2
-yukon,standard deviation,9.1
-northwest territories,standard deviation,5.1
-nunavut,standard deviation,
-newfoundland and labrador,spread,
-prince edward island,spread,
-nova scotia,spread,
-new brunswiick,spread,
-quebec,spread,
-ontario,spread,
-manitoba,spread,
-saskatchewan,spread,
-alberta,spread,
-british columbia,spread,
-yukon,spread,
-northwest territories,spread,
-nunavut,spread,
-newfoundland and labrador,number negative,
-prince edward island,number negative,
-nova scotia,number negative,
-new brunswiick,number negative,
-quebec,number negative,
-ontario,number negative,
-manitoba,number negative,
-saskatchewan,number negative,
-alberta,number negative,
-british columbia,number negative,
-yukon,number negative,
-northwest territories,number negative,
-nunavut,number negative,
+province_territory,average,standard_deviation,spread,number_negative
+newfoundland and labrador,0.2,6.2,-4.2 to 4.6,1 out of 2
+prince edward island,2.4,0.6,2.0 to 2.9,0 out of 2
+nova scotia,-17.9,28.2,-60.1 to -2.4,4 out of 4
+new brunswiick,-11.0,11.2,-25.7 to -0.5,4 out of 4
+quebec,-14.6,9.9,-26.8 to -5.5,4 out of 4
+ontario,-20.0,12.8,-38.1 to -8.5,4 out of 4
+manitoba,-0.3,4.0,-3.1 to 2.5,1 out of 2
+saskatchewan,-21.1,17.3,-46.7 to -8.2,4 out of 4
+alberta,-51.0,16.2,-68.7 to -30.1,4 out of 4
+british columbia,-8.2,7.2,-16.7 to 0.2,3 out of 4
+yukon,-6.1,9.1,-12.5 to 0.3,1 out of 2
+northwest territories,-9.6,5.1,-12.5 to -3.7,3 out of 3

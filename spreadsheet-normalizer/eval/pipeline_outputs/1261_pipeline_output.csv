@@ -1,4 +1,4 @@
-province_or_territory,year,value
+province_or_territory,year,population
 newfoundland and labrador,2007,13505.0
 prince edward island,2007,9593.0
 nova scotia,2007,11070.0
@@ -7,7 +7,11 @@ quebec,2007,11992.0
 ontario,2007,9849.0
 manitoba,2007,8630.0
 saskatchewan,2007,4479.0
+alberta,2007,-11134.0
 british columbia,2007,2330.0
+yukon,2007,-14652.0
+northwest territories,2007,-10630.0
+nunavut,2007,-6208.0
 canada,2007,6888.0
 newfoundland and labrador,2008,11531.0
 prince edward island,2008,9632.0
@@ -17,7 +21,11 @@ quebec,2008,12961.0
 ontario,2008,10650.0
 manitoba,2008,8426.0
 saskatchewan,2008,2573.0
+alberta,2008,-8910.0
 british columbia,2008,2898.0
+yukon,2008,-13091.0
+northwest territories,2008,-9373.0
+nunavut,2008,-4262.0
 canada,2008,7620.0
 newfoundland and labrador,2009,10497.0
 prince edward island,2009,10642.0
@@ -27,7 +35,11 @@ quebec,2009,14885.0
 ontario,2009,13043.0
 manitoba,2009,8583.0
 saskatchewan,2009,3106.0
+alberta,2009,-8581.0
 british columbia,2009,3555.0
+yukon,2009,-12022.0
+northwest territories,2009,-7254.0
+nunavut,2009,-4264.0
 canada,2009,9165.0
 newfoundland and labrador,2010,9577.0
 prince edward island,2010,10824.0
@@ -37,7 +49,11 @@ quebec,2010,15785.0
 ontario,2010,14850.0
 manitoba,2010,9535.0
 saskatchewan,2010,2869.0
+alberta,2010,-7271.0
 british columbia,2010,3989.0
+yukon,2010,-10098.0
+northwest territories,2010,-1685.0
+nunavut,2010,-4746.0
 canada,2010,10306.0
 newfoundland and labrador,2011,8660.0
 prince edward island,2011,12554.0
@@ -47,7 +63,11 @@ quebec,2011,16336.0
 ontario,2011,16896.0
 manitoba,2011,11936.0
 saskatchewan,2011,4132.0
+alberta,2011,-6281.0
 british columbia,2011,5495.0
+yukon,2011,-10762.0
+northwest territories,2011,-10.0
+nunavut,2011,-6555.0
 canada,2011,11673.0
 newfoundland and labrador,2012,9175.0
 prince edward island,2012,12910.0
@@ -57,5 +77,9 @@ quebec,2012,17043.0
 ontario,2012,17734.0
 manitoba,2012,12832.0
 saskatchewan,2012,3687.0
+alberta,2012,-5874.0
 british columbia,2012,5581.0
+yukon,2012,-13436.0
+northwest territories,2012,-1894.0
+nunavut,2012,-11654.0
 canada,2012,12215.0

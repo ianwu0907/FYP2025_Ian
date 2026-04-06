@@ -1,36 +1,29 @@
-sex,marital_status,agricultural_region,language_group,percent
-marital status,marital status,1),french,
-marital status,marital status,1),english,
-marital status,marital status,3),french,
-marital status,marital status,3),english,
-marital status,marital status,4),french,
-marital status,marital status,4),english,
-marital status,marital status,marital_status,english,
-single,marital status,1),french,18.7
-single,marital status,1),english,24.8
-single,marital status,3),french,26.9
-single,marital status,3),english,26.1
-single,marital status,4),french,25.6
-single,marital status,4),english,32.8
-single,marital status,marital_status,english,
-married,marital status,1),french,51.3
-married,marital status,1),english,53.9
-married,marital status,3),french,47.8
-married,marital status,3),english,56.7
-married,marital status,4),french,54.4
-married,marital status,4),english,57.8
-married,marital status,marital_status,english,
-common-law,marital status,1),french,17.1
-common-law,marital status,1),english,10.9
-common-law,marital status,3),french,22.4
-common-law,marital status,3),english,6.4
-common-law,marital status,4),french,11.8
-common-law,marital status,4),english,7.8
-common-law,marital status,marital_status,english,
-"separated, divorced, or widowed",marital status,1),french,12.8
-"separated, divorced, or widowed",marital status,1),english,10.6
-"separated, divorced, or widowed",marital status,3),french,0.0
-"separated, divorced, or widowed",marital status,3),english,10.8
-"separated, divorced, or widowed",marital status,4),french,7.7
-"separated, divorced, or widowed",marital status,4),english,0.0
-"separated, divorced, or widowed",marital status,marital_status,english,
+sex,marital_status,language_worker_type,percent
+female,marital status,sex,single
+female,marital status,sex,married
+male,marital status,sex,common-law
+male,marital status,sex,"separated, divorced, or widowed"
+single,marital status,sex,18.7
+single,marital status,sex,51.3
+married,marital status,sex,17.1
+married,marital status,sex,12.8
+common-law,marital status,sex,24.8
+common-law,marital status,sex,53.9
+"separated, divorced, or widowed",marital status,sex,10.9
+"separated, divorced, or widowed",marital status,sex,10.6
+"separated, divorced, or widowed",marital status,sex,26.9
+"separated, divorced, or widowed",marital status,sex,47.8
+"separated, divorced, or widowed",marital status,sex,22.4
+"separated, divorced, or widowed",marital status,sex,0.0
+"separated, divorced, or widowed",marital status,sex,26.1
+"separated, divorced, or widowed",marital status,sex,56.7
+"separated, divorced, or widowed",marital status,sex,6.4
+"separated, divorced, or widowed",marital status,sex,10.8
+"separated, divorced, or widowed",marital status,sex,25.6
+"separated, divorced, or widowed",marital status,sex,54.4
+"separated, divorced, or widowed",marital status,sex,11.8
+"separated, divorced, or widowed",marital status,sex,7.7
+"separated, divorced, or widowed",marital status,sex,32.8
+"separated, divorced, or widowed",marital status,sex,57.8
+"separated, divorced, or widowed",marital status,sex,7.8
+"separated, divorced, or widowed",marital status,sex,0.0

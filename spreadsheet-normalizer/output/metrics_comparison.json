@@ -1,44 +1,44 @@
 {
   "type_consistency": {
-    "before": 0.9671,
+    "before": 0.9464,
     "after": 1.0,
-    "delta": 0.0329,
+    "delta": 0.0536,
     "direction": "✓ improved"
   },
   "data_row_ratio": {
-    "before": 0.9062,
+    "before": 0.678,
     "after": 1.0,
-    "delta": 0.0938,
+    "delta": 0.322,
     "direction": "✓ improved"
   },
   "row_completeness_uniformity": {
-    "before": 0.824,
+    "before": 0.6103,
     "after": 1.0,
-    "delta": 0.176,
+    "delta": 0.3897,
     "direction": "✓ improved"
   },
   "substring_containment": {
-    "before": 0.0007,
-    "after": 0.0007,
+    "before": 0.0,
+    "after": 0.0,
     "delta": 0.0,
     "direction": "= unchanged"
   },
   "cell_coverage": {
-    "before": 0.95,
+    "before": 0.6589,
     "after": 1.0,
-    "delta": 0.05,
+    "delta": 0.3411,
     "direction": "✓ improved"
   },
   "column_type_homogeneity": {
-    "before": 0.8488,
+    "before": 0.5243,
     "after": 1.0,
-    "delta": 0.1512,
+    "delta": 0.4757,
     "direction": "✓ improved"
   },
   "groupby_queryability": {
-    "before": 0.64,
+    "before": 0.0,
     "after": 1.0,
-    "delta": 0.36,
+    "delta": 1.0,
     "direction": "✓ improved"
   },
   "header_uniqueness": {
@@ -48,19 +48,19 @@
     "direction": "= unchanged"
   },
   "column_completeness_min": {
-    "before": 0.9375,
+    "before": 0.4576,
     "after": 1.0,
-    "delta": 0.0625,
+    "delta": 0.5424,
     "direction": "✓ improved"
   },
   "inter_column_nmi": {
-    "before": 0.9937,
-    "after": 0.0,
-    "delta": -0.9937,
-    "direction": "✓ improved"
+    "before": 0.0,
+    "after": 0.0103,
+    "delta": 0.0103,
+    "direction": "✗ degraded"
   },
   "_groupby_queryability_mode": {
-    "before": "full",
+    "before": "no_dims",
     "after": "full"
   }
 }

@@ -1,1166 +1,1106 @@
-country_or_area,year,gni_per_capita
-Country or Area,2,1990.0
-   World,2,4080.0
-   High Income,2,18375.0
-     High Income: OECD,2,19059.0
-     High Income: nonOECD,2,8538.0
-   Middle Income,2,892.0
-     Lower Middle Income,2,520.0
-     Upper Middle Income,2,1207.0
-   Low and Middle Income,2,820.0
-     East Asia and Pacific,2,425.0
-     Latin America and Caribbean,2,2254.0
-     Middle East and North Africa,2,1296.0
-     South Asia,2,377.0
-     Sub-Saharan Africa,2,587.0
-   Low Income,2,287.0
-   Least Developed Countries,2,310.0
-   Heavily Indebted Poor Countries,2,358.0
-   China,2,330.0
-"   Hong Kong, China",2,12660.0
-"   Macao, China",2,8530.0
-   Albania,2,680.0
-   Algeria,2,2420.0
-   Angola,2,740.0
-   Antigua and Barbuda,2,5710.0
-   Argentina,2,3180.0
-   Australia,2,17420.0
-   Austria,2,20080.0
-   Bahamas,2,12000.0
-   Bahrain,2,7260.0
-   Bangladesh,2,290.0
-   Barbados,2,6570.0
-   Belgium,2,18960.0
-   Belize,2,2210.0
-   Benin,2,360.0
-   Bhutan,2,580.0
-   Bolivia,2,740.0
-   Botswana,2,2540.0
-   Brazil,2,2700.0
-   Brunei Darussalam,2,12790.0
-   Bulgaria,2,2260.0
-   Burkina Faso,2,310.0
-   Burundi,2,210.0
-   Cameroon,2,910.0
-Canada,2,20150.0
-Cape Verde,2,960.0
-Central African Rep.,2,470.0
-Chad,2,260.0
-Chile,2,2250.0
-Colombia,2,1260.0
-Comoros,2,530.0
-"Congo, Dem. Rep.",2,230.0
-"Congo, Rep.",2,910.0
-Costa Rica,2,2340.0
-Cote D'Ivoire,2,740.0
-Cuba,2,2660.0
-Cyprus,2,9510.0
-Denmark,2,24120.0
-Dominica,2,2300.0
-Dominican Rep.,2,870.0
-Ecuador,2,900.0
-Egypt,2,750.0
-El Salvador,2,890.0
-Equatorial Guinea,2,330.0
-Estonia,2,3190.0
-Ethiopia,2,250.0
-Fiji,2,1790.0
-Finland,2,25220.0
-France,2,20160.0
-Gabon,2,4930.0
-Gambia,2,300.0
-Germany,2,20630.0
-Ghana,2,400.0
-Greece,2,8590.0
-Greenland,2,15690.0
-Grenada,2,2250.0
-Guatemala,2,950.0
-Guinea,2,450.0
-Guinea-Bissau,2,220.0
-Guyana,2,390.0
-Haiti,2,350.0
-Honduras,2,700.0
-Hungary,2,2880.0
-Iceland,2,24150.0
-India,2,390.0
-Indonesia,2,600.0
-Iran,2,2450.0
-Ireland,2,12200.0
-Israel,2,10860.0
-Italy,2,17900.0
-Jamaica,2,1790.0
-Japan,2,27090.0
-Jordan,2,1390.0
-Kenya,2,380.0
-Kiribati,2,730.0
-"Korea, Rep.",2,6000.0
-Laos,2,200.0
-Latvia,2,2790.0
-Lebanon,2,1240.0
-Lesotho,2,540.0
-Liechtenstein,2,45170.0
-Luxemburg,2,29530.0
-Madagascar,2,250.0
-Malawi,2,180.0
-Malaysia,2,2370.0
-Mali,2,260.0
-Malta,2,7470.0
-Mauritania,2,550.0
-Mauritius,2,2440.0
-Mexico,2,2790.0
-Monaco,2,75810.0
-Mongolia,2,1430.0
-Morocco,2,990.0
-Mozambique,2,170.0
-Namibia,2,1720.0
-Nepal,2,210.0
-Netherlands,2,18810.0
-New Zealand,2,12970.0
-Nicaragua,2,310.0
-Niger,2,300.0
-Nigeria,2,260.0
-Norway,2,26010.0
-Oman,2,5540.0
-Pakistan,2,410.0
-Panama,2,2210.0
-Papua New Guinea,2,820.0
-Paraguay,2,1190.0
-Peru,2,780.0
-Philippines,2,730.0
-Portugal,2,7050.0
-Puerto Rico,2,6220.0
-Romania,2,1710.0
-Rwanda,2,360.0
-Saint Kitts and Nevis,2,3610.0
-Saint Lucia,2,2810.0
-Saint Vincent and the Grenadines,2,1740.0
-Samoa,2,1070.0
-Saudi Arabia,2,7330.0
-Senegal,2,740.0
-Seychelles,2,5020.0
-Sierra Leone,2,200.0
-Singapore,2,11450.0
-Slovakia,2,2060.0
-Solomon Islands,2,710.0
-South Africa,2,3390.0
-Spain,2,11890.0
-Sri Lanka,2,460.0
-Sudan,2,510.0
-Suriname,2,1480.0
-Swaziland,2,1150.0
-Sweden,2,26360.0
-Switzerland,2,34240.0
-Syrian Arab Republic,2,920.0
-Tanzania,2,200.0
-Thailand,2,1480.0
-Togo,2,410.0
-Tonga,2,1220.0
-Trinidad And Tobago,2,3720.0
-Tunisia,2,1430.0
-Turkey,2,2300.0
-Turkmenistan,2,830.0
-Uganda,2,320.0
-Ukraine,2,1610.0
-United Arab Emirates,2,20720.0
-United Kingdom,2,16600.0
-United States,2,23260.0
-Uruguay,2,2840.0
-Vanuatu,2,1200.0
-Venezuela,2,2570.0
-Viet Nam,2,130.0
-Zambia,2,440.0
-Zimbabwe,2,860.0
-Country or Area,3,2000.0
-   World,3,5278.0
-   High Income,3,25324.0
-     High Income: OECD,3,26218.0
-     High Income: nonOECD,3,13895.0
-   Middle Income,3,1252.0
-     Lower Middle Income,3,575.0
-     Upper Middle Income,3,1881.0
-   Low and Middle Income,3,1127.0
-     East Asia and Pacific,3,902.0
-     Europe and Central Asia,3,1780.0
-     Latin America and Caribbean,3,3817.0
-     Middle East and North Africa,3,1645.0
-     South Asia,3,442.0
-     Sub-Saharan Africa,3,491.0
-   Low Income,3,267.0
-   Least Developed Countries,3,280.0
-   Heavily Indebted Poor Countries,3,291.0
-   China,3,930.0
-"   Hong Kong, China",3,26570.0
-"   Macao, China",3,14640.0
-   Albania,3,1170.0
-   Algeria,3,1600.0
-   Angola,3,420.0
-   Antigua and Barbuda,3,8490.0
-   Argentina,3,7460.0
-   Armenia,3,660.0
-   Australia,3,21260.0
-   Austria,3,26000.0
-   Azerbaijan,3,610.0
-   Bahamas,3,20350.0
-   Bahrain,3,10940.0
-   Bangladesh,3,380.0
-   Barbados,3,9090.0
-   Belarus,3,1380.0
-   Belgium,3,25430.0
-   Belize,3,3110.0
-   Benin,3,370.0
-   Bhutan,3,720.0
-   Bolivia,3,1000.0
-   Bosnia and Herzegovinian,3,1510.0
-   Botswana,3,3120.0
-   Brazil,3,3860.0
-   Brunei Darussalam,3,14960.0
-   Bulgaria,3,1620.0
-   Burkina Faso,3,230.0
-   Burundi,3,130.0
-   Cambodia,3,290.0
-   Cameroon,3,630.0
-Canada,3,22130.0
-Cape Verde,3,1330.0
-Central African Rep.,3,280.0
-Chad,3,180.0
-Chile,3,4840.0
-Colombia,3,2350.0
-Comoros,3,380.0
-"Congo, Dem. Rep.",3,90.0
-"Congo, Rep.",3,560.0
-Costa Rica,3,3710.0
-Cote D'Ivoire,3,650.0
-Croatia,3,5220.0
-Cuba,3,2620.0
-Cyprus,3,13440.0
-Czech Rep.,3,5800.0
-Denmark,3,31830.0
-Djibouti,3,750.0
-Dominica,3,3500.0
-Dominican Rep.,3,2620.0
-Ecuador,3,1330.0
-Egypt,3,1440.0
-El Salvador,3,2110.0
-Equatorial Guinea,3,1270.0
-Eritrea,3,170.0
-Estonia,3,4220.0
-Ethiopia,3,130.0
-Fiji,3,2230.0
-Finland,3,25440.0
-France,3,24270.0
-Gabon,3,3080.0
-Gambia,3,630.0
-Georgia,3,750.0
-Germany,3,25300.0
-Ghana,3,340.0
-Greece,3,12460.0
-Greenland,3,20290.0
-Grenada,3,4150.0
-Guatemala,3,1730.0
-Guinea,3,400.0
-Guinea-Bissau,3,180.0
-Guyana,3,890.0
-Haiti,3,470.0
-Honduras,3,940.0
-Hungary,3,4580.0
-Iceland,3,30800.0
-India,3,450.0
-Indonesia,3,560.0
-Iran,3,1630.0
-Ireland,3,23480.0
-Israel,3,17830.0
-Italy,3,21010.0
-Jamaica,3,3310.0
-Japan,3,35040.0
-Jordan,3,1790.0
-Kazakhstan,3,1260.0
-Kenya,3,420.0
-Kiribati,3,1380.0
-"Korea, Rep.",3,9910.0
-Kuwait,3,18950.0
-Kyrgyzstan,3,280.0
-Laos,3,280.0
-Latvia,3,3210.0
-Lebanon,3,4730.0
-Lesotho,3,530.0
-Liberia,3,190.0
-Liechtenstein,3,79660.0
-Lithuania,3,3200.0
-Luxemburg,3,43660.0
-"Macedonia, FYR",3,1830.0
-Madagascar,3,250.0
-Malawi,3,160.0
-Malaysia,3,3420.0
-Maldives,3,2140.0
-Mali,3,230.0
-Malta,3,10510.0
-Marshall Islands,3,2850.0
-Mauritania,3,530.0
-Mauritius,3,3870.0
-Mexico,3,5010.0
-"Micronesia, Fed.",3,2220.0
-Moldova,3,370.0
-Monaco,3,82960.0
-Mongolia,3,460.0
-Morocco,3,1310.0
-Mozambique,3,230.0
-Namibia,3,1950.0
-Nepal,3,220.0
-Netherlands,3,26580.0
-New Zealand,3,13760.0
-Nicaragua,3,730.0
-Niger,3,180.0
-Nigeria,3,270.0
-Norway,3,35860.0
-Oman,3,7130.0
-Pakistan,3,470.0
-Palau,3,6250.0
-Panama,3,3730.0
-Papua New Guinea,3,620.0
-Paraguay,3,1350.0
-Peru,3,2060.0
-Philippines,3,1050.0
-Poland,3,4600.0
-Portugal,3,12100.0
-Puerto Rico,3,10550.0
-Romania,3,1690.0
-Russian Fed.,3,1710.0
-Rwanda,3,250.0
-Saint Kitts and Nevis,3,6880.0
-Saint Lucia,3,4170.0
-Saint Vincent and the Grenadines,3,3130.0
-Samoa,3,1420.0
-Saudi Arabia,3,8390.0
-Senegal,3,530.0
-Serbia,3,1400.0
-Seychelles,3,7420.0
-Sierra Leone,3,150.0
-Singapore,3,24500.0
-Slovakia,3,5440.0
-Slovenia,3,11150.0
-Solomon Islands,3,1020.0
-South Africa,3,3050.0
-Spain,3,15420.0
-Sri Lanka,3,860.0
-Sudan,3,320.0
-Suriname,3,1930.0
-Swaziland,3,1600.0
-Sweden,3,29490.0
-Switzerland,3,40270.0
-Syrian Arab Republic,3,990.0
-Tajikistan,3,170.0
-Tanzania,3,310.0
-Thailand,3,1930.0
-Togo,3,300.0
-Tonga,3,2030.0
-Trinidad And Tobago,3,5200.0
-Tunisia,3,2300.0
-Turkey,3,4170.0
-Turkmenistan,3,650.0
-Uganda,3,260.0
-Ukraine,3,700.0
-United Arab Emirates,3,20630.0
-United Kingdom,3,26010.0
-United States,3,34890.0
-Uruguay,3,7100.0
-Uzbekistan,3,630.0
-Vanuatu,3,1430.0
-Venezuela,3,4100.0
-Viet Nam,3,390.0
-Yemen,3,420.0
-Zambia,3,310.0
-Zimbabwe,3,490.0
-Country or Area,4,2005.0
-   World,4,7104.0
-   High Income,4,34000.0
-     High Income: OECD,4,35292.0
-     High Income: nonOECD,4,18474.0
-   Middle Income,4,1921.0
-     Lower Middle Income,4,897.0
-     Upper Middle Income,4,2912.0
-   Low and Middle Income,4,1712.0
-     East Asia and Pacific,4,1617.0
-     Europe and Central Asia,4,3711.0
-     Latin America and Caribbean,4,4415.0
-     Middle East and North Africa,4,2195.0
-     South Asia,4,692.0
-     Sub-Saharan Africa,4,768.0
-   Low Income,4,343.0
-   Least Developed Countries,4,405.0
-   Heavily Indebted Poor Countries,4,401.0
-   China,4,1740.0
-"   Hong Kong, China",4,28150.0
-"   Macao, China",4,23410.0
-   Afghanistan,4,230.0
-   Albania,4,2580.0
-   Algeria,4,2720.0
-   Angola,4,1270.0
-   Antigua and Barbuda,4,12000.0
-   Argentina,4,4480.0
-   Armenia,4,1470.0
-   Australia,4,30440.0
-   Austria,4,37210.0
-   Azerbaijan,4,1270.0
-   Bahamas,4,24410.0
-   Bahrain,4,17400.0
-   Bangladesh,4,480.0
-   Barbados,4,11000.0
-   Belarus,4,2780.0
-   Belgium,4,36610.0
-   Belize,4,3580.0
-   Benin,4,570.0
-   Bhutan,4,1070.0
-   Bolivia,4,1030.0
-   Bosnia and Herzegovinian,4,3020.0
-   Botswana,4,5070.0
-   Brazil,4,3960.0
-   Brunei Darussalam,4,23210.0
-   Bulgaria,4,3640.0
-   Burkina Faso,4,390.0
-   Burundi,4,140.0
-   Cambodia,4,460.0
-   Cameroon,4,930.0
-Canada,4,33110.0
-Cape Verde,4,2080.0
-Central African Rep.,4,340.0
-Chad,4,430.0
-Chile,4,5970.0
-Colombia,4,2940.0
-Comoros,4,610.0
-"Congo, Dem. Rep.",4,120.0
-"Congo, Rep.",4,980.0
-Costa Rica,4,4680.0
-Cote D'Ivoire,4,870.0
-Croatia,4,9690.0
-Cuba,4,3960.0
-Cyprus,4,21490.0
-Czech Rep.,4,11890.0
-Denmark,4,48590.0
-Djibouti,4,990.0
-Dominica,4,5210.0
-Dominican Rep.,4,2900.0
-Ecuador,4,2620.0
-Egypt,4,1250.0
-El Salvador,4,2820.0
-Equatorial Guinea,4,5220.0
-Eritrea,4,250.0
-Estonia,4,9730.0
-Ethiopia,4,160.0
-Fiji,4,3590.0
-Finland,4,38550.0
-France,4,34850.0
-Gabon,4,5110.0
-Gambia,4,390.0
-Georgia,4,1360.0
-Germany,4,34780.0
-Ghana,4,460.0
-Greece,4,21400.0
-Greenland,4,29690.0
-Grenada,4,6570.0
-Guatemala,4,2070.0
-Guinea,4,420.0
-Guinea-Bissau,4,410.0
-Guyana,4,1090.0
-Haiti,4,400.0
-Honduras,4,1400.0
-Hungary,4,10220.0
-Iceland,4,49620.0
-India,4,730.0
-Indonesia,4,1220.0
-Iran,4,2550.0
-Ireland,4,42380.0
-Israel,4,20180.0
-Italy,4,30880.0
-Jamaica,4,3920.0
-Japan,4,39140.0
-Jordan,4,2490.0
-Kazakhstan,4,2950.0
-Kenya,4,520.0
-Kiribati,4,1780.0
-"Korea, Rep.",4,16900.0
-Kuwait,4,34650.0
-Kyrgyzstan,4,450.0
-Laos,4,460.0
-Latvia,4,6810.0
-Lebanon,4,5710.0
-Lesotho,4,840.0
-Liberia,4,120.0
-Libya,4,6460.0
-Liechtenstein,4,92780.0
-Lithuania,4,7380.0
-Luxemburg,4,69300.0
-"Macedonia, FYR",4,2900.0
-Madagascar,4,300.0
-Malawi,4,220.0
-Malaysia,4,5110.0
-Maldives,4,3370.0
-Mali,4,390.0
-Malta,4,14380.0
-Marshall Islands,4,3560.0
-Mauritania,4,720.0
-Mauritius,4,5360.0
-Mexico,4,7820.0
-"Micronesia, Fed.",4,2510.0
-Moldova,4,890.0
-Monaco,4,123100.0
-Mongolia,4,890.0
-Montenegro,4,3580.0
-Morocco,4,1960.0
-Mozambique,4,300.0
-Namibia,4,3300.0
-Nepal,4,290.0
-Netherlands,4,39880.0
-New Zealand,4,24990.0
-Nicaragua,4,890.0
-Niger,4,260.0
-Nigeria,4,630.0
-Norway,4,62490.0
-Oman,4,11190.0
-Pakistan,4,710.0
-Palau,4,7770.0
-Panama,4,4640.0
-Papua New Guinea,4,680.0
-Paraguay,4,1220.0
-Peru,4,2710.0
-Philippines,4,1210.0
-Poland,4,7270.0
-Portugal,4,18060.0
-Puerto Rico,4,14530.0
-Romania,4,3920.0
-Russian Fed.,4,4460.0
-Rwanda,4,270.0
-Saint Kitts and Nevis,4,10130.0
-Saint Lucia,4,5130.0
-Saint Vincent and the Grenadines,4,4980.0
-Samoa,4,2090.0
-Sao Tome and Principe,4,740.0
-Saudi Arabia,4,12230.0
-Senegal,4,800.0
-Serbia,4,3430.0
-Seychelles,4,9820.0
-Sierra Leone,4,230.0
-Singapore,4,27240.0
-Slovakia,4,11040.0
-Slovenia,4,18070.0
-Solomon Islands,4,890.0
-South Africa,4,4850.0
-Spain,4,25450.0
-Sri Lanka,4,1210.0
-Sudan,4,610.0
-Suriname,4,3320.0
-Swaziland,4,2600.0
-Sweden,4,42920.0
-Switzerland,4,56870.0
-Syrian Arab Republic,4,1500.0
-Tajikistan,4,340.0
-Tanzania,4,380.0
-Thailand,4,2560.0
-Timor-Leste,4,740.0
-Togo,4,370.0
-Tonga,4,2470.0
-Trinidad And Tobago,4,11160.0
-Tunisia,4,3200.0
-Turkey,4,6480.0
-Turkmenistan,4,1650.0
-Tuvalu,4,3780.0
-Uganda,4,300.0
-Ukraine,4,1540.0
-United Arab Emirates,4,42280.0
-United Kingdom,4,38850.0
-United States,4,44670.0
-Uruguay,4,4740.0
-Uzbekistan,4,530.0
-Vanuatu,4,1760.0
-Venezuela,4,4950.0
-Viet Nam,4,630.0
-Yemen,4,690.0
-Zambia,4,500.0
-Zimbabwe,4,440.0
-Country or Area,5,2009.0
-   World,5,8674.0
-   High Income,5,37800.0
-     High Income: OECD,5,39150.0
-     High Income: nonOECD,5,22890.0
-   Middle Income,5,3349.0
-     Lower Middle Income,5,1462.0
-     Upper Middle Income,5,5233.0
-   Low and Middle Income,5,2959.0
-     East Asia and Pacific,5,3166.0
-     Europe and Central Asia,5,6851.0
-     Latin America and Caribbean,5,7023.0
-     Middle East and North Africa,5,3679.0
-     South Asia,5,1069.0
-     Sub-Saharan Africa,5,1132.0
-   Low Income,5,496.0
-   Least Developed Countries,5,676.0
-   Heavily Indebted Poor Countries,5,634.0
-   China,5,3620.0
-"   Hong Kong, China",5,31410.0
-"   Macao, China",5,36000.0
-   Afghanistan,5,370.0
-   Albania,5,3970.0
-   Algeria,5,4470.0
-   Angola,5,3880.0
-   Antigua and Barbuda,5,13500.0
-   Argentina,5,7580.0
-   Armenia,5,3050.0
-   Australia,5,43860.0
-   Austria,5,46630.0
-   Azerbaijan,5,4800.0
-   Bahamas,5,23420.0
-   Bahrain,5,15880.0
-   Bangladesh,5,640.0
-   Barbados,5,12660.0
-   Belarus,5,5590.0
-   Belgium,5,44700.0
-   Belize,5,3820.0
-   Benin,5,780.0
-   Bhutan,5,1710.0
-   Bolivia,5,1640.0
-   Bosnia and Herzegovinian,5,4760.0
-   Botswana,5,6270.0
-   Brazil,5,8150.0
-   Brunei Darussalam,5,31800.0
-   Bulgaria,5,6080.0
-   Burkina Faso,5,520.0
-   Burundi,5,210.0
-   Cambodia,5,700.0
-   Cameroon,5,1210.0
-Canada,5,41890.0
-Cape Verde,5,3180.0
-Central African Rep.,5,450.0
-Chad,5,650.0
-Chile,5,9970.0
-Colombia,5,5060.0
-Comoros,5,740.0
-"Congo, Dem. Rep.",5,170.0
-"Congo, Rep.",5,1980.0
-Costa Rica,5,6200.0
-Cote D'Ivoire,5,1160.0
-Croatia,5,13810.0
-Cyprus,5,29710.0
-Czech Rep.,5,17860.0
-Denmark,5,58330.0
-Djibouti,5,1270.0
-Dominica,5,6830.0
-Dominican Rep.,5,4690.0
-Ecuador,5,3630.0
-Egypt,5,2160.0
-El Salvador,5,3310.0
-Equatorial Guinea,5,16710.0
-Eritrea,5,290.0
-Estonia,5,14360.0
-Ethiopia,5,350.0
-Fiji,5,3890.0
-Finland,5,46620.0
-France,5,42380.0
-Gabon,5,7620.0
-Gambia,5,590.0
-Georgia,5,2540.0
-Germany,5,42400.0
-Ghana,5,1190.0
-Greece,5,28020.0
-Greenland,5,26020.0
-Grenada,5,6910.0
-Guatemala,5,2660.0
-Guinea,5,380.0
-Guinea-Bissau,5,550.0
-Guyana,5,2640.0
-Haiti,5,670.0
-Honduras,5,1780.0
-Hungary,5,12980.0
-Iceland,5,39140.0
-India,5,1150.0
-Indonesia,5,2160.0
-Iran,5,4520.0
-Iraq,5,2310.0
-Ireland,5,44870.0
-Israel,5,25510.0
-Italy,5,35570.0
-Jamaica,5,4610.0
-Japan,5,37580.0
-Jordan,5,3900.0
-Kazakhstan,5,6780.0
-Kenya,5,780.0
-Kiribati,5,1840.0
-"Korea, Rep.",5,19650.0
-Kuwait,5,48980.0
-Kyrgyzstan,5,860.0
-Laos,5,900.0
-Latvia,5,12390.0
-Lebanon,5,7870.0
-Lesotho,5,1080.0
-Liberia,5,210.0
-Libya,5,12320.0
-Liechtenstein,5,137070.0
-Lithuania,5,11700.0
-Luxemburg,5,71920.0
-"Macedonia, FYR",5,4540.0
-Madagascar,5,420.0
-Malawi,5,310.0
-Malaysia,5,7230.0
-Maldives,5,5660.0
-Mali,5,560.0
-Malta,5,18220.0
-Marshall Islands,5,3640.0
-Mauritania,5,1030.0
-Mauritius,5,7260.0
-Mexico,5,8670.0
-"Micronesia, Fed.",5,2640.0
-Moldova,5,1570.0
-Monaco,5,183150.0
-Mongolia,5,1760.0
-Montenegro,5,6580.0
-Morocco,5,2770.0
-Mozambique,5,430.0
-Namibia,5,4060.0
-Nepal,5,440.0
-Netherlands,5,48530.0
-New Zealand,5,28740.0
-Nicaragua,5,1050.0
-Niger,5,340.0
-Nigeria,5,1160.0
-Norway,5,85760.0
-Oman,5,18170.0
-Pakistan,5,990.0
-Palau,5,6230.0
-Panama,5,6540.0
-Papua New Guinea,5,1190.0
-Paraguay,5,2240.0
-Peru,5,4280.0
-Philippines,5,1870.0
-Poland,5,12190.0
-Portugal,5,21750.0
-Puerto Rico,5,16300.0
-Qatar,5,69750.0
-Romania,5,8320.0
-Russian Fed.,5,9290.0
-Rwanda,5,480.0
-Saint Kitts and Nevis,5,12990.0
-Saint Lucia,5,5630.0
-Saint Vincent and the Grenadines,5,6220.0
-Samoa,5,2870.0
-Sao Tome and Principe,5,1170.0
-Saudi Arabia,5,16250.0
-Senegal,5,1070.0
-Serbia,5,5740.0
-Seychelles,5,10390.0
-Sierra Leone,5,340.0
-Singapore,5,36030.0
-Slovakia,5,15820.0
-Slovenia,5,23750.0
-Solomon Islands,5,960.0
-South Africa,5,5730.0
-Spain,5,32020.0
-Sri Lanka,5,1970.0
-Sudan,5,1230.0
-Suriname,5,7020.0
-Swaziland,5,2880.0
-Sweden,5,48820.0
-Switzerland,5,65040.0
-Syrian Arab Republic,5,2570.0
-Tajikistan,5,750.0
-Tanzania,5,500.0
-Thailand,5,3720.0
-Timor-Leste,5,2250.0
-Togo,5,520.0
-Tonga,5,3300.0
-Trinidad And Tobago,5,16370.0
-Tunisia,5,4100.0
-Turkey,5,9060.0
-Turkmenistan,5,3460.0
-Tuvalu,5,5260.0
-Uganda,5,470.0
-Ukraine,5,2840.0
-United Arab Emirates,5,41940.0
-United Kingdom,5,40970.0
-United States,5,46080.0
-Uruguay,5,8640.0
-Uzbekistan,5,1130.0
-Vanuatu,5,2520.0
-Venezuela,5,10230.0
-Viet Nam,5,1030.0
-Yemen,5,1070.0
-Zambia,5,990.0
-Zimbabwe,5,400.0
-Country or Area,6,2010.0
-   World,6,9067.0
-   High Income,6,38765.0
-     High Income: OECD,6,40142.0
-     High Income: nonOECD,6,23782.0
-   Middle Income,6,3722.0
-     Lower Middle Income,6,1596.0
-     Upper Middle Income,6,5865.0
-   Low and Middle Income,6,3283.0
-     East Asia and Pacific,6,3670.0
-     Europe and Central Asia,6,7260.0
-     Latin America and Caribbean,6,7821.0
-     Middle East and North Africa,6,3869.0
-     South Asia,6,1167.0
-     Sub-Saharan Africa,6,1178.0
-   Low Income,6,534.0
-   Least Developed Countries,6,720.0
-   Heavily Indebted Poor Countries,6,668.0
-   China,6,4240.0
-"   Hong Kong, China",6,32780.0
-"   Macao, China",6,45460.0
-   Afghanistan,6,410.0
-   Albania,6,3970.0
-   Algeria,6,4390.0
-   Angola,6,3960.0
-   Antigua and Barbuda,6,12450.0
-   Argentina,6,8620.0
-   Armenia,6,3200.0
-   Australia,6,46200.0
-   Austria,6,46920.0
-   Azerbaijan,6,5380.0
-   Bahamas,6,21970.0
-   Bahrain,6,15920.0
-   Bangladesh,6,700.0
-   Belarus,6,5990.0
-   Belgium,6,45780.0
-   Belize,6,3640.0
-   Benin,6,780.0
-   Bhutan,6,1870.0
-   Bolivia,6,1810.0
-   Bosnia and Herzegovinian,6,4740.0
-   Botswana,6,6750.0
-   Brazil,6,9540.0
-   Bulgaria,6,6320.0
-   Burkina Faso,6,550.0
-   Burundi,6,230.0
-   Cambodia,6,750.0
-   Cameroon,6,1200.0
-Canada,6,43250.0
-Cape Verde,6,3280.0
-Central African Rep.,6,470.0
-Chad,6,710.0
-Chile,6,10750.0
-Colombia,6,5520.0
-Comoros,6,750.0
-"Congo, Dem. Rep.",6,180.0
-"Congo, Rep.",6,2240.0
-Costa Rica,6,6860.0
-Cote D'Ivoire,6,1170.0
-Croatia,6,13890.0
-Cyprus,6,29450.0
-Czech Rep.,6,18490.0
-Denmark,6,59410.0
-Dominica,6,6900.0
-Dominican Rep.,6,5020.0
-Ecuador,6,3850.0
-Egypt,6,2420.0
-El Salvador,6,3370.0
-Equatorial Guinea,6,13720.0
-Eritrea,6,340.0
-Estonia,6,14180.0
-Ethiopia,6,390.0
-Fiji,6,3610.0
-Finland,6,47460.0
-France,6,42190.0
-Gabon,6,7680.0
-Gambia,6,610.0
-Georgia,6,2680.0
-Germany,6,42970.0
-Ghana,6,1250.0
-Greece,6,26890.0
-Grenada,6,7010.0
-Guatemala,6,2740.0
-Guinea,6,390.0
-Guinea-Bissau,6,580.0
-Guyana,6,2900.0
-Haiti,6,650.0
-Honduras,6,1870.0
-Hungary,6,12860.0
-Iceland,6,33890.0
-India,6,1260.0
-Indonesia,6,2500.0
-Iraq,6,2380.0
-Ireland,6,41720.0
-Israel,6,27270.0
-Italy,6,35530.0
-Jamaica,6,4700.0
-Japan,6,42050.0
-Jordan,6,4140.0
-Kazakhstan,6,7500.0
-Kenya,6,810.0
-Kiribati,6,2010.0
-"Korea, Rep.",6,19720.0
-Kuwait,6,48900.0
-Kyrgyzstan,6,840.0
-Laos,6,1010.0
-Latvia,6,11850.0
-Lebanon,6,8750.0
-Lesotho,6,1100.0
-Liberia,6,210.0
-Lithuania,6,11620.0
-Luxemburg,6,76820.0
-"Macedonia, FYR",6,4600.0
-Madagascar,6,430.0
-Malawi,6,330.0
-Malaysia,6,7760.0
-Maldives,6,6150.0
-Mali,6,600.0
-Malta,6,18620.0
-Marshall Islands,6,3640.0
-Mauritania,6,1000.0
-Mauritius,6,7780.0
-Mexico,6,8930.0
-"Micronesia, Fed.",6,2730.0
-Moldova,6,1820.0
-Mongolia,6,1870.0
-Montenegro,6,6740.0
-Morocco,6,2850.0
-Mozambique,6,440.0
-Namibia,6,4250.0
-Nepal,6,490.0
-Netherlands,6,48920.0
-New Zealand,6,29350.0
-Nicaragua,6,1100.0
-Niger,6,360.0
-Nigeria,6,1170.0
-Norway,6,86390.0
-Oman,6,19260.0
-Pakistan,6,1050.0
-Palau,6,6560.0
-Panama,6,7010.0
-Papua New Guinea,6,1300.0
-Paraguay,6,2730.0
-Peru,6,4900.0
-Philippines,6,2060.0
-Poland,6,12450.0
-Portugal,6,21830.0
-Puerto Rico,6,16560.0
-Qatar,6,73060.0
-Romania,6,7850.0
-Russian Fed.,6,9880.0
-Rwanda,6,520.0
-Saint Kitts and Nevis,6,12360.0
-Saint Lucia,6,6200.0
-Saint Vincent and the Grenadines,6,6030.0
-Samoa,6,3030.0
-Sao Tome and Principe,6,1250.0
-Saudi Arabia,6,16610.0
-Senegal,6,1080.0
-Serbia,6,5630.0
-Seychelles,6,10460.0
-Sierra Leone,6,340.0
-Singapore,6,39410.0
-Slovakia,6,16030.0
-Slovenia,6,23910.0
-Solomon Islands,6,1030.0
-South Africa,6,6090.0
-Spain,6,31460.0
-Sri Lanka,6,2260.0
-Sudan,6,1300.0
-Suriname,6,7640.0
-Swaziland,6,2930.0
-Sweden,6,50580.0
-Switzerland,6,71590.0
-Syrian Arab Republic,6,2750.0
-Tajikistan,6,810.0
-Tanzania,6,530.0
-Thailand,6,4150.0
-Timor-Leste,6,2730.0
-Togo,6,550.0
-Tonga,6,3340.0
-Trinidad And Tobago,6,15840.0
-Tunisia,6,4140.0
-Turkey,6,9890.0
-Turkmenistan,6,3790.0
-Tuvalu,6,4600.0
-Uganda,6,500.0
-Ukraine,6,2990.0
-United Arab Emirates,6,39640.0
-United Kingdom,6,38140.0
-United States,6,47350.0
-Uruguay,6,10290.0
-Uzbekistan,6,1300.0
-Vanuatu,6,2630.0
-Venezuela,6,11660.0
-Viet Nam,6,1160.0
-Yemen,6,1160.0
-Zambia,6,1070.0
-Zimbabwe,6,480.0
-Country or Area,7,2011.0
-   World,7,9491.0
-   High Income,7,39783.0
-     High Income: OECD,7,41144.0
-     High Income: nonOECD,7,25372.0
-   Middle Income,7,4125.0
-     Lower Middle Income,7,1760.0
-     Upper Middle Income,7,6530.0
-   Low and Middle Income,7,3631.0
-     East Asia and Pacific,7,4243.0
-     Europe and Central Asia,7,7610.0
-     Latin America and Caribbean,7,8544.0
-     South Asia,7,1299.0
-     Sub-Saharan Africa,7,1255.0
-   Low Income,7,567.0
-   Least Developed Countries,7,754.0
-   Heavily Indebted Poor Countries,7,694.0
-   China,7,4940.0
-"   Hong Kong, China",7,35160.0
-   Albania,7,3980.0
-   Algeria,7,4470.0
-   Angola,7,4060.0
-   Antigua and Barbuda,7,12060.0
-   Argentina,7,9740.0
-   Armenia,7,3360.0
-   Austria,7,48300.0
-   Azerbaijan,7,5290.0
-   Bangladesh,7,770.0
-   Belarus,7,5830.0
-   Belgium,7,46160.0
-   Belize,7,3690.0
-   Benin,7,780.0
-   Bhutan,7,2070.0
-   Bolivia,7,2040.0
-   Bosnia and Herzegovinian,7,4780.0
-   Botswana,7,7480.0
-   Brazil,7,10720.0
-   Bulgaria,7,6550.0
-   Burkina Faso,7,570.0
-   Burundi,7,250.0
-   Cambodia,7,830.0
-   Cameroon,7,1210.0
-Canada,7,45560.0
-Cape Verde,7,3540.0
-Central African Rep.,7,470.0
-Chad,7,690.0
-Chile,7,12280.0
-Colombia,7,6110.0
-Comoros,7,770.0
-"Congo, Dem. Rep.",7,190.0
-"Congo, Rep.",7,2270.0
-Costa Rica,7,7660.0
-Cote D'Ivoire,7,1100.0
-Croatia,7,13850.0
-Czech Rep.,7,18520.0
-Denmark,7,60390.0
-Dominica,7,7090.0
-Dominican Rep.,7,5240.0
-Ecuador,7,4140.0
-Egypt,7,2600.0
-El Salvador,7,3480.0
-Equatorial Guinea,7,14540.0
-Eritrea,7,430.0
-Estonia,7,15200.0
-Ethiopia,7,400.0
-Fiji,7,3680.0
-Finland,7,48420.0
-France,7,42420.0
-Gabon,7,7980.0
-Gambia,7,610.0
-Georgia,7,2860.0
-Germany,7,43980.0
-Ghana,7,1410.0
-Greece,7,25030.0
-Grenada,7,7220.0
-Guatemala,7,2870.0
-Guinea,7,440.0
-Guinea-Bissau,7,600.0
-Haiti,7,700.0
-Honduras,7,1970.0
-Hungary,7,12730.0
-Iceland,7,35020.0
-India,7,1410.0
-Indonesia,7,2940.0
-Iraq,7,2640.0
-Ireland,7,38580.0
-Israel,7,28930.0
-Italy,7,35330.0
-Jamaica,7,4980.0
-Japan,7,45180.0
-Jordan,7,4380.0
-Kazakhstan,7,8220.0
-Kenya,7,820.0
-Kiribati,7,2110.0
-"Korea, Rep.",7,20870.0
-Kyrgyzstan,7,920.0
-Laos,7,1130.0
-Latvia,7,12350.0
-Lebanon,7,9110.0
-Lesotho,7,1220.0
-Liberia,7,240.0
-Lithuania,7,12280.0
-Luxemburg,7,78130.0
-"Macedonia, FYR",7,4730.0
-Madagascar,7,430.0
-Malawi,7,340.0
-Malaysia,7,8420.0
-Maldives,7,6530.0
-Mali,7,610.0
-Marshall Islands,7,3910.0
-Mauritania,7,1000.0
-Mauritius,7,8240.0
-Mexico,7,9240.0
-"Micronesia, Fed.",7,2900.0
-Moldova,7,1980.0
-Mongolia,7,2320.0
-Montenegro,7,7060.0
-Morocco,7,2970.0
-Mozambique,7,470.0
-Namibia,7,4700.0
-Nepal,7,540.0
-Netherlands,7,49730.0
-Nicaragua,7,1170.0
-Niger,7,360.0
-Nigeria,7,1200.0
-Norway,7,88890.0
-Pakistan,7,1120.0
-Palau,7,7250.0
-Panama,7,7910.0
-Papua New Guinea,7,1480.0
-Paraguay,7,2970.0
-Peru,7,5500.0
-Philippines,7,2210.0
-Poland,7,12480.0
-Portugal,7,21250.0
-Qatar,7,80440.0
-Romania,7,7910.0
-Russian Fed.,7,10400.0
-Rwanda,7,570.0
-Saint Kitts and Nevis,7,12480.0
-Saint Lucia,7,6680.0
-Saint Vincent and the Grenadines,7,6100.0
-Samoa,7,3190.0
-Sao Tome and Principe,7,1360.0
-Saudi Arabia,7,17820.0
-Senegal,7,1070.0
-Serbia,7,5680.0
-Seychelles,7,11130.0
-Sierra Leone,7,340.0
-Singapore,7,42930.0
-Slovakia,7,16070.0
-Slovenia,7,23610.0
-Solomon Islands,7,1110.0
-South Africa,7,6960.0
-Spain,7,30990.0
-Sri Lanka,7,2580.0
-Swaziland,7,3300.0
-Sweden,7,53230.0
-Switzerland,7,76380.0
-Tajikistan,7,870.0
-Tanzania,7,540.0
-Thailand,7,4420.0
-Togo,7,560.0
-Tonga,7,3580.0
-Trinidad And Tobago,7,15040.0
-Tunisia,7,4070.0
-Turkey,7,10410.0
-Turkmenistan,7,4110.0
-Tuvalu,7,5010.0
-Uganda,7,510.0
-Ukraine,7,3120.0
-United Arab Emirates,7,40760.0
-United Kingdom,7,37780.0
-United States,7,48450.0
-Uruguay,7,11860.0
-Uzbekistan,7,1510.0
-Vanuatu,7,2870.0
-Venezuela,7,11920.0
-Viet Nam,7,1260.0
-Yemen,7,1070.0
-Zambia,7,1160.0
-Zimbabwe,7,640.0
+section_header_row,country_or_area,year,gni_per_capita
+Countries and Regions,Country or Area,1990,1990.0
+Countries and Regions,Country or Area,2000,2000.0
+Countries and Regions,Country or Area,2005,2005.0
+Countries and Regions,Country or Area,2009,2009.0
+Countries and Regions,Country or Area,2010,2010.0
+Countries and Regions,Country or Area,2011,2011.0
+World,   World,4080,4080.0
+World,   World,5278,5278.0
+World,   World,7104,7104.0
+World,   World,8674,8674.0
+World,   World,9067,9067.0
+World,   World,9491,9491.0
+OECD High-Income Countries,     High Income: OECD,19059,19059.0
+OECD High-Income Countries,     High Income: OECD,26218,26218.0
+OECD High-Income Countries,     High Income: OECD,35292,35292.0
+OECD High-Income Countries,     High Income: OECD,39150,39150.0
+OECD High-Income Countries,     High Income: OECD,40142,40142.0
+OECD High-Income Countries,     High Income: OECD,41144,41144.0
+Non-OECD High-Income Countries,     High Income: nonOECD,8538,8538.0
+Non-OECD High-Income Countries,     High Income: nonOECD,13895,13895.0
+Non-OECD High-Income Countries,     High Income: nonOECD,18474,18474.0
+Non-OECD High-Income Countries,     High Income: nonOECD,22890,22890.0
+Non-OECD High-Income Countries,     High Income: nonOECD,23782,23782.0
+Non-OECD High-Income Countries,     High Income: nonOECD,25372,25372.0
+East Asia and Pacific,     East Asia and Pacific,425,425.0
+East Asia and Pacific,     East Asia and Pacific,902,902.0
+East Asia and Pacific,     East Asia and Pacific,1617,1617.0
+East Asia and Pacific,     East Asia and Pacific,3166,3166.0
+East Asia and Pacific,     East Asia and Pacific,3670,3670.0
+East Asia and Pacific,     East Asia and Pacific,4243,4243.0
+Europe and Central Asia,     Europe and Central Asia,1780,1780.0
+Europe and Central Asia,     Europe and Central Asia,3711,3711.0
+Europe and Central Asia,     Europe and Central Asia,6851,6851.0
+Europe and Central Asia,     Europe and Central Asia,7260,7260.0
+Europe and Central Asia,     Europe and Central Asia,7610,7610.0
+Latin America and the Caribbean,     Latin America and Caribbean,2254,2254.0
+Latin America and the Caribbean,     Latin America and Caribbean,3817,3817.0
+Latin America and the Caribbean,     Latin America and Caribbean,4415,4415.0
+Latin America and the Caribbean,     Latin America and Caribbean,7023,7023.0
+Latin America and the Caribbean,     Latin America and Caribbean,7821,7821.0
+Latin America and the Caribbean,     Latin America and Caribbean,8544,8544.0
+Middle East and North African Countries,     Middle East and North Africa,1296,1296.0
+Middle East and North African Countries,     Middle East and North Africa,1645,1645.0
+Middle East and North African Countries,     Middle East and North Africa,2195,2195.0
+Middle East and North African Countries,     Middle East and North Africa,3679,3679.0
+Middle East and North African Countries,     Middle East and North Africa,3869,3869.0
+South Asia,     South Asia,377,377.0
+South Asia,     South Asia,442,442.0
+South Asia,     South Asia,692,692.0
+South Asia,     South Asia,1069,1069.0
+South Asia,     South Asia,1167,1167.0
+South Asia,     South Asia,1299,1299.0
+Sub-Saharan Africa,     Sub-Saharan Africa,587,587.0
+Sub-Saharan Africa,     Sub-Saharan Africa,491,491.0
+Sub-Saharan Africa,     Sub-Saharan Africa,768,768.0
+Sub-Saharan Africa,     Sub-Saharan Africa,1132,1132.0
+Sub-Saharan Africa,     Sub-Saharan Africa,1178,1178.0
+Sub-Saharan Africa,     Sub-Saharan Africa,1255,1255.0
+China,   China,330,330.0
+China,   China,930,930.0
+China,   China,1740,1740.0
+China,   China,3620,3620.0
+China,   China,4240,4240.0
+China,   China,4940,4940.0
+"Hong Kong, China","   Hong Kong, China",12660,12660.0
+"Hong Kong, China","   Hong Kong, China",26570,26570.0
+"Hong Kong, China","   Hong Kong, China",28150,28150.0
+"Hong Kong, China","   Hong Kong, China",31410,31410.0
+"Hong Kong, China","   Hong Kong, China",32780,32780.0
+"Hong Kong, China","   Hong Kong, China",35160,35160.0
+"Macau, China","   Macao, China",8530,8530.0
+"Macau, China","   Macao, China",14640,14640.0
+"Macau, China","   Macao, China",23410,23410.0
+"Macau, China","   Macao, China",36000,36000.0
+"Macau, China","   Macao, China",45460,45460.0
+Afghanistan,   Afghanistan,230,230.0
+Afghanistan,   Afghanistan,370,370.0
+Afghanistan,   Afghanistan,410,410.0
+Albania,   Albania,680,680.0
+Albania,   Albania,1170,1170.0
+Albania,   Albania,2580,2580.0
+Albania,   Albania,3970,3970.0
+Albania,   Albania,3970,3970.0
+Albania,   Albania,3980,3980.0
+Algeria,   Algeria,2420,2420.0
+Algeria,   Algeria,1600,1600.0
+Algeria,   Algeria,2720,2720.0
+Algeria,   Algeria,4470,4470.0
+Algeria,   Algeria,4390,4390.0
+Algeria,   Algeria,4470,4470.0
+Angola,   Angola,740,740.0
+Angola,   Angola,420,420.0
+Angola,   Angola,1270,1270.0
+Angola,   Angola,3880,3880.0
+Angola,   Angola,3960,3960.0
+Angola,   Angola,4060,4060.0
+Antigua and Barbuda,   Antigua and Barbuda,5710,5710.0
+Antigua and Barbuda,   Antigua and Barbuda,8490,8490.0
+Antigua and Barbuda,   Antigua and Barbuda,12000,12000.0
+Antigua and Barbuda,   Antigua and Barbuda,13500,13500.0
+Antigua and Barbuda,   Antigua and Barbuda,12450,12450.0
+Antigua and Barbuda,   Antigua and Barbuda,12060,12060.0
+Argentina,   Argentina,3180,3180.0
+Argentina,   Argentina,7460,7460.0
+Argentina,   Argentina,4480,4480.0
+Argentina,   Argentina,7580,7580.0
+Argentina,   Argentina,8620,8620.0
+Argentina,   Argentina,9740,9740.0
+Armenia,   Armenia,660,660.0
+Armenia,   Armenia,1470,1470.0
+Armenia,   Armenia,3050,3050.0
+Armenia,   Armenia,3200,3200.0
+Armenia,   Armenia,3360,3360.0
+Australia,   Australia,17420,17420.0
+Australia,   Australia,21260,21260.0
+Australia,   Australia,30440,30440.0
+Australia,   Australia,43860,43860.0
+Australia,   Australia,46200,46200.0
+Austria,   Austria,20080,20080.0
+Austria,   Austria,26000,26000.0
+Austria,   Austria,37210,37210.0
+Austria,   Austria,46630,46630.0
+Austria,   Austria,46920,46920.0
+Austria,   Austria,48300,48300.0
+Azerbaijan,   Azerbaijan,610,610.0
+Azerbaijan,   Azerbaijan,1270,1270.0
+Azerbaijan,   Azerbaijan,4800,4800.0
+Azerbaijan,   Azerbaijan,5380,5380.0
+Azerbaijan,   Azerbaijan,5290,5290.0
+Bahamas,   Bahamas,12000,12000.0
+Bahamas,   Bahamas,20350,20350.0
+Bahamas,   Bahamas,24410,24410.0
+Bahamas,   Bahamas,23420,23420.0
+Bahamas,   Bahamas,21970,21970.0
+Bahrain,   Bahrain,7260,7260.0
+Bahrain,   Bahrain,10940,10940.0
+Bahrain,   Bahrain,17400,17400.0
+Bahrain,   Bahrain,15880,15880.0
+Bahrain,   Bahrain,15920,15920.0
+Bangladesh,   Bangladesh,290,290.0
+Bangladesh,   Bangladesh,380,380.0
+Bangladesh,   Bangladesh,480,480.0
+Bangladesh,   Bangladesh,640,640.0
+Bangladesh,   Bangladesh,700,700.0
+Bangladesh,   Bangladesh,770,770.0
+Barbados,   Barbados,6570,6570.0
+Barbados,   Barbados,9090,9090.0
+Barbados,   Barbados,11000,11000.0
+Barbados,   Barbados,12660,12660.0
+Belarus,   Belarus,1380,1380.0
+Belarus,   Belarus,2780,2780.0
+Belarus,   Belarus,5590,5590.0
+Belarus,   Belarus,5990,5990.0
+Belarus,   Belarus,5830,5830.0
+Belgium,   Belgium,18960,18960.0
+Belgium,   Belgium,25430,25430.0
+Belgium,   Belgium,36610,36610.0
+Belgium,   Belgium,44700,44700.0
+Belgium,   Belgium,45780,45780.0
+Belgium,   Belgium,46160,46160.0
+Belize,   Belize,2210,2210.0
+Belize,   Belize,3110,3110.0
+Belize,   Belize,3580,3580.0
+Belize,   Belize,3820,3820.0
+Belize,   Belize,3640,3640.0
+Belize,   Belize,3690,3690.0
+Benin,   Benin,360,360.0
+Benin,   Benin,370,370.0
+Benin,   Benin,570,570.0
+Benin,   Benin,780,780.0
+Benin,   Benin,780,780.0
+Benin,   Benin,780,780.0
+Bhutan,   Bhutan,580,580.0
+Bhutan,   Bhutan,720,720.0
+Bhutan,   Bhutan,1070,1070.0
+Bhutan,   Bhutan,1710,1710.0
+Bhutan,   Bhutan,1870,1870.0
+Bhutan,   Bhutan,2070,2070.0
+Bolivia,   Bolivia,740,740.0
+Bolivia,   Bolivia,1000,1000.0
+Bolivia,   Bolivia,1030,1030.0
+Bolivia,   Bolivia,1640,1640.0
+Bolivia,   Bolivia,1810,1810.0
+Bolivia,   Bolivia,2040,2040.0
+Bosnia and Herzegovina,   Bosnia and Herzegovinian,1510,1510.0
+Bosnia and Herzegovina,   Bosnia and Herzegovinian,3020,3020.0
+Bosnia and Herzegovina,   Bosnia and Herzegovinian,4760,4760.0
+Bosnia and Herzegovina,   Bosnia and Herzegovinian,4740,4740.0
+Bosnia and Herzegovina,   Bosnia and Herzegovinian,4780,4780.0
+Botswana,   Botswana,2540,2540.0
+Botswana,   Botswana,3120,3120.0
+Botswana,   Botswana,5070,5070.0
+Botswana,   Botswana,6270,6270.0
+Botswana,   Botswana,6750,6750.0
+Botswana,   Botswana,7480,7480.0
+Brazil,   Brazil,2700,2700.0
+Brazil,   Brazil,3860,3860.0
+Brazil,   Brazil,3960,3960.0
+Brazil,   Brazil,8150,8150.0
+Brazil,   Brazil,9540,9540.0
+Brazil,   Brazil,10720,10720.0
+Brunei,   Brunei Darussalam,12790,12790.0
+Brunei,   Brunei Darussalam,14960,14960.0
+Brunei,   Brunei Darussalam,23210,23210.0
+Brunei,   Brunei Darussalam,31800,31800.0
+Bulgaria,   Bulgaria,2260,2260.0
+Bulgaria,   Bulgaria,1620,1620.0
+Bulgaria,   Bulgaria,3640,3640.0
+Bulgaria,   Bulgaria,6080,6080.0
+Bulgaria,   Bulgaria,6320,6320.0
+Bulgaria,   Bulgaria,6550,6550.0
+Burkina Faso,   Burkina Faso,310,310.0
+Burkina Faso,   Burkina Faso,230,230.0
+Burkina Faso,   Burkina Faso,390,390.0
+Burkina Faso,   Burkina Faso,520,520.0
+Burkina Faso,   Burkina Faso,550,550.0
+Burkina Faso,   Burkina Faso,570,570.0
+Burundi,   Burundi,210,210.0
+Burundi,   Burundi,130,130.0
+Burundi,   Burundi,140,140.0
+Burundi,   Burundi,210,210.0
+Burundi,   Burundi,230,230.0
+Burundi,   Burundi,250,250.0
+Cambodia,   Cambodia,290,290.0
+Cambodia,   Cambodia,460,460.0
+Cambodia,   Cambodia,700,700.0
+Cambodia,   Cambodia,750,750.0
+Cambodia,   Cambodia,830,830.0
+Cameroon,   Cameroon,910,910.0
+Cameroon,   Cameroon,630,630.0
+Cameroon,   Cameroon,930,930.0
+Cameroon,   Cameroon,1210,1210.0
+Cameroon,   Cameroon,1200,1200.0
+Cameroon,   Cameroon,1210,1210.0
+Canada,Canada,20150,20150.0
+Canada,Canada,22130,22130.0
+Canada,Canada,33110,33110.0
+Canada,Canada,41890,41890.0
+Canada,Canada,43250,43250.0
+Canada,Canada,45560,45560.0
+The Cape Verde Islands,Cape Verde,960,960.0
+The Cape Verde Islands,Cape Verde,1330,1330.0
+The Cape Verde Islands,Cape Verde,2080,2080.0
+The Cape Verde Islands,Cape Verde,3180,3180.0
+The Cape Verde Islands,Cape Verde,3280,3280.0
+The Cape Verde Islands,Cape Verde,3540,3540.0
+Zha De,Chad,260,260.0
+Zha De,Chad,180,180.0
+Zha De,Chad,430,430.0
+Zha De,Chad,650,650.0
+Zha De,Chad,710,710.0
+Zha De,Chad,690,690.0
+Chile,Chile,2250,2250.0
+Chile,Chile,4840,4840.0
+Chile,Chile,5970,5970.0
+Chile,Chile,9970,9970.0
+Chile,Chile,10750,10750.0
+Chile,Chile,12280,12280.0
+Colombia,Colombia,1260,1260.0
+Colombia,Colombia,2350,2350.0
+Colombia,Colombia,2940,2940.0
+Colombia,Colombia,5060,5060.0
+Colombia,Colombia,5520,5520.0
+Colombia,Colombia,6110,6110.0
+Comoros,Comoros,530,530.0
+Comoros,Comoros,380,380.0
+Comoros,Comoros,610,610.0
+Comoros,Comoros,740,740.0
+Comoros,Comoros,750,750.0
+Comoros,Comoros,770,770.0
+Democratic Republic of the Congo,"Congo, Dem. Rep.",230,230.0
+Democratic Republic of the Congo,"Congo, Dem. Rep.",90,90.0
+Democratic Republic of the Congo,"Congo, Dem. Rep.",120,120.0
+Democratic Republic of the Congo,"Congo, Dem. Rep.",170,170.0
+Democratic Republic of the Congo,"Congo, Dem. Rep.",180,180.0
+Democratic Republic of the Congo,"Congo, Dem. Rep.",190,190.0
+Congo (Brazzaville),"Congo, Rep.",910,910.0
+Congo (Brazzaville),"Congo, Rep.",560,560.0
+Congo (Brazzaville),"Congo, Rep.",980,980.0
+Congo (Brazzaville),"Congo, Rep.",1980,1980.0
+Congo (Brazzaville),"Congo, Rep.",2240,2240.0
+Congo (Brazzaville),"Congo, Rep.",2270,2270.0
+Costa Rica,Costa Rica,2340,2340.0
+Costa Rica,Costa Rica,3710,3710.0
+Costa Rica,Costa Rica,4680,4680.0
+Costa Rica,Costa Rica,6200,6200.0
+Costa Rica,Costa Rica,6860,6860.0
+Costa Rica,Costa Rica,7660,7660.0
+Côte d'Ivoire,Cote D'Ivoire,740,740.0
+Côte d'Ivoire,Cote D'Ivoire,650,650.0
+Côte d'Ivoire,Cote D'Ivoire,870,870.0
+Côte d'Ivoire,Cote D'Ivoire,1160,1160.0
+Côte d'Ivoire,Cote D'Ivoire,1170,1170.0
+Côte d'Ivoire,Cote D'Ivoire,1100,1100.0
+Croatia,Croatia,5220,5220.0
+Croatia,Croatia,9690,9690.0
+Croatia,Croatia,13810,13810.0
+Croatia,Croatia,13890,13890.0
+Croatia,Croatia,13850,13850.0
+Cuba,Cuba,2660,2660.0
+Cuba,Cuba,2620,2620.0
+Cuba,Cuba,3960,3960.0
+Cyprus,Cyprus,9510,9510.0
+Cyprus,Cyprus,13440,13440.0
+Cyprus,Cyprus,21490,21490.0
+Cyprus,Cyprus,29710,29710.0
+Cyprus,Cyprus,29450,29450.0
+Czech Republic,Czech Rep.,5800,5800.0
+Czech Republic,Czech Rep.,11890,11890.0
+Czech Republic,Czech Rep.,17860,17860.0
+Czech Republic,Czech Rep.,18490,18490.0
+Czech Republic,Czech Rep.,18520,18520.0
+Denmark,Denmark,24120,24120.0
+Denmark,Denmark,31830,31830.0
+Denmark,Denmark,48590,48590.0
+Denmark,Denmark,58330,58330.0
+Denmark,Denmark,59410,59410.0
+Denmark,Denmark,60390,60390.0
+Djibouti,Djibouti,750,750.0
+Djibouti,Djibouti,990,990.0
+Djibouti,Djibouti,1270,1270.0
+Dominica,Dominica,2300,2300.0
+Dominica,Dominica,3500,3500.0
+Dominica,Dominica,5210,5210.0
+Dominica,Dominica,6830,6830.0
+Dominica,Dominica,6900,6900.0
+Dominica,Dominica,7090,7090.0
+Dominica,Dominican Rep.,870,870.0
+Dominica,Dominican Rep.,2620,2620.0
+Dominica,Dominican Rep.,2900,2900.0
+Dominica,Dominican Rep.,4690,4690.0
+Dominica,Dominican Rep.,5020,5020.0
+Dominica,Dominican Rep.,5240,5240.0
+Ecuador,Ecuador,900,900.0
+Ecuador,Ecuador,1330,1330.0
+Ecuador,Ecuador,2620,2620.0
+Ecuador,Ecuador,3630,3630.0
+Ecuador,Ecuador,3850,3850.0
+Ecuador,Ecuador,4140,4140.0
+Egypt,Egypt,750,750.0
+Egypt,Egypt,1440,1440.0
+Egypt,Egypt,1250,1250.0
+Egypt,Egypt,2160,2160.0
+Egypt,Egypt,2420,2420.0
+Egypt,Egypt,2600,2600.0
+El Salvador,El Salvador,890,890.0
+El Salvador,El Salvador,2110,2110.0
+El Salvador,El Salvador,2820,2820.0
+El Salvador,El Salvador,3310,3310.0
+El Salvador,El Salvador,3370,3370.0
+El Salvador,El Salvador,3480,3480.0
+Equatorial Guinea,Equatorial Guinea,330,330.0
+Equatorial Guinea,Equatorial Guinea,1270,1270.0
+Equatorial Guinea,Equatorial Guinea,5220,5220.0
+Equatorial Guinea,Equatorial Guinea,16710,16710.0
+Equatorial Guinea,Equatorial Guinea,13720,13720.0
+Equatorial Guinea,Equatorial Guinea,14540,14540.0
+Eritrea,Eritrea,170,170.0
+Eritrea,Eritrea,250,250.0
+Eritrea,Eritrea,290,290.0
+Eritrea,Eritrea,340,340.0
+Eritrea,Eritrea,430,430.0
+Estonia,Estonia,3190,3190.0
+Estonia,Estonia,4220,4220.0
+Estonia,Estonia,9730,9730.0
+Estonia,Estonia,14360,14360.0
+Estonia,Estonia,14180,14180.0
+Estonia,Estonia,15200,15200.0
+Ethiopia,Ethiopia,250,250.0
+Ethiopia,Ethiopia,130,130.0
+Ethiopia,Ethiopia,160,160.0
+Ethiopia,Ethiopia,350,350.0
+Ethiopia,Ethiopia,390,390.0
+Ethiopia,Ethiopia,400,400.0
+Fiji,Fiji,1790,1790.0
+Fiji,Fiji,2230,2230.0
+Fiji,Fiji,3590,3590.0
+Fiji,Fiji,3890,3890.0
+Fiji,Fiji,3610,3610.0
+Fiji,Fiji,3680,3680.0
+Finland,Finland,25220,25220.0
+Finland,Finland,25440,25440.0
+Finland,Finland,38550,38550.0
+Finland,Finland,46620,46620.0
+Finland,Finland,47460,47460.0
+Finland,Finland,48420,48420.0
+France,France,20160,20160.0
+France,France,24270,24270.0
+France,France,34850,34850.0
+France,France,42380,42380.0
+France,France,42190,42190.0
+France,France,42420,42420.0
+Jia Peng,Gabon,4930,4930.0
+Jia Peng,Gabon,3080,3080.0
+Jia Peng,Gabon,5110,5110.0
+Jia Peng,Gabon,7620,7620.0
+Jia Peng,Gabon,7680,7680.0
+Jia Peng,Gabon,7980,7980.0
+Gambia,Gambia,300,300.0
+Gambia,Gambia,630,630.0
+Gambia,Gambia,390,390.0
+Gambia,Gambia,590,590.0
+Gambia,Gambia,610,610.0
+Gambia,Gambia,610,610.0
+Georgia,Georgia,750,750.0
+Georgia,Georgia,1360,1360.0
+Georgia,Georgia,2540,2540.0
+Georgia,Georgia,2680,2680.0
+Georgia,Georgia,2860,2860.0
+Germany,Germany,20630,20630.0
+Germany,Germany,25300,25300.0
+Germany,Germany,34780,34780.0
+Germany,Germany,42400,42400.0
+Germany,Germany,42970,42970.0
+Germany,Germany,43980,43980.0
+Ghana,Ghana,400,400.0
+Ghana,Ghana,340,340.0
+Ghana,Ghana,460,460.0
+Ghana,Ghana,1190,1190.0
+Ghana,Ghana,1250,1250.0
+Ghana,Ghana,1410,1410.0
+Greece,Greece,8590,8590.0
+Greece,Greece,12460,12460.0
+Greece,Greece,21400,21400.0
+Greece,Greece,28020,28020.0
+Greece,Greece,26890,26890.0
+Greece,Greece,25030,25030.0
+Greenland,Greenland,15690,15690.0
+Greenland,Greenland,20290,20290.0
+Greenland,Greenland,29690,29690.0
+Greenland,Greenland,26020,26020.0
+Grenada,Grenada,2250,2250.0
+Grenada,Grenada,4150,4150.0
+Grenada,Grenada,6570,6570.0
+Grenada,Grenada,6910,6910.0
+Grenada,Grenada,7010,7010.0
+Grenada,Grenada,7220,7220.0
+Guatemala,Guatemala,950,950.0
+Guatemala,Guatemala,1730,1730.0
+Guatemala,Guatemala,2070,2070.0
+Guatemala,Guatemala,2660,2660.0
+Guatemala,Guatemala,2740,2740.0
+Guatemala,Guatemala,2870,2870.0
+Guinea,Guinea,450,450.0
+Guinea,Guinea,400,400.0
+Guinea,Guinea,420,420.0
+Guinea,Guinea,380,380.0
+Guinea,Guinea,390,390.0
+Guinea,Guinea,440,440.0
+Guinea-Bissau,Guinea-Bissau,220,220.0
+Guinea-Bissau,Guinea-Bissau,180,180.0
+Guinea-Bissau,Guinea-Bissau,410,410.0
+Guinea-Bissau,Guinea-Bissau,550,550.0
+Guinea-Bissau,Guinea-Bissau,580,580.0
+Guinea-Bissau,Guinea-Bissau,600,600.0
+Guyana,Guyana,390,390.0
+Guyana,Guyana,890,890.0
+Guyana,Guyana,1090,1090.0
+Guyana,Guyana,2640,2640.0
+Guyana,Guyana,2900,2900.0
+Haiti,Haiti,350,350.0
+Haiti,Haiti,470,470.0
+Haiti,Haiti,400,400.0
+Haiti,Haiti,670,670.0
+Haiti,Haiti,650,650.0
+Haiti,Haiti,700,700.0
+Honduras,Honduras,700,700.0
+Honduras,Honduras,940,940.0
+Honduras,Honduras,1400,1400.0
+Honduras,Honduras,1780,1780.0
+Honduras,Honduras,1870,1870.0
+Honduras,Honduras,1970,1970.0
+Hungary,Hungary,2880,2880.0
+Hungary,Hungary,4580,4580.0
+Hungary,Hungary,10220,10220.0
+Hungary,Hungary,12980,12980.0
+Hungary,Hungary,12860,12860.0
+Hungary,Hungary,12730,12730.0
+Iceland,Iceland,24150,24150.0
+Iceland,Iceland,30800,30800.0
+Iceland,Iceland,49620,49620.0
+Iceland,Iceland,39140,39140.0
+Iceland,Iceland,33890,33890.0
+Iceland,Iceland,35020,35020.0
+India,India,390,390.0
+India,India,450,450.0
+India,India,730,730.0
+India,India,1150,1150.0
+India,India,1260,1260.0
+India,India,1410,1410.0
+Indonesia,Indonesia,600,600.0
+Indonesia,Indonesia,560,560.0
+Indonesia,Indonesia,1220,1220.0
+Indonesia,Indonesia,2160,2160.0
+Indonesia,Indonesia,2500,2500.0
+Indonesia,Indonesia,2940,2940.0
+Iran,Iran,2450,2450.0
+Iran,Iran,1630,1630.0
+Iran,Iran,2550,2550.0
+Iran,Iran,4520,4520.0
+Iraq,Iraq,2310,2310.0
+Iraq,Iraq,2380,2380.0
+Iraq,Iraq,2640,2640.0
+Ireland,Ireland,12200,12200.0
+Ireland,Ireland,23480,23480.0
+Ireland,Ireland,42380,42380.0
+Ireland,Ireland,44870,44870.0
+Ireland,Ireland,41720,41720.0
+Ireland,Ireland,38580,38580.0
+Israel,Israel,10860,10860.0
+Israel,Israel,17830,17830.0
+Israel,Israel,20180,20180.0
+Israel,Israel,25510,25510.0
+Israel,Israel,27270,27270.0
+Israel,Israel,28930,28930.0
+Italy,Italy,17900,17900.0
+Italy,Italy,21010,21010.0
+Italy,Italy,30880,30880.0
+Italy,Italy,35570,35570.0
+Italy,Italy,35530,35530.0
+Italy,Italy,35330,35330.0
+Jamaica,Jamaica,1790,1790.0
+Jamaica,Jamaica,3310,3310.0
+Jamaica,Jamaica,3920,3920.0
+Jamaica,Jamaica,4610,4610.0
+Jamaica,Jamaica,4700,4700.0
+Jamaica,Jamaica,4980,4980.0
+Japan,Japan,27090,27090.0
+Japan,Japan,35040,35040.0
+Japan,Japan,39140,39140.0
+Japan,Japan,37580,37580.0
+Japan,Japan,42050,42050.0
+Japan,Japan,45180,45180.0
+Jordan,Jordan,1390,1390.0
+Jordan,Jordan,1790,1790.0
+Jordan,Jordan,2490,2490.0
+Jordan,Jordan,3900,3900.0
+Jordan,Jordan,4140,4140.0
+Jordan,Jordan,4380,4380.0
+Kazakhstan,Kazakhstan,1260,1260.0
+Kazakhstan,Kazakhstan,2950,2950.0
+Kazakhstan,Kazakhstan,6780,6780.0
+Kazakhstan,Kazakhstan,7500,7500.0
+Kazakhstan,Kazakhstan,8220,8220.0
+Kenya,Kenya,380,380.0
+Kenya,Kenya,420,420.0
+Kenya,Kenya,520,520.0
+Kenya,Kenya,780,780.0
+Kenya,Kenya,810,810.0
+Kenya,Kenya,820,820.0
+Kiribati,Kiribati,730,730.0
+Kiribati,Kiribati,1380,1380.0
+Kiribati,Kiribati,1780,1780.0
+Kiribati,Kiribati,1840,1840.0
+Kiribati,Kiribati,2010,2010.0
+Kiribati,Kiribati,2110,2110.0
+South Korea,"Korea, Rep.",6000,6000.0
+South Korea,"Korea, Rep.",9910,9910.0
+South Korea,"Korea, Rep.",16900,16900.0
+South Korea,"Korea, Rep.",19650,19650.0
+South Korea,"Korea, Rep.",19720,19720.0
+South Korea,"Korea, Rep.",20870,20870.0
+Kuwait,Kuwait,18950,18950.0
+Kuwait,Kuwait,34650,34650.0
+Kuwait,Kuwait,48980,48980.0
+Kuwait,Kuwait,48900,48900.0
+Kyrgyzstan,Kyrgyzstan,280,280.0
+Kyrgyzstan,Kyrgyzstan,450,450.0
+Kyrgyzstan,Kyrgyzstan,860,860.0
+Kyrgyzstan,Kyrgyzstan,840,840.0
+Kyrgyzstan,Kyrgyzstan,920,920.0
+Lao PDR,Laos,200,200.0
+Lao PDR,Laos,280,280.0
+Lao PDR,Laos,460,460.0
+Lao PDR,Laos,900,900.0
+Lao PDR,Laos,1010,1010.0
+Lao PDR,Laos,1130,1130.0
+Latvia,Latvia,2790,2790.0
+Latvia,Latvia,3210,3210.0
+Latvia,Latvia,6810,6810.0
+Latvia,Latvia,12390,12390.0
+Latvia,Latvia,11850,11850.0
+Latvia,Latvia,12350,12350.0
+Liberia,Lebanon,1240,1240.0
+Liberia,Lebanon,4730,4730.0
+Liberia,Lebanon,5710,5710.0
+Liberia,Lebanon,7870,7870.0
+Liberia,Lebanon,8750,8750.0
+Liberia,Lebanon,9110,9110.0
+Lesotho,Lesotho,540,540.0
+Lesotho,Lesotho,530,530.0
+Lesotho,Lesotho,840,840.0
+Lesotho,Lesotho,1080,1080.0
+Lesotho,Lesotho,1100,1100.0
+Lesotho,Lesotho,1220,1220.0
+Liberia,Liberia,190,190.0
+Liberia,Liberia,120,120.0
+Liberia,Liberia,210,210.0
+Liberia,Liberia,210,210.0
+Liberia,Liberia,240,240.0
+Libya,Libya,6460,6460.0
+Libya,Libya,12320,12320.0
+Liechtenstein,Liechtenstein,45170,45170.0
+Liechtenstein,Liechtenstein,79660,79660.0
+Liechtenstein,Liechtenstein,92780,92780.0
+Liechtenstein,Liechtenstein,137070,137070.0
+Lithuania,Lithuania,3200,3200.0
+Lithuania,Lithuania,7380,7380.0
+Lithuania,Lithuania,11700,11700.0
+Lithuania,Lithuania,11620,11620.0
+Lithuania,Lithuania,12280,12280.0
+Luxembourg,Luxemburg,29530,29530.0
+Luxembourg,Luxemburg,43660,43660.0
+Luxembourg,Luxemburg,69300,69300.0
+Luxembourg,Luxemburg,71920,71920.0
+Luxembourg,Luxemburg,76820,76820.0
+Luxembourg,Luxemburg,78130,78130.0
+Former Yugoslav Republic of Macedonia,"Macedonia, FYR",1830,1830.0
+Former Yugoslav Republic of Macedonia,"Macedonia, FYR",2900,2900.0
+Former Yugoslav Republic of Macedonia,"Macedonia, FYR",4540,4540.0
+Former Yugoslav Republic of Macedonia,"Macedonia, FYR",4600,4600.0
+Former Yugoslav Republic of Macedonia,"Macedonia, FYR",4730,4730.0
+Madagascar,Madagascar,250,250.0
+Madagascar,Madagascar,250,250.0
+Madagascar,Madagascar,300,300.0
+Madagascar,Madagascar,420,420.0
+Madagascar,Madagascar,430,430.0
+Madagascar,Madagascar,430,430.0
+Malawi,Malawi,180,180.0
+Malawi,Malawi,160,160.0
+Malawi,Malawi,220,220.0
+Malawi,Malawi,310,310.0
+Malawi,Malawi,330,330.0
+Malawi,Malawi,340,340.0
+Malaysia,Malaysia,2370,2370.0
+Malaysia,Malaysia,3420,3420.0
+Malaysia,Malaysia,5110,5110.0
+Malaysia,Malaysia,7230,7230.0
+Malaysia,Malaysia,7760,7760.0
+Malaysia,Malaysia,8420,8420.0
+Maldives,Maldives,2140,2140.0
+Maldives,Maldives,3370,3370.0
+Maldives,Maldives,5660,5660.0
+Maldives,Maldives,6150,6150.0
+Maldives,Maldives,6530,6530.0
+Mali,Mali,260,260.0
+Mali,Mali,230,230.0
+Mali,Mali,390,390.0
+Mali,Mali,560,560.0
+Mali,Mali,600,600.0
+Mali,Mali,610,610.0
+Malta,Malta,7470,7470.0
+Malta,Malta,10510,10510.0
+Malta,Malta,14380,14380.0
+Malta,Malta,18220,18220.0
+Malta,Malta,18620,18620.0
+Marshall Islands,Marshall Islands,2850,2850.0
+Marshall Islands,Marshall Islands,3560,3560.0
+Marshall Islands,Marshall Islands,3640,3640.0
+Marshall Islands,Marshall Islands,3640,3640.0
+Marshall Islands,Marshall Islands,3910,3910.0
+Mauritania,Mauritania,550,550.0
+Mauritania,Mauritania,530,530.0
+Mauritania,Mauritania,720,720.0
+Mauritania,Mauritania,1030,1030.0
+Mauritania,Mauritania,1000,1000.0
+Mauritania,Mauritania,1000,1000.0
+Mauritius,Mauritius,2440,2440.0
+Mauritius,Mauritius,3870,3870.0
+Mauritius,Mauritius,5360,5360.0
+Mauritius,Mauritius,7260,7260.0
+Mauritius,Mauritius,7780,7780.0
+Mauritius,Mauritius,8240,8240.0
+Mexico,Mexico,2790,2790.0
+Mexico,Mexico,5010,5010.0
+Mexico,Mexico,7820,7820.0
+Mexico,Mexico,8670,8670.0
+Mexico,Mexico,8930,8930.0
+Mexico,Mexico,9240,9240.0
+Micronesia,"Micronesia, Fed.",2220,2220.0
+Micronesia,"Micronesia, Fed.",2510,2510.0
+Micronesia,"Micronesia, Fed.",2640,2640.0
+Micronesia,"Micronesia, Fed.",2730,2730.0
+Micronesia,"Micronesia, Fed.",2900,2900.0
+Moldova,Moldova,370,370.0
+Moldova,Moldova,890,890.0
+Moldova,Moldova,1570,1570.0
+Moldova,Moldova,1820,1820.0
+Moldova,Moldova,1980,1980.0
+Monaco,Monaco,75810,75810.0
+Monaco,Monaco,82960,82960.0
+Monaco,Monaco,123100,123100.0
+Monaco,Monaco,183150,183150.0
+Mongolia,Mongolia,1430,1430.0
+Mongolia,Mongolia,460,460.0
+Mongolia,Mongolia,890,890.0
+Mongolia,Mongolia,1760,1760.0
+Mongolia,Mongolia,1870,1870.0
+Mongolia,Mongolia,2320,2320.0
+Montenegro,Montenegro,3580,3580.0
+Montenegro,Montenegro,6580,6580.0
+Montenegro,Montenegro,6740,6740.0
+Montenegro,Montenegro,7060,7060.0
+Morocco,Morocco,990,990.0
+Morocco,Morocco,1310,1310.0
+Morocco,Morocco,1960,1960.0
+Morocco,Morocco,2770,2770.0
+Morocco,Morocco,2850,2850.0
+Morocco,Morocco,2970,2970.0
+Mozambique,Mozambique,170,170.0
+Mozambique,Mozambique,230,230.0
+Mozambique,Mozambique,300,300.0
+Mozambique,Mozambique,430,430.0
+Mozambique,Mozambique,440,440.0
+Mozambique,Mozambique,470,470.0
+Namibia,Namibia,1720,1720.0
+Namibia,Namibia,1950,1950.0
+Namibia,Namibia,3300,3300.0
+Namibia,Namibia,4060,4060.0
+Namibia,Namibia,4250,4250.0
+Namibia,Namibia,4700,4700.0
+Nepal,Nepal,210,210.0
+Nepal,Nepal,220,220.0
+Nepal,Nepal,290,290.0
+Nepal,Nepal,440,440.0
+Nepal,Nepal,490,490.0
+Nepal,Nepal,540,540.0
+Netherlands,Netherlands,18810,18810.0
+Netherlands,Netherlands,26580,26580.0
+Netherlands,Netherlands,39880,39880.0
+Netherlands,Netherlands,48530,48530.0
+Netherlands,Netherlands,48920,48920.0
+Netherlands,Netherlands,49730,49730.0
+New Zealand,New Zealand,12970,12970.0
+New Zealand,New Zealand,13760,13760.0
+New Zealand,New Zealand,24990,24990.0
+New Zealand,New Zealand,28740,28740.0
+New Zealand,New Zealand,29350,29350.0
+Nicaragua,Nicaragua,310,310.0
+Nicaragua,Nicaragua,730,730.0
+Nicaragua,Nicaragua,890,890.0
+Nicaragua,Nicaragua,1050,1050.0
+Nicaragua,Nicaragua,1100,1100.0
+Nicaragua,Nicaragua,1170,1170.0
+Niger,Niger,300,300.0
+Niger,Niger,180,180.0
+Niger,Niger,260,260.0
+Niger,Niger,340,340.0
+Niger,Niger,360,360.0
+Niger,Niger,360,360.0
+Nigeria,Nigeria,260,260.0
+Nigeria,Nigeria,270,270.0
+Nigeria,Nigeria,630,630.0
+Nigeria,Nigeria,1160,1160.0
+Nigeria,Nigeria,1170,1170.0
+Nigeria,Nigeria,1200,1200.0
+Norway,Norway,26010,26010.0
+Norway,Norway,35860,35860.0
+Norway,Norway,62490,62490.0
+Norway,Norway,85760,85760.0
+Norway,Norway,86390,86390.0
+Norway,Norway,88890,88890.0
+Oman,Oman,5540,5540.0
+Oman,Oman,7130,7130.0
+Oman,Oman,11190,11190.0
+Oman,Oman,18170,18170.0
+Oman,Oman,19260,19260.0
+Pakistan,Pakistan,410,410.0
+Pakistan,Pakistan,470,470.0
+Pakistan,Pakistan,710,710.0
+Pakistan,Pakistan,990,990.0
+Pakistan,Pakistan,1050,1050.0
+Pakistan,Pakistan,1120,1120.0
+Palau,Palau,6250,6250.0
+Palau,Palau,7770,7770.0
+Palau,Palau,6230,6230.0
+Palau,Palau,6560,6560.0
+Palau,Palau,7250,7250.0
+Panama,Panama,2210,2210.0
+Panama,Panama,3730,3730.0
+Panama,Panama,4640,4640.0
+Panama,Panama,6540,6540.0
+Panama,Panama,7010,7010.0
+Panama,Panama,7910,7910.0
+Papua New Guinea,Papua New Guinea,820,820.0
+Papua New Guinea,Papua New Guinea,620,620.0
+Papua New Guinea,Papua New Guinea,680,680.0
+Papua New Guinea,Papua New Guinea,1190,1190.0
+Papua New Guinea,Papua New Guinea,1300,1300.0
+Papua New Guinea,Papua New Guinea,1480,1480.0
+Paraguay,Paraguay,1190,1190.0
+Paraguay,Paraguay,1350,1350.0
+Paraguay,Paraguay,1220,1220.0
+Paraguay,Paraguay,2240,2240.0
+Paraguay,Paraguay,2730,2730.0
+Paraguay,Paraguay,2970,2970.0
+Peru,Peru,780,780.0
+Peru,Peru,2060,2060.0
+Peru,Peru,2710,2710.0
+Peru,Peru,4280,4280.0
+Peru,Peru,4900,4900.0
+Peru,Peru,5500,5500.0
+Philippines,Philippines,730,730.0
+Philippines,Philippines,1050,1050.0
+Philippines,Philippines,1210,1210.0
+Philippines,Philippines,1870,1870.0
+Philippines,Philippines,2060,2060.0
+Philippines,Philippines,2210,2210.0
+Poland,Poland,4600,4600.0
+Poland,Poland,7270,7270.0
+Poland,Poland,12190,12190.0
+Poland,Poland,12450,12450.0
+Poland,Poland,12480,12480.0
+Portugal,Portugal,7050,7050.0
+Portugal,Portugal,12100,12100.0
+Portugal,Portugal,18060,18060.0
+Portugal,Portugal,21750,21750.0
+Portugal,Portugal,21830,21830.0
+Portugal,Portugal,21250,21250.0
+Puerto Rico,Puerto Rico,6220,6220.0
+Puerto Rico,Puerto Rico,10550,10550.0
+Puerto Rico,Puerto Rico,14530,14530.0
+Puerto Rico,Puerto Rico,16300,16300.0
+Puerto Rico,Puerto Rico,16560,16560.0
+Qatar,Qatar,69750,69750.0
+Qatar,Qatar,73060,73060.0
+Qatar,Qatar,80440,80440.0
+Romania,Romania,1710,1710.0
+Romania,Romania,1690,1690.0
+Romania,Romania,3920,3920.0
+Romania,Romania,8320,8320.0
+Romania,Romania,7850,7850.0
+Romania,Romania,7910,7910.0
+Russian Federation,Russian Fed.,1710,1710.0
+Russian Federation,Russian Fed.,4460,4460.0
+Russian Federation,Russian Fed.,9290,9290.0
+Russian Federation,Russian Fed.,9880,9880.0
+Russian Federation,Russian Fed.,10400,10400.0
+Rwanda,Rwanda,360,360.0
+Rwanda,Rwanda,250,250.0
+Rwanda,Rwanda,270,270.0
+Rwanda,Rwanda,480,480.0
+Rwanda,Rwanda,520,520.0
+Rwanda,Rwanda,570,570.0
+Saint Kitts and Nevis,Saint Kitts and Nevis,3610,3610.0
+Saint Kitts and Nevis,Saint Kitts and Nevis,6880,6880.0
+Saint Kitts and Nevis,Saint Kitts and Nevis,10130,10130.0
+Saint Kitts and Nevis,Saint Kitts and Nevis,12990,12990.0
+Saint Kitts and Nevis,Saint Kitts and Nevis,12360,12360.0
+Saint Kitts and Nevis,Saint Kitts and Nevis,12480,12480.0
+Saint Lucia,Saint Lucia,2810,2810.0
+Saint Lucia,Saint Lucia,4170,4170.0
+Saint Lucia,Saint Lucia,5130,5130.0
+Saint Lucia,Saint Lucia,5630,5630.0
+Saint Lucia,Saint Lucia,6200,6200.0
+Saint Lucia,Saint Lucia,6680,6680.0
+Saint Vincent and the Grenadines,Saint Vincent and the Grenadines,1740,1740.0
+Saint Vincent and the Grenadines,Saint Vincent and the Grenadines,3130,3130.0
+Saint Vincent and the Grenadines,Saint Vincent and the Grenadines,4980,4980.0
+Saint Vincent and the Grenadines,Saint Vincent and the Grenadines,6220,6220.0
+Saint Vincent and the Grenadines,Saint Vincent and the Grenadines,6030,6030.0
+Saint Vincent and the Grenadines,Saint Vincent and the Grenadines,6100,6100.0
+Samoa,Samoa,1070,1070.0
+Samoa,Samoa,1420,1420.0
+Samoa,Samoa,2090,2090.0
+Samoa,Samoa,2870,2870.0
+Samoa,Samoa,3030,3030.0
+Samoa,Samoa,3190,3190.0
+São Tomé and Príncipe,Sao Tome and Principe,740,740.0
+São Tomé and Príncipe,Sao Tome and Principe,1170,1170.0
+São Tomé and Príncipe,Sao Tome and Principe,1250,1250.0
+São Tomé and Príncipe,Sao Tome and Principe,1360,1360.0
+Saudi Arabia,Saudi Arabia,7330,7330.0
+Saudi Arabia,Saudi Arabia,8390,8390.0
+Saudi Arabia,Saudi Arabia,12230,12230.0
+Saudi Arabia,Saudi Arabia,16250,16250.0
+Saudi Arabia,Saudi Arabia,16610,16610.0
+Saudi Arabia,Saudi Arabia,17820,17820.0
+Senegal,Senegal,740,740.0
+Senegal,Senegal,530,530.0
+Senegal,Senegal,800,800.0
+Senegal,Senegal,1070,1070.0
+Senegal,Senegal,1080,1080.0
+Senegal,Senegal,1070,1070.0
+Serbia,Serbia,1400,1400.0
+Serbia,Serbia,3430,3430.0
+Serbia,Serbia,5740,5740.0
+Serbia,Serbia,5630,5630.0
+Serbia,Serbia,5680,5680.0
+Seychelles,Seychelles,5020,5020.0
+Seychelles,Seychelles,7420,7420.0
+Seychelles,Seychelles,9820,9820.0
+Seychelles,Seychelles,10390,10390.0
+Seychelles,Seychelles,10460,10460.0
+Seychelles,Seychelles,11130,11130.0
+Sierra Leone,Sierra Leone,200,200.0
+Sierra Leone,Sierra Leone,150,150.0
+Sierra Leone,Sierra Leone,230,230.0
+Sierra Leone,Sierra Leone,340,340.0
+Sierra Leone,Sierra Leone,340,340.0
+Sierra Leone,Sierra Leone,340,340.0
+Singapore,Singapore,11450,11450.0
+Singapore,Singapore,24500,24500.0
+Singapore,Singapore,27240,27240.0
+Singapore,Singapore,36030,36030.0
+Singapore,Singapore,39410,39410.0
+Singapore,Singapore,42930,42930.0
+Slovakia,Slovakia,2060,2060.0
+Slovakia,Slovakia,5440,5440.0
+Slovakia,Slovakia,11040,11040.0
+Slovakia,Slovakia,15820,15820.0
+Slovakia,Slovakia,16030,16030.0
+Slovakia,Slovakia,16070,16070.0
+Slovenia,Slovenia,11150,11150.0
+Slovenia,Slovenia,18070,18070.0
+Slovenia,Slovenia,23750,23750.0
+Slovenia,Slovenia,23910,23910.0
+Slovenia,Slovenia,23610,23610.0
+Solomon Islands,Solomon Islands,710,710.0
+Solomon Islands,Solomon Islands,1020,1020.0
+Solomon Islands,Solomon Islands,890,890.0
+Solomon Islands,Solomon Islands,960,960.0
+Solomon Islands,Solomon Islands,1030,1030.0
+Solomon Islands,Solomon Islands,1110,1110.0
+South Africa,South Africa,3390,3390.0
+South Africa,South Africa,3050,3050.0
+South Africa,South Africa,4850,4850.0
+South Africa,South Africa,5730,5730.0
+South Africa,South Africa,6090,6090.0
+South Africa,South Africa,6960,6960.0
+Spain,Spain,11890,11890.0
+Spain,Spain,15420,15420.0
+Spain,Spain,25450,25450.0
+Spain,Spain,32020,32020.0
+Spain,Spain,31460,31460.0
+Spain,Spain,30990,30990.0
+Sri Lanka,Sri Lanka,460,460.0
+Sri Lanka,Sri Lanka,860,860.0
+Sri Lanka,Sri Lanka,1210,1210.0
+Sri Lanka,Sri Lanka,1970,1970.0
+Sri Lanka,Sri Lanka,2260,2260.0
+Sri Lanka,Sri Lanka,2580,2580.0
+Sudan,Sudan,510,510.0
+Sudan,Sudan,320,320.0
+Sudan,Sudan,610,610.0
+Sudan,Sudan,1230,1230.0
+Sudan,Sudan,1300,1300.0
+Suriname,Suriname,1480,1480.0
+Suriname,Suriname,1930,1930.0
+Suriname,Suriname,3320,3320.0
+Suriname,Suriname,7020,7020.0
+Suriname,Suriname,7640,7640.0
+Eswatini,Swaziland,1150,1150.0
+Eswatini,Swaziland,1600,1600.0
+Eswatini,Swaziland,2600,2600.0
+Eswatini,Swaziland,2880,2880.0
+Eswatini,Swaziland,2930,2930.0
+Eswatini,Swaziland,3300,3300.0
+Sweden,Sweden,26360,26360.0
+Sweden,Sweden,29490,29490.0
+Sweden,Sweden,42920,42920.0
+Sweden,Sweden,48820,48820.0
+Sweden,Sweden,50580,50580.0
+Sweden,Sweden,53230,53230.0
+Switzerland,Switzerland,34240,34240.0
+Switzerland,Switzerland,40270,40270.0
+Switzerland,Switzerland,56870,56870.0
+Switzerland,Switzerland,65040,65040.0
+Switzerland,Switzerland,71590,71590.0
+Switzerland,Switzerland,76380,76380.0
+Syria,Syrian Arab Republic,920,920.0
+Syria,Syrian Arab Republic,990,990.0
+Syria,Syrian Arab Republic,1500,1500.0
+Syria,Syrian Arab Republic,2570,2570.0
+Syria,Syrian Arab Republic,2750,2750.0
+Tajikistan,Tajikistan,170,170.0
+Tajikistan,Tajikistan,340,340.0
+Tajikistan,Tajikistan,750,750.0
+Tajikistan,Tajikistan,810,810.0
+Tajikistan,Tajikistan,870,870.0
+Tanzania,Tanzania,200,200.0
+Tanzania,Tanzania,310,310.0
+Tanzania,Tanzania,380,380.0
+Tanzania,Tanzania,500,500.0
+Tanzania,Tanzania,530,530.0
+Tanzania,Tanzania,540,540.0
+Thailand,Thailand,1480,1480.0
+Thailand,Thailand,1930,1930.0
+Thailand,Thailand,2560,2560.0
+Thailand,Thailand,3720,3720.0
+Thailand,Thailand,4150,4150.0
+Thailand,Thailand,4420,4420.0
+East Timor,Timor-Leste,740,740.0
+East Timor,Timor-Leste,2250,2250.0
+East Timor,Timor-Leste,2730,2730.0
+Many哥,Togo,410,410.0
+Many哥,Togo,300,300.0
+Many哥,Togo,370,370.0
+Many哥,Togo,520,520.0
+Many哥,Togo,550,550.0
+Many哥,Togo,560,560.0
+Tonga,Tonga,1220,1220.0
+Tonga,Tonga,2030,2030.0
+Tonga,Tonga,2470,2470.0
+Tonga,Tonga,3300,3300.0
+Tonga,Tonga,3340,3340.0
+Tonga,Tonga,3580,3580.0
+Trinidad and Tobago,Trinidad And Tobago,3720,3720.0
+Trinidad and Tobago,Trinidad And Tobago,5200,5200.0
+Trinidad and Tobago,Trinidad And Tobago,11160,11160.0
+Trinidad and Tobago,Trinidad And Tobago,16370,16370.0
+Trinidad and Tobago,Trinidad And Tobago,15840,15840.0
+Trinidad and Tobago,Trinidad And Tobago,15040,15040.0
+Tunisia,Tunisia,1430,1430.0
+Tunisia,Tunisia,2300,2300.0
+Tunisia,Tunisia,3200,3200.0
+Tunisia,Tunisia,4100,4100.0
+Tunisia,Tunisia,4140,4140.0
+Tunisia,Tunisia,4070,4070.0
+Turkey,Turkey,2300,2300.0
+Turkey,Turkey,4170,4170.0
+Turkey,Turkey,6480,6480.0
+Turkey,Turkey,9060,9060.0
+Turkey,Turkey,9890,9890.0
+Turkey,Turkey,10410,10410.0
+Turkmenistan,Turkmenistan,830,830.0
+Turkmenistan,Turkmenistan,650,650.0
+Turkmenistan,Turkmenistan,1650,1650.0
+Turkmenistan,Turkmenistan,3460,3460.0
+Turkmenistan,Turkmenistan,3790,3790.0
+Turkmenistan,Turkmenistan,4110,4110.0
+Tuvalu,Tuvalu,3780,3780.0
+Tuvalu,Tuvalu,5260,5260.0
+Tuvalu,Tuvalu,4600,4600.0
+Tuvalu,Tuvalu,5010,5010.0
+Uganda,Uganda,320,320.0
+Uganda,Uganda,260,260.0
+Uganda,Uganda,300,300.0
+Uganda,Uganda,470,470.0
+Uganda,Uganda,500,500.0
+Uganda,Uganda,510,510.0
+Ukraine,Ukraine,1610,1610.0
+Ukraine,Ukraine,700,700.0
+Ukraine,Ukraine,1540,1540.0
+Ukraine,Ukraine,2840,2840.0
+Ukraine,Ukraine,2990,2990.0
+Ukraine,Ukraine,3120,3120.0
+United Arab Emirates,United Arab Emirates,20720,20720.0
+United Arab Emirates,United Arab Emirates,20630,20630.0
+United Arab Emirates,United Arab Emirates,42280,42280.0
+United Arab Emirates,United Arab Emirates,41940,41940.0
+United Arab Emirates,United Arab Emirates,39640,39640.0
+United Arab Emirates,United Arab Emirates,40760,40760.0
+United Kingdom,United Kingdom,16600,16600.0
+United Kingdom,United Kingdom,26010,26010.0
+United Kingdom,United Kingdom,38850,38850.0
+United Kingdom,United Kingdom,40970,40970.0
+United Kingdom,United Kingdom,38140,38140.0
+United Kingdom,United Kingdom,37780,37780.0
+United States,United States,23260,23260.0
+United States,United States,34890,34890.0
+United States,United States,44670,44670.0
+United States,United States,46080,46080.0
+United States,United States,47350,47350.0
+United States,United States,48450,48450.0
+Uruguay,Uruguay,2840,2840.0
+Uruguay,Uruguay,7100,7100.0
+Uruguay,Uruguay,4740,4740.0
+Uruguay,Uruguay,8640,8640.0
+Uruguay,Uruguay,10290,10290.0
+Uruguay,Uruguay,11860,11860.0
+Uzbekistan,Uzbekistan,630,630.0
+Uzbekistan,Uzbekistan,530,530.0
+Uzbekistan,Uzbekistan,1130,1130.0
+Uzbekistan,Uzbekistan,1300,1300.0
+Uzbekistan,Uzbekistan,1510,1510.0
+Vanuatu,Vanuatu,1200,1200.0
+Vanuatu,Vanuatu,1430,1430.0
+Vanuatu,Vanuatu,1760,1760.0
+Vanuatu,Vanuatu,2520,2520.0
+Vanuatu,Vanuatu,2630,2630.0
+Vanuatu,Vanuatu,2870,2870.0
+Venezuela,Venezuela,2570,2570.0
+Venezuela,Venezuela,4100,4100.0
+Venezuela,Venezuela,4950,4950.0
+Venezuela,Venezuela,10230,10230.0
+Venezuela,Venezuela,11660,11660.0
+Venezuela,Venezuela,11920,11920.0
+Vietnam,Viet Nam,130,130.0
+Vietnam,Viet Nam,390,390.0
+Vietnam,Viet Nam,630,630.0
+Vietnam,Viet Nam,1030,1030.0
+Vietnam,Viet Nam,1160,1160.0
+Vietnam,Viet Nam,1260,1260.0
+Yemen,Yemen,420,420.0
+Yemen,Yemen,690,690.0
+Yemen,Yemen,1070,1070.0
+Yemen,Yemen,1160,1160.0
+Yemen,Yemen,1070,1070.0
+Zambia,Zambia,440,440.0
+Zambia,Zambia,310,310.0
+Zambia,Zambia,500,500.0
+Zambia,Zambia,990,990.0
+Zambia,Zambia,1070,1070.0
+Zambia,Zambia,1160,1160.0

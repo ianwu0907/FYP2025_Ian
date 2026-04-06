@@ -1,5 +1,6 @@
 season,team,games,rushing,receiving,fumbles
-2014.0,tampa bay buccaneers,8.0,66.0,19.0,2.0
-2015.0,tampa bay buccaneers,16.0,107.0,51.0,2.0
-2016.0,tampa bay buccaneers,7.0,51.0,24.0,1.0
-2017.0,tampa bay buccaneers,16.0,21.0,35.0,1.0
+,,gp,att,rec,fum
+2014,tampa bay buccaneers,8,66,19,2
+2015,tampa bay buccaneers,16,107,51,2
+2016,tampa bay buccaneers,7,51,24,1
+2017,tampa bay buccaneers,16,21,35,1

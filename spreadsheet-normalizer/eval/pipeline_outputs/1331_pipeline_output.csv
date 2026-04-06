@@ -1,71 +1,10 @@
-living_arrangements,aboriginal_identity,measurement_type,value
-total population aged 14 and under in private households,total aboriginal children,thousand,392.1
-total population aged 14 and under in private households,total aboriginal children,percent,100.0
-total population aged 14 and under in private households,first nations children,thousand,258.8
-total population aged 14 and under in private households,first nations children,percent,100.0
-total population aged 14 and under in private households,inuit children,thousand,20.2
-total population aged 14 and under in private households,inuit children,percent,100.0
-total population aged 14 and under in private households,metis children,thousand,104.4
-total population aged 14 and under in private households,metis children,percent,100.0
-total population aged 14 and under in private households,total non-aboriginal children,thousand,
-total population aged 14 and under in private households,total non-aboriginal children,percent,100.0
-children of both parents,total aboriginal children,thousand,194.6
-children of both parents,total aboriginal children,percent,49.6
-children of both parents,first nations children,thousand,116.4
-children of both parents,first nations children,percent,45.0
-children of both parents,inuit children,thousand,12.4
-children of both parents,inuit children,percent,61.6
-children of both parents,metis children,thousand,60.6
-children of both parents,metis children,percent,58.0
-children of both parents,total non-aboriginal children,thousand,
-children of both parents,total non-aboriginal children,percent,76.0
-stepchildren,total aboriginal children,thousand,33.4
-stepchildren,total aboriginal children,percent,8.5
-stepchildren,first nations children,thousand,22.4
-stepchildren,first nations children,percent,8.7
-stepchildren,inuit children,thousand,1.3
-stepchildren,inuit children,percent,6.3
-stepchildren,metis children,thousand,8.9
-stepchildren,metis children,percent,8.6
-stepchildren,total non-aboriginal children,thousand,299.4
-stepchildren,total non-aboriginal children,percent,5.8
-children of lone parents,total aboriginal children,thousand,134.9
-children of lone parents,total aboriginal children,percent,34.4
-children of lone parents,first nations children,thousand,96.0
-children of lone parents,first nations children,percent,37.1
-children of lone parents,inuit children,thousand,5.2
-children of lone parents,inuit children,percent,25.8
-children of lone parents,metis children,thousand,31.1
-children of lone parents,metis children,percent,29.8
-children of lone parents,total non-aboriginal children,thousand,902.4
-children of lone parents,total non-aboriginal children,percent,17.4
-grandchildren in skip-generation family,total aboriginal children,thousand,10.5
-grandchildren in skip-generation family,total aboriginal children,percent,2.7
-grandchildren in skip-generation family,first nations children,thousand,8.5
-grandchildren in skip-generation family,first nations children,percent,3.3
-grandchildren in skip-generation family,inuit children,thousand,0.5
-grandchildren in skip-generation family,inuit children,percent,2.3
-grandchildren in skip-generation family,metis children,thousand,1.5
-grandchildren in skip-generation family,metis children,percent,1.4
-grandchildren in skip-generation family,total non-aboriginal children,thousand,18.7
-grandchildren in skip-generation family,total non-aboriginal children,percent,0.4
-foster children,total aboriginal children,thousand,14.2
-foster children,total aboriginal children,percent,3.6
-foster children,first nations children,thousand,11.7
-foster children,first nations children,percent,4.5
-foster children,inuit children,thousand,0.6
-foster children,inuit children,percent,2.8
-foster children,metis children,thousand,1.8
-foster children,metis children,percent,1.7
-foster children,total non-aboriginal children,thousand,15.3
-foster children,total non-aboriginal children,percent,0.3
-"children living with other relatives ,",total aboriginal children,thousand,4.5
-"children living with other relatives ,",total aboriginal children,percent,1.2
-"children living with other relatives ,",first nations children,thousand,3.7
-"children living with other relatives ,",first nations children,percent,1.4
-"children living with other relatives ,",inuit children,thousand,0.2
-"children living with other relatives ,",inuit children,percent,1.1
-"children living with other relatives ,",metis children,thousand,0.5
-"children living with other relatives ,",metis children,percent,0.5
-"children living with other relatives ,",total non-aboriginal children,thousand,11.1
-"children living with other relatives ,",total non-aboriginal children,percent,0.2
+living arrangements,aboriginal identity,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Unnamed: 8,Unnamed: 9,Unnamed: 10
+,total aboriginal children,,first nations children,,inuit children,,metis children,,total non-aboriginal children,
+,thousand,percent,thousand,percent,thousand,percent,thousand,percent,thousand,percent
+total population aged 14 and under in private households,392.1,100.0,258.8,100.0,20.2,100.0,104.4,100.0,"5,200.7",100.0
+children of both parents,194.6,49.6,116.4,45.0,12.4,61.6,60.6,58.0,"3,953.9",76.0
+stepchildren,33.4,8.5,22.4,8.7,1.3,6.3,8.9,8.6,299.4,5.8
+children of lone parents,134.9,34.4,96.0,37.1,5.2,25.8,31.1,29.8,902.4,17.4
+grandchildren in skip-generation family,10.5,2.7,8.5,3.3,0.5,2.3,1.5,1.4,18.7,0.4
+foster children,14.2,3.6,11.7,4.5,0.6,2.8,1.8,1.7,15.3,0.3
+"children living with other relatives ,",4.5,1.2,3.7,1.4,0.2,1.1,0.5,0.5,11.1,0.2

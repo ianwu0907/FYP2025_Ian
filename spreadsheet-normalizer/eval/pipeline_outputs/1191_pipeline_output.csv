@@ -1,4 +1,4 @@
-province_or_territory,growth_measure,growth_value
+province_or_territory,estimate_type,estimate_value
 newfoundland and labrador,revised estimate of the average growth in real gross domestic product,2.59
 prince edward island,revised estimate of the average growth in real gross domestic product,2.47
 nova scotia,revised estimate of the average growth in real gross domestic product,1.95
@@ -25,16 +25,3 @@ british columbia,previously published estimate of the average growth in real gro
 yukon,previously published estimate of the average growth in real gross domestic product,3.69
 northwest territories,previously published estimate of the average growth in real gross domestic product,2.58
 nunavut,previously published estimate of the average growth in real gross domestic product,4.68
-newfoundland and labrador,average absolute revision to real gross domestic product,0.32
-prince edward island,average absolute revision to real gross domestic product,0.56
-nova scotia,average absolute revision to real gross domestic product,0.25
-new brunswick,average absolute revision to real gross domestic product,0.23
-quebec,average absolute revision to real gross domestic product,0.19
-ontario,average absolute revision to real gross domestic product,0.15
-manitoba,average absolute revision to real gross domestic product,0.17
-saskatchewan,average absolute revision to real gross domestic product,0.3
-alberta,average absolute revision to real gross domestic product,0.36
-british columbia,average absolute revision to real gross domestic product,0.17
-yukon,average absolute revision to real gross domestic product,0.64
-northwest territories,average absolute revision to real gross domestic product,0.54
-nunavut,average absolute revision to real gross domestic product,1.47

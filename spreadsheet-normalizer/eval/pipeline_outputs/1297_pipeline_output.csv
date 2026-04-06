@@ -1,33 +1,5 @@
-entry_type,measurement_year,measurement_type,number_of_entries,entry_rate
-one-year entry,2011,alu,,1.5
-one-year entry,2011,ilu,13.0,2.3
-one-year entry,2012,alu,1.5,
-one-year entry,2012,ilu,2.3,
-two-year entry,2011,alu,,1.3
-two-year entry,2011,ilu,10.1,1.9
-two-year entry,2012,alu,1.3,
-two-year entry,2012,ilu,1.9,
-short-lived entry,2011,alu,,0.2
-short-lived entry,2011,ilu,2.9,0.4
-short-lived entry,2012,alu,0.2,
-short-lived entry,2012,ilu,0.4,
-previously active excluded,2011,alu,,1.3
-previously active excluded,2011,ilu,11.6,2.1
-previously active excluded,2012,alu,1.3,
-previously active excluded,2012,ilu,2.1,
-ever previously active excluded,2011,alu,,1.2
-ever previously active excluded,2011,ilu,10.4,1.9
-ever previously active excluded,2012,alu,1.2,
-ever previously active excluded,2012,ilu,1.9,
-one year with no pre-existing up,2011,alu,,1.2
-one year with no pre-existing up,2011,ilu,10.2,1.9
-one year with no pre-existing up,2012,alu,1.2,
-one year with no pre-existing up,2012,ilu,1.9,
-previously active excluded with no up,2011,alu,,1.2
-previously active excluded with no up,2011,ilu,10.2,1.9
-previously active excluded with no up,2012,alu,1.2,
-previously active excluded with no up,2012,ilu,1.9,
-ever previously active excluded with no up,2011,alu,,1.2
-ever previously active excluded with no up,2011,ilu,10.2,1.9
-ever previously active excluded with no up,2012,alu,1.2,
-ever previously active excluded with no up,2012,ilu,1.9,
+entry_type,year,employment_creation_rate,employment_measured
+short-lived entry,2012,0.4,0.0
+short-lived entry,2013,0.2,0.0
+short-lived entry,2013,0.4,0.0
+short-lived entry,2014,0.2,0.0

@@ -1,21 +1,11 @@
-source_of_assistance,user_category,confidence_interval_type,confidence_interval_value
-family in same household,wheeled mobility device users,from,65.3
-family in same household,wheeled mobility device users,to,63.3
-family in same household,non-users of wheeled mobility device,from,67.3
-family in same household,non-users of wheeled mobility device,to,65.6
-family not in same household,wheeled mobility device users,from,44.4
-family not in same household,wheeled mobility device users,to,42.5
-family not in same household,non-users of wheeled mobility device,from,46.3
-family not in same household,non-users of wheeled mobility device,to,40.4
-friends/neighbours,wheeled mobility device users,from,30.4
-friends/neighbours,wheeled mobility device users,to,28.8
-friends/neighbours,non-users of wheeled mobility device,from,32.1
-friends/neighbours,non-users of wheeled mobility device,to,25.6
-paid organizations/individuals,wheeled mobility device users,from,27.0
-paid organizations/individuals,wheeled mobility device users,to,25.8
-paid organizations/individuals,non-users of wheeled mobility device,from,28.2
-paid organizations/individuals,non-users of wheeled mobility device,to,20.4
-unpaid organizations/individuals,wheeled mobility device users,from,35.4
-unpaid organizations/individuals,wheeled mobility device users,to,33.5
-unpaid organizations/individuals,non-users of wheeled mobility device,from,37.4
-unpaid organizations/individuals,non-users of wheeled mobility device,to,11.0
+source_of_assistance,mobility_device_user_status,percentage,confidence_interval_from,confidence_interval_to
+family in same household,wheeled mobility device users,65.3,63.3,67.3
+family in same household,non-users of wheeled mobility device,65.6,64.6,66.0
+family not in same household,wheeled mobility device users,44.4,42.5,46.3
+family not in same household,non-users of wheeled mobility device,40.4,39.6,40.8
+friends/neighbours,wheeled mobility device users,30.4,28.8,32.1
+friends/neighbours,non-users of wheeled mobility device,25.6,25.0,25.9
+paid organizations/individuals,wheeled mobility device users,27.0,25.8,28.2
+paid organizations/individuals,non-users of wheeled mobility device,20.4,19.9,20.7
+unpaid organizations/individuals,wheeled mobility device users,35.4,33.5,37.4
+unpaid organizations/individuals,non-users of wheeled mobility device,11.0,10.5,11.5

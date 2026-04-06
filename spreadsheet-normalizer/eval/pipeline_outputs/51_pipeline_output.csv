@@ -1,13 +1,37 @@
 sex,marital_status,agricultural_region,percent
-female,common-law,sex,17.1
-female,common-law,sex,12.8
-female,common-law,sex,10.9
-female,common-law,sex,10.6
-female,common-law,sex,22.4
-female,common-law,sex,0.0
-male,"separated, divorced, or widowed",sex,6.4
-male,"separated, divorced, or widowed",sex,10.8
-male,"separated, divorced, or widowed",sex,11.8
-male,"separated, divorced, or widowed",sex,7.7
-male,"separated, divorced, or widowed",sex,7.8
-male,"separated, divorced, or widowed",sex,0.0
+female,,french_1,35.3
+male,,french_1,64.7
+single,single,french_1,18.7
+married,married,french_1,51.3
+common-law,,french_1,17.1
+"separated, divorced, or widowed",,french_1,12.8
+female,,english_1,28.0
+male,,english_1,72.0
+single,single,english_1,24.8
+married,married,english_1,53.9
+common-law,,english_1,10.9
+"separated, divorced, or widowed",,english_1,10.6
+female,,french_2,41.8
+male,,french_2,58.2
+single,single,french_2,26.9
+married,married,french_2,47.8
+common-law,,french_2,22.4
+"separated, divorced, or widowed",,french_2,0.0
+female,,english_2,30.6
+male,,english_2,69.4
+single,single,english_2,26.1
+married,married,english_2,56.7
+common-law,,english_2,6.4
+"separated, divorced, or widowed",,english_2,10.8
+female,,french_3,35.9
+male,,french_3,64.1
+single,single,french_3,25.6
+married,married,french_3,54.4
+common-law,,french_3,11.8
+"separated, divorced, or widowed",,french_3,7.7
+female,,english_3,26.6
+male,,english_3,73.4
+single,single,english_3,32.8
+married,married,english_3,57.8
+common-law,,english_3,7.8
+"separated, divorced, or widowed",,english_3,0.0

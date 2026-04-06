@@ -1,43 +1,16 @@
-province_and_territory,crime_type,crime_severity_index
-newfoundland and labrador,total crime severity index,69.3
-prince edward island,total crime severity index,48.5
-nova scotia,total crime severity index,61.2
-new brunswick,total crime severity index,61.7
-quebec,total crime severity index,54.7
-ontario,total crime severity index,52.7
-manitoba,total crime severity index,114.4
-saskatchewan,total crime severity index,148.8
-alberta,total crime severity index,102.5
-british columbia,total crime severity index,93.6
-yukon,total crime severity index,183.9
-northwest territories,total crime severity index,291.7
-nunavut,total crime severity index,286.4
-canada,total crime severity index,71.0
-newfoundland and labrador,violent crime severity index,72.6
-prince edward island,violent crime severity index,35.1
-nova scotia,violent crime severity index,68.3
-new brunswick,violent crime severity index,63.2
-quebec,violent crime severity index,64.7
-ontario,violent crime severity index,63.6
-manitoba,violent crime severity index,152.7
-saskatchewan,violent crime severity index,146.1
-alberta,violent crime severity index,89.9
-british columbia,violent crime severity index,74.9
-yukon,violent crime severity index,229.1
-northwest territories,violent crime severity index,332.1
-nunavut,violent crime severity index,407.7
-canada,violent crime severity index,75.3
-newfoundland and labrador,non-violent crime severity index,68.0
-prince edward island,non-violent crime severity index,53.3
-nova scotia,non-violent crime severity index,58.5
-new brunswick,non-violent crime severity index,61.0
-quebec,non-violent crime severity index,51.0
-ontario,non-violent crime severity index,48.6
-manitoba,non-violent crime severity index,100.3
-saskatchewan,non-violent crime severity index,149.5
-alberta,non-violent crime severity index,106.9
-british columbia,non-violent crime severity index,100.3
-yukon,non-violent crime severity index,167.0
-northwest territories,non-violent crime severity index,276.4
-nunavut,non-violent crime severity index,241.6
-canada,non-violent crime severity index,69.3
+province and territory,total crime severity index,Unnamed: 2,Unnamed: 3,violent crime severity index,Unnamed: 5,non-violent crime severity index,Unnamed: 7
+,index,percent change 2015 to 2016,percent change 2006 to 2016,index,percent change 2015 to 2016,index,percent change 2015 to 2016
+newfoundland and labrador,69.3,6,-5,72.6,8,68.0,4
+prince edward island,48.5,-3,-32,35.1,-16,53.3,1
+nova scotia,61.2,-3,-39,68.3,-3,58.5,-2
+new brunswick,61.7,-2,-17,63.2,5,61.0,-4
+quebec,54.7,-3,-40,64.7,-2,51.0,-3
+ontario,52.7,4,-33,63.6,7,48.6,3
+manitoba,114.4,8,-27,152.7,10,100.3,7
+saskatchewan,148.8,9,-13,146.1,7,149.5,9
+alberta,102.5,-1,-11,89.9,-8,106.9,1
+british columbia,93.6,-1,-33,74.9,-10,100.3,2
+yukon,183.9,0,2,229.1,9,167.0,-4
+northwest territories,291.7,-9,-8,332.1,-9,276.4,-9
+nunavut,286.4,4,2,407.7,5,241.6,4
+canada,71.0,1,-29,75.3,0,69.3,2

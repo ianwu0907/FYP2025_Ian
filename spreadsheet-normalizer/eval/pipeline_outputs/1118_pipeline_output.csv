@@ -1,12 +1,15 @@
-province_name,total_tumours,tumours_with_surgery,surgery_percentage
-canada,49135.0,9380.0,19.1
-newfoundland and labrador,1245.0,195.0,15.6
-prince edward island,360.0,50.0,13.6
-nova scotia,2680.0,535.0,20.0
-new brunswick,1950.0,490.0,25.1
-ontario,24205.0,4765.0,19.7
-manitoba,2460.0,560.0,22.9
-saskatchewan,2200.0,385.0,17.5
-alberta,5425.0,955.0,17.6
-british columbia,8475.0,1420.0,16.8
-yukon,50.0,10.0,19.6
+Unnamed: 0,linked cctlp tumour cohort,tumours with one or more surgical interventions,Unnamed: 3
+,number,number,percent
+canada,"49,135","9,380",19.1
+newfoundland and labrador,"1,245",195,15.6
+prince edward island,360,50,13.6
+nova scotia,"2,680",535,20.0
+new brunswick,"1,950",490,25.1
+ontario,"24,205","4,765",19.7
+manitoba,"2,460",560,22.9
+saskatchewan,"2,200",385,17.5
+alberta,"5,425",955,17.6
+british columbia,"8,475","1,420",16.8
+yukon,50,10,19.6
+northwest territories,x,x,x
+nunavut,x,x,x

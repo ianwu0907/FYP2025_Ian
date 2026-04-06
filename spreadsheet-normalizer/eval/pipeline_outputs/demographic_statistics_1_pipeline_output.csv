@@ -1,15 +1,89 @@
-"5-2 Population by sex, occupation, and marital status nationwide",Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Unnamed: 8,Unnamed: 9,Unnamed: 10,Unnamed: 11,Unnamed: 12,Unnamed: 13,Unnamed: 14,Unnamed: 15
-,,,,,,,,,,,,,,,
-,Unit: Person,,,,,,,,,,,,,,
-Major occupational categories,Population aged 15 and above,,,Unmarried,,,With Spouse,,,Divorced,,,Widowed,,
-,Total,Male,Female,Subtotal,Male,Female,Subtotal,Male,Female,Subtotal,Male,Female,Subtotal,Male,Female
-,,,,,,,,,,,,,,,
-Total,65675009,38906261,26768748,10000781,6582807,3417974,52736835,30821229,21915606,1765472,1061742,703730,1171921,440483,731438
+major_occupational_category,marital_status,sex,population_count
 "Party and government organs, mass organizations, and  
-social organizations, enterprise and public institution leaders",1447971,1069122,378849,112418,76815,35603,1288866,966920,321946,40853,22631,18222,5834,2756,3078
-Professional and Technical Personnel,6844562,3064480,3780082,1602871,666902,935969,5059488,2331555,2727933,154836,57053,97783,27367,8970,18397
-Clerical staff and related personnel,4559426,2787573,1771853,766273,417407,348866,3629936,2281020,1348916,136904,74273,62631,26313,14873,11440
-Social Production Service and Daily Life Service Personnel,22244077,12604684,9639393,4026885,2581626,1445259,17225890,9586231,7639659,735325,364716,370609,255977,72111,183866
-"Farm, Forestry, Animal Husbandry, and Fishery Production and Support Staff",13480283,7219312,6260971,878072,705888,172184,11663959,6064145,5599814,249263,192736,56527,688989,256543,432446
-"Production, Manufacturing, and Related Personnel",16933953,12060558,4873395,2553895,2097358,456537,13770523,9530948,4239575,444090,347752,96338,165445,84500,80945
-Other occupational categories that are difficult to classify,164737,100532,64205,60367,36811,23556,98173,60410,37763,4201,2581,1620,1996,730,1266
+social organizations, enterprise and public institution leaders",Total,Total,1447971
+"Party and government organs, mass organizations, and  
+social organizations, enterprise and public institution leaders",Total,Male,1069122
+"Party and government organs, mass organizations, and  
+social organizations, enterprise and public institution leaders",Total,Female,378849
+"Party and government organs, mass organizations, and  
+social organizations, enterprise and public institution leaders",Unmarried,Male,76815
+"Party and government organs, mass organizations, and  
+social organizations, enterprise and public institution leaders",Unmarried,Female,35603
+"Party and government organs, mass organizations, and  
+social organizations, enterprise and public institution leaders",With Spouse,Male,966920
+"Party and government organs, mass organizations, and  
+social organizations, enterprise and public institution leaders",With Spouse,Female,321946
+"Party and government organs, mass organizations, and  
+social organizations, enterprise and public institution leaders",Divorced,Male,22631
+"Party and government organs, mass organizations, and  
+social organizations, enterprise and public institution leaders",Divorced,Female,18222
+"Party and government organs, mass organizations, and  
+social organizations, enterprise and public institution leaders",Widowed,Male,2756
+"Party and government organs, mass organizations, and  
+social organizations, enterprise and public institution leaders",Widowed,Female,3078
+Professional and Technical Personnel,Total,Total,6844562
+Professional and Technical Personnel,Total,Male,3064480
+Professional and Technical Personnel,Total,Female,3780082
+Professional and Technical Personnel,Unmarried,Male,666902
+Professional and Technical Personnel,Unmarried,Female,935969
+Professional and Technical Personnel,With Spouse,Male,2331555
+Professional and Technical Personnel,With Spouse,Female,2727933
+Professional and Technical Personnel,Divorced,Male,57053
+Professional and Technical Personnel,Divorced,Female,97783
+Professional and Technical Personnel,Widowed,Male,8970
+Professional and Technical Personnel,Widowed,Female,18397
+Clerical staff and related personnel,Total,Total,4559426
+Clerical staff and related personnel,Total,Male,2787573
+Clerical staff and related personnel,Total,Female,1771853
+Clerical staff and related personnel,Unmarried,Male,417407
+Clerical staff and related personnel,Unmarried,Female,348866
+Clerical staff and related personnel,With Spouse,Male,2281020
+Clerical staff and related personnel,With Spouse,Female,1348916
+Clerical staff and related personnel,Divorced,Male,74273
+Clerical staff and related personnel,Divorced,Female,62631
+Clerical staff and related personnel,Widowed,Male,14873
+Clerical staff and related personnel,Widowed,Female,11440
+Social Production Service and Daily Life Service Personnel,Total,Total,22244077
+Social Production Service and Daily Life Service Personnel,Total,Male,12604684
+Social Production Service and Daily Life Service Personnel,Total,Female,9639393
+Social Production Service and Daily Life Service Personnel,Unmarried,Male,2581626
+Social Production Service and Daily Life Service Personnel,Unmarried,Female,1445259
+Social Production Service and Daily Life Service Personnel,With Spouse,Male,9586231
+Social Production Service and Daily Life Service Personnel,With Spouse,Female,7639659
+Social Production Service and Daily Life Service Personnel,Divorced,Male,364716
+Social Production Service and Daily Life Service Personnel,Divorced,Female,370609
+Social Production Service and Daily Life Service Personnel,Widowed,Male,72111
+Social Production Service and Daily Life Service Personnel,Widowed,Female,183866
+"Farm, Forestry, Animal Husbandry, and Fishery Production and Support Staff",Total,Total,13480283
+"Farm, Forestry, Animal Husbandry, and Fishery Production and Support Staff",Total,Male,7219312
+"Farm, Forestry, Animal Husbandry, and Fishery Production and Support Staff",Total,Female,6260971
+"Farm, Forestry, Animal Husbandry, and Fishery Production and Support Staff",Unmarried,Male,705888
+"Farm, Forestry, Animal Husbandry, and Fishery Production and Support Staff",Unmarried,Female,172184
+"Farm, Forestry, Animal Husbandry, and Fishery Production and Support Staff",With Spouse,Male,6064145
+"Farm, Forestry, Animal Husbandry, and Fishery Production and Support Staff",With Spouse,Female,5599814
+"Farm, Forestry, Animal Husbandry, and Fishery Production and Support Staff",Divorced,Male,192736
+"Farm, Forestry, Animal Husbandry, and Fishery Production and Support Staff",Divorced,Female,56527
+"Farm, Forestry, Animal Husbandry, and Fishery Production and Support Staff",Widowed,Male,256543
+"Farm, Forestry, Animal Husbandry, and Fishery Production and Support Staff",Widowed,Female,432446
+"Production, Manufacturing, and Related Personnel",Total,Total,16933953
+"Production, Manufacturing, and Related Personnel",Total,Male,12060558
+"Production, Manufacturing, and Related Personnel",Total,Female,4873395
+"Production, Manufacturing, and Related Personnel",Unmarried,Male,2097358
+"Production, Manufacturing, and Related Personnel",Unmarried,Female,456537
+"Production, Manufacturing, and Related Personnel",With Spouse,Male,9530948
+"Production, Manufacturing, and Related Personnel",With Spouse,Female,4239575
+"Production, Manufacturing, and Related Personnel",Divorced,Male,347752
+"Production, Manufacturing, and Related Personnel",Divorced,Female,96338
+"Production, Manufacturing, and Related Personnel",Widowed,Male,84500
+"Production, Manufacturing, and Related Personnel",Widowed,Female,80945
+Other occupational categories that are difficult to classify,Total,Total,164737
+Other occupational categories that are difficult to classify,Total,Male,100532
+Other occupational categories that are difficult to classify,Total,Female,64205
+Other occupational categories that are difficult to classify,Unmarried,Male,36811
+Other occupational categories that are difficult to classify,Unmarried,Female,23556
+Other occupational categories that are difficult to classify,With Spouse,Male,60410
+Other occupational categories that are difficult to classify,With Spouse,Female,37763
+Other occupational categories that are difficult to classify,Divorced,Male,2581
+Other occupational categories that are difficult to classify,Divorced,Female,1620
+Other occupational categories that are difficult to classify,Widowed,Male,730
+Other occupational categories that are difficult to classify,Widowed,Female,1266

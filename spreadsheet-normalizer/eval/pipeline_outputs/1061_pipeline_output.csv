@@ -1,49 +1,37 @@
-self_rated_mental_health,gender,measurement_type,value
-positive,cisgender,percent,88.1
-positive,transgender,percent,88.1
-positive,cisgender,95% confidence interval,87.6
-positive,transgender,95% confidence interval,87.6
-positive,cisgender,percent,34.1
-positive,transgender,percent,34.1
-positive,cisgender,95% confidence interval,17.0
-positive,transgender,95% confidence interval,17.0
-negative,cisgender,percent,11.3
-negative,transgender,percent,11.3
-negative,cisgender,95% confidence interval,10.8
-negative,transgender,95% confidence interval,10.8
-negative,cisgender,percent,65.4
-negative,transgender,percent,65.4
-negative,cisgender,95% confidence interval,44.6
-negative,transgender,95% confidence interval,44.6
-ever seriously contemplated suicide,cisgender,percent,15.6
-ever seriously contemplated suicide,transgender,percent,15.6
-ever seriously contemplated suicide,cisgender,95% confidence interval,15.1
-ever seriously contemplated suicide,transgender,95% confidence interval,15.1
-ever seriously contemplated suicide,cisgender,percent,44.8
-ever seriously contemplated suicide,transgender,percent,44.8
-ever seriously contemplated suicide,cisgender,95% confidence interval,25.7
-ever seriously contemplated suicide,transgender,95% confidence interval,25.7
-diagnosed mood or anxiety disorder,cisgender,percent,17.1
-diagnosed mood or anxiety disorder,transgender,percent,17.1
-diagnosed mood or anxiety disorder,cisgender,95% confidence interval,16.6
-diagnosed mood or anxiety disorder,transgender,95% confidence interval,16.6
-diagnosed mood or anxiety disorder,cisgender,percent,61.1
-diagnosed mood or anxiety disorder,transgender,percent,61.1
-diagnosed mood or anxiety disorder,cisgender,95% confidence interval,40.6
-diagnosed mood or anxiety disorder,transgender,95% confidence interval,40.6
-mood disorder,cisgender,percent,10.2
-mood disorder,transgender,percent,10.2
-mood disorder,cisgender,95% confidence interval,9.7
-mood disorder,transgender,95% confidence interval,9.7
-mood disorder,cisgender,percent,39.9
-mood disorder,transgender,percent,39.9
-mood disorder,cisgender,95% confidence interval,21.5
-mood disorder,transgender,95% confidence interval,21.5
-anxiety disorder,cisgender,percent,13.1
-anxiety disorder,transgender,percent,13.1
-anxiety disorder,cisgender,95% confidence interval,12.6
-anxiety disorder,transgender,95% confidence interval,12.6
-anxiety disorder,cisgender,percent,57.0
-anxiety disorder,transgender,percent,57.0
-anxiety disorder,cisgender,95% confidence interval,36.5
-anxiety disorder,transgender,95% confidence interval,36.5
+indicator,gender,value_type,confidence_interval,value
+positive,cisgender,confidence interval,from,88.1
+positive,cisgender,confidence interval,to,87.6
+positive,cisgender,confidence interval,percent,88.6
+positive,transgender,confidence interval,from,34.1
+positive,transgender,confidence interval,to,17.0
+positive,transgender,confidence interval,percent,54.9
+negative,cisgender,confidence interval,from,11.3
+negative,cisgender,confidence interval,to,10.8
+negative,cisgender,confidence interval,percent,11.9
+negative,transgender,confidence interval,from,65.4
+negative,transgender,confidence interval,to,44.6
+negative,transgender,confidence interval,percent,82.7
+ever seriously contemplated suicide,cisgender,confidence interval,from,15.6
+ever seriously contemplated suicide,cisgender,confidence interval,to,15.1
+ever seriously contemplated suicide,cisgender,confidence interval,percent,16.2
+ever seriously contemplated suicide,transgender,confidence interval,from,44.8
+ever seriously contemplated suicide,transgender,confidence interval,to,25.7
+ever seriously contemplated suicide,transgender,confidence interval,percent,65.2
+diagnosed mood or anxiety disorder,cisgender,confidence interval,from,17.1
+diagnosed mood or anxiety disorder,cisgender,confidence interval,to,16.6
+diagnosed mood or anxiety disorder,cisgender,confidence interval,percent,17.7
+diagnosed mood or anxiety disorder,transgender,confidence interval,from,61.1
+diagnosed mood or anxiety disorder,transgender,confidence interval,to,40.6
+diagnosed mood or anxiety disorder,transgender,confidence interval,percent,79.1
+mood disorder,cisgender,confidence interval,from,10.2
+mood disorder,cisgender,confidence interval,to,9.7
+mood disorder,cisgender,confidence interval,percent,10.7
+mood disorder,transgender,confidence interval,from,39.9
+mood disorder,transgender,confidence interval,to,21.5
+mood disorder,transgender,confidence interval,percent,60.6
+anxiety disorder,cisgender,confidence interval,from,13.1
+anxiety disorder,cisgender,confidence interval,to,12.6
+anxiety disorder,cisgender,confidence interval,percent,13.7
+anxiety disorder,transgender,confidence interval,from,57.0
+anxiety disorder,transgender,confidence interval,to,36.5
+anxiety disorder,transgender,confidence interval,percent,75.8

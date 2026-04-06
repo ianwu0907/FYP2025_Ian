@@ -1,16 +1,32 @@
-Unnamed: 0,19 to 49 years,Unnamed: 2,Unnamed: 3,50 to 69 years,Unnamed: 5,Unnamed: 6,70 years and older,Unnamed: 8,Unnamed: 9
-,linked cctlp tumour cohort,tumours with one or more surgical intervention,,linked cctlp tumour cohort,tumours with one or more surgical intervention,,linked cctlp tumour cohort,tumours with one or more surgical intervention,
-,number,number,percent,number,number,percent,number,number,percent
-canada,"6,070","5,745",94.7,"5,120","4,775",93.3,"1,360","1,170",86.1
-newfoundland and labrador,125,125,100.0,145,145,98.6,45,40,93.3
-prince edward island,10,10,100.0,15,10,80.0,5,5,100.0
-nova scotia,140,135,96.4,160,160,98.8,55,50,92.9
-new brunswick,140,145,100.0,215,215,98.6,50,45,81.1
-ontario,"4,095","3,855",94.1,"3,380","3,115",92.2,830,715,86.5
-manitoba,185,170,90.9,145,140,94.6,45,40,84.4
-saskatchewan,135,135,98.5,105,100,96.2,35,30,80.0
-alberta,720,695,96.7,495,470,94.5,125,105,85.5
-british columbia,505,470,93.5,450,420,92.9,165,140,83.1
-yukon,x,x,0.0,x,x,100.0,x,x,100.0
-northwest territories,x,x,0.0,x,x,100.0,0,0,0.0
-nunavut,x,x,0.0,x,x,100.0,x,x,0.0
+province,age_group,intervention_type,number,percent
+canada,linked cctlp tumour cohort,tumours with one or more surgical intervention,6070.0,94.7
+canada,linked cctlp tumour cohort,tumours with one or more surgical intervention,5120.0,93.3
+canada,linked cctlp tumour cohort,tumours with one or more surgical intervention,1360.0,86.1
+newfoundland and labrador,linked cctlp tumour cohort,tumours with one or more surgical intervention,125.0,100.0
+newfoundland and labrador,linked cctlp tumour cohort,tumours with one or more surgical intervention,145.0,98.6
+newfoundland and labrador,linked cctlp tumour cohort,tumours with one or more surgical intervention,45.0,93.3
+prince edward island,linked cctlp tumour cohort,tumours with one or more surgical intervention,10.0,100.0
+prince edward island,linked cctlp tumour cohort,tumours with one or more surgical intervention,15.0,80.0
+prince edward island,linked cctlp tumour cohort,tumours with one or more surgical intervention,5.0,100.0
+nova scotia,linked cctlp tumour cohort,tumours with one or more surgical intervention,140.0,96.4
+nova scotia,linked cctlp tumour cohort,tumours with one or more surgical intervention,160.0,98.8
+nova scotia,linked cctlp tumour cohort,tumours with one or more surgical intervention,55.0,92.9
+new brunswick,linked cctlp tumour cohort,tumours with one or more surgical intervention,140.0,100.0
+new brunswick,linked cctlp tumour cohort,tumours with one or more surgical intervention,215.0,98.6
+new brunswick,linked cctlp tumour cohort,tumours with one or more surgical intervention,50.0,81.1
+ontario,linked cctlp tumour cohort,tumours with one or more surgical intervention,4095.0,94.1
+ontario,linked cctlp tumour cohort,tumours with one or more surgical intervention,3380.0,92.2
+ontario,linked cctlp tumour cohort,tumours with one or more surgical intervention,830.0,86.5
+manitoba,linked cctlp tumour cohort,tumours with one or more surgical intervention,185.0,90.9
+manitoba,linked cctlp tumour cohort,tumours with one or more surgical intervention,145.0,94.6
+manitoba,linked cctlp tumour cohort,tumours with one or more surgical intervention,45.0,84.4
+saskatchewan,linked cctlp tumour cohort,tumours with one or more surgical intervention,135.0,98.5
+saskatchewan,linked cctlp tumour cohort,tumours with one or more surgical intervention,105.0,96.2
+saskatchewan,linked cctlp tumour cohort,tumours with one or more surgical intervention,35.0,80.0
+alberta,linked cctlp tumour cohort,tumours with one or more surgical intervention,720.0,96.7
+alberta,linked cctlp tumour cohort,tumours with one or more surgical intervention,495.0,94.5
+alberta,linked cctlp tumour cohort,tumours with one or more surgical intervention,125.0,85.5
+british columbia,linked cctlp tumour cohort,tumours with one or more surgical intervention,505.0,93.5
+british columbia,linked cctlp tumour cohort,tumours with one or more surgical intervention,450.0,92.9
+british columbia,linked cctlp tumour cohort,tumours with one or more surgical intervention,165.0,83.1
+northwest territories,linked cctlp tumour cohort,tumours with one or more surgical intervention,0.0,0.0

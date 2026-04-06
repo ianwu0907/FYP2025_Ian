@@ -1,36 +1,171 @@
-census metropolitan area,homicide,Unnamed: 2,sexual assault,Unnamed: 4,robbery,Unnamed: 6,breaking and entering,Unnamed: 8,motor vehicle theft,Unnamed: 10
-,number,rate,rate,percent change in rate 2015 to 2016,rate,percent change in rate 2015 to 2016,rate,percent change in rate 2015 to 2016,rate,percent change in rate 2015 to 2016
-st. john's,4,1.93,69,-7,87,20,602,18,118,12
-halifax,12,2.82,75,-9,45,-23,239,-16,90,-5
-moncton,1,0.64,43,-2,64,62,561,-3,147,13
-saint john,3,2.35,41,-46,48,48,231,-8,58,-15
-saguenay,2,1.20,53,-10,16,-15,338,0,117,-9
-quebec,1,0.12,47,3,19,13,319,-1,71,-2
-sherbrooke,2,1.00,58,15,19,-23,286,-12,54,-2
-trois-rivieres,0,0.00,54,1,12,-66,336,-11,85,-25
-montreal,42,1.02,46,11,74,-10,386,-5,168,-11
-gatineau,3,0.91,48,9,32,44,320,5,71,-28
-ottawa,24,2.37,59,14,50,-13,270,16,88,-1
-kingston,0,0.00,60,-7,18,-17,395,19,72,-9
-peterborough,2,1.62,97,10,41,-15,304,-25,57,-1
-toronto,96,1.55,44,-2,83,10,205,-9,113,4
-hamilton,12,1.58,64,6,70,21,308,5,217,-1
-st. catharines-niagara,1,0.22,53,-7,31,-11,373,-11,160,5
-kitchener-cambridge-waterloo,6,1.09,51,-12,51,6,358,-11,137,-3
-brantford,4,2.73,68,-12,68,14,588,12,454,-2
-guelph,1,0.76,64,33,22,-8,347,16,119,49
-london,8,1.55,46,10,55,4,389,9,195,-12
-windsor,3,0.90,52,15,61,10,506,23,199,14
-barrie,2,0.92,54,14,32,28,200,-8,68,-12
-greater sudbury,0,0.00,61,1,48,10,454,20,101,-17
-thunder bay,8,6.64,85,7,118,-21,492,18,158,1
-winnipeg,25,3.14,98,14,229,27,682,14,315,3
-regina,8,3.23,59,-4,118,18,760,7,523,17
-saskatoon,10,3.12,95,44,116,-11,791,-3,453,16
-calgary,33,2.24,44,-14,62,-24,576,-10,535,0
-edmonton,47,3.39,72,-8,103,-8,582,-4,483,10
-kelowna,5,2.54,34,-18,41,-28,620,-3,316,-11
-abbotsford-mission,6,3.22,42,0,64,-36,577,-19,493,-1
-vancouver,41,1.61,44,2,78,-24,678,-1,312,-7
-victoria,1,0.27,64,7,37,-15,326,-20,108,0
-canada,611,1.68,58,-1,60,-3,439,-2,217,-1
+census_metropolitan_area,crime_type,number,rate
+st. john's,homicide,4.0,4.0
+halifax,homicide,12.0,12.0
+moncton,homicide,1.0,1.0
+saint john,homicide,3.0,3.0
+saguenay,homicide,2.0,2.0
+quebec,homicide,1.0,1.0
+sherbrooke,homicide,2.0,2.0
+trois-rivieres,homicide,0.0,0.0
+montreal,homicide,42.0,42.0
+gatineau,homicide,3.0,3.0
+ottawa,homicide,24.0,24.0
+kingston,homicide,0.0,0.0
+peterborough,homicide,2.0,2.0
+toronto,homicide,96.0,96.0
+hamilton,homicide,12.0,12.0
+st. catharines-niagara,homicide,1.0,1.0
+kitchener-cambridge-waterloo,homicide,6.0,6.0
+brantford,homicide,4.0,4.0
+guelph,homicide,1.0,1.0
+london,homicide,8.0,8.0
+windsor,homicide,3.0,3.0
+barrie,homicide,2.0,2.0
+greater sudbury,homicide,0.0,0.0
+thunder bay,homicide,8.0,8.0
+winnipeg,homicide,25.0,25.0
+regina,homicide,8.0,8.0
+saskatoon,homicide,10.0,10.0
+calgary,homicide,33.0,33.0
+edmonton,homicide,47.0,47.0
+kelowna,homicide,5.0,5.0
+abbotsford-mission,homicide,6.0,6.0
+vancouver,homicide,41.0,41.0
+victoria,homicide,1.0,1.0
+canada,homicide,611.0,611.0
+st. john's,sexual assault,69.0,69.0
+halifax,sexual assault,75.0,75.0
+moncton,sexual assault,43.0,43.0
+saint john,sexual assault,41.0,41.0
+saguenay,sexual assault,53.0,53.0
+quebec,sexual assault,47.0,47.0
+sherbrooke,sexual assault,58.0,58.0
+trois-rivieres,sexual assault,54.0,54.0
+montreal,sexual assault,46.0,46.0
+gatineau,sexual assault,48.0,48.0
+ottawa,sexual assault,59.0,59.0
+kingston,sexual assault,60.0,60.0
+peterborough,sexual assault,97.0,97.0
+toronto,sexual assault,44.0,44.0
+hamilton,sexual assault,64.0,64.0
+st. catharines-niagara,sexual assault,53.0,53.0
+kitchener-cambridge-waterloo,sexual assault,51.0,51.0
+brantford,sexual assault,68.0,68.0
+guelph,sexual assault,64.0,64.0
+london,sexual assault,46.0,46.0
+windsor,sexual assault,52.0,52.0
+barrie,sexual assault,54.0,54.0
+greater sudbury,sexual assault,61.0,61.0
+thunder bay,sexual assault,85.0,85.0
+winnipeg,sexual assault,98.0,98.0
+regina,sexual assault,59.0,59.0
+saskatoon,sexual assault,95.0,95.0
+calgary,sexual assault,44.0,44.0
+edmonton,sexual assault,72.0,72.0
+kelowna,sexual assault,34.0,34.0
+abbotsford-mission,sexual assault,42.0,42.0
+vancouver,sexual assault,44.0,44.0
+victoria,sexual assault,64.0,64.0
+canada,sexual assault,58.0,58.0
+st. john's,robbery,87.0,87.0
+halifax,robbery,45.0,45.0
+moncton,robbery,64.0,64.0
+saint john,robbery,48.0,48.0
+saguenay,robbery,16.0,16.0
+quebec,robbery,19.0,19.0
+sherbrooke,robbery,19.0,19.0
+trois-rivieres,robbery,12.0,12.0
+montreal,robbery,74.0,74.0
+gatineau,robbery,32.0,32.0
+ottawa,robbery,50.0,50.0
+kingston,robbery,18.0,18.0
+peterborough,robbery,41.0,41.0
+toronto,robbery,83.0,83.0
+hamilton,robbery,70.0,70.0
+st. catharines-niagara,robbery,31.0,31.0
+kitchener-cambridge-waterloo,robbery,51.0,51.0
+brantford,robbery,68.0,68.0
+guelph,robbery,22.0,22.0
+london,robbery,55.0,55.0
+windsor,robbery,61.0,61.0
+barrie,robbery,32.0,32.0
+greater sudbury,robbery,48.0,48.0
+thunder bay,robbery,118.0,118.0
+winnipeg,robbery,229.0,229.0
+regina,robbery,118.0,118.0
+saskatoon,robbery,116.0,116.0
+calgary,robbery,62.0,62.0
+edmonton,robbery,103.0,103.0
+kelowna,robbery,41.0,41.0
+abbotsford-mission,robbery,64.0,64.0
+vancouver,robbery,78.0,78.0
+victoria,robbery,37.0,37.0
+canada,robbery,60.0,60.0
+st. john's,breaking and entering,602.0,602.0
+halifax,breaking and entering,239.0,239.0
+moncton,breaking and entering,561.0,561.0
+saint john,breaking and entering,231.0,231.0
+saguenay,breaking and entering,338.0,338.0
+quebec,breaking and entering,319.0,319.0
+sherbrooke,breaking and entering,286.0,286.0
+trois-rivieres,breaking and entering,336.0,336.0
+montreal,breaking and entering,386.0,386.0
+gatineau,breaking and entering,320.0,320.0
+ottawa,breaking and entering,270.0,270.0
+kingston,breaking and entering,395.0,395.0
+peterborough,breaking and entering,304.0,304.0
+toronto,breaking and entering,205.0,205.0
+hamilton,breaking and entering,308.0,308.0
+st. catharines-niagara,breaking and entering,373.0,373.0
+kitchener-cambridge-waterloo,breaking and entering,358.0,358.0
+brantford,breaking and entering,588.0,588.0
+guelph,breaking and entering,347.0,347.0
+london,breaking and entering,389.0,389.0
+windsor,breaking and entering,506.0,506.0
+barrie,breaking and entering,200.0,200.0
+greater sudbury,breaking and entering,454.0,454.0
+thunder bay,breaking and entering,492.0,492.0
+winnipeg,breaking and entering,682.0,682.0
+regina,breaking and entering,760.0,760.0
+saskatoon,breaking and entering,791.0,791.0
+calgary,breaking and entering,576.0,576.0
+edmonton,breaking and entering,582.0,582.0
+kelowna,breaking and entering,620.0,620.0
+abbotsford-mission,breaking and entering,577.0,577.0
+vancouver,breaking and entering,678.0,678.0
+victoria,breaking and entering,326.0,326.0
+canada,breaking and entering,439.0,439.0
+st. john's,motor vehicle theft,118.0,118.0
+halifax,motor vehicle theft,90.0,90.0
+moncton,motor vehicle theft,147.0,147.0
+saint john,motor vehicle theft,58.0,58.0
+saguenay,motor vehicle theft,117.0,117.0
+quebec,motor vehicle theft,71.0,71.0
+sherbrooke,motor vehicle theft,54.0,54.0
+trois-rivieres,motor vehicle theft,85.0,85.0
+montreal,motor vehicle theft,168.0,168.0
+gatineau,motor vehicle theft,71.0,71.0
+ottawa,motor vehicle theft,88.0,88.0
+kingston,motor vehicle theft,72.0,72.0
+peterborough,motor vehicle theft,57.0,57.0
+toronto,motor vehicle theft,113.0,113.0
+hamilton,motor vehicle theft,217.0,217.0
+st. catharines-niagara,motor vehicle theft,160.0,160.0
+kitchener-cambridge-waterloo,motor vehicle theft,137.0,137.0
+brantford,motor vehicle theft,454.0,454.0
+guelph,motor vehicle theft,119.0,119.0
+london,motor vehicle theft,195.0,195.0
+windsor,motor vehicle theft,199.0,199.0
+barrie,motor vehicle theft,68.0,68.0
+greater sudbury,motor vehicle theft,101.0,101.0
+thunder bay,motor vehicle theft,158.0,158.0
+winnipeg,motor vehicle theft,315.0,315.0
+regina,motor vehicle theft,523.0,523.0
+saskatoon,motor vehicle theft,453.0,453.0
+calgary,motor vehicle theft,535.0,535.0
+edmonton,motor vehicle theft,483.0,483.0
+kelowna,motor vehicle theft,316.0,316.0
+abbotsford-mission,motor vehicle theft,493.0,493.0
+vancouver,motor vehicle theft,312.0,312.0
+victoria,motor vehicle theft,108.0,108.0
+canada,motor vehicle theft,217.0,217.0

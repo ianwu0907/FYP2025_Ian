@@ -1,13 +1,13 @@
-aboriginal_identity_category,statistic_type,population_value,percent_value
-total aboriginal population,agricultural population,"15,765",100.0
-first nations,agricultural population,"4,135",26.2
-metis,agricultural population,"10,960",69.5
-inuit,agricultural population,115,0.7
-multiple aboriginal identities,agricultural population,300,1.9
-aboriginal identities not included elsewhere,agricultural population,255,1.6
-total aboriginal population,total population,"1,673,785",100.0
-first nations,total population,"977,230",58.4
-metis,total population,"587,545",35.1
-inuit,total population,"65,025",3.9
-multiple aboriginal identities,total population,"21,310",1.3
-aboriginal identities not included elsewhere,total population,"22,670",1.4
+aboriginal_identity_category,population_type,population_count,percentage
+total aboriginal population,agricultural,15765.0,inf
+first nations,agricultural,4135.0,inf
+metis,agricultural,10960.0,inf
+inuit,agricultural,115.0,inf
+multiple aboriginal identities,agricultural,300.0,inf
+aboriginal identities not included elsewhere,agricultural,255.0,inf
+total aboriginal population,agricultural,100.0,inf
+first nations,agricultural,26.2,inf
+metis,agricultural,69.5,inf
+inuit,agricultural,0.7,inf
+multiple aboriginal identities,agricultural,1.9,inf
+aboriginal identities not included elsewhere,agricultural,1.6,inf

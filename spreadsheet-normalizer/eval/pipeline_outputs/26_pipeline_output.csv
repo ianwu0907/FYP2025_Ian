@@ -1,4 +1,6 @@
-food_category,estimate_value,ci_from,ci_to,under_reporters_value,ur_ci_from,ur_ci_to,plausible_reporters_value,pr_ci_from,pr_ci_to,over_reporters_value,or_ci_from,or_ci_to
+top sources of the difference,total,Unnamed: 2,Unnamed: 3,under-reporters,Unnamed: 5,Unnamed: 6,plausible reporters,Unnamed: 8,Unnamed: 9,over-reporters,Unnamed: 11,Unnamed: 12
+,estimate,95% confidence interval,,estimate,95% confidence interval,,estimate,95% confidence interval,,estimate,95% confidence interval,
+,,from,to,,from,to,,from,to,,from,to
 sugar-sweetened beverages,-71,-78,-64,-30,-39,-21,-70,-78,-62,-86,-114,-57
 meat,-37,-51,-23,-8,-24,9,-10,-28,8,-71,-122,-20
 milk,-34,-40,-27,-12,-19,-4,-26,-33,-18,-44,-68,-20

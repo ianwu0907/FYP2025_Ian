@@ -1,50 +1,349 @@
-year,state_owned_economy,collective_owned_units,individual_economy_urban,individual_economy_rural,others
-1978,29.27,8.42,1.78,4.18,3.98
-1979,31.62,18.97,1.55,10.76,10.41
-1980,35.83,22.24,3.12,11.9,11.47
-1981,29.63,32.08,3.27,17.89,17.28
-1982,43.29,23.38,4.38,18.33,17.46
-1983,49.11,19.19,3.76,28.16,26.48
-1984,67.09,25.29,5.01,47.77,44.43
-1985,100.42,30.21,8.64,63.7,58.51
-1986,121.95,43.09,11.95,58.04,52.32
-1987,155.65,78.75,17.84,63.37,56.05
-1988,192.2,100.97,35.46,76.65,64.83
-1989,162.3,69.68,19.68,73.56,62.0
-1990,185.44,71.51,18.63,78.71,67.47
-1991,234.04,104.73,25.06,101.05,85.73
-1992,343.17,186.43,42.27,71.9,54.19
-1993,476.26,245.9,49.9,105.44,83.05
-1994,537.59,318.42,56.42,118.45,92.3
-1995,611.92,383.97,51.62,140.54,113.13
-1996,691.76,484.79,79.79,202.65,166.14
-1997,773.3,569.7,60.15,241.76,198.68
-1998,938.73,610.2,66.7,274.2,227.0
-1999,1043.13,635.55,82.72,310.64,228.43
-2000,1153.65,679.48,108.63,353.93,254.11
-2001,1157.44,688.61,134.92,384.06,263.35
-2002,1237.16,812.65,196.78,487.31,285.64
-2003,1615.57,1177.0,321.79,733.64,296.03
-2004,1762.29,2455.86,383.83,772.28,116.36
-2005,1853.29,1042.41,620.23,2736.61,1491.55
-2006,1855.41,1063.61,713.49,3096.56,1186.2
-2007,1838.55,1269.64,857.34,3566.49,1141.34
-2008,2431.5391,1811.2253,1333.2312,4360.8981,1304.0237
-2009,3086.82,2308.54,1717.74,5235.29,1586.71
-2010,3648.447,2627.3225,1841.4004,6505.0014,1822.9909
-2011,3783.3089,2715.0045,,8234.5006,
-2012,3949.6474,3129.2669,0.0,9879.7453,0.0
-2013,4757.3094,3113.1668,,12827.6642,
-2014,5455.9377,3380.3857,,16215.4731,
-2015,6304.5816,3125.7374,,20268.78,
-2016,7497.3242,1545.379,,22191.4168,
-2017,9568.2458,1496.6216,,22328.5482,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
+year,economy_type,investment_amount
+1978,"State-owned Economy
+
+State-owned
+Units",41.87
+1978,Collective-owned Units,29.27
+1978,Collective-owned Units,8.42
+1978,Individual Economy,1.78
+1978,Individual Economy,4.18
+1978,Others,3.98
+1979,"State-owned Economy
+
+State-owned
+Units",61.35
+1979,Collective-owned Units,31.62
+1979,Collective-owned Units,18.97
+1979,Individual Economy,1.55
+1979,Individual Economy,10.76
+1979,Others,10.41
+1980,"State-owned Economy
+
+State-owned
+Units",69.97
+1980,Collective-owned Units,35.83
+1980,Collective-owned Units,22.24
+1980,Individual Economy,3.12
+1980,Individual Economy,11.9
+1980,Others,11.47
+1981,"State-owned Economy
+
+State-owned
+Units",79.6
+1981,Collective-owned Units,29.63
+1981,Collective-owned Units,32.08
+1981,Individual Economy,3.27
+1981,Individual Economy,17.89
+1981,Others,17.28
+1982,"State-owned Economy
+
+State-owned
+Units",85.0
+1982,Collective-owned Units,43.29
+1982,Collective-owned Units,23.38
+1982,Individual Economy,4.38
+1982,Individual Economy,18.33
+1982,Others,17.46
+1983,"State-owned Economy
+
+State-owned
+Units",96.46
+1983,Collective-owned Units,49.11
+1983,Collective-owned Units,19.19
+1983,Individual Economy,3.76
+1983,Individual Economy,28.16
+1983,Others,26.48
+1984,"State-owned Economy
+
+State-owned
+Units",140.15
+1984,Collective-owned Units,67.09
+1984,Collective-owned Units,25.29
+1984,Individual Economy,5.01
+1984,Individual Economy,47.77
+1984,Others,44.43
+1985,"State-owned Economy
+
+State-owned
+Units",194.33
+1985,Collective-owned Units,100.42
+1985,Collective-owned Units,30.21
+1985,Individual Economy,8.64
+1985,Individual Economy,63.7
+1985,Others,58.51
+1986,"State-owned Economy
+
+State-owned
+Units",223.08
+1986,Collective-owned Units,121.95
+1986,Collective-owned Units,43.09
+1986,Individual Economy,11.95
+1986,Individual Economy,58.04
+1986,Others,52.32
+1987,"State-owned Economy
+
+State-owned
+Units",297.77
+1987,Collective-owned Units,155.65
+1987,Collective-owned Units,78.75
+1987,Individual Economy,17.84
+1987,Individual Economy,63.37
+1987,Others,56.05
+1988,"State-owned Economy
+
+State-owned
+Units",369.82
+1988,Collective-owned Units,192.2
+1988,Collective-owned Units,100.97
+1988,Individual Economy,35.46
+1988,Individual Economy,76.65
+1988,Others,64.83
+1989,"State-owned Economy
+
+State-owned
+Units",305.54
+1989,Collective-owned Units,162.3
+1989,Collective-owned Units,69.68
+1989,Individual Economy,19.68
+1989,Individual Economy,73.56
+1989,Others,62.0
+1990,"State-owned Economy
+
+State-owned
+Units",335.66
+1990,Collective-owned Units,185.44
+1990,Collective-owned Units,71.51
+1990,Individual Economy,18.63
+1990,Individual Economy,78.71
+1990,Others,67.47
+1991,"State-owned Economy
+
+State-owned
+Units",439.82
+1991,Collective-owned Units,234.04
+1991,Collective-owned Units,104.73
+1991,Individual Economy,25.06
+1991,Individual Economy,101.05
+1991,Others,85.73
+1992,"State-owned Economy
+
+State-owned
+Units",601.5
+1992,Collective-owned Units,343.17
+1992,Collective-owned Units,186.43
+1992,Individual Economy,42.27
+1992,Individual Economy,71.9
+1992,Others,54.19
+1993,"State-owned Economy
+
+State-owned
+Units",892.48
+1993,Collective-owned Units,476.26
+1993,Collective-owned Units,245.9
+1993,Individual Economy,49.9
+1993,Individual Economy,105.44
+1993,Others,83.05
+1994,"State-owned Economy
+
+State-owned
+Units",1108.0
+1994,Collective-owned Units,537.59
+1994,Collective-owned Units,318.42
+1994,Individual Economy,56.42
+1994,Individual Economy,118.45
+1994,Others,92.3
+1995,"State-owned Economy
+
+State-owned
+Units",1320.97
+1995,Collective-owned Units,611.92
+1995,Collective-owned Units,383.97
+1995,Individual Economy,51.62
+1995,Individual Economy,140.54
+1995,Others,113.13
+1996,"State-owned Economy
+
+State-owned
+Units",1558.01
+1996,Collective-owned Units,691.76
+1996,Collective-owned Units,484.79
+1996,Individual Economy,79.79
+1996,Individual Economy,202.65
+1996,Others,166.14
+1997,"State-owned Economy
+
+State-owned
+Units",1792.22
+1997,Collective-owned Units,773.3
+1997,Collective-owned Units,569.7
+1997,Individual Economy,60.15
+1997,Individual Economy,241.76
+1997,Others,198.68
+1998,"State-owned Economy
+
+State-owned
+Units",2056.97
+1998,Collective-owned Units,938.73
+1998,Collective-owned Units,610.2
+1998,Individual Economy,66.7
+1998,Individual Economy,274.2
+1998,Others,227.0
+1999,"State-owned Economy
+
+State-owned
+Units",2222.17
+1999,Collective-owned Units,1043.13
+1999,Collective-owned Units,635.55
+1999,Individual Economy,82.72
+1999,Individual Economy,310.64
+1999,Others,228.43
+2000,"State-owned Economy
+
+State-owned
+Units",2542.65
+2000,Collective-owned Units,1153.65
+2000,Collective-owned Units,679.48
+2000,Individual Economy,108.63
+2000,Individual Economy,353.93
+2000,Others,254.11
+2001,"State-owned Economy
+
+State-owned
+Units",2807.79
+2001,Collective-owned Units,1157.44
+2001,Collective-owned Units,688.61
+2001,Individual Economy,134.92
+2001,Individual Economy,384.06
+2001,Others,263.35
+2002,"State-owned Economy
+
+State-owned
+Units",3509.29
+2002,Collective-owned Units,1237.16
+2002,Collective-owned Units,812.65
+2002,Individual Economy,196.78
+2002,Individual Economy,487.31
+2002,Others,285.64
+2003,"State-owned Economy
+
+State-owned
+Units",5328.44
+2003,Collective-owned Units,1615.57
+2003,Collective-owned Units,1177.0
+2003,Individual Economy,321.79
+2003,Individual Economy,733.64
+2003,Others,296.03
+2004,"State-owned Economy
+
+State-owned
+Units",7629.04
+2004,Collective-owned Units,1762.29
+2004,Collective-owned Units,2455.86
+2004,Individual Economy,383.83
+2004,Individual Economy,772.28
+2004,Others,116.36
+2005,"State-owned Economy
+
+State-owned
+Units",10541.87
+2005,Collective-owned Units,1853.29
+2005,Collective-owned Units,1042.41
+2005,Individual Economy,620.23
+2005,Individual Economy,2736.61
+2005,Others,1491.55
+2006,"State-owned Economy
+
+State-owned
+Units",11136.06
+2006,Collective-owned Units,1855.41
+2006,Collective-owned Units,1063.61
+2006,Individual Economy,713.49
+2006,Individual Economy,3096.56
+2006,Others,1186.2
+2007,"State-owned Economy
+
+State-owned
+Units",12537.02
+2007,Collective-owned Units,1838.55
+2007,Collective-owned Units,1269.64
+2007,Individual Economy,857.34
+2007,Individual Economy,3566.49
+2007,Others,1141.34
+2008,"State-owned Economy
+
+State-owned
+Units",15435.93
+2008,Collective-owned Units,2431.5391
+2008,Collective-owned Units,1811.2253
+2008,Individual Economy,1333.2312
+2008,Individual Economy,4360.8981
+2008,Others,1304.0237
+2009,"State-owned Economy
+
+State-owned
+Units",19030.97
+2009,Collective-owned Units,3086.82
+2009,Collective-owned Units,2308.54
+2009,Individual Economy,1717.74
+2009,Individual Economy,5235.29
+2009,Others,1586.71
+2010,"State-owned Economy
+
+State-owned
+Units",23276.6893
+2010,Collective-owned Units,3648.447
+2010,Collective-owned Units,2627.3225
+2010,Individual Economy,1841.4004
+2010,Individual Economy,6505.0014
+2010,Others,1822.9909
+2011,"State-owned Economy
+
+State-owned
+Units",26769.7333
+2011,Collective-owned Units,3783.3089
+2011,Collective-owned Units,2715.0045
+2011,Individual Economy,8234.5006
+2012,"State-owned Economy
+
+State-owned
+Units",31255.96
+2012,Collective-owned Units,3949.6474
+2012,Collective-owned Units,3129.2669
+2012,Individual Economy,0.0
+2012,Individual Economy,9879.7453
+2012,Others,0.0
+2013,"State-owned Economy
+
+State-owned
+Units",36789.0709999999
+2013,Collective-owned Units,4757.3094
+2013,Collective-owned Units,3113.1668
+2013,Individual Economy,12827.6642
+2014,"State-owned Economy
+
+State-owned
+Units",42495.5478
+2014,Collective-owned Units,5455.9377
+2014,Collective-owned Units,3380.3857
+2014,Individual Economy,16215.4731
+2015,"State-owned Economy
+
+State-owned
+Units",48312.46
+2015,Collective-owned Units,6304.5816
+2015,Collective-owned Units,3125.7374
+2015,Individual Economy,20268.78
+2016,"State-owned Economy
+
+State-owned
+Units",53322.49
+2016,Collective-owned Units,7497.3242
+2016,Collective-owned Units,1545.379
+2016,Individual Economy,22191.4168
+2017,"State-owned Economy
+
+State-owned
+Units",55202.73
+2017,Collective-owned Units,9568.2458
+2017,Collective-owned Units,1496.6216
+2017,Individual Economy,22328.5482

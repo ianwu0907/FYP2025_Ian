@@ -1,936 +1,606 @@
-age_category,income_type,population
-45,Total: total,2006712.0
-46,Total: total,2197494.0
-47,Total: total,2298050.0
-48,Total: total,2354836.0
-49,Total: total,2429187.0
-50,Total: total,2564829.0
-51,Total: total,2404959.0
-52,Total: total,2575521.0
-53,Total: total,2059446.0
-54,Total: total,2321425.0
-55,Total: total,2276177.0
-56,Total: total,2223387.0
-57,Total: total,2567550.0
-58,Total: total,1879095.0
-59,Total: total,1033953.0
-60,Total: total,1265735.0
-61,Total: total,1191490.0
-62,Total: total,1519108.0
-63,Total: total,1696369.0
-64,Total: total,1539629.0
-65,Total: total,1601607.0
-66,Total: total,1597292.0
-67,Total: total,1436603.0
-68,Total: total,1425277.0
-69,Total: total,1200234.0
-70,Total: total,1132641.0
-71,Total: total,1091505.0
-72,Total: total,927034.0
-73,Total: total,874817.0
-74,Total: total,787650.0
-75,Total: total,690748.0
-76,Total: total,652501.0
-77,Total: total,574487.0
-78,Total: total,537691.0
-79,Total: total,525081.0
-80,Total: total,462344.0
-81,Total: total,387427.0
-82,Total: total,395095.0
-83,Total: total,343475.0
-84,Total: total,309409.0
-85,Total: total,264740.0
-86,Total: total,227319.0
-87,Total: total,204932.0
-88,Total: total,154282.0
-89,Total: total,122545.0
-90,Total: total,106074.0
-91,Total: total,72886.0
-92,Total: total,60934.0
-93,Total: total,42736.0
-94,Total: total,30216.0
-95,Total: total,23449.0
-96,Total: total,16489.0
-97,Total: total,10967.0
-98,Total: total,7293.0
-99,Total: total,5428.0
-45,Total: male,1029558.0
-46,Total: male,1123949.0
-47,Total: male,1176498.0
-48,Total: male,1202544.0
-49,Total: male,1241906.0
-50,Total: male,1298030.0
-51,Total: male,1216599.0
-52,Total: male,1298846.0
-53,Total: male,1034436.0
-54,Total: male,1171891.0
-55,Total: male,1144496.0
-56,Total: male,1111081.0
-57,Total: male,1290317.0
-58,Total: male,935259.0
-59,Total: male,504877.0
-60,Total: male,630443.0
-61,Total: male,601597.0
-62,Total: male,765643.0
-63,Total: male,853241.0
-64,Total: male,760610.0
-65,Total: male,794038.0
-66,Total: male,784337.0
-67,Total: male,701663.0
-68,Total: male,695588.0
-69,Total: male,581445.0
-70,Total: male,552550.0
-71,Total: male,537267.0
-72,Total: male,450625.0
-73,Total: male,425034.0
-74,Total: male,376416.0
-75,Total: male,328485.0
-76,Total: male,312625.0
-77,Total: male,271017.0
-78,Total: male,252314.0
-79,Total: male,244753.0
-80,Total: male,214196.0
-81,Total: male,175529.0
-82,Total: male,179490.0
-83,Total: male,153187.0
-84,Total: male,134217.0
-85,Total: male,111113.0
-86,Total: male,93574.0
-87,Total: male,84218.0
-88,Total: male,61448.0
-89,Total: male,48554.0
-90,Total: male,41051.0
-91,Total: male,27037.0
-92,Total: male,21980.0
-93,Total: male,15095.0
-94,Total: male,10274.0
-95,Total: male,7523.0
-96,Total: male,5063.0
-97,Total: male,3306.0
-98,Total: male,2148.0
-99,Total: male,1536.0
-45,Total: female,977154.0
-46,Total: female,1073545.0
-47,Total: female,1121552.0
-48,Total: female,1152292.0
-49,Total: female,1187281.0
-50,Total: female,1266799.0
-51,Total: female,1188360.0
-52,Total: female,1276675.0
-53,Total: female,1025010.0
-54,Total: female,1149534.0
-55,Total: female,1131681.0
-56,Total: female,1112306.0
-57,Total: female,1277233.0
-58,Total: female,943836.0
-59,Total: female,529076.0
-60,Total: female,635292.0
-61,Total: female,589893.0
-62,Total: female,753465.0
-63,Total: female,843128.0
-64,Total: female,779019.0
-65,Total: female,807569.0
-66,Total: female,812955.0
-67,Total: female,734940.0
-68,Total: female,729689.0
-69,Total: female,618789.0
-70,Total: female,580091.0
-71,Total: female,554238.0
-72,Total: female,476409.0
-73,Total: female,449783.0
-74,Total: female,411234.0
-75,Total: female,362263.0
-76,Total: female,339876.0
-77,Total: female,303470.0
-78,Total: female,285377.0
-79,Total: female,280328.0
-80,Total: female,248148.0
-81,Total: female,211898.0
-82,Total: female,215605.0
-83,Total: female,190288.0
-84,Total: female,175192.0
-85,Total: female,153627.0
-86,Total: female,133745.0
-87,Total: female,120714.0
-88,Total: female,92834.0
-89,Total: female,73991.0
-90,Total: female,65023.0
-91,Total: female,45849.0
-92,Total: female,38954.0
-93,Total: female,27641.0
-94,Total: female,19942.0
-95,Total: female,15926.0
-96,Total: female,11426.0
-97,Total: female,7661.0
-98,Total: female,5145.0
-99,Total: female,3892.0
-45,Labor Income: male,935842.0
-46,Labor Income: male,1017936.0
-47,Labor Income: male,1060223.0
-48,Labor Income: male,1078545.0
-49,Labor Income: male,1106873.0
-50,Labor Income: male,1142744.0
-51,Labor Income: male,1052369.0
-52,Labor Income: male,1108834.0
-53,Labor Income: male,869962.0
-54,Labor Income: male,965995.0
-55,Labor Income: male,906162.0
-56,Labor Income: male,849069.0
-57,Labor Income: male,954315.0
-58,Labor Income: male,672021.0
-59,Labor Income: male,333180.0
-60,Labor Income: male,307806.0
-61,Labor Income: male,271939.0
-62,Labor Income: male,331517.0
-63,Labor Income: male,362706.0
-64,Labor Income: male,305467.0
-65,Labor Income: male,302943.0
-66,Labor Income: male,281151.0
-67,Labor Income: male,239456.0
-68,Labor Income: male,223966.0
-69,Labor Income: male,170334.0
-70,Labor Income: male,142394.0
-71,Labor Income: male,124934.0
-72,Labor Income: male,95970.0
-73,Labor Income: male,82127.0
-74,Labor Income: male,65706.0
-75,Labor Income: male,52193.0
-76,Labor Income: male,43762.0
-77,Labor Income: male,33086.0
-78,Labor Income: male,26562.0
-79,Labor Income: male,21694.0
-80,Labor Income: male,15190.0
-81,Labor Income: male,9742.0
-82,Labor Income: male,8741.0
-83,Labor Income: male,6411.0
-84,Labor Income: male,4987.0
-85,Labor Income: male,3828.0
-86,Labor Income: male,2794.0
-87,Labor Income: male,2175.0
-88,Labor Income: male,1404.0
-89,Labor Income: male,1001.0
-90,Labor Income: male,707.0
-91,Labor Income: male,390.0
-92,Labor Income: male,289.0
-93,Labor Income: male,202.0
-94,Labor Income: male,149.0
-95,Labor Income: male,95.0
-96,Labor Income: male,72.0
-97,Labor Income: male,33.0
-98,Labor Income: male,37.0
-99,Labor Income: male,26.0
-45,Labor Income: female,711338.0
-46,Labor Income: female,772867.0
-47,Labor Income: female,793837.0
-48,Labor Income: female,796269.0
-49,Labor Income: female,790971.0
-50,Labor Income: female,745227.0
-51,Labor Income: female,649263.0
-52,Labor Income: female,667753.0
-53,Labor Income: female,513175.0
-54,Labor Income: female,541490.0
-55,Labor Income: female,473459.0
-56,Labor Income: female,427996.0
-57,Labor Income: female,456521.0
-58,Labor Income: female,327716.0
-59,Labor Income: female,168058.0
-60,Labor Income: female,176826.0
-61,Labor Income: female,151226.0
-62,Labor Income: female,187550.0
-63,Labor Income: female,204307.0
-64,Labor Income: female,182320.0
-65,Labor Income: female,179688.0
-66,Labor Income: female,168320.0
-67,Labor Income: female,145235.0
-68,Labor Income: female,134791.0
-69,Labor Income: female,103241.0
-70,Labor Income: female,84801.0
-71,Labor Income: female,70323.0
-72,Labor Income: female,54762.0
-73,Labor Income: female,45536.0
-74,Labor Income: female,37236.0
-75,Labor Income: female,28919.0
-76,Labor Income: female,23652.0
-77,Labor Income: female,18359.0
-78,Labor Income: female,14756.0
-79,Labor Income: female,12377.0
-80,Labor Income: female,8935.0
-81,Labor Income: female,5802.0
-82,Labor Income: female,5202.0
-83,Labor Income: female,4161.0
-84,Labor Income: female,3434.0
-85,Labor Income: female,2772.0
-86,Labor Income: female,2235.0
-87,Labor Income: female,1843.0
-88,Labor Income: female,1315.0
-89,Labor Income: female,979.0
-90,Labor Income: female,775.0
-91,Labor Income: female,449.0
-92,Labor Income: female,364.0
-93,Labor Income: female,234.0
-94,Labor Income: female,179.0
-95,Labor Income: female,154.0
-96,Labor Income: female,84.0
-97,Labor Income: female,65.0
-98,Labor Income: female,43.0
-99,Labor Income: female,48.0
-45,Pension: male,375.0
-46,Pension: male,471.0
-47,Pension: male,709.0
-48,Pension: male,942.0
-49,Pension: male,1311.0
-50,Pension: male,9207.0
-51,Pension: male,15077.0
-52,Pension: male,20652.0
-53,Pension: male,20162.0
-54,Pension: male,31761.0
-55,Pension: male,55978.0
-56,Pension: male,73740.0
-57,Pension: male,102707.0
-58,Pension: male,81886.0
-59,Pension: male,68752.0
-60,Pension: male,206017.0
-61,Pension: male,206488.0
-62,Pension: male,264568.0
-63,Pension: male,287165.0
-64,Pension: male,262328.0
-65,Pension: male,274340.0
-66,Pension: male,278079.0
-67,Pension: male,243519.0
-68,Pension: male,242441.0
-69,Pension: male,209287.0
-70,Pension: male,206607.0
-71,Pension: male,197991.0
-72,Pension: male,167387.0
-73,Pension: male,161799.0
-74,Pension: male,146037.0
-75,Pension: male,125596.0
-76,Pension: male,119719.0
-77,Pension: male,105721.0
-78,Pension: male,102089.0
-79,Pension: male,100038.0
-80,Pension: male,91862.0
-81,Pension: male,75541.0
-82,Pension: male,76774.0
-83,Pension: male,66738.0
-84,Pension: male,58933.0
-85,Pension: male,48831.0
-86,Pension: male,41481.0
-87,Pension: male,37938.0
-88,Pension: male,27960.0
-89,Pension: male,22671.0
-90,Pension: male,19484.0
-91,Pension: male,12666.0
-92,Pension: male,10122.0
-93,Pension: male,6880.0
-94,Pension: male,4804.0
-95,Pension: male,3374.0
-96,Pension: male,2242.0
-97,Pension: male,1466.0
-98,Pension: male,906.0
-99,Pension: male,650.0
-45,Pension: female,4556.0
-46,Pension: female,7290.0
-47,Pension: female,10836.0
-48,Pension: female,15779.0
-49,Pension: female,30808.0
-50,Pension: female,136508.0
-51,Pension: female,163925.0
-52,Pension: female,184715.0
-53,Pension: female,148783.0
-54,Pension: female,188700.0
-55,Pension: female,250245.0
-56,Pension: female,280370.0
-57,Pension: female,353210.0
-58,Pension: female,251884.0
-59,Pension: female,161868.0
-60,Pension: female,223195.0
-61,Pension: female,209067.0
-62,Pension: female,263422.0
-63,Pension: female,285977.0
-64,Pension: female,260878.0
-65,Pension: female,267103.0
-66,Pension: female,271865.0
-67,Pension: female,237020.0
-68,Pension: female,231993.0
-69,Pension: female,198809.0
-70,Pension: female,187851.0
-71,Pension: female,177744.0
-72,Pension: female,151795.0
-73,Pension: female,143466.0
-74,Pension: female,130112.0
-75,Pension: female,112809.0
-76,Pension: female,107781.0
-77,Pension: female,97228.0
-78,Pension: female,94491.0
-79,Pension: female,92095.0
-80,Pension: female,83344.0
-81,Pension: female,72636.0
-82,Pension: female,72350.0
-83,Pension: female,61532.0
-84,Pension: female,56855.0
-85,Pension: female,48993.0
-86,Pension: female,41382.0
-87,Pension: female,36185.0
-88,Pension: female,27056.0
-89,Pension: female,20457.0
-90,Pension: female,17782.0
-91,Pension: female,12698.0
-92,Pension: female,10214.0
-93,Pension: female,7041.0
-94,Pension: female,5064.0
-95,Pension: female,3894.0
-96,Pension: female,2707.0
-97,Pension: female,1739.0
-98,Pension: female,1104.0
-99,Pension: female,809.0
-45,Minimum Living Allowance: male,10976.0
-46,Minimum Living Allowance: male,12634.0
-47,Minimum Living Allowance: male,13943.0
-48,Minimum Living Allowance: male,14981.0
-49,Minimum Living Allowance: male,16167.0
-50,Minimum Living Allowance: male,17203.0
-51,Minimum Living Allowance: male,17262.0
-52,Minimum Living Allowance: male,18854.0
-53,Minimum Living Allowance: male,15784.0
-54,Minimum Living Allowance: male,18652.0
-55,Minimum Living Allowance: male,18914.0
-56,Minimum Living Allowance: male,19061.0
-57,Minimum Living Allowance: male,22912.0
-58,Minimum Living Allowance: male,17027.0
-59,Minimum Living Allowance: male,10114.0
-60,Minimum Living Allowance: male,14551.0
-61,Minimum Living Allowance: male,16102.0
-62,Minimum Living Allowance: male,23435.0
-63,Minimum Living Allowance: male,28226.0
-64,Minimum Living Allowance: male,26640.0
-65,Minimum Living Allowance: male,30345.0
-66,Minimum Living Allowance: male,32047.0
-67,Minimum Living Allowance: male,31550.0
-68,Minimum Living Allowance: male,32709.0
-69,Minimum Living Allowance: male,28595.0
-70,Minimum Living Allowance: male,28895.0
-71,Minimum Living Allowance: male,30358.0
-72,Minimum Living Allowance: male,26719.0
-73,Minimum Living Allowance: male,26346.0
-74,Minimum Living Allowance: male,24098.0
-75,Minimum Living Allowance: male,21701.0
-76,Minimum Living Allowance: male,21500.0
-77,Minimum Living Allowance: male,18676.0
-78,Minimum Living Allowance: male,17277.0
-79,Minimum Living Allowance: male,17202.0
-80,Minimum Living Allowance: male,14891.0
-81,Minimum Living Allowance: male,12372.0
-82,Minimum Living Allowance: male,12425.0
-83,Minimum Living Allowance: male,10267.0
-84,Minimum Living Allowance: male,8885.0
-85,Minimum Living Allowance: male,7502.0
-86,Minimum Living Allowance: male,6055.0
-87,Minimum Living Allowance: male,5295.0
-88,Minimum Living Allowance: male,3857.0
-89,Minimum Living Allowance: male,2917.0
-90,Minimum Living Allowance: male,2458.0
-91,Minimum Living Allowance: male,1606.0
-92,Minimum Living Allowance: male,1285.0
-93,Minimum Living Allowance: male,842.0
-94,Minimum Living Allowance: male,582.0
-95,Minimum Living Allowance: male,483.0
-96,Minimum Living Allowance: male,277.0
-97,Minimum Living Allowance: male,225.0
-98,Minimum Living Allowance: male,135.0
-99,Minimum Living Allowance: male,90.0
-45,Minimum Living Allowance: female,7566.0
-46,Minimum Living Allowance: female,8579.0
-47,Minimum Living Allowance: female,9389.0
-48,Minimum Living Allowance: female,9848.0
-49,Minimum Living Allowance: female,10476.0
-50,Minimum Living Allowance: female,10653.0
-51,Minimum Living Allowance: female,10284.0
-52,Minimum Living Allowance: female,11355.0
-53,Minimum Living Allowance: female,9923.0
-54,Minimum Living Allowance: female,11581.0
-55,Minimum Living Allowance: female,11862.0
-56,Minimum Living Allowance: female,12469.0
-57,Minimum Living Allowance: female,14461.0
-58,Minimum Living Allowance: female,12397.0
-59,Minimum Living Allowance: female,7766.0
-60,Minimum Living Allowance: female,11239.0
-61,Minimum Living Allowance: female,11965.0
-62,Minimum Living Allowance: female,16204.0
-63,Minimum Living Allowance: female,19795.0
-64,Minimum Living Allowance: female,20094.0
-65,Minimum Living Allowance: female,23079.0
-66,Minimum Living Allowance: female,24854.0
-67,Minimum Living Allowance: female,24803.0
-68,Minimum Living Allowance: female,26584.0
-69,Minimum Living Allowance: female,23681.0
-70,Minimum Living Allowance: female,24290.0
-71,Minimum Living Allowance: female,24573.0
-72,Minimum Living Allowance: female,22162.0
-73,Minimum Living Allowance: female,21953.0
-74,Minimum Living Allowance: female,20601.0
-75,Minimum Living Allowance: female,18978.0
-76,Minimum Living Allowance: female,17779.0
-77,Minimum Living Allowance: female,16269.0
-78,Minimum Living Allowance: female,15212.0
-79,Minimum Living Allowance: female,15151.0
-80,Minimum Living Allowance: female,13706.0
-81,Minimum Living Allowance: female,11584.0
-82,Minimum Living Allowance: female,11903.0
-83,Minimum Living Allowance: female,10665.0
-84,Minimum Living Allowance: female,9692.0
-85,Minimum Living Allowance: female,8522.0
-86,Minimum Living Allowance: female,7696.0
-87,Minimum Living Allowance: female,7116.0
-88,Minimum Living Allowance: female,5369.0
-89,Minimum Living Allowance: female,4453.0
-90,Minimum Living Allowance: female,3947.0
-91,Minimum Living Allowance: female,2839.0
-92,Minimum Living Allowance: female,2404.0
-93,Minimum Living Allowance: female,1786.0
-94,Minimum Living Allowance: female,1338.0
-95,Minimum Living Allowance: female,1066.0
-96,Minimum Living Allowance: female,802.0
-97,Minimum Living Allowance: female,563.0
-98,Minimum Living Allowance: female,377.0
-99,Minimum Living Allowance: female,269.0
-45,Unemployment Benefits: male,727.0
-46,Unemployment Benefits: male,816.0
-47,Unemployment Benefits: male,886.0
-48,Unemployment Benefits: male,966.0
-49,Unemployment Benefits: male,1106.0
-50,Unemployment Benefits: male,1101.0
-51,Unemployment Benefits: male,1101.0
-52,Unemployment Benefits: male,1208.0
-53,Unemployment Benefits: male,926.0
-54,Unemployment Benefits: male,1054.0
-55,Unemployment Benefits: male,1132.0
-56,Unemployment Benefits: male,446.0
-57,Unemployment Benefits: male,643.0
-58,Unemployment Benefits: male,563.0
-59,Unemployment Benefits: male,406.0
-60,Unemployment Benefits: male,29.0
-61,Unemployment Benefits: male,24.0
-62,Unemployment Benefits: male,27.0
-63,Unemployment Benefits: male,43.0
-64,Unemployment Benefits: male,36.0
-65,Unemployment Benefits: male,51.0
-66,Unemployment Benefits: male,44.0
-67,Unemployment Benefits: male,39.0
-68,Unemployment Benefits: male,37.0
-69,Unemployment Benefits: male,34.0
-70,Unemployment Benefits: male,40.0
-71,Unemployment Benefits: male,49.0
-72,Unemployment Benefits: male,25.0
-73,Unemployment Benefits: male,28.0
-74,Unemployment Benefits: male,20.0
-75,Unemployment Benefits: male,25.0
-76,Unemployment Benefits: male,20.0
-77,Unemployment Benefits: male,19.0
-78,Unemployment Benefits: male,13.0
-79,Unemployment Benefits: male,13.0
-80,Unemployment Benefits: male,13.0
-81,Unemployment Benefits: male,11.0
-82,Unemployment Benefits: male,7.0
-83,Unemployment Benefits: male,13.0
-84,Unemployment Benefits: male,5.0
-85,Unemployment Benefits: male,3.0
-86,Unemployment Benefits: male,5.0
-87,Unemployment Benefits: male,3.0
-88,Unemployment Benefits: male,3.0
-89,Unemployment Benefits: male,3.0
-90,Unemployment Benefits: male,1.0
-91,Unemployment Benefits: male,1.0
-92,Unemployment Benefits: male,0.0
-93,Unemployment Benefits: male,0.0
-94,Unemployment Benefits: male,0.0
-95,Unemployment Benefits: male,0.0
-96,Unemployment Benefits: male,2.0
-97,Unemployment Benefits: male,0.0
-98,Unemployment Benefits: male,0.0
-99,Unemployment Benefits: male,0.0
-45,Unemployment Benefits: female,783.0
-46,Unemployment Benefits: female,841.0
-47,Unemployment Benefits: female,1085.0
-48,Unemployment Benefits: female,1325.0
-49,Unemployment Benefits: female,1523.0
-50,Unemployment Benefits: female,572.0
-51,Unemployment Benefits: female,77.0
-52,Unemployment Benefits: female,67.0
-53,Unemployment Benefits: female,53.0
-54,Unemployment Benefits: female,72.0
-55,Unemployment Benefits: female,31.0
-56,Unemployment Benefits: female,36.0
-57,Unemployment Benefits: female,53.0
-58,Unemployment Benefits: female,29.0
-59,Unemployment Benefits: female,16.0
-60,Unemployment Benefits: female,26.0
-61,Unemployment Benefits: female,31.0
-62,Unemployment Benefits: female,38.0
-63,Unemployment Benefits: female,32.0
-64,Unemployment Benefits: female,38.0
-65,Unemployment Benefits: female,45.0
-66,Unemployment Benefits: female,48.0
-67,Unemployment Benefits: female,43.0
-68,Unemployment Benefits: female,64.0
-69,Unemployment Benefits: female,37.0
-70,Unemployment Benefits: female,36.0
-71,Unemployment Benefits: female,27.0
-72,Unemployment Benefits: female,40.0
-73,Unemployment Benefits: female,35.0
-74,Unemployment Benefits: female,26.0
-75,Unemployment Benefits: female,22.0
-76,Unemployment Benefits: female,17.0
-77,Unemployment Benefits: female,14.0
-78,Unemployment Benefits: female,15.0
-79,Unemployment Benefits: female,16.0
-80,Unemployment Benefits: female,10.0
-81,Unemployment Benefits: female,8.0
-82,Unemployment Benefits: female,10.0
-83,Unemployment Benefits: female,9.0
-84,Unemployment Benefits: female,10.0
-85,Unemployment Benefits: female,7.0
-86,Unemployment Benefits: female,4.0
-87,Unemployment Benefits: female,5.0
-88,Unemployment Benefits: female,5.0
-89,Unemployment Benefits: female,3.0
-90,Unemployment Benefits: female,3.0
-91,Unemployment Benefits: female,4.0
-92,Unemployment Benefits: female,3.0
-93,Unemployment Benefits: female,0.0
-94,Unemployment Benefits: female,1.0
-95,Unemployment Benefits: female,1.0
-96,Unemployment Benefits: female,0.0
-97,Unemployment Benefits: female,0.0
-98,Unemployment Benefits: female,0.0
-99,Unemployment Benefits: female,1.0
-45,Property Income: male,9497.0
-46,Property Income: male,10631.0
-47,Property Income: male,11459.0
-48,Property Income: male,12101.0
-49,Property Income: male,12665.0
-50,Property Income: male,13624.0
-51,Property Income: male,13209.0
-52,Property Income: male,14405.0
-53,Property Income: male,11744.0
-54,Property Income: male,13508.0
-55,Property Income: male,13684.0
-56,Property Income: male,13373.0
-57,Property Income: male,15877.0
-58,Property Income: male,12170.0
-59,Property Income: male,6502.0
-60,Property Income: male,6778.0
-61,Property Income: male,6086.0
-62,Property Income: male,7389.0
-63,Property Income: male,8603.0
-64,Property Income: male,7890.0
-65,Property Income: male,8475.0
-66,Property Income: male,8412.0
-67,Property Income: male,7806.0
-68,Property Income: male,7688.0
-69,Property Income: male,6533.0
-70,Property Income: male,6099.0
-71,Property Income: male,5730.0
-72,Property Income: male,4580.0
-73,Property Income: male,4295.0
-74,Property Income: male,3658.0
-75,Property Income: male,3077.0
-76,Property Income: male,2782.0
-77,Property Income: male,2309.0
-78,Property Income: male,1991.0
-79,Property Income: male,1904.0
-80,Property Income: male,1478.0
-81,Property Income: male,1107.0
-82,Property Income: male,1065.0
-83,Property Income: male,805.0
-84,Property Income: male,673.0
-85,Property Income: male,549.0
-86,Property Income: male,488.0
-87,Property Income: male,355.0
-88,Property Income: male,217.0
-89,Property Income: male,169.0
-90,Property Income: male,154.0
-91,Property Income: male,97.0
-92,Property Income: male,78.0
-93,Property Income: male,55.0
-94,Property Income: male,30.0
-95,Property Income: male,25.0
-96,Property Income: male,12.0
-97,Property Income: male,8.0
-98,Property Income: male,8.0
-99,Property Income: male,4.0
-45,Property Income: female,9046.0
-46,Property Income: female,10017.0
-47,Property Income: female,10673.0
-48,Property Income: female,11465.0
-49,Property Income: female,12009.0
-50,Property Income: female,11776.0
-51,Property Income: female,10886.0
-52,Property Income: female,11829.0
-53,Property Income: female,9552.0
-54,Property Income: female,10880.0
-55,Property Income: female,10216.0
-56,Property Income: female,10059.0
-57,Property Income: female,11406.0
-58,Property Income: female,8739.0
-59,Property Income: female,5221.0
-60,Property Income: female,6076.0
-61,Property Income: female,5568.0
-62,Property Income: female,6630.0
-63,Property Income: female,7619.0
-64,Property Income: female,7294.0
-65,Property Income: female,7862.0
-66,Property Income: female,7778.0
-67,Property Income: female,7122.0
-68,Property Income: female,7063.0
-69,Property Income: female,5793.0
-70,Property Income: female,5389.0
-71,Property Income: female,4864.0
-72,Property Income: female,4040.0
-73,Property Income: female,3557.0
-74,Property Income: female,3006.0
-75,Property Income: female,2459.0
-76,Property Income: female,2191.0
-77,Property Income: female,1868.0
-78,Property Income: female,1570.0
-79,Property Income: female,1491.0
-80,Property Income: female,1216.0
-81,Property Income: female,931.0
-82,Property Income: female,928.0
-83,Property Income: female,774.0
-84,Property Income: female,636.0
-85,Property Income: female,543.0
-86,Property Income: female,451.0
-87,Property Income: female,358.0
-88,Property Income: female,274.0
-89,Property Income: female,217.0
-90,Property Income: female,175.0
-91,Property Income: female,116.0
-92,Property Income: female,118.0
-93,Property Income: female,83.0
-94,Property Income: female,44.0
-95,Property Income: female,42.0
-96,Property Income: female,30.0
-97,Property Income: female,18.0
-98,Property Income: female,15.0
-99,Property Income: female,7.0
-45,Family Support: male,26305.0
-46,Family Support: male,30401.0
-47,Family Support: male,34637.0
-48,Family Support: male,38273.0
-49,Family Support: male,44248.0
-50,Family Support: male,51109.0
-51,Family Support: male,56916.0
-52,Family Support: male,68638.0
-53,Family Support: male,62142.0
-54,Family Support: male,79682.0
-55,Family Support: male,87781.0
-56,Family Support: male,94381.0
-57,Family Support: male,122108.0
-58,Family Support: male,98368.0
-59,Family Support: male,56962.0
-60,Family Support: male,64808.0
-61,Family Support: male,71213.0
-62,Family Support: male,100459.0
-63,Family Support: male,122697.0
-64,Family Support: male,117980.0
-65,Family Support: male,134936.0
-66,Family Support: male,141942.0
-67,Family Support: male,139538.0
-68,Family Support: male,148772.0
-69,Family Support: male,133028.0
-70,Family Support: male,136544.0
-71,Family Support: male,146444.0
-72,Family Support: male,129206.0
-73,Family Support: male,125519.0
-74,Family Support: male,114992.0
-75,Family Support: male,106217.0
-76,Family Support: male,106375.0
-77,Family Support: male,95563.0
-78,Family Support: male,89996.0
-79,Family Support: male,90224.0
-80,Family Support: male,79208.0
-81,Family Support: male,67524.0
-82,Family Support: male,71224.0
-83,Family Support: male,61240.0
-84,Family Support: male,54009.0
-85,Family Support: male,44795.0
-86,Family Support: male,38218.0
-87,Family Support: male,34371.0
-88,Family Support: male,25109.0
-89,Family Support: male,19469.0
-90,Family Support: male,16321.0
-91,Family Support: male,11026.0
-92,Family Support: male,9132.0
-93,Family Support: male,6379.0
-94,Family Support: male,4203.0
-95,Family Support: male,3173.0
-96,Family Support: male,2182.0
-97,Family Support: male,1390.0
-98,Family Support: male,949.0
-99,Family Support: male,670.0
-45,Family Support: female,191233.0
-46,Family Support: female,215292.0
-47,Family Support: female,232819.0
-48,Family Support: female,252062.0
-49,Family Support: female,273402.0
-50,Family Support: female,291862.0
-51,Family Support: female,288236.0
-52,Family Support: female,328959.0
-53,Family Support: female,284434.0
-54,Family Support: female,330614.0
-55,Family Support: female,322361.0
-56,Family Support: female,319866.0
-57,Family Support: female,371885.0
-58,Family Support: female,289664.0
-59,Family Support: female,157031.0
-60,Family Support: female,184096.0
-61,Family Support: female,180572.0
-62,Family Support: female,239221.0
-63,Family Support: female,279603.0
-64,Family Support: female,264830.0
-65,Family Support: female,284537.0
-66,Family Support: female,294028.0
-67,Family Support: female,278149.0
-68,Family Support: female,286658.0
-69,Family Support: female,250599.0
-70,Family Support: female,243727.0
-71,Family Support: female,244191.0
-72,Family Support: female,215602.0
-73,Family Support: female,208825.0
-74,Family Support: female,195964.0
-75,Family Support: female,178037.0
-76,Family Support: female,169133.0
-77,Family Support: female,152812.0
-78,Family Support: female,143528.0
-79,Family Support: female,144057.0
-80,Family Support: female,127655.0
-81,Family Support: female,109963.0
-82,Family Support: female,114241.0
-83,Family Support: female,103446.0
-84,Family Support: female,95656.0
-85,Family Support: female,84918.0
-86,Family Support: female,75172.0
-87,Family Support: female,69141.0
-88,Family Support: female,54032.0
-89,Family Support: female,44067.0
-90,Family Support: female,38950.0
-91,Family Support: female,27420.0
-92,Family Support: female,23899.0
-93,Family Support: female,17042.0
-94,Family Support: female,12282.0
-95,Family Support: female,9913.0
-96,Family Support: female,7130.0
-97,Family Support: female,4860.0
-98,Family Support: female,3279.0
-99,Family Support: female,2517.0
-45,Other: male,45836.0
-46,Other: male,51060.0
-47,Other: male,54641.0
-48,Other: male,56736.0
-49,Other: male,59536.0
-50,Other: male,63042.0
-51,Other: male,60665.0
-52,Other: male,66255.0
-53,Other: male,53716.0
-54,Other: male,61239.0
-55,Other: male,60845.0
-56,Other: male,61011.0
-57,Other: male,71755.0
-58,Other: male,53224.0
-59,Other: male,28961.0
-60,Other: male,30454.0
-61,Other: male,29745.0
-62,Other: male,38248.0
-63,Other: male,43801.0
-64,Other: male,40269.0
-65,Other: male,42948.0
-66,Other: male,42662.0
-67,Other: male,39755.0
-68,Other: male,39975.0
-69,Other: male,33634.0
-70,Other: male,31971.0
-71,Other: male,31761.0
-72,Other: male,26738.0
-73,Other: male,24920.0
-74,Other: male,21905.0
-75,Other: male,19676.0
-76,Other: male,18467.0
-77,Other: male,15643.0
-78,Other: male,14386.0
-79,Other: male,13678.0
-80,Other: male,11554.0
-81,Other: male,9232.0
-82,Other: male,9254.0
-83,Other: male,7713.0
-84,Other: male,6725.0
-85,Other: male,5605.0
-86,Other: male,4533.0
-87,Other: male,4081.0
-88,Other: male,2898.0
-89,Other: male,2324.0
-90,Other: male,1926.0
-91,Other: male,1251.0
-92,Other: male,1074.0
-93,Other: male,737.0
-94,Other: male,506.0
-95,Other: male,373.0
-96,Other: male,276.0
-97,Other: male,184.0
-98,Other: male,113.0
-99,Other: male,96.0
-45,Other: female,52632.0
-46,Other: female,58659.0
-47,Other: female,62913.0
-48,Other: female,65544.0
-49,Other: female,68092.0
-50,Other: female,70201.0
-51,Other: female,65689.0
-52,Other: female,71997.0
-53,Other: female,59090.0
-54,Other: female,66197.0
-55,Other: female,63507.0
-56,Other: female,61510.0
-57,Other: female,69697.0
-58,Other: female,53407.0
-59,Other: female,29116.0
-60,Other: female,33834.0
-61,Other: female,31464.0
-62,Other: female,40400.0
-63,Other: female,45795.0
-64,Other: female,43565.0
-65,Other: female,45255.0
-66,Other: female,46062.0
-67,Other: female,42568.0
-68,Other: female,42536.0
-69,Other: female,36629.0
-70,Other: female,33997.0
-71,Other: female,32516.0
-72,Other: female,28008.0
-73,Other: female,26411.0
-74,Other: female,24289.0
-75,Other: female,21039.0
-76,Other: female,19323.0
-77,Other: female,16920.0
-78,Other: female,15805.0
-79,Other: female,15141.0
-80,Other: female,13282.0
-81,Other: female,10974.0
-82,Other: female,10971.0
-83,Other: female,9701.0
-84,Other: female,8909.0
-85,Other: female,7872.0
-86,Other: female,6805.0
-87,Other: female,6066.0
-88,Other: female,4783.0
-89,Other: female,3815.0
-90,Other: female,3391.0
-91,Other: female,2323.0
-92,Other: female,1952.0
-93,Other: female,1455.0
-94,Other: female,1034.0
-95,Other: female,856.0
-96,Other: female,673.0
-97,Other: female,416.0
-98,Other: female,327.0
-99,Other: female,241.0
+age_group,sex,source_of_livelihood,population
+45,Female,section,1029558
+45,Male,Male,935842
+45,Female,Female,711338
+45,Male,Female,4556
+45,Female,Male,10976
+45,Male,Male,727
+45,Female,Female,783
+45,Male,Female,9046
+45,Female,Male,26305
+45,Male,Male,45836
+45,Female,Female,52632
+46,Female,section,1123949
+46,Male,Male,1017936
+46,Female,Female,772867
+46,Male,Female,7290
+46,Female,Male,12634
+46,Male,Male,816
+46,Female,Female,841
+46,Male,Female,10017
+46,Female,Male,30401
+46,Male,Male,51060
+46,Female,Female,58659
+47,Female,section,1176498
+47,Male,Male,1060223
+47,Female,Female,793837
+47,Male,Female,10836
+47,Female,Male,13943
+47,Male,Male,886
+47,Female,Female,1085
+47,Male,Female,10673
+47,Female,Male,34637
+47,Male,Male,54641
+47,Female,Female,62913
+48,Female,section,1202544
+48,Male,Male,1078545
+48,Female,Female,796269
+48,Male,Female,15779
+48,Female,Male,14981
+48,Male,Male,966
+48,Female,Female,1325
+48,Male,Female,11465
+48,Female,Male,38273
+48,Male,Male,56736
+48,Female,Female,65544
+49,Female,section,1241906
+49,Male,Male,1106873
+49,Female,Female,790971
+49,Male,Female,30808
+49,Female,Male,16167
+49,Male,Male,1106
+49,Female,Female,1523
+49,Male,Female,12009
+49,Female,Male,44248
+49,Male,Male,59536
+49,Female,Female,68092
+50,Female,section,1298030
+50,Male,Male,1142744
+50,Female,Female,745227
+50,Male,Female,136508
+50,Female,Male,17203
+50,Male,Male,1101
+50,Female,Female,572
+50,Male,Female,11776
+50,Female,Male,51109
+50,Male,Male,63042
+50,Female,Female,70201
+51,Female,section,1216599
+51,Male,Male,1052369
+51,Female,Female,649263
+51,Male,Female,163925
+51,Female,Male,17262
+51,Male,Male,1101
+51,Female,Female,77
+51,Male,Female,10886
+51,Female,Male,56916
+51,Male,Male,60665
+51,Female,Female,65689
+52,Female,section,1298846
+52,Male,Male,1108834
+52,Female,Female,667753
+52,Male,Female,184715
+52,Female,Male,18854
+52,Male,Male,1208
+52,Female,Female,67
+52,Male,Female,11829
+52,Female,Male,68638
+52,Male,Male,66255
+52,Female,Female,71997
+53,Female,section,1034436
+53,Male,Male,869962
+53,Female,Female,513175
+53,Male,Female,148783
+53,Female,Male,15784
+53,Male,Male,926
+53,Female,Female,53
+53,Male,Female,9552
+53,Female,Male,62142
+53,Male,Male,53716
+53,Female,Female,59090
+54,Female,section,1171891
+54,Male,Male,965995
+54,Female,Female,541490
+54,Male,Female,188700
+54,Female,Male,18652
+54,Male,Male,1054
+54,Female,Female,72
+54,Male,Female,10880
+54,Female,Male,79682
+54,Male,Male,61239
+54,Female,Female,66197
+55,Female,section,1144496
+55,Male,Male,906162
+55,Female,Female,473459
+55,Male,Female,250245
+55,Female,Male,18914
+55,Male,Male,1132
+55,Female,Female,31
+55,Male,Female,10216
+55,Female,Male,87781
+55,Male,Male,60845
+55,Female,Female,63507
+56,Female,section,1111081
+56,Male,Male,849069
+56,Female,Female,427996
+56,Male,Female,280370
+56,Female,Male,19061
+56,Male,Male,446
+56,Female,Female,36
+56,Male,Female,10059
+56,Female,Male,94381
+56,Male,Male,61011
+56,Female,Female,61510
+57,Female,section,1290317
+57,Male,Male,954315
+57,Female,Female,456521
+57,Male,Female,353210
+57,Female,Male,22912
+57,Male,Male,643
+57,Female,Female,53
+57,Male,Female,11406
+57,Female,Male,122108
+57,Male,Male,71755
+57,Female,Female,69697
+58,Female,section,935259
+58,Male,Male,672021
+58,Female,Female,327716
+58,Male,Female,251884
+58,Female,Male,17027
+58,Male,Male,563
+58,Female,Female,29
+58,Male,Female,8739
+58,Female,Male,98368
+58,Male,Male,53224
+58,Female,Female,53407
+59,Female,section,504877
+59,Male,Male,333180
+59,Female,Female,168058
+59,Male,Female,161868
+59,Female,Male,10114
+59,Male,Male,406
+59,Female,Female,16
+59,Male,Female,5221
+59,Female,Male,56962
+59,Male,Male,28961
+59,Female,Female,29116
+60,Female,section,630443
+60,Male,Male,307806
+60,Female,Female,176826
+60,Male,Female,223195
+60,Female,Male,14551
+60,Male,Male,29
+60,Female,Female,26
+60,Male,Female,6076
+60,Female,Male,64808
+60,Male,Male,30454
+60,Female,Female,33834
+61,Female,section,601597
+61,Male,Male,271939
+61,Female,Female,151226
+61,Male,Female,209067
+61,Female,Male,16102
+61,Male,Male,24
+61,Female,Female,31
+61,Male,Female,5568
+61,Female,Male,71213
+61,Male,Male,29745
+61,Female,Female,31464
+62,Female,section,765643
+62,Male,Male,331517
+62,Female,Female,187550
+62,Male,Female,263422
+62,Female,Male,23435
+62,Male,Male,27
+62,Female,Female,38
+62,Male,Female,6630
+62,Female,Male,100459
+62,Male,Male,38248
+62,Female,Female,40400
+63,Female,section,853241
+63,Male,Male,362706
+63,Female,Female,204307
+63,Male,Female,285977
+63,Female,Male,28226
+63,Male,Male,43
+63,Female,Female,32
+63,Male,Female,7619
+63,Female,Male,122697
+63,Male,Male,43801
+63,Female,Female,45795
+64,Female,section,760610
+64,Male,Male,305467
+64,Female,Female,182320
+64,Male,Female,260878
+64,Female,Male,26640
+64,Male,Male,36
+64,Female,Female,38
+64,Male,Female,7294
+64,Female,Male,117980
+64,Male,Male,40269
+64,Female,Female,43565
+65,Female,section,794038
+65,Male,Male,302943
+65,Female,Female,179688
+65,Male,Female,267103
+65,Female,Male,30345
+65,Male,Male,51
+65,Female,Female,45
+65,Male,Female,7862
+65,Female,Male,134936
+65,Male,Male,42948
+65,Female,Female,45255
+66,Female,section,784337
+66,Male,Male,281151
+66,Female,Female,168320
+66,Male,Female,271865
+66,Female,Male,32047
+66,Male,Male,44
+66,Female,Female,48
+66,Male,Female,7778
+66,Female,Male,141942
+66,Male,Male,42662
+66,Female,Female,46062
+67,Female,section,701663
+67,Male,Male,239456
+67,Female,Female,145235
+67,Male,Female,237020
+67,Female,Male,31550
+67,Male,Male,39
+67,Female,Female,43
+67,Male,Female,7122
+67,Female,Male,139538
+67,Male,Male,39755
+67,Female,Female,42568
+68,Female,section,695588
+68,Male,Male,223966
+68,Female,Female,134791
+68,Male,Female,231993
+68,Female,Male,32709
+68,Male,Male,37
+68,Female,Female,64
+68,Male,Female,7063
+68,Female,Male,148772
+68,Male,Male,39975
+68,Female,Female,42536
+69,Female,section,581445
+69,Male,Male,170334
+69,Female,Female,103241
+69,Male,Female,198809
+69,Female,Male,28595
+69,Male,Male,34
+69,Female,Female,37
+69,Male,Female,5793
+69,Female,Male,133028
+69,Male,Male,33634
+69,Female,Female,36629
+70,Female,section,552550
+70,Male,Male,142394
+70,Female,Female,84801
+70,Male,Female,187851
+70,Female,Male,28895
+70,Male,Male,40
+70,Female,Female,36
+70,Male,Female,5389
+70,Female,Male,136544
+70,Male,Male,31971
+70,Female,Female,33997
+71,Female,section,537267
+71,Male,Male,124934
+71,Female,Female,70323
+71,Male,Female,177744
+71,Female,Male,30358
+71,Male,Male,49
+71,Female,Female,27
+71,Male,Female,4864
+71,Female,Male,146444
+71,Male,Male,31761
+71,Female,Female,32516
+72,Female,section,450625
+72,Male,Male,95970
+72,Female,Female,54762
+72,Male,Female,151795
+72,Female,Male,26719
+72,Male,Male,25
+72,Female,Female,40
+72,Male,Female,4040
+72,Female,Male,129206
+72,Male,Male,26738
+72,Female,Female,28008
+73,Female,section,425034
+73,Male,Male,82127
+73,Female,Female,45536
+73,Male,Female,143466
+73,Female,Male,26346
+73,Male,Male,28
+73,Female,Female,35
+73,Male,Female,3557
+73,Female,Male,125519
+73,Male,Male,24920
+73,Female,Female,26411
+74,Female,section,376416
+74,Male,Male,65706
+74,Female,Female,37236
+74,Male,Female,130112
+74,Female,Male,24098
+74,Male,Male,20
+74,Female,Female,26
+74,Male,Female,3006
+74,Female,Male,114992
+74,Male,Male,21905
+74,Female,Female,24289
+75,Female,section,328485
+75,Male,Male,52193
+75,Female,Female,28919
+75,Male,Female,112809
+75,Female,Male,21701
+75,Male,Male,25
+75,Female,Female,22
+75,Male,Female,2459
+75,Female,Male,106217
+75,Male,Male,19676
+75,Female,Female,21039
+76,Female,section,312625
+76,Male,Male,43762
+76,Female,Female,23652
+76,Male,Female,107781
+76,Female,Male,21500
+76,Male,Male,20
+76,Female,Female,17
+76,Male,Female,2191
+76,Female,Male,106375
+76,Male,Male,18467
+76,Female,Female,19323
+77,Female,section,271017
+77,Male,Male,33086
+77,Female,Female,18359
+77,Male,Female,97228
+77,Female,Male,18676
+77,Male,Male,19
+77,Female,Female,14
+77,Male,Female,1868
+77,Female,Male,95563
+77,Male,Male,15643
+77,Female,Female,16920
+78,Female,section,252314
+78,Male,Male,26562
+78,Female,Female,14756
+78,Male,Female,94491
+78,Female,Male,17277
+78,Male,Male,13
+78,Female,Female,15
+78,Male,Female,1570
+78,Female,Male,89996
+78,Male,Male,14386
+78,Female,Female,15805
+79,Female,section,244753
+79,Male,Male,21694
+79,Female,Female,12377
+79,Male,Female,92095
+79,Female,Male,17202
+79,Male,Male,13
+79,Female,Female,16
+79,Male,Female,1491
+79,Female,Male,90224
+79,Male,Male,13678
+79,Female,Female,15141
+80,Female,section,214196
+80,Male,Male,15190
+80,Female,Female,8935
+80,Male,Female,83344
+80,Female,Male,14891
+80,Male,Male,13
+80,Female,Female,10
+80,Male,Female,1216
+80,Female,Male,79208
+80,Male,Male,11554
+80,Female,Female,13282
+81,Female,section,175529
+81,Male,Male,9742
+81,Female,Female,5802
+81,Male,Female,72636
+81,Female,Male,12372
+81,Male,Male,11
+81,Female,Female,8
+81,Male,Female,931
+81,Female,Male,67524
+81,Male,Male,9232
+81,Female,Female,10974
+82,Female,section,179490
+82,Male,Male,8741
+82,Female,Female,5202
+82,Male,Female,72350
+82,Female,Male,12425
+82,Male,Male,7
+82,Female,Female,10
+82,Male,Female,928
+82,Female,Male,71224
+82,Male,Male,9254
+82,Female,Female,10971
+83,Female,section,153187
+83,Male,Male,6411
+83,Female,Female,4161
+83,Male,Female,61532
+83,Female,Male,10267
+83,Male,Male,13
+83,Female,Female,9
+83,Male,Female,774
+83,Female,Male,61240
+83,Male,Male,7713
+83,Female,Female,9701
+84,Female,section,134217
+84,Male,Male,4987
+84,Female,Female,3434
+84,Male,Female,56855
+84,Female,Male,8885
+84,Male,Male,5
+84,Female,Female,10
+84,Male,Female,636
+84,Female,Male,54009
+84,Male,Male,6725
+84,Female,Female,8909
+85,Female,section,111113
+85,Male,Male,3828
+85,Female,Female,2772
+85,Male,Female,48993
+85,Female,Male,7502
+85,Male,Male,3
+85,Female,Female,7
+85,Male,Female,543
+85,Female,Male,44795
+85,Male,Male,5605
+85,Female,Female,7872
+86,Female,section,93574
+86,Male,Male,2794
+86,Female,Female,2235
+86,Male,Female,41382
+86,Female,Male,6055
+86,Male,Male,5
+86,Female,Female,4
+86,Male,Female,451
+86,Female,Male,38218
+86,Male,Male,4533
+86,Female,Female,6805
+87,Female,section,84218
+87,Male,Male,2175
+87,Female,Female,1843
+87,Male,Female,36185
+87,Female,Male,5295
+87,Male,Male,3
+87,Female,Female,5
+87,Male,Female,358
+87,Female,Male,34371
+87,Male,Male,4081
+87,Female,Female,6066
+88,Female,section,61448
+88,Male,Male,1404
+88,Female,Female,1315
+88,Male,Female,27056
+88,Female,Male,3857
+88,Male,Male,3
+88,Female,Female,5
+88,Male,Female,274
+88,Female,Male,25109
+88,Male,Male,2898
+88,Female,Female,4783
+89,Female,section,48554
+89,Male,Male,1001
+89,Female,Female,979
+89,Male,Female,20457
+89,Female,Male,2917
+89,Male,Male,3
+89,Female,Female,3
+89,Male,Female,217
+89,Female,Male,19469
+89,Male,Male,2324
+89,Female,Female,3815
+90,Female,section,41051
+90,Male,Male,707
+90,Female,Female,775
+90,Male,Female,17782
+90,Female,Male,2458
+90,Male,Male,1
+90,Female,Female,3
+90,Male,Female,175
+90,Female,Male,16321
+90,Male,Male,1926
+90,Female,Female,3391
+91,Female,section,27037
+91,Male,Male,390
+91,Female,Female,449
+91,Male,Female,12698
+91,Female,Male,1606
+91,Male,Male,1
+91,Female,Female,4
+91,Male,Female,116
+91,Female,Male,11026
+91,Male,Male,1251
+91,Female,Female,2323
+92,Female,section,21980
+92,Male,Male,289
+92,Female,Female,364
+92,Male,Female,10214
+92,Female,Male,1285
+92,Male,Male,0
+92,Female,Female,3
+92,Male,Female,118
+92,Female,Male,9132
+92,Male,Male,1074
+92,Female,Female,1952
+93,Female,section,15095
+93,Male,Male,202
+93,Female,Female,234
+93,Male,Female,7041
+93,Female,Male,842
+93,Male,Male,0
+93,Female,Female,0
+93,Male,Female,83
+93,Female,Male,6379
+93,Male,Male,737
+93,Female,Female,1455
+94,Female,section,10274
+94,Male,Male,149
+94,Female,Female,179
+94,Male,Female,5064
+94,Female,Male,582
+94,Male,Male,0
+94,Female,Female,1
+94,Male,Female,44
+94,Female,Male,4203
+94,Male,Male,506
+94,Female,Female,1034
+95,Female,section,7523
+95,Male,Male,95
+95,Female,Female,154
+95,Male,Female,3894
+95,Female,Male,483
+95,Male,Male,0
+95,Female,Female,1
+95,Male,Female,42
+95,Female,Male,3173
+95,Male,Male,373
+95,Female,Female,856
+96,Female,section,5063
+96,Male,Male,72
+96,Female,Female,84
+96,Male,Female,2707
+96,Female,Male,277
+96,Male,Male,2
+96,Female,Female,0
+96,Male,Female,30
+96,Female,Male,2182
+96,Male,Male,276
+96,Female,Female,673
+97,Female,section,3306
+97,Male,Male,33
+97,Female,Female,65
+97,Male,Female,1739
+97,Female,Male,225
+97,Male,Male,0
+97,Female,Female,0
+97,Male,Female,18
+97,Female,Male,1390
+97,Male,Male,184
+97,Female,Female,416
+98,Female,section,2148
+98,Male,Male,37
+98,Female,Female,43
+98,Male,Female,1104
+98,Female,Male,135
+98,Male,Male,0
+98,Female,Female,0
+98,Male,Female,15
+98,Female,Male,949
+98,Male,Male,113
+98,Female,Female,327
+99,Female,section,1536
+99,Male,Male,26
+99,Female,Female,48
+99,Male,Female,809
+99,Female,Male,90
+99,Male,Male,0
+99,Female,Female,1
+99,Male,Female,7
+99,Female,Male,670
+99,Male,Male,96
+99,Female,Female,241

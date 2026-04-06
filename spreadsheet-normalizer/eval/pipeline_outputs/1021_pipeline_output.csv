@@ -1,8 +1,9 @@
-behaviour,condition,beta,p_value
-screen time,,0.128,0.0002
-weekday,weekend,0.079,0.0309
-weekend,weekend,0.17,0.0003
-weekday,weekend,0.067,0.003
-weekend,weekday,0.103,0.0003
-weekday,,0.002,0.0134
-weekend,,0.002,0.0432
+behaviour,day_type,beta,p_value
+screen time,weekday,0.128,0.0002
+screen time,weekend,,
+sedentary time,weekday,,
+sedentary time,weekend,0.079,0.0309
+lpa,weekday,,
+lpa,weekend,0.067,0.003
+mvpa,weekday,,
+mvpa,weekend,0.002,0.0134

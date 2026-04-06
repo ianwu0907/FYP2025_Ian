@@ -1,39 +1,33 @@
+import pandas as pd
+import numpy as np
+
 def transform(df):
-    # Multi-level header processing
-    headers = df.iloc[[0, 1]].ffill(axis=1)
-    print(headers)
+    print(f"Input shape: {df.shape}")
 
-    # Prepare the final DataFrame
-    result = df.copy()
-    
-    # Extract region of birth
-    result['region_of_birth'] = result.iloc[:, 0]
-    print(result)
+    # Step 1: Slice to data region
+    result = df.iloc[10:50].copy()  # Data starts from row 10 to row 49
+    result = result.reset_index(drop=True)
+    print(f"After slicing to data region: {result.shape}")
 
-    # Define the education types and their respective columns
-    education_types = [
-        ("non-university or university postsecondary diploma", 1),
-        ("university degree only", 2),
-        ("non-university or university postsecondary diploma", 3),
-        ("university degree only", 4)
-    ]
+    # Step 2: Remove blank rows
+    result = result.dropna(how="all")
+    print(f"After removing blank rows: {result.shape}")
 
-    # Initialize an empty list to gather rows for the final DataFrame
-    tidy_data = []
+    # Step 3: Forward-fill the headers
+    headers = df.iloc[3:5].ffill(axis=1)
+    economy_types = [str(headers.iloc[1, j]).strip() for j in range(2, 8)]
+    print(f"Extracted economy types: {economy_types}")
 
-    # Iterate through the original DataFrame
-    for i in range(2, len(result)):
-        if i < 2 or result.iloc[i, 0] == "country of birth":
-            continue
-        
-        for edu_type, col_idx in education_types:
-            tidy_data.append({
-                'region_of_birth': result.iloc[i, 0],
-                'education_type': edu_type,
-                'percent': result.iloc[i, col_idx]
-            })
+    # Step 4: Unpivot wide columns into long format using record loop
+    records = []
+    for i in range(len(result)):
+        year = int(result.iloc[i, 0])  # Year from column 0
+        for j in range(1, 7):  # Investment amounts from columns 1 to 6
+            investment_amount = pd.to_numeric(result.iloc[i, j], errors='coerce')
+            economy_type = economy_types[j - 1]  # Adjust index for economy types
+            if investment_amount is not np.nan:
+                records.append({"year": year, "economy_type": economy_type, "investment_amount": investment_amount})
 
-    tidy_df = pd.DataFrame(tidy_data)
-    print(tidy_df)
-
-    return tidy_df.reset_index(drop=True)
+    result_df = pd.DataFrame(records)
+    print(f"Final output: {result_df.shape}")
+    return result_df

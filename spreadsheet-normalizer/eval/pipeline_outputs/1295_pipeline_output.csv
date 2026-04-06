@@ -1,4 +1,4 @@
-activity_category,year,hours_spent
+activity_type,year,time_spent
 "housework, home maintenance",2013,59
 health-related or personal care,2013,49
 "shopping, driving to store or appointment",2013,45

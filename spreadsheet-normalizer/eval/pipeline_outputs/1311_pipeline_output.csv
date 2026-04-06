@@ -1,15 +1,8 @@
-type_of_offence,location,contacts
-violent offences,police contacts for decedents in british columbia,17.0
-property offences,police contacts for decedents in british columbia,31.0
-other criminal code offences,police contacts for decedents in british columbia,17.0
-administration of justice offences,police contacts for decedents in british columbia,19.0
-drug offences,police contacts for decedents in british columbia,11.0
-criminal code traffic violations,police contacts for decedents in british columbia,4.0
-other federal statute violations,police contacts for decedents in british columbia,1.0
-violent offences,police contacts for decedents in surrey,17.0
-property offences,police contacts for decedents in surrey,35.0
-other criminal code offences,police contacts for decedents in surrey,15.0
-administration of justice offences,police contacts for decedents in surrey,17.0
-drug offences,police contacts for decedents in surrey,11.0
-criminal code traffic violations,police contacts for decedents in surrey,5.0
-other federal statute violations,police contacts for decedents in surrey,1.0
+type_of_offence,police_contacts_bc,police_contacts_surrey,all_criminal_offences_bc
+violent offences,17,17.0,15.0
+property offences,31,35.0,54.0
+other criminal code offences,17,15.0,14.0
+administration of justice offences,19,17.0,4.0
+drug offences,11,11.0,6.0
+criminal code traffic violations,4,5.0,4.0
+other federal statute violations,1,1.0,2.0
