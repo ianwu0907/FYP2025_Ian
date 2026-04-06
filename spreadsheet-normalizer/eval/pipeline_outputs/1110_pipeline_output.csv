@@ -1,4 +1,4 @@
-province_territory,measurement_type,measurement_value
+province_territory,statistical_measure,value
 newfoundland and labrador,average,0.2
 prince edward island,average,2.4
 nova scotia,average,-17.9
@@ -24,3 +24,30 @@ alberta,standard deviation,16.2
 british columbia,standard deviation,7.2
 yukon,standard deviation,9.1
 northwest territories,standard deviation,5.1
+nunavut,standard deviation,
+newfoundland and labrador,spread,
+prince edward island,spread,
+nova scotia,spread,
+new brunswiick,spread,
+quebec,spread,
+ontario,spread,
+manitoba,spread,
+saskatchewan,spread,
+alberta,spread,
+british columbia,spread,
+yukon,spread,
+northwest territories,spread,
+nunavut,spread,
+newfoundland and labrador,number negative,
+prince edward island,number negative,
+nova scotia,number negative,
+new brunswiick,number negative,
+quebec,number negative,
+ontario,number negative,
+manitoba,number negative,
+saskatchewan,number negative,
+alberta,number negative,
+british columbia,number negative,
+yukon,number negative,
+northwest territories,number negative,
+nunavut,number negative,

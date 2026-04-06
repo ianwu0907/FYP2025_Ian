@@ -1,18 +1,80 @@
-Number of Corporate Units by Organization Status in Shandong Province,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Unnamed: 8,Unnamed: 9
-Number of Corporate Units by Status of Organization ,,,,,,,,,
-,,,,,,,,,
-Unit: piece(s),,,,,,,,,(unit)
-Organization Status,Organization Status,2015.0,2016.0,2017.0,2018.0,2019.0,2020.0,2021.0,2022
-,,,,,,,,,
-Total,Total ,1269917.0,1652065.0,2014790.0,1801301.0,2309350.0,2842426.0,3261425.0,3546905
-Enterprise,Enterprises,1048470.0,1344176.0,1675975.0,1547260.0,1982468.0,2483474.0,2928948.0,3202941
-Public Institution,Institutions,40919.0,44903.0,48350.0,50681.0,47378.0,47480.0,39744.0,40425
-Organizational Unit,Agencies & Organizations,12411.0,12826.0,12304.0,12465.0,12213.0,12417.0,10835.0,11087
-Social Organizations,Social Groups,15919.0,18819.0,20929.0,13337.0,17384.0,18876.0,14015.0,16478
-Private Non-enterprise Units,Private Non-enterprise Units,16098.0,19740.0,24624.0,28723.0,34781.0,39907.0,34220.0,40781
-Foundation,Foundation,81.0,99.0,115.0,116.0,153.0,185.0,195.0,239
-Resident Committee,Neighborhood Committee,7507.0,7323.0,7048.0,7307.0,7463.0,7424.0,6905.0,6924
-Village Committee,Village Committee,73947.0,73909.0,73453.0,71411.0,73870.0,73589.0,67156.0,65294
-Farmers' Professional Cooperatives,Professional Farmers ,,110936.0,136031.0,58750.0,122477.0,148883.0,151584.0,154682
-,  Cooperatives,,,,,,,,
-Other Organizations,Others,54565.0,19334.0,15961.0,11251.0,11163.0,10191.0,7823.0,8054
+organization_status,unit_type,year,units
+Enterprise,Enterprises,1269917.0,1048470.0
+Public Institution,Institutions,1269917.0,40919.0
+Organizational Unit,Agencies & Organizations,1269917.0,12411.0
+Social Organizations,Social Groups,1269917.0,15919.0
+Private Non-enterprise Units,Private Non-enterprise Units,1269917.0,16098.0
+Foundation,Foundation,1269917.0,81.0
+Resident Committee,Neighborhood Committee,1269917.0,7507.0
+Village Committee,Village Committee,1269917.0,73947.0
+Other Organizations,Others,1269917.0,54565.0
+Enterprise,Enterprises,1652065.0,1344176.0
+Public Institution,Institutions,1652065.0,44903.0
+Organizational Unit,Agencies & Organizations,1652065.0,12826.0
+Social Organizations,Social Groups,1652065.0,18819.0
+Private Non-enterprise Units,Private Non-enterprise Units,1652065.0,19740.0
+Foundation,Foundation,1652065.0,99.0
+Resident Committee,Neighborhood Committee,1652065.0,7323.0
+Village Committee,Village Committee,1652065.0,73909.0
+Farmers' Professional Cooperatives,Professional Farmers ,1652065.0,110936.0
+Other Organizations,Others,1652065.0,19334.0
+Enterprise,Enterprises,2014790.0,1675975.0
+Public Institution,Institutions,2014790.0,48350.0
+Organizational Unit,Agencies & Organizations,2014790.0,12304.0
+Social Organizations,Social Groups,2014790.0,20929.0
+Private Non-enterprise Units,Private Non-enterprise Units,2014790.0,24624.0
+Foundation,Foundation,2014790.0,115.0
+Resident Committee,Neighborhood Committee,2014790.0,7048.0
+Village Committee,Village Committee,2014790.0,73453.0
+Farmers' Professional Cooperatives,Professional Farmers ,2014790.0,136031.0
+Other Organizations,Others,2014790.0,15961.0
+Enterprise,Enterprises,1801301.0,1547260.0
+Public Institution,Institutions,1801301.0,50681.0
+Organizational Unit,Agencies & Organizations,1801301.0,12465.0
+Social Organizations,Social Groups,1801301.0,13337.0
+Private Non-enterprise Units,Private Non-enterprise Units,1801301.0,28723.0
+Foundation,Foundation,1801301.0,116.0
+Resident Committee,Neighborhood Committee,1801301.0,7307.0
+Village Committee,Village Committee,1801301.0,71411.0
+Farmers' Professional Cooperatives,Professional Farmers ,1801301.0,58750.0
+Other Organizations,Others,1801301.0,11251.0
+Enterprise,Enterprises,2309350.0,1982468.0
+Public Institution,Institutions,2309350.0,47378.0
+Organizational Unit,Agencies & Organizations,2309350.0,12213.0
+Social Organizations,Social Groups,2309350.0,17384.0
+Private Non-enterprise Units,Private Non-enterprise Units,2309350.0,34781.0
+Foundation,Foundation,2309350.0,153.0
+Resident Committee,Neighborhood Committee,2309350.0,7463.0
+Village Committee,Village Committee,2309350.0,73870.0
+Farmers' Professional Cooperatives,Professional Farmers ,2309350.0,122477.0
+Other Organizations,Others,2309350.0,11163.0
+Enterprise,Enterprises,2842426.0,2483474.0
+Public Institution,Institutions,2842426.0,47480.0
+Organizational Unit,Agencies & Organizations,2842426.0,12417.0
+Social Organizations,Social Groups,2842426.0,18876.0
+Private Non-enterprise Units,Private Non-enterprise Units,2842426.0,39907.0
+Foundation,Foundation,2842426.0,185.0
+Resident Committee,Neighborhood Committee,2842426.0,7424.0
+Village Committee,Village Committee,2842426.0,73589.0
+Farmers' Professional Cooperatives,Professional Farmers ,2842426.0,148883.0
+Other Organizations,Others,2842426.0,10191.0
+Enterprise,Enterprises,3261425.0,2928948.0
+Public Institution,Institutions,3261425.0,39744.0
+Organizational Unit,Agencies & Organizations,3261425.0,10835.0
+Social Organizations,Social Groups,3261425.0,14015.0
+Private Non-enterprise Units,Private Non-enterprise Units,3261425.0,34220.0
+Foundation,Foundation,3261425.0,195.0
+Resident Committee,Neighborhood Committee,3261425.0,6905.0
+Village Committee,Village Committee,3261425.0,67156.0
+Farmers' Professional Cooperatives,Professional Farmers ,3261425.0,151584.0
+Other Organizations,Others,3261425.0,7823.0
+Enterprise,Enterprises,3546905.0,3202941.0
+Public Institution,Institutions,3546905.0,40425.0
+Organizational Unit,Agencies & Organizations,3546905.0,11087.0
+Social Organizations,Social Groups,3546905.0,16478.0
+Private Non-enterprise Units,Private Non-enterprise Units,3546905.0,40781.0
+Foundation,Foundation,3546905.0,239.0
+Resident Committee,Neighborhood Committee,3546905.0,6924.0
+Village Committee,Village Committee,3546905.0,65294.0
+Farmers' Professional Cooperatives,Professional Farmers ,3546905.0,154682.0
+Other Organizations,Others,3546905.0,8054.0

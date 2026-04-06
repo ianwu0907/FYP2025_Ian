@@ -1,7 +1,7 @@
 {
   "shape": {
-    "rows": 3,
-    "cols": 5
+    "rows": 116,
+    "cols": 3
   },
   "cell_coverage": 1.0,
   "row_completeness_uniformity": 1.0,
@@ -10,8 +10,8 @@
   "column_completeness_min": 1.0,
   "header_uniqueness": 1.0,
   "type_consistency": 1.0,
-  "substring_containment": 0.0556,
+  "substring_containment": 0.0007,
   "inter_column_nmi": 0.0,
-  "groupby_queryability": 0.0,
+  "groupby_queryability": 1.0,
   "groupby_queryability_mode": "full"
 }

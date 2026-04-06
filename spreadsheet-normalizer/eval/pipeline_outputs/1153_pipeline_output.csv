@@ -1,67 +1,121 @@
-age_group,province,year,percentage
-women,men,2003.0,53.0
-women,men,2008.0,46.0
-women,men,2013.0,43.0
-women,men,2003.0,64.0
-women,men,2008.0,61.0
-women,men,2013.0,57.0
-newfoundland and labrador,men,2003.0,75.0
-newfoundland and labrador,men,2008.0,61.0
-newfoundland and labrador,men,2013.0,57.0
-newfoundland and labrador,men,2003.0,73.0
-newfoundland and labrador,men,2008.0,63.0
-newfoundland and labrador,men,2013.0,56.0
-prince edward island,men,2003.0,69.0
-prince edward island,men,2008.0,60.0
-prince edward island,men,2013.0,51.0
-prince edward island,men,2003.0,65.0
-prince edward island,men,2008.0,62.0
-prince edward island,men,2013.0,55.0
-nova scotia,men,2003.0,68.0
-nova scotia,men,2008.0,54.0
-nova scotia,men,2013.0,48.0
-nova scotia,men,2003.0,66.0
-nova scotia,men,2008.0,62.0
-nova scotia,men,2013.0,57.0
-new brunswick,men,2003.0,67.0
-new brunswick,men,2008.0,56.0
-new brunswick,men,2013.0,51.0
-new brunswick,men,2003.0,64.0
-new brunswick,men,2008.0,58.0
-new brunswick,men,2013.0,53.0
-quebec,men,2003.0,49.0
-quebec,men,2008.0,45.0
-quebec,men,2013.0,42.0
-quebec,men,2003.0,50.0
-quebec,men,2008.0,50.0
-quebec,men,2013.0,51.0
-ontario,men,2003.0,55.0
-ontario,men,2008.0,47.0
-ontario,men,2013.0,42.0
-ontario,men,2003.0,63.0
-ontario,men,2008.0,60.0
-ontario,men,2013.0,54.0
-manitoba,men,2003.0,59.0
-manitoba,men,2008.0,49.0
-manitoba,men,2013.0,44.0
-manitoba,men,2003.0,60.0
-manitoba,men,2008.0,59.0
-manitoba,men,2013.0,53.0
-saskatchewan,men,2003.0,65.0
-saskatchewan,men,2008.0,54.0
-saskatchewan,men,2013.0,47.0
-saskatchewan,men,2003.0,65.0
-saskatchewan,men,2008.0,60.0
-saskatchewan,men,2013.0,51.0
-alberta,men,2003.0,57.0
-alberta,men,2008.0,48.0
-alberta,men,2013.0,44.0
-alberta,men,2003.0,64.0
-alberta,men,2008.0,61.0
-alberta,men,2013.0,53.0
-british columbia,men,2003.0,58.0
-british columbia,men,2008.0,48.0
-british columbia,men,2013.0,47.0
-british columbia,men,2003.0,65.0
-british columbia,men,2008.0,61.0
-british columbia,men,2013.0,58.0
+demographic_group,year,percentage
+total,people who saw their friends a few times or more a week,56.0
+men,people who saw their friends a few times or more a week,58.0
+women,people who saw their friends a few times or more a week,53.0
+15 to 24 years,people who saw their friends a few times or more a week,84.0
+25 to 34 years,people who saw their friends a few times or more a week,57.0
+35 to 44 years,people who saw their friends a few times or more a week,50.0
+45 to 54 years,people who saw their friends a few times or more a week,48.0
+55 to 64 years,people who saw their friends a few times or more a week,47.0
+65 to 74 years,people who saw their friends a few times or more a week,50.0
+75 years and older,people who saw their friends a few times or more a week,44.0
+newfoundland and labrador,people who saw their friends a few times or more a week,75.0
+prince edward island,people who saw their friends a few times or more a week,69.0
+nova scotia,people who saw their friends a few times or more a week,68.0
+new brunswick,people who saw their friends a few times or more a week,67.0
+quebec,people who saw their friends a few times or more a week,49.0
+ontario,people who saw their friends a few times or more a week,55.0
+manitoba,people who saw their friends a few times or more a week,59.0
+saskatchewan,people who saw their friends a few times or more a week,65.0
+alberta,people who saw their friends a few times or more a week,57.0
+british columbia,people who saw their friends a few times or more a week,58.0
+total,Unnamed: 2,48.0
+men,Unnamed: 2,49.0
+women,Unnamed: 2,46.0
+15 to 24 years,Unnamed: 2,77.0
+25 to 34 years,Unnamed: 2,46.0
+35 to 44 years,Unnamed: 2,45.0
+45 to 54 years,Unnamed: 2,42.0
+55 to 64 years,Unnamed: 2,38.0
+65 to 74 years,Unnamed: 2,38.0
+75 years and older,Unnamed: 2,37.0
+newfoundland and labrador,Unnamed: 2,61.0
+prince edward island,Unnamed: 2,60.0
+nova scotia,Unnamed: 2,54.0
+new brunswick,Unnamed: 2,56.0
+quebec,Unnamed: 2,45.0
+ontario,Unnamed: 2,47.0
+manitoba,Unnamed: 2,49.0
+saskatchewan,Unnamed: 2,54.0
+alberta,Unnamed: 2,48.0
+british columbia,Unnamed: 2,48.0
+total,Unnamed: 3,44.0
+men,Unnamed: 3,44.0
+women,Unnamed: 3,43.0
+15 to 24 years,Unnamed: 3,73.0
+25 to 34 years,Unnamed: 3,45.0
+35 to 44 years,Unnamed: 3,38.0
+45 to 54 years,Unnamed: 3,36.0
+55 to 64 years,Unnamed: 3,35.0
+65 to 74 years,Unnamed: 3,36.0
+75 years and older,Unnamed: 3,41.0
+newfoundland and labrador,Unnamed: 3,57.0
+prince edward island,Unnamed: 3,51.0
+nova scotia,Unnamed: 3,48.0
+new brunswick,Unnamed: 3,51.0
+quebec,Unnamed: 3,42.0
+ontario,Unnamed: 3,42.0
+manitoba,Unnamed: 3,44.0
+saskatchewan,Unnamed: 3,47.0
+alberta,Unnamed: 3,44.0
+british columbia,Unnamed: 3,47.0
+total,people who contacted their friends a few times or more a week,60.0
+men,people who contacted their friends a few times or more a week,57.0
+women,people who contacted their friends a few times or more a week,64.0
+15 to 24 years,people who contacted their friends a few times or more a week,89.0
+25 to 34 years,people who contacted their friends a few times or more a week,71.0
+35 to 44 years,people who contacted their friends a few times or more a week,57.0
+45 to 54 years,people who contacted their friends a few times or more a week,51.0
+55 to 64 years,people who contacted their friends a few times or more a week,47.0
+65 to 74 years,people who contacted their friends a few times or more a week,46.0
+75 years and older,people who contacted their friends a few times or more a week,40.0
+newfoundland and labrador,people who contacted their friends a few times or more a week,73.0
+prince edward island,people who contacted their friends a few times or more a week,65.0
+nova scotia,people who contacted their friends a few times or more a week,66.0
+new brunswick,people who contacted their friends a few times or more a week,64.0
+quebec,people who contacted their friends a few times or more a week,50.0
+ontario,people who contacted their friends a few times or more a week,63.0
+manitoba,people who contacted their friends a few times or more a week,60.0
+saskatchewan,people who contacted their friends a few times or more a week,65.0
+alberta,people who contacted their friends a few times or more a week,64.0
+british columbia,people who contacted their friends a few times or more a week,65.0
+total,Unnamed: 5,58.0
+men,Unnamed: 5,55.0
+women,Unnamed: 5,61.0
+15 to 24 years,Unnamed: 5,87.0
+25 to 34 years,Unnamed: 5,69.0
+35 to 44 years,Unnamed: 5,58.0
+45 to 54 years,Unnamed: 5,49.0
+55 to 64 years,Unnamed: 5,44.0
+65 to 74 years,Unnamed: 5,41.0
+75 years and older,Unnamed: 5,38.0
+newfoundland and labrador,Unnamed: 5,63.0
+prince edward island,Unnamed: 5,62.0
+nova scotia,Unnamed: 5,62.0
+new brunswick,Unnamed: 5,58.0
+quebec,Unnamed: 5,50.0
+ontario,Unnamed: 5,60.0
+manitoba,Unnamed: 5,59.0
+saskatchewan,Unnamed: 5,60.0
+alberta,Unnamed: 5,61.0
+british columbia,Unnamed: 5,61.0
+total,Unnamed: 6,54.0
+men,Unnamed: 6,50.0
+women,Unnamed: 6,57.0
+15 to 24 years,Unnamed: 6,76.0
+25 to 34 years,Unnamed: 6,62.0
+35 to 44 years,Unnamed: 6,54.0
+45 to 54 years,Unnamed: 6,47.0
+55 to 64 years,Unnamed: 6,44.0
+65 to 74 years,Unnamed: 6,44.0
+75 years and older,Unnamed: 6,40.0
+newfoundland and labrador,Unnamed: 6,56.0
+prince edward island,Unnamed: 6,55.0
+nova scotia,Unnamed: 6,57.0
+new brunswick,Unnamed: 6,53.0
+quebec,Unnamed: 6,51.0
+ontario,Unnamed: 6,54.0
+manitoba,Unnamed: 6,53.0
+saskatchewan,Unnamed: 6,51.0
+alberta,Unnamed: 6,53.0
+british columbia,Unnamed: 6,58.0

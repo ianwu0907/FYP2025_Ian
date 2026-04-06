@@ -1,31 +1,31 @@
-class_of_worker,agricultural_region,language_group,percent
-did not work in 2010,french-language workers,percent,0.0
-did not work in 2010,english-language workers,percent,0.0
-did not work in 2010,french-language workers,percent,0.0
-did not work in 2010,english-language workers,percent,0.0
-did not work in 2010,french-language workers,percent,0.0
-did not work in 2010,english-language workers,percent,0.0
-employee,french-language workers,percent,86.1
-employee,english-language workers,percent,81.1
-employee,french-language workers,percent,73.1
-employee,english-language workers,percent,49.0
-employee,french-language workers,percent,84.1
-employee,english-language workers,percent,81.3
-unpaid family worker,french-language workers,percent,0.0
-unpaid family worker,english-language workers,percent,1.1
-unpaid family worker,french-language workers,percent,0.0
-unpaid family worker,english-language workers,percent,4.5
-unpaid family worker,french-language workers,percent,2.6
-unpaid family worker,english-language workers,percent,0.0
-"self-employed, incorporated",french-language workers,percent,7.0
-"self-employed, incorporated",english-language workers,percent,4.3
-"self-employed, incorporated",french-language workers,percent,22.4
-"self-employed, incorporated",english-language workers,percent,7.6
-"self-employed, incorporated",french-language workers,percent,5.6
-"self-employed, incorporated",english-language workers,percent,0.0
-"self-employed, non-incorporated",french-language workers,percent,5.3
-"self-employed, non-incorporated",english-language workers,percent,13.1
-"self-employed, non-incorporated",french-language workers,percent,0.0
-"self-employed, non-incorporated",english-language workers,percent,40.1
-"self-employed, non-incorporated",french-language workers,percent,8.7
-"self-employed, non-incorporated",english-language workers,percent,14.1
+class_of_worker,agricultural_region,language,percent
+did not work in 2010,percent,french-language workers,0.0
+did not work in 2010,percent,english-language workers,0.0
+did not work in 2010,percent,french-language workers,0.0
+did not work in 2010,percent,english-language workers,0.0
+did not work in 2010,percent,french-language workers,0.0
+did not work in 2010,percent,english-language workers,0.0
+employee,percent,french-language workers,86.1
+employee,percent,english-language workers,81.1
+employee,percent,french-language workers,73.1
+employee,percent,english-language workers,49.0
+employee,percent,french-language workers,84.1
+employee,percent,english-language workers,81.3
+unpaid family worker,percent,french-language workers,0.0
+unpaid family worker,percent,english-language workers,1.1
+unpaid family worker,percent,french-language workers,0.0
+unpaid family worker,percent,english-language workers,4.5
+unpaid family worker,percent,french-language workers,2.6
+unpaid family worker,percent,english-language workers,0.0
+"self-employed, incorporated",percent,french-language workers,7.0
+"self-employed, incorporated",percent,english-language workers,4.3
+"self-employed, incorporated",percent,french-language workers,22.4
+"self-employed, incorporated",percent,english-language workers,7.6
+"self-employed, incorporated",percent,french-language workers,5.6
+"self-employed, incorporated",percent,english-language workers,0.0
+"self-employed, non-incorporated",percent,french-language workers,5.3
+"self-employed, non-incorporated",percent,english-language workers,13.1
+"self-employed, non-incorporated",percent,french-language workers,0.0
+"self-employed, non-incorporated",percent,english-language workers,40.1
+"self-employed, non-incorporated",percent,french-language workers,8.7
+"self-employed, non-incorporated",percent,english-language workers,14.1

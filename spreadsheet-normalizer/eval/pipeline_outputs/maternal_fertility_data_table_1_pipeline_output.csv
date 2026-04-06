@@ -1,9 +1,49 @@
-major_occupational_category,age_group,number_of_women,live_births_0,live_births_1,live_births_2,live_births_3,live_births_4,live_births_5_and_above
+major_occupational_category,age_group,number_of_women,live_births_category,number_of_live_births
 "Party and government organs, mass organizations, and
-social organizations, enterprise and public institution leaders",15-64 years old,376767,56173,175995,124393,16965,2628,613
-Professional and Technical Personnel,15-64 years old,3768659,1222151,1689734,792275,54838,8136,1525
-Office clerks and related personnel,15-64 years old,1763530,480535,865320,383186,28942,4529,1018
-Social production service and daily service personnel,15-64 years old,9474681,1915946,3604474,3279919,549303,98898,26141
-"Farm, Forestry, Animal Husbandry, and Fishery Production and Support Staff",15-64 years old,5259471,306014,1233845,2672220,774215,199104,74073
-"Production, manufacturing, and related personnel",15-64 years old,4807673,624894,1542944,2129863,414245,75528,20199
-Other occupational categories that are difficult to classify,15-64 years old,62516,26261,16798,15862,2876,572,147
+social organizations, enterprise and public institution leaders",15-64 years old,376767,Number of women,56173
+"Party and government organs, mass organizations, and
+social organizations, enterprise and public institution leaders",15-64 years old,376767,Number of women,175995
+"Party and government organs, mass organizations, and
+social organizations, enterprise and public institution leaders",15-64 years old,376767,Number of women,124393
+"Party and government organs, mass organizations, and
+social organizations, enterprise and public institution leaders",15-64 years old,376767,Number of women,16965
+"Party and government organs, mass organizations, and
+social organizations, enterprise and public institution leaders",15-64 years old,376767,Number of women,2628
+"Party and government organs, mass organizations, and
+social organizations, enterprise and public institution leaders",15-64 years old,376767,and above,613
+Professional and Technical Personnel,15-64 years old,3768659,Number of women,1222151
+Professional and Technical Personnel,15-64 years old,3768659,Number of women,1689734
+Professional and Technical Personnel,15-64 years old,3768659,Number of women,792275
+Professional and Technical Personnel,15-64 years old,3768659,Number of women,54838
+Professional and Technical Personnel,15-64 years old,3768659,Number of women,8136
+Professional and Technical Personnel,15-64 years old,3768659,and above,1525
+Office clerks and related personnel,15-64 years old,1763530,Number of women,480535
+Office clerks and related personnel,15-64 years old,1763530,Number of women,865320
+Office clerks and related personnel,15-64 years old,1763530,Number of women,383186
+Office clerks and related personnel,15-64 years old,1763530,Number of women,28942
+Office clerks and related personnel,15-64 years old,1763530,Number of women,4529
+Office clerks and related personnel,15-64 years old,1763530,and above,1018
+Social production service and daily service personnel,15-64 years old,9474681,Number of women,1915946
+Social production service and daily service personnel,15-64 years old,9474681,Number of women,3604474
+Social production service and daily service personnel,15-64 years old,9474681,Number of women,3279919
+Social production service and daily service personnel,15-64 years old,9474681,Number of women,549303
+Social production service and daily service personnel,15-64 years old,9474681,Number of women,98898
+Social production service and daily service personnel,15-64 years old,9474681,and above,26141
+"Farm, Forestry, Animal Husbandry, and Fishery Production and Support Staff",15-64 years old,5259471,Number of women,306014
+"Farm, Forestry, Animal Husbandry, and Fishery Production and Support Staff",15-64 years old,5259471,Number of women,1233845
+"Farm, Forestry, Animal Husbandry, and Fishery Production and Support Staff",15-64 years old,5259471,Number of women,2672220
+"Farm, Forestry, Animal Husbandry, and Fishery Production and Support Staff",15-64 years old,5259471,Number of women,774215
+"Farm, Forestry, Animal Husbandry, and Fishery Production and Support Staff",15-64 years old,5259471,Number of women,199104
+"Farm, Forestry, Animal Husbandry, and Fishery Production and Support Staff",15-64 years old,5259471,and above,74073
+"Production, manufacturing, and related personnel",15-64 years old,4807673,Number of women,624894
+"Production, manufacturing, and related personnel",15-64 years old,4807673,Number of women,1542944
+"Production, manufacturing, and related personnel",15-64 years old,4807673,Number of women,2129863
+"Production, manufacturing, and related personnel",15-64 years old,4807673,Number of women,414245
+"Production, manufacturing, and related personnel",15-64 years old,4807673,Number of women,75528
+"Production, manufacturing, and related personnel",15-64 years old,4807673,and above,20199
+Other occupational categories that are difficult to classify,15-64 years old,62516,Number of women,26261
+Other occupational categories that are difficult to classify,15-64 years old,62516,Number of women,16798
+Other occupational categories that are difficult to classify,15-64 years old,62516,Number of women,15862
+Other occupational categories that are difficult to classify,15-64 years old,62516,Number of women,2876
+Other occupational categories that are difficult to classify,15-64 years old,62516,Number of women,572
+Other occupational categories that are difficult to classify,15-64 years old,62516,and above,147

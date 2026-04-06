@@ -1,106 +1,106 @@
-lift_name,lift_type,measurement_type,elevation_value
+lift_name,type,measurement_type,measurement_value,lift_manufacturer,year_installed
 Bruno,fixed double,"Top
 elevation
-(ft)",5885.0
+(ft)",5885.0,Poma,1987
 Molly's Express,detach quad,"Top
 elevation
-(ft)",5835.0
+(ft)",5835.0,Doppelmayr,2000
 Pucci,fixed triple,"Top
 elevation
-(ft)",5920.0
+(ft)",5920.0,Poma,1987
 Stormin' Norman,detach quad,"Top
 elevation
-(ft)",6245.0
+(ft)",6245.0,Doppelmayr,2000
 Magic Mile Express,detach quad,"Top
 elevation
-(ft)",6990.0
+(ft)",6990.0,Poma,1992
 Palmer Express,detach quad,"Top
 elevation
-(ft)",8470.0
+(ft)",8470.0,Doppelmayr,1996
 Jeff Flood Express (Still Creek Basin),detach quad,"Top
 elevation
-(ft)",6020.0
+(ft)",6020.0,Doppelmayr,2007
 Bruno,fixed double,"Bottom
-elevation",5840.0
+elevation",5840.0,Poma,1987
 Molly's Express,detach quad,"Bottom
-elevation",4990.0
+elevation",4990.0,Doppelmayr,2000
 Pucci,fixed triple,"Bottom
-elevation",5350.0
+elevation",5350.0,Poma,1987
 Stormin' Norman,detach quad,"Bottom
-elevation",5460.0
+elevation",5460.0,Doppelmayr,2000
 Magic Mile Express,detach quad,"Bottom
-elevation",5915.0
+elevation",5915.0,Poma,1992
 Palmer Express,detach quad,"Bottom
-elevation",6940.0
+elevation",6940.0,Doppelmayr,1996
 Jeff Flood Express (Still Creek Basin),detach quad,"Bottom
-elevation",4850.0
+elevation",4850.0,Doppelmayr,2007
 Bruno,fixed double,"Vertical
-rise",45.0
+rise",45.0,Poma,1987
 Molly's Express,detach quad,"Vertical
-rise",845.0
+rise",845.0,Doppelmayr,2000
 Pucci,fixed triple,"Vertical
-rise",570.0
+rise",570.0,Poma,1987
 Stormin' Norman,detach quad,"Vertical
-rise",785.0
+rise",785.0,Doppelmayr,2000
 Magic Mile Express,detach quad,"Vertical
-rise",1075.0
+rise",1075.0,Poma,1992
 Palmer Express,detach quad,"Vertical
-rise",1530.0
+rise",1530.0,Doppelmayr,1996
 Jeff Flood Express (Still Creek Basin),detach quad,"Vertical
-rise",1170.0
+rise",1170.0,Doppelmayr,2007
 Bruno,fixed double,"Length
-(ft)",368.0
+(ft)",368.0,Poma,1987
 Molly's Express,detach quad,"Length
-(ft)",5244.0
+(ft)",5244.0,Doppelmayr,2000
 Pucci,fixed triple,"Length
-(ft)",3398.0
+(ft)",3398.0,Poma,1987
 Stormin' Norman,detach quad,"Length
-(ft)",4396.0
+(ft)",4396.0,Doppelmayr,2000
 Magic Mile Express,detach quad,"Length
-(ft)",5359.0
+(ft)",5359.0,Poma,1992
 Palmer Express,detach quad,"Length
-(ft)",5468.0
+(ft)",5468.0,Doppelmayr,1996
 Jeff Flood Express (Still Creek Basin),detach quad,"Length
-(ft)",6506.0
+(ft)",6506.0,Doppelmayr,2007
 Bruno,fixed double,"Slope
-(%)",
+(%)",,Poma,1987
 Molly's Express,detach quad,"Slope
-(%)",
+(%)",,Doppelmayr,2000
 Pucci,fixed triple,"Slope
-(%)",
+(%)",,Poma,1987
 Stormin' Norman,detach quad,"Slope
-(%)",
+(%)",,Doppelmayr,2000
 Magic Mile Express,detach quad,"Slope
-(%)",
+(%)",,Poma,1992
 Palmer Express,detach quad,"Slope
-(%)",
+(%)",,Doppelmayr,1996
 Jeff Flood Express (Still Creek Basin),detach quad,"Slope
-(%)",
+(%)",,Doppelmayr,2007
 Bruno,fixed double,"Capacity
-(rides/hr)",630.0
+(rides/hr)",630.0,Poma,1987
 Molly's Express,detach quad,"Capacity
-(rides/hr)",1200.0
+(rides/hr)",1200.0,Doppelmayr,2000
 Pucci,fixed triple,"Capacity
-(rides/hr)",1330.0
+(rides/hr)",1330.0,Poma,1987
 Stormin' Norman,detach quad,"Capacity
-(rides/hr)",1500.0
+(rides/hr)",1500.0,Doppelmayr,2000
 Magic Mile Express,detach quad,"Capacity
-(rides/hr)",1600.0
+(rides/hr)",1600.0,Poma,1992
 Palmer Express,detach quad,"Capacity
-(rides/hr)",1800.0
+(rides/hr)",1800.0,Doppelmayr,1996
 Jeff Flood Express (Still Creek Basin),detach quad,"Capacity
-(rides/hr)",1800.0
+(rides/hr)",1800.0,Doppelmayr,2007
 Bruno,fixed double,"Speed
-(ft/min)",
+(ft/min)",300.0,Poma,1987
 Molly's Express,detach quad,"Speed
-(ft/min)",
+(ft/min)",1000.0,Doppelmayr,2000
 Pucci,fixed triple,"Speed
-(ft/min)",
+(ft/min)",450.0,Poma,1987
 Stormin' Norman,detach quad,"Speed
-(ft/min)",
+(ft/min)",1000.0,Doppelmayr,2000
 Magic Mile Express,detach quad,"Speed
-(ft/min)",
+(ft/min)",950.0,Poma,1992
 Palmer Express,detach quad,"Speed
-(ft/min)",
+(ft/min)",1000.0,Doppelmayr,1996
 Jeff Flood Express (Still Creek Basin),detach quad,"Speed
-(ft/min)",
+(ft/min)",1000.0,Doppelmayr,2007

@@ -309,6 +309,7 @@ def _run_table(
             output_file=str(output_file),
         )
         pipeline_df = pipeline_result["normalized_df"]
+        result["tidiness_metrics"] = pipeline_result.get("metrics", {}).get("comparison", {})
         result["pipeline_sec"] = round(time.time() - pipeline_start_time, 2)
         logger.info(
             f"  Pipeline succeeded in {round(time.time()-t0, 1)}s. "
@@ -379,6 +380,25 @@ def _aggregate_scores(table_results: List[Dict[str, Any]]) -> Dict[str, Any]:
     confounded by tables that the pipeline could not process.
     """
     valid_tables = [t for t in table_results if t["pipeline_status"] == "success"]
+    tidiness_summary = {}
+    metric_keys = [
+        "cell_coverage", "row_completeness_uniformity", "column_type_homogeneity",
+        "data_row_ratio", "column_completeness_min", "header_uniqueness",
+        "type_consistency", "substring_containment", "inter_column_nmi", "groupby_queryability"
+    ]
+
+    for key in metric_keys:
+        befores = [t["tidiness_metrics"][key]["before"] for t in valid_tables if t.get("tidiness_metrics") and key in t["tidiness_metrics"]]
+        afters = [t["tidiness_metrics"][key]["after"] for t in valid_tables if t.get("tidiness_metrics") and key in t["tidiness_metrics"]]
+
+        if befores:
+            avg_before = sum(befores) / len(befores)
+            avg_after = sum(afters) / len(afters)
+            tidiness_summary[key] = {
+                "avg_before": round(avg_before, 4),
+                "avg_after": round(avg_after, 4),
+                "avg_delta": round(avg_after - avg_before, 4)
+            }
     n_failed     = len(table_results) - len(valid_tables)
     avg_pipeline_sec = 0.0
     if valid_tables:
@@ -424,6 +444,7 @@ def _aggregate_scores(table_results: List[Dict[str, Any]]) -> Dict[str, Any]:
         "avg_pipeline_sec":   round(avg_pipeline_sec, 2),
         "raw":      _agg("raw"),
         "pipeline": _agg("pipeline"),
+        "avg_tidiness": tidiness_summary  # 将新统计的结果放入总摘要
     }
 
 
@@ -478,6 +499,17 @@ def log_summary(summary: Dict[str, Any]) -> None:
         _row(f"  accuracy [{qtype}]",
              raw_bt.get("accuracy"),       pip_bt.get("accuracy"))
 
+    if "avg_tidiness" in summary:
+        logger.info("\n" + "-" * 76)
+        logger.info(f"  {'Average Tidiness Metric':<38} {'Before':>8} {'After':>9} {'Delta':>8}")
+        logger.info("-" * 76)
+        for metric, vals in summary["avg_tidiness"].items():
+            delta = vals["avg_delta"]
+            arrow = "↑" if delta > 0.005 else ("↓" if delta < -0.005 else "=")
+            logger.info(
+                f"  {metric:<38} {vals['avg_before']:>8.4f} {vals['avg_after']:>9.4f} "
+                f"{delta:>+8.4f}  {arrow}"
+            )
     logger.info("=" * 76)
 
 

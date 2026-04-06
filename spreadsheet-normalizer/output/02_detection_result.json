@@ -1,48 +1,26 @@
 {
   "physical": {
     "shape": {
-      "rows": 26,
-      "cols": 16
+      "rows": 32,
+      "cols": 5
     },
     "actual_column_names": [
-      "type of reason",
-      "canada",
+      "region or country of birth",
+      "women",
       "Unnamed: 2",
-      "newfoundland and labrador",
-      "prince edward island",
-      "nova scotia",
-      "new brunswick",
-      "quebec",
-      "ontario",
-      "manitoba",
-      "saskatchewan",
-      "alberta",
-      "british columbia",
-      "yukon",
-      "northwest territories",
-      "nunavut"
+      "men",
+      "Unnamed: 4"
     ],
     "header_depth": 2,
     "data_start_row": 2,
-    "data_end_row": 25,
-    "data_rows": 24,
+    "data_end_row": 31,
+    "data_rows": 30,
     "column_dtype_profile": {
       "0": "text",
       "1": "numeric",
       "2": "numeric",
       "3": "numeric",
-      "4": "mixed",
-      "5": "numeric",
-      "6": "numeric",
-      "7": "numeric",
-      "8": "numeric",
-      "9": "numeric",
-      "10": "numeric",
-      "11": "numeric",
-      "12": "numeric",
-      "13": "mixed",
-      "14": "mixed",
-      "15": "mixed"
+      "4": "numeric"
     },
     "blank_rows_in_data": [],
     "bilingual_row_candidate": false,
@@ -52,23 +30,29 @@
   "irregularities": [
     {
       "label": "MULTI_LEVEL_HEADER",
-      "evidence": "Row 0 contains a hierarchical structure with grouped labels across multiple rows.",
-      "details": "The first header row contains category labels indicating different types of information related to reasons for abuse, suggesting a multi-level header structure."
+      "evidence": "Row 0 contains headers that span multiple columns, including both \"university degree only\" and \"non-university or university postsecondary diploma.\"",
+      "details": "The headers are structured hierarchically with Row 0 as the top-level header and Row 1 providing specific labels for values, indicating a multi-level structure."
     },
     {
-      "label": "SECTION_HEADER_ROWS",
-      "evidence": "Rows 10 and 17 contain labels without numeric data.",
-      "details": "These rows act as section headers (\"protecting children from:\" and \"housing:\") that categorize the subsequent data rows until the next section header."
+      "label": "EMBEDDED_DIMENSION_IN_COLUMN",
+      "evidence": "The column headers in Row 0 contain multiple dimensions encoded using a delimiter \" or \".",
+      "details": "The headers can be interpreted as including both an educational attainment type and the category of degree, e.g., \"non-university or university postsecondary diploma\"."
     },
     {
-      "label": "AGGREGATE_COLUMNS",
-      "evidence": "Row 25 contains a summary of total reasons for admission.",
-      "details": "This row provides an overall summary that aggregates data from multiple categories above it, indicating it functions as an aggregate column."
+      "label": "IMPLICIT_AGGREGATION_ROWS",
+      "evidence": "Row 5 contains the label \"country of birth,\" which may aggregate the more specific country rows beneath it.",
+      "details": "This implies that the data from Row 6 to Row 31 are child-level data under the country grouping defined in Row 5."
+    },
+    {
+      "label": "METADATA_ROWS",
+      "evidence": "Row 5 appears to be a non-data row that acts as a section header while not containing any numeric data.",
+      "details": "It interrupts the flow of regular data rows (which contain numeric values), designating a transition in the grouping of the subsequent data rows."
     }
   ],
   "labels": [
     "MULTI_LEVEL_HEADER",
-    "SECTION_HEADER_ROWS",
-    "AGGREGATE_COLUMNS"
+    "EMBEDDED_DIMENSION_IN_COLUMN",
+    "IMPLICIT_AGGREGATION_ROWS",
+    "METADATA_ROWS"
   ]
 }

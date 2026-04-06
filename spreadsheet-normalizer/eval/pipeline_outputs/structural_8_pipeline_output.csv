@@ -1,4 +1,16 @@
-granular_shock,coefficient,standard_error
-granular shock,0.57,0.216
-granular shock,0.768,0.149
-granular shock,0.764,0.149
+granular_shock,statistic_type,value
+coefficient,granular_shock_1,0.57
+standard error,granular_shock_1,0.216
+coefficient,granular_shock_1,-0.035
+standard error,granular_shock_1,0.014
+r-squared,granular_shock_1,0.13
+coefficient,granular_shock_2,0.768
+standard error,granular_shock_2,0.149
+coefficient,granular_shock_2,-0.086
+standard error,granular_shock_2,0.012
+r-squared,granular_shock_2,0.37
+coefficient,granular_shock_3,0.764
+standard error,granular_shock_3,0.149
+coefficient,granular_shock_3,-0.078
+standard error,granular_shock_3,0.011
+r-squared,granular_shock_3,0.36

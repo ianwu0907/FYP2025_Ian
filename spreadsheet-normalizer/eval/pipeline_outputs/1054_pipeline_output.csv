@@ -1,7 +1,73 @@
-sexual_orientation,gender,experienced_unwanted_behaviours_public_number,experienced_unwanted_behaviours_public_percent,experienced_unwanted_behaviours_public_conf_interval_from,experienced_unwanted_behaviours_public_conf_interval_to,experienced_unwanted_behaviours_online_number,experienced_unwanted_behaviours_online_percent,experienced_unwanted_behaviours_online_conf_interval_from,experienced_unwanted_behaviours_online_conf_interval_to
-female gender,male,1788,12.5,11.7,13.3,1688,13.0,12.1,13.8
-male gender,female,4465,30.5,29.5,31.6,2291,17.5,16.6,18.5
-gay or lesbian,male,117,38.2,31.1,45.8,82,27.6,20.9,35.3
-male gender,female,87,50.8,41.7,59.8,35,21.0,13.9,30.3
-bisexual,male,71,41.4,30.3,53.5,66,40.3,29.5,52.2
-male gender,female,280,76.4,69.6,82.1,179,49.8,41.9,57.6
+sexual_orientation,gender,unwanted_behaviors_public_number,unwanted_behaviors_public_percent,unwanted_behaviors_public_ci_from,unwanted_behaviors_public_ci_to,unwanted_behaviors_online_number,unwanted_behaviors_online_percent,unwanted_behaviors_online_ci_from,unwanted_behaviors_online_ci_to
+male gender,female gender,"1,788",12.5,11.7,13.3,"1,688",13.0,12.1,13.8
+male gender,female gender,"1,788",12.5,11.7,13.3,"1,688",13.0,12.1,13.8
+male gender,female gender,"1,788",12.5,11.7,13.3,"1,688",13.0,12.1,13.8
+male gender,female gender,"1,788",12.5,11.7,13.3,"1,688",13.0,12.1,13.8
+male gender,female gender,"1,788",12.5,11.7,13.3,"1,688",13.0,12.1,13.8
+male gender,female gender,"1,788",12.5,11.7,13.3,"1,688",13.0,12.1,13.8
+male gender,female gender,"1,788",12.5,11.7,13.3,"1,688",13.0,12.1,13.8
+male gender,female gender,"1,788",12.5,11.7,13.3,"1,688",13.0,12.1,13.8
+male gender,female gender,"1,788",12.5,11.7,13.3,"1,688",13.0,12.1,13.8
+female gender,male gender,"4,465",30.5,29.5,31.6,"2,291",17.5,16.6,18.5
+female gender,male gender,"4,465",30.5,29.5,31.6,"2,291",17.5,16.6,18.5
+female gender,male gender,"4,465",30.5,29.5,31.6,"2,291",17.5,16.6,18.5
+female gender,male gender,"4,465",30.5,29.5,31.6,"2,291",17.5,16.6,18.5
+female gender,male gender,"4,465",30.5,29.5,31.6,"2,291",17.5,16.6,18.5
+female gender,male gender,"4,465",30.5,29.5,31.6,"2,291",17.5,16.6,18.5
+female gender,male gender,"4,465",30.5,29.5,31.6,"2,291",17.5,16.6,18.5
+female gender,male gender,"4,465",30.5,29.5,31.6,"2,291",17.5,16.6,18.5
+female gender,male gender,"4,465",30.5,29.5,31.6,"2,291",17.5,16.6,18.5
+gay or lesbian,female gender,,,,,,,,
+gay or lesbian,female gender,,,,,,,,
+gay or lesbian,female gender,,,,,,,,
+gay or lesbian,female gender,,,,,,,,
+gay or lesbian,female gender,,,,,,,,
+gay or lesbian,female gender,,,,,,,,
+gay or lesbian,female gender,,,,,,,,
+gay or lesbian,female gender,,,,,,,,
+gay or lesbian,female gender,,,,,,,,
+male gender,female gender,117,38.2,31.1,45.8,82,27.6,20.9,35.3
+male gender,female gender,117,38.2,31.1,45.8,82,27.6,20.9,35.3
+male gender,female gender,117,38.2,31.1,45.8,82,27.6,20.9,35.3
+male gender,female gender,117,38.2,31.1,45.8,82,27.6,20.9,35.3
+male gender,female gender,117,38.2,31.1,45.8,82,27.6,20.9,35.3
+male gender,female gender,117,38.2,31.1,45.8,82,27.6,20.9,35.3
+male gender,female gender,117,38.2,31.1,45.8,82,27.6,20.9,35.3
+male gender,female gender,117,38.2,31.1,45.8,82,27.6,20.9,35.3
+male gender,female gender,117,38.2,31.1,45.8,82,27.6,20.9,35.3
+female gender,male gender,87,50.8,41.7,59.8,35,21.0,13.9,30.3
+female gender,male gender,87,50.8,41.7,59.8,35,21.0,13.9,30.3
+female gender,male gender,87,50.8,41.7,59.8,35,21.0,13.9,30.3
+female gender,male gender,87,50.8,41.7,59.8,35,21.0,13.9,30.3
+female gender,male gender,87,50.8,41.7,59.8,35,21.0,13.9,30.3
+female gender,male gender,87,50.8,41.7,59.8,35,21.0,13.9,30.3
+female gender,male gender,87,50.8,41.7,59.8,35,21.0,13.9,30.3
+female gender,male gender,87,50.8,41.7,59.8,35,21.0,13.9,30.3
+female gender,male gender,87,50.8,41.7,59.8,35,21.0,13.9,30.3
+bisexual,female gender,,,,,,,,
+bisexual,female gender,,,,,,,,
+bisexual,female gender,,,,,,,,
+bisexual,female gender,,,,,,,,
+bisexual,female gender,,,,,,,,
+bisexual,female gender,,,,,,,,
+bisexual,female gender,,,,,,,,
+bisexual,female gender,,,,,,,,
+bisexual,female gender,,,,,,,,
+male gender,female gender,71,41.4,30.3,53.5,66,40.3,29.5,52.2
+male gender,female gender,71,41.4,30.3,53.5,66,40.3,29.5,52.2
+male gender,female gender,71,41.4,30.3,53.5,66,40.3,29.5,52.2
+male gender,female gender,71,41.4,30.3,53.5,66,40.3,29.5,52.2
+male gender,female gender,71,41.4,30.3,53.5,66,40.3,29.5,52.2
+male gender,female gender,71,41.4,30.3,53.5,66,40.3,29.5,52.2
+male gender,female gender,71,41.4,30.3,53.5,66,40.3,29.5,52.2
+male gender,female gender,71,41.4,30.3,53.5,66,40.3,29.5,52.2
+male gender,female gender,71,41.4,30.3,53.5,66,40.3,29.5,52.2
+female gender,male gender,280,76.4,69.6,82.1,179,49.8,41.9,57.6
+female gender,male gender,280,76.4,69.6,82.1,179,49.8,41.9,57.6
+female gender,male gender,280,76.4,69.6,82.1,179,49.8,41.9,57.6
+female gender,male gender,280,76.4,69.6,82.1,179,49.8,41.9,57.6
+female gender,male gender,280,76.4,69.6,82.1,179,49.8,41.9,57.6
+female gender,male gender,280,76.4,69.6,82.1,179,49.8,41.9,57.6
+female gender,male gender,280,76.4,69.6,82.1,179,49.8,41.9,57.6
+female gender,male gender,280,76.4,69.6,82.1,179,49.8,41.9,57.6
+female gender,male gender,280,76.4,69.6,82.1,179,49.8,41.9,57.6

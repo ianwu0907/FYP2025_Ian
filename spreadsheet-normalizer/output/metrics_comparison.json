@@ -1,39 +1,45 @@
 {
   "type_consistency": {
-    "before": 0.8469,
+    "before": 0.9671,
     "after": 1.0,
-    "delta": 0.1531,
+    "delta": 0.0329,
     "direction": "✓ improved"
   },
-  "inter_column_nmi": {
-    "before": 0.9543,
-    "after": 0.0,
-    "delta": -0.9543,
+  "data_row_ratio": {
+    "before": 0.9062,
+    "after": 1.0,
+    "delta": 0.0938,
     "direction": "✓ improved"
   },
   "row_completeness_uniformity": {
-    "before": 0.6887,
+    "before": 0.824,
     "after": 1.0,
-    "delta": 0.3113,
+    "delta": 0.176,
+    "direction": "✓ improved"
+  },
+  "substring_containment": {
+    "before": 0.0007,
+    "after": 0.0007,
+    "delta": 0.0,
+    "direction": "= unchanged"
+  },
+  "cell_coverage": {
+    "before": 0.95,
+    "after": 1.0,
+    "delta": 0.05,
     "direction": "✓ improved"
   },
   "column_type_homogeneity": {
-    "before": 0.5273,
+    "before": 0.8488,
     "after": 1.0,
-    "delta": 0.4727,
+    "delta": 0.1512,
     "direction": "✓ improved"
   },
   "groupby_queryability": {
-    "before": 0.7551,
-    "after": 0.0,
-    "delta": -0.7551,
-    "direction": "✗ degraded"
-  },
-  "substring_containment": {
-    "before": 0.0034,
-    "after": 0.0556,
-    "delta": 0.0522,
-    "direction": "✗ degraded"
+    "before": 0.64,
+    "after": 1.0,
+    "delta": 0.36,
+    "direction": "✓ improved"
   },
   "header_uniqueness": {
     "before": 1.0,
@@ -42,21 +48,15 @@
     "direction": "= unchanged"
   },
   "column_completeness_min": {
-    "before": 0.7778,
+    "before": 0.9375,
     "after": 1.0,
-    "delta": 0.2222,
+    "delta": 0.0625,
     "direction": "✓ improved"
   },
-  "cell_coverage": {
-    "before": 0.8095,
-    "after": 1.0,
-    "delta": 0.1905,
-    "direction": "✓ improved"
-  },
-  "data_row_ratio": {
-    "before": 0.6667,
-    "after": 1.0,
-    "delta": 0.3333,
+  "inter_column_nmi": {
+    "before": 0.9937,
+    "after": 0.0,
+    "delta": -0.9937,
     "direction": "✓ improved"
   },
   "_groupby_queryability_mode": {

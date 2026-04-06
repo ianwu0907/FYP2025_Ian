@@ -1,49 +1,45 @@
-land_use_type,agricultural_region,number,percent
-farms under 130 acres,agricultural region 1,273.0,30.7
-farms under 130 acres,agricultural region 2,241.0,40.4
-farms under 130 acres,agricultural region 3,202.0,51.3
-farms under 130 acres,total new brunswick,996.0,38.1
-farms between 130 and 399 acres,agricultural region 1,297.0,33.4
-farms between 130 and 399 acres,agricultural region 2,201.0,33.7
-farms between 130 and 399 acres,agricultural region 3,99.0,25.1
-farms between 130 and 399 acres,total new brunswick,855.0,32.7
-"farms between 400 and 1,119 acres",agricultural region 1,244.0,27.4
-"farms between 400 and 1,119 acres",agricultural region 2,129.0,21.6
-"farms between 400 and 1,119 acres",agricultural region 3,74.0,18.8
-"farms between 400 and 1,119 acres",total new brunswick,618.0,23.7
-"farms between 1,120 and 2,879 acres",agricultural region 1,63.0,7.1
-"farms between 1,120 and 2,879 acres",agricultural region 2,24.0,4.0
-"farms between 1,120 and 2,879 acres",agricultural region 3,15.0,3.8
-"farms between 1,120 and 2,879 acres",total new brunswick,122.0,4.7
-"farms 2,880 acres and over",agricultural region 1,12.0,1.3
-"farms 2,880 acres and over",agricultural region 2,2.0,0.3
-"farms 2,880 acres and over",agricultural region 3,4.0,1.0
-"farms 2,880 acres and over",total new brunswick,20.0,0.8
-land tenure,agricultural region 1,,
-land tenure,agricultural region 2,,
-land tenure,agricultural region 3,,
-land tenure,total new brunswick,,
-area owned,agricultural region 1,852.0,95.8
-area owned,agricultural region 2,579.0,97.0
-area owned,agricultural region 3,353.0,89.6
-area owned,total new brunswick,,95.4
-area leased from governments,agricultural region 1,28.0,3.1
-area leased from governments,agricultural region 2,17.0,2.8
-area leased from governments,agricultural region 3,64.0,16.2
-area leased from governments,total new brunswick,119.0,4.6
-area rented or leased from others,agricultural region 1,279.0,31.4
-area rented or leased from others,agricultural region 2,132.0,22.1
-area rented or leased from others,agricultural region 3,75.0,19.0
-area rented or leased from others,total new brunswick,628.0,24.1
-area crop-shared from others,agricultural region 1,13.0,1.5
-area crop-shared from others,agricultural region 2,8.0,1.3
-area crop-shared from others,agricultural region 3,4.0,1.0
-area crop-shared from others,total new brunswick,32.0,1.2
-land area used through other arrangements,agricultural region 1,119.0,13.4
-land area used through other arrangements,agricultural region 2,78.0,13.1
-land area used through other arrangements,agricultural region 3,39.0,9.9
-land area used through other arrangements,total new brunswick,352.0,13.5
-total area of land used by others,agricultural region 1,119.0,13.4
-total area of land used by others,agricultural region 2,31.0,5.2
-total area of land used by others,agricultural region 3,16.0,4.1
-total area of land used by others,total new brunswick,229.0,8.8
+farm_area_category,agricultural_region,land_tenure_section,number_of_farms,percent_of_farms
+farms under 130 acres,number,,273,30.7
+farms between 130 and 399 acres,number,,297,33.4
+"farms between 400 and 1,119 acres",number,,244,27.4
+"farms between 1,120 and 2,879 acres",number,,63,7.1
+"farms 2,880 acres and over",number,,12,1.3
+area owned,number,land tenure,852,95.8
+area leased from governments,number,land tenure,28,3.1
+area rented or leased from others,number,land tenure,279,31.4
+area crop-shared from others,number,land tenure,13,1.5
+land area used through other arrangements,number,land tenure,119,13.4
+total area of land used by others,number,land tenure,119,13.4
+farms under 130 acres,number,,241,40.4
+farms between 130 and 399 acres,number,,201,33.7
+"farms between 400 and 1,119 acres",number,,129,21.6
+"farms between 1,120 and 2,879 acres",number,,24,4.0
+"farms 2,880 acres and over",number,,2,0.3
+area owned,number,land tenure,579,97.0
+area leased from governments,number,land tenure,17,2.8
+area rented or leased from others,number,land tenure,132,22.1
+area crop-shared from others,number,land tenure,8,1.3
+land area used through other arrangements,number,land tenure,78,13.1
+total area of land used by others,number,land tenure,31,5.2
+farms under 130 acres,number,,202,51.3
+farms between 130 and 399 acres,number,,99,25.1
+"farms between 400 and 1,119 acres",number,,74,18.8
+"farms between 1,120 and 2,879 acres",number,,15,3.8
+"farms 2,880 acres and over",number,,4,1.0
+area owned,number,land tenure,353,89.6
+area leased from governments,number,land tenure,64,16.2
+area rented or leased from others,number,land tenure,75,19.0
+area crop-shared from others,number,land tenure,4,1.0
+land area used through other arrangements,number,land tenure,39,9.9
+total area of land used by others,number,land tenure,16,4.1
+farms under 130 acres,number,,996,38.1
+farms between 130 and 399 acres,number,,855,32.7
+"farms between 400 and 1,119 acres",number,,618,23.7
+"farms between 1,120 and 2,879 acres",number,,122,4.7
+"farms 2,880 acres and over",number,,20,0.8
+area owned,number,land tenure,2491,95.4
+area leased from governments,number,land tenure,119,4.6
+area rented or leased from others,number,land tenure,628,24.1
+area crop-shared from others,number,land tenure,32,1.2
+land area used through other arrangements,number,land tenure,352,13.5
+total area of land used by others,number,land tenure,229,8.8

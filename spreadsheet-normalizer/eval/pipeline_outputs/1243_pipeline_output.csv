@@ -1,4 +1,4 @@
-province_and_territory,crime_type,severity_index
+province_and_territory,crime_type,crime_severity_index
 newfoundland and labrador,total crime severity index,69.3
 prince edward island,total crime severity index,48.5
 nova scotia,total crime severity index,61.2

@@ -1,827 +1,936 @@
-age_group,gender,income_type,population_count
-45-49 years old,Male,Labor Income,5511824
-45-49 years old,Female,Labor Income,9064701
-45-49 years old,Male,Pension / Retirement Allowance,3865282
-45-49 years old,Female,Pension / Retirement Allowance,73077
-45-49 years old,Male,Minimum Living Allowance,69269
-45-49 years old,Female,Minimum Living Allowance,114559
-45-49 years old,Male,Unemployment Insurance Benefits,45858
-45-49 years old,Female,Unemployment Insurance Benefits,10058
-45-49 years old,Male,Property Income,5557
-45-49 years old,Female,Property Income,109563
-45-49 years old,Male,Family support from other members,53210
-45-49 years old,Female,Family support from other members,1338672
-45-49 years old,Male,Other,1164808
-45-49 years old,Female,Other,575649
-45,Male,Labor Income,977154
-45,Female,Labor Income,1647180
-45,Male,Pension / Retirement Allowance,711338
-45,Female,Pension / Retirement Allowance,4931
-45,Male,Minimum Living Allowance,4556
-45,Female,Minimum Living Allowance,18542
-45,Male,Unemployment Insurance Benefits,7566
-45,Female,Unemployment Insurance Benefits,1510
-45,Male,Property Income,783
-45,Female,Property Income,18543
-45,Male,Family support from other members,9046
-45,Female,Family support from other members,217538
-45,Male,Other,191233
-45,Female,Other,98468
-46,Male,Labor Income,1073545
-46,Female,Labor Income,1790803
-46,Male,Pension / Retirement Allowance,772867
-46,Female,Pension / Retirement Allowance,7761
-46,Male,Minimum Living Allowance,7290
-46,Female,Minimum Living Allowance,21213
-46,Male,Unemployment Insurance Benefits,8579
-46,Female,Unemployment Insurance Benefits,1657
-46,Male,Property Income,841
-46,Female,Property Income,20648
-46,Male,Family support from other members,10017
-46,Female,Family support from other members,245693
-46,Male,Other,215292
-46,Female,Other,109719
-47,Male,Labor Income,1121552
-47,Female,Labor Income,1854060
-47,Male,Pension / Retirement Allowance,793837
-47,Female,Pension / Retirement Allowance,11545
-47,Male,Minimum Living Allowance,10836
-47,Female,Minimum Living Allowance,23332
-47,Male,Unemployment Insurance Benefits,9389
-47,Female,Unemployment Insurance Benefits,1971
-47,Male,Property Income,1085
-47,Female,Property Income,22132
-47,Male,Family support from other members,10673
-47,Female,Family support from other members,267456
-47,Male,Other,232819
-47,Female,Other,117554
-48,Male,Labor Income,1152292
-48,Female,Labor Income,1874814
-48,Male,Pension / Retirement Allowance,796269
-48,Female,Pension / Retirement Allowance,16721
-48,Male,Minimum Living Allowance,15779
-48,Female,Minimum Living Allowance,24829
-48,Male,Unemployment Insurance Benefits,9848
-48,Female,Unemployment Insurance Benefits,2291
-48,Male,Property Income,1325
-48,Female,Property Income,23566
-48,Male,Family support from other members,11465
-48,Female,Family support from other members,290335
-48,Male,Other,252062
-48,Female,Other,122280
-49,Male,Labor Income,1187281
-49,Female,Labor Income,1897844
-49,Male,Pension / Retirement Allowance,790971
-49,Female,Pension / Retirement Allowance,32119
-49,Male,Minimum Living Allowance,30808
-49,Female,Minimum Living Allowance,26643
-49,Male,Unemployment Insurance Benefits,10476
-49,Female,Unemployment Insurance Benefits,2629
-49,Male,Property Income,1523
-49,Female,Property Income,24674
-49,Male,Family support from other members,12009
-49,Female,Family support from other members,317650
-49,Male,Other,273402
-49,Female,Other,127628
-50-54 years old,Male,Labor Income,5906378
-50-54 years old,Female,Labor Income,8256812
-50-54 years old,Male,Pension / Retirement Allowance,3116908
-50-54 years old,Female,Pension / Retirement Allowance,919490
-50-54 years old,Male,Minimum Living Allowance,822631
-50-54 years old,Female,Minimum Living Allowance,141551
-50-54 years old,Male,Unemployment Insurance Benefits,53796
-50-54 years old,Female,Unemployment Insurance Benefits,6231
-50-54 years old,Male,Property Income,841
-50-54 years old,Female,Property Income,121413
-50-54 years old,Male,Family support from other members,54923
-50-54 years old,Female,Family support from other members,1842592
-50-54 years old,Male,Other,1524105
-50-54 years old,Female,Other,638091
-50,Male,Labor Income,1266799
-50,Female,Labor Income,1887971
-50,Male,Pension / Retirement Allowance,745227
-50,Female,Pension / Retirement Allowance,145715
-50,Male,Minimum Living Allowance,136508
-50,Female,Minimum Living Allowance,27856
-50,Male,Unemployment Insurance Benefits,10653
-50,Female,Unemployment Insurance Benefits,1673
-50,Male,Property Income,572
-50,Female,Property Income,25400
-50,Male,Family support from other members,11776
-50,Female,Family support from other members,342971
-50,Male,Other,291862
-50,Female,Other,133243
-51,Male,Labor Income,1188360
-51,Female,Labor Income,1701632
-51,Male,Pension / Retirement Allowance,649263
-51,Female,Pension / Retirement Allowance,179002
-51,Male,Minimum Living Allowance,163925
-51,Female,Minimum Living Allowance,27546
-51,Male,Unemployment Insurance Benefits,10284
-51,Female,Unemployment Insurance Benefits,1178
-51,Male,Property Income,77
-51,Female,Property Income,24095
-51,Male,Family support from other members,10886
-51,Female,Family support from other members,345152
-51,Male,Other,288236
-51,Female,Other,126354
-52,Male,Labor Income,1276675
-52,Female,Labor Income,1776587
-52,Male,Pension / Retirement Allowance,667753
-52,Female,Pension / Retirement Allowance,205367
-52,Male,Minimum Living Allowance,184715
-52,Female,Minimum Living Allowance,30209
-52,Male,Unemployment Insurance Benefits,11355
-52,Female,Unemployment Insurance Benefits,1275
-52,Male,Property Income,67
-52,Female,Property Income,26234
-52,Male,Family support from other members,11829
-52,Female,Family support from other members,397597
-52,Male,Other,328959
-52,Female,Other,138252
-53,Male,Labor Income,1025010
-53,Female,Labor Income,1383137
-53,Male,Pension / Retirement Allowance,513175
-53,Female,Pension / Retirement Allowance,168945
-53,Male,Minimum Living Allowance,148783
-53,Female,Minimum Living Allowance,25707
-53,Male,Unemployment Insurance Benefits,9923
-53,Female,Unemployment Insurance Benefits,979
-53,Male,Property Income,53
-53,Female,Property Income,21296
-53,Male,Family support from other members,9552
-53,Female,Family support from other members,346576
-53,Male,Other,284434
-53,Female,Other,112806
-54,Male,Labor Income,1149534
-54,Female,Labor Income,1507485
-54,Male,Pension / Retirement Allowance,541490
-54,Female,Pension / Retirement Allowance,220461
-54,Male,Minimum Living Allowance,188700
-54,Female,Minimum Living Allowance,30233
-54,Male,Unemployment Insurance Benefits,11581
-54,Female,Unemployment Insurance Benefits,1126
-54,Male,Property Income,72
-54,Female,Property Income,24388
-54,Male,Family support from other members,10880
-54,Female,Family support from other members,410296
-54,Male,Other,330614
-54,Female,Other,127436
-55-59 years old,Male,Labor Income,4994132
-55-59 years old,Female,Labor Income,5568497
-55-59 years old,Male,Pension / Retirement Allowance,1853750
-55-59 years old,Female,Pension / Retirement Allowance,1680640
-55-59 years old,Male,Minimum Living Allowance,1297577
-55-59 years old,Female,Minimum Living Allowance,146983
-55-59 years old,Male,Unemployment Insurance Benefits,58955
-55-59 years old,Female,Unemployment Insurance Benefits,3355
-55-59 years old,Male,Property Income,165
-55-59 years old,Female,Property Income,107247
-55-59 years old,Male,Family support from other members,45641
-55-59 years old,Female,Family support from other members,1920407
-55-59 years old,Male,Other,1460807
-55-59 years old,Female,Other,553033
-55,Male,Labor Income,1131681
-55,Female,Labor Income,1379621
-55,Male,Pension / Retirement Allowance,473459
-55,Female,Pension / Retirement Allowance,306223
-55,Male,Minimum Living Allowance,250245
-55,Female,Minimum Living Allowance,30776
-55,Male,Unemployment Insurance Benefits,11862
-55,Female,Unemployment Insurance Benefits,1163
-55,Male,Property Income,31
-55,Female,Property Income,23900
-55,Male,Family support from other members,10216
-55,Female,Family support from other members,410142
-55,Male,Other,322361
-55,Female,Other,124352
-56,Male,Labor Income,1112306
-56,Female,Labor Income,1277065
-56,Male,Pension / Retirement Allowance,427996
-56,Female,Pension / Retirement Allowance,354110
-56,Male,Minimum Living Allowance,280370
-56,Female,Minimum Living Allowance,31530
-56,Male,Unemployment Insurance Benefits,12469
-56,Female,Unemployment Insurance Benefits,482
-56,Male,Property Income,36
-56,Female,Property Income,23432
-56,Male,Family support from other members,10059
-56,Female,Family support from other members,414247
-56,Male,Other,319866
-56,Female,Other,122521
-57,Male,Labor Income,1277233
-57,Female,Labor Income,1410836
-57,Male,Pension / Retirement Allowance,456521
-57,Female,Pension / Retirement Allowance,455917
-57,Male,Minimum Living Allowance,353210
-57,Female,Minimum Living Allowance,37373
-57,Male,Unemployment Insurance Benefits,14461
-57,Female,Unemployment Insurance Benefits,696
-57,Male,Property Income,53
-57,Female,Property Income,27283
-57,Male,Family support from other members,11406
-57,Female,Family support from other members,493993
-57,Male,Other,371885
-57,Female,Other,141452
-58,Male,Labor Income,943836
-58,Female,Labor Income,999737
-58,Male,Pension / Retirement Allowance,327716
-58,Female,Pension / Retirement Allowance,333770
-58,Male,Minimum Living Allowance,251884
-58,Female,Minimum Living Allowance,29424
-58,Male,Unemployment Insurance Benefits,12397
-58,Female,Unemployment Insurance Benefits,592
-58,Male,Property Income,29
-58,Female,Property Income,20909
-58,Male,Family support from other members,8739
-58,Female,Family support from other members,388032
-58,Male,Other,289664
-58,Female,Other,106631
-59,Male,Labor Income,529076
-59,Female,Labor Income,501238
-59,Male,Pension / Retirement Allowance,168058
-59,Female,Pension / Retirement Allowance,230620
-59,Male,Minimum Living Allowance,161868
-59,Female,Minimum Living Allowance,17880
-59,Male,Unemployment Insurance Benefits,7766
-59,Female,Unemployment Insurance Benefits,422
-59,Male,Property Income,16
-59,Female,Property Income,11723
-59,Male,Family support from other members,5221
-59,Female,Family support from other members,213993
-59,Male,Other,157031
-59,Female,Other,58077
-60,Male,Labor Income,635292
-60,Female,Labor Income,484632
-60,Male,Pension / Retirement Allowance,176826
-60,Female,Pension / Retirement Allowance,429212
-60,Male,Minimum Living Allowance,223195
-60,Female,Minimum Living Allowance,25790
-60,Male,Unemployment Insurance Benefits,11239
-60,Female,Unemployment Insurance Benefits,55
-60,Male,Property Income,26
-60,Female,Property Income,12854
-60,Male,Family support from other members,6076
-60,Female,Family support from other members,248904
-60,Male,Other,184096
-60,Female,Other,64288
-61,Male,Labor Income,589893
-61,Female,Labor Income,423165
-61,Male,Pension / Retirement Allowance,151226
-61,Female,Pension / Retirement Allowance,415555
-61,Male,Minimum Living Allowance,209067
-61,Female,Minimum Living Allowance,28067
-61,Male,Unemployment Insurance Benefits,11965
-61,Female,Unemployment Insurance Benefits,55
-61,Male,Property Income,31
-61,Female,Property Income,11654
-61,Male,Family support from other members,5568
-61,Female,Family support from other members,251785
-61,Male,Other,180572
-61,Female,Other,61209
-62,Male,Labor Income,753465
-62,Female,Labor Income,519067
-62,Male,Pension / Retirement Allowance,187550
-62,Female,Pension / Retirement Allowance,527990
-62,Male,Minimum Living Allowance,263422
-62,Female,Minimum Living Allowance,39639
-62,Male,Unemployment Insurance Benefits,16204
-62,Female,Unemployment Insurance Benefits,65
-62,Male,Property Income,38
-62,Female,Property Income,14019
-62,Male,Family support from other members,6630
-62,Female,Family support from other members,339680
-62,Male,Other,239221
-62,Female,Other,78648
-63,Male,Labor Income,843128
-63,Female,Labor Income,567013
-63,Male,Pension / Retirement Allowance,204307
-63,Female,Pension / Retirement Allowance,573142
-63,Male,Minimum Living Allowance,285977
-63,Female,Minimum Living Allowance,48021
-63,Male,Unemployment Insurance Benefits,19795
-63,Female,Unemployment Insurance Benefits,75
-63,Male,Property Income,32
-63,Female,Property Income,16222
-63,Male,Family support from other members,7619
-63,Female,Family support from other members,402300
-63,Male,Other,279603
-63,Female,Other,89596
-64,Male,Labor Income,779019
-64,Female,Labor Income,487787
-64,Male,Pension / Retirement Allowance,182320
-64,Female,Pension / Retirement Allowance,523206
-64,Male,Minimum Living Allowance,260878
-64,Female,Minimum Living Allowance,46734
-64,Male,Unemployment Insurance Benefits,20094
-64,Female,Unemployment Insurance Benefits,74
-64,Male,Property Income,38
-64,Female,Property Income,15184
-64,Male,Family support from other members,7294
-64,Female,Family support from other members,382810
-64,Male,Other,264830
-64,Female,Other,83834
-65,Male,Labor Income,807569
-65,Female,Labor Income,482631
-65,Male,Pension / Retirement Allowance,179688
-65,Female,Pension / Retirement Allowance,541443
-65,Male,Minimum Living Allowance,267103
-65,Female,Minimum Living Allowance,53424
-65,Male,Unemployment Insurance Benefits,23079
-65,Female,Unemployment Insurance Benefits,96
-65,Male,Property Income,45
-65,Female,Property Income,16337
-65,Male,Family support from other members,7862
-65,Female,Family support from other members,419473
-65,Male,Other,284537
-65,Female,Other,88203
-66,Male,Labor Income,812955
-66,Female,Labor Income,449471
-66,Male,Pension / Retirement Allowance,168320
-66,Female,Pension / Retirement Allowance,549944
-66,Male,Minimum Living Allowance,271865
-66,Female,Minimum Living Allowance,56901
-66,Male,Unemployment Insurance Benefits,24854
-66,Female,Unemployment Insurance Benefits,92
-66,Male,Property Income,48
-66,Female,Property Income,16190
-66,Male,Family support from other members,7778
-66,Female,Family support from other members,435970
-66,Male,Other,294028
-66,Female,Other,88724
-67,Male,Labor Income,734940
-67,Female,Labor Income,384691
-67,Male,Pension / Retirement Allowance,145235
-67,Female,Pension / Retirement Allowance,480539
-67,Male,Minimum Living Allowance,237020
-67,Female,Minimum Living Allowance,56353
-67,Male,Unemployment Insurance Benefits,24803
-67,Female,Unemployment Insurance Benefits,82
-67,Male,Property Income,43
-67,Female,Property Income,14928
-67,Male,Family support from other members,7122
-67,Female,Family support from other members,417687
-67,Male,Other,278149
-67,Female,Other,82323
-68,Male,Labor Income,729689
-68,Female,Labor Income,358757
-68,Male,Pension / Retirement Allowance,134791
-68,Female,Pension / Retirement Allowance,474434
-68,Male,Minimum Living Allowance,231993
-68,Female,Minimum Living Allowance,59293
-68,Male,Unemployment Insurance Benefits,26584
-68,Female,Unemployment Insurance Benefits,101
-68,Male,Property Income,64
-68,Female,Property Income,14751
-68,Male,Family support from other members,7063
-68,Female,Family support from other members,435430
-68,Male,Other,286658
-68,Female,Other,82511
-69,Male,Labor Income,618789
-69,Female,Labor Income,273575
-69,Male,Pension / Retirement Allowance,103241
-69,Female,Pension / Retirement Allowance,408096
-69,Male,Minimum Living Allowance,198809
-69,Female,Minimum Living Allowance,52276
-69,Male,Unemployment Insurance Benefits,23681
-69,Female,Unemployment Insurance Benefits,71
-69,Male,Property Income,37
-69,Female,Property Income,12326
-69,Male,Family support from other members,5793
-69,Female,Family support from other members,383627
-69,Male,Other,250599
-69,Female,Other,70263
-70,Male,Labor Income,580091
-70,Female,Labor Income,227195
-70,Male,Pension / Retirement Allowance,84801
-70,Female,Pension / Retirement Allowance,394458
-70,Male,Minimum Living Allowance,187851
-70,Female,Minimum Living Allowance,53185
-70,Male,Unemployment Insurance Benefits,24290
-70,Female,Unemployment Insurance Benefits,76
-70,Male,Property Income,36
-70,Female,Property Income,11488
-70,Male,Family support from other members,5389
-70,Female,Family support from other members,380271
-70,Male,Other,243727
-70,Female,Other,65968
-71,Male,Labor Income,554238
-71,Female,Labor Income,195257
-71,Male,Pension / Retirement Allowance,70323
-71,Female,Pension / Retirement Allowance,375735
-71,Male,Minimum Living Allowance,177744
-71,Female,Minimum Living Allowance,54931
-71,Male,Unemployment Insurance Benefits,24573
-71,Female,Unemployment Insurance Benefits,76
-71,Male,Property Income,27
-71,Female,Property Income,10594
-71,Male,Family support from other members,4864
-71,Female,Family support from other members,390635
-71,Male,Other,244191
-71,Female,Other,64277
-72,Male,Labor Income,476409
-72,Female,Labor Income,150732
-72,Male,Pension / Retirement Allowance,54762
-72,Female,Pension / Retirement Allowance,319182
-72,Male,Minimum Living Allowance,151795
-72,Female,Minimum Living Allowance,48881
-72,Male,Unemployment Insurance Benefits,22162
-72,Female,Unemployment Insurance Benefits,65
-72,Male,Property Income,40
-72,Female,Property Income,8620
-72,Male,Family support from other members,4040
-72,Female,Family support from other members,344808
-72,Male,Other,215602
-72,Female,Other,54746
-73,Male,Labor Income,449783
-73,Female,Labor Income,127663
-73,Male,Pension / Retirement Allowance,45536
-73,Female,Pension / Retirement Allowance,305265
-73,Male,Minimum Living Allowance,143466
-73,Female,Minimum Living Allowance,48299
-73,Male,Unemployment Insurance Benefits,21953
-73,Female,Unemployment Insurance Benefits,63
-73,Male,Property Income,35
-73,Female,Property Income,7852
-73,Male,Family support from other members,3557
-73,Female,Family support from other members,334344
-73,Male,Other,208825
-73,Female,Other,51331
-74,Male,Labor Income,411234
-74,Female,Labor Income,102942
-74,Male,Pension / Retirement Allowance,37236
-74,Female,Pension / Retirement Allowance,276149
-74,Male,Minimum Living Allowance,130112
-74,Female,Minimum Living Allowance,44699
-74,Male,Unemployment Insurance Benefits,20601
-74,Female,Unemployment Insurance Benefits,46
-74,Male,Property Income,26
-74,Female,Property Income,6664
-74,Male,Family support from other members,3006
-74,Female,Family support from other members,310956
-74,Male,Other,195964
-74,Female,Other,46194
-75,Male,Labor Income,362263
-75,Female,Labor Income,81112
-75,Male,Pension / Retirement Allowance,28919
-75,Female,Pension / Retirement Allowance,238405
-75,Male,Minimum Living Allowance,112809
-75,Female,Minimum Living Allowance,40679
-75,Male,Unemployment Insurance Benefits,18978
-75,Female,Unemployment Insurance Benefits,47
-75,Male,Property Income,22
-75,Female,Property Income,5536
-75,Male,Family support from other members,2459
-75,Female,Family support from other members,284254
-75,Male,Other,178037
-75,Female,Other,40715
-76,Male,Labor Income,339876
-76,Female,Labor Income,67414
-76,Male,Pension / Retirement Allowance,23652
-76,Female,Pension / Retirement Allowance,227500
-76,Male,Minimum Living Allowance,107781
-76,Female,Minimum Living Allowance,39279
-76,Male,Unemployment Insurance Benefits,17779
-76,Female,Unemployment Insurance Benefits,37
-76,Male,Property Income,17
-76,Female,Property Income,4973
-76,Male,Family support from other members,2191
-76,Female,Family support from other members,275508
-76,Male,Other,169133
-76,Female,Other,37790
-77,Male,Labor Income,303470
-77,Female,Labor Income,51445
-77,Male,Pension / Retirement Allowance,18359
-77,Female,Pension / Retirement Allowance,202949
-77,Male,Minimum Living Allowance,97228
-77,Female,Minimum Living Allowance,34945
-77,Male,Unemployment Insurance Benefits,16269
-77,Female,Unemployment Insurance Benefits,33
-77,Male,Property Income,14
-77,Female,Property Income,4177
-77,Male,Family support from other members,1868
-77,Female,Family support from other members,248375
-77,Male,Other,152812
-77,Female,Other,32563
-78,Male,Labor Income,285377
-78,Female,Labor Income,41318
-78,Male,Pension / Retirement Allowance,14756
-78,Female,Pension / Retirement Allowance,196580
-78,Male,Minimum Living Allowance,94491
-78,Female,Minimum Living Allowance,32489
-78,Male,Unemployment Insurance Benefits,15212
-78,Female,Unemployment Insurance Benefits,28
-78,Male,Property Income,15
-78,Female,Property Income,3561
-78,Male,Family support from other members,1570
-78,Female,Family support from other members,233524
-78,Male,Other,143528
-78,Female,Other,30191
-79,Male,Labor Income,280328
-79,Female,Labor Income,34071
-79,Male,Pension / Retirement Allowance,12377
-79,Female,Pension / Retirement Allowance,192133
-79,Male,Minimum Living Allowance,92095
-79,Female,Minimum Living Allowance,32353
-79,Male,Unemployment Insurance Benefits,15151
-79,Female,Unemployment Insurance Benefits,29
-79,Male,Property Income,16
-79,Female,Property Income,3395
-79,Male,Family support from other members,1491
-79,Female,Family support from other members,234281
-79,Male,Other,144057
-79,Female,Other,28819
-80,Male,Labor Income,248148
-80,Female,Labor Income,24125
-80,Male,Pension / Retirement Allowance,8935
-80,Female,Pension / Retirement Allowance,175206
-80,Male,Minimum Living Allowance,83344
-80,Female,Minimum Living Allowance,28597
-80,Male,Unemployment Insurance Benefits,13706
-80,Female,Unemployment Insurance Benefits,23
-80,Male,Property Income,10
-80,Female,Property Income,2694
-80,Male,Family support from other members,1216
-80,Female,Family support from other members,206863
-80,Male,Other,127655
-80,Female,Other,24836
-81,Male,Labor Income,211898
-81,Female,Labor Income,15544
-81,Male,Pension / Retirement Allowance,5802
-81,Female,Pension / Retirement Allowance,148177
-81,Male,Minimum Living Allowance,72636
-81,Female,Minimum Living Allowance,23956
-81,Male,Unemployment Insurance Benefits,11584
-81,Female,Unemployment Insurance Benefits,19
-81,Male,Property Income,8
-81,Female,Property Income,2038
-81,Male,Family support from other members,931
-81,Female,Family support from other members,177487
-81,Male,Other,109963
-81,Female,Other,20206
-82,Male,Labor Income,215605
-82,Female,Labor Income,13943
-82,Male,Pension / Retirement Allowance,5202
-82,Female,Pension / Retirement Allowance,149124
-82,Male,Minimum Living Allowance,72350
-82,Female,Minimum Living Allowance,24328
-82,Male,Unemployment Insurance Benefits,11903
-82,Female,Unemployment Insurance Benefits,17
-82,Male,Property Income,10
-82,Female,Property Income,1993
-82,Male,Family support from other members,928
-82,Female,Family support from other members,185465
-82,Male,Other,114241
-82,Female,Other,20225
-83,Male,Labor Income,190288
-83,Female,Labor Income,10572
-83,Male,Pension / Retirement Allowance,4161
-83,Female,Pension / Retirement Allowance,128270
-83,Male,Minimum Living Allowance,61532
-83,Female,Minimum Living Allowance,20932
-83,Male,Unemployment Insurance Benefits,10665
-83,Female,Unemployment Insurance Benefits,22
-83,Male,Property Income,9
-83,Female,Property Income,1579
-83,Male,Family support from other members,774
-83,Female,Family support from other members,164686
-83,Male,Other,103446
-83,Female,Other,17414
-84,Male,Labor Income,175192
-84,Female,Labor Income,8421
-84,Male,Pension / Retirement Allowance,3434
-84,Female,Pension / Retirement Allowance,115788
-84,Male,Minimum Living Allowance,56855
-84,Female,Minimum Living Allowance,18577
-84,Male,Unemployment Insurance Benefits,9692
-84,Female,Unemployment Insurance Benefits,15
-84,Male,Property Income,10
-84,Female,Property Income,1309
-84,Male,Family support from other members,636
-84,Female,Family support from other members,149665
-84,Male,Other,95656
-84,Female,Other,15634
-85,Male,Labor Income,153627
-85,Female,Labor Income,6600
-85,Male,Pension / Retirement Allowance,2772
-85,Female,Pension / Retirement Allowance,97824
-85,Male,Minimum Living Allowance,48993
-85,Female,Minimum Living Allowance,16024
-85,Male,Unemployment Insurance Benefits,8522
-85,Female,Unemployment Insurance Benefits,10
-85,Male,Property Income,7
-85,Female,Property Income,1092
-85,Male,Family support from other members,543
-85,Female,Family support from other members,129713
-85,Male,Other,84918
-85,Female,Other,13477
-86,Male,Labor Income,133745
-86,Female,Labor Income,5029
-86,Male,Pension / Retirement Allowance,2235
-86,Female,Pension / Retirement Allowance,82863
-86,Male,Minimum Living Allowance,41382
-86,Female,Minimum Living Allowance,13751
-86,Male,Unemployment Insurance Benefits,7696
-86,Female,Unemployment Insurance Benefits,9
-86,Male,Property Income,4
-86,Female,Property Income,939
-86,Male,Family support from other members,451
-86,Female,Family support from other members,113390
-86,Male,Other,75172
-86,Female,Other,11338
-87,Male,Labor Income,120714
-87,Female,Labor Income,4018
-87,Male,Pension / Retirement Allowance,1843
-87,Female,Pension / Retirement Allowance,74123
-87,Male,Minimum Living Allowance,36185
-87,Female,Minimum Living Allowance,12411
-87,Male,Unemployment Insurance Benefits,7116
-87,Female,Unemployment Insurance Benefits,8
-87,Male,Property Income,5
-87,Female,Property Income,713
-87,Male,Family support from other members,358
-87,Female,Family support from other members,103512
-87,Male,Other,69141
-87,Female,Other,10147
-88,Male,Labor Income,92834
-88,Female,Labor Income,2719
-88,Male,Pension / Retirement Allowance,1315
-88,Female,Pension / Retirement Allowance,55016
-88,Male,Minimum Living Allowance,27056
-88,Female,Minimum Living Allowance,9226
-88,Male,Unemployment Insurance Benefits,5369
-88,Female,Unemployment Insurance Benefits,8
-88,Male,Property Income,5
-88,Female,Property Income,491
-88,Male,Family support from other members,274
-88,Female,Family support from other members,79141
-88,Male,Other,54032
-88,Female,Other,7681
-89,Male,Labor Income,73991
-89,Female,Labor Income,1980
-89,Male,Pension / Retirement Allowance,979
-89,Female,Pension / Retirement Allowance,43128
-89,Male,Minimum Living Allowance,20457
-89,Female,Minimum Living Allowance,7370
-89,Male,Unemployment Insurance Benefits,4453
-89,Female,Unemployment Insurance Benefits,6
-89,Male,Property Income,3
-89,Female,Property Income,386
-89,Male,Family support from other members,217
-89,Female,Family support from other members,63536
-89,Male,Other,44067
-89,Female,Other,6139
-90,Male,Labor Income,65023
-90,Female,Labor Income,1482
-90,Male,Pension / Retirement Allowance,775
-90,Female,Pension / Retirement Allowance,37266
-90,Male,Minimum Living Allowance,17782
-90,Female,Minimum Living Allowance,6405
-90,Male,Unemployment Insurance Benefits,3947
-90,Female,Unemployment Insurance Benefits,4
-90,Male,Property Income,3
-90,Female,Property Income,329
-90,Male,Family support from other members,175
-90,Female,Family support from other members,55271
-90,Male,Other,38950
-90,Female,Other,5317
-91,Male,Labor Income,45849
-91,Female,Labor Income,839
-91,Male,Pension / Retirement Allowance,449
-91,Female,Pension / Retirement Allowance,25364
-91,Male,Minimum Living Allowance,12698
-91,Female,Minimum Living Allowance,4445
-91,Male,Unemployment Insurance Benefits,2839
-91,Female,Unemployment Insurance Benefits,5
-91,Male,Property Income,4
-91,Female,Property Income,213
-91,Male,Family support from other members,116
-91,Female,Family support from other members,38446
-91,Male,Other,27420
-91,Female,Other,3574
-92,Male,Labor Income,38954
-92,Female,Labor Income,653
-92,Male,Pension / Retirement Allowance,364
-92,Female,Pension / Retirement Allowance,20336
-92,Male,Minimum Living Allowance,10214
-92,Female,Minimum Living Allowance,3689
-92,Male,Unemployment Insurance Benefits,2404
-92,Female,Unemployment Insurance Benefits,3
-92,Male,Property Income,3
-92,Female,Property Income,196
-92,Male,Family support from other members,118
-92,Female,Family support from other members,33031
-92,Male,Other,23899
-92,Female,Other,3026
-93,Male,Labor Income,27641
-93,Female,Labor Income,436
-93,Male,Pension / Retirement Allowance,234
-93,Female,Pension / Retirement Allowance,13921
-93,Male,Minimum Living Allowance,7041
-93,Female,Minimum Living Allowance,2628
-93,Male,Unemployment Insurance Benefits,1786
-93,Female,Unemployment Insurance Benefits,0
-93,Male,Property Income,0
-93,Female,Property Income,138
-93,Male,Family support from other members,83
-93,Female,Family support from other members,23421
-93,Male,Other,17042
-93,Female,Other,2192
-94,Male,Labor Income,19942
-94,Female,Labor Income,328
-94,Male,Pension / Retirement Allowance,179
-94,Female,Pension / Retirement Allowance,9868
-94,Male,Minimum Living Allowance,5064
-94,Female,Minimum Living Allowance,1920
-94,Male,Unemployment Insurance Benefits,1338
-94,Female,Unemployment Insurance Benefits,1
-94,Male,Property Income,1
-94,Female,Property Income,74
-94,Male,Family support from other members,44
-94,Female,Family support from other members,16485
-94,Male,Other,12282
-94,Female,Other,1540
-95,Male,Labor Income,15926
-95,Female,Labor Income,249
-95,Male,Pension / Retirement Allowance,154
-95,Female,Pension / Retirement Allowance,7268
-95,Male,Minimum Living Allowance,3894
-95,Female,Minimum Living Allowance,1549
-95,Male,Unemployment Insurance Benefits,1066
-95,Female,Unemployment Insurance Benefits,1
-95,Male,Property Income,1
-95,Female,Property Income,67
-95,Male,Family support from other members,42
-95,Female,Family support from other members,13086
-95,Male,Other,9913
-95,Female,Other,1229
-96,Male,Labor Income,11426
-96,Female,Labor Income,156
-96,Male,Pension / Retirement Allowance,84
-96,Female,Pension / Retirement Allowance,4949
-96,Male,Minimum Living Allowance,2707
-96,Female,Minimum Living Allowance,1079
-96,Male,Unemployment Insurance Benefits,802
-96,Female,Unemployment Insurance Benefits,2
-96,Male,Property Income,0
-96,Female,Property Income,42
-96,Male,Family support from other members,30
-96,Female,Family support from other members,9312
-96,Male,Other,7130
-96,Female,Other,949
-97,Male,Labor Income,7661
-97,Female,Labor Income,98
-97,Male,Pension / Retirement Allowance,65
-97,Female,Pension / Retirement Allowance,3205
-97,Male,Minimum Living Allowance,1739
-97,Female,Minimum Living Allowance,788
-97,Male,Unemployment Insurance Benefits,563
-97,Female,Unemployment Insurance Benefits,0
-97,Male,Property Income,0
-97,Female,Property Income,26
-97,Male,Family support from other members,18
-97,Female,Family support from other members,6250
-97,Male,Other,4860
-97,Female,Other,600
-98,Male,Labor Income,5145
-98,Female,Labor Income,80
-98,Male,Pension / Retirement Allowance,43
-98,Female,Pension / Retirement Allowance,2010
-98,Male,Minimum Living Allowance,1104
-98,Female,Minimum Living Allowance,512
-98,Male,Unemployment Insurance Benefits,377
-98,Female,Unemployment Insurance Benefits,0
-98,Male,Property Income,0
-98,Female,Property Income,23
-98,Male,Family support from other members,15
-98,Female,Family support from other members,4228
-98,Male,Other,3279
-98,Female,Other,440
-99,Male,Labor Income,3892
-99,Female,Labor Income,74
-99,Male,Pension / Retirement Allowance,48
-99,Female,Pension / Retirement Allowance,1459
-99,Male,Minimum Living Allowance,809
-99,Female,Minimum Living Allowance,359
-99,Male,Unemployment Insurance Benefits,269
-99,Female,Unemployment Insurance Benefits,1
-99,Male,Property Income,1
-99,Female,Property Income,11
-99,Male,Family support from other members,7
-99,Female,Family support from other members,3187
-99,Male,Other,2517
-99,Female,Other,337
-100 years and above,Male,Labor Income,5784
-100 years and above,Female,Labor Income,71
-100 years and above,Male,Pension / Retirement Allowance,51
-100 years and above,Female,Pension / Retirement Allowance,1801
-100 years and above,Male,Minimum Living Allowance,1096
-100 years and above,Female,Minimum Living Allowance,691
-100 years and above,Male,Unemployment Insurance Benefits,555
-100 years and above,Female,Unemployment Insurance Benefits,0
-100 years and above,Male,Property Income,0
-100 years and above,Female,Property Income,20
-100 years and above,Male,Family support from other members,14
-100 years and above,Female,Family support from other members,4515
-100 years and above,Male,Other,3716
-100 years and above,Female,Other,464
+age_category,income_type,population
+45,Total: total,2006712.0
+46,Total: total,2197494.0
+47,Total: total,2298050.0
+48,Total: total,2354836.0
+49,Total: total,2429187.0
+50,Total: total,2564829.0
+51,Total: total,2404959.0
+52,Total: total,2575521.0
+53,Total: total,2059446.0
+54,Total: total,2321425.0
+55,Total: total,2276177.0
+56,Total: total,2223387.0
+57,Total: total,2567550.0
+58,Total: total,1879095.0
+59,Total: total,1033953.0
+60,Total: total,1265735.0
+61,Total: total,1191490.0
+62,Total: total,1519108.0
+63,Total: total,1696369.0
+64,Total: total,1539629.0
+65,Total: total,1601607.0
+66,Total: total,1597292.0
+67,Total: total,1436603.0
+68,Total: total,1425277.0
+69,Total: total,1200234.0
+70,Total: total,1132641.0
+71,Total: total,1091505.0
+72,Total: total,927034.0
+73,Total: total,874817.0
+74,Total: total,787650.0
+75,Total: total,690748.0
+76,Total: total,652501.0
+77,Total: total,574487.0
+78,Total: total,537691.0
+79,Total: total,525081.0
+80,Total: total,462344.0
+81,Total: total,387427.0
+82,Total: total,395095.0
+83,Total: total,343475.0
+84,Total: total,309409.0
+85,Total: total,264740.0
+86,Total: total,227319.0
+87,Total: total,204932.0
+88,Total: total,154282.0
+89,Total: total,122545.0
+90,Total: total,106074.0
+91,Total: total,72886.0
+92,Total: total,60934.0
+93,Total: total,42736.0
+94,Total: total,30216.0
+95,Total: total,23449.0
+96,Total: total,16489.0
+97,Total: total,10967.0
+98,Total: total,7293.0
+99,Total: total,5428.0
+45,Total: male,1029558.0
+46,Total: male,1123949.0
+47,Total: male,1176498.0
+48,Total: male,1202544.0
+49,Total: male,1241906.0
+50,Total: male,1298030.0
+51,Total: male,1216599.0
+52,Total: male,1298846.0
+53,Total: male,1034436.0
+54,Total: male,1171891.0
+55,Total: male,1144496.0
+56,Total: male,1111081.0
+57,Total: male,1290317.0
+58,Total: male,935259.0
+59,Total: male,504877.0
+60,Total: male,630443.0
+61,Total: male,601597.0
+62,Total: male,765643.0
+63,Total: male,853241.0
+64,Total: male,760610.0
+65,Total: male,794038.0
+66,Total: male,784337.0
+67,Total: male,701663.0
+68,Total: male,695588.0
+69,Total: male,581445.0
+70,Total: male,552550.0
+71,Total: male,537267.0
+72,Total: male,450625.0
+73,Total: male,425034.0
+74,Total: male,376416.0
+75,Total: male,328485.0
+76,Total: male,312625.0
+77,Total: male,271017.0
+78,Total: male,252314.0
+79,Total: male,244753.0
+80,Total: male,214196.0
+81,Total: male,175529.0
+82,Total: male,179490.0
+83,Total: male,153187.0
+84,Total: male,134217.0
+85,Total: male,111113.0
+86,Total: male,93574.0
+87,Total: male,84218.0
+88,Total: male,61448.0
+89,Total: male,48554.0
+90,Total: male,41051.0
+91,Total: male,27037.0
+92,Total: male,21980.0
+93,Total: male,15095.0
+94,Total: male,10274.0
+95,Total: male,7523.0
+96,Total: male,5063.0
+97,Total: male,3306.0
+98,Total: male,2148.0
+99,Total: male,1536.0
+45,Total: female,977154.0
+46,Total: female,1073545.0
+47,Total: female,1121552.0
+48,Total: female,1152292.0
+49,Total: female,1187281.0
+50,Total: female,1266799.0
+51,Total: female,1188360.0
+52,Total: female,1276675.0
+53,Total: female,1025010.0
+54,Total: female,1149534.0
+55,Total: female,1131681.0
+56,Total: female,1112306.0
+57,Total: female,1277233.0
+58,Total: female,943836.0
+59,Total: female,529076.0
+60,Total: female,635292.0
+61,Total: female,589893.0
+62,Total: female,753465.0
+63,Total: female,843128.0
+64,Total: female,779019.0
+65,Total: female,807569.0
+66,Total: female,812955.0
+67,Total: female,734940.0
+68,Total: female,729689.0
+69,Total: female,618789.0
+70,Total: female,580091.0
+71,Total: female,554238.0
+72,Total: female,476409.0
+73,Total: female,449783.0
+74,Total: female,411234.0
+75,Total: female,362263.0
+76,Total: female,339876.0
+77,Total: female,303470.0
+78,Total: female,285377.0
+79,Total: female,280328.0
+80,Total: female,248148.0
+81,Total: female,211898.0
+82,Total: female,215605.0
+83,Total: female,190288.0
+84,Total: female,175192.0
+85,Total: female,153627.0
+86,Total: female,133745.0
+87,Total: female,120714.0
+88,Total: female,92834.0
+89,Total: female,73991.0
+90,Total: female,65023.0
+91,Total: female,45849.0
+92,Total: female,38954.0
+93,Total: female,27641.0
+94,Total: female,19942.0
+95,Total: female,15926.0
+96,Total: female,11426.0
+97,Total: female,7661.0
+98,Total: female,5145.0
+99,Total: female,3892.0
+45,Labor Income: male,935842.0
+46,Labor Income: male,1017936.0
+47,Labor Income: male,1060223.0
+48,Labor Income: male,1078545.0
+49,Labor Income: male,1106873.0
+50,Labor Income: male,1142744.0
+51,Labor Income: male,1052369.0
+52,Labor Income: male,1108834.0
+53,Labor Income: male,869962.0
+54,Labor Income: male,965995.0
+55,Labor Income: male,906162.0
+56,Labor Income: male,849069.0
+57,Labor Income: male,954315.0
+58,Labor Income: male,672021.0
+59,Labor Income: male,333180.0
+60,Labor Income: male,307806.0
+61,Labor Income: male,271939.0
+62,Labor Income: male,331517.0
+63,Labor Income: male,362706.0
+64,Labor Income: male,305467.0
+65,Labor Income: male,302943.0
+66,Labor Income: male,281151.0
+67,Labor Income: male,239456.0
+68,Labor Income: male,223966.0
+69,Labor Income: male,170334.0
+70,Labor Income: male,142394.0
+71,Labor Income: male,124934.0
+72,Labor Income: male,95970.0
+73,Labor Income: male,82127.0
+74,Labor Income: male,65706.0
+75,Labor Income: male,52193.0
+76,Labor Income: male,43762.0
+77,Labor Income: male,33086.0
+78,Labor Income: male,26562.0
+79,Labor Income: male,21694.0
+80,Labor Income: male,15190.0
+81,Labor Income: male,9742.0
+82,Labor Income: male,8741.0
+83,Labor Income: male,6411.0
+84,Labor Income: male,4987.0
+85,Labor Income: male,3828.0
+86,Labor Income: male,2794.0
+87,Labor Income: male,2175.0
+88,Labor Income: male,1404.0
+89,Labor Income: male,1001.0
+90,Labor Income: male,707.0
+91,Labor Income: male,390.0
+92,Labor Income: male,289.0
+93,Labor Income: male,202.0
+94,Labor Income: male,149.0
+95,Labor Income: male,95.0
+96,Labor Income: male,72.0
+97,Labor Income: male,33.0
+98,Labor Income: male,37.0
+99,Labor Income: male,26.0
+45,Labor Income: female,711338.0
+46,Labor Income: female,772867.0
+47,Labor Income: female,793837.0
+48,Labor Income: female,796269.0
+49,Labor Income: female,790971.0
+50,Labor Income: female,745227.0
+51,Labor Income: female,649263.0
+52,Labor Income: female,667753.0
+53,Labor Income: female,513175.0
+54,Labor Income: female,541490.0
+55,Labor Income: female,473459.0
+56,Labor Income: female,427996.0
+57,Labor Income: female,456521.0
+58,Labor Income: female,327716.0
+59,Labor Income: female,168058.0
+60,Labor Income: female,176826.0
+61,Labor Income: female,151226.0
+62,Labor Income: female,187550.0
+63,Labor Income: female,204307.0
+64,Labor Income: female,182320.0
+65,Labor Income: female,179688.0
+66,Labor Income: female,168320.0
+67,Labor Income: female,145235.0
+68,Labor Income: female,134791.0
+69,Labor Income: female,103241.0
+70,Labor Income: female,84801.0
+71,Labor Income: female,70323.0
+72,Labor Income: female,54762.0
+73,Labor Income: female,45536.0
+74,Labor Income: female,37236.0
+75,Labor Income: female,28919.0
+76,Labor Income: female,23652.0
+77,Labor Income: female,18359.0
+78,Labor Income: female,14756.0
+79,Labor Income: female,12377.0
+80,Labor Income: female,8935.0
+81,Labor Income: female,5802.0
+82,Labor Income: female,5202.0
+83,Labor Income: female,4161.0
+84,Labor Income: female,3434.0
+85,Labor Income: female,2772.0
+86,Labor Income: female,2235.0
+87,Labor Income: female,1843.0
+88,Labor Income: female,1315.0
+89,Labor Income: female,979.0
+90,Labor Income: female,775.0
+91,Labor Income: female,449.0
+92,Labor Income: female,364.0
+93,Labor Income: female,234.0
+94,Labor Income: female,179.0
+95,Labor Income: female,154.0
+96,Labor Income: female,84.0
+97,Labor Income: female,65.0
+98,Labor Income: female,43.0
+99,Labor Income: female,48.0
+45,Pension: male,375.0
+46,Pension: male,471.0
+47,Pension: male,709.0
+48,Pension: male,942.0
+49,Pension: male,1311.0
+50,Pension: male,9207.0
+51,Pension: male,15077.0
+52,Pension: male,20652.0
+53,Pension: male,20162.0
+54,Pension: male,31761.0
+55,Pension: male,55978.0
+56,Pension: male,73740.0
+57,Pension: male,102707.0
+58,Pension: male,81886.0
+59,Pension: male,68752.0
+60,Pension: male,206017.0
+61,Pension: male,206488.0
+62,Pension: male,264568.0
+63,Pension: male,287165.0
+64,Pension: male,262328.0
+65,Pension: male,274340.0
+66,Pension: male,278079.0
+67,Pension: male,243519.0
+68,Pension: male,242441.0
+69,Pension: male,209287.0
+70,Pension: male,206607.0
+71,Pension: male,197991.0
+72,Pension: male,167387.0
+73,Pension: male,161799.0
+74,Pension: male,146037.0
+75,Pension: male,125596.0
+76,Pension: male,119719.0
+77,Pension: male,105721.0
+78,Pension: male,102089.0
+79,Pension: male,100038.0
+80,Pension: male,91862.0
+81,Pension: male,75541.0
+82,Pension: male,76774.0
+83,Pension: male,66738.0
+84,Pension: male,58933.0
+85,Pension: male,48831.0
+86,Pension: male,41481.0
+87,Pension: male,37938.0
+88,Pension: male,27960.0
+89,Pension: male,22671.0
+90,Pension: male,19484.0
+91,Pension: male,12666.0
+92,Pension: male,10122.0
+93,Pension: male,6880.0
+94,Pension: male,4804.0
+95,Pension: male,3374.0
+96,Pension: male,2242.0
+97,Pension: male,1466.0
+98,Pension: male,906.0
+99,Pension: male,650.0
+45,Pension: female,4556.0
+46,Pension: female,7290.0
+47,Pension: female,10836.0
+48,Pension: female,15779.0
+49,Pension: female,30808.0
+50,Pension: female,136508.0
+51,Pension: female,163925.0
+52,Pension: female,184715.0
+53,Pension: female,148783.0
+54,Pension: female,188700.0
+55,Pension: female,250245.0
+56,Pension: female,280370.0
+57,Pension: female,353210.0
+58,Pension: female,251884.0
+59,Pension: female,161868.0
+60,Pension: female,223195.0
+61,Pension: female,209067.0
+62,Pension: female,263422.0
+63,Pension: female,285977.0
+64,Pension: female,260878.0
+65,Pension: female,267103.0
+66,Pension: female,271865.0
+67,Pension: female,237020.0
+68,Pension: female,231993.0
+69,Pension: female,198809.0
+70,Pension: female,187851.0
+71,Pension: female,177744.0
+72,Pension: female,151795.0
+73,Pension: female,143466.0
+74,Pension: female,130112.0
+75,Pension: female,112809.0
+76,Pension: female,107781.0
+77,Pension: female,97228.0
+78,Pension: female,94491.0
+79,Pension: female,92095.0
+80,Pension: female,83344.0
+81,Pension: female,72636.0
+82,Pension: female,72350.0
+83,Pension: female,61532.0
+84,Pension: female,56855.0
+85,Pension: female,48993.0
+86,Pension: female,41382.0
+87,Pension: female,36185.0
+88,Pension: female,27056.0
+89,Pension: female,20457.0
+90,Pension: female,17782.0
+91,Pension: female,12698.0
+92,Pension: female,10214.0
+93,Pension: female,7041.0
+94,Pension: female,5064.0
+95,Pension: female,3894.0
+96,Pension: female,2707.0
+97,Pension: female,1739.0
+98,Pension: female,1104.0
+99,Pension: female,809.0
+45,Minimum Living Allowance: male,10976.0
+46,Minimum Living Allowance: male,12634.0
+47,Minimum Living Allowance: male,13943.0
+48,Minimum Living Allowance: male,14981.0
+49,Minimum Living Allowance: male,16167.0
+50,Minimum Living Allowance: male,17203.0
+51,Minimum Living Allowance: male,17262.0
+52,Minimum Living Allowance: male,18854.0
+53,Minimum Living Allowance: male,15784.0
+54,Minimum Living Allowance: male,18652.0
+55,Minimum Living Allowance: male,18914.0
+56,Minimum Living Allowance: male,19061.0
+57,Minimum Living Allowance: male,22912.0
+58,Minimum Living Allowance: male,17027.0
+59,Minimum Living Allowance: male,10114.0
+60,Minimum Living Allowance: male,14551.0
+61,Minimum Living Allowance: male,16102.0
+62,Minimum Living Allowance: male,23435.0
+63,Minimum Living Allowance: male,28226.0
+64,Minimum Living Allowance: male,26640.0
+65,Minimum Living Allowance: male,30345.0
+66,Minimum Living Allowance: male,32047.0
+67,Minimum Living Allowance: male,31550.0
+68,Minimum Living Allowance: male,32709.0
+69,Minimum Living Allowance: male,28595.0
+70,Minimum Living Allowance: male,28895.0
+71,Minimum Living Allowance: male,30358.0
+72,Minimum Living Allowance: male,26719.0
+73,Minimum Living Allowance: male,26346.0
+74,Minimum Living Allowance: male,24098.0
+75,Minimum Living Allowance: male,21701.0
+76,Minimum Living Allowance: male,21500.0
+77,Minimum Living Allowance: male,18676.0
+78,Minimum Living Allowance: male,17277.0
+79,Minimum Living Allowance: male,17202.0
+80,Minimum Living Allowance: male,14891.0
+81,Minimum Living Allowance: male,12372.0
+82,Minimum Living Allowance: male,12425.0
+83,Minimum Living Allowance: male,10267.0
+84,Minimum Living Allowance: male,8885.0
+85,Minimum Living Allowance: male,7502.0
+86,Minimum Living Allowance: male,6055.0
+87,Minimum Living Allowance: male,5295.0
+88,Minimum Living Allowance: male,3857.0
+89,Minimum Living Allowance: male,2917.0
+90,Minimum Living Allowance: male,2458.0
+91,Minimum Living Allowance: male,1606.0
+92,Minimum Living Allowance: male,1285.0
+93,Minimum Living Allowance: male,842.0
+94,Minimum Living Allowance: male,582.0
+95,Minimum Living Allowance: male,483.0
+96,Minimum Living Allowance: male,277.0
+97,Minimum Living Allowance: male,225.0
+98,Minimum Living Allowance: male,135.0
+99,Minimum Living Allowance: male,90.0
+45,Minimum Living Allowance: female,7566.0
+46,Minimum Living Allowance: female,8579.0
+47,Minimum Living Allowance: female,9389.0
+48,Minimum Living Allowance: female,9848.0
+49,Minimum Living Allowance: female,10476.0
+50,Minimum Living Allowance: female,10653.0
+51,Minimum Living Allowance: female,10284.0
+52,Minimum Living Allowance: female,11355.0
+53,Minimum Living Allowance: female,9923.0
+54,Minimum Living Allowance: female,11581.0
+55,Minimum Living Allowance: female,11862.0
+56,Minimum Living Allowance: female,12469.0
+57,Minimum Living Allowance: female,14461.0
+58,Minimum Living Allowance: female,12397.0
+59,Minimum Living Allowance: female,7766.0
+60,Minimum Living Allowance: female,11239.0
+61,Minimum Living Allowance: female,11965.0
+62,Minimum Living Allowance: female,16204.0
+63,Minimum Living Allowance: female,19795.0
+64,Minimum Living Allowance: female,20094.0
+65,Minimum Living Allowance: female,23079.0
+66,Minimum Living Allowance: female,24854.0
+67,Minimum Living Allowance: female,24803.0
+68,Minimum Living Allowance: female,26584.0
+69,Minimum Living Allowance: female,23681.0
+70,Minimum Living Allowance: female,24290.0
+71,Minimum Living Allowance: female,24573.0
+72,Minimum Living Allowance: female,22162.0
+73,Minimum Living Allowance: female,21953.0
+74,Minimum Living Allowance: female,20601.0
+75,Minimum Living Allowance: female,18978.0
+76,Minimum Living Allowance: female,17779.0
+77,Minimum Living Allowance: female,16269.0
+78,Minimum Living Allowance: female,15212.0
+79,Minimum Living Allowance: female,15151.0
+80,Minimum Living Allowance: female,13706.0
+81,Minimum Living Allowance: female,11584.0
+82,Minimum Living Allowance: female,11903.0
+83,Minimum Living Allowance: female,10665.0
+84,Minimum Living Allowance: female,9692.0
+85,Minimum Living Allowance: female,8522.0
+86,Minimum Living Allowance: female,7696.0
+87,Minimum Living Allowance: female,7116.0
+88,Minimum Living Allowance: female,5369.0
+89,Minimum Living Allowance: female,4453.0
+90,Minimum Living Allowance: female,3947.0
+91,Minimum Living Allowance: female,2839.0
+92,Minimum Living Allowance: female,2404.0
+93,Minimum Living Allowance: female,1786.0
+94,Minimum Living Allowance: female,1338.0
+95,Minimum Living Allowance: female,1066.0
+96,Minimum Living Allowance: female,802.0
+97,Minimum Living Allowance: female,563.0
+98,Minimum Living Allowance: female,377.0
+99,Minimum Living Allowance: female,269.0
+45,Unemployment Benefits: male,727.0
+46,Unemployment Benefits: male,816.0
+47,Unemployment Benefits: male,886.0
+48,Unemployment Benefits: male,966.0
+49,Unemployment Benefits: male,1106.0
+50,Unemployment Benefits: male,1101.0
+51,Unemployment Benefits: male,1101.0
+52,Unemployment Benefits: male,1208.0
+53,Unemployment Benefits: male,926.0
+54,Unemployment Benefits: male,1054.0
+55,Unemployment Benefits: male,1132.0
+56,Unemployment Benefits: male,446.0
+57,Unemployment Benefits: male,643.0
+58,Unemployment Benefits: male,563.0
+59,Unemployment Benefits: male,406.0
+60,Unemployment Benefits: male,29.0
+61,Unemployment Benefits: male,24.0
+62,Unemployment Benefits: male,27.0
+63,Unemployment Benefits: male,43.0
+64,Unemployment Benefits: male,36.0
+65,Unemployment Benefits: male,51.0
+66,Unemployment Benefits: male,44.0
+67,Unemployment Benefits: male,39.0
+68,Unemployment Benefits: male,37.0
+69,Unemployment Benefits: male,34.0
+70,Unemployment Benefits: male,40.0
+71,Unemployment Benefits: male,49.0
+72,Unemployment Benefits: male,25.0
+73,Unemployment Benefits: male,28.0
+74,Unemployment Benefits: male,20.0
+75,Unemployment Benefits: male,25.0
+76,Unemployment Benefits: male,20.0
+77,Unemployment Benefits: male,19.0
+78,Unemployment Benefits: male,13.0
+79,Unemployment Benefits: male,13.0
+80,Unemployment Benefits: male,13.0
+81,Unemployment Benefits: male,11.0
+82,Unemployment Benefits: male,7.0
+83,Unemployment Benefits: male,13.0
+84,Unemployment Benefits: male,5.0
+85,Unemployment Benefits: male,3.0
+86,Unemployment Benefits: male,5.0
+87,Unemployment Benefits: male,3.0
+88,Unemployment Benefits: male,3.0
+89,Unemployment Benefits: male,3.0
+90,Unemployment Benefits: male,1.0
+91,Unemployment Benefits: male,1.0
+92,Unemployment Benefits: male,0.0
+93,Unemployment Benefits: male,0.0
+94,Unemployment Benefits: male,0.0
+95,Unemployment Benefits: male,0.0
+96,Unemployment Benefits: male,2.0
+97,Unemployment Benefits: male,0.0
+98,Unemployment Benefits: male,0.0
+99,Unemployment Benefits: male,0.0
+45,Unemployment Benefits: female,783.0
+46,Unemployment Benefits: female,841.0
+47,Unemployment Benefits: female,1085.0
+48,Unemployment Benefits: female,1325.0
+49,Unemployment Benefits: female,1523.0
+50,Unemployment Benefits: female,572.0
+51,Unemployment Benefits: female,77.0
+52,Unemployment Benefits: female,67.0
+53,Unemployment Benefits: female,53.0
+54,Unemployment Benefits: female,72.0
+55,Unemployment Benefits: female,31.0
+56,Unemployment Benefits: female,36.0
+57,Unemployment Benefits: female,53.0
+58,Unemployment Benefits: female,29.0
+59,Unemployment Benefits: female,16.0
+60,Unemployment Benefits: female,26.0
+61,Unemployment Benefits: female,31.0
+62,Unemployment Benefits: female,38.0
+63,Unemployment Benefits: female,32.0
+64,Unemployment Benefits: female,38.0
+65,Unemployment Benefits: female,45.0
+66,Unemployment Benefits: female,48.0
+67,Unemployment Benefits: female,43.0
+68,Unemployment Benefits: female,64.0
+69,Unemployment Benefits: female,37.0
+70,Unemployment Benefits: female,36.0
+71,Unemployment Benefits: female,27.0
+72,Unemployment Benefits: female,40.0
+73,Unemployment Benefits: female,35.0
+74,Unemployment Benefits: female,26.0
+75,Unemployment Benefits: female,22.0
+76,Unemployment Benefits: female,17.0
+77,Unemployment Benefits: female,14.0
+78,Unemployment Benefits: female,15.0
+79,Unemployment Benefits: female,16.0
+80,Unemployment Benefits: female,10.0
+81,Unemployment Benefits: female,8.0
+82,Unemployment Benefits: female,10.0
+83,Unemployment Benefits: female,9.0
+84,Unemployment Benefits: female,10.0
+85,Unemployment Benefits: female,7.0
+86,Unemployment Benefits: female,4.0
+87,Unemployment Benefits: female,5.0
+88,Unemployment Benefits: female,5.0
+89,Unemployment Benefits: female,3.0
+90,Unemployment Benefits: female,3.0
+91,Unemployment Benefits: female,4.0
+92,Unemployment Benefits: female,3.0
+93,Unemployment Benefits: female,0.0
+94,Unemployment Benefits: female,1.0
+95,Unemployment Benefits: female,1.0
+96,Unemployment Benefits: female,0.0
+97,Unemployment Benefits: female,0.0
+98,Unemployment Benefits: female,0.0
+99,Unemployment Benefits: female,1.0
+45,Property Income: male,9497.0
+46,Property Income: male,10631.0
+47,Property Income: male,11459.0
+48,Property Income: male,12101.0
+49,Property Income: male,12665.0
+50,Property Income: male,13624.0
+51,Property Income: male,13209.0
+52,Property Income: male,14405.0
+53,Property Income: male,11744.0
+54,Property Income: male,13508.0
+55,Property Income: male,13684.0
+56,Property Income: male,13373.0
+57,Property Income: male,15877.0
+58,Property Income: male,12170.0
+59,Property Income: male,6502.0
+60,Property Income: male,6778.0
+61,Property Income: male,6086.0
+62,Property Income: male,7389.0
+63,Property Income: male,8603.0
+64,Property Income: male,7890.0
+65,Property Income: male,8475.0
+66,Property Income: male,8412.0
+67,Property Income: male,7806.0
+68,Property Income: male,7688.0
+69,Property Income: male,6533.0
+70,Property Income: male,6099.0
+71,Property Income: male,5730.0
+72,Property Income: male,4580.0
+73,Property Income: male,4295.0
+74,Property Income: male,3658.0
+75,Property Income: male,3077.0
+76,Property Income: male,2782.0
+77,Property Income: male,2309.0
+78,Property Income: male,1991.0
+79,Property Income: male,1904.0
+80,Property Income: male,1478.0
+81,Property Income: male,1107.0
+82,Property Income: male,1065.0
+83,Property Income: male,805.0
+84,Property Income: male,673.0
+85,Property Income: male,549.0
+86,Property Income: male,488.0
+87,Property Income: male,355.0
+88,Property Income: male,217.0
+89,Property Income: male,169.0
+90,Property Income: male,154.0
+91,Property Income: male,97.0
+92,Property Income: male,78.0
+93,Property Income: male,55.0
+94,Property Income: male,30.0
+95,Property Income: male,25.0
+96,Property Income: male,12.0
+97,Property Income: male,8.0
+98,Property Income: male,8.0
+99,Property Income: male,4.0
+45,Property Income: female,9046.0
+46,Property Income: female,10017.0
+47,Property Income: female,10673.0
+48,Property Income: female,11465.0
+49,Property Income: female,12009.0
+50,Property Income: female,11776.0
+51,Property Income: female,10886.0
+52,Property Income: female,11829.0
+53,Property Income: female,9552.0
+54,Property Income: female,10880.0
+55,Property Income: female,10216.0
+56,Property Income: female,10059.0
+57,Property Income: female,11406.0
+58,Property Income: female,8739.0
+59,Property Income: female,5221.0
+60,Property Income: female,6076.0
+61,Property Income: female,5568.0
+62,Property Income: female,6630.0
+63,Property Income: female,7619.0
+64,Property Income: female,7294.0
+65,Property Income: female,7862.0
+66,Property Income: female,7778.0
+67,Property Income: female,7122.0
+68,Property Income: female,7063.0
+69,Property Income: female,5793.0
+70,Property Income: female,5389.0
+71,Property Income: female,4864.0
+72,Property Income: female,4040.0
+73,Property Income: female,3557.0
+74,Property Income: female,3006.0
+75,Property Income: female,2459.0
+76,Property Income: female,2191.0
+77,Property Income: female,1868.0
+78,Property Income: female,1570.0
+79,Property Income: female,1491.0
+80,Property Income: female,1216.0
+81,Property Income: female,931.0
+82,Property Income: female,928.0
+83,Property Income: female,774.0
+84,Property Income: female,636.0
+85,Property Income: female,543.0
+86,Property Income: female,451.0
+87,Property Income: female,358.0
+88,Property Income: female,274.0
+89,Property Income: female,217.0
+90,Property Income: female,175.0
+91,Property Income: female,116.0
+92,Property Income: female,118.0
+93,Property Income: female,83.0
+94,Property Income: female,44.0
+95,Property Income: female,42.0
+96,Property Income: female,30.0
+97,Property Income: female,18.0
+98,Property Income: female,15.0
+99,Property Income: female,7.0
+45,Family Support: male,26305.0
+46,Family Support: male,30401.0
+47,Family Support: male,34637.0
+48,Family Support: male,38273.0
+49,Family Support: male,44248.0
+50,Family Support: male,51109.0
+51,Family Support: male,56916.0
+52,Family Support: male,68638.0
+53,Family Support: male,62142.0
+54,Family Support: male,79682.0
+55,Family Support: male,87781.0
+56,Family Support: male,94381.0
+57,Family Support: male,122108.0
+58,Family Support: male,98368.0
+59,Family Support: male,56962.0
+60,Family Support: male,64808.0
+61,Family Support: male,71213.0
+62,Family Support: male,100459.0
+63,Family Support: male,122697.0
+64,Family Support: male,117980.0
+65,Family Support: male,134936.0
+66,Family Support: male,141942.0
+67,Family Support: male,139538.0
+68,Family Support: male,148772.0
+69,Family Support: male,133028.0
+70,Family Support: male,136544.0
+71,Family Support: male,146444.0
+72,Family Support: male,129206.0
+73,Family Support: male,125519.0
+74,Family Support: male,114992.0
+75,Family Support: male,106217.0
+76,Family Support: male,106375.0
+77,Family Support: male,95563.0
+78,Family Support: male,89996.0
+79,Family Support: male,90224.0
+80,Family Support: male,79208.0
+81,Family Support: male,67524.0
+82,Family Support: male,71224.0
+83,Family Support: male,61240.0
+84,Family Support: male,54009.0
+85,Family Support: male,44795.0
+86,Family Support: male,38218.0
+87,Family Support: male,34371.0
+88,Family Support: male,25109.0
+89,Family Support: male,19469.0
+90,Family Support: male,16321.0
+91,Family Support: male,11026.0
+92,Family Support: male,9132.0
+93,Family Support: male,6379.0
+94,Family Support: male,4203.0
+95,Family Support: male,3173.0
+96,Family Support: male,2182.0
+97,Family Support: male,1390.0
+98,Family Support: male,949.0
+99,Family Support: male,670.0
+45,Family Support: female,191233.0
+46,Family Support: female,215292.0
+47,Family Support: female,232819.0
+48,Family Support: female,252062.0
+49,Family Support: female,273402.0
+50,Family Support: female,291862.0
+51,Family Support: female,288236.0
+52,Family Support: female,328959.0
+53,Family Support: female,284434.0
+54,Family Support: female,330614.0
+55,Family Support: female,322361.0
+56,Family Support: female,319866.0
+57,Family Support: female,371885.0
+58,Family Support: female,289664.0
+59,Family Support: female,157031.0
+60,Family Support: female,184096.0
+61,Family Support: female,180572.0
+62,Family Support: female,239221.0
+63,Family Support: female,279603.0
+64,Family Support: female,264830.0
+65,Family Support: female,284537.0
+66,Family Support: female,294028.0
+67,Family Support: female,278149.0
+68,Family Support: female,286658.0
+69,Family Support: female,250599.0
+70,Family Support: female,243727.0
+71,Family Support: female,244191.0
+72,Family Support: female,215602.0
+73,Family Support: female,208825.0
+74,Family Support: female,195964.0
+75,Family Support: female,178037.0
+76,Family Support: female,169133.0
+77,Family Support: female,152812.0
+78,Family Support: female,143528.0
+79,Family Support: female,144057.0
+80,Family Support: female,127655.0
+81,Family Support: female,109963.0
+82,Family Support: female,114241.0
+83,Family Support: female,103446.0
+84,Family Support: female,95656.0
+85,Family Support: female,84918.0
+86,Family Support: female,75172.0
+87,Family Support: female,69141.0
+88,Family Support: female,54032.0
+89,Family Support: female,44067.0
+90,Family Support: female,38950.0
+91,Family Support: female,27420.0
+92,Family Support: female,23899.0
+93,Family Support: female,17042.0
+94,Family Support: female,12282.0
+95,Family Support: female,9913.0
+96,Family Support: female,7130.0
+97,Family Support: female,4860.0
+98,Family Support: female,3279.0
+99,Family Support: female,2517.0
+45,Other: male,45836.0
+46,Other: male,51060.0
+47,Other: male,54641.0
+48,Other: male,56736.0
+49,Other: male,59536.0
+50,Other: male,63042.0
+51,Other: male,60665.0
+52,Other: male,66255.0
+53,Other: male,53716.0
+54,Other: male,61239.0
+55,Other: male,60845.0
+56,Other: male,61011.0
+57,Other: male,71755.0
+58,Other: male,53224.0
+59,Other: male,28961.0
+60,Other: male,30454.0
+61,Other: male,29745.0
+62,Other: male,38248.0
+63,Other: male,43801.0
+64,Other: male,40269.0
+65,Other: male,42948.0
+66,Other: male,42662.0
+67,Other: male,39755.0
+68,Other: male,39975.0
+69,Other: male,33634.0
+70,Other: male,31971.0
+71,Other: male,31761.0
+72,Other: male,26738.0
+73,Other: male,24920.0
+74,Other: male,21905.0
+75,Other: male,19676.0
+76,Other: male,18467.0
+77,Other: male,15643.0
+78,Other: male,14386.0
+79,Other: male,13678.0
+80,Other: male,11554.0
+81,Other: male,9232.0
+82,Other: male,9254.0
+83,Other: male,7713.0
+84,Other: male,6725.0
+85,Other: male,5605.0
+86,Other: male,4533.0
+87,Other: male,4081.0
+88,Other: male,2898.0
+89,Other: male,2324.0
+90,Other: male,1926.0
+91,Other: male,1251.0
+92,Other: male,1074.0
+93,Other: male,737.0
+94,Other: male,506.0
+95,Other: male,373.0
+96,Other: male,276.0
+97,Other: male,184.0
+98,Other: male,113.0
+99,Other: male,96.0
+45,Other: female,52632.0
+46,Other: female,58659.0
+47,Other: female,62913.0
+48,Other: female,65544.0
+49,Other: female,68092.0
+50,Other: female,70201.0
+51,Other: female,65689.0
+52,Other: female,71997.0
+53,Other: female,59090.0
+54,Other: female,66197.0
+55,Other: female,63507.0
+56,Other: female,61510.0
+57,Other: female,69697.0
+58,Other: female,53407.0
+59,Other: female,29116.0
+60,Other: female,33834.0
+61,Other: female,31464.0
+62,Other: female,40400.0
+63,Other: female,45795.0
+64,Other: female,43565.0
+65,Other: female,45255.0
+66,Other: female,46062.0
+67,Other: female,42568.0
+68,Other: female,42536.0
+69,Other: female,36629.0
+70,Other: female,33997.0
+71,Other: female,32516.0
+72,Other: female,28008.0
+73,Other: female,26411.0
+74,Other: female,24289.0
+75,Other: female,21039.0
+76,Other: female,19323.0
+77,Other: female,16920.0
+78,Other: female,15805.0
+79,Other: female,15141.0
+80,Other: female,13282.0
+81,Other: female,10974.0
+82,Other: female,10971.0
+83,Other: female,9701.0
+84,Other: female,8909.0
+85,Other: female,7872.0
+86,Other: female,6805.0
+87,Other: female,6066.0
+88,Other: female,4783.0
+89,Other: female,3815.0
+90,Other: female,3391.0
+91,Other: female,2323.0
+92,Other: female,1952.0
+93,Other: female,1455.0
+94,Other: female,1034.0
+95,Other: female,856.0
+96,Other: female,673.0
+97,Other: female,416.0
+98,Other: female,327.0
+99,Other: female,241.0

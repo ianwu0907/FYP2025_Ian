@@ -1,19 +1,19 @@
-aboriginal_identity,feeding_history,predicted_probability
-predicted probability,only breastfed,0.09
-predicted probability,both breastfed and bottle-fed,0.11
-predicted probability,only bottle-fed,0.14
-predicted probability,never breastfed,0.14
-predicted probability,breastfed 0 to 6 months,0.11
-predicted probability,breastfed more than 6 months,0.1
-predicted probability,only breastfed,0.08
-predicted probability,both breastfed and bottle-fed,0.12
-predicted probability,only bottle-fed,0.12
-predicted probability,never breastfed,0.12
-predicted probability,breastfed 0 to 6 months,0.12
-predicted probability,breastfed more than 6 months,0.1
-predicted probability,only breastfed,0.06
-predicted probability,both breastfed and bottle-fed,0.09
-predicted probability,only bottle-fed,0.08
-predicted probability,never breastfed,0.09
-predicted probability,breastfed 0 to 6 months,0.09
-predicted probability,breastfed more than 6 months,0.09
+feeding_history,aboriginal_identity,predicted_probability
+only breastfed,predicted probability,0.09
+both breastfed and bottle-fed,predicted probability,0.11
+only bottle-fed,predicted probability,0.14
+never breastfed,predicted probability,0.14
+breastfed 0 to 6 months,predicted probability,0.11
+breastfed more than 6 months,predicted probability,0.10
+only breastfed,predicted probability,0.08
+both breastfed and bottle-fed,predicted probability,0.12
+only bottle-fed,predicted probability,0.12
+never breastfed,predicted probability,0.12
+breastfed 0 to 6 months,predicted probability,0.12
+breastfed more than 6 months,predicted probability,0.10
+only breastfed,predicted probability,0.06
+both breastfed and bottle-fed,predicted probability,0.09
+only bottle-fed,predicted probability,0.08
+never breastfed,predicted probability,0.09
+breastfed 0 to 6 months,predicted probability,0.09
+breastfed more than 6 months,predicted probability,0.09

@@ -1,4 +1,4 @@
-Statistical Date,Terminal Type,Source Details,Traffic Source,Visitors,Number of buyers who placed orders,Order conversion rate,Paid Buyers,Payment Conversion Rate,Payment Amount,UV Value
+statistical_date,terminal_type,source,traffic_source,visitors,number_of_buyers,order_conversion_rate,paid_buyers,payment_conversion_rate,payment_amount,uv_value
 2019-10-01 ~ 2019-10-31,Wireless End,Direct Train,Paid Traffic,799,26,0.0325,22,0.0275,827.55,1.04
 2019-10-01 ~ 2019-10-31,Wireless End,Direct Access,Self-access,1,0,0.0,0,0.0,0.0,0.0
 2019-10-01 ~ 2019-10-31,Wireless End,Alipay Mini Program - Daily Must Grab,Free traffic within Taobao,18,3,0.1667,3,0.1667,61.68,3.43

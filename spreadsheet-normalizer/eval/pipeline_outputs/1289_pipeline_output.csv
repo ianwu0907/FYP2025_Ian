@@ -1,19 +1,109 @@
-characteristic,sex,age_group,marital_status,level_of_education,labour_force_participation,presence_of_children,religious_attendance,volunteer_rate,average_number_of_hours
-45 to 54,men,15 to 19,,women,20 to 24,25 to 34,35 to 44,45.0,150.0
-55 to 64,men,15 to 19,,women,20 to 24,25 to 34,35 to 44,41.0,203.0
-65 to 74,men,15 to 19,,women,20 to 24,25 to 34,35 to 44,38.0,231.0
-75 years and older,men,15 to 19,,women,20 to 24,25 to 34,35 to 44,27.0,196.0
-"single, never married",men,15 to 19,married or common-law,women,20 to 24,25 to 34,35 to 44,47.0,139.0
-separated or divorced,men,15 to 19,married or common-law,women,20 to 24,25 to 34,35 to 44,37.0,167.0
-widowed,men,15 to 19,married or common-law,women,20 to 24,25 to 34,35 to 44,27.0,228.0
-high school diploma,men,15 to 19,married or common-law,less than high school,20 to 24,25 to 34,35 to 44,37.0,142.0
-post-secondary diploma or certificate,men,15 to 19,married or common-law,less than high school,20 to 24,25 to 34,35 to 44,42.0,142.0
-university degree,men,15 to 19,married or common-law,less than high school,20 to 24,25 to 34,35 to 44,55.0,170.0
-unemployed,men,15 to 19,married or common-law,less than high school,employed,25 to 34,35 to 44,45.0,182.0
-not in the labour force,men,15 to 19,married or common-law,less than high school,employed,25 to 34,35 to 44,38.0,191.0
-pre-school aged children only,men,15 to 19,married or common-law,less than high school,employed,no child,35 to 44,37.0,122.0
-both pre-school and school-aged children,men,15 to 19,married or common-law,less than high school,employed,no child,35 to 44,52.0,121.0
-school-aged children only,men,15 to 19,married or common-law,less than high school,employed,no child,35 to 44,59.0,139.0
-other,men,15 to 19,married or common-law,less than high school,employed,no child,weekly,40.0,133.0
-canada,men,15 to 19,married or common-law,less than high school,employed,no child,weekly,45.0,150.0
-outside canada,men,15 to 19,married or common-law,less than high school,employed,no child,weekly,38.0,162.0
+section_header,characteristics,year,volunteer_rate,average_number_of_hours
+men,men,2013,42.0,164.0
+men,men,2010,46.0,153.0
+men,men,2007,45.0,168.0
+men,men,2004,44.0,168.0
+women,women,2013,45.0,145.0
+women,women,2010,48.0,158.0
+women,women,2007,47.0,164.0
+women,women,2004,47.0,168.0
+15 to 19,15 to 19,2013,66.0,110.0
+15 to 19,15 to 19,2010,66.0,115.0
+15 to 19,15 to 19,2007,65.0,116.0
+15 to 19,15 to 19,2004,65.0,127.0
+20 to 24,20 to 24,2013,42.0,147.0
+20 to 24,20 to 24,2010,48.0,159.0
+20 to 24,20 to 24,2007,47.0,182.0
+20 to 24,20 to 24,2004,43.0,161.0
+25 to 34,25 to 34,2013,42.0,126.0
+25 to 34,25 to 34,2010,46.0,109.0
+25 to 34,25 to 34,2007,40.0,133.0
+25 to 34,25 to 34,2004,42.0,137.0
+35 to 44,35 to 44,2013,48.0,122.0
+35 to 44,35 to 44,2010,54.0,136.0
+35 to 44,35 to 44,2007,52.0,158.0
+35 to 44,35 to 44,2004,51.0,152.0
+45 to 54,45 to 54,2013,45.0,150.0
+45 to 54,45 to 54,2010,45.0,168.0
+45 to 54,45 to 54,2007,48.0,169.0
+45 to 54,45 to 54,2004,47.0,176.0
+55 to 64,55 to 64,2013,41.0,203.0
+55 to 64,55 to 64,2010,41.0,201.0
+55 to 64,55 to 64,2007,40.0,206.0
+55 to 64,55 to 64,2004,42.0,202.0
+65 to 74,65 to 74,2013,38.0,231.0
+65 to 74,65 to 74,2010,40.0,236.0
+65 to 74,65 to 74,2007,40.0,216.0
+65 to 74,65 to 74,2004,39.0,250.0
+75 years and older,75 years and older,2013,27.0,196.0
+75 years and older,75 years and older,2010,31.0,198.0
+75 years and older,75 years and older,2007,29.0,222.0
+75 years and older,75 years and older,2004,23.0,234.0
+married or common-law,married or common-law,2013,44.0,156.0
+married or common-law,married or common-law,2010,47.0,160.0
+married or common-law,married or common-law,2007,47.0,168.0
+married or common-law,married or common-law,2004,46.0,172.0
+"single, never married","single, never married",2013,47.0,139.0
+"single, never married","single, never married",2010,51.0,134.0
+"single, never married","single, never married",2007,48.0,153.0
+"single, never married","single, never married",2004,48.0,148.0
+separated or divorced,separated or divorced,2013,37.0,167.0
+separated or divorced,separated or divorced,2010,42.0,183.0
+separated or divorced,separated or divorced,2007,39.0,197.0
+separated or divorced,separated or divorced,2004,43.0,199.0
+widowed,widowed,2013,27.0,228.0
+widowed,widowed,2010,32.0,204.0
+widowed,widowed,2007,31.0,179.0
+widowed,widowed,2004,28.0,201.0
+less than high school,less than high school,2013,39.0,159.0
+less than high school,less than high school,2010,37.0,148.0
+less than high school,less than high school,2007,39.0,136.0
+less than high school,less than high school,2004,37.0,140.0
+high school diploma,high school diploma,2013,37.0,142.0
+high school diploma,high school diploma,2010,47.0,171.0
+high school diploma,high school diploma,2007,44.0,152.0
+high school diploma,high school diploma,2004,45.0,163.0
+post-secondary diploma or certificate,post-secondary diploma or certificate,2013,42.0,142.0
+post-secondary diploma or certificate,post-secondary diploma or certificate,2010,45.0,140.0
+post-secondary diploma or certificate,post-secondary diploma or certificate,2007,47.0,168.0
+post-secondary diploma or certificate,post-secondary diploma or certificate,2004,46.0,172.0
+university degree,university degree,2013,55.0,170.0
+university degree,university degree,2010,58.0,160.0
+university degree,university degree,2007,57.0,187.0
+university degree,university degree,2004,59.0,180.0
+not in the labour force,not in the labour force,2013,38.0,191.0
+not in the labour force,not in the labour force,2010,44.0,189.0
+not in the labour force,not in the labour force,2007,44.0,190.0
+not in the labour force,not in the labour force,2004,43.0,199.0
+no child,no child,2013,38.0,169.0
+no child,no child,2010,41.0,175.0
+no child,no child,2007,39.0,184.0
+no child,no child,2004,40.0,191.0
+pre-school aged children only,pre-school aged children only,2013,37.0,122.0
+pre-school aged children only,pre-school aged children only,2010,45.0,87.0
+pre-school aged children only,pre-school aged children only,2007,41.0,110.0
+pre-school aged children only,pre-school aged children only,2004,43.0,126.0
+both pre-school and school-aged children,both pre-school and school-aged children,2013,52.0,121.0
+both pre-school and school-aged children,both pre-school and school-aged children,2010,56.0,122.0
+both pre-school and school-aged children,both pre-school and school-aged children,2007,54.0,147.0
+both pre-school and school-aged children,both pre-school and school-aged children,2004,53.0,141.0
+school-aged children only,school-aged children only,2013,59.0,139.0
+school-aged children only,school-aged children only,2010,59.0,146.0
+school-aged children only,school-aged children only,2007,62.0,153.0
+school-aged children only,school-aged children only,2004,59.0,142.0
+weekly,weekly,2013,59.0,215.0
+weekly,weekly,2010,65.0,202.0
+weekly,weekly,2007,66.0,232.0
+weekly,weekly,2004,62.0,230.0
+other,other,2013,40.0,133.0
+other,other,2010,44.0,141.0
+other,other,2007,43.0,142.0
+other,other,2004,43.0,147.0
+canada,canada,2013,45.0,150.0
+canada,canada,2010,49.0,155.0
+canada,canada,2007,47.0,165.0
+canada,canada,2004,46.0,167.0
+outside canada,outside canada,2013,38.0,162.0
+outside canada,outside canada,2010,40.0,158.0
+outside canada,outside canada,2007,40.0,168.0
+outside canada,outside canada,2004,40.0,172.0

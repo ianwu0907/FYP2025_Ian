@@ -1,49 +1,133 @@
-title,year,country,peak_chart_position
+title,year,peak_chart_region,peak_chart_position,album
+"\Toxic\""""",1999,"Peak chart positions
+US",,The Gift of Game
+"\Darkside\""""",2000,"Peak chart positions
+US",,The Gift of Game
 "\Butterfly\""""",2000,"Peak chart positions
-US",1
+US",1.0,The Gift of Game
+"\Revolving Door\""""",2001,"Peak chart positions
+US",,The Gift of Game
+"\Drowning\""""",2002,"Peak chart positions
+US",,Darkhorse
+"\Hurt You So Bad\""""",2003,"Peak chart positions
+US",,Darkhorse
+"\Toxic\""""",1999,"Peak chart positions
+US
+Alt.",,The Gift of Game
+"\Darkside\""""",2000,"Peak chart positions
+US
+Alt.",,The Gift of Game
 "\Butterfly\""""",2000,"Peak chart positions
 US
-Alt.",1
+Alt.",1.0,The Gift of Game
+"\Revolving Door\""""",2001,"Peak chart positions
+US
+Alt.",,The Gift of Game
 "\Drowning\""""",2002,"Peak chart positions
 US
-Alt.",24
+Alt.",24.0,Darkhorse
+"\Hurt You So Bad\""""",2003,"Peak chart positions
+US
+Alt.",,Darkhorse
+"\Toxic\""""",1999,"Peak chart positions
+US
+Main. Rock",,The Gift of Game
+"\Darkside\""""",2000,"Peak chart positions
+US
+Main. Rock",,The Gift of Game
 "\Butterfly\""""",2000,"Peak chart positions
 US
-Main. Rock",21
+Main. Rock",21.0,The Gift of Game
+"\Revolving Door\""""",2001,"Peak chart positions
+US
+Main. Rock",,The Gift of Game
 "\Drowning\""""",2002,"Peak chart positions
 US
-Main. Rock",24
+Main. Rock",24.0,Darkhorse
+"\Hurt You So Bad\""""",2003,"Peak chart positions
+US
+Main. Rock",,Darkhorse
+"\Toxic\""""",1999,"Peak chart positions
+AUS",,The Gift of Game
+"\Darkside\""""",2000,"Peak chart positions
+AUS",,The Gift of Game
 "\Butterfly\""""",2000,"Peak chart positions
-AUS",4
+AUS",4.0,The Gift of Game
 "\Revolving Door\""""",2001,"Peak chart positions
-AUS",76
-"\Butterfly\""""",2000,"Peak chart positions
-AUT",1
-"\Revolving Door\""""",2001,"Peak chart positions
-AUT",29
+AUS",76.0,The Gift of Game
 "\Drowning\""""",2002,"Peak chart positions
-AUT",45
+AUS",,Darkhorse
+"\Hurt You So Bad\""""",2003,"Peak chart positions
+AUS",,Darkhorse
+"\Toxic\""""",1999,"Peak chart positions
+AUT",,The Gift of Game
+"\Darkside\""""",2000,"Peak chart positions
+AUT",,The Gift of Game
 "\Butterfly\""""",2000,"Peak chart positions
-FIN",2
+AUT",1.0,The Gift of Game
 "\Revolving Door\""""",2001,"Peak chart positions
-FIN",19
-"\Butterfly\""""",2000,"Peak chart positions
-GER",1
-"\Revolving Door\""""",2001,"Peak chart positions
-GER",26
+AUT",29.0,The Gift of Game
 "\Drowning\""""",2002,"Peak chart positions
-GER",45
+AUT",45.0,Darkhorse
+"\Hurt You So Bad\""""",2003,"Peak chart positions
+AUT",,Darkhorse
+"\Toxic\""""",1999,"Peak chart positions
+FIN",,The Gift of Game
+"\Darkside\""""",2000,"Peak chart positions
+FIN",,The Gift of Game
 "\Butterfly\""""",2000,"Peak chart positions
-NLD",8
+FIN",2.0,The Gift of Game
 "\Revolving Door\""""",2001,"Peak chart positions
-NLD",71
-"\Butterfly\""""",2000,"Peak chart positions
-SWI",1
-"\Revolving Door\""""",2001,"Peak chart positions
-SWI",43
-"\Butterfly\""""",2000,"Peak chart positions
-UK",3
-"\Revolving Door\""""",2001,"Peak chart positions
-UK",23
+FIN",19.0,The Gift of Game
 "\Drowning\""""",2002,"Peak chart positions
-UK",50
+FIN",,Darkhorse
+"\Hurt You So Bad\""""",2003,"Peak chart positions
+FIN",,Darkhorse
+"\Toxic\""""",1999,"Peak chart positions
+GER",,The Gift of Game
+"\Darkside\""""",2000,"Peak chart positions
+GER",,The Gift of Game
+"\Butterfly\""""",2000,"Peak chart positions
+GER",1.0,The Gift of Game
+"\Revolving Door\""""",2001,"Peak chart positions
+GER",26.0,The Gift of Game
+"\Drowning\""""",2002,"Peak chart positions
+GER",45.0,Darkhorse
+"\Hurt You So Bad\""""",2003,"Peak chart positions
+GER",,Darkhorse
+"\Toxic\""""",1999,"Peak chart positions
+NLD",,The Gift of Game
+"\Darkside\""""",2000,"Peak chart positions
+NLD",,The Gift of Game
+"\Butterfly\""""",2000,"Peak chart positions
+NLD",8.0,The Gift of Game
+"\Revolving Door\""""",2001,"Peak chart positions
+NLD",71.0,The Gift of Game
+"\Drowning\""""",2002,"Peak chart positions
+NLD",,Darkhorse
+"\Hurt You So Bad\""""",2003,"Peak chart positions
+NLD",,Darkhorse
+"\Toxic\""""",1999,"Peak chart positions
+SWI",,The Gift of Game
+"\Darkside\""""",2000,"Peak chart positions
+SWI",,The Gift of Game
+"\Butterfly\""""",2000,"Peak chart positions
+SWI",1.0,The Gift of Game
+"\Revolving Door\""""",2001,"Peak chart positions
+SWI",43.0,The Gift of Game
+"\Drowning\""""",2002,"Peak chart positions
+SWI",,Darkhorse
+"\Hurt You So Bad\""""",2003,"Peak chart positions
+SWI",,Darkhorse
+"\Toxic\""""",1999,"Peak chart positions
+UK",,The Gift of Game
+"\Darkside\""""",2000,"Peak chart positions
+UK",,The Gift of Game
+"\Butterfly\""""",2000,"Peak chart positions
+UK",3.0,The Gift of Game
+"\Revolving Door\""""",2001,"Peak chart positions
+UK",23.0,The Gift of Game
+"\Drowning\""""",2002,"Peak chart positions
+UK",50.0,Darkhorse
+"\Hurt You So Bad\""""",2003,"Peak chart positions
+UK",,Darkhorse

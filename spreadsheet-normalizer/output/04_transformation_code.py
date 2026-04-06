@@ -1,55 +1,39 @@
-import pandas as pd
-
 def transform(df):
-    # Skip metadata rows
-    data = df.iloc[3:]
-
-    # Forward-fill the header rows horizontally
+    # Multi-level header processing
     headers = df.iloc[[0, 1]].ffill(axis=1)
-    header_row = headers.iloc[0]
-    
-    # Build a column mapping based on the specified structure
-    column_map = {
-        1: ('cisgender', 'percent'), 
-        2: ('cisgender', 'confidence_interval_from'), 
-        3: ('cisgender', 'confidence_interval_to'), 
-        4: ('transgender', 'percent'), 
-        5: ('transgender', 'confidence_interval_from'), 
-        6: ('transgender', 'confidence_interval_to')
-    }
+    print(headers)
 
-    # Unpivot using the mapping
-    records = []
-    for i in range(len(data)):
-        if i < 3: 
+    # Prepare the final DataFrame
+    result = df.copy()
+    
+    # Extract region of birth
+    result['region_of_birth'] = result.iloc[:, 0]
+    print(result)
+
+    # Define the education types and their respective columns
+    education_types = [
+        ("non-university or university postsecondary diploma", 1),
+        ("university degree only", 2),
+        ("non-university or university postsecondary diploma", 3),
+        ("university degree only", 4)
+    ]
+
+    # Initialize an empty list to gather rows for the final DataFrame
+    tidy_data = []
+
+    # Iterate through the original DataFrame
+    for i in range(2, len(result)):
+        if i < 2 or result.iloc[i, 0] == "country of birth":
             continue
         
-        row = data.iloc[i]
-        self_rated_mental_health = row.iloc[0]
+        for edu_type, col_idx in education_types:
+            tidy_data.append({
+                'region_of_birth': result.iloc[i, 0],
+                'education_type': edu_type,
+                'percent': result.iloc[i, col_idx]
+            })
 
-        if self_rated_mental_health in ["Total", "Drop"]:
-            continue
+    tidy_df = pd.DataFrame(tidy_data)
+    print(tidy_df)
 
-        for col_idx, (group_val, var_name) in column_map.items():
-            value = pd.to_numeric(row.iloc[col_idx], errors='coerce')
-            
-            if var_name == 'percent':
-                percent = value
-            elif var_name == 'confidence_interval_from':
-                confidence_interval_from = value
-            elif var_name == 'confidence_interval_to':
-                confidence_interval_to = value
-            
-            if col_idx == 6:  # Ensure we append after the last column is processed
-                records.append({
-                    'self_rated_mental_health': self_rated_mental_health,
-                    'group': group_val,
-                    'percent': percent if group_val == 'cisgender' else row.iloc[1],
-                    'confidence_interval_from': confidence_interval_from,
-                    'confidence_interval_to': confidence_interval_to
-                })
-
-    result = pd.DataFrame(records)
-    print(result)
-    
-    return result
+    return tidy_df.reset_index(drop=True)
