@@ -1,0 +1,19 @@
+granular_shock,granular_shock_variant,statistical_measure,value
+granular shock,granular shock 1,coefficient,0.57
+granular shock,granular shock 2,coefficient,0.768
+granular shock,granular shock 3,coefficient,0.764
+granular shock,granular shock 1,standard error,0.216
+granular shock,granular shock 2,standard error,0.149
+granular shock,granular shock 3,standard error,0.149
+granular shock,granular shock 1,coefficient,-0.035
+granular shock,granular shock 2,coefficient,-0.086
+granular shock,granular shock 3,coefficient,-0.078
+granular shock,granular shock 1,standard error,0.014
+granular shock,granular shock 2,standard error,0.012
+granular shock,granular shock 3,standard error,0.011
+granular shock,granular shock 1,number of observations,946.0
+granular shock,granular shock 2,number of observations,946.0
+granular shock,granular shock 3,number of observations,946.0
+granular shock,granular shock 1,r-squared,0.13
+granular shock,granular shock 2,r-squared,0.37
+granular shock,granular shock 3,r-squared,0.36

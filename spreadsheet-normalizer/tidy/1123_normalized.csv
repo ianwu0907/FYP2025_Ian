@@ -1,0 +1,81 @@
+region,cohort,metric,age_range,value
+canada,tumours with one or more surgical intervention,percent,19 to 49 years,95
+canada,tumours with one or more surgical intervention,percent,50 to 69 years,93
+canada,tumours with one or more surgical intervention,percent,70 years and older,86
+newfoundland and labrador,linked cctlp tumour cohort,number,19 to 49 years,125
+newfoundland and labrador,tumours with one or more surgical intervention,number,19 to 49 years,125
+newfoundland and labrador,tumours with one or more surgical intervention,percent,19 to 49 years,100
+newfoundland and labrador,linked cctlp tumour cohort,number,50 to 69 years,145
+newfoundland and labrador,tumours with one or more surgical intervention,number,50 to 69 years,145
+newfoundland and labrador,tumours with one or more surgical intervention,percent,50 to 69 years,99
+newfoundland and labrador,linked cctlp tumour cohort,number,70 years and older,45
+newfoundland and labrador,tumours with one or more surgical intervention,number,70 years and older,40
+newfoundland and labrador,tumours with one or more surgical intervention,percent,70 years and older,93
+prince edward island,linked cctlp tumour cohort,number,19 to 49 years,10
+prince edward island,tumours with one or more surgical intervention,number,19 to 49 years,10
+prince edward island,tumours with one or more surgical intervention,percent,19 to 49 years,100
+prince edward island,linked cctlp tumour cohort,number,50 to 69 years,15
+prince edward island,tumours with one or more surgical intervention,number,50 to 69 years,10
+prince edward island,tumours with one or more surgical intervention,percent,50 to 69 years,80
+prince edward island,linked cctlp tumour cohort,number,70 years and older,5
+prince edward island,tumours with one or more surgical intervention,number,70 years and older,5
+prince edward island,tumours with one or more surgical intervention,percent,70 years and older,100
+nova scotia,linked cctlp tumour cohort,number,19 to 49 years,140
+nova scotia,tumours with one or more surgical intervention,number,19 to 49 years,135
+nova scotia,tumours with one or more surgical intervention,percent,19 to 49 years,96
+nova scotia,linked cctlp tumour cohort,number,50 to 69 years,160
+nova scotia,tumours with one or more surgical intervention,number,50 to 69 years,160
+nova scotia,tumours with one or more surgical intervention,percent,50 to 69 years,99
+nova scotia,linked cctlp tumour cohort,number,70 years and older,55
+nova scotia,tumours with one or more surgical intervention,number,70 years and older,50
+nova scotia,tumours with one or more surgical intervention,percent,70 years and older,93
+new brunswick,linked cctlp tumour cohort,number,19 to 49 years,140
+new brunswick,tumours with one or more surgical intervention,number,19 to 49 years,145
+new brunswick,tumours with one or more surgical intervention,percent,19 to 49 years,100
+new brunswick,linked cctlp tumour cohort,number,50 to 69 years,215
+new brunswick,tumours with one or more surgical intervention,number,50 to 69 years,215
+new brunswick,tumours with one or more surgical intervention,percent,50 to 69 years,99
+new brunswick,linked cctlp tumour cohort,number,70 years and older,50
+new brunswick,tumours with one or more surgical intervention,number,70 years and older,45
+new brunswick,tumours with one or more surgical intervention,percent,70 years and older,81
+ontario,tumours with one or more surgical intervention,percent,19 to 49 years,94
+ontario,tumours with one or more surgical intervention,percent,50 to 69 years,92
+ontario,linked cctlp tumour cohort,number,70 years and older,830
+ontario,tumours with one or more surgical intervention,number,70 years and older,715
+ontario,tumours with one or more surgical intervention,percent,70 years and older,86
+manitoba,linked cctlp tumour cohort,number,19 to 49 years,185
+manitoba,tumours with one or more surgical intervention,number,19 to 49 years,170
+manitoba,tumours with one or more surgical intervention,percent,19 to 49 years,91
+manitoba,linked cctlp tumour cohort,number,50 to 69 years,145
+manitoba,tumours with one or more surgical intervention,number,50 to 69 years,140
+manitoba,tumours with one or more surgical intervention,percent,50 to 69 years,95
+manitoba,linked cctlp tumour cohort,number,70 years and older,45
+manitoba,tumours with one or more surgical intervention,number,70 years and older,40
+manitoba,tumours with one or more surgical intervention,percent,70 years and older,84
+saskatchewan,linked cctlp tumour cohort,number,19 to 49 years,135
+saskatchewan,tumours with one or more surgical intervention,number,19 to 49 years,135
+saskatchewan,tumours with one or more surgical intervention,percent,19 to 49 years,98
+saskatchewan,linked cctlp tumour cohort,number,50 to 69 years,105
+saskatchewan,tumours with one or more surgical intervention,number,50 to 69 years,100
+saskatchewan,tumours with one or more surgical intervention,percent,50 to 69 years,96
+saskatchewan,linked cctlp tumour cohort,number,70 years and older,35
+saskatchewan,tumours with one or more surgical intervention,number,70 years and older,30
+saskatchewan,tumours with one or more surgical intervention,percent,70 years and older,80
+alberta,linked cctlp tumour cohort,number,19 to 49 years,720
+alberta,tumours with one or more surgical intervention,number,19 to 49 years,695
+alberta,tumours with one or more surgical intervention,percent,19 to 49 years,97
+alberta,linked cctlp tumour cohort,number,50 to 69 years,495
+alberta,tumours with one or more surgical intervention,number,50 to 69 years,470
+alberta,tumours with one or more surgical intervention,percent,50 to 69 years,94
+alberta,linked cctlp tumour cohort,number,70 years and older,125
+alberta,tumours with one or more surgical intervention,number,70 years and older,105
+alberta,tumours with one or more surgical intervention,percent,70 years and older,86
+british columbia,linked cctlp tumour cohort,number,19 to 49 years,505
+british columbia,tumours with one or more surgical intervention,number,19 to 49 years,470
+british columbia,tumours with one or more surgical intervention,percent,19 to 49 years,94
+british columbia,linked cctlp tumour cohort,number,50 to 69 years,450
+british columbia,tumours with one or more surgical intervention,number,50 to 69 years,420
+british columbia,tumours with one or more surgical intervention,percent,50 to 69 years,93
+british columbia,linked cctlp tumour cohort,number,70 years and older,165
+british columbia,tumours with one or more surgical intervention,number,70 years and older,140
+british columbia,tumours with one or more surgical intervention,percent,70 years and older,83

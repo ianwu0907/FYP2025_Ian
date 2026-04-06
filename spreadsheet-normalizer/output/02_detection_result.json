@@ -1,72 +1,42 @@
 {
   "physical": {
     "shape": {
-      "rows": 56,
-      "cols": 10
+      "rows": 13,
+      "cols": 3
     },
     "actual_column_names": [
-      "表3.1            ",
-      "Unnamed: 1",
-      "2011年、2016年及2021年按種族劃分的少數族裔人士數目",
-      "Unnamed: 3",
-      "Unnamed: 4",
-      "Unnamed: 5",
-      "Unnamed: 6",
-      "Unnamed: 7",
-      "Unnamed: 8",
-      "索引 Index"
+      "behaviour",
+      "beta",
+      "p-value"
     ],
-    "header_depth": 5,
-    "data_start_row": 5,
-    "data_end_row": 55,
-    "data_rows": 51,
+    "header_depth": 0,
+    "data_start_row": 0,
+    "data_end_row": 12,
+    "data_rows": 13,
     "column_dtype_profile": {
       "0": "text",
-      "1": "text",
-      "2": "empty",
-      "3": "numeric",
-      "4": "numeric",
-      "5": "numeric",
-      "6": "numeric",
-      "7": "numeric",
-      "8": "numeric",
-      "9": "empty"
+      "1": "numeric",
+      "2": "numeric"
     },
-    "blank_rows_in_data": [
-      41,
-      44,
-      47
-    ],
+    "blank_rows_in_data": [],
     "bilingual_row_candidate": false,
     "inline_bilingual_candidate": false,
-    "left_header_cols_num": 3
+    "left_header_cols_num": 1
   },
   "irregularities": [
     {
-      "label": "MULTI_LEVEL_HEADER",
-      "evidence": "Headers span rows 2-3. Row 2 has years as top-level headers (2011 at col 3, 2016 at col 5, 2021 at col 7). Row 3 has sub-headers (數目/Number, 百分比/%) beneath each year group.",
-      "details": "This is a two-level hierarchical header structure. Years form the upper level, and data type (Number/Percentage) forms the lower level beneath each year."
-    },
-    {
-      "label": "WIDE_FORMAT",
-      "evidence": "Column headers at row 2 are \"2011\", \"2016\", \"2021\" — these are dimension VALUES (years), not variable names. The year dimension is spread across columns rather than being contained in a single column.",
-      "details": "The defining test for wide format is whether column headers could be placed into a single new column. Here, the three year columns (2011, 2016, 2021) are clearly dimension values of the \"Year\" variable spread horizontally."
-    },
-    {
       "label": "IMPLICIT_AGGREGATION_ROWS",
-      "evidence": "Row 39 \"所有少數族裔人士[3]\" has values 451183 (2011), 584383 (2016), 619568 (2021). These equal the sums of the individual ethnic group categories above: 亞洲人（非華人）=365611 + 白人=55236 + 混血兒=29001 + 華人父或母=24649 + 其他[2]=1335 = 451183 for 2011.",
-      "details": "Row 39 is the aggregate total of all minority ethnic groups. Similarly, Row 42 \"撇除外籍家庭傭工後的所有少數族裔人士[3]\" aggregates the same groups excluding foreign domestic helpers (implied by the breakdown)."
+      "evidence": "Row 2: [0]=\"total\", Row 6: [0]=\"total\", Row 10: [0]=\"total\"",
+      "details": "The \"total\" rows represent overall values that could be calculated from the corresponding \"weekday\" and \"weekend\" rows above them."
     },
     {
-      "label": "METADATA_ROWS",
-      "evidence": "Rows 48-55 (11 rows) contain footnote references and notes in both Chinese and English. Row 48: \"註釋：\", Row 49-51: footnote text in col 1, Row 52: \"Notes:\", Rows 53-55: English footnote translations.",
-      "details": "These rows do not contain data values and serve only as explanatory metadata at the bottom of the spreadsheet."
+      "label": "SPARSE_ROW_FILL",
+      "evidence": "Column 0 has values filled at block starts for \"screen time\", \"sedentary time\", \"lpa\", and \"mvpa\", with blanks in between for subcategories.",
+      "details": "The dimension column does not have values filled for every data observation, only at the start of each category block."
     }
   ],
   "labels": [
-    "MULTI_LEVEL_HEADER",
-    "WIDE_FORMAT",
     "IMPLICIT_AGGREGATION_ROWS",
-    "METADATA_ROWS"
+    "SPARSE_ROW_FILL"
   ]
 }

@@ -1,0 +1,91 @@
+self_rated_mental_health,sexual_orientation,measure,value
+positive,heterosexual,percent,88.9
+positive,heterosexual,95% confidence interval from,88.3
+positive,heterosexual,95% confidence interval to,89.4
+positive,gay or lesbian,percent,80.3
+positive,gay or lesbian,95% confidence interval from,75.5
+positive,gay or lesbian,95% confidence interval to,84.4
+positive,bisexual,percent,58.9
+positive,bisexual,95% confidence interval from,52.4
+positive,bisexual,95% confidence interval to,65.2
+positive,sexual orientation n.e.c,percent,54.6
+positive,sexual orientation n.e.c,95% confidence interval from,37.4
+positive,sexual orientation n.e.c,95% confidence interval to,70.9
+positive,total sexual minority,percent,67.8
+positive,total sexual minority,95% confidence interval from,63.6
+positive,total sexual minority,95% confidence interval to,71.7
+negative,heterosexual,percent,10.7
+negative,heterosexual,95% confidence interval from,10.2
+negative,heterosexual,95% confidence interval to,11.2
+negative,gay or lesbian,percent,19.7
+negative,gay or lesbian,95% confidence interval from,15.6
+negative,gay or lesbian,95% confidence interval to,24.4
+negative,bisexual,percent,40.9
+negative,bisexual,95% confidence interval from,34.7
+negative,bisexual,95% confidence interval to,47.4
+negative,sexual orientation n.e.c,percent,45.4
+negative,sexual orientation n.e.c,95% confidence interval from,29.1
+negative,sexual orientation n.e.c,95% confidence interval to,62.6
+negative,total sexual minority,percent,32.1
+negative,total sexual minority,95% confidence interval from,28.2
+negative,total sexual minority,95% confidence interval to,36.3
+ever seriously contemplated suicide,heterosexual,percent,14.9
+ever seriously contemplated suicide,heterosexual,95% confidence interval from,14.3
+ever seriously contemplated suicide,heterosexual,95% confidence interval to,15.5
+ever seriously contemplated suicide,gay or lesbian,percent,29.9
+ever seriously contemplated suicide,gay or lesbian,95% confidence interval from,25.1
+ever seriously contemplated suicide,gay or lesbian,95% confidence interval to,35.1
+ever seriously contemplated suicide,bisexual,percent,46.3
+ever seriously contemplated suicide,bisexual,95% confidence interval from,39.8
+ever seriously contemplated suicide,bisexual,95% confidence interval to,52.8
+ever seriously contemplated suicide,sexual orientation n.e.c,percent,58.7
+ever seriously contemplated suicide,sexual orientation n.e.c,95% confidence interval from,42.1
+ever seriously contemplated suicide,sexual orientation n.e.c,95% confidence interval to,73.5
+ever seriously contemplated suicide,total sexual minority,percent,40.1
+ever seriously contemplated suicide,total sexual minority,95% confidence interval from,36.1
+ever seriously contemplated suicide,total sexual minority,95% confidence interval to,44.3
+diagnosed mood or anxiety disorder,heterosexual,percent,16.4
+diagnosed mood or anxiety disorder,heterosexual,95% confidence interval from,15.8
+diagnosed mood or anxiety disorder,heterosexual,95% confidence interval to,17.0
+diagnosed mood or anxiety disorder,gay or lesbian,percent,29.6
+diagnosed mood or anxiety disorder,gay or lesbian,95% confidence interval from,24.7
+diagnosed mood or anxiety disorder,gay or lesbian,95% confidence interval to,35.0
+diagnosed mood or anxiety disorder,bisexual,percent,50.8
+diagnosed mood or anxiety disorder,bisexual,95% confidence interval from,44.4
+diagnosed mood or anxiety disorder,bisexual,95% confidence interval to,57.2
+diagnosed mood or anxiety disorder,sexual orientation n.e.c,percent,40.9
+diagnosed mood or anxiety disorder,sexual orientation n.e.c,95% confidence interval from,25.8
+diagnosed mood or anxiety disorder,sexual orientation n.e.c,95% confidence interval to,58.0
+diagnosed mood or anxiety disorder,total sexual minority,percent,41.1
+diagnosed mood or anxiety disorder,total sexual minority,95% confidence interval from,36.9
+diagnosed mood or anxiety disorder,total sexual minority,95% confidence interval to,45.3
+mood disorder,heterosexual,percent,9.5
+mood disorder,heterosexual,95% confidence interval from,9.1
+mood disorder,heterosexual,95% confidence interval to,10.0
+mood disorder,gay or lesbian,percent,20.6
+mood disorder,gay or lesbian,95% confidence interval from,16.4
+mood disorder,gay or lesbian,95% confidence interval to,25.4
+mood disorder,bisexual,percent,36.2
+mood disorder,bisexual,95% confidence interval from,30.0
+mood disorder,bisexual,95% confidence interval to,42.9
+mood disorder,sexual orientation n.e.c,percent,31.1
+mood disorder,sexual orientation n.e.c,95% confidence interval from,18.0
+mood disorder,sexual orientation n.e.c,95% confidence interval to,48.1
+mood disorder,total sexual minority,percent,29.1
+mood disorder,total sexual minority,95% confidence interval from,25.3
+mood disorder,total sexual minority,95% confidence interval to,33.3
+anxiety disorder,heterosexual,percent,12.5
+anxiety disorder,heterosexual,95% confidence interval from,12.0
+anxiety disorder,heterosexual,95% confidence interval to,13.1
+anxiety disorder,gay or lesbian,percent,23.4
+anxiety disorder,gay or lesbian,95% confidence interval from,18.8
+anxiety disorder,gay or lesbian,95% confidence interval to,28.8
+anxiety disorder,bisexual,percent,41.6
+anxiety disorder,bisexual,95% confidence interval from,35.5
+anxiety disorder,bisexual,95% confidence interval to,47.9
+anxiety disorder,sexual orientation n.e.c,percent,30.4
+anxiety disorder,sexual orientation n.e.c,95% confidence interval from,18.5
+anxiety disorder,sexual orientation n.e.c,95% confidence interval to,45.8
+anxiety disorder,total sexual minority,percent,33.1
+anxiety disorder,total sexual minority,95% confidence interval from,29.2
+anxiety disorder,total sexual minority,95% confidence interval to,37.2

@@ -1,0 +1,8 @@
+lift_name,basin,lift_type,top_elevation_ft,bottom_elevation_ft,vertical_rise_ft,length_ft,slope_percent,capacity_rides_per_hr,speed_ft_min,lift_manufacturer,year_installed
+Bruno,Poma,fixed double,5885,5840,45,368,12,630,300,Poma,1987
+Molly's Express,Doppelmayr,detach quad,5835,4990,845,5244,16,1200,1000,Doppelmayr,2000
+Pucci,Poma,fixed triple,5920,5350,570,3398,17,1330,450,Poma,1987
+Stormin' Norman,Doppelmayr,detach quad,6245,5460,785,4396,18,1500,1000,Doppelmayr,2000
+Magic Mile Express,Poma,detach quad,6990,5915,1075,5359,20,1600,950,Poma,1992
+Palmer Express,Doppelmayr,detach quad,8470,6940,1530,5468,29,1800,1000,Doppelmayr,1996
+Jeff Flood Express,Still Creek Basin,detach quad,6020,4850,1170,6506,18,1800,1000,Doppelmayr,2007

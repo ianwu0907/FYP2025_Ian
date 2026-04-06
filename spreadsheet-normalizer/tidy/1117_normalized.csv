@@ -1,0 +1,118 @@
+region,age_group,cohort_type,metric,value
+canada,19 to 49 years,linked cctlp tumour cohort,number,1210.0
+canada,19 to 49 years,tumours with one or more surgical interv,number,695.0
+canada,19 to 49 years,linked cctlp tumour cohort,percent,57.4
+canada,50 to 69 years,linked cctlp tumour cohort,number,30550.0
+canada,50 to 69 years,tumours with one or more surgical interv,number,13520.0
+canada,50 to 69 years,tumours with one or more surgical interv,percent,44.2
+canada,70 years and older,linked cctlp tumour cohort,number,20385.0
+canada,70 years and older,linked cctlp tumour cohort,number,2255.0
+canada,70 years and older,linked cctlp tumour cohort,percent,11.1
+newfoundland and labrador,19 to 49 years,linked cctlp tumour cohort,number,25.0
+newfoundland and labrador,19 to 49 years,tumours with one or more surgical interv,number,20.0
+newfoundland and labrador,19 to 49 years,linked cctlp tumour cohort,percent,83.3
+newfoundland and labrador,50 to 69 years,linked cctlp tumour cohort,number,865.0
+newfoundland and labrador,50 to 69 years,tumours with one or more surgical interv,number,415.0
+newfoundland and labrador,50 to 69 years,tumours with one or more surgical interv,percent,48.2
+newfoundland and labrador,70 years and older,linked cctlp tumour cohort,number,455.0
+newfoundland and labrador,70 years and older,linked cctlp tumour cohort,number,35.0
+newfoundland and labrador,70 years and older,linked cctlp tumour cohort,percent,7.7
+prince edward island,19 to 49 years,linked cctlp tumour cohort,number,
+prince edward island,19 to 49 years,tumours with one or more surgical interv,number,
+prince edward island,19 to 49 years,linked cctlp tumour cohort,percent,
+prince edward island,50 to 69 years,linked cctlp tumour cohort,number,260.0
+prince edward island,50 to 69 years,tumours with one or more surgical interv,number,60.0
+prince edward island,50 to 69 years,tumours with one or more surgical interv,percent,23.1
+prince edward island,70 years and older,linked cctlp tumour cohort,number,
+prince edward island,70 years and older,linked cctlp tumour cohort,number,
+prince edward island,70 years and older,linked cctlp tumour cohort,percent,
+nova scotia,19 to 49 years,linked cctlp tumour cohort,number,55.0
+nova scotia,19 to 49 years,tumours with one or more surgical interv,number,35.0
+nova scotia,19 to 49 years,linked cctlp tumour cohort,percent,65.5
+nova scotia,50 to 69 years,linked cctlp tumour cohort,number,1335.0
+nova scotia,50 to 69 years,tumours with one or more surgical interv,number,625.0
+nova scotia,50 to 69 years,tumours with one or more surgical interv,percent,46.7
+nova scotia,70 years and older,linked cctlp tumour cohort,number,785.0
+nova scotia,70 years and older,linked cctlp tumour cohort,number,115.0
+nova scotia,70 years and older,linked cctlp tumour cohort,percent,14.8
+new brunswick,19 to 49 years,linked cctlp tumour cohort,number,45.0
+new brunswick,19 to 49 years,tumours with one or more surgical interv,number,25.0
+new brunswick,19 to 49 years,linked cctlp tumour cohort,percent,52.3
+new brunswick,50 to 69 years,linked cctlp tumour cohort,number,1260.0
+new brunswick,50 to 69 years,tumours with one or more surgical interv,number,415.0
+new brunswick,50 to 69 years,tumours with one or more surgical interv,percent,33.1
+new brunswick,70 years and older,linked cctlp tumour cohort,number,635.0
+new brunswick,70 years and older,linked cctlp tumour cohort,number,45.0
+new brunswick,70 years and older,linked cctlp tumour cohort,percent,7.2
+ontario,19 to 49 years,linked cctlp tumour cohort,number,625.0
+ontario,19 to 49 years,tumours with one or more surgical interv,number,350.0
+ontario,19 to 49 years,linked cctlp tumour cohort,percent,55.6
+ontario,50 to 69 years,linked cctlp tumour cohort,number,15145.0
+ontario,50 to 69 years,tumours with one or more surgical interv,number,6755.0
+ontario,50 to 69 years,tumours with one or more surgical interv,percent,44.6
+ontario,70 years and older,linked cctlp tumour cohort,number,10040.0
+ontario,70 years and older,linked cctlp tumour cohort,number,980.0
+ontario,70 years and older,linked cctlp tumour cohort,percent,9.7
+manitoba,19 to 49 years,linked cctlp tumour cohort,number,35.0
+manitoba,19 to 49 years,tumours with one or more surgical interv,number,15.0
+manitoba,19 to 49 years,linked cctlp tumour cohort,percent,41.2
+manitoba,50 to 69 years,linked cctlp tumour cohort,number,1110.0
+manitoba,50 to 69 years,tumours with one or more surgical interv,number,480.0
+manitoba,50 to 69 years,tumours with one or more surgical interv,percent,43.3
+manitoba,70 years and older,linked cctlp tumour cohort,number,840.0
+manitoba,70 years and older,linked cctlp tumour cohort,number,75.0
+manitoba,70 years and older,linked cctlp tumour cohort,percent,8.7
+saskatchewan,19 to 49 years,linked cctlp tumour cohort,number,40.0
+saskatchewan,19 to 49 years,tumours with one or more surgical interv,number,20.0
+saskatchewan,19 to 49 years,linked cctlp tumour cohort,percent,51.2
+saskatchewan,50 to 69 years,linked cctlp tumour cohort,number,1150.0
+saskatchewan,50 to 69 years,tumours with one or more surgical interv,number,410.0
+saskatchewan,50 to 69 years,tumours with one or more surgical interv,percent,35.5
+saskatchewan,70 years and older,linked cctlp tumour cohort,number,860.0
+saskatchewan,70 years and older,linked cctlp tumour cohort,number,85.0
+saskatchewan,70 years and older,linked cctlp tumour cohort,percent,9.8
+alberta,19 to 49 years,linked cctlp tumour cohort,number,245.0
+alberta,19 to 49 years,tumours with one or more surgical interv,number,145.0
+alberta,19 to 49 years,linked cctlp tumour cohort,percent,59.1
+alberta,50 to 69 years,linked cctlp tumour cohort,number,4175.0
+alberta,50 to 69 years,tumours with one or more surgical interv,number,1850.0
+alberta,50 to 69 years,tumours with one or more surgical interv,percent,44.3
+alberta,70 years and older,linked cctlp tumour cohort,number,2340.0
+alberta,70 years and older,linked cctlp tumour cohort,number,330.0
+alberta,70 years and older,linked cctlp tumour cohort,percent,14.2
+british columbia,19 to 49 years,linked cctlp tumour cohort,number,130.0
+british columbia,19 to 49 years,tumours with one or more surgical interv,number,80.0
+british columbia,19 to 49 years,linked cctlp tumour cohort,percent,63.3
+british columbia,50 to 69 years,linked cctlp tumour cohort,number,5190.0
+british columbia,50 to 69 years,tumours with one or more surgical interv,number,2480.0
+british columbia,50 to 69 years,tumours with one or more surgical interv,percent,47.8
+british columbia,70 years and older,linked cctlp tumour cohort,number,4270.0
+british columbia,70 years and older,linked cctlp tumour cohort,number,580.0
+british columbia,70 years and older,linked cctlp tumour cohort,percent,13.5
+yukon,19 to 49 years,linked cctlp tumour cohort,number,
+yukon,19 to 49 years,tumours with one or more surgical interv,number,
+yukon,19 to 49 years,linked cctlp tumour cohort,percent,
+yukon,50 to 69 years,linked cctlp tumour cohort,number,35.0
+yukon,50 to 69 years,tumours with one or more surgical interv,number,20.0
+yukon,50 to 69 years,tumours with one or more surgical interv,percent,55.9
+yukon,70 years and older,linked cctlp tumour cohort,number,
+yukon,70 years and older,linked cctlp tumour cohort,number,
+yukon,70 years and older,linked cctlp tumour cohort,percent,
+northwest territories,19 to 49 years,linked cctlp tumour cohort,number,
+northwest territories,19 to 49 years,tumours with one or more surgical interv,number,
+northwest territories,19 to 49 years,linked cctlp tumour cohort,percent,
+northwest territories,50 to 69 years,linked cctlp tumour cohort,number,20.0
+northwest territories,50 to 69 years,tumours with one or more surgical interv,number,5.0
+northwest territories,50 to 69 years,tumours with one or more surgical interv,percent,31.6
+northwest territories,70 years and older,linked cctlp tumour cohort,number,
+northwest territories,70 years and older,linked cctlp tumour cohort,number,
+northwest territories,70 years and older,linked cctlp tumour cohort,percent,
+nunavut,19 to 49 years,linked cctlp tumour cohort,number,0.0
+nunavut,19 to 49 years,tumours with one or more surgical interv,number,0.0
+nunavut,19 to 49 years,linked cctlp tumour cohort,percent,0.0
+nunavut,50 to 69 years,linked cctlp tumour cohort,number,
+nunavut,50 to 69 years,tumours with one or more surgical interv,number,
+nunavut,50 to 69 years,tumours with one or more surgical interv,percent,
+nunavut,70 years and older,linked cctlp tumour cohort,number,
+nunavut,70 years and older,linked cctlp tumour cohort,number,
+nunavut,70 years and older,linked cctlp tumour cohort,percent,

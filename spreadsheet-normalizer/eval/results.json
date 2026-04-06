@@ -1,0 +1,459 @@
+{
+  "partial": true,
+  "summary": {},
+  "tables": [
+    {
+      "table_id": "1001",
+      "pipeline_status": "success",
+      "pipeline_error": null,
+      "n_qa_pairs": 2,
+      "scores": {
+        "raw": {
+          "n": 2,
+          "execution_rate": 0.0,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 0,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            }
+          }
+        },
+        "pipeline": {
+          "n": 2,
+          "execution_rate": 0.0,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 0,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            }
+          }
+        }
+      },
+      "qa_pairs": [
+        {
+          "qtype": "lookup",
+          "_ref_dim": "country_of_birth",
+          "_ref_x": "somalia",
+          "_ref_measure": "percent",
+          "_filters": {
+            "country_of_birth": "somalia",
+            "gender": "men",
+            "immigrant_type": "principal applicants"
+          },
+          "answer": 3.4,
+          "question": "Find the percent value where country_of_birth is 'somalia' and gender is 'men' and immigrant_type is 'principal applicants'.",
+          "results": {
+            "raw": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "lookup",
+          "_ref_dim": "country_of_birth",
+          "_ref_x": "cote d'ivoire",
+          "_ref_measure": "percent",
+          "_filters": {
+            "country_of_birth": "cote d'ivoire",
+            "gender": "men",
+            "immigrant_type": "principal applicants"
+          },
+          "answer": 72.2,
+          "question": "Find the percent value where country_of_birth is 'cote d'ivoire' and gender is 'men' and immigrant_type is 'principal applicants'.",
+          "results": {
+            "raw": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "table_id": "1003",
+      "pipeline_status": "success",
+      "pipeline_error": null,
+      "n_qa_pairs": 2,
+      "scores": {
+        "raw": {
+          "n": 2,
+          "execution_rate": 0.0,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 0,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            }
+          }
+        },
+        "pipeline": {
+          "n": 2,
+          "execution_rate": 0.5,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.5,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 0,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            }
+          }
+        }
+      },
+      "qa_pairs": [
+        {
+          "qtype": "lookup",
+          "_ref_dim": "region_or_country_of_birth",
+          "_ref_x": "other regions",
+          "_ref_measure": "percent",
+          "_filters": {
+            "region_or_country_of_birth": "other regions",
+            "section": "nan",
+            "education_level": "non-university or university postsecondary diploma",
+            "gender": "men"
+          },
+          "answer": 65.5,
+          "question": "Find the percent value where region_or_country_of_birth is 'other regions' and section is 'nan' and education_level is 'non-university or university postsecondary diploma' and gender is 'men'.",
+          "results": {
+            "raw": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "lookup",
+          "_ref_dim": "region_or_country_of_birth",
+          "_ref_x": "democratic republic of the congo",
+          "_ref_measure": "percent",
+          "_filters": {
+            "region_or_country_of_birth": "democratic republic of the congo",
+            "section": "country of birth",
+            "education_level": "university degree only",
+            "gender": "women"
+          },
+          "answer": 22.0,
+          "question": "Find the percent value where region_or_country_of_birth is 'democratic republic of the congo' and section is 'country of birth' and education_level is 'university degree only' and gender is 'women'.",
+          "results": {
+            "raw": {
+              "slots": {
+                "filters": {
+                  "region or country of birth": "democratic republic of the congo",
+                  "Unnamed: 2": "university degree only",
+                  "women": "percent"
+                },
+                "B": "women"
+              },
+              "executed": false,
+              "result": null,
+              "error": "IndexError: single positional indexer is out-of-bounds",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "region_of_birth": "democratic republic of the congo",
+                  "education_type": "university degree only",
+                  "gender": "women"
+                },
+                "B": "percent"
+              },
+              "executed": true,
+              "result": 73.0,
+              "error": null,
+              "correct": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "table_id": "1007",
+      "pipeline_status": "success",
+      "pipeline_error": null,
+      "n_qa_pairs": 2,
+      "scores": {
+        "raw": {
+          "n": 2,
+          "execution_rate": 0.0,
+          "accuracy": 0.0,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            },
+            "aggregation": {
+              "n": 0,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            }
+          }
+        },
+        "pipeline": {
+          "n": 2,
+          "execution_rate": 1.0,
+          "accuracy": 0.5,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.5
+            },
+            "aggregation": {
+              "n": 0,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            }
+          }
+        }
+      },
+      "qa_pairs": [
+        {
+          "qtype": "lookup",
+          "_ref_dim": "sector",
+          "_ref_x": "mining, quarrying, and oil and gas extraction",
+          "_ref_measure": "percent",
+          "_filters": {
+            "sector": "mining, quarrying, and oil and gas extraction",
+            "worker_type": "other female workers",
+            "generation": "second generation"
+          },
+          "answer": 0.6,
+          "question": "Find the percent value where sector is 'mining, quarrying, and oil and gas extraction' and worker_type is 'other female workers' and generation is 'second generation'.",
+          "results": {
+            "raw": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "sector": "mining, quarrying, and oil and gas extraction",
+                  "generation": "other female workers"
+                },
+                "B": "percentage"
+              },
+              "executed": true,
+              "result": 0.5,
+              "error": null,
+              "correct": false
+            }
+          }
+        },
+        {
+          "qtype": "lookup",
+          "_ref_dim": "sector",
+          "_ref_x": "health care and social assistance",
+          "_ref_measure": "percent",
+          "_filters": {
+            "sector": "health care and social assistance",
+            "worker_type": "other female workers",
+            "generation": "second generation"
+          },
+          "answer": 19.1,
+          "question": "Find the percent value where sector is 'health care and social assistance' and worker_type is 'other female workers' and generation is 'second generation'.",
+          "results": {
+            "raw": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "sector": "health care and social assistance",
+                  "generation": "other female workers"
+                },
+                "B": "percentage"
+              },
+              "executed": true,
+              "result": 19.0,
+              "error": null,
+              "correct": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "table_id": "1011",
+      "pipeline_status": "success",
+      "pipeline_error": null,
+      "n_qa_pairs": 2,
+      "scores": {
+        "raw": {
+          "n": 2,
+          "execution_rate": 0.5,
+          "accuracy": 0.5,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 0.5,
+              "accuracy": 0.5
+            },
+            "aggregation": {
+              "n": 0,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            }
+          }
+        },
+        "pipeline": {
+          "n": 2,
+          "execution_rate": 1.0,
+          "accuracy": 0.5,
+          "by_type": {
+            "lookup": {
+              "n": 2,
+              "execution_rate": 1.0,
+              "accuracy": 0.5
+            },
+            "aggregation": {
+              "n": 0,
+              "execution_rate": 0.0,
+              "accuracy": 0.0
+            }
+          }
+        }
+      },
+      "qa_pairs": [
+        {
+          "qtype": "lookup",
+          "_ref_dim": "immigrant_families",
+          "_ref_x": "immigrant families",
+          "_ref_measure": "low_income_rate",
+          "_filters": {
+            "immigrant_families": "immigrant families",
+            "section_header": "country of birth:",
+            "group_name": "haiti"
+          },
+          "answer": 17.5,
+          "question": "Find the low_income_rate value where immigrant_families is 'immigrant families' and section_header is 'country of birth:' and group_name is 'haiti'.",
+          "results": {
+            "raw": {
+              "slots": {
+                "filters": {
+                  "Unnamed: 0": "haiti"
+                },
+                "B": "low income rate"
+              },
+              "executed": true,
+              "result": 17.5,
+              "error": null,
+              "correct": true
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "immigrant_family_type": "immigrant families",
+                  "region": "haiti"
+                },
+                "B": "low_income_rate"
+              },
+              "executed": true,
+              "result": 17.5,
+              "error": null,
+              "correct": true
+            }
+          }
+        },
+        {
+          "qtype": "lookup",
+          "_ref_dim": "immigrant_families",
+          "_ref_x": "second- and third- generation-or-more families",
+          "_ref_measure": "low_income_rate",
+          "_filters": {
+            "immigrant_families": "second- and third- generation-or-more families",
+            "section_header": "country of ancestry:",
+            "group_name": "trinidad and tobago"
+          },
+          "answer": 21.6,
+          "question": "Find the low_income_rate value where immigrant_families is 'second- and third- generation-or-more families' and section_header is 'country of ancestry:' and group_name is 'trinidad and tobago'.",
+          "results": {
+            "raw": {
+              "slots": null,
+              "executed": false,
+              "result": null,
+              "error": "SlotFillingError: LLM did not return valid slots",
+              "correct": false
+            },
+            "pipeline": {
+              "slots": {
+                "filters": {
+                  "immigrant_family_type": "immigrant families",
+                  "region": "trinidad and tobago"
+                },
+                "B": "low_income_rate"
+              },
+              "executed": true,
+              "result": 24.5,
+              "error": null,
+              "correct": false
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

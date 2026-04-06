@@ -1,0 +1,37 @@
+self_rated_mental_health,gender_group,statistic_type,value
+positive,cisgender,percent,88.1
+positive,cisgender,from,87.6
+positive,cisgender,to,88.6
+positive,transgender,percent,34.1
+positive,transgender,from,17.0
+positive,transgender,to,54.9
+negative,cisgender,percent,11.3
+negative,cisgender,from,10.8
+negative,cisgender,to,11.9
+negative,transgender,percent,65.4
+negative,transgender,from,44.6
+negative,transgender,to,82.7
+ever seriously contemplated suicide,cisgender,percent,15.6
+ever seriously contemplated suicide,cisgender,from,15.1
+ever seriously contemplated suicide,cisgender,to,16.2
+ever seriously contemplated suicide,transgender,percent,44.8
+ever seriously contemplated suicide,transgender,from,25.7
+ever seriously contemplated suicide,transgender,to,65.2
+diagnosed mood or anxiety disorder,cisgender,percent,17.1
+diagnosed mood or anxiety disorder,cisgender,from,16.6
+diagnosed mood or anxiety disorder,cisgender,to,17.7
+diagnosed mood or anxiety disorder,transgender,percent,61.1
+diagnosed mood or anxiety disorder,transgender,from,40.6
+diagnosed mood or anxiety disorder,transgender,to,79.1
+mood disorder,cisgender,percent,10.2
+mood disorder,cisgender,from,9.7
+mood disorder,cisgender,to,10.7
+mood disorder,transgender,percent,39.9
+mood disorder,transgender,from,21.5
+mood disorder,transgender,to,60.6
+anxiety disorder,cisgender,percent,13.1
+anxiety disorder,cisgender,from,12.6
+anxiety disorder,cisgender,to,13.7
+anxiety disorder,transgender,percent,57.0
+anxiety disorder,transgender,from,36.5
+anxiety disorder,transgender,to,75.8

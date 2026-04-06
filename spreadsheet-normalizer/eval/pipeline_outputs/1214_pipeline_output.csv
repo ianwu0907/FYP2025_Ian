@@ -1,0 +1,25 @@
+service_use,concurrent_disorder,condition,confidence_interval_type,confidence_interval_value
+none,12.0,1,from,7.2
+none,12.0,1,to,19.3
+none,12.0,1,from,23.6
+none,12.0,1,to,20.2
+none,12.0,1,from,27.4
+none,12.0,1,to,74.9
+none,12.0,1,from,70.5
+none,12.0,1,to,78.9
+all needs met,44.4,2,from,35.4
+all needs met,44.4,2,to,53.7
+all needs met,44.4,2,from,42.2
+all needs met,44.4,2,to,37.9
+all needs met,44.4,2,from,46.7
+all needs met,44.4,2,to,14.9
+all needs met,44.4,2,from,11.9
+all needs met,44.4,2,to,18.5
+partially met or not met,39.3,3,from,31.2
+partially met or not met,39.3,3,to,48.1
+partially met or not met,39.3,3,from,32.1
+partially met or not met,39.3,3,to,28.2
+partially met or not met,39.3,3,from,36.3
+partially met or not met,39.3,3,to,9.6
+partially met or not met,39.3,3,from,7.3
+partially met or not met,39.3,3,to,12.7

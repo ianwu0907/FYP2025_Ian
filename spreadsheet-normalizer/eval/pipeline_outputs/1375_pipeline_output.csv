@@ -1,0 +1,22 @@
+feeding_history,aboriginal_identity,predicted_probability,section_header
+only breastfed,off-reserve first nations,0.09,breastfeeding duration
+only breastfed,metis,0.08,breastfeeding duration
+only breastfed,inuit,0.06,breastfeeding duration
+both breastfed and bottle-fed,off-reserve first nations,0.11,breastfeeding duration
+both breastfed and bottle-fed,metis,0.12,breastfeeding duration
+both breastfed and bottle-fed,inuit,0.09,breastfeeding duration
+only bottle-fed,off-reserve first nations,0.14,breastfeeding duration
+only bottle-fed,metis,0.12,breastfeeding duration
+only bottle-fed,inuit,0.08,breastfeeding duration
+breastfeeding duration,off-reserve first nations,,breastfeeding duration
+breastfeeding duration,metis,,breastfeeding duration
+breastfeeding duration,inuit,,breastfeeding duration
+never breastfed,off-reserve first nations,0.14,breastfeeding duration
+never breastfed,metis,0.12,breastfeeding duration
+never breastfed,inuit,0.09,breastfeeding duration
+breastfed 0 to 6 months,off-reserve first nations,0.11,breastfeeding duration
+breastfed 0 to 6 months,metis,0.12,breastfeeding duration
+breastfed 0 to 6 months,inuit,0.09,breastfeeding duration
+breastfed more than 6 months,off-reserve first nations,0.1,breastfeeding duration
+breastfed more than 6 months,metis,0.1,breastfeeding duration
+breastfed more than 6 months,inuit,0.09,breastfeeding duration

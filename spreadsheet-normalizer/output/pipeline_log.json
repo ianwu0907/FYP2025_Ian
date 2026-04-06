@@ -1,89 +1,118 @@
 {
-  "input_file": "long1.xlsx",
-  "start_time": "2026-04-05 16:13:53",
+  "input_file": "raw/1021.xlsx",
+  "start_time": "2026-04-06 17:15:35",
   "stages": {
     "encoding": {
       "status": "success",
       "shape": [
-        56,
-        10
+        13,
+        3
       ],
-      "compression_ratio": 1.1378044711378044
+      "compression_ratio": 0.6225026288117771
     },
     "detection": {
       "status": "success",
       "irregularities": [
-        "MULTI_LEVEL_HEADER",
-        "WIDE_FORMAT",
         "IMPLICIT_AGGREGATION_ROWS",
-        "METADATA_ROWS"
+        "SPARSE_ROW_FILL"
       ],
-      "num_irregularities": 4
+      "num_irregularities": 2
     },
     "schema_estimation": {
       "status": "success",
-      "observation_unit": "One row represents the count (number) and percentage of persons belonging to a specific ethnic group in a specific census year (2011, 2016, or 2021) in Hong Kong.",
-      "num_target_columns": 4,
-      "expected_rows": 102
+      "observation_unit": "A single measurement of behaviour (screen time, sedentary time, lpa, or mvpa) for either weekday or weekend.",
+      "num_target_columns": 3,
+      "expected_rows": 8
     },
     "transformation": {
       "status": "success",
       "output_shape": [
-        99,
-        4
+        4,
+        3
       ],
       "validation": {
         "is_valid": true,
         "errors": [],
-        "warnings": [],
+        "warnings": [
+          "Column 'beta' is 75% null",
+          "Column 'p_value' is 75% null"
+        ],
         "actual_shape": [
-          99,
-          4
+          4,
+          3
         ],
         "expected_shape": [
-          102,
-          4
+          8,
+          3
         ]
       },
-      "attempts": 2
+      "attempts": 1
     }
   },
   "metrics_before": {
     "shape": {
-      "rows": 56,
-      "cols": 10
+      "rows": 13,
+      "cols": 3
     },
-    "cell_coverage": 0.3321,
-    "row_completeness_uniformity": 0.719,
-    "column_type_homogeneity": 0.6689,
-    "data_row_ratio": 0.4107,
-    "column_completeness_min": 0.0,
+    "cell_coverage": 0.8462,
+    "row_completeness_uniformity": 0.7076,
+    "column_type_homogeneity": 0.7633,
+    "data_row_ratio": 0.7692,
+    "column_completeness_min": 0.7692,
     "header_uniqueness": 1.0,
-    "type_consistency": 0.8717,
-    "substring_containment": 0.0019,
-    "inter_column_nmi": 0.1625
+    "type_consistency": 1.0,
+    "substring_containment": 0.0,
+    "inter_column_nmi": 0.0,
+    "groupby_queryability": 1.0,
+    "groupby_queryability_mode": "full"
   },
   "metrics_after": {
     "shape": {
-      "rows": 99,
-      "cols": 4
+      "rows": 4,
+      "cols": 3
     },
-    "cell_coverage": 0.7576,
-    "row_completeness_uniformity": 0.7488,
-    "column_type_homogeneity": 0.7502,
-    "data_row_ratio": 1.0,
-    "column_completeness_min": 0.5152,
+    "cell_coverage": 0.5,
+    "row_completeness_uniformity": 0.6667,
+    "column_type_homogeneity": 0.75,
+    "data_row_ratio": 0.25,
+    "column_completeness_min": 0.25,
     "header_uniqueness": 1.0,
     "type_consistency": 1.0,
-    "substring_containment": 0.0028,
-    "inter_column_nmi": 0.0
+    "substring_containment": 0.0,
+    "inter_column_nmi": 0.0,
+    "groupby_queryability": 0.0,
+    "groupby_queryability_mode": "no_dims"
   },
   "metrics_comparison": {
-    "substring_containment": {
-      "before": 0.0019,
-      "after": 0.0028,
-      "delta": 0.0009,
-      "direction": "= unchanged"
+    "column_type_homogeneity": {
+      "before": 0.7633,
+      "after": 0.75,
+      "delta": -0.0133,
+      "direction": "✗ degraded"
+    },
+    "column_completeness_min": {
+      "before": 0.7692,
+      "after": 0.25,
+      "delta": -0.5192,
+      "direction": "✗ degraded"
+    },
+    "groupby_queryability": {
+      "before": 1.0,
+      "after": 0.0,
+      "delta": -1.0,
+      "direction": "✗ degraded"
+    },
+    "cell_coverage": {
+      "before": 0.8462,
+      "after": 0.5,
+      "delta": -0.3462,
+      "direction": "✗ degraded"
+    },
+    "row_completeness_uniformity": {
+      "before": 0.7076,
+      "after": 0.6667,
+      "delta": -0.0409,
+      "direction": "✗ degraded"
     },
     "header_uniqueness": {
       "before": 1.0,
@@ -91,51 +120,37 @@
       "delta": 0.0,
       "direction": "= unchanged"
     },
-    "data_row_ratio": {
-      "before": 0.4107,
-      "after": 1.0,
-      "delta": 0.5893,
-      "direction": "✓ improved"
-    },
-    "cell_coverage": {
-      "before": 0.3321,
-      "after": 0.7576,
-      "delta": 0.4255,
-      "direction": "✓ improved"
+    "inter_column_nmi": {
+      "before": 0.0,
+      "after": 0.0,
+      "delta": 0.0,
+      "direction": "= unchanged"
     },
     "type_consistency": {
-      "before": 0.8717,
+      "before": 1.0,
       "after": 1.0,
-      "delta": 0.1283,
-      "direction": "✓ improved"
+      "delta": 0.0,
+      "direction": "= unchanged"
     },
-    "inter_column_nmi": {
-      "before": 0.1625,
-      "after": 0.0,
-      "delta": -0.1625,
-      "direction": "✓ improved"
+    "data_row_ratio": {
+      "before": 0.7692,
+      "after": 0.25,
+      "delta": -0.5192,
+      "direction": "✗ degraded"
     },
-    "row_completeness_uniformity": {
-      "before": 0.719,
-      "after": 0.7488,
-      "delta": 0.0298,
-      "direction": "✓ improved"
-    },
-    "column_completeness_min": {
+    "substring_containment": {
       "before": 0.0,
-      "after": 0.5152,
-      "delta": 0.5152,
-      "direction": "✓ improved"
+      "after": 0.0,
+      "delta": 0.0,
+      "direction": "= unchanged"
     },
-    "column_type_homogeneity": {
-      "before": 0.6689,
-      "after": 0.7502,
-      "delta": 0.0813,
-      "direction": "✓ improved"
+    "_groupby_queryability_mode": {
+      "before": "full",
+      "after": "no_dims"
     }
   },
-  "output_file": "output\\test_minimax.csv",
-  "end_time": "2026-04-05 16:16:15",
-  "elapsed_seconds": 141.79,
+  "output_file": "eval/pipeline_outputs/1021_pipeline_output.csv",
+  "end_time": "2026-04-06 17:15:49",
+  "elapsed_seconds": 14.35,
   "status": "success"
 }

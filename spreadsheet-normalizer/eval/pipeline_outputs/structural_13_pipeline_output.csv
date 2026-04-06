@@ -1,0 +1,25 @@
+perpetrator_type,gender,victim_count
+canadian armed forces member(s),male victims,91.0
+foreign military member(s),male victims,
+department of national defence civilian(s) or contractor(s),male victims,
+lone,male victims,77.0
+"varied - sometimes one perpetrator, other times multiple perpetrators",male victims,
+always men,male victims,56.0
+supervisor or higher rank,male victims,36.0
+peer,male victims,65.0
+subordinate - either in or outside chain of command,male victims,17.0
+stranger,male victims,
+junior non-commissioned member,male victims,76.0
+senior non-commissioned member,male victims,20.0
+canadian armed forces member(s),female victims,97.0
+foreign military member(s),female victims,
+department of national defence civilian(s) or contractor(s),female victims,
+lone,female victims,90.0
+"varied - sometimes one perpetrator, other times multiple perpetrators",female victims,
+always men,female victims,96.0
+supervisor or higher rank,female victims,51.0
+peer,female victims,46.0
+subordinate - either in or outside chain of command,female victims,14.0
+stranger,female victims,
+junior non-commissioned member,female victims,72.0
+senior non-commissioned member,female victims,26.0

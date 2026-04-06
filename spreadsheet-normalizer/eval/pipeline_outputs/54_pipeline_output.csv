@@ -1,0 +1,31 @@
+class_of_worker,agricultural_region,language_group,percent
+did not work in 2010,agricultural region 1,english,0.0
+did not work in 2010,agricultural region 2,french,0.0
+did not work in 2010,agricultural region 2,english,0.0
+did not work in 2010,agricultural region 3,french,0.0
+did not work in 2010,agricultural region 3,english,0.0
+did not work in 2010,agricultural region 4,french,0.0
+employee,agricultural region 1,english,86.1
+employee,agricultural region 2,french,81.1
+employee,agricultural region 2,english,73.1
+employee,agricultural region 3,french,49.0
+employee,agricultural region 3,english,84.1
+employee,agricultural region 4,french,81.3
+unpaid family worker,agricultural region 1,english,0.0
+unpaid family worker,agricultural region 2,french,1.1
+unpaid family worker,agricultural region 2,english,0.0
+unpaid family worker,agricultural region 3,french,4.5
+unpaid family worker,agricultural region 3,english,2.6
+unpaid family worker,agricultural region 4,french,0.0
+"self-employed, incorporated",agricultural region 1,english,7.0
+"self-employed, incorporated",agricultural region 2,french,4.3
+"self-employed, incorporated",agricultural region 2,english,22.4
+"self-employed, incorporated",agricultural region 3,french,7.6
+"self-employed, incorporated",agricultural region 3,english,5.6
+"self-employed, incorporated",agricultural region 4,french,0.0
+"self-employed, non-incorporated",agricultural region 1,english,5.3
+"self-employed, non-incorporated",agricultural region 2,french,13.1
+"self-employed, non-incorporated",agricultural region 2,english,0.0
+"self-employed, non-incorporated",agricultural region 3,french,40.1
+"self-employed, non-incorporated",agricultural region 3,english,8.7
+"self-employed, non-incorporated",agricultural region 4,french,14.1

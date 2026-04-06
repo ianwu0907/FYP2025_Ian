@@ -1,0 +1,46 @@
+province_and_territory,crime_type,severity_index,percent_change_2015_to_2016
+,total_youth_crime,,
+newfoundland and labrador,total_youth_crime,59.3,-2.0
+prince edward island,total_youth_crime,30.7,-12.0
+nova scotia,total_youth_crime,77.5,8.0
+new brunswick,total_youth_crime,55.7,-3.0
+quebec,total_youth_crime,56.4,4.0
+ontario,total_youth_crime,52.7,4.0
+manitoba,total_youth_crime,113.1,-5.0
+saskatchewan,total_youth_crime,170.2,-9.0
+alberta,total_youth_crime,57.0,-15.0
+british columbia,total_youth_crime,35.7,-9.0
+yukon,total_youth_crime,191.9,-28.0
+northwest territories,total_youth_crime,266.8,-10.0
+nunavut,total_youth_crime,296.3,-10.0
+canada,total_youth_crime,60.1,-2.0
+,youth_violent_crime,,
+newfoundland and labrador,youth_violent_crime,-43.0,47.9
+prince edward island,youth_violent_crime,-70.0,25.2
+nova scotia,youth_violent_crime,-41.0,84.4
+new brunswick,youth_violent_crime,-38.0,49.0
+quebec,youth_violent_crime,-11.0,75.0
+ontario,youth_violent_crime,-46.0,69.1
+manitoba,youth_violent_crime,-38.0,127.5
+saskatchewan,youth_violent_crime,-36.0,160.0
+alberta,youth_violent_crime,-48.0,61.1
+british columbia,youth_violent_crime,-56.0,37.2
+yukon,youth_violent_crime,-30.0,184.1
+northwest territories,youth_violent_crime,-48.0,149.0
+nunavut,youth_violent_crime,-26.0,191.0
+canada,youth_violent_crime,-40.0,70.9
+,youth_non_violent_crime,,
+newfoundland and labrador,youth_non_violent_crime,-6.0,67.0
+prince edward island,youth_non_violent_crime,-18.0,34.5
+nova scotia,youth_non_violent_crime,25.0,72.3
+new brunswick,youth_non_violent_crime,-5.0,60.1
+quebec,youth_non_violent_crime,16.0,43.0
+ontario,youth_non_violent_crime,14.0,40.9
+manitoba,youth_non_violent_crime,0.0,102.3
+saskatchewan,youth_non_violent_crime,-8.0,176.7
+alberta,youth_non_violent_crime,-16.0,53.8
+british columbia,youth_non_violent_crime,-8.0,34.5
+yukon,youth_non_violent_crime,15.0,196.5
+northwest territories,youth_non_violent_crime,-28.0,349.0
+nunavut,youth_non_violent_crime,-17.0,369.5
+canada,youth_non_violent_crime,5.0,52.2

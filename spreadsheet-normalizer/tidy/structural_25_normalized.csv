@@ -1,0 +1,57 @@
+field_of_doctorate,sub_field,all_employed,employment_sector,sector_employment_count
+"biological, agricultural, and environmental life sciences","biological, agricultural, and environmental life sciences",175700.0,4-year educational institutiona,83500
+"biological, agricultural, and environmental life sciences","biological, agricultural, and environmental life sciences",175700.0,private for-profitb,46400
+"biological, agricultural, and environmental life sciences","biological, agricultural, and environmental life sciences",175700.0,private non-profit,14200
+"biological, agricultural, and environmental life sciences","biological, agricultural, and environmental life sciences",175700.0,federal government,15600
+"biological, agricultural, and environmental life sciences","biological, agricultural, and environmental life sciences",175700.0,state or local government,4100
+"biological, agricultural, and environmental life sciences","biological, agricultural, and environmental life sciences",175700.0,self-employedc,5700
+"biological, agricultural, and environmental life sciences","biological, agricultural, and environmental life sciences",175700.0,otherd,6200
+computer and information sciences,computer and information sciences,19000.0,4-year educational institutiona,7400
+computer and information sciences,computer and information sciences,19000.0,private for-profitb,9400
+computer and information sciences,computer and information sciences,19000.0,private non-profit,700
+computer and information sciences,computer and information sciences,19000.0,federal government,600
+computer and information sciences,computer and information sciences,19000.0,state or local government,100
+computer and information sciences,computer and information sciences,19000.0,self-employedc,500
+computer and information sciences,computer and information sciences,19000.0,otherd,300
+mathematics and statistics,mathematics and statistics,32000.0,4-year educational institutiona,18100
+mathematics and statistics,mathematics and statistics,32000.0,private for-profitb,9000
+mathematics and statistics,mathematics and statistics,32000.0,private non-profit,1300
+mathematics and statistics,mathematics and statistics,32000.0,federal government,1300
+mathematics and statistics,mathematics and statistics,32000.0,state or local government,300
+mathematics and statistics,mathematics and statistics,32000.0,self-employedc,700
+mathematics and statistics,mathematics and statistics,32000.0,otherd,1300
+physical sciences,physical sciences,120100.0,4-year educational institutiona,42500
+physical sciences,physical sciences,120100.0,private for-profitb,49800
+physical sciences,physical sciences,120100.0,private non-profit,6300
+physical sciences,physical sciences,120100.0,federal government,9700
+physical sciences,physical sciences,120100.0,state or local government,2300
+physical sciences,physical sciences,120100.0,self-employedc,4500
+physical sciences,physical sciences,120100.0,otherd,5000
+psychology,psychology,102400.0,4-year educational institutiona,34100
+psychology,psychology,102400.0,private for-profitb,20700
+psychology,psychology,102400.0,private non-profit,9800
+psychology,psychology,102400.0,federal government,6000
+psychology,psychology,102400.0,state or local government,5200
+psychology,psychology,102400.0,self-employedc,20200
+psychology,psychology,102400.0,otherd,6400
+social sciences,social sciences,87000.0,4-year educational institutiona,54000
+social sciences,social sciences,87000.0,private for-profitb,10900
+social sciences,social sciences,87000.0,private non-profit,5400
+social sciences,social sciences,87000.0,federal government,5100
+social sciences,social sciences,87000.0,state or local government,2400
+social sciences,social sciences,87000.0,self-employedc,4300
+social sciences,social sciences,87000.0,otherd,4900
+engineering,engineering,125500.0,4-year educational institutiona,33000
+engineering,engineering,125500.0,private for-profitb,71400
+engineering,engineering,125500.0,private non-profit,4400
+engineering,engineering,125500.0,federal government,8200
+engineering,engineering,125500.0,state or local government,2300
+engineering,engineering,125500.0,self-employedc,4500
+engineering,engineering,125500.0,otherd,1600
+health,health,31200.0,4-year educational institutiona,16800
+health,health,31200.0,private for-profitb,6200
+health,health,31200.0,private non-profit,3000
+health,health,31200.0,federal government,2300
+health,health,31200.0,state or local government,700
+health,health,31200.0,self-employedc,1100
+health,health,31200.0,otherd,1100

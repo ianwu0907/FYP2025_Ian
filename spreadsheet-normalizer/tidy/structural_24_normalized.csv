@@ -1,0 +1,37 @@
+sex,language_workers,marital_status,agricultural_region,percent
+female,french-language workers,,agricultural region 1,35.3
+female,english-language workers,,agricultural region 1,28.0
+female,french-language workers,,agricultural region 3,41.8
+female,english-language workers,,agricultural region 3,30.6
+female,french-language workers,,agricultural region 4,35.9
+female,english-language workers,,agricultural region 4,26.6
+male,french-language workers,,agricultural region 1,64.7
+male,english-language workers,,agricultural region 1,72.0
+male,french-language workers,,agricultural region 3,58.2
+male,english-language workers,,agricultural region 3,69.4
+male,french-language workers,,agricultural region 4,64.1
+male,english-language workers,,agricultural region 4,73.4
+,french-language workers,single,agricultural region 1,18.7
+,english-language workers,single,agricultural region 1,24.8
+,french-language workers,single,agricultural region 3,26.9
+,english-language workers,single,agricultural region 3,26.1
+,french-language workers,single,agricultural region 4,25.6
+,english-language workers,single,agricultural region 4,32.8
+,french-language workers,married,agricultural region 1,51.3
+,english-language workers,married,agricultural region 1,53.9
+,french-language workers,married,agricultural region 3,47.8
+,english-language workers,married,agricultural region 3,56.7
+,french-language workers,married,agricultural region 4,54.4
+,english-language workers,married,agricultural region 4,57.8
+,french-language workers,common-law,agricultural region 1,17.1
+,english-language workers,common-law,agricultural region 1,10.9
+,french-language workers,common-law,agricultural region 3,22.4
+,english-language workers,common-law,agricultural region 3,6.4
+,french-language workers,common-law,agricultural region 4,11.8
+,english-language workers,common-law,agricultural region 4,7.8
+,french-language workers,"separated, divorced, or widowed",agricultural region 1,12.8
+,english-language workers,"separated, divorced, or widowed",agricultural region 1,10.6
+,french-language workers,"separated, divorced, or widowed",agricultural region 3,0.0
+,english-language workers,"separated, divorced, or widowed",agricultural region 3,10.8
+,french-language workers,"separated, divorced, or widowed",agricultural region 4,7.7
+,english-language workers,"separated, divorced, or widowed",agricultural region 4,0.0

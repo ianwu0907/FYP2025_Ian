@@ -1,0 +1,44 @@
+student_characteristics,age_group,behavior_type,percent,confidence_interval_from,confidence_interval_to
+17 to 19,17 to 19,unwanted sexualized behaviours,43.0,37.0,50.0
+17 to 19,17 to 19,discriminatory behaviours,20.0,15.0,25.0
+20 to 22,20 to 22,unwanted sexualized behaviours,46.0,39.0,52.0
+20 to 22,20 to 22,discriminatory behaviours,21.0,16.0,26.0
+25 years or older,25 years or older,unwanted sexualized behaviours,12.0,8.0,18.0
+visible minority,visible minority,unwanted sexualized behaviours,29.0,22.0,38.0
+visible minority,visible minority,discriminatory behaviours,13.0,8.0,20.0
+not a visible minority,not a visible minority,unwanted sexualized behaviours,36.0,33.0,41.0
+not a visible minority,not a visible minority,discriminatory behaviours,18.0,15.0,22.0
+not indigenous,not indigenous,unwanted sexualized behaviours,36.0,33.0,40.0
+not indigenous,not indigenous,discriminatory behaviours,18.0,15.0,21.0
+heterosexual,heterosexual,unwanted sexualized behaviours,33.0,30.0,37.0
+heterosexual,heterosexual,discriminatory behaviours,15.0,12.0,18.0
+non-heterosexual,non-heterosexual,unwanted sexualized behaviours,62.0,47.0,74.0
+non-heterosexual,non-heterosexual,discriminatory behaviours,50.0,36.0,63.0
+no religious affiliation,no religious affiliation,unwanted sexualized behaviours,39.0,34.0,44.0
+no religious affiliation,no religious affiliation,discriminatory behaviours,19.0,15.0,23.0
+living with a disability,living with a disability,unwanted sexualized behaviours,46.0,38.0,54.0
+living with a disability,living with a disability,discriminatory behaviours,28.0,22.0,35.0
+not living with a disability,not living with a disability,unwanted sexualized behaviours,32.0,28.0,36.0
+not living with a disability,not living with a disability,discriminatory behaviours,14.0,11.0,17.0
+single,single,unwanted sexualized behaviours,42.0,37.0,46.0
+single,single,discriminatory behaviours,19.0,16.0,23.0
+married or common law,married or common law,unwanted sexualized behaviours,14.0,10.0,20.0
+married or common law,married or common law,discriminatory behaviours,10.0,6.0,17.0
+not dating,not dating,unwanted sexualized behaviours,38.0,33.0,44.0
+not dating,not dating,discriminatory behaviours,18.0,14.0,23.0
+dating relationship,dating relationship,unwanted sexualized behaviours,47.0,40.0,55.0
+dating relationship,dating relationship,discriminatory behaviours,20.0,15.0,27.0
+dating casually,dating casually,unwanted sexualized behaviours,36.0,23.0,50.0
+less than one year,less than one year,unwanted sexualized behaviours,41.0,34.0,50.0
+less than one year,less than one year,discriminatory behaviours,20.0,14.0,29.0
+one or two years,one or two years,unwanted sexualized behaviours,40.0,32.0,49.0
+one or two years,one or two years,discriminatory behaviours,15.0,10.0,22.0
+three or four years,three or four years,unwanted sexualized behaviours,40.0,34.0,47.0
+three or four years,three or four years,discriminatory behaviours,19.0,14.0,24.0
+five or more years,five or more years,unwanted sexualized behaviours,22.0,16.0,29.0
+five or more years,five or more years,discriminatory behaviours,15.0,10.0,21.0
+full time,full time,unwanted sexualized behaviours,38.0,34.0,41.0
+full time,full time,discriminatory behaviours,18.0,15.0,21.0
+campus housing,campus housing,unwanted sexualized behaviours,42.0,38.0,47.0
+campus housing,campus housing,discriminatory behaviours,19.0,16.0,23.0
+off campus,off campus,unwanted sexualized behaviours,11.0,7.0,18.0

@@ -1,0 +1,19 @@
+entry_type,firms,entries,entry_rate,alu_employment_creation_rate,ilu_employment_creation_rate,year_or_measure,value
+one-year entry,,,13.0,1.5,,EmploymentCreationRate=ALU,1.5
+one-year entry,,,13.0,,2.3,EmploymentCreationRate=ILU,2.3
+two-year entry,,,10.1,1.3,,EmploymentCreationRate=ALU,1.3
+two-year entry,,,10.1,,1.9,EmploymentCreationRate=ILU,1.9
+short-lived entry,,,2.9,0.2,,EmploymentCreationRate=ALU,0.2
+short-lived entry,,,2.9,,0.4,EmploymentCreationRate=ILU,0.4
+short-lived entry,,,2.9,0.0,,Employment=ALU > Year=2012,0.0
+short-lived entry,,,2.9,,0.0,Employment=ILU > Year=2012,0.0
+previously active excluded,,,11.6,1.3,,EmploymentCreationRate=ALU,1.3
+previously active excluded,,,11.6,,2.1,EmploymentCreationRate=ILU,2.1
+ever previously active excluded,,,10.4,1.2,,EmploymentCreationRate=ALU,1.2
+ever previously active excluded,,,10.4,,1.9,EmploymentCreationRate=ILU,1.9
+one year with no pre-existing up,,,10.2,1.2,,EmploymentCreationRate=ALU,1.2
+one year with no pre-existing up,,,10.2,,1.9,EmploymentCreationRate=ILU,1.9
+previously active excluded with no up,,,10.2,1.2,,EmploymentCreationRate=ALU,1.2
+previously active excluded with no up,,,10.2,,1.9,EmploymentCreationRate=ILU,1.9
+ever previously active excluded with no up,,,10.2,1.2,,EmploymentCreationRate=ALU,1.2
+ever previously active excluded with no up,,,10.2,,1.9,EmploymentCreationRate=ILU,1.9

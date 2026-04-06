@@ -1,0 +1,26 @@
+province_territory,measurement_type,value
+newfoundland and labrador,average,0.2
+prince edward island,average,2.4
+nova scotia,average,-17.9
+new brunswiick,average,-11.0
+quebec,average,-14.6
+ontario,average,-20.0
+manitoba,average,-0.3
+saskatchewan,average,-21.1
+alberta,average,-51.0
+british columbia,average,-8.2
+yukon,average,-6.1
+northwest territories,average,-9.6
+nunavut,average,8.8
+newfoundland and labrador,standard deviation,6.2
+prince edward island,standard deviation,0.6
+nova scotia,standard deviation,28.2
+new brunswiick,standard deviation,11.2
+quebec,standard deviation,9.9
+ontario,standard deviation,12.8
+manitoba,standard deviation,4.0
+saskatchewan,standard deviation,17.3
+alberta,standard deviation,16.2
+british columbia,standard deviation,7.2
+yukon,standard deviation,9.1
+northwest territories,standard deviation,5.1

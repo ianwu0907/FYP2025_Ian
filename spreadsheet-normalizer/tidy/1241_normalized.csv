@@ -1,0 +1,67 @@
+year,crime_type,metric,value
+2006,total,index,100.0
+2006,total,percent change from previous year,-1.0
+2006,violent,index,100.0
+2006,violent,percent change from previous year,2.0
+2006,non-violent,index,100.0
+2006,non-violent,percent change from previous year,-2.0
+2007,total,index,95.3
+2007,total,percent change from previous year,-5.0
+2007,violent,index,97.8
+2007,violent,percent change from previous year,-2.0
+2007,non-violent,index,94.3
+2007,non-violent,percent change from previous year,-6.0
+2008,total,index,90.6
+2008,total,percent change from previous year,-5.0
+2008,violent,index,95.1
+2008,violent,percent change from previous year,-3.0
+2008,non-violent,index,88.9
+2008,non-violent,percent change from previous year,-6.0
+2009,total,index,87.8
+2009,total,percent change from previous year,-3.0
+2009,violent,index,94.3
+2009,violent,percent change from previous year,-1.0
+2009,non-violent,index,85.3
+2009,non-violent,percent change from previous year,-4.0
+2010,total,index,82.9
+2010,total,percent change from previous year,-6.0
+2010,violent,index,89.2
+2010,violent,percent change from previous year,-5.0
+2010,non-violent,index,80.5
+2010,non-violent,percent change from previous year,-6.0
+2011,total,index,77.6
+2011,total,percent change from previous year,-6.0
+2011,violent,index,85.7
+2011,violent,percent change from previous year,-4.0
+2011,non-violent,index,74.5
+2011,non-violent,percent change from previous year,-8.0
+2012,total,index,75.4
+2012,total,percent change from previous year,-3.0
+2012,violent,index,81.9
+2012,violent,percent change from previous year,-4.0
+2012,non-violent,index,72.9
+2012,non-violent,percent change from previous year,-2.0
+2013,total,index,68.8
+2013,total,percent change from previous year,-9.0
+2013,violent,index,73.9
+2013,violent,percent change from previous year,-10.0
+2013,non-violent,index,66.8
+2013,non-violent,percent change from previous year,-8.0
+2014,total,index,66.7
+2014,total,percent change from previous year,-3.0
+2014,violent,index,70.5
+2014,violent,percent change from previous year,-5.0
+2014,non-violent,index,65.2
+2014,non-violent,percent change from previous year,-2.0
+2015,total,index,70.1
+2015,total,percent change from previous year,5.0
+2015,violent,index,75.0
+2015,violent,percent change from previous year,6.0
+2015,non-violent,index,68.2
+2015,non-violent,percent change from previous year,5.0
+2016,total,index,71.0
+2016,total,percent change from previous year,1.0
+2016,violent,index,75.3
+2016,violent,percent change from previous year,0.0
+2016,non-violent,index,69.3
+2016,non-violent,percent change from previous year,2.0

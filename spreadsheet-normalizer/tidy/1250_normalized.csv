@@ -1,0 +1,166 @@
+census_metropolitan_area,crime_type,number
+st. john's,homicide,4
+st. john's,sexual assault,69
+st. john's,robbery,87
+st. john's,breaking and entering,602
+st. john's,motor vehicle theft,118
+halifax,homicide,12
+halifax,sexual assault,75
+halifax,robbery,45
+halifax,breaking and entering,239
+halifax,motor vehicle theft,90
+moncton,homicide,1
+moncton,sexual assault,43
+moncton,robbery,64
+moncton,breaking and entering,561
+moncton,motor vehicle theft,147
+saint john,homicide,3
+saint john,sexual assault,41
+saint john,robbery,48
+saint john,breaking and entering,231
+saint john,motor vehicle theft,58
+saguenay,homicide,2
+saguenay,sexual assault,53
+saguenay,robbery,16
+saguenay,breaking and entering,338
+saguenay,motor vehicle theft,117
+quebec,homicide,1
+quebec,sexual assault,47
+quebec,robbery,19
+quebec,breaking and entering,319
+quebec,motor vehicle theft,71
+sherbrooke,homicide,2
+sherbrooke,sexual assault,58
+sherbrooke,robbery,19
+sherbrooke,breaking and entering,286
+sherbrooke,motor vehicle theft,54
+trois-rivieres,homicide,0
+trois-rivieres,sexual assault,54
+trois-rivieres,robbery,12
+trois-rivieres,breaking and entering,336
+trois-rivieres,motor vehicle theft,85
+montreal,homicide,42
+montreal,sexual assault,46
+montreal,robbery,74
+montreal,breaking and entering,386
+montreal,motor vehicle theft,168
+gatineau,homicide,3
+gatineau,sexual assault,48
+gatineau,robbery,32
+gatineau,breaking and entering,320
+gatineau,motor vehicle theft,71
+ottawa,homicide,24
+ottawa,sexual assault,59
+ottawa,robbery,50
+ottawa,breaking and entering,270
+ottawa,motor vehicle theft,88
+kingston,homicide,0
+kingston,sexual assault,60
+kingston,robbery,18
+kingston,breaking and entering,395
+kingston,motor vehicle theft,72
+peterborough,homicide,2
+peterborough,sexual assault,97
+peterborough,robbery,41
+peterborough,breaking and entering,304
+peterborough,motor vehicle theft,57
+toronto,homicide,96
+toronto,sexual assault,44
+toronto,robbery,83
+toronto,breaking and entering,205
+toronto,motor vehicle theft,113
+hamilton,homicide,12
+hamilton,sexual assault,64
+hamilton,robbery,70
+hamilton,breaking and entering,308
+hamilton,motor vehicle theft,217
+st. catharines-niagara,homicide,1
+st. catharines-niagara,sexual assault,53
+st. catharines-niagara,robbery,31
+st. catharines-niagara,breaking and entering,373
+st. catharines-niagara,motor vehicle theft,160
+kitchener-cambridge-waterloo,homicide,6
+kitchener-cambridge-waterloo,sexual assault,51
+kitchener-cambridge-waterloo,robbery,51
+kitchener-cambridge-waterloo,breaking and entering,358
+kitchener-cambridge-waterloo,motor vehicle theft,137
+brantford,homicide,4
+brantford,sexual assault,68
+brantford,robbery,68
+brantford,breaking and entering,588
+brantford,motor vehicle theft,454
+guelph,homicide,1
+guelph,sexual assault,64
+guelph,robbery,22
+guelph,breaking and entering,347
+guelph,motor vehicle theft,119
+london,homicide,8
+london,sexual assault,46
+london,robbery,55
+london,breaking and entering,389
+london,motor vehicle theft,195
+windsor,homicide,3
+windsor,sexual assault,52
+windsor,robbery,61
+windsor,breaking and entering,506
+windsor,motor vehicle theft,199
+barrie,homicide,2
+barrie,sexual assault,54
+barrie,robbery,32
+barrie,breaking and entering,200
+barrie,motor vehicle theft,68
+greater sudbury,homicide,0
+greater sudbury,sexual assault,61
+greater sudbury,robbery,48
+greater sudbury,breaking and entering,454
+greater sudbury,motor vehicle theft,101
+thunder bay,homicide,8
+thunder bay,sexual assault,85
+thunder bay,robbery,118
+thunder bay,breaking and entering,492
+thunder bay,motor vehicle theft,158
+winnipeg,homicide,25
+winnipeg,sexual assault,98
+winnipeg,robbery,229
+winnipeg,breaking and entering,682
+winnipeg,motor vehicle theft,315
+regina,homicide,8
+regina,sexual assault,59
+regina,robbery,118
+regina,breaking and entering,760
+regina,motor vehicle theft,523
+saskatoon,homicide,10
+saskatoon,sexual assault,95
+saskatoon,robbery,116
+saskatoon,breaking and entering,791
+saskatoon,motor vehicle theft,453
+calgary,homicide,33
+calgary,sexual assault,44
+calgary,robbery,62
+calgary,breaking and entering,576
+calgary,motor vehicle theft,535
+edmonton,homicide,47
+edmonton,sexual assault,72
+edmonton,robbery,103
+edmonton,breaking and entering,582
+edmonton,motor vehicle theft,483
+kelowna,homicide,5
+kelowna,sexual assault,34
+kelowna,robbery,41
+kelowna,breaking and entering,620
+kelowna,motor vehicle theft,316
+abbotsford-mission,homicide,6
+abbotsford-mission,sexual assault,42
+abbotsford-mission,robbery,64
+abbotsford-mission,breaking and entering,577
+abbotsford-mission,motor vehicle theft,493
+vancouver,homicide,41
+vancouver,sexual assault,44
+vancouver,robbery,78
+vancouver,breaking and entering,678
+vancouver,motor vehicle theft,312
+victoria,homicide,1
+victoria,sexual assault,64
+victoria,robbery,37
+victoria,breaking and entering,326
+victoria,motor vehicle theft,108

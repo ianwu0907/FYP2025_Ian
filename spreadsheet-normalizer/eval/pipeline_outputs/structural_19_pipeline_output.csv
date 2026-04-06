@@ -1,0 +1,14 @@
+sex_ethnicity_race_citizenship,section_header,total,in_labor_force,not_in_labor_force,full_time,part_time
+all u.s. seh doctorate holders,,805500.0,88.1,11.9,76.1,9.9
+male,sex,551700.0,87.7,12.3,77.9,7.8
+female,sex,253700.0,88.9,11.1,72.4,14.4
+hispanic or latino,ethnicity and race,25800.0,93,7,81.8,8.9
+not hispanic or latino,ethnicity and race,779700.0,87.9,12.1,76,9.9
+american indian or alaska native,ethnicity and race,1700.0,88.2,5.9,76.5,11.8
+asian,ethnicity and race,147500.0,93.6,6.4,86.4,4.7
+black or african american,ethnicity and race,24500.0,93.9,6.1,80.4,11
+native hawaiian or other pacific islander,ethnicity and race,900.0,88.9,11.1,77.8,11.1
+white,ethnicity and race,596300.0,86.2,13.8,73.1,11.1
+more than one race,ethnicity and race,8800.0,93.2,6.8,79.5,10.2
+u.s. citizen or permanent resident,citizenship,775300.0,87.7,12.3,75.4,10.2
+temporary visa holder,citizenship,30200.0,98.3,1.7,95.4,2

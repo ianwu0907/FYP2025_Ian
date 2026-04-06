@@ -1,0 +1,80 @@
+organization_status,organization_category,year,number_of_units
+Enterprise,Enterprises,2015,1048470
+Enterprise,Enterprises,2016,1344176
+Enterprise,Enterprises,2017,1675975
+Enterprise,Enterprises,2018,1547260
+Enterprise,Enterprises,2019,1982468
+Enterprise,Enterprises,2020,2483474
+Enterprise,Enterprises,2021,2928948
+Enterprise,Enterprises,2022,3202941
+Public Institution,Institutions,2015,40919
+Public Institution,Institutions,2016,44903
+Public Institution,Institutions,2017,48350
+Public Institution,Institutions,2018,50681
+Public Institution,Institutions,2019,47378
+Public Institution,Institutions,2020,47480
+Public Institution,Institutions,2021,39744
+Public Institution,Institutions,2022,40425
+Organizational Unit,Agencies & Organizations,2015,12411
+Organizational Unit,Agencies & Organizations,2016,12826
+Organizational Unit,Agencies & Organizations,2017,12304
+Organizational Unit,Agencies & Organizations,2018,12465
+Organizational Unit,Agencies & Organizations,2019,12213
+Organizational Unit,Agencies & Organizations,2020,12417
+Organizational Unit,Agencies & Organizations,2021,10835
+Organizational Unit,Agencies & Organizations,2022,11087
+Social Organizations,Social Groups,2015,15919
+Social Organizations,Social Groups,2016,18819
+Social Organizations,Social Groups,2017,20929
+Social Organizations,Social Groups,2018,13337
+Social Organizations,Social Groups,2019,17384
+Social Organizations,Social Groups,2020,18876
+Social Organizations,Social Groups,2021,14015
+Social Organizations,Social Groups,2022,16478
+Private Non-enterprise Units,Private Non-enterprise Units,2015,16098
+Private Non-enterprise Units,Private Non-enterprise Units,2016,19740
+Private Non-enterprise Units,Private Non-enterprise Units,2017,24624
+Private Non-enterprise Units,Private Non-enterprise Units,2018,28723
+Private Non-enterprise Units,Private Non-enterprise Units,2019,34781
+Private Non-enterprise Units,Private Non-enterprise Units,2020,39907
+Private Non-enterprise Units,Private Non-enterprise Units,2021,34220
+Private Non-enterprise Units,Private Non-enterprise Units,2022,40781
+Foundation,Foundation,2015,81
+Foundation,Foundation,2016,99
+Foundation,Foundation,2017,115
+Foundation,Foundation,2018,116
+Foundation,Foundation,2019,153
+Foundation,Foundation,2020,185
+Foundation,Foundation,2021,195
+Foundation,Foundation,2022,239
+Resident Committee,Neighborhood Committee,2015,7507
+Resident Committee,Neighborhood Committee,2016,7323
+Resident Committee,Neighborhood Committee,2017,7048
+Resident Committee,Neighborhood Committee,2018,7307
+Resident Committee,Neighborhood Committee,2019,7463
+Resident Committee,Neighborhood Committee,2020,7424
+Resident Committee,Neighborhood Committee,2021,6905
+Resident Committee,Neighborhood Committee,2022,6924
+Village Committee,Village Committee,2015,73947
+Village Committee,Village Committee,2016,73909
+Village Committee,Village Committee,2017,73453
+Village Committee,Village Committee,2018,71411
+Village Committee,Village Committee,2019,73870
+Village Committee,Village Committee,2020,73589
+Village Committee,Village Committee,2021,67156
+Village Committee,Village Committee,2022,65294
+Farmers' Professional Cooperatives,Professional Farmers,2016,110936
+Farmers' Professional Cooperatives,Professional Farmers,2017,136031
+Farmers' Professional Cooperatives,Professional Farmers,2018,58750
+Farmers' Professional Cooperatives,Professional Farmers,2019,122477
+Farmers' Professional Cooperatives,Professional Farmers,2020,148883
+Farmers' Professional Cooperatives,Professional Farmers,2021,151584
+Farmers' Professional Cooperatives,Professional Farmers,2022,154682
+Other Organizations,Others,2015,54565
+Other Organizations,Others,2016,19334
+Other Organizations,Others,2017,15961
+Other Organizations,Others,2018,11251
+Other Organizations,Others,2019,11163
+Other Organizations,Others,2020,10191
+Other Organizations,Others,2021,7823
+Other Organizations,Others,2022,8054

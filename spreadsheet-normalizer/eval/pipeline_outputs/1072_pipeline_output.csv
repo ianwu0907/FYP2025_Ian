@@ -1,0 +1,31 @@
+source_of_assistance,user_status,confidence_interval_type,percentage_value
+family in same household,%,,65.3
+family in same household,95% confidence interval,from,63.3
+family in same household,,to,67.3
+family in same household,%,,65.6
+family in same household,95% confidence interval,from,64.6
+family in same household,,to,66.0
+family not in same household,%,,44.4
+family not in same household,95% confidence interval,from,42.5
+family not in same household,,to,46.3
+family not in same household,%,,40.4
+family not in same household,95% confidence interval,from,39.6
+family not in same household,,to,40.8
+friends/neighbours,%,,30.4
+friends/neighbours,95% confidence interval,from,28.8
+friends/neighbours,,to,32.1
+friends/neighbours,%,,25.6
+friends/neighbours,95% confidence interval,from,25.0
+friends/neighbours,,to,25.9
+paid organizations/individuals,%,,27.0
+paid organizations/individuals,95% confidence interval,from,25.8
+paid organizations/individuals,,to,28.2
+paid organizations/individuals,%,,20.4
+paid organizations/individuals,95% confidence interval,from,19.9
+paid organizations/individuals,,to,20.7
+unpaid organizations/individuals,%,,35.4
+unpaid organizations/individuals,95% confidence interval,from,33.5
+unpaid organizations/individuals,,to,37.4
+unpaid organizations/individuals,%,,11.0
+unpaid organizations/individuals,95% confidence interval,from,10.5
+unpaid organizations/individuals,,to,11.5

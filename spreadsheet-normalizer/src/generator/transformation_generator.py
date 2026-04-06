@@ -1,5 +1,5 @@
 """
-Transformation Generator Module (Redesigned)
+Transformation Generator Module (Redesigned with Short-term Memory)
 
 Architecture:
   1. CODE RECIPE BOOK: For each irregularity type in the taxonomy,
@@ -14,18 +14,10 @@ Architecture:
      - A complete few-shot example of a transform function
      The LLM writes a `def transform(df)` function.
 
-  3. EXECUTE → VALIDATE → FEEDBACK LOOP: Run the code, check
-     output against schema expectations, regenerate with error
-     context if validation fails.
-
-Design principles:
-  - The old Strategy stage is removed. Weak models produced vague
-    strategies that led to bad code. Instead, the code recipes
-    provide concrete implementation guidance directly.
-  - Few-shot: a complete working transform function is shown.
-  - Full data is passed — no truncation.
-  - Feedback loop provides the actual error/output for targeted fixes.
-  - wide-format strategy (melt vs loop) is decided in Python, not by LLM.
+  3. EXECUTE → VALIDATE → FEEDBACK LOOP (Stateful): Run the code, check
+     output against schema expectations. If validation fails, append the
+     error context to the ongoing Chat History, allowing the LLM to remember
+     its previous attempts and debug iteratively.
 """
 
 import json
@@ -47,14 +39,6 @@ logger = logging.getLogger(__name__)
 # ============================================================================
 # Code Recipe Book
 # ============================================================================
-# Each recipe is a concrete pandas code pattern that handles one
-# irregularity type. The LLM sees these as reference material and
-# adapts them to the specific spreadsheet.
-#
-# Recipes use generic variable names (df, result, etc.) so the LLM
-# can see the PATTERN, not a hard-coded solution.
-# ============================================================================
-
 CODE_RECIPES = {
     "METADATA_ROWS": "# Skip metadata rows in your loop using `if i < {data_start_row}: continue`",
 
@@ -67,8 +51,6 @@ CODE_RECIPES = {
 #    Row dimensions should always be extracted from `df.iloc[i, ...]`.
 '''.strip(),
 
-    # WIDE_FORMAT is handled dynamically by _get_relevant_recipes()
-    # based on the _is_simple_wide() check — do not add a static recipe here.
     "WIDE_FORMAT": None,
 
     "BILINGUAL_ALTERNATING_ROWS": '''
@@ -237,12 +219,6 @@ result[["primary_dim", "secondary_dim"]] = result.iloc[:, compound_col_idx].appl
 }
 
 
-# ============================================================================
-# Wide-format recipes — selected at runtime by _get_relevant_recipes()
-# based on _is_simple_wide(). Never shown together; LLM always receives
-# exactly one path with no conditional branching to evaluate.
-# ============================================================================
-
 _WIDE_FORMAT_MELT_RECIPE = '''
 # RECIPE: WIDE_FORMAT (simple) — use pd.melt()
 # Applicable because WIDE_FORMAT is the only structural irregularity.
@@ -291,17 +267,6 @@ _WIDE_FORMAT_LOOP_RECIPE = '''
 # ============================================================================
 
 class TransformationGenerator:
-    """
-    Generates transformation code using a code-recipe-guided approach:
-
-    1. Build prompt with code recipes for detected irregularities
-    2. Single LLM call generates a `def transform(df)` function
-    3. Execute → Validate → Feedback loop
-
-    Wide-format strategy (melt vs loop) is decided deterministically in
-    Python via _is_simple_wide() before any LLM call is made. The LLM
-    always receives a single, unambiguous instruction — never a branch.
-    """
 
     def __init__(self, config: Dict[str, Any]):
         self.config = config
@@ -324,10 +289,11 @@ class TransformationGenerator:
             kw["base_url"] = base_url
         self.client = OpenAI(**kw)
         self.model = os.getenv("OPENAI_CODEGEN_MODEL") or os.getenv("OPENAI_MODEL", "gpt-4o-mini")
-        self.max_completion_tokens = config.get("max_completion_tokens", 6000)
+        self.max_completion_tokens = config.get("max_completion_tokens", 128000)
         self.max_retries = config.get("max_retries", 5)
-        self._last_execution_log = []  # captured print output from last execution
-        self._simple_wide = False      # set during _generate_code; reused in _regenerate_code
+        self._last_execution_log = []
+        self._simple_wide = False
+        self._current_messages = []    # Added: Stateful memory for retries
 
     # ==================================================================
     # Public API
@@ -337,18 +303,7 @@ class TransformationGenerator:
                              encoded_data: Dict[str, Any],
                              detection_result: Dict[str, Any],
                              schema: Dict[str, Any]) -> Dict[str, Any]:
-        """
-        Generate and execute transformation code.
 
-        Args:
-            encoded_data:     From SpreadsheetEncoder
-            detection_result: From IrregularityDetector
-            schema:           From SchemaEstimator
-
-        Returns:
-            Dict with: normalized_df, transformation_code,
-            validation_result, attempts
-        """
         logger.info("=" * 60)
         logger.info("TRANSFORMATION GENERATOR")
         logger.info("=" * 60)
@@ -357,7 +312,7 @@ class TransformationGenerator:
         labels = detection_result.get("labels", [])
         physical = detection_result.get("physical", {})
 
-        # Stage 1: Generate code
+        # Stage 1: Code Generation
         logger.info("\n--- Stage 1: Code Generation ---")
         code = self._generate_code(
             df, physical, detection_result, schema, labels
@@ -369,7 +324,7 @@ class TransformationGenerator:
 
         for attempt in range(self.max_retries):
             logger.info(f"\nAttempt {attempt + 1}/{self.max_retries}")
-            self._last_execution_log = []  # reset before each attempt
+            self._last_execution_log = []
 
             try:
                 result_df = self._execute_code(code, df)
@@ -394,21 +349,32 @@ class TransformationGenerator:
                         )
                         code = self._regenerate_code(
                             df, physical, detection_result, schema,
-                            labels, code, feedback
+                            labels, code, feedback, attempt
                         )
 
                     else:
-                        logger.error("Max retries reached")
+                        logger.error(
+                            "Max retries reached. All transformation attempts produced "
+                            "invalid output. Returning the original raw DataFrame as "
+                            "a safe fallback — no data is lost."
+                        )
                         return {
-                            "normalized_df": result_df,
+                            "normalized_df": df.copy(),
                             "transformation_code": code,
                             "transformation_strategy": {"approach": "code_recipe_guided"},
-                            "validation_result": validation,
+                            "validation_result": {
+                                **validation,
+                                "fallback_to_raw": True,
+                                "fallback_reason": (
+                                    "All transformation attempts failed validation. "
+                                    "Raw input returned to prevent data loss."
+                                ),
+                            },
                             "attempts": attempt + 1,
                         }
 
             except Exception as e:
-                logger.error(f"Execution error: {e}")
+                logger.error(f"Execution error: {str(e)}")
                 if attempt < self.max_retries - 1:
                     feedback = {
                         "error_type": "EXECUTION_ERROR",
@@ -418,7 +384,7 @@ class TransformationGenerator:
                     }
                     code = self._regenerate_code(
                         df, physical, detection_result, schema,
-                        labels, code, feedback
+                        labels, code, feedback, attempt
                     )
                 else:
                     logger.error(f"Max retries reached with execution error. Falling back to raw data.")
@@ -442,15 +408,6 @@ class TransformationGenerator:
 
     @staticmethod
     def _is_simple_wide(labels: List[str]) -> bool:
-        """
-        Returns True when the table is wide-format but has no co-occurring
-        structural irregularities that prevent pd.melt() from being used.
-
-        This check is a pure set operation on detected labels.
-        It is intentionally performed in Python before any LLM call so
-        that the LLM always receives a single unambiguous instruction
-        rather than a conditional branch to evaluate itself.
-        """
         if "WIDE_FORMAT" not in labels:
             return False
         blocking = {"MULTI_LEVEL_HEADER", "NESTED_COLUMN_GROUPS", "BILINGUAL_ALTERNATING_ROWS", "EMBEDDED_DIMENSION_IN_COLUMN"}
@@ -467,7 +424,6 @@ class TransformationGenerator:
                        labels: List[str]) -> str:
         """Generate transformation code with code recipes as guidance."""
 
-        # Decide wide-format strategy in Python — store for reuse in regeneration
         self._simple_wide = self._is_simple_wide(labels)
         self._has_wide = "WIDE_FORMAT" in labels
         if self._simple_wide:
@@ -486,17 +442,24 @@ class TransformationGenerator:
             self._simple_wide, self._has_wide
         )
 
+        # Added: Initialize conversation history
+        self._current_messages = [
+            {"role": "system", "content": self._system_prompt(self._simple_wide, self._has_wide)},
+            {"role": "user", "content": prompt},
+        ]
+
         try:
             resp = self.client.chat.completions.create(
                 model=self.model,
-                messages=[
-                    {"role": "system", "content": self._system_prompt(self._simple_wide, self._has_wide)},
-                    {"role": "user", "content": prompt},
-                ],
+                messages=self._current_messages,
                 max_completion_tokens=self.max_completion_tokens,
             )
-            code = resp.choices[0].message.content.strip()
-            code = self._extract_code(code)
+            raw_response = resp.choices[0].message.content.strip()
+
+            # Added: Save assistant's response to memory
+            self._current_messages.append({"role": "assistant", "content": raw_response})
+
+            code = self._extract_code(raw_response)
             logger.debug(f"Generated code:\n{code[:800]}...")
             return code
 
@@ -582,15 +545,9 @@ class TransformationGenerator:
             mandatory = ""
         return common_header + mandatory
 
-    # 新增方法
     def _format_header_lineage(self, df: pd.DataFrame,
                                physical: Dict[str, Any],
                                labels: List[str]) -> str:
-        """
-        When NESTED_COLUMN_GROUPS is present, reconstruct the ancestor
-        path for each data column by forward-filling header rows.
-        This makes implicit hierarchy explicit for the LLM.
-        """
         if "NESTED_COLUMN_GROUPS" not in labels and "MULTI_LEVEL_HEADER" not in labels:
             return "(no nested groups detected)"
 
@@ -598,7 +555,6 @@ class TransformationGenerator:
         if start < 2:
             return "(single header row, no lineage needed)"
 
-        # Forward-fill each header row horizontally (mimics merged cell semantics)
         header_rows = []
         for i in range(start):
             row = []
@@ -610,7 +566,6 @@ class TransformationGenerator:
                 row.append(last_val)
             header_rows.append(row)
 
-        # Build lineage string per column
         lines = []
         for j in range(len(df.columns)):
             path_parts = []
@@ -644,8 +599,6 @@ class TransformationGenerator:
             "row_count_estimate", "unknown"
         )
 
-        # Choose few-shot example matching the actual strategy.
-        # No wide-format reshaping needed → no example required; recipes + schema suffice.
         if has_wide and simple_wide:
             few_shot = self._few_shot_melt()
         elif has_wide:
@@ -683,7 +636,7 @@ DATA (full data region):
 2. Use .iloc for column access (positional indices)
 3. Output columns MUST be exactly: {target_cols}
 4. Expected output: ~{est_rows} rows
-5. Add print() after each step
+5. ADD print() AFTER EACH STEP
 6. Adapt the code recipes above to THIS specific data
 
 {few_shot}
@@ -698,7 +651,7 @@ Now write the transform function for THIS spreadsheet. Output ONLY code."""
     def _few_shot_melt() -> str:
         return """\
 === FEW-SHOT EXAMPLE ===
-⚠️  WARNING: The values below (row indices, column indices, column names)
+WARNING: The values below (row indices, column indices, column names)
 are SPECIFIC TO THIS EXAMPLE spreadsheet. For YOUR spreadsheet, derive
 all such values from the HEADERS, PHYSICAL FEATURES, and SOURCE DATA above.
 Do NOT copy any number or string literal from this example into your code.
@@ -748,7 +701,7 @@ def transform(df):
     def _few_shot_loop() -> str:
         return """\
 === FEW-SHOT EXAMPLE ===
-⚠️  WARNING: The values below (row indices, column indices, year strings, column names)
+WARNING: The values below (row indices, column indices, year strings, column names)
 are SPECIFIC TO THIS EXAMPLE spreadsheet. For YOUR spreadsheet, derive
 all such values from the HEADERS, PHYSICAL FEATURES, and SOURCE DATA above.
 Do NOT copy any number or string literal from this example into your code.
@@ -824,13 +777,11 @@ def transform(df):
     def _get_relevant_recipes(self, labels: List[str],
                               physical: Dict[str, Any],
                               simple_wide: bool = False) -> str:
-        """Assemble code recipes for detected irregularity labels."""
         lines = []
         start_r = physical.get("data_start_row", 0)
         end_r = physical.get("data_end_row", "len(df)-1")
 
         for label in labels:
-            # WIDE_FORMAT is handled separately based on simple_wide flag
             if label == "WIDE_FORMAT":
                 lines.append("--- WIDE_FORMAT ---")
                 if simple_wide:
@@ -849,7 +800,6 @@ def transform(df):
             if recipe is None:
                 continue
 
-            # Substitute known physical values
             recipe = recipe.replace("{data_start_row}", str(start_r))
             recipe = recipe.replace("{data_end_row}", str(end_r))
             recipe = recipe.replace(
@@ -860,7 +810,6 @@ def transform(df):
             lines.append(recipe.strip())
             lines.append("")
 
-        # Universal best practice — wording adapts to chosen strategy
         lines.append("--- UNIVERSAL BEST PRACTICE (Apply to all tables) ---")
         has_wide = "WIDE_FORMAT" in labels
         if has_wide and simple_wide:
@@ -894,11 +843,6 @@ def transform(df):
     def _get_structure_comprehension(self, df: pd.DataFrame,
                                      physical: Dict[str, Any],
                                      labels: List[str]) -> str:
-        """
-        TreeThinker-style pre-step: ask LLM to explicitly describe
-        the header hierarchy before attempting code fix.
-        One small focused call, output is injected into retry prompt.
-        """
         start = physical["data_start_row"]
         header_preview = []
         for i in range(start):
@@ -936,13 +880,15 @@ def transform(df):
                          schema: Dict[str, Any],
                          labels: List[str],
                          previous_code: str,
-                         feedback: Dict[str, Any]) -> str:
+                         feedback: Dict[str, Any],
+                         attempt: int = 0) -> str:
+
         structural_labels = {"NESTED_COLUMN_GROUPS", "MULTI_LEVEL_HEADER", "WIDE_FORMAT"}
         if structural_labels & set(labels):
             comprehension = self._get_structure_comprehension(df, physical, labels)
             feedback["structure_comprehension"] = comprehension
-        """Regenerate code using detailed error feedback, data snapshots, and CoT."""
-        logger.info("Regenerating code with feedback...")
+
+        logger.info(f"Regenerating code with feedback (Stateful) - Attempt {attempt + 1}")
 
         target_cols = [c["name"] for c in schema.get("target_columns", [])]
         est_rows = schema.get("expected_output", {}).get("row_count_estimate", "?")
@@ -1003,31 +949,49 @@ Sample (first 5 rows):
         Use this as ground truth when writing your column_map — do NOT infer column meanings from the raw data again.
         
         {feedback['structure_comprehension']}
-        
         """
-        prompt += f"""## REQUIREMENTS
-1. Analyze the failure and write a brief ## DIAGNOSIS.
+
+        prompt += f"""
+## REQUIREMENTS
+1. Analyze the failure of your previous code and write a brief ## DIAGNOSIS.
 2. Write a ## STEP-BY-STEP PLAN on how you will fix the code.
 3. Output the corrected Python code inside a single ```python block.
 4. Output columns MUST be exactly: {target_cols}
 5. Expected approximately {est_rows} rows.
 6. def transform(df): → returns DataFrame
 7. Use pd.to_numeric(..., errors='coerce') for safe type conversions to avoid NaN integer errors.
+"""
 
-Output the diagnosis, plan, and the Python code block."""
+        # Forced Break-out ===
+        if attempt>0 and attempt %3 == 0:
+            logger.warning("Consecutive failures detected. Injecting CRITICAL RESET instruction.")
+            prompt += f"""
+**CRITICAL RESET INSTRUCTION**
+You have failed {attempt + 1} times. Your previous code approach is stuck in a loop of errors (e.g. Out of bounds, 100% nulls, or KeyErrors). 
+The fundamental logic or initial assumption you are trying to patch is WRONG.
+
+1. **COMPLETELY DISCARD** your previous approach. Do not attempt to tweak or fix the previous code.
+2. Re-read the initial `HEADERS` and `DATA` structures from the very first message.
+3. Rethink your row slicing, loop indices, and dictionary extraction logic from scratch.
+4. Begin your ## DIAGNOSIS strictly with this exact sentence: "My previous approach was a dead end because..."
+"""
+        # =================================================
+            self._current_messages = self._current_messages[:2]
+        prompt += "\nOutput the diagnosis, plan, and the Python code block."
+
+        self._current_messages.append({"role": "user", "content": prompt})
 
         try:
             resp = self.client.chat.completions.create(
                 model=self.model,
-                messages=[
-                    # Reuse the same strategy decision from _generate_code
-                    {"role": "system", "content": self._system_prompt(self._simple_wide)},
-                    {"role": "user", "content": prompt},
-                ],
+                messages=self._current_messages,
                 max_completion_tokens=self.max_completion_tokens,
             )
-            code = resp.choices[0].message.content.strip()
-            return self._extract_code(code)
+            raw_response = resp.choices[0].message.content.strip()
+
+            self._current_messages.append({"role": "assistant", "content": raw_response})
+
+            return self._extract_code(raw_response)
         except Exception as e:
             logger.error(f"Code regeneration failed: {e}")
             return previous_code
@@ -1037,17 +1001,12 @@ Output the diagnosis, plan, and the Python code block."""
     # ==================================================================
 
     def _execute_code(self, code: str, df: pd.DataFrame) -> pd.DataFrame:
-        """
-        Execute the transform function safely.
-        Captures all print() output for diagnostic analysis.
-        """
         captured_output = []
 
         def capturing_print(*args, **kwargs):
-            """Capture print output for diagnostics while still printing."""
             text = " ".join(str(a) for a in args)
             captured_output.append(text)
-            print(*args, **kwargs)  # still print to console
+            print(*args, **kwargs)
 
         exec_globals = {
             "pd": pd,
@@ -1062,8 +1021,6 @@ Output the diagnosis, plan, and the Python code block."""
             raise ValueError("Code must define a 'transform' function")
 
         result = exec_globals["transform"](df.copy())
-
-        # Store captured output for feedback analysis
         self._last_execution_log = captured_output
 
         return result
@@ -1074,17 +1031,14 @@ Output the diagnosis, plan, and the Python code block."""
 
     def _validate_result(self, result_df: pd.DataFrame,
                          schema: Dict[str, Any]) -> Dict[str, Any]:
-        """Validate the transformation output against schema expectations."""
         expected_count = schema.get("expected_output", {}).get("row_count_estimate", 0)
 
         errors = []
         warnings = []
 
-        # Check 1: Not empty
         if result_df.empty:
             errors.append("Result DataFrame is empty")
 
-        # Check 2: Expected columns
         expected_cols = [c["name"] for c in schema.get("target_columns", [])]
         actual_cols = list(result_df.columns)
         missing = set(expected_cols) - set(actual_cols)
@@ -1094,16 +1048,13 @@ Output the diagnosis, plan, and the Python code block."""
         if extra:
             warnings.append(f"Extra columns: {extra}")
 
-        # Check 3: Row count
         actual_count = len(result_df)
         if actual_count == 0:
             errors.append("Row count is 0 (Result DataFrame is empty). Your extraction loop failed to capture any data.")
         elif actual_count > 50000:
             warnings.append(f"Row count is extremely high ({actual_count} rows). Verify your nested loops.")
 
-        # Check 4: Null check (Enhanced)
         if not result_df.empty:
-            # Collect schema column sources for diagnosis
             schema_col_sources = {
                 c["name"]: c.get("source", "")
                 for c in schema.get("target_columns", [])
@@ -1117,17 +1068,12 @@ Output the diagnosis, plan, and the Python code block."""
 
                 if null_pct == 100:
                     source_hint = schema_col_sources.get(col, "")
-                    # Distinguish: likely a schema design error (dimension only
-                    # existed in the rows that were filtered out) vs. a code
-                    # extraction bug (the source column exists but nothing was
-                    # extracted).
                     errors.append(f"Column '{col}' is 100% null. Check your column renaming, unpivot/melt, or merge logic. Do NOT use `raise ValueError` to handle this, fix the dataframe manipulation.")
                 elif null_pct > 80:
                     errors.append(f"Column '{col}' is {null_pct:.0f}% null. The extraction logic is likely misaligned.")
                 elif null_pct > 50:
                     warnings.append(f"Column '{col}' is {null_pct:.0f}% null")
 
-        # Check 5: Semantic sample validation
         sample_checks = self._validate_samples(result_df, schema)
         for check in sample_checks:
             if not check.get("passed", True):
@@ -1145,7 +1091,6 @@ Output the diagnosis, plan, and the Python code block."""
 
     def _validate_samples(self, result_df: pd.DataFrame,
                           schema: Dict[str, Any]) -> List[Dict]:
-        """Validate against schema-provided sample rows and provide closest match on failure."""
         checks = []
         for sample in schema.get("validation_samples", []):
             expected = sample.get("expected_row", {})
@@ -1200,13 +1145,6 @@ Output the diagnosis, plan, and the Python code block."""
                         result_df: pd.DataFrame,
                         source_df: pd.DataFrame,
                         schema: Dict[str, Any]) -> Dict[str, Any]:
-        """
-        Build structured feedback for code regeneration.
-
-        Key improvement: when row count is wrong, parse the execution
-        log to find WHICH step caused the biggest row loss, and show
-        samples of what was dropped.
-        """
         issues = []
         expected_cols = [c["name"] for c in schema.get("target_columns", [])]
         expected_count = schema.get("expected_output", {}).get(
@@ -1248,10 +1186,6 @@ Output the diagnosis, plan, and the Python code block."""
     def _analyze_row_loss(self, source_df: pd.DataFrame,
                           result_df: pd.DataFrame,
                           expected_count: int) -> str:
-        """
-        Parse captured execution log to find which step caused the
-        biggest row loss. Returns a diagnostic string for the LLM.
-        """
         lines = []
 
         shape_history = []
@@ -1360,7 +1294,6 @@ Output the diagnosis, plan, and the Python code block."""
     def _format_headers(self, df: pd.DataFrame,
                         physical: Dict[str, Any]) -> str:
         start = physical["data_start_row"]
-        # 新增：拿到左侧 dimension 列的列索引范围
         left_dim_cols = set(range(physical.get("left_header_cols_num", 1)))
 
         lines = []
@@ -1372,7 +1305,6 @@ Output the diagnosis, plan, and the Python code block."""
                     s = str(val).strip().replace("\n", "\\n")
                     if len(s) > 60:
                         s = s[:60] + "..."
-                    # ← 核心改动：加 tag
                     tag = "[ROW_DIM]" if j in left_dim_cols else "[COL_HEADER]"
                     parts.append(f'[{j}]{tag}="{s}"')
             if parts:
@@ -1383,7 +1315,6 @@ Output the diagnosis, plan, and the Python code block."""
 
     def _format_data(self, df: pd.DataFrame,
                      physical: Dict[str, Any]) -> str:
-        """Full data — no truncation."""
         sr = physical.get("data_start_row", 0)
         er = physical.get("data_end_row", len(df) - 1)
         lines = []
@@ -1416,7 +1347,6 @@ Output the diagnosis, plan, and the Python code block."""
     # ==================================================================
 
     def _extract_code(self, text: str) -> str:
-        """Extract Python code from LLM response safely, ignoring CoT text."""
         text = text.strip()
 
         matches = re.findall(r"```python\n(.*?)\n```", text, re.DOTALL)

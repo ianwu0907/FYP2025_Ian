@@ -1,0 +1,239 @@
+census_metropolitan_area,crime_type,rate
+st. john's,homicide,4.0
+halifax,homicide,12.0
+moncton,homicide,1.0
+saint john,homicide,3.0
+saguenay,homicide,2.0
+quebec,homicide,1.0
+sherbrooke,homicide,2.0
+trois-rivieres,homicide,0.0
+montreal,homicide,42.0
+gatineau,homicide,3.0
+ottawa,homicide,24.0
+kingston,homicide,0.0
+peterborough,homicide,2.0
+toronto,homicide,96.0
+hamilton,homicide,12.0
+st. catharines-niagara,homicide,1.0
+kitchener-cambridge-waterloo,homicide,6.0
+brantford,homicide,4.0
+guelph,homicide,1.0
+london,homicide,8.0
+windsor,homicide,3.0
+barrie,homicide,2.0
+greater sudbury,homicide,0.0
+thunder bay,homicide,8.0
+winnipeg,homicide,25.0
+regina,homicide,8.0
+saskatoon,homicide,10.0
+calgary,homicide,33.0
+edmonton,homicide,47.0
+kelowna,homicide,5.0
+abbotsford-mission,homicide,6.0
+vancouver,homicide,41.0
+victoria,homicide,1.0
+canada,homicide,611.0
+st. john's,Unnamed: 2,1.93
+halifax,Unnamed: 2,2.82
+moncton,Unnamed: 2,0.64
+saint john,Unnamed: 2,2.35
+saguenay,Unnamed: 2,1.2
+quebec,Unnamed: 2,0.12
+sherbrooke,Unnamed: 2,1.0
+trois-rivieres,Unnamed: 2,0.0
+montreal,Unnamed: 2,1.02
+gatineau,Unnamed: 2,0.91
+ottawa,Unnamed: 2,2.37
+kingston,Unnamed: 2,0.0
+peterborough,Unnamed: 2,1.62
+toronto,Unnamed: 2,1.55
+hamilton,Unnamed: 2,1.58
+st. catharines-niagara,Unnamed: 2,0.22
+kitchener-cambridge-waterloo,Unnamed: 2,1.09
+brantford,Unnamed: 2,2.73
+guelph,Unnamed: 2,0.76
+london,Unnamed: 2,1.55
+windsor,Unnamed: 2,0.9
+barrie,Unnamed: 2,0.92
+greater sudbury,Unnamed: 2,0.0
+thunder bay,Unnamed: 2,6.64
+winnipeg,Unnamed: 2,3.14
+regina,Unnamed: 2,3.23
+saskatoon,Unnamed: 2,3.12
+calgary,Unnamed: 2,2.24
+edmonton,Unnamed: 2,3.39
+kelowna,Unnamed: 2,2.54
+abbotsford-mission,Unnamed: 2,3.22
+vancouver,Unnamed: 2,1.61
+victoria,Unnamed: 2,0.27
+canada,Unnamed: 2,1.68
+st. john's,Unnamed: 4,-7.0
+halifax,Unnamed: 4,-9.0
+moncton,Unnamed: 4,-2.0
+saint john,Unnamed: 4,-46.0
+saguenay,Unnamed: 4,-10.0
+quebec,Unnamed: 4,3.0
+sherbrooke,Unnamed: 4,15.0
+trois-rivieres,Unnamed: 4,1.0
+montreal,Unnamed: 4,11.0
+gatineau,Unnamed: 4,9.0
+ottawa,Unnamed: 4,14.0
+kingston,Unnamed: 4,-7.0
+peterborough,Unnamed: 4,10.0
+toronto,Unnamed: 4,-2.0
+hamilton,Unnamed: 4,6.0
+st. catharines-niagara,Unnamed: 4,-7.0
+kitchener-cambridge-waterloo,Unnamed: 4,-12.0
+brantford,Unnamed: 4,-12.0
+guelph,Unnamed: 4,33.0
+london,Unnamed: 4,10.0
+windsor,Unnamed: 4,15.0
+barrie,Unnamed: 4,14.0
+greater sudbury,Unnamed: 4,1.0
+thunder bay,Unnamed: 4,7.0
+winnipeg,Unnamed: 4,14.0
+regina,Unnamed: 4,-4.0
+saskatoon,Unnamed: 4,44.0
+calgary,Unnamed: 4,-14.0
+edmonton,Unnamed: 4,-8.0
+kelowna,Unnamed: 4,-18.0
+abbotsford-mission,Unnamed: 4,0.0
+vancouver,Unnamed: 4,2.0
+victoria,Unnamed: 4,7.0
+canada,Unnamed: 4,-1.0
+st. john's,robbery,87.0
+halifax,robbery,45.0
+moncton,robbery,64.0
+saint john,robbery,48.0
+saguenay,robbery,16.0
+quebec,robbery,19.0
+sherbrooke,robbery,19.0
+trois-rivieres,robbery,12.0
+montreal,robbery,74.0
+gatineau,robbery,32.0
+ottawa,robbery,50.0
+kingston,robbery,18.0
+peterborough,robbery,41.0
+toronto,robbery,83.0
+hamilton,robbery,70.0
+st. catharines-niagara,robbery,31.0
+kitchener-cambridge-waterloo,robbery,51.0
+brantford,robbery,68.0
+guelph,robbery,22.0
+london,robbery,55.0
+windsor,robbery,61.0
+barrie,robbery,32.0
+greater sudbury,robbery,48.0
+thunder bay,robbery,118.0
+winnipeg,robbery,229.0
+regina,robbery,118.0
+saskatoon,robbery,116.0
+calgary,robbery,62.0
+edmonton,robbery,103.0
+kelowna,robbery,41.0
+abbotsford-mission,robbery,64.0
+vancouver,robbery,78.0
+victoria,robbery,37.0
+canada,robbery,60.0
+st. john's,breaking and entering,602.0
+halifax,breaking and entering,239.0
+moncton,breaking and entering,561.0
+saint john,breaking and entering,231.0
+saguenay,breaking and entering,338.0
+quebec,breaking and entering,319.0
+sherbrooke,breaking and entering,286.0
+trois-rivieres,breaking and entering,336.0
+montreal,breaking and entering,386.0
+gatineau,breaking and entering,320.0
+ottawa,breaking and entering,270.0
+kingston,breaking and entering,395.0
+peterborough,breaking and entering,304.0
+toronto,breaking and entering,205.0
+hamilton,breaking and entering,308.0
+st. catharines-niagara,breaking and entering,373.0
+kitchener-cambridge-waterloo,breaking and entering,358.0
+brantford,breaking and entering,588.0
+guelph,breaking and entering,347.0
+london,breaking and entering,389.0
+windsor,breaking and entering,506.0
+barrie,breaking and entering,200.0
+greater sudbury,breaking and entering,454.0
+thunder bay,breaking and entering,492.0
+winnipeg,breaking and entering,682.0
+regina,breaking and entering,760.0
+saskatoon,breaking and entering,791.0
+calgary,breaking and entering,576.0
+edmonton,breaking and entering,582.0
+kelowna,breaking and entering,620.0
+abbotsford-mission,breaking and entering,577.0
+vancouver,breaking and entering,678.0
+victoria,breaking and entering,326.0
+canada,breaking and entering,439.0
+st. john's,Unnamed: 8,18.0
+halifax,Unnamed: 8,-16.0
+moncton,Unnamed: 8,-3.0
+saint john,Unnamed: 8,-8.0
+saguenay,Unnamed: 8,0.0
+quebec,Unnamed: 8,-1.0
+sherbrooke,Unnamed: 8,-12.0
+trois-rivieres,Unnamed: 8,-11.0
+montreal,Unnamed: 8,-5.0
+gatineau,Unnamed: 8,5.0
+ottawa,Unnamed: 8,16.0
+kingston,Unnamed: 8,19.0
+peterborough,Unnamed: 8,-25.0
+toronto,Unnamed: 8,-9.0
+hamilton,Unnamed: 8,5.0
+st. catharines-niagara,Unnamed: 8,-11.0
+kitchener-cambridge-waterloo,Unnamed: 8,-11.0
+brantford,Unnamed: 8,12.0
+guelph,Unnamed: 8,16.0
+london,Unnamed: 8,9.0
+windsor,Unnamed: 8,23.0
+barrie,Unnamed: 8,-8.0
+greater sudbury,Unnamed: 8,20.0
+thunder bay,Unnamed: 8,18.0
+winnipeg,Unnamed: 8,14.0
+regina,Unnamed: 8,7.0
+saskatoon,Unnamed: 8,-3.0
+calgary,Unnamed: 8,-10.0
+edmonton,Unnamed: 8,-4.0
+kelowna,Unnamed: 8,-3.0
+abbotsford-mission,Unnamed: 8,-19.0
+vancouver,Unnamed: 8,-1.0
+victoria,Unnamed: 8,-20.0
+canada,Unnamed: 8,-2.0
+st. john's,motor vehicle theft,118.0
+halifax,motor vehicle theft,90.0
+moncton,motor vehicle theft,147.0
+saint john,motor vehicle theft,58.0
+saguenay,motor vehicle theft,117.0
+quebec,motor vehicle theft,71.0
+sherbrooke,motor vehicle theft,54.0
+trois-rivieres,motor vehicle theft,85.0
+montreal,motor vehicle theft,168.0
+gatineau,motor vehicle theft,71.0
+ottawa,motor vehicle theft,88.0
+kingston,motor vehicle theft,72.0
+peterborough,motor vehicle theft,57.0
+toronto,motor vehicle theft,113.0
+hamilton,motor vehicle theft,217.0
+st. catharines-niagara,motor vehicle theft,160.0
+kitchener-cambridge-waterloo,motor vehicle theft,137.0
+brantford,motor vehicle theft,454.0
+guelph,motor vehicle theft,119.0
+london,motor vehicle theft,195.0
+windsor,motor vehicle theft,199.0
+barrie,motor vehicle theft,68.0
+greater sudbury,motor vehicle theft,101.0
+thunder bay,motor vehicle theft,158.0
+winnipeg,motor vehicle theft,315.0
+regina,motor vehicle theft,523.0
+saskatoon,motor vehicle theft,453.0
+calgary,motor vehicle theft,535.0
+edmonton,motor vehicle theft,483.0
+kelowna,motor vehicle theft,316.0
+abbotsford-mission,motor vehicle theft,493.0
+vancouver,motor vehicle theft,312.0
+victoria,motor vehicle theft,108.0
+canada,motor vehicle theft,217.0

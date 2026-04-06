@@ -1,0 +1,48 @@
+operating_arrangement,agricultural_region,measure_type,value
+sole proprietorship,agricultural region 1,number,528
+partnership without written agreement,agricultural region 1,number,118
+partnership with a written agreement,agricultural region 1,number,12
+family corporation,agricultural region 1,number,205
+non-family corporation,agricultural region 1,number,23
+other operating arrangements,agricultural region 1,number,3
+sole proprietorship,agricultural region 1,percent,59
+partnership without written agreement,agricultural region 1,percent,13
+partnership with a written agreement,agricultural region 1,percent,1
+family corporation,agricultural region 1,percent,23
+non-family corporation,agricultural region 1,percent,3
+other operating arrangements,agricultural region 1,percent,0
+sole proprietorship,agricultural region 3,number,388
+partnership without written agreement,agricultural region 3,number,70
+partnership with a written agreement,agricultural region 3,number,23
+family corporation,agricultural region 3,number,89
+non-family corporation,agricultural region 3,number,22
+other operating arrangements,agricultural region 3,number,5
+sole proprietorship,agricultural region 3,percent,65
+partnership without written agreement,agricultural region 3,percent,12
+partnership with a written agreement,agricultural region 3,percent,4
+family corporation,agricultural region 3,percent,15
+non-family corporation,agricultural region 3,percent,4
+other operating arrangements,agricultural region 3,percent,1
+sole proprietorship,agricultural region 4,number,242
+partnership without written agreement,agricultural region 4,number,35
+partnership with a written agreement,agricultural region 4,number,4
+family corporation,agricultural region 4,number,78
+non-family corporation,agricultural region 4,number,35
+other operating arrangements,agricultural region 4,number,0
+sole proprietorship,agricultural region 4,percent,61
+partnership without written agreement,agricultural region 4,percent,9
+partnership with a written agreement,agricultural region 4,percent,1
+family corporation,agricultural region 4,percent,20
+non-family corporation,agricultural region 4,percent,9
+other operating arrangements,agricultural region 4,percent,0
+partnership without written agreement,total new brunswick,number,335
+partnership with a written agreement,total new brunswick,number,50
+family corporation,total new brunswick,number,481
+non-family corporation,total new brunswick,number,97
+other operating arrangements,total new brunswick,number,9
+sole proprietorship,total new brunswick,percent,63
+partnership without written agreement,total new brunswick,percent,13
+partnership with a written agreement,total new brunswick,percent,2
+family corporation,total new brunswick,percent,18
+non-family corporation,total new brunswick,percent,4
+other operating arrangements,total new brunswick,percent,0

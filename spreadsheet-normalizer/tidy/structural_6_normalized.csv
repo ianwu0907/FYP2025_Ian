@@ -1,0 +1,36 @@
+team,from_date,to_date,game_outcome,count,win_percentage
+rot-weiß erfurt,11 april 2003,30 june 2003,g,10.0,
+1. fc kaiserslautern ii,1 january 2007,9 september 2012,g,193.0,
+1. fc kaiserslautern,4 may 2009,30 june 2009,g,4.0,
+rot-weiß erfurt,10 september 2012,30 september 2013,g,30.0,
+sv sandhausen,1 july 2013,25 june 2016,g,108.0,
+1. fc nurnberg,25 june 2016,7 march 2017,g,25.0,10.0
+karlsruher sc,29 august 2017,present,g,46.0,10.0
+rot-weiß erfurt,11 april 2003,30 june 2003,w,1.0,10.0
+1. fc kaiserslautern ii,1 january 2007,9 september 2012,w,86.0,10.0
+1. fc kaiserslautern,4 may 2009,30 june 2009,w,1.0,10.0
+rot-weiß erfurt,10 september 2012,30 september 2013,w,10.0,44.56
+sv sandhausen,1 july 2013,25 june 2016,w,35.0,44.56
+1. fc nurnberg,25 june 2016,7 march 2017,w,8.0,44.56
+karlsruher sc,29 august 2017,present,w,23.0,44.56
+rot-weiß erfurt,11 april 2003,30 june 2003,d,3.0,44.56
+1. fc kaiserslautern ii,1 january 2007,9 september 2012,d,48.0,25.0
+1. fc kaiserslautern,4 may 2009,30 june 2009,d,0.0,25.0
+rot-weiß erfurt,10 september 2012,30 september 2013,d,9.0,25.0
+sv sandhausen,1 july 2013,25 june 2016,d,30.0,25.0
+1. fc nurnberg,25 june 2016,7 march 2017,d,6.0,25.0
+karlsruher sc,29 august 2017,present,d,15.0,25.0
+rot-weiß erfurt,11 april 2003,30 june 2003,l,6.0,33.33
+1. fc kaiserslautern ii,1 january 2007,9 september 2012,l,59.0,33.33
+1. fc kaiserslautern,4 may 2009,30 june 2009,l,3.0,33.33
+rot-weiß erfurt,10 september 2012,30 september 2013,l,11.0,33.33
+sv sandhausen,1 july 2013,25 june 2016,l,43.0,33.33
+1. fc nurnberg,25 june 2016,7 march 2017,l,11.0,32.41
+karlsruher sc,29 august 2017,present,l,8.0,32.41
+rot-weiß erfurt,11 april 2003,30 june 2003,win %,10.0,32.41
+1. fc kaiserslautern ii,1 january 2007,9 september 2012,win %,44.56,32.41
+1. fc kaiserslautern,4 may 2009,30 june 2009,win %,25.0,32.41
+rot-weiß erfurt,10 september 2012,30 september 2013,win %,33.33,32.0
+sv sandhausen,1 july 2013,25 june 2016,win %,32.41,32.0
+1. fc nurnberg,25 june 2016,7 march 2017,win %,32.0,32.0
+karlsruher sc,29 august 2017,present,win %,50.0,32.0

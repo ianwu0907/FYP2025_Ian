@@ -1,0 +1,13 @@
+sexual_orientation,gender,behavior_type,number,percent,confidence_interval_from,confidence_interval_to
+heterosexual,male gender,experienced unwanted behaviours in public in the past 12 months,,12.5,11.7,13.3
+heterosexual,male gender,experienced unwanted behaviours online in the past 12 months,,13.0,12.1,13.8
+heterosexual,female gender,experienced unwanted behaviours in public in the past 12 months,,30.5,29.5,31.6
+heterosexual,female gender,experienced unwanted behaviours online in the past 12 months,,17.5,16.6,18.5
+gay or lesbian,male gender,experienced unwanted behaviours in public in the past 12 months,117,38.2,31.1,45.8
+gay or lesbian,male gender,experienced unwanted behaviours online in the past 12 months,82,27.6,20.9,35.3
+gay or lesbian,female gender,experienced unwanted behaviours in public in the past 12 months,87,50.8,41.7,59.8
+gay or lesbian,female gender,experienced unwanted behaviours online in the past 12 months,35,21.0,13.9,30.3
+bisexual,male gender,experienced unwanted behaviours in public in the past 12 months,71,41.4,30.3,53.5
+bisexual,male gender,experienced unwanted behaviours online in the past 12 months,66,40.3,29.5,52.2
+bisexual,female gender,experienced unwanted behaviours in public in the past 12 months,280,76.4,69.6,82.1
+bisexual,female gender,experienced unwanted behaviours online in the past 12 months,179,49.8,41.9,57.6

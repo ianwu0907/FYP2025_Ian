@@ -1,0 +1,13 @@
+demographic_group,sex,age_statistic,total_population,population_value,mean_age,age_range
+off-reserve first nations,male,,7239,3184.0,,
+metis,male,,6998,3324.0,,
+inuit,male,,2852,1321.0,,
+off-reserve first nations,female,,7239,4055.0,,
+metis,female,,6998,3674.0,,
+inuit,female,,2852,1531.0,,
+off-reserve first nations,,mean,7239,,35.6,
+metis,,mean,6998,,37.0,
+inuit,,mean,2852,,33.6,
+off-reserve first nations,,range,7239,,,15 to 92
+metis,,range,6998,,,15 to 93
+inuit,,range,2852,,,15 to 87

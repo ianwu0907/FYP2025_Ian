@@ -1,0 +1,391 @@
+age_group,gender,education_level,count
+16-19 years old,,Total,770958
+16-19 years old,,never attended school,1191
+16-19 years old,,Preschool education,460
+16-19 years old,,Elementary School,27740
+16-19 years old,,Junior high school,396001
+16-19 years old,,High School,262535
+16-19 years old,,College (Associate's Degree),68986
+16-19 years old,,University undergraduate,13945
+16-19 years old,,Master's,86
+16-19 years old,,Doctorate,14
+20-24 years old,,Total,3861073
+20-24 years old,,never attended school,4671
+20-24 years old,,Preschool education,821
+20-24 years old,,Elementary School,96060
+20-24 years old,,Junior high school,1256869
+20-24 years old,,High School,936113
+20-24 years old,,College (Associate's Degree),990363
+20-24 years old,,University undergraduate,560759
+20-24 years old,,Master's,14901
+20-24 years old,,Doctorate,516
+25-29 years old,,Total,6981094
+25-29 years old,,never attended school,9235
+25-29 years old,,Preschool education,1019
+25-29 years old,,Elementary School,198343
+25-29 years old,,Junior high school,2268886
+25-29 years old,,High School,1477554
+25-29 years old,,College (Associate's Degree),1489970
+25-29 years old,,University undergraduate,1380121
+25-29 years old,,Master's,149129
+25-29 years old,,Doctorate,6837
+30-34 years old,,Total,10009284
+30-34 years old,,never attended school,19206
+30-34 years old,,Preschool education,1461
+30-34 years old,,Elementary School,431109
+30-34 years old,,Junior high school,3900037
+30-34 years old,,High School,2062200
+30-34 years old,,College (Associate's Degree),1743249
+30-34 years old,,University undergraduate,1621296
+30-34 years old,,Master's,209739
+30-34 years old,,Doctorate,20987
+35-39 years old,,Total,8097572
+35-39 years old,,never attended school,27654
+35-39 years old,,Preschool education,1244
+35-39 years old,,Elementary School,522120
+35-39 years old,,Junior high school,3579500
+35-39 years old,,High School,1496492
+35-39 years old,,College (Associate's Degree),1116135
+35-39 years old,,University undergraduate,1170790
+35-39 years old,,Master's,161969
+35-39 years old,,Doctorate,21668
+40-44 years old,,Total,7565087
+40-44 years old,,never attended school,45657
+40-44 years old,,Preschool education,1618
+40-44 years old,,Elementary School,874104
+40-44 years old,,Junior high school,3634758
+40-44 years old,,High School,1374567
+40-44 years old,,College (Associate's Degree),815752
+40-44 years old,,University undergraduate,712979
+40-44 years old,,Master's,88754
+40-44 years old,,Doctorate,16898
+45-49 years old,,Total,8940917
+45-49 years old,,never attended school,85736
+45-49 years old,,Preschool education,3019
+45-49 years old,,Elementary School,1629052
+45-49 years old,,Junior high school,4560693
+45-49 years old,,High School,1366360
+45-49 years old,,College (Associate's Degree),696137
+45-49 years old,,University undergraduate,536634
+45-49 years old,,Master's,52260
+45-49 years old,,Doctorate,11026
+50-54 years old,,Total,8132752
+50-54 years old,,never attended school,119467
+50-54 years old,,Preschool education,4725
+50-54 years old,,Elementary School,2160174
+50-54 years old,,Junior high school,4083758
+50-54 years old,,High School,950759
+50-54 years old,,College (Associate's Degree),427124
+50-54 years old,,University undergraduate,348941
+50-54 years old,,Master's,31005
+50-54 years old,,Doctorate,6799
+55-59 years old,,Total,5495186
+55-59 years old,,never attended school,111819
+55-59 years old,,Preschool education,4557
+55-59 years old,,Elementary School,1618097
+55-59 years old,,Junior high school,2562341
+55-59 years old,,High School,762434
+55-59 years old,,College (Associate's Degree),236530
+55-59 years old,,University undergraduate,175594
+55-59 years old,,Master's,18752
+55-59 years old,,Doctorate,5062
+60-64 years old,,Total,2483449
+60-64 years old,,never attended school,120663
+60-64 years old,,Preschool education,4989
+60-64 years old,,Elementary School,1133692
+60-64 years old,,Junior high school,934636
+60-64 years old,,High School,252728
+60-64 years old,,College (Associate's Degree),24242
+60-64 years old,,University undergraduate,10503
+60-64 years old,,Master's,1313
+60-64 years old,,Doctorate,683
+65-69 years old,,Total,1995170
+65-69 years old,,never attended school,151768
+65-69 years old,,Preschool education,6462
+65-69 years old,,Elementary School,1161443
+65-69 years old,,Junior high school,565239
+65-69 years old,,High School,94662
+65-69 years old,,College (Associate's Degree),10943
+65-69 years old,,University undergraduate,4121
+65-69 years old,,Master's,399
+65-69 years old,,Doctorate,133
+70-74 years old,,Total,861236
+70-74 years old,,never attended school,90162
+70-74 years old,,Preschool education,4095
+70-74 years old,,Elementary School,562323
+70-74 years old,,Junior high school,176919
+70-74 years old,,High School,22530
+70-74 years old,,College (Associate's Degree),3789
+70-74 years old,,University undergraduate,1291
+70-74 years old,,Master's,104
+70-74 years old,,Doctorate,23
+75 years and above,,Total,438008
+75 years and above,,never attended school,70377
+75 years and above,,Preschool education,3286
+75 years and above,,Elementary School,280622
+75 years and above,,Junior high school,68829
+75 years and above,,High School,11034
+75 years and above,,College (Associate's Degree),2482
+75 years and above,,University undergraduate,1279
+75 years and above,,Master's,74
+75 years and above,,Doctorate,25
+16-19 years old,Male,Total,482044
+16-19 years old,Male,never attended school,623
+16-19 years old,Male,Preschool education,236
+16-19 years old,Male,Elementary School,16803
+16-19 years old,Male,Junior high school,259787
+16-19 years old,Male,High School,162196
+16-19 years old,Male,College (Associate's Degree),35659
+16-19 years old,Male,University undergraduate,6683
+16-19 years old,Male,Master's,45
+16-19 years old,Male,Doctorate,12
+20-24 years old,Male,Total,2220127
+20-24 years old,Male,never attended school,2285
+20-24 years old,Male,Preschool education,428
+20-24 years old,Male,Elementary School,57977
+20-24 years old,Male,Junior high school,816122
+20-24 years old,Male,High School,585953
+20-24 years old,Male,College (Associate's Degree),499329
+20-24 years old,Male,University undergraduate,252094
+20-24 years old,Male,Master's,5665
+20-24 years old,Male,Doctorate,274
+25-29 years old,Male,Total,4037493
+25-29 years old,Male,never attended school,4349
+25-29 years old,Male,Preschool education,540
+25-29 years old,Male,Elementary School,117697
+25-29 years old,Male,Junior high school,1439437
+25-29 years old,Male,High School,933095
+25-29 years old,Male,College (Associate's Degree),810100
+25-29 years old,Male,University undergraduate,665393
+25-29 years old,Male,Master's,63269
+25-29 years old,Male,Doctorate,3613
+30-34 years old,Male,Total,5787715
+30-34 years old,Male,never attended school,8467
+30-34 years old,Male,Preschool education,757
+30-34 years old,Male,Elementary School,240003
+30-34 years old,Male,Junior high school,2352849
+30-34 years old,Male,High School,1267310
+30-34 years old,Male,College (Associate's Degree),972207
+30-34 years old,Male,University undergraduate,835279
+30-34 years old,Male,Master's,98426
+30-34 years old,Male,Doctorate,12417
+35-39 years old,Male,Total,4650831
+35-39 years old,Male,never attended school,10926
+35-39 years old,Male,Preschool education,634
+35-39 years old,Male,Elementary School,270088
+35-39 years old,Male,Junior high school,2112565
+35-39 years old,Male,High School,902061
+35-39 years old,Male,College (Associate's Degree),625818
+35-39 years old,Male,University undergraduate,630781
+35-39 years old,Male,Master's,84811
+35-39 years old,Male,Doctorate,13147
+40-44 years old,Male,Total,4294238
+40-44 years old,Male,never attended school,15742
+40-44 years old,Male,Preschool education,700
+40-44 years old,Male,Elementary School,427652
+40-44 years old,Male,Junior high school,2115964
+40-44 years old,Male,High School,822580
+40-44 years old,Male,College (Associate's Degree),457357
+40-44 years old,Male,University undergraduate,391651
+40-44 years old,Male,Master's,52074
+40-44 years old,Male,Doctorate,10518
+45-49 years old,Male,Total,5114136
+45-49 years old,Male,never attended school,26429
+45-49 years old,Male,Preschool education,1231
+45-49 years old,Male,Elementary School,785914
+45-49 years old,Male,Junior high school,2692768
+45-49 years old,Male,High School,842314
+45-49 years old,Male,College (Associate's Degree),407775
+45-49 years old,Male,University undergraduate,316362
+45-49 years old,Male,Master's,34101
+45-49 years old,Male,Doctorate,7242
+50-54 years old,Male,Total,5042613
+50-54 years old,Male,never attended school,35349
+50-54 years old,Male,Preschool education,1860
+50-54 years old,Male,Elementary School,1103485
+50-54 years old,Male,Junior high school,2656211
+50-54 years old,Male,High School,696750
+50-54 years old,Male,College (Associate's Degree),291973
+50-54 years old,Male,University undergraduate,229950
+50-54 years old,Male,Master's,22028
+50-54 years old,Male,Doctorate,5007
+55-59 years old,Male,Total,3645765
+55-59 years old,Male,never attended school,29550
+55-59 years old,Male,Preschool education,1703
+55-59 years old,Male,Elementary School,837667
+55-59 years old,Male,Junior high school,1779501
+55-59 years old,Male,High School,623247
+55-59 years old,Male,College (Associate's Degree),205506
+55-59 years old,Male,University undergraduate,148755
+55-59 years old,Male,Master's,15638
+55-59 years old,Male,Doctorate,4198
+60-64 years old,Male,Total,1566873
+60-64 years old,Male,never attended school,34408
+60-64 years old,Male,Preschool education,1808
+60-64 years old,Male,Elementary School,617785
+60-64 years old,Male,Junior high school,681085
+60-64 years old,Male,High School,202499
+60-64 years old,Male,College (Associate's Degree),19255
+60-64 years old,Male,University undergraduate,8349
+60-64 years old,Male,Master's,1084
+60-64 years old,Male,Doctorate,600
+65-69 years old,Male,Total,1231032
+65-69 years old,Male,never attended school,44679
+65-69 years old,Male,Preschool education,2399
+65-69 years old,Male,Elementary School,663432
+65-69 years old,Male,Junior high school,429385
+65-69 years old,Male,High School,78978
+65-69 years old,Male,College (Associate's Degree),8593
+65-69 years old,Male,University undergraduate,3146
+65-69 years old,Male,Master's,314
+65-69 years old,Male,Doctorate,106
+70-74 years old,Male,Total,537995
+70-74 years old,Male,never attended school,29903
+70-74 years old,Male,Preschool education,1689
+70-74 years old,Male,Elementary School,344555
+70-74 years old,Male,Junior high school,138839
+70-74 years old,Male,High School,18825
+70-74 years old,Male,College (Associate's Degree),3081
+70-74 years old,Male,University undergraduate,1001
+70-74 years old,Male,Master's,80
+70-74 years old,Male,Doctorate,22
+75 years and above,Male,Total,269936
+75 years and above,Male,never attended school,25098
+75 years and above,Male,Preschool education,1449
+75 years and above,Male,Elementary School,176849
+75 years and above,Male,Junior high school,54516
+75 years and above,Male,High School,9002
+75 years and above,Male,College (Associate's Degree),1954
+75 years and above,Male,University undergraduate,987
+75 years and above,Male,Master's,60
+75 years and above,Male,Doctorate,21
+16-19 years old,Female,Total,288914
+16-19 years old,Female,never attended school,568
+16-19 years old,Female,Preschool education,224
+16-19 years old,Female,Elementary School,10937
+16-19 years old,Female,Junior high school,136214
+16-19 years old,Female,High School,100339
+16-19 years old,Female,College (Associate's Degree),33327
+16-19 years old,Female,University undergraduate,7262
+16-19 years old,Female,Master's,41
+16-19 years old,Female,Doctorate,2
+20-24 years old,Female,Total,1640946
+20-24 years old,Female,never attended school,2386
+20-24 years old,Female,Preschool education,393
+20-24 years old,Female,Elementary School,38083
+20-24 years old,Female,Junior high school,440747
+20-24 years old,Female,High School,350160
+20-24 years old,Female,College (Associate's Degree),491034
+20-24 years old,Female,University undergraduate,308665
+20-24 years old,Female,Master's,9236
+20-24 years old,Female,Doctorate,242
+25-29 years old,Female,Total,2943601
+25-29 years old,Female,never attended school,4886
+25-29 years old,Female,Preschool education,479
+25-29 years old,Female,Elementary School,80646
+25-29 years old,Female,Junior high school,829449
+25-29 years old,Female,High School,544459
+25-29 years old,Female,College (Associate's Degree),679870
+25-29 years old,Female,University undergraduate,714728
+25-29 years old,Female,Master's,85860
+25-29 years old,Female,Doctorate,3224
+30-34 years old,Female,Total,4221569
+30-34 years old,Female,never attended school,10739
+30-34 years old,Female,Preschool education,704
+30-34 years old,Female,Elementary School,191106
+30-34 years old,Female,Junior high school,1547188
+30-34 years old,Female,High School,794890
+30-34 years old,Female,College (Associate's Degree),771042
+30-34 years old,Female,University undergraduate,786017
+30-34 years old,Female,Master's,111313
+30-34 years old,Female,Doctorate,8570
+35-39 years old,Female,Total,3446741
+35-39 years old,Female,never attended school,16728
+35-39 years old,Female,Preschool education,610
+35-39 years old,Female,Elementary School,252032
+35-39 years old,Female,Junior high school,1466935
+35-39 years old,Female,High School,594431
+35-39 years old,Female,College (Associate's Degree),490317
+35-39 years old,Female,University undergraduate,540009
+35-39 years old,Female,Master's,77158
+35-39 years old,Female,Doctorate,8521
+40-44 years old,Female,Total,3270849
+40-44 years old,Female,never attended school,29915
+40-44 years old,Female,Preschool education,918
+40-44 years old,Female,Elementary School,446452
+40-44 years old,Female,Junior high school,1518794
+40-44 years old,Female,High School,551987
+40-44 years old,Female,College (Associate's Degree),358395
+40-44 years old,Female,University undergraduate,321328
+40-44 years old,Female,Master's,36680
+40-44 years old,Female,Doctorate,6380
+45-49 years old,Female,Total,3826781
+45-49 years old,Female,never attended school,59307
+45-49 years old,Female,Preschool education,1788
+45-49 years old,Female,Elementary School,843138
+45-49 years old,Female,Junior high school,1867925
+45-49 years old,Female,High School,524046
+45-49 years old,Female,College (Associate's Degree),288362
+45-49 years old,Female,University undergraduate,220272
+45-49 years old,Female,Master's,18159
+45-49 years old,Female,Doctorate,3784
+50-54 years old,Female,Total,3090139
+50-54 years old,Female,never attended school,84118
+50-54 years old,Female,Preschool education,2865
+50-54 years old,Female,Elementary School,1056689
+50-54 years old,Female,Junior high school,1427547
+50-54 years old,Female,High School,254009
+50-54 years old,Female,College (Associate's Degree),135151
+50-54 years old,Female,University undergraduate,118991
+50-54 years old,Female,Master's,8977
+50-54 years old,Female,Doctorate,1792
+55-59 years old,Female,Total,1849421
+55-59 years old,Female,never attended school,82269
+55-59 years old,Female,Preschool education,2854
+55-59 years old,Female,Elementary School,780430
+55-59 years old,Female,Junior high school,782840
+55-59 years old,Female,High School,139187
+55-59 years old,Female,College (Associate's Degree),31024
+55-59 years old,Female,University undergraduate,26839
+55-59 years old,Female,Master's,3114
+55-59 years old,Female,Doctorate,864
+60-64 years old,Female,Total,916576
+60-64 years old,Female,never attended school,86255
+60-64 years old,Female,Preschool education,3181
+60-64 years old,Female,Elementary School,515907
+60-64 years old,Female,Junior high school,253551
+60-64 years old,Female,High School,50229
+60-64 years old,Female,College (Associate's Degree),4987
+60-64 years old,Female,University undergraduate,2154
+60-64 years old,Female,Master's,229
+60-64 years old,Female,Doctorate,83
+65-69 years old,Female,Total,764138
+65-69 years old,Female,never attended school,107089
+65-69 years old,Female,Preschool education,4063
+65-69 years old,Female,Elementary School,498011
+65-69 years old,Female,Junior high school,135854
+65-69 years old,Female,High School,15684
+65-69 years old,Female,College (Associate's Degree),2350
+65-69 years old,Female,University undergraduate,975
+65-69 years old,Female,Master's,85
+65-69 years old,Female,Doctorate,27
+70-74 years old,Female,Total,323241
+70-74 years old,Female,never attended school,60259
+70-74 years old,Female,Preschool education,2406
+70-74 years old,Female,Elementary School,217768
+70-74 years old,Female,Junior high school,38080
+70-74 years old,Female,High School,3705
+70-74 years old,Female,College (Associate's Degree),708
+70-74 years old,Female,University undergraduate,290
+70-74 years old,Female,Master's,24
+70-74 years old,Female,Doctorate,1
+75 years and above,Female,Total,168072
+75 years and above,Female,never attended school,45279
+75 years and above,Female,Preschool education,1837
+75 years and above,Female,Elementary School,103773
+75 years and above,Female,Junior high school,14313
+75 years and above,Female,High School,2032
+75 years and above,Female,College (Associate's Degree),528
+75 years and above,Female,University undergraduate,292
+75 years and above,Female,Master's,14
+75 years and above,Female,Doctorate,4

@@ -1,0 +1,241 @@
+caracteristics,section,year,data_type,value
+total,,2013,percent,44.0
+total,,2010,percent,47.0
+total,,2007,percent,46.0
+total,,2004,percent,45.0
+total,,2013,mean number of hours,154.0
+total,,2010,mean number of hours,156.0
+total,,2007,mean number of hours,166.0
+total,,2004,mean number of hours,168.0
+men,sex,2013,percent,42.0
+men,sex,2010,percent,46.0
+men,sex,2007,percent,45.0
+men,sex,2004,percent,44.0
+men,sex,2013,mean number of hours,164.0
+men,sex,2010,mean number of hours,153.0
+men,sex,2007,mean number of hours,168.0
+men,sex,2004,mean number of hours,168.0
+women,sex,2013,percent,45.0
+women,sex,2010,percent,48.0
+women,sex,2007,percent,47.0
+women,sex,2004,percent,47.0
+women,sex,2013,mean number of hours,145.0
+women,sex,2010,mean number of hours,158.0
+women,sex,2007,mean number of hours,164.0
+women,sex,2004,mean number of hours,168.0
+15 to 19,age group,2013,percent,66.0
+15 to 19,age group,2010,percent,66.0
+15 to 19,age group,2007,percent,65.0
+15 to 19,age group,2004,percent,65.0
+15 to 19,age group,2013,mean number of hours,110.0
+15 to 19,age group,2010,mean number of hours,115.0
+15 to 19,age group,2007,mean number of hours,116.0
+15 to 19,age group,2004,mean number of hours,127.0
+20 to 24,age group,2013,percent,42.0
+20 to 24,age group,2010,percent,48.0
+20 to 24,age group,2007,percent,47.0
+20 to 24,age group,2004,percent,43.0
+20 to 24,age group,2013,mean number of hours,147.0
+20 to 24,age group,2010,mean number of hours,159.0
+20 to 24,age group,2007,mean number of hours,182.0
+20 to 24,age group,2004,mean number of hours,161.0
+25 to 34,age group,2013,percent,42.0
+25 to 34,age group,2010,percent,46.0
+25 to 34,age group,2007,percent,40.0
+25 to 34,age group,2004,percent,42.0
+25 to 34,age group,2013,mean number of hours,126.0
+25 to 34,age group,2010,mean number of hours,109.0
+25 to 34,age group,2007,mean number of hours,133.0
+25 to 34,age group,2004,mean number of hours,137.0
+35 to 44,age group,2013,percent,48.0
+35 to 44,age group,2010,percent,54.0
+35 to 44,age group,2007,percent,52.0
+35 to 44,age group,2004,percent,51.0
+35 to 44,age group,2013,mean number of hours,122.0
+35 to 44,age group,2010,mean number of hours,136.0
+35 to 44,age group,2007,mean number of hours,158.0
+35 to 44,age group,2004,mean number of hours,152.0
+45 to 54,age group,2013,percent,45.0
+45 to 54,age group,2010,percent,45.0
+45 to 54,age group,2007,percent,48.0
+45 to 54,age group,2004,percent,47.0
+45 to 54,age group,2013,mean number of hours,150.0
+45 to 54,age group,2010,mean number of hours,168.0
+45 to 54,age group,2007,mean number of hours,169.0
+45 to 54,age group,2004,mean number of hours,176.0
+55 to 64,age group,2013,percent,41.0
+55 to 64,age group,2010,percent,41.0
+55 to 64,age group,2007,percent,40.0
+55 to 64,age group,2004,percent,42.0
+55 to 64,age group,2013,mean number of hours,203.0
+55 to 64,age group,2010,mean number of hours,201.0
+55 to 64,age group,2007,mean number of hours,206.0
+55 to 64,age group,2004,mean number of hours,202.0
+65 to 74,age group,2013,percent,38.0
+65 to 74,age group,2010,percent,40.0
+65 to 74,age group,2007,percent,40.0
+65 to 74,age group,2004,percent,39.0
+65 to 74,age group,2013,mean number of hours,231.0
+65 to 74,age group,2010,mean number of hours,236.0
+65 to 74,age group,2007,mean number of hours,216.0
+65 to 74,age group,2004,mean number of hours,250.0
+75 years and older,age group,2013,percent,27.0
+75 years and older,age group,2010,percent,31.0
+75 years and older,age group,2007,percent,29.0
+75 years and older,age group,2004,percent,23.0
+75 years and older,age group,2013,mean number of hours,196.0
+75 years and older,age group,2010,mean number of hours,198.0
+75 years and older,age group,2007,mean number of hours,222.0
+75 years and older,age group,2004,mean number of hours,234.0
+married or common-law,marital status,2013,percent,44.0
+married or common-law,marital status,2010,percent,47.0
+married or common-law,marital status,2007,percent,47.0
+married or common-law,marital status,2004,percent,46.0
+married or common-law,marital status,2013,mean number of hours,156.0
+married or common-law,marital status,2010,mean number of hours,160.0
+married or common-law,marital status,2007,mean number of hours,168.0
+married or common-law,marital status,2004,mean number of hours,172.0
+"single, never married",marital status,2013,percent,47.0
+"single, never married",marital status,2010,percent,51.0
+"single, never married",marital status,2007,percent,48.0
+"single, never married",marital status,2004,percent,48.0
+"single, never married",marital status,2013,mean number of hours,139.0
+"single, never married",marital status,2010,mean number of hours,134.0
+"single, never married",marital status,2007,mean number of hours,153.0
+"single, never married",marital status,2004,mean number of hours,148.0
+separated or divorced,marital status,2013,percent,37.0
+separated or divorced,marital status,2010,percent,42.0
+separated or divorced,marital status,2007,percent,39.0
+separated or divorced,marital status,2004,percent,43.0
+separated or divorced,marital status,2013,mean number of hours,167.0
+separated or divorced,marital status,2010,mean number of hours,183.0
+separated or divorced,marital status,2007,mean number of hours,197.0
+separated or divorced,marital status,2004,mean number of hours,199.0
+widowed,marital status,2013,percent,27.0
+widowed,marital status,2010,percent,32.0
+widowed,marital status,2007,percent,31.0
+widowed,marital status,2004,percent,28.0
+widowed,marital status,2013,mean number of hours,228.0
+widowed,marital status,2010,mean number of hours,204.0
+widowed,marital status,2007,mean number of hours,179.0
+widowed,marital status,2004,mean number of hours,201.0
+less than high school,level of education,2013,percent,39.0
+less than high school,level of education,2010,percent,37.0
+less than high school,level of education,2007,percent,39.0
+less than high school,level of education,2004,percent,37.0
+less than high school,level of education,2013,mean number of hours,159.0
+less than high school,level of education,2010,mean number of hours,148.0
+less than high school,level of education,2007,mean number of hours,136.0
+less than high school,level of education,2004,mean number of hours,140.0
+high school diploma,level of education,2013,percent,37.0
+high school diploma,level of education,2010,percent,47.0
+high school diploma,level of education,2007,percent,44.0
+high school diploma,level of education,2004,percent,45.0
+high school diploma,level of education,2013,mean number of hours,142.0
+high school diploma,level of education,2010,mean number of hours,171.0
+high school diploma,level of education,2007,mean number of hours,152.0
+high school diploma,level of education,2004,mean number of hours,163.0
+post-secondary diploma or certificate,level of education,2013,percent,42.0
+post-secondary diploma or certificate,level of education,2010,percent,45.0
+post-secondary diploma or certificate,level of education,2007,percent,47.0
+post-secondary diploma or certificate,level of education,2004,percent,46.0
+post-secondary diploma or certificate,level of education,2013,mean number of hours,142.0
+post-secondary diploma or certificate,level of education,2010,mean number of hours,140.0
+post-secondary diploma or certificate,level of education,2007,mean number of hours,168.0
+post-secondary diploma or certificate,level of education,2004,mean number of hours,172.0
+university degree,level of education,2013,percent,55.0
+university degree,level of education,2010,percent,58.0
+university degree,level of education,2007,percent,57.0
+university degree,level of education,2004,percent,59.0
+university degree,level of education,2013,mean number of hours,170.0
+university degree,level of education,2010,mean number of hours,160.0
+university degree,level of education,2007,mean number of hours,187.0
+university degree,level of education,2004,mean number of hours,180.0
+employed,labour force participation,2013,percent,46.0
+employed,labour force participation,2010,percent,50.0
+employed,labour force participation,2007,percent,50.0
+employed,labour force participation,2004,percent,50.0
+employed,labour force participation,2013,mean number of hours,133.0
+employed,labour force participation,2010,mean number of hours,139.0
+employed,labour force participation,2007,mean number of hours,150.0
+employed,labour force participation,2004,mean number of hours,152.0
+unemployed,labour force participation,2013,percent,45.0
+unemployed,labour force participation,2010,percent,34.0
+unemployed,labour force participation,2007,percent,38.0
+unemployed,labour force participation,2004,percent,42.0
+unemployed,labour force participation,2013,mean number of hours,182.0
+unemployed,labour force participation,2010,mean number of hours,132.0
+unemployed,labour force participation,2007,mean number of hours,205.0
+unemployed,labour force participation,2004,mean number of hours,236.0
+not in the labour force,labour force participation,2013,percent,38.0
+not in the labour force,labour force participation,2010,percent,44.0
+not in the labour force,labour force participation,2007,percent,44.0
+not in the labour force,labour force participation,2004,percent,43.0
+not in the labour force,labour force participation,2013,mean number of hours,191.0
+not in the labour force,labour force participation,2010,mean number of hours,189.0
+not in the labour force,labour force participation,2007,mean number of hours,190.0
+not in the labour force,labour force participation,2004,mean number of hours,199.0
+no child,presence of children in the household,2013,percent,38.0
+no child,presence of children in the household,2010,percent,41.0
+no child,presence of children in the household,2007,percent,39.0
+no child,presence of children in the household,2004,percent,40.0
+no child,presence of children in the household,2013,mean number of hours,169.0
+no child,presence of children in the household,2010,mean number of hours,175.0
+no child,presence of children in the household,2007,mean number of hours,184.0
+no child,presence of children in the household,2004,mean number of hours,191.0
+pre-school aged children only,presence of children in the household,2013,percent,37.0
+pre-school aged children only,presence of children in the household,2010,percent,45.0
+pre-school aged children only,presence of children in the household,2007,percent,41.0
+pre-school aged children only,presence of children in the household,2004,percent,43.0
+pre-school aged children only,presence of children in the household,2013,mean number of hours,122.0
+pre-school aged children only,presence of children in the household,2010,mean number of hours,87.0
+pre-school aged children only,presence of children in the household,2007,mean number of hours,110.0
+pre-school aged children only,presence of children in the household,2004,mean number of hours,126.0
+both pre-school and school-aged children,presence of children in the household,2013,percent,52.0
+both pre-school and school-aged children,presence of children in the household,2010,percent,56.0
+both pre-school and school-aged children,presence of children in the household,2007,percent,54.0
+both pre-school and school-aged children,presence of children in the household,2004,percent,53.0
+both pre-school and school-aged children,presence of children in the household,2013,mean number of hours,121.0
+both pre-school and school-aged children,presence of children in the household,2010,mean number of hours,122.0
+both pre-school and school-aged children,presence of children in the household,2007,mean number of hours,147.0
+both pre-school and school-aged children,presence of children in the household,2004,mean number of hours,141.0
+school-aged children only,presence of children in the household,2013,percent,59.0
+school-aged children only,presence of children in the household,2010,percent,59.0
+school-aged children only,presence of children in the household,2007,percent,62.0
+school-aged children only,presence of children in the household,2004,percent,59.0
+school-aged children only,presence of children in the household,2013,mean number of hours,139.0
+school-aged children only,presence of children in the household,2010,mean number of hours,146.0
+school-aged children only,presence of children in the household,2007,mean number of hours,153.0
+school-aged children only,presence of children in the household,2004,mean number of hours,142.0
+weekly,religious attendance,2013,percent,59.0
+weekly,religious attendance,2010,percent,65.0
+weekly,religious attendance,2007,percent,66.0
+weekly,religious attendance,2004,percent,62.0
+weekly,religious attendance,2013,mean number of hours,215.0
+weekly,religious attendance,2010,mean number of hours,202.0
+weekly,religious attendance,2007,mean number of hours,232.0
+weekly,religious attendance,2004,mean number of hours,230.0
+other,religious attendance,2013,percent,40.0
+other,religious attendance,2010,percent,44.0
+other,religious attendance,2007,percent,43.0
+other,religious attendance,2004,percent,43.0
+other,religious attendance,2013,mean number of hours,133.0
+other,religious attendance,2010,mean number of hours,141.0
+other,religious attendance,2007,mean number of hours,142.0
+other,religious attendance,2004,mean number of hours,147.0
+canada,birthplace,2013,percent,45.0
+canada,birthplace,2010,percent,49.0
+canada,birthplace,2007,percent,47.0
+canada,birthplace,2004,percent,46.0
+canada,birthplace,2013,mean number of hours,150.0
+canada,birthplace,2010,mean number of hours,155.0
+canada,birthplace,2007,mean number of hours,165.0
+canada,birthplace,2004,mean number of hours,167.0
+outside canada,birthplace,2013,percent,38.0
+outside canada,birthplace,2010,percent,40.0
+outside canada,birthplace,2007,percent,40.0
+outside canada,birthplace,2004,percent,40.0
+outside canada,birthplace,2013,mean number of hours,162.0
+outside canada,birthplace,2010,mean number of hours,158.0
+outside canada,birthplace,2007,mean number of hours,168.0
+outside canada,birthplace,2004,mean number of hours,172.0

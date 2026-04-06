@@ -46,3 +46,11 @@ logging:
   level: INFO
   save_intermediate: true
   output_dir: output
+
+evaluation:
+  model: gpt-4o-mini
+  preview_rows: 15
+  max_distinct: 20
+  pipeline_output_dir: eval/pipeline_outputs
+  dataset: dataset/qa_pairs.json
+  output: eval/results.json

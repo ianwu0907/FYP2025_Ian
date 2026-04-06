@@ -1,0 +1,171 @@
+category,value,age_type,ratio_type
+all buildings,0.293,,ratio_type
+all buildings,0.393,ratio_type,
+all buildings,9.3,,age_type
+all buildings,10.1,,age_type
+all buildings,13.8,age_type,
+all buildings,15.4,age_type,
+all machinery and equipment,0.293,,ratio_type
+all machinery and equipment,0.32,ratio_type,
+all machinery and equipment,4.7,,age_type
+all machinery and equipment,4.9,,age_type
+all machinery and equipment,8.0,age_type,
+all machinery and equipment,8.5,age_type,
+automobiles and major replacement parts,0.26,,ratio_type
+automobiles and major replacement parts,0.314,ratio_type,
+automobiles and major replacement parts,2.5,,age_type
+automobiles and major replacement parts,2.9,,age_type
+automobiles and major replacement parts,5.5,age_type,
+automobiles and major replacement parts,6.4,age_type,
+buses (all types) and major replacement parts,0.122,ratio_type,
+buses (all types) and major replacement parts,0.221,,ratio_type
+buses (all types) and major replacement parts,6.9,,age_type
+buses (all types) and major replacement parts,8.0,,age_type
+buses (all types) and major replacement parts,14.8,age_type,
+buses (all types) and major replacement parts,22.2,age_type,
+capitalized tooling and other tools,0.284,,ratio_type
+capitalized tooling and other tools,0.294,ratio_type,
+capitalized tooling and other tools,3.9,,age_type
+capitalized tooling and other tools,4.2,,age_type
+capitalized tooling and other tools,7.1,age_type,
+capitalized tooling and other tools,8.5,age_type,
+communication and related equipment,0.283,ratio_type,
+communication and related equipment,0.291,,ratio_type
+communication and related equipment,3.0,,age_type
+communication and related equipment,3.4,,age_type
+communication and related equipment,7.3,age_type,
+communication and related equipment,7.5,age_type,
+"communication towers, antennae, earth stations",0.435,,ratio_type
+"communication towers, antennae, earth stations",0.508,ratio_type,
+"communication towers, antennae, earth stations",2.9,,age_type
+"communication towers, antennae, earth stations",6.7,,age_type
+"communication towers, antennae, earth stations",12.5,age_type,
+"communication towers, antennae, earth stations",23.6,age_type,
+computer-assisted processing machinery and equipment,0.301,,ratio_type
+computer-assisted processing machinery and equipment,0.322,ratio_type,
+computer-assisted processing machinery and equipment,5.7,,age_type
+computer-assisted processing machinery and equipment,5.8,,age_type
+computer-assisted processing machinery and equipment,10.3,age_type,
+computer-assisted processing machinery and equipment,12.0,age_type,
+"computers, associated hardware and word processors",0.249,ratio_type,
+"computers, associated hardware and word processors",0.27,,ratio_type
+"computers, associated hardware and word processors",1.6,,age_type
+"computers, associated hardware and word processors",1.7,,age_type
+"computers, associated hardware and word processors",4.3,age_type,
+"computers, associated hardware and word processors",4.8,age_type,
+drilling and blasting equipment,0.254,,ratio_type
+drilling and blasting equipment,0.561,ratio_type,
+drilling and blasting equipment,4.3,,age_type
+drilling and blasting equipment,6.9,age_type,
+"heating, electrical, plumbing, air conditioning and refrigeration equipment",0.303,,ratio_type
+"heating, electrical, plumbing, air conditioning and refrigeration equipment",0.655,ratio_type,
+"heating, electrical, plumbing, air conditioning and refrigeration equipment",4.0,,age_type
+"heating, electrical, plumbing, air conditioning and refrigeration equipment",9.1,age_type,
+"heating, electrical, plumbing, air conditioning and refrigeration equipment",11.0,age_type,
+heavy construction equipment,0.304,,ratio_type
+heavy construction equipment,0.365,ratio_type,
+heavy construction equipment,4.0,,age_type
+heavy construction equipment,5.9,,age_type
+heavy construction equipment,6.9,age_type,
+heavy construction equipment,10.7,age_type,
+"maintenance garages, workshops, equipment storage facilities",0.24,,ratio_type
+"maintenance garages, workshops, equipment storage facilities",0.426,ratio_type,
+"maintenance garages, workshops, equipment storage facilities",8.4,,age_type
+"maintenance garages, workshops, equipment storage facilities",10.5,,age_type
+"maintenance garages, workshops, equipment storage facilities",17.5,age_type,
+"maintenance garages, workshops, equipment storage facilities",20.5,age_type,
+"motors, generators, transformers, turbines, compressors and pumps of all types",0.32,,ratio_type
+"motors, generators, transformers, turbines, compressors and pumps of all types",0.466,ratio_type,
+"motors, generators, transformers, turbines, compressors and pumps of all types",5.8,,age_type
+"motors, generators, transformers, turbines, compressors and pumps of all types",7.6,,age_type
+"motors, generators, transformers, turbines, compressors and pumps of all types",9.3,age_type,
+"motors, generators, transformers, turbines, compressors and pumps of all types",14.0,age_type,
+non-computer-assisted processing machinery and equipment,0.283,,ratio_type
+non-computer-assisted processing machinery and equipment,0.292,ratio_type,
+non-computer-assisted processing machinery and equipment,5.2,,age_type
+non-computer-assisted processing machinery and equipment,6.1,,age_type
+non-computer-assisted processing machinery and equipment,9.5,age_type,
+non-computer-assisted processing machinery and equipment,12.0,age_type,
+"non-office furniture, furnishings and fixtures",0.354,,ratio_type
+"non-office furniture, furnishings and fixtures",0.519,ratio_type,
+"non-office furniture, furnishings and fixtures",3.4,,age_type
+"non-office furniture, furnishings and fixtures",6.9,age_type,
+"non-office furniture, furnishings and fixtures",8.1,age_type,
+office buildings,0.288,,ratio_type
+office buildings,0.476,ratio_type,
+office buildings,7.4,,age_type
+office buildings,9.7,,age_type
+office buildings,11.3,age_type,
+office buildings,15.7,age_type,
+"office furniture, furnishing",0.287,,ratio_type
+"office furniture, furnishing",0.314,ratio_type,
+"office furniture, furnishing",3.3,,age_type
+"office furniture, furnishing",3.6,,age_type
+"office furniture, furnishing",6.6,age_type,
+"office furniture, furnishing",8.4,age_type,
+other industrial and commercial,0.279,,ratio_type
+other industrial and commercial,0.358,ratio_type,
+other industrial and commercial,7.7,,age_type
+other industrial and commercial,9.2,,age_type
+other industrial and commercial,13.3,age_type,
+other industrial and commercial,13.9,age_type,
+other transportation equipment,0.26,,ratio_type
+other transportation equipment,0.314,ratio_type,
+other transportation equipment,4.3,,age_type
+other transportation equipment,4.6,,age_type
+other transportation equipment,9.4,age_type,
+other transportation equipment,11.2,age_type,
+plants for manufacturing,0.281,,ratio_type
+plants for manufacturing,0.334,ratio_type,
+plants for manufacturing,10.6,,age_type
+plants for manufacturing,13.4,,age_type
+plants for manufacturing,19.4,age_type,
+plants for manufacturing,21.0,age_type,
+pollution abatement and control equipment,0.282,,ratio_type
+pollution abatement and control equipment,0.293,ratio_type,
+pollution abatement and control equipment,4.3,,age_type
+pollution abatement and control equipment,6.0,,age_type
+pollution abatement and control equipment,11.3,age_type,
+pollution abatement and control equipment,11.5,age_type,
+safety and security equipment and other machinery and equipment,0.35,,ratio_type
+safety and security equipment and other machinery and equipment,0.386,ratio_type,
+safety and security equipment and other machinery and equipment,4.7,,age_type
+safety and security equipment and other machinery and equipment,5.0,,age_type
+safety and security equipment and other machinery and equipment,8.8,age_type,
+safety and security equipment and other machinery and equipment,10.6,age_type,
+"scientific, professional and medical devices",0.33,,ratio_type
+"scientific, professional and medical devices",0.373,ratio_type,
+"scientific, professional and medical devices",5.3,,age_type
+"scientific, professional and medical devices",5.6,,age_type
+"scientific, professional and medical devices",9.0,age_type,
+"scientific, professional and medical devices",11.4,age_type,
+"shopping centres, plazas, malls, stores",0.288,,ratio_type
+"shopping centres, plazas, malls, stores",0.435,ratio_type,
+"shopping centres, plazas, malls, stores",4.9,,age_type
+"shopping centres, plazas, malls, stores",6.3,,age_type
+"shopping centres, plazas, malls, stores",8.0,age_type,
+"shopping centres, plazas, malls, stores",9.3,age_type,
+"telephone and cablevision lines, underground and marine cables",0.054,,ratio_type
+"telephone and cablevision lines, underground and marine cables",0.132,ratio_type,
+"telephone and cablevision lines, underground and marine cables",0.6,,age_type
+"telephone and cablevision lines, underground and marine cables",1.9,,age_type
+"telephone and cablevision lines, underground and marine cables",11.1,age_type,
+"telephone and cablevision lines, underground and marine cables",16.8,age_type,
+tractors and other field equipment,0.25,,ratio_type
+tractors and other field equipment,0.288,ratio_type,
+tractors and other field equipment,3.8,,age_type
+tractors and other field equipment,4.4,,age_type
+tractors and other field equipment,8.8,age_type,
+tractors and other field equipment,13.3,age_type,
+"trucks, vans, truck tractors, truck trailers and major replacement parts",0.264,,ratio_type
+"trucks, vans, truck tractors, truck trailers and major replacement parts",0.295,ratio_type,
+"trucks, vans, truck tractors, truck trailers and major replacement parts",3.5,,age_type
+"trucks, vans, truck tractors, truck trailers and major replacement parts",3.6,,age_type
+"trucks, vans, truck tractors, truck trailers and major replacement parts",7.7,age_type,
+"trucks, vans, truck tractors, truck trailers and major replacement parts",8.8,age_type,
+"warehouses, refrigerated storage, freight terminals",0.293,ratio_type,
+"warehouses, refrigerated storage, freight terminals",0.297,,ratio_type
+"warehouses, refrigerated storage, freight terminals",9.9,,age_type
+"warehouses, refrigerated storage, freight terminals",10.7,,age_type
+"warehouses, refrigerated storage, freight terminals",17.3,age_type,
+"warehouses, refrigerated storage, freight terminals",18.8,age_type,

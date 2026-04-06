@@ -1,0 +1,35 @@
+country_of_birth,gender,immigrant_type,percent
+ethiopia,men,principal applicants,6.7
+ethiopia,men,secondary applicants,0.5
+somalia,men,principal applicants,3.4
+somalia,men,secondary applicants,0.1
+eritrea,men,principal applicants,1.8
+eritrea,men,secondary applicants,0.1
+sudan,men,principal applicants,6.3
+sudan,men,secondary applicants,1.2
+south sudan,men,principal applicants,1.7
+south sudan,men,secondary applicants,0.0
+burundi,men,principal applicants,15.2
+burundi,men,secondary applicants,1.3
+kenya,men,principal applicants,45.0
+kenya,men,secondary applicants,9.5
+zimbabwe,men,principal applicants,15.4
+zimbabwe,men,secondary applicants,3.7
+rwanda,men,principal applicants,12.8
+rwanda,men,secondary applicants,1.4
+democratic republic of the congo,men,principal applicants,12.3
+democratic republic of the congo,men,secondary applicants,1.8
+cameroon,men,principal applicants,71.4
+cameroon,men,secondary applicants,9.5
+nigeria,men,principal applicants,51.2
+nigeria,men,secondary applicants,12.0
+ghana,men,principal applicants,28.5
+ghana,men,secondary applicants,4.2
+cote d'ivoire,men,principal applicants,72.2
+cote d'ivoire,men,secondary applicants,8.2
+senegal,men,principal applicants,67.5
+senegal,men,secondary applicants,6.2
+guinea,men,principal applicants,50.5
+guinea,men,secondary applicants,2.7
+other countries,men,principal applicants,45.2
+other countries,men,secondary applicants,5.5

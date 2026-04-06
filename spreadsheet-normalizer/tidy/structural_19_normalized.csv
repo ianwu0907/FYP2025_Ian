@@ -1,0 +1,66 @@
+sex_ethnicity_race_and_citizenship,labor_force_status,sub_labor_force_status,total,percentage_in_labor_force,percentage_working_for_pay,percentage_full_time,percentage_part_time
+all u.s. seh doctorate holders,all,all,805500.0,88.1,86.0,76.1,9.9
+all u.s. seh doctorate holders,in labor force,all working,805500.0,88.1,86.0,76.1,9.9
+all u.s. seh doctorate holders,in labor force,full time,805500.0,88.1,86.0,76.1,9.9
+all u.s. seh doctorate holders,in labor force,part time,805500.0,88.1,86.0,76.1,9.9
+all u.s. seh doctorate holders,not in labor force,part time,805500.0,88.1,86.0,76.1,9.9
+male,all,all,551700.0,87.7,85.7,77.9,7.8
+male,in labor force,all working,551700.0,87.7,85.7,77.9,7.8
+male,in labor force,full time,551700.0,87.7,85.7,77.9,7.8
+male,in labor force,part time,551700.0,87.7,85.7,77.9,7.8
+male,not in labor force,part time,551700.0,87.7,85.7,77.9,7.8
+female,all,all,253700.0,88.9,86.8,72.4,14.4
+female,in labor force,all working,253700.0,88.9,86.8,72.4,14.4
+female,in labor force,full time,253700.0,88.9,86.8,72.4,14.4
+female,in labor force,part time,253700.0,88.9,86.8,72.4,14.4
+female,not in labor force,part time,253700.0,88.9,86.8,72.4,14.4
+hispanic or latino,all,all,25800.0,93.0,91.1,81.8,8.9
+hispanic or latino,in labor force,all working,25800.0,93.0,91.1,81.8,8.9
+hispanic or latino,in labor force,full time,25800.0,93.0,91.1,81.8,8.9
+hispanic or latino,in labor force,part time,25800.0,93.0,91.1,81.8,8.9
+hispanic or latino,not in labor force,part time,25800.0,93.0,91.1,81.8,8.9
+not hispanic or latino,all,all,779700.0,87.9,85.9,76.0,9.9
+not hispanic or latino,in labor force,all working,779700.0,87.9,85.9,76.0,9.9
+not hispanic or latino,in labor force,full time,779700.0,87.9,85.9,76.0,9.9
+not hispanic or latino,in labor force,part time,779700.0,87.9,85.9,76.0,9.9
+not hispanic or latino,not in labor force,part time,779700.0,87.9,85.9,76.0,9.9
+american indian or alaska native,all,all,1700.0,88.2,88.2,76.5,11.8
+american indian or alaska native,in labor force,all working,1700.0,88.2,88.2,76.5,11.8
+american indian or alaska native,in labor force,full time,1700.0,88.2,88.2,76.5,11.8
+american indian or alaska native,in labor force,part time,1700.0,88.2,88.2,76.5,11.8
+american indian or alaska native,not in labor force,part time,1700.0,88.2,88.2,76.5,11.8
+asian,all,all,147500.0,93.6,91.3,86.4,4.7
+asian,in labor force,all working,147500.0,93.6,91.3,86.4,4.7
+asian,in labor force,full time,147500.0,93.6,91.3,86.4,4.7
+asian,in labor force,part time,147500.0,93.6,91.3,86.4,4.7
+asian,not in labor force,part time,147500.0,93.6,91.3,86.4,4.7
+black or african american,all,all,24500.0,93.9,91.0,80.4,11.0
+black or african american,in labor force,all working,24500.0,93.9,91.0,80.4,11.0
+black or african american,in labor force,full time,24500.0,93.9,91.0,80.4,11.0
+black or african american,in labor force,part time,24500.0,93.9,91.0,80.4,11.0
+black or african american,not in labor force,part time,24500.0,93.9,91.0,80.4,11.0
+native hawaiian or other pacific islander,all,all,900.0,88.9,88.9,77.8,11.1
+native hawaiian or other pacific islander,in labor force,all working,900.0,88.9,88.9,77.8,11.1
+native hawaiian or other pacific islander,in labor force,full time,900.0,88.9,88.9,77.8,11.1
+native hawaiian or other pacific islander,in labor force,part time,900.0,88.9,88.9,77.8,11.1
+native hawaiian or other pacific islander,not in labor force,part time,900.0,88.9,88.9,77.8,11.1
+white,all,all,596300.0,86.2,84.2,73.1,11.1
+white,in labor force,all working,596300.0,86.2,84.2,73.1,11.1
+white,in labor force,full time,596300.0,86.2,84.2,73.1,11.1
+white,in labor force,part time,596300.0,86.2,84.2,73.1,11.1
+white,not in labor force,part time,596300.0,86.2,84.2,73.1,11.1
+more than one race,all,all,8800.0,93.2,89.8,79.5,10.2
+more than one race,in labor force,all working,8800.0,93.2,89.8,79.5,10.2
+more than one race,in labor force,full time,8800.0,93.2,89.8,79.5,10.2
+more than one race,in labor force,part time,8800.0,93.2,89.8,79.5,10.2
+more than one race,not in labor force,part time,8800.0,93.2,89.8,79.5,10.2
+u.s. citizen or permanent resident,all,all,775300.0,87.7,85.6,75.4,10.2
+u.s. citizen or permanent resident,in labor force,all working,775300.0,87.7,85.6,75.4,10.2
+u.s. citizen or permanent resident,in labor force,full time,775300.0,87.7,85.6,75.4,10.2
+u.s. citizen or permanent resident,in labor force,part time,775300.0,87.7,85.6,75.4,10.2
+u.s. citizen or permanent resident,not in labor force,part time,775300.0,87.7,85.6,75.4,10.2
+temporary visa holder,all,all,30200.0,98.3,97.4,95.4,2.0
+temporary visa holder,in labor force,all working,30200.0,98.3,97.4,95.4,2.0
+temporary visa holder,in labor force,full time,30200.0,98.3,97.4,95.4,2.0
+temporary visa holder,in labor force,part time,30200.0,98.3,97.4,95.4,2.0
+temporary visa holder,not in labor force,part time,30200.0,98.3,97.4,95.4,2.0

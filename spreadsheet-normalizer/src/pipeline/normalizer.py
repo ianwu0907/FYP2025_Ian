@@ -269,7 +269,7 @@ class TableNormalizer:
         logger.info(f"Loaded data with shape: {df.shape}")
 
         encoded_data = self.encoder.encode(df)
-        logger.info(f"Encoding complete. Compression: "
+        logger.info(f"Metadata Collection complete. Compression: "
                     f"{encoded_data['metadata'].get('compression_ratio', 0):.2f}x")
 
         return encoded_data

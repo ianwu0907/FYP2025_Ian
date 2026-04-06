@@ -1,0 +1,31 @@
+types_of_activities,gender,participation_count
+organizing events,men,43
+fundraising,men,40
+sitting on a committee or board,men,34
+teaching or mentoring,men,29
+counselling or providing advice,men,30
+"collecting, serving or delivering food or other goods",men,22
+"office work, bookkeeping",men,20
+other activities,men,19
+"coaching, referring or officiating",men,24
+driving,men,19
+providing health care or support,men,15
+environmental protection,men,17
+maintenance or repair,men,23
+canvassing,men,10
+"first-aid, fire-fighting, or search and rescue",men,7
+organizing events,women,48
+fundraising,women,49
+sitting on a committee or board,women,33
+teaching or mentoring,women,28
+counselling or providing advice,women,22
+"collecting, serving or delivering food or other goods",women,28
+"office work, bookkeeping",women,25
+other activities,women,21
+"coaching, referring or officiating",women,11
+driving,women,15
+providing health care or support,women,19
+environmental protection,women,15
+maintenance or repair,women,10
+canvassing,women,10
+"first-aid, fire-fighting, or search and rescue",women,4
