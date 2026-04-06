@@ -1,127 +1,115 @@
-sector,worker_group,generation_status,percentage
-,black_female_workers,immigrant,immigrant
-,black_female_workers,second_generation,second generation
-,black_female_workers,third_generation_or_more,third generation or more
-,other_female_workers,immigrant,immigrant
-,other_female_workers,second_generation,second generation
-,other_female_workers,third_generation_or_more,third generation or more
-,black_female_workers,immigrant,percent
-,black_female_workers,second_generation,
-,black_female_workers,third_generation_or_more,
-,other_female_workers,immigrant,
-,other_female_workers,second_generation,
-,other_female_workers,third_generation_or_more,
-"agriculture, forestry, fishing and hunting",black_female_workers,immigrant,0.2
-"agriculture, forestry, fishing and hunting",black_female_workers,second_generation,0.1
-"agriculture, forestry, fishing and hunting",black_female_workers,third_generation_or_more,0.5
-"agriculture, forestry, fishing and hunting",other_female_workers,immigrant,1.0
-"agriculture, forestry, fishing and hunting",other_female_workers,second_generation,1.0
-"agriculture, forestry, fishing and hunting",other_female_workers,third_generation_or_more,1.5
-"mining, quarrying, and oil and gas extraction",black_female_workers,immigrant,0.3
-"mining, quarrying, and oil and gas extraction",black_female_workers,second_generation,0.2
-"mining, quarrying, and oil and gas extraction",black_female_workers,third_generation_or_more,0.4
-"mining, quarrying, and oil and gas extraction",other_female_workers,immigrant,0.5
-"mining, quarrying, and oil and gas extraction",other_female_workers,second_generation,0.6
-"mining, quarrying, and oil and gas extraction",other_female_workers,third_generation_or_more,0.8
-utilities,black_female_workers,immigrant,0.2
-utilities,black_female_workers,second_generation,0.3
-utilities,black_female_workers,third_generation_or_more,0.1
-utilities,other_female_workers,immigrant,0.3
-utilities,other_female_workers,second_generation,0.5
-utilities,other_female_workers,third_generation_or_more,0.5
-construction,black_female_workers,immigrant,0.7
-construction,black_female_workers,second_generation,1.0
-construction,black_female_workers,third_generation_or_more,1.3
-construction,other_female_workers,immigrant,1.7
-construction,other_female_workers,second_generation,2.2
-construction,other_female_workers,third_generation_or_more,2.3
-manufacturing,black_female_workers,immigrant,5.4
-manufacturing,black_female_workers,second_generation,2.8
-manufacturing,black_female_workers,third_generation_or_more,4.0
-manufacturing,other_female_workers,immigrant,7.9
-manufacturing,other_female_workers,second_generation,4.1
-manufacturing,other_female_workers,third_generation_or_more,4.9
-wholesale trade,black_female_workers,immigrant,2.0
-wholesale trade,black_female_workers,second_generation,2.5
-wholesale trade,black_female_workers,third_generation_or_more,2.0
-wholesale trade,other_female_workers,immigrant,3.3
-wholesale trade,other_female_workers,second_generation,3.0
-wholesale trade,other_female_workers,third_generation_or_more,2.4
-retail trade,black_female_workers,immigrant,7.5
-retail trade,black_female_workers,second_generation,9.7
-retail trade,black_female_workers,third_generation_or_more,11.9
-retail trade,other_female_workers,immigrant,11.1
-retail trade,other_female_workers,second_generation,9.7
-retail trade,other_female_workers,third_generation_or_more,10.8
-transportation and warehousing,black_female_workers,immigrant,2.7
-transportation and warehousing,black_female_workers,second_generation,3.3
-transportation and warehousing,black_female_workers,third_generation_or_more,3.3
-transportation and warehousing,other_female_workers,immigrant,2.8
-transportation and warehousing,other_female_workers,second_generation,2.8
-transportation and warehousing,other_female_workers,third_generation_or_more,2.7
-information and cultural industries,black_female_workers,immigrant,1.6
-information and cultural industries,black_female_workers,second_generation,3.8
-information and cultural industries,black_female_workers,third_generation_or_more,2.6
-information and cultural industries,other_female_workers,immigrant,1.9
-information and cultural industries,other_female_workers,second_generation,2.7
-information and cultural industries,other_female_workers,third_generation_or_more,2.0
-finance and insurance,black_female_workers,immigrant,5.8
-finance and insurance,black_female_workers,second_generation,7.9
-finance and insurance,black_female_workers,third_generation_or_more,4.4
-finance and insurance,other_female_workers,immigrant,6.9
-finance and insurance,other_female_workers,second_generation,7.1
-finance and insurance,other_female_workers,third_generation_or_more,5.2
-real estate and rental and leasing,black_female_workers,immigrant,1.1
-real estate and rental and leasing,black_female_workers,second_generation,1.6
-real estate and rental and leasing,black_female_workers,third_generation_or_more,1.4
-real estate and rental and leasing,other_female_workers,immigrant,2.2
-real estate and rental and leasing,other_female_workers,second_generation,2.1
-real estate and rental and leasing,other_female_workers,third_generation_or_more,1.4
-"professional, scientific and technical services",black_female_workers,immigrant,4.6
-"professional, scientific and technical services",black_female_workers,second_generation,8.4
-"professional, scientific and technical services",black_female_workers,third_generation_or_more,4.7
-"professional, scientific and technical services",other_female_workers,immigrant,8.7
-"professional, scientific and technical services",other_female_workers,second_generation,9.2
-"professional, scientific and technical services",other_female_workers,third_generation_or_more,6.7
-"administrative and support, waste management and remediation services",black_female_workers,immigrant,7.9
-"administrative and support, waste management and remediation services",black_female_workers,second_generation,5.6
-"administrative and support, waste management and remediation services",black_female_workers,third_generation_or_more,6.5
-"administrative and support, waste management and remediation services",other_female_workers,immigrant,5.1
-"administrative and support, waste management and remediation services",other_female_workers,second_generation,3.5
-"administrative and support, waste management and remediation services",other_female_workers,third_generation_or_more,3.5
-educational services,black_female_workers,immigrant,6.9
-educational services,black_female_workers,second_generation,9.8
-educational services,black_female_workers,third_generation_or_more,8.5
-educational services,other_female_workers,immigrant,8.1
-educational services,other_female_workers,second_generation,14.2
-educational services,other_female_workers,third_generation_or_more,12.3
-health care and social assistance,black_female_workers,immigrant,36.6
-health care and social assistance,black_female_workers,second_generation,24.0
-health care and social assistance,black_female_workers,third_generation_or_more,23.5
-health care and social assistance,other_female_workers,immigrant,19.0
-health care and social assistance,other_female_workers,second_generation,19.1
-health care and social assistance,other_female_workers,third_generation_or_more,22.7
-"arts, entertainment and recreation",black_female_workers,immigrant,0.9
-"arts, entertainment and recreation",black_female_workers,second_generation,2.1
-"arts, entertainment and recreation",black_female_workers,third_generation_or_more,2.4
-"arts, entertainment and recreation",other_female_workers,immigrant,1.3
-"arts, entertainment and recreation",other_female_workers,second_generation,2.1
-"arts, entertainment and recreation",other_female_workers,third_generation_or_more,1.9
-accommodation and food services,black_female_workers,immigrant,5.5
-accommodation and food services,black_female_workers,second_generation,4.6
-accommodation and food services,black_female_workers,third_generation_or_more,9.5
-accommodation and food services,other_female_workers,immigrant,8.7
-accommodation and food services,other_female_workers,second_generation,4.4
-accommodation and food services,other_female_workers,third_generation_or_more,5.6
-other services,black_female_workers,immigrant,4.2
-other services,black_female_workers,second_generation,4.1
-other services,black_female_workers,third_generation_or_more,5.1
-other services,other_female_workers,immigrant,5.8
-other services,other_female_workers,second_generation,4.4
-other services,other_female_workers,third_generation_or_more,4.9
-public administration,black_female_workers,immigrant,5.9
-public administration,black_female_workers,second_generation,8.2
-public administration,black_female_workers,third_generation_or_more,8.0
-public administration,other_female_workers,immigrant,3.7
-public administration,other_female_workers,second_generation,7.2
-public administration,other_female_workers,third_generation_or_more,8.0
+sector,generation,representation_type,percentage
+"agriculture, forestry, fishing and hunting",Immigrant,Percent,0.2
+"agriculture, forestry, fishing and hunting",Second Generation,Percent,0.1
+"agriculture, forestry, fishing and hunting",Third Generation or More,Percent,0.5
+"agriculture, forestry, fishing and hunting",Immigrant,Percent,1.0
+"agriculture, forestry, fishing and hunting",Second Generation,Percent,1.0
+"agriculture, forestry, fishing and hunting",Third Generation or More,Percent,1.5
+"mining, quarrying, and oil and gas extraction",Immigrant,Percent,0.3
+"mining, quarrying, and oil and gas extraction",Second Generation,Percent,0.2
+"mining, quarrying, and oil and gas extraction",Third Generation or More,Percent,0.4
+"mining, quarrying, and oil and gas extraction",Immigrant,Percent,0.5
+"mining, quarrying, and oil and gas extraction",Second Generation,Percent,0.6
+"mining, quarrying, and oil and gas extraction",Third Generation or More,Percent,0.8
+utilities,Immigrant,Percent,0.2
+utilities,Second Generation,Percent,0.3
+utilities,Third Generation or More,Percent,0.1
+utilities,Immigrant,Percent,0.3
+utilities,Second Generation,Percent,0.5
+utilities,Third Generation or More,Percent,0.5
+construction,Immigrant,Percent,0.7
+construction,Second Generation,Percent,1.0
+construction,Third Generation or More,Percent,1.3
+construction,Immigrant,Percent,1.7
+construction,Second Generation,Percent,2.2
+construction,Third Generation or More,Percent,2.3
+manufacturing,Immigrant,Percent,5.4
+manufacturing,Second Generation,Percent,2.8
+manufacturing,Third Generation or More,Percent,4.0
+manufacturing,Immigrant,Percent,7.9
+manufacturing,Second Generation,Percent,4.1
+manufacturing,Third Generation or More,Percent,4.9
+wholesale trade,Immigrant,Percent,2.0
+wholesale trade,Second Generation,Percent,2.5
+wholesale trade,Third Generation or More,Percent,2.0
+wholesale trade,Immigrant,Percent,3.3
+wholesale trade,Second Generation,Percent,3.0
+wholesale trade,Third Generation or More,Percent,2.4
+retail trade,Immigrant,Percent,7.5
+retail trade,Second Generation,Percent,9.7
+retail trade,Third Generation or More,Percent,11.9
+retail trade,Immigrant,Percent,11.1
+retail trade,Second Generation,Percent,9.7
+retail trade,Third Generation or More,Percent,10.8
+transportation and warehousing,Immigrant,Percent,2.7
+transportation and warehousing,Second Generation,Percent,3.3
+transportation and warehousing,Third Generation or More,Percent,3.3
+transportation and warehousing,Immigrant,Percent,2.8
+transportation and warehousing,Second Generation,Percent,2.8
+transportation and warehousing,Third Generation or More,Percent,2.7
+information and cultural industries,Immigrant,Percent,1.6
+information and cultural industries,Second Generation,Percent,3.8
+information and cultural industries,Third Generation or More,Percent,2.6
+information and cultural industries,Immigrant,Percent,1.9
+information and cultural industries,Second Generation,Percent,2.7
+information and cultural industries,Third Generation or More,Percent,2.0
+finance and insurance,Immigrant,Percent,5.8
+finance and insurance,Second Generation,Percent,7.9
+finance and insurance,Third Generation or More,Percent,4.4
+finance and insurance,Immigrant,Percent,6.9
+finance and insurance,Second Generation,Percent,7.1
+finance and insurance,Third Generation or More,Percent,5.2
+real estate and rental and leasing,Immigrant,Percent,1.1
+real estate and rental and leasing,Second Generation,Percent,1.6
+real estate and rental and leasing,Third Generation or More,Percent,1.4
+real estate and rental and leasing,Immigrant,Percent,2.2
+real estate and rental and leasing,Second Generation,Percent,2.1
+real estate and rental and leasing,Third Generation or More,Percent,1.4
+"professional, scientific and technical services",Immigrant,Percent,4.6
+"professional, scientific and technical services",Second Generation,Percent,8.4
+"professional, scientific and technical services",Third Generation or More,Percent,4.7
+"professional, scientific and technical services",Immigrant,Percent,8.7
+"professional, scientific and technical services",Second Generation,Percent,9.2
+"professional, scientific and technical services",Third Generation or More,Percent,6.7
+"administrative and support, waste management and remediation services",Immigrant,Percent,7.9
+"administrative and support, waste management and remediation services",Second Generation,Percent,5.6
+"administrative and support, waste management and remediation services",Third Generation or More,Percent,6.5
+"administrative and support, waste management and remediation services",Immigrant,Percent,5.1
+"administrative and support, waste management and remediation services",Second Generation,Percent,3.5
+"administrative and support, waste management and remediation services",Third Generation or More,Percent,3.5
+educational services,Immigrant,Percent,6.9
+educational services,Second Generation,Percent,9.8
+educational services,Third Generation or More,Percent,8.5
+educational services,Immigrant,Percent,8.1
+educational services,Second Generation,Percent,14.2
+educational services,Third Generation or More,Percent,12.3
+health care and social assistance,Immigrant,Percent,36.6
+health care and social assistance,Second Generation,Percent,24.0
+health care and social assistance,Third Generation or More,Percent,23.5
+health care and social assistance,Immigrant,Percent,19.0
+health care and social assistance,Second Generation,Percent,19.1
+health care and social assistance,Third Generation or More,Percent,22.7
+"arts, entertainment and recreation",Immigrant,Percent,0.9
+"arts, entertainment and recreation",Second Generation,Percent,2.1
+"arts, entertainment and recreation",Third Generation or More,Percent,2.4
+"arts, entertainment and recreation",Immigrant,Percent,1.3
+"arts, entertainment and recreation",Second Generation,Percent,2.1
+"arts, entertainment and recreation",Third Generation or More,Percent,1.9
+accommodation and food services,Immigrant,Percent,5.5
+accommodation and food services,Second Generation,Percent,4.6
+accommodation and food services,Third Generation or More,Percent,9.5
+accommodation and food services,Immigrant,Percent,8.7
+accommodation and food services,Second Generation,Percent,4.4
+accommodation and food services,Third Generation or More,Percent,5.6
+other services,Immigrant,Percent,4.2
+other services,Second Generation,Percent,4.1
+other services,Third Generation or More,Percent,5.1
+other services,Immigrant,Percent,5.8
+other services,Second Generation,Percent,4.4
+other services,Third Generation or More,Percent,4.9
+public administration,Immigrant,Percent,5.9
+public administration,Second Generation,Percent,8.2
+public administration,Third Generation or More,Percent,8.0
+public administration,Immigrant,Percent,3.7
+public administration,Second Generation,Percent,7.2
+public administration,Third Generation or More,Percent,8.0

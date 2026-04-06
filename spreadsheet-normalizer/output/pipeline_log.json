@@ -1,106 +1,123 @@
 {
-  "input_file": "raw\\1007.xlsx",
-  "start_time": "2026-04-06 19:42:11",
+  "input_file": "raw/1061.xlsx",
+  "start_time": "2026-04-06 20:04:03",
   "stages": {
     "encoding": {
       "status": "success",
       "shape": [
-        22,
-        9
+        9,
+        7
       ],
-      "compression_ratio": 1.7259259259259259
+      "compression_ratio": 0.6324029952348537
     },
     "detection": {
       "status": "success",
-      "irregularities": [],
-      "num_irregularities": 0
+      "irregularities": [
+        "MULTI_LEVEL_HEADER",
+        "NESTED_COLUMN_GROUPS",
+        "AGGREGATE_COLUMNS",
+        "METADATA_ROWS"
+      ],
+      "num_irregularities": 4
     },
     "schema_estimation": {
       "status": "success",
-      "observation_unit": "One percentage value for a specific industry sector, worker group, and generational status combination",
-      "num_target_columns": 4,
-      "expected_rows": 160
+      "observation_unit": "One row in the tidy output represents an observation of self-rated mental health status for a specific category (e.g., positive responses, negative responses, specific mental health conditions).",
+      "num_target_columns": 5,
+      "expected_rows": 12
     },
     "transformation": {
       "status": "success",
       "output_shape": [
-        126,
-        4
+        3,
+        5
       ],
       "validation": {
         "is_valid": true,
         "errors": [],
         "warnings": [],
         "actual_shape": [
-          126,
-          4
+          3,
+          5
         ],
         "expected_shape": [
-          160,
-          4
+          12,
+          5
         ]
       },
-      "attempts": 1
+      "attempts": 2
     }
   },
   "metrics_before": {
     "shape": {
-      "rows": 22,
-      "cols": 9
+      "rows": 9,
+      "cols": 7
     },
-    "cell_coverage": 0.9545,
-    "row_completeness_uniformity": 0.8101,
-    "column_type_homogeneity": 0.8315,
-    "data_row_ratio": 0.9091,
-    "column_completeness_min": 0.9091,
+    "cell_coverage": 0.8095,
+    "row_completeness_uniformity": 0.6887,
+    "column_type_homogeneity": 0.5273,
+    "data_row_ratio": 0.6667,
+    "column_completeness_min": 0.7778,
     "header_uniqueness": 1.0,
-    "type_consistency": 0.9529,
-    "substring_containment": 0.0012,
-    "inter_column_nmi": 0.9732,
-    "groupby_queryability": 0.8025,
+    "type_consistency": 0.8469,
+    "substring_containment": 0.0034,
+    "inter_column_nmi": 0.9543,
+    "groupby_queryability": 0.7551,
     "groupby_queryability_mode": "full"
   },
   "metrics_after": {
     "shape": {
-      "rows": 126,
-      "cols": 4
+      "rows": 3,
+      "cols": 5
     },
-    "cell_coverage": 0.9663,
-    "row_completeness_uniformity": 0.8889,
-    "column_type_homogeneity": 0.9127,
-    "data_row_ratio": 0.9048,
-    "column_completeness_min": 0.9048,
+    "cell_coverage": 1.0,
+    "row_completeness_uniformity": 1.0,
+    "column_type_homogeneity": 1.0,
+    "data_row_ratio": 1.0,
+    "column_completeness_min": 1.0,
     "header_uniqueness": 1.0,
-    "type_consistency": 0.9855,
-    "substring_containment": 0.0003,
+    "type_consistency": 1.0,
+    "substring_containment": 0.0556,
     "inter_column_nmi": 0.0,
-    "groupby_queryability": 1.0,
+    "groupby_queryability": 0.0,
     "groupby_queryability_mode": "full"
   },
   "metrics_comparison": {
-    "groupby_queryability": {
-      "before": 0.8025,
+    "type_consistency": {
+      "before": 0.8469,
       "after": 1.0,
-      "delta": 0.1975,
+      "delta": 0.1531,
+      "direction": "✓ improved"
+    },
+    "inter_column_nmi": {
+      "before": 0.9543,
+      "after": 0.0,
+      "delta": -0.9543,
+      "direction": "✓ improved"
+    },
+    "row_completeness_uniformity": {
+      "before": 0.6887,
+      "after": 1.0,
+      "delta": 0.3113,
       "direction": "✓ improved"
     },
     "column_type_homogeneity": {
-      "before": 0.8315,
-      "after": 0.9127,
-      "delta": 0.0812,
+      "before": 0.5273,
+      "after": 1.0,
+      "delta": 0.4727,
       "direction": "✓ improved"
     },
-    "type_consistency": {
-      "before": 0.9529,
-      "after": 0.9855,
-      "delta": 0.0326,
-      "direction": "✓ improved"
+    "groupby_queryability": {
+      "before": 0.7551,
+      "after": 0.0,
+      "delta": -0.7551,
+      "direction": "✗ degraded"
     },
-    "cell_coverage": {
-      "before": 0.9545,
-      "after": 0.9663,
-      "delta": 0.0118,
-      "direction": "✓ improved"
+    "substring_containment": {
+      "before": 0.0034,
+      "after": 0.0556,
+      "delta": 0.0522,
+      "direction": "✗ degraded"
     },
     "header_uniqueness": {
       "before": 1.0,
@@ -108,34 +125,22 @@
       "delta": 0.0,
       "direction": "= unchanged"
     },
-    "row_completeness_uniformity": {
-      "before": 0.8101,
-      "after": 0.8889,
-      "delta": 0.0788,
+    "column_completeness_min": {
+      "before": 0.7778,
+      "after": 1.0,
+      "delta": 0.2222,
       "direction": "✓ improved"
     },
-    "column_completeness_min": {
-      "before": 0.9091,
-      "after": 0.9048,
-      "delta": -0.0043,
-      "direction": "= unchanged"
+    "cell_coverage": {
+      "before": 0.8095,
+      "after": 1.0,
+      "delta": 0.1905,
+      "direction": "✓ improved"
     },
     "data_row_ratio": {
-      "before": 0.9091,
-      "after": 0.9048,
-      "delta": -0.0043,
-      "direction": "= unchanged"
-    },
-    "substring_containment": {
-      "before": 0.0012,
-      "after": 0.0003,
-      "delta": -0.0009,
-      "direction": "= unchanged"
-    },
-    "inter_column_nmi": {
-      "before": 0.9732,
-      "after": 0.0,
-      "delta": -0.9732,
+      "before": 0.6667,
+      "after": 1.0,
+      "delta": 0.3333,
       "direction": "✓ improved"
     },
     "_groupby_queryability_mode": {
@@ -143,8 +148,8 @@
       "after": "full"
     }
   },
-  "output_file": "eval\\pipeline_outputs\\1007_pipeline_output.csv",
-  "end_time": "2026-04-06 19:46:26",
-  "elapsed_seconds": 254.67,
+  "output_file": "eval/pipeline_outputs/1061_pipeline_output.csv",
+  "end_time": "2026-04-06 20:04:49",
+  "elapsed_seconds": 46.72,
   "status": "success"
 }

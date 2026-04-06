@@ -1,40 +1,74 @@
 {
   "physical": {
     "shape": {
-      "rows": 22,
-      "cols": 9
+      "rows": 26,
+      "cols": 16
     },
     "actual_column_names": [
-      "sector",
-      "black female workers",
+      "type of reason",
+      "canada",
       "Unnamed: 2",
-      "Unnamed: 3",
-      "Unnamed: 4",
-      "other female workers",
-      "Unnamed: 6",
-      "Unnamed: 7",
-      "Unnamed: 8"
+      "newfoundland and labrador",
+      "prince edward island",
+      "nova scotia",
+      "new brunswick",
+      "quebec",
+      "ontario",
+      "manitoba",
+      "saskatchewan",
+      "alberta",
+      "british columbia",
+      "yukon",
+      "northwest territories",
+      "nunavut"
     ],
     "header_depth": 2,
     "data_start_row": 2,
-    "data_end_row": 21,
-    "data_rows": 20,
+    "data_end_row": 25,
+    "data_rows": 24,
     "column_dtype_profile": {
       "0": "text",
       "1": "numeric",
       "2": "numeric",
       "3": "numeric",
-      "4": "numeric",
+      "4": "mixed",
       "5": "numeric",
       "6": "numeric",
       "7": "numeric",
-      "8": "numeric"
+      "8": "numeric",
+      "9": "numeric",
+      "10": "numeric",
+      "11": "numeric",
+      "12": "numeric",
+      "13": "mixed",
+      "14": "mixed",
+      "15": "mixed"
     },
     "blank_rows_in_data": [],
     "bilingual_row_candidate": false,
     "inline_bilingual_candidate": false,
     "left_header_cols_num": 1
   },
-  "irregularities": [],
-  "labels": []
+  "irregularities": [
+    {
+      "label": "MULTI_LEVEL_HEADER",
+      "evidence": "Row 0 contains a hierarchical structure with grouped labels across multiple rows.",
+      "details": "The first header row contains category labels indicating different types of information related to reasons for abuse, suggesting a multi-level header structure."
+    },
+    {
+      "label": "SECTION_HEADER_ROWS",
+      "evidence": "Rows 10 and 17 contain labels without numeric data.",
+      "details": "These rows act as section headers (\"protecting children from:\" and \"housing:\") that categorize the subsequent data rows until the next section header."
+    },
+    {
+      "label": "AGGREGATE_COLUMNS",
+      "evidence": "Row 25 contains a summary of total reasons for admission.",
+      "details": "This row provides an overall summary that aggregates data from multiple categories above it, indicating it functions as an aggregate column."
+    }
+  ],
+  "labels": [
+    "MULTI_LEVEL_HEADER",
+    "SECTION_HEADER_ROWS",
+    "AGGREGATE_COLUMNS"
+  ]
 }

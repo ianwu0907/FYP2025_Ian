@@ -1,37 +1,73 @@
-sex_or_marital_status,language,demographic_type,percent
-female,french-language workers,sex,35.3
-female,english-language workers,sex,28.0
-female,french-language workers,sex,41.8
-female,english-language workers,sex,30.6
-female,french-language workers,sex,35.9
-female,english-language workers,sex,26.6
-male,french-language workers,sex,64.7
-male,english-language workers,sex,72.0
-male,french-language workers,sex,58.2
-male,english-language workers,sex,69.4
-male,french-language workers,sex,64.1
-male,english-language workers,sex,73.4
-single,french-language workers,marital status,18.7
-single,english-language workers,marital status,24.8
-single,french-language workers,marital status,26.9
-single,english-language workers,marital status,26.1
-single,french-language workers,marital status,25.6
-single,english-language workers,marital status,32.8
-married,french-language workers,marital status,51.3
-married,english-language workers,marital status,53.9
-married,french-language workers,marital status,47.8
-married,english-language workers,marital status,56.7
-married,french-language workers,marital status,54.4
-married,english-language workers,marital status,57.8
-common-law,french-language workers,marital status,17.1
-common-law,english-language workers,marital status,10.9
-common-law,french-language workers,marital status,22.4
-common-law,english-language workers,marital status,6.4
-common-law,french-language workers,marital status,11.8
-common-law,english-language workers,marital status,7.8
-"separated, divorced, or widowed",french-language workers,marital status,12.8
-"separated, divorced, or widowed",english-language workers,marital status,10.6
-"separated, divorced, or widowed",french-language workers,marital status,0.0
-"separated, divorced, or widowed",english-language workers,marital status,10.8
-"separated, divorced, or widowed",french-language workers,marital status,7.7
-"separated, divorced, or widowed",english-language workers,marital status,0.0
+sex_or_marital_status,language,demographic_metric,percent_value
+female,french-language workers,percent,35.3
+female,english-language workers,percent,28.0
+female,french-language workers,percent,41.8
+female,english-language workers,percent,30.6
+female,french-language workers,percent,35.9
+female,english-language workers,percent,26.6
+male,french-language workers,percent,64.7
+male,english-language workers,percent,72.0
+male,french-language workers,percent,58.2
+male,english-language workers,percent,69.4
+male,french-language workers,percent,64.1
+male,english-language workers,percent,73.4
+single,french-language workers,percent,18.7
+single,english-language workers,percent,24.8
+single,french-language workers,percent,26.9
+single,english-language workers,percent,26.1
+single,french-language workers,percent,25.6
+single,english-language workers,percent,32.8
+married,french-language workers,percent,51.3
+married,english-language workers,percent,53.9
+married,french-language workers,percent,47.8
+married,english-language workers,percent,56.7
+married,french-language workers,percent,54.4
+married,english-language workers,percent,57.8
+common-law,french-language workers,percent,17.1
+common-law,english-language workers,percent,10.9
+common-law,french-language workers,percent,22.4
+common-law,english-language workers,percent,6.4
+common-law,french-language workers,percent,11.8
+common-law,english-language workers,percent,7.8
+"separated, divorced, or widowed",french-language workers,percent,12.8
+"separated, divorced, or widowed",english-language workers,percent,10.6
+"separated, divorced, or widowed",french-language workers,percent,0.0
+"separated, divorced, or widowed",english-language workers,percent,10.8
+"separated, divorced, or widowed",french-language workers,percent,7.7
+"separated, divorced, or widowed",english-language workers,percent,0.0
+single,french-language workers,percent,18.7
+single,french-language workers,percent,24.8
+single,french-language workers,percent,26.9
+single,french-language workers,percent,26.1
+single,french-language workers,percent,25.6
+single,french-language workers,percent,32.8
+single,english-language workers,percent,24.8
+single,english-language workers,percent,26.1
+single,english-language workers,percent,32.8
+married,french-language workers,percent,51.3
+married,french-language workers,percent,53.9
+married,french-language workers,percent,47.8
+married,french-language workers,percent,56.7
+married,french-language workers,percent,54.4
+married,french-language workers,percent,57.8
+married,english-language workers,percent,53.9
+married,english-language workers,percent,56.7
+married,english-language workers,percent,57.8
+common-law,french-language workers,percent,17.1
+common-law,french-language workers,percent,10.9
+common-law,french-language workers,percent,22.4
+common-law,french-language workers,percent,6.4
+common-law,french-language workers,percent,11.8
+common-law,french-language workers,percent,7.8
+common-law,english-language workers,percent,10.9
+common-law,english-language workers,percent,6.4
+common-law,english-language workers,percent,7.8
+"separated, divorced, or widowed",french-language workers,percent,12.8
+"separated, divorced, or widowed",french-language workers,percent,10.6
+"separated, divorced, or widowed",french-language workers,percent,0.0
+"separated, divorced, or widowed",french-language workers,percent,10.8
+"separated, divorced, or widowed",french-language workers,percent,7.7
+"separated, divorced, or widowed",french-language workers,percent,0.0
+"separated, divorced, or widowed",english-language workers,percent,10.6
+"separated, divorced, or widowed",english-language workers,percent,10.8
+"separated, divorced, or widowed",english-language workers,percent,0.0

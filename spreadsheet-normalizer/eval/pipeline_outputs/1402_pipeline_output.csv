@@ -1,46 +1,5 @@
-age_group,behavior_type,percent,confidence_interval_from,confidence_interval_to
-37,unwanted sexualized behaviours,20,15,25
-37,discriminatory behaviours,43,37,50
-39,unwanted sexualized behaviours,21,16,26
-39,discriminatory behaviours,46,39,52
-8,discriminatory behaviours,12,8,18
-22,unwanted sexualized behaviours,13,8,20
-22,discriminatory behaviours,29,22,38
-33,unwanted sexualized behaviours,18,15,22
-33,discriminatory behaviours,36,33,41
-33,unwanted sexualized behaviours,18,15,21
-33,discriminatory behaviours,36,33,40
-30,unwanted sexualized behaviours,15,12,18
-30,discriminatory behaviours,33,30,37
-47,unwanted sexualized behaviours,50,36,63
-47,discriminatory behaviours,62,47,74
-27,unwanted sexualized behaviours,16,12,20
-27,discriminatory behaviours,32,27,37
-34,unwanted sexualized behaviours,19,15,23
-34,discriminatory behaviours,39,34,44
-38,unwanted sexualized behaviours,28,22,35
-38,discriminatory behaviours,46,38,54
-28,unwanted sexualized behaviours,14,11,17
-28,discriminatory behaviours,32,28,36
-37,unwanted sexualized behaviours,19,16,23
-37,discriminatory behaviours,42,37,46
-10,unwanted sexualized behaviours,10,6,17
-10,discriminatory behaviours,14,10,20
-33,unwanted sexualized behaviours,18,14,23
-33,discriminatory behaviours,38,33,44
-40,unwanted sexualized behaviours,20,15,27
-40,discriminatory behaviours,47,40,55
-23,discriminatory behaviours,36,23,50
-34,unwanted sexualized behaviours,20,14,29
-34,discriminatory behaviours,41,34,50
-32,unwanted sexualized behaviours,15,10,22
-32,discriminatory behaviours,40,32,49
-34,unwanted sexualized behaviours,19,14,24
-34,discriminatory behaviours,40,34,47
-16,unwanted sexualized behaviours,15,10,21
-16,discriminatory behaviours,22,16,29
-34,unwanted sexualized behaviours,18,15,21
-34,discriminatory behaviours,38,34,41
-38,unwanted sexualized behaviours,19,16,23
-38,discriminatory behaviours,42,38,47
-7,discriminatory behaviours,11,7,18
+age_group,visible_minority_status,unwanted_sexualized_behaviours_percent,unwanted_sexualized_behaviours_conf_interval_from,unwanted_sexualized_behaviours_conf_interval_to,discriminatory_behaviours_percent,discriminatory_behaviours_conf_interval_from,discriminatory_behaviours_conf_interval_to
+visible minority,visible minority,29,22,38,13,8,20
+visible minority,visible minority,29,22,38,18,15,22
+not a visible minority,visible minority,36,33,41,18,15,22
+not a visible minority,visible minority,36,33,41,18,15,22

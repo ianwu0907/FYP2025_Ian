@@ -1,6 +1,6 @@
-flow_type,non_financial_corporations_sector,household_sector,financial_corporations_sector
+flow,non_financial_corporations_sector,household_sector,financial_corporations_sector
 actual employer social contributions,-25.0,25,
 imputed employer social contributions,-25.0,25,
 property income received,-25.0,5,-5.0
-household disposable income,-25.0,-55,-5.0
+household disposable income,-25.0,-55,-20.0
 change in pension entitlements,-25.0,55,-55.0

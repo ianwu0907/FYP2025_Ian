@@ -1,22 +1,9 @@
-type_of_offence,location,police_contacts
-violent offences,police_contacts_bc,17.0
-property offences,police_contacts_bc,31.0
-other criminal code offences,police_contacts_bc,17.0
-administration of justice offences,police_contacts_bc,19.0
-drug offences,police_contacts_bc,11.0
-criminal code traffic violations,police_contacts_bc,4.0
-other federal statute violations,police_contacts_bc,1.0
-violent offences,police_contacts_surrey,17.0
-property offences,police_contacts_surrey,35.0
-other criminal code offences,police_contacts_surrey,15.0
-administration of justice offences,police_contacts_surrey,17.0
-drug offences,police_contacts_surrey,11.0
-criminal code traffic violations,police_contacts_surrey,5.0
-other federal statute violations,police_contacts_surrey,1.0
-violent offences,criminal_offences_bc,15.0
-property offences,criminal_offences_bc,54.0
-other criminal code offences,criminal_offences_bc,14.0
-administration of justice offences,criminal_offences_bc,4.0
-drug offences,criminal_offences_bc,6.0
-criminal code traffic violations,criminal_offences_bc,4.0
-other federal statute violations,criminal_offences_bc,2.0
+type_of_offence,police_contacts_for_decedents_in_british_columbia,police_contacts_for_decedents_in_surrey,all_criminal_offences_in_british_columbia_2009_to_2016
+,percent,,
+violent offences,17,17.0,15.0
+property offences,31,35.0,54.0
+other criminal code offences,17,15.0,14.0
+administration of justice offences,19,17.0,4.0
+drug offences,11,11.0,6.0
+criminal code traffic violations,4,5.0,4.0
+other federal statute violations,1,1.0,2.0

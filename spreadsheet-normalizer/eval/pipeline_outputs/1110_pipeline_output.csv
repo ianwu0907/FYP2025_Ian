@@ -1,28 +1,26 @@
-province_territory,measurement_type,measurement_value,number_negative
-prince edward island,average,2.4,0 out of 2
-nova scotia,average,-17.9,4 out of 4
-new brunswiick,average,-11.0,4 out of 4
-quebec,average,-14.6,4 out of 4
-ontario,average,-20.0,4 out of 4
-saskatchewan,average,-21.1,4 out of 4
-alberta,average,-51.0,4 out of 4
-british columbia,average,-8.2,3 out of 4
-northwest territories,average,-9.6,3 out of 3
-prince edward island,standard deviation,0.6,0 out of 2
-nova scotia,standard deviation,28.2,4 out of 4
-new brunswiick,standard deviation,11.2,4 out of 4
-quebec,standard deviation,9.9,4 out of 4
-ontario,standard deviation,12.8,4 out of 4
-saskatchewan,standard deviation,17.3,4 out of 4
-alberta,standard deviation,16.2,4 out of 4
-british columbia,standard deviation,7.2,3 out of 4
-northwest territories,standard deviation,5.1,3 out of 3
-prince edward island,spread,,0 out of 2
-nova scotia,spread,,4 out of 4
-new brunswiick,spread,,4 out of 4
-quebec,spread,,4 out of 4
-ontario,spread,,4 out of 4
-saskatchewan,spread,,4 out of 4
-alberta,spread,,4 out of 4
-british columbia,spread,,3 out of 4
-northwest territories,spread,,3 out of 3
+province_territory,measurement_type,measurement_value
+newfoundland and labrador,average,0.2
+prince edward island,average,2.4
+nova scotia,average,-17.9
+new brunswiick,average,-11.0
+quebec,average,-14.6
+ontario,average,-20.0
+manitoba,average,-0.3
+saskatchewan,average,-21.1
+alberta,average,-51.0
+british columbia,average,-8.2
+yukon,average,-6.1
+northwest territories,average,-9.6
+nunavut,average,8.8
+newfoundland and labrador,standard deviation,6.2
+prince edward island,standard deviation,0.6
+nova scotia,standard deviation,28.2
+new brunswiick,standard deviation,11.2
+quebec,standard deviation,9.9
+ontario,standard deviation,12.8
+manitoba,standard deviation,4.0
+saskatchewan,standard deviation,17.3
+alberta,standard deviation,16.2
+british columbia,standard deviation,7.2
+yukon,standard deviation,9.1
+northwest territories,standard deviation,5.1

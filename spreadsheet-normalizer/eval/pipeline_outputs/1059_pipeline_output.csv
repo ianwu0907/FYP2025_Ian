@@ -1,97 +1,70 @@
-type_of_behaviour,group,measurement_type,value
-unwanted physical contact,cisgender,percent,11.9
-unwanted physical contact,cisgender,95% confidence interval (from),11.4
-unwanted physical contact,cisgender,95% confidence interval (to),12.4
-unwanted physical contact,transgender,percent,22.0
-unwanted physical contact,transgender,95% confidence interval (from),6.4
-unwanted physical contact,transgender,95% confidence interval (to),47.0
-indecent exposure,cisgender,percent,3.8
-indecent exposure,cisgender,95% confidence interval (from),3.4
-indecent exposure,cisgender,95% confidence interval (to),4.1
-indecent exposure,transgender,percent,
-indecent exposure,transgender,95% confidence interval (from),
-indecent exposure,transgender,95% confidence interval (to),
-unwanted comments about sex or gender,cisgender,percent,8.8
-unwanted comments about sex or gender,cisgender,95% confidence interval (from),8.4
-unwanted comments about sex or gender,cisgender,95% confidence interval (to),9.3
-unwanted comments about sex or gender,transgender,percent,43.4
-unwanted comments about sex or gender,transgender,95% confidence interval (from),21.0
-unwanted comments about sex or gender,transgender,95% confidence interval (to),68.0
-unwanted comments about sexual orientation or assumed sexual orientation,cisgender,percent,3.8
-unwanted comments about sexual orientation or assumed sexual orientation,cisgender,95% confidence interval (from),3.5
-unwanted comments about sexual orientation or assumed sexual orientation,cisgender,95% confidence interval (to),4.2
-unwanted comments about sexual orientation or assumed sexual orientation,transgender,percent,36.5
-unwanted comments about sexual orientation or assumed sexual orientation,transgender,95% confidence interval (from),18.8
-unwanted comments about sexual orientation or assumed sexual orientation,transgender,95% confidence interval (to),57.3
-unwanted sexual attention,cisgender,percent,15.3
-unwanted sexual attention,cisgender,95% confidence interval (from),14.8
-unwanted sexual attention,cisgender,95% confidence interval (to),15.9
-unwanted sexual attention,transgender,percent,39.2
-unwanted sexual attention,transgender,95% confidence interval (from),21.0
-unwanted sexual attention,transgender,95% confidence interval (to),59.9
-experienced unwanted sexual behaviour in public in the past 12 months,cisgender,percent,22.7
-experienced unwanted sexual behaviour in public in the past 12 months,cisgender,95% confidence interval (from),22.1
-experienced unwanted sexual behaviour in public in the past 12 months,cisgender,95% confidence interval (to),23.4
-experienced unwanted sexual behaviour in public in the past 12 months,transgender,percent,57.6
-experienced unwanted sexual behaviour in public in the past 12 months,transgender,95% confidence interval (from),37.1
-experienced unwanted sexual behaviour in public in the past 12 months,transgender,95% confidence interval (to),76.5
-threatening or aggressive emails or messages directed at you personally,cisgender,percent,8.9
-threatening or aggressive emails or messages directed at you personally,cisgender,95% confidence interval (from),8.4
-threatening or aggressive emails or messages directed at you personally,cisgender,95% confidence interval (to),9.4
-threatening or aggressive emails or messages directed at you personally,transgender,percent,28.6
-threatening or aggressive emails or messages directed at you personally,transgender,95% confidence interval (from),11.9
-threatening or aggressive emails or messages directed at you personally,transgender,95% confidence interval (to),50.9
-threatening or aggressive messages sent to a group or on social media,cisgender,percent,4.3
-threatening or aggressive messages sent to a group or on social media,cisgender,95% confidence interval (from),3.9
-threatening or aggressive messages sent to a group or on social media,cisgender,95% confidence interval (to),4.7
-threatening or aggressive messages sent to a group or on social media,transgender,percent,
-threatening or aggressive messages sent to a group or on social media,transgender,95% confidence interval (from),
-threatening or aggressive messages sent to a group or on social media,transgender,95% confidence interval (to),
-"posting or distributing, or threatening to post or distribute, intimate or sexually explicit images without consent",cisgender,percent,1.6
-"posting or distributing, or threatening to post or distribute, intimate or sexually explicit images without consent",cisgender,95% confidence interval (from),1.3
-"posting or distributing, or threatening to post or distribute, intimate or sexually explicit images without consent",cisgender,95% confidence interval (to),1.8
-"posting or distributing, or threatening to post or distribute, intimate or sexually explicit images without consent",transgender,percent,
-"posting or distributing, or threatening to post or distribute, intimate or sexually explicit images without consent",transgender,95% confidence interval (from),
-"posting or distributing, or threatening to post or distribute, intimate or sexually explicit images without consent",transgender,95% confidence interval (to),
-"pressure to send, share, or post sexually suggestive or explicit images or messages",cisgender,percent,2.7
-"pressure to send, share, or post sexually suggestive or explicit images or messages",cisgender,95% confidence interval (from),2.5
-"pressure to send, share, or post sexually suggestive or explicit images or messages",cisgender,95% confidence interval (to),3.0
-"pressure to send, share, or post sexually suggestive or explicit images or messages",transgender,percent,20.3
-"pressure to send, share, or post sexually suggestive or explicit images or messages",transgender,95% confidence interval (from),6.4
-"pressure to send, share, or post sexually suggestive or explicit images or messages",transgender,95% confidence interval (to),42.1
-being sent unwanted sexually suggestive or explicit images or messages,cisgender,percent,8.6
-being sent unwanted sexually suggestive or explicit images or messages,cisgender,95% confidence interval (from),8.1
-being sent unwanted sexually suggestive or explicit images or messages,cisgender,95% confidence interval (to),9.1
-being sent unwanted sexually suggestive or explicit images or messages,transgender,percent,
-being sent unwanted sexually suggestive or explicit images or messages,transgender,95% confidence interval (from),
-being sent unwanted sexually suggestive or explicit images or messages,transgender,95% confidence interval (to),
-experienced unwanted sexual behaviour online in the past 12 months,cisgender,percent,16.0
-experienced unwanted sexual behaviour online in the past 12 months,cisgender,95% confidence interval (from),15.4
-experienced unwanted sexual behaviour online in the past 12 months,cisgender,95% confidence interval (to),16.7
-experienced unwanted sexual behaviour online in the past 12 months,transgender,percent,41.6
-experienced unwanted sexual behaviour online in the past 12 months,transgender,95% confidence interval (from),21.7
-experienced unwanted sexual behaviour online in the past 12 months,transgender,95% confidence interval (to),63.8
-changed username or blocked others because of harassment,cisgender,percent,13.5
-changed username or blocked others because of harassment,cisgender,95% confidence interval (from),12.9
-changed username or blocked others because of harassment,cisgender,95% confidence interval (to),14.1
-changed username or blocked others because of harassment,transgender,percent,37.4
-changed username or blocked others because of harassment,transgender,95% confidence interval (from),18.3
-changed username or blocked others because of harassment,transgender,95% confidence interval (to),59.7
-limited internet use or social media participation for protection,cisgender,percent,14.7
-limited internet use or social media participation for protection,cisgender,95% confidence interval (from),14.2
-limited internet use or social media participation for protection,cisgender,95% confidence interval (to),15.3
-limited internet use or social media participation for protection,transgender,percent,
-limited internet use or social media participation for protection,transgender,95% confidence interval (from),
-limited internet use or social media participation for protection,transgender,95% confidence interval (to),
-shut down or deleted an account because of harassment,cisgender,percent,3.4
-shut down or deleted an account because of harassment,cisgender,95% confidence interval (from),3.2
-shut down or deleted an account because of harassment,cisgender,95% confidence interval (to),3.7
-shut down or deleted an account because of harassment,transgender,percent,
-shut down or deleted an account because of harassment,transgender,95% confidence interval (from),
-shut down or deleted an account because of harassment,transgender,95% confidence interval (to),
-took a protective measure online due to harassment in the past 12 months,cisgender,percent,23.5
-took a protective measure online due to harassment in the past 12 months,cisgender,95% confidence interval (from),22.8
-took a protective measure online due to harassment in the past 12 months,cisgender,95% confidence interval (to),24.2
-took a protective measure online due to harassment in the past 12 months,transgender,percent,40.8
-took a protective measure online due to harassment in the past 12 months,transgender,95% confidence interval (from),21.1
-took a protective measure online due to harassment in the past 12 months,transgender,95% confidence interval (to),63.0
+type_of_behaviour,demographic,confidence_interval,percent,confidence_interval_from,confidence_interval_to
+,percent,,percent,95% confidence interval,
+,95% confidence interval,from,95% confidence interval,,percent
+,percent,to,percent,95% confidence interval,
+,95% confidence interval,from,from,to,
+,95% confidence interval,to,to,,from
+unwanted physical contact,percent,,11.9,11.4,12.4
+unwanted physical contact,95% confidence interval,from,11.4,12.4,22.0
+unwanted physical contact,95% confidence interval,to,12.4,22.0,6.4
+unwanted physical contact,percent,to,22.0,6.4,47.0
+indecent exposure,percent,,3.8,3.4,4.1
+indecent exposure,95% confidence interval,from,3.4,4.1,f
+indecent exposure,95% confidence interval,to,4.1,f,f
+indecent exposure,percent,to,f,f,f
+unwanted comments about sex or gender,percent,,8.8,8.4,9.3
+unwanted comments about sex or gender,95% confidence interval,from,8.4,9.3,43.4
+unwanted comments about sex or gender,95% confidence interval,to,9.3,43.4,21.0
+unwanted comments about sex or gender,percent,to,43.4,21.0,68.0
+unwanted comments about sexual orientation or assumed sexual orientation,percent,,3.8,3.5,4.2
+unwanted comments about sexual orientation or assumed sexual orientation,95% confidence interval,from,3.5,4.2,36.5
+unwanted comments about sexual orientation or assumed sexual orientation,95% confidence interval,to,4.2,36.5,18.8
+unwanted comments about sexual orientation or assumed sexual orientation,percent,to,36.5,18.8,57.3
+unwanted sexual attention,percent,,15.3,14.8,15.9
+unwanted sexual attention,95% confidence interval,from,14.8,15.9,39.2
+unwanted sexual attention,95% confidence interval,to,15.9,39.2,21.0
+unwanted sexual attention,percent,to,39.2,21.0,59.9
+experienced unwanted sexual behaviour in public in the past 12 months,percent,,22.7,22.1,23.4
+experienced unwanted sexual behaviour in public in the past 12 months,95% confidence interval,from,22.1,23.4,57.6
+experienced unwanted sexual behaviour in public in the past 12 months,95% confidence interval,to,23.4,57.6,37.1
+experienced unwanted sexual behaviour in public in the past 12 months,percent,to,57.6,37.1,76.5
+threatening or aggressive emails or messages directed at you personally,percent,,8.9,8.4,9.4
+threatening or aggressive emails or messages directed at you personally,95% confidence interval,from,8.4,9.4,28.6
+threatening or aggressive emails or messages directed at you personally,95% confidence interval,to,9.4,28.6,11.9
+threatening or aggressive emails or messages directed at you personally,percent,to,28.6,11.9,50.9
+threatening or aggressive messages sent to a group or on social media,percent,,4.3,3.9,4.7
+threatening or aggressive messages sent to a group or on social media,95% confidence interval,from,3.9,4.7,f
+threatening or aggressive messages sent to a group or on social media,95% confidence interval,to,4.7,f,f
+threatening or aggressive messages sent to a group or on social media,percent,to,f,f,f
+"posting or distributing, or threatening to post or distribute, intimate or sexually explicit images without consent",percent,,1.6,1.3,1.8
+"posting or distributing, or threatening to post or distribute, intimate or sexually explicit images without consent",95% confidence interval,from,1.3,1.8,f
+"posting or distributing, or threatening to post or distribute, intimate or sexually explicit images without consent",95% confidence interval,to,1.8,f,f
+"posting or distributing, or threatening to post or distribute, intimate or sexually explicit images without consent",percent,to,f,f,f
+"pressure to send, share, or post sexually suggestive or explicit images or messages",percent,,2.7,2.5,3.0
+"pressure to send, share, or post sexually suggestive or explicit images or messages",95% confidence interval,from,2.5,3.0,20.3
+"pressure to send, share, or post sexually suggestive or explicit images or messages",95% confidence interval,to,3.0,20.3,6.4
+"pressure to send, share, or post sexually suggestive or explicit images or messages",percent,to,20.3,6.4,42.1
+being sent unwanted sexually suggestive or explicit images or messages,percent,,8.6,8.1,9.1
+being sent unwanted sexually suggestive or explicit images or messages,95% confidence interval,from,8.1,9.1,f
+being sent unwanted sexually suggestive or explicit images or messages,95% confidence interval,to,9.1,f,f
+being sent unwanted sexually suggestive or explicit images or messages,percent,to,f,f,f
+experienced unwanted sexual behaviour online in the past 12 months,percent,,16.0,15.4,16.7
+experienced unwanted sexual behaviour online in the past 12 months,95% confidence interval,from,15.4,16.7,41.6
+experienced unwanted sexual behaviour online in the past 12 months,95% confidence interval,to,16.7,41.6,21.7
+experienced unwanted sexual behaviour online in the past 12 months,percent,to,41.6,21.7,63.8
+changed username or blocked others because of harassment,percent,,13.5,12.9,14.1
+changed username or blocked others because of harassment,95% confidence interval,from,12.9,14.1,37.4
+changed username or blocked others because of harassment,95% confidence interval,to,14.1,37.4,18.3
+changed username or blocked others because of harassment,percent,to,37.4,18.3,59.7
+limited internet use or social media participation for protection,percent,,14.7,14.2,15.3
+limited internet use or social media participation for protection,95% confidence interval,from,14.2,15.3,f
+limited internet use or social media participation for protection,95% confidence interval,to,15.3,f,f
+limited internet use or social media participation for protection,percent,to,f,f,f
+shut down or deleted an account because of harassment,percent,,3.4,3.2,3.7
+shut down or deleted an account because of harassment,95% confidence interval,from,3.2,3.7,f
+shut down or deleted an account because of harassment,95% confidence interval,to,3.7,f,f
+shut down or deleted an account because of harassment,percent,to,f,f,f
+took a protective measure online due to harassment in the past 12 months,percent,,23.5,22.8,24.2
+took a protective measure online due to harassment in the past 12 months,95% confidence interval,from,22.8,24.2,40.8
+took a protective measure online due to harassment in the past 12 months,95% confidence interval,to,24.2,40.8,21.1
+took a protective measure online due to harassment in the past 12 months,percent,to,40.8,21.1,63.0

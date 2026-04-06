@@ -1,60 +1,236 @@
-year,ownership_category,urban_rural,investment_value
-1978.0,Urban,Urban,3.98
-1979.0,Urban,Urban,10.41
-1980.0,Urban,Urban,11.47
-1981.0,Urban,Urban,17.28
-1982.0,Urban,Urban,17.46
-1983.0,Urban,Urban,26.48
-1984.0,Urban,Urban,44.43
-1985.0,Urban,Urban,58.51
-1986.0,Urban,Urban,52.32
-1987.0,Urban,Urban,56.05
-1988.0,Urban,Urban,64.83
-1989.0,Urban,Urban,62.0
-1990.0,Urban,Urban,67.47
-1991.0,Urban,Urban,85.73
-1992.0,Urban,Urban,54.19
-1993.0,Urban,Urban,83.05
-1993.0,Rural,Rural,64.88
-1994.0,Urban,Urban,92.3
-1994.0,Rural,Rural,133.54
-1995.0,Urban,Urban,113.13
-1995.0,Rural,Rural,184.55
-1996.0,Urban,Urban,166.14
-1996.0,Rural,Rural,178.81
-1997.0,Urban,Urban,198.68
-1997.0,Rural,Rural,207.46
-1998.0,Urban,Urban,227.0
-1998.0,Rural,Rural,233.84
-1999.0,Urban,Urban,228.43
-1999.0,Rural,Rural,232.85
-2000.0,Urban,Urban,254.11
-2000.0,Rural,Rural,355.59
-2001.0,Urban,Urban,263.35
-2001.0,Rural,Rural,577.68
-2002.0,Urban,Urban,285.64
-2002.0,Rural,Rural,972.17
-2003.0,Urban,Urban,296.03
-2003.0,Rural,Rural,1802.23
-2004.0,Urban,Urban,116.36
-2004.0,Rural,Rural,2638.61
-2005.0,Urban,Urban,1491.55
-2005.0,Rural,Rural,4909.56
-2006.0,Urban,Urban,1186.2
-2006.0,Rural,Rural,5120.48
-2007.0,Urban,Urban,1141.34
-2007.0,Rural,Rural,5862.34
-2008.0,Urban,Urban,1304.0237
-2008.0,Rural,Rural,6832.267
-2009.0,Urban,Urban,1586.71
-2009.0,Rural,Rural,8400.32
-2010.0,Urban,Urban,1822.9909
-2010.0,Rural,Rural,10495.9184
-2011.0,Rural,Rural,12036.9193
-2012.0,Urban,Urban,0.0
-2012.0,Rural,Rural,14297.3045
-2013.0,Rural,Rural,16090.9306
-2014.0,Rural,Rural,17443.7513
-2015.0,Rural,Rural,18613.36
-2016.0,Rural,Rural,22088.37
-2017.0,Rural,Rural,21809.31
+year,ownership_category,investment_type,total_investment,state_owned_investment,collective_owned_investment,individual_owned_urban_investment,individual_owned_rural_investment,other_investment_rural
+1978,State-owned,Total Investment,41.87,29.27,0.0,0.0,0.0,0.0
+1978,Collective-owned,Total Investment,41.87,0.0,8.42,0.0,0.0,0.0
+1978,Individual Economy Urban,Total Investment,41.87,0.0,0.0,1.78,0.0,0.0
+1978,Individual Economy Rural,Total Investment,41.87,0.0,0.0,0.0,4.18,0.0
+1978,Other,Total Investment,41.87,0.0,0.0,0.0,0.0,3.98
+1979,State-owned,Total Investment,61.35,31.62,0.0,0.0,0.0,0.0
+1979,Collective-owned,Total Investment,61.35,0.0,18.97,0.0,0.0,0.0
+1979,Individual Economy Urban,Total Investment,61.35,0.0,0.0,1.55,0.0,0.0
+1979,Individual Economy Rural,Total Investment,61.35,0.0,0.0,0.0,10.76,0.0
+1979,Other,Total Investment,61.35,0.0,0.0,0.0,0.0,10.41
+1980,State-owned,Total Investment,69.97,35.83,0.0,0.0,0.0,0.0
+1980,Collective-owned,Total Investment,69.97,0.0,22.24,0.0,0.0,0.0
+1980,Individual Economy Urban,Total Investment,69.97,0.0,0.0,3.12,0.0,0.0
+1980,Individual Economy Rural,Total Investment,69.97,0.0,0.0,0.0,11.9,0.0
+1980,Other,Total Investment,69.97,0.0,0.0,0.0,0.0,11.47
+1981,State-owned,Total Investment,79.6,29.63,0.0,0.0,0.0,0.0
+1981,Collective-owned,Total Investment,79.6,0.0,32.08,0.0,0.0,0.0
+1981,Individual Economy Urban,Total Investment,79.6,0.0,0.0,3.27,0.0,0.0
+1981,Individual Economy Rural,Total Investment,79.6,0.0,0.0,0.0,17.89,0.0
+1981,Other,Total Investment,79.6,0.0,0.0,0.0,0.0,17.28
+1982,State-owned,Total Investment,85.0,43.29,0.0,0.0,0.0,0.0
+1982,Collective-owned,Total Investment,85.0,0.0,23.38,0.0,0.0,0.0
+1982,Individual Economy Urban,Total Investment,85.0,0.0,0.0,4.38,0.0,0.0
+1982,Individual Economy Rural,Total Investment,85.0,0.0,0.0,0.0,18.33,0.0
+1982,Other,Total Investment,85.0,0.0,0.0,0.0,0.0,17.46
+1983,State-owned,Total Investment,96.46,49.11,0.0,0.0,0.0,0.0
+1983,Collective-owned,Total Investment,96.46,0.0,19.19,0.0,0.0,0.0
+1983,Individual Economy Urban,Total Investment,96.46,0.0,0.0,3.76,0.0,0.0
+1983,Individual Economy Rural,Total Investment,96.46,0.0,0.0,0.0,28.16,0.0
+1983,Other,Total Investment,96.46,0.0,0.0,0.0,0.0,26.48
+1984,State-owned,Total Investment,140.15,67.09,0.0,0.0,0.0,0.0
+1984,Collective-owned,Total Investment,140.15,0.0,25.29,0.0,0.0,0.0
+1984,Individual Economy Urban,Total Investment,140.15,0.0,0.0,5.01,0.0,0.0
+1984,Individual Economy Rural,Total Investment,140.15,0.0,0.0,0.0,47.77,0.0
+1984,Other,Total Investment,140.15,0.0,0.0,0.0,0.0,44.43
+1985,State-owned,Total Investment,194.33,100.42,0.0,0.0,0.0,0.0
+1985,Collective-owned,Total Investment,194.33,0.0,30.21,0.0,0.0,0.0
+1985,Individual Economy Urban,Total Investment,194.33,0.0,0.0,8.64,0.0,0.0
+1985,Individual Economy Rural,Total Investment,194.33,0.0,0.0,0.0,63.7,0.0
+1985,Other,Total Investment,194.33,0.0,0.0,0.0,0.0,58.51
+1986,State-owned,Total Investment,223.08,121.95,0.0,0.0,0.0,0.0
+1986,Collective-owned,Total Investment,223.08,0.0,43.09,0.0,0.0,0.0
+1986,Individual Economy Urban,Total Investment,223.08,0.0,0.0,11.95,0.0,0.0
+1986,Individual Economy Rural,Total Investment,223.08,0.0,0.0,0.0,58.04,0.0
+1986,Other,Total Investment,223.08,0.0,0.0,0.0,0.0,52.32
+1987,State-owned,Total Investment,297.77,155.65,0.0,0.0,0.0,0.0
+1987,Collective-owned,Total Investment,297.77,0.0,78.75,0.0,0.0,0.0
+1987,Individual Economy Urban,Total Investment,297.77,0.0,0.0,17.84,0.0,0.0
+1987,Individual Economy Rural,Total Investment,297.77,0.0,0.0,0.0,63.37,0.0
+1987,Other,Total Investment,297.77,0.0,0.0,0.0,0.0,56.05
+1988,State-owned,Total Investment,369.82,192.2,0.0,0.0,0.0,0.0
+1988,Collective-owned,Total Investment,369.82,0.0,100.97,0.0,0.0,0.0
+1988,Individual Economy Urban,Total Investment,369.82,0.0,0.0,35.46,0.0,0.0
+1988,Individual Economy Rural,Total Investment,369.82,0.0,0.0,0.0,76.65,0.0
+1988,Other,Total Investment,369.82,0.0,0.0,0.0,0.0,64.83
+1989,State-owned,Total Investment,305.54,162.3,0.0,0.0,0.0,0.0
+1989,Collective-owned,Total Investment,305.54,0.0,69.68,0.0,0.0,0.0
+1989,Individual Economy Urban,Total Investment,305.54,0.0,0.0,19.68,0.0,0.0
+1989,Individual Economy Rural,Total Investment,305.54,0.0,0.0,0.0,73.56,0.0
+1989,Other,Total Investment,305.54,0.0,0.0,0.0,0.0,62.0
+1990,State-owned,Total Investment,335.66,185.44,0.0,0.0,0.0,0.0
+1990,Collective-owned,Total Investment,335.66,0.0,71.51,0.0,0.0,0.0
+1990,Individual Economy Urban,Total Investment,335.66,0.0,0.0,18.63,0.0,0.0
+1990,Individual Economy Rural,Total Investment,335.66,0.0,0.0,0.0,78.71,0.0
+1990,Other,Total Investment,335.66,0.0,0.0,0.0,0.0,67.47
+1991,State-owned,Total Investment,439.82,234.04,0.0,0.0,0.0,0.0
+1991,Collective-owned,Total Investment,439.82,0.0,104.73,0.0,0.0,0.0
+1991,Individual Economy Urban,Total Investment,439.82,0.0,0.0,25.06,0.0,0.0
+1991,Individual Economy Rural,Total Investment,439.82,0.0,0.0,0.0,101.05,0.0
+1991,Other,Total Investment,439.82,0.0,0.0,0.0,0.0,85.73
+1992,State-owned,Total Investment,601.5,343.17,0.0,0.0,0.0,0.0
+1992,Collective-owned,Total Investment,601.5,0.0,186.43,0.0,0.0,0.0
+1992,Individual Economy Urban,Total Investment,601.5,0.0,0.0,42.27,0.0,0.0
+1992,Individual Economy Rural,Total Investment,601.5,0.0,0.0,0.0,71.9,0.0
+1992,Other,Total Investment,601.5,0.0,0.0,0.0,0.0,54.19
+1993,State-owned,Total Investment,892.48,476.26,0.0,0.0,0.0,0.0
+1993,Collective-owned,Total Investment,892.48,0.0,245.9,0.0,0.0,0.0
+1993,Individual Economy Urban,Total Investment,892.48,0.0,0.0,49.9,0.0,0.0
+1993,Individual Economy Rural,Total Investment,892.48,0.0,0.0,0.0,105.44,0.0
+1993,Other,Total Investment,892.48,0.0,0.0,0.0,0.0,83.05
+1994,State-owned,Total Investment,1108.0,537.59,0.0,0.0,0.0,0.0
+1994,Collective-owned,Total Investment,1108.0,0.0,318.42,0.0,0.0,0.0
+1994,Individual Economy Urban,Total Investment,1108.0,0.0,0.0,56.42,0.0,0.0
+1994,Individual Economy Rural,Total Investment,1108.0,0.0,0.0,0.0,118.45,0.0
+1994,Other,Total Investment,1108.0,0.0,0.0,0.0,0.0,92.3
+1995,State-owned,Total Investment,1320.97,611.92,0.0,0.0,0.0,0.0
+1995,Collective-owned,Total Investment,1320.97,0.0,383.97,0.0,0.0,0.0
+1995,Individual Economy Urban,Total Investment,1320.97,0.0,0.0,51.62,0.0,0.0
+1995,Individual Economy Rural,Total Investment,1320.97,0.0,0.0,0.0,140.54,0.0
+1995,Other,Total Investment,1320.97,0.0,0.0,0.0,0.0,113.13
+1996,State-owned,Total Investment,1558.01,691.76,0.0,0.0,0.0,0.0
+1996,Collective-owned,Total Investment,1558.01,0.0,484.79,0.0,0.0,0.0
+1996,Individual Economy Urban,Total Investment,1558.01,0.0,0.0,79.79,0.0,0.0
+1996,Individual Economy Rural,Total Investment,1558.01,0.0,0.0,0.0,202.65,0.0
+1996,Other,Total Investment,1558.01,0.0,0.0,0.0,0.0,166.14
+1997,State-owned,Total Investment,1792.22,773.3,0.0,0.0,0.0,0.0
+1997,Collective-owned,Total Investment,1792.22,0.0,569.7,0.0,0.0,0.0
+1997,Individual Economy Urban,Total Investment,1792.22,0.0,0.0,60.15,0.0,0.0
+1997,Individual Economy Rural,Total Investment,1792.22,0.0,0.0,0.0,241.76,0.0
+1997,Other,Total Investment,1792.22,0.0,0.0,0.0,0.0,198.68
+1998,State-owned,Total Investment,2056.97,938.73,0.0,0.0,0.0,0.0
+1998,Collective-owned,Total Investment,2056.97,0.0,610.2,0.0,0.0,0.0
+1998,Individual Economy Urban,Total Investment,2056.97,0.0,0.0,66.7,0.0,0.0
+1998,Individual Economy Rural,Total Investment,2056.97,0.0,0.0,0.0,274.2,0.0
+1998,Other,Total Investment,2056.97,0.0,0.0,0.0,0.0,227.0
+1999,State-owned,Total Investment,2222.17,1043.13,0.0,0.0,0.0,0.0
+1999,Collective-owned,Total Investment,2222.17,0.0,635.55,0.0,0.0,0.0
+1999,Individual Economy Urban,Total Investment,2222.17,0.0,0.0,82.72,0.0,0.0
+1999,Individual Economy Rural,Total Investment,2222.17,0.0,0.0,0.0,310.64,0.0
+1999,Other,Total Investment,2222.17,0.0,0.0,0.0,0.0,228.43
+2000,State-owned,Total Investment,2542.65,1153.65,0.0,0.0,0.0,0.0
+2000,Collective-owned,Total Investment,2542.65,0.0,679.48,0.0,0.0,0.0
+2000,Individual Economy Urban,Total Investment,2542.65,0.0,0.0,108.63,0.0,0.0
+2000,Individual Economy Rural,Total Investment,2542.65,0.0,0.0,0.0,353.93,0.0
+2000,Other,Total Investment,2542.65,0.0,0.0,0.0,0.0,254.11
+2001,State-owned,Total Investment,2807.79,1157.44,0.0,0.0,0.0,0.0
+2001,Collective-owned,Total Investment,2807.79,0.0,688.61,0.0,0.0,0.0
+2001,Individual Economy Urban,Total Investment,2807.79,0.0,0.0,134.92,0.0,0.0
+2001,Individual Economy Rural,Total Investment,2807.79,0.0,0.0,0.0,384.06,0.0
+2001,Other,Total Investment,2807.79,0.0,0.0,0.0,0.0,263.35
+2002,State-owned,Total Investment,3509.29,1237.16,0.0,0.0,0.0,0.0
+2002,Collective-owned,Total Investment,3509.29,0.0,812.65,0.0,0.0,0.0
+2002,Individual Economy Urban,Total Investment,3509.29,0.0,0.0,196.78,0.0,0.0
+2002,Individual Economy Rural,Total Investment,3509.29,0.0,0.0,0.0,487.31,0.0
+2002,Other,Total Investment,3509.29,0.0,0.0,0.0,0.0,285.64
+2003,State-owned,Total Investment,5328.44,1615.57,0.0,0.0,0.0,0.0
+2003,Collective-owned,Total Investment,5328.44,0.0,1177.0,0.0,0.0,0.0
+2003,Individual Economy Urban,Total Investment,5328.44,0.0,0.0,321.79,0.0,0.0
+2003,Individual Economy Rural,Total Investment,5328.44,0.0,0.0,0.0,733.64,0.0
+2003,Other,Total Investment,5328.44,0.0,0.0,0.0,0.0,296.03
+2004,State-owned,Total Investment,7629.04,1762.29,0.0,0.0,0.0,0.0
+2004,Collective-owned,Total Investment,7629.04,0.0,2455.86,0.0,0.0,0.0
+2004,Individual Economy Urban,Total Investment,7629.04,0.0,0.0,383.83,0.0,0.0
+2004,Individual Economy Rural,Total Investment,7629.04,0.0,0.0,0.0,772.28,0.0
+2004,Other,Total Investment,7629.04,0.0,0.0,0.0,0.0,116.36
+2005,State-owned,Total Investment,10541.87,1853.29,0.0,0.0,0.0,0.0
+2005,Collective-owned,Total Investment,10541.87,0.0,1042.41,0.0,0.0,0.0
+2005,Individual Economy Urban,Total Investment,10541.87,0.0,0.0,620.23,0.0,0.0
+2005,Individual Economy Rural,Total Investment,10541.87,0.0,0.0,0.0,2736.61,0.0
+2005,Other,Total Investment,10541.87,0.0,0.0,0.0,0.0,1491.55
+2006,State-owned,Total Investment,11136.06,1855.41,0.0,0.0,0.0,0.0
+2006,Collective-owned,Total Investment,11136.06,0.0,1063.61,0.0,0.0,0.0
+2006,Individual Economy Urban,Total Investment,11136.06,0.0,0.0,713.49,0.0,0.0
+2006,Individual Economy Rural,Total Investment,11136.06,0.0,0.0,0.0,3096.56,0.0
+2006,Other,Total Investment,11136.06,0.0,0.0,0.0,0.0,1186.2
+2007,State-owned,Total Investment,12537.02,1838.55,0.0,0.0,0.0,0.0
+2007,Collective-owned,Total Investment,12537.02,0.0,1269.64,0.0,0.0,0.0
+2007,Individual Economy Urban,Total Investment,12537.02,0.0,0.0,857.34,0.0,0.0
+2007,Individual Economy Rural,Total Investment,12537.02,0.0,0.0,0.0,3566.49,0.0
+2007,Other,Total Investment,12537.02,0.0,0.0,0.0,0.0,1141.34
+2008,State-owned,Total Investment,15435.93,2431.5391,0.0,0.0,0.0,0.0
+2008,Collective-owned,Total Investment,15435.93,0.0,1811.2253,0.0,0.0,0.0
+2008,Individual Economy Urban,Total Investment,15435.93,0.0,0.0,1333.2312,0.0,0.0
+2008,Individual Economy Rural,Total Investment,15435.93,0.0,0.0,0.0,4360.8981,0.0
+2008,Other,Total Investment,15435.93,0.0,0.0,0.0,0.0,1304.0237
+2009,State-owned,Total Investment,19030.97,3086.82,0.0,0.0,0.0,0.0
+2009,Collective-owned,Total Investment,19030.97,0.0,2308.54,0.0,0.0,0.0
+2009,Individual Economy Urban,Total Investment,19030.97,0.0,0.0,1717.74,0.0,0.0
+2009,Individual Economy Rural,Total Investment,19030.97,0.0,0.0,0.0,5235.29,0.0
+2009,Other,Total Investment,19030.97,0.0,0.0,0.0,0.0,1586.71
+2010,State-owned,Total Investment,23276.6893,3648.447,0.0,0.0,0.0,0.0
+2010,Collective-owned,Total Investment,23276.6893,0.0,2627.3225,0.0,0.0,0.0
+2010,Individual Economy Urban,Total Investment,23276.6893,0.0,0.0,1841.4004,0.0,0.0
+2010,Individual Economy Rural,Total Investment,23276.6893,0.0,0.0,0.0,6505.0014,0.0
+2010,Other,Total Investment,23276.6893,0.0,0.0,0.0,0.0,1822.9909
+2011,State-owned,Total Investment,26769.7333,3783.3089,0.0,0.0,0.0,0.0
+2011,Collective-owned,Total Investment,26769.7333,0.0,2715.0045,0.0,0.0,0.0
+2011,Individual Economy Urban,Total Investment,26769.7333,0.0,0.0,,0.0,0.0
+2011,Individual Economy Rural,Total Investment,26769.7333,0.0,0.0,0.0,8234.5006,0.0
+2011,Other,Total Investment,26769.7333,0.0,0.0,0.0,0.0,
+2012,State-owned,Total Investment,31255.96,3949.6474,0.0,0.0,0.0,0.0
+2012,Collective-owned,Total Investment,31255.96,0.0,3129.2669,0.0,0.0,0.0
+2012,Individual Economy Urban,Total Investment,31255.96,0.0,0.0,0.0,0.0,0.0
+2012,Individual Economy Rural,Total Investment,31255.96,0.0,0.0,0.0,9879.7453,0.0
+2012,Other,Total Investment,31255.96,0.0,0.0,0.0,0.0,0.0
+2013,State-owned,Total Investment,36789.0709999999,4757.3094,0.0,0.0,0.0,0.0
+2013,Collective-owned,Total Investment,36789.0709999999,0.0,3113.1668,0.0,0.0,0.0
+2013,Individual Economy Urban,Total Investment,36789.0709999999,0.0,0.0,,0.0,0.0
+2013,Individual Economy Rural,Total Investment,36789.0709999999,0.0,0.0,0.0,12827.6642,0.0
+2013,Other,Total Investment,36789.0709999999,0.0,0.0,0.0,0.0,
+2014,State-owned,Total Investment,42495.5478,5455.9377,0.0,0.0,0.0,0.0
+2014,Collective-owned,Total Investment,42495.5478,0.0,3380.3857,0.0,0.0,0.0
+2014,Individual Economy Urban,Total Investment,42495.5478,0.0,0.0,,0.0,0.0
+2014,Individual Economy Rural,Total Investment,42495.5478,0.0,0.0,0.0,16215.4731,0.0
+2014,Other,Total Investment,42495.5478,0.0,0.0,0.0,0.0,
+2015,State-owned,Total Investment,48312.46,6304.5816,0.0,0.0,0.0,0.0
+2015,Collective-owned,Total Investment,48312.46,0.0,3125.7374,0.0,0.0,0.0
+2015,Individual Economy Urban,Total Investment,48312.46,0.0,0.0,,0.0,0.0
+2015,Individual Economy Rural,Total Investment,48312.46,0.0,0.0,0.0,20268.78,0.0
+2015,Other,Total Investment,48312.46,0.0,0.0,0.0,0.0,
+2016,State-owned,Total Investment,53322.49,7497.3242,0.0,0.0,0.0,0.0
+2016,Collective-owned,Total Investment,53322.49,0.0,1545.379,0.0,0.0,0.0
+2016,Individual Economy Urban,Total Investment,53322.49,0.0,0.0,,0.0,0.0
+2016,Individual Economy Rural,Total Investment,53322.49,0.0,0.0,0.0,22191.4168,0.0
+2016,Other,Total Investment,53322.49,0.0,0.0,0.0,0.0,
+2017,State-owned,Total Investment,55202.73,9568.2458,0.0,0.0,0.0,0.0
+2017,Collective-owned,Total Investment,55202.73,0.0,1496.6216,0.0,0.0,0.0
+2017,Individual Economy Urban,Total Investment,55202.73,0.0,0.0,,0.0,0.0
+2017,Individual Economy Rural,Total Investment,55202.73,0.0,0.0,0.0,22328.5482,0.0
+2017,Other,Total Investment,55202.73,0.0,0.0,0.0,0.0,
+"Note: 1. Since 2011, collective economy and individual economy are no longer subdivided into urban and rural areas (same as the table below).",State-owned,Total Investment,,,0.0,0.0,0.0,0.0
+"Note: 1. Since 2011, collective economy and individual economy are no longer subdivided into urban and rural areas (same as the table below).",Collective-owned,Total Investment,,0.0,,0.0,0.0,0.0
+"Note: 1. Since 2011, collective economy and individual economy are no longer subdivided into urban and rural areas (same as the table below).",Individual Economy Urban,Total Investment,,0.0,0.0,,0.0,0.0
+"Note: 1. Since 2011, collective economy and individual economy are no longer subdivided into urban and rural areas (same as the table below).",Individual Economy Rural,Total Investment,,0.0,0.0,0.0,,0.0
+"Note: 1. Since 2011, collective economy and individual economy are no longer subdivided into urban and rural areas (same as the table below).",Other,Total Investment,,0.0,0.0,0.0,0.0,
+"2. Starting from 2011, the statistical threshold for fixed asset investment projects was raised from 500,000 yuan to 5 million yuan, and the name was uniformly standardized as ""Fixed Asset Investment,"" which includes urban and non-agricultural households' 5 million yuan.",State-owned,Total Investment,,,0.0,0.0,0.0,0.0
+"2. Starting from 2011, the statistical threshold for fixed asset investment projects was raised from 500,000 yuan to 5 million yuan, and the name was uniformly standardized as ""Fixed Asset Investment,"" which includes urban and non-agricultural households' 5 million yuan.",Collective-owned,Total Investment,,0.0,,0.0,0.0,0.0
+"2. Starting from 2011, the statistical threshold for fixed asset investment projects was raised from 500,000 yuan to 5 million yuan, and the name was uniformly standardized as ""Fixed Asset Investment,"" which includes urban and non-agricultural households' 5 million yuan.",Individual Economy Urban,Total Investment,,0.0,0.0,,0.0,0.0
+"2. Starting from 2011, the statistical threshold for fixed asset investment projects was raised from 500,000 yuan to 5 million yuan, and the name was uniformly standardized as ""Fixed Asset Investment,"" which includes urban and non-agricultural households' 5 million yuan.",Individual Economy Rural,Total Investment,,0.0,0.0,0.0,,0.0
+"2. Starting from 2011, the statistical threshold for fixed asset investment projects was raised from 500,000 yuan to 5 million yuan, and the name was uniformly standardized as ""Fixed Asset Investment,"" which includes urban and non-agricultural households' 5 million yuan.",Other,Total Investment,,0.0,0.0,0.0,0.0,
+"Yuan and above project investment and real estate development investment; ""Total Investment in Fixed Assets"" includes ""Fixed Asset Investment plus Rural Household Fixed Asset Investment"" (same as in the table below).",State-owned,Total Investment,,,0.0,0.0,0.0,0.0
+"Yuan and above project investment and real estate development investment; ""Total Investment in Fixed Assets"" includes ""Fixed Asset Investment plus Rural Household Fixed Asset Investment"" (same as in the table below).",Collective-owned,Total Investment,,0.0,,0.0,0.0,0.0
+"Yuan and above project investment and real estate development investment; ""Total Investment in Fixed Assets"" includes ""Fixed Asset Investment plus Rural Household Fixed Asset Investment"" (same as in the table below).",Individual Economy Urban,Total Investment,,0.0,0.0,,0.0,0.0
+"Yuan and above project investment and real estate development investment; ""Total Investment in Fixed Assets"" includes ""Fixed Asset Investment plus Rural Household Fixed Asset Investment"" (same as in the table below).",Individual Economy Rural,Total Investment,,0.0,0.0,0.0,,0.0
+"Yuan and above project investment and real estate development investment; ""Total Investment in Fixed Assets"" includes ""Fixed Asset Investment plus Rural Household Fixed Asset Investment"" (same as in the table below).",Other,Total Investment,,0.0,0.0,0.0,0.0,
+a)Collective-owned Units and Self-employed Units had no longer divided into urban and rural unit since 2011.(The same applies to tables following). ,State-owned,Total Investment,,,0.0,0.0,0.0,0.0
+a)Collective-owned Units and Self-employed Units had no longer divided into urban and rural unit since 2011.(The same applies to tables following). ,Collective-owned,Total Investment,,0.0,,0.0,0.0,0.0
+a)Collective-owned Units and Self-employed Units had no longer divided into urban and rural unit since 2011.(The same applies to tables following). ,Individual Economy Urban,Total Investment,,0.0,0.0,,0.0,0.0
+a)Collective-owned Units and Self-employed Units had no longer divided into urban and rural unit since 2011.(The same applies to tables following). ,Individual Economy Rural,Total Investment,,0.0,0.0,0.0,,0.0
+a)Collective-owned Units and Self-employed Units had no longer divided into urban and rural unit since 2011.(The same applies to tables following). ,Other,Total Investment,,0.0,0.0,0.0,0.0,
+"b)Since 2011, the statistical criteria of  fixed assets investment projects had been increased from 500 thousand to 5 million yuan. Investment in fixed ",State-owned,Total Investment,,,0.0,0.0,0.0,0.0
+"b)Since 2011, the statistical criteria of  fixed assets investment projects had been increased from 500 thousand to 5 million yuan. Investment in fixed ",Collective-owned,Total Investment,,0.0,,0.0,0.0,0.0
+"b)Since 2011, the statistical criteria of  fixed assets investment projects had been increased from 500 thousand to 5 million yuan. Investment in fixed ",Individual Economy Urban,Total Investment,,0.0,0.0,,0.0,0.0
+"b)Since 2011, the statistical criteria of  fixed assets investment projects had been increased from 500 thousand to 5 million yuan. Investment in fixed ",Individual Economy Rural,Total Investment,,0.0,0.0,0.0,,0.0
+"b)Since 2011, the statistical criteria of  fixed assets investment projects had been increased from 500 thousand to 5 million yuan. Investment in fixed ",Other,Total Investment,,0.0,0.0,0.0,0.0,
+"assets include urban area and non-farmers 5 million and above project investments, real estate development and investment.Total investment  include",State-owned,Total Investment,,,0.0,0.0,0.0,0.0
+"assets include urban area and non-farmers 5 million and above project investments, real estate development and investment.Total investment  include",Collective-owned,Total Investment,,0.0,,0.0,0.0,0.0
+"assets include urban area and non-farmers 5 million and above project investments, real estate development and investment.Total investment  include",Individual Economy Urban,Total Investment,,0.0,0.0,,0.0,0.0
+"assets include urban area and non-farmers 5 million and above project investments, real estate development and investment.Total investment  include",Individual Economy Rural,Total Investment,,0.0,0.0,0.0,,0.0
+"assets include urban area and non-farmers 5 million and above project investments, real estate development and investment.Total investment  include",Other,Total Investment,,0.0,0.0,0.0,0.0,
+investment in fixed assets and farmer investment in fixed assets.(The same applies to tables following). ,State-owned,Total Investment,,,0.0,0.0,0.0,0.0
+investment in fixed assets and farmer investment in fixed assets.(The same applies to tables following). ,Collective-owned,Total Investment,,0.0,,0.0,0.0,0.0
+investment in fixed assets and farmer investment in fixed assets.(The same applies to tables following). ,Individual Economy Urban,Total Investment,,0.0,0.0,,0.0,0.0
+investment in fixed assets and farmer investment in fixed assets.(The same applies to tables following). ,Individual Economy Rural,Total Investment,,0.0,0.0,0.0,,0.0
+investment in fixed assets and farmer investment in fixed assets.(The same applies to tables following). ,Other,Total Investment,,0.0,0.0,0.0,0.0,

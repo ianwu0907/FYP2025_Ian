@@ -1,73 +1,40 @@
-province,age_group,surgical_intervention,count,percent
-canada,number,tumours with one or more surgical intervention,1210.0,695.0
-canada,percent,tumours with one or more surgical intervention,695.0,57.4
-canada,number,linked cctlp tumour cohort,57.4,
-canada,number,tumours with one or more surgical intervention,30550.0,
-canada,percent,tumours with one or more surgical intervention,13520.0,44.2
-canada,number,linked cctlp tumour cohort,44.2,
-canada,number,tumours with one or more surgical intervention,20385.0,
-canada,percent,tumours with one or more surgical intervention,2255.0,11.1
-newfoundland and labrador,number,tumours with one or more surgical intervention,25.0,20.0
-newfoundland and labrador,percent,tumours with one or more surgical intervention,20.0,83.3
-newfoundland and labrador,number,linked cctlp tumour cohort,83.3,865.0
-newfoundland and labrador,number,tumours with one or more surgical intervention,865.0,415.0
-newfoundland and labrador,percent,tumours with one or more surgical intervention,415.0,48.2
-newfoundland and labrador,number,linked cctlp tumour cohort,48.2,455.0
-newfoundland and labrador,number,tumours with one or more surgical intervention,455.0,35.0
-newfoundland and labrador,percent,tumours with one or more surgical intervention,35.0,7.7
-nova scotia,number,tumours with one or more surgical intervention,55.0,35.0
-nova scotia,percent,tumours with one or more surgical intervention,35.0,65.5
-nova scotia,number,linked cctlp tumour cohort,65.5,
-nova scotia,number,tumours with one or more surgical intervention,1335.0,625.0
-nova scotia,percent,tumours with one or more surgical intervention,625.0,46.7
-nova scotia,number,linked cctlp tumour cohort,46.7,785.0
-nova scotia,number,tumours with one or more surgical intervention,785.0,115.0
-nova scotia,percent,tumours with one or more surgical intervention,115.0,14.8
-new brunswick,number,tumours with one or more surgical intervention,45.0,25.0
-new brunswick,percent,tumours with one or more surgical intervention,25.0,52.3
-new brunswick,number,linked cctlp tumour cohort,52.3,
-new brunswick,number,tumours with one or more surgical intervention,1260.0,415.0
-new brunswick,percent,tumours with one or more surgical intervention,415.0,33.1
-new brunswick,number,linked cctlp tumour cohort,33.1,635.0
-new brunswick,number,tumours with one or more surgical intervention,635.0,45.0
-new brunswick,percent,tumours with one or more surgical intervention,45.0,7.2
-ontario,number,tumours with one or more surgical intervention,625.0,350.0
-ontario,percent,tumours with one or more surgical intervention,350.0,55.6
-ontario,number,linked cctlp tumour cohort,55.6,
-ontario,number,tumours with one or more surgical intervention,15145.0,
-ontario,percent,tumours with one or more surgical intervention,6755.0,44.6
-ontario,number,linked cctlp tumour cohort,44.6,
-ontario,number,tumours with one or more surgical intervention,10040.0,980.0
-ontario,percent,tumours with one or more surgical intervention,980.0,9.7
-manitoba,number,tumours with one or more surgical intervention,35.0,15.0
-manitoba,percent,tumours with one or more surgical intervention,15.0,41.2
-manitoba,number,linked cctlp tumour cohort,41.2,
-manitoba,number,tumours with one or more surgical intervention,1110.0,480.0
-manitoba,percent,tumours with one or more surgical intervention,480.0,43.3
-manitoba,number,linked cctlp tumour cohort,43.3,840.0
-manitoba,number,tumours with one or more surgical intervention,840.0,75.0
-manitoba,percent,tumours with one or more surgical intervention,75.0,8.7
-saskatchewan,number,tumours with one or more surgical intervention,40.0,20.0
-saskatchewan,percent,tumours with one or more surgical intervention,20.0,51.2
-saskatchewan,number,linked cctlp tumour cohort,51.2,
-saskatchewan,number,tumours with one or more surgical intervention,1150.0,410.0
-saskatchewan,percent,tumours with one or more surgical intervention,410.0,35.5
-saskatchewan,number,linked cctlp tumour cohort,35.5,860.0
-saskatchewan,number,tumours with one or more surgical intervention,860.0,85.0
-saskatchewan,percent,tumours with one or more surgical intervention,85.0,9.8
-alberta,number,tumours with one or more surgical intervention,245.0,145.0
-alberta,percent,tumours with one or more surgical intervention,145.0,59.1
-alberta,number,linked cctlp tumour cohort,59.1,
-alberta,number,tumours with one or more surgical intervention,4175.0,
-alberta,percent,tumours with one or more surgical intervention,1850.0,44.3
-alberta,number,linked cctlp tumour cohort,44.3,
-alberta,number,tumours with one or more surgical intervention,2340.0,330.0
-alberta,percent,tumours with one or more surgical intervention,330.0,14.2
-british columbia,number,tumours with one or more surgical intervention,130.0,80.0
-british columbia,percent,tumours with one or more surgical intervention,80.0,63.3
-british columbia,number,linked cctlp tumour cohort,63.3,
-british columbia,number,tumours with one or more surgical intervention,5190.0,
-british columbia,percent,tumours with one or more surgical intervention,2480.0,47.8
-british columbia,number,linked cctlp tumour cohort,47.8,
-british columbia,number,tumours with one or more surgical intervention,4270.0,580.0
-british columbia,percent,tumours with one or more surgical intervention,580.0,13.5
+province_territory,age_group,surgical_intervention_count,surgical_intervention_percent
+,19_to_49,,
+,19_to_49,,
+,19_to_49,,
+,19_to_49,,
+canada,19_to_49,1210.0,695.0
+newfoundland and labrador,19_to_49,25.0,20.0
+nova scotia,19_to_49,55.0,35.0
+new brunswick,19_to_49,45.0,25.0
+ontario,19_to_49,625.0,350.0
+manitoba,19_to_49,35.0,15.0
+saskatchewan,19_to_49,40.0,20.0
+alberta,19_to_49,245.0,145.0
+british columbia,19_to_49,130.0,80.0
+,50_to_69,,
+,50_to_69,,
+,50_to_69,,
+,50_to_69,,
+canada,50_to_69,57.4,
+newfoundland and labrador,50_to_69,83.3,865.0
+nova scotia,50_to_69,65.5,
+new brunswick,50_to_69,52.3,
+ontario,50_to_69,55.6,
+manitoba,50_to_69,41.2,
+saskatchewan,50_to_69,51.2,
+alberta,50_to_69,59.1,
+british columbia,50_to_69,63.3,
+,70_and_older,,
+,70_and_older,,
+,70_and_older,,
+,70_and_older,,
+canada,70_and_older,13520.0,44.2
+newfoundland and labrador,70_and_older,415.0,48.2
+nova scotia,70_and_older,625.0,46.7
+new brunswick,70_and_older,415.0,33.1
+ontario,70_and_older,6755.0,44.6
+manitoba,70_and_older,480.0,43.3
+saskatchewan,70_and_older,410.0,35.5
+alberta,70_and_older,1850.0,44.3
+british columbia,70_and_older,2480.0,47.8

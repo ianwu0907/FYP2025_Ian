@@ -1,52 +1,49 @@
-agency,year,actual_amount,annualized_amount,proposed_amount,dollar_change,percent_change
-department of defensea,2017,49197,43616,57156,13540,31
-department of defensea,2018,49197,43616,57156,13540,31
-department of defensea,2019,49197,43616,57156,13540,31
-department of health and human services,2017,49197,43616,57156,13540,31
-department of health and human services,2018,49197,43616,57156,13540,31
-department of health and human services,2019,49197,43616,57156,13540,31
-department of energy,2017,49197,43616,57156,13540,31
-department of energy,2018,49197,43616,57156,13540,31
-department of energy,2019,49197,43616,57156,13540,31
-national aeronautics and space administration,2017,34222,33772,24742,-9030,-27
-national aeronautics and space administration,2018,34222,33772,24742,-9030,-27
-national aeronautics and space administration,2019,34222,33772,24742,-9030,-27
-national science foundation,2017,34222,33772,24742,-9030,-27
-national science foundation,2018,34222,33772,24742,-9030,-27
-national science foundation,2019,34222,33772,24742,-9030,-27
-department of agriculture,2017,34222,33772,24742,-9030,-27
-department of agriculture,2018,34222,33772,24742,-9030,-27
-department of agriculture,2019,34222,33772,24742,-9030,-27
-department of veterans affairs,2017,14896,15006,12685,-2321,-15
-department of veterans affairs,2018,14896,15006,12685,-2321,-15
-department of veterans affairs,2019,14896,15006,12685,-2321,-15
-department of commerce,2017,14896,15006,12685,-2321,-15
-department of commerce,2018,14896,15006,12685,-2321,-15
-department of commerce,2019,14896,15006,12685,-2321,-15
-department of transportation,2017,14896,15006,12685,-2321,-15
-department of transportation,2018,14896,15006,12685,-2321,-15
-department of transportation,2019,14896,15006,12685,-2321,-15
-department of the interior,2017,10704,10243,10651,408,4
-department of the interior,2018,10704,10243,10651,408,4
-department of the interior,2019,10704,10243,10651,408,4
-patient-centered outcomes research trust fund,2017,10704,10243,10651,408,4
-patient-centered outcomes research trust fund,2018,10704,10243,10651,408,4
-patient-centered outcomes research trust fund,2019,10704,10243,10651,408,4
-department of homeland security,2017,10704,10243,10651,408,4
-department of homeland security,2018,10704,10243,10651,408,4
-department of homeland security,2019,10704,10243,10651,408,4
-smithsonian institution,2017,5938,6030,4177,-1853,-31
-smithsonian institution,2018,5938,6030,4177,-1853,-31
-smithsonian institution,2019,5938,6030,4177,-1853,-31
-environmental protection agency,2017,5938,6030,4177,-1853,-31
-environmental protection agency,2018,5938,6030,4177,-1853,-31
-environmental protection agency,2019,5938,6030,4177,-1853,-31
-department of education,2017,5938,6030,4177,-1853,-31
-department of education,2018,5938,6030,4177,-1853,-31
-department of education,2019,5938,6030,4177,-1853,-31
-other,2017,2585,2487,2914,-573,-23
-other,2018,2585,2487,2914,-573,-23
-other,2019,2585,2487,2914,-573,-23
-totalb,2017,2585,2487,2914,-573,-23
-totalb,2018,2585,2487,2914,-573,-23
-totalb,2019,2585,2487,2914,-573,-23
+agency,year,actual_budget,dollar_change,percent_change
+department of defensea,2017,49197,13540.0,31.0
+department of health and human services,2017,34222,-9030.0,-27.0
+department of energy,2017,14896,-2321.0,-15.0
+national aeronautics and space administration,2017,10704,408.0,4.0
+national science foundation,2017,5938,-1853.0,-31.0
+department of agriculture,2017,2585,-573.0,-23.0
+department of veterans affairs,2017,1346,7.0,1.0
+department of commerce,2017,1794,-472.0,-26.0
+department of transportation,2017,904,-103.0,-11.0
+department of the interior,2017,953,-205.0,-21.0
+patient-centered outcomes research trust fund,2017,463,121.0,24.0
+department of homeland security,2017,724,-124.0,-18.0
+smithsonian institution,2017,251,29.0,12.0
+environmental protection agency,2017,497,-227.0,-46.0
+department of education,2017,254,-3.0,-1.0
+other,2017,561,-139.0,-22.0
+department of defensea,2018,43616,,
+department of health and human services,2018,33772,,
+department of energy,2018,15006,,
+national aeronautics and space administration,2018,10243,,
+national science foundation,2018,6030,,
+department of agriculture,2018,2487,,
+department of veterans affairs,2018,1338,,
+department of commerce,2018,1833,,
+department of transportation,2018,929,,
+department of the interior,2018,964,,
+patient-centered outcomes research trust fund,2018,501,,
+department of homeland security,2018,672,,
+smithsonian institution,2018,242,,
+environmental protection agency,2018,496,,
+department of education,2018,243,,
+other,2018,629,,
+department of defensea,2019,57156,,
+department of health and human services,2019,24742,,
+department of energy,2019,12685,,
+national aeronautics and space administration,2019,10651,,
+national science foundation,2019,4177,,
+department of agriculture,2019,2914,,
+department of veterans affairs,2019,1345,,
+department of commerce,2019,1361,,
+department of transportation,2019,826,,
+department of the interior,2019,759,,
+patient-centered outcomes research trust fund,2019,622,,
+department of homeland security,2019,548,,
+smithsonian institution,2019,271,,
+environmental protection agency,2019,269,,
+department of education,2019,240,,
+other,2019,490,,

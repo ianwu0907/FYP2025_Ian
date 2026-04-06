@@ -1,13 +1,4 @@
-granular_shock,variable_name,value
-1,coefficient,0.570
-1,standard error,0.216
-1,coefficient,-0.035
-1,standard error,0.014
-2,coefficient,0.768
-2,standard error,0.149
-2,coefficient,-0.086
-2,standard error,0.012
-3,coefficient,0.764
-3,standard error,0.149
-3,coefficient,-0.078
-3,standard error,0.011
+granular_shock,coefficient,standard_error
+granular shock,0.57,0.216
+granular shock,0.768,0.149
+granular shock,0.764,0.149
