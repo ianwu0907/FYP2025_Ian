@@ -261,6 +261,7 @@ def _run_table(
     Always returns a result dict. If the pipeline fails, raw QA is still
     recorded; pipeline scores are set to None and excluded from aggregate.
     """
+    table_start_time = time.time()
     table_id  = entry["table_id"]
     raw_file  = entry["raw_file"]
     tidy_file = entry["tidy_file"]
@@ -274,6 +275,7 @@ def _run_table(
         "table_id":        table_id,
         "pipeline_status": None,
         "pipeline_error":  None,
+        "pipeline_sec": 0.0,
         "n_qa_pairs":      len(qa_pairs),
         "scores":          {},
         "qa_pairs":        [],
@@ -298,7 +300,7 @@ def _run_table(
     # ── Run normalisation pipeline ────────────────────────────────────
     pipeline_df: Optional[pd.DataFrame] = None
     output_file = pipeline_output_dir / f"{table_id}_pipeline_output.csv"
-
+    pipeline_start_time = time.time()
     try:
         logger.info("  Running normalisation pipeline...")
         t0 = time.time()
@@ -307,6 +309,7 @@ def _run_table(
             output_file=str(output_file),
         )
         pipeline_df = pipeline_result["normalized_df"]
+        result["pipeline_sec"] = round(time.time() - pipeline_start_time, 2)
         logger.info(
             f"  Pipeline succeeded in {round(time.time()-t0, 1)}s. "
             f"Output shape: {pipeline_df.shape}"
@@ -314,6 +317,7 @@ def _run_table(
         result["pipeline_status"] = "success"
 
     except Exception as e:
+        result["pipeline_sec"] = round(time.time() - pipeline_start_time, 2)
         err = f"{type(e).__name__}: {e}"
         result["pipeline_status"] = "failed"
         result["pipeline_error"]  = err
@@ -376,7 +380,9 @@ def _aggregate_scores(table_results: List[Dict[str, Any]]) -> Dict[str, Any]:
     """
     valid_tables = [t for t in table_results if t["pipeline_status"] == "success"]
     n_failed     = len(table_results) - len(valid_tables)
-
+    avg_pipeline_sec = 0.0
+    if valid_tables:
+        avg_pipeline_sec = sum(t.get("pipeline_sec", 0) for t in valid_tables) / len(valid_tables)
     def _mean_from(dicts: List[Dict], key: str) -> Optional[float]:
         vals = [d[key] for d in dicts if d.get(key) is not None]
         return round(sum(vals) / len(vals), 4) if vals else None
@@ -415,6 +421,7 @@ def _aggregate_scores(table_results: List[Dict[str, Any]]) -> Dict[str, Any]:
         "n_tables_failed":    n_failed,
         "n_qa_pairs":         sum(t["n_qa_pairs"] for t in table_results),
         # raw and pipeline computed on the same valid_tables set (paired).
+        "avg_pipeline_sec":   round(avg_pipeline_sec, 2),
         "raw":      _agg("raw"),
         "pipeline": _agg("pipeline"),
     }
@@ -436,6 +443,7 @@ def log_summary(summary: Dict[str, Any]) -> None:
     )
     logger.info(f"  Pipeline failed  : {summary['n_tables_failed']}")
     logger.info(f"  Total QA pairs   : {summary['n_qa_pairs']}")
+    logger.info(f"  Avg Pipeline Time: {summary.get('avg_pipeline_sec', 0.0)}s per table")
     logger.info("")
     logger.info(
         f"  {'Metric':<38} {'Raw':>8} {'Pipeline':>9} {'Delta':>8}"
