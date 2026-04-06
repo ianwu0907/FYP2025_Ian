@@ -1,15 +1,15 @@
 {
   "shape": {
-    "rows": 1320,
-    "cols": 8
+    "rows": 56,
+    "cols": 10
   },
-  "cell_coverage": 0.9167,
-  "row_completeness_uniformity": 0.9411,
-  "column_type_homogeneity": 0.9444,
-  "data_row_ratio": 1.0,
-  "column_completeness_min": 0.3333,
+  "cell_coverage": 0.3321,
+  "row_completeness_uniformity": 0.719,
+  "column_type_homogeneity": 0.6689,
+  "data_row_ratio": 0.4107,
+  "column_completeness_min": 0.0,
   "header_uniqueness": 1.0,
-  "type_consistency": 1.0,
-  "substring_containment": 0.0581,
-  "inter_column_nmi": 0.3527
+  "type_consistency": 0.8717,
+  "substring_containment": 0.0019,
+  "inter_column_nmi": 0.1625
 }

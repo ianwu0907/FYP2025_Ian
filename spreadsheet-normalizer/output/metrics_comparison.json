@@ -1,56 +1,56 @@
 {
+  "substring_containment": {
+    "before": 0.0019,
+    "after": 0.0028,
+    "delta": 0.0009,
+    "direction": "= unchanged"
+  },
   "header_uniqueness": {
     "before": 1.0,
     "after": 1.0,
     "delta": 0.0,
     "direction": "= unchanged"
   },
-  "inter_column_nmi": {
-    "before": 0.3527,
-    "after": 0.2027,
-    "delta": -0.15,
-    "direction": "✓ improved"
-  },
-  "column_completeness_min": {
-    "before": 0.3333,
-    "after": 0.3111,
-    "delta": -0.0222,
-    "direction": "✗ degraded"
-  },
-  "substring_containment": {
-    "before": 0.0581,
-    "after": 0.0426,
-    "delta": -0.0155,
+  "data_row_ratio": {
+    "before": 0.4107,
+    "after": 1.0,
+    "delta": 0.5893,
     "direction": "✓ improved"
   },
   "cell_coverage": {
-    "before": 0.9167,
-    "after": 0.8852,
-    "delta": -0.0315,
-    "direction": "✗ degraded"
-  },
-  "column_type_homogeneity": {
-    "before": 0.9444,
-    "after": 0.9286,
-    "delta": -0.0158,
-    "direction": "✗ degraded"
-  },
-  "data_row_ratio": {
-    "before": 1.0,
-    "after": 1.0,
-    "delta": 0.0,
-    "direction": "= unchanged"
-  },
-  "row_completeness_uniformity": {
-    "before": 0.9411,
-    "after": 0.9228,
-    "delta": -0.0183,
-    "direction": "✗ degraded"
+    "before": 0.3321,
+    "after": 0.7576,
+    "delta": 0.4255,
+    "direction": "✓ improved"
   },
   "type_consistency": {
-    "before": 1.0,
+    "before": 0.8717,
     "after": 1.0,
-    "delta": 0.0,
-    "direction": "= unchanged"
+    "delta": 0.1283,
+    "direction": "✓ improved"
+  },
+  "inter_column_nmi": {
+    "before": 0.1625,
+    "after": 0.0,
+    "delta": -0.1625,
+    "direction": "✓ improved"
+  },
+  "row_completeness_uniformity": {
+    "before": 0.719,
+    "after": 0.7488,
+    "delta": 0.0298,
+    "direction": "✓ improved"
+  },
+  "column_completeness_min": {
+    "before": 0.0,
+    "after": 0.5152,
+    "delta": 0.5152,
+    "direction": "✓ improved"
+  },
+  "column_type_homogeneity": {
+    "before": 0.6689,
+    "after": 0.7502,
+    "delta": 0.0813,
+    "direction": "✓ improved"
   }
 }

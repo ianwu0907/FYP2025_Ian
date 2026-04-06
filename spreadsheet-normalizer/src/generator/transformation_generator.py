@@ -306,11 +306,19 @@ class TransformationGenerator:
     def __init__(self, config: Dict[str, Any]):
         self.config = config
 
-        api_key = os.getenv("OPENAI_API_KEY")
+        # Support dedicated codegen API key/endpoint (falls back to shared OPENAI_* vars)
+        codegen_api_key = os.getenv("OPENAI_CODEGEN_API_KEY")
+        if codegen_api_key:
+            api_key = codegen_api_key
+            # Explicitly set base_url to avoid SDK auto-reading OPENAI_BASE_URL env var
+            base_url = os.getenv("OPENAI_CODEGEN_BASE_URL") or "https://api.openai.com/v1"
+        else:
+            api_key = os.getenv("OPENAI_API_KEY")
+            base_url = os.getenv("OPENAI_BASE_URL")
+
         if not api_key:
             raise ValueError("OPENAI_API_KEY not set")
 
-        base_url = os.getenv("OPENAI_BASE_URL")
         kw = {"api_key": api_key}
         if base_url:
             kw["base_url"] = base_url

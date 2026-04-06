@@ -1,15 +1,15 @@
 {
   "shape": {
-    "rows": 1080,
-    "cols": 6
+    "rows": 99,
+    "cols": 4
   },
-  "cell_coverage": 0.8852,
-  "row_completeness_uniformity": 0.9228,
-  "column_type_homogeneity": 0.9286,
+  "cell_coverage": 0.7576,
+  "row_completeness_uniformity": 0.7488,
+  "column_type_homogeneity": 0.7502,
   "data_row_ratio": 1.0,
-  "column_completeness_min": 0.3111,
+  "column_completeness_min": 0.5152,
   "header_uniqueness": 1.0,
   "type_consistency": 1.0,
-  "substring_containment": 0.0426,
-  "inter_column_nmi": 0.2027
+  "substring_containment": 0.0028,
+  "inter_column_nmi": 0.0
 }

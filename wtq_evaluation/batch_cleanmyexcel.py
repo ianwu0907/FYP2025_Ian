@@ -34,7 +34,7 @@ HEADERS = {
     "referer": "https://cleanmyexcel.io/",
     "user-agent": "Mozilla/5.0 (Linux; Android) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
 }
-POLL_SCHEDULE = [0, 5, 10, 15, 20, 30, 45, 60, 90, 120, 150, 180, 240, 300]
+POLL_SCHEDULE = [0, 5, 10, 15, 20, 30, 45, 60, 90, 120, 150, 180, 240, 300, 360, 420, 480, 540, 600]
 
 
 def already_done(filepath: Path, output_dir: Path) -> bool:
