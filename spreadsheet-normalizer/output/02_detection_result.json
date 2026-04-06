@@ -1,66 +1,42 @@
 {
   "physical": {
     "shape": {
-      "rows": 56,
-      "cols": 10
+      "rows": 13,
+      "cols": 3
     },
     "actual_column_names": [
-      "表3.1            ",
-      "Unnamed: 1",
-      "2011年、2016年及2021年按種族劃分的少數族裔人士數目",
-      "Unnamed: 3",
-      "Unnamed: 4",
-      "Unnamed: 5",
-      "Unnamed: 6",
-      "Unnamed: 7",
-      "Unnamed: 8",
-      "索引 Index"
+      "behaviour",
+      "beta",
+      "p-value"
     ],
-    "header_depth": 5,
-    "data_start_row": 5,
-    "data_end_row": 55,
-    "data_rows": 51,
+    "header_depth": 0,
+    "data_start_row": 0,
+    "data_end_row": 12,
+    "data_rows": 13,
     "column_dtype_profile": {
       "0": "text",
-      "1": "text",
-      "2": "empty",
-      "3": "numeric",
-      "4": "numeric",
-      "5": "numeric",
-      "6": "numeric",
-      "7": "numeric",
-      "8": "numeric",
-      "9": "empty"
+      "1": "numeric",
+      "2": "numeric"
     },
-    "blank_rows_in_data": [
-      41,
-      44,
-      47
-    ],
+    "blank_rows_in_data": [],
     "bilingual_row_candidate": false,
     "inline_bilingual_candidate": false,
-    "left_header_cols_num": 3
+    "left_header_cols_num": 1
   },
   "irregularities": [
     {
-      "label": "MULTI_LEVEL_HEADER",
-      "evidence": "Row 2 ([3]=\"2011\", [5]=\"2016\", [7]=\"2021\") and Row 3 ([0]=\"種族\\nEthnicity\", [3]=\"數目\\nNumber\", [4]=\"百分比\\n%\", [5]=\"數目\\nNumber\", [6]=\"百分比\\n%\", [7]=\"數目\\nNumber\", [8]=\"百分比\\n%\")",
-      "details": "The header at row 2 lists years as top-level categories while row 3 contains sub-categories related to ethnicity and numeric values, forming a multi-level hierarchy."
+      "label": "IMPLICIT_AGGREGATION_ROWS",
+      "evidence": "Row 2: [0]=\"total\", Row 6: [0]=\"total\", Row 10: [0]=\"total\"",
+      "details": "The \"total\" rows represent overall values that could be calculated from the corresponding \"weekday\" and \"weekend\" rows above them."
     },
     {
-      "label": "AGGREGATE_COLUMNS",
-      "evidence": "Row 39 ([3]=\"451183\", [4]=\"100\", [5]=\"584383\", [6]=\"100\", [7]=\"619568\", [8]=\"100\") and Row 40 ([3]=\"0.064\", [5]=\"0.08\", [7]=\"0.084\")",
-      "details": "The totals in row 39 aggregate the other ethnic categories, and row 40 presents derived percentage values based on the counts in row 39, indicating the presence of overall summary columns."
-    },
-    {
-      "label": "METADATA_ROWS",
-      "evidence": "Rows 48 to 55 contain annotations, notes, and citations that do not follow the data structure.",
-      "details": "These rows serve as notes and references, and don't contribute to the data analysis, qualifying them as metadata."
+      "label": "SPARSE_ROW_FILL",
+      "evidence": "Column 0 has values filled at block starts for \"screen time\", \"sedentary time\", \"lpa\", and \"mvpa\", with blanks in between for subcategories.",
+      "details": "The dimension column does not have values filled for every data observation, only at the start of each category block."
     }
   ],
   "labels": [
-    "MULTI_LEVEL_HEADER",
-    "AGGREGATE_COLUMNS",
-    "METADATA_ROWS"
+    "IMPLICIT_AGGREGATION_ROWS",
+    "SPARSE_ROW_FILL"
   ]
 }

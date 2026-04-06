@@ -1,239 +1,41 @@
-country_of_birth,immigrant_type,count
-ethiopia,percent,3.0
-somalia,percent,1.0
-eritrea,percent,1.1
-sudan,percent,4.2
-south sudan,percent,0.0
-burundi,percent,3.9
-kenya,percent,33.0
-zimbabwe,percent,8.5
-rwanda,percent,6.4
-democratic republic of the congo,percent,6.1
-cameroon,percent,37.0
-nigeria,percent,21.3
-ghana,percent,12.1
-cote d'ivoire,percent,29.9
-senegal,percent,35.3
-guinea,percent,15.5
-other countries,percent,21.7
-ethiopia,percent,6.7
-somalia,percent,3.4
-eritrea,percent,1.8
-sudan,percent,6.3
-south sudan,percent,1.7
-burundi,percent,15.2
-kenya,percent,45.0
-zimbabwe,percent,15.4
-rwanda,percent,12.8
-democratic republic of the congo,percent,12.3
-cameroon,percent,71.4
-nigeria,percent,51.2
-ghana,percent,28.5
-cote d'ivoire,percent,72.2
-senegal,percent,67.5
-guinea,percent,50.5
-other countries,percent,45.2
-ethiopia,secondary applicants,3.6
-somalia,secondary applicants,1.1
-eritrea,secondary applicants,2.0
-sudan,secondary applicants,6.3
-south sudan,secondary applicants,0.4
-burundi,secondary applicants,9.5
-kenya,secondary applicants,22.6
-zimbabwe,secondary applicants,9.0
-rwanda,secondary applicants,7.4
-democratic republic of the congo,secondary applicants,4.4
-cameroon,secondary applicants,30.5
-nigeria,secondary applicants,40.7
-ghana,secondary applicants,14.8
-cote d'ivoire,secondary applicants,33.2
-senegal,secondary applicants,20.7
-guinea,secondary applicants,15.8
-other countries,secondary applicants,18.2
-ethiopia,secondary applicants,0.5
-somalia,secondary applicants,0.1
-eritrea,secondary applicants,0.1
-sudan,secondary applicants,1.2
-south sudan,secondary applicants,0.0
-burundi,secondary applicants,1.3
-kenya,secondary applicants,9.5
-zimbabwe,secondary applicants,3.7
-rwanda,secondary applicants,1.4
-democratic republic of the congo,secondary applicants,1.8
-cameroon,secondary applicants,9.5
-nigeria,secondary applicants,12.0
-ghana,secondary applicants,4.2
-cote d'ivoire,secondary applicants,8.2
-senegal,secondary applicants,6.2
-guinea,secondary applicants,2.7
-other countries,secondary applicants,5.5
-ethiopia,total,6.6
-somalia,total,2.1
-eritrea,total,3.1
-sudan,total,10.6
-south sudan,total,0.4
-burundi,total,13.4
-kenya,total,55.6
-zimbabwe,total,17.5
-rwanda,total,13.8
-democratic republic of the congo,total,10.5
-cameroon,total,67.4
-nigeria,total,62.1
-ghana,total,26.9
-cote d'ivoire,total,63.0
-senegal,total,56.0
-guinea,total,31.3
-other countries,total,39.9
-ethiopia,total,7.2
-somalia,total,3.5
-eritrea,total,1.9
-sudan,total,7.6
-south sudan,total,1.7
-burundi,total,16.5
-kenya,total,54.6
-zimbabwe,total,19.1
-rwanda,total,14.2
-democratic republic of the congo,total,14.1
-cameroon,total,81.0
-nigeria,total,63.3
-ghana,total,32.7
-cote d'ivoire,total,80.4
-senegal,total,73.7
-guinea,total,53.2
-other countries,total,50.7
-ethiopia,,34.9
-somalia,,21.3
-eritrea,,23.9
-sudan,,23.9
-south sudan,,14.5
-burundi,,16.8
-kenya,,23.8
-zimbabwe,,12.8
-rwanda,,16.1
-democratic republic of the congo,,16.1
-cameroon,,22.8
-nigeria,,19.0
-ghana,,52.0
-cote d'ivoire,,28.7
-senegal,,36.7
-guinea,,34.1
-other countries,,24.3
-ethiopia,,19.7
-somalia,,11.9
-eritrea,,8.8
-sudan,,4.3
-south sudan,,3.5
-burundi,,8.2
-kenya,,22.2
-zimbabwe,,11.1
-rwanda,,9.9
-democratic republic of the congo,,10.2
-cameroon,,11.2
-nigeria,,21.2
-ghana,,42.1
-cote d'ivoire,,12.5
-senegal,,21.2
-guinea,,21.4
-other countries,,17.1
-ethiopia,,58.0
-somalia,,75.1
-eritrea,,72.9
-sudan,,65.0
-south sudan,,85.1
-burundi,,64.6
-kenya,,18.1
-zimbabwe,,59.0
-rwanda,,67.4
-democratic republic of the congo,,67.9
-cameroon,,9.1
-nigeria,,17.1
-ghana,,18.5
-cote d'ivoire,,7.5
-senegal,,6.5
-guinea,,32.0
-other countries,,33.7
-ethiopia,,72.8
-somalia,,83.6
-eritrea,,89.2
-sudan,,88.1
-south sudan,,94.8
-burundi,,70.0
-kenya,,18.9
-zimbabwe,,60.3
-rwanda,,71.6
-democratic republic of the congo,,69.6
-cameroon,,7.5
-nigeria,,13.5
-ghana,,21.8
-cote d'ivoire,,6.3
-senegal,,4.9
-guinea,,22.6
-other countries,,30.0
-ethiopia,,0.5
-somalia,,1.5
-eritrea,,0.1
-sudan,,0.6
-south sudan,,0.0
-burundi,,5.2
-kenya,,2.5
-zimbabwe,,10.7
-rwanda,,2.7
-democratic republic of the congo,,5.5
-cameroon,,0.7
-nigeria,,1.9
-ghana,,2.7
-cote d'ivoire,,0.8
-senegal,,0.9
-guinea,,2.7
-other countries,,2.1
-ethiopia,,0.4
-somalia,,1.0
-eritrea,,0.0
-sudan,,0.0
-south sudan,,0.0
-burundi,,5.4
-kenya,,4.4
-zimbabwe,,9.5
-rwanda,,4.4
-democratic republic of the congo,,6.1
-cameroon,,0.3
-nigeria,,2.0
-ghana,,3.3
-cote d'ivoire,,0.9
-senegal,,0.2
-guinea,,2.8
-other countries,,2.1
-ethiopia,,100.0
-somalia,,100.0
-eritrea,,100.0
-sudan,,100.0
-south sudan,,100.0
-burundi,,100.0
-kenya,,100.0
-zimbabwe,,100.0
-rwanda,,100.0
-democratic republic of the congo,,100.0
-cameroon,,100.0
-nigeria,,100.0
-ghana,,100.0
-cote d'ivoire,,100.0
-senegal,,100.0
-guinea,,100.0
-other countries,,100.0
-ethiopia,,100.0
-somalia,,100.0
-eritrea,,100.0
-sudan,,100.0
-south sudan,,100.0
-burundi,,100.0
-kenya,,100.0
-zimbabwe,,100.0
-rwanda,,100.0
-democratic republic of the congo,,100.0
-cameroon,,100.0
-nigeria,,100.0
-ghana,,100.0
-cote d'ivoire,,100.0
-senegal,,100.0
-guinea,,100.0
-other countries,,100.0
+country of birth,economic immigrants,Unnamed: 2,Unnamed: 3,family-sponsored immigrants,refugees,other immigrants,total
+,principal applicants,secondary applicants,total,,,,
+,percent,,,,,,
+women,,,,,,,
+ethiopia,3.0,3.6,6.6,34.9,58.0,0.5,100.0
+somalia,1.0,1.1,2.1,21.3,75.1,1.5,100.0
+eritrea,1.1,2.0,3.1,23.9,72.9,0.1,100.0
+sudan,4.2,6.3,10.6,23.9,65.0,0.6,100.0
+south sudan,0.0,0.4,0.4,14.5,85.1,0.0,100.0
+burundi,3.9,9.5,13.4,16.8,64.6,5.2,100.0
+kenya,33.0,22.6,55.6,23.8,18.1,2.5,100.0
+zimbabwe,8.5,9.0,17.5,12.8,59.0,10.7,100.0
+rwanda,6.4,7.4,13.8,16.1,67.4,2.7,100.0
+democratic republic of the congo,6.1,4.4,10.5,16.1,67.9,5.5,100.0
+cameroon,37.0,30.5,67.4,22.8,9.1,0.7,100.0
+nigeria,21.3,40.7,62.1,19.0,17.1,1.9,100.0
+ghana,12.1,14.8,26.9,52.0,18.5,2.7,100.0
+cote d'ivoire,29.9,33.2,63.0,28.7,7.5,0.8,100.0
+senegal,35.3,20.7,56.0,36.7,6.5,0.9,100.0
+guinea,15.5,15.8,31.3,34.1,32.0,2.7,100.0
+other countries,21.7,18.2,39.9,24.3,33.7,2.1,100.0
+total,15.3,17.3,32.6,25.3,39.9,2.2,100.0
+men,,,,,,,
+ethiopia,6.7,0.5,7.2,19.7,72.8,0.4,100.0
+somalia,3.4,0.1,3.5,11.9,83.6,1.0,100.0
+eritrea,1.8,0.1,1.9,8.8,89.2,0.0,100.0
+sudan,6.3,1.2,7.6,4.3,88.1,0.0,100.0
+south sudan,1.7,0.0,1.7,3.5,94.8,0.0,100.0
+burundi,15.2,1.3,16.5,8.2,70.0,5.4,100.0
+kenya,45.0,9.5,54.6,22.2,18.9,4.4,100.0
+zimbabwe,15.4,3.7,19.1,11.1,60.3,9.5,100.0
+rwanda,12.8,1.4,14.2,9.9,71.6,4.4,100.0
+democratic republic of the congo,12.3,1.8,14.1,10.2,69.6,6.1,100.0
+cameroon,71.4,9.5,81.0,11.2,7.5,0.3,100.0
+nigeria,51.2,12.0,63.3,21.2,13.5,2.0,100.0
+ghana,28.5,4.2,32.7,42.1,21.8,3.3,100.0
+cote d'ivoire,72.2,8.2,80.4,12.5,6.3,0.9,100.0
+senegal,67.5,6.2,73.7,21.2,4.9,0.2,100.0
+guinea,50.5,2.7,53.2,21.4,22.6,2.8,100.0
+other countries,45.2,5.5,50.7,17.1,30.0,2.1,100.0
+total,33.9,5.1,39.0,17.2,41.7,2.1,100.0

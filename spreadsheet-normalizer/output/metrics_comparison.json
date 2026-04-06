@@ -1,57 +1,15 @@
 {
-  "data_row_ratio": {
-    "before": 0.4107,
-    "after": 1.0,
-    "delta": 0.5893,
-    "direction": "✓ improved"
-  },
   "column_type_homogeneity": {
-    "before": 0.6689,
-    "after": 0.9738,
-    "delta": 0.3049,
-    "direction": "✓ improved"
-  },
-  "cell_coverage": {
-    "before": 0.3321,
-    "after": 0.9861,
-    "delta": 0.654,
-    "direction": "✓ improved"
+    "before": 0.7633,
+    "after": 0.75,
+    "delta": -0.0133,
+    "direction": "✗ degraded"
   },
   "column_completeness_min": {
-    "before": 0.0,
-    "after": 0.9444,
-    "delta": 0.9444,
-    "direction": "✓ improved"
-  },
-  "substring_containment": {
-    "before": 0.0019,
-    "after": 0.0065,
-    "delta": 0.0046,
-    "direction": "= unchanged"
-  },
-  "type_consistency": {
-    "before": 0.8717,
-    "after": 1.0,
-    "delta": 0.1283,
-    "direction": "✓ improved"
-  },
-  "header_uniqueness": {
-    "before": 1.0,
-    "after": 1.0,
-    "delta": 0.0,
-    "direction": "= unchanged"
-  },
-  "row_completeness_uniformity": {
-    "before": 0.719,
-    "after": 0.9411,
-    "delta": 0.2221,
-    "direction": "✓ improved"
-  },
-  "inter_column_nmi": {
-    "before": 0.1625,
-    "after": 0.0,
-    "delta": -0.1625,
-    "direction": "✓ improved"
+    "before": 0.7692,
+    "after": 0.25,
+    "delta": -0.5192,
+    "direction": "✗ degraded"
   },
   "groupby_queryability": {
     "before": 1.0,
@@ -59,8 +17,50 @@
     "delta": -1.0,
     "direction": "✗ degraded"
   },
+  "cell_coverage": {
+    "before": 0.8462,
+    "after": 0.5,
+    "delta": -0.3462,
+    "direction": "✗ degraded"
+  },
+  "row_completeness_uniformity": {
+    "before": 0.7076,
+    "after": 0.6667,
+    "delta": -0.0409,
+    "direction": "✗ degraded"
+  },
+  "header_uniqueness": {
+    "before": 1.0,
+    "after": 1.0,
+    "delta": 0.0,
+    "direction": "= unchanged"
+  },
+  "inter_column_nmi": {
+    "before": 0.0,
+    "after": 0.0,
+    "delta": 0.0,
+    "direction": "= unchanged"
+  },
+  "type_consistency": {
+    "before": 1.0,
+    "after": 1.0,
+    "delta": 0.0,
+    "direction": "= unchanged"
+  },
+  "data_row_ratio": {
+    "before": 0.7692,
+    "after": 0.25,
+    "delta": -0.5192,
+    "direction": "✗ degraded"
+  },
+  "substring_containment": {
+    "before": 0.0,
+    "after": 0.0,
+    "delta": 0.0,
+    "direction": "= unchanged"
+  },
   "_groupby_queryability_mode": {
-    "before": "size_only",
+    "before": "full",
     "after": "no_dims"
   }
 }

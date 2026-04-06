@@ -86,17 +86,18 @@ TEMPLATES = {
         "slots": ["filters", "B"],
     },
     "aggregation": {
-        # Uses injected local vars (A_col, x_val, B_col). Fix 1.
-        # n_matched stored for 0-row detection. Fix 8.
         "code": (
             "import pandas as pd\n"
-            "mask = df[A_col].astype(str).str.strip().apply(_norm_str) == _norm_str(str(x_val))\n"
+            "mask = pd.Series([True] * len(df), index=df.index)\n"
+            "for _col, _val in filters_dict.items():\n"
+            "    _col_vals = df[_col].astype(str).str.strip().apply(_norm_str)\n"
+            "    mask &= _col_vals == _norm_str(str(_val))\n"
             "if mask.sum() == 0:\n"
             "    result = None\n"
             "else:\n"
             "    result = pd.to_numeric(df[mask][B_col], errors='coerce').sum()"
         ),
-        "slots": ["A", "x", "B"],
+        "slots": ["filters", "B"],
     },
 }
 
