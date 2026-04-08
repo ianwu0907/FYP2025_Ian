@@ -108,6 +108,17 @@ export const en = {
     connectionFailed: 'Connection failed',
   },
 
+  // Demo Files
+  demo: {
+    title: 'Or try a demo file',
+    files: [
+      { name: 'Long Header Table 1', file: 'long1.xlsx', desc: 'Multi-level header with merged cells' },
+      { name: 'Long Header Table 2', file: 'long2.xlsx', desc: 'Nested category headers' },
+      { name: 'Long Header Table 3', file: 'long3.xlsx', desc: 'Complex cross-tabulation layout' },
+    ],
+    loading: 'Loading demo...',
+  },
+
   // Table Comparison
   tableComparison: {
     title: 'Table Comparison',

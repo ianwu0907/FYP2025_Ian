@@ -1,11 +1,11 @@
-source_of_assistance,mobility_device_usage,percentage,confidence_interval_from,confidence_interval_to
-family in same household,user,65.3,63.3,67.3
-family in same household,non-user,65.6,64.6,66.0
-family not in same household,user,44.4,42.5,46.3
-family not in same household,non-user,40.4,39.6,40.8
-friends/neighbours,user,30.4,28.8,32.1
-friends/neighbours,non-user,25.6,25.0,25.9
-paid organizations/individuals,user,27.0,25.8,28.2
-paid organizations/individuals,non-user,20.4,19.9,20.7
-unpaid organizations/individuals,user,35.4,33.5,37.4
-unpaid organizations/individuals,non-user,11.0,10.5,11.5
+source_of_assistance,user_group,assistance_percent,ci_lower_bound,ci_upper_bound
+family in same household,wheeled_mobility_device_users,65.3,63.3,67.3
+family in same household,non_users,65.6,64.6,66.0
+family not in same household,wheeled_mobility_device_users,44.4,42.5,46.3
+family not in same household,non_users,40.4,39.6,40.8
+friends/neighbours,wheeled_mobility_device_users,30.4,28.8,32.1
+friends/neighbours,non_users,25.6,25.0,25.9
+paid organizations/individuals,wheeled_mobility_device_users,27.0,25.8,28.2
+paid organizations/individuals,non_users,20.4,19.9,20.7
+unpaid organizations/individuals,wheeled_mobility_device_users,35.4,33.5,37.4
+unpaid organizations/individuals,non_users,11.0,10.5,11.5

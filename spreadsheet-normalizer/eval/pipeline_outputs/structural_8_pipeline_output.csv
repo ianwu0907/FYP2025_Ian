@@ -1,4 +1,19 @@
-granular_shock,coefficient,standard_error
-granular shock,0.57,0.216
-granular shock,0.768,0.149
-granular shock,0.764,0.149
+granular_shock,variable_name,statistic_type,value
+1,granular shock,coefficient,0.57
+2,granular shock,coefficient,0.768
+3,granular shock,coefficient,0.764
+1,granular shock,standard error,0.216
+2,granular shock,standard error,0.149
+3,granular shock,standard error,0.149
+1,granular shock,coefficient,-0.035
+2,granular shock,coefficient,-0.086
+3,granular shock,coefficient,-0.078
+1,granular shock,standard error,0.014
+2,granular shock,standard error,0.012
+3,granular shock,standard error,0.011
+1,granular shock,number of observations,946.0
+2,granular shock,number of observations,946.0
+3,granular shock,number of observations,946.0
+1,granular shock,r-squared,0.13
+2,granular shock,r-squared,0.37
+3,granular shock,r-squared,0.36

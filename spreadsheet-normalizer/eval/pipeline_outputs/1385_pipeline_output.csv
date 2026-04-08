@@ -1,173 +1,169 @@
-category,metric,age_group,value
-all buildings,mean,0,0.393
-all buildings,standard error,0,0.293
-all buildings,mean,1,15.4
-all buildings,standard error,1,10.1
-all buildings,mean,2,13.8
-all buildings,standard error,2,9.3
-plants for manufacturing,mean,0,0.334
-plants for manufacturing,standard error,0,0.281
-plants for manufacturing,mean,1,19.4
-plants for manufacturing,standard error,1,13.4
-plants for manufacturing,mean,2,21.0
-plants for manufacturing,standard error,2,10.6
-"warehouses, refrigerated storage, freight terminals",mean,0,0.293
-"warehouses, refrigerated storage, freight terminals",standard error,0,0.297
-"warehouses, refrigerated storage, freight terminals",mean,1,18.8
-"warehouses, refrigerated storage, freight terminals",standard error,1,9.9
-"warehouses, refrigerated storage, freight terminals",mean,2,17.3
-"warehouses, refrigerated storage, freight terminals",standard error,2,10.7
-"maintenance garages, workshops, equipment storage facilities",mean,0,0.426
-"maintenance garages, workshops, equipment storage facilities",standard error,0,0.24
-"maintenance garages, workshops, equipment storage facilities",mean,1,17.5
-"maintenance garages, workshops, equipment storage facilities",standard error,1,8.4
-"maintenance garages, workshops, equipment storage facilities",mean,2,20.5
-"maintenance garages, workshops, equipment storage facilities",standard error,2,10.5
-office buildings,mean,0,0.476
-office buildings,standard error,0,0.288
-office buildings,mean,1,15.7
-office buildings,standard error,1,9.7
-office buildings,mean,2,11.3
-office buildings,standard error,2,7.4
-"shopping centres, plazas, malls, stores",mean,0,0.435
-"shopping centres, plazas, malls, stores",standard error,0,0.288
-"shopping centres, plazas, malls, stores",mean,1,8.0
-"shopping centres, plazas, malls, stores",standard error,1,6.3
-"shopping centres, plazas, malls, stores",mean,2,9.3
-"shopping centres, plazas, malls, stores",standard error,2,4.9
-other industrial and commercial,mean,0,0.358
-other industrial and commercial,standard error,0,0.279
-other industrial and commercial,mean,1,13.9
-other industrial and commercial,standard error,1,7.7
-other industrial and commercial,mean,2,13.3
-other industrial and commercial,standard error,2,9.2
-"telephone and cablevision lines, underground and marine cables",mean,0,0.132
-"telephone and cablevision lines, underground and marine cables",standard error,0,0.054
-"telephone and cablevision lines, underground and marine cables",mean,1,11.1
-"telephone and cablevision lines, underground and marine cables",standard error,1,1.9
-"telephone and cablevision lines, underground and marine cables",mean,2,16.8
-"telephone and cablevision lines, underground and marine cables",standard error,2,0.6
-"communication towers, antennae, earth stations",mean,0,0.508
-"communication towers, antennae, earth stations",standard error,0,0.435
-"communication towers, antennae, earth stations",mean,1,12.5
-"communication towers, antennae, earth stations",standard error,1,2.9
-"communication towers, antennae, earth stations",mean,2,23.6
-"communication towers, antennae, earth stations",standard error,2,6.7
-all machinery and equipment,mean,0,0.32
-all machinery and equipment,standard error,0,0.293
-all machinery and equipment,mean,1,8.0
-all machinery and equipment,standard error,1,4.7
-all machinery and equipment,mean,2,8.5
-all machinery and equipment,standard error,2,4.9
-"office furniture, furnishing",mean,0,0.314
-"office furniture, furnishing",standard error,0,0.287
-"office furniture, furnishing",mean,1,6.6
-"office furniture, furnishing",standard error,1,3.6
-"office furniture, furnishing",mean,2,8.4
-"office furniture, furnishing",standard error,2,3.3
-"computers, associated hardware and word processors",mean,0,0.249
-"computers, associated hardware and word processors",standard error,0,0.27
-"computers, associated hardware and word processors",mean,1,4.3
-"computers, associated hardware and word processors",standard error,1,1.7
-"computers, associated hardware and word processors",mean,2,4.8
-"computers, associated hardware and word processors",standard error,2,1.6
-"non-office furniture, furnishings and fixtures",mean,0,0.519
-"non-office furniture, furnishings and fixtures",standard error,0,0.354
-"non-office furniture, furnishings and fixtures",mean,1,6.9
-"non-office furniture, furnishings and fixtures",standard error,1,3.4
-"non-office furniture, furnishings and fixtures",mean,2,8.1
-"non-office furniture, furnishings and fixtures",standard error,2,3.4
-"scientific, professional and medical devices",mean,0,0.373
-"scientific, professional and medical devices",standard error,0,0.33
-"scientific, professional and medical devices",mean,1,9.0
-"scientific, professional and medical devices",standard error,1,5.6
-"scientific, professional and medical devices",mean,2,11.4
-"scientific, professional and medical devices",standard error,2,5.3
-"heating, electrical, plumbing, air conditioning and refrigeration equipment",mean,0,0.655
-"heating, electrical, plumbing, air conditioning and refrigeration equipment",standard error,0,0.303
-"heating, electrical, plumbing, air conditioning and refrigeration equipment",mean,1,9.1
-"heating, electrical, plumbing, air conditioning and refrigeration equipment",standard error,1,4.0
-"heating, electrical, plumbing, air conditioning and refrigeration equipment",mean,2,11.0
-"heating, electrical, plumbing, air conditioning and refrigeration equipment",standard error,2,4.0
-pollution abatement and control equipment,mean,0,0.293
-pollution abatement and control equipment,standard error,0,0.282
-pollution abatement and control equipment,mean,1,11.3
-pollution abatement and control equipment,standard error,1,4.3
-pollution abatement and control equipment,mean,2,11.5
-pollution abatement and control equipment,standard error,2,6.0
-"motors, generators, transformers, turbines, compressors and pumps of all types",mean,0,0.466
-"motors, generators, transformers, turbines, compressors and pumps of all types",standard error,0,0.32
-"motors, generators, transformers, turbines, compressors and pumps of all types",mean,1,9.3
-"motors, generators, transformers, turbines, compressors and pumps of all types",standard error,1,5.8
-"motors, generators, transformers, turbines, compressors and pumps of all types",mean,2,14.0
-"motors, generators, transformers, turbines, compressors and pumps of all types",standard error,2,7.6
-heavy construction equipment,mean,0,0.365
-heavy construction equipment,standard error,0,0.304
-heavy construction equipment,mean,1,6.9
-heavy construction equipment,standard error,1,4.0
-heavy construction equipment,mean,2,10.7
-heavy construction equipment,standard error,2,5.9
-tractors and other field equipment,mean,0,0.288
-tractors and other field equipment,standard error,0,0.25
-tractors and other field equipment,mean,1,8.8
-tractors and other field equipment,standard error,1,4.4
-tractors and other field equipment,mean,2,13.3
-tractors and other field equipment,standard error,2,3.8
-capitalized tooling and other tools,mean,0,0.294
-capitalized tooling and other tools,standard error,0,0.284
-capitalized tooling and other tools,mean,1,7.1
-capitalized tooling and other tools,standard error,1,3.9
-capitalized tooling and other tools,mean,2,8.5
-capitalized tooling and other tools,standard error,2,4.2
-drilling and blasting equipment,mean,0,0.561
-drilling and blasting equipment,standard error,0,0.254
-drilling and blasting equipment,mean,1,6.9
-drilling and blasting equipment,standard error,1,4.3
-automobiles and major replacement parts,mean,0,0.314
-automobiles and major replacement parts,standard error,0,0.26
-automobiles and major replacement parts,mean,1,5.5
-automobiles and major replacement parts,standard error,1,2.5
-automobiles and major replacement parts,mean,2,6.4
-automobiles and major replacement parts,standard error,2,2.9
-buses (all types) and major replacement parts,mean,0,0.122
-buses (all types) and major replacement parts,standard error,0,0.221
-buses (all types) and major replacement parts,mean,1,14.8
-buses (all types) and major replacement parts,standard error,1,6.9
-buses (all types) and major replacement parts,mean,2,22.2
-buses (all types) and major replacement parts,standard error,2,8.0
-"trucks, vans, truck tractors, truck trailers and major replacement parts",mean,0,0.295
-"trucks, vans, truck tractors, truck trailers and major replacement parts",standard error,0,0.264
-"trucks, vans, truck tractors, truck trailers and major replacement parts",mean,1,7.7
-"trucks, vans, truck tractors, truck trailers and major replacement parts",standard error,1,3.5
-"trucks, vans, truck tractors, truck trailers and major replacement parts",mean,2,8.8
-"trucks, vans, truck tractors, truck trailers and major replacement parts",standard error,2,3.6
-other transportation equipment,mean,0,0.314
-other transportation equipment,standard error,0,0.26
-other transportation equipment,mean,1,9.4
-other transportation equipment,standard error,1,4.3
-other transportation equipment,mean,2,11.2
-other transportation equipment,standard error,2,4.6
-computer-assisted processing machinery and equipment,mean,0,0.322
-computer-assisted processing machinery and equipment,standard error,0,0.301
-computer-assisted processing machinery and equipment,mean,1,10.3
-computer-assisted processing machinery and equipment,standard error,1,5.7
-computer-assisted processing machinery and equipment,mean,2,12.0
-computer-assisted processing machinery and equipment,standard error,2,5.8
-non-computer-assisted processing machinery and equipment,mean,0,0.292
-non-computer-assisted processing machinery and equipment,standard error,0,0.283
-non-computer-assisted processing machinery and equipment,mean,1,9.5
-non-computer-assisted processing machinery and equipment,standard error,1,5.2
-non-computer-assisted processing machinery and equipment,mean,2,12.0
-non-computer-assisted processing machinery and equipment,standard error,2,6.1
-communication and related equipment,mean,0,0.283
-communication and related equipment,standard error,0,0.291
-communication and related equipment,mean,1,7.3
-communication and related equipment,standard error,1,3.0
-communication and related equipment,mean,2,7.5
-communication and related equipment,standard error,2,3.4
-safety and security equipment and other machinery and equipment,mean,0,0.386
-safety and security equipment and other machinery and equipment,standard error,0,0.35
-safety and security equipment and other machinery and equipment,mean,1,8.8
-safety and security equipment and other machinery and equipment,standard error,1,5.0
-safety and security equipment and other machinery and equipment,mean,2,10.6
-safety and security equipment and other machinery and equipment,standard error,2,4.7
+building_type,metric_group,statistic_type,value
+plants for manufacturing,resell,mean,0.334
+plants for manufacturing,resell,standard_error,0.281
+plants for manufacturing,age,mean,19.4
+plants for manufacturing,age,standard_error,13.4
+plants for manufacturing,discard_age,mean,21.0
+plants for manufacturing,discard_age,standard_error,10.6
+"warehouses, refrigerated storage, freight terminals",resell,mean,0.293
+"warehouses, refrigerated storage, freight terminals",resell,standard_error,0.297
+"warehouses, refrigerated storage, freight terminals",age,mean,18.8
+"warehouses, refrigerated storage, freight terminals",age,standard_error,9.9
+"warehouses, refrigerated storage, freight terminals",discard_age,mean,17.3
+"warehouses, refrigerated storage, freight terminals",discard_age,standard_error,10.7
+"maintenance garages, workshops, equipment storage facilities",resell,mean,0.426
+"maintenance garages, workshops, equipment storage facilities",resell,standard_error,0.24
+"maintenance garages, workshops, equipment storage facilities",age,mean,17.5
+"maintenance garages, workshops, equipment storage facilities",age,standard_error,8.4
+"maintenance garages, workshops, equipment storage facilities",discard_age,mean,20.5
+"maintenance garages, workshops, equipment storage facilities",discard_age,standard_error,10.5
+office buildings,resell,mean,0.476
+office buildings,resell,standard_error,0.288
+office buildings,age,mean,15.7
+office buildings,age,standard_error,9.7
+office buildings,discard_age,mean,11.3
+office buildings,discard_age,standard_error,7.4
+"shopping centres, plazas, malls, stores",resell,mean,0.435
+"shopping centres, plazas, malls, stores",resell,standard_error,0.288
+"shopping centres, plazas, malls, stores",age,mean,8.0
+"shopping centres, plazas, malls, stores",age,standard_error,6.3
+"shopping centres, plazas, malls, stores",discard_age,mean,9.3
+"shopping centres, plazas, malls, stores",discard_age,standard_error,4.9
+other industrial and commercial,resell,mean,0.358
+other industrial and commercial,resell,standard_error,0.279
+other industrial and commercial,age,mean,13.9
+other industrial and commercial,age,standard_error,7.7
+other industrial and commercial,discard_age,mean,13.3
+other industrial and commercial,discard_age,standard_error,9.2
+"telephone and cablevision lines, underground and marine cables",resell,mean,0.132
+"telephone and cablevision lines, underground and marine cables",resell,standard_error,0.054
+"telephone and cablevision lines, underground and marine cables",age,mean,11.1
+"telephone and cablevision lines, underground and marine cables",age,standard_error,1.9
+"telephone and cablevision lines, underground and marine cables",discard_age,mean,16.8
+"telephone and cablevision lines, underground and marine cables",discard_age,standard_error,0.6
+"communication towers, antennae, earth stations",resell,mean,0.508
+"communication towers, antennae, earth stations",resell,standard_error,0.435
+"communication towers, antennae, earth stations",age,mean,12.5
+"communication towers, antennae, earth stations",age,standard_error,2.9
+"communication towers, antennae, earth stations",discard_age,mean,23.6
+"communication towers, antennae, earth stations",discard_age,standard_error,6.7
+all machinery and equipment,resell,mean,0.32
+all machinery and equipment,resell,standard_error,0.293
+all machinery and equipment,age,mean,8.0
+all machinery and equipment,age,standard_error,4.7
+all machinery and equipment,discard_age,mean,8.5
+all machinery and equipment,discard_age,standard_error,4.9
+"office furniture, furnishing",resell,mean,0.314
+"office furniture, furnishing",resell,standard_error,0.287
+"office furniture, furnishing",age,mean,6.6
+"office furniture, furnishing",age,standard_error,3.6
+"office furniture, furnishing",discard_age,mean,8.4
+"office furniture, furnishing",discard_age,standard_error,3.3
+"computers, associated hardware and word processors",resell,mean,0.249
+"computers, associated hardware and word processors",resell,standard_error,0.27
+"computers, associated hardware and word processors",age,mean,4.3
+"computers, associated hardware and word processors",age,standard_error,1.7
+"computers, associated hardware and word processors",discard_age,mean,4.8
+"computers, associated hardware and word processors",discard_age,standard_error,1.6
+"non-office furniture, furnishings and fixtures",resell,mean,0.519
+"non-office furniture, furnishings and fixtures",resell,standard_error,0.354
+"non-office furniture, furnishings and fixtures",age,mean,6.9
+"non-office furniture, furnishings and fixtures",age,standard_error,3.4
+"non-office furniture, furnishings and fixtures",discard_age,mean,8.1
+"non-office furniture, furnishings and fixtures",discard_age,standard_error,3.4
+"scientific, professional and medical devices",resell,mean,0.373
+"scientific, professional and medical devices",resell,standard_error,0.33
+"scientific, professional and medical devices",age,mean,9.0
+"scientific, professional and medical devices",age,standard_error,5.6
+"scientific, professional and medical devices",discard_age,mean,11.4
+"scientific, professional and medical devices",discard_age,standard_error,5.3
+"heating, electrical, plumbing, air conditioning and refrigeration equipment",resell,mean,0.655
+"heating, electrical, plumbing, air conditioning and refrigeration equipment",resell,standard_error,0.303
+"heating, electrical, plumbing, air conditioning and refrigeration equipment",age,mean,9.1
+"heating, electrical, plumbing, air conditioning and refrigeration equipment",age,standard_error,4.0
+"heating, electrical, plumbing, air conditioning and refrigeration equipment",discard_age,mean,11.0
+"heating, electrical, plumbing, air conditioning and refrigeration equipment",discard_age,standard_error,4.0
+pollution abatement and control equipment,resell,mean,0.293
+pollution abatement and control equipment,resell,standard_error,0.282
+pollution abatement and control equipment,age,mean,11.3
+pollution abatement and control equipment,age,standard_error,4.3
+pollution abatement and control equipment,discard_age,mean,11.5
+pollution abatement and control equipment,discard_age,standard_error,6.0
+"motors, generators, transformers, turbines, compressors and pumps of all types",resell,mean,0.466
+"motors, generators, transformers, turbines, compressors and pumps of all types",resell,standard_error,0.32
+"motors, generators, transformers, turbines, compressors and pumps of all types",age,mean,9.3
+"motors, generators, transformers, turbines, compressors and pumps of all types",age,standard_error,5.8
+"motors, generators, transformers, turbines, compressors and pumps of all types",discard_age,mean,14.0
+"motors, generators, transformers, turbines, compressors and pumps of all types",discard_age,standard_error,7.6
+heavy construction equipment,resell,mean,0.365
+heavy construction equipment,resell,standard_error,0.304
+heavy construction equipment,age,mean,6.9
+heavy construction equipment,age,standard_error,4.0
+heavy construction equipment,discard_age,mean,10.7
+heavy construction equipment,discard_age,standard_error,5.9
+tractors and other field equipment,resell,mean,0.288
+tractors and other field equipment,resell,standard_error,0.25
+tractors and other field equipment,age,mean,8.8
+tractors and other field equipment,age,standard_error,4.4
+tractors and other field equipment,discard_age,mean,13.3
+tractors and other field equipment,discard_age,standard_error,3.8
+capitalized tooling and other tools,resell,mean,0.294
+capitalized tooling and other tools,resell,standard_error,0.284
+capitalized tooling and other tools,age,mean,7.1
+capitalized tooling and other tools,age,standard_error,3.9
+capitalized tooling and other tools,discard_age,mean,8.5
+capitalized tooling and other tools,discard_age,standard_error,4.2
+drilling and blasting equipment,resell,mean,0.561
+drilling and blasting equipment,resell,standard_error,0.254
+drilling and blasting equipment,age,mean,6.9
+drilling and blasting equipment,age,standard_error,4.3
+drilling and blasting equipment,discard_age,mean,
+drilling and blasting equipment,discard_age,standard_error,
+automobiles and major replacement parts,resell,mean,0.314
+automobiles and major replacement parts,resell,standard_error,0.26
+automobiles and major replacement parts,age,mean,5.5
+automobiles and major replacement parts,age,standard_error,2.5
+automobiles and major replacement parts,discard_age,mean,6.4
+automobiles and major replacement parts,discard_age,standard_error,2.9
+buses (all types) and major replacement parts,resell,mean,0.122
+buses (all types) and major replacement parts,resell,standard_error,0.221
+buses (all types) and major replacement parts,age,mean,14.8
+buses (all types) and major replacement parts,age,standard_error,6.9
+buses (all types) and major replacement parts,discard_age,mean,22.2
+buses (all types) and major replacement parts,discard_age,standard_error,8.0
+"trucks, vans, truck tractors, truck trailers and major replacement parts",resell,mean,0.295
+"trucks, vans, truck tractors, truck trailers and major replacement parts",resell,standard_error,0.264
+"trucks, vans, truck tractors, truck trailers and major replacement parts",age,mean,7.7
+"trucks, vans, truck tractors, truck trailers and major replacement parts",age,standard_error,3.5
+"trucks, vans, truck tractors, truck trailers and major replacement parts",discard_age,mean,8.8
+"trucks, vans, truck tractors, truck trailers and major replacement parts",discard_age,standard_error,3.6
+other transportation equipment,resell,mean,0.314
+other transportation equipment,resell,standard_error,0.26
+other transportation equipment,age,mean,9.4
+other transportation equipment,age,standard_error,4.3
+other transportation equipment,discard_age,mean,11.2
+other transportation equipment,discard_age,standard_error,4.6
+computer-assisted processing machinery and equipment,resell,mean,0.322
+computer-assisted processing machinery and equipment,resell,standard_error,0.301
+computer-assisted processing machinery and equipment,age,mean,10.3
+computer-assisted processing machinery and equipment,age,standard_error,5.7
+computer-assisted processing machinery and equipment,discard_age,mean,12.0
+computer-assisted processing machinery and equipment,discard_age,standard_error,5.8
+non-computer-assisted processing machinery and equipment,resell,mean,0.292
+non-computer-assisted processing machinery and equipment,resell,standard_error,0.283
+non-computer-assisted processing machinery and equipment,age,mean,9.5
+non-computer-assisted processing machinery and equipment,age,standard_error,5.2
+non-computer-assisted processing machinery and equipment,discard_age,mean,12.0
+non-computer-assisted processing machinery and equipment,discard_age,standard_error,6.1
+communication and related equipment,resell,mean,0.283
+communication and related equipment,resell,standard_error,0.291
+communication and related equipment,age,mean,7.3
+communication and related equipment,age,standard_error,3.0
+communication and related equipment,discard_age,mean,7.5
+communication and related equipment,discard_age,standard_error,3.4
+safety and security equipment and other machinery and equipment,resell,mean,0.386
+safety and security equipment and other machinery and equipment,resell,standard_error,0.35
+safety and security equipment and other machinery and equipment,age,mean,8.8
+safety and security equipment and other machinery and equipment,age,standard_error,5.0
+safety and security equipment and other machinery and equipment,discard_age,mean,10.6
+safety and security equipment and other machinery and equipment,discard_age,standard_error,4.7

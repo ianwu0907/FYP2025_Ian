@@ -1,6 +1,5 @@
-season,team,games,rushing,receiving,fumbles
-,,,,,
-2014,tampa bay buccaneers,8,66,19,2
-2015,tampa bay buccaneers,16,107,51,2
-2016,tampa bay buccaneers,7,51,24,1
-2017,tampa bay buccaneers,16,21,35,1
+season,team,games_played,games_started,rushing_attempts,rushing_yards,rushing_avg,rushing_long,rushing_td,receiving_receptions,receiving_yards,receiving_avg,receiving_long,receiving_td,fumbles_total,fumbles_lost
+2014,tampa bay buccaneers,8.0,0.0,66.0,185.0,2.8,20.0,1.0,19.0,190.0,10.0,24.0,0.0,2.0,1.0
+2015,tampa bay buccaneers,16.0,0.0,107.0,529.0,4.9,59.0,0.0,51.0,561.0,11.0,56.0,4.0,2.0,2.0
+2016,tampa bay buccaneers,7.0,2.0,51.0,149.0,2.9,23.0,1.0,24.0,190.0,7.9,33.0,1.0,1.0,1.0
+2017,tampa bay buccaneers,16.0,0.0,21.0,95.0,4.5,21.0,0.0,35.0,249.0,7.1,25.0,1.0,1.0,1.0

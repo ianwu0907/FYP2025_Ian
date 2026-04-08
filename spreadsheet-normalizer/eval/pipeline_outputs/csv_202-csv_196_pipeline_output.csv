@@ -1,91 +1,91 @@
-ethnicity,year,population_count
-Romanian,1880,43671
-Bulgarian,1880,24915
-Turkish,1880,18624
-Tatar,1880,29476
-Russian-Lipovan,1880,8250
+ethnicity,year,count,percentage
+Romanian,1880,43671,0.31
+Bulgarian,1880,24915,0.17
+Turkish,1880,18624,0.13
+Tatar,1880,29476,0.21
+Russian-Lipovan,1880,8250,0.06
 "Ruthenian
-(Ukrainian from 1956)",1880,455
-Dobrujan Germans,1880,2461
-Greek,1880,4015
-Roma,1880,702
-Romanian,1899,118919
-Bulgarian,1899,38439
-Turkish,1899,12146
-Tatar,1899,28670
-Russian-Lipovan,1899,12801
+(Ukrainian from 1956)",1880,455,0.003
+Dobrujan Germans,1880,2461,0.017
+Greek,1880,4015,0.027999999999999997
+Roma,1880,702,0.005
+Romanian,1899,118919,0.46
+Bulgarian,1899,38439,0.14
+Turkish,1899,12146,0.04
+Tatar,1899,28670,0.11
+Russian-Lipovan,1899,12801,0.05
 "Ruthenian
-(Ukrainian from 1956)",1899,13680
-Dobrujan Germans,1899,8566
-Greek,1899,8445
-Roma,1899,2252
-Romanian,1913,216425
-Bulgarian,1913,51149
-Turkish,1913,20092
-Tatar,1913,21350
-Russian-Lipovan,1913,35859
+(Ukrainian from 1956)",1899,13680,0.05
+Dobrujan Germans,1899,8566,0.03
+Greek,1899,8445,0.03
+Roma,1899,2252,0.0087
+Romanian,1913,216425,0.568
+Bulgarian,1913,51149,0.134
+Turkish,1913,20092,0.053
+Tatar,1913,21350,0.055999999999999994
+Russian-Lipovan,1913,35859,0.094
 "Ruthenian
-(Ukrainian from 1956)",1913,35859
-Dobrujan Germans,1913,7697
-Greek,1913,9999
-Roma,1913,3263
-Romanian,19301,282844
-Bulgarian,19301,42070
-Turkish,19301,21748
-Tatar,19301,15546
-Russian-Lipovan,19301,26210
+(Ukrainian from 1956)",1913,35859,0.094
+Dobrujan Germans,1913,7697,0.02
+Greek,1913,9999,0.026000000000000002
+Roma,1913,3263,0.009000000000000001
+Romanian,19301,282844,0.647
+Bulgarian,19301,42070,0.096
+Turkish,19301,21748,0.05
+Tatar,19301,15546,0.036000000000000004
+Russian-Lipovan,19301,26210,0.06
 "Ruthenian
-(Ukrainian from 1956)",19301,33
-Dobrujan Germans,19301,12023
-Greek,19301,7743
-Roma,19301,3831
-Romanian,1956,514331
-Bulgarian,1956,749
-Turkish,1956,11994
-Tatar,1956,20239
-Russian-Lipovan,1956,29944
+(Ukrainian from 1956)",19301,33,0.0001
+Dobrujan Germans,19301,12023,0.0275
+Greek,19301,7743,0.018000000000000002
+Roma,19301,3831,0.0088
+Romanian,1956,514331,0.866
+Bulgarian,1956,749,0.0013
+Turkish,1956,11994,0.02
+Tatar,1956,20239,0.034
+Russian-Lipovan,1956,29944,0.05
 "Ruthenian
-(Ukrainian from 1956)",1956,7025
-Dobrujan Germans,1956,735
-Greek,1956,1399
-Roma,1956,1176
-Romanian,1966,622996
-Bulgarian,1966,524
-Turkish,1966,16209
-Tatar,1966,21939
-Russian-Lipovan,1966,30509
+(Ukrainian from 1956)",1956,7025,0.0118
+Dobrujan Germans,1956,735,0.0012
+Greek,1956,1399,0.0024
+Roma,1956,1176,0.002
+Romanian,1966,622996,0.887
+Bulgarian,1966,524,0.0007000000000000001
+Turkish,1966,16209,0.023
+Tatar,1966,21939,0.031
+Russian-Lipovan,1966,30509,0.0435
 "Ruthenian
-(Ukrainian from 1956)",1966,5154
-Dobrujan Germans,1966,599
-Greek,1966,908
-Roma,1966,378
-Romanian,1977,784934
-Bulgarian,1977,415
-Turkish,1977,21666
-Tatar,1977,22875
-Russian-Lipovan,1977,24098
+(Ukrainian from 1956)",1966,5154,0.0073
+Dobrujan Germans,1966,599,0.0009
+Greek,1966,908,0.0013
+Roma,1966,378,0.0005
+Romanian,1977,784934,0.909
+Bulgarian,1977,415,0.0005
+Turkish,1977,21666,0.025
+Tatar,1977,22875,0.0265
+Russian-Lipovan,1977,24098,0.027999999999999997
 "Ruthenian
-(Ukrainian from 1956)",1977,2639
-Dobrujan Germans,1977,648
-Greek,1977,635
-Roma,1977,2565
-Romanian,1992,926608
-Bulgarian,1992,311
-Turkish,1992,27685
-Tatar,1992,24185
-Russian-Lipovan,1992,26154
+(Ukrainian from 1956)",1977,2639,0.003
+Dobrujan Germans,1977,648,0.0008
+Greek,1977,635,0.0007000000000000001
+Roma,1977,2565,0.003
+Romanian,1992,926608,0.9079999999999999
+Bulgarian,1992,311,0.0003
+Turkish,1992,27685,0.027000000000000003
+Tatar,1992,24185,0.024
+Russian-Lipovan,1992,26154,0.026000000000000002
 "Ruthenian
-(Ukrainian from 1956)",1992,4101
-Dobrujan Germans,1992,677
-Greek,1992,1230
-Roma,1992,5983
-Romanian,2002,883620
-Bulgarian,2002,135
-Turkish,2002,27580
-Tatar,2002,23409
-Russian-Lipovan,2002,21623
+(Ukrainian from 1956)",1992,4101,0.004
+Dobrujan Germans,1992,677,0.0007000000000000001
+Greek,1992,1230,0.0012
+Roma,1992,5983,0.0059
+Romanian,2002,883620,0.909
+Bulgarian,2002,135,0.0001
+Turkish,2002,27580,0.027999999999999997
+Tatar,2002,23409,0.024
+Russian-Lipovan,2002,21623,0.022000000000000002
 "Ruthenian
-(Ukrainian from 1956)",2002,1465
-Dobrujan Germans,2002,398
-Greek,2002,2270
-Roma,2002,8295
+(Ukrainian from 1956)",2002,1465,0.001
+Dobrujan Germans,2002,398,0.0004
+Greek,2002,2270,0.0023
+Roma,2002,8295,0.0085

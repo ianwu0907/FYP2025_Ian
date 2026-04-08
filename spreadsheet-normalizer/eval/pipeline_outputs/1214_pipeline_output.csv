@@ -1,11 +1,25 @@
-service use and perceived health care needs,concurrent disorders,Unnamed: 2,Unnamed: 3,mood/anxiety disorder only,Unnamed: 5,Unnamed: 6,substance use disorder only,Unnamed: 8,Unnamed: 9
-,%,95% confidence interval,,%,95% confidence interval,,%,95% confidence interval,
-,,from,to,,from,to,,from,to
-in past 12 months:,,,,,,,,,
-received help,75.5,67.1,82.3,66.5,62.3,70.6,21.0,17.4,25.2
-formal consultation,64.9,55.8,73.0,59.2,54.9,63.4,16.2,12.8,20.2
-informal consultation,78.2,70.5,84.3,64.4,60.2,68.3,31.2,26.9,35.9
-perceived health care needs,,,,,,,,,
-none,12.0,7.2,19.3,23.6,20.2,27.4,74.9,70.5,78.9
-all needs met,44.4,35.4,53.7,42.2,37.9,46.7,14.9,11.9,18.5
-partially met or not met,39.3,31.2,48.1,32.1,28.2,36.3,9.6,7.3,12.7
+subsection,item,subgroup,percentage,ci_lower,ci_upper
+service use,,concurrent disorders,,,
+service use,,mood/anxiety disorder only,,,
+service use,,substance use disorder only,,,
+service use,,concurrent disorders,,,
+service use,,mood/anxiety disorder only,,,
+service use,,substance use disorder only,,,
+in past 12 months:,received help,concurrent disorders,75.5,67.1,82.3
+in past 12 months:,received help,mood/anxiety disorder only,66.5,62.3,70.6
+in past 12 months:,received help,substance use disorder only,21.0,17.4,25.2
+in past 12 months:,formal consultation,concurrent disorders,64.9,55.8,73.0
+in past 12 months:,formal consultation,mood/anxiety disorder only,59.2,54.9,63.4
+in past 12 months:,formal consultation,substance use disorder only,16.2,12.8,20.2
+in past 12 months:,informal consultation,concurrent disorders,78.2,70.5,84.3
+in past 12 months:,informal consultation,mood/anxiety disorder only,64.4,60.2,68.3
+in past 12 months:,informal consultation,substance use disorder only,31.2,26.9,35.9
+perceived health care needs,none,concurrent disorders,12.0,7.2,19.3
+perceived health care needs,none,mood/anxiety disorder only,23.6,20.2,27.4
+perceived health care needs,none,substance use disorder only,74.9,70.5,78.9
+perceived health care needs,all needs met,concurrent disorders,44.4,35.4,53.7
+perceived health care needs,all needs met,mood/anxiety disorder only,42.2,37.9,46.7
+perceived health care needs,all needs met,substance use disorder only,14.9,11.9,18.5
+perceived health care needs,partially met or not met,concurrent disorders,39.3,31.2,48.1
+perceived health care needs,partially met or not met,mood/anxiety disorder only,32.1,28.2,36.3
+perceived health care needs,partially met or not met,substance use disorder only,9.6,7.3,12.7

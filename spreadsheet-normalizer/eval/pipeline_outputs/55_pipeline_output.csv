@@ -1,8 +1,29 @@
-operating arrangements,agricultural region 1,Unnamed: 2,agricultural region 3,Unnamed: 4,agricultural region 4,Unnamed: 6,total new brunswick,Unnamed: 8
-,number,percent,number,percent,number,percent,number,percent
-sole proprietorship,528,59.4,388,65.0,242,61.4,"1,639",62.8
-partnership without written agreement,118,13.3,70,11.7,35,8.9,335,12.8
-partnership with a written agreement,12,1.3,23,3.9,4,1.0,50,1.9
-family corporation,205,23.1,89,14.9,78,19.8,481,18.4
-non-family corporation,23,2.6,22,3.7,35,8.9,97,3.7
-other operating arrangements,3,0.3,5,0.8,0,0.0,9,0.3
+operating_arrangement,agricultural_region,count,percent
+,agricultural region 1,number,percent
+,agricultural region 3,number,percent
+,agricultural region 4,number,percent
+,total new brunswick,number,percent
+sole proprietorship,agricultural region 1,528,59.4
+sole proprietorship,agricultural region 3,388,65.0
+sole proprietorship,agricultural region 4,242,61.4
+sole proprietorship,total new brunswick,"1,639",62.8
+partnership without written agreement,agricultural region 1,118,13.3
+partnership without written agreement,agricultural region 3,70,11.7
+partnership without written agreement,agricultural region 4,35,8.9
+partnership without written agreement,total new brunswick,335,12.8
+partnership with a written agreement,agricultural region 1,12,1.3
+partnership with a written agreement,agricultural region 3,23,3.9
+partnership with a written agreement,agricultural region 4,4,1.0
+partnership with a written agreement,total new brunswick,50,1.9
+family corporation,agricultural region 1,205,23.1
+family corporation,agricultural region 3,89,14.9
+family corporation,agricultural region 4,78,19.8
+family corporation,total new brunswick,481,18.4
+non-family corporation,agricultural region 1,23,2.6
+non-family corporation,agricultural region 3,22,3.7
+non-family corporation,agricultural region 4,35,8.9
+non-family corporation,total new brunswick,97,3.7
+other operating arrangements,agricultural region 1,3,0.3
+other operating arrangements,agricultural region 3,5,0.8
+other operating arrangements,agricultural region 4,0,0.0
+other operating arrangements,total new brunswick,9,0.3

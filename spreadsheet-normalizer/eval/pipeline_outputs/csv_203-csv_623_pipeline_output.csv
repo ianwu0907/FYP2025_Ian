@@ -1,47 +1,10 @@
-artist_group_category,year,artist_group_name
-Outstanding Alternative/Indie Artist/Group,2004,The Fags
-Outstanding Hard Rock/Metal Artist/Group,2004,Forge
-Outstanding Industrial Artist/Group,2004,Haf/Life
-Outstanding Pop Artist/Group,2004,Liz Larin
-Outstanding Rock Artist/Group,2004,The Kingsnakes
-Outstanding Rock/Pop Instrumentalist,2004,Jimmy Paluzzi - drums The Fags
-Outstanding Rock/Pop Recording,2004,Sista Otis and The Wholly Rollers
-Outstanding Rock/Pop Songwriter,2004,Liz Larin
-Outstanding Rock/Pop Vocalist,2004,Liz Larin
-Outstanding Alternative/Indie Artist/Group,2005,The Fags
-Outstanding Hard Rock/Metal Artist/Group,2005,Broadzilla
-Outstanding Industrial Artist/Group,2005,The Impaler
-Outstanding Pop Artist/Group,2005,Jill Jack
-Outstanding Rock Artist/Group,2005,The Reefermen
-Outstanding Rock/Pop Instrumentalist,2005,Bobby East - guitar The Reefermen
-Outstanding Rock/Pop Recording,2005,Mindcandy Recognize
-Outstanding Rock/Pop Songwriter,2005,Tim Diaz
-Outstanding Rock/Pop Vocalist,2005,Jezter Soot
-Outstanding Alternative/Indie Artist/Group,2006,Crud
-Outstanding Hard Rock/Metal Artist/Group,2006,Broadzilla
-Outstanding Pop Artist/Group,2006,Jill Jack
-Outstanding Rock Artist/Group,2006,Liz Larin
-Outstanding Rock/Pop Instrumentalist,2006,Bobby East - guitar The Reefermen
-Outstanding Rock/Pop Recording,2006,"Liz Larin Wake Up, Start Dreaming"
-Outstanding Rock/Pop Songwriter,2006,Liz Larin
-Outstanding Rock/Pop Vocalist,2006,Liz Larin
-Outstanding Industrial Artist/Group,2009,Crud
-Outstanding Pop Artist/Group,2009,Ty Stone
-Outstanding Rock Artist/Group,2009,Broadzilla
-Outstanding Rock/Pop Instrumentalist,2009,Rachel May - guitar
-Outstanding Rock/Pop Recording,2009,The Muggs On With The Show
-Outstanding Rock/Pop Songwriter,2009,Vinnie Dombroski
-Outstanding Rock/Pop Vocalist,2009,Vinnie Dombroski
-Outstanding Industrial Artist/Group,2010,Cybertribe
-Outstanding Rock/Pop Instrumentalist,2010,Larry Fratangelo - percussion
-Outstanding Rock/Pop Recording,2010,Carolyn Striho Honesty
-Outstanding Rock/Pop Songwriter,2010,Vinnie Dombroski
-Outstanding Rock/Pop Vocalist,2010,Ty Stone
-Outstanding Alternative/Indie Artist/Group,2011,André
-Outstanding Industrial Artist/Group,2011,Crud
-Outstanding Pop Artist/Group,2011,André / Serena Knight (tie)
-Outstanding Rock Artist/Group,2011,André
-Outstanding Rock/Pop Instrumentalist,2011,Jimmy Bones - keyboards
-Outstanding Rock/Pop Recording,2011,André 3 Soldiers
-Outstanding Rock/Pop Songwriter,2011,André
-Outstanding Rock/Pop Vocalist,2011,Ty Stone
+Rock/Pop/Alternative,2004,2005,2006,2009,2010,2011
+Outstanding Alternative/Indie Artist/Group,The Fags,The Fags,Crud,,,André
+Outstanding Hard Rock/Metal Artist/Group,Forge,Broadzilla,Broadzilla,,,
+Outstanding Industrial Artist/Group,Haf/Life,The Impaler,,Crud,Cybertribe,Crud
+Outstanding Pop Artist/Group,Liz Larin,Jill Jack,Jill Jack,Ty Stone,,André / Serena Knight (tie)
+Outstanding Rock Artist/Group,The Kingsnakes,The Reefermen,Liz Larin,Broadzilla,,André
+Outstanding Rock/Pop Instrumentalist,Jimmy Paluzzi - drums The Fags,Bobby East - guitar The Reefermen,Bobby East - guitar The Reefermen,Rachel May - guitar,Larry Fratangelo - percussion,Jimmy Bones - keyboards
+Outstanding Rock/Pop Recording,Sista Otis and The Wholly Rollers,Mindcandy Recognize,"Liz Larin Wake Up, Start Dreaming",The Muggs On With The Show,Carolyn Striho Honesty,André 3 Soldiers
+Outstanding Rock/Pop Songwriter,Liz Larin,Tim Diaz,Liz Larin,Vinnie Dombroski,Vinnie Dombroski,André
+Outstanding Rock/Pop Vocalist,Liz Larin,Jezter Soot,Liz Larin,Vinnie Dombroski,Ty Stone,Ty Stone

@@ -1,3 +1,13 @@
-sex,off_reserve_first_nations,metis,inuit
-male,3184.0,3324.0,1321.0
-female,4055.0,3674.0,1531.0
+population_group,metric_category,metric_name,value,range_min,range_max
+off-reserve first nations,sex,male,3184.0,,
+off-reserve first nations,sex,female,4055.0,,
+off-reserve first nations,age,mean,35.6,,
+off-reserve first nations,age,range,,15.0,92.0
+metis,sex,male,3324.0,,
+metis,sex,female,3674.0,,
+metis,age,mean,37.0,,
+metis,age,range,,15.0,93.0
+inuit,sex,male,1321.0,,
+inuit,sex,female,1531.0,,
+inuit,age,mean,33.6,,
+inuit,age,range,,15.0,87.0

@@ -1,10 +1,91 @@
-indicator,heterosexual,Unnamed: 2,Unnamed: 3,gay or lesbian,Unnamed: 5,Unnamed: 6,bisexual,Unnamed: 8,Unnamed: 9,sexual orientation n.e.c,Unnamed: 11,Unnamed: 12,total sexual minority,Unnamed: 14,Unnamed: 15
-,percent,95% confidence interval,,percent,95% confidence interval,,percent,95% confidence interval,,percent,95% confidence interval,,percent,95% confidence interval,
-,,from,to,,from,to,,from,to,,from,to,,from,to
-self-rated mental health,,,,,,,,,,,,,,,
-positive,88.9,88.3,89.4,80.3,75.5,84.4,58.9,52.4,65.2,54.6,37.4,70.9,67.8,63.6,71.7
-negative,10.7,10.2,11.2,19.7,15.6,24.4,40.9,34.7,47.4,45.4,29.1,62.6,32.1,28.2,36.3
-ever seriously contemplated suicide,14.9,14.3,15.5,29.9,25.1,35.1,46.3,39.8,52.8,58.7,42.1,73.5,40.1,36.1,44.3
-diagnosed mood or anxiety disorder,16.4,15.8,17.0,29.6,24.7,35.0,50.8,44.4,57.2,40.9,25.8,58.0,41.1,36.9,45.3
-mood disorder,9.5,9.1,10.0,20.6,16.4,25.4,36.2,30.0,42.9,31.1,18.0,48.1,29.1,25.3,33.3
-anxiety disorder,12.5,12.0,13.1,23.4,18.8,28.8,41.6,35.5,47.9,30.4,18.5,45.8,33.1,29.2,37.2
+mental_health_indicator,sexual_orientation,measure_type,value
+positive,heterosexual,percent,88.9
+positive,heterosexual,ci_from,88.3
+positive,heterosexual,ci_to,89.4
+positive,gay or lesbian,percent,80.3
+positive,gay or lesbian,ci_from,75.5
+positive,gay or lesbian,ci_to,84.4
+positive,bisexual,percent,58.9
+positive,bisexual,ci_from,52.4
+positive,bisexual,ci_to,65.2
+positive,sexual orientation n.e.c,percent,54.6
+positive,sexual orientation n.e.c,ci_from,37.4
+positive,sexual orientation n.e.c,ci_to,70.9
+positive,total sexual minority,percent,67.8
+positive,total sexual minority,ci_from,63.6
+positive,total sexual minority,ci_to,71.7
+negative,heterosexual,percent,10.7
+negative,heterosexual,ci_from,10.2
+negative,heterosexual,ci_to,11.2
+negative,gay or lesbian,percent,19.7
+negative,gay or lesbian,ci_from,15.6
+negative,gay or lesbian,ci_to,24.4
+negative,bisexual,percent,40.9
+negative,bisexual,ci_from,34.7
+negative,bisexual,ci_to,47.4
+negative,sexual orientation n.e.c,percent,45.4
+negative,sexual orientation n.e.c,ci_from,29.1
+negative,sexual orientation n.e.c,ci_to,62.6
+negative,total sexual minority,percent,32.1
+negative,total sexual minority,ci_from,28.2
+negative,total sexual minority,ci_to,36.3
+ever seriously contemplated suicide,heterosexual,percent,14.9
+ever seriously contemplated suicide,heterosexual,ci_from,14.3
+ever seriously contemplated suicide,heterosexual,ci_to,15.5
+ever seriously contemplated suicide,gay or lesbian,percent,29.9
+ever seriously contemplated suicide,gay or lesbian,ci_from,25.1
+ever seriously contemplated suicide,gay or lesbian,ci_to,35.1
+ever seriously contemplated suicide,bisexual,percent,46.3
+ever seriously contemplated suicide,bisexual,ci_from,39.8
+ever seriously contemplated suicide,bisexual,ci_to,52.8
+ever seriously contemplated suicide,sexual orientation n.e.c,percent,58.7
+ever seriously contemplated suicide,sexual orientation n.e.c,ci_from,42.1
+ever seriously contemplated suicide,sexual orientation n.e.c,ci_to,73.5
+ever seriously contemplated suicide,total sexual minority,percent,40.1
+ever seriously contemplated suicide,total sexual minority,ci_from,36.1
+ever seriously contemplated suicide,total sexual minority,ci_to,44.3
+diagnosed mood or anxiety disorder,heterosexual,percent,16.4
+diagnosed mood or anxiety disorder,heterosexual,ci_from,15.8
+diagnosed mood or anxiety disorder,heterosexual,ci_to,17.0
+diagnosed mood or anxiety disorder,gay or lesbian,percent,29.6
+diagnosed mood or anxiety disorder,gay or lesbian,ci_from,24.7
+diagnosed mood or anxiety disorder,gay or lesbian,ci_to,35.0
+diagnosed mood or anxiety disorder,bisexual,percent,50.8
+diagnosed mood or anxiety disorder,bisexual,ci_from,44.4
+diagnosed mood or anxiety disorder,bisexual,ci_to,57.2
+diagnosed mood or anxiety disorder,sexual orientation n.e.c,percent,40.9
+diagnosed mood or anxiety disorder,sexual orientation n.e.c,ci_from,25.8
+diagnosed mood or anxiety disorder,sexual orientation n.e.c,ci_to,58.0
+diagnosed mood or anxiety disorder,total sexual minority,percent,41.1
+diagnosed mood or anxiety disorder,total sexual minority,ci_from,36.9
+diagnosed mood or anxiety disorder,total sexual minority,ci_to,45.3
+mood disorder,heterosexual,percent,9.5
+mood disorder,heterosexual,ci_from,9.1
+mood disorder,heterosexual,ci_to,10.0
+mood disorder,gay or lesbian,percent,20.6
+mood disorder,gay or lesbian,ci_from,16.4
+mood disorder,gay or lesbian,ci_to,25.4
+mood disorder,bisexual,percent,36.2
+mood disorder,bisexual,ci_from,30.0
+mood disorder,bisexual,ci_to,42.9
+mood disorder,sexual orientation n.e.c,percent,31.1
+mood disorder,sexual orientation n.e.c,ci_from,18.0
+mood disorder,sexual orientation n.e.c,ci_to,48.1
+mood disorder,total sexual minority,percent,29.1
+mood disorder,total sexual minority,ci_from,25.3
+mood disorder,total sexual minority,ci_to,33.3
+anxiety disorder,heterosexual,percent,12.5
+anxiety disorder,heterosexual,ci_from,12.0
+anxiety disorder,heterosexual,ci_to,13.1
+anxiety disorder,gay or lesbian,percent,23.4
+anxiety disorder,gay or lesbian,ci_from,18.8
+anxiety disorder,gay or lesbian,ci_to,28.8
+anxiety disorder,bisexual,percent,41.6
+anxiety disorder,bisexual,ci_from,35.5
+anxiety disorder,bisexual,ci_to,47.9
+anxiety disorder,sexual orientation n.e.c,percent,30.4
+anxiety disorder,sexual orientation n.e.c,ci_from,18.5
+anxiety disorder,sexual orientation n.e.c,ci_to,45.8
+anxiety disorder,total sexual minority,percent,33.1
+anxiety disorder,total sexual minority,ci_from,29.2
+anxiety disorder,total sexual minority,ci_to,37.2

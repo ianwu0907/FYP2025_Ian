@@ -1,67 +1,121 @@
-age_group,province,year,percentage
-women,men,2003.0,53.0
-women,men,2008.0,46.0
-women,men,2013.0,43.0
-women,men,2003.0,64.0
-women,men,2008.0,61.0
-women,men,2013.0,57.0
-newfoundland and labrador,men,2003.0,75.0
-newfoundland and labrador,men,2008.0,61.0
-newfoundland and labrador,men,2013.0,57.0
-newfoundland and labrador,men,2003.0,73.0
-newfoundland and labrador,men,2008.0,63.0
-newfoundland and labrador,men,2013.0,56.0
-prince edward island,men,2003.0,69.0
-prince edward island,men,2008.0,60.0
-prince edward island,men,2013.0,51.0
-prince edward island,men,2003.0,65.0
-prince edward island,men,2008.0,62.0
-prince edward island,men,2013.0,55.0
-nova scotia,men,2003.0,68.0
-nova scotia,men,2008.0,54.0
-nova scotia,men,2013.0,48.0
-nova scotia,men,2003.0,66.0
-nova scotia,men,2008.0,62.0
-nova scotia,men,2013.0,57.0
-new brunswick,men,2003.0,67.0
-new brunswick,men,2008.0,56.0
-new brunswick,men,2013.0,51.0
-new brunswick,men,2003.0,64.0
-new brunswick,men,2008.0,58.0
-new brunswick,men,2013.0,53.0
-quebec,men,2003.0,49.0
-quebec,men,2008.0,45.0
-quebec,men,2013.0,42.0
-quebec,men,2003.0,50.0
-quebec,men,2008.0,50.0
-quebec,men,2013.0,51.0
-ontario,men,2003.0,55.0
-ontario,men,2008.0,47.0
-ontario,men,2013.0,42.0
-ontario,men,2003.0,63.0
-ontario,men,2008.0,60.0
-ontario,men,2013.0,54.0
-manitoba,men,2003.0,59.0
-manitoba,men,2008.0,49.0
-manitoba,men,2013.0,44.0
-manitoba,men,2003.0,60.0
-manitoba,men,2008.0,59.0
-manitoba,men,2013.0,53.0
-saskatchewan,men,2003.0,65.0
-saskatchewan,men,2008.0,54.0
-saskatchewan,men,2013.0,47.0
-saskatchewan,men,2003.0,65.0
-saskatchewan,men,2008.0,60.0
-saskatchewan,men,2013.0,51.0
-alberta,men,2003.0,57.0
-alberta,men,2008.0,48.0
-alberta,men,2013.0,44.0
-alberta,men,2003.0,64.0
-alberta,men,2008.0,61.0
-alberta,men,2013.0,53.0
-british columbia,men,2003.0,58.0
-british columbia,men,2008.0,48.0
-british columbia,men,2013.0,47.0
-british columbia,men,2003.0,65.0
-british columbia,men,2008.0,61.0
-british columbia,men,2013.0,58.0
+category_type,category,contact_type,year,percentage
+gender,total,saw,2003,56.0
+gender,total,saw,2008,48.0
+gender,total,saw,2013,44.0
+gender,total,contacted,2003,60.0
+gender,total,contacted,2008,58.0
+gender,total,contacted,2013,54.0
+gender,men,saw,2003,58.0
+gender,men,saw,2008,49.0
+gender,men,saw,2013,44.0
+gender,men,contacted,2003,57.0
+gender,men,contacted,2008,55.0
+gender,men,contacted,2013,50.0
+gender,women,saw,2003,53.0
+gender,women,saw,2008,46.0
+gender,women,saw,2013,43.0
+gender,women,contacted,2003,64.0
+gender,women,contacted,2008,61.0
+gender,women,contacted,2013,57.0
+age_group,15 to 24 years,saw,2003,84.0
+age_group,15 to 24 years,saw,2008,77.0
+age_group,15 to 24 years,saw,2013,73.0
+age_group,15 to 24 years,contacted,2003,89.0
+age_group,15 to 24 years,contacted,2008,87.0
+age_group,15 to 24 years,contacted,2013,76.0
+age_group,25 to 34 years,saw,2003,57.0
+age_group,25 to 34 years,saw,2008,46.0
+age_group,25 to 34 years,saw,2013,45.0
+age_group,25 to 34 years,contacted,2003,71.0
+age_group,25 to 34 years,contacted,2008,69.0
+age_group,25 to 34 years,contacted,2013,62.0
+age_group,35 to 44 years,saw,2003,50.0
+age_group,35 to 44 years,saw,2008,45.0
+age_group,35 to 44 years,saw,2013,38.0
+age_group,35 to 44 years,contacted,2003,57.0
+age_group,35 to 44 years,contacted,2008,58.0
+age_group,35 to 44 years,contacted,2013,54.0
+age_group,45 to 54 years,saw,2003,48.0
+age_group,45 to 54 years,saw,2008,42.0
+age_group,45 to 54 years,saw,2013,36.0
+age_group,45 to 54 years,contacted,2003,51.0
+age_group,45 to 54 years,contacted,2008,49.0
+age_group,45 to 54 years,contacted,2013,47.0
+age_group,55 to 64 years,saw,2003,47.0
+age_group,55 to 64 years,saw,2008,38.0
+age_group,55 to 64 years,saw,2013,35.0
+age_group,55 to 64 years,contacted,2003,47.0
+age_group,55 to 64 years,contacted,2008,44.0
+age_group,55 to 64 years,contacted,2013,44.0
+age_group,65 to 74 years,saw,2003,50.0
+age_group,65 to 74 years,saw,2008,38.0
+age_group,65 to 74 years,saw,2013,36.0
+age_group,65 to 74 years,contacted,2003,46.0
+age_group,65 to 74 years,contacted,2008,41.0
+age_group,65 to 74 years,contacted,2013,44.0
+age_group,75 years and older,saw,2003,44.0
+age_group,75 years and older,saw,2008,37.0
+age_group,75 years and older,saw,2013,41.0
+age_group,75 years and older,contacted,2003,40.0
+age_group,75 years and older,contacted,2008,38.0
+age_group,75 years and older,contacted,2013,40.0
+province,newfoundland and labrador,saw,2003,75.0
+province,newfoundland and labrador,saw,2008,61.0
+province,newfoundland and labrador,saw,2013,57.0
+province,newfoundland and labrador,contacted,2003,73.0
+province,newfoundland and labrador,contacted,2008,63.0
+province,newfoundland and labrador,contacted,2013,56.0
+province,prince edward island,saw,2003,69.0
+province,prince edward island,saw,2008,60.0
+province,prince edward island,saw,2013,51.0
+province,prince edward island,contacted,2003,65.0
+province,prince edward island,contacted,2008,62.0
+province,prince edward island,contacted,2013,55.0
+province,nova scotia,saw,2003,68.0
+province,nova scotia,saw,2008,54.0
+province,nova scotia,saw,2013,48.0
+province,nova scotia,contacted,2003,66.0
+province,nova scotia,contacted,2008,62.0
+province,nova scotia,contacted,2013,57.0
+province,new brunswick,saw,2003,67.0
+province,new brunswick,saw,2008,56.0
+province,new brunswick,saw,2013,51.0
+province,new brunswick,contacted,2003,64.0
+province,new brunswick,contacted,2008,58.0
+province,new brunswick,contacted,2013,53.0
+province,quebec,saw,2003,49.0
+province,quebec,saw,2008,45.0
+province,quebec,saw,2013,42.0
+province,quebec,contacted,2003,50.0
+province,quebec,contacted,2008,50.0
+province,quebec,contacted,2013,51.0
+province,ontario,saw,2003,55.0
+province,ontario,saw,2008,47.0
+province,ontario,saw,2013,42.0
+province,ontario,contacted,2003,63.0
+province,ontario,contacted,2008,60.0
+province,ontario,contacted,2013,54.0
+province,manitoba,saw,2003,59.0
+province,manitoba,saw,2008,49.0
+province,manitoba,saw,2013,44.0
+province,manitoba,contacted,2003,60.0
+province,manitoba,contacted,2008,59.0
+province,manitoba,contacted,2013,53.0
+province,saskatchewan,saw,2003,65.0
+province,saskatchewan,saw,2008,54.0
+province,saskatchewan,saw,2013,47.0
+province,saskatchewan,contacted,2003,65.0
+province,saskatchewan,contacted,2008,60.0
+province,saskatchewan,contacted,2013,51.0
+province,alberta,saw,2003,57.0
+province,alberta,saw,2008,48.0
+province,alberta,saw,2013,44.0
+province,alberta,contacted,2003,64.0
+province,alberta,contacted,2008,61.0
+province,alberta,contacted,2013,53.0
+province,british columbia,saw,2003,58.0
+province,british columbia,saw,2008,48.0
+province,british columbia,saw,2013,47.0
+province,british columbia,contacted,2003,65.0
+province,british columbia,contacted,2008,61.0
+province,british columbia,contacted,2013,58.0

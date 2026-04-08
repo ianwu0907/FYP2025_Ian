@@ -9,7 +9,7 @@ import { SwapOutlined } from '@ant-design/icons';
 import { useLanguage } from '../../contexts/LanguageContext';
 import './TableComparison.css';
 
-const TableComparison = ({ originalData, normalizedData }) => {
+const TableComparison = ({ originalData, normalizedData, singleMode = false }) => {
   const { t } = useLanguage();
   const [pageSize, setPageSize] = React.useState(10);
 
@@ -50,6 +50,32 @@ const TableComparison = ({ originalData, normalizedData }) => {
 
   const originalTable = convertToTableData(originalData);
   const normalizedTable = convertToTableData(normalizedData);
+
+  // Single-mode: only show original table (used in error state)
+  if (singleMode) {
+    return (
+      <div className="table-comparison">
+        <Card
+          title={t.tableComparison.original}
+          bordered={false}
+          headStyle={{ background: 'linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)', fontWeight: 'bold', color: '#667eea' }}
+          bodyStyle={{ padding: 0 }}
+          style={{ borderRadius: '12px', boxShadow: '0 4px 20px rgba(102, 126, 234, 0.15)', border: 'none' }}
+        >
+          <div className="table-wrapper">
+            <Table
+              columns={originalTable.columns}
+              dataSource={originalTable.dataSource}
+              pagination={{ pageSize, showSizeChanger: true, pageSizeOptions: ['10', '20', '50'], showTotal: (total) => t.tableComparison.totalRows.replace('{count}', total) }}
+              scroll={{ x: 'max-content', y: 400 }}
+              size="small"
+              bordered
+            />
+          </div>
+        </Card>
+      </div>
+    );
+  }
 
   return (
     <div className="table-comparison">

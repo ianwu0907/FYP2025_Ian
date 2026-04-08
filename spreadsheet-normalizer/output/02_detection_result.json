@@ -1,48 +1,30 @@
 {
   "physical": {
     "shape": {
-      "rows": 26,
-      "cols": 16
+      "rows": 16,
+      "cols": 7
     },
     "actual_column_names": [
-      "type of reason",
-      "canada",
+      "Unnamed: 0",
+      "agricultural region 1",
       "Unnamed: 2",
-      "newfoundland and labrador",
-      "prince edward island",
-      "nova scotia",
-      "new brunswick",
-      "quebec",
-      "ontario",
-      "manitoba",
-      "saskatchewan",
-      "alberta",
-      "british columbia",
-      "yukon",
-      "northwest territories",
-      "nunavut"
+      "agricultural region 3",
+      "Unnamed: 4",
+      "agricultural region 4",
+      "Unnamed: 6"
     ],
-    "header_depth": 2,
-    "data_start_row": 2,
-    "data_end_row": 25,
-    "data_rows": 24,
+    "header_depth": 3,
+    "data_start_row": 3,
+    "data_end_row": 15,
+    "data_rows": 13,
     "column_dtype_profile": {
       "0": "text",
       "1": "numeric",
       "2": "numeric",
       "3": "numeric",
-      "4": "mixed",
+      "4": "numeric",
       "5": "numeric",
-      "6": "numeric",
-      "7": "numeric",
-      "8": "numeric",
-      "9": "numeric",
-      "10": "numeric",
-      "11": "numeric",
-      "12": "numeric",
-      "13": "mixed",
-      "14": "mixed",
-      "15": "mixed"
+      "6": "numeric"
     },
     "blank_rows_in_data": [],
     "bilingual_row_candidate": false,
@@ -52,23 +34,23 @@
   "irregularities": [
     {
       "label": "MULTI_LEVEL_HEADER",
-      "evidence": "Row 0 contains a hierarchical structure with grouped labels across multiple rows.",
-      "details": "The first header row contains category labels indicating different types of information related to reasons for abuse, suggesting a multi-level header structure."
+      "evidence": "Headers for data columns span two rows: row 0 contains language labels (\"french-language workers\", \"english-language workers\") and row 1 contains \"percent\" indicating the measure.",
+      "details": "The header depth is 3 rows, with rows 0 and 1 providing hierarchical information for the numeric columns, forming a two-level header structure."
+    },
+    {
+      "label": "WIDE_FORMAT",
+      "evidence": "Column headers in row 0 are values of the variable \"language\" (e.g., \"french-language workers\", \"english-language workers\") rather than variable names. These headers can be collapsed into a single \"language\" column without losing information.",
+      "details": "The data columns represent percentages for different language groups, spreading the language variable across multiple columns. Headers are dimension values, not variable names."
     },
     {
       "label": "SECTION_HEADER_ROWS",
-      "evidence": "Rows 10 and 17 contain labels without numeric data.",
-      "details": "These rows act as section headers (\"protecting children from:\" and \"housing:\") that categorize the subsequent data rows until the next section header."
-    },
-    {
-      "label": "AGGREGATE_COLUMNS",
-      "evidence": "Row 25 contains a summary of total reasons for admission.",
-      "details": "This row provides an overall summary that aggregates data from multiple categories above it, indicating it functions as an aggregate column."
+      "evidence": "Row 6 in the data region has \"religion\" in column 0 with empty numeric columns, acting as a section header for the subsequent religion data rows (rows 7 to 15).",
+      "details": "This non-data row divides the data into two sections (\"place of birth\" and \"religion\") and applies to all rows until the next section header, with no numeric values of its own."
     }
   ],
   "labels": [
     "MULTI_LEVEL_HEADER",
-    "SECTION_HEADER_ROWS",
-    "AGGREGATE_COLUMNS"
+    "WIDE_FORMAT",
+    "SECTION_HEADER_ROWS"
   ]
 }

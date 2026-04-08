@@ -39,12 +39,14 @@ Design rationale:
 import json
 import logging
 import math
+import re
 import textwrap
+import time
 from typing import Any, Dict, List, Optional, Tuple
 
 import numpy as np
 import pandas as pd
-from openai import OpenAI
+from openai import OpenAI, APITimeoutError, APIConnectionError
 
 from src.metrics.tidiness_metrics import _detect_dim_cols, _detect_measure_cols, _is_ratio_col
 
@@ -509,17 +511,34 @@ def fill_slots_via_llm(
         target_values=target_values
     )
 
+    max_retries = 3
+    for attempt in range(max_retries):
+        try:
+            response = client.chat.completions.create(
+                model=model,
+                messages=[
+                    {"role": "system", "content": _SLOT_SYSTEM_PROMPT},
+                    {"role": "user",   "content": user_prompt},
+                ],
+                temperature=0.0,
+                max_tokens=4096,
+                timeout=60.0,
+            )
+            break  # success
+        except (APITimeoutError, APIConnectionError) as e:
+            if attempt < max_retries - 1:
+                wait = 10 * (attempt + 1)
+                logger.warning(f"fill_slots_via_llm timeout/connection error (attempt {attempt+1}/{max_retries}), retrying in {wait}s...")
+                time.sleep(wait)
+            else:
+                logger.warning(f"fill_slots_via_llm failed after {max_retries} attempts: {type(e).__name__}: {e}")
+                return None
     try:
-        response = client.chat.completions.create(
-            model=model,
-            messages=[
-                {"role": "system", "content": _SLOT_SYSTEM_PROMPT},
-                {"role": "user",   "content": user_prompt},
-            ],
-            temperature=0.0,
-            max_tokens=12800,
-        )
-        raw = response.choices[0].message.content.strip()
+        raw = response.choices[0].message.content or ""
+        raw = raw.strip()
+
+        # Strip <think>...</think> blocks (reasoning models like MiniMax, DeepSeek-R1)
+        raw = re.sub(r"<think>.*?</think>", "", raw, flags=re.DOTALL).strip()
 
         # Strip markdown fences if present
         if raw.startswith("```"):
@@ -527,6 +546,10 @@ def fill_slots_via_llm(
             if raw.startswith("json"):
                 raw = raw[4:]
         raw = raw.strip()
+
+        if not raw:
+            logger.warning("fill_slots_via_llm: LLM returned empty content after stripping think blocks")
+            return None
 
         slots    = json.loads(raw)
         required = TEMPLATES[qtype]["slots"]
@@ -565,7 +588,7 @@ def fill_slots_via_llm(
 
         return {"filters": {k: str(v) for k, v in filters.items()}, "B": str(b)}
 
-    except (json.JSONDecodeError, KeyError, Exception) as e:
+    except (json.JSONDecodeError, KeyError, ValueError, Exception) as e:
         logger.warning(f"fill_slots_via_llm failed: {type(e).__name__}: {e}")
         return None
 

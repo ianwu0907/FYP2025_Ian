@@ -1,5 +1,22 @@
-age_group,visible_minority_status,unwanted_sexualized_behaviours_percent,unwanted_sexualized_behaviours_conf_interval_from,unwanted_sexualized_behaviours_conf_interval_to,discriminatory_behaviours_percent,discriminatory_behaviours_conf_interval_from,discriminatory_behaviours_conf_interval_to
-visible minority,visible minority,29,22,38,13,8,20
-visible minority,visible minority,29,22,38,18,15,22
-not a visible minority,visible minority,36,33,41,18,15,22
-not a visible minority,visible minority,36,33,41,18,15,22
+section_category,characteristic,unwanted_sexualized_percent,unwanted_sexualized_ci_from,unwanted_sexualized_ci_to,discriminatory_percent,discriminatory_ci_from,discriminatory_ci_to
+,17 to 19,43,37,50,20,15,25
+,20 to 22,46,39,52,21,16,26
+visible minority status,visible minority,,,,,,
+visible minority status,not a visible minority,,,,,,
+visible minority status,"first nations, metis, and inuit (indigenous) identity",,,,,,
+visible minority status,not indigenous,29,22,38,13,8,20
+sexual orientation,heterosexual,36,33,41,18,15,22
+sexual orientation,non-heterosexual,,,,,,
+religious affiliation,no religious affiliation,,,,,,
+disablility,living with a disability,36,33,40,18,15,21
+disablility,not living with a disability,,,,,,
+marital status,single,33,30,37,15,12,18
+marital status,married or common law,62,47,74,50,36,63
+dating status,not dating,,,,,,
+dating status,dating relationship,,,,,,
+number of years at school,less than one year,39,34,44,19,15,23
+number of years at school,one or two years,,,,,,
+number of years at school,three or four years,46,38,54,28,22,35
+number of years at school,five or more years,32,28,36,14,11,17
+type of student in the past 12 months,full time,,,,,,
+living arrangements,campus housing,42,37,46,19,16,23

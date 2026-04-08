@@ -1,4 +1,4 @@
-province_or_territory,year,population_count
+province_or_territory,year,value
 newfoundland and labrador,2007,13505
 prince edward island,2007,9593
 nova scotia,2007,11070
@@ -7,11 +7,11 @@ quebec,2007,11992
 ontario,2007,9849
 manitoba,2007,8630
 saskatchewan,2007,4479
-alberta,2007,11134
+alberta,2007,-11134
 british columbia,2007,2330
-yukon,2007,14652
-northwest territories,2007,10630
-nunavut,2007,6208
+yukon,2007,-14652
+northwest territories,2007,-10630
+nunavut,2007,-6208
 canada,2007,6888
 newfoundland and labrador,2008,11531
 prince edward island,2008,9632
@@ -21,11 +21,11 @@ quebec,2008,12961
 ontario,2008,10650
 manitoba,2008,8426
 saskatchewan,2008,2573
-alberta,2008,8910
+alberta,2008,-8910
 british columbia,2008,2898
-yukon,2008,13091
-northwest territories,2008,9373
-nunavut,2008,4262
+yukon,2008,-13091
+northwest territories,2008,-9373
+nunavut,2008,-4262
 canada,2008,7620
 newfoundland and labrador,2009,10497
 prince edward island,2009,10642
@@ -35,11 +35,11 @@ quebec,2009,14885
 ontario,2009,13043
 manitoba,2009,8583
 saskatchewan,2009,3106
-alberta,2009,8581
+alberta,2009,-8581
 british columbia,2009,3555
-yukon,2009,12022
-northwest territories,2009,7254
-nunavut,2009,4264
+yukon,2009,-12022
+northwest territories,2009,-7254
+nunavut,2009,-4264
 canada,2009,9165
 newfoundland and labrador,2010,9577
 prince edward island,2010,10824
@@ -49,11 +49,11 @@ quebec,2010,15785
 ontario,2010,14850
 manitoba,2010,9535
 saskatchewan,2010,2869
-alberta,2010,7271
+alberta,2010,-7271
 british columbia,2010,3989
-yukon,2010,10098
-northwest territories,2010,1685
-nunavut,2010,4746
+yukon,2010,-10098
+northwest territories,2010,-1685
+nunavut,2010,-4746
 canada,2010,10306
 newfoundland and labrador,2011,8660
 prince edward island,2011,12554
@@ -63,11 +63,11 @@ quebec,2011,16336
 ontario,2011,16896
 manitoba,2011,11936
 saskatchewan,2011,4132
-alberta,2011,6281
+alberta,2011,-6281
 british columbia,2011,5495
-yukon,2011,10762
-northwest territories,2011,10
-nunavut,2011,6555
+yukon,2011,-10762
+northwest territories,2011,-10
+nunavut,2011,-6555
 canada,2011,11673
 newfoundland and labrador,2012,9175
 prince edward island,2012,12910
@@ -77,9 +77,9 @@ quebec,2012,17043
 ontario,2012,17734
 manitoba,2012,12832
 saskatchewan,2012,3687
-alberta,2012,5874
+alberta,2012,-5874
 british columbia,2012,5581
-yukon,2012,13436
-northwest territories,2012,1894
-nunavut,2012,11654
+yukon,2012,-13436
+northwest territories,2012,-1894
+nunavut,2012,-11654
 canada,2012,12215

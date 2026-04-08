@@ -1,49 +1,89 @@
-land_use_type,agricultural_region,number,percent
-farms under 130 acres,agricultural region 1,273.0,30.7
-farms under 130 acres,agricultural region 2,241.0,40.4
-farms under 130 acres,agricultural region 3,202.0,51.3
-farms under 130 acres,total new brunswick,996.0,38.1
-farms between 130 and 399 acres,agricultural region 1,297.0,33.4
-farms between 130 and 399 acres,agricultural region 2,201.0,33.7
-farms between 130 and 399 acres,agricultural region 3,99.0,25.1
-farms between 130 and 399 acres,total new brunswick,855.0,32.7
-"farms between 400 and 1,119 acres",agricultural region 1,244.0,27.4
-"farms between 400 and 1,119 acres",agricultural region 2,129.0,21.6
-"farms between 400 and 1,119 acres",agricultural region 3,74.0,18.8
-"farms between 400 and 1,119 acres",total new brunswick,618.0,23.7
-"farms between 1,120 and 2,879 acres",agricultural region 1,63.0,7.1
-"farms between 1,120 and 2,879 acres",agricultural region 2,24.0,4.0
-"farms between 1,120 and 2,879 acres",agricultural region 3,15.0,3.8
-"farms between 1,120 and 2,879 acres",total new brunswick,122.0,4.7
-"farms 2,880 acres and over",agricultural region 1,12.0,1.3
-"farms 2,880 acres and over",agricultural region 2,2.0,0.3
-"farms 2,880 acres and over",agricultural region 3,4.0,1.0
-"farms 2,880 acres and over",total new brunswick,20.0,0.8
-land tenure,agricultural region 1,,
-land tenure,agricultural region 2,,
-land tenure,agricultural region 3,,
-land tenure,total new brunswick,,
-area owned,agricultural region 1,852.0,95.8
-area owned,agricultural region 2,579.0,97.0
-area owned,agricultural region 3,353.0,89.6
-area owned,total new brunswick,,95.4
-area leased from governments,agricultural region 1,28.0,3.1
-area leased from governments,agricultural region 2,17.0,2.8
-area leased from governments,agricultural region 3,64.0,16.2
-area leased from governments,total new brunswick,119.0,4.6
-area rented or leased from others,agricultural region 1,279.0,31.4
-area rented or leased from others,agricultural region 2,132.0,22.1
-area rented or leased from others,agricultural region 3,75.0,19.0
-area rented or leased from others,total new brunswick,628.0,24.1
-area crop-shared from others,agricultural region 1,13.0,1.5
-area crop-shared from others,agricultural region 2,8.0,1.3
-area crop-shared from others,agricultural region 3,4.0,1.0
-area crop-shared from others,total new brunswick,32.0,1.2
-land area used through other arrangements,agricultural region 1,119.0,13.4
-land area used through other arrangements,agricultural region 2,78.0,13.1
-land area used through other arrangements,agricultural region 3,39.0,9.9
-land area used through other arrangements,total new brunswick,352.0,13.5
-total area of land used by others,agricultural region 1,119.0,13.4
-total area of land used by others,agricultural region 2,31.0,5.2
-total area of land used by others,agricultural region 3,16.0,4.1
-total area of land used by others,total new brunswick,229.0,8.8
+farm_area_category,land_tenure_type,geographic_region,measurement_type,value
+,,agricultural region 1,number,number
+,,agricultural region 1,percent,percent
+,,agricultural region 3,number,number
+,,agricultural region 3,percent,percent
+,,agricultural region 4,number,number
+,,agricultural region 4,percent,percent
+,,total new brunswick,number,number
+,,total new brunswick,percent,percent
+farms under 130 acres,farms classified by total farm area,agricultural region 1,number,273
+farms under 130 acres,farms classified by total farm area,agricultural region 1,percent,30.7
+farms under 130 acres,farms classified by total farm area,agricultural region 3,number,241
+farms under 130 acres,farms classified by total farm area,agricultural region 3,percent,40.4
+farms under 130 acres,farms classified by total farm area,agricultural region 4,number,202
+farms under 130 acres,farms classified by total farm area,agricultural region 4,percent,51.3
+farms under 130 acres,farms classified by total farm area,total new brunswick,number,996
+farms under 130 acres,farms classified by total farm area,total new brunswick,percent,38.1
+farms between 130 and 399 acres,farms classified by total farm area,agricultural region 1,number,297
+farms between 130 and 399 acres,farms classified by total farm area,agricultural region 1,percent,33.4
+farms between 130 and 399 acres,farms classified by total farm area,agricultural region 3,number,201
+farms between 130 and 399 acres,farms classified by total farm area,agricultural region 3,percent,33.7
+farms between 130 and 399 acres,farms classified by total farm area,agricultural region 4,number,99
+farms between 130 and 399 acres,farms classified by total farm area,agricultural region 4,percent,25.1
+farms between 130 and 399 acres,farms classified by total farm area,total new brunswick,number,855
+farms between 130 and 399 acres,farms classified by total farm area,total new brunswick,percent,32.7
+"farms between 400 and 1,119 acres",farms classified by total farm area,agricultural region 1,number,244
+"farms between 400 and 1,119 acres",farms classified by total farm area,agricultural region 1,percent,27.4
+"farms between 400 and 1,119 acres",farms classified by total farm area,agricultural region 3,number,129
+"farms between 400 and 1,119 acres",farms classified by total farm area,agricultural region 3,percent,21.6
+"farms between 400 and 1,119 acres",farms classified by total farm area,agricultural region 4,number,74
+"farms between 400 and 1,119 acres",farms classified by total farm area,agricultural region 4,percent,18.8
+"farms between 400 and 1,119 acres",farms classified by total farm area,total new brunswick,number,618
+"farms between 400 and 1,119 acres",farms classified by total farm area,total new brunswick,percent,23.7
+"farms between 1,120 and 2,879 acres",farms classified by total farm area,agricultural region 1,number,63
+"farms between 1,120 and 2,879 acres",farms classified by total farm area,agricultural region 1,percent,7.1
+"farms between 1,120 and 2,879 acres",farms classified by total farm area,agricultural region 3,number,24
+"farms between 1,120 and 2,879 acres",farms classified by total farm area,agricultural region 3,percent,4.0
+"farms between 1,120 and 2,879 acres",farms classified by total farm area,agricultural region 4,number,15
+"farms between 1,120 and 2,879 acres",farms classified by total farm area,agricultural region 4,percent,3.8
+"farms between 1,120 and 2,879 acres",farms classified by total farm area,total new brunswick,number,122
+"farms between 1,120 and 2,879 acres",farms classified by total farm area,total new brunswick,percent,4.7
+"farms 2,880 acres and over",farms classified by total farm area,agricultural region 1,number,12
+"farms 2,880 acres and over",farms classified by total farm area,agricultural region 1,percent,1.3
+"farms 2,880 acres and over",farms classified by total farm area,agricultural region 3,number,2
+"farms 2,880 acres and over",farms classified by total farm area,agricultural region 3,percent,0.3
+"farms 2,880 acres and over",farms classified by total farm area,agricultural region 4,number,4
+"farms 2,880 acres and over",farms classified by total farm area,agricultural region 4,percent,1.0
+"farms 2,880 acres and over",farms classified by total farm area,total new brunswick,number,20
+"farms 2,880 acres and over",farms classified by total farm area,total new brunswick,percent,0.8
+area owned,land tenure,agricultural region 1,number,852
+area owned,land tenure,agricultural region 1,percent,95.8
+area owned,land tenure,agricultural region 3,number,579
+area owned,land tenure,agricultural region 3,percent,97.0
+area owned,land tenure,agricultural region 4,number,353
+area owned,land tenure,agricultural region 4,percent,89.6
+area owned,land tenure,total new brunswick,number,"2,491"
+area owned,land tenure,total new brunswick,percent,95.4
+area leased from governments,land tenure,agricultural region 1,number,28
+area leased from governments,land tenure,agricultural region 1,percent,3.1
+area leased from governments,land tenure,agricultural region 3,number,17
+area leased from governments,land tenure,agricultural region 3,percent,2.8
+area leased from governments,land tenure,agricultural region 4,number,64
+area leased from governments,land tenure,agricultural region 4,percent,16.2
+area leased from governments,land tenure,total new brunswick,number,119
+area leased from governments,land tenure,total new brunswick,percent,4.6
+area rented or leased from others,land tenure,agricultural region 1,number,279
+area rented or leased from others,land tenure,agricultural region 1,percent,31.4
+area rented or leased from others,land tenure,agricultural region 3,number,132
+area rented or leased from others,land tenure,agricultural region 3,percent,22.1
+area rented or leased from others,land tenure,agricultural region 4,number,75
+area rented or leased from others,land tenure,agricultural region 4,percent,19.0
+area rented or leased from others,land tenure,total new brunswick,number,628
+area rented or leased from others,land tenure,total new brunswick,percent,24.1
+area crop-shared from others,land tenure,agricultural region 1,number,13
+area crop-shared from others,land tenure,agricultural region 1,percent,1.5
+area crop-shared from others,land tenure,agricultural region 3,number,8
+area crop-shared from others,land tenure,agricultural region 3,percent,1.3
+area crop-shared from others,land tenure,agricultural region 4,number,4
+area crop-shared from others,land tenure,agricultural region 4,percent,1.0
+area crop-shared from others,land tenure,total new brunswick,number,32
+area crop-shared from others,land tenure,total new brunswick,percent,1.2
+land area used through other arrangements,land tenure,agricultural region 1,number,119
+land area used through other arrangements,land tenure,agricultural region 1,percent,13.4
+land area used through other arrangements,land tenure,agricultural region 3,number,78
+land area used through other arrangements,land tenure,agricultural region 3,percent,13.1
+land area used through other arrangements,land tenure,agricultural region 4,number,39
+land area used through other arrangements,land tenure,agricultural region 4,percent,9.9
+land area used through other arrangements,land tenure,total new brunswick,number,352
+land area used through other arrangements,land tenure,total new brunswick,percent,13.5

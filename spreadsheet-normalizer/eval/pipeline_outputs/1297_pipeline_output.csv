@@ -1,33 +1,33 @@
-entry_type,year,employment_creation_rate,firms,entries,entry_rate
-one-year entry,2011,1.5,1066451,138506,13.0
-one-year entry,2011,2.3,1066451,138506,13.0
-one-year entry,2012,,1066451,138506,13.0
-one-year entry,2012,,1066451,138506,13.0
-two-year entry,2011,1.3,1066451,107860,10.1
-two-year entry,2011,1.9,1066451,107860,10.1
-two-year entry,2012,,1066451,107860,10.1
-two-year entry,2012,,1066451,107860,10.1
-short-lived entry,2011,0.2,1066451,30646,2.9
-short-lived entry,2011,0.4,1066451,30646,2.9
-short-lived entry,2012,,1066451,30646,2.9
-short-lived entry,2012,,1066451,30646,2.9
-previously active excluded,2011,1.3,1066451,124221,11.6
-previously active excluded,2011,2.1,1066451,124221,11.6
-previously active excluded,2012,,1066451,124221,11.6
-previously active excluded,2012,,1066451,124221,11.6
-ever previously active excluded,2011,1.2,1066451,110596,10.4
-ever previously active excluded,2011,1.9,1066451,110596,10.4
-ever previously active excluded,2012,,1066451,110596,10.4
-ever previously active excluded,2012,,1066451,110596,10.4
-one year with no pre-existing up,2011,1.2,1066451,109267,10.2
-one year with no pre-existing up,2011,1.9,1066451,109267,10.2
-one year with no pre-existing up,2012,,1066451,109267,10.2
-one year with no pre-existing up,2012,,1066451,109267,10.2
-previously active excluded with no up,2011,1.2,1066451,109237,10.2
-previously active excluded with no up,2011,1.9,1066451,109237,10.2
-previously active excluded with no up,2012,,1066451,109237,10.2
-previously active excluded with no up,2012,,1066451,109237,10.2
-ever previously active excluded with no up,2011,1.2,1066451,109186,10.2
-ever previously active excluded with no up,2011,1.9,1066451,109186,10.2
-ever previously active excluded with no up,2012,,1066451,109186,10.2
-ever previously active excluded with no up,2012,,1066451,109186,10.2
+entry_type,measurement_category,year,firms,entries,entry_rate,alu_rate,ilu_rate,employment_value,pd7_monthly,pd7_annual
+one-year entry,alu,2011,1066451,138506,13.0,1.5,2.3,166580,235252,138428
+one-year entry,ilu,2011,1066451,138506,13.0,1.5,2.3,305671,235252,138428
+one-year entry,alu,2012,1066451,138506,13.0,1.5,2.3,262475,235252,138428
+one-year entry,ilu,2012,1066451,138506,13.0,1.5,2.3,378678,235252,138428
+two-year entry,alu,2011,1066451,107860,10.1,1.3,1.9,147340,214572,126482
+two-year entry,ilu,2011,1066451,107860,10.1,1.3,1.9,258774,214572,126482
+two-year entry,alu,2012,1066451,107860,10.1,1.3,1.9,262475,214572,126482
+two-year entry,ilu,2012,1066451,107860,10.1,1.3,1.9,378678,214572,126482
+short-lived entry,alu,2011,1066451,30646,2.9,0.2,0.4,19240,20680,11947
+short-lived entry,ilu,2011,1066451,30646,2.9,0.2,0.4,46897,20680,11947
+short-lived entry,alu,2012,1066451,30646,2.9,0.2,0.4,0,20680,11947
+short-lived entry,ilu,2012,1066451,30646,2.9,0.2,0.4,0,20680,11947
+previously active excluded,alu,2011,1066451,124221,11.6,1.3,2.1,150488,220805,127594
+previously active excluded,ilu,2011,1066451,124221,11.6,1.3,2.1,277297,220805,127594
+previously active excluded,alu,2012,1066451,124221,11.6,1.3,2.1,247819,220805,127594
+previously active excluded,ilu,2012,1066451,124221,11.6,1.3,2.1,355144,220805,127594
+ever previously active excluded,alu,2011,1066451,110596,10.4,1.2,1.9,139007,208963,121396
+ever previously active excluded,ilu,2011,1066451,110596,10.4,1.2,1.9,256260,208963,121396
+ever previously active excluded,alu,2012,1066451,110596,10.4,1.2,1.9,235158,208963,121396
+ever previously active excluded,ilu,2012,1066451,110596,10.4,1.2,1.9,334747,208963,121396
+one year with no pre-existing up,alu,2011,1066451,109267,10.2,1.2,1.9,135656,205335,118715
+one year with no pre-existing up,ilu,2011,1066451,109267,10.2,1.2,1.9,251905,205335,118715
+one year with no pre-existing up,alu,2012,1066451,109267,10.2,1.2,1.9,230675,205335,118715
+one year with no pre-existing up,ilu,2012,1066451,109267,10.2,1.2,1.9,329333,205335,118715
+previously active excluded with no up,alu,2011,1066451,109237,10.2,1.2,1.9,135569,205285,118671
+previously active excluded with no up,ilu,2011,1066451,109237,10.2,1.2,1.9,251828,205285,118671
+previously active excluded with no up,alu,2012,1066451,109237,10.2,1.2,1.9,230608,205285,118671
+previously active excluded with no up,ilu,2012,1066451,109237,10.2,1.2,1.9,329265,205285,118671
+ever previously active excluded with no up,alu,2011,1066451,109186,10.2,1.2,1.9,135507,205234,118652
+ever previously active excluded with no up,ilu,2011,1066451,109186,10.2,1.2,1.9,251750,205234,118652
+ever previously active excluded with no up,alu,2012,1066451,109186,10.2,1.2,1.9,230531,205234,118652
+ever previously active excluded with no up,ilu,2012,1066451,109186,10.2,1.2,1.9,329173,205234,118652

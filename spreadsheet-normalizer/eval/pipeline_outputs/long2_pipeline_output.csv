@@ -1,58 +1,239 @@
-表3.3            ,Unnamed: 1,2011年、2016年及2021年按種族及年齡組別劃分的少數族裔人士數目,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Unnamed: 8,Unnamed: 9,Unnamed: 10,Unnamed: 11,索引 Index
-Table 3.3     ,,"Ethnic minorities by ethnicity and age group, 2011, 2016 and 2021",,,,,,,,,,
-,,,,,,,,,,,,
-,,,"年齡組別
-Age group",,,,,,,,,
-,,,< 15,15 - 24,25 - 34,35 - 44,45 - 54,55 - 64,65+,"總計
-Total","年齡
-中位數
-Median 
-age",
-"年份
-Year","種族
-Ethnicity",,"數目（百分比[1]）
-Number (%[1])",,,,,,,,,
-,,,,,,,,,,,,
-2011,,,,,,,,,,,,
-,亞洲人（非華人）,,23984,25650,152228,103841,41396,13196,5316,365611,33.6,
-,Asian (other than Chinese),,6.6,7,41.6,28.4,11.3,3.6,1.5,100,,
-,菲律賓人,,2918,4016,45840,48555,25243,5768,678,133018,37.7,
-,Filipino,,2.2,3,34.5,36.5,19,4.3,0.5,100,,
-,印尼人,,302,12405,85764,31846,2255,483,322,133377,30.7,
-,Indonesian,,0.2,9.3,64.3,23.9,1.7,0.4,0.2,100,,
-,南亞裔人士,,16824,7812,15271,13388,6110,3204,2912,65521,31.2,
-,South Asian,,25.7,11.9,23.3,20.4,9.3,4.9,4.4,100,,
-,印度人,,5767,2965,7175,5880,3113,1756,1960,28616,33,
-,Indian,,20.2,10.4,25.1,20.5,10.9,6.1,6.8,100,,
-,尼泊爾人,,3562,2521,3923,3850,1836,474,352,16518,32.1,
-,Nepalese,,21.6,15.3,23.7,23.3,11.1,2.9,2.1,100,,
-,巴基斯坦人,,7148,2130,3678,3068,816,627,575,18042,24.2,
-,Pakistani,,39.6,11.8,20.4,17,4.5,3.5,3.2,100,,
-,其他南亞裔人士[2],,347,196,495,590,345,347,25,2345,37.7,
-,Other South Asian[2],,14.8,8.4,21.1,25.2,14.7,14.8,1.1,100,,
-,泰國人,,398,266,1540,3563,3405,1656,385,11213,44.6,
-,Thai,,3.5,2.4,13.7,31.8,30.4,14.8,3.4,100,,
-,日本人,,2152,377,1724,3893,2694,1244,496,12580,40.1,
-,Japanese,,17.1,3,13.7,30.9,21.4,9.9,3.9,100,,
-,韓國人,,897,290,958,1552,854,463,195,5209,38,
-,Korean,,17.2,5.6,18.4,29.8,16.4,8.9,3.7,100,,
-,其他亞洲人,,493,484,1131,1044,835,378,328,4693,37.3,
-,Other Asian,,10.5,10.3,24.1,22.2,17.8,8.1,7,100,,
-,白人,,9295,4031,9512,13197,10149,5855,3197,55236,38.5,
-,White,,16.8,7.3,17.2,23.9,18.4,10.6,5.8,100,,
-,混血兒,,10826,5007,4163,3330,2898,1380,1397,29001,21,
-,Mixed,,37.3,17.3,14.4,11.5,10,4.8,4.8,100,,
-,華人父或母,,8429,4449,3544,2899,2688,1321,1319,24649,22.9,
-,With Chinese parent,,34.2,18,14.4,11.8,10.9,5.4,5.4,100,,
-,其他混血兒,,2397,558,619,431,210,59,78,4352,13.4,
-,Other mixed,,55.1,12.8,14.2,9.9,4.8,1.4,1.8,100,,
-,其他[3],,215,80,380,453,158,49,-,1335,34.9,
-,Others[3],,16.1,6,28.5,33.9,11.8,3.7,-,100,,
-,所有少數族裔人士,,44320,34768,166283,120821,54601,20480,9910,451183,33.7,
-,All ethnic minorities,,9.8,7.7,36.9,26.8,12.1,4.5,2.2,100,,
-,,,,,,,,,,,,
-,撇除外籍家庭傭工後的所有少數族裔人士,,44320,19536,35835,43393,28907,15333,9698,197022,34.7,
-,"All ethnic minorities, excluding foreign domestic helpers",,22.5,9.9,18.2,22,14.7,7.8,4.9,100,,
-,,,,,,,,,,,,
-,全港人口,,823560,875234,1084120,1135285,1289430,922635,941312,7071576,41.7,
-,Whole population,,11.6,12.4,15.3,16.1,18.2,13,13.3,100,,
+year,ethnicity,age_group,metric_type,count,median_age
+2011,Asian (other than Chinese),< 15,count,23984.0,33.6
+2011,Asian (other than Chinese),15-24,count,25650.0,33.6
+2011,Asian (other than Chinese),25-34,count,152228.0,33.6
+2011,Asian (other than Chinese),35-44,count,103841.0,33.6
+2011,Asian (other than Chinese),45-54,count,41396.0,33.6
+2011,Asian (other than Chinese),55-64,count,13196.0,33.6
+2011,Asian (other than Chinese),65+,count,5316.0,33.6
+2011,Asian (other than Chinese),< 15,percentage,6.6,
+2011,Asian (other than Chinese),15-24,percentage,7.0,
+2011,Asian (other than Chinese),25-34,percentage,41.6,
+2011,Asian (other than Chinese),35-44,percentage,28.4,
+2011,Asian (other than Chinese),45-54,percentage,11.3,
+2011,Asian (other than Chinese),55-64,percentage,3.6,
+2011,Asian (other than Chinese),65+,percentage,1.5,
+2011,Filipino,< 15,count,2918.0,37.7
+2011,Filipino,15-24,count,4016.0,37.7
+2011,Filipino,25-34,count,45840.0,37.7
+2011,Filipino,35-44,count,48555.0,37.7
+2011,Filipino,45-54,count,25243.0,37.7
+2011,Filipino,55-64,count,5768.0,37.7
+2011,Filipino,65+,count,678.0,37.7
+2011,Filipino,< 15,percentage,2.2,
+2011,Filipino,15-24,percentage,3.0,
+2011,Filipino,25-34,percentage,34.5,
+2011,Filipino,35-44,percentage,36.5,
+2011,Filipino,45-54,percentage,19.0,
+2011,Filipino,55-64,percentage,4.3,
+2011,Filipino,65+,percentage,0.5,
+2011,Indonesian,< 15,count,302.0,30.7
+2011,Indonesian,15-24,count,12405.0,30.7
+2011,Indonesian,25-34,count,85764.0,30.7
+2011,Indonesian,35-44,count,31846.0,30.7
+2011,Indonesian,45-54,count,2255.0,30.7
+2011,Indonesian,55-64,count,483.0,30.7
+2011,Indonesian,65+,count,322.0,30.7
+2011,Indonesian,< 15,percentage,0.2,
+2011,Indonesian,15-24,percentage,9.3,
+2011,Indonesian,25-34,percentage,64.3,
+2011,Indonesian,35-44,percentage,23.9,
+2011,Indonesian,45-54,percentage,1.7,
+2011,Indonesian,55-64,percentage,0.4,
+2011,Indonesian,65+,percentage,0.2,
+2011,South Asian,< 15,count,16824.0,31.2
+2011,South Asian,15-24,count,7812.0,31.2
+2011,South Asian,25-34,count,15271.0,31.2
+2011,South Asian,35-44,count,13388.0,31.2
+2011,South Asian,45-54,count,6110.0,31.2
+2011,South Asian,55-64,count,3204.0,31.2
+2011,South Asian,65+,count,2912.0,31.2
+2011,South Asian,< 15,percentage,25.7,
+2011,South Asian,15-24,percentage,11.9,
+2011,South Asian,25-34,percentage,23.3,
+2011,South Asian,35-44,percentage,20.4,
+2011,South Asian,45-54,percentage,9.3,
+2011,South Asian,55-64,percentage,4.9,
+2011,South Asian,65+,percentage,4.4,
+2011,Indian,< 15,count,5767.0,33.0
+2011,Indian,15-24,count,2965.0,33.0
+2011,Indian,25-34,count,7175.0,33.0
+2011,Indian,35-44,count,5880.0,33.0
+2011,Indian,45-54,count,3113.0,33.0
+2011,Indian,55-64,count,1756.0,33.0
+2011,Indian,65+,count,1960.0,33.0
+2011,Indian,< 15,percentage,20.2,
+2011,Indian,15-24,percentage,10.4,
+2011,Indian,25-34,percentage,25.1,
+2011,Indian,35-44,percentage,20.5,
+2011,Indian,45-54,percentage,10.9,
+2011,Indian,55-64,percentage,6.1,
+2011,Indian,65+,percentage,6.8,
+2011,Nepalese,< 15,count,3562.0,32.1
+2011,Nepalese,15-24,count,2521.0,32.1
+2011,Nepalese,25-34,count,3923.0,32.1
+2011,Nepalese,35-44,count,3850.0,32.1
+2011,Nepalese,45-54,count,1836.0,32.1
+2011,Nepalese,55-64,count,474.0,32.1
+2011,Nepalese,65+,count,352.0,32.1
+2011,Nepalese,< 15,percentage,21.6,
+2011,Nepalese,15-24,percentage,15.3,
+2011,Nepalese,25-34,percentage,23.7,
+2011,Nepalese,35-44,percentage,23.3,
+2011,Nepalese,45-54,percentage,11.1,
+2011,Nepalese,55-64,percentage,2.9,
+2011,Nepalese,65+,percentage,2.1,
+2011,Pakistani,< 15,count,7148.0,24.2
+2011,Pakistani,15-24,count,2130.0,24.2
+2011,Pakistani,25-34,count,3678.0,24.2
+2011,Pakistani,35-44,count,3068.0,24.2
+2011,Pakistani,45-54,count,816.0,24.2
+2011,Pakistani,55-64,count,627.0,24.2
+2011,Pakistani,65+,count,575.0,24.2
+2011,Pakistani,< 15,percentage,39.6,
+2011,Pakistani,15-24,percentage,11.8,
+2011,Pakistani,25-34,percentage,20.4,
+2011,Pakistani,35-44,percentage,17.0,
+2011,Pakistani,45-54,percentage,4.5,
+2011,Pakistani,55-64,percentage,3.5,
+2011,Pakistani,65+,percentage,3.2,
+2011,Other South Asian[2],< 15,count,347.0,37.7
+2011,Other South Asian[2],15-24,count,196.0,37.7
+2011,Other South Asian[2],25-34,count,495.0,37.7
+2011,Other South Asian[2],35-44,count,590.0,37.7
+2011,Other South Asian[2],45-54,count,345.0,37.7
+2011,Other South Asian[2],55-64,count,347.0,37.7
+2011,Other South Asian[2],65+,count,25.0,37.7
+2011,Other South Asian[2],< 15,percentage,14.8,
+2011,Other South Asian[2],15-24,percentage,8.4,
+2011,Other South Asian[2],25-34,percentage,21.1,
+2011,Other South Asian[2],35-44,percentage,25.2,
+2011,Other South Asian[2],45-54,percentage,14.7,
+2011,Other South Asian[2],55-64,percentage,14.8,
+2011,Other South Asian[2],65+,percentage,1.1,
+2011,Thai,< 15,count,398.0,44.6
+2011,Thai,15-24,count,266.0,44.6
+2011,Thai,25-34,count,1540.0,44.6
+2011,Thai,35-44,count,3563.0,44.6
+2011,Thai,45-54,count,3405.0,44.6
+2011,Thai,55-64,count,1656.0,44.6
+2011,Thai,65+,count,385.0,44.6
+2011,Thai,< 15,percentage,3.5,
+2011,Thai,15-24,percentage,2.4,
+2011,Thai,25-34,percentage,13.7,
+2011,Thai,35-44,percentage,31.8,
+2011,Thai,45-54,percentage,30.4,
+2011,Thai,55-64,percentage,14.8,
+2011,Thai,65+,percentage,3.4,
+2011,Japanese,< 15,count,2152.0,40.1
+2011,Japanese,15-24,count,377.0,40.1
+2011,Japanese,25-34,count,1724.0,40.1
+2011,Japanese,35-44,count,3893.0,40.1
+2011,Japanese,45-54,count,2694.0,40.1
+2011,Japanese,55-64,count,1244.0,40.1
+2011,Japanese,65+,count,496.0,40.1
+2011,Japanese,< 15,percentage,17.1,
+2011,Japanese,15-24,percentage,3.0,
+2011,Japanese,25-34,percentage,13.7,
+2011,Japanese,35-44,percentage,30.9,
+2011,Japanese,45-54,percentage,21.4,
+2011,Japanese,55-64,percentage,9.9,
+2011,Japanese,65+,percentage,3.9,
+2011,Korean,< 15,count,897.0,38.0
+2011,Korean,15-24,count,290.0,38.0
+2011,Korean,25-34,count,958.0,38.0
+2011,Korean,35-44,count,1552.0,38.0
+2011,Korean,45-54,count,854.0,38.0
+2011,Korean,55-64,count,463.0,38.0
+2011,Korean,65+,count,195.0,38.0
+2011,Korean,< 15,percentage,17.2,
+2011,Korean,15-24,percentage,5.6,
+2011,Korean,25-34,percentage,18.4,
+2011,Korean,35-44,percentage,29.8,
+2011,Korean,45-54,percentage,16.4,
+2011,Korean,55-64,percentage,8.9,
+2011,Korean,65+,percentage,3.7,
+2011,Other Asian,< 15,count,493.0,37.3
+2011,Other Asian,15-24,count,484.0,37.3
+2011,Other Asian,25-34,count,1131.0,37.3
+2011,Other Asian,35-44,count,1044.0,37.3
+2011,Other Asian,45-54,count,835.0,37.3
+2011,Other Asian,55-64,count,378.0,37.3
+2011,Other Asian,65+,count,328.0,37.3
+2011,Other Asian,< 15,percentage,10.5,
+2011,Other Asian,15-24,percentage,10.3,
+2011,Other Asian,25-34,percentage,24.1,
+2011,Other Asian,35-44,percentage,22.2,
+2011,Other Asian,45-54,percentage,17.8,
+2011,Other Asian,55-64,percentage,8.1,
+2011,Other Asian,65+,percentage,7.0,
+2011,White,< 15,count,9295.0,38.5
+2011,White,15-24,count,4031.0,38.5
+2011,White,25-34,count,9512.0,38.5
+2011,White,35-44,count,13197.0,38.5
+2011,White,45-54,count,10149.0,38.5
+2011,White,55-64,count,5855.0,38.5
+2011,White,65+,count,3197.0,38.5
+2011,White,< 15,percentage,16.8,
+2011,White,15-24,percentage,7.3,
+2011,White,25-34,percentage,17.2,
+2011,White,35-44,percentage,23.9,
+2011,White,45-54,percentage,18.4,
+2011,White,55-64,percentage,10.6,
+2011,White,65+,percentage,5.8,
+2011,Mixed,< 15,count,10826.0,21.0
+2011,Mixed,15-24,count,5007.0,21.0
+2011,Mixed,25-34,count,4163.0,21.0
+2011,Mixed,35-44,count,3330.0,21.0
+2011,Mixed,45-54,count,2898.0,21.0
+2011,Mixed,55-64,count,1380.0,21.0
+2011,Mixed,65+,count,1397.0,21.0
+2011,Mixed,< 15,percentage,37.3,
+2011,Mixed,15-24,percentage,17.3,
+2011,Mixed,25-34,percentage,14.4,
+2011,Mixed,35-44,percentage,11.5,
+2011,Mixed,45-54,percentage,10.0,
+2011,Mixed,55-64,percentage,4.8,
+2011,Mixed,65+,percentage,4.8,
+2011,With Chinese parent,< 15,count,8429.0,22.9
+2011,With Chinese parent,15-24,count,4449.0,22.9
+2011,With Chinese parent,25-34,count,3544.0,22.9
+2011,With Chinese parent,35-44,count,2899.0,22.9
+2011,With Chinese parent,45-54,count,2688.0,22.9
+2011,With Chinese parent,55-64,count,1321.0,22.9
+2011,With Chinese parent,65+,count,1319.0,22.9
+2011,With Chinese parent,< 15,percentage,34.2,
+2011,With Chinese parent,15-24,percentage,18.0,
+2011,With Chinese parent,25-34,percentage,14.4,
+2011,With Chinese parent,35-44,percentage,11.8,
+2011,With Chinese parent,45-54,percentage,10.9,
+2011,With Chinese parent,55-64,percentage,5.4,
+2011,With Chinese parent,65+,percentage,5.4,
+2011,Other mixed,< 15,count,2397.0,13.4
+2011,Other mixed,15-24,count,558.0,13.4
+2011,Other mixed,25-34,count,619.0,13.4
+2011,Other mixed,35-44,count,431.0,13.4
+2011,Other mixed,45-54,count,210.0,13.4
+2011,Other mixed,55-64,count,59.0,13.4
+2011,Other mixed,65+,count,78.0,13.4
+2011,Other mixed,< 15,percentage,55.1,
+2011,Other mixed,15-24,percentage,12.8,
+2011,Other mixed,25-34,percentage,14.2,
+2011,Other mixed,35-44,percentage,9.9,
+2011,Other mixed,45-54,percentage,4.8,
+2011,Other mixed,55-64,percentage,1.4,
+2011,Other mixed,65+,percentage,1.8,
+2011,Others[3],< 15,count,215.0,34.9
+2011,Others[3],15-24,count,80.0,34.9
+2011,Others[3],25-34,count,380.0,34.9
+2011,Others[3],35-44,count,453.0,34.9
+2011,Others[3],45-54,count,158.0,34.9
+2011,Others[3],55-64,count,49.0,34.9
+2011,Others[3],65+,count,,34.9
+2011,Others[3],< 15,percentage,16.1,
+2011,Others[3],15-24,percentage,6.0,
+2011,Others[3],25-34,percentage,28.5,
+2011,Others[3],35-44,percentage,33.9,
+2011,Others[3],45-54,percentage,11.8,
+2011,Others[3],55-64,percentage,3.7,
+2011,Others[3],65+,percentage,,

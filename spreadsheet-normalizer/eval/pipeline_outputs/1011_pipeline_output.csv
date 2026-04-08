@@ -1,43 +1,43 @@
-immigrant_family_type,region,country,low_income_rate
-caribbean and latin america,caribbean and latin america,caribbean and latin america,24.3
-africa,africa,africa,29.5
-jamaica,jamaica,jamaica,25.1
-haiti,haiti,haiti,17.5
-trinidad and tobago,trinidad and tobago,trinidad and tobago,24.5
-guyana,guyana,guyana,25.0
-barbados,barbados,barbados,27.7
-saint vincent and the grenadines,saint vincent and the grenadines,saint vincent and the grenadines,48.6
-grenada,grenada,grenada,33.7
-saint lucia,saint lucia,saint lucia,41.4
-united kingdom,united kingdom,united kingdom,14.8
-united states,united states,united states,22.4
-ethiopia,ethiopia,ethiopia,35.5
-somalia,somalia,somalia,47.5
-eritrea,eritrea,eritrea,34.1
-sudan,sudan,sudan,53.1
-south sudan,south sudan,south sudan,46.1
-burundi,burundi,burundi,25.3
-kenya,kenya,kenya,22.6
-zimbabwe,zimbabwe,zimbabwe,18.7
-rwanda,rwanda,rwanda,17.5
-democratic republic of the congo,democratic republic of the congo,democratic republic of the congo,27.4
-cameroon,cameroon,cameroon,13.3
-nigeria,nigeria,nigeria,22.3
-ghana,ghana,ghana,28.4
-cote d'ivoire,cote d'ivoire,cote d'ivoire,13.2
-senegal,senegal,senegal,10.9
-guinea,guinea,guinea,21.0
-caribbean and latin america,caribbean and latin america,caribbean and latin america,25.0
-africa,africa,africa,27.0
-jamaica,jamaica,jamaica,28.6
-haiti,haiti,haiti,15.2
-trinidad and tobago,trinidad and tobago,trinidad and tobago,21.6
-barbados,barbados,barbados,18.3
-guyana,guyana,guyana,28.2
-saint vincent and the grenadines,saint vincent and the grenadines,saint vincent and the grenadines,22.2
-grenada,grenada,grenada,24.0
-ghana,ghana,ghana,33.1
-nigeria,nigeria,nigeria,18.9
-united states,united states,united states,35.2
-united kingdom,united kingdom,united kingdom,32.1
-canada,canada,canada,26.7
+family_type,geographic_level,geographic_name,low_income_rate
+immigrant families,region,caribbean and latin america,24.3
+immigrant families,region,africa,29.5
+immigrant families,country,jamaica,25.1
+immigrant families,country,haiti,17.5
+immigrant families,country,trinidad and tobago,24.5
+immigrant families,country,guyana,25.0
+immigrant families,country,barbados,27.7
+immigrant families,country,saint vincent and the grenadines,48.6
+immigrant families,country,grenada,33.7
+immigrant families,country,saint lucia,41.4
+immigrant families,country,united kingdom,14.8
+immigrant families,country,united states,22.4
+immigrant families,country,ethiopia,35.5
+immigrant families,country,somalia,47.5
+immigrant families,country,eritrea,34.1
+immigrant families,country,sudan,53.1
+immigrant families,country,south sudan,46.1
+immigrant families,country,burundi,25.3
+immigrant families,country,kenya,22.6
+immigrant families,country,zimbabwe,18.7
+immigrant families,country,rwanda,17.5
+immigrant families,country,democratic republic of the congo,27.4
+immigrant families,country,cameroon,13.3
+immigrant families,country,nigeria,22.3
+immigrant families,country,ghana,28.4
+immigrant families,country,cote d'ivoire,13.2
+immigrant families,country,senegal,10.9
+immigrant families,country,guinea,21.0
+second- and third- generation-or-more families,region,caribbean and latin america,25.0
+second- and third- generation-or-more families,region,africa,27.0
+second- and third- generation-or-more families,country,jamaica,28.6
+second- and third- generation-or-more families,country,haiti,15.2
+second- and third- generation-or-more families,country,trinidad and tobago,21.6
+second- and third- generation-or-more families,country,barbados,18.3
+second- and third- generation-or-more families,country,guyana,28.2
+second- and third- generation-or-more families,country,saint vincent and the grenadines,22.2
+second- and third- generation-or-more families,country,grenada,24.0
+second- and third- generation-or-more families,country,ghana,33.1
+second- and third- generation-or-more families,country,nigeria,18.9
+second- and third- generation-or-more families,country,united states,35.2
+second- and third- generation-or-more families,country,united kingdom,32.1
+second- and third- generation-or-more families,country,canada,26.7

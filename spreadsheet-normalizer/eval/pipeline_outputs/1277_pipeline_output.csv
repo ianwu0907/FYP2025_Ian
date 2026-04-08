@@ -1,4 +1,4 @@
-type_of_need,need_status,percentage
+type_of_need,need_status,percentage_value
 any,unmet,21.4
 any,partially met,22.4
 any,fully met,56.2
@@ -11,6 +11,5 @@ medication,fully met,85.4
 "counselling, therapy or help for problems with personal relationships",unmet,34.1
 "counselling, therapy or help for problems with personal relationships",partially met,15.9
 "counselling, therapy or help for problems with personal relationships",fully met,50.0
-other,unmet,
 other,partially met,15.0
 other,fully met,85.0

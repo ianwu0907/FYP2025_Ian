@@ -1,8 +1,7 @@
-aboriginal identity categories,agricultural population,total population,agricultural population.1,total population.1
-,number,,percent,
-total aboriginal population,"15,765","1,673,785",100.0,100.0
-first nations,"4,135","977,230",26.2,58.4
-metis,"10,960","587,545",69.5,35.1
-inuit,115,"65,025",0.7,3.9
-multiple aboriginal identities,300,"21,310",1.9,1.3
-aboriginal identities not included elsewhere,255,"22,670",1.6,1.4
+aboriginal_identity_category,population_count,total_reference_population,pct_of_aboriginal_population,pct_of_total_canadian_population
+total aboriginal population,15765,1673785,100.0,100.0
+first nations,4135,977230,26.2,58.4
+metis,10960,587545,69.5,35.1
+inuit,115,65025,0.7,3.9
+multiple aboriginal identities,300,21310,1.9,1.3
+aboriginal identities not included elsewhere,255,22670,1.6,1.4

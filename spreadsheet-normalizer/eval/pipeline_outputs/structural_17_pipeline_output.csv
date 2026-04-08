@@ -1,32 +1,261 @@
-selected characteristics of persons responsible,types of behaviour,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Unnamed: 8,Unnamed: 9,Unnamed: 10
-,sexual jokes,unwanted sexual attention,inappropriate sexual comments,inappropriate discussion about sex life,"displaying, showing, or sending sexually explicit messages or materials","taking or posting inappropriate or sexually suggestive photos or videos of any canadian armed forces members, without consent",indecent exposure or inappropriate display of body parts,repeated pressure from the same person for dates or sexual relations,unwelcome physical contact or getting too close,offering workplace benefits for engaging in sexual activity or being mistreated for not engaging in sexual activity
-,percent,,,,,,,,,
-type of person responsible,,,,,,,,,,
-canadian armed forces member(s),97,95,94,96,97,91,94,95,94,f
-foreign military member(s),4.6,5.2,3.7,3.2,f,f,f,f,f,f
-department of national defence civilian(s) or contractor(s),14,9.8,9.2,10,7.9,f,f,7.8,5.7,f
-other,12,5.7,6.9,8.2,9.1,f,f,f,3.4,f
-don't know,2.2,f,3.3,f,f,f,f,f,f,f
-number of persons responsible,,,,,,,,,,
-lone,18,47,36,23,34,f,56,67,69,f
-two or more,29,25,28,38,34,f,23,17,17,f
-"varied - sometimes one person, other times multiple people",39,22,26,29,24,f,17,11,8.2,f
-don't know,14,5.9,10,10,f,f,f,f,6.1,f
-sex of person responsible,,,,,,,,,,
-always men,42,75,62,50,63,f,73,80,74,f
-always women,3.4,9.6,6.0,4.1,f,f,f,9.0,13,f
-combination of men and women,54,16,29,44,32,f,22,10,12,f
-don't know,f,f,f,f,f,f,f,f,f,f
-relationship to targeted member,,,,,,,,,,
-supervisor or higher rank,52,50,48,50,39,f,19,49,48,f
-peer,80,56,67,76,73,f,71,51,56,f
-subordinate - either in or outside chain of command,30,20,22,28,25,f,25,17,17,f
-other,14,10,8.9,9.5,8.4,f,f,9.4,5.7,f
-don't know,3.9,8.9,4.6,4.7,f,f,f,f,f,f
-rank of person responsible,,,,,,,,,,
-junior non-commissioned member,84,73,79,83,91,f,93,77,69,57
-senior non-commissioned member,49,39,39,39,32,f,12,24,26,59
-junior officer,29,20,20,25,17,f,11,18,14,f
-senior officer,13,11,7.3,11,7.1,f,f,6.3,9.3,f
-other,5.4,f,4.5,4.3,f,f,f,f,f,f
-don't know,3.0,f,f,f,f,f,f,f,f,f
+characteristic_type,characteristic_value,behavior_type,percent
+,,sexual jokes,sexual jokes
+,,unwanted sexual attention,unwanted sexual attention
+,,inappropriate sexual comments,inappropriate sexual comments
+,,inappropriate discussion about sex life,inappropriate discussion about sex life
+,,"displaying, showing, or sending sexually explicit messages or materials","displaying, showing, or sending sexually explicit messages or materials"
+,,"taking or posting inappropriate or sexually suggestive photos or videos of any canadian armed forces members, without consent","taking or posting inappropriate or sexually suggestive photos or videos of any canadian armed forces members, without consent"
+,,indecent exposure or inappropriate display of body parts,indecent exposure or inappropriate display of body parts
+,,repeated pressure from the same person for dates or sexual relations,repeated pressure from the same person for dates or sexual relations
+,,unwelcome physical contact or getting too close,unwelcome physical contact or getting too close
+,,offering workplace benefits for engaging in sexual activity or being mistreated for not engaging in sexual activity,offering workplace benefits for engaging in sexual activity or being mistreated for not engaging in sexual activity
+,,sexual jokes,percent
+,,unwanted sexual attention,
+,,inappropriate sexual comments,
+,,inappropriate discussion about sex life,
+,,"displaying, showing, or sending sexually explicit messages or materials",
+,,"taking or posting inappropriate or sexually suggestive photos or videos of any canadian armed forces members, without consent",
+,,indecent exposure or inappropriate display of body parts,
+,,repeated pressure from the same person for dates or sexual relations,
+,,unwelcome physical contact or getting too close,
+,,offering workplace benefits for engaging in sexual activity or being mistreated for not engaging in sexual activity,
+type of person responsible,canadian armed forces member(s),sexual jokes,97
+type of person responsible,canadian armed forces member(s),unwanted sexual attention,95
+type of person responsible,canadian armed forces member(s),inappropriate sexual comments,94
+type of person responsible,canadian armed forces member(s),inappropriate discussion about sex life,96
+type of person responsible,canadian armed forces member(s),"displaying, showing, or sending sexually explicit messages or materials",97
+type of person responsible,canadian armed forces member(s),"taking or posting inappropriate or sexually suggestive photos or videos of any canadian armed forces members, without consent",91
+type of person responsible,canadian armed forces member(s),indecent exposure or inappropriate display of body parts,94
+type of person responsible,canadian armed forces member(s),repeated pressure from the same person for dates or sexual relations,95
+type of person responsible,canadian armed forces member(s),unwelcome physical contact or getting too close,94
+type of person responsible,canadian armed forces member(s),offering workplace benefits for engaging in sexual activity or being mistreated for not engaging in sexual activity,f
+type of person responsible,foreign military member(s),sexual jokes,4.6
+type of person responsible,foreign military member(s),unwanted sexual attention,5.2
+type of person responsible,foreign military member(s),inappropriate sexual comments,3.7
+type of person responsible,foreign military member(s),inappropriate discussion about sex life,3.2
+type of person responsible,foreign military member(s),"displaying, showing, or sending sexually explicit messages or materials",f
+type of person responsible,foreign military member(s),"taking or posting inappropriate or sexually suggestive photos or videos of any canadian armed forces members, without consent",f
+type of person responsible,foreign military member(s),indecent exposure or inappropriate display of body parts,f
+type of person responsible,foreign military member(s),repeated pressure from the same person for dates or sexual relations,f
+type of person responsible,foreign military member(s),unwelcome physical contact or getting too close,f
+type of person responsible,foreign military member(s),offering workplace benefits for engaging in sexual activity or being mistreated for not engaging in sexual activity,f
+type of person responsible,department of national defence civilian(s) or contractor(s),sexual jokes,14
+type of person responsible,department of national defence civilian(s) or contractor(s),unwanted sexual attention,9.8
+type of person responsible,department of national defence civilian(s) or contractor(s),inappropriate sexual comments,9.2
+type of person responsible,department of national defence civilian(s) or contractor(s),inappropriate discussion about sex life,10
+type of person responsible,department of national defence civilian(s) or contractor(s),"displaying, showing, or sending sexually explicit messages or materials",7.9
+type of person responsible,department of national defence civilian(s) or contractor(s),"taking or posting inappropriate or sexually suggestive photos or videos of any canadian armed forces members, without consent",f
+type of person responsible,department of national defence civilian(s) or contractor(s),indecent exposure or inappropriate display of body parts,f
+type of person responsible,department of national defence civilian(s) or contractor(s),repeated pressure from the same person for dates or sexual relations,7.8
+type of person responsible,department of national defence civilian(s) or contractor(s),unwelcome physical contact or getting too close,5.7
+type of person responsible,department of national defence civilian(s) or contractor(s),offering workplace benefits for engaging in sexual activity or being mistreated for not engaging in sexual activity,f
+type of person responsible,other,sexual jokes,12
+type of person responsible,other,unwanted sexual attention,5.7
+type of person responsible,other,inappropriate sexual comments,6.9
+type of person responsible,other,inappropriate discussion about sex life,8.2
+type of person responsible,other,"displaying, showing, or sending sexually explicit messages or materials",9.1
+type of person responsible,other,"taking or posting inappropriate or sexually suggestive photos or videos of any canadian armed forces members, without consent",f
+type of person responsible,other,indecent exposure or inappropriate display of body parts,f
+type of person responsible,other,repeated pressure from the same person for dates or sexual relations,f
+type of person responsible,other,unwelcome physical contact or getting too close,3.4
+type of person responsible,other,offering workplace benefits for engaging in sexual activity or being mistreated for not engaging in sexual activity,f
+type of person responsible,don't know,sexual jokes,2.2
+type of person responsible,don't know,unwanted sexual attention,f
+type of person responsible,don't know,inappropriate sexual comments,3.3
+type of person responsible,don't know,inappropriate discussion about sex life,f
+type of person responsible,don't know,"displaying, showing, or sending sexually explicit messages or materials",f
+type of person responsible,don't know,"taking or posting inappropriate or sexually suggestive photos or videos of any canadian armed forces members, without consent",f
+type of person responsible,don't know,indecent exposure or inappropriate display of body parts,f
+type of person responsible,don't know,repeated pressure from the same person for dates or sexual relations,f
+type of person responsible,don't know,unwelcome physical contact or getting too close,f
+type of person responsible,don't know,offering workplace benefits for engaging in sexual activity or being mistreated for not engaging in sexual activity,f
+number of persons responsible,lone,sexual jokes,18
+number of persons responsible,lone,unwanted sexual attention,47
+number of persons responsible,lone,inappropriate sexual comments,36
+number of persons responsible,lone,inappropriate discussion about sex life,23
+number of persons responsible,lone,"displaying, showing, or sending sexually explicit messages or materials",34
+number of persons responsible,lone,"taking or posting inappropriate or sexually suggestive photos or videos of any canadian armed forces members, without consent",f
+number of persons responsible,lone,indecent exposure or inappropriate display of body parts,56
+number of persons responsible,lone,repeated pressure from the same person for dates or sexual relations,67
+number of persons responsible,lone,unwelcome physical contact or getting too close,69
+number of persons responsible,lone,offering workplace benefits for engaging in sexual activity or being mistreated for not engaging in sexual activity,f
+number of persons responsible,two or more,sexual jokes,29
+number of persons responsible,two or more,unwanted sexual attention,25
+number of persons responsible,two or more,inappropriate sexual comments,28
+number of persons responsible,two or more,inappropriate discussion about sex life,38
+number of persons responsible,two or more,"displaying, showing, or sending sexually explicit messages or materials",34
+number of persons responsible,two or more,"taking or posting inappropriate or sexually suggestive photos or videos of any canadian armed forces members, without consent",f
+number of persons responsible,two or more,indecent exposure or inappropriate display of body parts,23
+number of persons responsible,two or more,repeated pressure from the same person for dates or sexual relations,17
+number of persons responsible,two or more,unwelcome physical contact or getting too close,17
+number of persons responsible,two or more,offering workplace benefits for engaging in sexual activity or being mistreated for not engaging in sexual activity,f
+number of persons responsible,"varied - sometimes one person, other times multiple people",sexual jokes,39
+number of persons responsible,"varied - sometimes one person, other times multiple people",unwanted sexual attention,22
+number of persons responsible,"varied - sometimes one person, other times multiple people",inappropriate sexual comments,26
+number of persons responsible,"varied - sometimes one person, other times multiple people",inappropriate discussion about sex life,29
+number of persons responsible,"varied - sometimes one person, other times multiple people","displaying, showing, or sending sexually explicit messages or materials",24
+number of persons responsible,"varied - sometimes one person, other times multiple people","taking or posting inappropriate or sexually suggestive photos or videos of any canadian armed forces members, without consent",f
+number of persons responsible,"varied - sometimes one person, other times multiple people",indecent exposure or inappropriate display of body parts,17
+number of persons responsible,"varied - sometimes one person, other times multiple people",repeated pressure from the same person for dates or sexual relations,11
+number of persons responsible,"varied - sometimes one person, other times multiple people",unwelcome physical contact or getting too close,8.2
+number of persons responsible,"varied - sometimes one person, other times multiple people",offering workplace benefits for engaging in sexual activity or being mistreated for not engaging in sexual activity,f
+number of persons responsible,don't know,sexual jokes,14
+number of persons responsible,don't know,unwanted sexual attention,5.9
+number of persons responsible,don't know,inappropriate sexual comments,10
+number of persons responsible,don't know,inappropriate discussion about sex life,10
+number of persons responsible,don't know,"displaying, showing, or sending sexually explicit messages or materials",f
+number of persons responsible,don't know,"taking or posting inappropriate or sexually suggestive photos or videos of any canadian armed forces members, without consent",f
+number of persons responsible,don't know,indecent exposure or inappropriate display of body parts,f
+number of persons responsible,don't know,repeated pressure from the same person for dates or sexual relations,f
+number of persons responsible,don't know,unwelcome physical contact or getting too close,6.1
+number of persons responsible,don't know,offering workplace benefits for engaging in sexual activity or being mistreated for not engaging in sexual activity,f
+sex of person responsible,always men,sexual jokes,42
+sex of person responsible,always men,unwanted sexual attention,75
+sex of person responsible,always men,inappropriate sexual comments,62
+sex of person responsible,always men,inappropriate discussion about sex life,50
+sex of person responsible,always men,"displaying, showing, or sending sexually explicit messages or materials",63
+sex of person responsible,always men,"taking or posting inappropriate or sexually suggestive photos or videos of any canadian armed forces members, without consent",f
+sex of person responsible,always men,indecent exposure or inappropriate display of body parts,73
+sex of person responsible,always men,repeated pressure from the same person for dates or sexual relations,80
+sex of person responsible,always men,unwelcome physical contact or getting too close,74
+sex of person responsible,always men,offering workplace benefits for engaging in sexual activity or being mistreated for not engaging in sexual activity,f
+sex of person responsible,always women,sexual jokes,3.4
+sex of person responsible,always women,unwanted sexual attention,9.6
+sex of person responsible,always women,inappropriate sexual comments,6.0
+sex of person responsible,always women,inappropriate discussion about sex life,4.1
+sex of person responsible,always women,"displaying, showing, or sending sexually explicit messages or materials",f
+sex of person responsible,always women,"taking or posting inappropriate or sexually suggestive photos or videos of any canadian armed forces members, without consent",f
+sex of person responsible,always women,indecent exposure or inappropriate display of body parts,f
+sex of person responsible,always women,repeated pressure from the same person for dates or sexual relations,9.0
+sex of person responsible,always women,unwelcome physical contact or getting too close,13
+sex of person responsible,always women,offering workplace benefits for engaging in sexual activity or being mistreated for not engaging in sexual activity,f
+sex of person responsible,combination of men and women,sexual jokes,54
+sex of person responsible,combination of men and women,unwanted sexual attention,16
+sex of person responsible,combination of men and women,inappropriate sexual comments,29
+sex of person responsible,combination of men and women,inappropriate discussion about sex life,44
+sex of person responsible,combination of men and women,"displaying, showing, or sending sexually explicit messages or materials",32
+sex of person responsible,combination of men and women,"taking or posting inappropriate or sexually suggestive photos or videos of any canadian armed forces members, without consent",f
+sex of person responsible,combination of men and women,indecent exposure or inappropriate display of body parts,22
+sex of person responsible,combination of men and women,repeated pressure from the same person for dates or sexual relations,10
+sex of person responsible,combination of men and women,unwelcome physical contact or getting too close,12
+sex of person responsible,combination of men and women,offering workplace benefits for engaging in sexual activity or being mistreated for not engaging in sexual activity,f
+sex of person responsible,don't know,sexual jokes,f
+sex of person responsible,don't know,unwanted sexual attention,f
+sex of person responsible,don't know,inappropriate sexual comments,f
+sex of person responsible,don't know,inappropriate discussion about sex life,f
+sex of person responsible,don't know,"displaying, showing, or sending sexually explicit messages or materials",f
+sex of person responsible,don't know,"taking or posting inappropriate or sexually suggestive photos or videos of any canadian armed forces members, without consent",f
+sex of person responsible,don't know,indecent exposure or inappropriate display of body parts,f
+sex of person responsible,don't know,repeated pressure from the same person for dates or sexual relations,f
+sex of person responsible,don't know,unwelcome physical contact or getting too close,f
+sex of person responsible,don't know,offering workplace benefits for engaging in sexual activity or being mistreated for not engaging in sexual activity,f
+relationship to targeted member,supervisor or higher rank,sexual jokes,52
+relationship to targeted member,supervisor or higher rank,unwanted sexual attention,50
+relationship to targeted member,supervisor or higher rank,inappropriate sexual comments,48
+relationship to targeted member,supervisor or higher rank,inappropriate discussion about sex life,50
+relationship to targeted member,supervisor or higher rank,"displaying, showing, or sending sexually explicit messages or materials",39
+relationship to targeted member,supervisor or higher rank,"taking or posting inappropriate or sexually suggestive photos or videos of any canadian armed forces members, without consent",f
+relationship to targeted member,supervisor or higher rank,indecent exposure or inappropriate display of body parts,19
+relationship to targeted member,supervisor or higher rank,repeated pressure from the same person for dates or sexual relations,49
+relationship to targeted member,supervisor or higher rank,unwelcome physical contact or getting too close,48
+relationship to targeted member,supervisor or higher rank,offering workplace benefits for engaging in sexual activity or being mistreated for not engaging in sexual activity,f
+relationship to targeted member,peer,sexual jokes,80
+relationship to targeted member,peer,unwanted sexual attention,56
+relationship to targeted member,peer,inappropriate sexual comments,67
+relationship to targeted member,peer,inappropriate discussion about sex life,76
+relationship to targeted member,peer,"displaying, showing, or sending sexually explicit messages or materials",73
+relationship to targeted member,peer,"taking or posting inappropriate or sexually suggestive photos or videos of any canadian armed forces members, without consent",f
+relationship to targeted member,peer,indecent exposure or inappropriate display of body parts,71
+relationship to targeted member,peer,repeated pressure from the same person for dates or sexual relations,51
+relationship to targeted member,peer,unwelcome physical contact or getting too close,56
+relationship to targeted member,peer,offering workplace benefits for engaging in sexual activity or being mistreated for not engaging in sexual activity,f
+relationship to targeted member,subordinate - either in or outside chain of command,sexual jokes,30
+relationship to targeted member,subordinate - either in or outside chain of command,unwanted sexual attention,20
+relationship to targeted member,subordinate - either in or outside chain of command,inappropriate sexual comments,22
+relationship to targeted member,subordinate - either in or outside chain of command,inappropriate discussion about sex life,28
+relationship to targeted member,subordinate - either in or outside chain of command,"displaying, showing, or sending sexually explicit messages or materials",25
+relationship to targeted member,subordinate - either in or outside chain of command,"taking or posting inappropriate or sexually suggestive photos or videos of any canadian armed forces members, without consent",f
+relationship to targeted member,subordinate - either in or outside chain of command,indecent exposure or inappropriate display of body parts,25
+relationship to targeted member,subordinate - either in or outside chain of command,repeated pressure from the same person for dates or sexual relations,17
+relationship to targeted member,subordinate - either in or outside chain of command,unwelcome physical contact or getting too close,17
+relationship to targeted member,subordinate - either in or outside chain of command,offering workplace benefits for engaging in sexual activity or being mistreated for not engaging in sexual activity,f
+relationship to targeted member,other,sexual jokes,14
+relationship to targeted member,other,unwanted sexual attention,10
+relationship to targeted member,other,inappropriate sexual comments,8.9
+relationship to targeted member,other,inappropriate discussion about sex life,9.5
+relationship to targeted member,other,"displaying, showing, or sending sexually explicit messages or materials",8.4
+relationship to targeted member,other,"taking or posting inappropriate or sexually suggestive photos or videos of any canadian armed forces members, without consent",f
+relationship to targeted member,other,indecent exposure or inappropriate display of body parts,f
+relationship to targeted member,other,repeated pressure from the same person for dates or sexual relations,9.4
+relationship to targeted member,other,unwelcome physical contact or getting too close,5.7
+relationship to targeted member,other,offering workplace benefits for engaging in sexual activity or being mistreated for not engaging in sexual activity,f
+relationship to targeted member,don't know,sexual jokes,3.9
+relationship to targeted member,don't know,unwanted sexual attention,8.9
+relationship to targeted member,don't know,inappropriate sexual comments,4.6
+relationship to targeted member,don't know,inappropriate discussion about sex life,4.7
+relationship to targeted member,don't know,"displaying, showing, or sending sexually explicit messages or materials",f
+relationship to targeted member,don't know,"taking or posting inappropriate or sexually suggestive photos or videos of any canadian armed forces members, without consent",f
+relationship to targeted member,don't know,indecent exposure or inappropriate display of body parts,f
+relationship to targeted member,don't know,repeated pressure from the same person for dates or sexual relations,f
+relationship to targeted member,don't know,unwelcome physical contact or getting too close,f
+relationship to targeted member,don't know,offering workplace benefits for engaging in sexual activity or being mistreated for not engaging in sexual activity,f
+rank of person responsible,junior non-commissioned member,sexual jokes,84
+rank of person responsible,junior non-commissioned member,unwanted sexual attention,73
+rank of person responsible,junior non-commissioned member,inappropriate sexual comments,79
+rank of person responsible,junior non-commissioned member,inappropriate discussion about sex life,83
+rank of person responsible,junior non-commissioned member,"displaying, showing, or sending sexually explicit messages or materials",91
+rank of person responsible,junior non-commissioned member,"taking or posting inappropriate or sexually suggestive photos or videos of any canadian armed forces members, without consent",f
+rank of person responsible,junior non-commissioned member,indecent exposure or inappropriate display of body parts,93
+rank of person responsible,junior non-commissioned member,repeated pressure from the same person for dates or sexual relations,77
+rank of person responsible,junior non-commissioned member,unwelcome physical contact or getting too close,69
+rank of person responsible,junior non-commissioned member,offering workplace benefits for engaging in sexual activity or being mistreated for not engaging in sexual activity,57
+rank of person responsible,senior non-commissioned member,sexual jokes,49
+rank of person responsible,senior non-commissioned member,unwanted sexual attention,39
+rank of person responsible,senior non-commissioned member,inappropriate sexual comments,39
+rank of person responsible,senior non-commissioned member,inappropriate discussion about sex life,39
+rank of person responsible,senior non-commissioned member,"displaying, showing, or sending sexually explicit messages or materials",32
+rank of person responsible,senior non-commissioned member,"taking or posting inappropriate or sexually suggestive photos or videos of any canadian armed forces members, without consent",f
+rank of person responsible,senior non-commissioned member,indecent exposure or inappropriate display of body parts,12
+rank of person responsible,senior non-commissioned member,repeated pressure from the same person for dates or sexual relations,24
+rank of person responsible,senior non-commissioned member,unwelcome physical contact or getting too close,26
+rank of person responsible,senior non-commissioned member,offering workplace benefits for engaging in sexual activity or being mistreated for not engaging in sexual activity,59
+rank of person responsible,junior officer,sexual jokes,29
+rank of person responsible,junior officer,unwanted sexual attention,20
+rank of person responsible,junior officer,inappropriate sexual comments,20
+rank of person responsible,junior officer,inappropriate discussion about sex life,25
+rank of person responsible,junior officer,"displaying, showing, or sending sexually explicit messages or materials",17
+rank of person responsible,junior officer,"taking or posting inappropriate or sexually suggestive photos or videos of any canadian armed forces members, without consent",f
+rank of person responsible,junior officer,indecent exposure or inappropriate display of body parts,11
+rank of person responsible,junior officer,repeated pressure from the same person for dates or sexual relations,18
+rank of person responsible,junior officer,unwelcome physical contact or getting too close,14
+rank of person responsible,junior officer,offering workplace benefits for engaging in sexual activity or being mistreated for not engaging in sexual activity,f
+rank of person responsible,senior officer,sexual jokes,13
+rank of person responsible,senior officer,unwanted sexual attention,11
+rank of person responsible,senior officer,inappropriate sexual comments,7.3
+rank of person responsible,senior officer,inappropriate discussion about sex life,11
+rank of person responsible,senior officer,"displaying, showing, or sending sexually explicit messages or materials",7.1
+rank of person responsible,senior officer,"taking or posting inappropriate or sexually suggestive photos or videos of any canadian armed forces members, without consent",f
+rank of person responsible,senior officer,indecent exposure or inappropriate display of body parts,f
+rank of person responsible,senior officer,repeated pressure from the same person for dates or sexual relations,6.3
+rank of person responsible,senior officer,unwelcome physical contact or getting too close,9.3
+rank of person responsible,senior officer,offering workplace benefits for engaging in sexual activity or being mistreated for not engaging in sexual activity,f
+rank of person responsible,other,sexual jokes,5.4
+rank of person responsible,other,unwanted sexual attention,f
+rank of person responsible,other,inappropriate sexual comments,4.5
+rank of person responsible,other,inappropriate discussion about sex life,4.3
+rank of person responsible,other,"displaying, showing, or sending sexually explicit messages or materials",f
+rank of person responsible,other,"taking or posting inappropriate or sexually suggestive photos or videos of any canadian armed forces members, without consent",f
+rank of person responsible,other,indecent exposure or inappropriate display of body parts,f
+rank of person responsible,other,repeated pressure from the same person for dates or sexual relations,f
+rank of person responsible,other,unwelcome physical contact or getting too close,f
+rank of person responsible,other,offering workplace benefits for engaging in sexual activity or being mistreated for not engaging in sexual activity,f
+rank of person responsible,don't know,sexual jokes,3.0
+rank of person responsible,don't know,unwanted sexual attention,f
+rank of person responsible,don't know,inappropriate sexual comments,f
+rank of person responsible,don't know,inappropriate discussion about sex life,f
+rank of person responsible,don't know,"displaying, showing, or sending sexually explicit messages or materials",f
+rank of person responsible,don't know,"taking or posting inappropriate or sexually suggestive photos or videos of any canadian armed forces members, without consent",f
+rank of person responsible,don't know,indecent exposure or inappropriate display of body parts,f
+rank of person responsible,don't know,repeated pressure from the same person for dates or sexual relations,f
+rank of person responsible,don't know,unwelcome physical contact or getting too close,f
+rank of person responsible,don't know,offering workplace benefits for engaging in sexual activity or being mistreated for not engaging in sexual activity,f

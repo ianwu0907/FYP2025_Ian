@@ -1,52 +1,205 @@
-country_of_birth,demographic_gender,economic_immigrants,family_sp,refugees,other_immigrants
-ethiopia,women,3.0,34.9,58.0,0.5
-ethiopia,men,6.7,19.7,72.8,0.4
-somalia,women,1.0,21.3,75.1,1.5
-somalia,men,3.4,11.9,83.6,1.0
-eritrea,women,1.1,23.9,72.9,0.1
-eritrea,men,1.8,8.8,89.2,0.0
-sudan,women,4.2,23.9,65.0,0.6
-sudan,men,6.3,4.3,88.1,0.0
-south sudan,women,0.0,14.5,85.1,0.0
-south sudan,men,1.7,3.5,94.8,0.0
-burundi,women,3.9,16.8,64.6,5.2
-burundi,men,15.2,8.2,70.0,5.4
-kenya,women,33.0,23.8,18.1,2.5
-kenya,men,45.0,22.2,18.9,4.4
-zimbabwe,women,8.5,12.8,59.0,10.7
-zimbabwe,men,15.4,11.1,60.3,9.5
-rwanda,women,6.4,16.1,67.4,2.7
-rwanda,men,12.8,9.9,71.6,4.4
-democratic republic of the congo,women,6.1,16.1,67.9,5.5
-democratic republic of the congo,men,12.3,10.2,69.6,6.1
-cameroon,women,37.0,22.8,9.1,0.7
-cameroon,men,71.4,11.2,7.5,0.3
-nigeria,women,21.3,19.0,17.1,1.9
-nigeria,men,51.2,21.2,13.5,2.0
-ghana,women,12.1,52.0,18.5,2.7
-ghana,men,28.5,42.1,21.8,3.3
-cote d'ivoire,women,29.9,28.7,7.5,0.8
-cote d'ivoire,men,72.2,12.5,6.3,0.9
-senegal,women,35.3,36.7,6.5,0.9
-senegal,men,67.5,21.2,4.9,0.2
-guinea,women,15.5,34.1,32.0,2.7
-guinea,men,50.5,21.4,22.6,2.8
-other countries,women,21.7,24.3,33.7,2.1
-other countries,men,45.2,17.1,30.0,2.1
-ethiopia,women,6.7,19.7,72.8,0.4
-somalia,women,3.4,11.9,83.6,1.0
-eritrea,women,1.8,8.8,89.2,0.0
-sudan,women,6.3,4.3,88.1,0.0
-south sudan,women,1.7,3.5,94.8,0.0
-burundi,women,15.2,8.2,70.0,5.4
-kenya,women,45.0,22.2,18.9,4.4
-zimbabwe,women,15.4,11.1,60.3,9.5
-rwanda,women,12.8,9.9,71.6,4.4
-democratic republic of the congo,women,12.3,10.2,69.6,6.1
-cameroon,women,71.4,11.2,7.5,0.3
-nigeria,women,51.2,21.2,13.5,2.0
-ghana,women,28.5,42.1,21.8,3.3
-cote d'ivoire,women,72.2,12.5,6.3,0.9
-senegal,women,67.5,21.2,4.9,0.2
-guinea,women,50.5,21.4,22.6,2.8
-other countries,women,45.2,17.1,30.0,2.1
+country,sex,applicant_type,immigration_category,percentage
+ethiopia,women,principal,economic,3.0
+ethiopia,women,secondary,economic,3.6
+ethiopia,women,total,economic,6.6
+ethiopia,women,principal,family-sponsored,34.9
+ethiopia,women,principal,refugees,58.0
+ethiopia,women,principal,other,0.5
+somalia,women,principal,economic,1.0
+somalia,women,secondary,economic,1.1
+somalia,women,total,economic,2.1
+somalia,women,principal,family-sponsored,21.3
+somalia,women,principal,refugees,75.1
+somalia,women,principal,other,1.5
+eritrea,women,principal,economic,1.1
+eritrea,women,secondary,economic,2.0
+eritrea,women,total,economic,3.1
+eritrea,women,principal,family-sponsored,23.9
+eritrea,women,principal,refugees,72.9
+eritrea,women,principal,other,0.1
+sudan,women,principal,economic,4.2
+sudan,women,secondary,economic,6.3
+sudan,women,total,economic,10.6
+sudan,women,principal,family-sponsored,23.9
+sudan,women,principal,refugees,65.0
+sudan,women,principal,other,0.6
+south sudan,women,principal,economic,0.0
+south sudan,women,secondary,economic,0.4
+south sudan,women,total,economic,0.4
+south sudan,women,principal,family-sponsored,14.5
+south sudan,women,principal,refugees,85.1
+south sudan,women,principal,other,0.0
+burundi,women,principal,economic,3.9
+burundi,women,secondary,economic,9.5
+burundi,women,total,economic,13.4
+burundi,women,principal,family-sponsored,16.8
+burundi,women,principal,refugees,64.6
+burundi,women,principal,other,5.2
+kenya,women,principal,economic,33.0
+kenya,women,secondary,economic,22.6
+kenya,women,total,economic,55.6
+kenya,women,principal,family-sponsored,23.8
+kenya,women,principal,refugees,18.1
+kenya,women,principal,other,2.5
+zimbabwe,women,principal,economic,8.5
+zimbabwe,women,secondary,economic,9.0
+zimbabwe,women,total,economic,17.5
+zimbabwe,women,principal,family-sponsored,12.8
+zimbabwe,women,principal,refugees,59.0
+zimbabwe,women,principal,other,10.7
+rwanda,women,principal,economic,6.4
+rwanda,women,secondary,economic,7.4
+rwanda,women,total,economic,13.8
+rwanda,women,principal,family-sponsored,16.1
+rwanda,women,principal,refugees,67.4
+rwanda,women,principal,other,2.7
+democratic republic of the congo,women,principal,economic,6.1
+democratic republic of the congo,women,secondary,economic,4.4
+democratic republic of the congo,women,total,economic,10.5
+democratic republic of the congo,women,principal,family-sponsored,16.1
+democratic republic of the congo,women,principal,refugees,67.9
+democratic republic of the congo,women,principal,other,5.5
+cameroon,women,principal,economic,37.0
+cameroon,women,secondary,economic,30.5
+cameroon,women,total,economic,67.4
+cameroon,women,principal,family-sponsored,22.8
+cameroon,women,principal,refugees,9.1
+cameroon,women,principal,other,0.7
+nigeria,women,principal,economic,21.3
+nigeria,women,secondary,economic,40.7
+nigeria,women,total,economic,62.1
+nigeria,women,principal,family-sponsored,19.0
+nigeria,women,principal,refugees,17.1
+nigeria,women,principal,other,1.9
+ghana,women,principal,economic,12.1
+ghana,women,secondary,economic,14.8
+ghana,women,total,economic,26.9
+ghana,women,principal,family-sponsored,52.0
+ghana,women,principal,refugees,18.5
+ghana,women,principal,other,2.7
+cote d'ivoire,women,principal,economic,29.9
+cote d'ivoire,women,secondary,economic,33.2
+cote d'ivoire,women,total,economic,63.0
+cote d'ivoire,women,principal,family-sponsored,28.7
+cote d'ivoire,women,principal,refugees,7.5
+cote d'ivoire,women,principal,other,0.8
+senegal,women,principal,economic,35.3
+senegal,women,secondary,economic,20.7
+senegal,women,total,economic,56.0
+senegal,women,principal,family-sponsored,36.7
+senegal,women,principal,refugees,6.5
+senegal,women,principal,other,0.9
+guinea,women,principal,economic,15.5
+guinea,women,secondary,economic,15.8
+guinea,women,total,economic,31.3
+guinea,women,principal,family-sponsored,34.1
+guinea,women,principal,refugees,32.0
+guinea,women,principal,other,2.7
+other countries,women,principal,economic,21.7
+other countries,women,secondary,economic,18.2
+other countries,women,total,economic,39.9
+other countries,women,principal,family-sponsored,24.3
+other countries,women,principal,refugees,33.7
+other countries,women,principal,other,2.1
+ethiopia,men,principal,economic,6.7
+ethiopia,men,secondary,economic,0.5
+ethiopia,men,total,economic,7.2
+ethiopia,men,principal,family-sponsored,19.7
+ethiopia,men,principal,refugees,72.8
+ethiopia,men,principal,other,0.4
+somalia,men,principal,economic,3.4
+somalia,men,secondary,economic,0.1
+somalia,men,total,economic,3.5
+somalia,men,principal,family-sponsored,11.9
+somalia,men,principal,refugees,83.6
+somalia,men,principal,other,1.0
+eritrea,men,principal,economic,1.8
+eritrea,men,secondary,economic,0.1
+eritrea,men,total,economic,1.9
+eritrea,men,principal,family-sponsored,8.8
+eritrea,men,principal,refugees,89.2
+eritrea,men,principal,other,0.0
+sudan,men,principal,economic,6.3
+sudan,men,secondary,economic,1.2
+sudan,men,total,economic,7.6
+sudan,men,principal,family-sponsored,4.3
+sudan,men,principal,refugees,88.1
+sudan,men,principal,other,0.0
+south sudan,men,principal,economic,1.7
+south sudan,men,secondary,economic,0.0
+south sudan,men,total,economic,1.7
+south sudan,men,principal,family-sponsored,3.5
+south sudan,men,principal,refugees,94.8
+south sudan,men,principal,other,0.0
+burundi,men,principal,economic,15.2
+burundi,men,secondary,economic,1.3
+burundi,men,total,economic,16.5
+burundi,men,principal,family-sponsored,8.2
+burundi,men,principal,refugees,70.0
+burundi,men,principal,other,5.4
+kenya,men,principal,economic,45.0
+kenya,men,secondary,economic,9.5
+kenya,men,total,economic,54.6
+kenya,men,principal,family-sponsored,22.2
+kenya,men,principal,refugees,18.9
+kenya,men,principal,other,4.4
+zimbabwe,men,principal,economic,15.4
+zimbabwe,men,secondary,economic,3.7
+zimbabwe,men,total,economic,19.1
+zimbabwe,men,principal,family-sponsored,11.1
+zimbabwe,men,principal,refugees,60.3
+zimbabwe,men,principal,other,9.5
+rwanda,men,principal,economic,12.8
+rwanda,men,secondary,economic,1.4
+rwanda,men,total,economic,14.2
+rwanda,men,principal,family-sponsored,9.9
+rwanda,men,principal,refugees,71.6
+rwanda,men,principal,other,4.4
+democratic republic of the congo,men,principal,economic,12.3
+democratic republic of the congo,men,secondary,economic,1.8
+democratic republic of the congo,men,total,economic,14.1
+democratic republic of the congo,men,principal,family-sponsored,10.2
+democratic republic of the congo,men,principal,refugees,69.6
+democratic republic of the congo,men,principal,other,6.1
+cameroon,men,principal,economic,71.4
+cameroon,men,secondary,economic,9.5
+cameroon,men,total,economic,81.0
+cameroon,men,principal,family-sponsored,11.2
+cameroon,men,principal,refugees,7.5
+cameroon,men,principal,other,0.3
+nigeria,men,principal,economic,51.2
+nigeria,men,secondary,economic,12.0
+nigeria,men,total,economic,63.3
+nigeria,men,principal,family-sponsored,21.2
+nigeria,men,principal,refugees,13.5
+nigeria,men,principal,other,2.0
+ghana,men,principal,economic,28.5
+ghana,men,secondary,economic,4.2
+ghana,men,total,economic,32.7
+ghana,men,principal,family-sponsored,42.1
+ghana,men,principal,refugees,21.8
+ghana,men,principal,other,3.3
+cote d'ivoire,men,principal,economic,72.2
+cote d'ivoire,men,secondary,economic,8.2
+cote d'ivoire,men,total,economic,80.4
+cote d'ivoire,men,principal,family-sponsored,12.5
+cote d'ivoire,men,principal,refugees,6.3
+cote d'ivoire,men,principal,other,0.9
+senegal,men,principal,economic,67.5
+senegal,men,secondary,economic,6.2
+senegal,men,total,economic,73.7
+senegal,men,principal,family-sponsored,21.2
+senegal,men,principal,refugees,4.9
+senegal,men,principal,other,0.2
+guinea,men,principal,economic,50.5
+guinea,men,secondary,economic,2.7
+guinea,men,total,economic,53.2
+guinea,men,principal,family-sponsored,21.4
+guinea,men,principal,refugees,22.6
+guinea,men,principal,other,2.8
+other countries,men,principal,economic,45.2
+other countries,men,secondary,economic,5.5
+other countries,men,total,economic,50.7
+other countries,men,principal,family-sponsored,17.1
+other countries,men,principal,refugees,30.0
+other countries,men,principal,other,2.1

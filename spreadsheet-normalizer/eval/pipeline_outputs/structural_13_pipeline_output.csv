@@ -1,33 +1,79 @@
-selected characteristics of perpetrators,male victims,female victims,total victims
-,percent,,
-type of perpetrator,,,
-canadian armed forces member(s),91,97,94
-foreign military member(s),f,f,f
-department of national defence civilian(s) or contractor(s),f,f,f
-other,f,f,f
-don't know,f,f,f
-number of perpetrators,,,
-lone,77,90,83
-two or more,f,f,9.2
-"varied - sometimes one perpetrator, other times multiple perpetrators",f,f,9.8
-don't know,f,f,f
-sex of perpetrator,,,
-always men,56,96,76
-always women,28,f,14
-combination of men and women,f,f,10
-don't know,f,f,f
-relationship to victim,,,
-supervisor or higher rank,36,51,44
-peer,65,46,54
-subordinate - either in or outside chain of command,17,14,16
-intimate partner,f,f,f
-stranger,f,f,9.1
-other,f,f,6.1
-don't know,f,f,f
-rank of perpetrator,,,
-junior non-commissioned member,76,72,74
-senior non-commissioned member,20,26,24
-junior officer,17,f,12
-senior officer,f,f,4.8
-other,f,f,f
-don't know,f,f,f
+perpetrator_category,perpetrator_option,victim_sex,value
+type of perpetrator,canadian armed forces member(s),male,91.0
+type of perpetrator,canadian armed forces member(s),female,97.0
+type of perpetrator,canadian armed forces member(s),total,94.0
+type of perpetrator,foreign military member(s),male,
+type of perpetrator,foreign military member(s),female,
+type of perpetrator,foreign military member(s),total,
+type of perpetrator,department of national defence civilian(s) or contractor(s),male,
+type of perpetrator,department of national defence civilian(s) or contractor(s),female,
+type of perpetrator,department of national defence civilian(s) or contractor(s),total,
+type of perpetrator,other,male,
+type of perpetrator,other,female,
+type of perpetrator,other,total,
+type of perpetrator,don't know,male,
+type of perpetrator,don't know,female,
+type of perpetrator,don't know,total,
+number of perpetrators,lone,male,77.0
+number of perpetrators,lone,female,90.0
+number of perpetrators,lone,total,83.0
+number of perpetrators,two or more,male,
+number of perpetrators,two or more,female,
+number of perpetrators,two or more,total,9.2
+number of perpetrators,"varied - sometimes one perpetrator, other times multiple perpetrators",male,
+number of perpetrators,"varied - sometimes one perpetrator, other times multiple perpetrators",female,
+number of perpetrators,"varied - sometimes one perpetrator, other times multiple perpetrators",total,9.8
+number of perpetrators,don't know,male,
+number of perpetrators,don't know,female,
+number of perpetrators,don't know,total,
+sex of perpetrator,always men,male,56.0
+sex of perpetrator,always men,female,96.0
+sex of perpetrator,always men,total,76.0
+sex of perpetrator,always women,male,28.0
+sex of perpetrator,always women,female,
+sex of perpetrator,always women,total,14.0
+sex of perpetrator,combination of men and women,male,
+sex of perpetrator,combination of men and women,female,
+sex of perpetrator,combination of men and women,total,10.0
+sex of perpetrator,don't know,male,
+sex of perpetrator,don't know,female,
+sex of perpetrator,don't know,total,
+relationship to victim,supervisor or higher rank,male,36.0
+relationship to victim,supervisor or higher rank,female,51.0
+relationship to victim,supervisor or higher rank,total,44.0
+relationship to victim,peer,male,65.0
+relationship to victim,peer,female,46.0
+relationship to victim,peer,total,54.0
+relationship to victim,subordinate - either in or outside chain of command,male,17.0
+relationship to victim,subordinate - either in or outside chain of command,female,14.0
+relationship to victim,subordinate - either in or outside chain of command,total,16.0
+relationship to victim,intimate partner,male,
+relationship to victim,intimate partner,female,
+relationship to victim,intimate partner,total,
+relationship to victim,stranger,male,
+relationship to victim,stranger,female,
+relationship to victim,stranger,total,9.1
+relationship to victim,other,male,
+relationship to victim,other,female,
+relationship to victim,other,total,6.1
+relationship to victim,don't know,male,
+relationship to victim,don't know,female,
+relationship to victim,don't know,total,
+rank of perpetrator,junior non-commissioned member,male,76.0
+rank of perpetrator,junior non-commissioned member,female,72.0
+rank of perpetrator,junior non-commissioned member,total,74.0
+rank of perpetrator,senior non-commissioned member,male,20.0
+rank of perpetrator,senior non-commissioned member,female,26.0
+rank of perpetrator,senior non-commissioned member,total,24.0
+rank of perpetrator,junior officer,male,17.0
+rank of perpetrator,junior officer,female,
+rank of perpetrator,junior officer,total,12.0
+rank of perpetrator,senior officer,male,
+rank of perpetrator,senior officer,female,
+rank of perpetrator,senior officer,total,4.8
+rank of perpetrator,other,male,
+rank of perpetrator,other,female,
+rank of perpetrator,other,total,
+rank of perpetrator,don't know,male,
+rank of perpetrator,don't know,female,
+rank of perpetrator,don't know,total,

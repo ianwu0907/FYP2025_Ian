@@ -219,17 +219,34 @@ async def run_normalization_task(task_id: str, input_file: str, config: dict):
         else:
             logger.warning(f"Task {task_id}: ⚠️ Cannot generate preview - output_path empty or file not exists")
 
+        # Extract irregularity detection results for frontend display
+        detection_result = result.get("intermediate_results", {}).get("detection_result", {})
+        irregularities = detection_result.get("irregularities", [])  # [{label, evidence, details}]
+        irregularity_labels = detection_result.get("labels", [])
+
+        # Extract before/after metrics
+        metrics = result.get("metrics", {})
+        metrics_before     = metrics.get("before", {})
+        metrics_after      = metrics.get("after", {})
+        metrics_comparison = metrics.get("comparison", {})
+
         # 更新任务状态
         elapsed_time = time.time() - tasks[task_id]["start_time"]
         task_data = {
             "status": "completed",
             "progress": 100,
+            "current_stage": "completed",
             "result": {
                 "output_path": str(output_path_obj) if output_path_obj else "",
                 "num_tables": result.get("num_tables", 1),
                 "detection_method": result.get("detection_method", "single"),
                 "elapsed_seconds": elapsed_time,
-                "normalized_preview": normalized_preview  # 添加标准化后的预览
+                "normalized_preview": normalized_preview,
+                "irregularities": irregularities,
+                "irregularity_labels": irregularity_labels,
+                "metrics_before": metrics_before,
+                "metrics_after": metrics_after,
+                "metrics_comparison": metrics_comparison,
             },
             "start_time": tasks[task_id]["start_time"],
             "end_time": time.time()

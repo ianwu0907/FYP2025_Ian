@@ -1,79 +1,79 @@
-energy_source,year,production
-Hydro power,2000,1150
-Thermal,2000,685
-Other renewables,2000,3
-Hydro power,2000,3197
-Thermal,2000,3485
-Other renewables,2000,3
-Hydro power,2001,1161
-Thermal,2001,835
-Other renewables,2001,3
-Hydro power,2001,3110
-Thermal,2001,3407
-Other renewables,2001,3
-Hydro power,2002,1171
-Thermal,2002,1056
-Other renewables,2002,3
-Hydro power,2002,2962
-Thermal,2002,3201
-Other renewables,2002,4
-Hydro power,2003,1247
-Thermal,2003,1233
-Other renewables,2003,3
-Hydro power,2003,3310
-Thermal,2003,4298
-Other renewables,2003,3
-Hydro power,2004,1281
-Thermal,2004,1215
-Other renewables,2004,3
-Hydro power,2004,2960
-Thermal,2004,5080
-Other renewables,2004,3
-Hydro power,2005,1293
-Thermal,2005,1155
-Other renewables,2005,3
-Hydro power,2005,3451
-Thermal,2005,5314
-Other renewables,2005,5
-Hydro power,2006,1316
-Thermal,2006,1155
-Other renewables,2006,3
-Hydro power,2006,4634
-Thermal,2006,4751
-Other renewables,2006,4
-Hydro power,2007,1326
-Thermal,2007,1155
-Other renewables,2007,3
-Hydro power,2007,3947
-Thermal,2007,5864
-Other renewables,2007,4
-Hydro power,2008,1357
-Thermal,2008,1285
-Other renewables,2008,3
-Hydro power,2008,4130
-Thermal,2008,5763
-Other renewables,2008,8
-Hydro power,2009,1379
-Thermal,2009,1290
-Other renewables,2009,15
-Hydro power,2009,3881
-Thermal,2009,5975
-Other renewables,2009,27
-Hydro power,2010,1382
-Thermal,2010,1390
-Other renewables,2010,45
-Hydro power,2010,5634
-Thermal,2010,4995
-Other renewables,2010,86
-Hydro power,2011,1401
-Thermal,2011,1690
-Other renewables,2011,50
-Hydro power,2011,4622
-Thermal,2011,6785
-Other renewables,2011,121
-Hydro power,2012,1584
-Thermal,2012,1638
-Other renewables,2012,90
-Hydro power,2012,3292
-Thermal,2012,8339
-Other renewables,2012,169
+year,category,source_type,value
+2000,availability,Hydro power,1150
+2000,availability,Thermal,685
+2000,availability,Other renewables,3
+2000,production,Hydro power,3197
+2000,production,Thermal,3485
+2000,production,Other renewables,3
+2001,availability,Hydro power,1161
+2001,availability,Thermal,835
+2001,availability,Other renewables,3
+2001,production,Hydro power,3110
+2001,production,Thermal,3407
+2001,production,Other renewables,3
+2002,availability,Hydro power,1171
+2002,availability,Thermal,1056
+2002,availability,Other renewables,3
+2002,production,Hydro power,2962
+2002,production,Thermal,3201
+2002,production,Other renewables,4
+2003,availability,Hydro power,1247
+2003,availability,Thermal,1233
+2003,availability,Other renewables,3
+2003,production,Hydro power,3310
+2003,production,Thermal,4298
+2003,production,Other renewables,3
+2004,availability,Hydro power,1281
+2004,availability,Thermal,1215
+2004,availability,Other renewables,3
+2004,production,Hydro power,2960
+2004,production,Thermal,5080
+2004,production,Other renewables,3
+2005,availability,Hydro power,1293
+2005,availability,Thermal,1155
+2005,availability,Other renewables,3
+2005,production,Hydro power,3451
+2005,production,Thermal,5314
+2005,production,Other renewables,5
+2006,availability,Hydro power,1316
+2006,availability,Thermal,1155
+2006,availability,Other renewables,3
+2006,production,Hydro power,4634
+2006,production,Thermal,4751
+2006,production,Other renewables,4
+2007,availability,Hydro power,1326
+2007,availability,Thermal,1155
+2007,availability,Other renewables,3
+2007,production,Hydro power,3947
+2007,production,Thermal,5864
+2007,production,Other renewables,4
+2008,availability,Hydro power,1357
+2008,availability,Thermal,1285
+2008,availability,Other renewables,3
+2008,production,Hydro power,4130
+2008,production,Thermal,5763
+2008,production,Other renewables,8
+2009,availability,Hydro power,1379
+2009,availability,Thermal,1290
+2009,availability,Other renewables,15
+2009,production,Hydro power,3881
+2009,production,Thermal,5975
+2009,production,Other renewables,27
+2010,availability,Hydro power,1382
+2010,availability,Thermal,1390
+2010,availability,Other renewables,45
+2010,production,Hydro power,5634
+2010,production,Thermal,4995
+2010,production,Other renewables,86
+2011,availability,Hydro power,1401
+2011,availability,Thermal,1690
+2011,availability,Other renewables,50
+2011,production,Hydro power,4622
+2011,production,Thermal,6785
+2011,production,Other renewables,121
+2012,availability,Hydro power,1584
+2012,availability,Thermal,1638
+2012,availability,Other renewables,90
+2012,production,Hydro power,3292
+2012,production,Thermal,8339
+2012,production,Other renewables,169

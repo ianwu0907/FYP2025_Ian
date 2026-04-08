@@ -1,59 +1,121 @@
-region_of_birth,educational_attainment,percent
-caribbean and latin america,non-university or university postsecondary diploma,71.7
-caribbean and latin america,university degree only,15.2
-africa,non-university or university postsecondary diploma,68.1
-africa,university degree only,41.8
-other regions,non-university or university postsecondary diploma,70.9
-other regions,university degree only,32.5
-jamaica,non-university or university postsecondary diploma,73.4
-jamaica,university degree only,12.7
-haiti,non-university or university postsecondary diploma,75.0
-haiti,university degree only,20.3
-trinidad and tobago,non-university or university postsecondary diploma,70.8
-trinidad and tobago,university degree only,13.0
-guyana,non-university or university postsecondary diploma,67.3
-guyana,university degree only,14.3
-barbados,non-university or university postsecondary diploma,71.2
-barbados,university degree only,14.4
-saint vincent and the grenadines,non-university or university postsecondary diploma,56.2
-saint vincent and the grenadines,university degree only,7.6
-grenada,non-university or university postsecondary diploma,58.9
-grenada,university degree only,7.0
-saint lucia,non-university or university postsecondary diploma,57.0
-saint lucia,university degree only,8.1
-united kingdom,non-university or university postsecondary diploma,80.6
-united kingdom,university degree only,28.6
-united states,non-university or university postsecondary diploma,75.8
-united states,university degree only,32.2
-ethiopia,non-university or university postsecondary diploma,51.3
-ethiopia,university degree only,20.7
-somalia,non-university or university postsecondary diploma,35.9
-somalia,university degree only,16.0
-eritrea,non-university or university postsecondary diploma,38.4
-eritrea,university degree only,13.2
-sudan,non-university or university postsecondary diploma,48.7
-sudan,university degree only,26.1
-south sudan,non-university or university postsecondary diploma,38.2
-south sudan,university degree only,19.5
-burundi,non-university or university postsecondary diploma,71.8
-burundi,university degree only,39.9
-kenya,non-university or university postsecondary diploma,81.5
-kenya,university degree only,51.1
-zimbabwe,non-university or university postsecondary diploma,83.3
-zimbabwe,university degree only,35.6
-rwanda,non-university or university postsecondary diploma,78.1
-rwanda,university degree only,44.9
-democratic republic of the congo,non-university or university postsecondary diploma,69.8
-democratic republic of the congo,university degree only,36.2
-cameroon,non-university or university postsecondary diploma,87.2
-cameroon,university degree only,67.4
-nigeria,non-university or university postsecondary diploma,89.6
-nigeria,university degree only,67.6
-ghana,non-university or university postsecondary diploma,69.3
-ghana,university degree only,30.3
-cote d'ivoire,non-university or university postsecondary diploma,81.1
-cote d'ivoire,university degree only,55.5
-senegal,non-university or university postsecondary diploma,81.2
-senegal,university degree only,62.8
-guinea,non-university or university postsecondary diploma,78.8
-guinea,university degree only,59.4
+location_type,location_name,gender,education_level,percent
+region,region of birth,women,non-university or university postsecondary diploma,
+region,region of birth,women,university degree only,
+region,region of birth,men,non-university or university postsecondary diploma,
+region,region of birth,men,university degree only,
+region,caribbean and latin america,women,non-university or university postsecondary diploma,71.7
+region,caribbean and latin america,women,university degree only,17.8
+region,caribbean and latin america,men,non-university or university postsecondary diploma,57.0
+region,caribbean and latin america,men,university degree only,15.2
+region,africa,women,non-university or university postsecondary diploma,68.1
+region,africa,women,university degree only,31.5
+region,africa,men,non-university or university postsecondary diploma,70.6
+region,africa,men,university degree only,41.8
+region,other regions,women,non-university or university postsecondary diploma,70.9
+region,other regions,women,university degree only,37.4
+region,other regions,men,non-university or university postsecondary diploma,65.5
+region,other regions,men,university degree only,32.5
+country of birth,jamaica,women,non-university or university postsecondary diploma,73.4
+country of birth,jamaica,women,university degree only,19.5
+country of birth,jamaica,men,non-university or university postsecondary diploma,52.1
+country of birth,jamaica,men,university degree only,12.7
+country of birth,haiti,women,non-university or university postsecondary diploma,75.0
+country of birth,haiti,women,university degree only,15.6
+country of birth,haiti,men,non-university or university postsecondary diploma,66.3
+country of birth,haiti,men,university degree only,20.3
+country of birth,trinidad and tobago,women,non-university or university postsecondary diploma,70.8
+country of birth,trinidad and tobago,women,university degree only,21.9
+country of birth,trinidad and tobago,men,non-university or university postsecondary diploma,58.6
+country of birth,trinidad and tobago,men,university degree only,13.0
+country of birth,guyana,women,non-university or university postsecondary diploma,67.3
+country of birth,guyana,women,university degree only,19.2
+country of birth,guyana,men,non-university or university postsecondary diploma,58.6
+country of birth,guyana,men,university degree only,14.3
+country of birth,barbados,women,non-university or university postsecondary diploma,71.2
+country of birth,barbados,women,university degree only,17.6
+country of birth,barbados,men,non-university or university postsecondary diploma,55.6
+country of birth,barbados,men,university degree only,14.4
+country of birth,saint vincent and the grenadines,women,non-university or university postsecondary diploma,56.2
+country of birth,saint vincent and the grenadines,women,university degree only,8.0
+country of birth,saint vincent and the grenadines,men,non-university or university postsecondary diploma,37.9
+country of birth,saint vincent and the grenadines,men,university degree only,7.6
+country of birth,grenada,women,non-university or university postsecondary diploma,58.9
+country of birth,grenada,women,university degree only,10.1
+country of birth,grenada,men,non-university or university postsecondary diploma,44.5
+country of birth,grenada,men,university degree only,7.0
+country of birth,saint lucia,women,non-university or university postsecondary diploma,57.0
+country of birth,saint lucia,women,university degree only,14.2
+country of birth,saint lucia,men,non-university or university postsecondary diploma,43.0
+country of birth,saint lucia,men,university degree only,8.1
+country of birth,united kingdom,women,non-university or university postsecondary diploma,80.6
+country of birth,united kingdom,women,university degree only,36.6
+country of birth,united kingdom,men,non-university or university postsecondary diploma,70.9
+country of birth,united kingdom,men,university degree only,28.6
+country of birth,united states,women,non-university or university postsecondary diploma,75.8
+country of birth,united states,women,university degree only,42.6
+country of birth,united states,men,non-university or university postsecondary diploma,62.1
+country of birth,united states,men,university degree only,32.2
+country of birth,ethiopia,women,non-university or university postsecondary diploma,51.3
+country of birth,ethiopia,women,university degree only,11.2
+country of birth,ethiopia,men,non-university or university postsecondary diploma,52.0
+country of birth,ethiopia,men,university degree only,20.7
+country of birth,somalia,women,non-university or university postsecondary diploma,35.9
+country of birth,somalia,women,university degree only,12.4
+country of birth,somalia,men,non-university or university postsecondary diploma,39.8
+country of birth,somalia,men,university degree only,16.0
+country of birth,eritrea,women,non-university or university postsecondary diploma,38.4
+country of birth,eritrea,women,university degree only,6.8
+country of birth,eritrea,men,non-university or university postsecondary diploma,40.4
+country of birth,eritrea,men,university degree only,13.2
+country of birth,sudan,women,non-university or university postsecondary diploma,48.7
+country of birth,sudan,women,university degree only,25.2
+country of birth,sudan,men,non-university or university postsecondary diploma,52.4
+country of birth,sudan,men,university degree only,26.1
+country of birth,south sudan,women,non-university or university postsecondary diploma,38.2
+country of birth,south sudan,women,university degree only,8.6
+country of birth,south sudan,men,non-university or university postsecondary diploma,51.8
+country of birth,south sudan,men,university degree only,19.5
+country of birth,burundi,women,non-university or university postsecondary diploma,71.8
+country of birth,burundi,women,university degree only,34.4
+country of birth,burundi,men,non-university or university postsecondary diploma,69.9
+country of birth,burundi,men,university degree only,39.9
+country of birth,kenya,women,non-university or university postsecondary diploma,81.5
+country of birth,kenya,women,university degree only,44.3
+country of birth,kenya,men,non-university or university postsecondary diploma,78.4
+country of birth,kenya,men,university degree only,51.1
+country of birth,zimbabwe,women,non-university or university postsecondary diploma,83.3
+country of birth,zimbabwe,women,university degree only,38.9
+country of birth,zimbabwe,men,non-university or university postsecondary diploma,82.9
+country of birth,zimbabwe,men,university degree only,35.6
+country of birth,rwanda,women,non-university or university postsecondary diploma,78.1
+country of birth,rwanda,women,university degree only,38.0
+country of birth,rwanda,men,non-university or university postsecondary diploma,72.8
+country of birth,rwanda,men,university degree only,44.9
+country of birth,democratic republic of the congo,women,non-university or university postsecondary diploma,69.8
+country of birth,democratic republic of the congo,women,university degree only,22.0
+country of birth,democratic republic of the congo,men,non-university or university postsecondary diploma,73.0
+country of birth,democratic republic of the congo,men,university degree only,36.2
+country of birth,cameroon,women,non-university or university postsecondary diploma,87.2
+country of birth,cameroon,women,university degree only,55.6
+country of birth,cameroon,men,non-university or university postsecondary diploma,90.2
+country of birth,cameroon,men,university degree only,67.4
+country of birth,nigeria,women,non-university or university postsecondary diploma,89.6
+country of birth,nigeria,women,university degree only,62.2
+country of birth,nigeria,men,non-university or university postsecondary diploma,87.1
+country of birth,nigeria,men,university degree only,67.6
+country of birth,ghana,women,non-university or university postsecondary diploma,69.3
+country of birth,ghana,women,university degree only,23.2
+country of birth,ghana,men,non-university or university postsecondary diploma,68.3
+country of birth,ghana,men,university degree only,30.3
+country of birth,cote d'ivoire,women,non-university or university postsecondary diploma,81.1
+country of birth,cote d'ivoire,women,university degree only,37.0
+country of birth,cote d'ivoire,men,non-university or university postsecondary diploma,87.2
+country of birth,cote d'ivoire,men,university degree only,55.5
+country of birth,senegal,women,non-university or university postsecondary diploma,81.2
+country of birth,senegal,women,university degree only,52.9
+country of birth,senegal,men,non-university or university postsecondary diploma,89.2
+country of birth,senegal,men,university degree only,62.8
+country of birth,guinea,women,non-university or university postsecondary diploma,78.8
+country of birth,guinea,women,university degree only,37.1
+country of birth,guinea,men,non-university or university postsecondary diploma,82.1
+country of birth,guinea,men,university degree only,59.4

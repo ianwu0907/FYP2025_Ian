@@ -53,6 +53,7 @@ Evaluation report JSON schema:
 
 import json
 import logging
+import os
 import time
 from pathlib import Path
 from typing import Any, Dict, List, Optional
@@ -254,6 +255,7 @@ def _run_table(
         preview_rows: int,
         max_distinct: int,
         pipeline_output_dir: Path,
+        full_config: Dict[str, Any] = None,
 ) -> Dict[str, Any]:
     """
     Full pipeline + QA evaluation for a single dataset entry.
@@ -301,27 +303,37 @@ def _run_table(
     pipeline_df: Optional[pd.DataFrame] = None
     output_file = pipeline_output_dir / f"{table_id}_pipeline_output.csv"
     pipeline_start_time = time.time()
-    try:
-        logger.info("  Running normalisation pipeline...")
-        t0 = time.time()
-        pipeline_result = normalizer.normalize(
-            input_file=raw_file,
-            output_file=str(output_file),
-        )
-        pipeline_df = pipeline_result["normalized_df"]
-        result["pipeline_sec"] = round(time.time() - pipeline_start_time, 2)
-        logger.info(
-            f"  Pipeline succeeded in {round(time.time()-t0, 1)}s. "
-            f"Output shape: {pipeline_df.shape}"
-        )
-        result["pipeline_status"] = "success"
-
-    except Exception as e:
-        result["pipeline_sec"] = round(time.time() - pipeline_start_time, 2)
-        err = f"{type(e).__name__}: {e}"
-        result["pipeline_status"] = "failed"
-        result["pipeline_error"]  = err
-        logger.error(f"  Pipeline FAILED: {err}")
+    _pipeline_max_retries = 3
+    for _attempt in range(_pipeline_max_retries):
+        try:
+            logger.info(f"  Running normalisation pipeline (attempt {_attempt+1}/{_pipeline_max_retries})...")
+            t0 = time.time()
+            # Fresh normalizer on retry to reset HTTP connections
+            if _attempt > 0:
+                normalizer = TableNormalizer(full_config)
+            pipeline_result = normalizer.normalize(
+                input_file=raw_file,
+                output_file=str(output_file),
+            )
+            pipeline_df = pipeline_result["normalized_df"]
+            result["pipeline_sec"] = round(time.time() - pipeline_start_time, 2)
+            logger.info(
+                f"  Pipeline succeeded in {round(time.time()-t0, 1)}s. "
+                f"Output shape: {pipeline_df.shape}"
+            )
+            result["pipeline_status"] = "success"
+            break
+        except Exception as e:
+            err = f"{type(e).__name__}: {e}"
+            if _attempt < _pipeline_max_retries - 1:
+                wait = 15 * (_attempt + 1)
+                logger.warning(f"  Pipeline FAILED (attempt {_attempt+1}): {err} — retrying in {wait}s...")
+                time.sleep(wait)
+            else:
+                result["pipeline_sec"] = round(time.time() - pipeline_start_time, 2)
+                result["pipeline_status"] = "failed"
+                result["pipeline_error"]  = err
+                logger.error(f"  Pipeline FAILED after {_pipeline_max_retries} attempts: {err}")
 
     # ── Normalise column names (fixes integer/float col names) ────────
     raw_df = _deduplicate_columns(raw_df)
@@ -502,6 +514,51 @@ def _write_report(
 
 
 # ======================================================================
+# Provider env-var configuration
+# ======================================================================
+
+def _configure_env_for_model(model: str) -> None:
+    """
+    Override OPENAI_API_KEY / OPENAI_BASE_URL / OPENAI_MODEL in os.environ
+    so that all pipeline modules (which read these vars) hit the correct
+    provider, regardless of what .env contains.
+    """
+    m = model.lower()
+
+    if m.startswith("deepseek"):
+        api_key  = os.getenv("DEEPSEEK_API_KEY") or os.getenv("OPENAI_API_KEY", "")
+        base_url = os.getenv("DEEPSEEK_BASE_URL", "https://api.deepseek.com/v1")
+        os.environ["OPENAI_API_KEY"]  = api_key
+        os.environ["OPENAI_BASE_URL"] = base_url
+        os.environ["OPENAI_MODEL"]    = model
+        logger.info(f"[env] Using DeepSeek provider: base_url={base_url}, model={model}")
+
+    elif m.startswith("qwen") or m.startswith("qwq"):
+        api_key  = os.getenv("DASHSCOPE_API_KEY") or os.getenv("OPENAI_API_KEY", "")
+        base_url = os.getenv("DASHSCOPE_BASE_URL", "https://dashscope-intl.aliyuncs.com/compatible-mode/v1")
+        os.environ["OPENAI_API_KEY"]  = api_key
+        os.environ["OPENAI_BASE_URL"] = base_url
+        os.environ["OPENAI_MODEL"]    = model
+        logger.info(f"[env] Using Qwen/DashScope provider: base_url={base_url}, model={model}")
+
+    elif m.startswith("gemini"):
+        api_key  = os.getenv("GEMINI_API_KEY") or os.getenv("OPENAI_API_KEY", "")
+        base_url = os.getenv("GEMINI_BASE_URL", "https://oa.api2d.net/v1")
+        os.environ["OPENAI_API_KEY"]  = api_key
+        os.environ["OPENAI_BASE_URL"] = base_url
+        os.environ["OPENAI_MODEL"]    = model
+        logger.info(f"[env] Using Gemini provider: base_url={base_url}, model={model}")
+
+    elif m.startswith("minimax") or "minimax" in m:
+        # MiniMax uses OPENAI_API_KEY / OPENAI_BASE_URL as-is from .env
+        logger.info(f"[env] Using MiniMax provider (from .env): model={model}")
+
+    else:
+        # Generic OpenAI-compatible: leave env vars as set in terminal / .env
+        logger.info(f"[env] Using default OpenAI provider: model={model}")
+
+
+# ======================================================================
 # Main runner
 # ======================================================================
 
@@ -540,14 +597,40 @@ def run_evaluation(
     output_path.parent.mkdir(parents=True, exist_ok=True)
     pipeline_output_dir.mkdir(parents=True, exist_ok=True)
 
+    # Override OPENAI_* env vars based on the evaluation model so that
+    # pipeline modules (which read OPENAI_API_KEY / OPENAI_BASE_URL) always
+    # hit the correct provider, regardless of what .env contains.
+    _configure_env_for_model(model)
+
     # Initialise shared resources
     dataset    = load_qa_dataset(dataset_path)
     client     = OpenAI()
-    normalizer = TableNormalizer(full_config)
+
+    # Resume from existing checkpoint if present
+    # Only skip tables where pipeline SUCCEEDED — failed ones will be retried.
+    table_results: List[Dict[str, Any]] = []
+    success_ids: set = set()
+    if output_path.exists():
+        try:
+            with open(output_path, encoding="utf-8") as f:
+                existing = json.load(f)
+            prev_tables = existing.get("tables", [])
+            # Keep only successful results; failed ones are dropped so they re-run
+            table_results = [t for t in prev_tables if t.get("pipeline_status") == "success"]
+            success_ids = {t["table_id"] for t in table_results}
+            n_failed = len(prev_tables) - len(table_results)
+            if success_ids:
+                logger.info(f"Resuming: {len(success_ids)} succeeded (skipping), {n_failed} failed (retrying).")
+        except Exception:
+            pass
 
     # Per-table evaluation
-    table_results: List[Dict[str, Any]] = []
     for entry in dataset:
+        if entry["table_id"] in success_ids:
+            logger.info(f"Skipping (already succeeded): {entry['table_id']}")
+            continue
+        # Create a fresh normalizer per table to avoid stale HTTP connections
+        normalizer = TableNormalizer(full_config)
         table_result = _run_table(
             entry=entry,
             normalizer=normalizer,
@@ -556,6 +639,7 @@ def run_evaluation(
             preview_rows=preview_rows,
             max_distinct=max_distinct,
             pipeline_output_dir=pipeline_output_dir,
+            full_config=full_config,
         )
         table_results.append(table_result)
         # Checkpoint after each table so progress is not lost on crash

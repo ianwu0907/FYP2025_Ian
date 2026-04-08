@@ -788,6 +788,7 @@ class IrregularityDetector:
                     {"role": "user", "content": prompt},
                 ],
                 max_completion_tokens=self.max_tokens,
+                timeout=120,
             )
             text = resp.choices[0].message.content.strip()
             logger.debug(f"LLM irregularity response:\n{text}")

@@ -453,6 +453,7 @@ class TransformationGenerator:
                 model=self.model,
                 messages=self._current_messages,
                 max_completion_tokens=self.max_completion_tokens,
+                timeout=120,
             )
             raw_response = resp.choices[0].message.content.strip()
 
@@ -870,6 +871,7 @@ def transform(df):
                 model=self.model,
                 messages=[{"role": "user", "content": prompt}],
                 max_completion_tokens=600,
+                timeout=120,
             )
             return resp.choices[0].message.content.strip()
         except Exception:
@@ -986,6 +988,7 @@ The fundamental logic or initial assumption you are trying to patch is WRONG.
                 model=self.model,
                 messages=self._current_messages,
                 max_completion_tokens=self.max_completion_tokens,
+                timeout=120,
             )
             raw_response = resp.choices[0].message.content.strip()
 

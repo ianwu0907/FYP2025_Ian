@@ -1,19 +1,19 @@
-aboriginal_identity,feeding_history,predicted_probability
-predicted probability,only breastfed,0.09
-predicted probability,both breastfed and bottle-fed,0.11
-predicted probability,only bottle-fed,0.14
-predicted probability,never breastfed,0.14
-predicted probability,breastfed 0 to 6 months,0.11
-predicted probability,breastfed more than 6 months,0.1
-predicted probability,only breastfed,0.08
-predicted probability,both breastfed and bottle-fed,0.12
-predicted probability,only bottle-fed,0.12
-predicted probability,never breastfed,0.12
-predicted probability,breastfed 0 to 6 months,0.12
-predicted probability,breastfed more than 6 months,0.1
-predicted probability,only breastfed,0.06
-predicted probability,both breastfed and bottle-fed,0.09
-predicted probability,only bottle-fed,0.08
-predicted probability,never breastfed,0.09
-predicted probability,breastfed 0 to 6 months,0.09
-predicted probability,breastfed more than 6 months,0.09
+feeding_history,aboriginal_identity_group,predicted_probability
+only breastfed,off-reserve first nations,0.09
+only breastfed,metis,0.08
+only breastfed,inuit,0.06
+both breastfed and bottle-fed,off-reserve first nations,0.11
+both breastfed and bottle-fed,metis,0.12
+both breastfed and bottle-fed,inuit,0.09
+only bottle-fed,off-reserve first nations,0.14
+only bottle-fed,metis,0.12
+only bottle-fed,inuit,0.08
+never breastfed,off-reserve first nations,0.14
+never breastfed,metis,0.12
+never breastfed,inuit,0.09
+breastfed 0 to 6 months,off-reserve first nations,0.11
+breastfed 0 to 6 months,metis,0.12
+breastfed 0 to 6 months,inuit,0.09
+breastfed more than 6 months,off-reserve first nations,0.1
+breastfed more than 6 months,metis,0.1
+breastfed more than 6 months,inuit,0.09

@@ -1,19 +1,97 @@
-"sex, ethnicity, race, and citizenship",total,in labor force,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,not in labor force,Unnamed: 8,Unnamed: 9
-,,all,working for pay or profit,,,unemployeda,all,retired,"not working, not seeking work"
-,,,all working,full time,part time,,,,
-all u.s. seh doctorate holders,805500.0,88.1,86,76.1,9.9,2.1,11.9,10,1.9
-sex,,,,,,,,,
-male,551700.0,87.7,85.7,77.9,7.8,2,12.3,11.5,0.8
-female,253700.0,88.9,86.8,72.4,14.4,2.1,11.1,6.7,4.3
-ethnicity and race,,,,,,,,,
-hispanic or latino,25800.0,93,91.1,81.8,8.9,1.9,7,5,1.9
-not hispanic or latino,779700.0,87.9,85.9,76,9.9,2.1,12.1,10.2,1.9
-american indian or alaska native,1700.0,88.2,88.2,76.5,11.8,d,5.9,d,d
-asian,147500.0,93.6,91.3,86.4,4.7,2.3,6.4,4.7,1.7
-black or african american,24500.0,93.9,91,80.4,11,2.4,6.1,4.9,1.2
-native hawaiian or other pacific islander,900.0,88.9,88.9,77.8,11.1,d,11.1,d,11.1
-white,596300.0,86.2,84.2,73.1,11.1,2,13.8,11.8,1.9
-more than one race,8800.0,93.2,89.8,79.5,10.2,2.3,6.8,4.5,2.3
-citizenship,,,,,,,,,
-u.s. citizen or permanent resident,775300.0,87.7,85.6,75.4,10.2,2.1,12.3,10.4,1.9
-temporary visa holder,30200.0,98.3,97.4,95.4,2,1,1.7,d,1.3
+category,section,labor_force_status,work_arrangement,percentage,data_status
+male,sex,all,not applicable,87.7,actual
+male,sex,working for pay or profit,all working,85.7,actual
+male,sex,working for pay or profit,full time,77.9,actual
+male,sex,working for pay or profit,part time,7.8,actual
+male,sex,unemployeda,not applicable,2,actual
+male,sex,all,not applicable,12.3,actual
+male,sex,retired,not applicable,11.5,actual
+male,sex,"not working, not seeking work",not applicable,0.8,actual
+female,sex,all,not applicable,88.9,actual
+female,sex,working for pay or profit,all working,86.8,actual
+female,sex,working for pay or profit,full time,72.4,actual
+female,sex,working for pay or profit,part time,14.4,actual
+female,sex,unemployeda,not applicable,2.1,actual
+female,sex,all,not applicable,11.1,actual
+female,sex,retired,not applicable,6.7,actual
+female,sex,"not working, not seeking work",not applicable,4.3,actual
+hispanic or latino,ethnicity and race,all,not applicable,93,actual
+hispanic or latino,ethnicity and race,working for pay or profit,all working,91.1,actual
+hispanic or latino,ethnicity and race,working for pay or profit,full time,81.8,actual
+hispanic or latino,ethnicity and race,working for pay or profit,part time,8.9,actual
+hispanic or latino,ethnicity and race,unemployeda,not applicable,1.9,actual
+hispanic or latino,ethnicity and race,all,not applicable,7,actual
+hispanic or latino,ethnicity and race,retired,not applicable,5,actual
+hispanic or latino,ethnicity and race,"not working, not seeking work",not applicable,1.9,actual
+not hispanic or latino,ethnicity and race,all,not applicable,87.9,actual
+not hispanic or latino,ethnicity and race,working for pay or profit,all working,85.9,actual
+not hispanic or latino,ethnicity and race,working for pay or profit,full time,76,actual
+not hispanic or latino,ethnicity and race,working for pay or profit,part time,9.9,actual
+not hispanic or latino,ethnicity and race,unemployeda,not applicable,2.1,actual
+not hispanic or latino,ethnicity and race,all,not applicable,12.1,actual
+not hispanic or latino,ethnicity and race,retired,not applicable,10.2,actual
+not hispanic or latino,ethnicity and race,"not working, not seeking work",not applicable,1.9,actual
+american indian or alaska native,ethnicity and race,all,not applicable,88.2,actual
+american indian or alaska native,ethnicity and race,working for pay or profit,all working,88.2,actual
+american indian or alaska native,ethnicity and race,working for pay or profit,full time,76.5,actual
+american indian or alaska native,ethnicity and race,working for pay or profit,part time,11.8,actual
+american indian or alaska native,ethnicity and race,unemployeda,not applicable,d,d
+american indian or alaska native,ethnicity and race,all,not applicable,5.9,actual
+american indian or alaska native,ethnicity and race,retired,not applicable,d,d
+american indian or alaska native,ethnicity and race,"not working, not seeking work",not applicable,d,d
+asian,ethnicity and race,all,not applicable,93.6,actual
+asian,ethnicity and race,working for pay or profit,all working,91.3,actual
+asian,ethnicity and race,working for pay or profit,full time,86.4,actual
+asian,ethnicity and race,working for pay or profit,part time,4.7,actual
+asian,ethnicity and race,unemployeda,not applicable,2.3,actual
+asian,ethnicity and race,all,not applicable,6.4,actual
+asian,ethnicity and race,retired,not applicable,4.7,actual
+asian,ethnicity and race,"not working, not seeking work",not applicable,1.7,actual
+black or african american,ethnicity and race,all,not applicable,93.9,actual
+black or african american,ethnicity and race,working for pay or profit,all working,91,actual
+black or african american,ethnicity and race,working for pay or profit,full time,80.4,actual
+black or african american,ethnicity and race,working for pay or profit,part time,11,actual
+black or african american,ethnicity and race,unemployeda,not applicable,2.4,actual
+black or african american,ethnicity and race,all,not applicable,6.1,actual
+black or african american,ethnicity and race,retired,not applicable,4.9,actual
+black or african american,ethnicity and race,"not working, not seeking work",not applicable,1.2,actual
+native hawaiian or other pacific islander,ethnicity and race,all,not applicable,88.9,actual
+native hawaiian or other pacific islander,ethnicity and race,working for pay or profit,all working,88.9,actual
+native hawaiian or other pacific islander,ethnicity and race,working for pay or profit,full time,77.8,actual
+native hawaiian or other pacific islander,ethnicity and race,working for pay or profit,part time,11.1,actual
+native hawaiian or other pacific islander,ethnicity and race,unemployeda,not applicable,d,d
+native hawaiian or other pacific islander,ethnicity and race,all,not applicable,11.1,actual
+native hawaiian or other pacific islander,ethnicity and race,retired,not applicable,d,d
+native hawaiian or other pacific islander,ethnicity and race,"not working, not seeking work",not applicable,11.1,actual
+white,ethnicity and race,all,not applicable,86.2,actual
+white,ethnicity and race,working for pay or profit,all working,84.2,actual
+white,ethnicity and race,working for pay or profit,full time,73.1,actual
+white,ethnicity and race,working for pay or profit,part time,11.1,actual
+white,ethnicity and race,unemployeda,not applicable,2,actual
+white,ethnicity and race,all,not applicable,13.8,actual
+white,ethnicity and race,retired,not applicable,11.8,actual
+white,ethnicity and race,"not working, not seeking work",not applicable,1.9,actual
+more than one race,ethnicity and race,all,not applicable,93.2,actual
+more than one race,ethnicity and race,working for pay or profit,all working,89.8,actual
+more than one race,ethnicity and race,working for pay or profit,full time,79.5,actual
+more than one race,ethnicity and race,working for pay or profit,part time,10.2,actual
+more than one race,ethnicity and race,unemployeda,not applicable,2.3,actual
+more than one race,ethnicity and race,all,not applicable,6.8,actual
+more than one race,ethnicity and race,retired,not applicable,4.5,actual
+more than one race,ethnicity and race,"not working, not seeking work",not applicable,2.3,actual
+u.s. citizen or permanent resident,citizenship,all,not applicable,87.7,actual
+u.s. citizen or permanent resident,citizenship,working for pay or profit,all working,85.6,actual
+u.s. citizen or permanent resident,citizenship,working for pay or profit,full time,75.4,actual
+u.s. citizen or permanent resident,citizenship,working for pay or profit,part time,10.2,actual
+u.s. citizen or permanent resident,citizenship,unemployeda,not applicable,2.1,actual
+u.s. citizen or permanent resident,citizenship,all,not applicable,12.3,actual
+u.s. citizen or permanent resident,citizenship,retired,not applicable,10.4,actual
+u.s. citizen or permanent resident,citizenship,"not working, not seeking work",not applicable,1.9,actual
+temporary visa holder,citizenship,all,not applicable,98.3,actual
+temporary visa holder,citizenship,working for pay or profit,all working,97.4,actual
+temporary visa holder,citizenship,working for pay or profit,full time,95.4,actual
+temporary visa holder,citizenship,working for pay or profit,part time,2,actual
+temporary visa holder,citizenship,unemployeda,not applicable,1,actual
+temporary visa holder,citizenship,all,not applicable,1.7,actual
+temporary visa holder,citizenship,retired,not applicable,d,d
+temporary visa holder,citizenship,"not working, not seeking work",not applicable,1.3,actual

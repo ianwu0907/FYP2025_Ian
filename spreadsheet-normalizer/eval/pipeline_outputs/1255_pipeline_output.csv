@@ -1,40 +1,99 @@
-province_and_territory,crime_type,severity_index
-newfoundland and labrador,total youth crime severity index,59.3
-prince edward island,total youth crime severity index,30.7
-nova scotia,total youth crime severity index,77.5
-new brunswick,total youth crime severity index,55.7
-quebec,total youth crime severity index,56.4
-ontario,total youth crime severity index,52.7
-manitoba,total youth crime severity index,113.1
-saskatchewan,total youth crime severity index,170.2
-alberta,total youth crime severity index,57.0
-british columbia,total youth crime severity index,35.7
-yukon,total youth crime severity index,191.9
-northwest territories,total youth crime severity index,266.8
-nunavut,total youth crime severity index,296.3
-newfoundland and labrador,youth violent crime severity index,47.9
-prince edward island,youth violent crime severity index,25.2
-nova scotia,youth violent crime severity index,84.4
-new brunswick,youth violent crime severity index,49.0
-quebec,youth violent crime severity index,75.0
-ontario,youth violent crime severity index,69.1
-manitoba,youth violent crime severity index,127.5
-saskatchewan,youth violent crime severity index,160.0
-alberta,youth violent crime severity index,61.1
-british columbia,youth violent crime severity index,37.2
-yukon,youth violent crime severity index,184.1
-northwest territories,youth violent crime severity index,149.0
-nunavut,youth violent crime severity index,191.0
-newfoundland and labrador,youth non-violent crime severity index,67.0
-prince edward island,youth non-violent crime severity index,34.5
-nova scotia,youth non-violent crime severity index,72.3
-new brunswick,youth non-violent crime severity index,60.1
-quebec,youth non-violent crime severity index,43.0
-ontario,youth non-violent crime severity index,40.9
-manitoba,youth non-violent crime severity index,102.3
-saskatchewan,youth non-violent crime severity index,176.7
-alberta,youth non-violent crime severity index,53.8
-british columbia,youth non-violent crime severity index,34.5
-yukon,youth non-violent crime severity index,196.5
-northwest territories,youth non-violent crime severity index,349.0
-nunavut,youth non-violent crime severity index,369.5
+province_territory,crime_type,metric_type,value
+newfoundland and labrador,total,index,59.3
+newfoundland and labrador,total,percent_change_2015_2016,-2.0
+newfoundland and labrador,total,percent_change_2006_2016,-43.0
+newfoundland and labrador,violent,index,47.9
+newfoundland and labrador,violent,percent_change_2015_2016,-6.0
+newfoundland and labrador,non-violent,index,67.0
+newfoundland and labrador,non-violent,percent_change_2015_2016,0.0
+prince edward island,total,index,30.7
+prince edward island,total,percent_change_2015_2016,-12.0
+prince edward island,total,percent_change_2006_2016,-70.0
+prince edward island,violent,index,25.2
+prince edward island,violent,percent_change_2015_2016,-18.0
+prince edward island,non-violent,index,34.5
+prince edward island,non-violent,percent_change_2015_2016,-9.0
+nova scotia,total,index,77.5
+nova scotia,total,percent_change_2015_2016,8.0
+nova scotia,total,percent_change_2006_2016,-41.0
+nova scotia,violent,index,84.4
+nova scotia,violent,percent_change_2015_2016,25.0
+nova scotia,non-violent,index,72.3
+nova scotia,non-violent,percent_change_2015_2016,-2.0
+new brunswick,total,index,55.7
+new brunswick,total,percent_change_2015_2016,-3.0
+new brunswick,total,percent_change_2006_2016,-38.0
+new brunswick,violent,index,49.0
+new brunswick,violent,percent_change_2015_2016,-5.0
+new brunswick,non-violent,index,60.1
+new brunswick,non-violent,percent_change_2015_2016,-2.0
+quebec,total,index,56.4
+quebec,total,percent_change_2015_2016,4.0
+quebec,total,percent_change_2006_2016,-11.0
+quebec,violent,index,75.0
+quebec,violent,percent_change_2015_2016,16.0
+quebec,non-violent,index,43.0
+quebec,non-violent,percent_change_2015_2016,-8.0
+ontario,total,index,52.7
+ontario,total,percent_change_2015_2016,4.0
+ontario,total,percent_change_2006_2016,-46.0
+ontario,violent,index,69.1
+ontario,violent,percent_change_2015_2016,14.0
+ontario,non-violent,index,40.9
+ontario,non-violent,percent_change_2015_2016,-5.0
+manitoba,total,index,113.1
+manitoba,total,percent_change_2015_2016,-5.0
+manitoba,total,percent_change_2006_2016,-38.0
+manitoba,violent,index,127.5
+manitoba,violent,percent_change_2015_2016,0.0
+manitoba,non-violent,index,102.3
+manitoba,non-violent,percent_change_2015_2016,-10.0
+saskatchewan,total,index,170.2
+saskatchewan,total,percent_change_2015_2016,-9.0
+saskatchewan,total,percent_change_2006_2016,-36.0
+saskatchewan,violent,index,160.0
+saskatchewan,violent,percent_change_2015_2016,-8.0
+saskatchewan,non-violent,index,176.7
+saskatchewan,non-violent,percent_change_2015_2016,-10.0
+alberta,total,index,57.0
+alberta,total,percent_change_2015_2016,-15.0
+alberta,total,percent_change_2006_2016,-48.0
+alberta,violent,index,61.1
+alberta,violent,percent_change_2015_2016,-16.0
+alberta,non-violent,index,53.8
+alberta,non-violent,percent_change_2015_2016,-13.0
+british columbia,total,index,35.7
+british columbia,total,percent_change_2015_2016,-9.0
+british columbia,total,percent_change_2006_2016,-56.0
+british columbia,violent,index,37.2
+british columbia,violent,percent_change_2015_2016,-8.0
+british columbia,non-violent,index,34.5
+british columbia,non-violent,percent_change_2015_2016,-10.0
+yukon,total,index,191.9
+yukon,total,percent_change_2015_2016,-28.0
+yukon,total,percent_change_2006_2016,-30.0
+yukon,violent,index,184.1
+yukon,violent,percent_change_2015_2016,15.0
+yukon,non-violent,index,196.5
+yukon,non-violent,percent_change_2015_2016,-42.0
+northwest territories,total,index,266.8
+northwest territories,total,percent_change_2015_2016,-10.0
+northwest territories,total,percent_change_2006_2016,-48.0
+northwest territories,violent,index,149.0
+northwest territories,violent,percent_change_2015_2016,-28.0
+northwest territories,non-violent,index,349.0
+northwest territories,non-violent,percent_change_2015_2016,-3.0
+nunavut,total,index,296.3
+nunavut,total,percent_change_2015_2016,-10.0
+nunavut,total,percent_change_2006_2016,-26.0
+nunavut,violent,index,191.0
+nunavut,violent,percent_change_2015_2016,-17.0
+nunavut,non-violent,index,369.5
+nunavut,non-violent,percent_change_2015_2016,-8.0
+canada,total,index,60.1
+canada,total,percent_change_2015_2016,-2.0
+canada,total,percent_change_2006_2016,-40.0
+canada,violent,index,70.9
+canada,violent,percent_change_2015_2016,5.0
+canada,non-violent,index,52.2
+canada,non-violent,percent_change_2015_2016,-8.0

@@ -1,49 +1,145 @@
-food_item,reporter_type,estimate,confidence_interval_from,confidence_interval_to
-sugar-sweetened beverages,,-71,-78,-64
-sugar-sweetened beverages,to,-30,-39,-21
-sugar-sweetened beverages,to,-70,-78,-62
-sugar-sweetened beverages,to,-86,-114,-57
-meat,,-37,-51,-23
-meat,to,-8,-24,9
-meat,to,-10,-28,8
-meat,to,-71,-122,-20
-milk,,-34,-40,-27
-milk,to,-12,-19,-4
-milk,to,-26,-33,-18
-milk,to,-44,-68,-20
-"pasta, rice, cereal grains and flours",,-25,-37,-13
-"pasta, rice, cereal grains and flours",to,16,2,30
-"pasta, rice, cereal grains and flours",to,-4,-18,9
-"pasta, rice, cereal grains and flours",to,-59,-106,-13
-sugars,,-20,-25,-14
-sugars,to,-3,-8,2
-sugars,to,-11,-17,-5
-sugars,to,-34,-57,-12
-pastries,,19,10,28
-pastries,to,9,-2,20
-pastries,to,32,20,45
-pastries,to,30,-1,61
-oils,,-18,-25,-10
-oils,to,12,5,20
-oils,to,-3,-12,6
-oils,to,-46,-75,-16
-breakfast cereals,,-17,-23,-12
-breakfast cereals,to,3,-5,10
-breakfast cereals,to,-12,-20,-5
-breakfast cereals,to,-53,-75,-31
-soups,,-13,-18,-8
-soups,to,-3,-9,3
-soups,to,-5,-12,1
-soups,to,-37,-54,-19
-"potatoes, fried, roasted, chips",,-10,-17,-4
-"potatoes, fried, roasted, chips",to,0,-6,6
-"potatoes, fried, roasted, chips",to,-8,-15,0
-"potatoes, fried, roasted, chips",to,1,-32,35
-cheese,,-10,-17,-2
-cheese,to,-4,-11,3
-cheese,to,-7,-17,3
-cheese,to,49,16,83
-nuts,,10,2,17
-nuts,to,11,2,19
-nuts,to,16,6,26
-nuts,to,29,-6,63
+food_source,reporter_category,metric_type,value
+sugar-sweetened beverages,total,estimate,-71
+sugar-sweetened beverages,total,lower_bound,-78
+sugar-sweetened beverages,total,upper_bound,-64
+sugar-sweetened beverages,under-reporters,estimate,-30
+sugar-sweetened beverages,under-reporters,lower_bound,-39
+sugar-sweetened beverages,under-reporters,upper_bound,-21
+sugar-sweetened beverages,plausible reporters,estimate,-70
+sugar-sweetened beverages,plausible reporters,lower_bound,-78
+sugar-sweetened beverages,plausible reporters,upper_bound,-62
+sugar-sweetened beverages,over-reporters,estimate,-86
+sugar-sweetened beverages,over-reporters,lower_bound,-114
+sugar-sweetened beverages,over-reporters,upper_bound,-57
+meat,total,estimate,-37
+meat,total,lower_bound,-51
+meat,total,upper_bound,-23
+meat,under-reporters,estimate,-8
+meat,under-reporters,lower_bound,-24
+meat,under-reporters,upper_bound,9
+meat,plausible reporters,estimate,-10
+meat,plausible reporters,lower_bound,-28
+meat,plausible reporters,upper_bound,8
+meat,over-reporters,estimate,-71
+meat,over-reporters,lower_bound,-122
+meat,over-reporters,upper_bound,-20
+milk,total,estimate,-34
+milk,total,lower_bound,-40
+milk,total,upper_bound,-27
+milk,under-reporters,estimate,-12
+milk,under-reporters,lower_bound,-19
+milk,under-reporters,upper_bound,-4
+milk,plausible reporters,estimate,-26
+milk,plausible reporters,lower_bound,-33
+milk,plausible reporters,upper_bound,-18
+milk,over-reporters,estimate,-44
+milk,over-reporters,lower_bound,-68
+milk,over-reporters,upper_bound,-20
+"pasta, rice, cereal grains and flours",total,estimate,-25
+"pasta, rice, cereal grains and flours",total,lower_bound,-37
+"pasta, rice, cereal grains and flours",total,upper_bound,-13
+"pasta, rice, cereal grains and flours",under-reporters,estimate,16
+"pasta, rice, cereal grains and flours",under-reporters,lower_bound,2
+"pasta, rice, cereal grains and flours",under-reporters,upper_bound,30
+"pasta, rice, cereal grains and flours",plausible reporters,estimate,-4
+"pasta, rice, cereal grains and flours",plausible reporters,lower_bound,-18
+"pasta, rice, cereal grains and flours",plausible reporters,upper_bound,9
+"pasta, rice, cereal grains and flours",over-reporters,estimate,-59
+"pasta, rice, cereal grains and flours",over-reporters,lower_bound,-106
+"pasta, rice, cereal grains and flours",over-reporters,upper_bound,-13
+sugars,total,estimate,-20
+sugars,total,lower_bound,-25
+sugars,total,upper_bound,-14
+sugars,under-reporters,estimate,-3
+sugars,under-reporters,lower_bound,-8
+sugars,under-reporters,upper_bound,2
+sugars,plausible reporters,estimate,-11
+sugars,plausible reporters,lower_bound,-17
+sugars,plausible reporters,upper_bound,-5
+sugars,over-reporters,estimate,-34
+sugars,over-reporters,lower_bound,-57
+sugars,over-reporters,upper_bound,-12
+pastries,total,estimate,19
+pastries,total,lower_bound,10
+pastries,total,upper_bound,28
+pastries,under-reporters,estimate,9
+pastries,under-reporters,lower_bound,-2
+pastries,under-reporters,upper_bound,20
+pastries,plausible reporters,estimate,32
+pastries,plausible reporters,lower_bound,20
+pastries,plausible reporters,upper_bound,45
+pastries,over-reporters,estimate,30
+pastries,over-reporters,lower_bound,-1
+pastries,over-reporters,upper_bound,61
+oils,total,estimate,-18
+oils,total,lower_bound,-25
+oils,total,upper_bound,-10
+oils,under-reporters,estimate,12
+oils,under-reporters,lower_bound,5
+oils,under-reporters,upper_bound,20
+oils,plausible reporters,estimate,-3
+oils,plausible reporters,lower_bound,-12
+oils,plausible reporters,upper_bound,6
+oils,over-reporters,estimate,-46
+oils,over-reporters,lower_bound,-75
+oils,over-reporters,upper_bound,-16
+breakfast cereals,total,estimate,-17
+breakfast cereals,total,lower_bound,-23
+breakfast cereals,total,upper_bound,-12
+breakfast cereals,under-reporters,estimate,3
+breakfast cereals,under-reporters,lower_bound,-5
+breakfast cereals,under-reporters,upper_bound,10
+breakfast cereals,plausible reporters,estimate,-12
+breakfast cereals,plausible reporters,lower_bound,-20
+breakfast cereals,plausible reporters,upper_bound,-5
+breakfast cereals,over-reporters,estimate,-53
+breakfast cereals,over-reporters,lower_bound,-75
+breakfast cereals,over-reporters,upper_bound,-31
+soups,total,estimate,-13
+soups,total,lower_bound,-18
+soups,total,upper_bound,-8
+soups,under-reporters,estimate,-3
+soups,under-reporters,lower_bound,-9
+soups,under-reporters,upper_bound,3
+soups,plausible reporters,estimate,-5
+soups,plausible reporters,lower_bound,-12
+soups,plausible reporters,upper_bound,1
+soups,over-reporters,estimate,-37
+soups,over-reporters,lower_bound,-54
+soups,over-reporters,upper_bound,-19
+"potatoes, fried, roasted, chips",total,estimate,-10
+"potatoes, fried, roasted, chips",total,lower_bound,-17
+"potatoes, fried, roasted, chips",total,upper_bound,-4
+"potatoes, fried, roasted, chips",under-reporters,estimate,0
+"potatoes, fried, roasted, chips",under-reporters,lower_bound,-6
+"potatoes, fried, roasted, chips",under-reporters,upper_bound,6
+"potatoes, fried, roasted, chips",plausible reporters,estimate,-8
+"potatoes, fried, roasted, chips",plausible reporters,lower_bound,-15
+"potatoes, fried, roasted, chips",plausible reporters,upper_bound,0
+"potatoes, fried, roasted, chips",over-reporters,estimate,1
+"potatoes, fried, roasted, chips",over-reporters,lower_bound,-32
+"potatoes, fried, roasted, chips",over-reporters,upper_bound,35
+cheese,total,estimate,-10
+cheese,total,lower_bound,-17
+cheese,total,upper_bound,-2
+cheese,under-reporters,estimate,-4
+cheese,under-reporters,lower_bound,-11
+cheese,under-reporters,upper_bound,3
+cheese,plausible reporters,estimate,-7
+cheese,plausible reporters,lower_bound,-17
+cheese,plausible reporters,upper_bound,3
+cheese,over-reporters,estimate,49
+cheese,over-reporters,lower_bound,16
+cheese,over-reporters,upper_bound,83
+nuts,total,estimate,10
+nuts,total,lower_bound,2
+nuts,total,upper_bound,17
+nuts,under-reporters,estimate,11
+nuts,under-reporters,lower_bound,2
+nuts,under-reporters,upper_bound,19
+nuts,plausible reporters,estimate,16
+nuts,plausible reporters,lower_bound,6
+nuts,plausible reporters,upper_bound,26
+nuts,over-reporters,estimate,29
+nuts,over-reporters,lower_bound,-6
+nuts,over-reporters,upper_bound,63

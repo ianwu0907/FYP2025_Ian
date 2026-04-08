@@ -15,9 +15,11 @@ export const useNormalizer = () => {
   const [result, setResult] = useState(null);
   const [error, setError] = useState(null);
   const [uploadedFileInfo, setUploadedFileInfo] = useState(null);
+  const [currentStage, setCurrentStage] = useState(null);
 
   const pollingIntervalRef = useRef(null);
-  const pollingErrorCountRef = useRef(0); // 跟踪连续轮询错误次数
+  const pollingErrorCountRef = useRef(0);
+  const lastStageRef = useRef(null); // track last stage to avoid duplicate logs
 
   /**
    * 上传文件
@@ -104,7 +106,21 @@ export const useNormalizer = () => {
 
         setProgress(statusResponse.progress);
         if (statusResponse.current_stage) {
-          setLogs((prev) => [...prev, `[${formatTimestamp()}] [${statusResponse.current_stage}] Progress: ${statusResponse.progress}%`]);
+          setCurrentStage(statusResponse.current_stage);
+          // Only log when stage actually changes
+          if (statusResponse.current_stage !== lastStageRef.current) {
+            lastStageRef.current = statusResponse.current_stage;
+            const stageLabels = {
+              initializing:           'Initializing pipeline...',
+              encoding:               'Stage 1 / 4 — Spreadsheet Encoding',
+              irregularity_detection: 'Stage 2 / 4 — Irregularity Detection',
+              schema_estimation:      'Stage 3 / 4 — Schema Estimation',
+              transformation:         'Stage 4 / 4 — Transformation Generation',
+              completed:              'Completed',
+            };
+            const label = stageLabels[statusResponse.current_stage] || statusResponse.current_stage;
+            setLogs((prev) => [...prev, `[${formatTimestamp()}] ${label}`]);
+          }
         }
 
         if (statusResponse.status === 'completed') {
@@ -150,6 +166,23 @@ export const useNormalizer = () => {
   }, []);
 
   /**
+   * 重试 — 保留已上传的文件，仅重置 pipeline 状态
+   */
+  const retry = useCallback(() => {
+    if (pollingIntervalRef.current) {
+      clearInterval(pollingIntervalRef.current);
+    }
+    setTaskId(null);
+    setStatus('uploaded');
+    setProgress(0);
+    setLogs([]);
+    setResult(null);
+    setError(null);
+    setCurrentStage(null);
+    lastStageRef.current = null;
+  }, []);
+
+  /**
    * 重置状态
    */
   const reset = useCallback(() => {
@@ -164,6 +197,8 @@ export const useNormalizer = () => {
     setResult(null);
     setError(null);
     setUploadedFileInfo(null);
+    setCurrentStage(null);
+    lastStageRef.current = null;
   }, []);
 
   /**
@@ -187,11 +222,13 @@ export const useNormalizer = () => {
     result,
     error,
     uploadedFileInfo,
+    currentStage,
 
     // 方法
     uploadFile,
     startNormalization,
     reset,
+    retry,
   };
 };
 

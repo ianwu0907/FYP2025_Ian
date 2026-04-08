@@ -1,7 +1,11 @@
-behaviour,day_type,beta,p_value
-sedentary time,weekday,0.079,0.0309
-sedentary time,weekend,0.17,0.0003
-lpa,weekday,0.067,0.003
-lpa,weekend,0.103,0.0003
-mvpa,weekday,0.002,0.0134
-mvpa,weekend,0.002,0.0432
+behaviour_type,day_type,beta,p_value
+screen time,,0.0002,screen time
+total,0.124,0.0016,sedentary time
+weekday,0.079,0.0309,sedentary time
+weekend,0.17,0.0003,sedentary time
+total,0.096,0.0001,lpa
+weekday,0.067,0.003,lpa
+weekend,0.103,0.0003,lpa
+total,0.002,0.007,mvpa
+weekday,0.002,0.0134,mvpa
+weekend,0.002,0.0432,mvpa

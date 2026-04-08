@@ -1,73 +1,73 @@
-place_of_birth,religion,agricultural_region,worker_type,percent
-born in the province of residence,anglican,percent,french,86.1
-born in the province of residence,anglican,english-language workers,english,84.6
-born in the province of residence,anglican,french-language workers,french,82.1
-born in the province of residence,anglican,english-language workers,english,78.3
-born in the province of residence,anglican,french-language workers,french,92.8
-born in the province of residence,anglican,english-language workers,english,76.6
-born in a different province,anglican,percent,french,7.5
-born in a different province,anglican,english-language workers,english,8.0
-born in a different province,anglican,french-language workers,french,14.9
-born in a different province,anglican,english-language workers,english,17.8
-born in a different province,anglican,french-language workers,french,7.2
-born in a different province,anglican,english-language workers,english,23.4
-born outside of canada,anglican,percent,french,6.4
-born outside of canada,anglican,english-language workers,english,7.2
-born outside of canada,anglican,french-language workers,french,0.0
-born outside of canada,anglican,english-language workers,english,3.8
-born outside of canada,anglican,french-language workers,french,0.0
-born outside of canada,anglican,english-language workers,english,0.0
-anglican,anglican,percent,french,0.0
-anglican,anglican,english-language workers,english,8.3
-anglican,anglican,french-language workers,french,0.0
-anglican,anglican,english-language workers,english,12.7
-anglican,anglican,french-language workers,french,0.0
-anglican,anglican,english-language workers,english,0.0
-catholic,anglican,percent,french,93.6
-catholic,anglican,english-language workers,english,15.0
-catholic,anglican,french-language workers,french,92.5
-catholic,anglican,english-language workers,english,19.1
-catholic,anglican,french-language workers,french,96.4
-catholic,anglican,english-language workers,english,59.4
-pentecostal,anglican,percent,french,2.7
-pentecostal,anglican,english-language workers,english,7.8
-pentecostal,anglican,french-language workers,french,0.0
-pentecostal,anglican,english-language workers,english,0.0
-pentecostal,anglican,french-language workers,french,0.0
-pentecostal,anglican,english-language workers,english,0.0
-presbyterian,anglican,percent,french,0.0
-presbyterian,anglican,english-language workers,english,0.0
-presbyterian,anglican,french-language workers,french,0.0
-presbyterian,anglican,english-language workers,english,0.0
-presbyterian,anglican,french-language workers,french,0.0
-presbyterian,anglican,english-language workers,english,0.0
-united church,anglican,percent,french,0.0
-united church,anglican,english-language workers,english,11.5
-united church,anglican,french-language workers,french,0.0
-united church,anglican,english-language workers,english,25.5
-united church,anglican,french-language workers,french,0.0
-united church,anglican,english-language workers,english,21.9
-other christian,anglican,percent,french,0.0
-other christian,anglican,english-language workers,english,37.4
-other christian,anglican,french-language workers,french,0.0
-other christian,anglican,english-language workers,english,25.5
-other christian,anglican,french-language workers,french,0.0
-other christian,anglican,english-language workers,english,0.0
-"buddhist, hindu, jewish, muslim and sikh",anglican,percent,french,0.0
-"buddhist, hindu, jewish, muslim and sikh",anglican,english-language workers,english,0.0
-"buddhist, hindu, jewish, muslim and sikh",anglican,french-language workers,french,0.0
-"buddhist, hindu, jewish, muslim and sikh",anglican,english-language workers,english,0.0
-"buddhist, hindu, jewish, muslim and sikh",anglican,french-language workers,french,0.0
-"buddhist, hindu, jewish, muslim and sikh",anglican,english-language workers,english,0.0
-other religions,anglican,percent,french,0.0
-other religions,anglican,english-language workers,english,0.0
-other religions,anglican,french-language workers,french,0.0
-other religions,anglican,english-language workers,english,0.0
-other religions,anglican,french-language workers,french,0.0
-other religions,anglican,english-language workers,english,0.0
-no religious affiliation,anglican,percent,french,3.7
-no religious affiliation,anglican,english-language workers,english,18.3
-no religious affiliation,anglican,french-language workers,french,0.0
-no religious affiliation,anglican,english-language workers,english,15.9
-no religious affiliation,anglican,french-language workers,french,0.0
-no religious affiliation,anglican,english-language workers,english,7.8
+agricultural_region,language_worker_type,category_type,category_value,percent_value
+1,french-language workers,place of birth,born in the province of residence,86.1
+1,english-language workers,place of birth,born in the province of residence,84.6
+3,french-language workers,place of birth,born in the province of residence,82.1
+3,english-language workers,place of birth,born in the province of residence,78.3
+4,french-language workers,place of birth,born in the province of residence,92.8
+4,english-language workers,place of birth,born in the province of residence,76.6
+1,french-language workers,place of birth,born in a different province,7.5
+1,english-language workers,place of birth,born in a different province,8.0
+3,french-language workers,place of birth,born in a different province,14.9
+3,english-language workers,place of birth,born in a different province,17.8
+4,french-language workers,place of birth,born in a different province,7.2
+4,english-language workers,place of birth,born in a different province,23.4
+1,french-language workers,place of birth,born outside of canada,6.4
+1,english-language workers,place of birth,born outside of canada,7.2
+3,french-language workers,place of birth,born outside of canada,0.0
+3,english-language workers,place of birth,born outside of canada,3.8
+4,french-language workers,place of birth,born outside of canada,0.0
+4,english-language workers,place of birth,born outside of canada,0.0
+1,french-language workers,religion,anglican,0.0
+1,english-language workers,religion,anglican,8.3
+3,french-language workers,religion,anglican,0.0
+3,english-language workers,religion,anglican,12.7
+4,french-language workers,religion,anglican,0.0
+4,english-language workers,religion,anglican,0.0
+1,french-language workers,religion,catholic,93.6
+1,english-language workers,religion,catholic,15.0
+3,french-language workers,religion,catholic,92.5
+3,english-language workers,religion,catholic,19.1
+4,french-language workers,religion,catholic,96.4
+4,english-language workers,religion,catholic,59.4
+1,french-language workers,religion,pentecostal,2.7
+1,english-language workers,religion,pentecostal,7.8
+3,french-language workers,religion,pentecostal,0.0
+3,english-language workers,religion,pentecostal,0.0
+4,french-language workers,religion,pentecostal,0.0
+4,english-language workers,religion,pentecostal,0.0
+1,french-language workers,religion,presbyterian,0.0
+1,english-language workers,religion,presbyterian,0.0
+3,french-language workers,religion,presbyterian,0.0
+3,english-language workers,religion,presbyterian,0.0
+4,french-language workers,religion,presbyterian,0.0
+4,english-language workers,religion,presbyterian,0.0
+1,french-language workers,religion,united church,0.0
+1,english-language workers,religion,united church,11.5
+3,french-language workers,religion,united church,0.0
+3,english-language workers,religion,united church,25.5
+4,french-language workers,religion,united church,0.0
+4,english-language workers,religion,united church,21.9
+1,french-language workers,religion,other christian,0.0
+1,english-language workers,religion,other christian,37.4
+3,french-language workers,religion,other christian,0.0
+3,english-language workers,religion,other christian,25.5
+4,french-language workers,religion,other christian,0.0
+4,english-language workers,religion,other christian,0.0
+1,french-language workers,religion,"buddhist, hindu, jewish, muslim and sikh",0.0
+1,english-language workers,religion,"buddhist, hindu, jewish, muslim and sikh",0.0
+3,french-language workers,religion,"buddhist, hindu, jewish, muslim and sikh",0.0
+3,english-language workers,religion,"buddhist, hindu, jewish, muslim and sikh",0.0
+4,french-language workers,religion,"buddhist, hindu, jewish, muslim and sikh",0.0
+4,english-language workers,religion,"buddhist, hindu, jewish, muslim and sikh",0.0
+1,french-language workers,religion,other religions,0.0
+1,english-language workers,religion,other religions,0.0
+3,french-language workers,religion,other religions,0.0
+3,english-language workers,religion,other religions,0.0
+4,french-language workers,religion,other religions,0.0
+4,english-language workers,religion,other religions,0.0
+1,french-language workers,religion,no religious affiliation,3.7
+1,english-language workers,religion,no religious affiliation,18.3
+3,french-language workers,religion,no religious affiliation,0.0
+3,english-language workers,religion,no religious affiliation,15.9
+4,french-language workers,religion,no religious affiliation,0.0
+4,english-language workers,religion,no religious affiliation,7.8

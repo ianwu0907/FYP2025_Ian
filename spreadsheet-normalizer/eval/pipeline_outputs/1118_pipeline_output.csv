@@ -1,37 +1,12 @@
-region_name,intervention_type,count,percentage
-canada,number_1,49135.0,
-newfoundland and labrador,number_1,1245.0,
-prince edward island,number_1,360.0,
-nova scotia,number_1,2680.0,
-new brunswick,number_1,1950.0,
-ontario,number_1,24205.0,
-manitoba,number_1,2460.0,
-saskatchewan,number_1,2200.0,
-alberta,number_1,5425.0,
-british columbia,number_1,8475.0,
-yukon,number_1,50.0,
-northwest territories,number_1,,
-canada,number_2,9380.0,
-newfoundland and labrador,number_2,195.0,
-prince edward island,number_2,50.0,
-nova scotia,number_2,535.0,
-new brunswick,number_2,490.0,
-ontario,number_2,4765.0,
-manitoba,number_2,560.0,
-saskatchewan,number_2,385.0,
-alberta,number_2,955.0,
-british columbia,number_2,1420.0,
-yukon,number_2,10.0,
-northwest territories,number_2,,
-canada,percent,,19.1
-newfoundland and labrador,percent,,15.6
-prince edward island,percent,,13.6
-nova scotia,percent,,20.0
-new brunswick,percent,,25.1
-ontario,percent,,19.7
-manitoba,percent,,22.9
-saskatchewan,percent,,17.5
-alberta,percent,,17.6
-british columbia,percent,,16.8
-yukon,percent,,19.6
-northwest territories,percent,,
+province_territory,linked_cohort_count,surgical_intervention_count,surgical_intervention_percent
+canada,49135,9380,19.1
+newfoundland and labrador,1245,195,15.6
+prince edward island,360,50,13.6
+nova scotia,2680,535,20.0
+new brunswick,1950,490,25.1
+ontario,24205,4765,19.7
+manitoba,2460,560,22.9
+saskatchewan,2200,385,17.5
+alberta,5425,955,17.6
+british columbia,8475,1420,16.8
+yukon,50,10,19.6

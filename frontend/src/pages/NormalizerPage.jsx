@@ -4,11 +4,13 @@
  */
 
 import React, { useState } from 'react';
-import { Layout, Row, Col, Card, Button, message, Descriptions, Tag, Spin, Divider } from 'antd';
-import { RocketOutlined, ReloadOutlined, CheckCircleOutlined, DownloadOutlined, TranslationOutlined } from '@ant-design/icons';
+import { Layout, Row, Col, Card, Button, message, Descriptions, Tag, Spin, Divider, Tooltip } from 'antd';
+import { RocketOutlined, ReloadOutlined, CheckCircleOutlined, DownloadOutlined, TranslationOutlined, FileExcelOutlined } from '@ant-design/icons';
 import FileUpload from '../components/FileUpload/FileUpload';
 import ProgressDisplay from '../components/ProgressDisplay/ProgressDisplay';
 import TableComparison from '../components/TableComparison/TableComparison';
+import IrregularityPanel from '../components/IrregularityPanel/IrregularityPanel';
+import MetricsPanel from '../components/MetricsPanel/MetricsPanel';
 import { useNormalizer } from '../hooks/useNormalizer';
 import { api } from '../services/api';
 import { useLanguage } from '../contexts/LanguageContext';
@@ -25,13 +27,32 @@ const NormalizerPage = () => {
     result,
     error,
     uploadedFileInfo,
+    currentStage,
     uploadFile,
     startNormalization,
     reset,
+    retry,
   } = useNormalizer();
 
   const { t, toggleLanguage, currentLanguage } = useLanguage();
   const [configOverrides, setConfigOverrides] = useState({});
+  const [demoLoading, setDemoLoading] = useState(null);
+
+  const handleDemoFile = async (demoFile) => {
+    setDemoLoading(demoFile);
+    try {
+      const res = await fetch(`/demos/${demoFile}`);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const blob = await res.blob();
+      const file = new File([blob], demoFile, { type: blob.type || 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
+      await uploadFile(file);
+      message.success(`${demoFile} ${t.upload.uploadSuccess}`);
+    } catch (err) {
+      message.error(`${t.upload.uploadFailed}: ${err.message}`);
+    } finally {
+      setDemoLoading(null);
+    }
+  };
 
   const handleFileUpload = async (file) => {
     try {
@@ -180,6 +201,32 @@ const NormalizerPage = () => {
                 loading={status === 'uploading'}
               />
 
+              {/* Demo Files */}
+              {status === 'idle' && (
+                <div style={{ marginTop: 16 }}>
+                  <Divider plain style={{ color: '#999', fontSize: 13 }}>{t.demo.title}</Divider>
+                  <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', justifyContent: 'center' }}>
+                    {t.demo.files.map((demo) => (
+                      <Tooltip key={demo.file} title={demo.desc}>
+                        <Button
+                          icon={<FileExcelOutlined style={{ color: '#217346' }} />}
+                          loading={demoLoading === demo.file}
+                          onClick={() => handleDemoFile(demo.file)}
+                          style={{
+                            borderRadius: 8,
+                            borderColor: '#217346',
+                            color: '#217346',
+                            fontWeight: 500,
+                          }}
+                        >
+                          {demo.name}
+                        </Button>
+                      </Tooltip>
+                    ))}
+                  </div>
+                </div>
+              )}
+
               {uploadedFileInfo && (
                 <div style={{ marginTop: 20 }}>
                   <Descriptions title={t.upload.fileInfo} bordered size="small" column={2}>
@@ -257,7 +304,7 @@ const NormalizerPage = () => {
                   borderRadius: '12px 12px 0 0',
                 }}
               >
-                <ProgressDisplay progress={progress} logs={logs} status={status} />
+                <ProgressDisplay progress={progress} logs={logs} status={status} currentStage={currentStage} />
               </Card>
             </Col>
           )}
@@ -293,6 +340,29 @@ const NormalizerPage = () => {
                 </Descriptions> */}
 
 
+
+                {/* Irregularities + Metrics side by side */}
+                <Row gutter={[24, 16]} style={{ marginBottom: 8 }}>
+                  <Col xs={24} lg={10}>
+                    <Divider orientation="left" style={{ fontSize: 15, fontWeight: 'bold', margin: '12px 0 10px' }}>
+                      {currentLanguage === 'zh' ? '检测到的结构异常' : 'Detected Irregularities'}
+                    </Divider>
+                    <IrregularityPanel
+                      irregularities={result?.irregularities || []}
+                      labels={result?.irregularity_labels || []}
+                    />
+                  </Col>
+                  <Col xs={24} lg={14}>
+                    <Divider orientation="left" style={{ fontSize: 15, fontWeight: 'bold', margin: '12px 0 10px' }}>
+                      {currentLanguage === 'zh' ? '整洁度指标 (前后对比)' : 'Tidiness Metrics (Before vs After)'}
+                    </Divider>
+                    <MetricsPanel
+                      metricsBefore={result?.metrics_before || {}}
+                      metricsAfter={result?.metrics_after || {}}
+                      metricsComparison={result?.metrics_comparison || {}}
+                    />
+                  </Col>
+                </Row>
 
                 {/* 表格对比视图 */}
                 {(() => {
@@ -354,7 +424,11 @@ const NormalizerPage = () => {
           {status === 'error' && error && (
             <Col span={24}>
               <Card
-                title={<span style={{ fontSize: 18, fontWeight: 'bold', color: '#ff4d4f' }}>{t.error.title}</span>}
+                title={
+                  <span style={{ fontSize: 18, fontWeight: 'bold', color: '#ff4d4f' }}>
+                    ❌ {currentLanguage === 'zh' ? '标准化失败' : 'Normalization Failed'}
+                  </span>
+                }
                 style={{
                   borderRadius: '12px',
                   boxShadow: '0 4px 20px rgba(255, 77, 79, 0.15)',
@@ -365,22 +439,57 @@ const NormalizerPage = () => {
                   borderRadius: '12px 12px 0 0',
                 }}
               >
-                <p style={{ color: '#ff4d4f', fontSize: 16, fontWeight: '500' }}>
+                {/* Error message */}
+                <div style={{
+                  background: '#fff2f0',
+                  border: '1px solid #ffccc7',
+                  borderRadius: 8,
+                  padding: '12px 16px',
+                  marginBottom: 20,
+                  fontFamily: 'monospace',
+                  fontSize: 13,
+                  color: '#cf1322',
+                }}>
                   {error}
-                </p>
-                <Button
-                  onClick={handleReset}
-                  style={{
-                    background: 'linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%)',
-                    border: 'none',
-                    color: '#fff',
-                    fontWeight: 'bold',
-                    borderRadius: '6px',
-                    boxShadow: '0 2px 10px rgba(255, 77, 79, 0.3)',
-                  }}
-                >
-                  {t.error.retry}
-                </Button>
+                </div>
+
+                {/* Action buttons */}
+                <div style={{ display: 'flex', gap: 12, marginBottom: uploadedFileInfo?.preview ? 24 : 0 }}>
+                  <Button
+                    type="primary"
+                    icon={<RocketOutlined />}
+                    onClick={() => { retry(); }}
+                    style={{
+                      background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                      border: 'none',
+                      fontWeight: 'bold',
+                      borderRadius: '6px',
+                    }}
+                  >
+                    {currentLanguage === 'zh' ? '重新尝试' : 'Retry Normalization'}
+                  </Button>
+                  <Button
+                    icon={<ReloadOutlined />}
+                    onClick={handleReset}
+                    style={{ borderRadius: '6px' }}
+                  >
+                    {currentLanguage === 'zh' ? '上传新文件' : 'Upload New File'}
+                  </Button>
+                </div>
+
+                {/* Original table preview */}
+                {uploadedFileInfo?.preview && (
+                  <>
+                    <Divider orientation="left" style={{ fontSize: 15, fontWeight: 'bold', color: '#595959' }}>
+                      {currentLanguage === 'zh' ? '原始表格（未做处理）' : 'Original Table (unmodified)'}
+                    </Divider>
+                    <TableComparison
+                      originalData={uploadedFileInfo.preview}
+                      normalizedData={null}
+                      singleMode
+                    />
+                  </>
+                )}
               </Card>
             </Col>
           )}

@@ -1,17 +1,17 @@
 {
   "shape": {
-    "rows": 26,
-    "cols": 16
+    "rows": 16,
+    "cols": 7
   },
-  "cell_coverage": 0.8606,
-  "row_completeness_uniformity": 0.6658,
-  "column_type_homogeneity": 0.5385,
-  "data_row_ratio": 0.8462,
-  "column_completeness_min": 0.8462,
+  "cell_coverage": 0.8304,
+  "row_completeness_uniformity": 0.6571,
+  "column_type_homogeneity": 0.6261,
+  "data_row_ratio": 0.75,
+  "column_completeness_min": 0.8125,
   "header_uniqueness": 1.0,
-  "type_consistency": 0.7752,
-  "substring_containment": 0.0166,
-  "inter_column_nmi": 0.86,
+  "type_consistency": 0.9246,
+  "substring_containment": 0.0021,
+  "inter_column_nmi": 0.8253,
   "groupby_queryability": 1.0,
   "groupby_queryability_mode": "full"
 }

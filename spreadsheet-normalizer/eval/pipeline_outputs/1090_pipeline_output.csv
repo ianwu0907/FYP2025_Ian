@@ -1,34 +1,97 @@
-Unnamed: 0,all,high school or less,"college, trade or other postsecondary",university degree
-,percent,,,
-canada,,,,
-aged 25 to 54,,,,
-1997,76.2,66.6,81.0,86.3
-2000,77.9,68.9,81.9,86.2
-2007,81.5,72.3,84.9,86.3
-2015,81.3,68.0,84.4,86.6
-aged 25 to 44,,,,
-1997,77.8,68.2,82.0,86.6
-2000,79.4,70.8,82.5,86.0
-2007,82.0,72.3,85.1,85.4
-2015,80.9,65.2,84.0,86.0
-aged 45 to 54,,,,
-1997,72.3,63.5,78.0,85.3
-2000,74.8,65.6,80.1,86.5
-2007,80.8,72.3,84.7,88.5
-2015,82.0,71.8,85.0,88.3
-united states,,,,
-aged 25 to 54,,,,
-1997,76.7,69.7,80.6,84.6
-2000,76.8,70.1,80.4,83.0
-2007,75.5,67.0,79.2,82.3
-2015,73.9,62.3,76.1,82.4
-aged 25 to 44,,,,
-1997,77.0,70.3,80.5,84.1
-2000,76.9,70.7,80.3,82.3
-2007,75.1,66.4,78.9,81.3
-2015,74.0,61.5,76.4,82.2
-aged 45 to 54,,,,
-1997,76.1,68.2,81.0,85.9
-2000,76.6,68.9,80.6,84.6
-2007,76.2,68.0,79.8,84.2
-2015,73.7,63.6,75.6,83.0
+country,age_group,year,education,employment_rate
+canada,aged 25 to 54,1997,all,76.2
+canada,aged 25 to 54,1997,high school or less,66.6
+canada,aged 25 to 54,1997,"college, trade or other postsecondary",81.0
+canada,aged 25 to 54,1997,university degree,86.3
+canada,aged 25 to 54,2000,all,77.9
+canada,aged 25 to 54,2000,high school or less,68.9
+canada,aged 25 to 54,2000,"college, trade or other postsecondary",81.9
+canada,aged 25 to 54,2000,university degree,86.2
+canada,aged 25 to 54,2007,all,81.5
+canada,aged 25 to 54,2007,high school or less,72.3
+canada,aged 25 to 54,2007,"college, trade or other postsecondary",84.9
+canada,aged 25 to 54,2007,university degree,86.3
+canada,aged 25 to 54,2015,all,81.3
+canada,aged 25 to 54,2015,high school or less,68.0
+canada,aged 25 to 54,2015,"college, trade or other postsecondary",84.4
+canada,aged 25 to 54,2015,university degree,86.6
+canada,aged 25 to 44,1997,all,77.8
+canada,aged 25 to 44,1997,high school or less,68.2
+canada,aged 25 to 44,1997,"college, trade or other postsecondary",82.0
+canada,aged 25 to 44,1997,university degree,86.6
+canada,aged 25 to 44,2000,all,79.4
+canada,aged 25 to 44,2000,high school or less,70.8
+canada,aged 25 to 44,2000,"college, trade or other postsecondary",82.5
+canada,aged 25 to 44,2000,university degree,86.0
+canada,aged 25 to 44,2007,all,82.0
+canada,aged 25 to 44,2007,high school or less,72.3
+canada,aged 25 to 44,2007,"college, trade or other postsecondary",85.1
+canada,aged 25 to 44,2007,university degree,85.4
+canada,aged 25 to 44,2015,all,80.9
+canada,aged 25 to 44,2015,high school or less,65.2
+canada,aged 25 to 44,2015,"college, trade or other postsecondary",84.0
+canada,aged 25 to 44,2015,university degree,86.0
+canada,aged 45 to 54,1997,all,72.3
+canada,aged 45 to 54,1997,high school or less,63.5
+canada,aged 45 to 54,1997,"college, trade or other postsecondary",78.0
+canada,aged 45 to 54,1997,university degree,85.3
+canada,aged 45 to 54,2000,all,74.8
+canada,aged 45 to 54,2000,high school or less,65.6
+canada,aged 45 to 54,2000,"college, trade or other postsecondary",80.1
+canada,aged 45 to 54,2000,university degree,86.5
+canada,aged 45 to 54,2007,all,80.8
+canada,aged 45 to 54,2007,high school or less,72.3
+canada,aged 45 to 54,2007,"college, trade or other postsecondary",84.7
+canada,aged 45 to 54,2007,university degree,88.5
+canada,aged 45 to 54,2015,all,82.0
+canada,aged 45 to 54,2015,high school or less,71.8
+canada,aged 45 to 54,2015,"college, trade or other postsecondary",85.0
+canada,aged 45 to 54,2015,university degree,88.3
+united states,aged 25 to 54,1997,all,76.7
+united states,aged 25 to 54,1997,high school or less,69.7
+united states,aged 25 to 54,1997,"college, trade or other postsecondary",80.6
+united states,aged 25 to 54,1997,university degree,84.6
+united states,aged 25 to 54,2000,all,76.8
+united states,aged 25 to 54,2000,high school or less,70.1
+united states,aged 25 to 54,2000,"college, trade or other postsecondary",80.4
+united states,aged 25 to 54,2000,university degree,83.0
+united states,aged 25 to 54,2007,all,75.5
+united states,aged 25 to 54,2007,high school or less,67.0
+united states,aged 25 to 54,2007,"college, trade or other postsecondary",79.2
+united states,aged 25 to 54,2007,university degree,82.3
+united states,aged 25 to 54,2015,all,73.9
+united states,aged 25 to 54,2015,high school or less,62.3
+united states,aged 25 to 54,2015,"college, trade or other postsecondary",76.1
+united states,aged 25 to 54,2015,university degree,82.4
+united states,aged 25 to 44,1997,all,77.0
+united states,aged 25 to 44,1997,high school or less,70.3
+united states,aged 25 to 44,1997,"college, trade or other postsecondary",80.5
+united states,aged 25 to 44,1997,university degree,84.1
+united states,aged 25 to 44,2000,all,76.9
+united states,aged 25 to 44,2000,high school or less,70.7
+united states,aged 25 to 44,2000,"college, trade or other postsecondary",80.3
+united states,aged 25 to 44,2000,university degree,82.3
+united states,aged 25 to 44,2007,all,75.1
+united states,aged 25 to 44,2007,high school or less,66.4
+united states,aged 25 to 44,2007,"college, trade or other postsecondary",78.9
+united states,aged 25 to 44,2007,university degree,81.3
+united states,aged 25 to 44,2015,all,74.0
+united states,aged 25 to 44,2015,high school or less,61.5
+united states,aged 25 to 44,2015,"college, trade or other postsecondary",76.4
+united states,aged 25 to 44,2015,university degree,82.2
+united states,aged 45 to 54,1997,all,76.1
+united states,aged 45 to 54,1997,high school or less,68.2
+united states,aged 45 to 54,1997,"college, trade or other postsecondary",81.0
+united states,aged 45 to 54,1997,university degree,85.9
+united states,aged 45 to 54,2000,all,76.6
+united states,aged 45 to 54,2000,high school or less,68.9
+united states,aged 45 to 54,2000,"college, trade or other postsecondary",80.6
+united states,aged 45 to 54,2000,university degree,84.6
+united states,aged 45 to 54,2007,all,76.2
+united states,aged 45 to 54,2007,high school or less,68.0
+united states,aged 45 to 54,2007,"college, trade or other postsecondary",79.8
+united states,aged 45 to 54,2007,university degree,84.2
+united states,aged 45 to 54,2015,all,73.7
+united states,aged 45 to 54,2015,high school or less,63.6
+united states,aged 45 to 54,2015,"college, trade or other postsecondary",75.6
+united states,aged 45 to 54,2015,university degree,83.0

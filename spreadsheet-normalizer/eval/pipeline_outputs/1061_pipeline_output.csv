@@ -1,4 +1,37 @@
-self_rated_mental_health,group,percent,confidence_interval_from,confidence_interval_to
-diagnosed mood or anxiety disorder,transgender,17.1,40.6,79.1
-mood disorder,transgender,10.2,21.5,60.6
-anxiety disorder,transgender,13.1,36.5,75.8
+indicator,gender,statistic_type,value
+positive,cisgender,percent point estimate,88.1
+positive,cisgender,CI lower bound,87.6
+positive,cisgender,CI upper bound,88.6
+positive,transgender,percent point estimate,34.1
+positive,transgender,CI lower bound,17.0
+positive,transgender,CI upper bound,54.9
+negative,cisgender,percent point estimate,11.3
+negative,cisgender,CI lower bound,10.8
+negative,cisgender,CI upper bound,11.9
+negative,transgender,percent point estimate,65.4
+negative,transgender,CI lower bound,44.6
+negative,transgender,CI upper bound,82.7
+ever seriously contemplated suicide,cisgender,percent point estimate,15.6
+ever seriously contemplated suicide,cisgender,CI lower bound,15.1
+ever seriously contemplated suicide,cisgender,CI upper bound,16.2
+ever seriously contemplated suicide,transgender,percent point estimate,44.8
+ever seriously contemplated suicide,transgender,CI lower bound,25.7
+ever seriously contemplated suicide,transgender,CI upper bound,65.2
+diagnosed mood or anxiety disorder,cisgender,percent point estimate,17.1
+diagnosed mood or anxiety disorder,cisgender,CI lower bound,16.6
+diagnosed mood or anxiety disorder,cisgender,CI upper bound,17.7
+diagnosed mood or anxiety disorder,transgender,percent point estimate,61.1
+diagnosed mood or anxiety disorder,transgender,CI lower bound,40.6
+diagnosed mood or anxiety disorder,transgender,CI upper bound,79.1
+mood disorder,cisgender,percent point estimate,10.2
+mood disorder,cisgender,CI lower bound,9.7
+mood disorder,cisgender,CI upper bound,10.7
+mood disorder,transgender,percent point estimate,39.9
+mood disorder,transgender,CI lower bound,21.5
+mood disorder,transgender,CI upper bound,60.6
+anxiety disorder,cisgender,percent point estimate,13.1
+anxiety disorder,cisgender,CI lower bound,12.6
+anxiety disorder,cisgender,CI upper bound,13.7
+anxiety disorder,transgender,percent point estimate,57.0
+anxiety disorder,transgender,CI lower bound,36.5
+anxiety disorder,transgender,CI upper bound,75.8

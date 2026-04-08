@@ -1,36 +1,331 @@
-census metropolitan area,homicide,Unnamed: 2,sexual assault,Unnamed: 4,robbery,Unnamed: 6,breaking and entering,Unnamed: 8,motor vehicle theft,Unnamed: 10
-,number,rate,rate,percent change in rate 2015 to 2016,rate,percent change in rate 2015 to 2016,rate,percent change in rate 2015 to 2016,rate,percent change in rate 2015 to 2016
-st. john's,4,1.93,69,-7,87,20,602,18,118,12
-halifax,12,2.82,75,-9,45,-23,239,-16,90,-5
-moncton,1,0.64,43,-2,64,62,561,-3,147,13
-saint john,3,2.35,41,-46,48,48,231,-8,58,-15
-saguenay,2,1.20,53,-10,16,-15,338,0,117,-9
-quebec,1,0.12,47,3,19,13,319,-1,71,-2
-sherbrooke,2,1.00,58,15,19,-23,286,-12,54,-2
-trois-rivieres,0,0.00,54,1,12,-66,336,-11,85,-25
-montreal,42,1.02,46,11,74,-10,386,-5,168,-11
-gatineau,3,0.91,48,9,32,44,320,5,71,-28
-ottawa,24,2.37,59,14,50,-13,270,16,88,-1
-kingston,0,0.00,60,-7,18,-17,395,19,72,-9
-peterborough,2,1.62,97,10,41,-15,304,-25,57,-1
-toronto,96,1.55,44,-2,83,10,205,-9,113,4
-hamilton,12,1.58,64,6,70,21,308,5,217,-1
-st. catharines-niagara,1,0.22,53,-7,31,-11,373,-11,160,5
-kitchener-cambridge-waterloo,6,1.09,51,-12,51,6,358,-11,137,-3
-brantford,4,2.73,68,-12,68,14,588,12,454,-2
-guelph,1,0.76,64,33,22,-8,347,16,119,49
-london,8,1.55,46,10,55,4,389,9,195,-12
-windsor,3,0.90,52,15,61,10,506,23,199,14
-barrie,2,0.92,54,14,32,28,200,-8,68,-12
-greater sudbury,0,0.00,61,1,48,10,454,20,101,-17
-thunder bay,8,6.64,85,7,118,-21,492,18,158,1
-winnipeg,25,3.14,98,14,229,27,682,14,315,3
-regina,8,3.23,59,-4,118,18,760,7,523,17
-saskatoon,10,3.12,95,44,116,-11,791,-3,453,16
-calgary,33,2.24,44,-14,62,-24,576,-10,535,0
-edmonton,47,3.39,72,-8,103,-8,582,-4,483,10
-kelowna,5,2.54,34,-18,41,-28,620,-3,316,-11
-abbotsford-mission,6,3.22,42,0,64,-36,577,-19,493,-1
-vancouver,41,1.61,44,2,78,-24,678,-1,312,-7
-victoria,1,0.27,64,7,37,-15,326,-20,108,0
-canada,611,1.68,58,-1,60,-3,439,-2,217,-1
+census_metropolitan_area,crime_type,measure_type,value
+st. john's,homicide,count,4.0
+halifax,homicide,count,12.0
+moncton,homicide,count,1.0
+saint john,homicide,count,3.0
+saguenay,homicide,count,2.0
+quebec,homicide,count,1.0
+sherbrooke,homicide,count,2.0
+trois-rivieres,homicide,count,0.0
+montreal,homicide,count,42.0
+gatineau,homicide,count,3.0
+ottawa,homicide,count,24.0
+kingston,homicide,count,0.0
+peterborough,homicide,count,2.0
+toronto,homicide,count,96.0
+hamilton,homicide,count,12.0
+st. catharines-niagara,homicide,count,1.0
+kitchener-cambridge-waterloo,homicide,count,6.0
+brantford,homicide,count,4.0
+guelph,homicide,count,1.0
+london,homicide,count,8.0
+windsor,homicide,count,3.0
+barrie,homicide,count,2.0
+greater sudbury,homicide,count,0.0
+thunder bay,homicide,count,8.0
+winnipeg,homicide,count,25.0
+regina,homicide,count,8.0
+saskatoon,homicide,count,10.0
+calgary,homicide,count,33.0
+edmonton,homicide,count,47.0
+kelowna,homicide,count,5.0
+abbotsford-mission,homicide,count,6.0
+vancouver,homicide,count,41.0
+victoria,homicide,count,1.0
+st. john's,homicide,rate,1.93
+halifax,homicide,rate,2.82
+moncton,homicide,rate,0.64
+saint john,homicide,rate,2.35
+saguenay,homicide,rate,1.2
+quebec,homicide,rate,0.12
+sherbrooke,homicide,rate,1.0
+trois-rivieres,homicide,rate,0.0
+montreal,homicide,rate,1.02
+gatineau,homicide,rate,0.91
+ottawa,homicide,rate,2.37
+kingston,homicide,rate,0.0
+peterborough,homicide,rate,1.62
+toronto,homicide,rate,1.55
+hamilton,homicide,rate,1.58
+st. catharines-niagara,homicide,rate,0.22
+kitchener-cambridge-waterloo,homicide,rate,1.09
+brantford,homicide,rate,2.73
+guelph,homicide,rate,0.76
+london,homicide,rate,1.55
+windsor,homicide,rate,0.9
+barrie,homicide,rate,0.92
+greater sudbury,homicide,rate,0.0
+thunder bay,homicide,rate,6.64
+winnipeg,homicide,rate,3.14
+regina,homicide,rate,3.23
+saskatoon,homicide,rate,3.12
+calgary,homicide,rate,2.24
+edmonton,homicide,rate,3.39
+kelowna,homicide,rate,2.54
+abbotsford-mission,homicide,rate,3.22
+vancouver,homicide,rate,1.61
+victoria,homicide,rate,0.27
+st. john's,sexual_assault,rate,69.0
+halifax,sexual_assault,rate,75.0
+moncton,sexual_assault,rate,43.0
+saint john,sexual_assault,rate,41.0
+saguenay,sexual_assault,rate,53.0
+quebec,sexual_assault,rate,47.0
+sherbrooke,sexual_assault,rate,58.0
+trois-rivieres,sexual_assault,rate,54.0
+montreal,sexual_assault,rate,46.0
+gatineau,sexual_assault,rate,48.0
+ottawa,sexual_assault,rate,59.0
+kingston,sexual_assault,rate,60.0
+peterborough,sexual_assault,rate,97.0
+toronto,sexual_assault,rate,44.0
+hamilton,sexual_assault,rate,64.0
+st. catharines-niagara,sexual_assault,rate,53.0
+kitchener-cambridge-waterloo,sexual_assault,rate,51.0
+brantford,sexual_assault,rate,68.0
+guelph,sexual_assault,rate,64.0
+london,sexual_assault,rate,46.0
+windsor,sexual_assault,rate,52.0
+barrie,sexual_assault,rate,54.0
+greater sudbury,sexual_assault,rate,61.0
+thunder bay,sexual_assault,rate,85.0
+winnipeg,sexual_assault,rate,98.0
+regina,sexual_assault,rate,59.0
+saskatoon,sexual_assault,rate,95.0
+calgary,sexual_assault,rate,44.0
+edmonton,sexual_assault,rate,72.0
+kelowna,sexual_assault,rate,34.0
+abbotsford-mission,sexual_assault,rate,42.0
+vancouver,sexual_assault,rate,44.0
+victoria,sexual_assault,rate,64.0
+st. john's,sexual_assault_percent,change,-7.0
+halifax,sexual_assault_percent,change,-9.0
+moncton,sexual_assault_percent,change,-2.0
+saint john,sexual_assault_percent,change,-46.0
+saguenay,sexual_assault_percent,change,-10.0
+quebec,sexual_assault_percent,change,3.0
+sherbrooke,sexual_assault_percent,change,15.0
+trois-rivieres,sexual_assault_percent,change,1.0
+montreal,sexual_assault_percent,change,11.0
+gatineau,sexual_assault_percent,change,9.0
+ottawa,sexual_assault_percent,change,14.0
+kingston,sexual_assault_percent,change,-7.0
+peterborough,sexual_assault_percent,change,10.0
+toronto,sexual_assault_percent,change,-2.0
+hamilton,sexual_assault_percent,change,6.0
+st. catharines-niagara,sexual_assault_percent,change,-7.0
+kitchener-cambridge-waterloo,sexual_assault_percent,change,-12.0
+brantford,sexual_assault_percent,change,-12.0
+guelph,sexual_assault_percent,change,33.0
+london,sexual_assault_percent,change,10.0
+windsor,sexual_assault_percent,change,15.0
+barrie,sexual_assault_percent,change,14.0
+greater sudbury,sexual_assault_percent,change,1.0
+thunder bay,sexual_assault_percent,change,7.0
+winnipeg,sexual_assault_percent,change,14.0
+regina,sexual_assault_percent,change,-4.0
+saskatoon,sexual_assault_percent,change,44.0
+calgary,sexual_assault_percent,change,-14.0
+edmonton,sexual_assault_percent,change,-8.0
+kelowna,sexual_assault_percent,change,-18.0
+abbotsford-mission,sexual_assault_percent,change,0.0
+vancouver,sexual_assault_percent,change,2.0
+victoria,sexual_assault_percent,change,7.0
+st. john's,robbery,rate,87.0
+halifax,robbery,rate,45.0
+moncton,robbery,rate,64.0
+saint john,robbery,rate,48.0
+saguenay,robbery,rate,16.0
+quebec,robbery,rate,19.0
+sherbrooke,robbery,rate,19.0
+trois-rivieres,robbery,rate,12.0
+montreal,robbery,rate,74.0
+gatineau,robbery,rate,32.0
+ottawa,robbery,rate,50.0
+kingston,robbery,rate,18.0
+peterborough,robbery,rate,41.0
+toronto,robbery,rate,83.0
+hamilton,robbery,rate,70.0
+st. catharines-niagara,robbery,rate,31.0
+kitchener-cambridge-waterloo,robbery,rate,51.0
+brantford,robbery,rate,68.0
+guelph,robbery,rate,22.0
+london,robbery,rate,55.0
+windsor,robbery,rate,61.0
+barrie,robbery,rate,32.0
+greater sudbury,robbery,rate,48.0
+thunder bay,robbery,rate,118.0
+winnipeg,robbery,rate,229.0
+regina,robbery,rate,118.0
+saskatoon,robbery,rate,116.0
+calgary,robbery,rate,62.0
+edmonton,robbery,rate,103.0
+kelowna,robbery,rate,41.0
+abbotsford-mission,robbery,rate,64.0
+vancouver,robbery,rate,78.0
+victoria,robbery,rate,37.0
+st. john's,robbery_percent,change,20.0
+halifax,robbery_percent,change,-23.0
+moncton,robbery_percent,change,62.0
+saint john,robbery_percent,change,48.0
+saguenay,robbery_percent,change,-15.0
+quebec,robbery_percent,change,13.0
+sherbrooke,robbery_percent,change,-23.0
+trois-rivieres,robbery_percent,change,-66.0
+montreal,robbery_percent,change,-10.0
+gatineau,robbery_percent,change,44.0
+ottawa,robbery_percent,change,-13.0
+kingston,robbery_percent,change,-17.0
+peterborough,robbery_percent,change,-15.0
+toronto,robbery_percent,change,10.0
+hamilton,robbery_percent,change,21.0
+st. catharines-niagara,robbery_percent,change,-11.0
+kitchener-cambridge-waterloo,robbery_percent,change,6.0
+brantford,robbery_percent,change,14.0
+guelph,robbery_percent,change,-8.0
+london,robbery_percent,change,4.0
+windsor,robbery_percent,change,10.0
+barrie,robbery_percent,change,28.0
+greater sudbury,robbery_percent,change,10.0
+thunder bay,robbery_percent,change,-21.0
+winnipeg,robbery_percent,change,27.0
+regina,robbery_percent,change,18.0
+saskatoon,robbery_percent,change,-11.0
+calgary,robbery_percent,change,-24.0
+edmonton,robbery_percent,change,-8.0
+kelowna,robbery_percent,change,-28.0
+abbotsford-mission,robbery_percent,change,-36.0
+vancouver,robbery_percent,change,-24.0
+victoria,robbery_percent,change,-15.0
+st. john's,breaking_and_entering,rate,602.0
+halifax,breaking_and_entering,rate,239.0
+moncton,breaking_and_entering,rate,561.0
+saint john,breaking_and_entering,rate,231.0
+saguenay,breaking_and_entering,rate,338.0
+quebec,breaking_and_entering,rate,319.0
+sherbrooke,breaking_and_entering,rate,286.0
+trois-rivieres,breaking_and_entering,rate,336.0
+montreal,breaking_and_entering,rate,386.0
+gatineau,breaking_and_entering,rate,320.0
+ottawa,breaking_and_entering,rate,270.0
+kingston,breaking_and_entering,rate,395.0
+peterborough,breaking_and_entering,rate,304.0
+toronto,breaking_and_entering,rate,205.0
+hamilton,breaking_and_entering,rate,308.0
+st. catharines-niagara,breaking_and_entering,rate,373.0
+kitchener-cambridge-waterloo,breaking_and_entering,rate,358.0
+brantford,breaking_and_entering,rate,588.0
+guelph,breaking_and_entering,rate,347.0
+london,breaking_and_entering,rate,389.0
+windsor,breaking_and_entering,rate,506.0
+barrie,breaking_and_entering,rate,200.0
+greater sudbury,breaking_and_entering,rate,454.0
+thunder bay,breaking_and_entering,rate,492.0
+winnipeg,breaking_and_entering,rate,682.0
+regina,breaking_and_entering,rate,760.0
+saskatoon,breaking_and_entering,rate,791.0
+calgary,breaking_and_entering,rate,576.0
+edmonton,breaking_and_entering,rate,582.0
+kelowna,breaking_and_entering,rate,620.0
+abbotsford-mission,breaking_and_entering,rate,577.0
+vancouver,breaking_and_entering,rate,678.0
+victoria,breaking_and_entering,rate,326.0
+st. john's,breaking_and_entering_percent,change,18.0
+halifax,breaking_and_entering_percent,change,-16.0
+moncton,breaking_and_entering_percent,change,-3.0
+saint john,breaking_and_entering_percent,change,-8.0
+saguenay,breaking_and_entering_percent,change,0.0
+quebec,breaking_and_entering_percent,change,-1.0
+sherbrooke,breaking_and_entering_percent,change,-12.0
+trois-rivieres,breaking_and_entering_percent,change,-11.0
+montreal,breaking_and_entering_percent,change,-5.0
+gatineau,breaking_and_entering_percent,change,5.0
+ottawa,breaking_and_entering_percent,change,16.0
+kingston,breaking_and_entering_percent,change,19.0
+peterborough,breaking_and_entering_percent,change,-25.0
+toronto,breaking_and_entering_percent,change,-9.0
+hamilton,breaking_and_entering_percent,change,5.0
+st. catharines-niagara,breaking_and_entering_percent,change,-11.0
+kitchener-cambridge-waterloo,breaking_and_entering_percent,change,-11.0
+brantford,breaking_and_entering_percent,change,12.0
+guelph,breaking_and_entering_percent,change,16.0
+london,breaking_and_entering_percent,change,9.0
+windsor,breaking_and_entering_percent,change,23.0
+barrie,breaking_and_entering_percent,change,-8.0
+greater sudbury,breaking_and_entering_percent,change,20.0
+thunder bay,breaking_and_entering_percent,change,18.0
+winnipeg,breaking_and_entering_percent,change,14.0
+regina,breaking_and_entering_percent,change,7.0
+saskatoon,breaking_and_entering_percent,change,-3.0
+calgary,breaking_and_entering_percent,change,-10.0
+edmonton,breaking_and_entering_percent,change,-4.0
+kelowna,breaking_and_entering_percent,change,-3.0
+abbotsford-mission,breaking_and_entering_percent,change,-19.0
+vancouver,breaking_and_entering_percent,change,-1.0
+victoria,breaking_and_entering_percent,change,-20.0
+st. john's,motor_vehicle_theft,rate,118.0
+halifax,motor_vehicle_theft,rate,90.0
+moncton,motor_vehicle_theft,rate,147.0
+saint john,motor_vehicle_theft,rate,58.0
+saguenay,motor_vehicle_theft,rate,117.0
+quebec,motor_vehicle_theft,rate,71.0
+sherbrooke,motor_vehicle_theft,rate,54.0
+trois-rivieres,motor_vehicle_theft,rate,85.0
+montreal,motor_vehicle_theft,rate,168.0
+gatineau,motor_vehicle_theft,rate,71.0
+ottawa,motor_vehicle_theft,rate,88.0
+kingston,motor_vehicle_theft,rate,72.0
+peterborough,motor_vehicle_theft,rate,57.0
+toronto,motor_vehicle_theft,rate,113.0
+hamilton,motor_vehicle_theft,rate,217.0
+st. catharines-niagara,motor_vehicle_theft,rate,160.0
+kitchener-cambridge-waterloo,motor_vehicle_theft,rate,137.0
+brantford,motor_vehicle_theft,rate,454.0
+guelph,motor_vehicle_theft,rate,119.0
+london,motor_vehicle_theft,rate,195.0
+windsor,motor_vehicle_theft,rate,199.0
+barrie,motor_vehicle_theft,rate,68.0
+greater sudbury,motor_vehicle_theft,rate,101.0
+thunder bay,motor_vehicle_theft,rate,158.0
+winnipeg,motor_vehicle_theft,rate,315.0
+regina,motor_vehicle_theft,rate,523.0
+saskatoon,motor_vehicle_theft,rate,453.0
+calgary,motor_vehicle_theft,rate,535.0
+edmonton,motor_vehicle_theft,rate,483.0
+kelowna,motor_vehicle_theft,rate,316.0
+abbotsford-mission,motor_vehicle_theft,rate,493.0
+vancouver,motor_vehicle_theft,rate,312.0
+victoria,motor_vehicle_theft,rate,108.0
+st. john's,motor_vehicle_theft_percent,change,12.0
+halifax,motor_vehicle_theft_percent,change,-5.0
+moncton,motor_vehicle_theft_percent,change,13.0
+saint john,motor_vehicle_theft_percent,change,-15.0
+saguenay,motor_vehicle_theft_percent,change,-9.0
+quebec,motor_vehicle_theft_percent,change,-2.0
+sherbrooke,motor_vehicle_theft_percent,change,-2.0
+trois-rivieres,motor_vehicle_theft_percent,change,-25.0
+montreal,motor_vehicle_theft_percent,change,-11.0
+gatineau,motor_vehicle_theft_percent,change,-28.0
+ottawa,motor_vehicle_theft_percent,change,-1.0
+kingston,motor_vehicle_theft_percent,change,-9.0
+peterborough,motor_vehicle_theft_percent,change,-1.0
+toronto,motor_vehicle_theft_percent,change,4.0
+hamilton,motor_vehicle_theft_percent,change,-1.0
+st. catharines-niagara,motor_vehicle_theft_percent,change,5.0
+kitchener-cambridge-waterloo,motor_vehicle_theft_percent,change,-3.0
+brantford,motor_vehicle_theft_percent,change,-2.0
+guelph,motor_vehicle_theft_percent,change,49.0
+london,motor_vehicle_theft_percent,change,-12.0
+windsor,motor_vehicle_theft_percent,change,14.0
+barrie,motor_vehicle_theft_percent,change,-12.0
+greater sudbury,motor_vehicle_theft_percent,change,-17.0
+thunder bay,motor_vehicle_theft_percent,change,1.0
+winnipeg,motor_vehicle_theft_percent,change,3.0
+regina,motor_vehicle_theft_percent,change,17.0
+saskatoon,motor_vehicle_theft_percent,change,16.0
+calgary,motor_vehicle_theft_percent,change,0.0
+edmonton,motor_vehicle_theft_percent,change,10.0
+kelowna,motor_vehicle_theft_percent,change,-11.0
+abbotsford-mission,motor_vehicle_theft_percent,change,-1.0
+vancouver,motor_vehicle_theft_percent,change,-7.0
+victoria,motor_vehicle_theft_percent,change,0.0

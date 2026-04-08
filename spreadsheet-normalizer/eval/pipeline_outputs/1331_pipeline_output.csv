@@ -1,14 +1,9 @@
-living_arrangement,aboriginal_identity,population_thousand,population_percent
-total population aged 14 and under in private households,total aboriginal children,392.1,100.0
-total population aged 14 and under in private households,first nations children,258.8,100.0
-total population aged 14 and under in private households,inuit children,20.2,100.0
-total population aged 14 and under in private households,metis children,104.4,100.0
-total population aged 14 and under in private households,total non-aboriginal children,,100.0
+living_arrangement,aboriginal_identity,count_thousand,count_percent
 children of both parents,total aboriginal children,194.6,49.6
 children of both parents,first nations children,116.4,45.0
 children of both parents,inuit children,12.4,61.6
 children of both parents,metis children,60.6,58.0
-children of both parents,total non-aboriginal children,,76.0
+children of both parents,total non-aboriginal children,3953.9,76.0
 stepchildren,total aboriginal children,33.4,8.5
 stepchildren,first nations children,22.4,8.7
 stepchildren,inuit children,1.3,6.3
