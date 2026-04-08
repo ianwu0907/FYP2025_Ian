@@ -4,7 +4,9 @@
  */
 
 import React, { useEffect, useRef } from 'react';
-import { Progress, Steps, Card } from 'antd';
+import { Progress, Steps, Card, Grid } from 'antd';
+
+const { useBreakpoint } = Grid;
 import {
   LoadingOutlined,
   CheckCircleOutlined,
@@ -50,6 +52,7 @@ function getStepIcon(stepStatus) {
 const ProgressDisplay = ({ progress, logs, status, currentStage }) => {
   const { t, currentLanguage } = useLanguage();
   const logEndRef = useRef(null);
+  const screens = useBreakpoint();
 
   useEffect(() => {
     logEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -80,6 +83,7 @@ const ProgressDisplay = ({ progress, logs, status, currentStage }) => {
       <Steps
         items={stepsItems}
         current={currentStepIdx}
+        direction={screens.md ? 'horizontal' : 'vertical'}
         style={{ marginBottom: 24 }}
         size="small"
       />

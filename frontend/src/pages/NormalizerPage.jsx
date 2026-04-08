@@ -4,7 +4,9 @@
  */
 
 import React, { useState } from 'react';
-import { Layout, Row, Col, Card, Button, message, Descriptions, Tag, Spin, Divider, Tooltip } from 'antd';
+import { Layout, Row, Col, Card, Button, message, Descriptions, Tag, Spin, Divider, Tooltip, Grid } from 'antd';
+
+const { useBreakpoint } = Grid;
 import { RocketOutlined, ReloadOutlined, CheckCircleOutlined, DownloadOutlined, TranslationOutlined, FileExcelOutlined } from '@ant-design/icons';
 import FileUpload from '../components/FileUpload/FileUpload';
 import ProgressDisplay from '../components/ProgressDisplay/ProgressDisplay';
@@ -37,6 +39,8 @@ const NormalizerPage = () => {
   const { t, toggleLanguage, currentLanguage } = useLanguage();
   const [configOverrides, setConfigOverrides] = useState({});
   const [demoLoading, setDemoLoading] = useState(null);
+  const screens = useBreakpoint();
+  const isMobile = !screens.md;
 
   const handleDemoFile = async (demoFile) => {
     setDemoLoading(demoFile);
@@ -137,13 +141,15 @@ const NormalizerPage = () => {
       <Header
         style={{
           background: 'linear-gradient(90deg, #96aaebff 0%, #9eabebff 100%)',
-          padding: '0 50px',
+          padding: isMobile ? '0 16px' : '0 50px',
+          height: isMobile ? 'auto' : 64,
+          lineHeight: isMobile ? '1' : '64px',
           borderBottom: 'none',
           boxShadow: '0 4px 12px rgba(102, 126, 234, 0.3)',
         }}
       >
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-          <h1 style={{ margin: 0, fontSize: 24, color: '#fff', fontWeight: 'bold' }}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: isMobile ? '12px 0' : 0 }}>
+          <h1 style={{ margin: 0, fontSize: isMobile ? 16 : 24, color: '#fff', fontWeight: 'bold' }}>
             {t.header.title}
           </h1>
           <div style={{ display: 'flex', gap: '10px' }}>
@@ -178,7 +184,7 @@ const NormalizerPage = () => {
         </div>
       </Header>
 
-      <Content style={{ padding: '50px' }}>
+      <Content style={{ padding: isMobile ? '16px' : '50px' }}>
         <Row gutter={[16, 16]}>
           {/* 步骤 1: 文件上传 */}
           <Col span={24}>
