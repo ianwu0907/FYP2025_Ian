@@ -1,5 +1,5 @@
 """
-FastAPI 主应用入口
+FastAPI main application entrance
 Spreadsheet Normalizer API
 """
 
@@ -11,10 +11,10 @@ import logging
 
 from .api.routes import upload, normalize
 
-# 加载环境变量
-load_dotenv()
+# Load environment variables (.env overrides system env)
+load_dotenv(override=True)
 
-# 配置日志
+# Configuration log
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
@@ -22,7 +22,7 @@ logging.basicConfig(
 
 logger = logging.getLogger(__name__)
 
-# 创建 FastAPI 应用
+# Create a FastAPI application
 app = FastAPI(
     title="Spreadsheet Normalizer API",
     description="API for normalizing messy spreadsheets using LLM-powered analysis",
@@ -31,7 +31,7 @@ app = FastAPI(
     redoc_url="/redoc"
 )
 
-# CORS 配置
+# CORS configuration
 cors_origins = os.getenv("CORS_ORIGINS", "http://localhost:5173").split(",")
 app.add_middleware(
     CORSMiddleware,
@@ -43,7 +43,7 @@ app.add_middleware(
 
 logger.info(f"CORS enabled for origins: {cors_origins}")
 
-# 注册路由
+# Register route
 app.include_router(upload.router, prefix="/api/v1")
 app.include_router(normalize.router, prefix="/api/v1")
 
@@ -52,7 +52,7 @@ logger.info("API routes registered")
 
 @app.get("/")
 async def root():
-    """根端点"""
+    """root endpoint"""
     return {
         "message": "Spreadsheet Normalizer API",
         "version": "1.0.0",
@@ -63,7 +63,7 @@ async def root():
 
 @app.get("/health")
 async def health():
-    """健康检查端点"""
+    """health check endpoint"""
     return {
         "status": "healthy",
         "service": "Spreadsheet Normalizer API"
@@ -72,7 +72,7 @@ async def health():
 
 @app.on_event("startup")
 async def startup_event():
-    """应用启动事件"""
+    """application start event"""
     logger.info("=" * 80)
     logger.info("Spreadsheet Normalizer API Starting...")
     logger.info("=" * 80)
@@ -83,5 +83,5 @@ async def startup_event():
 
 @app.on_event("shutdown")
 async def shutdown_event():
-    """应用关闭事件"""
+    """App close event"""
     logger.info("Spreadsheet Normalizer API Shutting down...")

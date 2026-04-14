@@ -81,8 +81,8 @@ Features:
     logger = logging.getLogger(__name__)
 
     try:
-        # Load environment variables
-        load_dotenv()
+        # Load environment variables (.env overrides system env)
+        load_dotenv(override=True)
         logger.info("Environment variables loaded")
 
         # Load configuration
@@ -118,7 +118,7 @@ Features:
         )
 
         # Final status
-        # 假设你的返回值赋予了 result 变量
+        # Assuming your return value is assigned to the result variable
         validation_passed = result.get('pipeline_log', {}).get('stages', {}).get('transformation', {}).get('validation', {}).get('is_valid', False)
 
         if validation_passed:
