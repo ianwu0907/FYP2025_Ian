@@ -556,7 +556,7 @@ class PhysicalFeatureExtractor:
 
         This is the physical precondition for BILINGUAL_ALTERNATING_ROWS.
         If False, the LLM is instructed not to flag that irregularity,
-        preventing false positives from binary dimension columns (有/沒有,
+        preventing false positives from binary dimension columns (have/Chinese text,
         Male/Female, Yes/No) whose rows all contain numeric values.
 
         Uses only the first 40 data row pairs for efficiency.
@@ -604,7 +604,7 @@ class PhysicalFeatureExtractor:
         CJK characters AND Latin alphabetic characters within the same cell?
 
         This is the physical precondition for INLINE_BILINGUAL.
-        Binary dimension columns (有/沒有, Male/Female) contain only one
+        Binary dimension columns (have/Chinese text, Male/Female) contain only one
         script and will return False, preventing misdetection.
 
         Scans the first 100 data rows. Returns True if at least 5% of
@@ -693,6 +693,14 @@ class IrregularityDetector:
         logger.info("Detecting irregularities (LLM call)...")
         irregularities = self._detect_irregularities(df, physical)
         irregularities = self._postfilter_irregularities(irregularities, physical)
+        # Deduplicate by label, keeping first occurrence
+        seen = set()
+        deduped = []
+        for ir in irregularities:
+            if ir["label"] not in seen:
+                seen.add(ir["label"])
+                deduped.append(ir)
+        irregularities = deduped
         labels = list(dict.fromkeys(ir["label"] for ir in irregularities))
         logger.info(f"Detected {len(irregularities)} irregularities: {labels}")
 
