@@ -112,9 +112,9 @@ export const zh = {
   demo: {
     title: '或者试试示例文件',
     files: [
-      { name: '长表头表格 1', file: 'long1.xlsx', desc: '多层级表头，含合并单元格' },
-      { name: '长表头表格 2', file: 'long2.xlsx', desc: '嵌套分类表头' },
-      { name: '长表头表格 3', file: 'long3.xlsx', desc: '复杂交叉列表结构' },
+      { name: 'Example 1', file: 'long1.xlsx', desc: '多层级表头，含合并单元格' },
+      { name: 'Example 2', file: 'long2.xlsx', desc: '嵌套分类表头' },
+      { name: 'Example 3', file: 'long3.xlsx', desc: '复杂交叉列表结构' },
     ],
     loading: '正在加载示例...',
   },
